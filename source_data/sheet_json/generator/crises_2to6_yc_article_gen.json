@@ -1,0 +1,31 @@
+{
+  "flow_type": "generator",
+  "flow_name": "crises_2to6_yc_article_gen",
+  "status": "released",
+  "parameter_list": {
+    "input_data_list": "crises_2to6_yc_articles",
+    "output_flow_name": "article_crises_2to6_yc_@gen.id",
+    "output_flow_type": "template"
+  },
+  "module_id": "crises_2to6_yc",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "article",
+      "value": "article",
+      "action_list": "completed | emit: completed; uncompleted | emit: uncompleted"
+    },
+    {
+      "name": "article_id",
+      "value": "@gen.id"
+    },
+    {
+      "name": "module_id",
+      "value": "crises_2to6_yc",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

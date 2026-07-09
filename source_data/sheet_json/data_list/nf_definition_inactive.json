@@ -1,0 +1,86 @@
+{
+  "flow_type": "data_list",
+  "flow_subtype": "campaign_rows",
+  "flow_name": "nf_definition_inactive",
+  "status": "released",
+  "rows": [
+    {
+      "id": "install_nudge_a",
+      "workshop": "independent",
+      "message_type": "inactive",
+      "action_list": "sent | set_field: install_nudge_sent : true;",
+      "priority": 1,
+      "activation_condition_list": "@fields.n_modules_completed == 0 && @fields.last_module_in_progress == \"NA\"",
+      "deactivation_condition_list": "@fields.install_nudge_sent",
+      "campaign_list": "nf_inactive_day",
+      "title::eng": "Tu camino en la crianza comienza aquí",
+      "text::eng": "¡Te damos la bienvenida a @global.app_name! Nos da mucho gusto tenerte aquí. Una estrategia sencilla puede hacer la vida familiar más tranquila y positiva. Toca aquí para comenzar tu primera sesión."
+    },
+    {
+      "id": "install_nudge_b",
+      "workshop": "independent",
+      "message_type": "inactive",
+      "action_list": "sent | set_field: install_nudge_sent : true;",
+      "priority": 1,
+      "activation_condition_list": "@fields.n_modules_completed == 0 && @fields.last_module_in_progress == \"NA\"",
+      "deactivation_condition_list": "@fields.install_nudge_sent",
+      "campaign_list": "nf_inactive_day",
+      "title::eng": "Una mejor vida familiar comienza contigo",
+      "text::eng": "Te damos la bienvenida a @global.app_name. Dedicar 10 minutos hoy para aprender puede hacer una gran diferencia. Toca aquí para descubrir más."
+    },
+    {
+      "id": "positive_reinforcement",
+      "workshop": "independent",
+      "message_type": "inactive",
+      "action_list": "sent | set_field: positive_reinforcement_sent : true;",
+      "priority": 1,
+      "activation_condition_list": "@fields.n_modules_completed !== 0 ",
+      "deactivation_condition_list": "@fields.positive_reinforcement_sent",
+      "campaign_list": "nf_inactive_day",
+      "title::eng": "¡Bien hecho!",
+      "text::eng": "Terminaste tu primera habilidad. Toca aquí para continuar."
+    },
+    {
+      "id": "resume_lesson_a",
+      "workshop": "independent",
+      "message_type": "inactive",
+      "action_list": "click | set_field: current_start_article_id: uncomplete;\nclick | go_to : home_screen;\nclick | nav_stack: open | template: stack_module_@fields.last_module_in_progress@fields.start_at_id, header: false;",
+      "priority": 1,
+      "activation_condition_list": "@fields.last_module_in_progress != \"NA\"",
+      "campaign_list": "nf_inactive_2_days_afternoon; \nnf_inactive_week;",
+      "title::eng": "Sigue adelante: comenzaste algo muy valioso",
+      "text::eng": "@fields.user_name, comenzaste algo muy valioso. Toca aquí para continuar."
+    },
+    {
+      "id": "resume_lesson_b",
+      "workshop": "independent",
+      "message_type": "inactive",
+      "action_list": "click | set_field: current_start_article_id: uncomplete;\nclick | go_to : home_screen;\nclick | nav_stack: open | template: stack_module_@fields.last_module_in_progress@fields.start_at_id, header: false;",
+      "priority": 1,
+      "activation_condition_list": "@fields.last_module_in_progress != \"NA\"",
+      "campaign_list": "nf_inactive_2_days_afternoon; \nnf_inactive_week;",
+      "title::eng": "Continúa donde te quedaste",
+      "text::eng": "@fields.user_name, tu sesión está esperándote. Solo faltan unos minutos más para terminarla. Toca aquí para continuar."
+    },
+    {
+      "id": "win_back_a",
+      "workshop": "independent",
+      "message_type": "inactive",
+      "priority": 1,
+      "activation_condition_list": "@fields.last_module_in_progress == \"NA\" && !@fields.completed_all ",
+      "campaign_list": "nf_inactive_2_days_evening; \nnf_inactive_week;",
+      "title::eng": "¡Tu próxima estrategia te espera!",
+      "text::eng": "Descubre una nueva forma de apoyar a tu familia hoy."
+    },
+    {
+      "id": "win_back_b",
+      "workshop": "independent",
+      "message_type": "inactive",
+      "priority": 1,
+      "activation_condition_list": "@fields.last_module_in_progress == \"NA\" && !@fields.completed_all ",
+      "campaign_list": "nf_inactive_2_days_evening; \nnf_inactive_week;",
+      "title::eng": "¡Lo estás haciendo muy bien!",
+      "text::eng": "Cada pequeño paso fortalece a tu familia. Toca para continuar."
+    }
+  ]
+}

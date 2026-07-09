@@ -1,0 +1,165 @@
+{
+  "flow_type": "template",
+  "flow_name": "module_list_test",
+  "status": "released",
+  "rows": [
+    {
+      "name": "current_module_id"
+    },
+    {
+      "name": "has_completed",
+      "value": 0
+    },
+    {
+      "name": "has_core_course",
+      "value": 0
+    },
+    {
+      "name": "courses_not_done"
+    },
+    {
+      "type": "data_items",
+      "value": "@data.courses",
+      "action_list": "data_changed | set_local : has_core_course: @items.length;",
+      "parameter_list": "filter: @item.core && !@item.completed && (!@item.tag_list || @item.tag_list.includes(@fields.child_age_tag)) && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.user_gender_list || @item.user_gender_list.includes(@fields.user_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "core_title",
+      "parameter_list": "style: column",
+      "condition": "@local.has_core_course > 0"
+    },
+    {
+      "type": "title",
+      "value": "@global.unlock_course_title",
+      "condition": "!!@global.unlock_course_title",
+      "style_list": "margin-top: -8px;"
+    },
+    {
+      "type": "text",
+      "value": "@global.unlock_course_text",
+      "condition": "!!@global.unlock_course_text",
+      "style_list": "margin-top: -6px;\nmargin-bottom: -8px;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "unlocked_title",
+      "parameter_list": "style: column",
+      "condition": "@local.has_core_course == 0"
+    },
+    {
+      "type": "title",
+      "value": "@global.all_unlock_course_title",
+      "condition": "!!@global.all_unlock_course_title",
+      "style_list": "margin-top: -8px;"
+    },
+    {
+      "type": "text",
+      "value": "@global.all_unlock_course_text",
+      "condition": "!!@global.all_unlock_course_text",
+      "style_list": "margin-top: -6px;\nmargin-bottom: -8px;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_data_items",
+      "name": "core_courses",
+      "value": "@data.courses",
+      "parameter_list": "filter: @item.core && !@item.completed && (!@item.tag_list || @item.tag_list.includes(@fields.child_age_tag)) && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.user_gender_list || @item.user_gender_list.includes(@fields.user_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship));",
+      "condition": "@local.has_core_course > 0",
+      "exclude_from_translation": true,
+      "comments": "filter: @item.core && !@item.completed;"
+    },
+    {
+      "type": "plh_course_lesson_accordion",
+      "value": "@item.title",
+      "parameter_list": "locked: false;\nimage_asset: @item.image_asset;\nimage_alignment: centre;\nsub_items_name: @global.sub_items_name;\ncompleted: false;\ncompleted_text: @global.completed_text;\nlocked_text: @global.locked_text;\nopen: (@fields.last_opened == @item.id);\ncourse_id: @item.id;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "upcoming_title",
+      "parameter_list": "style: column",
+      "condition": "filter: !@item.core && !@item.completed && (!@item.tag_list || @item.tag_list.includes(@fields.child_age_tag)) && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.user_gender_list || @item.user_gender_list.includes(@fields.user_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship));"
+    },
+    {
+      "type": "title",
+      "value": "@global.lock_course_title",
+      "condition": "!!@global.lock_course_title",
+      "style_list": "margin-top: -8px;"
+    },
+    {
+      "type": "text",
+      "value": "@global.lock_course_text",
+      "condition": "!!@global.lock_course_text",
+      "style_list": "margin-top: -6px;\nmargin-bottom: -8px;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_data_items",
+      "name": "other_courses",
+      "value": "@data.courses",
+      "parameter_list": "filter: !@item.core && !@item.completed && (!@item.tag_list || @item.tag_list.includes(@fields.child_age_tag)) && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.user_gender_list || @item.user_gender_list.includes(@fields.user_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship));",
+      "exclude_from_translation": true,
+      "comments": "filter: !@item.core && !@item.completed;"
+    },
+    {
+      "exclude_from_translation": true
+    },
+    {
+      "type": "plh_course_lesson_accordion",
+      "value": "@item.title",
+      "parameter_list": "locked: (@local.has_core_course > 0);\nimage_asset: @item.image_asset;\nimage_alignment: centre;\nsub_items_name: @global.sub_items_name;\ncompleted: false;\ncompleted_text: @global.completed_text;\nlocked_text: @global.locked_text;\nopen: (@fields.last_opened == @item.id);\ncourse_id: @item.id;"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "comments": "must have completed something"
+    },
+    {
+      "type": "begin_data_items",
+      "name": "completed_courses",
+      "value": "@data.courses",
+      "parameter_list": "filter: !!@item.completed",
+      "exclude_from_translation": true,
+      "comments": "filter: !([@local.courses_list].includes(@item.id))"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "completed_title",
+      "parameter_list": "style: column",
+      "condition": "@item._first"
+    },
+    {
+      "type": "title",
+      "value": "@global.complete_course_title"
+    },
+    {
+      "type": "text",
+      "value": "@global.complete_course_text"
+    },
+    {
+      "type": "end_display_group",
+      "comments": "filter: !([@local.courses_not_done].includes(@item.id))"
+    },
+    {
+      "type": "plh_course_lesson_accordion",
+      "value": "@item.title",
+      "parameter_list": "locked: false;\nimage_asset: @item.image_asset;\nimage_alignment: centre;\nsub_items_name: @global.sub_items_name;\ncompleted: true;\ncompleted_text: @global.completed_text;\nlocked_text: @global.locked_text;\nopen: (@fields.last_opened == @item.id);\ncourse_id: @item.id;"
+    },
+    {
+      "type": "end_data_items",
+      "exclude_from_translation": true
+    }
+  ]
+}

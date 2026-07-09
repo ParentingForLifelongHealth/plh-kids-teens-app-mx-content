@@ -1,0 +1,89 @@
+{
+  "flow_type": "template",
+  "flow_name": "onboarding_settings_page_1",
+  "status": "released",
+  "rows": [
+    {
+      "name": "speaker_position",
+      "value": "left",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "variant",
+      "value": "gray",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_intro",
+      "value": "@global.facilitator_selection_intro",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text_bubble",
+      "name": "text_bubble",
+      "value": "@global.facilitator_female_intro",
+      "parameter_list": "speaker_image_asset: @data.characters.facilitator_female.image_asset;\nspeaker_name: @data.characters.facilitator_female.name;\nspeaker_position: @local.speaker_position;\nvariant: @local.variant;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text_bubble",
+      "name": "text_bubble",
+      "value": "@global.facilitator_male_intro",
+      "parameter_list": "speaker_image_asset: @data.characters.facilitator_male.image_asset;\nspeaker_name: @data.characters.facilitator_male.name;\nspeaker_position: @local.speaker_position;\nvariant: @local.variant;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_question",
+      "value": "@global.facilitator_selection_question",
+      "parameter_list": "style: emphasised",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "radio_button_grid",
+      "name": "facilitator_id",
+      "parameter_list": "answer_list: @data.facilitators;\nitem_width: 100px;\nstyle: secondary;",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "facilitator_data",
+      "value": "characters.@local.facilitator_id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "facilitator_row",
+      "value": "@data.@local.facilitator_data",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "facilitator_name",
+      "value": "@local.facilitator_row.name",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "completed_enabled",
+      "value": "!!@local.facilitator_id",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_footer",
+      "parameter_list": "sticky: bottom;",
+      "style_list": "padding: 12px 24px;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_completed_2",
+      "value": "@global.continue",
+      "action_list": "click | emit: completed;\nclick | set_field: facilitator_id: @local.facilitator_id;\nclick | set_field: facilitator_name: @local.facilitator_name;",
+      "parameter_list": "style: navigation;\ndisabled: !@local.completed_enabled",
+      "style_list": "flex: 1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

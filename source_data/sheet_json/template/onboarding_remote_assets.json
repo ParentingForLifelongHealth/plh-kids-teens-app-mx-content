@@ -1,0 +1,205 @@
+{
+  "flow_type": "template",
+  "flow_name": "onboarding_remote_assets",
+  "status": "released",
+  "rows": [
+    {
+      "name": "asset_pack_id",
+      "value": "@global.asset_pack_id"
+    },
+    {
+      "name": "completed_count ",
+      "value": 0
+    },
+    {
+      "name": "total_count",
+      "value": 0
+    },
+    {
+      "name": "download_status"
+    },
+    {
+      "name": "show_success_page",
+      "value": false
+    },
+    {
+      "type": "begin_display_group",
+      "name": "page_downloading",
+      "parameter_list": "style: column",
+      "condition": "!@local.show_success_page"
+    },
+    {
+      "type": "title",
+      "name": "loading_profile_title",
+      "value": "@global.onboarding_loading_title",
+      "parameter_list": "variant: header"
+    },
+    {
+      "type": "text",
+      "name": "bar_1_title",
+      "value": "@data.onboarding_progress_bars.id_1.text",
+      "style_list": "color: @data.onboarding_progress_bars.id_1.colour"
+    },
+    {
+      "type": "plh_progress_bar",
+      "name": "bar_1",
+      "parameter_list": "duration: @data.onboarding_progress_bars.id_1.timespan;\nauto_play: true;\ncolor: @data.onboarding_progress_bars.id_1.colour"
+    },
+    {
+      "type": "text",
+      "name": "bar_2_title",
+      "value": "@data.onboarding_progress_bars.id_2.text",
+      "style_list": "color: @data.onboarding_progress_bars.id_2.colour"
+    },
+    {
+      "type": "plh_progress_bar",
+      "name": "bar_2",
+      "parameter_list": "duration: @data.onboarding_progress_bars.id_2.timespan;\nauto_play: @local.bar_1 == 100;\ncolor: @data.onboarding_progress_bars.id_2.colour;"
+    },
+    {
+      "type": "text",
+      "name": "bar_3_title",
+      "value": "@data.onboarding_progress_bars.id_3.text",
+      "style_list": "color: @data.onboarding_progress_bars.id_3.colour"
+    },
+    {
+      "type": "plh_progress_bar",
+      "name": "bar_3",
+      "parameter_list": "duration: @data.onboarding_progress_bars.id_3.timespan;\nauto_play: @local.bar_2 == 100;\ncolor: @data.onboarding_progress_bars.id_3.colour;"
+    },
+    {
+      "type": "text",
+      "name": "bar_4_title",
+      "value": "@data.onboarding_progress_bars.id_4.text",
+      "style_list": "color: @data.onboarding_progress_bars.id_4.colour"
+    },
+    {
+      "type": "plh_progress_bar",
+      "name": "bar_4",
+      "parameter_list": "duration: @data.onboarding_progress_bars.id_4.timespan;\nauto_play: @local.bar_3 == 100;\ncolor: @data.onboarding_progress_bars.id_4.colour;",
+      "condition": "@local.total_count == 0"
+    },
+    {
+      "type": "plh_progress_bar",
+      "name": "bar_4",
+      "value": "@calc((@local.completed_count / @local.total_count) * 100)",
+      "parameter_list": "color: @data.onboarding_progress_bars.id_4.colour;",
+      "condition": "@local.total_count !== 0"
+    },
+    {
+      "type": "data_items",
+      "value": "_asset_packs",
+      "action_list": "data_changed | set_local: total_count: @items[0].assets_total_count;\ndata_changed | set_local: completed_count: @items[0].assets_downloaded_count;\ndata_changed | set_local: download_status: @items[0].download_status;",
+      "parameter_list": "filter: @item.id == @local.asset_pack_id",
+      "condition": "@local.bar_3 == 100"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_footer",
+      "parameter_list": "sticky: bottom;",
+      "style_list": "padding: 12px 24px;"
+    },
+    {
+      "type": "button",
+      "name": "button_show_success_page_disabled",
+      "value": "@global.continue",
+      "action_list": "click | set_local: show_success_page: true",
+      "parameter_list": "style: navigation;\ndisabled: true",
+      "condition": "!@local.bar_4 || !@local.bar_4 == 100"
+    },
+    {
+      "type": "button",
+      "name": "button_show_success_page",
+      "value": "@global.continue",
+      "action_list": "click | set_local: show_success_page: true",
+      "parameter_list": "style: navigation;",
+      "condition": "@local.bar_4 && @local.bar_4 == 100"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "page_error",
+      "parameter_list": "style: column",
+      "condition": "@local.download_status == \"error\""
+    },
+    {
+      "type": "title",
+      "name": "error_profile_title",
+      "value": "@global.onboarding_error_title",
+      "parameter_list": "variant: header"
+    },
+    {
+      "type": "text",
+      "name": "error_profile_text",
+      "value": "@global.onboarding_error_text",
+      "parameter_list": "text_align: center"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_footer",
+      "parameter_list": "sticky: bottom;",
+      "style_list": "padding: 12px 24px;"
+    },
+    {
+      "type": "button",
+      "name": "button_retry",
+      "value": "@global.onboarding_error_button_text",
+      "action_list": "click | asset_pack: download: @local.asset_pack_id;",
+      "parameter_list": "style: navigation;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "page_success",
+      "parameter_list": "style: column",
+      "condition": "@local.show_success_page"
+    },
+    {
+      "type": "lottie_animation",
+      "name": "lottie",
+      "value": "@global.onboarding_completed_lottie_asset",
+      "condition": "!!@global.onboarding_completed_lottie_asset"
+    },
+    {
+      "type": "title",
+      "name": "finish_profile_title",
+      "value": "@global.onboarding_completed_title",
+      "parameter_list": "variant: header"
+    },
+    {
+      "type": "text",
+      "name": "finish_profile_text",
+      "value": "@global.onboarding_completed_text",
+      "parameter_list": "text_align: center"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_footer",
+      "parameter_list": "sticky: bottom;",
+      "style_list": "padding: 12px 24px;"
+    },
+    {
+      "type": "button",
+      "name": "button_completed_3",
+      "value": "@global.continue",
+      "action_list": "click | emit: completed;\nclick | set_field: onboarding_settings_completed: true;",
+      "parameter_list": "style: navigation;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

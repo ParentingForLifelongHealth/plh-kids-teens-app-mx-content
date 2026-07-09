@@ -1,0 +1,124 @@
+{
+  "flow_type": "template",
+  "flow_name": "onboarding_settings",
+  "status": "released",
+  "rows": [
+    {
+      "name": "task_group",
+      "value": "onboarding_settings_pages"
+    },
+    {
+      "name": "asset_pack_id",
+      "value": "@global.asset_pack_id"
+    },
+    {
+      "name": "last_page_index",
+      "value": "@calc(Object.keys(@data.onboarding_settings_pages).length - 1)"
+    },
+    {
+      "type": "begin_data_items",
+      "name": "loop_pages",
+      "value": "@data.onboarding_settings_pages",
+      "parameter_list": "filter: !@item.completed; limit: 1"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_top"
+    },
+    {
+      "type": "task_progress_bar",
+      "parameter_list": "task_group_data: @local.task_group",
+      "style_list": "flex: 1; \nmargin-bottom: var(--row-margin-top);"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_template",
+      "name": "page_@item.row_index",
+      "value": "onboarding_settings_@item.id",
+      "action_list": "completed | set_data |\n_list_id: onboarding_settings_pages,\n_index: @item.row_index,\ncompleted: true;\n\nuncompleted | set_data | \n_list_id: onboarding_settings_pages,\n_index: -1+@item.row_index,\ncompleted: false;",
+      "condition": "!(@item.row_index == @local.last_page_index && @global.has_remote_assets)"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "begin_template",
+      "name": "remote_assets_page_@item.row_index",
+      "value": "onboarding_settings_@item.id",
+      "action_list": "completed | set_data |\n_list_id: onboarding_settings_pages,\n_index: @item.row_index,\ncompleted: true;\n\ncompleted | asset_pack: ensure_downloaded | asset_pack: @global.asset_pack_id, await: false;\n\nuncompleted | set_data | \n_list_id: onboarding_settings_pages,\n_index: -1+@item.row_index,\ncompleted: false;",
+      "condition": "@item.row_index == @local.last_page_index && @global.has_remote_assets"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "begin_data_items",
+      "name": "page_finished",
+      "value": "@data.onboarding_settings_pages",
+      "parameter_list": "filter: @item.row_index == @local.last_page_index && @item.completed",
+      "condition": "!@global.has_remote_assets"
+    },
+    {
+      "type": "lottie_animation",
+      "name": "lottie",
+      "value": "@global.onboarding_completed_lottie_asset",
+      "condition": "!!@global.onboarding_completed_lottie_asset",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "title",
+      "name": "finish_profile_title",
+      "value": "@global.onboarding_completed_title",
+      "parameter_list": "variant: header"
+    },
+    {
+      "type": "text",
+      "name": "finish_profile_text",
+      "value": "@global.onboarding_completed_text",
+      "parameter_list": "text_align: center"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_footer",
+      "parameter_list": "sticky: bottom;",
+      "style_list": "padding: 12px 24px;"
+    },
+    {
+      "type": "button",
+      "name": "button_completed_3",
+      "value": "@global.continue",
+      "action_list": "click | emit: completed;\nclick | set_field: onboarding_settings_completed: true;",
+      "parameter_list": "style: navigation;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "begin_data_items",
+      "name": "page_finished",
+      "value": "@data.onboarding_settings_pages",
+      "parameter_list": "filter: @item.row_index == @local.last_page_index && @item.completed",
+      "condition": "@global.has_remote_assets"
+    },
+    {
+      "type": "begin_template",
+      "name": "onboarding_remote_assets",
+      "value": "onboarding_remote_assets",
+      "action_list": "completed | emit: completed;\ncompleted | set_field: onboarding_settings_completed: true;"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

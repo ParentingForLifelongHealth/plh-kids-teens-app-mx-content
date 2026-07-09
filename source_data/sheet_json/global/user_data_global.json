@@ -1,0 +1,72 @@
+{
+  "flow_type": "global",
+  "flow_name": "user_data_global",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "user_data_title",
+      "value": "Te damos la bienvenida a @global.app_name"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "user_name_setting",
+      "value": "Mi nombre es"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "user_age_setting",
+      "value": "Mi edad es"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "user_type_setting",
+      "value": "Mi tipo de usuario es"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "user_gender_setting",
+      "value": "El género con el que me identifico es"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "user_location_setting",
+      "value": "Vivo en la provincia o comarca"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "user_district_setting",
+      "value": "El distrito en el que vivo es"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "user_relationship_setting",
+      "value": "Mi estado civil es"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "household_children_setting",
+      "value": "Estoy al cuidado de este número de niñas, niños y/o adolescentes"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "child_name_setting",
+      "value": "El nombre de la niña, niño o adolescente con quien quiero utilizar las estrategias que aprenda es"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "child_gender_setting",
+      "value": "El género de @fields.child_name es"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "child_age_setting",
+      "value": "La edad de @fields.child_name es"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "family_relation_setting",
+      "value": "Mi parentesco o vínculo con @fields.child_name es"
+    }
+  ]
+}

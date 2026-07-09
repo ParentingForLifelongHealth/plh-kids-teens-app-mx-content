@@ -1,0 +1,61 @@
+{
+  "flow_type": "global",
+  "flow_subtype": "onboarding",
+  "flow_name": "onboarding_page_6_user_location",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "facilitator_message_user_location",
+      "value": "Sigamos conociéndonos.",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "question_user_location",
+      "value": "¿En qué provincia o comarca de Panamá vives?",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "placeholder_user_location",
+      "value": "Selecciona una locación",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "question_user_district",
+      "value": "¿En qué distrito de @local.district_name vives?",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "question_user_district_undefined",
+      "value": "¿En qué distrito vives?",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "placeholder_user_district",
+      "value": "Selecciona un distrito",
+      "_translations": {
+        "value": {}
+      }
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "data/MX onboarding.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1VOolSeQCn71-GP1JbiDp2zqWg4ZZYqrtHIAjY7h4A-A"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_complete_course",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_data_items",
+      "value": "@data.courses",
+      "parameter_list": "filter:(!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.user_gender_list || @item.user_gender_list.includes(@fields.user_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship)) && (!@item.tag_list || @item.tag_list.includes(@fields.child_age_tag));",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "value": "debug_complete_modules"
+    },
+    {
+      "name": "course_id",
+      "value": "@item.id"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "button",
+      "value": "Complete course @item.title",
+      "action_list": "click | set_item | completed: true, completed_ts: @calc(now());",
+      "parameter_list": "variant: orange;",
+      "condition": "!@item.completed",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "value": "uncomplete course @item.title",
+      "action_list": "click | set_item | completed: false, completed_ts: ;",
+      "parameter_list": "variant: orange;",
+      "condition": "@item.completed"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

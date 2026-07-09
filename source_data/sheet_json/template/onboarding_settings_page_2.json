@@ -1,0 +1,63 @@
+{
+  "flow_type": "template",
+  "flow_name": "onboarding_settings_page_2",
+  "status": "released",
+  "rows": [
+    {
+      "name": "speaker_position",
+      "value": "left",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "variant",
+      "value": "gray",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "facilitator_id",
+      "value": "@fields.facilitator_id"
+    },
+    {
+      "name": "facilitator_data",
+      "value": "characters.@local.facilitator_id"
+    },
+    {
+      "name": "facilitator_row",
+      "value": "@data.@local.facilitator_data"
+    },
+    {
+      "type": "text_bubble",
+      "name": "text_bubble",
+      "value": "@global.facilitator_message_avatar_intro",
+      "parameter_list": "speaker_position: @local.speaker_position;\nvariant: @local.variant;"
+    },
+    {
+      "type": "image",
+      "name": "image",
+      "value": "@local.facilitator_row.intro_image_asset"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_footer",
+      "parameter_list": "sticky: bottom;",
+      "style_list": "padding: 12px 24px;"
+    },
+    {
+      "type": "round_button",
+      "name": "button_back",
+      "action_list": "click | emit: uncompleted",
+      "parameter_list": "icon_src: arrow-back;\nvariant: no-background;"
+    },
+    {
+      "type": "button",
+      "name": "button_completed_2",
+      "value": "@global.continue",
+      "action_list": "click | emit: completed;",
+      "parameter_list": "style: navigation;",
+      "style_list": "flex: 1"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

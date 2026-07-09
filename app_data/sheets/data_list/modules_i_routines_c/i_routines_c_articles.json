@@ -1,0 +1,265 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "i_routines_c_articles",
+  "data_list_name": "i_routines_c_articles",
+  "status": "released",
+  "flow_subtype": "modules_i_routines_c",
+  "module": "i_routines_c",
+  "rows": [
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "nested": false,
+      "text_1_facilitator": "Esta sesión trata sobre crear rutinas para pasar tiempo juntos y conectados con @fields.child_name. 🔄",
+      "_translations": {
+        "text_1_facilitator": {},
+        "text_2": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Esta sesión trata sobre crear rutinas para pasar tiempo juntos y conectados con @fields.child_name. 🔄"
+        },
+        "text_2": {
+          "eng": "Para seguir construyendo una relación positiva con @fields.child_name, debemos incorporar el tiempo juntos y conectados en nuestro día a día.  \n\nCrear rutinas diarias con @fields.child_name también le ayudará a tener más seguridad y a cooperar contigo. 🔑\n\nAyúdale a organizar sus tiempos para que pueda descansar, comer, ayudar en la casa, cumplir con la escuela y dormir. ⏰"
+        }
+      },
+      "text_2": "Para seguir construyendo una relación positiva con @fields.child_name, debemos incorporar el tiempo juntos y conectados en nuestro día a día.  \n\nCrear rutinas diarias con @fields.child_name también le ayudará a tener más seguridad y a cooperar contigo. 🔑\n\nAyúdale a organizar sus tiempos para que pueda descansar, comer, ayudar en la casa, cumplir con la escuela y dormir. ⏰"
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
+      "image_asset": "images/comic/relation/routines_yc_1.svg",
+      "character_1_id": "f2_abuela",
+      "character_2_id": "f2_hija_3",
+      "nested": false,
+      "text_1_facilitator": "@data.characters.f2_abuela.name incluye un tiempo juntos y conectados con su nieta, @data.characters.f2_hija_3.name, como parte de su rutina para irse a dormir. ¡Veamos cómo lo hacen juntas!",
+      "_translations": {
+        "text_1_facilitator": {},
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "@data.characters.f2_abuela.name incluye un tiempo juntos y conectados con su nieta, @data.characters.f2_hija_3.name, como parte de su rutina para irse a dormir. ¡Veamos cómo lo hacen juntas!"
+        },
+        "character_1_text": {
+          "eng": "Me da mucho gusto verte tranquila jugando con tus bloques, @data.characters.f2_hija_3.name. Cuando regrese, será hora de prepararnos para ir a dormir. Cuando estés lista para irte a la cama, me encantará pasar tiempo contigo."
+        },
+        "character_2_text": {
+          "eng": "¡Súper!"
+        }
+      },
+      "character_1_text": "Me da mucho gusto verte tranquila jugando con tus bloques, @data.characters.f2_hija_3.name. Cuando regrese, será hora de prepararnos para ir a dormir. Cuando estés lista para irte a la cama, me encantará pasar tiempo contigo.",
+      "character_2_text": "¡Súper!"
+    },
+    {
+      "id": "explore_2",
+      "category_id": "explore",
+      "image_asset": "images/comic/relation/routines_yc_2.svg",
+      "character_1_id": "f2_abuela",
+      "nested": false,
+      "character_1_text": "Es hora de prepararnos para dormir. ¡Al agua patos! A bañarse para que duermas a gusto.",
+      "_translations": {
+        "character_1_text": {}
+      },
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "Es hora de prepararnos para dormir. ¡Al agua patos! A bañarse para que duermas a gusto."
+        }
+      }
+    },
+    {
+      "id": "explore_3",
+      "category_id": "explore",
+      "image_asset": "images/comic/relation/routines_yc_3.svg",
+      "character_1_id": "f2_abuela",
+      "nested": false,
+      "character_1_text": "Observé que te lavaste solita el cabello, te tardaste menos tiempo y no desperdiciaste agua. ¡Así se hace, Yani!. Ahora, a ponerse la pijama.",
+      "_translations": {
+        "character_1_text": {}
+      },
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "Observé que te lavaste solita el cabello, te tardaste menos tiempo y no desperdiciaste agua. ¡Así se hace, Yani!. Ahora, a ponerse la pijama."
+        }
+      }
+    },
+    {
+      "id": "explore_4",
+      "category_id": "explore",
+      "image_asset": "images/comic/relation/routines_yc_4.svg",
+      "character_1_id": "f2_abuela",
+      "nested": false,
+      "character_1_text": "¡Bien hecho por ponerte los pantalones sin ayuda, @data.characters.f2_hija_3.name! Ahora lávate los dientes. ¡Asegúrate de cepillarte los de la parte posterior de la boca!",
+      "_translations": {
+        "character_1_text": {}
+      },
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "¡Bien hecho por ponerte los pantalones sin ayuda, @data.characters.f2_hija_3.name! Ahora lávate los dientes. ¡Asegúrate de cepillarte los de la parte posterior de la boca!"
+        }
+      }
+    },
+    {
+      "id": "explore_5",
+      "category_id": "explore",
+      "image_asset": "images/comic/relation/routines_yc_5.svg",
+      "character_1_id": "f2_abuela",
+      "character_2_id": "f2_hija_3",
+      "nested": false,
+      "character_1_text": "Te has portado muy bien mientras te preparabas para ir a la cama. Ahora me encantará poder pasar un tiempo contigo. ¿Qué te gustaría hacer?",
+      "_translations": {
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "Te has portado muy bien mientras te preparabas para ir a la cama. Ahora me encantará poder pasar un tiempo contigo. ¿Qué te gustaría hacer?"
+        },
+        "character_2_text": {
+          "eng": "¡Sí! ¿Me puedes leer mi cuento favorito?"
+        }
+      },
+      "character_2_text": "¡Sí! ¿Me puedes leer mi cuento favorito?"
+    },
+    {
+      "id": "explore_6",
+      "category_id": "explore",
+      "image_asset": "images/comic/relation/routines_yc_6.svg",
+      "character_1_id": "f2_abuela",
+      "nested": false,
+      "character_1_text": "\"Y colorín colorado, este cuento se ha acabado…\" ¿Qué te gustó más de la historia? ¡Cuéntame!",
+      "_translations": {
+        "character_1_text": {}
+      },
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "\"Y colorín colorado, este cuento se ha acabado…\" ¿Qué te gustó más de la historia? ¡Cuéntame!"
+        }
+      }
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "media_type": "youtube",
+      "youtube_gb_en_f": "https://www.youtube.com/watch?v=p2hB-9QDflA",
+      "youtube_gb_en_m": "https://www.youtube.com/watch?v=1-b6OP8qi3k",
+      "nested": false,
+      "text_1_facilitator": "Selecciona reproducir ▶️ para aprender las 3️⃣ estrategias para crear una rutina diaria de tiempo juntos y conectados con @fields.child_name\n\n1️⃣ SER UN EQUIPO\n2️⃣ SER CONSTANTES\n3️⃣ ELOGIAR, ELOGIAR, ELOGIAR",
+      "_translations": {
+        "text_1_facilitator": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Selecciona reproducir ▶️ para aprender las 3️⃣ estrategias para crear una rutina diaria de tiempo juntos y conectados con @fields.child_name\n\n1️⃣ SER UN EQUIPO\n2️⃣ SER CONSTANTES\n3️⃣ ELOGIAR, ELOGIAR, ELOGIAR"
+        }
+      }
+    },
+    {
+      "id": "practical_tips_2",
+      "category_id": "practical_tips",
+      "section_1_icon_asset": "images/icons/speech_bubble_blue.png",
+      "section_2_icon_asset": "images/icons/clock_blue.png",
+      "section_3_icon_asset": "images/icons/heart_filled_blue.png",
+      "nested": false,
+      "text_1_facilitator": "Recuerda las 3️⃣ estrategias para crear una rutina diaria de tiempo juntos y conectados con @fields.child_name",
+      "_translations": {
+        "text_1_facilitator": {},
+        "section_1_title": {},
+        "section_1_text": {},
+        "section_2_title": {},
+        "section_2_text": {},
+        "section_3_title": {},
+        "section_3_text": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Recuerda las 3️⃣ estrategias para crear una rutina diaria de tiempo juntos y conectados con @fields.child_name"
+        },
+        "section_1_title": {
+          "eng": "SEAN UN EQUIPO"
+        },
+        "section_1_text": {
+          "eng": "🎈 Conversa con @fields.child_name sobre cómo le gustaría que sean sus rutinas.\n\n✨ ¿Sabías que es más probable que @fields.child_name siga las rutinas cuando ayuda a crearlas? ¡Inténtalo! 💚"
+        },
+        "section_2_title": {
+          "eng": "SEAN CONSTANTES"
+        },
+        "section_2_text": {
+          "eng": "⏰ Asegúrate de que @fields.child_name sigue sus rutinas todos los días.\n\n🌱Es más fácil llevar a cabo cualquier actividad cuando los niños y las niñas se aprenden una rutina y se acostumbran a ella. Esto ayudará a que el/ella aprenda a realizar sus actividades cotidianas y a organizar su tiempo."
+        },
+        "section_3_title": {
+          "eng": "ELOGIA, ELOGIA, ELOGIA"
+        },
+        "section_3_text": {
+          "eng": "🏅Reconoce a @fields.child_name por haber establecido una rutina contigo.\n\n⭐ Reconoce a @fields.child_name cuando siga esa rutina."
+        }
+      },
+      "section_1_title": "SEAN UN EQUIPO",
+      "section_1_text": "🎈 Conversa con @fields.child_name sobre cómo le gustaría que sean sus rutinas.\n\n✨ ¿Sabías que es más probable que @fields.child_name siga las rutinas cuando ayuda a crearlas? ¡Inténtalo! 💚",
+      "section_2_title": "SEAN CONSTANTES",
+      "section_2_text": "⏰ Asegúrate de que @fields.child_name sigue sus rutinas todos los días.\n\n🌱Es más fácil llevar a cabo cualquier actividad cuando los niños y las niñas se aprenden una rutina y se acostumbran a ella. Esto ayudará a que el/ella aprenda a realizar sus actividades cotidianas y a organizar su tiempo.",
+      "section_3_title": "ELOGIA, ELOGIA, ELOGIA",
+      "section_3_text": "🏅Reconoce a @fields.child_name por haber establecido una rutina contigo.\n\n⭐ Reconoce a @fields.child_name cuando siga esa rutina."
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "nested": false,
+      "text_1_facilitator": "**Actividad para casa** ⭐ \n\nHaz que el tiempo juntos y conectados con @fields.child_name se convierta en algo del día a día, igual que comer juntos o salir pasear. 📝",
+      "_translations": {
+        "text_1_facilitator": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_feedback_1": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_option_3_text": {},
+        "quiz_1_feedback_3": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "**Actividad para casa** ⭐ \n\nHaz que el tiempo juntos y conectados con @fields.child_name se convierta en algo del día a día, igual que comer juntos o salir pasear. 📝"
+        },
+        "quiz_1_question": {
+          "eng": "¿Puedes hacerlo hoy?"
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Sí"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "¡Muy bien! 🎉 Esto ayudará a mostrar interés en lo que hace @fields.child_name y mejorará la relación entre ustedes."
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Lo intentaré"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "Está bien, recuerda que cada paso cuenta ✨."
+        },
+        "quiz_1_option_3_text": {
+          "eng": "No"
+        },
+        "quiz_1_feedback_3": {
+          "eng": "¡De acuerdo! Empezar algo nuevo lleva su tiempo. Tal vez puedes empezar con algo sencillo, como pasar un momento especial en alguna actividad que tú y @fields.child_name ya hagan en el día. ⚽\n\nPor ejemplo, salir a cenar o a pasear. Pídele ideas a @fields.child_name sobre las rutinas con las que podrían empezar y seleccionen una. ¡Puede que te sorprenda! ⏰🍚🚲"
+        }
+      },
+      "quiz_1_question": "¿Puedes hacerlo hoy?",
+      "quiz_1_option_1_text": "Sí",
+      "quiz_1_feedback_1": "¡Muy bien! 🎉 Esto ayudará a mostrar interés en lo que hace @fields.child_name y mejorará la relación entre ustedes.",
+      "quiz_1_option_2_text": "Lo intentaré",
+      "quiz_1_feedback_2": "Está bien, recuerda que cada paso cuenta ✨.",
+      "quiz_1_option_3_text": "No",
+      "quiz_1_feedback_3": "¡De acuerdo! Empezar algo nuevo lleva su tiempo. Tal vez puedes empezar con algo sencillo, como pasar un momento especial en alguna actividad que tú y @fields.child_name ya hagan en el día. ⚽\n\nPor ejemplo, salir a cenar o a pasear. Pídele ideas a @fields.child_name sobre las rutinas con las que podrían empezar y seleccionen una. ¡Puede que te sorprenda! ⏰🍚🚲"
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "data/Copy of PA_modules_i (1-15).xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1dumE6EODyxm0cb9mf3BuiwbEIJ5gQj9h8VRt_Mfxd3k"
+  },
+  "_metadata": {
+    "nested": {
+      "type": "boolean"
+    }
+  }
+}

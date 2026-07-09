@@ -1,0 +1,31 @@
+{
+  "flow_type": "template",
+  "flow_name": "module_landing_ipv_sharing_m",
+  "status": "released",
+  "parameter_list": {
+    "app_config": {
+      "LAYOUT": {
+        "page_padding": "0 0"
+      }
+    }
+  },
+  "comment": "ipv_sharing_m",
+  "comment_2": 28,
+  "comment_3": 13,
+  "rows": [
+    {
+      "module_landing_ipv_sharing_m": "begin_template",
+      "name": "module_landing",
+      "value": "module_landing",
+      "action_list": "completed | emit: completed; \nuncompleted | emit: uncompleted"
+    },
+    {
+      "name": "module_id",
+      "value": "ipv_sharing_m",
+      "exclude_from_translation": true
+    },
+    {
+      "module_landing_ipv_sharing_m": "end_template"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "learn_people_t_articles",
+  "data_list_name": "learn_people_t_articles",
+  "status": "released",
+  "flow_subtype": "modules_learn_people_t",
+  "module": "learn_people_t",
+  "rows": [
+    {
+      "id": "@default",
+      "nested": false
+    },
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Esta sesión trata sobre cómo ayudar a tu adolescente a aprender a trabajar con otras personas. 🔄",
+      "text_2::eng": "Para poder obtener resultados positivos en casa, en la escuela y en el trabajo, tu adolescente tendrá que aprender a trabajar con otras personas. 🔑"
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "Aquí tienes una historieta sobre cómo ayudar a tu adolescente a aprender a trabajar con otras personas:",
+      "image_asset": "images/comic/learn/learning_with_people_teen_1.svg",
+      "character_1_id": "f2_abuelo",
+      "character_1_text::eng": "A mi nieta, @data.characters.f2_hija_17.name, le ha estado costando un poco de trabajo la clase de Historia. ¿Tiene alguna recomendación?"
+    },
+    {
+      "id": "explore_2",
+      "category_id": "explore",
+      "image_asset": "images/comic/learn/learning_with_people_teen_2.svg",
+      "character_1_id": "profesora_1",
+      "character_1_text::eng": "Claro que sí, ¿qué tal si organiza un grupo de estudio para su nieta y sus amigas y amigos en donde puedan leer, revisar y discutir los temas de las clases?",
+      "character_2_id": "f2_abuelo",
+      "character_2_text::eng": "¡Eso suena muy bien! Excelente idea."
+    },
+    {
+      "id": "explore_3",
+      "category_id": "explore",
+      "image_asset": "images/comic/learn/learning_with_people_teen_3.svg",
+      "character_1_id": "f2_hija_17",
+      "character_1_text::eng": "¿Alguien entendió el capítulo 3? Necesito ayuda para encontrarle sentido."
+    },
+    {
+      "id": "explore_4",
+      "category_id": "explore",
+      "image_asset": "images/comic/learn/learning_with_people_teen_4.svg",
+      "character_1_id": "f2_hija_17",
+      "character_1_text::eng": "Muchas gracias por sugerirme el grupo de estudio, abuelo. Los trabajos que nos piden y nuestras tareas son más divertidas y fáciles de entender cuando las hago con mis amigas y amigos.",
+      "character_2_id": "f2_abuelo",
+      "character_2_text::eng": "Me da gusto que te esté funcionando. Hasta yo, que soy una persona adulta, ¡sigo aprendiendo mucho de otras personas! Justo la semana pasada, tu abuela me enseñó a hacer este delicioso arroz con pollo que estoy preparando para la comida."
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Selecciona reproducir ▶️ para aprender sobre cómo ayudar a tu adolescente a trabajar con otras personas.\n\n1️⃣ SOCIALIZAR\n2️⃣ TRABAJAR EN EQUIPO",
+      "media_type": "youtube",
+      "youtube_gb_en_f": "https://www.youtube.com/watch?v=-QFENdiYMps",
+      "youtube_gb_en_m": "https://www.youtube.com/watch?v=ZX_tbNIKI2U"
+    },
+    {
+      "id": "practical_tips_2",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Recuerda:",
+      "section_1_title::eng": "SOCIALIZAR",
+      "section_1_icon_asset": "images/icons/star_filled_blue.png",
+      "section_1_text::eng": "😃 Permite que tu adolescente vaya a estudiar con amigas y amigos, siempre cuidando de su seguridad. Puedes llamarles \"compañeras y compañeros de estudio\".",
+      "section_2_title::eng": "TRABAJAR EN EQUIPO",
+      "section_2_icon_asset": "images/icons/speech_bubble_blue.png",
+      "section_2_text::eng": "💡 Para la segunda estrategia, puedes ayudar a tu adolescente para trabajar en equipo animándole a escuchar a las demás personas y a respetar sus ideas."
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "text_1_facilitator::eng": "**Actividad para casa** ⭐  \n\nConversa con tu adolescente e identifiquen quién podría ser su compañera o compañero de estudio para la próxima semana.",
+      "quiz_1_question::eng": "¿Tienes tiempo para hacerlo hoy? ⏰",
+      "quiz_1_option_1_text::eng": "Sí",
+      "quiz_1_feedback_1::eng": "¡Genial! Usa las estrategias que has aprendido hoy, ¡y diviértete! Experimentar alegría y felicidad durante el aprendizaje con tu adolescente es una forma estupenda de motivarle para seguir aprendiendo. 💙",
+      "quiz_1_option_2_text::eng": "Lo intentaré",
+      "quiz_1_feedback_2::eng": "¡Muy bien! 🌟 A veces los pequeños cambios pueden hacer una gran diferencia. Intenta esta actividad cuando te sea posible y ve qué aprendes de la experiencia. 😊",
+      "quiz_1_option_3_text::eng": "No",
+      "quiz_1_feedback_3::eng": "¡De acuerdo! Si hoy no tienes tiempo, puedes apartar un poco para mañana."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "flow_type": "global",
+  "flow_subtype": "onboarding",
+  "flow_name": "onboarding_page_13_child_relat",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "testing_test",
+      "value": "This needs to be deleted",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "facilitator_message_child_relation",
+      "value": "¡Casi listo!",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "question_family_relation",
+      "value": "¿Cuál es tu relación con @fields.child_name?",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "placeholder_family_relation",
+      "value": "Selecciona una opción",
+      "_translations": {
+        "value": {}
+      }
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "data/MX onboarding.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1VOolSeQCn71-GP1JbiDp2zqWg4ZZYqrtHIAjY7h4A-A"
+  }
+}

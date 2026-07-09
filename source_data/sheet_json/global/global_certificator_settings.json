@@ -1,0 +1,17 @@
+{
+  "flow_type": "global",
+  "flow_name": "global_certificator_settings",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "certificator_url",
+      "value": "https://certificator-malaysia-1-349333393514.europe-west1.run.app/certificates"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "max_n_cert_reprints",
+      "value": 3
+    }
+  ]
+}

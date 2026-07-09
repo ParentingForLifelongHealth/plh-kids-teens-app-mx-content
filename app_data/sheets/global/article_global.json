@@ -1,0 +1,20 @@
+{
+  "flow_type": "global",
+  "flow_name": "article_global",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "check_in_title",
+      "value": "Chequeo emocional",
+      "_translations": {
+        "value": {}
+      }
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "data/MX deployment_data.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/13MITRQ3ltpZObRU8Nr3_D-gc-bVX2SvKt1NO-IngD-I"
+  }
+}

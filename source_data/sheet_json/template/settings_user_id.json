@@ -1,0 +1,40 @@
+{
+  "flow_type": "template",
+  "flow_name": "settings_user_id",
+  "status": "released",
+  "parameter_list": {
+    "app_config": {
+      "APP_FOOTER_DEFAULTS": {
+        "templateName": false
+      }
+    }
+  },
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "settings_header",
+      "value": "settings_header",
+      "action_list": "uncompleted | emit: uncompleted; "
+    },
+    {
+      "name": "title",
+      "value": "@global.user_id_text"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "begin_template",
+      "name": "user_id",
+      "value": "user_id",
+      "action_list": "uncompleted | emit: uncompleted; completed | emit: completed"
+    },
+    {
+      "name": "show_title",
+      "value": false
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

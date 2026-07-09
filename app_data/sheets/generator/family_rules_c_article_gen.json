@@ -1,0 +1,90 @@
+{
+  "flow_type": "generator",
+  "flow_name": "family_rules_c_article_gen",
+  "status": "released",
+  "parameter_list": {
+    "input_data_list": "family_rules_c_articles",
+    "output_flow_name": "article_family_rules_c_@gen.id",
+    "output_flow_type": "template",
+    "output_flow_subtype": "generated"
+  },
+  "module_id": "family_rules_c",
+  "rows": [
+    {
+      "type": "template",
+      "name": "article",
+      "value": "article",
+      "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "emit",
+          "args": [
+            "completed"
+          ],
+          "_raw": "completed | emit: completed"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "emit",
+          "args": [
+            "uncompleted"
+          ],
+          "_raw": "uncompleted | emit: uncompleted"
+        }
+      ],
+      "rows": [
+        {
+          "name": "article_id",
+          "value": "@gen.id"
+        },
+        {
+          "name": "module_id",
+          "value": "family_rules_c",
+          "exclude_from_translation": true
+        }
+      ]
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "templates/MX article template generators (16-30).xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1nbmz-z_fAFkm-HU-qiV0SPHOzlkNn8yJeuID7QowIn0"
+  },
+  "_output_flows": [
+    {
+      "flow_name": "article_family_rules_c_intro_1",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    },
+    {
+      "flow_name": "article_family_rules_c_explore_1",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    },
+    {
+      "flow_name": "article_family_rules_c_explore_2",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    },
+    {
+      "flow_name": "article_family_rules_c_explore_3",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    },
+    {
+      "flow_name": "article_family_rules_c_explore_4",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    },
+    {
+      "flow_name": "article_family_rules_c_practical_tips_1",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    },
+    {
+      "flow_name": "article_family_rules_c_home_activity_1",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    }
+  ]
+}

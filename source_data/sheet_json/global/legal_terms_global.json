@@ -1,0 +1,18 @@
+{
+  "flow_type": "global",
+  "flow_name": "legal_terms_global",
+  "status": "released",
+  "data_list_name": "legal_terms_global",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "terms_and_conditions",
+      "value": "Términos y condiciones"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "privacy_policy",
+      "value": "Política de privacidad"
+    }
+  ]
+}

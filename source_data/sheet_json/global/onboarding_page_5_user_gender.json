@@ -1,0 +1,23 @@
+{
+  "flow_type": "global",
+  "flow_subtype": "onboarding",
+  "flow_name": "onboarding_page_5_user_gender",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "facilitator_message_user_gender",
+      "value": "**Gracias @fields.user_name.**\n\nQueremos que tu experiencia sea única para ti."
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "question_user_gender",
+      "value": "¿Cuál es tu sexo?"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "placeholder_user_gender",
+      "value": "Selecciona una opción"
+    }
+  ]
+}

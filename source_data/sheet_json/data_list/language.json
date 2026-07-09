@@ -1,0 +1,18 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "language",
+  "status": "released",
+  "data_list_name": "language",
+  "flow_subtype": "app_config_language_list",
+  "rows": [
+    {
+      "id": "gb_en",
+      "country_code": "gb",
+      "country_label": "Mexico",
+      "language_code": "en",
+      "language_label": "English",
+      "name": "@row.id",
+      "text": "@row.language_label"
+    }
+  ]
+}

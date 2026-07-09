@@ -1,0 +1,28 @@
+{
+  "flow_type": "global",
+  "flow_subtype": "onboarding",
+  "flow_name": "onboarding_page_1_avatars",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "facilitator_selection_intro",
+      "value": "¡Te damos la bienvenida a @global.app_name! Nos da mucha alegría que estés aquí. Es momento de elegir a la persona que te acompañará en este camino."
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "facilitator_female_intro",
+      "value": "¡Hola, soy Ángela! tengo 37 años y soy mamá de tres. Soy psicóloga y una mujer cálida y abierta. Desde mi propia experiencia, acompaño a otras familias con empatía, compartiendo ideas y herramientas sencillas para criar con amor, respeto y mucha escucha."
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "facilitator_male_intro",
+      "value": "¡Hola, soy Ángel! tengo 38 años y soy papá de dos. Soy psicólogo y he aprendido a criar con firmeza y afecto, junto con mi esposa y mi familia. Acompaño a otras familias con cercanía, compartiendo lo que la vida y la práctica me han enseñado."
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "facilitator_selection_question",
+      "value": "¿Quién te gustaría que fuera tu guía?"
+    }
+  ]
+}

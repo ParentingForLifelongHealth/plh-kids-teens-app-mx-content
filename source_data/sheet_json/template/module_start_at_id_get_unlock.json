@@ -1,0 +1,109 @@
+{
+  "flow_type": "template",
+  "flow_name": "module_start_at_id_get_unlock",
+  "status": "released",
+  "rows": [
+    {
+      "name": "activity_id",
+      "value": 0
+    },
+    {
+      "name": "module_id",
+      "value": 0
+    },
+    {
+      "name": "course_id",
+      "value": 0
+    },
+    {
+      "name": "unlock_all",
+      "value": false
+    },
+    {
+      "name": "unlocked_activity_count",
+      "value": 0
+    },
+    {
+      "type": "begin_template",
+      "name": "module_start_at_id",
+      "value": "module_start_at_id",
+      "action_list": "completed | set_data | _list_id: activity_tasks, _id: @local.activity_id, locked: false;\ncompleted | emit: completed; \nuncompleted | emit: uncompleted;",
+      "condition": "!@local.unlock_all",
+      "exclude_from_translation": true,
+      "comments": "!(@local.unlocked_activity_count == 1)"
+    },
+    {
+      "name": "module_id",
+      "value": "@local.module_id"
+    },
+    {
+      "name": "article_id",
+      "value": "@fields.current_start_article_id"
+    },
+    {
+      "name": "course_id",
+      "value": "@local.course_id"
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "module"
+    },
+    {
+      "name": "show_progress_bar",
+      "value": false
+    },
+    {
+      "name": "course_id",
+      "value": "@local.course_id"
+    },
+    {
+      "type": "end_nested_properties"
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "module_start_at_id_unlock_all",
+      "value": "module_start_at_id",
+      "action_list": "completed | set_data | _list_id: activity_tasks, locked: false;\ncompleted | set_field | completed_all : true;\ncompleted | emit: completed; \nuncompleted | emit: uncompleted;",
+      "condition": "@local.unlock_all",
+      "exclude_from_translation": true,
+      "comments": "@local.unlocked_activity_count == 1"
+    },
+    {
+      "name": "module_id",
+      "value": "@local.module_id"
+    },
+    {
+      "name": "article_id",
+      "value": "@fields.current_start_article_id"
+    },
+    {
+      "name": "course_id",
+      "value": "@local.course_id"
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "module"
+    },
+    {
+      "name": "show_progress_bar",
+      "value": false
+    },
+    {
+      "name": "course_id",
+      "value": "@local.course_id"
+    },
+    {
+      "type": "end_nested_properties"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": " "
+    }
+  ]
+}

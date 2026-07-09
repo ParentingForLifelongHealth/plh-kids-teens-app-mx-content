@@ -1,0 +1,37 @@
+{
+  "flow_type": "template",
+  "flow_name": "settings_header",
+  "status": "released",
+  "rows": [
+    {
+      "name": "confirm_exit",
+      "value": false
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_header"
+    },
+    {
+      "type": "round_button",
+      "name": "back",
+      "action_list": "click | emit: uncompleted;",
+      "condition": "!@local.confirm_exit",
+      "parameter_list": "icon_src: chevron-back;\nvariant: navigation"
+    },
+    {
+      "type": "round_button",
+      "name": "back_confirm",
+      "action_list": "click | pop_up: confirm_exit;",
+      "condition": "@local.confirm_exit",
+      "parameter_list": "icon_src: chevron-back;\nvariant: navigation"
+    },
+    {
+      "type": "title",
+      "name": "title",
+      "value": "@global.profile"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

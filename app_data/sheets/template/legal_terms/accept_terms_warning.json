@@ -1,0 +1,22 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "legal_terms",
+  "flow_name": "accept_terms_warning",
+  "status": "released",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text",
+      "value": "You can only move on and access the app if you provide your consent.",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text"
+    }
+  ],
+  "_source": {
+    "name": "library_app_menu",
+    "path": "app_legal_terms.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1_WiNl2D_Ne4tJq_HNNr1ONP0fdrQcM3uiGk_EW34RzI"
+  }
+}

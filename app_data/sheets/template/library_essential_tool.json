@@ -1,0 +1,218 @@
+{
+  "flow_type": "template",
+  "flow_name": "library_essential_tool",
+  "status": "released",
+  "rows": [
+    {
+      "name": "module_id",
+      "value": "money_t",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "module_id"
+    },
+    {
+      "name": "join",
+      "value": "_",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "join"
+    },
+    {
+      "name": "this_module_subitem_list",
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "this_module_subitem_list"
+    },
+    {
+      "name": "all_modules_tips_list",
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "all_modules_tips_list"
+    },
+    {
+      "type": "text",
+      "name": "debug_1",
+      "value": "@local.this_module_subitem_list",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "condition": false,
+      "_nested_name": "debug_1",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.this_module_subitem_list",
+            "matchedExpression": "@local.this_module_subitem_list",
+            "type": "local",
+            "fieldName": "this_module_subitem_list"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.this_module_subitem_list": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "debug_2",
+      "value": "@local.all_modules_tips_list",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "condition": false,
+      "_nested_name": "debug_2",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.all_modules_tips_list",
+            "matchedExpression": "@local.all_modules_tips_list",
+            "type": "local",
+            "fieldName": "all_modules_tips_list"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.all_modules_tips_list": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "this_module_tips",
+      "value": "tips_1",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "this_module_tips"
+    },
+    {
+      "type": "text",
+      "name": "debug_3",
+      "value": "@local.this_module_tips",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "condition": false,
+      "_nested_name": "debug_3",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.this_module_tips",
+            "matchedExpression": "@local.this_module_tips",
+            "type": "local",
+            "fieldName": "this_module_tips"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.this_module_tips": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "template",
+      "name": "article",
+      "value": "article_@local.module_id@local.join@local.this_module_tips",
+      "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "emit",
+          "args": [
+            "completed"
+          ],
+          "_raw": "completed | emit: completed"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "emit",
+          "args": [
+            "uncompleted"
+          ],
+          "_raw": "uncompleted | emit: uncompleted"
+        }
+      ],
+      "exclude_from_translation": true,
+      "condition": "!!@local.this_module_tips",
+      "rows": [
+        {
+          "type": "nested_properties",
+          "name": "article",
+          "value": "article",
+          "rows": [
+            {
+              "name": "is_tips",
+              "value": true,
+              "type": "set_variable",
+              "_nested_name": "article.article.is_tips"
+            }
+          ],
+          "_nested_name": "article.article"
+        }
+      ],
+      "_nested_name": "article",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "article_@local.module_id@local.join@local.this_module_tips",
+            "matchedExpression": "@local.module_id",
+            "type": "local",
+            "fieldName": "module_id"
+          },
+          {
+            "fullExpression": "article_@local.module_id@local.join@local.this_module_tips",
+            "matchedExpression": "@local.join",
+            "type": "local",
+            "fieldName": "join"
+          },
+          {
+            "fullExpression": "article_@local.module_id@local.join@local.this_module_tips",
+            "matchedExpression": "@local.this_module_tips",
+            "type": "local",
+            "fieldName": "this_module_tips"
+          }
+        ],
+        "condition": [
+          {
+            "fullExpression": "!!@local.this_module_tips",
+            "matchedExpression": "!@local.this_module_tips",
+            "type": "local",
+            "fieldName": "this_module_tips"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.module_id": [
+          "value"
+        ],
+        "@local.join": [
+          "value"
+        ],
+        "@local.this_module_tips": [
+          "value"
+        ],
+        "!@local.this_module_tips": [
+          "condition"
+        ]
+      }
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_global V2",
+    "path": "templates/PLH articles template generators.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1ynKeAsmx46aHGzTbT1BaqRXDPi6cxbUOsovcu5c0rdU"
+  }
+}

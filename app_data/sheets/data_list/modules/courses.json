@@ -1,0 +1,274 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "courses",
+  "data_list_name": "courses",
+  "status": "released",
+  "flow_subtype": "modules",
+  "rows": [
+    {
+      "id": "relation_c",
+      "core": false,
+      "tag_list": [
+        "child"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "image_asset": "images/homescreen/relation_c.svg",
+      "completed": false,
+      "title": "Mejorar la relación con mi niña o niño",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Mejorar la relación con mi niña o niño"
+        }
+      }
+    },
+    {
+      "id": "relation_t",
+      "core": false,
+      "tag_list": [
+        "teen"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "image_asset": "images/homescreen/relation_t.svg",
+      "completed": false,
+      "title": "Mejorar la relación con mi adolescente",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Mejorar la relación con mi adolescente"
+        }
+      }
+    },
+    {
+      "id": "ipv",
+      "core": false,
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "user_gender_list": [
+        "man"
+      ],
+      "image_asset": "images/homescreen/ipv.svg",
+      "completed": false,
+      "title": "Responsabilidad e involucramiento en la crianza compartida",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Responsabilidad e involucramiento en la crianza compartida"
+        }
+      }
+    },
+    {
+      "id": "safety_c",
+      "core": false,
+      "tag_list": [
+        "child"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "image_asset": "images/homescreen/safety_c.svg",
+      "completed": false,
+      "title": "Seguridad de mi niña o niño",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Seguridad de mi niña o niño"
+        }
+      }
+    },
+    {
+      "id": "safety_t",
+      "core": false,
+      "tag_list": [
+        "teen"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "image_asset": "images/homescreen/safety_t.svg",
+      "completed": false,
+      "title": "Seguridad de mi adolescente",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Seguridad de mi adolescente"
+        }
+      }
+    },
+    {
+      "id": "behave_c",
+      "core": false,
+      "tag_list": [
+        "child"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "image_asset": "images/homescreen/behave_c.svg",
+      "completed": false,
+      "title": "Guiar el buen comportamiento de mi niña o niño",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Guiar el buen comportamiento de mi niña o niño"
+        }
+      }
+    },
+    {
+      "id": "behave_t",
+      "core": false,
+      "tag_list": [
+        "teen"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "image_asset": "images/homescreen/behave_t.svg",
+      "completed": false,
+      "title": "Guiar el buen comportamiento de mi adolescente",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Guiar el buen comportamiento de mi adolescente"
+        }
+      }
+    },
+    {
+      "id": "learn_c",
+      "core": false,
+      "tag_list": [
+        "child"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "image_asset": "images/homescreen/learn_c.svg",
+      "completed": false,
+      "title": "Apoyar a mi niña o niño en su aprendizaje",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Apoyar a mi niña o niño en su aprendizaje"
+        }
+      }
+    },
+    {
+      "id": "learn_t",
+      "core": false,
+      "tag_list": [
+        "teen"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "image_asset": "images/homescreen/learn_t.svg",
+      "completed": false,
+      "title": "Apoyar a mi adolescente en su aprendizaje",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Apoyar a mi adolescente en su aprendizaje"
+        }
+      }
+    },
+    {
+      "id": "understand_c",
+      "core": false,
+      "tag_list": [
+        "child"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "image_asset": "images/homescreen/understand_c.svg",
+      "completed": false,
+      "title": "Entender el desarrollo de mi niña o niño",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Entender el desarrollo de mi niña o niño"
+        }
+      }
+    },
+    {
+      "id": "understand_t",
+      "core": false,
+      "tag_list": [
+        "teen"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "image_asset": "images/homescreen/understand_t.svg",
+      "completed": false,
+      "title": "Cuidar del bienestar de mi adolescente y del mío",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Cuidar del bienestar de mi adolescente y del mío"
+        }
+      }
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "data/Copy of PA_modules_i (1-15).xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1dumE6EODyxm0cb9mf3BuiwbEIJ5gQj9h8VRt_Mfxd3k"
+  },
+  "_metadata": {
+    "core": {
+      "type": "boolean"
+    },
+    "completed": {
+      "type": "boolean"
+    }
+  }
+}

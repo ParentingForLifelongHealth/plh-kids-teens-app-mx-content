@@ -1,0 +1,236 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "keep_positive_t_articles",
+  "data_list_name": "keep_positive_t_articles",
+  "status": "released",
+  "flow_subtype": "modules_keep_positive_t",
+  "module": "keep_positive_t",
+  "rows": [
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "nested": false,
+      "text_1_facilitator": "La sesión de hoy trata sobre cómo ayudar a tu adolescente a seguir instrucciones. 😃",
+      "_translations": {
+        "text_1_facilitator": {},
+        "text_2": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "La sesión de hoy trata sobre cómo ayudar a tu adolescente a seguir instrucciones. 😃"
+        },
+        "text_2": {
+          "eng": "Generalmente, las y los adolescentes siguen las instrucciones la mitad de las veces. \n\n⏰ Es natural que, a veces, las y los dolescentes exploren los límites: forma parte de su crecimiento.  \n\nDar instrucciones efectivas y claras puede hacer que el ambiente sean más tranquilo y pacífico en casa. 🌱"
+        }
+      },
+      "text_2": "Generalmente, las y los adolescentes siguen las instrucciones la mitad de las veces. \n\n⏰ Es natural que, a veces, las y los dolescentes exploren los límites: forma parte de su crecimiento.  \n\nDar instrucciones efectivas y claras puede hacer que el ambiente sean más tranquilo y pacífico en casa. 🌱"
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/keeping_it_positive_teen_1.svg",
+      "nested": false,
+      "text_1_facilitator": "@data.characters.f3_madre.name está limpiando la casa mientras @data.characters.f3_hija_12.name baila con sus amigas.",
+      "_translations": {
+        "text_1_facilitator": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "@data.characters.f3_madre.name está limpiando la casa mientras @data.characters.f3_hija_12.name baila con sus amigas."
+        }
+      }
+    },
+    {
+      "id": "explore_2",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/keeping_it_positive_teen_2.svg",
+      "character_1_id": "f3_madre",
+      "character_2_id": "f3_hija_12",
+      "nested": false,
+      "character_1_text": "@data.characters.f3_hija_12.name, me da gusto verte ensayando el baile con tus amigas. Sigan haciéndolo pero afuera, por favor, para que pueda terminar de limpiar la casa. Ya que termine, me pueden enseñar su baile.",
+      "_translations": {
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "@data.characters.f3_hija_12.name, me da gusto verte ensayando el baile con tus amigas. Sigan haciéndolo pero afuera, por favor, para que pueda terminar de limpiar la casa. Ya que termine, me pueden enseñar su baile."
+        },
+        "character_2_text": {
+          "eng": "¡Está bien, ma!"
+        }
+      },
+      "character_2_text": "¡Está bien, ma!"
+    },
+    {
+      "id": "explore_3",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/keeping_it_positive_teen_3.svg",
+      "nested": false,
+      "text_2": "@data.characters.f3_hija_12.name y sus amigas se salen a ensayar su baile mientras @data.characters.f3_madre.name limpia adentro. Después de un rato, @data.characters.f3_madre.name también se sale.",
+      "_translations": {
+        "text_2": {}
+      },
+      "_translatedFields": {
+        "text_2": {
+          "eng": "@data.characters.f3_hija_12.name y sus amigas se salen a ensayar su baile mientras @data.characters.f3_madre.name limpia adentro. Después de un rato, @data.characters.f3_madre.name también se sale."
+        }
+      }
+    },
+    {
+      "id": "explore_4",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/keeping_it_positive_teen_4.svg",
+      "character_1_id": "f3_madre",
+      "nested": false,
+      "character_1_text": "Gracias por ensayar afuera mientras yo terminaba de limpiar la casa, @data.characters.f3_hija_12.name. Ahora, me gustaría ver su baile.",
+      "_translations": {
+        "character_1_text": {}
+      },
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "Gracias por ensayar afuera mientras yo terminaba de limpiar la casa, @data.characters.f3_hija_12.name. Ahora, me gustaría ver su baile."
+        }
+      }
+    },
+    {
+      "id": "explore_5",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/keeping_it_positive_teen_5.svg",
+      "character_1_id": "f3_madre",
+      "nested": false,
+      "character_1_text": "¡Guau, @data.characters.f3_hija_12.name! ¡Qué bien bailas!",
+      "_translations": {
+        "character_1_text": {}
+      },
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "¡Guau, @data.characters.f3_hija_12.name! ¡Qué bien bailas!"
+        }
+      }
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "media_type": "youtube",
+      "youtube_gb_en_f": "https://www.youtube.com/watch?v=PPO7uSpeug8",
+      "youtube_gb_en_m": "https://www.youtube.com/watch?v=0gqQxdBNDpg",
+      "nested": false,
+      "text_1_facilitator": "Selecciona reproducir ▶️ para aprender tres estrategias sobre cómo ayudar a @fields.child_name a seguir instrucciones con mayor frecuencia:\n\n1️⃣ ESPECIFICAR LO QUE QUIERES\n2️⃣ SER REALISTA\n3️⃣ USAR PALABRAS AFIRMATIVAS",
+      "_translations": {
+        "text_1_facilitator": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Selecciona reproducir ▶️ para aprender tres estrategias sobre cómo ayudar a @fields.child_name a seguir instrucciones con mayor frecuencia:\n\n1️⃣ ESPECIFICAR LO QUE QUIERES\n2️⃣ SER REALISTA\n3️⃣ USAR PALABRAS AFIRMATIVAS"
+        }
+      }
+    },
+    {
+      "id": "practical_tips_2",
+      "category_id": "practical_tips",
+      "section_1_icon_asset": "images/icons/lightbulb_blue.png",
+      "section_2_icon_asset": "images/icons/tick.svg",
+      "section_3_icon_asset": "images/icons/star_filled_blue.png",
+      "nested": false,
+      "text_1_facilitator": "Recuerda:",
+      "_translations": {
+        "text_1_facilitator": {},
+        "section_1_title": {},
+        "section_1_text": {},
+        "section_2_title": {},
+        "section_2_text": {},
+        "section_3_title": {},
+        "section_3_text": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Recuerda:"
+        },
+        "section_1_title": {
+          "eng": "ESPECIFICAR LO QUE QUIERES"
+        },
+        "section_1_text": {
+          "eng": "⭐Di el comportamiento que quieres que haga tu adolescente. Por ejemplo: \"Luis, por favor, pon la mochila en la silla cuando entres a la casa.\" \n\n👀 Usa el nombre de tu adolescente para obtener su atención. Siéntate a su lado y haz contacto visual."
+        },
+        "section_2_title": {
+          "eng": "SÉ REALISTA"
+        },
+        "section_2_text": {
+          "eng": "⭐ Asegúrate que la instrucción es algo que tu adolescente puede hacer.\n \n💡 Da una instrucción a la vez. ¡Puede que a tu adolescente le resulte difícil recordar tantas instrucciones juntas!\n\n⏰ Si es posible, da un aviso de tiempo para preparar a tu adolescente para que finalice la actividad: \"En 3 minutos será la hora de acostarse y será momento de apagar el teléfono\". \n\n🌷Mantén la calma y recuerda que esperar la perfección añade estrés adicional para todas y todos. En lugar de eso, trata cada momento como una oportunidad para aprender y enseñar."
+        },
+        "section_3_title": {
+          "eng": "USA PALABRAS AFIRMATIVAS"
+        },
+        "section_3_text": {
+          "eng": "⭐Usa palabras positivas al dar instrucciones. Por ejemplo, en vez de \"No grites\", di \"Habla en voz baja\".\n\n💡Da las instrucciones con una voz firme y mantén la calma. Compórtate como si esperaras que tu adolescente hiciera lo que le pides.\n\n🏅¡Elogia, elogia, elogia! Asegúrate de elogiar a tu adolescente inmediatamente después de que siga tus instrucciones.\n\n🌷También sé amable contigo si a veces se te olvida hacerlo. Aprender a dar instrucciones efectivas no es fácil, ¡pero funciona! 💙"
+        }
+      },
+      "section_1_title": "ESPECIFICAR LO QUE QUIERES",
+      "section_1_text": "⭐Di el comportamiento que quieres que haga tu adolescente. Por ejemplo: \"Luis, por favor, pon la mochila en la silla cuando entres a la casa.\" \n\n👀 Usa el nombre de tu adolescente para obtener su atención. Siéntate a su lado y haz contacto visual.",
+      "section_2_title": "SÉ REALISTA",
+      "section_2_text": "⭐ Asegúrate que la instrucción es algo que tu adolescente puede hacer.\n \n💡 Da una instrucción a la vez. ¡Puede que a tu adolescente le resulte difícil recordar tantas instrucciones juntas!\n\n⏰ Si es posible, da un aviso de tiempo para preparar a tu adolescente para que finalice la actividad: \"En 3 minutos será la hora de acostarse y será momento de apagar el teléfono\". \n\n🌷Mantén la calma y recuerda que esperar la perfección añade estrés adicional para todas y todos. En lugar de eso, trata cada momento como una oportunidad para aprender y enseñar.",
+      "section_3_title": "USA PALABRAS AFIRMATIVAS",
+      "section_3_text": "⭐Usa palabras positivas al dar instrucciones. Por ejemplo, en vez de \"No grites\", di \"Habla en voz baja\".\n\n💡Da las instrucciones con una voz firme y mantén la calma. Compórtate como si esperaras que tu adolescente hiciera lo que le pides.\n\n🏅¡Elogia, elogia, elogia! Asegúrate de elogiar a tu adolescente inmediatamente después de que siga tus instrucciones.\n\n🌷También sé amable contigo si a veces se te olvida hacerlo. Aprender a dar instrucciones efectivas no es fácil, ¡pero funciona! 💙"
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "nested": false,
+      "text_1_facilitator": "**Actividad para casa** ⭐ \n\nIntenta darle instrucciones concretas, realistas y positivas a tu adolescente.",
+      "_translations": {
+        "text_1_facilitator": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_feedback_1": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_option_3_text": {},
+        "quiz_1_feedback_3": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "**Actividad para casa** ⭐ \n\nIntenta darle instrucciones concretas, realistas y positivas a tu adolescente."
+        },
+        "quiz_1_question": {
+          "eng": "¿Tienes tiempo para hacerlo hoy? ⏰"
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Sí"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "🎉 ¡Qué bien! Acuérdate de elogiar a tu adolescente siempre que siga tus instrucciones. ¡Tú puedes!"
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Lo intentaré"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "¡Muy bien! 🌟 A veces los pequeños cambios pueden hacer una gran diferencia. Intenta esta actividad cuando te sea posible y ve qué aprendes de la experiencia. 😊"
+        },
+        "quiz_1_option_3_text": {
+          "eng": "No"
+        },
+        "quiz_1_feedback_3": {
+          "eng": "💚¡Entendemos! Aprender algo nuevo requiere tiempo, paciencia y práctica. Puedes empezar pensando en una instrucción que le des muy seguido a tu adolescente. ¡Practícalo con la persona con la que compartes crianza! 🔄"
+        }
+      },
+      "quiz_1_question": "¿Tienes tiempo para hacerlo hoy? ⏰",
+      "quiz_1_option_1_text": "Sí",
+      "quiz_1_feedback_1": "🎉 ¡Qué bien! Acuérdate de elogiar a tu adolescente siempre que siga tus instrucciones. ¡Tú puedes!",
+      "quiz_1_option_2_text": "Lo intentaré",
+      "quiz_1_feedback_2": "¡Muy bien! 🌟 A veces los pequeños cambios pueden hacer una gran diferencia. Intenta esta actividad cuando te sea posible y ve qué aprendes de la experiencia. 😊",
+      "quiz_1_option_3_text": "No",
+      "quiz_1_feedback_3": "💚¡Entendemos! Aprender algo nuevo requiere tiempo, paciencia y práctica. Puedes empezar pensando en una instrucción que le des muy seguido a tu adolescente. ¡Practícalo con la persona con la que compartes crianza! 🔄"
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "data/Copy of PA modules - behave (31 - 43).xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1g_eTl9hdmpGSyPtqEwGPW0m9pbQer5jPnSMuZgTfiEY"
+  },
+  "_metadata": {
+    "nested": {
+      "type": "boolean"
+    }
+  }
+}

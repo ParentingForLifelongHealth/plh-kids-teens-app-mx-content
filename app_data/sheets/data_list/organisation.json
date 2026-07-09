@@ -1,0 +1,37 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "organisation",
+  "status": "released",
+  "data_list_name": "organisation",
+  "rows": [
+    {
+      "id": "organisation_1",
+      "name": "Ministerio de Desarrollo Social",
+      "image_asset": "images/logos/MIDES_vertical.png",
+      "group": "partners"
+    },
+    {
+      "id": "organisation_2",
+      "name": "UNICEF",
+      "image_asset": "images/logos/UNICEF.png",
+      "group": "partners"
+    },
+    {
+      "id": "organisation_3",
+      "name": "PLH",
+      "image_asset": "images/logos/PLH.png",
+      "group": "partners"
+    },
+    {
+      "id": "organisation_4",
+      "name": "IDEMS",
+      "image_asset": "images/logos/IDEMS.png",
+      "group": "partners"
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "data/MX deployment_data.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/13MITRQ3ltpZObRU8Nr3_D-gc-bVX2SvKt1NO-IngD-I"
+  }
+}

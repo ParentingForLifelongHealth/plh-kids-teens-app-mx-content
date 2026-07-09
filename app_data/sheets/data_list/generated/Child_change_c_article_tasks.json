@@ -1,0 +1,394 @@
+{
+  "flow_name": "Child_change_c_article_tasks",
+  "flow_subtype": "generated",
+  "flow_type": "data_list",
+  "rows": [
+    {
+      "id": "relax_1",
+      "in_library": "yes",
+      "title_oringinal_eng": "Quick pause",
+      "lottie_asset": "lottie/relax/square_flow.json",
+      "media_asset_m": "audio/relax/male/relax_1.m4a",
+      "media_asset_f": "audio/relax/female/relax_16.m4a",
+      "media_type": "audio",
+      "transcript_m_original_eng": "Sit down, close your eyes, and listen to your breath as it goes in and out.\nNotice how you feel. When you are ready, open your eyes. \nTry this whenever you are feeling stressed and you need a break to reconnect.",
+      "transcript_f_original_eng": "Close your eyes.\n\nTake a moment to feel the ground under your feet.\nThink of something you feel grateful for.\nFocus on your breath.\nBreathe in and out.\n\nIn and out.",
+      "transcript_m": "Siéntate, cierra los ojos y escucha tu respiración mientras entra y sale.\nNota cómo te sientes. Cuando estés listo(a), abre los ojos.\nPrueba esto cada vez que te sientas estresado(a) y necesites un descanso para reconectarte.",
+      "transcript_f": "Practiquemos un truco para calmarte que llamamos “Poder de la Pausa”.\n\nPon tus pies en el suelo y respira lentamente tres veces. Imagina que hueles una flor o que soplas una vela.\n\n¡Ta-da! ¡Poder de la Pausa!\n\nEste es un excelente truco cuando te sientes frustrado(a), porque te ayudará a tranquilizarte.",
+      "title": "Pausa rápida",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Pausa rápida"
+        }
+      },
+      "category_id": "relax",
+      "nested": false,
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "check_in_65",
+      "_translatedFields": {
+        "text_1": {
+          "eng": "Toma un momento para conectar contigo."
+        },
+        "quiz_1_feedback_1": {
+          "eng": "¡Maravilloso! Me da mucho gusto saber que las cosas van bien."
+        },
+        "quiz_1_feedback_2": {
+          "eng": "Habrá días retadores, y está bien. Vas por buen camino."
+        },
+        "quiz_1_feedback_3": {
+          "eng": "Lamento que las cosas estén siendo difíciles ahora. Es completamente normal tener momentos complicados. Recuerda que no estás sola/o."
+        },
+        "quiz_1_question": {
+          "eng": "¿Cómo te sientes el día de hoy?"
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Feliz"
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Regular"
+        },
+        "quiz_1_option_3_text": {
+          "eng": "Triste"
+        }
+      },
+      "category_id": "check_in",
+      "nested": false,
+      "quiz_1_option_1_image_asset": "images/icons/faces/happy_face_new.svg",
+      "quiz_1_option_2_image_asset": "images/icons/faces/ok_face_new.svg",
+      "quiz_1_option_3_image_asset": "images/icons/faces/sad_face_new.svg",
+      "text_1": "Toma un momento para conectar contigo.",
+      "_translations": {
+        "text_1": {},
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_feedback_3": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_option_3_text": {}
+      },
+      "quiz_1_feedback_1": "¡Maravilloso! Me da mucho gusto saber que las cosas van bien.",
+      "quiz_1_feedback_2": "Habrá días retadores, y está bien. Vas por buen camino.",
+      "quiz_1_feedback_3": "Lamento que las cosas estén siendo difíciles ahora. Es completamente normal tener momentos complicados. Recuerda que no estás sola/o.",
+      "quiz_1_question": "¿Cómo te sientes el día de hoy?",
+      "quiz_1_option_1_text": "Feliz",
+      "quiz_1_option_2_text": "Regular",
+      "quiz_1_option_3_text": "Triste",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "intro_1",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "La sesión de hoy trata sobre cómo favorecer el desarrollo saludable de @fields.child_name a medida que crece y va cambiando. ✨"
+        },
+        "text_2": {
+          "eng": "🌱 Las niñas y los niños tienen diferentes habilidades en las distintas etapas de su desarrollo.\n\n⚽ Es importante conocer las habilidades de @fields.child_name en esta etapa de su desarrollo.\n\n✨ Esto te ayudará a planificar sus actividades para que se ajusten a lo que puede hacer y también te ayuda a tener objetivos realistas para ellas y ellos."
+        },
+        "quiz_1_question": {
+          "eng": "📝 **¡Hagamos un ejercicio!**\n\n_Ejercicio no.1_\n\nTodas las niñas y los niños se desarrollan a la misma velocidad."
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Verdadero"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "👀 ¡Ups! ¡Buen intento!\n\n✨ Cada niña y cada niño son únicos y se desarrollarán a su propio ritmo.\nAlgunas niñas y niños pueden desarrollarse más rápido que otros en ciertas áreas, mientras que a otros les puede tomar más tiempo.\n\n💚 Es importante que las madres, los padres y las personas cuidadoras sean pacientes y actuén con comprensión, reconociendo que cada niña y cada niño tiene su propio camino individual de desarrollo.\n\nRecuerda que cada persona crece a su propio ritmo. Es importante que las niñas y los niños no comparen su crecimiento con el de otras niñas y niños, aunque tengan la misma edad.\n\n🚩 Si tienes alguna preocupación sobre el desarrollo de @fields.child_name, debes consultar a un profesional para obtener apoyo y asesoramiento."
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Falso"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "🎉 ¡Buen trabajo!\n\n✨ Cada niña y cada niño son únicos y se desarrollarán a su propio ritmo.\nAlgunas niñas y niños pueden desarrollarse más rápido que otros en ciertas áreas, mientras que a otros les puede tomar más tiempo.\n\n💚 Es importante que las madres, los padres y las personas cuidadoras sean pacientes y actuén con comprensión, reconociendo que cada niña y cada niño tiene su propio camino individual de desarrollo.\n\nRecuerda que cada persona crece a su propio ritmo. Es importante que las niñas y los niños no comparen su crecimiento con el de otras niñas y niños, aunque tengan la misma edad.\n\n🚩 Si tienes alguna preocupación sobre el desarrollo de @fields.child_name, debes consultar a un profesional para obtener apoyo y asesoramiento."
+        },
+        "quiz_2_question": {
+          "eng": "📝 **¡Hagamos uno más!**\n\n_Ejercicio no.2_\n\n¿Cómo puedes responderle a @fields.child_name si de repente expresa interés en cambiar su forma de vestir o de peinarse?"
+        },
+        "quiz_2_option_1_text": {
+          "eng": "Rechaza todas sus peticiones y di que no es necesario."
+        },
+        "quiz_2_feedback_1": {
+          "eng": "👀 ¡Ups! ¡Buen intento!\n\n💚 Al preguntarle de manera cálida a @fields.child_name sobre sus intereses, sentirá seguridad y comodidad para compartir de las influencias que le rodean.\n\n🌷 Puedes darle tus opiniones sobre sus intereses pero hazlo con gentileza."
+        },
+        "quiz_2_option_2_text": {
+          "eng": "Con mucho cariño, pregúntale más sobre qué influyó en su interés por el cambio."
+        },
+        "quiz_2_feedback_2": {
+          "eng": "🎉 ¡Es correcto!\n\n💚 Al preguntarle de manera cálida a @fields.child_name sobre sus intereses, sentirá seguridad y comodidad para compartir de las influencias que le rodean.\n\n🌷 Puedes darle tus opiniones sobre sus intereses pero hazlo con gentileza."
+        },
+        "quiz_2_option_3_text": {
+          "eng": "Ignóralos y espera que no hayan querido decir eso."
+        },
+        "quiz_2_feedback_3": {
+          "eng": "👀 ¡Ups! ¡Buen intento!\n\n💚 Al preguntarle de manera cálida a @fields.child_name sobre sus intereses, sentirá seguridad y comodidad para compartir de las influencias que le rodean.\n\n🌷 Puedes darle tus opiniones sobre sus intereses pero hazlo con gentileza."
+        }
+      },
+      "category_id": "intro",
+      "nested": false,
+      "quiz_1_feedback_1": "👀 ¡Ups! ¡Buen intento!\n\n✨ Cada niña y cada niño son únicos y se desarrollarán a su propio ritmo.\nAlgunas niñas y niños pueden desarrollarse más rápido que otros en ciertas áreas, mientras que a otros les puede tomar más tiempo.\n\n💚 Es importante que las madres, los padres y las personas cuidadoras sean pacientes y actuén con comprensión, reconociendo que cada niña y cada niño tiene su propio camino individual de desarrollo.\n\nRecuerda que cada persona crece a su propio ritmo. Es importante que las niñas y los niños no comparen su crecimiento con el de otras niñas y niños, aunque tengan la misma edad.\n\n🚩 Si tienes alguna preocupación sobre el desarrollo de @fields.child_name, debes consultar a un profesional para obtener apoyo y asesoramiento.",
+      "_translations": {
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "text_1_facilitator": {},
+        "text_2": {},
+        "quiz_2_question": {},
+        "quiz_2_option_1_text": {},
+        "quiz_2_feedback_1": {},
+        "quiz_2_option_2_text": {},
+        "quiz_2_feedback_2": {},
+        "quiz_2_option_3_text": {},
+        "quiz_2_feedback_3": {}
+      },
+      "quiz_1_feedback_2": "🎉 ¡Buen trabajo!\n\n✨ Cada niña y cada niño son únicos y se desarrollarán a su propio ritmo.\nAlgunas niñas y niños pueden desarrollarse más rápido que otros en ciertas áreas, mientras que a otros les puede tomar más tiempo.\n\n💚 Es importante que las madres, los padres y las personas cuidadoras sean pacientes y actuén con comprensión, reconociendo que cada niña y cada niño tiene su propio camino individual de desarrollo.\n\nRecuerda que cada persona crece a su propio ritmo. Es importante que las niñas y los niños no comparen su crecimiento con el de otras niñas y niños, aunque tengan la misma edad.\n\n🚩 Si tienes alguna preocupación sobre el desarrollo de @fields.child_name, debes consultar a un profesional para obtener apoyo y asesoramiento.",
+      "quiz_1_question": "📝 **¡Hagamos un ejercicio!**\n\n_Ejercicio no.1_\n\nTodas las niñas y los niños se desarrollan a la misma velocidad.",
+      "quiz_1_option_1_text": "Verdadero",
+      "quiz_1_option_2_text": "Falso",
+      "text_1_facilitator": "La sesión de hoy trata sobre cómo favorecer el desarrollo saludable de @fields.child_name a medida que crece y va cambiando. ✨",
+      "text_2": "🌱 Las niñas y los niños tienen diferentes habilidades en las distintas etapas de su desarrollo.\n\n⚽ Es importante conocer las habilidades de @fields.child_name en esta etapa de su desarrollo.\n\n✨ Esto te ayudará a planificar sus actividades para que se ajusten a lo que puede hacer y también te ayuda a tener objetivos realistas para ellas y ellos.",
+      "quiz_2_question": "📝 **¡Hagamos uno más!**\n\n_Ejercicio no.2_\n\n¿Cómo puedes responderle a @fields.child_name si de repente expresa interés en cambiar su forma de vestir o de peinarse?",
+      "quiz_2_option_1_text": "Rechaza todas sus peticiones y di que no es necesario.",
+      "quiz_2_feedback_1": "👀 ¡Ups! ¡Buen intento!\n\n💚 Al preguntarle de manera cálida a @fields.child_name sobre sus intereses, sentirá seguridad y comodidad para compartir de las influencias que le rodean.\n\n🌷 Puedes darle tus opiniones sobre sus intereses pero hazlo con gentileza.",
+      "quiz_2_option_2_text": "Con mucho cariño, pregúntale más sobre qué influyó en su interés por el cambio.",
+      "quiz_2_feedback_2": "🎉 ¡Es correcto!\n\n💚 Al preguntarle de manera cálida a @fields.child_name sobre sus intereses, sentirá seguridad y comodidad para compartir de las influencias que le rodean.\n\n🌷 Puedes darle tus opiniones sobre sus intereses pero hazlo con gentileza.",
+      "quiz_2_option_3_text": "Ignóralos y espera que no hayan querido decir eso.",
+      "quiz_2_feedback_3": "👀 ¡Ups! ¡Buen intento!\n\n💚 Al preguntarle de manera cálida a @fields.child_name sobre sus intereses, sentirá seguridad y comodidad para compartir de las influencias que le rodean.\n\n🌷 Puedes darle tus opiniones sobre sus intereses pero hazlo con gentileza.",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_1",
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "Patea la pelota suavemente con la parte de adentro de tu pie... Así."
+        },
+        "character_2_text": {
+          "eng": "¡Yo lo quiero hacer ahora!"
+        },
+        "character_3_text": {
+          "eng": "¡No, yo lo quiero hacer primero!"
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/understand/child_change_yc_1.svg",
+      "character_1_id": "f3_padre",
+      "character_2_id": "f3_hijo_4",
+      "character_3_id": "f3_hija_7",
+      "character_1_text": "Patea la pelota suavemente con la parte de adentro de tu pie... Así.",
+      "_translations": {
+        "character_1_text": {},
+        "character_2_text": {},
+        "character_3_text": {}
+      },
+      "character_2_text": "¡Yo lo quiero hacer ahora!",
+      "character_3_text": "¡No, yo lo quiero hacer primero!",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_2",
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "Puede que nos cueste trabajo esperar, pero no todos podemos ir primero. @data.characters.f3_hija_7.name, ¿qué tal si nos propones una manera en la que nos podamos patear la pelota por turnos?"
+        },
+        "character_2_text": {
+          "eng": "Está bien. Qué tal si hacemos un círculo y yo le doy la pelota a @data.characters.f3_hijo_4.name, luego él te la da a ti y, ¡tú me la devuelves a mí!"
+        },
+        "character_3_text": {
+          "eng": "Sí, ¡eso suena bien!"
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/understand/child_change_yc_2.svg",
+      "character_1_id": "f3_padre",
+      "character_2_id": "f3_hija_7",
+      "character_3_id": "f3_hijo_4",
+      "character_1_text": "Puede que nos cueste trabajo esperar, pero no todos podemos ir primero. @data.characters.f3_hija_7.name, ¿qué tal si nos propones una manera en la que nos podamos patear la pelota por turnos?",
+      "_translations": {
+        "character_1_text": {},
+        "character_2_text": {},
+        "character_3_text": {}
+      },
+      "character_2_text": "Está bien. Qué tal si hacemos un círculo y yo le doy la pelota a @data.characters.f3_hijo_4.name, luego él te la da a ti y, ¡tú me la devuelves a mí!",
+      "character_3_text": "Sí, ¡eso suena bien!",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_3",
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "¡Es una idea maravillosa, @data.characters.f3_hija_7.name! ¡Vamos a intentarlo!"
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/understand/child_change_yc_3.svg",
+      "character_1_id": "f3_padre",
+      "character_1_text": "¡Es una idea maravillosa, @data.characters.f3_hija_7.name! ¡Vamos a intentarlo!",
+      "_translations": {
+        "character_1_text": {}
+      },
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_4",
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "¡Buen trabajo, @data.characters.f3_hija_7.name! Tú nos guiaste, ¡y todos nos divertimos mucho tomando turnos! @data.characters.f3_hijo_4.name, tú estuviste excelente esperando pacientemente tu turno."
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/understand/child_change_yc_4.svg",
+      "character_1_id": "f3_padre",
+      "character_1_text": "¡Buen trabajo, @data.characters.f3_hija_7.name! Tú nos guiaste, ¡y todos nos divertimos mucho tomando turnos! @data.characters.f3_hijo_4.name, tú estuviste excelente esperando pacientemente tu turno.",
+      "_translations": {
+        "character_1_text": {}
+      },
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "practical_tips_1",
+      "media_type": "youtube",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Selecciona reproducir ▶️ para aprender algunos pasos que puedes seguir para favorecer el desarrollo saludable de @fields.child_name a medida que crece y va cambiando:\n\n1️⃣ BUSCAR AMISTADES\n2️⃣ APOYAR LA CURIOSIDAD\n3️⃣ CONFIAR EN TU NIÑA O NIÑO"
+        }
+      },
+      "category_id": "practical_tips",
+      "nested": false,
+      "text_1_facilitator": "Selecciona reproducir ▶️ para aprender algunos pasos que puedes seguir para favorecer el desarrollo saludable de @fields.child_name a medida que crece y va cambiando:\n\n1️⃣ BUSCAR AMISTADES\n2️⃣ APOYAR LA CURIOSIDAD\n3️⃣ CONFIAR EN TU NIÑA O NIÑO",
+      "_translations": {
+        "text_1_facilitator": {}
+      },
+      "youtube_gb_en_f": "https://www.youtube.com/watch?v=xWFqPewfHhU",
+      "youtube_gb_en_m": "https://www.youtube.com/watch?v=7Dcw5snzGNE",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "practical_tips_2",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Recuerda:"
+        },
+        "section_1_title": {
+          "eng": "BUSCAR AMISTADES"
+        },
+        "section_1_text": {
+          "eng": "🎨 @fields.child_name se interesará por pasar tiempo con otras niñas, niños o adolescentes.\n\n⚽ Ayúdale a @fields.child_name a hacer amistades que compartan sus intereses para que entable relaciones con otras niñas y niños.\n\n💚 Ayúdale a @fields.child_name a aprender a compartir y jugar con los demás de forma divertida y segura."
+        },
+        "section_2_title": {
+          "eng": "APOYAR LA CURIOSIDAD"
+        },
+        "section_2_text": {
+          "eng": "📖@fields.child_name empezará a interesarse por aprender en la escuela y puede que tenga sus materias favoritas.\n\nAnima a @fields.child_name a preguntarte a ti o a la maestra o el maestro sobre cualquier contenido complicado.\n\n🌱 Puede que @fields.child_name empiece a expresar su interés por los asuntos religiosos o la espiritualidad. Puedes darle respuestas breves pero sinceras o también puedes buscar las respuestas junto con @fields.child_name."
+        },
+        "section_3_title": {
+          "eng": "CONFIAR"
+        },
+        "section_3_text": {
+          "eng": "📝 Puede que @fields.child_name empiece a tomar decisiones por su cuenta y querrá que le des tu confianza. Escucha lo que @fields.child_name quiere y luego establece normas que sean funcionales para la familia.\n\n🏆 ¡Reconoce a @fields.child_name cuando siga las reglas!"
+        }
+      },
+      "category_id": "practical_tips",
+      "nested": false,
+      "text_1_facilitator": "Recuerda:",
+      "_translations": {
+        "text_1_facilitator": {},
+        "section_1_title": {},
+        "section_1_text": {},
+        "section_2_title": {},
+        "section_2_text": {},
+        "section_3_title": {},
+        "section_3_text": {}
+      },
+      "section_1_icon_asset": "images/icons/star_filled_blue.png",
+      "section_2_icon_asset": "images/icons/diamond_blue.png",
+      "section_3_icon_asset": "images/icons/parent_child_heart.svg",
+      "section_1_title": "BUSCAR AMISTADES",
+      "section_1_text": "🎨 @fields.child_name se interesará por pasar tiempo con otras niñas, niños o adolescentes.\n\n⚽ Ayúdale a @fields.child_name a hacer amistades que compartan sus intereses para que entable relaciones con otras niñas y niños.\n\n💚 Ayúdale a @fields.child_name a aprender a compartir y jugar con los demás de forma divertida y segura.",
+      "section_2_title": "APOYAR LA CURIOSIDAD",
+      "section_2_text": "📖@fields.child_name empezará a interesarse por aprender en la escuela y puede que tenga sus materias favoritas.\n\nAnima a @fields.child_name a preguntarte a ti o a la maestra o el maestro sobre cualquier contenido complicado.\n\n🌱 Puede que @fields.child_name empiece a expresar su interés por los asuntos religiosos o la espiritualidad. Puedes darle respuestas breves pero sinceras o también puedes buscar las respuestas junto con @fields.child_name.",
+      "section_3_title": "CONFIAR",
+      "section_3_text": "📝 Puede que @fields.child_name empiece a tomar decisiones por su cuenta y querrá que le des tu confianza. Escucha lo que @fields.child_name quiere y luego establece normas que sean funcionales para la familia.\n\n🏆 ¡Reconoce a @fields.child_name cuando siga las reglas!",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "home_activity_1",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "**Actividad para casa** ⭐ \n\nInvita a @fields.child_name a jugar contigo. Deja que elija qué jugar y que te guíe durante el juego."
+        },
+        "quiz_1_question": {
+          "eng": "¿Puedes hacerlo hoy? ⭐"
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Sí"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "🎉 ¡Genial! Dejar que @fields.child_name elija el juego ayudará a fortalecer su confianza, independencia y curiosidad mientras crece."
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Lo intentaré"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "¡Excelente decisión! 🌟 Cuando encuentres un momento adecuado, prueba esta actividad y observa qué funciona mejor para ti y tu familia. Recuerda que cada intento cuenta. ✨"
+        },
+        "quiz_1_option_3_text": {
+          "eng": "No"
+        },
+        "quiz_1_feedback_3": {
+          "eng": "💙 Entendemos. Puede ser difícil encontrar tiempo al inicio. Incluso un pequeño tiempo de juego puede hacer la diferencia. Pueden hacer tiempo para jugar el día de mañana. 🌱"
+        }
+      },
+      "category_id": "home_activity",
+      "nested": false,
+      "quiz_1_feedback_1": "🎉 ¡Genial! Dejar que @fields.child_name elija el juego ayudará a fortalecer su confianza, independencia y curiosidad mientras crece.",
+      "_translations": {
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_feedback_3": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_option_3_text": {},
+        "text_1_facilitator": {}
+      },
+      "quiz_1_feedback_2": "¡Excelente decisión! 🌟 Cuando encuentres un momento adecuado, prueba esta actividad y observa qué funciona mejor para ti y tu familia. Recuerda que cada intento cuenta. ✨",
+      "quiz_1_feedback_3": "💙 Entendemos. Puede ser difícil encontrar tiempo al inicio. Incluso un pequeño tiempo de juego puede hacer la diferencia. Pueden hacer tiempo para jugar el día de mañana. 🌱",
+      "quiz_1_question": "¿Puedes hacerlo hoy? ⭐",
+      "quiz_1_option_1_text": "Sí",
+      "quiz_1_option_2_text": "Lo intentaré",
+      "quiz_1_option_3_text": "No",
+      "text_1_facilitator": "**Actividad para casa** ⭐ \n\nInvita a @fields.child_name a jugar contigo. Deja que elija qué jugar y que te guíe durante el juego.",
+      "completed": false,
+      "version": 1
+    }
+  ],
+  "_metadata": {
+    "nested": {
+      "type": "boolean"
+    },
+    "completed": {
+      "type": "boolean"
+    },
+    "version": {
+      "type": "number"
+    }
+  }
+}

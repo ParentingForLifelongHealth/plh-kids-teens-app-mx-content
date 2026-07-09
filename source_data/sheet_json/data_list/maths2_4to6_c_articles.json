@@ -1,0 +1,99 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "maths2_4to6_c_articles",
+  "data_list_name": "maths2_4to6_c_articles",
+  "status": "released",
+  "flow_subtype": "modules_maths2_4to6_c",
+  "module": "maths2_4to6_c",
+  "rows": [
+    {
+      "id": "@default",
+      "nested": false
+    },
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Hoy continuaremos con la sesión para ayudar a @fields.child_name a prepararse para las matemáticas. ✨\n\nEn esta parte, nos enfocaremos en actividades un poco más retadoras que puedes hacer con @fields.child_name para cuando sientas que ya tiene el dominio y la confianza para intentarlas. 💡",
+      "text_2::eng": "Aprender a comparar, sumar y restar ayudará a @fields.child_name a entender más sobre las matemáticas. Esto será un apoyo continuo en el aprendizaje de habilidades numéricas. 🔟/🔟 ⭐",
+      "quiz_1_question::eng": "📝 **¡Hagamos un ejercicio!**\n\n_Ejercicio no.1_\n\nSumar y Restar son cosas que las niñas y los niños deben aprender en la escuela.",
+      "quiz_1_option_1_text::eng": "Verdadero",
+      "quiz_1_feedback_1::eng": "👀 ¡Ups! ¡Buen intento!\n\n🎉 Las niñas y los niños pueden aprender a sumar y restar haciendo actividades cotidianas y mientras juegan.\n\n💡 Entre más pronto empiecen, más fácil será cuando vayan a la escuela.",
+      "quiz_1_option_2_text::eng": "Falso",
+      "quiz_1_feedback_2::eng": "✨ ¡Estás en lo correcto!\n\n🎉  Las niñas y los niños pueden aprender a sumar y restar haciendo actividades cotidianas y mientras juegan.\n\n💡 Entre más pronto empiecen, más fácil será cuando vayan a la escuela."
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "Veamos cómo @data.characters.f3_madre.name practica los números con su hijo @data.characters.f3_hijo_4.name en la cocina:",
+      "image_asset": "images/comic/learn/maths2_4to6_yc_1.svg",
+      "character_1_id": "f3_madre",
+      "character_1_text::eng": "Gracias por cocinar conmigo. ¡Me ayudas mucho! ¿Qué tienes ahí?",
+      "character_2_id": "f3_hijo_4",
+      "character_2_text::eng": "¡Papas!",
+      "character_3_id": "f3_madre",
+      "character_3_text::eng": "¡Así es! ¡papas! ¿Cuántas papas tienes?"
+    },
+    {
+      "id": "explore_2",
+      "category_id": "explore",
+      "image_asset": "images/comic/learn/maths2_4to6_yc_2.svg",
+      "character_1_id": "f3_hijo_4",
+      "character_1_text::eng": "¡Cinco!",
+      "character_2_id": "f3_madre",
+      "character_2_text::eng": "¡Eso! Uno, dos, tres, cuatro… ¡cinco! ¡Cinco papas!"
+    },
+    {
+      "id": "explore_3",
+      "category_id": "explore",
+      "image_asset": "images/comic/learn/maths2_4to6_yc_3.svg",
+      "character_1_id": "f3_madre",
+      "character_1_text::eng": "¿Me puedes dar dos papas, por favor?\n¡Así es! ¡Uno… dos…!\n¿Cuántos papas quedan?"
+    },
+    {
+      "id": "explore_4",
+      "category_id": "explore",
+      "image_asset": "images/comic/learn/maths2_4to6_yc_4.svg",
+      "character_1_id": "f3_madre",
+      "character_1_text::eng": "¿Se te hace muy difícil? No te preocupes, ¡vamos a contar juntos! Veamos… teníamos cinco, y tú me diste dos. Ahora quedan una… dos… ¡tres! ¡Quedan tres papas!",
+      "character_2_id": "f3_hijo_4",
+      "character_2_text::eng": "¡Quedan tres papas!"
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Selecciona reproducir ▶️ para aprender cuatro estrategias sobre cómo animar a @fields.child_name a practicar sus habilidades matemáticas:\n\n1️⃣ CLASIFICAR Y ORGANIZAR\n2️⃣ PONER Y QUITAR\n3️⃣ HACER UN NÚMERO DE DISTINTAS MANERAS\n4️⃣ ANIMAR Y DIVERTIRSE",
+      "media_type": "youtube",
+      "youtube_gb_en_f": "https://www.youtube.com/watch?v=ue3fgXwp2Bo",
+      "youtube_gb_en_m": "https://www.youtube.com/watch?v=K5TyAKNgfCg"
+    },
+    {
+      "id": "practical_tips_2",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Recuerda:",
+      "section_1_title::eng": "CLASIFICAR Y ORGANIZAR",
+      "section_1_icon_asset": "images/icons/brain_blue.png",
+      "section_1_text::eng": "🌱 Pídele a @fields.child_name que te ayude a clasificar las cosas en grupos, como agrupar todas las verduras al cocinar.\n \n😃 Pídele a @fields.child_name que busque 5 cosas de algo y luego los ordene de menor a mayor. Puedes usar cosas como palitos o frutas.\n\n⬆️ Después, ¡ordénenlos de otra manera, como del más claro al más oscuro!\n\n✨ ¡Ayúdale a @fields.child_name a pensar en los grupos! Dile: \"Una papa es una verdura redonda. ¿Se te ocurre alguna otra cosa que sea redonda como esta papa?\". Después di: \"¿Puedes pensar en algo que también sea redondo pero más grande que una papa?\"",
+      "section_2_title::eng": "PONER Y QUITAR",
+      "section_2_icon_asset": "images/icons/tick.svg",
+      "section_2_text::eng": "⬆️⬇️¡Una vez que tu niña o niño conozca los números, podrá empezar a aprender a sumar y restar! \n\n🍚¡Hagan actividades similares a los ejercicios de contar, como cocinar, ordenar la ropa, ir de compras o construir cosas! \n\n🌽Di: \"Tengo dos papas. Si agrego dos más, ¿cuántas tengo?\". ¡Ayúdale a tu niña o niño a obtener la respuesta! Sigue practicando y, después de un rato, ¡ve aumentando la dificultad! \n\n⚽Intenta hacer la actividad con diferentes cosas, como pelotas o zapatos. \n\n⬇ ️Repite la actividad, pero quita cosas: \"Tengo cinco papas. Si quito dos, ¿cuántas me quedan?\" \n\n🔄¡Práctica en cualquier lugar y en todas partes! También pueden hacer el juego con cosas imaginarias.",
+      "section_3_title::eng": "HACER UN NÚMERO DE DISTINTAS MANERAS",
+      "section_3_icon_asset": "images/icons/trophy_blue.png",
+      "section_3_text::eng": "⏰ Una vez que tu niña o niño tenga la edad suficiente y haya aprendido algunas habilidades matemáticas básicas, puede empezar a aprender habilidades más difíciles. \n\n5️⃣ Si crees que lo puede hacer, pídele que busque 5 piedras. Muéstrale que con 5 piedras puedes hacer un grupo de 1 piedra y otro de 4 piedras. Después, muéstrale cómo hacerlo con un grupo de 2 y otro de 3. \n\n🔟 Cuando sientas que ya tiene el dominio y la confianza para enfrentar ciertos retos, haz la misma actividad con más piedras, puedes usar hasta 10.",
+      "section_4_title::eng": "ANIMAR Y DIVERTIRSE",
+      "section_4_icon_asset": "images/icons/smile_eyes_up.svg",
+      "section_4_text::eng": "💚 Recuerda, ve poco a poco y ayuda a @fields.child_name a aumentar su confianza haciendo cosas que ya sepa hacer y que tenga la disposición de hacer.\n\n😃 Siempre busca reconocer sus esfuerzos y elogiarlos. ¡Las respuestas incorrectas también están bien! Todos son aprendizajes valiosos.\n\n🎉 Busca que las condiciones de aprendizaje sean divertidas y agradables para @fields.child_name. Así será más probable que sigan intentándolo."
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "text_1_facilitator::eng": "**Actividad para casa** ⭐ \n\n¿Puedes hacer una actividad de sumar y restar con @fields.child_name? Pueden hacerlo mientras cocinas, camino a la escuela o en el bus, o con otros objetos también, ¡como con piedras mientras juegan afuera! \n\n¡Estas actividades ayudarán a @fields.child_name a aprender! ",
+      "quiz_1_question::eng": "¿Puedes hacerlo hoy? ⭐",
+      "quiz_1_option_1_text::eng": "Sí",
+      "quiz_1_feedback_1::eng": "¡Qué bueno! 💙 ¡Estas actividades ayudarán a @fields.child_name a aprender!",
+      "quiz_1_option_2_text::eng": "Lo intentaré",
+      "quiz_1_feedback_2::eng": "¡Muy bien! 🌟 A veces los pequeños cambios pueden hacer una gran diferencia. Intenta esta actividad cuando te sea posible y ve qué aprendes de la experiencia. 😊",
+      "quiz_1_option_3_text::eng": "No",
+      "quiz_1_feedback_3::eng": "⭐ ¡Entendemos! Si hoy no tienes tiempo, intenta hacer algunas actividades de sumar y restar con @fields.child_name el día de mañana."
+    }
+  ]
+}

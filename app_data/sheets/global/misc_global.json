@@ -1,0 +1,644 @@
+{
+  "flow_type": "global",
+  "flow_name": "misc_global",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "yes",
+      "value": "Sí",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "no",
+      "value": "No",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "list",
+      "value": "Lista",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "map",
+      "value": "Mapa",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "module",
+      "value": "Módulo",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "start_here",
+      "value": "Inicia aquí",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "home",
+      "value": "Inicio",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "library",
+      "value": "Recursos",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "rewards",
+      "value": "Jugar",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "settings",
+      "value": "Ajustes",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "completed",
+      "value": "Completado",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "check_in",
+      "value": "Iniciar sesión / cuestionario",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "lets_begin",
+      "value": "Comencemos",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "continue",
+      "value": "Continuar",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "restart",
+      "value": "Reiniciar",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "in_1_day",
+      "value": "En 1 día",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "in_2_days",
+      "value": "En 2 días",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "in_3_days",
+      "value": "En 3 días",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "in_4_days",
+      "value": "En 4 días",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "in_5_days",
+      "value": "En 5 días",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "in_6_days",
+      "value": "En 6 días",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "in_7_days",
+      "value": "En 7 días",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "learn_more",
+      "value": "Conoce más",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "select_a_response",
+      "value": "Elige una respuesta",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "congratulations",
+      "value": "Felicitaciones",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "hurrah",
+      "value": "Bravo",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "a_new_moment_of_play_has_been_unlocked",
+      "value": "Un nuevo momento de juego ha sido desbloqueado",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "open_your_moment_of_play",
+      "value": "Abre tu nuevo momento de juego",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "open",
+      "value": "Abrir",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "well_done_for_finishing_this_module",
+      "value": "Buen trabajo al completar este módulo",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "well_done_for_finishing_this_check_in",
+      "value": "Buen trabajo al completar este cuestionario",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "unlock_your_moment_of_play",
+      "value": "Desbloquear tu nuevo juego",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "well_done_finishing_module_hp",
+      "value": "¡Buen trabajo completando todos los módulos y actividades para casa!",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "unlock_all_moments_of_play",
+      "value": "Desbloquea todas las opciones de juego",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "moments_of_play",
+      "value": "Momentos de juego",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "complete_your_modules_and_home_activities_to_unlock_new_moments_of_play",
+      "value": "Completa las estrategias y actividades para casa para desbloquear nuevos momentos de juego.",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "filter",
+      "value": "Filtrar",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "all_games",
+      "value": "Todos los juegos",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "unlocked",
+      "value": "Activos",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "favourites",
+      "value": "Me gusta",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "no_favourites_yet",
+      "value": "Aún no hay favoritos\nToca el ❤️ para guardar los juegos que más te gustan.",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "no_unlocked_yet",
+      "value": "¡Desbloquea momentos de juego al completar un módulo o registrar una actividad!",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "by_age",
+      "value": "Por edad",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "for_2-3",
+      "value": "Para 2 a 3 años",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "for_4-5",
+      "value": "Para 4 a 5 años",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "for_6-7",
+      "value": "Para 6 a 7 años",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "for_7-8",
+      "value": "Para 7 a 8 años",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "for_8-9",
+      "value": "Para 8 a 9 años",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "source",
+      "value": "Fuente",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "close",
+      "value": "Cerrar",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "profile",
+      "value": "Perfil",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "switch_language",
+      "value": "Cambiar idioma",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "your_parentapp_code",
+      "value": "Tu código de Parent App",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "account",
+      "value": "Cuenta",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "general",
+      "value": "General",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "feedback",
+      "value": "Retroalimentación",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "about_dayem",
+      "value": "Acerca de @global.app_name",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "developer_mode",
+      "value": "Modo de Desarrollador",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "version",
+      "value": "Versión",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "submit",
+      "value": "Enviar",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "save",
+      "value": "Guardar",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "share",
+      "value": "Compartir",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "download",
+      "value": "Descargar",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "language",
+      "value": "Idioma",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "type_here",
+      "value": "Escribe aquí",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "app_feedback",
+      "value": "Retroalimentación de la aplicación",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "challenge_not_here",
+      "value": "Mi reto no aparece aquí",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "other_challenge_prompt",
+      "value": "¡Ups! Se nos pasó esto. Cuéntanos un poco más sobre ello.",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "other_challenge_reply",
+      "value": "¡Gracias por contarnos tu reto! Este comentario nos ayudará a mejorar @global.app_name",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "tap_and_type",
+      "value": "Toca para escribir",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "change_certificate_name",
+      "value": "Cambiar nombre",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "certificate_name_question",
+      "value": "¿Qué nombre debe aparecer en tu certificado?",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "certificate_max_reprints_reached",
+      "value": "Lo siento, pero solo puedes actualizar el nombre en tu certificado para este curso @global.max_n_cert_reprints veces.",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "certificate_congrats",
+      "value": "¡Felicidades por haber completado el curso!",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "certificates_location",
+      "value": "Puedes encontrar tus certificados en @global.library",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "confirm_exit_title",
+      "value": "Antes de salir",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "confirm_exit_text",
+      "value": "Si sales ahora, los cambios que realizaste no se guardarán",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "confirm_exit_button_cancel",
+      "value": "Cancelar",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "confirm_exit_button_leave",
+      "value": "Salir sin guardar",
+      "_translations": {
+        "value": {}
+      }
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "data/MX deployment_data.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/13MITRQ3ltpZObRU8Nr3_D-gc-bVX2SvKt1NO-IngD-I"
+  }
+}

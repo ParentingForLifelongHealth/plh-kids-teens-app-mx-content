@@ -1,0 +1,92 @@
+{
+  "flow_type": "template",
+  "flow_name": "update_certificate_name",
+  "status": "released",
+  "rows": [
+    {
+      "name": "n_reprints",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "lang",
+      "value": "@fields._app_language",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "underscore",
+      "value": "_",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "deployment",
+      "value": "@global.deployment_id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "certificate_template",
+      "value": "@local.deployment@local.underscore@fields.cert_to_print@local.underscore@local.lang",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "certificate_data_list",
+      "value": "certificate_data",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "result",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "data_items",
+      "name": "get_n_reprints",
+      "value": "@data.courses",
+      "action_list": "data_changed | set_local : n_reprints: @items[0]?.n_reprints;",
+      "parameter_list": "filter:  @item.id == @fields.cert_to_print;\nlimit: 1;",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "n_reprints_or_zero",
+      "value": 0,
+      "condition": "!@local.n_reprints",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "n_reprints_or_zero",
+      "value": "@local.n_reprints",
+      "condition": "!!@local.n_reprints",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "title",
+      "name": "certificate_name_input_question",
+      "value": "@global.certificate_name_question",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text_box",
+      "name": "certificate_name_input",
+      "value": "@fields.certificate_name",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "completed_enabled",
+      "value": "@calc(@local.certificate_name_input && @local.certificate_name_input.length > 0)",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "n: @local.n_reprints_or_zero ",
+      "condition": false,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_completed",
+      "value": "@global.continue",
+      "action_list": "click | set_field: certificate_name: @local.certificate_name_input;\nclick | plh_certificate: generate |\nurl: @global.certificator_url,\nname: @local.certificate_name_input,\nid: @fields.cert_to_print,\ncertificate_template: @local.certificate_template,\ncertificate_data_list: @local.certificate_data_list,\nresult_local_variable_name: result;\nclick | set_data | _list_id: courses, _id: @fields.cert_to_print, n_reprints: @local.n_reprints_or_zero +1;\nclick | emit: completed;",
+      "parameter_list": "style: navigation;\ndisabled: !@local.completed_enabled",
+      "style_list": "flex: 1",
+      "exclude_from_translation": true
+    }
+  ]
+}

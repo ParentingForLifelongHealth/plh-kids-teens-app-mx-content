@@ -1,0 +1,383 @@
+{
+  "flow_name": "i_one_on_one_c_article_tasks",
+  "flow_subtype": "generated",
+  "flow_type": "data_list",
+  "rows": [
+    {
+      "id": "relax_1",
+      "in_library": "yes",
+      "title_oringinal_eng": "Quick pause",
+      "lottie_asset": "lottie/relax/square_flow.json",
+      "media_asset_m": "audio/relax/male/relax_1.m4a",
+      "media_asset_f": "audio/relax/female/relax_16.m4a",
+      "media_type": "audio",
+      "transcript_m_original_eng": "Sit down, close your eyes, and listen to your breath as it goes in and out.\nNotice how you feel. When you are ready, open your eyes. \nTry this whenever you are feeling stressed and you need a break to reconnect.",
+      "transcript_f_original_eng": "Close your eyes.\n\nTake a moment to feel the ground under your feet.\nThink of something you feel grateful for.\nFocus on your breath.\nBreathe in and out.\n\nIn and out.",
+      "transcript_m": "Siéntate, cierra los ojos y escucha tu respiración mientras entra y sale.\nNota cómo te sientes. Cuando estés listo(a), abre los ojos.\nPrueba esto cada vez que te sientas estresado(a) y necesites un descanso para reconectarte.",
+      "transcript_f": "Practiquemos un truco para calmarte que llamamos “Poder de la Pausa”.\n\nPon tus pies en el suelo y respira lentamente tres veces. Imagina que hueles una flor o que soplas una vela.\n\n¡Ta-da! ¡Poder de la Pausa!\n\nEste es un excelente truco cuando te sientes frustrado(a), porque te ayudará a tranquilizarte.",
+      "title": "Pausa rápida",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Pausa rápida"
+        }
+      },
+      "category_id": "relax",
+      "nested": false,
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "check_in_1",
+      "_translatedFields": {
+        "text_1": {
+          "eng": "Toma un momento para conectar contigo."
+        },
+        "quiz_1_feedback_1": {
+          "eng": "¡Maravilloso! Me da mucho gusto saber que las cosas van bien."
+        },
+        "quiz_1_feedback_2": {
+          "eng": "Habrá días retadores, y está bien. Vas por buen camino."
+        },
+        "quiz_1_feedback_3": {
+          "eng": "Lamento que las cosas estén siendo difíciles ahora. Es completamente normal tener momentos complicados. Recuerda que no estás sola/o."
+        },
+        "quiz_1_question": {
+          "eng": "¿Cómo te sientes el día de hoy?"
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Feliz"
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Regular"
+        },
+        "quiz_1_option_3_text": {
+          "eng": "Triste"
+        }
+      },
+      "category_id": "check_in",
+      "nested": false,
+      "quiz_1_option_1_image_asset": "images/icons/faces/happy_face_new.svg",
+      "quiz_1_option_2_image_asset": "images/icons/faces/ok_face_new.svg",
+      "quiz_1_option_3_image_asset": "images/icons/faces/sad_face_new.svg",
+      "text_1": "Toma un momento para conectar contigo.",
+      "_translations": {
+        "text_1": {},
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_feedback_3": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_option_3_text": {}
+      },
+      "quiz_1_feedback_1": "¡Maravilloso! Me da mucho gusto saber que las cosas van bien.",
+      "quiz_1_feedback_2": "Habrá días retadores, y está bien. Vas por buen camino.",
+      "quiz_1_feedback_3": "Lamento que las cosas estén siendo difíciles ahora. Es completamente normal tener momentos complicados. Recuerda que no estás sola/o.",
+      "quiz_1_question": "¿Cómo te sientes el día de hoy?",
+      "quiz_1_option_1_text": "Feliz",
+      "quiz_1_option_2_text": "Regular",
+      "quiz_1_option_3_text": "Triste",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "intro_1",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "¡Te damos la bienvenida a tu primera sesión en @global.app_name!\n\nCada sesión comienza con un momento para relajarte y un breve registro sobre cómo te sientes.\n\nAprenderás consejos sencillos de crianza y, al final de cada sesión, encontrarás una actividad para practicar en casa con tu niña, niño o adolescente.\n\nCompleta el curso y responde las preguntas sobre las actividades prácticas para obtener tu certificado. 🎉"
+        }
+      },
+      "category_id": "intro",
+      "nested": false,
+      "attached_single_doc": "https://docs.google.com/document/d/1-tg-SOLlmRdOvDnL5KJQSkXQ2eD6NAzEKZq3fQfX86E",
+      "text_1_facilitator": "¡Te damos la bienvenida a tu primera sesión en @global.app_name!\n\nCada sesión comienza con un momento para relajarte y un breve registro sobre cómo te sientes.\n\nAprenderás consejos sencillos de crianza y, al final de cada sesión, encontrarás una actividad para practicar en casa con tu niña, niño o adolescente.\n\nCompleta el curso y responde las preguntas sobre las actividades prácticas para obtener tu certificado. 🎉",
+      "_translations": {
+        "text_1_facilitator": {}
+      },
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "intro_2",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "La sesión de hoy trata sobre cómo pasar tiempo juntos y conectados con @fields.child_name 😃"
+        },
+        "text_2": {
+          "eng": "¡Pasar tiempo juntos y conectados con @fields.child_name es una forma increíble de construir una buena relación! Esto mostrará que te interesas por lo que hace. 💙\n\nTambién fomentará la confianza y el respeto, y ayudará a @fields.child_name a aprender cosas nuevas. ✨"
+        },
+        "quiz_1_question": {
+          "eng": "**¡Hagamos un ejercicio!**\n\n_Ejercicio no.1_\n\nCuando paso tiempo juntos y conectados con mi niña o niño, necesito tener un plan y saber qué haremos juntos."
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Verdadero"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "👀 ¡Ups! ¡Buen intento!\n\n🧸 No tienes que planear una actividad. ¡Tu niña o niño puede guiarte en el camino! Déjale escoger siempre y cuando sea seguro. Esto aumentará su confianza y hará más probable que disfrute pasar tiempo contigo."
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Falso"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "🎉 ¡Tienes razón!\n\n🧸 No tienes que planear una actividad. ¡Tu niña o niño puede guiarte en el camino! Déjale escoger siempre y cuando sea seguro. Esto aumentará su confianza y hará más probable que disfrute pasar tiempo contigo."
+        }
+      },
+      "category_id": "intro",
+      "nested": false,
+      "quiz_1_feedback_1": "👀 ¡Ups! ¡Buen intento!\n\n🧸 No tienes que planear una actividad. ¡Tu niña o niño puede guiarte en el camino! Déjale escoger siempre y cuando sea seguro. Esto aumentará su confianza y hará más probable que disfrute pasar tiempo contigo.",
+      "_translations": {
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "text_1_facilitator": {},
+        "text_2": {}
+      },
+      "quiz_1_feedback_2": "🎉 ¡Tienes razón!\n\n🧸 No tienes que planear una actividad. ¡Tu niña o niño puede guiarte en el camino! Déjale escoger siempre y cuando sea seguro. Esto aumentará su confianza y hará más probable que disfrute pasar tiempo contigo.",
+      "quiz_1_question": "**¡Hagamos un ejercicio!**\n\n_Ejercicio no.1_\n\nCuando paso tiempo juntos y conectados con mi niña o niño, necesito tener un plan y saber qué haremos juntos.",
+      "quiz_1_option_1_text": "Verdadero",
+      "quiz_1_option_2_text": "Falso",
+      "attached_single_doc": "https://docs.google.com/document/d/1-tg-SOLlmRdOvDnL5KJQSkXQ2eD6NAzEKZq3fQfX86E",
+      "text_1_facilitator": "La sesión de hoy trata sobre cómo pasar tiempo juntos y conectados con @fields.child_name 😃",
+      "text_2": "¡Pasar tiempo juntos y conectados con @fields.child_name es una forma increíble de construir una buena relación! Esto mostrará que te interesas por lo que hace. 💙\n\nTambién fomentará la confianza y el respeto, y ayudará a @fields.child_name a aprender cosas nuevas. ✨",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_1",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "@data.characters.f1_hijo_5.name y su mamá, @data.characters.f1_madre.name, juegan a disfrazarse en su tiempo juntos y conectados. Vamos a ver cómo se divierten:"
+        },
+        "character_1_text": {
+          "eng": "Quiero pasar tiempo juntos y conectados, @data.characters.f1_hijo_5.name. ¿Qué te gustaría hacer?"
+        },
+        "character_2_text": {
+          "eng": "¡Quiero jugar a disfrazarnos!"
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "attached_single_doc": "https://docs.google.com/document/d/1-tg-SOLlmRdOvDnL5KJQSkXQ2eD6NAzEKZq3fQfX86E",
+      "text_1_facilitator": "@data.characters.f1_hijo_5.name y su mamá, @data.characters.f1_madre.name, juegan a disfrazarse en su tiempo juntos y conectados. Vamos a ver cómo se divierten:",
+      "_translations": {
+        "text_1_facilitator": {},
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "image_asset": "images/comic/relation/one_on_one_yc_1.svg",
+      "character_1_id": "f1_madre",
+      "character_2_id": "f1_hijo_5",
+      "character_1_text": "Quiero pasar tiempo juntos y conectados, @data.characters.f1_hijo_5.name. ¿Qué te gustaría hacer?",
+      "character_2_text": "¡Quiero jugar a disfrazarnos!",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_2",
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "¡Me encanta la idea, @data.characters.f1_hijo_5.name! Veo que estás sacando la bolsa con triángulos."
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "attached_single_doc": "https://docs.google.com/document/d/1-tg-SOLlmRdOvDnL5KJQSkXQ2eD6NAzEKZq3fQfX86E",
+      "image_asset": "images/comic/relation/one_on_one_yc_2.svg",
+      "character_1_id": "f1_madre",
+      "character_1_text": "¡Me encanta la idea, @data.characters.f1_hijo_5.name! Veo que estás sacando la bolsa con triángulos.",
+      "_translations": {
+        "character_1_text": {}
+      },
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_3",
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "Mamá, es para ti."
+        },
+        "character_2_text": {
+          "eng": "Gracias, ¡me encanta!"
+        },
+        "character_3_text": {
+          "eng": "¡Póntela, mamá!"
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "attached_single_doc": "https://docs.google.com/document/d/1-tg-SOLlmRdOvDnL5KJQSkXQ2eD6NAzEKZq3fQfX86E",
+      "image_asset": "images/comic/relation/one_on_one_yc_3.svg",
+      "character_1_id": "f1_hijo_5",
+      "character_2_id": "f1_madre",
+      "character_1_text": "Mamá, es para ti.",
+      "_translations": {
+        "character_1_text": {},
+        "character_2_text": {},
+        "character_3_text": {}
+      },
+      "character_2_text": "Gracias, ¡me encanta!",
+      "character_3_id": "f1_hijo_5",
+      "character_3_text": "¡Póntela, mamá!",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_4",
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "¡Veo que cada vez te esfuerzas más por vestirte sin ayuda!"
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "attached_single_doc": "https://docs.google.com/document/d/1-tg-SOLlmRdOvDnL5KJQSkXQ2eD6NAzEKZq3fQfX86E",
+      "image_asset": "images/comic/relation/one_on_one_yc_4.svg",
+      "character_1_id": "f1_madre",
+      "character_1_text": "¡Veo que cada vez te esfuerzas más por vestirte sin ayuda!",
+      "_translations": {
+        "character_1_text": {}
+      },
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "practical_tips_1",
+      "media_type": "youtube",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Reproduce el siguiente video para aprender las estrategias de crianza para pasar tiempo juntos y conectados con @fields.child_name\n\n1️⃣ PRACTICAR\n2️⃣ JUGAR\n3️⃣ PERMANECER"
+        }
+      },
+      "category_id": "practical_tips",
+      "nested": false,
+      "attached_single_doc": "https://docs.google.com/document/d/1-tg-SOLlmRdOvDnL5KJQSkXQ2eD6NAzEKZq3fQfX86E",
+      "text_1_facilitator": "Reproduce el siguiente video para aprender las estrategias de crianza para pasar tiempo juntos y conectados con @fields.child_name\n\n1️⃣ PRACTICAR\n2️⃣ JUGAR\n3️⃣ PERMANECER",
+      "_translations": {
+        "text_1_facilitator": {}
+      },
+      "youtube_gb_en_f": "https://www.youtube.com/watch?v=SI5tIWR-Gzc",
+      "youtube_gb_en_m": "https://www.youtube.com/watch?v=w6izPKu3ygE",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "practical_tips_2",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Recuerda:"
+        },
+        "section_1_title": {
+          "eng": "PRACTICA"
+        },
+        "section_1_text": {
+          "eng": "Intenta hacerlo todos los días \n\n⏰ Dedícale 15 minutos al día (¡o más!) a @fields.child_name"
+        },
+        "section_2_title": {
+          "eng": "JUEGA"
+        },
+        "section_2_text": {
+          "eng": "⚽ Deja que @fields.child_name escoja qué hacer o de qué conversar.\n\n🎈Prueben hacer diferentes actividades juntos.\n\n😃 ¡Diviértanse!"
+        },
+        "section_3_title": {
+          "eng": "PERMANECE"
+        },
+        "section_3_text": {
+          "eng": "📺 Elimina las distracciones como el televisor o el teléfono.\n\n👀 Presta atención a @fields.child_name. Afirma con la cabeza o usa frases como \"entiendo\" para demostrar que realmente le estás poniendo atención.\n\n💛 Acéptale como es y evita juzgarle.\n\n💡 Recuerda que @fields.child_name también puede comunicarse con gestos, movimientos o sonidos, no solo con palabras, por eso es importante mirarle."
+        }
+      },
+      "category_id": "practical_tips",
+      "nested": false,
+      "attached_single_doc": "https://docs.google.com/document/d/1-tg-SOLlmRdOvDnL5KJQSkXQ2eD6NAzEKZq3fQfX86E",
+      "text_1_facilitator": "Recuerda:",
+      "_translations": {
+        "text_1_facilitator": {},
+        "section_1_title": {},
+        "section_1_text": {},
+        "section_2_title": {},
+        "section_2_text": {},
+        "section_3_title": {},
+        "section_3_text": {}
+      },
+      "section_1_icon_asset": "images/icons/clock_blue.png",
+      "section_2_icon_asset": "images/icons/football_blue.png",
+      "section_3_icon_asset": "images/icons/heart_filled_blue.png",
+      "section_1_title": "PRACTICA",
+      "section_1_text": "Intenta hacerlo todos los días \n\n⏰ Dedícale 15 minutos al día (¡o más!) a @fields.child_name",
+      "section_2_title": "JUEGA",
+      "section_2_text": "⚽ Deja que @fields.child_name escoja qué hacer o de qué conversar.\n\n🎈Prueben hacer diferentes actividades juntos.\n\n😃 ¡Diviértanse!",
+      "section_3_title": "PERMANECE",
+      "section_3_text": "📺 Elimina las distracciones como el televisor o el teléfono.\n\n👀 Presta atención a @fields.child_name. Afirma con la cabeza o usa frases como \"entiendo\" para demostrar que realmente le estás poniendo atención.\n\n💛 Acéptale como es y evita juzgarle.\n\n💡 Recuerda que @fields.child_name también puede comunicarse con gestos, movimientos o sonidos, no solo con palabras, por eso es importante mirarle.",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "home_activity_1",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "**Actividad para casa** ⭐ \n\nIntenta pasar por lo menos 15 minutos de tiempo juntos y conectados todos los días. ¡Hará una gran diferencia!"
+        },
+        "quiz_1_question": {
+          "eng": "¿Puedes hacerlo hoy? ⏰"
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Sí"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "¡Muy bien! Usa las estrategias que aprendiste hoy y ¡diviértete!, ya que es una forma estupenda de establecer una relación positiva. 💙"
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Lo intentaré"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "¡Qué bueno que lo intentarás! 🌱 No tiene que ser perfecto. Encuentra un momento que funcione para ti y prueba esta estrategia. 💚"
+        },
+        "quiz_1_option_3_text": {
+          "eng": "No"
+        },
+        "quiz_1_feedback_3": {
+          "eng": "¡De acuerdo! Si hoy no tienes tiempo, puedes apartar un poco para mañana."
+        }
+      },
+      "category_id": "home_activity",
+      "nested": false,
+      "quiz_1_feedback_1": "¡Muy bien! Usa las estrategias que aprendiste hoy y ¡diviértete!, ya que es una forma estupenda de establecer una relación positiva. 💙",
+      "_translations": {
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_feedback_3": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_option_3_text": {},
+        "text_1_facilitator": {}
+      },
+      "quiz_1_feedback_2": "¡Qué bueno que lo intentarás! 🌱 No tiene que ser perfecto. Encuentra un momento que funcione para ti y prueba esta estrategia. 💚",
+      "quiz_1_feedback_3": "¡De acuerdo! Si hoy no tienes tiempo, puedes apartar un poco para mañana.",
+      "quiz_1_question": "¿Puedes hacerlo hoy? ⏰",
+      "quiz_1_option_1_text": "Sí",
+      "quiz_1_option_2_text": "Lo intentaré",
+      "quiz_1_option_3_text": "No",
+      "attached_single_doc": "https://docs.google.com/document/d/1-tg-SOLlmRdOvDnL5KJQSkXQ2eD6NAzEKZq3fQfX86E",
+      "text_1_facilitator": "**Actividad para casa** ⭐ \n\nIntenta pasar por lo menos 15 minutos de tiempo juntos y conectados todos los días. ¡Hará una gran diferencia!",
+      "completed": false,
+      "version": 1
+    }
+  ],
+  "_metadata": {
+    "nested": {
+      "type": "boolean"
+    },
+    "completed": {
+      "type": "boolean"
+    },
+    "version": {
+      "type": "number"
+    }
+  }
+}

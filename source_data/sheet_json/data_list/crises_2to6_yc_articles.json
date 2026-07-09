@@ -1,0 +1,95 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "crises_2to6_yc_articles",
+  "data_list_name": "crises_2to6_yc_articles",
+  "status": "released",
+  "flow_subtype": "modules_crises_2to6_yc",
+  "module": "crises_2to6_yc",
+  "rows": [
+    {
+      "id": "@default",
+      "nested": false
+    },
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "❗ Esta sesión trata sobre aprender a responder cuando enfrentamos alguna crisis con nuestras niñas y nuestros niños.",
+      "text_2::eng": "😔😣 Cuando nuestras niñas y nuestros niños nos comparten algo que es muy difícil de conversar o les genera mucha molestia, debemos recordar que tenemos que mantener la calma, escuchar y mantener una postura abierta para que se sientan apoyadas y apoyados. 💛",
+      "quiz_1_question::eng": "📝 **¡Hagamos un ejercicio!**\n\n_Ejercicio no.1_\n\nCuando mi niña o niño tiene alguna preocupación, debo esperar a que venga a mí. No quiero presionarle más al preguntarle qué es lo que le preocupa.",
+      "quiz_1_option_1_text::eng": "Verdadero",
+      "quiz_1_feedback_1::eng": "👀 ¡Ups! ¡Buen intento!\n\n😣 Cuando las niñas y los niños están en crisis, pueden tener miedo de contárselo a las demás personas por muchas razones. Puede preocuparles que las demás personas les juzguen o se enojen. También puede que sientan vergüenza.\n\n💚 Puedes preguntarle a tu niña o niño, con mucha calma, por qué parecen estar molestas o molestos. 👀\n\n👂 _Afírmale que estás ahí para ayudar y que es seguro compartir su crisis contigo._",
+      "quiz_1_option_2_text::eng": "Falso",
+      "quiz_1_feedback_2::eng": "✨ ¡Estás en lo correcto!\n\n😣 Cuando las niñas y los niños están en crisis, pueden tener miedo de contárselo a las demás personas por muchas razones. Puede preocuparles que las demás personas les juzguen o se enojen. También puede que sientan vergüenza.\n\n💚 Puedes preguntarle a tu niña o niño, con mucha calma, por qué parecen estar molestas o molestos. 👀\n\n👂 _Afírmale que estás ahí para ayudar y que es seguro compartir su crisis contigo._"
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "@data.characters.f1_hijo_5.name parece estar disgustado. Veamos cómo responde su padre, @data.characters.f1_padre.name:",
+      "image_asset": "images/comic/safe/crises_2to6_yc_1.svg",
+      "character_1_id": "f1_hijo_5",
+      "character_1_text::eng": "Hoy no quiero jugar con Mateo.",
+      "character_2_id": "f1_padre",
+      "character_2_text::eng": "¿Qué pasó, @data.characters.f1_hijo_5.name? Creía que Mateo y tú eran amigos. ¿Quieres conversar de eso?"
+    },
+    {
+      "id": "explore_2",
+      "category_id": "explore",
+      "image_asset": "images/comic/safe/crises_2to6_yc_2.svg",
+      "character_1_id": "f1_hijo_5",
+      "character_1_text::eng": "Él y otros niños fueron malos conmigo. (Llorando) Dijeron que era tonto porque no sé amarrarme bien los zapatos."
+    },
+    {
+      "id": "explore_3",
+      "category_id": "explore",
+      "image_asset": "images/comic/safe/crises_2to6_yc_3.svg",
+      "character_1_id": "f1_padre",
+      "character_1_text::eng": "Oh no, @data.characters.f1_hijo_5.name, eso no se le debe de decir a nadie. Entiendo que te sientas triste por eso. Primero que nada, ¡no eres tonto! Estoy muy orgulloso de lo mucho que estás creciendo y aprendiendo nuevas cosas. Es importante que Mateo y los demás sepan que no está bien decir cosas feas. ¿Quieres que te acompañe para que podamos conversarlo con los demás?",
+      "character_2_id": "f1_hijo_5",
+      "character_2_text::eng": "Sí, vamos."
+    },
+    {
+      "id": "explore_4",
+      "category_id": "explore",
+      "image_asset": "images/comic/safe/crises_2to6_yc_4.svg",
+      "character_1_id": "f1_padre",
+      "character_1_text::eng": "También puedo buscar a la mamá y el papá de Mateo para que sepan lo que está pasando. Mateo siempre es amable y lindo contigo, así que puede ser que esté pasando algo más.\nGracias por compartirlo conmigo, @data.characters.f1_hijo_5.name. Me encanta que confíes en mí."
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Selecciona reproducir ▶️ para aprender las 4️⃣ cuatro estrategias que puedes hacer para apoyar a tu niña o niño cuando comparta algo difícil contigo.\n\n1️⃣ RESPIRAR\n2️⃣ ESCUCHAR\n3️⃣ RESPONDER\n4️⃣ CONSOLAR",
+      "media_type": "youtube",
+      "youtube_gb_en_f": "https://www.youtube.com/watch?v=jdH5y4Gfmd8",
+      "youtube_gb_en_m": "https://www.youtube.com/watch?v=-uVcue_7iyg"
+    },
+    {
+      "id": "practical_tips_2",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Recuerda:",
+      "section_1_title::eng": "RESPIRA, HAZ UNA PAUSA",
+      "section_1_icon_asset": "images/icons/pause.svg",
+      "section_1_text::eng": "🌱 Respira profundo para poder responder tranquilamente.\n\n💛 Pregúntate: \"¿Qué es lo que mi niña o niño necesita en este momento?\"",
+      "section_2_title::eng": "ESCUCHA",
+      "section_2_icon_asset": "images/icons/heart_filled_blue.png",
+      "section_2_text::eng": "Pregúntale a tu niña o niño qué está pasando\n\n👂 Deja que tu niña o niño comparta todo lo que necesite contigo. A veces, tu niña o niño se sentirá cómodo compartiéndolo con dibujos o usando juguetes y títeres.\n\n👀 Pon atención a cómo se sienten, compárteles lo que observas; esto hará que se sientan escuchadas y escuchados. Evita criticarles.\n\n💙 Dile a tu niña o niño que estás de su lado y que le amas.\n\n😣 Tanto las niñas como los niños, pueden enfrentarse a momentos difíciles y a situaciones de crisis. Acuérdate de estar al pendiente de ambos.",
+      "section_3_title::eng": "RESPONDE",
+      "section_3_icon_asset": "images/icons/single_speech_blue.png",
+      "section_3_text::eng": "¿Qué podría ser de ayuda para lo que está pasando?\n\n🔶 Puede que tengas que ayudar a tu niña, niño o adolescente a poder expresar sus emociones o ayudarles a que piensen o hagan otras cosas mientras se recuperan. \n\n⭐ Puede que necesites conversar sobre las medidas que tú o tu  niña, niño o adolescente  podrían tomar para ayudar con lo que ha ocurrido,.(seguridad, protección, educación). \n\n⏸ Más adelante, y solo si es necesario, puedes enseñarle a tu niña, niño o adolescente  sobre las consecuencias. En este momento, tu  niña, niño o adolescente  necesita que estés a su lado con mucho amor. \n\n✅ Recuerda que, si necesitas algún tipo de orientación sobre un tema de crianza o situación con tu niña, niño o adolescente, puedes ir a la biblioteca para acceder a una lista de recursos telefónicos y vía chat donde puedes encontrar apoyo.  ",
+      "section_4_title::eng": "CONSUELA",
+      "section_4_icon_asset": "images/icons/parent_child_heart.svg",
+      "section_4_text::eng": "Estar ahí para tu niña o niño\n\n🌷 Puede ser algo difícil ver que tu niña o niño se sienten tristes o confundidos, pero hay muchas cosas que puedes hacer para apoyarles.\n\n💚 Necesitan sentir aceptación y consuelo cuando pasan por cosas difíciles.\n\n🔄 En estos momentos, mantener una rutina constante puede ser especialmente útil. Las rutinas familiares pueden proporcionar una sensación de seguridad y normalidad, ayudando a tu niña o niño a sentirse segura o seguro de nuevo.\n\n😃 Recuérdale a tu niña o niño que le amas y dale las gracias por compartir lo que piensan y cómo se sienten contigo."
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "text_1_facilitator::eng": "**Actividad para casa** ⭐ \n\nBusca un momento de tranquilidad para revisar el mapa de la comunidad que creaste con tu niña o niño en la actividad pasada. \n\nPlatiquen sobre los posibles riesgos y de lo que podrían hacer para evitarlos. \n\nComenta con @fields.child_name las posibles acciones que pueden realizar en caso de que se encuentren en una situación de riesgo. 💡",
+      "quiz_1_question::eng": "¿Tienes tiempo para hacerlo hoy? ⏰",
+      "quiz_1_option_1_text::eng": "Sí",
+      "quiz_1_feedback_1::eng": "💙 ¡Increíble! Esto ayudará a que tú y @fields.child_name se preparen para afrontar situaciones difíciles y evitarlas desde un principio.",
+      "quiz_1_option_2_text::eng": "Lo intentaré",
+      "quiz_1_feedback_2::eng": "¡Muy bien! 😊 Intenta poner en práctica esta idea cuando tengas la oportunidad. Cada vez que pruebas algo nuevo, estás dando un paso para fortalecer a tu familia. 💛",
+      "quiz_1_option_3_text::eng": "No",
+      "quiz_1_feedback_3::eng": "⏰ ¡Está bien! Planea apartar una hora en los próximos días para tener esta plática con @fields.child_name. Esto ayudará a que tú y @fields.child_name estén preparados para afrontar situaciones difíciles y a evitarlas desde un principio."
+    }
+  ]
+}

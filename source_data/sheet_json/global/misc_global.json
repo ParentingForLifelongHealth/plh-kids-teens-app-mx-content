@@ -1,0 +1,402 @@
+{
+  "flow_type": "global",
+  "flow_name": "misc_global",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "yes",
+      "value": "Sí"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "no",
+      "value": "No"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "list",
+      "value": "Lista"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "map",
+      "value": "Mapa"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "module",
+      "value": "Módulo"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "start_here",
+      "value": "Inicia aquí"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "home",
+      "value": "Inicio"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "library",
+      "value": "Recursos"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "rewards",
+      "value": "Jugar"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "settings",
+      "value": "Ajustes"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "completed",
+      "value": "Completado"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "check_in",
+      "value": "Iniciar sesión / cuestionario"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "lets_begin",
+      "value": "Comencemos"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "continue",
+      "value": "Continuar"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "restart",
+      "value": "Reiniciar"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "in_1_day",
+      "value": "En 1 día"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "in_2_days",
+      "value": "En 2 días"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "in_3_days",
+      "value": "En 3 días"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "in_4_days",
+      "value": "En 4 días"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "in_5_days",
+      "value": "En 5 días"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "in_6_days",
+      "value": "En 6 días"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "in_7_days",
+      "value": "En 7 días"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "learn_more",
+      "value": "Conoce más"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "select_a_response",
+      "value": "Elige una respuesta"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "congratulations",
+      "value": "Felicitaciones"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "hurrah",
+      "value": "Bravo"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "a_new_moment_of_play_has_been_unlocked",
+      "value": "Un nuevo momento de juego ha sido desbloqueado"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "open_your_moment_of_play",
+      "value": "Abre tu nuevo momento de juego"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "open",
+      "value": "Abrir"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "well_done_for_finishing_this_module",
+      "value": "Buen trabajo al completar este módulo"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "well_done_for_finishing_this_check_in",
+      "value": "Buen trabajo al completar este cuestionario"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "unlock_your_moment_of_play",
+      "value": "Desbloquear tu nuevo juego"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "well_done_finishing_module_hp",
+      "value": "¡Buen trabajo completando todos los módulos y actividades para casa!"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "unlock_all_moments_of_play",
+      "value": "Desbloquea todas las opciones de juego"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "moments_of_play",
+      "value": "Momentos de juego"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "complete_your_modules_and_home_activities_to_unlock_new_moments_of_play",
+      "value": "Completa las estrategias y actividades para casa para desbloquear nuevos momentos de juego."
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "filter",
+      "value": "Filtrar"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "all_games",
+      "value": "Todos los juegos"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "unlocked",
+      "value": "Activos"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "favourites",
+      "value": "Me gusta"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "no_favourites_yet",
+      "value": "Aún no hay favoritos\nToca el ❤️ para guardar los juegos que más te gustan."
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "no_unlocked_yet",
+      "value": "¡Desbloquea momentos de juego al completar un módulo o registrar una actividad!"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "by_age",
+      "value": "Por edad"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "for_2-3",
+      "value": "Para 2 a 3 años"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "for_4-5",
+      "value": "Para 4 a 5 años"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "for_6-7",
+      "value": "Para 6 a 7 años"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "for_7-8",
+      "value": "Para 7 a 8 años"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "for_8-9",
+      "value": "Para 8 a 9 años"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "source",
+      "value": "Fuente"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "close",
+      "value": "Cerrar"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "profile",
+      "value": "Perfil"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "switch_language",
+      "value": "Cambiar idioma"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "your_parentapp_code",
+      "value": "Tu código de Parent App"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "account",
+      "value": "Cuenta"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "general",
+      "value": "General"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "feedback",
+      "value": "Retroalimentación"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "about_dayem",
+      "value": "Acerca de @global.app_name"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "developer_mode",
+      "value": "Modo de Desarrollador"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "version",
+      "value": "Versión"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "submit",
+      "value": "Enviar"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "save",
+      "value": "Guardar"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "share",
+      "value": "Compartir"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "download",
+      "value": "Descargar"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "language",
+      "value": "Idioma"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "type_here",
+      "value": "Escribe aquí"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "app_feedback",
+      "value": "Retroalimentación de la aplicación"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "challenge_not_here",
+      "value": "Mi reto no aparece aquí"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "other_challenge_prompt",
+      "value": "¡Ups! Se nos pasó esto. Cuéntanos un poco más sobre ello."
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "other_challenge_reply",
+      "value": "¡Gracias por contarnos tu reto! Este comentario nos ayudará a mejorar @global.app_name"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "tap_and_type",
+      "value": "Toca para escribir"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "change_certificate_name",
+      "value": "Cambiar nombre"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "certificate_name_question",
+      "value": "¿Qué nombre debe aparecer en tu certificado?"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "certificate_max_reprints_reached",
+      "value": "Lo siento, pero solo puedes actualizar el nombre en tu certificado para este curso @global.max_n_cert_reprints veces."
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "certificate_congrats",
+      "value": "¡Felicidades por haber completado el curso!"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "certificates_location",
+      "value": "Puedes encontrar tus certificados en @global.library "
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "confirm_exit_title",
+      "value": "Antes de salir"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "confirm_exit_text",
+      "value": "Si sales ahora, los cambios que realizaste no se guardarán"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "confirm_exit_button_cancel",
+      "value": "Cancelar"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "confirm_exit_button_leave",
+      "value": "Salir sin guardar"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_complete_modules",
+  "status": "released",
+  "rows": [
+    {
+      "name": "course_id"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@data.module_tasks",
+      "parameter_list": "filter: @item.tag_course.includes(@local.course_id) && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "button",
+      "value": "complete",
+      "action_list": "click | set_item | completed: true;\nclick | set_item |  completed_ts: @calc(now());",
+      "condition": "!@item.completed"
+    },
+    {
+      "type": "button",
+      "value": "uncomplete",
+      "action_list": "click  | set_item | completed: false;\nclick | set_item |  completed_ts: ;",
+      "condition": "@item.completed"
+    },
+    {
+      "type": "text",
+      "value": "@item.title"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

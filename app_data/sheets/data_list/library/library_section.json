@@ -1,0 +1,76 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "library_section",
+  "status": "released",
+  "data_list_name": "library_section",
+  "flow_subtype": "library",
+  "rows": [
+    {
+      "id": "support",
+      "image": "images/icons/question_mark_blue.svg",
+      "title": "Red de apoyo",
+      "_translations": {
+        "title": {},
+        "introduction": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Red de apoyo"
+        },
+        "introduction": {
+          "eng": "¿En qué necesitas ayuda?"
+        }
+      },
+      "introduction": "¿En qué necesitas ayuda?"
+    },
+    {
+      "id": "essential_tools",
+      "image": "images/icons/star_outline_blue.svg",
+      "title": "Recursos útiles",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Recursos útiles"
+        }
+      }
+    },
+    {
+      "id": "relax",
+      "image": "images/icons/smile_eyes_down.svg",
+      "title": "Toma una pausa",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Toma una pausa"
+        }
+      }
+    },
+    {
+      "id": "certificate",
+      "image": "images/icons/document-text-outline-thin.svg",
+      "title": "Mis certificados",
+      "_translations": {
+        "title": {},
+        "introduction": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Mis certificados"
+        },
+        "introduction": {
+          "eng": "Completa el curso y cuéntanos cómo te fue practicando en casa para obtener tu certificado."
+        }
+      },
+      "introduction": "Completa el curso y cuéntanos cómo te fue practicando en casa para obtener tu certificado."
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "data/Copy of PA library articles.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1j_lM3vThYrDN1WbzWtzV3ZXtIQvFszHKnaJXiGE3R_o"
+  }
+}

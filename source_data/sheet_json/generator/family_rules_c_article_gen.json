@@ -1,0 +1,31 @@
+{
+  "flow_type": "generator",
+  "flow_name": "family_rules_c_article_gen",
+  "status": "released",
+  "parameter_list": {
+    "input_data_list": "family_rules_c_articles",
+    "output_flow_name": "article_family_rules_c_@gen.id",
+    "output_flow_type": "template"
+  },
+  "module_id": "family_rules_c",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "article",
+      "value": "article",
+      "action_list": "completed | emit: completed; uncompleted | emit: uncompleted"
+    },
+    {
+      "name": "article_id",
+      "value": "@gen.id"
+    },
+    {
+      "name": "module_id",
+      "value": "family_rules_c",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

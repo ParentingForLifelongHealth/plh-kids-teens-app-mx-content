@@ -1,0 +1,168 @@
+{
+  "flow_type": "template",
+  "flow_name": "module_landing",
+  "status": "released",
+  "rows": [
+    {
+      "type": "update_action_list",
+      "name": "custom_actions_1",
+      "action_list": "nav_resume | emit: force_reload",
+      "condition": false,
+      "exclude_from_translation": true
+    },
+    {
+      "name": "module_id",
+      "value": "selfcare",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "course_id"
+    },
+    {
+      "name": "module_concat",
+      "value": "modules.@local.module_id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "module_row",
+      "value": "@data.@local.module_concat",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "categories",
+      "value": "_category_tasks",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "category_data",
+      "value": "@local.module_id@local.categories",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_top",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "bg_illustration",
+      "value": "images/backgrounds/complete_module.svg",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "plh_module_details_header",
+      "name": "plh_module_details_header",
+      "value": "@local.module_row.title",
+      "parameter_list": "background_image_asset: @local.bg_illustration;",
+      "exclude_from_translation": true,
+      "comments": "background_image_asset: @local.bg_illustration;\nmodule_image_asset: @local.module_row.image_asset;"
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "no_completed",
+      "value": 0,
+      "exclude_from_translation": true
+    },
+    {
+      "name": "total",
+      "value": 0,
+      "exclude_from_translation": true
+    },
+    {
+      "name": "course_id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "course_name",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "data_items",
+      "value": "@data.module_tasks",
+      "action_list": "data_changed | set_local : course_id: @items[0].tag_course;",
+      "parameter_list": "filter: @item.id == @local.module_id;\nlimit: 1;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "data_items",
+      "value": "@data.module_tasks",
+      "action_list": "data_changed | set_local : no_completed: @items.length;",
+      "parameter_list": "filter: @item.tag_course == @local.course_id && @item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship));",
+      "condition": "!!@local.course_id",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "data_items",
+      "value": "@data.module_tasks",
+      "action_list": "data_changed | set_local : total: @items.length;",
+      "parameter_list": "filter: @item.tag_course == @local.course_id  && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship));",
+      "condition": "!!@local.course_id",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "data_items",
+      "value": "courses",
+      "action_list": "data_changed | set_local : course_name: @items[0].title;",
+      "parameter_list": "filter: @item.id == @local.course_id;\nlimit: 1;",
+      "condition": "!!@local.course_id",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "tag: @local.module_row.tag_course",
+      "condition": false,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "comp: @local.no_completed",
+      "condition": false,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "total: @local.total",
+      "condition": false,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "style: column;\nvariant: inline_padding;"
+    },
+    {
+      "type": "text",
+      "name": "summary_text",
+      "value": "@global.module_summary_text",
+      "style_list": "text-align: center;",
+      "exclude_from_translation": false
+    },
+    {
+      "type": "text",
+      "name": "hp",
+      "value": "@local.module_row.home_activity",
+      "condition": "!!@local.module_row.home_activity",
+      "style_list": "text-align: center;"
+    },
+    {
+      "type": "button",
+      "name": "button_home",
+      "value": "@global.back_to_home",
+      "action_list": "click | go_to: home_screen;",
+      "exclude_from_translation": true,
+      "comments": "style: flexible"
+    },
+    {
+      "type": "button",
+      "name": "button_restart",
+      "value": "<u>@global.restart</u>",
+      "action_list": "click | nav_stack: open | template: stack_module_@local.module_id, header: false;",
+      "parameter_list": "variant: card;\nstyle: no-background;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

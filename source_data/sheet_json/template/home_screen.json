@@ -1,0 +1,135 @@
+{
+  "flow_type": "template",
+  "flow_name": "home_screen",
+  "status": "released",
+  "rows": [
+    {
+      "name": "home_screen_logo",
+      "value": "images/logos/app_logo.png",
+      "condition": "!@global.home_screen_logo_asset"
+    },
+    {
+      "name": "home_screen_logo",
+      "value": "@global.home_screen_logo_asset",
+      "condition": "!!@global.home_screen_logo_asset"
+    },
+    {
+      "name": "home_screen_logo_width",
+      "value": "48px"
+    },
+    {
+      "name": "home_screen_logo_width",
+      "value": "@global.home_screen_logo_height",
+      "condition": "!!@global.home_screen_logo_height"
+    },
+    {
+      "name": "home_screen_logo_height",
+      "value": "48px",
+      "comment": "padding: 12px 12px 0px;"
+    },
+    {
+      "name": "home_screen_logo_height",
+      "value": "@global.home_screen_logo_height",
+      "condition": "!!@global.home_screen_logo_height",
+      "comment": "padding: 0px 24px 0px;"
+    },
+    {
+      "name": "false_text",
+      "value": "@global.map",
+      "exclude_from_translation": true,
+      "comment": "padding: 8px 24px 0px 24px;"
+    },
+    {
+      "name": "true_text",
+      "value": "@global.list",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "now",
+      "value": "@calc(timestamp())"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_sticky_top",
+      "parameter_list": "style: column;",
+      "exclude_from_translation": true,
+      "style_list": "background-color: white;",
+      "comment": "justify-content: space-between;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_row",
+      "exclude_from_translation": true,
+      "style_list": "justify-content: space-between;",
+      "comment": "margin-top: 24px;\nmargin-left: -24px;"
+    },
+    {
+      "type": "title",
+      "name": "hello_name",
+      "value": "@global.greeting @fields.user_name",
+      "comment": "margin-top: 8px;"
+    },
+    {
+      "type": "image",
+      "name": "image",
+      "value": "@local.home_screen_logo",
+      "exclude_from_translation": true,
+      "style_list": "height: @local.home_screen_logo_height;\nwidth: @local.home_screen_logo_width;",
+      "comment": "margin-bottom: -8px;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "name": "has_been_clicked_previously",
+      "value": "!!@fields.homescreen_quickstart_click_history"
+    },
+    {
+      "name": "updated_value",
+      "value": "@fields.homescreen_quickstart_click_history;  @local.now"
+    },
+    {
+      "type": "begin_template",
+      "name": "home_screen_header",
+      "value": "home_screen_header",
+      "action_list": "completed | set_item | homescreen_quickstart_click_history: @local.now;",
+      "condition": "!@local.has_been_clicked_previously",
+      "exclude_from_translation": true,
+      "style_list": "margin-top: -12px;",
+      "comment": "margin-top: -1em"
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "home_screen_header",
+      "value": "home_screen_header",
+      "action_list": "completed | set_item | homescreen_quickstart_click_history: @local.updated_value",
+      "condition": "@local.has_been_clicked_previously",
+      "exclude_from_translation": true,
+      "style_list": "margin-top: -12px;",
+      "comment": "margin-top: -1em"
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "module_list",
+      "value": "module_list",
+      "exclude_from_translation": true,
+      "style_list": "padding: 8px 0px 0px;\nmargin-top: -1em"
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    }
+  ]
+}

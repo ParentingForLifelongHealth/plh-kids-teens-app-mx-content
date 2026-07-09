@@ -1,0 +1,58 @@
+{
+  "flow_type": "template",
+  "flow_name": "module_landing_i_routines_c",
+  "status": "released",
+  "parameter_list": {
+    "app_config": {
+      "LAYOUT": {
+        "page_padding": "0 0"
+      }
+    }
+  },
+  "comment": "i_routines_c",
+  "comment_2": 27,
+  "comment_3": 12,
+  "rows": [
+    {
+      "type": "template",
+      "name": "module_landing",
+      "value": "module_landing",
+      "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "emit",
+          "args": [
+            "completed"
+          ],
+          "_raw": "completed | emit: completed"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "emit",
+          "args": [
+            "uncompleted"
+          ],
+          "_raw": "uncompleted | emit: uncompleted"
+        }
+      ],
+      "rows": [
+        {
+          "name": "module_id",
+          "value": "i_routines_c",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "type": "set_variable",
+          "_nested_name": "module_landing.module_id"
+        }
+      ],
+      "_nested_name": "module_landing"
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "templates/MX module_landing templates (1-15).xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1RLy7GiNgCHhLj4ul6mMqAtvjxxPpr5wGZjQxcfm0Nn8"
+  }
+}

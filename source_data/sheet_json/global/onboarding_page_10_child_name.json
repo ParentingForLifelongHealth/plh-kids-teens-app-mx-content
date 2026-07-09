@@ -1,0 +1,28 @@
+{
+  "flow_type": "global",
+  "flow_subtype": "onboarding",
+  "flow_name": "onboarding_page_10_child_name",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "facilitator_message_one_child",
+      "value": "Cuéntame sobre tu niña, niño o adolescente."
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "facilitator_message_multiple_children",
+      "value": "Para comenzar, pensemos en la niña, niño o adolescente con quien enfrentas más retos. Así podré darte orientación adecuada a su edad."
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "question_child_name",
+      "value": "¿Cómo se llama tu niña, niño o adolescente?"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "placeholder_child_name",
+      "value": "Ingresa un nombre"
+    }
+  ]
+}

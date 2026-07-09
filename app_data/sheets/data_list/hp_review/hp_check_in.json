@@ -1,0 +1,850 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "hp_check_in",
+  "status": "released",
+  "data_list_name": "hp_check_in",
+  "flow_subtype": "hp_review",
+  "rows": [
+    {
+      "id": "relation_c",
+      "happy_image_asset": "images/icons/faces/happy.svg",
+      "ok_image_asset": "images/icons/faces/neutral.svg",
+      "sad_image_asset": "images/icons/faces/sad.svg",
+      "attached_single_doc_1": "https://docs.google.com/document/d/1eJNU-MCk21ZCkoYR5uw2-mlEPSTmne6CqvHiydw2Rac",
+      "notification_text": "¿Cómo les ha ido con su tiempo juntos y conectados?",
+      "_translations": {
+        "notification_text": {},
+        "text_goal": {},
+        "question_done": {},
+        "reply_no": {},
+        "reply_happy": {},
+        "reply_ok": {},
+        "reply_sad": {},
+        "activity_title": {},
+        "question_how": {},
+        "happy_text": {},
+        "ok_text": {},
+        "sad_text": {},
+        "outro_text": {}
+      },
+      "_translatedFields": {
+        "notification_text": {
+          "eng": "¿Cómo les ha ido con su tiempo juntos y conectados?"
+        },
+        "text_goal": {
+          "eng": "La práctica en los últimos días se enfocaba en pasar al menos 15 minutos de tiempo juntos y conectados todos los días."
+        },
+        "question_done": {
+          "eng": "En las últimas 24 horas, ¿pasaste al menos 15 minutos de tiempo juntos y conectados con tu niña o niño?"
+        },
+        "reply_no": {
+          "eng": "Está bien, no pasa nada. En este curso aprenderás más sobre la importancia de pasar tiempo juntos y conectados con tu niña o niño."
+        },
+        "reply_happy": {
+          "eng": "¡Excelente! Sigue trabajando para mejorar tu relación con tu niña o niño."
+        },
+        "reply_ok": {
+          "eng": "Parece que el tiempo juntos y conectados tuvo algunos retos. Cada pequeño momento de conexión también cuenta."
+        },
+        "reply_sad": {
+          "eng": "Lamento escuchar que el tiempo juntos y conectados ha sido más difícil de lo esperado."
+        },
+        "activity_title": {
+          "eng": "¡Veamos cómo te fue con la actividad para casa!"
+        },
+        "question_how": {
+          "eng": "¿Cómo te fue?"
+        },
+        "happy_text": {
+          "eng": "Bien"
+        },
+        "ok_text": {
+          "eng": "Regular"
+        },
+        "sad_text": {
+          "eng": "Mal"
+        },
+        "outro_text": {
+          "eng": "¡Qué bien que buscaste soluciones a tus retos! Te animamos a probarlas. Tu relación con @fields.child_name se irá fortaleciendo cada día."
+        }
+      },
+      "text_goal": "La práctica en los últimos días se enfocaba en pasar al menos 15 minutos de tiempo juntos y conectados todos los días.",
+      "question_done": "En las últimas 24 horas, ¿pasaste al menos 15 minutos de tiempo juntos y conectados con tu niña o niño?",
+      "reply_no": "Está bien, no pasa nada. En este curso aprenderás más sobre la importancia de pasar tiempo juntos y conectados con tu niña o niño.",
+      "reply_happy": "¡Excelente! Sigue trabajando para mejorar tu relación con tu niña o niño.",
+      "reply_ok": "Parece que el tiempo juntos y conectados tuvo algunos retos. Cada pequeño momento de conexión también cuenta.",
+      "reply_sad": "Lamento escuchar que el tiempo juntos y conectados ha sido más difícil de lo esperado.",
+      "activity_title": "¡Veamos cómo te fue con la actividad para casa!",
+      "question_how": "¿Cómo te fue?",
+      "happy_text": "Bien",
+      "ok_text": "Regular",
+      "sad_text": "Mal",
+      "outro_text": "¡Qué bien que buscaste soluciones a tus retos! Te animamos a probarlas. Tu relación con @fields.child_name se irá fortaleciendo cada día."
+    },
+    {
+      "id": "relation_t",
+      "happy_image_asset": "images/icons/faces/happy.svg",
+      "ok_image_asset": "images/icons/faces/neutral.svg",
+      "sad_image_asset": "images/icons/faces/sad.svg",
+      "attached_single_doc_1": "https://docs.google.com/document/d/1eJNU-MCk21ZCkoYR5uw2-mlEPSTmne6CqvHiydw2Rac",
+      "notification_text": "¿Cómo les ha ido con su tiempo juntos y conectados?",
+      "_translations": {
+        "notification_text": {},
+        "text_goal": {},
+        "question_done": {},
+        "reply_no": {},
+        "reply_happy": {},
+        "reply_ok": {},
+        "reply_sad": {},
+        "activity_title": {},
+        "question_how": {},
+        "happy_text": {},
+        "ok_text": {},
+        "sad_text": {},
+        "outro_text": {}
+      },
+      "_translatedFields": {
+        "notification_text": {
+          "eng": "¿Cómo les ha ido con su tiempo juntos y conectados?"
+        },
+        "text_goal": {
+          "eng": "La práctica en los últimos días se enfocaba en pasar al menos 15 minutos de tiempo juntos y conectados todos los días."
+        },
+        "question_done": {
+          "eng": "En las últimas 24 horas, ¿pasaste al menos 15 minutos de tiempo juntos y conectados con tu adolescente?"
+        },
+        "reply_no": {
+          "eng": "Está bien, no pasa nada. En este curso aprenderás más sobre la importancia de pasar tiempo juntos y conectados con tu adolescente."
+        },
+        "reply_happy": {
+          "eng": "¡Excelente! Sigue trabajando para mejorar tu relación con tu adolescente."
+        },
+        "reply_ok": {
+          "eng": "Parece que pasar tiempo juntos y conectados con tu adolescente no fue tan fácil esta vez. Lo importante es seguir intentándolo poco a poco."
+        },
+        "reply_sad": {
+          "eng": "Lamento escuchar que el Tiempo de estar Juntos y Conectados ha sido más difícil de lo esperado."
+        },
+        "activity_title": {
+          "eng": "¡Veamos cómo te fue con la actividad para casa!"
+        },
+        "question_how": {
+          "eng": "¿Cómo te fue?"
+        },
+        "happy_text": {
+          "eng": "Bien"
+        },
+        "ok_text": {
+          "eng": "Regular"
+        },
+        "sad_text": {
+          "eng": "Mal"
+        },
+        "outro_text": {
+          "eng": "¡Qué bien que buscaste soluciones a tus retos! Te animamos a probarlas. Tu relación con @fields.child_name se irá fortaleciendo cada día."
+        }
+      },
+      "text_goal": "La práctica en los últimos días se enfocaba en pasar al menos 15 minutos de tiempo juntos y conectados todos los días.",
+      "question_done": "En las últimas 24 horas, ¿pasaste al menos 15 minutos de tiempo juntos y conectados con tu adolescente?",
+      "reply_no": "Está bien, no pasa nada. En este curso aprenderás más sobre la importancia de pasar tiempo juntos y conectados con tu adolescente.",
+      "reply_happy": "¡Excelente! Sigue trabajando para mejorar tu relación con tu adolescente.",
+      "reply_ok": "Parece que pasar tiempo juntos y conectados con tu adolescente no fue tan fácil esta vez. Lo importante es seguir intentándolo poco a poco.",
+      "reply_sad": "Lamento escuchar que el Tiempo de estar Juntos y Conectados ha sido más difícil de lo esperado.",
+      "activity_title": "¡Veamos cómo te fue con la actividad para casa!",
+      "question_how": "¿Cómo te fue?",
+      "happy_text": "Bien",
+      "ok_text": "Regular",
+      "sad_text": "Mal",
+      "outro_text": "¡Qué bien que buscaste soluciones a tus retos! Te animamos a probarlas. Tu relación con @fields.child_name se irá fortaleciendo cada día."
+    },
+    {
+      "id": "understand_c",
+      "happy_image_asset": "images/icons/faces/happy.svg",
+      "ok_image_asset": "images/icons/faces/neutral.svg",
+      "sad_image_asset": "images/icons/faces/sad.svg",
+      "attached_single_doc_1": "https://docs.google.com/document/d/1eJNU-MCk21ZCkoYR5uw2-mlEPSTmne6CqvHiydw2Rac",
+      "notification_text": "¿Cómo vas con las actividades para apoyar al desarrollo de @fields.child_name?",
+      "_translations": {
+        "notification_text": {},
+        "text_goal": {},
+        "question_done": {},
+        "reply_no": {},
+        "reply_happy": {},
+        "reply_ok": {},
+        "reply_sad": {},
+        "activity_title": {},
+        "question_how": {},
+        "happy_text": {},
+        "ok_text": {},
+        "sad_text": {},
+        "outro_text": {}
+      },
+      "_translatedFields": {
+        "notification_text": {
+          "eng": "¿Cómo vas con las actividades para apoyar al desarrollo de @fields.child_name?"
+        },
+        "text_goal": {
+          "eng": "La práctica en los últimos días se enfocaba en invitar a @fields.child_name a jugar contigo, dejándole elegir y guiarte en la actividad."
+        },
+        "question_done": {
+          "eng": "En las últimas 24 horas, ¿pudiste jugar con @fields.child_name?"
+        },
+        "reply_no": {
+          "eng": "Está bien, no pasa nada. Cada día es una oportunidad para jugar con @fields.child_name."
+        },
+        "reply_happy": {
+          "eng": "¡Excelente! Sigue así, apoyando el desarrollo de @fields.child_name."
+        },
+        "reply_ok": {
+          "eng": "A veces las cosas no salen exactamente como esperábamos y eso también es parte del proceso. Vas avanzando paso a paso."
+        },
+        "reply_sad": {
+          "eng": "Lamentamos escuchar que la actividad no salió como esperabas."
+        },
+        "activity_title": {
+          "eng": "¡Veamos cómo te fue con la actividad para casa!"
+        },
+        "question_how": {
+          "eng": "¿Cómo te fue?"
+        },
+        "happy_text": {
+          "eng": "Bien"
+        },
+        "ok_text": {
+          "eng": "Regular"
+        },
+        "sad_text": {
+          "eng": "Mal"
+        },
+        "outro_text": {
+          "eng": "¡Qué bien que buscaste soluciones a tus retos! Te animamos a probarlas. Tu relación con @fields.child_name se irá fortaleciendo cada día."
+        }
+      },
+      "text_goal": "La práctica en los últimos días se enfocaba en invitar a @fields.child_name a jugar contigo, dejándole elegir y guiarte en la actividad.",
+      "question_done": "En las últimas 24 horas, ¿pudiste jugar con @fields.child_name?",
+      "reply_no": "Está bien, no pasa nada. Cada día es una oportunidad para jugar con @fields.child_name.",
+      "reply_happy": "¡Excelente! Sigue así, apoyando el desarrollo de @fields.child_name.",
+      "reply_ok": "A veces las cosas no salen exactamente como esperábamos y eso también es parte del proceso. Vas avanzando paso a paso.",
+      "reply_sad": "Lamentamos escuchar que la actividad no salió como esperabas.",
+      "activity_title": "¡Veamos cómo te fue con la actividad para casa!",
+      "question_how": "¿Cómo te fue?",
+      "happy_text": "Bien",
+      "ok_text": "Regular",
+      "sad_text": "Mal",
+      "outro_text": "¡Qué bien que buscaste soluciones a tus retos! Te animamos a probarlas. Tu relación con @fields.child_name se irá fortaleciendo cada día."
+    },
+    {
+      "id": "understand_t",
+      "happy_image_asset": "images/icons/faces/happy.svg",
+      "ok_image_asset": "images/icons/faces/neutral.svg",
+      "sad_image_asset": "images/icons/faces/sad.svg",
+      "attached_single_doc_1": "https://docs.google.com/document/d/1eJNU-MCk21ZCkoYR5uw2-mlEPSTmne6CqvHiydw2Rac",
+      "notification_text": "¿Cómo vas con tratar de hablar con tu adolescente sobre sus sentimientos?",
+      "_translations": {
+        "notification_text": {},
+        "text_goal": {},
+        "question_done": {},
+        "reply_no": {},
+        "reply_happy": {},
+        "reply_ok": {},
+        "reply_sad": {},
+        "activity_title": {},
+        "question_how": {},
+        "happy_text": {},
+        "ok_text": {},
+        "sad_text": {},
+        "outro_text": {}
+      },
+      "_translatedFields": {
+        "notification_text": {
+          "eng": "¿Cómo vas con tratar de hablar con tu adolescente sobre sus sentimientos?"
+        },
+        "text_goal": {
+          "eng": "La práctica en los últimos días se enfocaba en conversar con tu adolescente sobre las cosas que le producen estrés"
+        },
+        "question_done": {
+          "eng": "En las últimas 24 horas, ¿conversaste con tu adolescente sobre las cosas que le producen estrés?"
+        },
+        "reply_no": {
+          "eng": "Está bien, no pasa nada. En este curso aprenderás más sobre cómo conversar con tu adolescente acerca de las cosas que le producen estrés."
+        },
+        "reply_happy": {
+          "eng": "¡Excelente! Sigue con ese gran esfuerzo."
+        },
+        "reply_ok": {
+          "eng": "Hablar sobre el estrés no siempre es sencillo. Lo importante es abrir espacios de conversación poco a poco."
+        },
+        "reply_sad": {
+          "eng": "Lamento que esto sea difícil."
+        },
+        "activity_title": {
+          "eng": "¡Veamos cómo te fue con la actividad para casa!"
+        },
+        "question_how": {
+          "eng": "¿Cómo te fue?"
+        },
+        "happy_text": {
+          "eng": "Bien"
+        },
+        "ok_text": {
+          "eng": "Regular"
+        },
+        "sad_text": {
+          "eng": "Mal"
+        },
+        "outro_text": {
+          "eng": "¡Qué bien que buscaste soluciones a tus retos! Te animamos a probarlas. Tu relación con @fields.child_name se irá fortaleciendo cada día."
+        }
+      },
+      "text_goal": "La práctica en los últimos días se enfocaba en conversar con tu adolescente sobre las cosas que le producen estrés",
+      "question_done": "En las últimas 24 horas, ¿conversaste con tu adolescente sobre las cosas que le producen estrés?",
+      "reply_no": "Está bien, no pasa nada. En este curso aprenderás más sobre cómo conversar con tu adolescente acerca de las cosas que le producen estrés.",
+      "reply_happy": "¡Excelente! Sigue con ese gran esfuerzo.",
+      "reply_ok": "Hablar sobre el estrés no siempre es sencillo. Lo importante es abrir espacios de conversación poco a poco.",
+      "reply_sad": "Lamento que esto sea difícil.",
+      "activity_title": "¡Veamos cómo te fue con la actividad para casa!",
+      "question_how": "¿Cómo te fue?",
+      "happy_text": "Bien",
+      "ok_text": "Regular",
+      "sad_text": "Mal",
+      "outro_text": "¡Qué bien que buscaste soluciones a tus retos! Te animamos a probarlas. Tu relación con @fields.child_name se irá fortaleciendo cada día."
+    },
+    {
+      "id": "behave_c",
+      "happy_image_asset": "images/icons/faces/happy.svg",
+      "ok_image_asset": "images/icons/faces/neutral.svg",
+      "sad_image_asset": "images/icons/faces/sad.svg",
+      "attached_single_doc_1": "https://docs.google.com/document/d/1eJNU-MCk21ZCkoYR5uw2-mlEPSTmne6CqvHiydw2Rac",
+      "notification_text": "¿Cómo va el intentar guiar el buen comportamiento de @fields.child_name?",
+      "_translations": {
+        "notification_text": {},
+        "text_goal": {},
+        "question_done": {},
+        "reply_no": {},
+        "reply_happy": {},
+        "reply_ok": {},
+        "reply_sad": {},
+        "activity_title": {},
+        "question_how": {},
+        "happy_text": {},
+        "ok_text": {},
+        "sad_text": {},
+        "outro_text": {}
+      },
+      "_translatedFields": {
+        "notification_text": {
+          "eng": "¿Cómo va el intentar guiar el buen comportamiento de @fields.child_name?"
+        },
+        "text_goal": {
+          "eng": "La práctica en los últimos días se enfocaba en conversar con @fields.child_name de lo que has aprendido sobre el enojo y elegir una estrategia que puedas usar cuando sientas enojo. Por ejemplo, escuchar música."
+        },
+        "question_done": {
+          "eng": "En las últimas 24 horas, ¿conversaste con @fields.child_name sobre el enojo y eligieron una estrategia que puedan usar cuando sientan enojo?"
+        },
+        "reply_no": {
+          "eng": "Está bien, no pasa nada. En este curso aprenderás más sobre cómo reconocer el enojo y elegir estrategias para manejarlo junto con @fields.child_name."
+        },
+        "reply_happy": {
+          "eng": "¡Excelente! Sigue así, guiando el buen comportamiento de @fields.child_name."
+        },
+        "reply_ok": {
+          "eng": "Aprender nuevas maneras de manejar las emociones puede tomar práctica. Lo importante es que están comenzando a explorarlas juntos."
+        },
+        "reply_sad": {
+          "eng": "Lamentamos escuchar no ha sido fácil guiar el comportamiento de @fields.child_name."
+        },
+        "activity_title": {
+          "eng": "¡Veamos cómo te fue con la actividad para casa!"
+        },
+        "question_how": {
+          "eng": "¿Cómo te fue?"
+        },
+        "happy_text": {
+          "eng": "Bien"
+        },
+        "ok_text": {
+          "eng": "Regular"
+        },
+        "sad_text": {
+          "eng": "Mal"
+        },
+        "outro_text": {
+          "eng": "¡Qué bien que buscaste soluciones a tus retos! Te animamos a probarlas. Tu relación con @fields.child_name se irá fortaleciendo cada día."
+        }
+      },
+      "text_goal": "La práctica en los últimos días se enfocaba en conversar con @fields.child_name de lo que has aprendido sobre el enojo y elegir una estrategia que puedas usar cuando sientas enojo. Por ejemplo, escuchar música.",
+      "question_done": "En las últimas 24 horas, ¿conversaste con @fields.child_name sobre el enojo y eligieron una estrategia que puedan usar cuando sientan enojo?",
+      "reply_no": "Está bien, no pasa nada. En este curso aprenderás más sobre cómo reconocer el enojo y elegir estrategias para manejarlo junto con @fields.child_name.",
+      "reply_happy": "¡Excelente! Sigue así, guiando el buen comportamiento de @fields.child_name.",
+      "reply_ok": "Aprender nuevas maneras de manejar las emociones puede tomar práctica. Lo importante es que están comenzando a explorarlas juntos.",
+      "reply_sad": "Lamentamos escuchar no ha sido fácil guiar el comportamiento de @fields.child_name.",
+      "activity_title": "¡Veamos cómo te fue con la actividad para casa!",
+      "question_how": "¿Cómo te fue?",
+      "happy_text": "Bien",
+      "ok_text": "Regular",
+      "sad_text": "Mal",
+      "outro_text": "¡Qué bien que buscaste soluciones a tus retos! Te animamos a probarlas. Tu relación con @fields.child_name se irá fortaleciendo cada día."
+    },
+    {
+      "id": "behave_t",
+      "happy_image_asset": "images/icons/faces/happy.svg",
+      "ok_image_asset": "images/icons/faces/neutral.svg",
+      "sad_image_asset": "images/icons/faces/sad.svg",
+      "attached_single_doc_1": "https://docs.google.com/document/d/1eJNU-MCk21ZCkoYR5uw2-mlEPSTmne6CqvHiydw2Rac",
+      "notification_text": "¿Cómo va el intentar guiar el buen comportamiento de tu adolescente?",
+      "_translations": {
+        "notification_text": {},
+        "text_goal": {},
+        "question_done": {},
+        "reply_no": {},
+        "reply_happy": {},
+        "reply_ok": {},
+        "reply_sad": {},
+        "activity_title": {},
+        "question_how": {},
+        "happy_text": {},
+        "ok_text": {},
+        "sad_text": {},
+        "outro_text": {}
+      },
+      "_translatedFields": {
+        "notification_text": {
+          "eng": "¿Cómo va el intentar guiar el buen comportamiento de tu adolescente?"
+        },
+        "text_goal": {
+          "eng": "La práctica en los últimos días se enfocaba en conversar con @fields.child_name de lo que has aprendido sobre el enojo y elegir una estrategia que puedas usar cuando sientas enojo. Por ejemplo, escuchar música."
+        },
+        "question_done": {
+          "eng": "En las últimas 24 horas, ¿conversaste con @fields.child_name sobre el enojo y eligieron una estrategia que puedan usar cuando sientan enojo?"
+        },
+        "reply_no": {
+          "eng": "Está bien, no pasa nada. En este curso aprenderás más sobre cómo reconocer el enojo y elegir estrategias para manejarlo junto con @fields.child_name."
+        },
+        "reply_happy": {
+          "eng": "¡Excelente! Sigue así, guiando el buen comportamiento de tu adolescente."
+        },
+        "reply_ok": {
+          "eng": "Guiar el comportamiento de tu adolescente puede tener momentos difíciles. Cada intento es una oportunidad para seguir aprendiendo juntos."
+        },
+        "reply_sad": {
+          "eng": "Lamento que el guiar el buen comportamiento de tu adolescente no vaya muy bien."
+        },
+        "activity_title": {
+          "eng": "¡Veamos cómo te fue con la actividad para casa!"
+        },
+        "question_how": {
+          "eng": "¿Cómo te fue?"
+        },
+        "happy_text": {
+          "eng": "Bien"
+        },
+        "ok_text": {
+          "eng": "Regular"
+        },
+        "sad_text": {
+          "eng": "Mal"
+        },
+        "outro_text": {
+          "eng": "¡Qué bien que buscaste soluciones a tus retos! Te animamos a probarlas. Tu relación con @fields.child_name se irá fortaleciendo cada día."
+        }
+      },
+      "text_goal": "La práctica en los últimos días se enfocaba en conversar con @fields.child_name de lo que has aprendido sobre el enojo y elegir una estrategia que puedas usar cuando sientas enojo. Por ejemplo, escuchar música.",
+      "question_done": "En las últimas 24 horas, ¿conversaste con @fields.child_name sobre el enojo y eligieron una estrategia que puedan usar cuando sientan enojo?",
+      "reply_no": "Está bien, no pasa nada. En este curso aprenderás más sobre cómo reconocer el enojo y elegir estrategias para manejarlo junto con @fields.child_name.",
+      "reply_happy": "¡Excelente! Sigue así, guiando el buen comportamiento de tu adolescente.",
+      "reply_ok": "Guiar el comportamiento de tu adolescente puede tener momentos difíciles. Cada intento es una oportunidad para seguir aprendiendo juntos.",
+      "reply_sad": "Lamento que el guiar el buen comportamiento de tu adolescente no vaya muy bien.",
+      "activity_title": "¡Veamos cómo te fue con la actividad para casa!",
+      "question_how": "¿Cómo te fue?",
+      "happy_text": "Bien",
+      "ok_text": "Regular",
+      "sad_text": "Mal",
+      "outro_text": "¡Qué bien que buscaste soluciones a tus retos! Te animamos a probarlas. Tu relación con @fields.child_name se irá fortaleciendo cada día."
+    },
+    {
+      "id": "safety_c",
+      "happy_image_asset": "images/icons/faces/happy.svg",
+      "ok_image_asset": "images/icons/faces/neutral.svg",
+      "sad_image_asset": "images/icons/faces/sad.svg",
+      "attached_single_doc_1": "https://docs.google.com/document/d/1eJNU-MCk21ZCkoYR5uw2-mlEPSTmne6CqvHiydw2Rac",
+      "notification_text": "¿Qué fue lo que más se te dificultó al procurar la seguridad de @fields.child_name dentro y fuera de internet?",
+      "_translations": {
+        "notification_text": {},
+        "text_goal": {},
+        "question_done": {},
+        "reply_no": {},
+        "reply_happy": {},
+        "reply_ok": {},
+        "reply_sad": {},
+        "activity_title": {},
+        "question_how": {},
+        "happy_text": {},
+        "ok_text": {},
+        "sad_text": {},
+        "outro_text": {}
+      },
+      "_translatedFields": {
+        "notification_text": {
+          "eng": "¿Qué fue lo que más se te dificultó al procurar la seguridad de @fields.child_name dentro y fuera de internet?"
+        },
+        "text_goal": {
+          "eng": "La práctica en los últimos días se enfocaba en dedicar un tiempo juntos y conectados con @fields.child_name para crear un mapa de seguridad comunitaria siguiendo las estrategias revisadas."
+        },
+        "question_done": {
+          "eng": "En las últimas 24 horas, ¿dedicaron un tiempo juntos y conectados para crear un mapa de seguridad comunitaria con @fields.child_name?"
+        },
+        "reply_no": {
+          "eng": "Está bien, no pasa nada. En este curso aprenderás más sobre cómo crear un mapa de seguridad comunitaria junto con @fields.child_name."
+        },
+        "reply_happy": {
+          "eng": "📺 ¡Excelente! Sigue así, trabajando para mantener la seguridad de tu niña, niño o adolescente dentro y fuera de internet."
+        },
+        "reply_ok": {
+          "eng": "A veces hablar y planear sobre seguridad puede sentirse complicado. Lo importante es que estás buscando maneras de proteger a @fields.child_name."
+        },
+        "reply_sad": {
+          "eng": "😔 Lamentamos escuchar que te está costando trabajo mantener la seguridad de @fields.child_name dentro y fuera del internet.\n\n💡 Si necesitas apoyo, considera la posibilidad de pedir ayuda en la escuela de @fields.child_name, con la familia o con amistades  a quienes se les facilité la tecnología.\n \nRecuerda que el bienestar de @fields.child_name es importante, así como el de tu familia."
+        },
+        "activity_title": {
+          "eng": "¡Veamos cómo te fue con la actividad para casa!"
+        },
+        "question_how": {
+          "eng": "¿Cómo te fue?"
+        },
+        "happy_text": {
+          "eng": "Bien"
+        },
+        "ok_text": {
+          "eng": "Regular"
+        },
+        "sad_text": {
+          "eng": "Mal"
+        },
+        "outro_text": {
+          "eng": "¡Qué bien que buscaste soluciones a tus retos! Te animamos a probarlas. Tu relación con @fields.child_name se irá fortaleciendo cada día."
+        }
+      },
+      "text_goal": "La práctica en los últimos días se enfocaba en dedicar un tiempo juntos y conectados con @fields.child_name para crear un mapa de seguridad comunitaria siguiendo las estrategias revisadas.",
+      "question_done": "En las últimas 24 horas, ¿dedicaron un tiempo juntos y conectados para crear un mapa de seguridad comunitaria con @fields.child_name?",
+      "reply_no": "Está bien, no pasa nada. En este curso aprenderás más sobre cómo crear un mapa de seguridad comunitaria junto con @fields.child_name.",
+      "reply_happy": "📺 ¡Excelente! Sigue así, trabajando para mantener la seguridad de tu niña, niño o adolescente dentro y fuera de internet.",
+      "reply_ok": "A veces hablar y planear sobre seguridad puede sentirse complicado. Lo importante es que estás buscando maneras de proteger a @fields.child_name.",
+      "reply_sad": "😔 Lamentamos escuchar que te está costando trabajo mantener la seguridad de @fields.child_name dentro y fuera del internet.\n\n💡 Si necesitas apoyo, considera la posibilidad de pedir ayuda en la escuela de @fields.child_name, con la familia o con amistades  a quienes se les facilité la tecnología.\n \nRecuerda que el bienestar de @fields.child_name es importante, así como el de tu familia.",
+      "activity_title": "¡Veamos cómo te fue con la actividad para casa!",
+      "question_how": "¿Cómo te fue?",
+      "happy_text": "Bien",
+      "ok_text": "Regular",
+      "sad_text": "Mal",
+      "outro_text": "¡Qué bien que buscaste soluciones a tus retos! Te animamos a probarlas. Tu relación con @fields.child_name se irá fortaleciendo cada día."
+    },
+    {
+      "id": "safety_t",
+      "happy_image_asset": "images/icons/faces/happy.svg",
+      "ok_image_asset": "images/icons/faces/neutral.svg",
+      "sad_image_asset": "images/icons/faces/sad.svg",
+      "attached_single_doc_1": "https://docs.google.com/document/d/1eJNU-MCk21ZCkoYR5uw2-mlEPSTmne6CqvHiydw2Rac",
+      "notification_text": "¿Cómo vas con el mantenerte al tanto de la vida social de tu adolescente?",
+      "_translations": {
+        "notification_text": {},
+        "text_goal": {},
+        "question_done": {},
+        "reply_no": {},
+        "reply_happy": {},
+        "reply_ok": {},
+        "reply_sad": {},
+        "activity_title": {},
+        "question_how": {},
+        "happy_text": {},
+        "ok_text": {},
+        "sad_text": {},
+        "outro_text": {}
+      },
+      "_translatedFields": {
+        "notification_text": {
+          "eng": "¿Cómo vas con el mantenerte al tanto de la vida social de tu adolescente?"
+        },
+        "text_goal": {
+          "eng": "La práctica en los últimos días se enfocaba en dedicar un tiempo juntos y conectados con @fields.child_name para crear un mapa de seguridad comunitaria siguiendo las estrategias revisadas."
+        },
+        "question_done": {
+          "eng": "En las últimas 24 horas, ¿dedicaron un tiempo juntos y conectados para crear un mapa de seguridad comunitaria con @fields.child_name?"
+        },
+        "reply_no": {
+          "eng": "Está bien, no pasa nada. En este curso aprenderás más sobre cómo crear un mapa de seguridad comunitaria junto con @fields.child_name."
+        },
+        "reply_happy": {
+          "eng": "¡Excelente! Sigue con ese gran esfuerzo."
+        },
+        "reply_ok": {
+          "eng": "Mantenerte al tanto de la vida social de tu adolescente puede ser un reto. Poco a poco puedes seguir fortaleciendo la comunicación y la confianza."
+        },
+        "reply_sad": {
+          "eng": "Lamento que esto sea difícil."
+        },
+        "activity_title": {
+          "eng": "¡Veamos cómo te fue con la actividad para casa!"
+        },
+        "question_how": {
+          "eng": "¿Cómo te fue?"
+        },
+        "happy_text": {
+          "eng": "Bien"
+        },
+        "ok_text": {
+          "eng": "Regular"
+        },
+        "sad_text": {
+          "eng": "Mal"
+        },
+        "outro_text": {
+          "eng": "¡Qué bien que buscaste soluciones a tus retos! Te animamos a probarlas. Tu relación con @fields.child_name se irá fortaleciendo cada día."
+        }
+      },
+      "text_goal": "La práctica en los últimos días se enfocaba en dedicar un tiempo juntos y conectados con @fields.child_name para crear un mapa de seguridad comunitaria siguiendo las estrategias revisadas.",
+      "question_done": "En las últimas 24 horas, ¿dedicaron un tiempo juntos y conectados para crear un mapa de seguridad comunitaria con @fields.child_name?",
+      "reply_no": "Está bien, no pasa nada. En este curso aprenderás más sobre cómo crear un mapa de seguridad comunitaria junto con @fields.child_name.",
+      "reply_happy": "¡Excelente! Sigue con ese gran esfuerzo.",
+      "reply_ok": "Mantenerte al tanto de la vida social de tu adolescente puede ser un reto. Poco a poco puedes seguir fortaleciendo la comunicación y la confianza.",
+      "reply_sad": "Lamento que esto sea difícil.",
+      "activity_title": "¡Veamos cómo te fue con la actividad para casa!",
+      "question_how": "¿Cómo te fue?",
+      "happy_text": "Bien",
+      "ok_text": "Regular",
+      "sad_text": "Mal",
+      "outro_text": "¡Qué bien que buscaste soluciones a tus retos! Te animamos a probarlas. Tu relación con @fields.child_name se irá fortaleciendo cada día."
+    },
+    {
+      "id": "learn_c",
+      "happy_image_asset": "images/icons/faces/happy.svg",
+      "ok_image_asset": "images/icons/faces/neutral.svg",
+      "sad_image_asset": "images/icons/faces/sad.svg",
+      "attached_single_doc_1": "https://docs.google.com/document/d/1eJNU-MCk21ZCkoYR5uw2-mlEPSTmne6CqvHiydw2Rac",
+      "notification_text": "¿Qué fue lo que más se te dificultó al hacer actividades con @fields.child_name para apoyar su aprendizaje?",
+      "_translations": {
+        "notification_text": {},
+        "text_goal": {},
+        "question_done": {},
+        "reply_no": {},
+        "reply_happy": {},
+        "reply_ok": {},
+        "reply_sad": {},
+        "activity_title": {},
+        "question_how": {},
+        "happy_text": {},
+        "ok_text": {},
+        "sad_text": {},
+        "outro_text": {}
+      },
+      "_translatedFields": {
+        "notification_text": {
+          "eng": "¿Qué fue lo que más se te dificultó al hacer actividades con @fields.child_name para apoyar su aprendizaje?"
+        },
+        "text_goal": {
+          "eng": "La práctica en los últimos días se enfocaba en dedicarle 15 minutos a @fields.child_name para ayudarle a fijar un objetivo de estudio o para completar su tarea de la semana."
+        },
+        "question_done": {
+          "eng": "En las últimas 24 horas, ¿dedicaste 15 minutos a @fields.child_name para ayudarle a fijar un objetivo de estudio o completar su tarea?"
+        },
+        "reply_no": {
+          "eng": "Está bien, no pasa nada. En este curso aprenderás más sobre cómo apoyar a @fields.child_name con sus metas de estudio y tareas."
+        },
+        "reply_happy": {
+          "eng": "¡Excelente! Sigue así, apoyando el aprendizaje de tu niña o niño."
+        },
+        "reply_ok": {
+          "eng": "Apoyar el aprendizaje de @fields.child_name puede tener días más fáciles que otros. Lo importante es acompañarle poco a poco."
+        },
+        "reply_sad": {
+          "eng": "Lamentamos escuchar que tienes dificultades para apoyar el aprendizaje o las actividades académicas de @fields.child_name"
+        },
+        "activity_title": {
+          "eng": "¡Veamos cómo te fue con la actividad para casa!"
+        },
+        "question_how": {
+          "eng": "¿Cómo te fue?"
+        },
+        "happy_text": {
+          "eng": "Bien"
+        },
+        "ok_text": {
+          "eng": "Regular"
+        },
+        "sad_text": {
+          "eng": "Mal"
+        },
+        "outro_text": {
+          "eng": "¡Qué bien que buscaste soluciones a tus retos! Te animamos a probarlas. Tu relación con @fields.child_name se irá fortaleciendo cada día."
+        }
+      },
+      "text_goal": "La práctica en los últimos días se enfocaba en dedicarle 15 minutos a @fields.child_name para ayudarle a fijar un objetivo de estudio o para completar su tarea de la semana.",
+      "question_done": "En las últimas 24 horas, ¿dedicaste 15 minutos a @fields.child_name para ayudarle a fijar un objetivo de estudio o completar su tarea?",
+      "reply_no": "Está bien, no pasa nada. En este curso aprenderás más sobre cómo apoyar a @fields.child_name con sus metas de estudio y tareas.",
+      "reply_happy": "¡Excelente! Sigue así, apoyando el aprendizaje de tu niña o niño.",
+      "reply_ok": "Apoyar el aprendizaje de @fields.child_name puede tener días más fáciles que otros. Lo importante es acompañarle poco a poco.",
+      "reply_sad": "Lamentamos escuchar que tienes dificultades para apoyar el aprendizaje o las actividades académicas de @fields.child_name",
+      "activity_title": "¡Veamos cómo te fue con la actividad para casa!",
+      "question_how": "¿Cómo te fue?",
+      "happy_text": "Bien",
+      "ok_text": "Regular",
+      "sad_text": "Mal",
+      "outro_text": "¡Qué bien que buscaste soluciones a tus retos! Te animamos a probarlas. Tu relación con @fields.child_name se irá fortaleciendo cada día."
+    },
+    {
+      "id": "learn_t",
+      "happy_image_asset": "images/icons/faces/happy.svg",
+      "ok_image_asset": "images/icons/faces/neutral.svg",
+      "sad_image_asset": "images/icons/faces/sad.svg",
+      "attached_single_doc_1": "https://docs.google.com/document/d/1eJNU-MCk21ZCkoYR5uw2-mlEPSTmne6CqvHiydw2Rac",
+      "notification_text": "¿Cómo va el apoyo al aprendizaje o a las actividades académicas de tu adolescente?",
+      "_translations": {
+        "notification_text": {},
+        "text_goal": {},
+        "question_done": {},
+        "reply_no": {},
+        "reply_happy": {},
+        "reply_ok": {},
+        "reply_sad": {},
+        "activity_title": {},
+        "question_how": {},
+        "happy_text": {},
+        "ok_text": {},
+        "sad_text": {},
+        "outro_text": {}
+      },
+      "_translatedFields": {
+        "notification_text": {
+          "eng": "¿Cómo va el apoyo al aprendizaje o a las actividades académicas de tu adolescente?"
+        },
+        "text_goal": {
+          "eng": "La práctica en los últimos días se enfocaba en dedicarle 15 minutos a @fields.child_name para ayudarle a fijar un objetivo de estudio o para completar su tarea de la semana."
+        },
+        "question_done": {
+          "eng": "En las últimas 24 horas, ¿dedicaste 15 minutos a @fields.child_name para ayudarle a fijar un objetivo de estudio o completar su tarea?"
+        },
+        "reply_no": {
+          "eng": "Está bien, no pasa nada. En este curso aprenderás más sobre cómo apoyar a @fields.child_name con sus metas de estudio y tareas."
+        },
+        "reply_happy": {
+          "eng": "¡Excelente! Sigue así, apoyando el aprendizaje o las actividades académicas de tu adolescente."
+        },
+        "reply_ok": {
+          "eng": "Acompañar a tu adolescente en sus actividades académicas puede ser difícil a veces. Cada pequeño esfuerzo también hace la diferencia."
+        },
+        "reply_sad": {
+          "eng": "Lamento que tengas dificultades para apoyar el aprendizaje y las tareas escolares de tu adolescente."
+        },
+        "activity_title": {
+          "eng": "¡Veamos cómo te fue con la actividad para casa!"
+        },
+        "question_how": {
+          "eng": "¿Cómo te fue?"
+        },
+        "happy_text": {
+          "eng": "Bien"
+        },
+        "ok_text": {
+          "eng": "Regular"
+        },
+        "sad_text": {
+          "eng": "Mal"
+        },
+        "outro_text": {
+          "eng": "¡Qué bien que buscaste soluciones a tus retos! Te animamos a probarlas. Tu relación con @fields.child_name se irá fortaleciendo cada día."
+        }
+      },
+      "text_goal": "La práctica en los últimos días se enfocaba en dedicarle 15 minutos a @fields.child_name para ayudarle a fijar un objetivo de estudio o para completar su tarea de la semana.",
+      "question_done": "En las últimas 24 horas, ¿dedicaste 15 minutos a @fields.child_name para ayudarle a fijar un objetivo de estudio o completar su tarea?",
+      "reply_no": "Está bien, no pasa nada. En este curso aprenderás más sobre cómo apoyar a @fields.child_name con sus metas de estudio y tareas.",
+      "reply_happy": "¡Excelente! Sigue así, apoyando el aprendizaje o las actividades académicas de tu adolescente.",
+      "reply_ok": "Acompañar a tu adolescente en sus actividades académicas puede ser difícil a veces. Cada pequeño esfuerzo también hace la diferencia.",
+      "reply_sad": "Lamento que tengas dificultades para apoyar el aprendizaje y las tareas escolares de tu adolescente.",
+      "activity_title": "¡Veamos cómo te fue con la actividad para casa!",
+      "question_how": "¿Cómo te fue?",
+      "happy_text": "Bien",
+      "ok_text": "Regular",
+      "sad_text": "Mal",
+      "outro_text": "¡Qué bien que buscaste soluciones a tus retos! Te animamos a probarlas. Tu relación con @fields.child_name se irá fortaleciendo cada día."
+    },
+    {
+      "id": "ipv",
+      "happy_image_asset": "images/icons/faces/happy.svg",
+      "ok_image_asset": "images/icons/faces/neutral.svg",
+      "sad_image_asset": "images/icons/faces/sad.svg",
+      "attached_single_doc_1": "https://docs.google.com/document/d/1eJNU-MCk21ZCkoYR5uw2-mlEPSTmne6CqvHiydw2Rac",
+      "notification_text": "¿Cómo vas con el reparto de actividades y tareas del hogar?",
+      "_translations": {
+        "notification_text": {},
+        "text_goal": {},
+        "question_done": {},
+        "reply_no": {},
+        "reply_happy": {},
+        "reply_ok": {},
+        "reply_sad": {},
+        "activity_title": {},
+        "question_how": {},
+        "happy_text": {},
+        "ok_text": {},
+        "sad_text": {},
+        "outro_text": {}
+      },
+      "_translatedFields": {
+        "notification_text": {
+          "eng": "¿Cómo vas con el reparto de actividades y tareas del hogar?"
+        },
+        "text_goal": {
+          "eng": "La práctica en los últimos días se enfocaba en conversar con tu pareja o familiar y dialogar sobre las diversas maneras de involucrarte en el cuidado, en la crianza y en las responsabilidades del hogar activamente."
+        },
+        "question_done": {
+          "eng": "En las últimas 24 horas, ¿conversaste con tu pareja o familiar sobre maneras de involucrarse activamente en el cuidado, la crianza y las responsabilidades del hogar?"
+        },
+        "reply_no": {
+          "eng": "Está bien, no pasa nada. En este curso aprenderás más sobre cómo dialogar y compartir activamente las responsabilidades del cuidado y del hogar."
+        },
+        "reply_happy": {
+          "eng": "¡Excelente! Sigue con ese gran esfuerzo."
+        },
+        "reply_ok": {
+          "eng": "Conversar sobre las responsabilidades en la crianza y del hogar puede tomar tiempo y práctica. Lo importante es seguir construyendo acuerdos juntos."
+        },
+        "reply_sad": {
+          "eng": "Lamento que esto sea difícil."
+        },
+        "activity_title": {
+          "eng": "¡Veamos cómo te fue con la actividad para casa!"
+        },
+        "question_how": {
+          "eng": "¿Cómo te fue?"
+        },
+        "happy_text": {
+          "eng": "Bien"
+        },
+        "ok_text": {
+          "eng": "Regular"
+        },
+        "sad_text": {
+          "eng": "Mal"
+        },
+        "outro_text": {
+          "eng": "¡Qué bien que buscaste soluciones a tus retos! Te animamos a probarlas. Tu relación con @fields.child_name se irá fortaleciendo cada día."
+        }
+      },
+      "text_goal": "La práctica en los últimos días se enfocaba en conversar con tu pareja o familiar y dialogar sobre las diversas maneras de involucrarte en el cuidado, en la crianza y en las responsabilidades del hogar activamente.",
+      "question_done": "En las últimas 24 horas, ¿conversaste con tu pareja o familiar sobre maneras de involucrarse activamente en el cuidado, la crianza y las responsabilidades del hogar?",
+      "reply_no": "Está bien, no pasa nada. En este curso aprenderás más sobre cómo dialogar y compartir activamente las responsabilidades del cuidado y del hogar.",
+      "reply_happy": "¡Excelente! Sigue con ese gran esfuerzo.",
+      "reply_ok": "Conversar sobre las responsabilidades en la crianza y del hogar puede tomar tiempo y práctica. Lo importante es seguir construyendo acuerdos juntos.",
+      "reply_sad": "Lamento que esto sea difícil.",
+      "activity_title": "¡Veamos cómo te fue con la actividad para casa!",
+      "question_how": "¿Cómo te fue?",
+      "happy_text": "Bien",
+      "ok_text": "Regular",
+      "sad_text": "Mal",
+      "outro_text": "¡Qué bien que buscaste soluciones a tus retos! Te animamos a probarlas. Tu relación con @fields.child_name se irá fortaleciendo cada día."
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "data/Copy of PA hp_review.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1AzLBTDtdTarhp7kTwocQLmYqnT0rI4N_u0m1PuZec3k"
+  }
+}

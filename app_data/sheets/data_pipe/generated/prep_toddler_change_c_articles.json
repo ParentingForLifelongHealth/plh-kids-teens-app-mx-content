@@ -1,0 +1,75 @@
+{
+  "flow_name": "prep_toddler_change_c_articles",
+  "flow_subtype": "generated",
+  "flow_type": "data_pipe",
+  "rows": [
+    {
+      "operation": "filter",
+      "args_list": [
+        "id == \"relax_3\""
+      ],
+      "input_source": "relax"
+    },
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "category_id: relax",
+        "nested: FALSE"
+      ],
+      "output_target": "toddler_change_c_relax | local_only;"
+    },
+    {
+      "operation": "filter",
+      "args_list": [
+        "id == \"check_in_63\""
+      ],
+      "input_source": "check_in"
+    },
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "category_id: check_in",
+        "nested: FALSE"
+      ],
+      "output_target": "toddler_change_c_check_in | local_only;"
+    },
+    {
+      "operation": "filter",
+      "args_list": [
+        "!nested"
+      ],
+      "input_source": "toddler_change_c_articles",
+      "output_target": "toddler_change_c_testing | local_only;"
+    },
+    {
+      "operation": "concat",
+      "args_list": [
+        "toddler_change_c_relax",
+        "toddler_change_c_check_in",
+        "toddler_change_c_testing"
+      ],
+      "input_source": false
+    },
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "completed: FALSE"
+      ],
+      "output_target": "toddler_change_c_article_tasks"
+    },
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "version: 1"
+      ],
+      "output_target": "toddler_change_c_article_tasks"
+    }
+  ],
+  "_output_flows": [
+    {
+      "flow_name": "toddler_change_c_article_tasks",
+      "flow_subtype": "generated",
+      "flow_type": "data_list"
+    }
+  ]
+}
