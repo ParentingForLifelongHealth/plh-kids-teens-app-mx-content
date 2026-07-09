@@ -1,0 +1,100 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "s_read_2to3_c_articles",
+  "data_list_name": "s_reading_2to3_c_articles",
+  "status": "released",
+  "flow_subtype": "modules_s_read_2to3_c",
+  "module": "s_read_2to3_c",
+  "rows": [
+    {
+      "id": "@default",
+      "nested": false
+    },
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "📖Esta sesión trata sobre cómo empezar a ayudar a @fields.child_name a aprender a leer. \n\n🔑 Leer con @fields.child_name es la mejor manera de ayudarle a aprender a leer. \n\n💡 Las niñas y los niños aprenden observando, escuchando y copiando. Cuando les lees de pequeños, aprenden palabras nuevas. Cuando van creciendo, aprenden las letras y sus sonidos. ¡Leer juntos puede ayudarles a aprender sobre cualquier cosa que les interese! ",
+      "quiz_1_question::eng": "📝 **¡Hagamos un ejercicio!**\n\n_Ejercicio no.1_\n\nLeer con @fields.child_name solo implica ser expresivo y usar las emociones correctas al leer. ",
+      "quiz_1_option_1_text::eng": "Verdadero",
+      "quiz_1_feedback_1::eng": "👀 ¡Ups! ¡Buen intento!\n\n👂 Aunque es divertido ser expresivo al leer, también puede ayudar el hacerle preguntas a @fields.child_name y explorar la historia juntos. \n\n🔑 @fields.child_name practicará la pronunciación de palabras nuevas y desarrollará el interés por la lectura.",
+      "quiz_1_option_2_text::eng": "Falso",
+      "quiz_1_feedback_2::eng": "🎉 ¡Buen trabajo!\n\n👂 Aunque es divertido ser expresivo al leer, también puede ayudar el hacerle preguntas a @fields.child_name y explorar la historia juntos. \n\n🔑 @fields.child_name practicará la pronunciación de palabras nuevas y desarrollará el interés por la lectura."
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "Aquí tienes un ejemplo de cómo empezar a ayudar a tu niña o niño a leer.",
+      "image_asset": "images/comic/learn/reading_2to3_yc_1.svg",
+      "text_2::eng": "Veamos cómo @data.characters.f2_abuela.name lee con su nieta, @data.characters.f2_hija_3.name. Observa cómo le hace muchas preguntas a la niña y le describe las cosas.",
+      "character_1_id": "f2_abuela",
+      "character_1_text::eng": "¡Guau, este libro se ve interesante! ¿Puedes ver el dibujo? Tiene un tigre que está sonriendo. ¿De qué crees que trata el libro?"
+    },
+    {
+      "id": "explore_2",
+      "category_id": "explore",
+      "image_asset": "images/comic/learn/reading_2to3_yc_2.svg",
+      "character_1_id": "f2_abuela",
+      "character_1_text::eng": "¡Uy! ¿Qué está pasando aquí? ¿Qué sostiene el tigre?",
+      "character_2_id": "f2_hija_3",
+      "character_2_text::eng": "¡Un globo!",
+      "character_3_id": "f2_abuela",
+      "character_3_text::eng": "Así es, es un globo. ¿De qué color es?",
+      "character_4_id": "f2_hija_3",
+      "character_4_text::eng": "¡Rojo!"
+    },
+    {
+      "id": "explore_3",
+      "category_id": "explore",
+      "image_asset": "images/comic/learn/reading_2to3_yc_3.svg",
+      "character_1_id": "f2_abuela",
+      "character_1_text::eng": "¡Sí, es un globo rojo! ¿Por qué crees que el tigre sostiene el globo rojo?",
+      "character_2_id": "f2_hija_3",
+      "character_2_text::eng": "Porque... ¡es su cumpleaños!",
+      "character_3_id": "f2_abuela",
+      "character_3_text::eng": "¿Crees que sea su cumpleaños?",
+      "character_4_id": "f2_hija_3",
+      "character_4_text::eng": "¡Sí! ¡El tigre tiene un globo rojo porque es su cumpleaños!"
+    },
+    {
+      "id": "explore_4",
+      "category_id": "explore",
+      "image_asset": "images/comic/learn/reading_2to3_yc_4.svg",
+      "character_1_id": "f2_abuela",
+      "character_1_text::eng": "¿Te acuerdas de cuando fuimos al cumpleaños de tu primo? ¿De qué color eran sus globos?",
+      "character_2_id": "f2_hija_3",
+      "character_2_text::eng": "¡Azul, rosa y amarillo!"
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Vamos a aprender las cinco estrategias sobre cómo preparar a @fields.child_name para aprender a leer cuando sea mayor:",
+      "section_1_title::eng": "COMPARTIR LIBROS",
+      "section_1_icon_asset": "images/icons/picture_book.svg",
+      "section_1_text::eng": "💡 Los libros sin palabras ayudan con la imaginación, las ideas y el aprendizaje de palabras nuevas. En conjunto, nombren y describan lo que hay en los dibujos. Intenta comunicarte de un modo que sea fácil de entender para @fields.child_name.\n\n⭐ ¡Los libros que contienen palabras ayudan a comprender las letras y sus sonidos!\n\n🎵 Enfócate en palabras o frases cortas que rimen, se repitan y empiecen por la misma letra o terminen con el mismo sonido, como \"piña para la niña\", \"el león comelón\", o \"el zorro pide socorro\".",
+      "section_2_title::eng": "CREAR RUTINAS",
+      "section_2_icon_asset": "images/icons/clock_blue.png",
+      "section_2_text::eng": "📖 ¡Puedes compartir libros con @fields.child_name en cualquier lugar! Escoge un buen lugar en tu casa para leer juntos. Deshazte de cualquier distracción (por ejemplo, apaga la tablet, el celular o la tele 📺❌📱).  \n\n⏰ Escoge alguna hora del día en la que puedas compartir libros con tu niña o niño.\n\n💡 Si tu niña o niño quiere, deja que escoja un libro 😃 \n\n✨ Si no tienes libros en casa, puedes usar cualquier cosa con palabras e imágenes, como revistas o periódicos viejos. ",
+      "section_3_title::eng": "HACER PREGUNTAS",
+      "section_3_icon_asset": "images/icons/question_blue.png",
+      "section_3_text::eng": "📖 Desde que estén viendo la portada del libro, pregúntale a @fields.child_name de qué cree que trate la historia.\n\n➡️ A lo largo del libro, hazle preguntas a @fields.child_name sobre quién, qué, dónde, cuándo, por qué y cómo.\n\n✨ Cuando @fields.child_name no sepa el nombre del objeto que has señalado, señálalo y di lo que es. Esto le ayudará a aprender palabras nuevas.\n\n☀️ Si ya han leído la misma historia varias veces, pregúntale a @fields.child_name qué sigue, ¡a ver si sabe lo que viene después!\n\n👀Describe lo que está pasando en las imágenes. Siempre usa un lenguaje que @fields.child_name pueda entender.",
+      "section_4_title::eng": "RESPONDER Y EXPLORAR",
+      "section_4_icon_asset": "images/icons/speech_bubble_blue.png",
+      "section_4_text::eng": "👀 Fíjate en lo que le interesa a @fields.child_name y hablen sobre eso. Ayúdale a entender la historia, las palabras, los sonidos, las letras y las emociones de los personajes. 💚\n\n📖 Explora reformular o añadir más información. Esto ayudará a @fields.child_name a aprender palabras nuevas y a comprender el mensaje del libro 😃 \n\n💙 Cuando @fields.child_name hable del libro o responda a tus preguntas sobre él, contéstale positivamente y anímale, aún cuando se equivoque.\n\n👂 Pídele a @fields.child_name que repita lo que le enseñaste.",
+      "section_5_title::eng": "CONSTRUIR Y CONECTAR",
+      "section_5_icon_asset": "images/icons/heart_filled_blue.png",
+      "section_5_text::eng": "💙 ¡Ayuda a aumentar la confianza de @fields.child_name al hacerle preguntas que sepa responder correctamente o que le animen a ir un poco más allá y desarrollar su habilidad!  \n\n🎨 Siempre busca conectar lo que hay en el libro con la experiencia cotidiana de @fields.child_name. "
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "text_1_facilitator::eng": "**Actividad para casa** ⭐ \n\n📚 Trata de dedicar el tiempo juntos y conectados de hoy a leer y comentar un libro con @fields.child_name.\n",
+      "quiz_1_question::eng": "¿Puedes hacerlo hoy? ",
+      "quiz_1_option_1_text::eng": "Sí",
+      "quiz_1_feedback_1::eng": "😃 📖 ¡Excelente! ¡Leer con @fields.child_name es una forma estupenda de ayudarle a aprender!",
+      "quiz_1_option_2_text::eng": "Lo intentaré",
+      "quiz_1_feedback_2::eng": "¡Excelente decisión! 🌟 Cuando encuentres un momento adecuado, prueba esta actividad y observa qué funciona mejor para ti y tu familia. Recuerda que cada intento cuenta. ✨",
+      "quiz_1_option_3_text::eng": "No",
+      "quiz_1_feedback_3::eng": "☀️ Entendemos. No siempre es posible tomarnos un tiempo para leer con @fields.child_name. Intenta apartar un poco de tiempo cada día porque esto le ayudará en su aprendizaje."
+    }
+  ]
+}

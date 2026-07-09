@@ -1,0 +1,31 @@
+{
+  "flow_type": "template",
+  "flow_name": "module_landing_online_safety_yc",
+  "status": "released",
+  "parameter_list": {
+    "app_config": {
+      "LAYOUT": {
+        "page_padding": "0 0"
+      }
+    }
+  },
+  "comment": "online_safety_yc",
+  "comment_2": 31,
+  "comment_3": 16,
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "module_landing",
+      "value": "module_landing",
+      "action_list": "completed | emit: completed; \nuncompleted | emit: uncompleted"
+    },
+    {
+      "name": "module_id",
+      "value": "online_safety_yc",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

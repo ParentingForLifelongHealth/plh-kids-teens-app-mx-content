@@ -1,0 +1,17 @@
+{
+  "flow_type": "data_pipe",
+  "flow_name": "facilitators_pipe",
+  "status": "released",
+  "rows": [
+    {
+      "operation": "filter",
+      "args_list": "role == \"facilitator\"",
+      "input_source": "characters"
+    },
+    {
+      "operation": "map",
+      "args_list": "id: @row.id;\ntext: @row.name;\nname: @row.id;\nimage: @row.image_asset;",
+      "output_target": "facilitators"
+    }
+  ]
+}

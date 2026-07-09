@@ -1,0 +1,95 @@
+{
+  "flow_type": "generator",
+  "flow_name": "online_safety_yc_article_gen",
+  "status": "released",
+  "parameter_list": {
+    "input_data_list": "online_safety_yc_articles",
+    "output_flow_name": "article_online_safety_yc_@gen.id",
+    "output_flow_type": "template",
+    "output_flow_subtype": "generated"
+  },
+  "module_id": "online_safety_yc",
+  "rows": [
+    {
+      "type": "template",
+      "name": "article",
+      "value": "article",
+      "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "emit",
+          "args": [
+            "completed"
+          ],
+          "_raw": "completed | emit: completed"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "emit",
+          "args": [
+            "uncompleted"
+          ],
+          "_raw": "uncompleted | emit: uncompleted"
+        }
+      ],
+      "rows": [
+        {
+          "name": "article_id",
+          "value": "@gen.id"
+        },
+        {
+          "name": "module_id",
+          "value": "online_safety_yc",
+          "exclude_from_translation": true
+        }
+      ]
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "templates/MX article template generators (16-30).xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1nbmz-z_fAFkm-HU-qiV0SPHOzlkNn8yJeuID7QowIn0"
+  },
+  "_output_flows": [
+    {
+      "flow_name": "article_online_safety_yc_intro_1",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    },
+    {
+      "flow_name": "article_online_safety_yc_explore_1",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    },
+    {
+      "flow_name": "article_online_safety_yc_explore_2",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    },
+    {
+      "flow_name": "article_online_safety_yc_explore_3",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    },
+    {
+      "flow_name": "article_online_safety_yc_explore_4",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    },
+    {
+      "flow_name": "article_online_safety_yc_practical_tips_1",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    },
+    {
+      "flow_name": "article_online_safety_yc_practical_tips_2",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    },
+    {
+      "flow_name": "article_online_safety_yc_home_activity_1",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    }
+  ]
+}

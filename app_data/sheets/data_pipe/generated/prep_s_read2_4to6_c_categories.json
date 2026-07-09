@@ -1,0 +1,19 @@
+{
+  "flow_name": "prep_s_read2_4to6_c_categories",
+  "flow_subtype": "generated",
+  "flow_type": "data_pipe",
+  "rows": [
+    {
+      "operation": "append_columns",
+      "input_source": "common_categories",
+      "output_target": "s_read2_4to6_c_category_tasks"
+    }
+  ],
+  "_output_flows": [
+    {
+      "flow_name": "s_read2_4to6_c_category_tasks",
+      "flow_subtype": "generated",
+      "flow_type": "data_list"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "flow_type": "data_list",
+  "flow_subtype": "onboarding",
+  "flow_name": "onboarding_splash_slides",
+  "status": "released",
+  "rows": [
+    {
+      "id": "slide_1",
+      "image_asset": "images/onboarding/welcome_screen_1.svg",
+      "text::eng": "La crianza puede ser un reto, pero no estás sola o solo.",
+      "duration_sec": 4
+    },
+    {
+      "id": "slide_2",
+      "image_asset": "images/onboarding/welcome_screen_2.svg",
+      "text::eng": "Eres la mejor persona para acompañar el desarrollo de tu hija o hijo.",
+      "duration_sec": 4
+    },
+    {
+      "id": "slide_3",
+      "image_asset": "images/onboarding/welcome_screen_3.svg",
+      "text::eng": "Únete a miles de personas en el mundo que fortalecen sus habilidades de crianza.",
+      "duration_sec": 4
+    }
+  ]
+}

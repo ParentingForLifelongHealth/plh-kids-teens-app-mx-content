@@ -1,0 +1,31 @@
+{
+  "flow_type": "template",
+  "flow_name": "module_landing_habits_online_yc",
+  "status": "released",
+  "parameter_list": {
+    "app_config": {
+      "LAYOUT": {
+        "page_padding": "0 0"
+      }
+    }
+  },
+  "comment": "habits_online_yc",
+  "comment_2": 31,
+  "comment_3": 16,
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "module_landing",
+      "value": "module_landing",
+      "action_list": "completed | emit: completed; \nuncompleted | emit: uncompleted"
+    },
+    {
+      "name": "module_id",
+      "value": "habits_online_yc",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

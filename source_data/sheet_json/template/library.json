@@ -1,0 +1,85 @@
+{
+  "flow_type": "template",
+  "flow_name": "library",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "@global.library"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@data.library_section"
+    },
+    {
+      "type": "begin_task_card",
+      "name": "card_@item.id",
+      "action_list": "click | go_to: library_section_@item.id;\nclick | add_data | \n_list_id: navigation_data,\npage: library_section_@item.id,\ntime_stamp: @calc(now());",
+      "condition": "@item.id != \"tips\""
+    },
+    {
+      "type": "image",
+      "name": "image_@item.id",
+      "value": "@item.image",
+      "style_list": "flex: 1; "
+    },
+    {
+      "type": "text",
+      "name": "text_@item.id",
+      "value": "@item.title",
+      "parameter_list": "style: emphasised",
+      "style_list": "flex: 3"
+    },
+    {
+      "type": "end_task_card"
+    },
+    {
+      "type": "begin_task_card",
+      "name": "card_@item.id",
+      "action_list": "click | go_to: library_article_@item.id;\nclick | add_data | \n_list_id: navigation_data,\npage: library_article_@item.id,\ntime_stamp: @calc(now());",
+      "condition": "@item.id == \"tips\""
+    },
+    {
+      "type": "image",
+      "name": "image_@item.id",
+      "value": "@item.image",
+      "style_list": "flex: 1; "
+    },
+    {
+      "type": "text",
+      "name": "text_@item.id",
+      "value": "@item.title",
+      "parameter_list": "style: emphasised",
+      "style_list": "flex: 3"
+    },
+    {
+      "type": "end_task_card"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "begin_task_card",
+      "name": "card_@item.id",
+      "action_list": "click | go_to: activity_library;\nclick | add_data | \n_list_id: navigation_data,\npage: activity_library,\ntime_stamp: @calc(now());",
+      "style_list": "margin-top: -15px;"
+    },
+    {
+      "type": "image",
+      "name": "image_@item.id",
+      "value": "images/icons/trophy_large.svg",
+      "style_list": "flex: 1; "
+    },
+    {
+      "type": "text",
+      "name": "text_@item.id",
+      "value": "@global.rewards",
+      "parameter_list": "style: emphasised",
+      "style_list": "flex: 3"
+    },
+    {
+      "type": "end_task_card"
+    }
+  ]
+}

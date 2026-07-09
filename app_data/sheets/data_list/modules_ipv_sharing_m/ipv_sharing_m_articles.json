@@ -1,0 +1,296 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "ipv_sharing_m_articles",
+  "data_list_name": "ipv_sharing_m_articles",
+  "status": "released",
+  "flow_subtype": "modules_ipv_sharing_m",
+  "module": "ipv_sharing_m",
+  "rows": [
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "nested": false,
+      "text_1_facilitator": "Hoy vamos a aprender acerca del papel de los hombres en la crianza compartida👋",
+      "_translations": {
+        "text_1_facilitator": {},
+        "text_2": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_feedback_1": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_feedback_2": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Hoy vamos a aprender acerca del papel de los hombres en la crianza compartida👋"
+        },
+        "text_2": {
+          "eng": "Ser un integrante activo en las responsabilidades del hogar y de cuidado puede mejorar tu relación con @fields.child_name y hacer que la vida sea menos estresante para ti y tu pareja o familiar. También puede hacer que ser padre te resulte más agradable. 💚"
+        },
+        "quiz_1_question": {
+          "eng": "**¡Hagamos un ejercicio!**\n\n_Ejercicio no.1_\n\nParticipar en las responsabilidades de cuidado es parte del rol que tiene el hombre en la familia."
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Verdadero"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "🎉 ¡Tienes razón!\n\nEs importante que los hombres sean miembros activos en los cuidados. Esto significa más que sólo jugar un rol de trabajo para traer dinero al hogar para alimentos, ropa y vivienda. \n\nSer un cuidador involucrado activamente fortalece la conexión y el bienestar entre tú, tus niñas, niños, adolescentes y pareja o familiares. \n\nParticipar en las tareas de cuidado y en el trabajo doméstico también demuestra respeto por la  igualdad en el hogar."
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Falso"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "👀 ¡Ups! ¡Buen intento!\n\nEs importante que los hombres sean miembros activos en los cuidados. Esto significa más que sólo jugar un rol de trabajo para traer dinero al hogar para alimentos, ropa y vivienda. \n\nSer un cuidador involucrado activamente fortalece la conexión y el bienestar entre tú, tus niñas, niños, adolescentes y pareja o familiares. \n\nParticipar en las tareas de cuidado y en el trabajo doméstico también demuestra respeto por la  igualdad en el hogar."
+        }
+      },
+      "text_2": "Ser un integrante activo en las responsabilidades del hogar y de cuidado puede mejorar tu relación con @fields.child_name y hacer que la vida sea menos estresante para ti y tu pareja o familiar. También puede hacer que ser padre te resulte más agradable. 💚",
+      "quiz_1_question": "**¡Hagamos un ejercicio!**\n\n_Ejercicio no.1_\n\nParticipar en las responsabilidades de cuidado es parte del rol que tiene el hombre en la familia.",
+      "quiz_1_option_1_text": "Verdadero",
+      "quiz_1_feedback_1": "🎉 ¡Tienes razón!\n\nEs importante que los hombres sean miembros activos en los cuidados. Esto significa más que sólo jugar un rol de trabajo para traer dinero al hogar para alimentos, ropa y vivienda. \n\nSer un cuidador involucrado activamente fortalece la conexión y el bienestar entre tú, tus niñas, niños, adolescentes y pareja o familiares. \n\nParticipar en las tareas de cuidado y en el trabajo doméstico también demuestra respeto por la  igualdad en el hogar.",
+      "quiz_1_option_2_text": "Falso",
+      "quiz_1_feedback_2": "👀 ¡Ups! ¡Buen intento!\n\nEs importante que los hombres sean miembros activos en los cuidados. Esto significa más que sólo jugar un rol de trabajo para traer dinero al hogar para alimentos, ropa y vivienda. \n\nSer un cuidador involucrado activamente fortalece la conexión y el bienestar entre tú, tus niñas, niños, adolescentes y pareja o familiares. \n\nParticipar en las tareas de cuidado y en el trabajo doméstico también demuestra respeto por la  igualdad en el hogar."
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
+      "image_asset": "images/comic/ipv/ipv_sharing_1.svg",
+      "character_1_id": "f1_padre",
+      "character_2_id": "f1_madre",
+      "nested": false,
+      "text_1_facilitator": "Aquí tienes una historieta que muestra cómo puedes estar presente en las responsabilidades de cuidado de la familia:",
+      "_translations": {
+        "text_1_facilitator": {},
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Aquí tienes una historieta que muestra cómo puedes estar presente en las responsabilidades de cuidado de la familia:"
+        },
+        "character_1_text": {
+          "eng": "@data.characters.f1_madre.name, ¿es tu hora de hacer artesanías? Voy a pasar un rato con @data.characters.f1_hija_6.name para que puedas concentrarte y estar tranquila."
+        },
+        "character_2_text": {
+          "eng": "Gracias, @data.characters.f1_padre.name. Lo aprecio bastante."
+        }
+      },
+      "character_1_text": "@data.characters.f1_madre.name, ¿es tu hora de hacer artesanías? Voy a pasar un rato con @data.characters.f1_hija_6.name para que puedas concentrarte y estar tranquila.",
+      "character_2_text": "Gracias, @data.characters.f1_padre.name. Lo aprecio bastante."
+    },
+    {
+      "id": "explore_2",
+      "category_id": "explore",
+      "image_asset": "images/comic/ipv/ipv_sharing_2.svg",
+      "character_1_id": "f1_padre",
+      "character_2_id": "f1_hija_6",
+      "nested": false,
+      "text_2": "@data.characters.f1_madre.name está haciendo sus artesanías en el fondo.",
+      "_translations": {
+        "text_2": {},
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "_translatedFields": {
+        "text_2": {
+          "eng": "@data.characters.f1_madre.name está haciendo sus artesanías en el fondo."
+        },
+        "character_1_text": {
+          "eng": "Veo que estás jugando tranquilamente con tus bloques, @data.characters.f1_hija_6.name. ¡Estás construyendo un muro muy alto y fuerte!"
+        },
+        "character_2_text": {
+          "eng": "Es para las gallinas."
+        }
+      },
+      "character_1_text": "Veo que estás jugando tranquilamente con tus bloques, @data.characters.f1_hija_6.name. ¡Estás construyendo un muro muy alto y fuerte!",
+      "character_2_text": "Es para las gallinas."
+    },
+    {
+      "id": "explore_3",
+      "category_id": "explore",
+      "image_asset": "images/comic/ipv/ipv_sharing_3.svg",
+      "character_1_id": "f1_padre",
+      "character_2_id": "f1_hija_6",
+      "nested": false,
+      "character_1_text": "¡Seguro las mantendrá a salvo!",
+      "_translations": {
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "¡Seguro las mantendrá a salvo!"
+        },
+        "character_2_text": {
+          "eng": "¡Ahora me puedes ayudar a construir una casa para que nuestra familia pueda dormir!"
+        }
+      },
+      "character_2_text": "¡Ahora me puedes ayudar a construir una casa para que nuestra familia pueda dormir!"
+    },
+    {
+      "id": "explore_4",
+      "category_id": "explore",
+      "image_asset": "images/comic/ipv/ipv_sharing_4.svg",
+      "character_1_id": "f1_padre",
+      "character_2_id": "f1_hija_6",
+      "nested": false,
+      "character_1_text": "Esta casa nos va a mantener muy frescos y cómodos. ¡Qué buena eres para construir, @data.characters.f1_hija_6.name!",
+      "_translations": {
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "Esta casa nos va a mantener muy frescos y cómodos. ¡Qué buena eres para construir, @data.characters.f1_hija_6.name!"
+        },
+        "character_2_text": {
+          "eng": "¡Yupi!"
+        }
+      },
+      "character_2_text": "¡Yupi!"
+    },
+    {
+      "id": "explore_5",
+      "category_id": "explore",
+      "image_asset": "images/comic/ipv/ipv_sharing_5.svg",
+      "character_1_id": "f1_madre",
+      "character_2_id": "f1_padre",
+      "nested": false,
+      "character_1_text": "Que bueno que pasaste tiempo con @data.characters.f1_hija_6.name mientras yo terminaba mis tareas. ¡Eres un gran compañero, gracias!",
+      "_translations": {
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "Que bueno que pasaste tiempo con @data.characters.f1_hija_6.name mientras yo terminaba mis tareas. ¡Eres un gran compañero, gracias!"
+        },
+        "character_2_text": {
+          "eng": "Me da gusto que te hayas podido concentrar mejor. ¡Nosotros la pasamos muy bien!"
+        }
+      },
+      "character_2_text": "Me da gusto que te hayas podido concentrar mejor. ¡Nosotros la pasamos muy bien!"
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "media_type": "youtube",
+      "youtube_gb_en_f": "https://www.youtube.com/watch?v=9BIh5VfTh0g",
+      "nested": false,
+      "text_1_facilitator": "Selecciona reproducir ▶️ para aprender algunas estrategias para la crianza compartida:\n\n1️⃣ ESTABLECER UNA RUTINA\n2️⃣ CONVERSAR SOBRE LA CARGA DE TRABAJO EN EL HOGAR\n3️⃣ SOLICITAR APOYO",
+      "_translations": {
+        "text_1_facilitator": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Selecciona reproducir ▶️ para aprender algunas estrategias para la crianza compartida:\n\n1️⃣ ESTABLECER UNA RUTINA\n2️⃣ CONVERSAR SOBRE LA CARGA DE TRABAJO EN EL HOGAR\n3️⃣ SOLICITAR APOYO"
+        }
+      }
+    },
+    {
+      "id": "practical_tips_2",
+      "category_id": "practical_tips",
+      "section_1_icon_asset": "images/icons/picture_book.svg",
+      "section_2_icon_asset": "images/icons/home_active.svg",
+      "section_3_icon_asset": "images/icons/parent_child.svg",
+      "nested": false,
+      "text_1_facilitator": "Recuerda:",
+      "_translations": {
+        "text_1_facilitator": {},
+        "section_1_title": {},
+        "section_1_text": {},
+        "section_2_title": {},
+        "section_2_text": {},
+        "section_3_title": {},
+        "section_3_text": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Recuerda:"
+        },
+        "section_1_title": {
+          "eng": "ESTABLECE UNA RUTINA"
+        },
+        "section_1_text": {
+          "eng": "⏰ ¡Esto puede ser difícil de recordar! A veces puede ser útil establecer una rutina en torno a las actividades de la casa o de crianza.  \n\n😃 Incluso cinco minutos al día con cada niña, niño o adolescente pueden hacer la diferencia."
+        },
+        "section_2_title": {
+          "eng": "CONVERSA SOBRE LA CARGA DE TRABAJO EN EL HOGAR"
+        },
+        "section_2_text": {
+          "eng": "😃 Conversa con tu pareja o familiar con quien compartes la crianza sobre cómo quieres involucrarte más en los cuidados y la crianza. Ayudará a que ambos se entiendan mejor. \n\n¡Demuestra que realmente te importa!"
+        },
+        "section_3_title": {
+          "eng": "SOLICITA APOYO"
+        },
+        "section_3_text": {
+          "eng": "Puede resultar difícil recordar que es válido pedir ayuda. \n\n🌷Sé amable contigo si te olvidas de pedir apoyo y vuelve a intentarlo en otra ocasión.  \n\n¡Solicitar apoyo y tener voluntad para involucrarse más en las responsabilidades del cuidado y de la crianza beneficia a toda la familia!"
+        }
+      },
+      "section_1_title": "ESTABLECE UNA RUTINA",
+      "section_1_text": "⏰ ¡Esto puede ser difícil de recordar! A veces puede ser útil establecer una rutina en torno a las actividades de la casa o de crianza.  \n\n😃 Incluso cinco minutos al día con cada niña, niño o adolescente pueden hacer la diferencia.",
+      "section_2_title": "CONVERSA SOBRE LA CARGA DE TRABAJO EN EL HOGAR",
+      "section_2_text": "😃 Conversa con tu pareja o familiar con quien compartes la crianza sobre cómo quieres involucrarte más en los cuidados y la crianza. Ayudará a que ambos se entiendan mejor. \n\n¡Demuestra que realmente te importa!",
+      "section_3_title": "SOLICITA APOYO",
+      "section_3_text": "Puede resultar difícil recordar que es válido pedir ayuda. \n\n🌷Sé amable contigo si te olvidas de pedir apoyo y vuelve a intentarlo en otra ocasión.  \n\n¡Solicitar apoyo y tener voluntad para involucrarse más en las responsabilidades del cuidado y de la crianza beneficia a toda la familia!"
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "nested": false,
+      "text_1_facilitator": "**Actividad para casa** ⭐ \n\nConsiste en conversar con tu pareja o familiar y dialogar sobre las diversas maneras de involucrarte en el cuidado, en la crianza y en las responsabilidades del hogar activamente.",
+      "_translations": {
+        "text_1_facilitator": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_feedback_1": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_option_3_text": {},
+        "quiz_1_feedback_3": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "**Actividad para casa** ⭐ \n\nConsiste en conversar con tu pareja o familiar y dialogar sobre las diversas maneras de involucrarte en el cuidado, en la crianza y en las responsabilidades del hogar activamente."
+        },
+        "quiz_1_question": {
+          "eng": "¿Tienes tiempo para hacerlo hoy?"
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Sí"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "¡Excelente! Ser responsable, involucrarse y ser activo en el tiempo familiar beneficia a toda la familia. 🎉"
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Lo intentaré"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "¡Muy bien! 😊 Intenta poner en práctica esta idea cuando tengas la oportunidad. Cada vez que pruebas algo nuevo, estás dando un paso para fortalecer a tu familia. 💛"
+        },
+        "quiz_1_option_3_text": {
+          "eng": "No"
+        },
+        "quiz_1_feedback_3": {
+          "eng": "Probar algo nuevo puede ser difícil. Para hacerlo más fácil, empieza por preguntarle a tu pareja si pueden hacer las actividades de limpieza de la casa como equipo para que después puedas sentirte más cómodo haciéndolas solo.\n\nEntre tu pareja o familiar y tú busquen un nuevo acuerdo para repartir las distintas tareas domésticas, como lavar los platos o barrer la casa. Generen un acuerdo en el que la repartición sea justa y les haga sentir comodidad a ambos.\n\nCada pequeño paso te acercará a la construcción de una relación sana y equilibrada con tu pareja.\n\n⭐ Recuerda que puedes volver a consultar este contenido en el Menú Principal."
+        }
+      },
+      "quiz_1_question": "¿Tienes tiempo para hacerlo hoy?",
+      "quiz_1_option_1_text": "Sí",
+      "quiz_1_feedback_1": "¡Excelente! Ser responsable, involucrarse y ser activo en el tiempo familiar beneficia a toda la familia. 🎉",
+      "quiz_1_option_2_text": "Lo intentaré",
+      "quiz_1_feedback_2": "¡Muy bien! 😊 Intenta poner en práctica esta idea cuando tengas la oportunidad. Cada vez que pruebas algo nuevo, estás dando un paso para fortalecer a tu familia. 💛",
+      "quiz_1_option_3_text": "No",
+      "quiz_1_feedback_3": "Probar algo nuevo puede ser difícil. Para hacerlo más fácil, empieza por preguntarle a tu pareja si pueden hacer las actividades de limpieza de la casa como equipo para que después puedas sentirte más cómodo haciéndolas solo.\n\nEntre tu pareja o familiar y tú busquen un nuevo acuerdo para repartir las distintas tareas domésticas, como lavar los platos o barrer la casa. Generen un acuerdo en el que la repartición sea justa y les haga sentir comodidad a ambos.\n\nCada pequeño paso te acercará a la construcción de una relación sana y equilibrada con tu pareja.\n\n⭐ Recuerda que puedes volver a consultar este contenido en el Menú Principal."
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "data/Copy of PA_modules_i (1-15).xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1dumE6EODyxm0cb9mf3BuiwbEIJ5gQj9h8VRt_Mfxd3k"
+  },
+  "_metadata": {
+    "nested": {
+      "type": "boolean"
+    }
+  }
+}

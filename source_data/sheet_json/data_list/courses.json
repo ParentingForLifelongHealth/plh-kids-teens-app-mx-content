@@ -1,0 +1,108 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "courses",
+  "data_list_name": "courses",
+  "status": "released",
+  "flow_subtype": "modules",
+  "rows": [
+    {
+      "id": "relation_c",
+      "core": false,
+      "tag_list": "child",
+      "user_gender_list": "man; woman; opt_out;",
+      "title::eng": "Mejorar la relación con mi niña o niño",
+      "image_asset": "images/homescreen/relation_c.svg",
+      "completed": false
+    },
+    {
+      "id": "relation_t",
+      "core": false,
+      "tag_list": "teen",
+      "user_gender_list": "man; woman; opt_out;",
+      "title::eng": "Mejorar la relación con mi adolescente",
+      "image_asset": "images/homescreen/relation_t.svg",
+      "completed": false
+    },
+    {
+      "id": "ipv",
+      "core": false,
+      "tag_list": "child; teen;",
+      "user_gender_list": "man",
+      "title::eng": "Responsabilidad e involucramiento en la crianza compartida",
+      "image_asset": "images/homescreen/ipv.svg",
+      "completed": false
+    },
+    {
+      "id": "safety_c",
+      "core": false,
+      "tag_list": "child",
+      "user_gender_list": "man; woman; opt_out;",
+      "title::eng": "Seguridad de mi niña o niño",
+      "image_asset": "images/homescreen/safety_c.svg",
+      "completed": false
+    },
+    {
+      "id": "safety_t",
+      "core": false,
+      "tag_list": "teen",
+      "user_gender_list": "man; woman; opt_out;",
+      "title::eng": "Seguridad de mi adolescente",
+      "image_asset": "images/homescreen/safety_t.svg",
+      "completed": false
+    },
+    {
+      "id": "behave_c",
+      "core": false,
+      "tag_list": "child",
+      "user_gender_list": "man; woman; opt_out;",
+      "title::eng": "Guiar el buen comportamiento de mi niña o niño",
+      "image_asset": "images/homescreen/behave_c.svg",
+      "completed": false
+    },
+    {
+      "id": "behave_t",
+      "core": false,
+      "tag_list": "teen",
+      "user_gender_list": "man; woman; opt_out;",
+      "title::eng": "Guiar el buen comportamiento de mi adolescente",
+      "image_asset": "images/homescreen/behave_t.svg",
+      "completed": false
+    },
+    {
+      "id": "learn_c",
+      "core": false,
+      "tag_list": "child",
+      "user_gender_list": "man; woman; opt_out;",
+      "title::eng": "Apoyar a mi niña o niño en su aprendizaje ",
+      "image_asset": "images/homescreen/learn_c.svg",
+      "completed": false
+    },
+    {
+      "id": "learn_t",
+      "core": false,
+      "tag_list": "teen",
+      "user_gender_list": "man; woman; opt_out;",
+      "title::eng": "Apoyar a mi adolescente en su aprendizaje",
+      "image_asset": "images/homescreen/learn_t.svg",
+      "completed": false
+    },
+    {
+      "id": "understand_c",
+      "core": false,
+      "tag_list": "child",
+      "user_gender_list": "man; woman; opt_out;",
+      "title::eng": "Entender el desarrollo de mi niña o niño",
+      "image_asset": "images/homescreen/understand_c.svg",
+      "completed": false
+    },
+    {
+      "id": "understand_t",
+      "core": false,
+      "tag_list": "teen",
+      "user_gender_list": "man; woman; opt_out;",
+      "title::eng": "Cuidar del bienestar de mi adolescente y del mío",
+      "image_asset": "images/homescreen/understand_t.svg",
+      "completed": false
+    }
+  ]
+}

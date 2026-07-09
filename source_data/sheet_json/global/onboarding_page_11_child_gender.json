@@ -1,0 +1,23 @@
+{
+  "flow_type": "global",
+  "flow_subtype": "onboarding",
+  "flow_name": "onboarding_page_11_child_gender",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "facilitator_message_child_gender",
+      "value": "Gracias. Queremos conocer a @fields.child_name mejor."
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "question_child_gender",
+      "value": "¿@fields.child_name es niño o niña?"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "placeholder_child_gender",
+      "value": "Selecciona una opción"
+    }
+  ]
+}

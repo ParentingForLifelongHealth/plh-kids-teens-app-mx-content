@@ -1,0 +1,27 @@
+{
+  "flow_type": "global",
+  "flow_name": "activity_global",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "resources_title",
+      "value": "Materiales"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "steps_title",
+      "value": "Pasos"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "tips_title",
+      "value": "Más consejos"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "extension_title",
+      "value": "También puedes intentar"
+    }
+  ]
+}

@@ -1,0 +1,456 @@
+{
+  "flow_name": "safe_2to5_yc_m_article_tasks",
+  "flow_subtype": "generated",
+  "flow_type": "data_list",
+  "rows": [
+    {
+      "id": "relax_9",
+      "in_library": "yes",
+      "title_oringinal_eng": "Self-care moment",
+      "lottie_asset": "lottie/relax/square_flow.json",
+      "media_asset_m": "audio/relax/male/relax_9.m4a",
+      "media_asset_f": "audio/relax/female/relax_17.m4a",
+      "media_type": "audio",
+      "transcript_m_original_eng": "Here is an activity to relax your body: \n\nSit comfortably and close your eyes if you can. \nImagine a golden ring scanning your body from your feet to your head.  \nPay attention as it moves up and down your body. Are there any areas that feel tense? Numb? Painful?  \nFocus on those areas for a moment. Breathe into the area and, when you breathe out, try to let go of any tension or pain.  \nDo this for a few breaths.  \n\nOpen your eyes. How does your body feel now?\n\nYou can also try this next time you find yourself lying in bed unable to sleep!",
+      "transcript_f_original_eng": "Self-praise can be really helpful, especially when we have difficult days. \n\nThink of your week and finish the following phrase: “This week, I am proud of myself for …” It can be anything, not just things about being a parent!\n\nThink of one thing you did well today. Now wrap your arms around yourself and give yourself a big HUG!",
+      "transcript_m": "Aquí tienes una actividad para relajar tu cuerpo:\n\nSiéntate cómodamente y cierra los ojos si puedes.\nImagina un aro dorado que escanea tu cuerpo desde los pies hasta la cabeza.\nPon atención mientras sube y baja por tu cuerpo. ¿Hay áreas que se sienten tensas? ¿Adormecidas? ¿Con dolor?\nConcéntrate en esas áreas por un momento. Respira hacia esa zona y, al exhalar, intenta soltar cualquier tensión o malestar.\nHazlo por algunas respiraciones.\n\nAbre los ojos. ¿Cómo se siente tu cuerpo ahora?\n\n¡También puedes probar esto la próxima vez que estés en la cama y no puedas dormir!",
+      "transcript_f": "Elogiarte a ti mismo(a) puede ser muy útil, especialmente en los días difíciles.\n\nPiensa en tu semana y completa esta frase: “Esta semana, estoy orgulloso(a) de mí por…” ¡Puede ser cualquier cosa, no solo sobre ser padre o madre!\n\nPiensa en algo que hiciste bien hoy. Ahora abraza tu cuerpo con tus brazos y date un GRAN ABRAZO.",
+      "title": "Momento de autocuidado",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Momento de autocuidado"
+        }
+      },
+      "category_id": "relax",
+      "nested": false,
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "check_in_16",
+      "_translatedFields": {
+        "text_1": {
+          "eng": "Toma un momento para ti. Cuidarte empieza por notar cómo te sientes."
+        },
+        "quiz_1_feedback_1": {
+          "eng": "¡Increíble! La vida se siente mejor cuando nos sentimos bien."
+        },
+        "quiz_1_feedback_2": {
+          "eng": "Todas las personas pasan por momentos en los que no se sienten bien. Es completamente normal. Ojalá pronto te sientas mejor."
+        },
+        "quiz_1_feedback_3": {
+          "eng": "Es parte de la vida tener días malos. Recuerda que los momentos difíciles no duran para siempre, y que mañana es un nuevo día."
+        },
+        "quiz_1_question": {
+          "eng": "¿Cómo te sientes el día de hoy?"
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Feliz"
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Regular"
+        },
+        "quiz_1_option_3_text": {
+          "eng": "Triste"
+        }
+      },
+      "category_id": "check_in",
+      "nested": false,
+      "quiz_1_option_1_image_asset": "images/icons/faces/happy_face_new.svg",
+      "quiz_1_option_2_image_asset": "images/icons/faces/ok_face_new.svg",
+      "quiz_1_option_3_image_asset": "images/icons/faces/sad_face_new.svg",
+      "text_1": "Toma un momento para ti. Cuidarte empieza por notar cómo te sientes.",
+      "_translations": {
+        "text_1": {},
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_feedback_3": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_option_3_text": {}
+      },
+      "quiz_1_feedback_1": "¡Increíble! La vida se siente mejor cuando nos sentimos bien.",
+      "quiz_1_feedback_2": "Todas las personas pasan por momentos en los que no se sienten bien. Es completamente normal. Ojalá pronto te sientas mejor.",
+      "quiz_1_feedback_3": "Es parte de la vida tener días malos. Recuerda que los momentos difíciles no duran para siempre, y que mañana es un nuevo día.",
+      "quiz_1_question": "¿Cómo te sientes el día de hoy?",
+      "quiz_1_option_1_text": "Feliz",
+      "quiz_1_option_2_text": "Regular",
+      "quiz_1_option_3_text": "Triste",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "intro_1",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "La sesión de hoy trata de enseñarle a @fields.child_name sobre el contacto físico ✅ seguro y el ❌ inseguro."
+        },
+        "text_2": {
+          "eng": "💡 Es normal sentir incomodidad al conversar sobre abuso con las niñas y niños.\n\n❗ Pero hay algunas cosas sencillas que pueden ayudarles a entender cuándo no está bien que les toquen y qué deben hacer si alguna vez pasa algo.\n\n🔑 Le hace saber que puede controlar quién toca su cuerpo y de qué manera lo hace.\n\n🌷 ¡Esto les prepara para mantenerse a salvo durante toda su vida!"
+        },
+        "quiz_1_question": {
+          "eng": "📝 **¡Hagamos un ejercicio!**\n\n_Ejercicio no.1_\n\nLas madres, padres y personas cuidadoras deben esperar a que sus niños estén en edad escolar para poder conversar del contacto físico seguro e inseguro y de los riesgos de abuso sexual."
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Verdadero"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "👀 ¡Ups! ¡Buen intento!\n\n🌷 Nunca es demasiado pronto para conversar con @fields.child_name sobre cómo mantenerse a salvo de los abusos sexuales.\n\n🧸 Hasta los niños pequeños pueden aprender qué partes de su cuerpo son privadas y qué partes no lo son.\n\nEn lugar de usar apodos para identificar las partes de su cuerpo, utiliza los nombres reales como pene y testículos. Esto le enseña a tu niño que no tiene por qué avergonzarse de conversar de las partes privadas de su cuerpo contigo.\n\n💡 También pueden aprender que es importante que te digan si alguien les toca inapropiadamente."
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Falso"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "🎉 Es correcto.\n\n🌷 Nunca es demasiado pronto para conversar con @fields.child_name sobre cómo mantenerse a salvo de los abusos sexuales.\n\n🧸 Hasta los niños pequeños pueden aprender qué partes de su cuerpo son privadas y qué partes no lo son.\n\nEn lugar de usar apodos para identificar las partes de su cuerpo, utiliza los nombres reales como pene y testículos. Esto le enseña a tu niño que no tiene por qué avergonzarse de conversar de las partes privadas de su cuerpo contigo.\n\n💡 También pueden aprender que es importante que te digan si alguien les toca inapropiadamente."
+        },
+        "quiz_2_question": {
+          "eng": "📝 **¡Hagamos uno más!**\n\n_Ejercicio no.2_\n\nSi @fields.child_name te dice que siente incomodidad cuando alguien toca alguna parte de su cuerpo, tú debes:"
+        },
+        "quiz_2_option_1_text": {
+          "eng": "Decirle que no debería conversar sobre esas partes del cuerpo"
+        },
+        "quiz_2_feedback_1": {
+          "eng": "👀 ¡Ups! ¡Buen intento!\n\n💚 Agradecerle por ser tan valiente y por contártelo para que sienta tu protección y la facilidad de conversar contigo en caso de que algo vuelve a ocurrir.\n\n💡 Esto le enseña que su seguridad es lo más importante y que siempre puede contar contigo.\n\n❗ Confrontar a la persona que lo hizo, en la mayoría de las ocasiones, lo empeora, por lo que es mejor ayudar a @fields.child_name a alejarse de esa persona y denunciarla con la policía, en una clínica o en una institución de apoyo."
+        },
+        "quiz_2_option_2_text": {
+          "eng": "Agradecerle por su valentía al compartirlo contigo y denuncia a la persona, si es necesario"
+        },
+        "quiz_2_feedback_2": {
+          "eng": "🎉 ¡Buen trabajo!\n\n💚 Agradecerle por ser tan valiente y por contártelo para que sienta tu protección y la facilidad de conversar contigo en caso de que algo vuelve a ocurrir.\n\n💡 Esto le enseña que su seguridad es lo más importante y que siempre puede contar contigo.\n\n❗ Confrontar a la persona que lo hizo, en la mayoría de las ocasiones, lo empeora, por lo que es mejor ayudar a @fields.child_name a alejarse de esa persona y denunciarla con la policía, en una clínica o en una institución de confianza."
+        },
+        "quiz_2_option_3_text": {
+          "eng": "Decirle que no mientan sobre esas cosas"
+        },
+        "quiz_2_feedback_3": {
+          "eng": "👀 ¡Ups! ¡Buen intento!\n\n💚 Agradecerle por ser tan valiente y por contártelo para que sienta tu protección y la facilidad de conversar contigo en caso de que algo vuelve a ocurrir.\n\n💡 Esto le enseña que su seguridad es lo más importante y que siempre puede contar contigo.\n\n❗ Confrontar a la persona que lo hizo, en la mayoría de las ocasiones, lo empeora, por lo que es mejor ayudar a @fields.child_name a alejarse de esa persona y denunciarla con la policía, en una clínica o en una institución de apoyo."
+        },
+        "quiz_2_option_4_text": {
+          "eng": "Ir y gritarle a la persona que lo hizo"
+        },
+        "quiz_2_feedback_4": {
+          "eng": "👀 ¡Ups! ¡Buen intento!\n\n💚 Agradecerle por ser tan valiente y por contártelo para que sienta tu protección y la facilidad de conversar contigo en caso de que algo vuelve a ocurrir.\n\n💡 Esto le enseña que su seguridad es lo más importante y que siempre puede contar contigo.\n\n❗ Confrontar a la persona que lo hizo, en la mayoría de las ocasiones, lo empeora, por lo que es mejor ayudar a @fields.child_name a alejarse de esa persona y denunciarla con la policía, en una clínica o en una institución de apoyo."
+        }
+      },
+      "category_id": "intro",
+      "nested": false,
+      "quiz_1_feedback_1": "👀 ¡Ups! ¡Buen intento!\n\n🌷 Nunca es demasiado pronto para conversar con @fields.child_name sobre cómo mantenerse a salvo de los abusos sexuales.\n\n🧸 Hasta los niños pequeños pueden aprender qué partes de su cuerpo son privadas y qué partes no lo son.\n\nEn lugar de usar apodos para identificar las partes de su cuerpo, utiliza los nombres reales como pene y testículos. Esto le enseña a tu niño que no tiene por qué avergonzarse de conversar de las partes privadas de su cuerpo contigo.\n\n💡 También pueden aprender que es importante que te digan si alguien les toca inapropiadamente.",
+      "_translations": {
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "text_1_facilitator": {},
+        "text_2": {},
+        "quiz_2_question": {},
+        "quiz_2_option_1_text": {},
+        "quiz_2_feedback_1": {},
+        "quiz_2_option_2_text": {},
+        "quiz_2_feedback_2": {},
+        "quiz_2_option_3_text": {},
+        "quiz_2_feedback_3": {},
+        "quiz_2_option_4_text": {},
+        "quiz_2_feedback_4": {}
+      },
+      "quiz_1_feedback_2": "🎉 Es correcto.\n\n🌷 Nunca es demasiado pronto para conversar con @fields.child_name sobre cómo mantenerse a salvo de los abusos sexuales.\n\n🧸 Hasta los niños pequeños pueden aprender qué partes de su cuerpo son privadas y qué partes no lo son.\n\nEn lugar de usar apodos para identificar las partes de su cuerpo, utiliza los nombres reales como pene y testículos. Esto le enseña a tu niño que no tiene por qué avergonzarse de conversar de las partes privadas de su cuerpo contigo.\n\n💡 También pueden aprender que es importante que te digan si alguien les toca inapropiadamente.",
+      "quiz_1_question": "📝 **¡Hagamos un ejercicio!**\n\n_Ejercicio no.1_\n\nLas madres, padres y personas cuidadoras deben esperar a que sus niños estén en edad escolar para poder conversar del contacto físico seguro e inseguro y de los riesgos de abuso sexual.",
+      "quiz_1_option_1_text": "Verdadero",
+      "quiz_1_option_2_text": "Falso",
+      "text_1_facilitator": "La sesión de hoy trata de enseñarle a @fields.child_name sobre el contacto físico ✅ seguro y el ❌ inseguro.",
+      "text_2": "💡 Es normal sentir incomodidad al conversar sobre abuso con las niñas y niños.\n\n❗ Pero hay algunas cosas sencillas que pueden ayudarles a entender cuándo no está bien que les toquen y qué deben hacer si alguna vez pasa algo.\n\n🔑 Le hace saber que puede controlar quién toca su cuerpo y de qué manera lo hace.\n\n🌷 ¡Esto les prepara para mantenerse a salvo durante toda su vida!",
+      "quiz_2_question": "📝 **¡Hagamos uno más!**\n\n_Ejercicio no.2_\n\nSi @fields.child_name te dice que siente incomodidad cuando alguien toca alguna parte de su cuerpo, tú debes:",
+      "quiz_2_option_1_text": "Decirle que no debería conversar sobre esas partes del cuerpo",
+      "quiz_2_feedback_1": "👀 ¡Ups! ¡Buen intento!\n\n💚 Agradecerle por ser tan valiente y por contártelo para que sienta tu protección y la facilidad de conversar contigo en caso de que algo vuelve a ocurrir.\n\n💡 Esto le enseña que su seguridad es lo más importante y que siempre puede contar contigo.\n\n❗ Confrontar a la persona que lo hizo, en la mayoría de las ocasiones, lo empeora, por lo que es mejor ayudar a @fields.child_name a alejarse de esa persona y denunciarla con la policía, en una clínica o en una institución de apoyo.",
+      "quiz_2_option_2_text": "Agradecerle por su valentía al compartirlo contigo y denuncia a la persona, si es necesario",
+      "quiz_2_feedback_2": "🎉 ¡Buen trabajo!\n\n💚 Agradecerle por ser tan valiente y por contártelo para que sienta tu protección y la facilidad de conversar contigo en caso de que algo vuelve a ocurrir.\n\n💡 Esto le enseña que su seguridad es lo más importante y que siempre puede contar contigo.\n\n❗ Confrontar a la persona que lo hizo, en la mayoría de las ocasiones, lo empeora, por lo que es mejor ayudar a @fields.child_name a alejarse de esa persona y denunciarla con la policía, en una clínica o en una institución de confianza.",
+      "quiz_2_option_3_text": "Decirle que no mientan sobre esas cosas",
+      "quiz_2_feedback_3": "👀 ¡Ups! ¡Buen intento!\n\n💚 Agradecerle por ser tan valiente y por contártelo para que sienta tu protección y la facilidad de conversar contigo en caso de que algo vuelve a ocurrir.\n\n💡 Esto le enseña que su seguridad es lo más importante y que siempre puede contar contigo.\n\n❗ Confrontar a la persona que lo hizo, en la mayoría de las ocasiones, lo empeora, por lo que es mejor ayudar a @fields.child_name a alejarse de esa persona y denunciarla con la policía, en una clínica o en una institución de apoyo.",
+      "quiz_2_option_4_text": "Ir y gritarle a la persona que lo hizo",
+      "quiz_2_feedback_4": "👀 ¡Ups! ¡Buen intento!\n\n💚 Agradecerle por ser tan valiente y por contártelo para que sienta tu protección y la facilidad de conversar contigo en caso de que algo vuelve a ocurrir.\n\n💡 Esto le enseña que su seguridad es lo más importante y que siempre puede contar contigo.\n\n❗ Confrontar a la persona que lo hizo, en la mayoría de las ocasiones, lo empeora, por lo que es mejor ayudar a @fields.child_name a alejarse de esa persona y denunciarla con la policía, en una clínica o en una institución de apoyo.",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_1",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "@data.characters.f3_padre.name quiere ayudar a su hijo pequeño a aprender sobre el contacto físico seguro e inseguro. Veamos cómo mantiene esta conversación con @data.characters.f3_hijo_4.name."
+        },
+        "character_1_text": {
+          "eng": "¿Te gustó la historia, @data.characters.f3_hijo_4.name?"
+        },
+        "character_2_text": {
+          "eng": "Sí, papá. ¡Estuvo divertida!"
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "text_1_facilitator": "@data.characters.f3_padre.name quiere ayudar a su hijo pequeño a aprender sobre el contacto físico seguro e inseguro. Veamos cómo mantiene esta conversación con @data.characters.f3_hijo_4.name.",
+      "_translations": {
+        "text_1_facilitator": {},
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "image_asset": "images/comic/safe/safe_touch_2to5_yc_m_1.svg",
+      "character_1_id": "f3_padre",
+      "character_2_id": "f3_hijo_4",
+      "character_1_text": "¿Te gustó la historia, @data.characters.f3_hijo_4.name?",
+      "character_2_text": "Sí, papá. ¡Estuvo divertida!",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_2",
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "Ahora, hay algunas cosas importantes de las que quiero conversar contigo. Se trata de mantener tu cuerpo sano y salvo."
+        },
+        "character_2_text": {
+          "eng": "¿Qué quieres decir, papá?"
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/safe/safe_touch_2to5_yc_m_2.svg",
+      "character_1_id": "f3_padre",
+      "character_2_id": "f3_hijo_4",
+      "character_1_text": "Ahora, hay algunas cosas importantes de las que quiero conversar contigo. Se trata de mantener tu cuerpo sano y salvo.",
+      "_translations": {
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "character_2_text": "¿Qué quieres decir, papá?",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_3",
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "Primero, todas las personas tenemos partes privadas en nuestros cuerpos. Son las partes que están tapadas por nuestra ropa interior. Para los niños, eso incluye el pene y los testículos. Para las niñas, incluye la vulva y los senos."
+        },
+        "character_2_text": {
+          "eng": "(Señalando su cuerpo) ¿Como ésta parte de aquí, papá?"
+        },
+        "character_3_text": {
+          "eng": "Exactamente. Es importante recordar que estas partes son privadas, nadie debe tocarlas excepto cuando te están ayudando a estar limpio y sano, como cuando un doctor te revisa y te acompaña alguien que te cuida."
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/safe/safe_touch_2to5_yc_m_3.svg",
+      "character_1_id": "f3_padre",
+      "character_2_id": "f3_hijo_4",
+      "character_1_text": "Primero, todas las personas tenemos partes privadas en nuestros cuerpos. Son las partes que están tapadas por nuestra ropa interior. Para los niños, eso incluye el pene y los testículos. Para las niñas, incluye la vulva y los senos.",
+      "_translations": {
+        "character_1_text": {},
+        "character_2_text": {},
+        "character_3_text": {}
+      },
+      "character_2_text": "(Señalando su cuerpo) ¿Como ésta parte de aquí, papá?",
+      "character_3_id": "f3_padre",
+      "character_3_text": "Exactamente. Es importante recordar que estas partes son privadas, nadie debe tocarlas excepto cuando te están ayudando a estar limpio y sano, como cuando un doctor te revisa y te acompaña alguien que te cuida.",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_4",
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "Tu cuerpo te pertenece, y tienes derecho a decir \"no\" si alguien quiere tocarte de un modo que te resulta incómodo o incorrecto. Incluso si esa persona es un familiar o una persona amiga."
+        },
+        "character_2_text": {
+          "eng": "De acuerdo, papá."
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/safe/safe_touch_2to5_yc_m_4.svg",
+      "character_1_id": "f3_padre",
+      "character_2_id": "f3_hijo_4",
+      "character_1_text": "Tu cuerpo te pertenece, y tienes derecho a decir \"no\" si alguien quiere tocarte de un modo que te resulta incómodo o incorrecto. Incluso si esa persona es un familiar o una persona amiga.",
+      "_translations": {
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "character_2_text": "De acuerdo, papá.",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_5",
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "Y si alguna vez pasa algo que te haga sentir asustado o incómodo, recuerda que siempre puedes venir a contármelo a mí o a mamá. Estamos aquí para escucharte, protegerte y mantenerte a salvo."
+        },
+        "character_2_text": {
+          "eng": "Sí, te lo diré a ti y a mamá."
+        },
+        "character_3_text": {
+          "eng": "Te amamos, @data.characters.f3_hijo_4.name.  Ahora, ¡vamos a darnos un fuerte abrazo!"
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/safe/safe_touch_2to5_yc_m_5.svg",
+      "character_1_id": "f3_padre",
+      "character_2_id": "f3_hijo_4",
+      "character_1_text": "Y si alguna vez pasa algo que te haga sentir asustado o incómodo, recuerda que siempre puedes venir a contármelo a mí o a mamá. Estamos aquí para escucharte, protegerte y mantenerte a salvo.",
+      "_translations": {
+        "character_1_text": {},
+        "character_2_text": {},
+        "character_3_text": {}
+      },
+      "character_2_text": "Sí, te lo diré a ti y a mamá.",
+      "character_3_id": "f3_padre",
+      "character_3_text": "Te amamos, @data.characters.f3_hijo_4.name.  Ahora, ¡vamos a darnos un fuerte abrazo!",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "practical_tips_1",
+      "media_type": "youtube",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Selecciona reproducir ▶️ para aprender 4️⃣ estrategias que te ayudarán a enseñarle a @fields.child_name sobre el contacto físico seguro e inseguro y qué hacer si no se sienten a salvo cuando alguien les toca. 💛\n\n1️⃣ APRENDER SOBRE LAS PARTES PRIVADAS\n2️⃣ DECIR \"NO\", ¡ESTÁ BIEN!\n3️⃣ ALEJARSE\n4️⃣ CONTARLE A UNA PERSONA ADULTA"
+        }
+      },
+      "category_id": "practical_tips",
+      "nested": false,
+      "text_1_facilitator": "Selecciona reproducir ▶️ para aprender 4️⃣ estrategias que te ayudarán a enseñarle a @fields.child_name sobre el contacto físico seguro e inseguro y qué hacer si no se sienten a salvo cuando alguien les toca. 💛\n\n1️⃣ APRENDER SOBRE LAS PARTES PRIVADAS\n2️⃣ DECIR \"NO\", ¡ESTÁ BIEN!\n3️⃣ ALEJARSE\n4️⃣ CONTARLE A UNA PERSONA ADULTA",
+      "_translations": {
+        "text_1_facilitator": {}
+      },
+      "youtube_gb_en_f": "https://www.youtube.com/watch?v=1RwMKutl9CY",
+      "youtube_gb_en_m": "https://www.youtube.com/watch?v=xvw5SxMxV6Y",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "practical_tips_2",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Recuerda:"
+        },
+        "section_1_title": {
+          "eng": "APRENDER SOBRE LAS PARTES PRIVADAS"
+        },
+        "section_1_text": {
+          "eng": "✅ Enséñale a @fields.child_name que las partes de su cuerpo que están cubiertas por la ropa interior o el traje de baño son partes privadas.\n\nDile a @fields.child_name que NO ESTÁ BIEN que\n❌ otras personas toquen sus partes privadas\n❌ otras personas vean sus partes privadas\n❌alguien le pida que vea o toque las partes íntimas de otra persona"
+        },
+        "section_2_title": {
+          "eng": "DECIR \"NO\", ¡ESTÁ BIEN!"
+        },
+        "section_2_text": {
+          "eng": "❌ Dile a @fields.child_name que siempre puede decirle que NO a alguien que le quiere tocar, incluidos familiares, amistades o personas desconocidas. ¡Esto aplica hasta para los abrazos o los besos!\n\n👑 Esto le enseña a @fields.child_name que siempre tiene el control de quién le puede tocar. Así, aprenderá a tomar decisiones que garanticen su seguridad a lo largo de su vida y en cualquier situación.\n\n🚩 Practica decir \"No, por favor, no hagas eso\" y \"¡No! ¡Detente!\" con @fields.child_name para que sepa cómo hacerlo en caso de que lo necesite."
+        },
+        "section_3_title": {
+          "eng": "ALEJARSE"
+        },
+        "section_3_text": {
+          "eng": "💡 Enséñale a @fields.child_name a siempre alejarse de cualquier situación en la que sienta incomodidad.\n\n🚩 En la mayoría de los casos, las personas agresoras rara vez son desconocidas para nuestras niñas y niños. Suelen ser personas conocidas del niño y/o de sus personas cuidadoras.\n\n❗ Al compartir un tiempo con tu niño a través de juegos físicos como  \"luchitas\", practiquen el decir \"no\" y respeta sus límites. Si @fields.child_name dice \"no\", detén el juego inmediatamente. Esto le capacita para también decir NO en situaciones de peligro fuera de casa.\n\n🌷 No será fácil para el niño alejarse de esas situaciones, pero enseñarle a salir de situaciones incómodas o peligrosas será una habilidad valiosa para toda la vida."
+        },
+        "section_4_title": {
+          "eng": "CONTARLE A UNA PERSONA ADULTA"
+        },
+        "section_4_text": {
+          "eng": "🔴 Dile a @fields.child_name que si siente preocupación, incomodidad o peligro porque alguien le está tocando, debe decírtelo a ti o a una persona adulta en quien confíe.\n\n👂 Si @fields.child_name te cuenta algo que le ha pasado, escúchalo con disposición y dile que ha hecho bien en contártelo. Después, toma las medidas necesarias para mantenerle a salvo. \n\nSiempre cree en lo que te dice @fields.child_name y no le dejes a solas con la persona con la que se siente en peligro."
+        }
+      },
+      "category_id": "practical_tips",
+      "nested": false,
+      "text_1_facilitator": "Recuerda:",
+      "_translations": {
+        "text_1_facilitator": {},
+        "section_1_title": {},
+        "section_1_text": {},
+        "section_2_title": {},
+        "section_2_text": {},
+        "section_3_title": {},
+        "section_3_text": {},
+        "section_4_title": {},
+        "section_4_text": {}
+      },
+      "section_1_icon_asset": "images/icons/lightbulb_blue.png",
+      "section_2_icon_asset": "images/icons/diamond_blue.png",
+      "section_3_icon_asset": "images/icons/tick.svg",
+      "section_4_icon_asset": "images/icons/parent_child.svg",
+      "section_1_title": "APRENDER SOBRE LAS PARTES PRIVADAS",
+      "section_1_text": "✅ Enséñale a @fields.child_name que las partes de su cuerpo que están cubiertas por la ropa interior o el traje de baño son partes privadas.\n\nDile a @fields.child_name que NO ESTÁ BIEN que\n❌ otras personas toquen sus partes privadas\n❌ otras personas vean sus partes privadas\n❌alguien le pida que vea o toque las partes íntimas de otra persona",
+      "section_2_title": "DECIR \"NO\", ¡ESTÁ BIEN!",
+      "section_2_text": "❌ Dile a @fields.child_name que siempre puede decirle que NO a alguien que le quiere tocar, incluidos familiares, amistades o personas desconocidas. ¡Esto aplica hasta para los abrazos o los besos!\n\n👑 Esto le enseña a @fields.child_name que siempre tiene el control de quién le puede tocar. Así, aprenderá a tomar decisiones que garanticen su seguridad a lo largo de su vida y en cualquier situación.\n\n🚩 Practica decir \"No, por favor, no hagas eso\" y \"¡No! ¡Detente!\" con @fields.child_name para que sepa cómo hacerlo en caso de que lo necesite.",
+      "section_3_title": "ALEJARSE",
+      "section_3_text": "💡 Enséñale a @fields.child_name a siempre alejarse de cualquier situación en la que sienta incomodidad.\n\n🚩 En la mayoría de los casos, las personas agresoras rara vez son desconocidas para nuestras niñas y niños. Suelen ser personas conocidas del niño y/o de sus personas cuidadoras.\n\n❗ Al compartir un tiempo con tu niño a través de juegos físicos como  \"luchitas\", practiquen el decir \"no\" y respeta sus límites. Si @fields.child_name dice \"no\", detén el juego inmediatamente. Esto le capacita para también decir NO en situaciones de peligro fuera de casa.\n\n🌷 No será fácil para el niño alejarse de esas situaciones, pero enseñarle a salir de situaciones incómodas o peligrosas será una habilidad valiosa para toda la vida.",
+      "section_4_title": "CONTARLE A UNA PERSONA ADULTA",
+      "section_4_text": "🔴 Dile a @fields.child_name que si siente preocupación, incomodidad o peligro porque alguien le está tocando, debe decírtelo a ti o a una persona adulta en quien confíe.\n\n👂 Si @fields.child_name te cuenta algo que le ha pasado, escúchalo con disposición y dile que ha hecho bien en contártelo. Después, toma las medidas necesarias para mantenerle a salvo. \n\nSiempre cree en lo que te dice @fields.child_name y no le dejes a solas con la persona con la que se siente en peligro.",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "home_activity_1",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "**Actividad para casa** ⭐  \n\n🚩 Platica con @fields.child_name sobre el contacto físico seguro e inseguro. \n\nAyúdale a practicar diciendo: \"¡No, no hagas eso!\" o \"¡No! ¡Detente!\" y recuérdale que es importante que le diga a una persona adulta si algo pasa."
+        },
+        "quiz_1_question": {
+          "eng": "¿Puedes conversar esto con @fields.child_name hoy? ⏰"
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Sí"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "💙 ¡Qué bien! Esto le ayudará a protegerse si alguna vez siente inseguridad o incomodidad cuando alguien le toca. ¡Lo estás haciendo muy bien!"
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Lo intentaré"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "¡Gracias por intentarlo! 💛 Las nuevas habilidades se desarrollan poco a poco. Cuando tengas la oportunidad, pon esta idea en práctica y observa qué cambia. ✨"
+        },
+        "quiz_1_option_3_text": {
+          "eng": "No"
+        },
+        "quiz_1_feedback_3": {
+          "eng": "¡Está bien! Si hoy no tienes tiempo, aparta un espacio para mañana. Conversar de esto con @fields.child_name le ayudará a protegerse si alguna vez siente inseguridad o incomodidad cuando alguien le toca.\n💙 ¡Lo estás haciendo muy bien!"
+        }
+      },
+      "category_id": "home_activity",
+      "nested": false,
+      "quiz_1_feedback_1": "💙 ¡Qué bien! Esto le ayudará a protegerse si alguna vez siente inseguridad o incomodidad cuando alguien le toca. ¡Lo estás haciendo muy bien!",
+      "_translations": {
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_feedback_3": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_option_3_text": {},
+        "text_1_facilitator": {}
+      },
+      "quiz_1_feedback_2": "¡Gracias por intentarlo! 💛 Las nuevas habilidades se desarrollan poco a poco. Cuando tengas la oportunidad, pon esta idea en práctica y observa qué cambia. ✨",
+      "quiz_1_feedback_3": "¡Está bien! Si hoy no tienes tiempo, aparta un espacio para mañana. Conversar de esto con @fields.child_name le ayudará a protegerse si alguna vez siente inseguridad o incomodidad cuando alguien le toca.\n💙 ¡Lo estás haciendo muy bien!",
+      "quiz_1_question": "¿Puedes conversar esto con @fields.child_name hoy? ⏰",
+      "quiz_1_option_1_text": "Sí",
+      "quiz_1_option_2_text": "Lo intentaré",
+      "quiz_1_option_3_text": "No",
+      "text_1_facilitator": "**Actividad para casa** ⭐  \n\n🚩 Platica con @fields.child_name sobre el contacto físico seguro e inseguro. \n\nAyúdale a practicar diciendo: \"¡No, no hagas eso!\" o \"¡No! ¡Detente!\" y recuérdale que es importante que le diga a una persona adulta si algo pasa.",
+      "completed": false,
+      "version": 1
+    }
+  ],
+  "_metadata": {
+    "nested": {
+      "type": "boolean"
+    },
+    "completed": {
+      "type": "boolean"
+    },
+    "version": {
+      "type": "number"
+    }
+  }
+}

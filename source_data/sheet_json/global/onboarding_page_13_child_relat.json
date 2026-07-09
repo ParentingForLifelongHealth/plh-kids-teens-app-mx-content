@@ -1,0 +1,28 @@
+{
+  "flow_type": "global",
+  "flow_subtype": "onboarding",
+  "flow_name": "onboarding_page_13_child_relat",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "testing_test",
+      "value": "This needs to be deleted "
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "facilitator_message_child_relation",
+      "value": "¡Casi listo!"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "question_family_relation",
+      "value": "¿Cuál es tu relación con @fields.child_name?"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "placeholder_family_relation",
+      "value": "Selecciona una opción"
+    }
+  ]
+}

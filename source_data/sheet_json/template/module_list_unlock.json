@@ -1,0 +1,109 @@
+{
+  "flow_type": "template",
+  "flow_name": "module_list_unlock",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "all unlocked",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_data_items",
+      "name": "all_courses",
+      "value": "@data.courses",
+      "exclude_from_translation": true,
+      "comments": "filter: (!@item.tag_list || @item.tag_list.includes(@fields.child_age_tag));"
+    },
+    {
+      "type": "text",
+      "value": "core: @item.core"
+    },
+    {
+      "type": "text",
+      "value": "completed: @item.completed"
+    },
+    {
+      "type": "text",
+      "value": "tag_list: @item.tag_list"
+    },
+    {
+      "type": "text",
+      "value": "@calc(@item.tag_list.includes(@fields.child_age_tag))",
+      "condition": false
+    },
+    {
+      "type": "text",
+      "value": "age_list: @item.age_list"
+    },
+    {
+      "type": "text",
+      "value": "@calc(@item.age_list.includes(@fields.child_age))",
+      "condition": false
+    },
+    {
+      "type": "text",
+      "value": "gender_list: @item.child_gender_list"
+    },
+    {
+      "type": "text",
+      "value": "@calc(@item.child_gender_list.includes(@fields.child_gender))",
+      "condition": false
+    },
+    {
+      "type": "text",
+      "value": "relationship: @item.caregiver_relationship_list"
+    },
+    {
+      "type": "text",
+      "value": "@calc(@item.caregiver_relationship_list.includes(@fields.user_relationship))",
+      "condition": false
+    },
+    {
+      "type": "text",
+      "value": "field 1: @fields.child_age_tag"
+    },
+    {
+      "type": "text",
+      "value": "field 2: @fields.child_age"
+    },
+    {
+      "type": "text",
+      "value": "@field 3: @fields.child_gender"
+    },
+    {
+      "type": "text",
+      "value": "@field 4: @fields.user_relationship"
+    },
+    {
+      "type": "begin_template",
+      "value": "module_group",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "course",
+      "value": "@item.id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "course_title",
+      "value": "@item.title"
+    },
+    {
+      "name": "course_image",
+      "value": "@item.image_asset"
+    },
+    {
+      "name": "completed_course",
+      "value": false
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_data_items",
+      "exclude_from_translation": true
+    }
+  ]
+}

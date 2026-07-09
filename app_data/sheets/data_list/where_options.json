@@ -1,0 +1,32 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "where_options",
+  "status": "released",
+  "rows": [
+    {
+      "id": "id_1",
+      "name": "home",
+      "text": "Inicio"
+    },
+    {
+      "id": "id_2",
+      "name": "library",
+      "text": "Recursos"
+    },
+    {
+      "id": "id_3",
+      "name": "settings",
+      "text": "Ajustes"
+    },
+    {
+      "id": "id_4",
+      "name": "other",
+      "text": "Otro"
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "data/MX deployment_data.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/13MITRQ3ltpZObRU8Nr3_D-gc-bVX2SvKt1NO-IngD-I"
+  }
+}

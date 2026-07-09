@@ -1,0 +1,66 @@
+{
+  "flow_type": "template",
+  "flow_name": "module_landing_ks_s_violence_t",
+  "status": "released",
+  "parameter_list": {
+    "app_config": {
+      "LAYOUT": {
+        "page_padding": "0 0"
+      }
+    }
+  },
+  "comment": "ks_s_violence_t",
+  "comment_2": 30,
+  "comment_3": 15,
+  "rows": [
+    {
+      "module_landing_ks_s_violence_t": "begin_template",
+      "name": "module_landing",
+      "value": "module_landing",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "emit",
+          "args": [
+            "completed"
+          ],
+          "_raw": "completed | emit: completed"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "emit",
+          "args": [
+            "uncompleted"
+          ],
+          "_raw": "uncompleted | emit: uncompleted"
+        }
+      ],
+      "type": "set_variable",
+      "_nested_name": "module_landing"
+    },
+    {
+      "name": "module_id",
+      "value": "ks_s_violence_t",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "module_id"
+    },
+    {
+      "module_landing_ks_s_violence_t": "end_template",
+      "type": "set_variable",
+      "name": "set_variable_4",
+      "_nested_name": "set_variable_4"
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "templates/MX module_landing templates (31-45).xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1QHQuDi2ua0h3CouCKBysrorZ77Apbtx6RCZtwT9zngg"
+  }
+}

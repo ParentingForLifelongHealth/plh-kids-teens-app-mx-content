@@ -1,0 +1,23 @@
+{
+  "flow_type": "global",
+  "flow_subtype": "onboarding",
+  "flow_name": "onboarding_page_8_user_relation",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "facilitator_message_user_relation",
+      "value": "Cuéntanos un poco sobre tu familia. Así podremos compartirte consejos que se adapten a ti."
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "question_user_relationship",
+      "value": "¿Cuál es tu estado civil?"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "placeholder_user_relationship",
+      "value": "Selecciona un estado civil"
+    }
+  ]
+}

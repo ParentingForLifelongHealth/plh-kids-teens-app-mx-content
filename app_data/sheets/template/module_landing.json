@@ -1,0 +1,925 @@
+{
+  "flow_type": "template",
+  "flow_name": "module_landing",
+  "status": "released",
+  "rows": [
+    {
+      "type": "update_action_list",
+      "name": "custom_actions_1",
+      "action_list": [
+        {
+          "trigger": "nav_resume",
+          "action_id": "emit",
+          "args": [
+            "force_reload"
+          ],
+          "_raw": "nav_resume | emit: force_reload"
+        }
+      ],
+      "condition": false,
+      "exclude_from_translation": true,
+      "_nested_name": "custom_actions_1"
+    },
+    {
+      "name": "module_id",
+      "value": "selfcare",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "module_id"
+    },
+    {
+      "name": "course_id",
+      "type": "set_variable",
+      "_nested_name": "course_id"
+    },
+    {
+      "name": "module_concat",
+      "value": "modules.@local.module_id",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "module_concat",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "modules.@local.module_id",
+            "matchedExpression": "@local.module_id",
+            "type": "local",
+            "fieldName": "module_id"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.module_id": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "module_row",
+      "value": "@data.@local.module_concat",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "module_row",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.@local.module_concat",
+            "matchedExpression": "@local.module_concat",
+            "type": "local",
+            "fieldName": "module_concat"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.module_concat": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "categories",
+      "value": "_category_tasks",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "categories"
+    },
+    {
+      "name": "category_data",
+      "value": "@local.module_id@local.categories",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "category_data",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.module_id@local.categories",
+            "matchedExpression": "@local.module_id",
+            "type": "local",
+            "fieldName": "module_id"
+          },
+          {
+            "fullExpression": "@local.module_id@local.categories",
+            "matchedExpression": "@local.categories",
+            "type": "local",
+            "fieldName": "categories"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.module_id": [
+          "value"
+        ],
+        "@local.categories": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "bg_illustration",
+      "value": "images/backgrounds/complete_module.svg",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "bg_illustration"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_top",
+      "exclude_from_translation": true,
+      "rows": [
+        {
+          "type": "plh_module_details_header",
+          "name": "plh_module_details_header",
+          "value": "@local.module_row.title",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "background_image_asset": "@local.bg_illustration"
+          },
+          "exclude_from_translation": true,
+          "_nested_name": "dg_top.plh_module_details_header",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.module_row.title",
+                "matchedExpression": "@local.module_row.title",
+                "type": "local",
+                "fieldName": "module_row"
+              }
+            ],
+            "parameter_list": {
+              "background_image_asset": [
+                {
+                  "fullExpression": "@local.bg_illustration",
+                  "matchedExpression": "@local.bg_illustration",
+                  "type": "local",
+                  "fieldName": "bg_illustration"
+                }
+              ]
+            }
+          },
+          "_dynamicDependencies": {
+            "@local.module_row.title": [
+              "value"
+            ],
+            "@local.bg_illustration": [
+              "parameter_list.background_image_asset"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "dg_top"
+    },
+    {
+      "name": "no_completed",
+      "value": 0,
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "no_completed"
+    },
+    {
+      "name": "total",
+      "value": 0,
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "total"
+    },
+    {
+      "name": "course_id",
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "course_id"
+    },
+    {
+      "name": "course_name",
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "course_name"
+    },
+    {
+      "type": "data_items",
+      "value": "@data.module_tasks",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "data_changed",
+          "action_id": "set_local",
+          "args": [
+            "course_id",
+            "@items[0].tag_course"
+          ],
+          "_raw": "data_changed | set_local : course_id: @items[0].tag_course"
+        }
+      ],
+      "parameter_list": {
+        "filter": "@item.id == @local.module_id",
+        "limit": "1"
+      },
+      "exclude_from_translation": true,
+      "name": "data_items_15",
+      "_nested_name": "data_items_15",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.module_tasks",
+            "matchedExpression": "@data.module_tasks",
+            "type": "data",
+            "fieldName": "module_tasks"
+          }
+        ],
+        "parameter_list": {
+          "filter": [
+            {
+              "fullExpression": "@item.id == @local.module_id",
+              "matchedExpression": "@item.id",
+              "type": "item",
+              "fieldName": "id"
+            },
+            {
+              "fullExpression": "@item.id == @local.module_id",
+              "matchedExpression": "@local.module_id",
+              "type": "local",
+              "fieldName": "module_id"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@data.module_tasks": [
+          "value"
+        ],
+        "@item.id": [
+          "parameter_list.filter"
+        ],
+        "@local.module_id": [
+          "parameter_list.filter"
+        ]
+      }
+    },
+    {
+      "type": "data_items",
+      "value": "@data.module_tasks",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "data_changed",
+          "action_id": "set_local",
+          "args": [
+            "no_completed",
+            "@items.length"
+          ],
+          "_raw": "data_changed | set_local : no_completed: @items.length"
+        }
+      ],
+      "parameter_list": {
+        "filter": "@item.tag_course == @local.course_id && @item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))"
+      },
+      "condition": "!!@local.course_id",
+      "exclude_from_translation": true,
+      "name": "data_items_16",
+      "_nested_name": "data_items_16",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.module_tasks",
+            "matchedExpression": "@data.module_tasks",
+            "type": "data",
+            "fieldName": "module_tasks"
+          }
+        ],
+        "parameter_list": {
+          "filter": [
+            {
+              "fullExpression": "@item.tag_course == @local.course_id && @item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "matchedExpression": "@item.tag_course",
+              "type": "item",
+              "fieldName": "tag_course"
+            },
+            {
+              "fullExpression": "@item.tag_course == @local.course_id && @item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "matchedExpression": "@local.course_id",
+              "type": "local",
+              "fieldName": "course_id"
+            },
+            {
+              "fullExpression": "@item.tag_course == @local.course_id && @item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "matchedExpression": "@item.completed",
+              "type": "item",
+              "fieldName": "completed"
+            },
+            {
+              "fullExpression": "@item.tag_course == @local.course_id && @item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "matchedExpression": "!@item.age_list",
+              "type": "item",
+              "fieldName": "age_list"
+            },
+            {
+              "fullExpression": "@item.tag_course == @local.course_id && @item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "matchedExpression": "@item.age_list.includes",
+              "type": "item",
+              "fieldName": "age_list"
+            },
+            {
+              "fullExpression": "@item.tag_course == @local.course_id && @item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "matchedExpression": "@fields.child_age",
+              "type": "fields",
+              "fieldName": "child_age"
+            },
+            {
+              "fullExpression": "@item.tag_course == @local.course_id && @item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "matchedExpression": "!@item.child_gender_list",
+              "type": "item",
+              "fieldName": "child_gender_list"
+            },
+            {
+              "fullExpression": "@item.tag_course == @local.course_id && @item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "matchedExpression": "@item.child_gender_list.includes",
+              "type": "item",
+              "fieldName": "child_gender_list"
+            },
+            {
+              "fullExpression": "@item.tag_course == @local.course_id && @item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "matchedExpression": "@fields.child_gender",
+              "type": "fields",
+              "fieldName": "child_gender"
+            },
+            {
+              "fullExpression": "@item.tag_course == @local.course_id && @item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "matchedExpression": "!@item.caregiver_relationship_list",
+              "type": "item",
+              "fieldName": "caregiver_relationship_list"
+            },
+            {
+              "fullExpression": "@item.tag_course == @local.course_id && @item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "matchedExpression": "@item.caregiver_relationship_list.includes",
+              "type": "item",
+              "fieldName": "caregiver_relationship_list"
+            },
+            {
+              "fullExpression": "@item.tag_course == @local.course_id && @item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "matchedExpression": "@fields.user_relationship",
+              "type": "fields",
+              "fieldName": "user_relationship"
+            }
+          ]
+        },
+        "condition": [
+          {
+            "fullExpression": "!!@local.course_id",
+            "matchedExpression": "!@local.course_id",
+            "type": "local",
+            "fieldName": "course_id"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.module_tasks": [
+          "value"
+        ],
+        "@item.tag_course": [
+          "parameter_list.filter"
+        ],
+        "@local.course_id": [
+          "parameter_list.filter"
+        ],
+        "@item.completed": [
+          "parameter_list.filter"
+        ],
+        "!@item.age_list": [
+          "parameter_list.filter"
+        ],
+        "@item.age_list.includes": [
+          "parameter_list.filter"
+        ],
+        "@fields.child_age": [
+          "parameter_list.filter"
+        ],
+        "!@item.child_gender_list": [
+          "parameter_list.filter"
+        ],
+        "@item.child_gender_list.includes": [
+          "parameter_list.filter"
+        ],
+        "@fields.child_gender": [
+          "parameter_list.filter"
+        ],
+        "!@item.caregiver_relationship_list": [
+          "parameter_list.filter"
+        ],
+        "@item.caregiver_relationship_list.includes": [
+          "parameter_list.filter"
+        ],
+        "@fields.user_relationship": [
+          "parameter_list.filter"
+        ],
+        "!@local.course_id": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "data_items",
+      "value": "@data.module_tasks",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "data_changed",
+          "action_id": "set_local",
+          "args": [
+            "total",
+            "@items.length"
+          ],
+          "_raw": "data_changed | set_local : total: @items.length"
+        }
+      ],
+      "parameter_list": {
+        "filter": "@item.tag_course == @local.course_id  && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))"
+      },
+      "condition": "!!@local.course_id",
+      "exclude_from_translation": true,
+      "name": "data_items_17",
+      "_nested_name": "data_items_17",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.module_tasks",
+            "matchedExpression": "@data.module_tasks",
+            "type": "data",
+            "fieldName": "module_tasks"
+          }
+        ],
+        "parameter_list": {
+          "filter": [
+            {
+              "fullExpression": "@item.tag_course == @local.course_id  && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "matchedExpression": "@item.tag_course",
+              "type": "item",
+              "fieldName": "tag_course"
+            },
+            {
+              "fullExpression": "@item.tag_course == @local.course_id  && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "matchedExpression": "@local.course_id",
+              "type": "local",
+              "fieldName": "course_id"
+            },
+            {
+              "fullExpression": "@item.tag_course == @local.course_id  && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "matchedExpression": "!@item.age_list",
+              "type": "item",
+              "fieldName": "age_list"
+            },
+            {
+              "fullExpression": "@item.tag_course == @local.course_id  && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "matchedExpression": "@item.age_list.includes",
+              "type": "item",
+              "fieldName": "age_list"
+            },
+            {
+              "fullExpression": "@item.tag_course == @local.course_id  && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "matchedExpression": "@fields.child_age",
+              "type": "fields",
+              "fieldName": "child_age"
+            },
+            {
+              "fullExpression": "@item.tag_course == @local.course_id  && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "matchedExpression": "!@item.child_gender_list",
+              "type": "item",
+              "fieldName": "child_gender_list"
+            },
+            {
+              "fullExpression": "@item.tag_course == @local.course_id  && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "matchedExpression": "@item.child_gender_list.includes",
+              "type": "item",
+              "fieldName": "child_gender_list"
+            },
+            {
+              "fullExpression": "@item.tag_course == @local.course_id  && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "matchedExpression": "@fields.child_gender",
+              "type": "fields",
+              "fieldName": "child_gender"
+            },
+            {
+              "fullExpression": "@item.tag_course == @local.course_id  && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "matchedExpression": "!@item.caregiver_relationship_list",
+              "type": "item",
+              "fieldName": "caregiver_relationship_list"
+            },
+            {
+              "fullExpression": "@item.tag_course == @local.course_id  && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "matchedExpression": "@item.caregiver_relationship_list.includes",
+              "type": "item",
+              "fieldName": "caregiver_relationship_list"
+            },
+            {
+              "fullExpression": "@item.tag_course == @local.course_id  && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "matchedExpression": "@fields.user_relationship",
+              "type": "fields",
+              "fieldName": "user_relationship"
+            }
+          ]
+        },
+        "condition": [
+          {
+            "fullExpression": "!!@local.course_id",
+            "matchedExpression": "!@local.course_id",
+            "type": "local",
+            "fieldName": "course_id"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.module_tasks": [
+          "value"
+        ],
+        "@item.tag_course": [
+          "parameter_list.filter"
+        ],
+        "@local.course_id": [
+          "parameter_list.filter"
+        ],
+        "!@item.age_list": [
+          "parameter_list.filter"
+        ],
+        "@item.age_list.includes": [
+          "parameter_list.filter"
+        ],
+        "@fields.child_age": [
+          "parameter_list.filter"
+        ],
+        "!@item.child_gender_list": [
+          "parameter_list.filter"
+        ],
+        "@item.child_gender_list.includes": [
+          "parameter_list.filter"
+        ],
+        "@fields.child_gender": [
+          "parameter_list.filter"
+        ],
+        "!@item.caregiver_relationship_list": [
+          "parameter_list.filter"
+        ],
+        "@item.caregiver_relationship_list.includes": [
+          "parameter_list.filter"
+        ],
+        "@fields.user_relationship": [
+          "parameter_list.filter"
+        ],
+        "!@local.course_id": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "data_items",
+      "value": "courses",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "data_changed",
+          "action_id": "set_local",
+          "args": [
+            "course_name",
+            "@items[0].title"
+          ],
+          "_raw": "data_changed | set_local : course_name: @items[0].title"
+        }
+      ],
+      "parameter_list": {
+        "filter": "@item.id == @local.course_id",
+        "limit": "1"
+      },
+      "condition": "!!@local.course_id",
+      "exclude_from_translation": true,
+      "name": "data_items_18",
+      "_nested_name": "data_items_18",
+      "_dynamicFields": {
+        "parameter_list": {
+          "filter": [
+            {
+              "fullExpression": "@item.id == @local.course_id",
+              "matchedExpression": "@item.id",
+              "type": "item",
+              "fieldName": "id"
+            },
+            {
+              "fullExpression": "@item.id == @local.course_id",
+              "matchedExpression": "@local.course_id",
+              "type": "local",
+              "fieldName": "course_id"
+            }
+          ]
+        },
+        "condition": [
+          {
+            "fullExpression": "!!@local.course_id",
+            "matchedExpression": "!@local.course_id",
+            "type": "local",
+            "fieldName": "course_id"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@item.id": [
+          "parameter_list.filter"
+        ],
+        "@local.course_id": [
+          "parameter_list.filter"
+        ],
+        "!@local.course_id": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "tag: @local.module_row.tag_course",
+      "_translations": {
+        "value": {}
+      },
+      "condition": false,
+      "exclude_from_translation": true,
+      "name": "text_19",
+      "_nested_name": "text_19",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "tag: @local.module_row.tag_course",
+            "matchedExpression": "@local.module_row.tag_course",
+            "type": "local",
+            "fieldName": "module_row"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.module_row.tag_course": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "comp: @local.no_completed",
+      "_translations": {
+        "value": {}
+      },
+      "condition": false,
+      "exclude_from_translation": true,
+      "name": "text_20",
+      "_nested_name": "text_20",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "comp: @local.no_completed",
+            "matchedExpression": "@local.no_completed",
+            "type": "local",
+            "fieldName": "no_completed"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.no_completed": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "total: @local.total",
+      "_translations": {
+        "value": {}
+      },
+      "condition": false,
+      "exclude_from_translation": true,
+      "name": "text_21",
+      "_nested_name": "text_21",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "total: @local.total",
+            "matchedExpression": "@local.total",
+            "type": "local",
+            "fieldName": "total"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.total": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "display_group",
+      "parameter_list": {
+        "style": "column",
+        "variant": "inline_padding"
+      },
+      "rows": [
+        {
+          "type": "text",
+          "name": "summary_text",
+          "value": "@global.module_summary_text",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "text-align: center"
+          ],
+          "exclude_from_translation": false,
+          "_nested_name": "display_group_22.summary_text",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@global.module_summary_text",
+                "matchedExpression": "@global.module_summary_text",
+                "type": "global",
+                "fieldName": "module_summary_text"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@global.module_summary_text": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "name": "hp",
+          "value": "@local.module_row.home_activity",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "!!@local.module_row.home_activity",
+          "style_list": [
+            "text-align: center"
+          ],
+          "_nested_name": "display_group_22.hp",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.module_row.home_activity",
+                "matchedExpression": "@local.module_row.home_activity",
+                "type": "local",
+                "fieldName": "module_row"
+              }
+            ],
+            "condition": [
+              {
+                "fullExpression": "!!@local.module_row.home_activity",
+                "matchedExpression": "!@local.module_row.home_activity",
+                "type": "local",
+                "fieldName": "module_row"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.module_row.home_activity": [
+              "value"
+            ],
+            "!@local.module_row.home_activity": [
+              "condition"
+            ]
+          }
+        },
+        {
+          "type": "button",
+          "name": "button_home",
+          "value": "@global.back_to_home",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "home_screen"
+              ],
+              "_raw": "click | go_to: home_screen"
+            }
+          ],
+          "exclude_from_translation": true,
+          "_nested_name": "display_group_22.button_home",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@global.back_to_home",
+                "matchedExpression": "@global.back_to_home",
+                "type": "global",
+                "fieldName": "back_to_home"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@global.back_to_home": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "button",
+          "name": "button_restart",
+          "value": "<u>@global.restart</u>",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "nav_stack",
+              "args": [
+                "open"
+              ],
+              "_raw": "click | nav_stack: open | template: stack_module_@local.module_id, header: false",
+              "params": {
+                "template": "stack_module_@local.module_id",
+                "header": false
+              }
+            }
+          ],
+          "parameter_list": {
+            "variant": "card",
+            "style": "no-background"
+          },
+          "exclude_from_translation": true,
+          "_nested_name": "display_group_22.button_restart",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "<u>@global.restart</u>",
+                "matchedExpression": "@global.restart",
+                "type": "global",
+                "fieldName": "restart"
+              }
+            ],
+            "action_list": {
+              "0": {
+                "_raw": [
+                  {
+                    "fullExpression": "click | nav_stack: open | template: stack_module_@local.module_id, header: false",
+                    "matchedExpression": "@local.module_id",
+                    "type": "local",
+                    "fieldName": "module_id"
+                  }
+                ],
+                "params": {
+                  "template": [
+                    {
+                      "fullExpression": "stack_module_@local.module_id",
+                      "matchedExpression": "@local.module_id",
+                      "type": "local",
+                      "fieldName": "module_id"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "_dynamicDependencies": {
+            "@global.restart": [
+              "value"
+            ],
+            "@local.module_id": [
+              "action_list.0._raw",
+              "action_list.0.params.template"
+            ]
+          }
+        }
+      ],
+      "name": "display_group_22",
+      "_nested_name": "display_group_22"
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_global V2",
+    "path": "templates/PLH module_navigation.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1upg0i3Kz-ccJ44ZfbV49SWmehVpvHW3r9kBtc-bDRFI"
+  }
+}

@@ -1,0 +1,381 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "anxiety_t_articles",
+  "data_list_name": "anxiety_t_articles",
+  "status": "released",
+  "flow_subtype": "modules_anxiety_t",
+  "module": "anxiety_t",
+  "rows": [
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "nested": false,
+      "text_1_facilitator": "⚽ En la sesión de hoy, conversaremos sobre cómo detectar en qué momento la ansiedad empieza a causar molestias con la vida cotidiana.",
+      "_translations": {
+        "text_1_facilitator": {},
+        "text_2": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_feedback_1": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_feedback_2": {},
+        "quiz_2_question": {},
+        "quiz_2_option_1_text": {},
+        "quiz_2_feedback_1": {},
+        "quiz_2_option_2_text": {},
+        "quiz_2_feedback_2": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "⚽ En la sesión de hoy, conversaremos sobre cómo detectar en qué momento la ansiedad empieza a causar molestias con la vida cotidiana."
+        },
+        "text_2": {
+          "eng": "👂Es normal sentir ansiedad de vez en cuando. Puede ayudarnos a estar en alerta y a actuar con cautela. Sin embargo, a veces la ansiedad puede durar mucho tiempo o hacerse demasiado grande, afectando tu vida diaria o la de @fields.child_name.  \n\n💡 Cuando la ansiedad empieza a afectar la vida cotidiana, puede convertirse en un problema que requiere de apoyo adicional. \n\n✨ Saber regular los sentimientos de ansiedad te ayudará a ti y también a tu adolescente a sentir que tienen más control sobre la situación y a estar más a gusto con ustedes mismos o mismas."
+        },
+        "quiz_1_question": {
+          "eng": "📝 **¡Hagamos un ejercicio!**\n\n_Ejercicio no.1_\n\n@fields.child_name no debe de sentir ansiedad por nada."
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Verdadero"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "👀 ¡Ups! ¡Buen intento!\n\nEs normal que @fields.child_name sienta ansiedad de vez en cuando. Puede ayudarle a estar alerta y a prepararse para las cosas que puedan salir mal.  \n\n🔴 La ansiedad se convierte en algo perjudicial cuando le afecta en su día a día."
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Falso"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "✨ ¡Tienes razón!\n\nEs normal que @fields.child_name sienta ansiedad de vez en cuando. Puede ayudarle a estar alerta y a prepararse para las cosas que puedan salir mal.  \n\n🔴 La ansiedad se convierte en algo perjudicial cuando le afecta en su día a día."
+        },
+        "quiz_2_question": {
+          "eng": "📝 **¡Un ejercicio más!**\n\n_Ejercicio no.2_ \n\nSi @fields.child_name experimenta ansiedad, no hay nada que podamos hacer."
+        },
+        "quiz_2_option_1_text": {
+          "eng": "Verdadero"
+        },
+        "quiz_2_feedback_1": {
+          "eng": "👀 ¡Ups! ¡Buen intento!\n\n⏸ La ansiedad puede desaparecer por sí sola, pero a veces se puede requerir del apoyo de familiares, amistades o profesionales capacitados. En esta sesión, encontrarás estrategias para regular los sentimientos de ansiedad.  \n\n❗Recuerda que, si necesitas algún tipo de orientación sobre un tema de crianza o situación con  @fields.child_name, puedes ir a la biblioteca de la aplicación, en donde encontrarás una lista de recursos telefónicos y vía chat donde puedes pedir apoyo."
+        },
+        "quiz_2_option_2_text": {
+          "eng": "Falso"
+        },
+        "quiz_2_feedback_2": {
+          "eng": "🎉 ¡Es correcto!\n\n⏸ La ansiedad puede desaparecer por sí sola, pero a veces se puede requerir del apoyo de familiares, amistades o profesionales capacitados. En esta sesión, encontrarás estrategias para regular los sentimientos de ansiedad.  \n\n❗Recuerda que, si necesitas algún tipo de orientación sobre un tema de crianza o situación con  @fields.child_name, puedes ir a la biblioteca de la aplicación, en donde encontrarás una lista de recursos telefónicos y vía chat donde puedes pedir apoyo."
+        }
+      },
+      "text_2": "👂Es normal sentir ansiedad de vez en cuando. Puede ayudarnos a estar en alerta y a actuar con cautela. Sin embargo, a veces la ansiedad puede durar mucho tiempo o hacerse demasiado grande, afectando tu vida diaria o la de @fields.child_name.  \n\n💡 Cuando la ansiedad empieza a afectar la vida cotidiana, puede convertirse en un problema que requiere de apoyo adicional. \n\n✨ Saber regular los sentimientos de ansiedad te ayudará a ti y también a tu adolescente a sentir que tienen más control sobre la situación y a estar más a gusto con ustedes mismos o mismas.",
+      "quiz_1_question": "📝 **¡Hagamos un ejercicio!**\n\n_Ejercicio no.1_\n\n@fields.child_name no debe de sentir ansiedad por nada.",
+      "quiz_1_option_1_text": "Verdadero",
+      "quiz_1_feedback_1": "👀 ¡Ups! ¡Buen intento!\n\nEs normal que @fields.child_name sienta ansiedad de vez en cuando. Puede ayudarle a estar alerta y a prepararse para las cosas que puedan salir mal.  \n\n🔴 La ansiedad se convierte en algo perjudicial cuando le afecta en su día a día.",
+      "quiz_1_option_2_text": "Falso",
+      "quiz_1_feedback_2": "✨ ¡Tienes razón!\n\nEs normal que @fields.child_name sienta ansiedad de vez en cuando. Puede ayudarle a estar alerta y a prepararse para las cosas que puedan salir mal.  \n\n🔴 La ansiedad se convierte en algo perjudicial cuando le afecta en su día a día.",
+      "quiz_2_question": "📝 **¡Un ejercicio más!**\n\n_Ejercicio no.2_ \n\nSi @fields.child_name experimenta ansiedad, no hay nada que podamos hacer.",
+      "quiz_2_option_1_text": "Verdadero",
+      "quiz_2_feedback_1": "👀 ¡Ups! ¡Buen intento!\n\n⏸ La ansiedad puede desaparecer por sí sola, pero a veces se puede requerir del apoyo de familiares, amistades o profesionales capacitados. En esta sesión, encontrarás estrategias para regular los sentimientos de ansiedad.  \n\n❗Recuerda que, si necesitas algún tipo de orientación sobre un tema de crianza o situación con  @fields.child_name, puedes ir a la biblioteca de la aplicación, en donde encontrarás una lista de recursos telefónicos y vía chat donde puedes pedir apoyo.",
+      "quiz_2_option_2_text": "Falso",
+      "quiz_2_feedback_2": "🎉 ¡Es correcto!\n\n⏸ La ansiedad puede desaparecer por sí sola, pero a veces se puede requerir del apoyo de familiares, amistades o profesionales capacitados. En esta sesión, encontrarás estrategias para regular los sentimientos de ansiedad.  \n\n❗Recuerda que, si necesitas algún tipo de orientación sobre un tema de crianza o situación con  @fields.child_name, puedes ir a la biblioteca de la aplicación, en donde encontrarás una lista de recursos telefónicos y vía chat donde puedes pedir apoyo."
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
+      "image_asset": "images/comic/understand/anxiety_teen_1.svg",
+      "character_1_id": "f1_madre",
+      "character_2_id": "f1_hijo_17",
+      "nested": false,
+      "text_1_facilitator": "Veamos cómo @data.characters.f1_madre.name ayuda a su hijo, @data.characters.f1_hijo_17.name a regular sus sentimientos de ansiedad:",
+      "_translations": {
+        "text_1_facilitator": {},
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Veamos cómo @data.characters.f1_madre.name ayuda a su hijo, @data.characters.f1_hijo_17.name a regular sus sentimientos de ansiedad:"
+        },
+        "character_1_text": {
+          "eng": "@data.characters.f1_hijo_17.name, te ves muy preocupado. ¿Está todo bien?"
+        },
+        "character_2_text": {
+          "eng": "No, mamá. Mañana tengo que exponer y estoy muy preocupado. ¡Mira! Me están sudando las manos y me tiemblan."
+        }
+      },
+      "character_1_text": "@data.characters.f1_hijo_17.name, te ves muy preocupado. ¿Está todo bien?",
+      "character_2_text": "No, mamá. Mañana tengo que exponer y estoy muy preocupado. ¡Mira! Me están sudando las manos y me tiemblan."
+    },
+    {
+      "id": "explore_2",
+      "category_id": "explore",
+      "image_asset": "images/comic/understand/anxiety_teen_2.svg",
+      "character_1_id": "f1_madre",
+      "character_2_id": "f1_hijo_17",
+      "character_3_id": "f1_madre",
+      "character_4_id": "f1_hijo_17",
+      "nested": false,
+      "character_1_text": "Siento mucho que te sientas así, es completamente normal que estés preocupado. ¿Qué es lo que te preocupa específicamente?",
+      "_translations": {
+        "character_1_text": {},
+        "character_2_text": {},
+        "character_3_text": {},
+        "character_4_text": {}
+      },
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "Siento mucho que te sientas así, es completamente normal que estés preocupado. ¿Qué es lo que te preocupa específicamente?"
+        },
+        "character_2_text": {
+          "eng": "Tengo miedo de equivocarme y que todo el mundo se ría de mí."
+        },
+        "character_3_text": {
+          "eng": "Exponer puede ser aterrador. Hagamos algo juntos para ayudarte a que te tranquilices un poco. ¿Puedes nombrar 5 cosas que veas a tu alrededor?"
+        },
+        "character_4_text": {
+          "eng": "A ver... Veo mi escritorio, el librero, la ventana, mi cuaderno y el reloj."
+        }
+      },
+      "character_2_text": "Tengo miedo de equivocarme y que todo el mundo se ría de mí.",
+      "character_3_text": "Exponer puede ser aterrador. Hagamos algo juntos para ayudarte a que te tranquilices un poco. ¿Puedes nombrar 5 cosas que veas a tu alrededor?",
+      "character_4_text": "A ver... Veo mi escritorio, el librero, la ventana, mi cuaderno y el reloj."
+    },
+    {
+      "id": "explore_3",
+      "category_id": "explore",
+      "image_asset": "images/comic/understand/anxiety_teen_3.svg",
+      "character_1_id": "f1_madre",
+      "character_2_id": "f1_hijo_17",
+      "character_3_id": "f1_madre",
+      "character_4_id": "f1_hijo_17",
+      "nested": false,
+      "character_1_text": "Nombra 4 cosas que estés tocando.",
+      "_translations": {
+        "character_1_text": {},
+        "character_2_text": {},
+        "character_3_text": {},
+        "character_4_text": {}
+      },
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "Nombra 4 cosas que estés tocando."
+        },
+        "character_2_text": {
+          "eng": "Estoy tocando mi silla, el lápiz, el papel y mi escritorio."
+        },
+        "character_3_text": {
+          "eng": "Nombra 3 cosas que estés escuchando."
+        },
+        "character_4_text": {
+          "eng": "Puedo escuchar a los pájaros de afuera, mi propia respiración y el viento que sopla."
+        }
+      },
+      "character_2_text": "Estoy tocando mi silla, el lápiz, el papel y mi escritorio.",
+      "character_3_text": "Nombra 3 cosas que estés escuchando.",
+      "character_4_text": "Puedo escuchar a los pájaros de afuera, mi propia respiración y el viento que sopla."
+    },
+    {
+      "id": "explore_4",
+      "category_id": "explore",
+      "image_asset": "images/comic/understand/anxiety_teen_4.svg",
+      "character_1_id": "f1_madre",
+      "character_2_id": "f1_hijo_17",
+      "character_3_id": "f1_madre",
+      "character_4_id": "f1_hijo_17",
+      "nested": false,
+      "character_1_text": "Dime 2 cosas que puedas oler.",
+      "_translations": {
+        "character_1_text": {},
+        "character_2_text": {},
+        "character_3_text": {},
+        "character_4_text": {}
+      },
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "Dime 2 cosas que puedas oler."
+        },
+        "character_2_text": {
+          "eng": "Puedo oler las flores de afuera y el plátano que estás cocinando."
+        },
+        "character_3_text": {
+          "eng": "Por último, nombra 1 sabor que sientas ahorita."
+        },
+        "character_4_text": {
+          "eng": "Mm… la menta de mi chicle."
+        }
+      },
+      "character_2_text": "Puedo oler las flores de afuera y el plátano que estás cocinando.",
+      "character_3_text": "Por último, nombra 1 sabor que sientas ahorita.",
+      "character_4_text": "Mm… la menta de mi chicle."
+    },
+    {
+      "id": "explore_5",
+      "category_id": "explore",
+      "image_asset": "images/comic/understand/anxiety_teen_5.svg",
+      "character_1_id": "f1_madre",
+      "character_2_id": "f1_hijo_17",
+      "character_3_id": "f1_madre",
+      "nested": false,
+      "character_1_text": "¡Buen trabajo! ¿Cómo te sientes ahora?",
+      "_translations": {
+        "character_1_text": {},
+        "character_2_text": {},
+        "character_3_text": {}
+      },
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "¡Buen trabajo! ¿Cómo te sientes ahora?"
+        },
+        "character_2_text": {
+          "eng": "Gracias, mamá. Mis manos ya dejaron de temblar."
+        },
+        "character_3_text": {
+          "eng": "Me alegra que te haya servido. Ahora vamos a practicar tu presentación juntos."
+        }
+      },
+      "character_2_text": "Gracias, mamá. Mis manos ya dejaron de temblar.",
+      "character_3_text": "Me alegra que te haya servido. Ahora vamos a practicar tu presentación juntos."
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "explore",
+      "media_type": "youtube",
+      "youtube_gb_en_f": "https://www.youtube.com/watch?v=Kvhl49c3O1w",
+      "youtube_gb_en_m": "https://www.youtube.com/watch?v=cyqdCNaSjUU",
+      "nested": false,
+      "text_1_facilitator": "Selecciona reproducir ▶️ para aprender 5️⃣ estrategias que puedes usar para regular la ansiedad:\n\n1️⃣ RECONOCER LAS SEÑALES\n2️⃣ CONECTAR CON TUS SENTIDOS\n3️⃣ EXPLORAR TUS PENSAMIENTOS\n4️⃣ RESOLVER PROBLEMAS\n5️⃣ PEDIR AYUDA",
+      "_translations": {
+        "text_1_facilitator": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Selecciona reproducir ▶️ para aprender 5️⃣ estrategias que puedes usar para regular la ansiedad:\n\n1️⃣ RECONOCER LAS SEÑALES\n2️⃣ CONECTAR CON TUS SENTIDOS\n3️⃣ EXPLORAR TUS PENSAMIENTOS\n4️⃣ RESOLVER PROBLEMAS\n5️⃣ PEDIR AYUDA"
+        }
+      }
+    },
+    {
+      "id": "practical_tips_2",
+      "category_id": "explore",
+      "section_1_icon_asset": "images/icons/eye_blue.png",
+      "section_2_icon_asset": "images/icons/heart_filled_blue.png",
+      "section_3_icon_asset": "images/icons/thought_bubble.svg",
+      "section_4_icon_asset": "images/icons/tick.svg",
+      "section_5_icon_asset": "images/icons/parent_child.svg",
+      "nested": false,
+      "text_1_facilitator": "Recuerda:",
+      "_translations": {
+        "text_1_facilitator": {},
+        "section_1_title": {},
+        "section_1_text": {},
+        "section_2_title": {},
+        "section_2_text": {},
+        "section_3_title": {},
+        "section_3_text": {},
+        "section_4_title": {},
+        "section_4_text": {},
+        "section_5_title": {},
+        "section_5_text": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Recuerda:"
+        },
+        "section_1_title": {
+          "eng": "RECONOCER LAS SEÑALES"
+        },
+        "section_1_text": {
+          "eng": "La ansiedad es diferente en cada adolescente. Debes prestar atención a las señales de alerta para saber en qué momento @fields.child_name o tú pueden necesitar apoyo adicional para poder regular la ansiedad:\n\n🔴 Tener una preocupación extrema y duradera que dificulta el hacer actividades del día a día. \n\n🔴 Actuar con mucha inquietud, o evitar la escuela o el trabajo. \n\n🔴 No disfrutar de las cosas que solían hacer, molestarse con facilidad o tener problemas para concentrarse. \n\n🔴 Presentar sudoración excesiva, taquicardias, problemas para respirar, náuseas, mareos, temblores en el cuerpo, problemas estomacales frecuentes, entre otros."
+        },
+        "section_2_title": {
+          "eng": "CONECTAR CON TUS SENTIDOS"
+        },
+        "section_2_text": {
+          "eng": "Si @fields.child_name o tú están experimentando un ataque de ansiedad, es decir sienten que les falta el aire o que se van a desmayar, o muy agitado, prueben la actividad de 5-4-3-2-1: \n\n👀 Mira a tu alrededor y nombra 5 cosas que puedas ver. \n\n🌷 Elogia 4 cosas que puedas tocar. \n\n👂 Préstale atención a 3 sonidos. \n\n👃 Percibe 2 aromas. \n\n🍅 Identifica 1 sabor en tu boca. \n\nConectar con tus sentidos puede ayudarte a mantener la calma cuando te encuentres en un ataque de ansiedad.  \n\n \n\nOtra opción es emplear ejercicios de respiración, aquí te compartimos la técnica 4-7-8: \n\n👃Inhala por la nariz durante 4 segundos \n\nAhora sostén el aire en tus pulmones durante 7 segundos \n\nExpulsa el aire lentamente por tu boca durante 8 segundos \n\nRepítelo 3 o 4 veces más."
+        },
+        "section_3_title": {
+          "eng": "EXPLORAR TUS PENSAMIENTOS"
+        },
+        "section_3_text": {
+          "eng": "👑 Tómate un momento para reflexionar sobre tus pensamientos. Aquí tienes algunas preguntas que te puedes hacer:\n\n-¿Esta preocupación se podría hacer realidad? \n-¿Puedo hacer algo para prepararme? \n-¿Pensar en esto de verdad me ayuda? \n-¿Estoy intentando resolver un problema? \n-¿Mis pensamientos me ayudan o no?\n\n🔑 Responder a estas preguntas puede ayudarte a ti o a tu adolescente a regular la ansiedad y a identificar cualquier problema que pueda estarla causando."
+        },
+        "section_4_title": {
+          "eng": "RESOLVER PROBLEMAS"
+        },
+        "section_4_text": {
+          "eng": "▶️ Piensa en tantas ideas como sea posible para resolver el problema que te hace sentir ansiedad. Recuerda, ¡ninguna idea es demasiado grande ni demasiado pequeña!\n\n✅ Escoge la idea que consideres mejor para resolver el problema.\n\n🔵 Prueba la idea que has elegido y mira cómo te va. ¿Te ha ayudado a sentirte mejor? ¿Encontraste alguna dificultad?\n\n⏰ Si no funcionó, no pasa nada. Puedes probar con otra idea o darle un poco más de tiempo a tu solución.\n\nRecuerda que puedes aprender más sobre la habilidad de solución de problemas en el curso de \"Guiar el Buen Comportamiento de Mi Adolescente\"."
+        },
+        "section_5_title": {
+          "eng": "PEDIR AYUDA"
+        },
+        "section_5_text": {
+          "eng": "🔶 Si @fields.child_name o tú experimentan algunas o muchas de estas cosas, pueden buscar la ayuda de un profesional.\n\n🔷 Es necesario un diagnóstico profesional para determinar si @fields.child_name sufre de ansiedad.\n\n😃 Recuerda que, si necesitas algún tipo de orientación sobre un tema de crianza o situación con tu niña, niño o adolescente, puedes ir a la biblioteca de la aplicación para acceder a una lista de recursos telefónicos y vía chat donde puedes encontrar apoyo."
+        }
+      },
+      "section_1_title": "RECONOCER LAS SEÑALES",
+      "section_1_text": "La ansiedad es diferente en cada adolescente. Debes prestar atención a las señales de alerta para saber en qué momento @fields.child_name o tú pueden necesitar apoyo adicional para poder regular la ansiedad:\n\n🔴 Tener una preocupación extrema y duradera que dificulta el hacer actividades del día a día. \n\n🔴 Actuar con mucha inquietud, o evitar la escuela o el trabajo. \n\n🔴 No disfrutar de las cosas que solían hacer, molestarse con facilidad o tener problemas para concentrarse. \n\n🔴 Presentar sudoración excesiva, taquicardias, problemas para respirar, náuseas, mareos, temblores en el cuerpo, problemas estomacales frecuentes, entre otros.",
+      "section_2_title": "CONECTAR CON TUS SENTIDOS",
+      "section_2_text": "Si @fields.child_name o tú están experimentando un ataque de ansiedad, es decir sienten que les falta el aire o que se van a desmayar, o muy agitado, prueben la actividad de 5-4-3-2-1: \n\n👀 Mira a tu alrededor y nombra 5 cosas que puedas ver. \n\n🌷 Elogia 4 cosas que puedas tocar. \n\n👂 Préstale atención a 3 sonidos. \n\n👃 Percibe 2 aromas. \n\n🍅 Identifica 1 sabor en tu boca. \n\nConectar con tus sentidos puede ayudarte a mantener la calma cuando te encuentres en un ataque de ansiedad.  \n\n \n\nOtra opción es emplear ejercicios de respiración, aquí te compartimos la técnica 4-7-8: \n\n👃Inhala por la nariz durante 4 segundos \n\nAhora sostén el aire en tus pulmones durante 7 segundos \n\nExpulsa el aire lentamente por tu boca durante 8 segundos \n\nRepítelo 3 o 4 veces más.",
+      "section_3_title": "EXPLORAR TUS PENSAMIENTOS",
+      "section_3_text": "👑 Tómate un momento para reflexionar sobre tus pensamientos. Aquí tienes algunas preguntas que te puedes hacer:\n\n-¿Esta preocupación se podría hacer realidad? \n-¿Puedo hacer algo para prepararme? \n-¿Pensar en esto de verdad me ayuda? \n-¿Estoy intentando resolver un problema? \n-¿Mis pensamientos me ayudan o no?\n\n🔑 Responder a estas preguntas puede ayudarte a ti o a tu adolescente a regular la ansiedad y a identificar cualquier problema que pueda estarla causando.",
+      "section_4_title": "RESOLVER PROBLEMAS",
+      "section_4_text": "▶️ Piensa en tantas ideas como sea posible para resolver el problema que te hace sentir ansiedad. Recuerda, ¡ninguna idea es demasiado grande ni demasiado pequeña!\n\n✅ Escoge la idea que consideres mejor para resolver el problema.\n\n🔵 Prueba la idea que has elegido y mira cómo te va. ¿Te ha ayudado a sentirte mejor? ¿Encontraste alguna dificultad?\n\n⏰ Si no funcionó, no pasa nada. Puedes probar con otra idea o darle un poco más de tiempo a tu solución.\n\nRecuerda que puedes aprender más sobre la habilidad de solución de problemas en el curso de \"Guiar el Buen Comportamiento de Mi Adolescente\".",
+      "section_5_title": "PEDIR AYUDA",
+      "section_5_text": "🔶 Si @fields.child_name o tú experimentan algunas o muchas de estas cosas, pueden buscar la ayuda de un profesional.\n\n🔷 Es necesario un diagnóstico profesional para determinar si @fields.child_name sufre de ansiedad.\n\n😃 Recuerda que, si necesitas algún tipo de orientación sobre un tema de crianza o situación con tu niña, niño o adolescente, puedes ir a la biblioteca de la aplicación para acceder a una lista de recursos telefónicos y vía chat donde puedes encontrar apoyo."
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "nested": false,
+      "text_1_facilitator": "**Actividad para casa** ⭐   \n\n💡 Prueba la actividad de 5-4-3-2-1 cuando te encuentres en una situación que te genere estrés esta semana. ¡Enséñasela a @fields.child_name también!",
+      "_translations": {
+        "text_1_facilitator": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_feedback_1": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_option_3_text": {},
+        "quiz_1_feedback_3": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "**Actividad para casa** ⭐   \n\n💡 Prueba la actividad de 5-4-3-2-1 cuando te encuentres en una situación que te genere estrés esta semana. ¡Enséñasela a @fields.child_name también!"
+        },
+        "quiz_1_question": {
+          "eng": "¿Tienes tiempo para hacerlo hoy?"
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Sí"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "¡Estupendo! ⭐ Usar estas estrategias que has aprendido para afrontar la preocupación excesiva realmente hace la diferencia. ¡Sigue así! \n\nRecuerda que puedes ir a la biblioteca de la aplicación, en donde encontrarás recursos de apoyo al terminar la sesión, ya sean para ti o para @fields.child_name, por ejemplo:\n\n1️⃣ Es difícil controlar los sentimientos de preocupación.\n2️⃣ Si los sentimientos de preocupación no te dejan enfocarte en tus actividades cotidianas.\n3️⃣ Ya no disfrutas de las cosas que solías hacer antes porque sientes mucha preocupación."
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Lo intentaré"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "¡Perfecto! 💙 Cuando estés listo o lista, intenta poner en práctica esta actividad. Recuerda que cada paso cuenta, por pequeño que parezca. ✨"
+        },
+        "quiz_1_option_3_text": {
+          "eng": "No"
+        },
+        "quiz_1_feedback_3": {
+          "eng": "¡Está bien!⭐ Puedes practicar en otro momento cuando tengas más tranquilidad y mayor comodidad. Utilizar las estrategias que has aprendido para afrontar los sentimientos de preocupación puede hacer una gran diferencia. ¡Sigue así!\n\nRecuerda que puedes ir a la biblioteca de la aplicación, en donde encontrarás recursos de apoyo al terminar la sesión, ya sean para ti o para @fields.child_name, por ejemplo:\n\n1️⃣ Es difícil controlar los sentimientos de preocupación.\n2️⃣ Si los sentimientos de preocupación no te dejan enfocarte en tus actividades cotidianas.\n3️⃣ Ya no disfrutas de las cosas que solías hacer antes porque sientes mucha preocupación."
+        }
+      },
+      "quiz_1_question": "¿Tienes tiempo para hacerlo hoy?",
+      "quiz_1_option_1_text": "Sí",
+      "quiz_1_feedback_1": "¡Estupendo! ⭐ Usar estas estrategias que has aprendido para afrontar la preocupación excesiva realmente hace la diferencia. ¡Sigue así! \n\nRecuerda que puedes ir a la biblioteca de la aplicación, en donde encontrarás recursos de apoyo al terminar la sesión, ya sean para ti o para @fields.child_name, por ejemplo:\n\n1️⃣ Es difícil controlar los sentimientos de preocupación.\n2️⃣ Si los sentimientos de preocupación no te dejan enfocarte en tus actividades cotidianas.\n3️⃣ Ya no disfrutas de las cosas que solías hacer antes porque sientes mucha preocupación.",
+      "quiz_1_option_2_text": "Lo intentaré",
+      "quiz_1_feedback_2": "¡Perfecto! 💙 Cuando estés listo o lista, intenta poner en práctica esta actividad. Recuerda que cada paso cuenta, por pequeño que parezca. ✨",
+      "quiz_1_option_3_text": "No",
+      "quiz_1_feedback_3": "¡Está bien!⭐ Puedes practicar en otro momento cuando tengas más tranquilidad y mayor comodidad. Utilizar las estrategias que has aprendido para afrontar los sentimientos de preocupación puede hacer una gran diferencia. ¡Sigue así!\n\nRecuerda que puedes ir a la biblioteca de la aplicación, en donde encontrarás recursos de apoyo al terminar la sesión, ya sean para ti o para @fields.child_name, por ejemplo:\n\n1️⃣ Es difícil controlar los sentimientos de preocupación.\n2️⃣ Si los sentimientos de preocupación no te dejan enfocarte en tus actividades cotidianas.\n3️⃣ Ya no disfrutas de las cosas que solías hacer antes porque sientes mucha preocupación."
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "data/Copy of PA modules - understand (65 - 75).xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1H1ZvymOlbQhNushjqQZwk1WiPb9sHuUQ2Ql1Gja34U4"
+  },
+  "_metadata": {
+    "nested": {
+      "type": "boolean"
+    }
+  }
+}

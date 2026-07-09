@@ -1,0 +1,54 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "know_role_c_articles",
+  "data_list_name": "know_role_c_articles",
+  "status": "released",
+  "flow_subtype": "modules_know_role_c",
+  "module": "know_role_c",
+  "rows": [
+    {
+      "id": "@default",
+      "nested": false
+    },
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Tanto las personas cuidadoras como las niñas y niños tienen un rol que desempeñar en el hogar. 📝\n\nEl rol de @fields.child_name es aprender, de las personas que le cuidan, qué puede hacer y qué no debe hacer. Puede empezar a hacer actividades en la casa que sean adecuadas para su edad. ⭐\n\nComo persona cuidadora, tu rol es cuidar de @fields.child_name, mantenerle a salvo y enseñarle cómo comportarse en el mundo. 🌱\n\nTu papel más importante es ayudarle a @fields.child_name a sentir tu amor y tu apoyo, ¡pase lo que pase! 💙",
+      "text_2::eng": "Si @fields.child_name siente amor y apoyo en casa, ¡es más probable que haga las actividades del hogar con alegría y que se convierta en una niña o niño sano, y, eventualmente, en una persona adulta sana! 😃💚",
+      "quiz_1_question::eng": "📝 **¡Hagamos un ejercicio!**\n\n_Ejercicio no.1_\n\nSi cometo un error o hago algo que moleste a mi niña, niño o adolescente, debo fingir que no ha pasado nada, sonreírle y hacer una actividad más positiva con ella o él.",
+      "quiz_1_option_1_text::eng": "Verdadero",
+      "quiz_1_feedback_1::eng": "👀 ¡Ups! ¡Buen intento!\n\n💛 _Admitir nuestros errores y disculparnos les enseña a respetar a los demás y que a veces está bien equivocarse._\n\n❗ Ignorar un error cuando afecta a tu niña o niño le enseña que no necesita responsabilizarse de sus actos.",
+      "quiz_1_option_2_text::eng": "Falso",
+      "quiz_1_feedback_2::eng": "🎉 ¡Correcto!\n\n💛 _Admitir nuestros errores y disculparnos les enseña a respetar a los demás y que a veces está bien equivocarse._\n\n❗ Ignorar un error cuando afecta a tu niña o niño le enseña que no necesita responsabilizarse de sus actos."
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Aprendamos cuatro estrategias que te ayudarán a conocer tu rol como la persona cuidadora de tus niñas y niños y a enseñarles también el suyo:",
+      "section_1_title::eng": "CONOCER TU ROL",
+      "section_1_icon_asset": "images/icons/parent_child.svg",
+      "section_1_text::eng": "Como persona cuidadora, tu rol es asegurarte de que @fields.child_name:\n\n🔷 Tenga suficiente comida saludable,\n🔷 Tenga la ropa necesaria,\n🔷 Esté a salvo de cualquier daño,\n🔷 Tenga la oportunidad de ir a la escuela,\n🔷 Reciba atención médica cuando esté enferma o enfermo\n🔷 Que contribuya a las necesidades de la familia, como hacer las tareas del hogar,\n🔷 Aprenda las tradiciones y valores que deseas que tenga, como la honestidad,\n🔷 Tenga oportunidades para expresarse,\n🔷 Tenga oportunidades para jugar, y\n🔷 Sienta amor y apoyo, pase lo que pase.",
+      "section_2_title::eng": "ENSEÑAR",
+      "section_2_icon_asset": "images/icons/diamond_blue.png",
+      "section_2_text::eng": "Explícale a @fields.child_name cuál es su rol en la familia. Esto puede incluir:\n\n🔶 Hacer actividades en casa que sean propias de su edad, como guardar sus juguetes, tender la cama y separar la ropa sucia,\n🔶 Cooperar cuando sus personas cuidadoras se lo pidan,\n🔶 Ser respetuosa o respetuoso con los demás miembros de la familia,\n🔶 Ir a la escuela y hacer su tarea, y\n🔶 Formar parte de las decisiones familiares.",
+      "section_3_title::eng": "PONER EL EJEMPLO",
+      "section_3_icon_asset": "images/icons/star_filled_blue.png",
+      "section_3_text::eng": "👀 @fields.child_name aprenderá mucho más de tus acciones que de las palabras que le digas. ¡Se da cuenta de su alrededor mucho más de lo que crees!\n\n🌷 Trata a @fields.child_name, y a los que te rodean, como te gustaría que te trataran a ti: con respeto, amabilidad, paciencia y amor.\n\n❌ Usar la violencia con @fields.child_name solo les enseñará a ser una persona violenta con las y los demás.\n\n💚 Háblale con un tono tranquilo y establece consecuencias claras para que aprenda a mantener la calma consigo mismo y con los demás.\n\n💡 Si estás sintiendo emociones muy intensas, como enojo o estrés, haz una pausa para cuidar de ti y luego habla con @fields.child_name.",
+      "section_4_title::eng": " NOTAR",
+      "section_4_icon_asset": "images/icons/eye_blue.png",
+      "section_4_text::eng": "🎨 Fíjate en lo que le gusta hacer a @fields.child_name y ayúdale a hacerlo con mayor frecuencia.\n\n✨ ¡Si @fields.child_name siente que se respetan sus necesidades e intereses, es más probable que haga las tareas del hogar de buena manera y con gusto!\n\n🏅 Fíjate en tu niña o niño y reconócele cuando cumpla con sus responsabilidades para que aprenda qué es lo que se espera de ella o él. De este modo, es más probable que lo vuelva a hacer."
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "text_1_facilitator::eng": "**Actividad para casa** ⭐ \n\nHabla con @fields.child_name sobre alguno de sus intereses o sobre algo que le guste hacer y demuéstrale tu amor y tu apoyo por lo que le apasiona. \n\nEsto le demuestra que es un miembro valioso del hogar.",
+      "quiz_1_question::eng": "💛 ¿Tienes tiempo para hacerlo hoy?",
+      "quiz_1_option_1_text::eng": "Sí",
+      "quiz_1_feedback_1::eng": "¡Estupendo! 💙 Esto ayudará a @fields.child_name a sentir tu amor y tu apoyo, lo que puede llevar a un mejor comportamiento de su parte.",
+      "quiz_1_option_2_text::eng": "Lo intentaré",
+      "quiz_1_feedback_2::eng": "¡Qué bueno que lo intentarás! 🌱 No tiene que ser perfecto. Encuentra un momento que funcione para ti y prueba esta estrategia a tu manera. 💚",
+      "quiz_1_option_3_text::eng": "No",
+      "quiz_1_feedback_3::eng": "¡Está bien! Si hoy no tienes tiempo, aparta un espacio para mañana. Conversar con @fields.child_name sobre algo que le gusta le ayuda a sentir que merece tu amor y tu apoyo, ¡lo que puede llevar a un mejor comportamiento de su parte!"
+    }
+  ]
+}

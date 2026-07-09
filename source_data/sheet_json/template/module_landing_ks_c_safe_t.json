@@ -1,0 +1,31 @@
+{
+  "flow_type": "template",
+  "flow_name": "module_landing_ks_c_safe_t",
+  "status": "released",
+  "parameter_list": {
+    "app_config": {
+      "LAYOUT": {
+        "page_padding": "0 0"
+      }
+    }
+  },
+  "comment": "ks_c_safe_t",
+  "comment_2": 26,
+  "comment_3": 11,
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "module_landing",
+      "value": "module_landing",
+      "action_list": "completed | emit: completed; \nuncompleted | emit: uncompleted"
+    },
+    {
+      "name": "module_id",
+      "value": "ks_c_safe_t",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

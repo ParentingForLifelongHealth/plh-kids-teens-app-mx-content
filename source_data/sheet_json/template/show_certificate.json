@@ -1,0 +1,81 @@
+{
+  "flow_type": "template",
+  "flow_name": "show_certificate",
+  "status": "released",
+  "rows": [
+    {
+      "name": "n_reprints"
+    },
+    {
+      "name": "image_url"
+    },
+    {
+      "type": "data_items",
+      "name": "get_image_url",
+      "value": "@data.certificate_data",
+      "action_list": "data_changed | set_local : image_url: @items[0]?.url;",
+      "parameter_list": "filter:  @item.id == @fields.cert_to_print;\nlimit: 1;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "data_items",
+      "name": "get_n_reprints",
+      "value": "@data.courses",
+      "action_list": "data_changed | set_local : n_reprints: @items[0]?.n_reprints;",
+      "parameter_list": "filter:  @item.id == @fields.cert_to_print;\nlimit: 1;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "title",
+      "value": "@global.certificate_congrats",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "image",
+      "value": "@local.image_url"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "wrap: true;",
+      "style_list": "justify-content: center;\ngap: 1em 2em;"
+    },
+    {
+      "type": "button",
+      "name": "download_button",
+      "value": "@global.download",
+      "action_list": "click | save_to_device: @local.image_url | open: true, subfolder: certificates;",
+      "parameter_list": "icon: images/icons/download.svg;\nstyle: navigation;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "share_button",
+      "value": "@global.share",
+      "action_list": "click | share: file: @local.image_url",
+      "parameter_list": "icon: images/icons/share.svg;\nstyle: navigation;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "button",
+      "name": "button_update_name",
+      "value": "<u>@global.change_certificate_name</u>",
+      "action_list": "click | pop_up: update_certificate_name;",
+      "parameter_list": "variant: card;\nstyle: no-background;",
+      "condition": "(@local.n_reprints <@global.max_n_cert_reprints || !@local.n_reprints)",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_update_name",
+      "value": "<u>@global.change_certificate_name</u>",
+      "action_list": "click | pop_up: no_more_reprints;",
+      "parameter_list": "variant: card;\nstyle: no-background;",
+      "condition": "(@local.n_reprints >=@global.max_n_cert_reprints)",
+      "exclude_from_translation": true,
+      "comments": "@global.certificate_congrats\ncert debugcert"
+    }
+  ]
+}

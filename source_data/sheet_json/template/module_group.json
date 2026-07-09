@@ -1,0 +1,115 @@
+{
+  "flow_type": "template",
+  "flow_name": "module_group",
+  "status": "released",
+  "rows": [
+    {
+      "name": "course",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "course_title",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "show_completed",
+      "value": false,
+      "exclude_from_translation": true
+    },
+    {
+      "name": "all_locked",
+      "value": false,
+      "exclude_from_translation": true
+    },
+    {
+      "name": "course_locked",
+      "value": false,
+      "exclude_from_translation": true
+    },
+    {
+      "name": "course_image",
+      "value": "default",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "completed_course",
+      "value": false,
+      "exclude_from_translation": true
+    },
+    {
+      "name": "start_at_id",
+      "value": "_start_at_id",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "image: @local.course_image",
+      "condition": false,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "completed_course:  @local.completed_course",
+      "condition": false,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_plh_course_accordion",
+      "value": "@local.course_title",
+      "parameter_list": "locked: @local.all_locked;\nimage_asset: @local.course_image;\nimage_alignment: centre;\nsub_items_name: @global.sub_items_name;\ncompleted: @local.completed_course;\nopen: (@fields.last_opened == @local.course);",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_data_items",
+      "name": "loop_modules",
+      "value": "@data.module_tasks",
+      "parameter_list": "filter: (@item.tag_course == @local.course) && (!@item.tag_list || @item.tag_list.includes(@fields.child_age_tag)) && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship)) ;\nsort: number;",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "completed_template",
+      "value": "module_landing_@item.id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "not_started_template",
+      "value": "stack_module_@item.id"
+    },
+    {
+      "name": "in_progress_template",
+      "value": "stack_module_@item.id@local.start_at_id"
+    },
+    {
+      "type": "plh_course_sub_item",
+      "name": "in_progress_button",
+      "value": "@item.title",
+      "action_list": "click | set_field: current_start_article_id: uncomplete;\nclick | nav_stack: open | template: @local.in_progress_template, header: false;\nclick | set_field: last_opened : @local.course;",
+      "parameter_list": "highlighted: !!@item.started_ts;\nlocked: @local.all_locked;\ncompleted: @item.completed;\ncompleted_text: @global.completed_text;\nlocked_text: @global.locked_text;",
+      "condition": "!@item.completed_ts"
+    },
+    {
+      "type": "plh_course_sub_item",
+      "name": "completed_button",
+      "value": "@item.title",
+      "action_list": "click | go_to: @local.completed_template;\nclick | set_field: last_opened : @local.course;",
+      "parameter_list": "highlighted: !!@item.started_ts;\nlocked: @local.all_locked;\ncompleted: @item.completed;\ncompleted_text: @global.completed_text;\nlocked_text: @global.locked_text;",
+      "condition": "!!@item.completed_ts",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_data_items",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_plh_course_accordion"
+    },
+    {
+      "type": "plh_course_lesson_accordion",
+      "name": "TESTING",
+      "value": "@local.course_title",
+      "parameter_list": "locked: @local.all_locked;\nimage_asset: @local.course_image;\nimage_alignment: centre;\nsub_items_name: @global.sub_items_name;\ncompleted: @local.completed_course;\ncompleted_text: @global.completed_text;\nlocked_text: @global.locked_text;\nopen: (@fields.last_opened == @local.course);\ncourse_id: @local.course;",
+      "condition": false,
+      "exclude_from_translation": true
+    }
+  ]
+}

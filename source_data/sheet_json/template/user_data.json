@@ -1,0 +1,211 @@
+{
+  "flow_type": "template",
+  "flow_name": "user_data",
+  "status": "released",
+  "rows": [
+    {
+      "name": "show_title",
+      "value": true,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "title",
+      "name": "title",
+      "value": "@global.user_data_title",
+      "condition": "!!(@local.show_title)",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "user_name_input_question",
+      "value": "@global.user_name_setting"
+    },
+    {
+      "type": "text_box",
+      "name": "user_name_input",
+      "value": "@fields.user_name",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "user_age_input_question",
+      "value": "@global.user_age_setting",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text_box",
+      "name": "user_age_input",
+      "value": "@fields.user_age",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "valid_user_age_input",
+      "value": "@calc((/^\\d+$/.test(@local.user_age_input) && @local.user_age_input>= 18 && @local.user_age_input<= 99) || @local.user_age_input == '' || !@local.user_age_input)"
+    },
+    {
+      "type": "text",
+      "name": "warning_user_age_input",
+      "value": "@global.warning_user_age_input",
+      "style_list": "color: #FF0000;\nfont-size: 14px",
+      "condition": "!@local.valid_user_age_input"
+    },
+    {
+      "type": "text",
+      "name": "user_type_select_question",
+      "value": "@global.user_type_setting",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "combo_box",
+      "name": "user_type_select",
+      "value": "@fields.user_type",
+      "parameter_list": "answer_list: @data.user_type;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "user_gender_select_question",
+      "value": "@global.user_gender_setting",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "combo_box",
+      "name": "user_gender_select",
+      "value": "@fields.user_gender",
+      "parameter_list": "answer_list: @data.user_gender;\ndisabled: true",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "user_location_select_question",
+      "value": "@global.user_location_setting"
+    },
+    {
+      "type": "combo_box",
+      "name": "user_location_select",
+      "value": "@fields.user_location",
+      "parameter_list": "answer_list: @data.user_location;\nvariant: dropdown;\nwrap: true;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "question_user_district",
+      "value": "@global.user_district_setting"
+    },
+    {
+      "type": "combo_box",
+      "name": "user_district_select",
+      "value": "@fields.user_location_district",
+      "parameter_list": "answer_list: @data.user_location_district;\nvariant: dropdown;\nwrap: true;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "user_relationship_select_question",
+      "value": "@global.user_relationship_setting"
+    },
+    {
+      "type": "combo_box",
+      "name": "user_relationship_select",
+      "value": "@fields.user_relationship",
+      "parameter_list": "answer_list: @data.user_relationship;\ndisabled: true",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "household_children_input_question",
+      "value": "@global.household_children_setting",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text_box",
+      "name": "household_children_input",
+      "value": "@fields.household_children",
+      "parameter_list": "number_input: true;",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "valid_household_children_input",
+      "value": "@calc((/^\\d+$/.test(@local.household_children_input) && @local.household_children_input>= 1 && @local.household_children_input<= 20) || @local.household_children_input == '' || !@local.household_children_input)",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "warning_household_children_input",
+      "value": "@global.household_children_input_restriction",
+      "style_list": "color: #FF0000;\nfont-size: 14px",
+      "condition": "!@local.valid_household_children_input",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "child_name_input_question",
+      "value": "@global.child_name_setting"
+    },
+    {
+      "type": "text_box",
+      "name": "child_name_input",
+      "value": "@fields.child_name",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "child_gender_select_question",
+      "value": "@global.child_gender_setting",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "combo_box",
+      "name": "child_gender_select",
+      "value": "@fields.child_gender",
+      "parameter_list": "answer_list: @data.child_gender;\ndisabled: true",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "child_age_input_question",
+      "value": "@global.child_age_setting",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text_box",
+      "name": "child_age_input",
+      "value": "@fields.child_age",
+      "parameter_list": "disabled: true;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "family_relation_select_question",
+      "value": "@global.family_relation_setting"
+    },
+    {
+      "type": "combo_box",
+      "name": "family_relation_select",
+      "value": "@fields.family_relation",
+      "parameter_list": "answer_list: @data.family_relation;\nvariant: dropdown;\nwrap: true;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "style_list": "width: 100%;\npadding: 12px 24px;\nbackground-color: white;",
+      "parameter_list": "sticky: bottom;"
+    },
+    {
+      "name": "completed_enabled",
+      "value": "@local.valid_household_children_input && @local.valid_user_age_input",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_completed_2",
+      "value": "@global.save",
+      "action_list": "click | set_field: user_name: @local.user_name_input;\nclick | set_field: user_age: @local.user_age_input;\nclick | set_field: user_type: @local.user_type_select;\nclick | set_field: user_location: @local.user_location_select;\nclick | set_field: user_location_district: @local.user_district_select;\nclick | set_field: household_children: @local.household_children_input;\nclick | set_field: child_name: @local.child_name_input;\nclick | set_field: family_relation: @local.family_relation_select;\nclick | set_field: user_data_completed: true;\nclick | emit: server_sync;\nclick | emit: completed",
+      "parameter_list": "style: navigation;\ndisabled: !@local.completed_enabled",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "flow_type": "template",
+  "flow_name": "feedback_form",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "settings_header",
+      "value": "settings_header",
+      "action_list": "uncompleted | emit: uncompleted; "
+    },
+    {
+      "name": "title",
+      "value": "@global.feedback_title"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "text",
+      "value": "@global.feedback_intro_text"
+    },
+    {
+      "name": "feedback_placeholder",
+      "value": "@global.feedback_placeholder"
+    },
+    {
+      "type": "text_area",
+      "name": "text_feedback",
+      "parameter_list": "placeholder: @local.feedback_placeholder"
+    },
+    {
+      "name": "text_feedback_valid",
+      "value": "@calc(!!@local.text_feedback)",
+      "comment": true
+    },
+    {
+      "type": "text",
+      "value": "@global.feedback_where_intro_text"
+    },
+    {
+      "name": "where_placeholder",
+      "value": "@global.where_placeholder"
+    },
+    {
+      "type": "combo_box",
+      "name": "where",
+      "parameter_list": "placeholder: @local.where_placeholder;\nanswer_list: @data.where_options;"
+    },
+    {
+      "name": "location_placeholder",
+      "value": "@global.feedback_location_placeholder"
+    },
+    {
+      "name": "specify_location"
+    },
+    {
+      "type": "text_box",
+      "name": "specify_location",
+      "parameter_list": "placeholder: @local.location_placeholder",
+      "condition": "@local.where == \"other\""
+    },
+    {
+      "name": "where_valid",
+      "value": "@calc(!!@local.where)",
+      "comment": true
+    },
+    {
+      "name": "valid",
+      "value": "@local.text_feedback_valid"
+    },
+    {
+      "name": "toast_message",
+      "value": "@global.feedback_toast_message"
+    },
+    {
+      "type": "button",
+      "value": "@global.feedback_submit_button",
+      "action_list": "click | add_data | \n_list_id: feedback_data,\ntext: @local.text_feedback,\nwhere: @local.where,\nspecify_location: @local.specify_location,\ntimestamp: @calc(timestamp());\nclick | emit: completed;\nclick | toast | message: @local.toast_message;",
+      "parameter_list": "disabled: !@local.valid;\nstyle: flexible;",
+      "style_list": "margin-bottom: 24px;\npadding: 12px 24px"
+    }
+  ]
+}

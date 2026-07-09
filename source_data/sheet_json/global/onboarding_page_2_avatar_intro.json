@@ -1,0 +1,13 @@
+{
+  "flow_type": "global",
+  "flow_subtype": "onboarding",
+  "flow_name": "onboarding_page_2_avatar_intro",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "facilitator_message_avatar_intro",
+      "value": "**¡Hola! ¡Soy @fields.facilitator_name! Te doy la bienvenida a @global.app_name.**\n\nAhora que ya sabes un poco sobre de mí, me encantaría saber más sobre ti. Esta información me servirá para crear un programa personalizado para ti."
+    }
+  ]
+}

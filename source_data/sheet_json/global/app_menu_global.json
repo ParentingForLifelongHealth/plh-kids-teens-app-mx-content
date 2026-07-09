@@ -1,0 +1,99 @@
+{
+  "flow_type": "global",
+  "flow_name": "app_menu_global",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_field_default",
+      "name": "user_mode",
+      "value": true,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "declare_field_default",
+      "name": "splash_screens_completed",
+      "value": false,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "dev_mode_code",
+      "value": "app_dev",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "test_mode_code",
+      "value": "app_test",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "app_name",
+      "value": "[app name]",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "about_this_app",
+      "value": "Acerca de @global.app_name"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "has_multiple_languages",
+      "value": false,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "has_optional_login",
+      "value": false,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "user_id_text",
+      "value": "ID de usuario"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "skip",
+      "value": "Omitir"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "continue",
+      "value": "Continuar"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "user_id_copy_code",
+      "value": "Copiar código"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "user_id_copied",
+      "value": "¡Copiado!"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "user_id_last_sync",
+      "value": "Última sincronización: @local.sync_latest"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "user_id_never_synced",
+      "value": "Este dispositivo nunca se ha sincronizado. Sincronízalo para revelar tu código."
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "user_id_sync_button",
+      "value": "Sincronizar ahora"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "user_id_syncing",
+      "value": "Sincronizando..."
+    }
+  ]
+}

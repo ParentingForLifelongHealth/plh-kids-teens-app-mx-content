@@ -1,0 +1,78 @@
+{
+  "flow_type": "template",
+  "flow_name": "header",
+  "status": "released",
+  "rows": [
+    {
+      "name": "show_progress",
+      "value": false
+    },
+    {
+      "name": "progress"
+    },
+    {
+      "name": "display_icon",
+      "value": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_header",
+      "parameter_list": "sticky: top; \nstyle: background_solid;",
+      "style_list": "align-items: center;\npadding-top: 12px;\npadding-inline-start: 24px;\npadding-inline-end: 12px;"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "style: background_solid;"
+    },
+    {
+      "name": "close_icon_asset",
+      "value": "close",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "image",
+      "name": "icon_asset",
+      "condition": "!!@local.display_icon",
+      "style_list": "width: 46px"
+    },
+    {
+      "type": "title",
+      "name": "title",
+      "style_list": "flex: 1;\nmargin-inline-start: 12px;"
+    },
+    {
+      "type": "round_button",
+      "name": "close_button",
+      "action_list": "click | nav_stack: close_top;",
+      "parameter_list": "variant: no-background; \nicon_src: @local.close_icon_asset"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_progress",
+      "parameter_list": "style: background_solid;",
+      "condition": "@local.show_progress"
+    },
+    {
+      "type": "task_progress_bar",
+      "name": "task_progress_bar",
+      "parameter_list": "progress_percent: @local.progress;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "Rules_t_articles",
+  "data_list_name": "Rules_t_articles",
+  "status": "released",
+  "flow_subtype": "modules_Rules_t",
+  "module": "Rules_t",
+  "rows": [
+    {
+      "id": "@default",
+      "nested": false
+    },
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Esta sesión trata sobre establecer reglas o normas familiares con @fields.child_name.",
+      "text_2::eng": "Las reglas familiares pueden ayudar a que tu adolescente se mantenga a salvo del peligro, tanto dentro del hogar como en la comunidad. \n\nSi incluyes a @fields.child_name al momento de establecer estas reglas, es más probable que las siga. ⭐"
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/rules_teen_1.svg",
+      "character_1_id": "f2_abuela",
+      "character_1_text::eng": "¡Siempre llegas tarde a la casa!",
+      "character_2_id": "f2_hijo_15",
+      "character_2_text::eng": "¡No, no lo sé, ni siquiera sé lo que quieres decir con \"tarde\"! Deja de darme lata."
+    },
+    {
+      "id": "explore_2",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "Veamos cómo la abuela y @data.characters.f2_hijo_15.name lo hicieron al día siguiente:",
+      "image_asset": "images/comic/behave/rules_teen_2.svg",
+      "character_1_id": "f2_abuela",
+      "character_1_text::eng": "Me gusta que te diviertas, @data.characters.f2_hijo_15.name, pero también me preocupa que estés en la calle tan tarde. ¿Sabes por qué?",
+      "character_2_id": "f2_hijo_15",
+      "character_2_text::eng": "¿Porque quieres que tenga suficiente tiempo para hacer mi tarea?"
+    },
+    {
+      "id": "explore_3",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/rules_teen_3.svg",
+      "character_1_id": "f2_abuela",
+      "character_1_text::eng": "¡Exacto! Y tampoco es seguro estar afuera en esta zona cuando ya esta oscureciendo. ¿Cuál crees que sería una buena hora para que te metieras a casa?"
+    },
+    {
+      "id": "explore_4",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/rules_teen_4.svg",
+      "character_1_id": "f2_hijo_15",
+      "character_1_text::eng": "Podría regresar a casa a las... ¿10 de la noche?",
+      "character_2_id": "f2_abuela",
+      "character_2_text::eng": "Eso es un poco tarde, ¿qué tal a las 6 de la tarde? ¿O algo entre esas horas?"
+    },
+    {
+      "id": "explore_5",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/rules_teen_5.svg",
+      "character_1_id": "f2_hijo_15",
+      "character_1_text::eng": "Podría llegar a la casa a las 6 de la tarde los días que voy a la escuela y a las 8 de la noche los viernes y sábados.",
+      "character_2_id": "f2_abuela",
+      "character_2_text::eng": "Sí, me parece bien. A partir de ahora, nuestra regla familiar es que tienes que volver a casa a las 6 pm las noches de escuela y a las 8 pm los viernes y sábados. Pero siempre acompañado de un amigo. ¿De acuerdo?"
+    },
+    {
+      "id": "explore_6",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/rules_teen_6.svg",
+      "character_1_id": "f2_hijo_15",
+      "character_1_text::eng": "Está bien, abuela.",
+      "character_2_id": "f2_abuela",
+      "character_2_text::eng": "Muchas gracias, @data.characters.f2_hijo_15.name, por colaborar conmigo para hacer esta regla juntos. Estoy orgullosa de ver que te estás convirtiendo en un muchacho muy responsable."
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Selecciona reproducir ▶️ para aprender cuatro estrategias sencillas que te ayudarán a establecer reglas familiares con tu adolescente:\n\n1️⃣ SER UN EQUIPO\n2️⃣ MANTENERLO REALISTA\n3️⃣ SER CONSTANTES\n4️⃣ ELOGIAR, ELOGIAR, ELOGIAR",
+      "media_type": "youtube",
+      "youtube_gb_en_f": "https://www.youtube.com/watch?v=3dKfChjDxDg",
+      "youtube_gb_en_m": "https://www.youtube.com/watch?v=BJs8s0gWLI0"
+    },
+    {
+      "id": "practical_tips_2",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Recuerda:",
+      "section_1_title::eng": "SEAN UN EQUIPO",
+      "section_1_icon_asset": "images/icons/diamond_blue.png",
+      "section_1_text::eng": "⏰ Crea las reglas con tu adolescente.\n\n⏸ Hagan una regla a la vez.\n\n🔑 Hablen de las razones por las que se crea esa regla.\n\n👂 Escucha su punto de vista.",
+      "section_2_title::eng": "MANTENLO REALISTA",
+      "section_2_icon_asset": "images/icons/star_outline_blue.svg",
+      "section_2_text::eng": "⭐ Establece reglas realistas: ¿Qué sí puede hacer tu adolescente realmente?\n\n📖 Al explicarle lo que quieres que haga, exprésate con claridad y precisión.\n\n✅ Asegúrate de que la regla es justa. Explica el motivo de la regla y las consecuencias positivas por seguirla.",
+      "section_3_title::eng": "SEAN CONSTANTES",
+      "section_3_icon_asset": "images/icons/trophy_blue.png",
+      "section_3_text::eng": "🔄 Una vez que establezcas una regla, procura que se cumpla.\n \n⬆️ Esto aumentará la probabilidad de que sigan la regla.\n\n▶️ Si la regla te incluye, es importante que tú también la cumplas.",
+      "section_4_title::eng": "ELOGIA, ELOGIA, ELOGIA",
+      "section_4_icon_asset": "images/icons/spark.png",
+      "section_4_text::eng": "⭐ Elogia y elogia a @fields.child_name por su participación en la elaboración de la regla.\n\n😃 ¡Elogia, Elogia y elogia a @fields.child_name cuando siga la regla, ¡igual que cuando se porta bien!"
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "text_1_facilitator::eng": "**Actividad para casa** ⭐ \n\nCrea, al menos, una regla familiar con tu adolescente.",
+      "quiz_1_question::eng": "📝 ¿Puedes hacerlo hoy?",
+      "quiz_1_option_1_text::eng": "Sí",
+      "quiz_1_feedback_1::eng": "¡Qué bueno escuchar eso! Crea una regla familiar con tu adolescente el día de hoy. \n\nRecuerda, cuando implicas a tu niña, niño o adolescente en la creación de reglas, es más probable que las siga. ¡Es una receta para el éxito! 🏆 ",
+      "quiz_1_option_2_text::eng": "Lo intentaré",
+      "quiz_1_feedback_2::eng": "¡Genial! 😊 Date la oportunidad de probar esta idea cuando encuentres un momento adecuado. Cada intento es una oportunidad para aprender y crecer. 🌱",
+      "quiz_1_option_3_text::eng": "No",
+      "quiz_1_feedback_3::eng": "¡Entendemos! Establecer reglas requiere tiempo y práctica. ⏰ Piensa en las reglas que te gustaría establecer y, cuando sientas más confianza, elige la más fácil y habla de esta regla con tu adolescente. 👂 ¡Recuerda que siempre puedes repasar esta estrategia en el Menú Principal!"
+    }
+  ]
+}

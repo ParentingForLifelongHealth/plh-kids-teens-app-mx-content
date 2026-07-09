@@ -1,0 +1,75 @@
+{
+  "flow_name": "prep_safe_6to9_yc_articles",
+  "flow_subtype": "generated",
+  "flow_type": "data_pipe",
+  "rows": [
+    {
+      "operation": "filter",
+      "args_list": [
+        "id == \"relax_2\""
+      ],
+      "input_source": "relax"
+    },
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "category_id: relax",
+        "nested: FALSE"
+      ],
+      "output_target": "safe_6to9_yc_relax | local_only;"
+    },
+    {
+      "operation": "filter",
+      "args_list": [
+        "id == \"check_in_18\""
+      ],
+      "input_source": "check_in"
+    },
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "category_id: check_in",
+        "nested: FALSE"
+      ],
+      "output_target": "safe_6to9_yc_check_in | local_only;"
+    },
+    {
+      "operation": "filter",
+      "args_list": [
+        "!nested"
+      ],
+      "input_source": "safe_6to9_yc_articles",
+      "output_target": "safe_6to9_yc_testing | local_only;"
+    },
+    {
+      "operation": "concat",
+      "args_list": [
+        "safe_6to9_yc_relax",
+        "safe_6to9_yc_check_in",
+        "safe_6to9_yc_testing"
+      ],
+      "input_source": false
+    },
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "completed: FALSE"
+      ],
+      "output_target": "safe_6to9_yc_article_tasks"
+    },
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "version: 1"
+      ],
+      "output_target": "safe_6to9_yc_article_tasks"
+    }
+  ],
+  "_output_flows": [
+    {
+      "flow_name": "safe_6to9_yc_article_tasks",
+      "flow_subtype": "generated",
+      "flow_type": "data_list"
+    }
+  ]
+}

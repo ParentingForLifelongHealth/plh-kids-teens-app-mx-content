@@ -1,0 +1,31 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "library_section",
+  "status": "released",
+  "data_list_name": "library_section",
+  "flow_subtype": "library",
+  "rows": [
+    {
+      "id": "support",
+      "title::eng": "Red de apoyo",
+      "introduction::eng": "¿En qué necesitas ayuda?",
+      "image": "images/icons/question_mark_blue.svg"
+    },
+    {
+      "id": "essential_tools",
+      "title::eng": "Recursos útiles",
+      "image": "images/icons/star_outline_blue.svg"
+    },
+    {
+      "id": "relax",
+      "title::eng": "Toma una pausa",
+      "image": "images/icons/smile_eyes_down.svg"
+    },
+    {
+      "id": "certificate",
+      "title::eng": "Mis certificados",
+      "introduction::eng": "Completa el curso y cuéntanos cómo te fue practicando en casa para obtener tu certificado.",
+      "image": "images/icons/document-text-outline-thin.svg"
+    }
+  ]
+}

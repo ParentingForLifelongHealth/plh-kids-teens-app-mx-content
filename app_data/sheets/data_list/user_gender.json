@@ -1,0 +1,52 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "user_gender",
+  "status": "released",
+  "data_list_name": "user_gender",
+  "rows": [
+    {
+      "id": "woman",
+      "name": "woman",
+      "text": "Woman",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Woman"
+        }
+      }
+    },
+    {
+      "id": "man",
+      "name": "man",
+      "text": "Man",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Man"
+        }
+      }
+    },
+    {
+      "id": "opt_out",
+      "name": "opt_out",
+      "text": "Prefer not to say",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Prefer not to say"
+        }
+      }
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_global V2",
+    "path": "templates/kids app_launch.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1OsmLr80mX69_-YyLD42k_ZGYzTiowX-bamcQih7YgLI"
+  }
+}

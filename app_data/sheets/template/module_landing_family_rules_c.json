@@ -1,0 +1,66 @@
+{
+  "flow_type": "template",
+  "flow_name": "module_landing_family_rules_c",
+  "status": "released",
+  "parameter_list": {
+    "app_config": {
+      "LAYOUT": {
+        "page_padding": "0 0"
+      }
+    }
+  },
+  "comment": "family_rules_c",
+  "comment_2": 29,
+  "comment_3": 14,
+  "rows": [
+    {
+      "module_landing_family_rules_c": "begin_template",
+      "name": "module_landing",
+      "value": "module_landing",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "emit",
+          "args": [
+            "completed"
+          ],
+          "_raw": "completed | emit: completed"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "emit",
+          "args": [
+            "uncompleted"
+          ],
+          "_raw": "uncompleted | emit: uncompleted"
+        }
+      ],
+      "type": "set_variable",
+      "_nested_name": "module_landing"
+    },
+    {
+      "name": "module_id",
+      "value": "family_rules_c",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "module_id"
+    },
+    {
+      "module_landing_family_rules_c": "end_template",
+      "type": "set_variable",
+      "name": "set_variable_4",
+      "_nested_name": "set_variable_4"
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "templates/MX module_landing templates (16-30).xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1dnpPUs0-D0HXuiwcdKzi-8jQ46g8yXad4wUdyUmHH1c"
+  }
+}

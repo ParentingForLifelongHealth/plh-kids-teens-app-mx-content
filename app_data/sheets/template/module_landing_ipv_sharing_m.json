@@ -1,0 +1,66 @@
+{
+  "flow_type": "template",
+  "flow_name": "module_landing_ipv_sharing_m",
+  "status": "released",
+  "parameter_list": {
+    "app_config": {
+      "LAYOUT": {
+        "page_padding": "0 0"
+      }
+    }
+  },
+  "comment": "ipv_sharing_m",
+  "comment_2": 28,
+  "comment_3": 13,
+  "rows": [
+    {
+      "module_landing_ipv_sharing_m": "begin_template",
+      "name": "module_landing",
+      "value": "module_landing",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "emit",
+          "args": [
+            "completed"
+          ],
+          "_raw": "completed | emit: completed"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "emit",
+          "args": [
+            "uncompleted"
+          ],
+          "_raw": "uncompleted | emit: uncompleted"
+        }
+      ],
+      "type": "set_variable",
+      "_nested_name": "module_landing"
+    },
+    {
+      "name": "module_id",
+      "value": "ipv_sharing_m",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "module_id"
+    },
+    {
+      "module_landing_ipv_sharing_m": "end_template",
+      "type": "set_variable",
+      "name": "set_variable_4",
+      "_nested_name": "set_variable_4"
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "templates/MX module_landing templates (1-15).xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1RLy7GiNgCHhLj4ul6mMqAtvjxxPpr5wGZjQxcfm0Nn8"
+  }
+}

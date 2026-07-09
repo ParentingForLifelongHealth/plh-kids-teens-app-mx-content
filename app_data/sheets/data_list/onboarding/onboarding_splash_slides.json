@@ -1,0 +1,60 @@
+{
+  "flow_type": "data_list",
+  "flow_subtype": "onboarding",
+  "flow_name": "onboarding_splash_slides",
+  "status": "released",
+  "rows": [
+    {
+      "id": "slide_1",
+      "image_asset": "images/onboarding/welcome_screen_1.svg",
+      "duration_sec": 4,
+      "text": "La crianza puede ser un reto, pero no estás sola o solo.",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "La crianza puede ser un reto, pero no estás sola o solo."
+        }
+      }
+    },
+    {
+      "id": "slide_2",
+      "image_asset": "images/onboarding/welcome_screen_2.svg",
+      "duration_sec": 4,
+      "text": "Eres la mejor persona para acompañar el desarrollo de tu hija o hijo.",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Eres la mejor persona para acompañar el desarrollo de tu hija o hijo."
+        }
+      }
+    },
+    {
+      "id": "slide_3",
+      "image_asset": "images/onboarding/welcome_screen_3.svg",
+      "duration_sec": 4,
+      "text": "Únete a miles de personas en el mundo que fortalecen sus habilidades de crianza.",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Únete a miles de personas en el mundo que fortalecen sus habilidades de crianza."
+        }
+      }
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "data/MX onboarding.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1VOolSeQCn71-GP1JbiDp2zqWg4ZZYqrtHIAjY7h4A-A"
+  },
+  "_metadata": {
+    "duration_sec": {
+      "type": "number"
+    }
+  }
+}

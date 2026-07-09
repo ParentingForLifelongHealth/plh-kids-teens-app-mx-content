@@ -1,0 +1,129 @@
+{
+  "flow_type": "global",
+  "flow_name": "auth_global",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "login_is_mandatory",
+      "value": false
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "login_optional_why",
+      "value": "¿Te gustaría crear una cuenta? Esto te permitirá recuperar tus datos si pierdes tu dispositivo.",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "login",
+      "value": "Iniciar sesión",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "login_apple",
+      "value": "Iniciar sesión con Apple",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "login_google",
+      "value": "Iniciar sesión con Google",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "logout",
+      "value": "Cerrar sesión",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "logged_in",
+      "value": "Has iniciado sesión.",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "account",
+      "value": "Cuenta",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "delete_account",
+      "value": "Eliminar cuenta",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "delete_account_warning_title",
+      "value": "¿Estás seguro de que quieres eliminar tu cuenta?",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "delete_account_warning_text",
+      "value": "Esta acción es permanente e irreversible. Perderás todo tu progreso.",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "yes",
+      "value": "Sí",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "no",
+      "value": "No",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "previous_login",
+      "value": "Parece que ya has iniciado sesión en otro dispositivo. ¿Deseas continuar desde donde lo dejaste?\n\nSi lo haces, perderás todo el progreso realizado en este dispositivo.",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "restore_data",
+      "value": "Cargar progreso guardado",
+      "_translations": {
+        "value": {}
+      }
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "data/MX deployment_data.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/13MITRQ3ltpZObRU8Nr3_D-gc-bVX2SvKt1NO-IngD-I"
+  }
+}

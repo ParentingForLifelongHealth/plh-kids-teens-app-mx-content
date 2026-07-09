@@ -1,0 +1,94 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "i_give_praise_c_articles",
+  "data_list_name": "i_give_praise_c_articles",
+  "status": "released",
+  "flow_subtype": "modules_i_give_praise_c",
+  "module": "i_give_praise_c",
+  "rows": [
+    {
+      "id": "@default",
+      "nested": false,
+      "attached_single_doc": "https://docs.google.com/document/d/1-tg-SOLlmRdOvDnL5KJQSkXQ2eD6NAzEKZq3fQfX86E"
+    },
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "✨Buen trabajo por el esfuerzo que hiciste para aprender a mejorar la relación con @fields.child_name. ¡Eso demuestra que realmente te importa! 💙\n\n😃¿Cómo te hizo sentir el mensaje anterior?\n\n🌷 Todas y todos nos sentimos mejor cuando reconocen nuestros esfuerzos.",
+      "text_2::eng": "🏅Elogiar el buen comportamiento de @fields.child_name hará que quiera comportarse así más seguido.\n\n⭐ También creará una relación positiva y cercana entre tú y @fields.child_name.\n\nEmpieza por elogiar los logros y esfuerzos de @fields.child_name cuando estén en su tiempo juntos y conectados.",
+      "quiz_1_question::eng": "**¡Hagamos un ejercicio!**\n\n_Ejercicio no. 1_\n\nLa forma en que elogies a @fields.child_name no importa porque cualquier manera de hacerlo es efectiva.",
+      "quiz_1_option_1_text::eng": "Verdadero",
+      "quiz_1_feedback_1::eng": "👀 ¡Ups! ¡Buen intento!\n\n✨ La forma en que elogies es importante. El reconocimiento funciona si es inmediato y específico.  \n\n🌱 Puedes empezar reconociendo y elogiando cosas pequeñas, como que recoja sus juguetes luego de terminar de jugar. ",
+      "quiz_1_option_2_text::eng": "Falso",
+      "quiz_1_feedback_2::eng": "🎉 ¡Tienes razón!\n\n✨ La forma en que elogies es importante. El reconocimiento funciona si es inmediato y específico.  \n\n🌱 Puedes empezar reconociendo y elogiando cosas pequeñas, como que recoja sus juguetes luego de terminar de jugar. "
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "Vamos con @data.characters.f3_madre.name y su hijo @data.characters.f3_hijo_4.name para ver cómo reconoce lo que hace durante su tiempo juntos y conectados.",
+      "image_asset": "images/comic/relation/give_praise_yc_1.svg",
+      "character_1_id": "f3_madre",
+      "character_1_text::eng": "Encontraste un calcetín de rayas y otro de puntos. Vamos a buscar los calcetines que combinen con cada uno."
+    },
+    {
+      "id": "explore_2",
+      "category_id": "explore",
+      "image_asset": "images/comic/relation/give_praise_yc_2.svg",
+      "character_1_id": "f3_madre",
+      "character_1_text::eng": "¡Otro calcetín! Este es blanco. No es fácil encontrar un par que combine. Puede ser frustrante."
+    },
+    {
+      "id": "explore_3",
+      "category_id": "explore",
+      "image_asset": "images/comic/relation/give_praise_yc_3.svg",
+      "character_1_id": "f3_madre",
+      "character_1_text::eng": "Estás siendo muy paciente y buscando con mucha atención",
+      "character_2_id": "f3_hijo_4",
+      "character_2_text::eng": "¡Sí, mamá!"
+    },
+    {
+      "id": "explore_4",
+      "category_id": "explore",
+      "image_asset": "images/comic/relation/give_praise_yc_4.svg",
+      "character_1_id": "f3_madre",
+      "character_1_text::eng": "¡Encontraste los calcetines que combinan con su par! ¡Hiciste un gran esfuerzo intentando, @data.characters.f3_hijo_4.name!"
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Selecciona reproducir ▶️ para aprender las 4️⃣ estrategias para dar reconocimiento a lo que hace @fields.child_name.\n\n1️⃣ OBSERVAR\n2️⃣ COMUNICAR\n3️⃣ REPETIR\n4️⃣ MANTENERLO POSITIVO",
+      "media_type": "youtube",
+      "youtube_gb_en_f": "https://www.youtube.com/watch?v=LyOAstb972w",
+      "youtube_gb_en_m": "https://www.youtube.com/watch?v=Ni_bSiVjbFQ"
+    },
+    {
+      "id": "practical_tips_2",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Recuerda las cuatro estrategias para dar reconocimiento a lo que hace @fields.child_name.",
+      "section_1_title::eng": "OBSERVA",
+      "section_1_icon_asset": "images/icons/eye_blue.png",
+      "section_1_text::eng": "👀 Busca cosas buenas o prácticas que hace @fields.child_name.\n\n⏸ Haz una pausa y esfuérzate por elogiar las cosas positivas que hace.",
+      "section_2_title::eng": "COMUNICA",
+      "section_2_icon_asset": "images/icons/single_speech_blue.png",
+      "section_2_text::eng": "🏆 Reconoce cuando veas o te enteres que @fields.child_name hace algo bueno.\n\n✅ Dile específicamente qué hizo bien.\n\n🎉 ¡Exprésalo y dilo de corazón!\n\n🔄 Así será más probable que lo vuelva a hacer.",
+      "section_3_title::eng": "REPITE",
+      "section_3_icon_asset": "images/icons/star_filled_blue.png",
+      "section_3_text::eng": "🌷 Identifica algo bueno que puedas elogiarle a @fields.child_name todos los días como cuando da los buenos días, ayuda o apoya a otros, o tira el papel en el cesto.",
+      "section_4_title::eng": "MANTENLO POSITIVO",
+      "section_4_icon_asset": "images/icons/heart_filled_blue.png",
+      "section_4_text::eng": "💡 Enfoca tu atención en lo que @fields.child_name esté haciendo adecuadamente.\n\n🙂 Acompaña tu elogio con una gran sonrisa, palabras amables, un aplauso, un abrazo o  cosquillas. Esto le demuestra a tu niña o niño tu amor y aprecio por lo que hace. \n\n☀️ Presta atención a lo que @fields.child_name hace bien, le hará saber que te fijas en lo que hace y que te importa.\n\nLas niñas y niños que reciben elogios por su esfuerzo y buen comportamiento van a querer seguirse portando bien para seguir recibiendo este tipo de reconocimiento."
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "text_1_facilitator::eng": "**Actividad para casa** ⭐ \n\nHoy, tu actividad para casa es elogiar a @fields.child_name durante su tiempo juntos y conectados. Intenta reconocer y elogiar a @fields.child_name durante esos minutos.",
+      "quiz_1_question::eng": "¿Tienes tiempo de hacerlo hoy?",
+      "quiz_1_option_1_text::eng": "Sí",
+      "quiz_1_feedback_1::eng": "¡Increíble! 🎉 Intenta elogiar a @fields.child_name al menos una vez durante su tiempo juntos y conectados. También puedes elogiar a @fields.child_name en otros momentos del día. Fíjate cómo responde a lo que le dices.",
+      "quiz_1_option_2_text::eng": "Lo intentaré",
+      "quiz_1_feedback_2::eng": "¡Cada pequeño paso cuenta! ✨ Intenta elogiar a @fields.child_name la próxima vez que pasen tiempo juntos. 🤗",
+      "quiz_1_option_3_text::eng": "No",
+      "quiz_1_feedback_3::eng": "💚 ¡De acuerdo! A veces las cosas toman tiempo. Puedes volver a revisar esta sesión en el menú principal en cualquier momento. Al final del día, piensa en todas las cosas positivas que pasaron así será más sencillo poderlas identificar. ☀️ \nPoco a poco, elogiar se irá haciendo más fácil."
+    }
+  ]
+}

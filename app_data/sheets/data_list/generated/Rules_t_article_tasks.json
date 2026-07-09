@@ -1,0 +1,392 @@
+{
+  "flow_name": "Rules_t_article_tasks",
+  "flow_subtype": "generated",
+  "flow_type": "data_list",
+  "rows": [
+    {
+      "id": "relax_9",
+      "in_library": "yes",
+      "title_oringinal_eng": "Self-care moment",
+      "lottie_asset": "lottie/relax/square_flow.json",
+      "media_asset_m": "audio/relax/male/relax_9.m4a",
+      "media_asset_f": "audio/relax/female/relax_17.m4a",
+      "media_type": "audio",
+      "transcript_m_original_eng": "Here is an activity to relax your body: \n\nSit comfortably and close your eyes if you can. \nImagine a golden ring scanning your body from your feet to your head.  \nPay attention as it moves up and down your body. Are there any areas that feel tense? Numb? Painful?  \nFocus on those areas for a moment. Breathe into the area and, when you breathe out, try to let go of any tension or pain.  \nDo this for a few breaths.  \n\nOpen your eyes. How does your body feel now?\n\nYou can also try this next time you find yourself lying in bed unable to sleep!",
+      "transcript_f_original_eng": "Self-praise can be really helpful, especially when we have difficult days. \n\nThink of your week and finish the following phrase: “This week, I am proud of myself for …” It can be anything, not just things about being a parent!\n\nThink of one thing you did well today. Now wrap your arms around yourself and give yourself a big HUG!",
+      "transcript_m": "Aquí tienes una actividad para relajar tu cuerpo:\n\nSiéntate cómodamente y cierra los ojos si puedes.\nImagina un aro dorado que escanea tu cuerpo desde los pies hasta la cabeza.\nPon atención mientras sube y baja por tu cuerpo. ¿Hay áreas que se sienten tensas? ¿Adormecidas? ¿Con dolor?\nConcéntrate en esas áreas por un momento. Respira hacia esa zona y, al exhalar, intenta soltar cualquier tensión o malestar.\nHazlo por algunas respiraciones.\n\nAbre los ojos. ¿Cómo se siente tu cuerpo ahora?\n\n¡También puedes probar esto la próxima vez que estés en la cama y no puedas dormir!",
+      "transcript_f": "Elogiarte a ti mismo(a) puede ser muy útil, especialmente en los días difíciles.\n\nPiensa en tu semana y completa esta frase: “Esta semana, estoy orgulloso(a) de mí por…” ¡Puede ser cualquier cosa, no solo sobre ser padre o madre!\n\nPiensa en algo que hiciste bien hoy. Ahora abraza tu cuerpo con tus brazos y date un GRAN ABRAZO.",
+      "title": "Momento de autocuidado",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Momento de autocuidado"
+        }
+      },
+      "category_id": "relax",
+      "nested": false,
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "check_in_40",
+      "_translatedFields": {
+        "text_1": {
+          "eng": "El autocuidado es una herramienta clave en la crianza. Comienza por reconocer cómo te sientes."
+        },
+        "quiz_1_feedback_1": {
+          "eng": "¡Que bien! Y que valioso que estés usando esta aplicación, esto muestra tu compromiso con la crianza. Recuerda reconocerte por todo lo que estás haciendo."
+        },
+        "quiz_1_feedback_2": {
+          "eng": "Cada día tiene altas y bajas. Reconócete por estar aquí y seguir intentándolo: estás avanzando."
+        },
+        "quiz_1_feedback_3": {
+          "eng": "Lamento que las cosas estén siendo difíciles en este momento. Toma una respiración profunda y recuerda que eres valiosa/o."
+        },
+        "quiz_1_question": {
+          "eng": "¿Cómo te sientes el día de hoy?"
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Feliz"
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Regular"
+        },
+        "quiz_1_option_3_text": {
+          "eng": "Triste"
+        }
+      },
+      "category_id": "check_in",
+      "nested": false,
+      "quiz_1_option_1_image_asset": "images/icons/faces/happy_face_new.svg",
+      "quiz_1_option_2_image_asset": "images/icons/faces/ok_face_new.svg",
+      "quiz_1_option_3_image_asset": "images/icons/faces/sad_face_new.svg",
+      "text_1": "El autocuidado es una herramienta clave en la crianza. Comienza por reconocer cómo te sientes.",
+      "_translations": {
+        "text_1": {},
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_feedback_3": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_option_3_text": {}
+      },
+      "quiz_1_feedback_1": "¡Que bien! Y que valioso que estés usando esta aplicación, esto muestra tu compromiso con la crianza. Recuerda reconocerte por todo lo que estás haciendo.",
+      "quiz_1_feedback_2": "Cada día tiene altas y bajas. Reconócete por estar aquí y seguir intentándolo: estás avanzando.",
+      "quiz_1_feedback_3": "Lamento que las cosas estén siendo difíciles en este momento. Toma una respiración profunda y recuerda que eres valiosa/o.",
+      "quiz_1_question": "¿Cómo te sientes el día de hoy?",
+      "quiz_1_option_1_text": "Feliz",
+      "quiz_1_option_2_text": "Regular",
+      "quiz_1_option_3_text": "Triste",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "intro_1",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Esta sesión trata sobre establecer reglas o normas familiares con @fields.child_name."
+        },
+        "text_2": {
+          "eng": "Las reglas familiares pueden ayudar a que tu adolescente se mantenga a salvo del peligro, tanto dentro del hogar como en la comunidad. \n\nSi incluyes a @fields.child_name al momento de establecer estas reglas, es más probable que las siga. ⭐"
+        }
+      },
+      "category_id": "intro",
+      "nested": false,
+      "text_1_facilitator": "Esta sesión trata sobre establecer reglas o normas familiares con @fields.child_name.",
+      "_translations": {
+        "text_1_facilitator": {},
+        "text_2": {}
+      },
+      "text_2": "Las reglas familiares pueden ayudar a que tu adolescente se mantenga a salvo del peligro, tanto dentro del hogar como en la comunidad. \n\nSi incluyes a @fields.child_name al momento de establecer estas reglas, es más probable que las siga. ⭐",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_1",
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "¡Siempre llegas tarde a la casa!"
+        },
+        "character_2_text": {
+          "eng": "¡No, no lo sé, ni siquiera sé lo que quieres decir con \"tarde\"! Deja de darme lata."
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/behave/rules_teen_1.svg",
+      "character_1_id": "f2_abuela",
+      "character_2_id": "f2_hijo_15",
+      "character_1_text": "¡Siempre llegas tarde a la casa!",
+      "_translations": {
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "character_2_text": "¡No, no lo sé, ni siquiera sé lo que quieres decir con \"tarde\"! Deja de darme lata.",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_2",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Veamos cómo la abuela y @data.characters.f2_hijo_15.name lo hicieron al día siguiente:"
+        },
+        "character_1_text": {
+          "eng": "Me gusta que te diviertas, @data.characters.f2_hijo_15.name, pero también me preocupa que estés en la calle tan tarde. ¿Sabes por qué?"
+        },
+        "character_2_text": {
+          "eng": "¿Porque quieres que tenga suficiente tiempo para hacer mi tarea?"
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "text_1_facilitator": "Veamos cómo la abuela y @data.characters.f2_hijo_15.name lo hicieron al día siguiente:",
+      "_translations": {
+        "text_1_facilitator": {},
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "image_asset": "images/comic/behave/rules_teen_2.svg",
+      "character_1_id": "f2_abuela",
+      "character_2_id": "f2_hijo_15",
+      "character_1_text": "Me gusta que te diviertas, @data.characters.f2_hijo_15.name, pero también me preocupa que estés en la calle tan tarde. ¿Sabes por qué?",
+      "character_2_text": "¿Porque quieres que tenga suficiente tiempo para hacer mi tarea?",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_3",
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "¡Exacto! Y tampoco es seguro estar afuera en esta zona cuando ya esta oscureciendo. ¿Cuál crees que sería una buena hora para que te metieras a casa?"
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/behave/rules_teen_3.svg",
+      "character_1_id": "f2_abuela",
+      "character_1_text": "¡Exacto! Y tampoco es seguro estar afuera en esta zona cuando ya esta oscureciendo. ¿Cuál crees que sería una buena hora para que te metieras a casa?",
+      "_translations": {
+        "character_1_text": {}
+      },
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_4",
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "Podría regresar a casa a las... ¿10 de la noche?"
+        },
+        "character_2_text": {
+          "eng": "Eso es un poco tarde, ¿qué tal a las 6 de la tarde? ¿O algo entre esas horas?"
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/behave/rules_teen_4.svg",
+      "character_1_id": "f2_hijo_15",
+      "character_2_id": "f2_abuela",
+      "character_1_text": "Podría regresar a casa a las... ¿10 de la noche?",
+      "_translations": {
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "character_2_text": "Eso es un poco tarde, ¿qué tal a las 6 de la tarde? ¿O algo entre esas horas?",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_5",
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "Podría llegar a la casa a las 6 de la tarde los días que voy a la escuela y a las 8 de la noche los viernes y sábados."
+        },
+        "character_2_text": {
+          "eng": "Sí, me parece bien. A partir de ahora, nuestra regla familiar es que tienes que volver a casa a las 6 pm las noches de escuela y a las 8 pm los viernes y sábados. Pero siempre acompañado de un amigo. ¿De acuerdo?"
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/behave/rules_teen_5.svg",
+      "character_1_id": "f2_hijo_15",
+      "character_2_id": "f2_abuela",
+      "character_1_text": "Podría llegar a la casa a las 6 de la tarde los días que voy a la escuela y a las 8 de la noche los viernes y sábados.",
+      "_translations": {
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "character_2_text": "Sí, me parece bien. A partir de ahora, nuestra regla familiar es que tienes que volver a casa a las 6 pm las noches de escuela y a las 8 pm los viernes y sábados. Pero siempre acompañado de un amigo. ¿De acuerdo?",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_6",
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "Está bien, abuela."
+        },
+        "character_2_text": {
+          "eng": "Muchas gracias, @data.characters.f2_hijo_15.name, por colaborar conmigo para hacer esta regla juntos. Estoy orgullosa de ver que te estás convirtiendo en un muchacho muy responsable."
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/behave/rules_teen_6.svg",
+      "character_1_id": "f2_hijo_15",
+      "character_2_id": "f2_abuela",
+      "character_1_text": "Está bien, abuela.",
+      "_translations": {
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "character_2_text": "Muchas gracias, @data.characters.f2_hijo_15.name, por colaborar conmigo para hacer esta regla juntos. Estoy orgullosa de ver que te estás convirtiendo en un muchacho muy responsable.",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "practical_tips_1",
+      "media_type": "youtube",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Selecciona reproducir ▶️ para aprender cuatro estrategias sencillas que te ayudarán a establecer reglas familiares con tu adolescente:\n\n1️⃣ SER UN EQUIPO\n2️⃣ MANTENERLO REALISTA\n3️⃣ SER CONSTANTES\n4️⃣ ELOGIAR, ELOGIAR, ELOGIAR"
+        }
+      },
+      "category_id": "practical_tips",
+      "nested": false,
+      "text_1_facilitator": "Selecciona reproducir ▶️ para aprender cuatro estrategias sencillas que te ayudarán a establecer reglas familiares con tu adolescente:\n\n1️⃣ SER UN EQUIPO\n2️⃣ MANTENERLO REALISTA\n3️⃣ SER CONSTANTES\n4️⃣ ELOGIAR, ELOGIAR, ELOGIAR",
+      "_translations": {
+        "text_1_facilitator": {}
+      },
+      "youtube_gb_en_f": "https://www.youtube.com/watch?v=3dKfChjDxDg",
+      "youtube_gb_en_m": "https://www.youtube.com/watch?v=BJs8s0gWLI0",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "practical_tips_2",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Recuerda:"
+        },
+        "section_1_title": {
+          "eng": "SEAN UN EQUIPO"
+        },
+        "section_1_text": {
+          "eng": "⏰ Crea las reglas con tu adolescente.\n\n⏸ Hagan una regla a la vez.\n\n🔑 Hablen de las razones por las que se crea esa regla.\n\n👂 Escucha su punto de vista."
+        },
+        "section_2_title": {
+          "eng": "MANTENLO REALISTA"
+        },
+        "section_2_text": {
+          "eng": "⭐ Establece reglas realistas: ¿Qué sí puede hacer tu adolescente realmente?\n\n📖 Al explicarle lo que quieres que haga, exprésate con claridad y precisión.\n\n✅ Asegúrate de que la regla es justa. Explica el motivo de la regla y las consecuencias positivas por seguirla."
+        },
+        "section_3_title": {
+          "eng": "SEAN CONSTANTES"
+        },
+        "section_3_text": {
+          "eng": "🔄 Una vez que establezcas una regla, procura que se cumpla.\n \n⬆️ Esto aumentará la probabilidad de que sigan la regla.\n\n▶️ Si la regla te incluye, es importante que tú también la cumplas."
+        },
+        "section_4_title": {
+          "eng": "ELOGIA, ELOGIA, ELOGIA"
+        },
+        "section_4_text": {
+          "eng": "⭐ Elogia y elogia a @fields.child_name por su participación en la elaboración de la regla.\n\n😃 ¡Elogia, Elogia y elogia a @fields.child_name cuando siga la regla, ¡igual que cuando se porta bien!"
+        }
+      },
+      "category_id": "practical_tips",
+      "nested": false,
+      "text_1_facilitator": "Recuerda:",
+      "_translations": {
+        "text_1_facilitator": {},
+        "section_1_title": {},
+        "section_1_text": {},
+        "section_2_title": {},
+        "section_2_text": {},
+        "section_3_title": {},
+        "section_3_text": {},
+        "section_4_title": {},
+        "section_4_text": {}
+      },
+      "section_1_icon_asset": "images/icons/diamond_blue.png",
+      "section_2_icon_asset": "images/icons/star_outline_blue.svg",
+      "section_3_icon_asset": "images/icons/trophy_blue.png",
+      "section_4_icon_asset": "images/icons/spark.png",
+      "section_1_title": "SEAN UN EQUIPO",
+      "section_1_text": "⏰ Crea las reglas con tu adolescente.\n\n⏸ Hagan una regla a la vez.\n\n🔑 Hablen de las razones por las que se crea esa regla.\n\n👂 Escucha su punto de vista.",
+      "section_2_title": "MANTENLO REALISTA",
+      "section_2_text": "⭐ Establece reglas realistas: ¿Qué sí puede hacer tu adolescente realmente?\n\n📖 Al explicarle lo que quieres que haga, exprésate con claridad y precisión.\n\n✅ Asegúrate de que la regla es justa. Explica el motivo de la regla y las consecuencias positivas por seguirla.",
+      "section_3_title": "SEAN CONSTANTES",
+      "section_3_text": "🔄 Una vez que establezcas una regla, procura que se cumpla.\n \n⬆️ Esto aumentará la probabilidad de que sigan la regla.\n\n▶️ Si la regla te incluye, es importante que tú también la cumplas.",
+      "section_4_title": "ELOGIA, ELOGIA, ELOGIA",
+      "section_4_text": "⭐ Elogia y elogia a @fields.child_name por su participación en la elaboración de la regla.\n\n😃 ¡Elogia, Elogia y elogia a @fields.child_name cuando siga la regla, ¡igual que cuando se porta bien!",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "home_activity_1",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "**Actividad para casa** ⭐ \n\nCrea, al menos, una regla familiar con tu adolescente."
+        },
+        "quiz_1_question": {
+          "eng": "📝 ¿Puedes hacerlo hoy?"
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Sí"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "¡Qué bueno escuchar eso! Crea una regla familiar con tu adolescente el día de hoy. \n\nRecuerda, cuando implicas a tu niña, niño o adolescente en la creación de reglas, es más probable que las siga. ¡Es una receta para el éxito! 🏆"
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Lo intentaré"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "¡Genial! 😊 Date la oportunidad de probar esta idea cuando encuentres un momento adecuado. Cada intento es una oportunidad para aprender y crecer. 🌱"
+        },
+        "quiz_1_option_3_text": {
+          "eng": "No"
+        },
+        "quiz_1_feedback_3": {
+          "eng": "¡Entendemos! Establecer reglas requiere tiempo y práctica. ⏰ Piensa en las reglas que te gustaría establecer y, cuando sientas más confianza, elige la más fácil y habla de esta regla con tu adolescente. 👂 ¡Recuerda que siempre puedes repasar esta estrategia en el Menú Principal!"
+        }
+      },
+      "category_id": "home_activity",
+      "nested": false,
+      "quiz_1_feedback_1": "¡Qué bueno escuchar eso! Crea una regla familiar con tu adolescente el día de hoy. \n\nRecuerda, cuando implicas a tu niña, niño o adolescente en la creación de reglas, es más probable que las siga. ¡Es una receta para el éxito! 🏆",
+      "_translations": {
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_feedback_3": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_option_3_text": {},
+        "text_1_facilitator": {}
+      },
+      "quiz_1_feedback_2": "¡Genial! 😊 Date la oportunidad de probar esta idea cuando encuentres un momento adecuado. Cada intento es una oportunidad para aprender y crecer. 🌱",
+      "quiz_1_feedback_3": "¡Entendemos! Establecer reglas requiere tiempo y práctica. ⏰ Piensa en las reglas que te gustaría establecer y, cuando sientas más confianza, elige la más fácil y habla de esta regla con tu adolescente. 👂 ¡Recuerda que siempre puedes repasar esta estrategia en el Menú Principal!",
+      "quiz_1_question": "📝 ¿Puedes hacerlo hoy?",
+      "quiz_1_option_1_text": "Sí",
+      "quiz_1_option_2_text": "Lo intentaré",
+      "quiz_1_option_3_text": "No",
+      "text_1_facilitator": "**Actividad para casa** ⭐ \n\nCrea, al menos, una regla familiar con tu adolescente.",
+      "completed": false,
+      "version": 1
+    }
+  ],
+  "_metadata": {
+    "nested": {
+      "type": "boolean"
+    },
+    "completed": {
+      "type": "boolean"
+    },
+    "version": {
+      "type": "number"
+    }
+  }
+}

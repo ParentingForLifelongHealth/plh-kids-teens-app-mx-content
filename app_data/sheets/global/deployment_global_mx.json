@@ -1,0 +1,376 @@
+{
+  "flow_type": "global",
+  "flow_name": "deployment_global_mx",
+  "status": "released",
+  "override_target": "deployment_global",
+  "override_condition": "(@fields._deployment_name == \"plh_kids_teens_mx\")",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "app_name",
+      "value": "Crianza con Conciencia +",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "deployment_id",
+      "value": "mexico",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "app_name_full",
+      "value": "Crianza con Conciencia +",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "home_screen_logo_asset",
+      "value": "images/logos/CRyA_logo.png",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "hp_locked_image_asset"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "hp_unlocked_image_asset"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "activity_footer_image_asset",
+      "value": "images/backgrounds/mountains_trees.svg",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "home_screen_logo_height",
+      "value": "48px",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "deployment_terms_field",
+      "value": "terms_v20241205_accepted",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "deployment_terms_text",
+      "value": "5 de Diciembre de 2024",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "has_multiple_content_packages",
+      "value": true
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "has_multiple_languages",
+      "value": true,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "has_optional_login",
+      "value": false,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "combo_box_placeholder",
+      "value": "Selecciona una opción",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "section_variant",
+      "value": "box_primary",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "first_completion_icon",
+      "value": "trophy",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "subsequent_completion_icon",
+      "value": "checkmark",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "test_mode_code",
+      "value": "ParentAppTest",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true
+    },
+    {
+      "type": "declare_field_default",
+      "name": "countdown_days",
+      "value": 0,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "declare_field_default",
+      "name": "child_age_tag",
+      "value": "teen",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true
+    },
+    {
+      "type": "declare_field_default",
+      "name": "user_type",
+      "value": "parent",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true
+    },
+    {
+      "type": "declare_field_default",
+      "name": "display_modules_as_list",
+      "value": true,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "declare_field_default",
+      "name": "facilitator_id",
+      "value": "facilitator_female",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true
+    },
+    {
+      "type": "declare_field_default",
+      "name": "facilitator_name",
+      "value": "@data.characters.facilitator_female.name",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "greeting",
+      "value": "Hola",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "unlock_course_title",
+      "value": "Cursos",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "unlock_course_text",
+      "value": "¡Gana un certificado por cada curso completado!",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "lock_course_title"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "lock_course_text"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "complete_course_title",
+      "value": "Cursos completados",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "complete_course_text"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "all_unlock_course_title",
+      "value": "Explorar cursos",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "all_unlock_course_text"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "completed_text",
+      "value": "COMPLETO",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "locked_text",
+      "value": "AUN NO DISPONIBLE",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "sub_items_name",
+      "value": "estrategias",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "course_action_text",
+      "value": "Continuar",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "course_badge_text",
+      "value": "Estrategias",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "review_action_text",
+      "value": "Continuar",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "review_badge_text",
+      "value": "Reflexionemos",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "all_complete_title",
+      "value": "Lo lograste, ¡Felicidades!",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "all_complete_text",
+      "value": "Has completado todas las sesiones. ¡Bien hecho!",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "all_complete_image",
+      "value": "images/icons/celebration.svg",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "back_to_home",
+      "value": "Volver a los cursos",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "restart",
+      "value": "Reiniciar",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "feedback",
+      "value": "Comentarios",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_field_default",
+      "name": "n_modules_completed",
+      "value": 0
+    },
+    {
+      "type": "declare_field_default",
+      "name": "last_module_in_progress",
+      "value": "NA",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "gender_youtube_link",
+      "value": true
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "data/MX deployment_data.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/13MITRQ3ltpZObRU8Nr3_D-gc-bVX2SvKt1NO-IngD-I"
+  }
+}

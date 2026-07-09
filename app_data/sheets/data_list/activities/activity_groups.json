@@ -1,0 +1,62 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "activity_groups",
+  "data_list_name": "activity_groups",
+  "status": "released",
+  "flow_subtype": "activities",
+  "rows": [
+    {
+      "id": "quick",
+      "title": "Quick",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Quick"
+        }
+      }
+    },
+    {
+      "id": "group",
+      "title": "Group",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Group"
+        }
+      }
+    },
+    {
+      "id": "active",
+      "title": "Active",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Active"
+        }
+      }
+    },
+    {
+      "id": "calm",
+      "title": "Calm",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Calm"
+        }
+      }
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "data/Copy of PA activities.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1jnGZDsUVDuaZ5Igt6e3z07Fhv9Q8zdrfk0f58Jgg9kU"
+  }
+}

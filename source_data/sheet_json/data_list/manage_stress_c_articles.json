@@ -1,0 +1,135 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "manage_stress_c_articles",
+  "data_list_name": "manage_stress_c_articles",
+  "status": "released",
+  "flow_subtype": "modules_manage_stress_c",
+  "module": "manage_stress_c",
+  "rows": [
+    {
+      "id": "@default",
+      "nested": false
+    },
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Esta sesión trata sobre aprender a regular el estrés. Como se trata de una habilidad tan importante para la vida, esta sesión se dividirá en dos partes.\n\nEl estrés es cuando sientes preocupación o tensión porque las cosas pueden llegar a ser difíciles.",
+      "text_2::eng": "Es normal sentir estrés como madre, padre o persona cuidadora. Pero a veces, el estrés puede llegar a ser demasiado para nuestro cuerpo.\n\nPuede sentirse como que tienes la mente a tope como para hacer cosas y que vas a llorar, a gritar o a estar en un estado tan extremo de cansancio que no podrás funcionar.\n\nAprender a manejar el estrés y pedir ayuda cuando sea necesario te puede ayudar mucho.",
+      "quiz_1_question::eng": "📝 **¡Hagamos un ejercicio!**\n\n_Ejercicio no.1_\n\nEl exceso de estrés puede tener un impacto negativo en nuestras relaciones con otras personas, incluidas nuestras niñas, niños y adolescentes.",
+      "quiz_1_option_1_text::eng": "Verdadero",
+      "quiz_1_feedback_1::eng": "🎉 ¡Tienes razón!\n\nEl exceso de estrés puede aumentar las agresiones y la irritabilidad, además de disminuir la paciencia con tus niñas y niños.\n\nTambién, puede hacer que parezca más difícil hacer las cosas sencillas de la vida cotidiana.\n\nPero tener conocimiento sobre estas cosas nos ayuda a encontrar mejores formas de regular el estrés.",
+      "quiz_1_option_2_text::eng": "Falso",
+      "quiz_1_feedback_2::eng": "👀 ¡Ups! ¡Buen intento!\n\nEl exceso de estrés puede aumentar las agresiones y la irritabilidad, además de disminuir la paciencia con tus niñas y niños.\n\nTambién, puede hacer que parezca más difícil hacer las cosas sencillas de la vida cotidiana.\n\nPero tener conocimiento sobre estas cosas nos ayuda a encontrar mejores formas de regular el estrés.",
+      "quiz_2_question::eng": "📝 **¡Hagamos uno más!**\n\n_Ejercicio no.2_\n\nSi ignoramos nuestro estrés, desaparecerá con el tiempo.",
+      "quiz_2_option_1_text::eng": "Verdadero",
+      "quiz_2_feedback_1::eng": "👀 ¡Ups! ¡Buen intento!\n\n🎓 Cuando sientas estrés, tómalo como una señal de tu cuerpo que te indica que necesitas cuidarte.\n\nEs importante que le pongas atención a tus pensamientos y a cómo se siente tu cuerpo para que puedas responder mejor.",
+      "quiz_2_option_2_text::eng": "Falso",
+      "quiz_2_feedback_2::eng": "🎉 ¡Buen trabajo!\n\n🎓 Cuando sientas estrés, tómalo como una señal de tu cuerpo que te indica que necesitas cuidarte o de que necesitas más apoyo.\n\nEs importante que le pongas atención a tus pensamientos y a cómo se siente tu cuerpo para que puedas responder mejor.",
+      "quiz_3_question::eng": "📝 **¡Un último ejercicio!**\n\n_Ejercicio no.3_\n\nCuando tienes mucho que hacer y sientes estrés, es mejor seguir adelante y no tomarte descansos.",
+      "quiz_3_option_1_text::eng": "Verdadero",
+      "quiz_3_feedback_1::eng": "👀 ¡Ups! ¡Buen intento!\nSi no regulas el estrés y sigues presionando sin tomarte descansos, puedes llegar a sentir cansancio extremo.\n\nEsto quiere decir que tomar descansos y regular el estrés no es solo para sentirse mejor en el momento, también se trata de evitar el agotamiento a largo plazo.",
+      "quiz_3_option_2_text::eng": "Falso",
+      "quiz_3_feedback_2::eng": "🎉 ¡Buen trabajo!\nSi no regulas el estrés y sigues presionando sin tomarte descansos, puedes llegar a sentir cansancio extremo.\n\nEsto quiere decir que tomar descansos y regular el estrés no es solo para sentirse mejor en el momento, también se trata de evitar el agotamiento a largo plazo."
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "@data.characters.f3_madre.name es la única cuidadora de sus cuatro hijos en varios momentos del día. Tantas cosas que hacer en la casa y el hecho de tener poco dinero hacen que se sienta muy seguido abrumada y sin apoyo. También le resulta difícil estar presente con sus niñas y niños. No ayuda que @data.characters.f3_hija_7.name y @data.characters.f3_hijo_4.name se pelean mucho.",
+      "image_asset": "images/comic/understand/manage_stress_yc_1.svg",
+      "character_1_id": "f3_hijo_4",
+      "character_1_text::eng": "¡Dámelo!",
+      "character_2_id": "f3_hija_7",
+      "character_2_text::eng": "¡Es mío!",
+      "character_3_id": "f3_madre",
+      "character_3_text::eng": "(Frustrada, pensando): ¡Ay ya! ¡Estoy muy cansada e irritada! Hay demasiadas cosas que hacer hoy. Pagos, la limpieza de la casa, ¡y ahora esto!"
+    },
+    {
+      "id": "explore_2",
+      "category_id": "explore",
+      "image_asset": "images/comic/understand/manage_stress_yc_2.svg",
+      "character_1_id": "f3_madre",
+      "character_1_text::eng": "(Respira profundamente y piensa): Voy a tomar una pausa. Estoy haciendo lo mejor que puedo. Gritarles solamente empeorará las cosas."
+    },
+    {
+      "id": "explore_3",
+      "category_id": "explore",
+      "image_asset": "images/comic/understand/manage_stress_yc_3.svg",
+      "character_1_id": "f3_madre",
+      "character_1_text::eng": "@data.characters.f3_hija_7.name y @data.characters.f3_hijo_4.name, por favor, compartan el teléfono y cada quién espere su turno.",
+      "character_2_id": "f3_hijo_4",
+      "character_2_text::eng": "¡Pero yo lo tenía primero!",
+      "character_3_id": "f3_hija_7",
+      "character_3_text::eng": "¡No es cierto, él me lo quitó!",
+      "character_4_id": "f3_madre",
+      "character_4_text::eng": "Veo que están molestos. Vamos a hacer 5 respiraciones profundas y luego veremos qué podemos hacer."
+    },
+    {
+      "id": "explore_4",
+      "category_id": "explore",
+      "image_asset": "images/comic/understand/manage_stress_yc_4.svg",
+      "character_1_id": "f3_madre",
+      "character_1_text::eng": "Bien, ahora que estamos todos un poco más tranquilos, necesitamos establecer algunas reglas sobre el uso de mi teléfono. ¿Qué creen que deberíamos de hacer?",
+      "character_2_id": "f3_hija_7",
+      "character_2_text::eng": "Bueno…¿puede ser que @data.characters.f3_hijo_4.name use el teléfono cuando yo esté haciendo la tarea?"
+    },
+    {
+      "id": "explore_5",
+      "category_id": "explore",
+      "image_asset": "images/comic/understand/manage_stress_yc_5.svg",
+      "character_1_id": "f3_madre",
+      "character_1_text::eng": "Suena bien, ¿y tú, @data.characters.f3_hijo_4.name, qué harás cuando tu hermana termine su tarea?",
+      "character_2_id": "f3_hijo_4",
+      "character_2_text::eng": "Se lo daré y me iré a jugar con mis otros juguetes.",
+      "character_3_id": "f3_madre",
+      "character_3_text::eng": "Buena sugerencia. Entonces la regla queda en que @data.characters.f3_hijo_4.name puede usar el teléfono mientras @data.characters.f3_hija_7.name hace su tarea, y terminando, @data.characters.f3_hija_7.name tendrá la oportunidad de usarlo. Recuerden, si se olvidan de la regla, me llevaré el teléfono y no podrán usarlo hasta el día siguiente. ¿De acuerdo?"
+    },
+    {
+      "id": "explore_6",
+      "category_id": "explore",
+      "image_asset": "images/comic/understand/manage_stress_yc_6.svg",
+      "character_1_id": "f3_hijo_4",
+      "character_1_text::eng": "De acuerdo…",
+      "character_2_id": "f3_hija_7",
+      "character_2_text::eng": "De acuerdo…",
+      "character_3_id": "f3_madre",
+      "character_3_text::eng": "(Pensando): ¡Uf! No fue fácil pero al menos no les grité como siempre lo hago. Tuve un día muy largo y me siento muy estresada. Tal vez le hable a María más tarde para conversar un poco con ella."
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Selecciona reproducir ▶️ para aprender 4️⃣ estrategias que puedes usar para regular el estrés:\n\n1️⃣ IDENTIFICAR\n2️⃣ SER AMABLE\n3️⃣ TENER HÁBITOS SALUDABLES\n4️⃣ RECARGAR PILAS",
+      "media_type": "youtube",
+      "youtube_gb_en_f": "https://www.youtube.com/watch?v=VeyoyY7kkpg",
+      "youtube_gb_en_m": "https://www.youtube.com/watch?v=IrWWiN0qgAk"
+    },
+    {
+      "id": "practical_tips_2",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Recuerda:",
+      "section_1_title::eng": "IDENTIFICAR",
+      "section_1_icon_asset": "images/icons/eye_blue.png",
+      "section_1_text::eng": "¿Cómo estás sintiendo tu cuerpo? Cuando sientes estrés por mucho tiempo, puedes experimentar dolores de cabeza, cansancio o dificultad para dormir.\n\nRevisa tus emociones. El estrés puede hacerte sentir irritable, gritar a tus seres queridos o querer estar en soledad.\n\nTómate un momento para fijarte en tus pensamientos. El estrés puede llenarte la cabeza de pensamientos acelerados, preocupantes y negativos.",
+      "section_2_title::eng": "SER AMABLE",
+      "section_2_icon_asset": "images/icons/tick.svg",
+      "section_2_text::eng": "💚 Cuando empieces a sentir estrés, toma una pausa o haz algunas respiraciones profundas.\n\nRespira y piensa: \"Pronto pasará\", porque realmente no pasa nada por sentir un poco de estrés, ¡todas las personas del mundo lo hemos sentido en algún momento!\n\n🎁 Piensa en lo que te diría una amiga, amigo o un familiar que te quiere.",
+      "section_3_title::eng": "TENER HÁBITOS SALUDABLES",
+      "section_3_icon_asset": "images/icons/star_filled_blue.png",
+      "section_3_text::eng": "Cuidar de tu salud física te ayudará a manejar mejor el estrés.\n\n⏸ Intenta dormir lo suficiente cada noche, al menos 7 u 8 horas si es posible.\n\n🍞 Come saludable en la medida de lo posible y mantén una dieta balanceada.\n\n🚲 Encuentra formas de mover tu cuerpo y hacer ejercicio cada día. Incluso 10 minutos pueden hacer la diferencia.\n\n💚 Toma agua diariamente.",
+      "section_4_title::eng": "RECARGAR PILAS",
+      "section_4_icon_asset": "images/icons/diamond_blue.png",
+      "section_4_text::eng": "Haz pausas durante el día para recargar tu energía. Los pequeños descansos pueden ayudarte, poquito a poquito.\n\nHaz cosas que te ayuden a relajarte y a sentirte bien, como practicar una pausa, escuchar música o salir a dar un paseo.\n\nBusca pasar tiempo con amistades o familiares que se preocupen por ti. Conversar con alguien en quien confíes puede hacer que te sientas mejor y con menos estrés."
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "text_1_facilitator::eng": "**Actividad para casa** ⭐ \n\nComparte estas estrategias con tu niña o niño y acuerden cómo puede ella o él usarlas para manejar su propio estrés.",
+      "quiz_1_question::eng": "¿Tienes tiempo para hacerlo hoy?",
+      "quiz_1_option_1_text::eng": "Sí",
+      "quiz_1_feedback_1::eng": "¡Excelente! 💙 Estás desarrollando las habilidades necesarias para volverte a llenar de energía y apoyar a tu niña o niño, especialmente cuando las cosas se ponen difíciles...\n\n¡Lo estás haciendo muy bien! 😃🔄",
+      "quiz_1_option_2_text::eng": "Lo intentaré",
+      "quiz_1_feedback_2::eng": "¡Muy bien! 🌟 Lo importante es dar el primer paso. Intenta poner en práctica esta idea cuando tengas la oportunidad y observa qué sucede. 💛",
+      "quiz_1_option_3_text::eng": "No",
+      "quiz_1_feedback_3::eng": "💚 ¡No pasa nada si hoy no tienes tiempo! Puedes compartir estas estrategias con tu niña o niño mañana. Recuerda tomar una pausa y seguir estas estrategias si te encuentras en una situación que te genere estrés."
+    }
+  ]
+}

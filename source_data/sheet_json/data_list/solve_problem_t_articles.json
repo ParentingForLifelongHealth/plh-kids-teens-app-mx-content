@@ -1,0 +1,101 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "solve_problem_t_articles",
+  "data_list_name": "solve_problem_t_articles",
+  "status": "released",
+  "flow_subtype": "modules_solve_problem_t",
+  "module": "solve_problem_t",
+  "rows": [
+    {
+      "id": "@default",
+      "nested": false
+    },
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Esta sesión trata sobre aprender a resolver problemas con @fields.child_name. 👂",
+      "text_2::eng": "A medida que las y los adolescentes crecen, realizan más actividades por su cuenta y a veces no cumplen las reglas que se establecen para mantenerles a salvo. \n\n🚗 Esto puede ocasionar conflictos en casa. Aprender a resolver estos problemas puede ayudar a mejorar el comportamiento de tu adolescente."
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/solve_problems_teen_1.svg",
+      "character_1_id": "f3_madre",
+      "character_1_text::eng": "Vamos, @data.characters.f3_hija_12.name, es hora de prepararnos para ir a dormir.",
+      "character_2_id": "f3_hija_12",
+      "character_2_text::eng": "¡Pero todavía me falta mucha tarea que hacer!",
+      "character_3_id": "f3_madre",
+      "character_3_text::eng": "Mm, es la tercera noche consecutiva que no te acuestas a tiempo por culpa de la tarea."
+    },
+    {
+      "id": "explore_2",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/solve_problems_teen_2.svg",
+      "character_1_id": "f3_madre",
+      "character_1_text::eng": "¿Cómo podemos asegurarnos de que hagas todo lo que tengas que hacer y aún así te acuestes a tiempo?",
+      "character_2_id": "f3_hija_12",
+      "character_2_text::eng": "¿Tal vez pueda empezar la tarea un poco antes?\n",
+      "character_3_id": "f3_madre",
+      "character_3_text::eng": "¡Es una gran idea! ¿Qué tal si establecemos la regla de que empieces la tarea media hora después de que llegues a casa? ¡Así podrás terminarla y también tendrás tiempo para relajarte antes de ir a dormir! Estaré encantada de ayudarte cuando lo necesites.\n",
+      "character_4_id": "f3_hija_12",
+      "character_4_text::eng": "¡Está bien!"
+    },
+    {
+      "id": "explore_3",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/solve_problems_teen_3.svg",
+      "character_1_id": "f3_madre",
+      "character_1_text::eng": "@data.characters.f3_hija_12.name, está sonando la alarma para empezar la tarea.\n¿Ya la empezaste?",
+      "character_2_id": "f3_hija_12",
+      "character_2_text::eng": "Empezaré de una vez, ma. ¿Te puedo pedir ayuda con esta pregunta?",
+      "character_3_id": "f3_madre",
+      "character_3_text::eng": "Claro que sí."
+    },
+    {
+      "id": "explore_4",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/solve_problems_teen_4.svg",
+      "character_1_id": "f3_hija_12",
+      "character_1_text::eng": "Mira... ¡Esta noche me dormiré temprano!",
+      "character_2_id": "f3_madre",
+      "character_2_text::eng": "Qué bien, @data.characters.f3_hija_12.name. Gracias por colaborar conmigo en encontrar una solución que nos funcione. ¡Ahora sí estarás descansada para mañana!"
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Selecciona reproducir ▶️ para conocer los cuatro pasos para ayudar a tu adolescente a resolver un problema:\n\n1️⃣ CONOCER\n2️⃣ RESOLVER\n3️⃣ INTENTAR\n4️⃣ COMPROBAR",
+      "media_type": "youtube",
+      "youtube_gb_en_f": "https://www.youtube.com/watch?v=NRkcevEWAWo&list=PLSUp-fKSYJUbJGZ7OlCtJvOlLuEQ_2yTU&index=2",
+      "youtube_gb_en_m": "https://www.youtube.com/watch?v=dO6MEKZqe98&list=PLSUp-fKSYJUaKsN2uvn1RF4YTuCrfkPbT"
+    },
+    {
+      "id": "practical_tips_2",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Recuerda:",
+      "section_1_title::eng": "CONOCER",
+      "section_1_icon_asset": "images/icons/lightbulb_blue.png",
+      "section_1_text::eng": "✅ Expresa el problema con palabras. Describe el problema como si se lo estuvieras explicando a una persona desconocida.\n\n✅ Explícale a tu adolescente cuál es el problema. Recuerda que tu adolescente o tú NO son el problema. Enfócate en la situación.",
+      "section_2_title::eng": "RESOLVER",
+      "section_2_icon_asset": "images/icons/tick.svg",
+      "section_2_text::eng": "✅ En conjunto, piensen en posibles soluciones para este problema.\n\n✅ ¿Qué podrían hacer diferente en el futuro @fields.child_name o tú en esta misma situación?",
+      "section_3_title::eng": "INTENTAR",
+      "section_3_icon_asset": "images/icons/heart_filled_blue.png",
+      "section_3_text::eng": "✅ Escojan una solución en conjunto.\n\n✅ Inténtenlo la próxima vez que se encuentren en una situación similar.",
+      "section_4_title::eng": "COMPROBAR",
+      "section_4_icon_asset": "images/icons/trophy_blue.png",
+      "section_4_text::eng": "✅ Pregúntate: \"¿Funcionó?\"\n\n✅ Si la respuesta es sí, ¡súper!\n\n✅ Si no es así, habla con @fields.child_name sobre intentar otra solución para la próxima vez. Utiliza los 4 pasos para encontrar una solución nueva."
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "text_1_facilitator::eng": "**Actividad para casa** ⭐ \n\nHabla con tu adolescente sobre los cuatro pasos para resolver problemas y revisen la sesión juntos. \n\n¡Saber resolver problemas es una habilidad que podrán usar el resto de sus vidas!",
+      "quiz_1_question::eng": "¿Tienes tiempo para hacerlo hoy?",
+      "quiz_1_option_1_text::eng": "Sí",
+      "quiz_1_feedback_1::eng": "¡Maravilloso!",
+      "quiz_1_option_2_text::eng": "Lo intentaré",
+      "quiz_1_feedback_2::eng": "¡Maravilloso!",
+      "quiz_1_option_3_text::eng": "No",
+      "quiz_1_feedback_3::eng": "Está bien. Intenten repasar estos pasos en conjunto en algún momento de esta semana."
+    }
+  ]
+}

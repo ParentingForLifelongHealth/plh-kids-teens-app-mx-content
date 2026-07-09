@@ -1,0 +1,188 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "school_3to9_c_articles",
+  "data_list_name": "school_3to9_c_articles",
+  "status": "released",
+  "flow_subtype": "modules_school_3to9_c",
+  "module": "school_3to9_c",
+  "rows": [
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "nested": false,
+      "text_1_facilitator": "Esta sesión trata sobre construir una relación con la escuela de @fields.child_name y con sus maestras y maestros. 📖✨",
+      "_translations": {
+        "text_1_facilitator": {},
+        "text_2": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_feedback_1": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_feedback_2": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Esta sesión trata sobre construir una relación con la escuela de @fields.child_name y con sus maestras y maestros. 📖✨"
+        },
+        "text_2": {
+          "eng": "Conversar con las maestras y los maestros de @fields.child_name te ayudará a saber lo que @fields.child_name hace en la escuela. ⭐\n\n¡También sabrás qué tipo de cosas puedes hacer en casa con @fields.child_name para facilitar su aprendizaje y qué cosas puedes hacer tú para apoyar a @fields.child_name! 🎓"
+        },
+        "quiz_1_question": {
+          "eng": "📝 **¡Hagamos un ejercicio!**\n\n_Ejercicio no.1_\n\nSaber lo que @fields.child_name hace en la escuela no le ayudará a aprender."
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Verdadero"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "👀 ¡Ups! ¡Buen intento!\n\n💡 Si tienes una idea de lo que @fields.child_name está aprendiendo en la escuela, ¡podrás apoyarle a repasarlo y practicarlo en casa!"
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Falso"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "🎉 Estás en lo correcto.\n\n💡 Si tienes una idea de lo que @fields.child_name está aprendiendo en la escuela, ¡podrás apoyarle a repasarlo y practicarlo en casa!"
+        }
+      },
+      "text_2": "Conversar con las maestras y los maestros de @fields.child_name te ayudará a saber lo que @fields.child_name hace en la escuela. ⭐\n\n¡También sabrás qué tipo de cosas puedes hacer en casa con @fields.child_name para facilitar su aprendizaje y qué cosas puedes hacer tú para apoyar a @fields.child_name! 🎓",
+      "quiz_1_question": "📝 **¡Hagamos un ejercicio!**\n\n_Ejercicio no.1_\n\nSaber lo que @fields.child_name hace en la escuela no le ayudará a aprender.",
+      "quiz_1_option_1_text": "Verdadero",
+      "quiz_1_feedback_1": "👀 ¡Ups! ¡Buen intento!\n\n💡 Si tienes una idea de lo que @fields.child_name está aprendiendo en la escuela, ¡podrás apoyarle a repasarlo y practicarlo en casa!",
+      "quiz_1_option_2_text": "Falso",
+      "quiz_1_feedback_2": "🎉 Estás en lo correcto.\n\n💡 Si tienes una idea de lo que @fields.child_name está aprendiendo en la escuela, ¡podrás apoyarle a repasarlo y practicarlo en casa!"
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "media_type": "youtube",
+      "youtube_gb_en_f": "https://www.youtube.com/watch?v=lX5S_l2c5zk",
+      "youtube_gb_en_m": "https://www.youtube.com/watch?v=7nY8lx2zubs",
+      "nested": false,
+      "text_1_facilitator": "Selecciona reproducir ▶️ para aprender cuatro estrategias para involucrarte con la escuela de @fields.child_name y con lo que está aprendiendo:\n\n1️⃣ CONECTAR\n2️⃣ HACER PREGUNTAS\n3️⃣ PRACTICAR\n4️⃣ PROMOVER EL INVOLUCRAMIENTO",
+      "_translations": {
+        "text_1_facilitator": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Selecciona reproducir ▶️ para aprender cuatro estrategias para involucrarte con la escuela de @fields.child_name y con lo que está aprendiendo:\n\n1️⃣ CONECTAR\n2️⃣ HACER PREGUNTAS\n3️⃣ PRACTICAR\n4️⃣ PROMOVER EL INVOLUCRAMIENTO"
+        }
+      }
+    },
+    {
+      "id": "practical_tips_2",
+      "category_id": "practical_tips",
+      "section_1_icon_asset": "images/icons/diamond_blue.png",
+      "section_2_icon_asset": "images/icons/question_blue.png",
+      "section_3_icon_asset": "images/icons/trophy_blue.png",
+      "section_4_icon_asset": "images/icons/parent_child.svg",
+      "nested": false,
+      "text_1_facilitator": "Recuerda:",
+      "_translations": {
+        "text_1_facilitator": {},
+        "section_1_title": {},
+        "section_1_text": {},
+        "section_2_title": {},
+        "section_2_text": {},
+        "section_3_title": {},
+        "section_3_text": {},
+        "section_4_title": {},
+        "section_4_text": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Recuerda:"
+        },
+        "section_1_title": {
+          "eng": "CONECTAR"
+        },
+        "section_1_text": {
+          "eng": "👋 Asegúrate de conocer a las maestras y los maestros de @fields.child_name, ten su número de teléfono o el número de teléfono de la escuela a la mano.\n\n👂Cada que tengas la oportunidad de Conversar con la maestra o el maestro de @fields.child_name, pregúntale qué hace @fields.child_name en la escuela y qué puedes hacer para apoyar.\n\nTambién puedes preguntarle a la maestra o maestro qué piensa de tu niña o niño, y cómo se lleva con las demás personas,\n\n🔔 Déjale saber a la maestra o el maestro y a la escuela que estás disponible para recibir mensajes sobre cualquier situación relacionada con la escuela y el aprendizaje de @fields.child_name."
+        },
+        "section_2_title": {
+          "eng": "HACER PREGUNTAS"
+        },
+        "section_2_text": {
+          "eng": "👂 Pregúntale a @fields.child_name qué ha estado haciendo en la escuela.\n\n😃 ¿Hizo o vió algo que le llamó la atención? ¿Se interesó por algo en particular?\n\n👀 Fíjate en sus gustos e intereses. Hazle preguntas abiertas y habla sobre sus intereses. Puedes decir: \"🍞 ¿Qué fue lo que más te gustó de tu recreo?\" o \"✨ ¿Qué es lo que más te ha gustado de hoy?\""
+        },
+        "section_3_title": {
+          "eng": "PRACTICAR"
+        },
+        "section_3_text": {
+          "eng": "🎨 Si @fields.child_name ha estado haciendo algo en la escuela que puede hacer en casa, ¡ayúdale a practicarlo! Por ejemplo, si le gustó aprender de los colores en la escuela, pídele que encuentre todos los colores que pueda en la casa.\n\n📖 Si la escuela permite traer libros a casa, ¡léanlos juntos!\n\n💡¡Si algún tema se le está dificultando a @fields.child_name, intenta ayudarle a entender!"
+        },
+        "section_4_title": {
+          "eng": "PROMOVER EL INVOLUCRAMIENTO"
+        },
+        "section_4_text": {
+          "eng": "🚗 Si tienes tiempo, asiste a los eventos o reuniones en la escuela de @fields.child_name. Infórmate todo lo que puedas cuando asistas.\n\n⏰ ¡Si tienes tiempo, ofrécete como persona voluntaria para apoyar en las actividades de la escuela de @fields.child_name! Esto te ayudará a conocer la escuela, a su personal docente y a las demás madres, padres y personas cuidadoras. 😃"
+        }
+      },
+      "section_1_title": "CONECTAR",
+      "section_1_text": "👋 Asegúrate de conocer a las maestras y los maestros de @fields.child_name, ten su número de teléfono o el número de teléfono de la escuela a la mano.\n\n👂Cada que tengas la oportunidad de Conversar con la maestra o el maestro de @fields.child_name, pregúntale qué hace @fields.child_name en la escuela y qué puedes hacer para apoyar.\n\nTambién puedes preguntarle a la maestra o maestro qué piensa de tu niña o niño, y cómo se lleva con las demás personas,\n\n🔔 Déjale saber a la maestra o el maestro y a la escuela que estás disponible para recibir mensajes sobre cualquier situación relacionada con la escuela y el aprendizaje de @fields.child_name.",
+      "section_2_title": "HACER PREGUNTAS",
+      "section_2_text": "👂 Pregúntale a @fields.child_name qué ha estado haciendo en la escuela.\n\n😃 ¿Hizo o vió algo que le llamó la atención? ¿Se interesó por algo en particular?\n\n👀 Fíjate en sus gustos e intereses. Hazle preguntas abiertas y habla sobre sus intereses. Puedes decir: \"🍞 ¿Qué fue lo que más te gustó de tu recreo?\" o \"✨ ¿Qué es lo que más te ha gustado de hoy?\"",
+      "section_3_title": "PRACTICAR",
+      "section_3_text": "🎨 Si @fields.child_name ha estado haciendo algo en la escuela que puede hacer en casa, ¡ayúdale a practicarlo! Por ejemplo, si le gustó aprender de los colores en la escuela, pídele que encuentre todos los colores que pueda en la casa.\n\n📖 Si la escuela permite traer libros a casa, ¡léanlos juntos!\n\n💡¡Si algún tema se le está dificultando a @fields.child_name, intenta ayudarle a entender!",
+      "section_4_title": "PROMOVER EL INVOLUCRAMIENTO",
+      "section_4_text": "🚗 Si tienes tiempo, asiste a los eventos o reuniones en la escuela de @fields.child_name. Infórmate todo lo que puedas cuando asistas.\n\n⏰ ¡Si tienes tiempo, ofrécete como persona voluntaria para apoyar en las actividades de la escuela de @fields.child_name! Esto te ayudará a conocer la escuela, a su personal docente y a las demás madres, padres y personas cuidadoras. 😃"
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "nested": false,
+      "text_1_facilitator": "**Actividad para casa** ⭐ \n\nHabla con @fields.child_name sobre lo que están aprendiendo en la escuela en este momento.",
+      "_translations": {
+        "text_1_facilitator": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_feedback_1": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_option_3_text": {},
+        "quiz_1_feedback_3": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "**Actividad para casa** ⭐ \n\nHabla con @fields.child_name sobre lo que están aprendiendo en la escuela en este momento."
+        },
+        "quiz_1_question": {
+          "eng": "¿Pueden practicarlo en casa hoy? ⭐"
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Sí"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "¡Excelente! ¡Intenten practicar en casa lo que ya ha aprendido en la escuela! 😃"
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Lo intentaré"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "¡Genial! 😊 Date la oportunidad de probar esta idea cuando encuentres un momento adecuado. Cada intento es una oportunidad para aprender y crecer. 🌱"
+        },
+        "quiz_1_option_3_text": {
+          "eng": "No"
+        },
+        "quiz_1_feedback_3": {
+          "eng": "Entendemos. No siempre disponemos del tiempo adecuado para conversar de la escuela. La próxima vez, pregúntale sobre su día en la escuela, ¡aunque solo platiquen un par de minutos durante el día o durante la comida! 😃"
+        }
+      },
+      "quiz_1_question": "¿Pueden practicarlo en casa hoy? ⭐",
+      "quiz_1_option_1_text": "Sí",
+      "quiz_1_feedback_1": "¡Excelente! ¡Intenten practicar en casa lo que ya ha aprendido en la escuela! 😃",
+      "quiz_1_option_2_text": "Lo intentaré",
+      "quiz_1_feedback_2": "¡Genial! 😊 Date la oportunidad de probar esta idea cuando encuentres un momento adecuado. Cada intento es una oportunidad para aprender y crecer. 🌱",
+      "quiz_1_option_3_text": "No",
+      "quiz_1_feedback_3": "Entendemos. No siempre disponemos del tiempo adecuado para conversar de la escuela. La próxima vez, pregúntale sobre su día en la escuela, ¡aunque solo platiquen un par de minutos durante el día o durante la comida! 😃"
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "data/Copy of PA modules - learn (44 - 64).xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1IqfQ4wjAXs-D2eT6VlDhz_yoVAyOVKvmRgiDZLpapoI"
+  },
+  "_metadata": {
+    "nested": {
+      "type": "boolean"
+    }
+  }
+}

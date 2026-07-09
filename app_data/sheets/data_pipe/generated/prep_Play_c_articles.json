@@ -1,0 +1,75 @@
+{
+  "flow_name": "prep_Play_c_articles",
+  "flow_subtype": "generated",
+  "flow_type": "data_pipe",
+  "rows": [
+    {
+      "operation": "filter",
+      "args_list": [
+        "id == \"relax_1\""
+      ],
+      "input_source": "relax"
+    },
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "category_id: relax",
+        "nested: FALSE"
+      ],
+      "output_target": "Play_c_relax | local_only;"
+    },
+    {
+      "operation": "filter",
+      "args_list": [
+        "id == \"check_in_61\""
+      ],
+      "input_source": "check_in"
+    },
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "category_id: check_in",
+        "nested: FALSE"
+      ],
+      "output_target": "Play_c_check_in | local_only;"
+    },
+    {
+      "operation": "filter",
+      "args_list": [
+        "!nested"
+      ],
+      "input_source": "Play_c_articles",
+      "output_target": "Play_c_testing | local_only;"
+    },
+    {
+      "operation": "concat",
+      "args_list": [
+        "Play_c_relax",
+        "Play_c_check_in",
+        "Play_c_testing"
+      ],
+      "input_source": false
+    },
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "completed: FALSE"
+      ],
+      "output_target": "Play_c_article_tasks"
+    },
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "version: 1"
+      ],
+      "output_target": "Play_c_article_tasks"
+    }
+  ],
+  "_output_flows": [
+    {
+      "flow_name": "Play_c_article_tasks",
+      "flow_subtype": "generated",
+      "flow_type": "data_list"
+    }
+  ]
+}

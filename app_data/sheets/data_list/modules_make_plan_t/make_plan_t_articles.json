@@ -1,0 +1,280 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "make_plan_t_articles",
+  "data_list_name": "make_plan_t_articles",
+  "status": "released",
+  "flow_subtype": "modules_make_plan_t",
+  "module": "make_plan_t",
+  "rows": [
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "nested": false,
+      "text_1_facilitator": "En esta sesión, seguirás aprendiendo formas de regular el estrés al hacer un plan por adelantado. Es común que las madres, padres y personas cuidadoras sientan estrés o que no pueden con más cuando tienen tanto que hacer todos los días.",
+      "_translations": {
+        "text_1_facilitator": {},
+        "text_2": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "En esta sesión, seguirás aprendiendo formas de regular el estrés al hacer un plan por adelantado. Es común que las madres, padres y personas cuidadoras sientan estrés o que no pueden con más cuando tienen tanto que hacer todos los días."
+        },
+        "text_2": {
+          "eng": "Crear un plan para cuando estés en una situación que te genera estrés puede ayudarte a planificar y gestionar las situaciones estresantes cuando se produzcan.\n\nEl estrés es parte de la vida y no necesariamente es malo. Es normal sentir estrés porque la vida a veces tiene dificultades y eso nos hace sentir tensos. Debemos prestar atención para regularlo mejor."
+        }
+      },
+      "text_2": "Crear un plan para cuando estés en una situación que te genera estrés puede ayudarte a planificar y gestionar las situaciones estresantes cuando se produzcan.\n\nEl estrés es parte de la vida y no necesariamente es malo. Es normal sentir estrés porque la vida a veces tiene dificultades y eso nos hace sentir tensos. Debemos prestar atención para regularlo mejor."
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
+      "image_asset": "images/comic/understand/make_plan_teen_1.svg",
+      "character_1_id": "f1_padre",
+      "nested": false,
+      "text_1_facilitator": "@data.characters.f1_padre.name se siente estresado por todas las cosas que tiene que hacer. Veamos cómo @data.characters.f1_padre.name crea un plan:",
+      "_translations": {
+        "text_1_facilitator": {},
+        "character_1_text": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "@data.characters.f1_padre.name se siente estresado por todas las cosas que tiene que hacer. Veamos cómo @data.characters.f1_padre.name crea un plan:"
+        },
+        "character_1_text": {
+          "eng": "¡Tengo demasiadas cosas que hacer! @data.characters.f1_hijo_5.name está enfermo y @data.characters.f1_hija_13.name necesita ayuda en su proyecto para la escuela. ¡¿Cómo le voy a hacer?!"
+        }
+      },
+      "character_1_text": "¡Tengo demasiadas cosas que hacer! @data.characters.f1_hijo_5.name está enfermo y @data.characters.f1_hija_13.name necesita ayuda en su proyecto para la escuela. ¡¿Cómo le voy a hacer?!"
+    },
+    {
+      "id": "explore_2",
+      "category_id": "explore",
+      "image_asset": "images/comic/understand/make_plan_teen_2.svg",
+      "character_1_id": "f1_padre",
+      "nested": false,
+      "character_1_text": "Primero haré una pausa y voy a respirar profundo.",
+      "_translations": {
+        "character_1_text": {}
+      },
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "Primero haré una pausa y voy a respirar profundo."
+        }
+      }
+    },
+    {
+      "id": "explore_3",
+      "category_id": "explore",
+      "image_asset": "images/comic/understand/make_plan_teen_3.svg",
+      "character_1_id": "f1_padre",
+      "nested": false,
+      "character_1_text": "Bien, voy a escribir todo lo que tengo que hacer. Tengo que comprar la medicina de @data.characters.f1_hijo_5.name. Tengo que pagar los recibos y las cuentas que llegaron. También me falta limpiar la casa y ayudar a @data.characters.f1_hija_13.name con su proyecto. Además, le tengo que avisar a la maestra de @data.characters.f1_hijo_5.name que mañana no irá a clases.",
+      "_translations": {
+        "character_1_text": {}
+      },
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "Bien, voy a escribir todo lo que tengo que hacer. Tengo que comprar la medicina de @data.characters.f1_hijo_5.name. Tengo que pagar los recibos y las cuentas que llegaron. También me falta limpiar la casa y ayudar a @data.characters.f1_hija_13.name con su proyecto. Además, le tengo que avisar a la maestra de @data.characters.f1_hijo_5.name que mañana no irá a clases."
+        }
+      }
+    },
+    {
+      "id": "explore_4",
+      "category_id": "explore",
+      "image_asset": "images/comic/understand/make_plan_teen_4.svg",
+      "character_1_id": "f1_padre",
+      "nested": false,
+      "character_1_text": "Mmm... es demasiado lo que me falta por hacer. ¿Qué es lo más importante de todo esto? Ayudar a mi adolescente es lo más importante. Los recibos no vencen hasta finales de esta semana y puedo limpiar otro día.",
+      "_translations": {
+        "character_1_text": {}
+      },
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "Mmm... es demasiado lo que me falta por hacer. ¿Qué es lo más importante de todo esto? Ayudar a mi adolescente es lo más importante. Los recibos no vencen hasta finales de esta semana y puedo limpiar otro día."
+        }
+      }
+    },
+    {
+      "id": "explore_5",
+      "category_id": "explore",
+      "image_asset": "images/comic/understand/make_plan_teen_5.svg",
+      "character_1_id": "f1_padre",
+      "nested": false,
+      "character_1_text": "Fuera de esto, tengo que asegurarme de que @data.characters.f1_hijo_5.name  reciba la atención que necesita, así que eso es lo primero que haré. Una vez que termine, buscaré a @data.characters.f1_hija_13.name para ver en qué la puedo ayudar.",
+      "_translations": {
+        "character_1_text": {}
+      },
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "Fuera de esto, tengo que asegurarme de que @data.characters.f1_hijo_5.name  reciba la atención que necesita, así que eso es lo primero que haré. Una vez que termine, buscaré a @data.characters.f1_hija_13.name para ver en qué la puedo ayudar."
+        }
+      }
+    },
+    {
+      "id": "explore_6",
+      "category_id": "explore",
+      "image_asset": "images/comic/understand/make_plan_teen_6.svg",
+      "character_1_id": "f1_padre",
+      "character_2_id": "f1_padre",
+      "nested": false,
+      "character_1_text": "Limpiaré lo que pueda de la cocina en 10 minutos para estar relajado mientras hago la comida, pero dejaré lo que haga falta de limpieza para otro día. ¡Anotaré lo de los pagos para hacerlos mañana por la tarde para que no se me olvide!",
+      "_translations": {
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "Limpiaré lo que pueda de la cocina en 10 minutos para estar relajado mientras hago la comida, pero dejaré lo que haga falta de limpieza para otro día. ¡Anotaré lo de los pagos para hacerlos mañana por la tarde para que no se me olvide!"
+        },
+        "character_2_text": {
+          "eng": "Un paso a la vez. ¡Sí puedo hacerlo!"
+        }
+      },
+      "character_2_text": "Un paso a la vez. ¡Sí puedo hacerlo!"
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "media_type": "youtube",
+      "youtube_gb_en_f": "https://www.youtube.com/watch?v=jnLXAxx9eQw",
+      "nested": false,
+      "text_1_facilitator": "Selecciona reproducir ▶️ para aprender 5️⃣ estrategias que te ayudarán a elaborar un plan cuando estés en situaciones que te generen estrés porque tienes demasiadas cosas que hacer:\n\n1️⃣ ESCRIBIR O DIBUJAR\n2️⃣ DECIDIR\n3️⃣ PRIORIZAR Y CLASIFICAR\n4️⃣ DIVIDIR\n5️⃣ TOMARLO UN PASO A LA VEZ",
+      "_translations": {
+        "text_1_facilitator": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Selecciona reproducir ▶️ para aprender 5️⃣ estrategias que te ayudarán a elaborar un plan cuando estés en situaciones que te generen estrés porque tienes demasiadas cosas que hacer:\n\n1️⃣ ESCRIBIR O DIBUJAR\n2️⃣ DECIDIR\n3️⃣ PRIORIZAR Y CLASIFICAR\n4️⃣ DIVIDIR\n5️⃣ TOMARLO UN PASO A LA VEZ"
+        }
+      }
+    },
+    {
+      "id": "practical_tips_2",
+      "category_id": "practical_tips",
+      "section_1_icon_asset": "images/icons/pencil.svg",
+      "section_2_icon_asset": "images/icons/star_filled_blue.png",
+      "section_3_icon_asset": "images/icons/balance_blue.png",
+      "section_4_icon_asset": "images/icons/lightbulb_blue.png",
+      "section_5_icon_asset": "images/icons/diamond_blue.png",
+      "nested": false,
+      "text_1_facilitator": "Recuerda:",
+      "_translations": {
+        "text_1_facilitator": {},
+        "section_1_title": {},
+        "section_1_text": {},
+        "section_2_title": {},
+        "section_2_text": {},
+        "section_3_title": {},
+        "section_3_text": {},
+        "section_4_title": {},
+        "section_4_text": {},
+        "section_5_title": {},
+        "section_5_text": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Recuerda:"
+        },
+        "section_1_title": {
+          "eng": "ESCRIBIR O DIBUJAR"
+        },
+        "section_1_text": {
+          "eng": "-Agarra un pedazo de papel, un cuaderno, o cualquier cosa en la que puedas escribir, y una pluma. \n\n-Tómate unos minutos para plasmar todas las cosas que tienes que hacer hoy o a lo largo de esta semana. \n\n-Asegúrate de incluir todo lo que se te vaya ocurriendo, cosas como ir al súper, ayudar a tu niña, niño o adolescente con la tarea o ir al doctor."
+        },
+        "section_2_title": {
+          "eng": "DECIDIR"
+        },
+        "section_2_text": {
+          "eng": "-Mira tu lista.  \n\n-Pregúntate, ¿cuáles de estas cosas son urgentes o realmente importantes?  \n\n-Pon una estrella junto a ellas.  \n\n-Estas son las cosas en las que debes enfocarte primero para asegurarte de que no olvidas nada importante."
+        },
+        "section_3_title": {
+          "eng": "PRIORIZAR Y CLASIFICAR"
+        },
+        "section_3_text": {
+          "eng": "-De todas las tareas a las que has puesto una marca, ¿cuál es la más importante o la que hay que hacer primero? Ponle el número 1.\n\n-Después, checa las demás actividades de tu lista y decide cuál es la siguiente.\n\n-Sigue así hasta que le hayas asignado un número a todas las actividades que tengan una marca a lado."
+        },
+        "section_4_title": {
+          "eng": "DIVIDIR"
+        },
+        "section_4_text": {
+          "eng": "-Si alguna de las actividades urgentes o importantes te sigue haciendo sentir estrés o que no puedes hacerla, puede que sea demasiado grande para hacerla de un jalón.\n\n-¡Está bien! Puedes facilitarlo al dividir la actividad en pasos más pequeños.\n\n-Por ejemplo, si tienes que limpiar tu casa. ¡Eso puede parecer mucho trabajo! Pero si lo divides, como limpiar una habitación a la vez, es mucho más fácil.\n\n-Al dividir la tarea en partes más pequeñas, es más fácil trabajar en ella y no resulta tan abrumadora. Puedes centrarte en cada pequeño paso y eso hará que toda la tarea parezca más factible."
+        },
+        "section_5_title": {
+          "eng": "TOMARLO UN PASO A LA VEZ"
+        },
+        "section_5_text": {
+          "eng": "-Empieza por la primera actividad de tu lista.  \n\nCuando la completes, pasa a la siguiente.  \n\n-Esto te ayuda a centrarte primero en las cosas más importantes y a asegurarte de que no se te olvida nada. \n\n-De vez en cuando, tómate un momento para revisar tu plan. Comprueba si ha cambiado algo o si han surgido cosas nuevas."
+        }
+      },
+      "section_1_title": "ESCRIBIR O DIBUJAR",
+      "section_1_text": "-Agarra un pedazo de papel, un cuaderno, o cualquier cosa en la que puedas escribir, y una pluma. \n\n-Tómate unos minutos para plasmar todas las cosas que tienes que hacer hoy o a lo largo de esta semana. \n\n-Asegúrate de incluir todo lo que se te vaya ocurriendo, cosas como ir al súper, ayudar a tu niña, niño o adolescente con la tarea o ir al doctor.",
+      "section_2_title": "DECIDIR",
+      "section_2_text": "-Mira tu lista.  \n\n-Pregúntate, ¿cuáles de estas cosas son urgentes o realmente importantes?  \n\n-Pon una estrella junto a ellas.  \n\n-Estas son las cosas en las que debes enfocarte primero para asegurarte de que no olvidas nada importante.",
+      "section_3_title": "PRIORIZAR Y CLASIFICAR",
+      "section_3_text": "-De todas las tareas a las que has puesto una marca, ¿cuál es la más importante o la que hay que hacer primero? Ponle el número 1.\n\n-Después, checa las demás actividades de tu lista y decide cuál es la siguiente.\n\n-Sigue así hasta que le hayas asignado un número a todas las actividades que tengan una marca a lado.",
+      "section_4_title": "DIVIDIR",
+      "section_4_text": "-Si alguna de las actividades urgentes o importantes te sigue haciendo sentir estrés o que no puedes hacerla, puede que sea demasiado grande para hacerla de un jalón.\n\n-¡Está bien! Puedes facilitarlo al dividir la actividad en pasos más pequeños.\n\n-Por ejemplo, si tienes que limpiar tu casa. ¡Eso puede parecer mucho trabajo! Pero si lo divides, como limpiar una habitación a la vez, es mucho más fácil.\n\n-Al dividir la tarea en partes más pequeñas, es más fácil trabajar en ella y no resulta tan abrumadora. Puedes centrarte en cada pequeño paso y eso hará que toda la tarea parezca más factible.",
+      "section_5_title": "TOMARLO UN PASO A LA VEZ",
+      "section_5_text": "-Empieza por la primera actividad de tu lista.  \n\nCuando la completes, pasa a la siguiente.  \n\n-Esto te ayuda a centrarte primero en las cosas más importantes y a asegurarte de que no se te olvida nada. \n\n-De vez en cuando, tómate un momento para revisar tu plan. Comprueba si ha cambiado algo o si han surgido cosas nuevas."
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "nested": false,
+      "text_1_facilitator": "**Actividad para casa** ⭐ \n\nUsa estas estrategias para crear un plan que te ayude a hacer todas las cosas que tienes que hacer hoy o en la semana.",
+      "_translations": {
+        "text_1_facilitator": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_feedback_1": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_option_3_text": {},
+        "quiz_1_feedback_3": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "**Actividad para casa** ⭐ \n\nUsa estas estrategias para crear un plan que te ayude a hacer todas las cosas que tienes que hacer hoy o en la semana."
+        },
+        "quiz_1_question": {
+          "eng": "¿Puedes hacerlo hoy?"
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Sí"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "¡Maravilloso!"
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Lo intentaré"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "¡Maravilloso!"
+        },
+        "quiz_1_option_3_text": {
+          "eng": "No"
+        },
+        "quiz_1_feedback_3": {
+          "eng": "¡Está bien, no pasa nada! Puedes intentarlo mañana."
+        }
+      },
+      "quiz_1_question": "¿Puedes hacerlo hoy?",
+      "quiz_1_option_1_text": "Sí",
+      "quiz_1_feedback_1": "¡Maravilloso!",
+      "quiz_1_option_2_text": "Lo intentaré",
+      "quiz_1_feedback_2": "¡Maravilloso!",
+      "quiz_1_option_3_text": "No",
+      "quiz_1_feedback_3": "¡Está bien, no pasa nada! Puedes intentarlo mañana."
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "data/Copy of PA modules - understand (65 - 75).xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1H1ZvymOlbQhNushjqQZwk1WiPb9sHuUQ2Ql1Gja34U4"
+  },
+  "_metadata": {
+    "nested": {
+      "type": "boolean"
+    }
+  }
+}

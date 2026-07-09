@@ -1,0 +1,31 @@
+{
+  "flow_type": "generator",
+  "flow_name": "safe_2to5_yc_f_article_gen",
+  "status": "released",
+  "parameter_list": {
+    "input_data_list": "safe_2to5_yc_f_articles",
+    "output_flow_name": "article_safe_2to5_yc_f_@gen.id",
+    "output_flow_type": "template"
+  },
+  "module_id": "safe_2to5_yc_f",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "article",
+      "value": "article",
+      "action_list": "completed | emit: completed; uncompleted | emit: uncompleted"
+    },
+    {
+      "name": "article_id",
+      "value": "@gen.id"
+    },
+    {
+      "name": "module_id",
+      "value": "safe_2to5_yc_f",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

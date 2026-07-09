@@ -1,0 +1,225 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "fun_l_7to9_c_articles",
+  "data_list_name": "fun_l_7to9_c_articles",
+  "status": "released",
+  "flow_subtype": "modules_fun_l_7to9_c",
+  "module": "fun_l_7to9_c",
+  "rows": [
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "nested": false,
+      "text_1_facilitator": "Esta sesión trata sobre cómo ayudar a @fields.child_name a disfrutar de su aprendizaje para que sea algo que le guste y le divierta. 😃",
+      "_translations": {
+        "text_1_facilitator": {},
+        "text_2": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Esta sesión trata sobre cómo ayudar a @fields.child_name a disfrutar de su aprendizaje para que sea algo que le guste y le divierta. 😃"
+        },
+        "text_2": {
+          "eng": "Tú desempeñas un papel importante en cómo @fields.child_name aprende y se desarrolla dentro y fuera de la escuela."
+        }
+      },
+      "text_2": "Tú desempeñas un papel importante en cómo @fields.child_name aprende y se desarrolla dentro y fuera de la escuela."
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
+      "image_asset": "images/comic/learn/fun_learning_7to9_yc_1.svg",
+      "character_1_id": "f3_madre",
+      "character_2_id": "f3_hija_7",
+      "nested": false,
+      "text_1_facilitator": "Aquí tienes una historieta que trata sobre cómo divertirte con tu niña o niño mientras aprenden",
+      "_translations": {
+        "text_1_facilitator": {},
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Aquí tienes una historieta que trata sobre cómo divertirte con tu niña o niño mientras aprenden"
+        },
+        "character_1_text": {
+          "eng": "@data.characters.f3_hija_7.name, ¿qué pasa?"
+        },
+        "character_2_text": {
+          "eng": "Ya no quiero hacer la tarea. ¡Odio la escuela!"
+        }
+      },
+      "character_1_text": "@data.characters.f3_hija_7.name, ¿qué pasa?",
+      "character_2_text": "Ya no quiero hacer la tarea. ¡Odio la escuela!"
+    },
+    {
+      "id": "explore_2",
+      "category_id": "explore",
+      "image_asset": "images/comic/learn/fun_learning_7to9_yc_2.svg",
+      "character_1_id": "f3_madre",
+      "nested": false,
+      "character_1_text": "Entiendo que hacer la tarea puede ser muy estresante. Tómate un descanso y ¡vamos a bailar tantito! ¡Esto siempre me ayudaba a sentirme con energía y preparada para hacer y terminar lo que tenía que pendiente!",
+      "_translations": {
+        "character_1_text": {}
+      },
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "Entiendo que hacer la tarea puede ser muy estresante. Tómate un descanso y ¡vamos a bailar tantito! ¡Esto siempre me ayudaba a sentirme con energía y preparada para hacer y terminar lo que tenía que pendiente!"
+        }
+      }
+    },
+    {
+      "id": "explore_3",
+      "category_id": "explore",
+      "image_asset": "images/comic/learn/fun_learning_7to9_yc_3.svg",
+      "nested": false,
+      "text_2": "🎵 Suena la música 🎵",
+      "_translations": {
+        "text_2": {}
+      },
+      "_translatedFields": {
+        "text_2": {
+          "eng": "🎵 Suena la música 🎵"
+        }
+      }
+    },
+    {
+      "id": "explore_4",
+      "category_id": "explore",
+      "image_asset": "images/comic/learn/fun_learning_7to9_yc_4.svg",
+      "character_1_id": "f3_madre",
+      "nested": false,
+      "character_1_text": "Bien… ¿Lista? Ahora que tenemos algo de energía vamos a intentarlo de nuevo. ¿Qué es lo que te está molestando de la escuela?",
+      "_translations": {
+        "character_1_text": {}
+      },
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "Bien… ¿Lista? Ahora que tenemos algo de energía vamos a intentarlo de nuevo. ¿Qué es lo que te está molestando de la escuela?"
+        }
+      }
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "media_type": "youtube",
+      "youtube_gb_en_f": "https://www.youtube.com/watch?v=dX2AUx39W-E",
+      "nested": false,
+      "text_1_facilitator": "¡Selecciona reproducir ▶️ para ver cómo apoyar a @fields.child_name para que disfrute de su aprendizaje!\n\n1️⃣ JUGAR\n2️⃣ UTILIZAR PALABRAS AFIRMATIVAS\n3️⃣ PERMITIR LA CREATIVIDAD",
+      "_translations": {
+        "text_1_facilitator": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "¡Selecciona reproducir ▶️ para ver cómo apoyar a @fields.child_name para que disfrute de su aprendizaje!\n\n1️⃣ JUGAR\n2️⃣ UTILIZAR PALABRAS AFIRMATIVAS\n3️⃣ PERMITIR LA CREATIVIDAD"
+        }
+      }
+    },
+    {
+      "id": "practical_tips_2",
+      "category_id": "practical_tips",
+      "section_1_icon_asset": "images/icons/football_blue.png",
+      "section_2_icon_asset": "images/icons/tick.svg",
+      "section_3_icon_asset": "images/icons/star_filled_blue.png",
+      "nested": false,
+      "text_1_facilitator": "Recuerda:",
+      "_translations": {
+        "text_1_facilitator": {},
+        "section_1_title": {},
+        "section_1_text": {},
+        "section_2_title": {},
+        "section_2_text": {},
+        "section_3_title": {},
+        "section_3_text": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Recuerda:"
+        },
+        "section_1_title": {
+          "eng": "JUGAR"
+        },
+        "section_1_text": {
+          "eng": "🌱 Darle a @fields.child_name tiempo para divertirse y ser feliz mejora su salud física y mental, ¡además de su capacidad para aprender y recordar datos importantes!\n\n⚽ ¡Pónganse a jugar!\n\n⏰ Si @fields.child_name empieza a sentir estrés por algo que haya pasado en su día, ayúdale a reducir la sensación haciendo una pausa de manera consciente o haciendo algo divertido juntos.\n\n💡 Incorpora los intereses de @fields.child_name en su aprendizaje, esto despertará su curiosidad."
+        },
+        "section_2_title": {
+          "eng": "UTILIZAR PALABRAS AFIRMATIVAS"
+        },
+        "section_2_text": {
+          "eng": "Pocas niñas y niños disfrutan hacer la tarea. Puedes empatizar con su frustración, pero recuérdales por qué es importante hacerla: refuerza lo que han aprendido en la escuela y les enseña a gestionar su tiempo sabiamente.\n\n😃 Anima, reconoce a @fields.child_name cuando esté aprendiendo algo."
+        },
+        "section_3_title": {
+          "eng": "PERMITIR LA CREATIVIDAD"
+        },
+        "section_3_text": {
+          "eng": "🎨 Permite que @fields.child_name exprese su creatividad mientras aprende algo nuevo. Por ejemplo, anima a @fields.child_name a dibujar o a salir al aire libre para mejorar su aprendizaje.\n \n✨ Si a @fields.child_name le interesa un tema nuevo, hablen sobre eso y anímale a que explore y averigüe más sobre el tema.\n\n💙 Da un buen ejemplo: Deja que @fields.child_name te vea explorando tu creatividad y haciendo cosas nuevas, aunque todavía no lo domines."
+        }
+      },
+      "section_1_title": "JUGAR",
+      "section_1_text": "🌱 Darle a @fields.child_name tiempo para divertirse y ser feliz mejora su salud física y mental, ¡además de su capacidad para aprender y recordar datos importantes!\n\n⚽ ¡Pónganse a jugar!\n\n⏰ Si @fields.child_name empieza a sentir estrés por algo que haya pasado en su día, ayúdale a reducir la sensación haciendo una pausa de manera consciente o haciendo algo divertido juntos.\n\n💡 Incorpora los intereses de @fields.child_name en su aprendizaje, esto despertará su curiosidad.",
+      "section_2_title": "UTILIZAR PALABRAS AFIRMATIVAS",
+      "section_2_text": "Pocas niñas y niños disfrutan hacer la tarea. Puedes empatizar con su frustración, pero recuérdales por qué es importante hacerla: refuerza lo que han aprendido en la escuela y les enseña a gestionar su tiempo sabiamente.\n\n😃 Anima, reconoce a @fields.child_name cuando esté aprendiendo algo.",
+      "section_3_title": "PERMITIR LA CREATIVIDAD",
+      "section_3_text": "🎨 Permite que @fields.child_name exprese su creatividad mientras aprende algo nuevo. Por ejemplo, anima a @fields.child_name a dibujar o a salir al aire libre para mejorar su aprendizaje.\n \n✨ Si a @fields.child_name le interesa un tema nuevo, hablen sobre eso y anímale a que explore y averigüe más sobre el tema.\n\n💙 Da un buen ejemplo: Deja que @fields.child_name te vea explorando tu creatividad y haciendo cosas nuevas, aunque todavía no lo domines."
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "nested": false,
+      "text_1_facilitator": "**Actividad para casa** ⭐ \n\nInvita a @fields.child_name a tomarse un pequeño descanso de la tarea y a hacer algo que requiera actividad física durante cinco minutos. \n\nPueden bailar, jugar algo, o salir a correr cerca de su casa. Interrumpir el trabajo académico le ayudará a recordar la información y la actividad física le mantendrá alerta para seguir estudiando.",
+      "_translations": {
+        "text_1_facilitator": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_feedback_1": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_option_3_text": {},
+        "quiz_1_feedback_3": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "**Actividad para casa** ⭐ \n\nInvita a @fields.child_name a tomarse un pequeño descanso de la tarea y a hacer algo que requiera actividad física durante cinco minutos. \n\nPueden bailar, jugar algo, o salir a correr cerca de su casa. Interrumpir el trabajo académico le ayudará a recordar la información y la actividad física le mantendrá alerta para seguir estudiando."
+        },
+        "quiz_1_question": {
+          "eng": "¿Tienes tiempo para hacerlo hoy? ⏰"
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Sí"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "¡Excelente! Usa las estrategias que has aprendido hoy y ¡diviértete! Sentir alegría y felicidad durante el aprendizaje con @fields.child_name es una forma estupenda de motivarle para seguir aprendiendo. 💙"
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Lo intentaré"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "¡Perfecto! 💙 Cuando estés listo o lista, intenta poner en práctica esta actividad. Recuerda que cada paso cuenta, por pequeño que parezca. ✨"
+        },
+        "quiz_1_option_3_text": {
+          "eng": "No"
+        },
+        "quiz_1_feedback_3": {
+          "eng": "¡De acuerdo! Si hoy no tienes tiempo, puedes apartar un poco para mañana."
+        }
+      },
+      "quiz_1_question": "¿Tienes tiempo para hacerlo hoy? ⏰",
+      "quiz_1_option_1_text": "Sí",
+      "quiz_1_feedback_1": "¡Excelente! Usa las estrategias que has aprendido hoy y ¡diviértete! Sentir alegría y felicidad durante el aprendizaje con @fields.child_name es una forma estupenda de motivarle para seguir aprendiendo. 💙",
+      "quiz_1_option_2_text": "Lo intentaré",
+      "quiz_1_feedback_2": "¡Perfecto! 💙 Cuando estés listo o lista, intenta poner en práctica esta actividad. Recuerda que cada paso cuenta, por pequeño que parezca. ✨",
+      "quiz_1_option_3_text": "No",
+      "quiz_1_feedback_3": "¡De acuerdo! Si hoy no tienes tiempo, puedes apartar un poco para mañana."
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "data/Copy of PA modules - learn (44 - 64).xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1IqfQ4wjAXs-D2eT6VlDhz_yoVAyOVKvmRgiDZLpapoI"
+  },
+  "_metadata": {
+    "nested": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "flow_type": "data_list",
+  "flow_subtype": "onboarding",
+  "flow_name": "onboarding_progress_bars",
+  "status": "released",
+  "rows": [
+    {
+      "id": "id_1",
+      "text": "Preparando todo para darte la mejor experiencia",
+      "colour": "var(--ion-color-primary-700)",
+      "timespan": 1000
+    },
+    {
+      "id": "id_2",
+      "text": "Conociendo mejor las necesidades de tu familia",
+      "colour": "var(--ion-color-red-400)",
+      "timespan": 1000
+    },
+    {
+      "id": "id_3",
+      "text": "Explorando recomendaciones de especialistas",
+      "colour": "var(--ion-color-primary-variant-400)",
+      "timespan": 1000
+    },
+    {
+      "id": "id_4",
+      "text": "Adaptando estas ideas a tu familia",
+      "colour": "var(--ion-color-secondary-600)",
+      "timespan": 1000
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "data/MX onboarding.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1VOolSeQCn71-GP1JbiDp2zqWg4ZZYqrtHIAjY7h4A-A"
+  },
+  "_metadata": {
+    "timespan": {
+      "type": "number"
+    }
+  }
+}

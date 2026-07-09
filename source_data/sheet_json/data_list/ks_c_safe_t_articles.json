@@ -1,0 +1,121 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "ks_c_safe_t_articles",
+  "data_list_name": "ks_c_safe_t_articles",
+  "status": "released",
+  "flow_subtype": "modules_ks_c_safe_t",
+  "module": "ks_c_safe_t",
+  "rows": [
+    {
+      "id": "@default",
+      "nested": false
+    },
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Madres, padres y personas cuidadoras de todo el mundo se preocupan por la seguridad de sus niñas, niños y adolescentes. ¡No eres la única persona pasando por esto!",
+      "quiz_1_question::eng": "📝 **¡Hagamos un ejercicio!**\n\n_Ejercicio no.1_\n\n¿Cuál de estos espacios sería un lugar en donde las niñas, los niños o adolescentes podrían estar cien por ciento seguros?",
+      "quiz_1_option_1_text::eng": "La casa",
+      "quiz_1_feedback_1::eng": "👀 ¡Ups! ¡Buen intento!\n\n🔴 Tu adolescente podría sufrir daños en cualquiera de estos lugares, incluso en la casa. Es nuestra responsabilidad, como sus figuras protectoras, ayudarles a aprender a evitar situaciones difíciles o a saber qué hacer para alejarse y salvar sus propias vidas dondequiera que estén.",
+      "quiz_1_option_2_text::eng": "La casa de una amiga o amigo",
+      "quiz_1_feedback_2::eng": "👀 ¡Ups! ¡Buen intento!\n\n🔴 Tu adolescente podría sufrir daños en cualquiera de estos lugares, incluso en la casa de una amiga o amigo. Es nuestra responsabilidad, como sus figuras protectoras, ayudarles a aprender a evitar situaciones difíciles o a saber qué hacer para alejarse y salvar sus propias vidas dondequiera que estén.",
+      "quiz_1_option_3_text::eng": "La escuela",
+      "quiz_1_feedback_3::eng": "👀 ¡Ups! ¡Buen intento!\n\n🔴 Tu adolescente podría sufrir daños en cualquiera de estos lugares, incluso en la escuela. Es nuestra responsabilidad, como sus figuras protectoras, ayudarles a aprender a evitar situaciones difíciles o a saber qué hacer para alejarse y salvar sus propias vidas dondequiera que estén.",
+      "quiz_1_option_4_text::eng": "La iglesia",
+      "quiz_1_feedback_4::eng": "👀 ¡Ups! ¡Buen intento!\n\n🔴 Tu adolescente podría sufrir daños en cualquiera de estos lugares, incluso en la iglesia. Es nuestra responsabilidad, como sus figuras protectoras, ayudarles a aprender a evitar situaciones difíciles o a saber qué hacer para alejarse y salvar sus propias vidas dondequiera que estén.",
+      "quiz_1_option_5_text::eng": "Una clínica",
+      "quiz_1_feedback_5::eng": "👀 ¡Ups! ¡Buen intento!\n\n🔴 Tu adolescente podría sufrir daños en cualquiera de estos lugares, incluso en una clínica. Es nuestra responsabilidad, como sus figuras protectoras, ayudarles a aprender a evitar situaciones difíciles o a saber qué hacer para alejarse y salvar sus propias vidas dondequiera que estén.",
+      "quiz_1_option_6_text::eng": "El parque",
+      "quiz_1_feedback_6::eng": "👀 ¡Ups! ¡Buen intento!\n\n🔴 Tu adolescente podría sufrir daños en cualquiera de estos lugares, incluso en el parque. Es nuestra responsabilidad, como sus figuras protectoras, ayudarles a aprender a evitar situaciones difíciles o a saber qué hacer para alejarse y salvar sus propias vidas dondequiera que estén.",
+      "quiz_1_option_7_text::eng": "Un bar",
+      "quiz_1_feedback_7::eng": "👀 ¡Ups! ¡Buen intento!\n\n🔴 Tu adolescente podría sufrir daños en cualquiera de estos lugares, incluso en un bar. Es nuestra responsabilidad, como sus figuras protectoras, ayudarles a aprender a evitar situaciones difíciles o a saber qué hacer para alejarse y salvar sus propias vidas dondequiera que estén.",
+      "quiz_1_option_8_text::eng": "Ninguna de las anteriores",
+      "quiz_1_feedback_8::eng": "🎉  Tienes razón.\n\n🔴 Tu adolescente podría sufrir daños en cualquiera de estos lugares, incluso en la casa o en algún espacio público. Es nuestra responsabilidad, como sus figuras protectoras, ayudarles a aprender a evitar situaciones difíciles o a saber qué hacer para alejarse y salvar sus propias vidas dondequiera que estén."
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "Vamos a ver cómo están @data.characters.f1_hija_16.name y su padre:",
+      "image_asset": "images/comic/safe/community_safety_teen_1.svg",
+      "character_1_id": "f1_hija_16",
+      "character_1_text::eng": "¡Algo pasó cuando salí con mis amigas  @data.characters.amiga_mujer_1.name y @data.characters.amiga_mujer_2.name!",
+      "character_2_id": "f1_padre",
+      "character_2_text::eng": "Hija, veo que estás temblando, me preocupa tu bienestar y estoy aquí para escucharte o ayudarte en lo que yo pueda. Si te sientes cómoda, ¿puedes contarme lo que pasó?"
+    },
+    {
+      "id": "explore_2",
+      "category_id": "explore",
+      "image_asset": "images/comic/safe/community_safety_teen_2.svg",
+      "character_1_id": "hombre_en_coche",
+      "character_1_text::eng": "Hola, guapa. Llevo un rato mirándote. Eres muy hermosa, ¿cómo te llamas?",
+      "character_2_id": "amiga_mujer_1",
+      "character_2_text::eng": "Se llama @data.characters.f1_hija_16.name"
+    },
+    {
+      "id": "explore_3",
+      "category_id": "explore",
+      "image_asset": "images/comic/safe/community_safety_teen_3.svg",
+      "character_1_id": "hombre_en_coche",
+      "character_1_text::eng": "@data.characters.f1_hija_16.name, ¿quieres venir conmigo por algo de tomar o a divertirte? Vente, súbete, te regresaré para que vuelvas a tiempo, te lo prometo…",
+      "character_2_id": "f1_hija_16",
+      "character_2_text::eng": "No estoy segura de que sea una buena idea…"
+    },
+    {
+      "id": "explore_4",
+      "category_id": "explore",
+      "image_asset": "images/comic/safe/community_safety_teen_4.svg",
+      "character_1_id": "amiga_mujer_1",
+      "character_1_text::eng": "Tienes suerte, amiga. Ojalá un hombre me invitara a salir y me comprara regalos. De una vez te digo que si no lo haces, le diré a todo el mundo que estás bien boba."
+    },
+    {
+      "id": "explore_5",
+      "category_id": "explore",
+      "image_asset": "images/comic/safe/community_safety_teen_5.svg",
+      "character_1_id": "amiga_mujer_2",
+      "character_1_text::eng": "@data.characters.f1_hija_16.name, ¡no vayas! ¡Ten cuidado! Mejor vámonos a la casa. Es peligroso ir con gente que no conoces. Además, es demasiado mayor para ti y lo que hace está mal.",
+      "character_2_id": "f1_hija_16",
+      "character_2_text::eng": "Es que no sé…"
+    },
+    {
+      "id": "explore_6",
+      "category_id": "explore",
+      "image_asset": "images/comic/safe/community_safety_teen_6.svg",
+      "character_1_id": "f1_padre",
+      "character_1_text::eng": "Uyyy, estoy tan orgulloso de tu decisión de no subirte al carro. Era una situación muy peligrosa. Entiendo por qué estás asustada y temblando. ¡Gracias por contármelo!"
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Una forma de mantener la seguridad de @fields.child_name es que en conjunto logren crear un mapa de seguridad. Identifiquen los lugares seguros, inseguros o peligrosos de su comunidad. 📖\n\nSelecciona reproducir ▶️ para aprender los tres pasos que te ayudarán a hacer un mapa de seguridad juntos:\n\n1️⃣DIBUJAR\n2️⃣DECIDIR\n3️⃣HABLAR",
+      "media_type": "youtube",
+      "youtube_gb_en_f": "https://www.youtube.com/watch?v=lHQqp6J5Qjs&list=PLSUp-fKSYJUZZOOl5bkBlhgCDSNhQ_GCg&index=5",
+      "youtube_gb_en_m": "https://www.youtube.com/watch?v=cOSojI5utyA"
+    },
+    {
+      "id": "practical_tips_2",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Recuerda:",
+      "section_1_title::eng": "DIBUJA",
+      "section_1_icon_asset": "images/icons/pencil.svg",
+      "section_1_text::eng": "📝 Dibuja un mapa de tu comunidad.\n\n🚩 Incluye los lugares principales de tu comunidad: calles, tu casa, la escuela, tiendas y lugares frecuentados por tu adolescente.",
+      "section_2_title::eng": "DECIDE",
+      "section_2_icon_asset": "images/icons/tick.svg",
+      "section_2_text::eng": "🔑 Platiquen sobre los lugares que aparecen en el mapa y decidan si son seguros o no.\n\n👂 Escucha a @fields.child_name: puede que sepa más de lo que crees sobre qué lugares son seguros, inseguros y peligrosos.\n\n🔵 ENCIERRA los lugares que son seguros para adolescentes.\n\n❌ TACHA los lugares que NO son seguros para adolescentes.",
+      "section_3_title::eng": "CONVERSA",
+      "section_3_icon_asset": "images/icons/speech_bubble_blue.png",
+      "section_3_text::eng": "❗ A veces, nos encontramos en apuros.\n\n👀 Comenten dónde pueden obtener apoyo tanto para ti como para @fields.child_name en caso de sentir inseguridad o estar en crisis. Estos lugares pueden ser el hogar, la escuela o una clínica.\n\n🚩 Marca, con claridad, estas zonas en tu mapa."
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "text_1_facilitator::eng": "**Actividad para casa** ⭐ \n\nDedica un tiempo juntos y conectados con @fields.child_name a crear un mapa de seguridad comunitaria siguiendo las estrategias revisadas.",
+      "quiz_1_question::eng": "¿Puedes hacerlo hoy? ",
+      "quiz_1_option_1_text::eng": "Sí",
+      "quiz_1_feedback_1::eng": "✨ ¡Increíble! Es una forma estupenda de fomentar la confianza con @fields.child_name y de mantener su seguridad.",
+      "quiz_1_option_2_text::eng": "Lo intentaré",
+      "quiz_1_feedback_2::eng": "¡Excelente! 😊 Cada pequeño intento cuenta. Cuando puedas, prueba esta actividad y fíjate cómo te hace sentir a ti y a tu familia. ✨",
+      "quiz_1_option_3_text::eng": "No",
+      "quiz_1_feedback_3::eng": "¡Está bien! Aparta una hora en los próximos días para trabajar en este mapa con tu adolescente. Es una forma estupenda de crear confianza entre ustedes y de mantenerles a salvo."
+    }
+  ]
+}

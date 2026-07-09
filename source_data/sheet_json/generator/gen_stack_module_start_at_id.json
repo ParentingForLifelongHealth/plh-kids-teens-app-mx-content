@@ -1,0 +1,71 @@
+{
+  "flow_type": "generator",
+  "flow_name": "gen_stack_module_start_at_id",
+  "status": "released",
+  "parameter_list": {
+    "input_data_list": "modules",
+    "output_flow_name": "stack_module_{@gen.id}_start_at_id",
+    "output_flow_type": "template"
+  },
+  "rows": [
+    {
+      "name": "not_comp_count",
+      "value": 0
+    },
+    {
+      "name": "module_id",
+      "value": "@gen.id"
+    },
+    {
+      "type": "data_items",
+      "name": "count_modules",
+      "value": "@data.module_tasks",
+      "action_list": "data_changed | set_local: not_comp_count: @items.length;",
+      "parameter_list": "filter: (@item.id !== @local.module_id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship));",
+      "exclude_from_translation": true,
+      "comments": "filter: (@item.id !== @gen.id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship)) ;"
+    },
+    {
+      "type": "text",
+      "value": "not comp: @local.not_comp_count",
+      "condition": false,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_data_items",
+      "name": "pick_random_locked_activity",
+      "value": "@data.activity_tasks",
+      "parameter_list": "filter: @item.locked && (@fields.child_age === undefined || !@item.child_age_list || ([].concat(@item.child_age_list)).map(x => String(x)).includes(String(@fields.child_age)));\nshuffle;\nlimit: 1;",
+      "exclude_from_translation": true,
+      "comments": "filter: @item.locked && (!@item.child_age_list || @item.child_age_list.includes(@fields.child_age));\nshuffle;\nlimit: 1;"
+    },
+    {
+      "type": "begin_template",
+      "name": "module_start_at_id",
+      "value": "module_start_at_id_get_unlock",
+      "action_list": "completed | set_data | _list_id: module_tasks, _id: @gen.id, unlocked_activity: TRUE;\ncompleted | set_field: latest_unlocked_activity: @item.id;\ncompleted | nav_stack: close_top; \ncompleted | pop_up: unlock_play | variant: plh_completion;\nuncompleted | nav_stack: close_top;"
+    },
+    {
+      "name": "activity_id",
+      "value": "@item.id"
+    },
+    {
+      "name": "module_id",
+      "value": "@gen.id"
+    },
+    {
+      "name": "course_id",
+      "value": "@gen.tag_course"
+    },
+    {
+      "name": "unlock_all",
+      "value": "@calc(@local.not_comp_count == 0)"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

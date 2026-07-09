@@ -1,0 +1,93 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "learn_mis_7to9_c_articles",
+  "data_list_name": "learn_mis_7to9_c_articles",
+  "status": "released",
+  "flow_subtype": "modules_learn_mis_7to9_c",
+  "module": "learn_mis_7to9_c",
+  "rows": [
+    {
+      "id": "@default",
+      "nested": false
+    },
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "La sesión de estrategias de crianza para el día de hoy trata sobre cómo ayudar a @fields.child_name a aprender de la experiencia.",
+      "text_2::eng": "Aprender de nuestros errores puede ayudar a evitarlos en el futuro. También puede ayudar a tratarnos con más empatía y con menos dureza cuando las cosas no van bien. 😃"
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "Aquí tienes una historieta sobre cómo aprender de los errores:",
+      "image_asset": "images/comic/learn/learning_mistakes_7to9_yc_1.svg",
+      "character_1_id": "f2_abuela",
+      "character_1_text::eng": "¿Qué pasó, @data.characters.f2_hijo_8.name?",
+      "character_2_id": "f2_hijo_8",
+      "character_2_text::eng": "Ay abue, lo que pasa es que no llevé mis materiales para dibujar a la escuela. Se  me olvidaron aquí en la casa."
+    },
+    {
+      "id": "explore_2",
+      "category_id": "explore",
+      "image_asset": "images/comic/learn/learning_mistakes_7to9_yc_2.svg",
+      "character_1_id": "f2_abuela",
+      "character_1_text::eng": "Eso es frustrante. Seguramente te sientes decepcionado.",
+      "character_2_id": "f2_hijo_8",
+      "character_2_text::eng": "Sí, y más porque pensé que tenía todo lo que necesitaba en mi mochila."
+    },
+    {
+      "id": "explore_3",
+      "category_id": "explore",
+      "image_asset": "images/comic/learn/learning_mistakes_7to9_yc_3.svg",
+      "character_1_id": "f2_abuela",
+      "character_1_text::eng": "Sé que te gustan mucho tus clases de dibujo. ¿Sabes qué fue lo que pasó? ¿Por qué no estaban tus materiales?",
+      "character_2_id": "f2_hijo_8",
+      "character_2_text::eng": "Estaba muy apurado metiendo todo a la mochila en la mañana. Creo que debería empezar a hacerla en la noche."
+    },
+    {
+      "id": "explore_4",
+      "category_id": "explore",
+      "image_asset": "images/comic/learn/learning_mistakes_7to9_yc_4.svg",
+      "character_1_id": "f2_abuela",
+      "character_1_text::eng": "Ah, bueno, al menos ahora ya sabes cómo prepararte mejor para la escuela. ¿Quieres que te lo recuerde esta noche?",
+      "character_2_id": "f2_hijo_8",
+      "character_2_text::eng": "Así está bien, abue. Lo recordaré. Gracias por entenderme."
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Selecciona reproducir ▶️ para ver cómo ayudar a @fields.child_name a aprender de la experiencia:\n\n1️⃣ CONVERSAR\n2️⃣ ELOGIAR EL ESFUERZO\n3️⃣ PERMITIR QUE LOS ERRORES SUCEDAN\n4️⃣ COMPARTIR",
+      "media_type": "youtube",
+      "youtube_gb_en_m": "https://www.youtube.com/watch?v=lNn8cOitnmQ"
+    },
+    {
+      "id": "practical_tips_2",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Recuerda:",
+      "section_1_title::eng": "CONVERSA",
+      "section_1_icon_asset": "images/icons/speech_bubble_blue.png",
+      "section_1_text::eng": "👂 Crea un espacio y aparta un tiempo para que @fields.child_name pueda Conversar contigo sobre su vida.\n\n💙 Si tuvo un día difícil, escucha con atención y dale un espacio en donde pueda compartir lo que siente y piensa.\n\n💛 Dale tu apoyo y demuéstrale que te importa. Dile: \"eso parece difícil\".",
+      "section_2_title::eng": "ELOGIA EL ESFUERZO",
+      "section_2_icon_asset": "images/icons/star_filled_blue.png",
+      "section_2_text::eng": "💛 Reconoce a @fields.child_name por el esfuerzo que invierte en su aprendizaje aunque no siempre cumpla su cometido.\n\n✨ El esfuerzo es más importante que el simple hecho de dominar una habilidad específica.",
+      "section_3_title::eng": "PERMITE QUE LOS ERRORES SUCEDAN",
+      "section_3_icon_asset": "images/icons/diamond_blue.png",
+      "section_3_text::eng": "🌱 Permite que @fields.child_name cometa errores. Deja que aprenda de sus propios errores para que pueda seguir aprendiendo y creciendo.\n\n❓ Es tentador querer resolverle todos los problemas a @fields.child_name, sobre todo cuando sabes cuáles podrían ser las soluciones. Pero esto no le enseñará a resolver sus propios problemas.\n\n😃 Habla con @fields.child_name sobre sus errores y permite que encuentre una forma de resolver sus problemas y hacerlo mejor para la próxima vez.",
+      "section_4_title::eng": "COMPARTE",
+      "section_4_icon_asset": "images/icons/parent_child.svg",
+      "section_4_text::eng": "📖 Intenta compartir tus propios fracasos con @fields.child_name y habla de cómo te ayudaron a desarrollarte y a crecer.\n\n✅ Esto le ayuda a tu niña o niño a entender que no tiene que ser una persona perfecta todo el tiempo. También, sabrá que puede Conversar contigo si algo sale mal."
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "text_1_facilitator::eng": "**Actividad para casa** ⭐ \n\nCuéntale a @fields.child_name sobre alguna ocasión en la que aprendiste de un error. Puede ser de la escuela o de otra sesión de vida que tuviste.",
+      "quiz_1_question::eng": "¿Tienes tiempo para hacerlo hoy? ⏰",
+      "quiz_1_option_1_text::eng": "Sí",
+      "quiz_1_feedback_1::eng": "¡Muy bien! 💡 Utiliza las estrategias que has aprendido hoy para ayudar a @fields.child_name a prepararse académicamente y saber enfrentarse a la vida.",
+      "quiz_1_option_2_text::eng": "Lo intentaré",
+      "quiz_1_feedback_2::eng": "¡Excelente decisión! 🌟 Cuando encuentres un momento adecuado, prueba esta actividad y observa qué funciona mejor para ti y tu familia. Recuerda que cada intento cuenta. ✨",
+      "quiz_1_option_3_text::eng": "No",
+      "quiz_1_feedback_3::eng": "¡Entendemos! Si hoy no tienes tiempo, puedes apartar un poco para mañana. ⏰"
+    }
+  ]
+}

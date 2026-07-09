@@ -1,0 +1,74 @@
+{
+  "flow_type": "template",
+  "flow_name": "library_essential_tool",
+  "status": "released",
+  "rows": [
+    {
+      "name": "module_id",
+      "value": "money_t",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "join",
+      "value": "_",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "this_module_subitem_list",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "all_modules_tips_list",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "debug_1",
+      "value": "@local.this_module_subitem_list",
+      "exclude_from_translation": true,
+      "condition": false
+    },
+    {
+      "type": "text",
+      "name": "debug_2",
+      "value": "@local.all_modules_tips_list",
+      "exclude_from_translation": true,
+      "condition": false
+    },
+    {
+      "name": "this_module_tips",
+      "value": "tips_1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "debug_3",
+      "value": "@local.this_module_tips",
+      "exclude_from_translation": true,
+      "condition": false
+    },
+    {
+      "type": "begin_template",
+      "name": "article",
+      "value": "article_@local.module_id@local.join@local.this_module_tips",
+      "action_list": "completed | emit: completed;\nuncompleted | emit: uncompleted;",
+      "exclude_from_translation": true,
+      "condition": "!!@local.this_module_tips"
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "article",
+      "value": "article"
+    },
+    {
+      "name": "is_tips",
+      "value": true
+    },
+    {
+      "type": "end_nested_properties"
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

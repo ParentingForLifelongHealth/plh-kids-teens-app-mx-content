@@ -1,0 +1,29 @@
+{
+  "flow_type": "global",
+  "flow_name": "legal_terms_global",
+  "status": "released",
+  "data_list_name": "legal_terms_global",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "terms_and_conditions",
+      "value": "Términos y condiciones",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "privacy_policy",
+      "value": "Política de privacidad",
+      "_translations": {
+        "value": {}
+      }
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "data/MX deployment_data.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/13MITRQ3ltpZObRU8Nr3_D-gc-bVX2SvKt1NO-IngD-I"
+  }
+}

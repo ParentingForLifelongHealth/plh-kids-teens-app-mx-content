@@ -1,0 +1,23 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "language",
+  "status": "released",
+  "data_list_name": "language",
+  "flow_subtype": "app_config_language_list",
+  "rows": [
+    {
+      "id": "gb_en",
+      "country_code": "gb",
+      "country_label": "Mexico",
+      "language_code": "en",
+      "language_label": "English",
+      "name": "gb_en",
+      "text": "English"
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "data/MX deployment_data.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/13MITRQ3ltpZObRU8Nr3_D-gc-bVX2SvKt1NO-IngD-I"
+  }
+}

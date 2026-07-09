@@ -1,0 +1,80 @@
+{
+  "flow_type": "template",
+  "flow_name": "header_button",
+  "status": "released",
+  "rows": [
+    {
+      "name": "title"
+    },
+    {
+      "name": "subtitle"
+    },
+    {
+      "name": "pop_up",
+      "value": false
+    },
+    {
+      "name": "template"
+    },
+    {
+      "name": "action_text"
+    },
+    {
+      "name": "badge_text"
+    },
+    {
+      "name": "module_id"
+    },
+    {
+      "name": "articles",
+      "value": "_article_tasks"
+    },
+    {
+      "name": "articles_data_list_name",
+      "value": "@local.module_id@local.articles"
+    },
+    {
+      "name": "course_id"
+    },
+    {
+      "type": "button",
+      "action_list": "click | nav_stack: open | template: @local.template;",
+      "parameter_list": "variant: card;\nicon: images/icons/expand_circle_right_blue.svg;\nicon_align: right;",
+      "condition": false,
+      "comment": "!!@local.pop_up"
+    },
+    {
+      "type": "button",
+      "value": "@local.title",
+      "action_list": "click | go_to: @local.template",
+      "parameter_list": "variant: card;\nicon: images/icons/expand_circle_right_blue.svg;\nicon_align: right;",
+      "condition": false,
+      "comment": "!@local.pop_up"
+    },
+    {
+      "type": "begin_plh_lesson_cta",
+      "value": "@local.title",
+      "action_list": "click | set_field: current_start_article_id: uncomplete;\nclick | nav_stack: open | template: @local.template, header: false;",
+      "parameter_list": "subtitle: @local.subtitle;\ncta_text: @local.action_text;\nbadge_text: @local.badge_text;\nbackground_image_asset: images/backgrounds/lesson-cta-bg.svg;",
+      "condition": "!!@local.pop_up"
+    },
+    {
+      "type": "end_plh_lesson_cta"
+    },
+    {
+      "type": "begin_plh_lesson_cta",
+      "name": "module_button",
+      "value": "@local.title",
+      "action_list": "click | go_to: @local.template;\nclick | set_field: last_opened : @local.course_id;",
+      "parameter_list": "subtitle: @local.subtitle;\ncta_text: @local.action_text;\nbadge_text: @local.badge_text;\nbackground_image_asset: images/backgrounds/lesson-cta-bg.svg;",
+      "condition": "!@local.pop_up"
+    },
+    {
+      "type": "task_progress_bar",
+      "parameter_list": "task_group_data: @local.articles_data_list_name;\nfilter: !@task_item.nested;"
+    },
+    {
+      "type": "end_plh_lesson_cta"
+    }
+  ]
+}

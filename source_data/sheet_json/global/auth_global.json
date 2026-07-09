@@ -1,0 +1,82 @@
+{
+  "flow_type": "global",
+  "flow_name": "auth_global",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "login_is_mandatory",
+      "value": false
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "login_optional_why",
+      "value": "¿Te gustaría crear una cuenta? Esto te permitirá recuperar tus datos si pierdes tu dispositivo."
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "login",
+      "value": "Iniciar sesión"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "login_apple",
+      "value": "Iniciar sesión con Apple"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "login_google",
+      "value": "Iniciar sesión con Google"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "logout",
+      "value": "Cerrar sesión"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "logged_in",
+      "value": "Has iniciado sesión."
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "account",
+      "value": "Cuenta"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "delete_account",
+      "value": "Eliminar cuenta"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "delete_account_warning_title",
+      "value": "¿Estás seguro de que quieres eliminar tu cuenta?"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "delete_account_warning_text",
+      "value": "Esta acción es permanente e irreversible. Perderás todo tu progreso."
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "yes",
+      "value": "Sí"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "no",
+      "value": "No"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "previous_login",
+      "value": "Parece que ya has iniciado sesión en otro dispositivo. ¿Deseas continuar desde donde lo dejaste?\n\nSi lo haces, perderás todo el progreso realizado en este dispositivo."
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "restore_data",
+      "value": "Cargar progreso guardado"
+    }
+  ]
+}

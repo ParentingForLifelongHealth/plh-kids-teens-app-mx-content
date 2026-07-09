@@ -1,0 +1,23 @@
+{
+  "flow_type": "global",
+  "flow_subtype": "onboarding",
+  "flow_name": "onboarding_page_3_user_name",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "facilitator_message_user_name",
+      "value": "**¡Comencemos!**\n \nCuéntame un poco sobre ti."
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "question_user_name",
+      "value": "¿Cuál es tu nombre?"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "placeholder_user_name",
+      "value": "Escribe tu nombre"
+    }
+  ]
+}

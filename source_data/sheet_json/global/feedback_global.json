@@ -1,0 +1,47 @@
+{
+  "flow_type": "global",
+  "flow_name": "feedback_global",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "feedback_title",
+      "value": "Formulario de comentarios"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "feedback_intro_text",
+      "value": "Tus comentarios"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "feedback_placeholder",
+      "value": "Dinos lo que piensas..."
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "feedback_where_intro_text",
+      "value": "¿Dónde?"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "where_placeholder",
+      "value": "¿Dónde?"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "feedback_location_placeholder",
+      "value": "Por favor, especifica la ubicación"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "feedback_toast_message",
+      "value": "¡Gracias! Esto nos ayuda a mejorar tu experiencia en la aplicación"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "feedback_submit_button",
+      "value": "Enviar comentarios"
+    }
+  ]
+}

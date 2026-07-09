@@ -1,0 +1,34 @@
+{
+  "flow_type": "template",
+  "flow_name": "certificate_list_item",
+  "status": "released",
+  "rows": [
+    {
+      "name": "course_name"
+    },
+    {
+      "name": "asset"
+    },
+    {
+      "name": "curr_cert"
+    },
+    {
+      "name": "is_completed"
+    },
+    {
+      "type": "data_items",
+      "value": "@data.hp_check_in",
+      "action_list": "data_changed | set_local : is_completed: @items[0]?.unlocked_activity;",
+      "parameter_list": "filter:  @item.id == @local.curr_cert;\nlimit: 1;",
+      "exclude_from_translation": true,
+      "comments": "\n\ndata_changed | set_local : is_locked: @items[0]?.unlocked_activity;"
+    },
+    {
+      "type": "plh_module_list_item",
+      "value": "@local.course_name",
+      "action_list": "click | set_field: cert_to_print: @local.curr_cert;\nclick | pop_up: show_certificate | fullscreen: false, showCloseButton: true;",
+      "parameter_list": "module_image_asset:@local.asset;\nis_locked:  !@local.is_completed;\nlocked_image_asset: images/icons/locked.png;",
+      "exclude_from_translation": true
+    }
+  ]
+}
