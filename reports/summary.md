@@ -93,7 +93,7 @@
 | assets | KB | MB |
 | --- | --- | --- |
 | total | 76297 KB | 76.3 MB |
-| unused | 13813 KB | 13.8 MB |
+| unused | 1932 KB | 1.9 MB |
 </details>
 
 <details open>
@@ -109,19 +109,6 @@ Assets that appear in app-data but do not have references within sheets
 | android/splash.png | 239 |
 | images/activities/personajes_t.svg | 204 |
 | images/backgrounds/homescreen_pattern.svg | 156.3 |
-| images/certificates/PA_certificate_Apoyar a mi adolescente en su aprendizaje.pptx.png | 135.3 |
-| images/certificates/PA_certificate_Apoyar a mi niña o niño en su aprendizaje.pptx.png | 135 |
-| images/certificates/PA_certificate_Cuidar del bienestar de mi adolescente y del mio.png | 135.6 |
-| images/certificates/PA_certificate_Entender el desarrollo de mi niña o niño.png | 134.8 |
-| images/certificates/PA_certificate_Guiar el buen comportamiento de mi adolescente.png | 135.6 |
-| images/certificates/PA_certificate_Guiar el buen comportamiento de mi niña o niño.png | 135.4 |
-| images/certificates/PA_certificate_Mejorar la relación con mi adolescente.png | 135.1 |
-| images/certificates/PA_certificate_Mejorar la relación con mi niña o niño.png | 131 |
-| images/certificates/PA_certificate_Responsabilidad e involucramiento en la crianza compartida.png | 136.4 |
-| images/certificates/PA_certificate_Seguridad de mi adolescente.png | 134.5 |
-| images/certificates/PA_certificate_Seguridad de mi niña o niño.png | 134.2 |
-| images/character_icons/ANGELA_facilitator.svg | 9477.2 |
-| images/character_icons/ANGEL_facilitator.svg | 921.4 |
 | images/flags/gb.svg | 0.5 |
 | images/icons/123.png | 45.5 |
 | images/icons/123.svg | 18.9 |
