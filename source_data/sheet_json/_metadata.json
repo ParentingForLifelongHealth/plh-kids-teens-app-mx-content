@@ -1098,6 +1098,24 @@
   },
   {
     "flow_type": "data_list",
+    "flow_name": "user_location",
+    "_source": {
+      "name": "kids_teens_mx",
+      "path": "data/MX deployment_data.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/13MITRQ3ltpZObRU8Nr3_D-gc-bVX2SvKt1NO-IngD-I"
+    }
+  },
+  {
+    "flow_type": "data_list",
+    "flow_name": "user_location_district",
+    "_source": {
+      "name": "kids_teens_mx",
+      "path": "data/MX deployment_data.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/13MITRQ3ltpZObRU8Nr3_D-gc-bVX2SvKt1NO-IngD-I"
+    }
+  },
+  {
+    "flow_type": "data_list",
     "flow_name": "user_type",
     "_source": {
       "name": "kids_teens_global V2",

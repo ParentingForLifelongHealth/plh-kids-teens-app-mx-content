@@ -1,0 +1,25 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "user_location",
+  "status": "released",
+  "rows": [
+    {
+      "id": "bocas_del_toro",
+      "name": "bocas_del_toro",
+      "text": "Bocas del Toro",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Bocas del Toro"
+        }
+      }
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "data/MX deployment_data.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/13MITRQ3ltpZObRU8Nr3_D-gc-bVX2SvKt1NO-IngD-I"
+  }
+}
