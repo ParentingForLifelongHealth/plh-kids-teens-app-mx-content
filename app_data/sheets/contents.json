@@ -107,6 +107,44 @@
         "url": "https://docs.google.com/spreadsheets/d/1Eq4IZI9NA96CT12iM9XsHm_WNo7pXWIpDAYkV0uCS04"
       }
     },
+    "child_age": {
+      "flow_type": "data_list",
+      "flow_name": "child_age",
+      "data_list_name": "child_age",
+      "_source": {
+        "name": "kids_teens_mx",
+        "path": "data/MX onboarding.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1VOolSeQCn71-GP1JbiDp2zqWg4ZZYqrtHIAjY7h4A-A"
+      },
+      "_metadata": {
+        "name": {
+          "type": "number"
+        },
+        "text": {
+          "type": "number"
+        }
+      }
+    },
+    "child_gender": {
+      "flow_type": "data_list",
+      "flow_name": "child_gender",
+      "data_list_name": "child_gender",
+      "_source": {
+        "name": "kids_teens_mx",
+        "path": "data/MX onboarding.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1VOolSeQCn71-GP1JbiDp2zqWg4ZZYqrtHIAjY7h4A-A"
+      }
+    },
+    "family_relation": {
+      "flow_type": "data_list",
+      "flow_name": "family_relation",
+      "data_list_name": "family_relation",
+      "_source": {
+        "name": "kids_teens_mx",
+        "path": "data/MX onboarding.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1VOolSeQCn71-GP1JbiDp2zqWg4ZZYqrtHIAjY7h4A-A"
+      }
+    },
     "feedback_data": {
       "flow_type": "data_list",
       "flow_name": "feedback_data",
@@ -3231,27 +3269,49 @@
       "flow_name": "user_gender",
       "data_list_name": "user_gender",
       "_source": {
-        "name": "kids_teens_global V2",
-        "path": "templates/kids app_launch.xlsx",
-        "url": "https://docs.google.com/spreadsheets/d/1OsmLr80mX69_-YyLD42k_ZGYzTiowX-bamcQih7YgLI"
+        "name": "kids_teens_mx",
+        "path": "data/MX onboarding.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1VOolSeQCn71-GP1JbiDp2zqWg4ZZYqrtHIAjY7h4A-A"
       }
     },
     "user_location": {
       "flow_type": "data_list",
       "flow_name": "user_location",
+      "data_list_name": "user_location",
       "_source": {
         "name": "kids_teens_mx",
-        "path": "data/MX deployment_data.xlsx",
-        "url": "https://docs.google.com/spreadsheets/d/13MITRQ3ltpZObRU8Nr3_D-gc-bVX2SvKt1NO-IngD-I"
+        "path": "data/MX onboarding.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1VOolSeQCn71-GP1JbiDp2zqWg4ZZYqrtHIAjY7h4A-A"
       }
     },
     "user_location_district": {
       "flow_type": "data_list",
       "flow_name": "user_location_district",
+      "data_list_name": "user_location_district",
       "_source": {
         "name": "kids_teens_mx",
-        "path": "data/MX deployment_data.xlsx",
-        "url": "https://docs.google.com/spreadsheets/d/13MITRQ3ltpZObRU8Nr3_D-gc-bVX2SvKt1NO-IngD-I"
+        "path": "data/MX onboarding.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1VOolSeQCn71-GP1JbiDp2zqWg4ZZYqrtHIAjY7h4A-A"
+      }
+    },
+    "user_referral": {
+      "flow_type": "data_list",
+      "flow_name": "user_referral",
+      "data_list_name": "user_referral",
+      "_source": {
+        "name": "kids_teens_mx",
+        "path": "data/MX onboarding.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1VOolSeQCn71-GP1JbiDp2zqWg4ZZYqrtHIAjY7h4A-A"
+      }
+    },
+    "user_relationship": {
+      "flow_type": "data_list",
+      "flow_name": "user_relationship",
+      "data_list_name": "user_relationship",
+      "_source": {
+        "name": "kids_teens_mx",
+        "path": "data/MX onboarding.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1VOolSeQCn71-GP1JbiDp2zqWg4ZZYqrtHIAjY7h4A-A"
       }
     },
     "user_type": {
@@ -3259,9 +3319,9 @@
       "flow_name": "user_type",
       "data_list_name": "user_type",
       "_source": {
-        "name": "kids_teens_global V2",
-        "path": "templates/kids app_launch.xlsx",
-        "url": "https://docs.google.com/spreadsheets/d/1OsmLr80mX69_-YyLD42k_ZGYzTiowX-bamcQih7YgLI"
+        "name": "kids_teens_mx",
+        "path": "data/MX onboarding.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1VOolSeQCn71-GP1JbiDp2zqWg4ZZYqrtHIAjY7h4A-A"
       }
     },
     "where_options": {
@@ -13188,9 +13248,9 @@
       "flow_type": "global",
       "flow_name": "user_data_global",
       "_source": {
-        "name": "kids_teens_global V2",
-        "path": "templates/kids app_launch.xlsx",
-        "url": "https://docs.google.com/spreadsheets/d/1OsmLr80mX69_-YyLD42k_ZGYzTiowX-bamcQih7YgLI"
+        "name": "kids_teens_mx",
+        "path": "data/MX onboarding.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1VOolSeQCn71-GP1JbiDp2zqWg4ZZYqrtHIAjY7h4A-A"
       }
     }
   },

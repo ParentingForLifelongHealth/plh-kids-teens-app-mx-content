@@ -1,58 +1,62 @@
 {
   "flow_type": "data_list",
-  "flow_name": "user_type",
+  "flow_name": "user_referral",
   "status": "released",
-  "data_list_name": "user_type",
+  "data_list_name": "user_referral",
   "rows": [
     {
-      "id": "parent",
-      "name": "parent",
-      "text": "Madre, padre o persona cuidadora",
+      "id": "referral_share",
+      "name": "share",
+      "experience": "digital",
+      "text": "Familia o amigos",
       "_translations": {
         "text": {}
       },
       "_translatedFields": {
         "text": {
-          "eng": "Madre, padre o persona cuidadora"
+          "eng": "Familia o amigos"
         }
       }
     },
     {
-      "id": "facilitator",
-      "name": "facilitator",
-      "text": "Persona facilitadora",
+      "id": "referral_staff_event",
+      "name": "staff_event",
+      "experience": "hybrid",
+      "text": "Por evento o personal de MIDES",
       "_translations": {
         "text": {}
       },
       "_translatedFields": {
         "text": {
-          "eng": "Persona facilitadora"
+          "eng": "Por evento o personal de MIDES"
         }
       }
     },
     {
-      "id": "tester",
-      "name": "tester",
-      "text": "Persona evaluadora del sistema",
+      "id": "referral_parenttext",
+      "name": "parenttext",
+      "experience": "digital",
+      "text": "Curso Crianza Responsable y Amororsa en WhatsApp",
       "_translations": {
         "text": {}
       },
       "_translatedFields": {
         "text": {
-          "eng": "Persona evaluadora del sistema"
+          "eng": "Curso Crianza Responsable y Amororsa en WhatsApp"
         }
       }
     },
     {
-      "id": "other",
+      "id": "referral_other",
       "name": "other",
-      "text": "Ninguna de las anteriores",
+      "experience": "other",
+      "text": "Otro",
       "_translations": {
         "text": {}
       },
       "_translatedFields": {
         "text": {
-          "eng": "Ninguna de las anteriores"
+          "eng": "Otro"
         }
       }
     }

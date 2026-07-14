@@ -1,0 +1,151 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "family_relation",
+  "status": "released",
+  "data_list_name": "family_relation",
+  "rows": [
+    {
+      "id": "mother",
+      "name": "mother",
+      "user_gender_list": [
+        "woman",
+        "opt_out"
+      ],
+      "text": "Mamá",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Mamá"
+        }
+      }
+    },
+    {
+      "id": "father",
+      "name": "father",
+      "user_gender_list": [
+        "man",
+        "opt_out"
+      ],
+      "text": "Papá",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Papá"
+        }
+      }
+    },
+    {
+      "id": "grandfather",
+      "name": "grandfather",
+      "user_gender_list": [
+        "man",
+        "opt_out"
+      ],
+      "text": "Abuelo",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Abuelo"
+        }
+      }
+    },
+    {
+      "id": "grandmother",
+      "name": "grandmother",
+      "user_gender_list": [
+        "woman",
+        "opt_out"
+      ],
+      "text": "Abuela",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Abuela"
+        }
+      }
+    },
+    {
+      "id": "uncle",
+      "name": "uncle",
+      "user_gender_list": [
+        "man",
+        "opt_out"
+      ],
+      "text": "Tío",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Tío"
+        }
+      }
+    },
+    {
+      "id": "aunt",
+      "name": "aunt",
+      "user_gender_list": [
+        "woman",
+        "opt_out"
+      ],
+      "text": "Tía",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Tía"
+        }
+      }
+    },
+    {
+      "id": "other",
+      "name": "other",
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "text": "Otro",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Otro"
+        }
+      }
+    },
+    {
+      "id": "opt_out",
+      "name": "opt_out",
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "text": "Prefiero no decir",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Prefiero no decir"
+        }
+      }
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "data/MX onboarding.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1VOolSeQCn71-GP1JbiDp2zqWg4ZZYqrtHIAjY7h4A-A"
+  }
+}
