@@ -1,0 +1,32 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "user_referral",
+  "status": "released",
+  "data_list_name": "user_referral",
+  "rows": [
+    {
+      "id": "referral_share",
+      "name": "share",
+      "text::eng": "Familia o amigos",
+      "experience": "digital "
+    },
+    {
+      "id": "referral_staff_event",
+      "name": "staff_event",
+      "text::eng": "Por evento o personal de MIDES",
+      "experience": "hybrid"
+    },
+    {
+      "id": "referral_parenttext",
+      "name": "parenttext",
+      "text::eng": "Curso Crianza Responsable y Amororsa en WhatsApp",
+      "experience": "digital "
+    },
+    {
+      "id": "referral_other",
+      "name": "other",
+      "text::eng": "Otro",
+      "experience": "other"
+    }
+  ]
+}

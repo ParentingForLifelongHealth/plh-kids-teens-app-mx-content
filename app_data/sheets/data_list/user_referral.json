@@ -1,0 +1,69 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "user_referral",
+  "status": "released",
+  "data_list_name": "user_referral",
+  "rows": [
+    {
+      "id": "referral_share",
+      "name": "share",
+      "experience": "digital",
+      "text": "Familia o amigos",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Familia o amigos"
+        }
+      }
+    },
+    {
+      "id": "referral_staff_event",
+      "name": "staff_event",
+      "experience": "hybrid",
+      "text": "Por evento o personal de MIDES",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Por evento o personal de MIDES"
+        }
+      }
+    },
+    {
+      "id": "referral_parenttext",
+      "name": "parenttext",
+      "experience": "digital",
+      "text": "Curso Crianza Responsable y Amororsa en WhatsApp",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Curso Crianza Responsable y Amororsa en WhatsApp"
+        }
+      }
+    },
+    {
+      "id": "referral_other",
+      "name": "other",
+      "experience": "other",
+      "text": "Otro",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Otro"
+        }
+      }
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "data/MX onboarding.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1VOolSeQCn71-GP1JbiDp2zqWg4ZZYqrtHIAjY7h4A-A"
+  }
+}

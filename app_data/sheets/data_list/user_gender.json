@@ -5,48 +5,48 @@
   "data_list_name": "user_gender",
   "rows": [
     {
-      "id": "woman",
-      "name": "woman",
-      "text": "Woman",
+      "id": "man",
+      "name": "man",
+      "text": "Hombre",
       "_translations": {
         "text": {}
       },
       "_translatedFields": {
         "text": {
-          "eng": "Woman"
+          "eng": "Hombre"
         }
       }
     },
     {
-      "id": "man",
-      "name": "man",
-      "text": "Man",
+      "id": "woman",
+      "name": "woman",
+      "text": "Mujer",
       "_translations": {
         "text": {}
       },
       "_translatedFields": {
         "text": {
-          "eng": "Man"
+          "eng": "Mujer"
         }
       }
     },
     {
       "id": "opt_out",
       "name": "opt_out",
-      "text": "Prefer not to say",
+      "text": "Prefiero no decir",
       "_translations": {
         "text": {}
       },
       "_translatedFields": {
         "text": {
-          "eng": "Prefer not to say"
+          "eng": "Prefiero no decir"
         }
       }
     }
   ],
   "_source": {
-    "name": "kids_teens_global V2",
-    "path": "templates/kids app_launch.xlsx",
-    "url": "https://docs.google.com/spreadsheets/d/1OsmLr80mX69_-YyLD42k_ZGYzTiowX-bamcQih7YgLI"
+    "name": "kids_teens_mx",
+    "path": "data/MX onboarding.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1VOolSeQCn71-GP1JbiDp2zqWg4ZZYqrtHIAjY7h4A-A"
   }
 }

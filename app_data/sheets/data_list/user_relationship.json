@@ -1,0 +1,91 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "user_relationship",
+  "status": "released",
+  "data_list_name": "user_relationship",
+  "rows": [
+    {
+      "id": "single",
+      "name": "single",
+      "text": "Soltera o soltero (sin pareja)",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Soltera o soltero (sin pareja)"
+        }
+      }
+    },
+    {
+      "id": "married",
+      "name": "married",
+      "text": "Casada o casado",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Casada o casado"
+        }
+      }
+    },
+    {
+      "id": "partner",
+      "name": "partner",
+      "text": "En pareja (sin matrimonio)",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "En pareja (sin matrimonio)"
+        }
+      }
+    },
+    {
+      "id": "divorced",
+      "name": "divorced",
+      "text": "Separación o divorcio",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Separación o divorcio"
+        }
+      }
+    },
+    {
+      "id": "widow",
+      "name": "widow",
+      "text": "Viuda o viudo",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Viuda o viudo"
+        }
+      }
+    },
+    {
+      "id": "opt_out",
+      "name": "opt_out",
+      "text": "Prefiero no decir",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Prefiero no decir"
+        }
+      }
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "data/MX onboarding.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1VOolSeQCn71-GP1JbiDp2zqWg4ZZYqrtHIAjY7h4A-A"
+  }
+}
