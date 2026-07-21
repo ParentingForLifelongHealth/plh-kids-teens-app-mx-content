@@ -97,7 +97,7 @@ config.app_config.APP_FOOTER_DEFAULTS.template = "footer";
 config.app_config.NOTIFICATION_DEFAULTS.title = "New message from MexicoApp";
 config.app_config.NOTIFICATION_DEFAULTS.text = "You have a new message from MexicoApp";
 config.app_config.APP_THEMES.available = ["plh_facilitator_mx"];
-config.app_config.APP_THEMES.defaultThemeName = "plh_fac";
+config.app_config.APP_THEMES.defaultThemeName = "plh_facilitator_mx";
 config.error_logging = { dsn: "https://17df9395def549e7835dfac8225d53e1@app.glitchtip.com/14124" };
 
 
