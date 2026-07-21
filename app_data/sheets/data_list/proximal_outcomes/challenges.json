@@ -1,0 +1,4737 @@
+{
+  "flow_type": "data_list",
+  "flow_subtype": "proximal_outcomes",
+  "flow_name": "challenges",
+  "status": "released",
+  "rows": [
+    {
+      "id": "not_enough_time",
+      "domain_list": [
+        "connection"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 6,
+      "title": "Not enough time with @fields.child_name",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Not enough time with @fields.child_name"
+        }
+      }
+    },
+    {
+      "id": "prefer_screen",
+      "domain_list": [
+        "connection"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 3,
+      "title": "@fields.child_name only wants a screen",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name only wants a screen"
+        }
+      }
+    },
+    {
+      "id": "too_tired",
+      "domain_list": [
+        "connection",
+        "mental_health",
+        "parent_wellbeing"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 5,
+      "title": "Feel too tired to connect",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Feel too tired to connect"
+        }
+      }
+    },
+    {
+      "id": "how_to_play_2to5",
+      "domain_list": [
+        "connection",
+        "school_learning"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number_of_goals": 4,
+      "title": "How to play with @fields.child_name",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "How to play with @fields.child_name"
+        }
+      }
+    },
+    {
+      "id": "how_to_play_6to11",
+      "domain_list": [
+        "connection"
+      ],
+      "child_age_list": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 3,
+      "title": "How to share @fields.child_name interests",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "How to share @fields.child_name interests"
+        }
+      }
+    },
+    {
+      "id": "how_to_play_12to17",
+      "domain_list": [
+        "connection"
+      ],
+      "child_age_list": [
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number_of_goals": 4,
+      "title": "How to hang out with @fields.child_name",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "How to hang out with @fields.child_name"
+        }
+      }
+    },
+    {
+      "id": "child_shuts_down",
+      "domain_list": [
+        "connection",
+        "mental_health"
+      ],
+      "child_age_list": [
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number_of_goals": 5,
+      "title": "@fields.child_name shuts down when I try to talk",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name shuts down when I try to talk"
+        }
+      }
+    },
+    {
+      "id": "daily_arguments",
+      "domain_list": [
+        "connection",
+        "peaceful_home"
+      ],
+      "child_age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number_of_goals": 4,
+      "title": "We argue more than we talk",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "We argue more than we talk"
+        }
+      }
+    },
+    {
+      "id": "showing_affection",
+      "child_age_list": [
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number_of_goals": 7,
+      "title": "Connect as @fields.child_name grows older",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Connect as @fields.child_name grows older"
+        }
+      }
+    },
+    {
+      "id": "not_listening",
+      "domain_list": [
+        "behaviour"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 3,
+      "title": "@fields.child_name does not listen",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name does not listen"
+        }
+      }
+    },
+    {
+      "id": "tantrum",
+      "domain_list": [
+        "behaviour",
+        "peaceful_home",
+        "online_safety"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number_of_goals": 5,
+      "title": "@fields.child_name has tantrums when I say no",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name has tantrums when I say no"
+        }
+      }
+    },
+    {
+      "id": "losing_temper",
+      "domain_list": [
+        "behaviour",
+        "mental_health",
+        "peaceful_home"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 4,
+      "title": "Lose temper with @fields.child_name",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Lose temper with @fields.child_name"
+        }
+      }
+    },
+    {
+      "id": "how_discipline",
+      "domain_list": [
+        "behaviour"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 8,
+      "title": "What to do when @fields.child_name misbehaves",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "What to do when @fields.child_name misbehaves"
+        }
+      }
+    },
+    {
+      "id": "arguing",
+      "domain_list": [
+        "behaviour",
+        "peaceful_home"
+      ],
+      "child_age_list": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 4,
+      "title": "@fields.child_name argues or talks back a lot",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name argues or talks back a lot"
+        }
+      }
+    },
+    {
+      "id": "descalate",
+      "domain_list": [
+        "behaviour"
+      ],
+      "child_age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number_of_goals": 6,
+      "title": "Calming things down after we argue",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Calming things down after we argue"
+        }
+      }
+    },
+    {
+      "id": "wont_share",
+      "domain_list": [
+        "health_safety"
+      ],
+      "child_age_list": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 3,
+      "title": "@fields.child_name won't tell me when they are struggling",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name won't tell me when they are struggling"
+        }
+      }
+    },
+    {
+      "id": "substance_peer_pressure",
+      "domain_list": [
+        "health_safety",
+        "friends_bullying"
+      ],
+      "child_age_list": [
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number_of_goals": 4,
+      "title": "@fields.child_name might try alcohol, drugs, or smoking",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name might try alcohol, drugs, or smoking"
+        }
+      }
+    },
+    {
+      "id": "risky_behavior",
+      "domain_list": [
+        "health_safety"
+      ],
+      "child_age_list": [
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number_of_goals": 4,
+      "title": "@fields.child_name does risky things without thinking",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name does risky things without thinking"
+        }
+      }
+    },
+    {
+      "id": "sex_dating_talk",
+      "domain_list": [
+        "health_safety"
+      ],
+      "child_age_list": [
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number_of_goals": 3,
+      "title": "Talk about sex and dating",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Talk about sex and dating"
+        }
+      }
+    },
+    {
+      "id": "peer_pressure_support",
+      "domain_list": [
+        "friends_bullying"
+      ],
+      "child_age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number_of_goals": 4,
+      "title": "Support @fields.child_name handle peer pressure",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Support @fields.child_name handle peer pressure"
+        }
+      }
+    },
+    {
+      "id": "wandering_off",
+      "domain_list": [
+        "health_safety"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number_of_goals": 3,
+      "title": "@fields.child_name wanders off when I'm not watching",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name wanders off when I'm not watching"
+        }
+      }
+    },
+    {
+      "id": "rough_play_injuries",
+      "domain_list": [
+        "health_safety"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number_of_goals": 2,
+      "title": "@fields.child_name gets hurt a lot from rough play",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name gets hurt a lot from rough play"
+        }
+      }
+    },
+    {
+      "id": "excessive_screen_time",
+      "domain_list": [
+        "online_safety"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 3,
+      "title": "@fields.child_name spends too much time on a screen",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name spends too much time on a screen"
+        }
+      }
+    },
+    {
+      "id": "body_changes_talk",
+      "domain_list": [
+        "health_safety"
+      ],
+      "child_age_list": [
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 3,
+      "title": "Talk about body changes",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Talk about body changes"
+        }
+      }
+    },
+    {
+      "id": "mental_health_worry",
+      "domain_list": [
+        "mental_health"
+      ],
+      "child_age_list": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 5,
+      "title": "@fields.child_name's mental health and moodiness",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name's mental health and moodiness"
+        }
+      }
+    },
+    {
+      "id": "lonely_parent",
+      "domain_list": [
+        "mental_health",
+        "parent_wellbeing"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 3,
+      "title": "Feel lonely and isolated as a parent",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Feel lonely and isolated as a parent"
+        }
+      }
+    },
+    {
+      "id": "inappropriate_content",
+      "domain_list": [
+        "online_safety"
+      ],
+      "child_age_list": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 6,
+      "title": "@fields.child_name might be seeing inappropriate videos or games",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name might be seeing inappropriate videos or games"
+        }
+      }
+    },
+    {
+      "id": "social_media_mental_health",
+      "domain_list": [
+        "online_safety",
+        "mental_health"
+      ],
+      "child_age_list": [
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number_of_goals": 6,
+      "title": "Soical media hurting @fields.child_name's mental health",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Soical media hurting @fields.child_name's mental health"
+        }
+      }
+    },
+    {
+      "id": "cyberbullying",
+      "domain_list": [
+        "online_safety",
+        "mental_health",
+        "friends_bullying"
+      ],
+      "child_age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number_of_goals": 3,
+      "title": "@fields.child_name might be being bullied online",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name might be being bullied online"
+        }
+      }
+    },
+    {
+      "id": "other_caregivers_rules",
+      "domain_list": [
+        "online_safety",
+        "peaceful_home"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 3,
+      "title": "Screen rules fall apart with other caregivers",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Screen rules fall apart with other caregivers"
+        }
+      }
+    },
+    {
+      "id": "tech_knowledge",
+      "domain_list": [
+        "online_safety"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 3,
+      "title": "Do not understand technology enough",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Do not understand technology enough"
+        }
+      }
+    },
+    {
+      "id": "disinterested_school",
+      "domain_list": [
+        "school_learning"
+      ],
+      "child_age_list": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 3,
+      "title": "@fields.child_name not interested in school or learning",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name not interested in school or learning"
+        }
+      }
+    },
+    {
+      "id": "peer_struggles",
+      "domain_list": [
+        "school_learning",
+        "peaceful_home"
+      ],
+      "child_age_list": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 6,
+      "title": "@fields.child_name struggles to get along",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name struggles to get along"
+        }
+      }
+    },
+    {
+      "id": "bullying",
+      "domain_list": [
+        "school_learning",
+        "friends_bullying"
+      ],
+      "child_age_list": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 10,
+      "title": "@fields.child_name is being bullied",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name is being bullied"
+        }
+      }
+    },
+    {
+      "id": "missing_developmental_milestones",
+      "domain_list": [
+        "school_learning"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number_of_goals": 7,
+      "title": "@fields.child_name is behind on developmental milestones",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name is behind on developmental milestones"
+        }
+      }
+    },
+    {
+      "id": "focus_difficulty",
+      "domain_list": [
+        "school_learning"
+      ],
+      "child_age_list": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number_of_goals": 3,
+      "title": "@fields.child_name cannot sit still or focus",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name cannot sit still or focus"
+        }
+      }
+    },
+    {
+      "id": "aggressive_play",
+      "domain_list": [
+        "behaviour"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number_of_goals": 3,
+      "title": "@fields.child_name hits or bites while playing",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name hits or bites while playing"
+        }
+      }
+    },
+    {
+      "id": "not_reading",
+      "domain_list": [
+        "school_learning"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number_of_goals": 6,
+      "title": "Don't read to @fields.child_name enough",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Don't read to @fields.child_name enough"
+        }
+      }
+    },
+    {
+      "id": "poor_grades",
+      "domain_list": [
+        "school_learning"
+      ],
+      "child_age_list": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 5,
+      "title": "@field.child_name not doing well in school",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name not doing well in school"
+        }
+      }
+    },
+    {
+      "id": "crams",
+      "domain_list": [
+        "school_learning"
+      ],
+      "child_age_list": [
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number_of_goals": 5,
+      "title": "@field.child_name crams instead of studying regularly.",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name crams instead of studying regularly."
+        }
+      }
+    },
+    {
+      "id": "bullying_others",
+      "domain_list": [
+        "friends_bullying"
+      ],
+      "child_age_list": [
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 7,
+      "title": "@field.child_name is bullying others",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name is bullying others"
+        }
+      }
+    },
+    {
+      "id": "lonely_no_friends",
+      "domain_list": [
+        "friends_bullying"
+      ],
+      "child_age_list": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 3,
+      "title": "@field. child_name has no friends",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field. child_name has no friends"
+        }
+      }
+    },
+    {
+      "id": "intense_meltdown",
+      "domain_list": [
+        "peaceful_home"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number_of_goals": 6,
+      "title": "@child_name's intense meltdowns disrupt our home",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@child_name's intense meltdowns disrupt our home"
+        }
+      }
+    },
+    {
+      "id": "bedtimes",
+      "domain_list": [
+        "peaceful_home"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number_of_goals": 5,
+      "title": "Bedtimes are exhausting",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Bedtimes are exhausting"
+        }
+      }
+    },
+    {
+      "id": "avoid_chores",
+      "domain_list": [
+        "peaceful_home",
+        "behaviour"
+      ],
+      "child_age_list": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 3,
+      "title": "@child_name avoids or delays doing their chores.",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@child_name avoids or delays doing their chores."
+        }
+      }
+    },
+    {
+      "id": "no_time_energy",
+      "domain_list": [
+        "parent_wellbeing"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 3,
+      "title": "No time or energy to take care of myself",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "No time or energy to take care of myself"
+        }
+      }
+    },
+    {
+      "id": "feel_guilty",
+      "domain_list": [
+        "parent_wellbeing"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 4,
+      "title": "Feel guilty when I take care of myself",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Feel guilty when I take care of myself"
+        }
+      }
+    },
+    {
+      "id": "stop_worry",
+      "domain_list": [
+        "parent_wellbeing"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 6,
+      "title": "Can not stop worrying about @field.child_name",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Can not stop worrying about @field.child_name"
+        }
+      }
+    },
+    {
+      "id": "stress_health",
+      "domain_list": [
+        "parent_wellbeing"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 3,
+      "title": "Parenting stress is affecting my health",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Parenting stress is affecting my health"
+        }
+      }
+    },
+    {
+      "id": "other",
+      "input_allowed": true,
+      "input_placeholder": "e.g. \"My child won't go to sleep\"",
+      "domain_list": [
+        "connection"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "title": "Something else",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Something else"
+        }
+      }
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    },
+    {
+      "tag_list": []
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "data/MX goals.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1jprYnAWfuA39fBB47YKMMJ1Wp06XjsNF8X0BoZV-nR8"
+  },
+  "_metadata": {
+    "number_of_goals": {
+      "type": "number"
+    },
+    "input_allowed": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "flow_type": "global",
+  "flow_subtype": "proximal_outcomes",
+  "flow_name": "proximal_outcomes_global",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "set_domain_question",
+      "value": "There's a lot we can work on together. \n\n**Which area would you like to explore first?**",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "set_challenge_question",
+      "value": "Let's team up for **@fields.child_name**. Which problem should we work on first? Pick one.",
+      "_translations": {
+        "value": {}
+      }
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_global V2",
+    "path": "templates/PLH proximal outcomes.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/17Ti5gmQDWeKBrprr75UlTLVG7VCdYXQtLG31Ch8O4JE"
+  }
+}

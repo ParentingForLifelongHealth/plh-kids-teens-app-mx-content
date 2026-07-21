@@ -1,0 +1,1157 @@
+{
+  "flow_type": "data_list",
+  "flow_subtype": "proximal_outcomes",
+  "flow_name": "goals",
+  "status": "released",
+  "rows": [
+    {
+      "id": "time_5min",
+      "tag_challenge": "not_enough_time; too_tired; descalate; missing_developmental_milestones; not_reading;",
+      "title": "Spend at least uninterrupted 5 minutes together",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Spend at least uninterrupted 5 minutes together"
+        }
+      }
+    },
+    {
+      "id": "say_yes_invite",
+      "tag_challenge": "not_enough_time; how_to_play_2to5; how_to_play_6to11;",
+      "title": "Say yes to 1 thing @field.child_name invites me to do",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Say yes to 1 thing @field.child_name invites me to do"
+        }
+      }
+    },
+    {
+      "id": "pause_5min",
+      "tag_challenge": "too_tired; descalate; no_time_energy; feel_guilty; stop_worry; stress_health",
+      "title": "Take a 5-minute pause for myself",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Take a 5-minute pause for myself"
+        }
+      }
+    },
+    {
+      "id": "fun_chore",
+      "tag_challenge": "not_enough_time; prefer_screen; too_tired; how_to_play_2to5; how_to_play_12to17; showing_affection; missing_developmental_milestones; not_reading; avoid_chores",
+      "title": "Turn a chore into a shared, fun moment",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Turn a chore into a shared, fun moment"
+        }
+      }
+    },
+    {
+      "id": "screenfree_15m",
+      "tag_challenge": "prefer_screen; how_to_play_12to17; showing_affection; excessive_screen_time; social_media_mental_health; missing_developmental_milestones;",
+      "title": "Do a 15-minute screen-free activity with @fields.child_name",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Do a 15-minute screen-free activity with @fields.child_name"
+        }
+      }
+    },
+    {
+      "id": "join_activity",
+      "tag_challenge": "prefer_screen; how_to_play_2to5; how_to_play_6to11; how_to_play_12to17; child_shuts_down; showing_affection; missing_developmental_milestones",
+      "title": "Join @field.child_name in what they are doing",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Join @field.child_name in what they are doing"
+        }
+      }
+    },
+    {
+      "id": "calm_bedtime",
+      "tag_challenge": "not_enough_time; tantrum; excessive_screen_time; social_media_mental_health; intense_meltdown; bedtimes",
+      "title": "Create a calm, screen-free routine before bedtime",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Create a calm, screen-free routine before bedtime"
+        }
+      }
+    },
+    {
+      "id": "new_game",
+      "tag_challenge": "how_to_play_2to5; missing_developmental_milestones; not_reading",
+      "title": "Try a new game with @field.child_name",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Try a new game with @field.child_name"
+        }
+      }
+    },
+    {
+      "id": "ask_to_teach",
+      "tag_challenge": "how_to_play_6to11; how_to_play_12to17; showing_affection",
+      "title": "Ask @fields.child_name to teach me about something they love",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Ask @fields.child_name to teach me about something they love"
+        }
+      }
+    },
+    {
+      "id": "daily_text",
+      "tag_challenge": "not_enough_time; too_tired; child_shuts_down; showing_affection",
+      "title": "Send @field.child_name one positive text message everyday",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Send @field.child_name one positive text message everyday"
+        }
+      }
+    },
+    {
+      "id": "car_walk_checkin",
+      "tag_challenge": "not_enough_time; too_tired; child_shuts_down; showing_affection;",
+      "title": "Use one car ride or walk this week to check in",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Use one car ride or walk this week to check in"
+        }
+      }
+    },
+    {
+      "id": "ask_and_listen",
+      "tag_challenge": "child_shuts_down;",
+      "title": "Ask @field.child_name 1 open question and just listen",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Ask @field.child_name 1 open question and just listen"
+        }
+      }
+    },
+    {
+      "id": "sit_near_10m",
+      "tag_challenge": "child_shuts_down;",
+      "title": "Sit near @field.child_name for 10 minutes without pushing them to talk",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Sit near @field.child_name for 10 minutes without pushing them to talk"
+        }
+      }
+    },
+    {
+      "id": "calm_voice",
+      "tag_challenge": "daily_arguments; tantrum; losing_temper; how_discipline; descalate; intense_meltdown",
+      "title": "Take a deep breath and calm my voice",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Take a deep breath and calm my voice"
+        }
+      }
+    },
+    {
+      "id": "relaxing_talk",
+      "tag_challenge": "daily_arguments; arguing; descalate",
+      "title": "Have at least 1 fun and relaxing conversation",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Have at least 1 fun and relaxing conversation"
+        }
+      }
+    },
+    {
+      "id": "praise_child",
+      "tag_challenge": "daily_arguments; showing_affection; descalate; missing_developmental_milestones",
+      "title": "Praise @field.child_name about 1 thing",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Praise @field.child_name about 1 thing"
+        }
+      }
+    },
+    {
+      "id": "pre_break_5m",
+      "tag_challenge": "daily_arguments; losing_temper",
+      "title": "Pause and take a 5-minute break before it starts",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Pause and take a 5-minute break before it starts"
+        }
+      }
+    },
+    {
+      "id": "chore_few_reminders",
+      "tag_challenge": "not_listening; how_discipline; bedtimes; avoid_chores",
+      "title": "Finish a daily routine or chore with fewer reminders",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Finish a daily routine or chore with fewer reminders"
+        }
+      }
+    },
+    {
+      "id": "follows_instruction",
+      "tag_challenge": "not_listening; how_discipline; arguing; bedtimes; avoid_chores",
+      "title": "@field.child_name follows my first instruction without me repeating it",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name follows my first instruction without me repeating it"
+        }
+      }
+    },
+    {
+      "id": "responds_calmly",
+      "tag_challenge": "not_listening; how_discipline; arguing",
+      "title": "@field.child_name responds calmly",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name responds calmly"
+        }
+      }
+    },
+    {
+      "id": "accepts_no",
+      "tag_challenge": "tantrum; how_discipline; intense_meltdown",
+      "title": "@field.child_name accepts \"no\" without a meltdown",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name accepts \"no\" without a meltdown"
+        }
+      }
+    },
+    {
+      "id": "uses_words",
+      "tag_challenge": "tantrum; how_discipline; aggressive_play",
+      "title": "@fields.child_name use their words when upset",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name use their words when upset"
+        }
+      }
+    },
+    {
+      "id": "calm_in_tantrum",
+      "tag_challenge": "tantrum; losing_temper; how_discipline; intense_meltdown",
+      "title": "I am calm when @fields.child_name has a tantrum",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "I am calm when @fields.child_name has a tantrum"
+        }
+      }
+    },
+    {
+      "id": "resolve_no_yelling",
+      "tag_challenge": "losing_temper; how_discipline",
+      "title": "Resolve an argument without anyone yelling",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Resolve an argument without anyone yelling"
+        }
+      }
+    },
+    {
+      "id": "calm_rule_talk",
+      "tag_challenge": "arguing; descalate;",
+      "title": "Have a calm conversation about a rule",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Have a calm conversation about a rule"
+        }
+      }
+    },
+    {
+      "id": "detailed_answer",
+      "tag_challenge": "wont_share; mental_health_worry; bullying_others",
+      "title": "@field.child_name gives me more than a one-word answer when I check in",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name gives me more than a one-word answer when I check in"
+        }
+      }
+    },
+    {
+      "id": "spontaneous_share",
+      "tag_challenge": "wont_share; mental_health_worry;",
+      "title": "@fields.child_name share something about their life without being asked",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name share something about their life without being asked"
+        }
+      }
+    },
+    {
+      "id": "refuse_risky_offer",
+      "tag_challenge": "substance_peer_pressure; peer_pressure_support;",
+      "title": "@field.child_name knows what to say if a friend offers them something risky",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name knows what to say if a friend offers them something risky"
+        }
+      }
+    },
+    {
+      "id": "calls_for_exit",
+      "tag_challenge": "substance_peer_pressure; peer_pressure_support;",
+      "title": "@field.child_name feels comfortable calling me if they need a way out",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name feels comfortable calling me if they need a way out"
+        }
+      }
+    },
+    {
+      "id": "talk_openly",
+      "tag_challenge": "substance_peer_pressure; sex_dating_talk; peer_pressure_support; body_changes_talk; mental_health_worry; inappropriate_content; cyberbullying; bullying; bullying_others",
+      "title": "@fields.child_name and I talk openly",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name and I talk openly"
+        }
+      }
+    },
+    {
+      "id": "safe_friends",
+      "tag_challenge": "substance_peer_pressure;",
+      "title": "@fields.child_name chooses friends who make safe choices",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name chooses friends who make safe choices"
+        }
+      }
+    },
+    {
+      "id": "think_before_risk",
+      "tag_challenge": "risky_behavior; inappropriate_content;",
+      "title": "@field.child_name stops and thinks before making a risky choice",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name stops and thinks before making a risky choice"
+        }
+      }
+    },
+    {
+      "id": "agree_safety_rule",
+      "tag_challenge": "risky_behavior; sex_dating_talk;",
+      "title": "@field.child_name and I agree on 1 clear safety rule together",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name and I agree on 1 clear safety rule together"
+        }
+      }
+    },
+    {
+      "id": "safe_choice_own",
+      "tag_challenge": "risky_behavior; inappropriate_content",
+      "title": "@field.child_name makes a safer choice on their own",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name makes a safer choice on their own"
+        }
+      }
+    },
+    {
+      "id": "identify_risks",
+      "tag_challenge": "risky_behavior;",
+      "title": "@fields.child_name identify safe versus dangerous risks on their own",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name identify safe versus dangerous risks on their own"
+        }
+      }
+    },
+    {
+      "id": "open_questions",
+      "tag_challenge": "sex_dating_talk; peer_pressure_support; body_changes_talk; inappropriate_content;",
+      "title": "@field.child_name knows they can come to me with any questions",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name knows they can come to me with any questions"
+        }
+      }
+    },
+    {
+      "id": "stays_in_sight",
+      "tag_challenge": "wandering_off",
+      "title": "@field.child_name stays within sight when we're out",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name stays within sight when we're out"
+        }
+      }
+    },
+    {
+      "id": "ask_before_moving",
+      "tag_challenge": "wandering_off",
+      "title": "@fields.child_name ask for permission before moving to a new area",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name ask for permission before moving to a new area"
+        }
+      }
+    },
+    {
+      "id": "separated_plan",
+      "tag_challenge": "wandering_off",
+      "title": "@field.child_name knows what to do if we get separated",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name knows what to do if we get separated"
+        }
+      }
+    },
+    {
+      "id": "safer_game_version",
+      "tag_challenge": "rough_play_injuries",
+      "title": "@field.child_name picks a safer version of the game",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name picks a safer version of the game"
+        }
+      }
+    },
+    {
+      "id": "stop_rough_play",
+      "tag_challenge": "rough_play_injuries",
+      "title": "@field.child_name stops when I say the play is getting too rough",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name stops when I say the play is getting too rough"
+        }
+      }
+    },
+    {
+      "id": "screen_limit_kept",
+      "tag_challenge": "excessive_screen_time; social_media_mental_health",
+      "title": "@field.child_name sticks to the screen time limit we agreed on",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name sticks to the screen time limit we agreed on"
+        }
+      }
+    },
+    {
+      "id": "knows_age_normal",
+      "tag_challenge": "body_changes_talk",
+      "title": "@field.child_name knows what's normal for their age",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name knows what's normal for their age"
+        }
+      }
+    },
+    {
+      "id": "asks_for_help",
+      "tag_challenge": "mental_health_worry; social_media_mental_health; bullying; bullying_others; wont_share; inappropriate_content; cyberbullying;",
+      "title": "@field.child_name asks for help when they need it",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name asks for help when they need it"
+        }
+      }
+    },
+    {
+      "id": "manageable_moods",
+      "tag_challenge": "mental_health_worry; social_media_mental_health; bullying_others",
+      "title": "@field.child_name's mood swings feel more manageable this week",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name's mood swings feel more manageable this week"
+        }
+      }
+    },
+    {
+      "id": "talk_other_adult",
+      "tag_challenge": "lonely_parent; no_time_energy; feel_guilty; stop_worry; stress_health",
+      "title": "I talk with 1 other adult this week",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "I talk with 1 other adult this week"
+        }
+      }
+    },
+    {
+      "id": "parent_group",
+      "tag_challenge": "lonely_parent; stop_worry",
+      "title": "Attend or participate in one supportive parent group or community activity",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Attend or participate in one supportive parent group or community activity"
+        }
+      }
+    },
+    {
+      "id": "social_plans",
+      "tag_challenge": "lonely_parent; feel_guilty; stop_worry",
+      "title": "I make plans with a friend or family member this week",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "I make plans with a friend or family member this week"
+        }
+      }
+    },
+    {
+      "id": "agree_media_limits",
+      "tag_challenge": "inappropriate_content; social_media_mental_health",
+      "title": "@field.child_name and I agree on what's okay to watch or play",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name and I agree on what's okay to watch or play"
+        }
+      }
+    },
+    {
+      "id": "auto_block_report",
+      "tag_challenge": "cyberbullying",
+      "title": "@field.child_name blocks or reports someone without me having to ask",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name blocks or reports someone without me having to ask"
+        }
+      }
+    },
+    {
+      "id": "caregiver_rules_align",
+      "tag_challenge": "other_caregivers_rules",
+      "title": "1 other caregiver stick to our house rules for @field.child_name",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "1 other caregiver stick to our house rules for @field.child_name"
+        }
+      }
+    },
+    {
+      "id": "consistent_rules",
+      "tag_challenge": "other_caregivers_rules",
+      "title": "@field.child_name follows the same rules no matter who's watching them",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name follows the same rules no matter who's watching them"
+        }
+      }
+    },
+    {
+      "id": "caregiver_limits_align",
+      "tag_challenge": "other_caregivers_rules; bedtimes",
+      "title": "Stick to the same bedtime and screen limits with all caregivers",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Stick to the same bedtime and screen limits with all caregivers"
+        }
+      }
+    },
+    {
+      "id": "teach_app_game",
+      "tag_challenge": "tech_knowledge",
+      "title": "@fields.child_name teach me how their favorite app or game works for 10 minutes",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name teach me how their favorite app or game works for 10 minutes"
+        }
+      }
+    },
+    {
+      "id": "learn_device",
+      "tag_challenge": "tech_knowledge",
+      "title": "Learn 1 new thing about @field.child_name's phone or device this week",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Learn 1 new thing about @field.child_name's phone or device this week"
+        }
+      }
+    },
+    {
+      "id": "setup_device_safety",
+      "tag_challenge": "tech_knowledge",
+      "title": "Find someone I trust to help me set up 1 safety feature on @field.child_name's device",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Find someone I trust to help me set up 1 safety feature on @field.child_name's device"
+        }
+      }
+    },
+    {
+      "id": "shows_curiosity",
+      "tag_challenge": "disinterested_school; poor_grades",
+      "title": "@field.child_name shows curiosity about something they learned",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name shows curiosity about something they learned"
+        }
+      }
+    },
+    {
+      "id": "talks_about_school",
+      "tag_challenge": "disinterested_school; poor_grades",
+      "title": "@field.child_name talks about something interesting from school",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name talks about something interesting from school"
+        }
+      }
+    },
+    {
+      "id": "finishes_schoolwork",
+      "tag_challenge": "disinterested_school; poor_grades; crams",
+      "title": "@field.child_name finishes a school task without being pushed",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name finishes a school task without being pushed"
+        }
+      }
+    },
+    {
+      "id": "settles_dispute",
+      "tag_challenge": "peer_struggles",
+      "title": "@field.child_name settles a small disagreement with a friend on their own",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name settles a small disagreement with a friend on their own"
+        }
+      }
+    },
+    {
+      "id": "invites_friend",
+      "tag_challenge": "peer_struggles; lonely_no_friends",
+      "title": "@field.child_name invites a friend to join their game",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name invites a friend to join their game"
+        }
+      }
+    },
+    {
+      "id": "frustration_break",
+      "tag_challenge": "peer_struggles; aggressive_play",
+      "title": "@field.child_name takes a 1-minute break when frustrated during play",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name takes a 1-minute break when frustrated during play"
+        }
+      }
+    },
+    {
+      "id": "graceful_loser",
+      "tag_challenge": "peer_struggles",
+      "title": "@field.child_name loses a game without getting angry or quitting",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name loses a game without getting angry or quitting"
+        }
+      }
+    },
+    {
+      "id": "asks_to_join_play",
+      "tag_challenge": "peer_struggles; lonely_no_friends",
+      "title": "@field.child_name asks to join a group that's already playing",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name asks to join a group that's already playing"
+        }
+      }
+    },
+    {
+      "id": "calm_friend_express",
+      "tag_challenge": "peer_struggles; aggressive_play",
+      "title": "@field.child_name tells a friend calmly when something bothers them",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name tells a friend calmly when something bothers them"
+        }
+      }
+    },
+    {
+      "id": "identify_3_adults",
+      "tag_challenge": "bullying",
+      "title": "@fields.child_name identify three adults they can go to for help",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name identify three adults they can go to for help"
+        }
+      }
+    },
+    {
+      "id": "feels_safe",
+      "tag_challenge": "bullying",
+      "title": "@field.child_name feels safe in the places they spend time",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name feels safe in the places they spend time"
+        }
+      }
+    },
+    {
+      "id": "talk_doctor",
+      "tag_challenge": "speech_delay; missing_developmental_milestones",
+      "title": "Talk to @field.child_name's doctor or a specialist",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Talk to @field.child_name's doctor or a specialist"
+        }
+      }
+    },
+    {
+      "id": "task_focus",
+      "tag_challenge": "focus_difficulty",
+      "title": "@field.child_name finishes 1 task without wandering off",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name finishes 1 task without wandering off"
+        }
+      }
+    },
+    {
+      "id": "return_to_task",
+      "tag_challenge": "focus_difficulty",
+      "title": "@field.child_name comes back to a task on their own after a break",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name comes back to a task on their own after a break"
+        }
+      }
+    },
+    {
+      "id": "movement_break",
+      "tag_challenge": "focus_difficulty",
+      "title": "@field.child_name uses a movement break to help themselves focus",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name uses a movement break to help themselves focus"
+        }
+      }
+    },
+    {
+      "id": "comfortable_reading",
+      "tag_challenge": "not_reading",
+      "title": "Feel more comfortable reading out loud to @field.child_name",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Feel more comfortable reading out loud to @field.child_name"
+        }
+      }
+    },
+    {
+      "id": "nonbook_reading",
+      "tag_challenge": "not_reading",
+      "title": "Use something other than a book to \"read\" with @field.child_name",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Use something other than a book to \"read\" with @field.child_name"
+        }
+      }
+    },
+    {
+      "id": "routine_reading",
+      "tag_challenge": "not_reading",
+      "title": "Fit in 1 reading moment during something we already do",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Fit in 1 reading moment during something we already do"
+        }
+      }
+    },
+    {
+      "id": "homework_on_time",
+      "tag_challenge": "poor_grades; crams",
+      "title": "@field.child_name turns in their homework on time this week",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name turns in their homework on time this week"
+        }
+      }
+    },
+    {
+      "id": "asks_study_help",
+      "tag_challenge": "poor_grades; crams",
+      "title": "@field.child_name asks for help with a subject they're struggling in",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name asks for help with a subject they're struggling in"
+        }
+      }
+    },
+    {
+      "id": "break_exam_prep",
+      "tag_challenge": "crams",
+      "title": "@fields.child_name break big exam preparation into small, manageable daily steps",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name break big exam preparation into small, manageable daily steps"
+        }
+      }
+    },
+    {
+      "id": "set_study_time",
+      "tag_challenge": "crams",
+      "title": "@field.child_name and I set 1 regular study time this week",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name and I set 1 regular study time this week"
+        }
+      }
+    },
+    {
+      "id": "treats_peer_kindly",
+      "tag_challenge": "bullying_others",
+      "title": "@field.child_name treats a peer kindly instead of putting them down",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name treats a peer kindly instead of putting them down"
+        }
+      }
+    },
+    {
+      "id": "stops_mean_behavior",
+      "tag_challenge": "bullying_others",
+      "title": "@field.child_name stops themselves before being mean to someone",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name stops themselves before being mean to someone"
+        }
+      }
+    },
+    {
+      "id": "apologizes_hurt",
+      "tag_challenge": "bullying_others",
+      "title": "@field.child_name apologizes after hurting someone's feelings",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name apologizes after hurting someone's feelings"
+        }
+      }
+    },
+    {
+      "id": "joins_club_team",
+      "tag_challenge": "lonely_no_friends",
+      "title": "@fields.child_name join a group, club, or team centered around an interest they love",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name join a group, club, or team centered around an interest they love"
+        }
+      }
+    },
+    {
+      "id": "calms_down_with_help",
+      "tag_challenge": "intense_meltdown",
+      "title": "@field.child_name calms down with my help within a set time",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name calms down with my help within a set time"
+        }
+      }
+    },
+    {
+      "id": "post_meltdown_calm",
+      "tag_challenge": "intense_meltdown",
+      "title": "Our home feels calm again shortly after a meltdown ends",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Our home feels calm again shortly after a meltdown ends"
+        }
+      }
+    },
+    {
+      "id": "bedtime_no_fight",
+      "tag_challenge": "bedtimes",
+      "title": "@field.child_name goes to bed without a fight",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name goes to bed without a fight"
+        }
+      }
+    },
+    {
+      "id": "recharge_today",
+      "tag_challenge": "no_time_energy; feel_guilty; stress_health",
+      "title": "Do 1 thing that recharges me today",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Do 1 thing that recharges me today"
+        }
+      }
+    },
+    {
+      "id": "feel_calmer_parent",
+      "tag_challenge": "stop_worry",
+      "title": "Feel calmer about @field.child_name",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Feel calmer about @field.child_name"
+        }
+      }
+    },
+    {
+      "id": "focus_on_strengths",
+      "tag_challenge": "stop_worry",
+      "title": "Focus on @fields.child_name's strengths and progress today",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Focus on @fields.child_name's strengths and progress today"
+        }
+      }
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "data/MX goals.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1jprYnAWfuA39fBB47YKMMJ1Wp06XjsNF8X0BoZV-nR8"
+  }
+}
