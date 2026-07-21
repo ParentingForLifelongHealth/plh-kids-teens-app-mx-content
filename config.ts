@@ -4,7 +4,7 @@ const config = generateDeploymentConfig("plh_kids_teens_mx");
 
 config.git = {
   content_repo: "https://github.com/ParentingForLifelongHealth/plh-kids-teens-app-mx-content.git",
-  content_tag_latest: "1.1.3",
+  content_tag_latest: "1.1.4",
 };
 
 config.google_drive.sheets_folders = [
@@ -96,8 +96,8 @@ config.app_config.APP_HEADER_DEFAULTS.hidden = true;
 config.app_config.APP_FOOTER_DEFAULTS.template = "footer";
 config.app_config.NOTIFICATION_DEFAULTS.title = "New message from MexicoApp";
 config.app_config.NOTIFICATION_DEFAULTS.text = "You have a new message from MexicoApp";
-config.app_config.APP_THEMES.available = ["plh_kids_teens_pa"];
-config.app_config.APP_THEMES.defaultThemeName = "plh_kids_teens_pa";
+config.app_config.APP_THEMES.available = ["plh_facilitator_mx"];
+config.app_config.APP_THEMES.defaultThemeName = "plh_fac";
 config.error_logging = { dsn: "https://17df9395def549e7835dfac8225d53e1@app.glitchtip.com/14124" };
 
 
