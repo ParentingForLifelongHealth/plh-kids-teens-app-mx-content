@@ -1,0 +1,17 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "default_vars",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_field_default",
+      "name": "n_modules_completed",
+      "value": 0
+    },
+    {
+      "type": "declare_field_default",
+      "name": "last_module_in_progress",
+      "value": "NA"
+    }
+  ]
+}

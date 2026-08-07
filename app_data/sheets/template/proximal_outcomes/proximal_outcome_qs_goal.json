@@ -1,0 +1,82 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "proximal_outcomes",
+  "flow_name": "proximal_outcome_qs_goal",
+  "status": "released",
+  "rows": [
+    {
+      "type": "template",
+      "value": "proximal_outcome_base_question",
+      "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "emit",
+          "args": [
+            "completed"
+          ],
+          "_raw": "completed | emit: completed"
+        }
+      ],
+      "rows": [
+        {
+          "name": "row_id",
+          "value": "@fields.selected_goal_id",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "proximal_outcome_base_question.row_id",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@fields.selected_goal_id",
+                "matchedExpression": "@fields.selected_goal_id",
+                "type": "fields",
+                "fieldName": "selected_goal_id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@fields.selected_goal_id": [
+              "value"
+            ]
+          }
+        },
+        {
+          "name": "field_name_value",
+          "value": "proximal_outcome_goal_value",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "proximal_outcome_base_question.field_name_value"
+        },
+        {
+          "name": "field_name_id",
+          "value": "proximal_outcome_goal_id",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "proximal_outcome_base_question.field_name_id"
+        },
+        {
+          "name": "proximal_data_list_name",
+          "value": "goals",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "proximal_outcome_base_question.proximal_data_list_name"
+        }
+      ],
+      "name": "proximal_outcome_base_question",
+      "_nested_name": "proximal_outcome_base_question"
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_global V2",
+    "path": "templates/PLH proximal outcomes.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/17Ti5gmQDWeKBrprr75UlTLVG7VCdYXQtLG31Ch8O4JE"
+  }
+}

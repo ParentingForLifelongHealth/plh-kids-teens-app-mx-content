@@ -23,10 +23,63 @@
       "value": false
     },
     {
+      "name": "download_count",
+      "value": 0
+    },
+    {
+      "type": "data_items",
+      "value": "_asset_packs",
+      "action_list": "data_changed | set_local: download_count: @items.length;",
+      "comments": "check to see if at least one row is populated as if no internet it will never be added"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "page_download_wrap",
+      "parameter_list": "style: column",
+      "condition": "!@local.show_success_page"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "not_started",
+      "parameter_list": "style: column",
+      "condition": "@local.download_count  < 1"
+    },
+    {
+      "type": "title",
+      "name": "error_profile_title",
+      "value": "@global.onboarding_error_title",
+      "parameter_list": "variant: header"
+    },
+    {
+      "type": "text",
+      "name": "error_profile_text",
+      "value": "@global.onboarding_error_text",
+      "parameter_list": "text_align: center"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_footer",
+      "parameter_list": "sticky: bottom;",
+      "style_list": "padding: 12px 24px;"
+    },
+    {
+      "type": "button",
+      "name": "button_retry",
+      "value": "@global.onboarding_error_button_text",
+      "action_list": "click | asset_pack: download: @local.asset_pack_id;",
+      "parameter_list": "style: navigation;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
       "type": "begin_display_group",
       "name": "page_downloading",
       "parameter_list": "style: column",
-      "condition": "!@local.show_success_page"
+      "condition": "@local.download_count > 0"
     },
     {
       "type": "title",
@@ -84,7 +137,8 @@
       "name": "bar_4",
       "value": "@calc((@local.completed_count / @local.total_count) * 100)",
       "parameter_list": "color: @data.onboarding_progress_bars.id_4.colour;",
-      "condition": "@local.total_count !== 0"
+      "condition": "@local.total_count !== 0",
+      "exclude_from_translation": true
     },
     {
       "type": "data_items",
@@ -151,6 +205,9 @@
       "value": "@global.onboarding_error_button_text",
       "action_list": "click | asset_pack: download: @local.asset_pack_id;",
       "parameter_list": "style: navigation;"
+    },
+    {
+      "type": "end_display_group"
     },
     {
       "type": "end_display_group"

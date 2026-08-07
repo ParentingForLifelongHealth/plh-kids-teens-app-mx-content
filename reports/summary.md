@@ -9,17 +9,17 @@
 | animated_slides | 1 |
 | apple_sign_in_button | 2 |
 | audio | 3 |
-| button | 116 |
+| button | 123 |
 | combo_box | 27 |
-| data_items | 240 |
+| data_items | 247 |
 | debug_toggle | 1 |
 | display_grid | 4 |
-| display_group | 115 |
+| display_group | 124 |
 | drawer | 1 |
 | google_sign_in_button | 2 |
 | image | 23 |
 | items | 16 |
-| lottie_animation | 5 |
+| lottie_animation | 6 |
 | nested_properties | 386 |
 | number_selector | 1 |
 | plh_bottom_nav | 1 |
@@ -30,24 +30,25 @@
 | plh_lesson_cta | 2 |
 | plh_module_details_header | 1 |
 | plh_module_list_item | 2 |
-| plh_progress_bar | 5 |
+| plh_progress_bar | 9 |
 | qr_code | 1 |
-| radio_button_grid | 9 |
-| round_button | 20 |
+| radio_button_grid | 10 |
+| radio_list | 3 |
+| round_button | 23 |
 | select_text | 1 |
 | set_field | 4 |
-| set_variable | 4348 |
+| set_variable | 3262 |
 | simple_checkbox | 1 |
 | task_card | 4 |
 | task_progress_bar | 4 |
-| template | 1361 |
-| text | 296 |
+| template | 784 |
+| text | 306 |
 | text_area | 3 |
 | text_box | 21 |
-| text_bubble | 17 |
-| title | 63 |
+| text_bubble | 21 |
+| title | 66 |
 | toggle_bar | 5 |
-| update_action_list | 1 |
+| update_action_list | 2 |
 | video | 3 |
 | youtube | 6 |
 </details>
@@ -59,28 +60,28 @@
 | --- | --- |
 | add_data | 4 |
 | app_update | 1 |
-| asset_pack | 2 |
+| asset_pack | 3 |
 | auth | 3 |
-| emit: completed | 975 |
+| emit: completed | 404 |
 | emit: force_reload | 3 |
 | emit: force_reprocess | 13 |
 | emit: force_restart | 3 |
 | emit: server_sync | 6 |
 | emit: set_language | 2 |
-| emit: uncompleted | 989 |
+| emit: uncompleted | 411 |
 | feedback | 13 |
 | go_to | 26 |
 | nav | 1 |
 | nav_stack | 493 |
 | plh_certificate | 12 |
-| pop_up | 96 |
+| pop_up | 99 |
 | reset_app | 4 |
 | reset_data | 3 |
 | save_to_device | 1 |
 | set_data | 116 |
-| set_field | 149 |
+| set_field | 158 |
 | set_item | 30 |
-| set_local | 134 |
+| set_local | 142 |
 | share | 3 |
 | task | 2 |
 | toast | 1 |
@@ -93,7 +94,7 @@
 | assets | KB | MB |
 | --- | --- | --- |
 | total | 76297 KB | 76.3 MB |
-| unused | 1932 KB | 1.9 MB |
+| unused | 14585 KB | 14.6 MB |
 </details>
 
 <details open>
@@ -109,6 +110,10 @@ Assets that appear in app-data but do not have references within sheets
 | android/splash.png | 239 |
 | images/activities/personajes_t.svg | 204 |
 | images/backgrounds/homescreen_pattern.svg | 156.3 |
+| images/character_icons/ANGELA_facilitator.svg | 9477.2 |
+| images/character_icons/ANGELA_facilitator_intro.jpg | 939 |
+| images/character_icons/ANGEL_facilitator.svg | 921.4 |
+| images/character_icons/ANGEL_facilitator_intro.jpg | 1316.2 |
 | images/flags/gb.svg | 0.5 |
 | images/icons/123.png | 45.5 |
 | images/icons/123.svg | 18.9 |
@@ -297,7 +302,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/character_icons/F3_MADRE.svg | 1057.1 | 1 |
 | images/character_icons/F3_PADRE.svg | 1057.1 | 1 |
 | images/character_icons/HOMBRE_EN_COCHE.svg | 203.7 | 1 |
-| images/character_icons/PROFESORA_1.svg | 919.8 | 1 |
+| images/character_icons/PROFESORA_1.svg | 919.8 | 10 |
 | images/comic/behave/consequences_teen_1.svg | 196.4 | 2 |
 | images/comic/behave/consequences_teen_2.svg | 194.4 | 2 |
 | images/comic/behave/consequences_teen_3.svg | 195.4 | 2 |
@@ -691,7 +696,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 12 |
+| data_list |  | 20 |
 | data_list | activities | 2 |
 | data_list | app_config_language_list | 1 |
 | data_list | campaign_rows | 1 |
@@ -779,13 +784,16 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_list | modules_toddler_change_c | 1 |
 | data_list | modules_young_change_c | 1 |
 | data_list | onboarding | 2 |
+| data_list | proximal_outcomes | 4 |
 | data_list | relax | 1 |
 | data_pipe |  | 4 |
 | data_pipe | generated | 150 |
-| generator |  | 87 |
+| generator |  | 12 |
 | global |  | 14 |
 | global | onboarding | 15 |
+| global | proximal_outcomes | 1 |
 | template |  | 181 |
-| template | generated | 1093 |
+| template | generated | 512 |
 | template | legal_terms | 4 |
+| template | proximal_outcomes | 8 |
 </details>

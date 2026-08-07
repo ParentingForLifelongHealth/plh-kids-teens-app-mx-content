@@ -42,6 +42,7 @@
       "_translations": {
         "value": {}
       },
+      "exclude_from_translation": true,
       "type": "set_variable",
       "_nested_name": "last_page_index",
       "_dynamicFields": {
@@ -468,7 +469,7 @@
       "parameter_list": {
         "filter": "@item.row_index == @local.last_page_index && @item.completed"
       },
-      "condition": "!@global.has_remote_assets",
+      "condition": "!@global.has_remote_assets && !@global.has_proximal_outcomes",
       "rows": [
         {
           "type": "lottie_animation",
@@ -655,10 +656,16 @@
         },
         "condition": [
           {
-            "fullExpression": "!@global.has_remote_assets",
+            "fullExpression": "!@global.has_remote_assets && !@global.has_proximal_outcomes",
             "matchedExpression": "!@global.has_remote_assets",
             "type": "global",
             "fieldName": "has_remote_assets"
+          },
+          {
+            "fullExpression": "!@global.has_remote_assets && !@global.has_proximal_outcomes",
+            "matchedExpression": "!@global.has_proximal_outcomes",
+            "type": "global",
+            "fieldName": "has_proximal_outcomes"
           }
         ]
       },
@@ -677,17 +684,20 @@
         ],
         "!@global.has_remote_assets": [
           "condition"
+        ],
+        "!@global.has_proximal_outcomes": [
+          "condition"
         ]
       }
     },
     {
       "type": "data_items",
-      "name": "page_finished",
+      "name": "page_finished_remote",
       "value": "@data.onboarding_settings_pages",
       "parameter_list": {
         "filter": "@item.row_index == @local.last_page_index && @item.completed"
       },
-      "condition": "@global.has_remote_assets",
+      "condition": "@global.has_remote_assets && !@global.has_proximal_outcomes",
       "rows": [
         {
           "type": "template",
@@ -701,22 +711,13 @@
                 "completed"
               ],
               "_raw": "completed | emit: completed"
-            },
-            {
-              "trigger": "completed",
-              "action_id": "set_field",
-              "args": [
-                "onboarding_settings_completed",
-                true
-              ],
-              "_raw": "completed | set_field: onboarding_settings_completed: true"
             }
           ],
           "rows": [],
-          "_nested_name": "page_finished.onboarding_remote_assets"
+          "_nested_name": "page_finished_remote.onboarding_remote_assets"
         }
       ],
-      "_nested_name": "page_finished",
+      "_nested_name": "page_finished_remote",
       "_dynamicFields": {
         "value": [
           {
@@ -750,10 +751,16 @@
         },
         "condition": [
           {
-            "fullExpression": "@global.has_remote_assets",
+            "fullExpression": "@global.has_remote_assets && !@global.has_proximal_outcomes",
             "matchedExpression": "@global.has_remote_assets",
             "type": "global",
             "fieldName": "has_remote_assets"
+          },
+          {
+            "fullExpression": "@global.has_remote_assets && !@global.has_proximal_outcomes",
+            "matchedExpression": "!@global.has_proximal_outcomes",
+            "type": "global",
+            "fieldName": "has_proximal_outcomes"
           }
         ]
       },
@@ -772,13 +779,102 @@
         ],
         "@global.has_remote_assets": [
           "condition"
+        ],
+        "!@global.has_proximal_outcomes": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "data_items",
+      "name": "page_finished_baseline",
+      "value": "@data.onboarding_settings_pages",
+      "parameter_list": {
+        "filter": "@item.row_index == @local.last_page_index && @item.completed"
+      },
+      "condition": "@global.has_proximal_outcomes",
+      "rows": [
+        {
+          "type": "template",
+          "name": "onboarding_baseline_questions",
+          "value": "onboarding_baseline_questions",
+          "action_list": [
+            {
+              "trigger": "completed",
+              "action_id": "emit",
+              "args": [
+                "completed"
+              ],
+              "_raw": "completed | emit: completed"
+            }
+          ],
+          "rows": [],
+          "_nested_name": "page_finished_baseline.onboarding_baseline_questions"
+        }
+      ],
+      "_nested_name": "page_finished_baseline",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.onboarding_settings_pages",
+            "matchedExpression": "@data.onboarding_settings_pages",
+            "type": "data",
+            "fieldName": "onboarding_settings_pages"
+          }
+        ],
+        "parameter_list": {
+          "filter": [
+            {
+              "fullExpression": "@item.row_index == @local.last_page_index && @item.completed",
+              "matchedExpression": "@item.row_index",
+              "type": "item",
+              "fieldName": "row_index"
+            },
+            {
+              "fullExpression": "@item.row_index == @local.last_page_index && @item.completed",
+              "matchedExpression": "@local.last_page_index",
+              "type": "local",
+              "fieldName": "last_page_index"
+            },
+            {
+              "fullExpression": "@item.row_index == @local.last_page_index && @item.completed",
+              "matchedExpression": "@item.completed",
+              "type": "item",
+              "fieldName": "completed"
+            }
+          ]
+        },
+        "condition": [
+          {
+            "fullExpression": "@global.has_proximal_outcomes",
+            "matchedExpression": "@global.has_proximal_outcomes",
+            "type": "global",
+            "fieldName": "has_proximal_outcomes"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.onboarding_settings_pages": [
+          "value"
+        ],
+        "@item.row_index": [
+          "parameter_list.filter"
+        ],
+        "@local.last_page_index": [
+          "parameter_list.filter"
+        ],
+        "@item.completed": [
+          "parameter_list.filter"
+        ],
+        "@global.has_proximal_outcomes": [
+          "condition"
         ]
       }
     }
   ],
   "_source": {
-    "name": "library PLH onboarding",
-    "path": "PLH onboarding.xlsx",
-    "url": "https://docs.google.com/spreadsheets/d/1LUIu_aqkzYjyUq0ecQEmWJa62CEvQ4E2L4Fkz_94ydw"
+    "name": "kids_teens_mx",
+    "path": "data/MX goals.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1jprYnAWfuA39fBB47YKMMJ1Wp06XjsNF8X0BoZV-nR8"
   }
 }
