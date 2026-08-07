@@ -13,7 +13,8 @@
     },
     {
       "name": "last_page_index",
-      "value": "@calc(Object.keys(@data.onboarding_settings_pages).length - 1)"
+      "value": "@calc(Object.keys(@data.onboarding_settings_pages).length - 1)",
+      "exclude_from_translation": true
     },
     {
       "type": "begin_data_items",
@@ -61,7 +62,8 @@
       "name": "page_finished",
       "value": "@data.onboarding_settings_pages",
       "parameter_list": "filter: @item.row_index == @local.last_page_index && @item.completed",
-      "condition": "!@global.has_remote_assets"
+      "condition": "!@global.has_remote_assets && !@global.has_proximal_outcomes",
+      "comments": "no remote assets\nno proximal outcomes"
     },
     {
       "type": "lottie_animation",
@@ -103,16 +105,37 @@
     },
     {
       "type": "begin_data_items",
-      "name": "page_finished",
+      "name": "page_finished_remote",
       "value": "@data.onboarding_settings_pages",
       "parameter_list": "filter: @item.row_index == @local.last_page_index && @item.completed",
-      "condition": "@global.has_remote_assets"
+      "condition": "@global.has_remote_assets && !@global.has_proximal_outcomes",
+      "comments": "remote assets\nno proximal outcomes"
     },
     {
       "type": "begin_template",
       "name": "onboarding_remote_assets",
       "value": "onboarding_remote_assets",
-      "action_list": "completed | emit: completed;\ncompleted | set_field: onboarding_settings_completed: true;"
+      "action_list": "completed | emit: completed;"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "begin_data_items",
+      "name": "page_finished_baseline",
+      "value": "@data.onboarding_settings_pages",
+      "parameter_list": "filter: @item.row_index == @local.last_page_index && @item.completed",
+      "condition": "@global.has_proximal_outcomes",
+      "comments": "proximal outcomes (needs to handle remote assets or not in it)"
+    },
+    {
+      "type": "begin_template",
+      "name": "onboarding_baseline_questions",
+      "value": "onboarding_baseline_questions",
+      "action_list": "completed | emit: completed;"
     },
     {
       "type": "end_template"

@@ -1,0 +1,4970 @@
+{
+  "flow_type": "data_list",
+  "flow_subtype": "proximal_outcomes",
+  "flow_name": "goals",
+  "status": "released",
+  "rows": [
+    {
+      "id": "time_5min",
+      "challenge_list": [
+        "daily_arguments",
+        "descalate",
+        "how_to_play_12to17",
+        "missing_developmental_milestones",
+        "not_enough_time",
+        "too_tired"
+      ],
+      "title": "Enjoy 5 minutes of uninterrupted time with @field.child_name",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Enjoy 5 minutes of uninterrupted time with @field.child_name"
+        },
+        "normalising_statement": {
+          "eng": "Finding even a few uninterrupted minutes can be hard on a busy day."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you spend at least 5 minutes of uninterrupted time with @field.child_name?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Finding even a few uninterrupted minutes can be hard on a busy day.",
+      "question": "Over the last two weeks, how often did you spend at least 5 minutes of uninterrupted time with @field.child_name?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "say_yes_invite",
+      "challenge_list": [
+        "how_to_play_6to11",
+        "not_enough_time",
+        "prefer_screen",
+        "too_tired"
+      ],
+      "title": "Join in 1 thing @field.child_name invites me to do",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Join in 1 thing @field.child_name invites me to do"
+        },
+        "normalising_statement": {
+          "eng": "It's not always easy to drop what you're doing and say yes."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you say yes to something @field.child_name invited you to do?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "It's not always easy to drop what you're doing and say yes.",
+      "question": "Over the last two weeks, how often did you say yes to something @field.child_name invited you to do?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "fun_chore",
+      "challenge_list": [
+        "avoid_chores",
+        "how_to_play_12to17",
+        "how_to_play_2to5",
+        "missing_developmental_milestones",
+        "not_enough_time",
+        "not_reading",
+        "prefer_screen",
+        "too_tired"
+      ],
+      "title": "Turn at least 1 chore into a shared, fun moment",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Turn at least 1 chore into a shared, fun moment"
+        },
+        "normalising_statement": {
+          "eng": "Chores rarely feel fun, so turning one into a shared moment is worth noticing."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you turn a chore into a shared, fun moment with @field.child_name?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Chores rarely feel fun, so turning one into a shared moment is worth noticing.",
+      "question": "Over the last two weeks, how often did you turn a chore into a shared, fun moment with @field.child_name?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "car_walk_checkin",
+      "challenge_list": [
+        "child_shuts_down",
+        "how_to_play_12to17",
+        "not_enough_time",
+        "too_tired"
+      ],
+      "title": "Use 1 daily routine moment to check in with @field.child_name",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Use 1 daily routine moment to check in with @field.child_name"
+        },
+        "normalising_statement": {
+          "eng": "Daily routines like the car ride or walk to school are easy moments to miss."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you use a daily routine moment to check in with @field.child_name?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Daily routines like the car ride or walk to school are easy moments to miss.",
+      "question": "Over the last two weeks, how often did you use a daily routine moment to check in with @field.child_name?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "screenfree_15m",
+      "challenge_list": [
+        "excessive_screen_time",
+        "how_to_play_12to17",
+        "missing_developmental_milestones",
+        "prefer_screen",
+        "social_media_mental_health"
+      ],
+      "title": "Do 1 screen-free activity with @field.child_name",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Do 1 screen-free activity with @field.child_name"
+        },
+        "normalising_statement": {
+          "eng": "Screen-free time can be hard to carve out, especially when a screen is the easy option."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you do a screen-free activity with @field.child_name?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Screen-free time can be hard to carve out, especially when a screen is the easy option.",
+      "question": "Over the last two weeks, how often did you do a screen-free activity with @field.child_name?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "join_activity",
+      "challenge_list": [
+        "how_to_play_12to17",
+        "how_to_play_2to5",
+        "how_to_play_6to11",
+        "missing_developmental_milestones",
+        "prefer_screen"
+      ],
+      "title": "Join @field.child_name in what they are doing on their own",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Join @field.child_name in what they are doing on their own"
+        },
+        "normalising_statement": {
+          "eng": "Jumping into what your child is already doing takes a small but real effort."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you join @field.child_name in something they were doing on their own?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Jumping into what your child is already doing takes a small but real effort.",
+      "question": "Over the last two weeks, how often did you join @field.child_name in something they were doing on their own?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "pause_5min",
+      "challenge_list": [
+        "descalate",
+        "feel_guilty",
+        "no_time_energy",
+        "stop_worry",
+        "stress_health",
+        "too_tired"
+      ],
+      "title": "Take a 5-minute pause for myself",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Take a 5-minute pause for myself"
+        },
+        "normalising_statement": {
+          "eng": "Parents rarely get an uninterrupted 5 minutes for themselves."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you take a 5-minute pause for yourself?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Parents rarely get an uninterrupted 5 minutes for themselves.",
+      "question": "Over the last two weeks, how often did you take a 5-minute pause for yourself?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "recharge_today",
+      "challenge_list": [
+        "feel_guilty",
+        "no_time_energy",
+        "stress_health",
+        "too_tired"
+      ],
+      "title": "Do 1 thing that recharges me today",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Do 1 thing that recharges me today"
+        },
+        "normalising_statement": {
+          "eng": "It's easy to put your own recharging last on the list."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you do something that recharged you?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "It's easy to put your own recharging last on the list.",
+      "question": "Over the last two weeks, how often did you do something that recharged you?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "talk_other_adult",
+      "challenge_list": [
+        "feel_guilty",
+        "lonely_parent",
+        "no_time_energy",
+        "stop_worry",
+        "stress_health",
+        "too_tired"
+      ],
+      "title": "Talk with 1 other adult",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Talk with 1 other adult"
+        },
+        "normalising_statement": {
+          "eng": "Parenting can feel isolating, and reaching out to another adult doesn't always happen."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you talk with another adult?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Parenting can feel isolating, and reaching out to another adult doesn't always happen.",
+      "question": "Over the last two weeks, how often did you talk with another adult?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "new_game",
+      "challenge_list": [
+        "how_to_play_2to5",
+        "missing_developmental_milestones",
+        "not_reading"
+      ],
+      "title": "Try a new game with @field.child_name",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Try a new game with @field.child_name"
+        },
+        "normalising_statement": {
+          "eng": "Trying something new together takes a bit of extra energy."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you try a new game with @field.child_name?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Trying something new together takes a bit of extra energy.",
+      "question": "Over the last two weeks, how often did you try a new game with @field.child_name?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "pretend_play_5min",
+      "challenge_list": [
+        "how_to_play_2to5"
+      ],
+      "title": "Join @field.child_name in pretend play for 5 minutes",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Join @field.child_name in pretend play for 5 minutes"
+        },
+        "normalising_statement": {
+          "eng": "Pretend play can feel repetitive or silly, so it's easy to skip."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you join @field.child_name in pretend play for 5 minutes?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Pretend play can feel repetitive or silly, so it's easy to skip.",
+      "question": "Over the last two weeks, how often did you join @field.child_name in pretend play for 5 minutes?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "describe_play_narrate",
+      "challenge_list": [
+        "how_to_play_2to5"
+      ],
+      "title": "Describe what @field.child_name is doing during play",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Describe what @field.child_name is doing during play"
+        },
+        "normalising_statement": {
+          "eng": "Narrating play out loud doesn't always come naturally."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you describe what @field.child_name was doing during play?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Narrating play out loud doesn't always come naturally.",
+      "question": "Over the last two weeks, how often did you describe what @field.child_name was doing during play?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "ask_to_teach",
+      "challenge_list": [
+        "how_to_play_12to17",
+        "how_to_play_6to11"
+      ],
+      "title": "Ask @field.child_name to teach me about something they love",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Ask @field.child_name to teach me about something they love"
+        },
+        "normalising_statement": {
+          "eng": "Letting your child take the lead and teach you something is a small shift worth tracking."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you ask @field.child_name to teach you about something they love?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Letting your child take the lead and teach you something is a small shift worth tracking.",
+      "question": "Over the last two weeks, how often did you ask @field.child_name to teach you about something they love?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "spontaneous_share",
+      "challenge_list": [
+        "child_shuts_down",
+        "how_to_play_6to11",
+        "mental_health_worry",
+        "wont_share"
+      ],
+      "title": "@field.child_name shares something without being asked",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name shares something without being asked"
+        },
+        "normalising_statement": {
+          "eng": "It can take time before a child opens up without being asked."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name share something with you without being asked?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "It can take time before a child opens up without being asked.",
+      "question": "Over the last two weeks, how often did @field.child_name share something with you without being asked?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "sit_near_10m",
+      "challenge_list": [
+        "child_shuts_down"
+      ],
+      "title": "Sit near @field.child_name for 10 minutes without pushing them to talk",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Sit near @field.child_name for 10 minutes without pushing them to talk"
+        },
+        "normalising_statement": {
+          "eng": "Sitting nearby without pushing for conversation can feel like doing nothing, but it counts."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you sit near @field.child_name for 10 minutes without pushing them to talk?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Sitting nearby without pushing for conversation can feel like doing nothing, but it counts.",
+      "question": "Over the last two weeks, how often did you sit near @field.child_name for 10 minutes without pushing them to talk?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "detailed_answer",
+      "challenge_list": [
+        "child_shuts_down",
+        "wont_share"
+      ],
+      "title": "@field.child_name gives me more than a one-word answer when I check in",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name gives me more than a one-word answer when I check in"
+        },
+        "normalising_statement": {
+          "eng": "Getting more than a one-word answer can take patience."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name give you more than a one-word answer when you checked in?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Getting more than a one-word answer can take patience.",
+      "question": "Over the last two weeks, how often did @field.child_name give you more than a one-word answer when you checked in?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "stay_calm_talking",
+      "challenge_list": [
+        "daily_arguments",
+        "intense_meltdown",
+        "losing_temper",
+        "tantrum"
+      ],
+      "title": "Stay calm when talking",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Stay calm when talking"
+        },
+        "normalising_statement": {
+          "eng": "Staying calm in the moment is one of the hardest parenting skills to practise."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you manage to stay calm while talking with @field.child_name?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Staying calm in the moment is one of the hardest parenting skills to practise.",
+      "question": "Over the last two weeks, how often did you manage to stay calm while talking with @field.child_name?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "relaxing_talk",
+      "challenge_list": [
+        "arguing",
+        "daily_arguments",
+        "descalate"
+      ],
+      "title": "Have at least 1 fun and relaxing conversation",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Have at least 1 fun and relaxing conversation"
+        },
+        "normalising_statement": {
+          "eng": "A relaxed, easy conversation isn't always easy to find time for."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you have a fun and relaxing conversation with @field.child_name?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "A relaxed, easy conversation isn't always easy to find time for.",
+      "question": "Over the last two weeks, how often did you have a fun and relaxing conversation with @field.child_name?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "praise_child",
+      "challenge_list": [
+        "daily_arguments",
+        "descalate",
+        "missing_developmental_milestones"
+      ],
+      "title": "Praise @field.child_name about 1 thing",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Praise @field.child_name about 1 thing"
+        },
+        "normalising_statement": {
+          "eng": "Praise can slip down the priority list on busy or difficult days."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you praise @field.child_name about something?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Praise can slip down the priority list on busy or difficult days.",
+      "question": "Over the last two weeks, how often did you praise @field.child_name about something?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "uses_words",
+      "challenge_list": [
+        "aggressive_play",
+        "tantrum"
+      ],
+      "title": "@field.child_name use their words when upset",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name use their words when upset"
+        },
+        "normalising_statement": {
+          "eng": "Using words instead of reacting physically is a skill that takes practice."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name use their words when upset?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Using words instead of reacting physically is a skill that takes practice.",
+      "question": "Over the last two weeks, how often did @field.child_name use their words when upset?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "frustration_break",
+      "challenge_list": [
+        "aggressive_play"
+      ],
+      "title": "@field.child_name takes a 1-minute break when frustrated during play",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name takes a 1-minute break when frustrated during play"
+        },
+        "normalising_statement": {
+          "eng": "Taking a break when frustrated, instead of escalating, takes real self-control."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name take a short break when frustrated during play?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Taking a break when frustrated, instead of escalating, takes real self-control.",
+      "question": "Over the last two weeks, how often did @field.child_name take a short break when frustrated during play?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "calm_friend_express",
+      "challenge_list": [
+        "aggressive_play",
+        "peer_struggles"
+      ],
+      "title": "@field.child_name speaks up about something bothering them before it turns into a fight",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name speaks up about something bothering them before it turns into a fight"
+        },
+        "normalising_statement": {
+          "eng": "Speaking up early, before things boil over, is a skill worth noticing."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name speak up about something bothering them before it turned into a fight?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Speaking up early, before things boil over, is a skill worth noticing.",
+      "question": "Over the last two weeks, how often did @field.child_name speak up about something bothering them before it turned into a fight?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "calm_bedtime",
+      "challenge_list": [
+        "bedtimes",
+        "excessive_screen_time",
+        "intense_meltdown",
+        "social_media_mental_health",
+        "tantrum"
+      ],
+      "title": "Bedtimes are calm and screen-free",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Bedtimes are calm and screen-free"
+        },
+        "normalising_statement": {
+          "eng": "Bedtime can be one of the hardest parts of the day to keep calm."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often were bedtimes calm and screen-free?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Bedtime can be one of the hardest parts of the day to keep calm.",
+      "question": "Over the last two weeks, how often were bedtimes calm and screen-free?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "accepts_no",
+      "challenge_list": [
+        "intense_meltdown",
+        "tantrum"
+      ],
+      "title": "@field.child_name accepts \"no\" without a meltdown",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name accepts \"no\" without a meltdown"
+        },
+        "normalising_statement": {
+          "eng": "Hearing \"no\" without a meltdown is a big ask for a lot of children."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name accept \"no\" without a meltdown?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Hearing \"no\" without a meltdown is a big ask for a lot of children.",
+      "question": "Over the last two weeks, how often did @field.child_name accept \"no\" without a meltdown?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "stops_fun_activity_when_asked",
+      "challenge_list": [
+        "not_listening",
+        "tantrum"
+      ],
+      "title": "Stop a fun activity and start what's asked",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Stop a fun activity and start what's asked"
+        },
+        "normalising_statement": {
+          "eng": "Stopping something fun to do what's asked is genuinely hard, for kids and adults alike."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name stop a fun activity and start what was asked?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Stopping something fun to do what's asked is genuinely hard, for kids and adults alike.",
+      "question": "Over the last two weeks, how often did @field.child_name stop a fun activity and start what was asked?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "follows_instruction",
+      "challenge_list": [
+        "arguing",
+        "avoid_chores",
+        "bedtimes",
+        "not_listening"
+      ],
+      "title": "@field.child_name follows my instruction without me repeating it",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name follows my instruction without me repeating it"
+        },
+        "normalising_statement": {
+          "eng": "Following an instruction the first time, without repeating it, is a lot to ask Sometimes."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name follow your instruction without you repeating it?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Following an instruction the first time, without repeating it, is a lot to ask Sometimes.",
+      "question": "Over the last two weeks, how often did @field.child_name follow your instruction without you repeating it?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "responds_calmly",
+      "challenge_list": [
+        "arguing"
+      ],
+      "title": "@field.child_name responds calmly",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name responds calmly"
+        },
+        "normalising_statement": {
+          "eng": "A calm response isn't always the first instinct."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name respond calmly?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "A calm response isn't always the first instinct.",
+      "question": "Over the last two weeks, how often did @field.child_name respond calmly?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "calm_rule_talk",
+      "challenge_list": [
+        "arguing",
+        "descalate"
+      ],
+      "title": "Have a calm conversation about a rule",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Have a calm conversation about a rule"
+        },
+        "normalising_statement": {
+          "eng": "Conversations about rules can turn tense quickly."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you have a calm conversation about a rule?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Conversations about rules can turn tense quickly.",
+      "question": "Over the last two weeks, how often did you have a calm conversation about a rule?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "chore_few_reminders",
+      "challenge_list": [
+        "avoid_chores",
+        "bedtimes",
+        "not_listening"
+      ],
+      "title": "Finish a daily routine or chore with fewer reminders",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Finish a daily routine or chore with fewer reminders"
+        },
+        "normalising_statement": {
+          "eng": "Fewer reminders for the same routine or chore is real progress, even if it's not perfect."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did a daily routine or chore get finished with fewer reminders?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Fewer reminders for the same routine or chore is real progress, even if it's not perfect.",
+      "question": "Over the last two weeks, how often did a daily routine or chore get finished with fewer reminders?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "starts_chore_independently",
+      "challenge_list": [
+        "avoid_chores"
+      ],
+      "title": "Complete the first step of the chore without help",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Complete the first step of the chore without help"
+        },
+        "normalising_statement": {
+          "eng": "Just getting started on a chore without help is often the hardest part."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name complete the first step of the chore without help?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Just getting started on a chore without help is often the hardest part.",
+      "question": "Over the last two weeks, how often did @field.child_name complete the first step of the chore without help?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "come_back_talk_yelling",
+      "challenge_list": [
+        "descalate"
+      ],
+      "title": "Come back to talk without yelling after cooling off",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Come back to talk without yelling after cooling off"
+        },
+        "normalising_statement": {
+          "eng": "Coming back to talk calmly after cooling off takes intention."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you come back to talk without yelling after cooling off?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Coming back to talk calmly after cooling off takes intention.",
+      "question": "Over the last two weeks, how often did you come back to talk without yelling after cooling off?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "respond_calmly_ask_child",
+      "challenge_list": [
+        "not_listening"
+      ],
+      "title": "Respond calmly when I ask @field.child_name to do something",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Respond calmly when I ask @field.child_name to do something"
+        },
+        "normalising_statement": {
+          "eng": "Staying calm while asking your child to do something isn't always easy in the moment."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you respond calmly when asking @field.child_name to do something?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Staying calm while asking your child to do something isn't always easy in the moment.",
+      "question": "Over the last two weeks, how often did you respond calmly when asking @field.child_name to do something?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "notice_anger_rising",
+      "challenge_list": [
+        "losing_temper"
+      ],
+      "title": "Notice my anger rising",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Notice my anger rising"
+        },
+        "normalising_statement": {
+          "eng": "Noticing anger as it starts to build is a skill on its own, before anything else changes."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you notice your anger rising?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Noticing anger as it starts to build is a skill on its own, before anything else changes.",
+      "question": "Over the last two weeks, how often did you notice your anger rising?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "resolve_no_yelling",
+      "challenge_list": [
+        "losing_temper"
+      ],
+      "title": "Resolve an argument without anyone yelling",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Resolve an argument without anyone yelling"
+        },
+        "normalising_statement": {
+          "eng": "Resolving an argument without anyone raising their voice is a real win."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did an argument get resolved without anyone yelling?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Resolving an argument without anyone raising their voice is a real win.",
+      "question": "Over the last two weeks, how often did an argument get resolved without anyone yelling?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "stays_in_sight",
+      "challenge_list": [
+        "wandering_off"
+      ],
+      "title": "@field.child_name stays within sight when we're out",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name stays within sight when we're out"
+        },
+        "normalising_statement": {
+          "eng": "Staying in sight when out and about takes ongoing awareness from a young child."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name stay within sight when you were out?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Staying in sight when out and about takes ongoing awareness from a young child.",
+      "question": "Over the last two weeks, how often did @field.child_name stay within sight when you were out?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "ask_before_moving",
+      "challenge_list": [
+        "wandering_off"
+      ],
+      "title": "@field.child_name asks for permission before moving to a new area",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name asks for permission before moving to a new area"
+        },
+        "normalising_statement": {
+          "eng": "Asking first before wandering off is a habit that takes time to build."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name ask for permission before moving to a new area?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Asking first before wandering off is a habit that takes time to build.",
+      "question": "Over the last two weeks, how often did @field.child_name ask for permission before moving to a new area?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "separated_plan",
+      "challenge_list": [
+        "wandering_off"
+      ],
+      "title": "@field.child_name knows what to do if we get separated",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name knows what to do if we get separated"
+        },
+        "normalising_statement": {
+          "eng": "Knowing what to do if you get separated can bring real peace of mind."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how confident are you that @field.child_name knows what to do if you get separated?"
+        },
+        "option_1_text": {
+          "eng": "Not at all confident"
+        },
+        "option_2_text": {
+          "eng": "Slightly confident"
+        },
+        "option_3_text": {
+          "eng": "Somewhat confident"
+        },
+        "option_4_text": {
+          "eng": "Confident"
+        },
+        "option_5_text": {
+          "eng": "Very confident"
+        }
+      },
+      "normalising_statement": "Knowing what to do if you get separated can bring real peace of mind.",
+      "question": "Over the last two weeks, how confident are you that @field.child_name knows what to do if you get separated?",
+      "option_1_text": "Not at all confident",
+      "option_2_text": "Slightly confident",
+      "option_3_text": "Somewhat confident",
+      "option_4_text": "Confident",
+      "option_5_text": "Very confident"
+    },
+    {
+      "id": "knows_body_part_names",
+      "challenge_list": [
+        "body_safety_awareness"
+      ],
+      "title": "@field.child_name knows the correct names for their body parts",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name knows the correct names for their body parts"
+        },
+        "normalising_statement": {
+          "eng": "Having the right words for their body helps a child talk about it clearly and confidently."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how confident are you that @field.child_name knows the correct names for their body parts?"
+        },
+        "option_1_text": {
+          "eng": "Not at all confident"
+        },
+        "option_2_text": {
+          "eng": "Slightly confident"
+        },
+        "option_3_text": {
+          "eng": "Somewhat confident"
+        },
+        "option_4_text": {
+          "eng": "Confident"
+        },
+        "option_5_text": {
+          "eng": "Very confident"
+        }
+      },
+      "normalising_statement": "Having the right words for their body helps a child talk about it clearly and confidently.",
+      "question": "Over the last two weeks, how confident are you that @field.child_name knows the correct names for their body parts?",
+      "option_1_text": "Not at all confident",
+      "option_2_text": "Slightly confident",
+      "option_3_text": "Somewhat confident",
+      "option_4_text": "Confident",
+      "option_5_text": "Very confident"
+    },
+    {
+      "id": "says_no_unwanted_touch",
+      "challenge_list": [
+        "body_safety_awareness"
+      ],
+      "title": "@field.child_name can say no to touch that feels wrong",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name can say no to touch that feels wrong"
+        },
+        "normalising_statement": {
+          "eng": "Being able to say no to unwanted touch is an important safety skill."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how confident are you that @field.child_name can say no to touch that feels wrong?"
+        },
+        "option_1_text": {
+          "eng": "Not at all confident"
+        },
+        "option_2_text": {
+          "eng": "Slightly confident"
+        },
+        "option_3_text": {
+          "eng": "Somewhat confident"
+        },
+        "option_4_text": {
+          "eng": "Confident"
+        },
+        "option_5_text": {
+          "eng": "Very confident"
+        }
+      },
+      "normalising_statement": "Being able to say no to unwanted touch is an important safety skill.",
+      "question": "Over the last two weeks, how confident are you that @field.child_name can say no to touch that feels wrong?",
+      "option_1_text": "Not at all confident",
+      "option_2_text": "Slightly confident",
+      "option_3_text": "Somewhat confident",
+      "option_4_text": "Confident",
+      "option_5_text": "Very confident"
+    },
+    {
+      "id": "tells_trusted_adult_wrong_touch",
+      "challenge_list": [
+        "body_safety_awareness"
+      ],
+      "title": "@field.child_name knows to tell a trusted adult when something feels wrong",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name knows to tell a trusted adult when something feels wrong"
+        },
+        "normalising_statement": {
+          "eng": "Knowing who to tell, and that it's safe to tell, matters as much as anything else."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how confident are you that @field.child_name knows to tell a trusted adult when something feels wrong?"
+        },
+        "option_1_text": {
+          "eng": "Not at all confident"
+        },
+        "option_2_text": {
+          "eng": "Slightly confident"
+        },
+        "option_3_text": {
+          "eng": "Somewhat confident"
+        },
+        "option_4_text": {
+          "eng": "Confident"
+        },
+        "option_5_text": {
+          "eng": "Very confident"
+        }
+      },
+      "normalising_statement": "Knowing who to tell, and that it's safe to tell, matters as much as anything else.",
+      "question": "Over the last two weeks, how confident are you that @field.child_name knows to tell a trusted adult when something feels wrong?",
+      "option_1_text": "Not at all confident",
+      "option_2_text": "Slightly confident",
+      "option_3_text": "Somewhat confident",
+      "option_4_text": "Confident",
+      "option_5_text": "Very confident"
+    },
+    {
+      "id": "safer_game_version",
+      "challenge_list": [
+        "rough_play_injuries"
+      ],
+      "title": "@field.child_name picks a safer version of the game",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name picks a safer version of the game"
+        },
+        "normalising_statement": {
+          "eng": "Choosing a safer way to play doesn't always happen in the heat of the moment."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name pick a safer version of the game?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Choosing a safer way to play doesn't always happen in the heat of the moment.",
+      "question": "Over the last two weeks, how often did @field.child_name pick a safer version of the game?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "stop_rough_play",
+      "challenge_list": [
+        "rough_play_injuries"
+      ],
+      "title": "@field.child_name stops when I say the play is getting too rough",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name stops when I say the play is getting too rough"
+        },
+        "normalising_statement": {
+          "eng": "Stopping rough play as soon as it's asked for takes real self-control."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name stop when you said the play was getting too rough?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Stopping rough play as soon as it's asked for takes real self-control.",
+      "question": "Over the last two weeks, how often did @field.child_name stop when you said the play was getting too rough?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "tells_when_hurt_playing",
+      "challenge_list": [
+        "rough_play_injuries"
+      ],
+      "title": "@field.child_name tells me when they're hurt during play",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name tells me when they're hurt during play"
+        },
+        "normalising_statement": {
+          "eng": "Speaking up about being hurt, rather than brushing it off, is worth noticing."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name tell you when they were hurt during play?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Speaking up about being hurt, rather than brushing it off, is worth noticing.",
+      "question": "Over the last two weeks, how often did @field.child_name tell you when they were hurt during play?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "asks_for_help",
+      "challenge_list": [
+        "bullying",
+        "bullying_others",
+        "cyberbullying",
+        "inappropriate_content",
+        "mental_health_worry",
+        "social_media_mental_health",
+        "wont_share"
+      ],
+      "title": "@field.child_name asks for help when they need it",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name asks for help when they need it"
+        },
+        "normalising_statement": {
+          "eng": "Asking for help isn't always a child's first instinct."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name ask for help when they needed it?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Asking for help isn't always a child's first instinct.",
+      "question": "Over the last two weeks, how often did @field.child_name ask for help when they needed it?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "talk_openly",
+      "challenge_list": [
+        "body_changes_talk",
+        "bullying",
+        "bullying_others",
+        "cyberbullying",
+        "inappropriate_content",
+        "peer_pressure_support",
+        "sex_dating_talk",
+        "substance_peer_pressure"
+      ],
+      "title": "@field.child_name and I talk openly about difficult topics",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name and I talk openly about difficult topics"
+        },
+        "normalising_statement": {
+          "eng": "Open conversations about difficult topics take trust that builds over time."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you and @field.child_name talk openly about a difficult topic?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Open conversations about difficult topics take trust that builds over time.",
+      "question": "Over the last two weeks, how often did you and @field.child_name talk openly about a difficult topic?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "open_questions",
+      "challenge_list": [
+        "body_changes_talk",
+        "inappropriate_content",
+        "peer_pressure_support",
+        "sex_dating_talk"
+      ],
+      "title": "@field.child_name asks me questions",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name asks me questions"
+        },
+        "normalising_statement": {
+          "eng": "A child asking questions is often a sign they feel safe bringing things to you."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name ask you questions?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "A child asking questions is often a sign they feel safe bringing things to you.",
+      "question": "Over the last two weeks, how often did @field.child_name ask you questions?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "knows_age_normal",
+      "challenge_list": [
+        "body_changes_talk"
+      ],
+      "title": "@field.child_name knows what's normal for their age",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name knows what's normal for their age"
+        },
+        "normalising_statement": {
+          "eng": "Knowing what's typical for their age can ease a lot of a child's worry."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how confident are you that @field.child_name knows what's normal for their age?"
+        },
+        "option_1_text": {
+          "eng": "Not at all confident"
+        },
+        "option_2_text": {
+          "eng": "Slightly confident"
+        },
+        "option_3_text": {
+          "eng": "Somewhat confident"
+        },
+        "option_4_text": {
+          "eng": "Confident"
+        },
+        "option_5_text": {
+          "eng": "Very confident"
+        }
+      },
+      "normalising_statement": "Knowing what's typical for their age can ease a lot of a child's worry.",
+      "question": "Over the last two weeks, how confident are you that @field.child_name knows what's normal for their age?",
+      "option_1_text": "Not at all confident",
+      "option_2_text": "Slightly confident",
+      "option_3_text": "Somewhat confident",
+      "option_4_text": "Confident",
+      "option_5_text": "Very confident"
+    },
+    {
+      "id": "refuse_risky_offer",
+      "challenge_list": [
+        "peer_pressure_support",
+        "substance_peer_pressure"
+      ],
+      "title": "@field.child_name knows what to say if a friend offers them something risky",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name knows what to say if a friend offers them something risky"
+        },
+        "normalising_statement": {
+          "eng": "Having the words ready in advance makes it easier to say no in the moment."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how confident are you that @field.child_name knows what to say if a friend offers them something risky?"
+        },
+        "option_1_text": {
+          "eng": "Not at all confident"
+        },
+        "option_2_text": {
+          "eng": "Slightly confident"
+        },
+        "option_3_text": {
+          "eng": "Somewhat confident"
+        },
+        "option_4_text": {
+          "eng": "Confident"
+        },
+        "option_5_text": {
+          "eng": "Very confident"
+        }
+      },
+      "normalising_statement": "Having the words ready in advance makes it easier to say no in the moment.",
+      "question": "Over the last two weeks, how confident are you that @field.child_name knows what to say if a friend offers them something risky?",
+      "option_1_text": "Not at all confident",
+      "option_2_text": "Slightly confident",
+      "option_3_text": "Somewhat confident",
+      "option_4_text": "Confident",
+      "option_5_text": "Very confident"
+    },
+    {
+      "id": "calls_for_exit",
+      "challenge_list": [
+        "peer_pressure_support",
+        "substance_peer_pressure"
+      ],
+      "title": "@field.child_name feels comfortable calling me if they need a way out",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name feels comfortable calling me if they need a way out"
+        },
+        "normalising_statement": {
+          "eng": "Knowing they can call you for a way out, no questions asked, matters most before it's ever needed."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how confident are you that @field.child_name feels comfortable calling you if they need a way out?"
+        },
+        "option_1_text": {
+          "eng": "Not at all confident"
+        },
+        "option_2_text": {
+          "eng": "Slightly confident"
+        },
+        "option_3_text": {
+          "eng": "Somewhat confident"
+        },
+        "option_4_text": {
+          "eng": "Confident"
+        },
+        "option_5_text": {
+          "eng": "Very confident"
+        }
+      },
+      "normalising_statement": "Knowing they can call you for a way out, no questions asked, matters most before it's ever needed.",
+      "question": "Over the last two weeks, how confident are you that @field.child_name feels comfortable calling you if they need a way out?",
+      "option_1_text": "Not at all confident",
+      "option_2_text": "Slightly confident",
+      "option_3_text": "Somewhat confident",
+      "option_4_text": "Confident",
+      "option_5_text": "Very confident"
+    },
+    {
+      "id": "tells_me_if_something_happens",
+      "challenge_list": [
+        "bullying",
+        "cyberbullying",
+        "mental_health_worry",
+        "risky_behavior",
+        "sex_dating_talk",
+        "social_media_mental_health",
+        "substance_peer_pressure"
+      ],
+      "title": "@field.child_name tells me if something happens",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name tells me if something happens"
+        },
+        "normalising_statement": {
+          "eng": "Trusting that your child would come to you if something happened is hard to build overnight."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how confident are you that @field.child_name would tell you if something happened?"
+        },
+        "option_1_text": {
+          "eng": "Not at all confident"
+        },
+        "option_2_text": {
+          "eng": "Slightly confident"
+        },
+        "option_3_text": {
+          "eng": "Somewhat confident"
+        },
+        "option_4_text": {
+          "eng": "Confident"
+        },
+        "option_5_text": {
+          "eng": "Very confident"
+        }
+      },
+      "normalising_statement": "Trusting that your child would come to you if something happened is hard to build overnight.",
+      "question": "Over the last two weeks, how confident are you that @field.child_name would tell you if something happened?",
+      "option_1_text": "Not at all confident",
+      "option_2_text": "Slightly confident",
+      "option_3_text": "Somewhat confident",
+      "option_4_text": "Confident",
+      "option_5_text": "Very confident"
+    },
+    {
+      "id": "agree_safety_rule",
+      "challenge_list": [
+        "risky_behavior",
+        "sex_dating_talk"
+      ],
+      "title": "@field.child_name and I agree on 1 clear safety rule together",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name and I agree on 1 clear safety rule together"
+        },
+        "normalising_statement": {
+          "eng": "Agreeing on a rule together, rather than just setting it, takes a bit more time."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you and @field.child_name agree on a clear safety rule together?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Agreeing on a rule together, rather than just setting it, takes a bit more time.",
+      "question": "Over the last two weeks, how often did you and @field.child_name agree on a clear safety rule together?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "safe_choice_own",
+      "challenge_list": [
+        "risky_behavior"
+      ],
+      "title": "@field.child_name makes a safer choice on their own",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name makes a safer choice on their own"
+        },
+        "normalising_statement": {
+          "eng": "Making a safer choice without being told is a sign the message is landing."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name make a safer choice on their own?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Making a safer choice without being told is a sign the message is landing.",
+      "question": "Over the last two weeks, how often did @field.child_name make a safer choice on their own?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "says_no_uncomfortable_situation",
+      "challenge_list": [
+        "sex_dating_talk"
+      ],
+      "title": "@field.child_name knows how to say no to something they are uncomfortable with",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name knows how to say no to something they are uncomfortable with"
+        },
+        "normalising_statement": {
+          "eng": "Knowing how to say no to something uncomfortable is a skill worth building early."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how confident are you that @field.child_name knows how to say no to something they're uncomfortable with?"
+        },
+        "option_1_text": {
+          "eng": "Not at all confident"
+        },
+        "option_2_text": {
+          "eng": "Slightly confident"
+        },
+        "option_3_text": {
+          "eng": "Somewhat confident"
+        },
+        "option_4_text": {
+          "eng": "Confident"
+        },
+        "option_5_text": {
+          "eng": "Very confident"
+        }
+      },
+      "normalising_statement": "Knowing how to say no to something uncomfortable is a skill worth building early.",
+      "question": "Over the last two weeks, how confident are you that @field.child_name knows how to say no to something they're uncomfortable with?",
+      "option_1_text": "Not at all confident",
+      "option_2_text": "Slightly confident",
+      "option_3_text": "Somewhat confident",
+      "option_4_text": "Confident",
+      "option_5_text": "Very confident"
+    },
+    {
+      "id": "parent_group",
+      "challenge_list": [
+        "lonely_parent",
+        "stop_worry"
+      ],
+      "title": "Attend or participate in one supportive parent group or community activity",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Attend or participate in one supportive parent group or community activity"
+        },
+        "normalising_statement": {
+          "eng": "Making time for a parent group or community activity often falls to the bottom of the list."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you attend or take part in a supportive parent group or community activity?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Making time for a parent group or community activity often falls to the bottom of the list.",
+      "question": "Over the last two weeks, how often did you attend or take part in a supportive parent group or community activity?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "social_plans",
+      "challenge_list": [
+        "feel_guilty",
+        "lonely_parent",
+        "stop_worry"
+      ],
+      "title": "Spend time with 1 friend or family member",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Spend time with 1 friend or family member"
+        },
+        "normalising_statement": {
+          "eng": "Time with a friend or family member can be the first thing to disappear from a busy week."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you spend time with a friend or family member?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Time with a friend or family member can be the first thing to disappear from a busy week.",
+      "question": "Over the last two weeks, how often did you spend time with a friend or family member?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "settles_dispute",
+      "challenge_list": [
+        "peer_struggles"
+      ],
+      "title": "@field.child_name settles a small disagreement without an adult stepping in",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name settles a small disagreement without an adult stepping in"
+        },
+        "normalising_statement": {
+          "eng": "Working out a disagreement without an adult stepping in takes practice."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name settle a small disagreement without an adult stepping in?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Working out a disagreement without an adult stepping in takes practice.",
+      "question": "Over the last two weeks, how often did @field.child_name settle a small disagreement without an adult stepping in?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "invites_friend",
+      "challenge_list": [
+        "peer_struggles"
+      ],
+      "title": "@field.child_name invites a friend to join their game",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name invites a friend to join their game"
+        },
+        "normalising_statement": {
+          "eng": "Inviting a friend to join in takes a bit of social courage."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name invite a friend to join their game?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Inviting a friend to join in takes a bit of social courage.",
+      "question": "Over the last two weeks, how often did @field.child_name invite a friend to join their game?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "graceful_loser",
+      "challenge_list": [
+        "peer_struggles"
+      ],
+      "title": "@field.child_name loses a game without getting angry or quitting",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name loses a game without getting angry or quitting"
+        },
+        "normalising_statement": {
+          "eng": "Losing gracefully, without anger or quitting, is a hard skill at any age."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name lose a game without getting angry or quitting?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Losing gracefully, without anger or quitting, is a hard skill at any age.",
+      "question": "Over the last two weeks, how often did @field.child_name lose a game without getting angry or quitting?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "asks_to_join_play",
+      "challenge_list": [
+        "peer_struggles"
+      ],
+      "title": "@field.child_name asks to join a group that's already playing",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name asks to join a group that's already playing"
+        },
+        "normalising_statement": {
+          "eng": "Asking to join a group that's already playing takes some social confidence."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name ask to join a group that was already playing?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Asking to join a group that's already playing takes some social confidence.",
+      "question": "Over the last two weeks, how often did @field.child_name ask to join a group that was already playing?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "identify_3_adults",
+      "challenge_list": [
+        "bullying"
+      ],
+      "title": "@field.child_name identifies three adults they can go to for help",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name identifies three adults they can go to for help"
+        },
+        "normalising_statement": {
+          "eng": "Knowing who to turn to matters most before a hard moment happens."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how confident are you that @field.child_name can identify three adults they can go to for help?"
+        },
+        "option_1_text": {
+          "eng": "Not at all confident"
+        },
+        "option_2_text": {
+          "eng": "Slightly confident"
+        },
+        "option_3_text": {
+          "eng": "Somewhat confident"
+        },
+        "option_4_text": {
+          "eng": "Confident"
+        },
+        "option_5_text": {
+          "eng": "Very confident"
+        }
+      },
+      "normalising_statement": "Knowing who to turn to matters most before a hard moment happens.",
+      "question": "Over the last two weeks, how confident are you that @field.child_name can identify three adults they can go to for help?",
+      "option_1_text": "Not at all confident",
+      "option_2_text": "Slightly confident",
+      "option_3_text": "Somewhat confident",
+      "option_4_text": "Confident",
+      "option_5_text": "Very confident"
+    },
+    {
+      "id": "feels_safe",
+      "challenge_list": [
+        "bullying"
+      ],
+      "title": "@field.child_name feels safe in the places they spend time",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name feels safe in the places they spend time"
+        },
+        "normalising_statement": {
+          "eng": "Feeling safe in the places they spend time is the foundation everything else builds on."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how confident are you that @field.child_name feels safe in the places they spend time?"
+        },
+        "option_1_text": {
+          "eng": "Not at all confident"
+        },
+        "option_2_text": {
+          "eng": "Slightly confident"
+        },
+        "option_3_text": {
+          "eng": "Somewhat confident"
+        },
+        "option_4_text": {
+          "eng": "Confident"
+        },
+        "option_5_text": {
+          "eng": "Very confident"
+        }
+      },
+      "normalising_statement": "Feeling safe in the places they spend time is the foundation everything else builds on.",
+      "question": "Over the last two weeks, how confident are you that @field.child_name feels safe in the places they spend time?",
+      "option_1_text": "Not at all confident",
+      "option_2_text": "Slightly confident",
+      "option_3_text": "Somewhat confident",
+      "option_4_text": "Confident",
+      "option_5_text": "Very confident"
+    },
+    {
+      "id": "manageable_moods",
+      "challenge_list": [
+        "bullying_others",
+        "mental_health_worry",
+        "social_media_mental_health"
+      ],
+      "title": "@field.child_name's mood swings feel more manageable",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name's mood swings feel more manageable"
+        },
+        "normalising_statement": {
+          "eng": "Mood swings can feel unpredictable, so any easing is worth noticing."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name's mood swings feel more manageable?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Mood swings can feel unpredictable, so any easing is worth noticing.",
+      "question": "Over the last two weeks, how often did @field.child_name's mood swings feel more manageable?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "names_their_feelings",
+      "challenge_list": [
+        "mental_health_worry"
+      ],
+      "title": "@field.child_name names what they're feeling",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name names what they're feeling"
+        },
+        "normalising_statement": {
+          "eng": "Naming a feeling out loud is a skill that develops gradually."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name name what they were feeling?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Naming a feeling out loud is a skill that develops gradually.",
+      "question": "Over the last two weeks, how often did @field.child_name name what they were feeling?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "identifies_bullying_signs",
+      "challenge_list": [
+        "cyberbullying"
+      ],
+      "title": "Can identify 3 signs of online bullying",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Can identify 3 signs of online bullying"
+        },
+        "normalising_statement": {
+          "eng": "Recognising the signs early makes it easier to speak up about them."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how confident are you that @field.child_name can identify three signs of online bullying?"
+        },
+        "option_1_text": {
+          "eng": "Not at all confident"
+        },
+        "option_2_text": {
+          "eng": "Slightly confident"
+        },
+        "option_3_text": {
+          "eng": "Somewhat confident"
+        },
+        "option_4_text": {
+          "eng": "Confident"
+        },
+        "option_5_text": {
+          "eng": "Very confident"
+        }
+      },
+      "normalising_statement": "Recognising the signs early makes it easier to speak up about them.",
+      "question": "Over the last two weeks, how confident are you that @field.child_name can identify three signs of online bullying?",
+      "option_1_text": "Not at all confident",
+      "option_2_text": "Slightly confident",
+      "option_3_text": "Somewhat confident",
+      "option_4_text": "Confident",
+      "option_5_text": "Very confident"
+    },
+    {
+      "id": "screen_limit_kept",
+      "challenge_list": [
+        "excessive_screen_time",
+        "social_media_mental_health"
+      ],
+      "title": "@field.child_name sticks to the screen time limit we agreed on",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name sticks to the screen time limit we agreed on"
+        },
+        "normalising_statement": {
+          "eng": "Sticking to an agreed limit is hard, especially when the screen is right there."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name stick to the screen time limit you agreed on?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Sticking to an agreed limit is hard, especially when the screen is right there.",
+      "question": "Over the last two weeks, how often did @field.child_name stick to the screen time limit you agreed on?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "agree_media_limits",
+      "challenge_list": [
+        "inappropriate_content",
+        "social_media_mental_health"
+      ],
+      "title": "Agree with @field.child_name on our rules for what's okay to watch or play",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Agree with @field.child_name on our rules for what's okay to watch or play"
+        },
+        "normalising_statement": {
+          "eng": "Agreeing together on what's okay to watch or play takes a real conversation."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you and @field.child_name agree on your rules for what's okay to watch or play?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Agreeing together on what's okay to watch or play takes a real conversation.",
+      "question": "Over the last two weeks, how often did you and @field.child_name agree on your rules for what's okay to watch or play?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "phone_away_family_time",
+      "challenge_list": [
+        "excessive_screen_time"
+      ],
+      "title": "Put my phone away during family time",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Put my phone away during family time"
+        },
+        "normalising_statement": {
+          "eng": "Putting your own phone away during family time is easier said than done."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you put your phone away during family time?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Putting your own phone away during family time is easier said than done.",
+      "question": "Over the last two weeks, how often did you put your phone away during family time?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "caregiver_rules_align",
+      "challenge_list": [
+        "other_caregivers_rules"
+      ],
+      "title": "Get 1 other caregiver to stick to our screen rules for @field.child_name",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Get 1 other caregiver to stick to our screen rules for @field.child_name"
+        },
+        "normalising_statement": {
+          "eng": "Getting everyone on the same page about screen rules takes a real conversation."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you get another caregiver to stick to your screen rules?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Getting everyone on the same page about screen rules takes a real conversation.",
+      "question": "Over the last two weeks, how often did you get another caregiver to stick to your screen rules?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "consistent_rules",
+      "challenge_list": [
+        "other_caregivers_rules"
+      ],
+      "title": "@field.child_name follows the same rules no matter who's watching them",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name follows the same rules no matter who's watching them"
+        },
+        "normalising_statement": {
+          "eng": "Following the same rules no matter who's watching is a sign the rules feel fair, not just enforced."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name follow the same rules no matter who was watching them?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Following the same rules no matter who's watching is a sign the rules feel fair, not just enforced.",
+      "question": "Over the last two weeks, how often did @field.child_name follow the same rules no matter who was watching them?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "caregiver_limits_align",
+      "challenge_list": [
+        "bedtimes",
+        "other_caregivers_rules"
+      ],
+      "title": "Stick to the same bedtime and screen limits with all caregivers",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Stick to the same bedtime and screen limits with all caregivers"
+        },
+        "normalising_statement": {
+          "eng": "Keeping bedtime and screen limits the same across caregivers takes ongoing coordination."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you stick to the same bedtime and screen limits with all caregivers?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Keeping bedtime and screen limits the same across caregivers takes ongoing coordination.",
+      "question": "Over the last two weeks, how often did you stick to the same bedtime and screen limits with all caregivers?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "teach_app_game",
+      "challenge_list": [
+        "tech_knowledge"
+      ],
+      "title": "@field.child_name teach me how their favorite app or game works for 10 minutes",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name teach me how their favorite app or game works for 10 minutes"
+        },
+        "normalising_statement": {
+          "eng": "Letting your child be the expert for a change is a small but meaningful shift."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name teach you how their favourite app or game works?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Letting your child be the expert for a change is a small but meaningful shift.",
+      "question": "Over the last two weeks, how often did @field.child_name teach you how their favourite app or game works?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "learn_device",
+      "challenge_list": [
+        "tech_knowledge"
+      ],
+      "title": "Learn 1 new thing about @field.child_name's phone or device",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Learn 1 new thing about @field.child_name's phone or device"
+        },
+        "normalising_statement": {
+          "eng": "Keeping up with a child's phone or device takes ongoing effort."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you learn something new about @field.child_name's phone or device?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Keeping up with a child's phone or device takes ongoing effort.",
+      "question": "Over the last two weeks, how often did you learn something new about @field.child_name's phone or device?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "setup_device_safety",
+      "challenge_list": [
+        "tech_knowledge"
+      ],
+      "title": "Get help from someone I trust to turn on 1 safety feature on @field.child_name's device",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Get help from someone I trust to turn on 1 safety feature on @field.child_name's device"
+        },
+        "normalising_statement": {
+          "eng": "Turning on a safety feature is one of those tasks that's easy to keep putting off."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you get help turning on a safety feature on @field.child_name's device?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Turning on a safety feature is one of those tasks that's easy to keep putting off.",
+      "question": "Over the last two weeks, how often did you get help turning on a safety feature on @field.child_name's device?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "think_before_risk",
+      "challenge_list": [
+        "inappropriate_content"
+      ],
+      "title": "@field.child_name stops and thinks before making a risky choice",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name stops and thinks before making a risky choice"
+        },
+        "normalising_statement": {
+          "eng": "Pausing to think before a risky choice is a skill that develops with practice."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name stop and think before making a risky choice?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Pausing to think before a risky choice is a skill that develops with practice.",
+      "question": "Over the last two weeks, how often did @field.child_name stop and think before making a risky choice?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "routine_reading",
+      "challenge_list": [
+        "missing_developmental_milestones",
+        "not_reading"
+      ],
+      "title": "Fit in 1 reading moment during something we already do",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Fit in 1 reading moment during something we already do"
+        },
+        "normalising_statement": {
+          "eng": "Fitting reading into something you already do is often easier than adding something new."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you fit in a reading moment during something you already do?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Fitting reading into something you already do is often easier than adding something new.",
+      "question": "Over the last two weeks, how often did you fit in a reading moment during something you already do?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "comfortable_reading",
+      "challenge_list": [
+        "not_reading"
+      ],
+      "title": "Feel more comfortable reading out loud to @field.child_name",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Feel more comfortable reading out loud to @field.child_name"
+        },
+        "normalising_statement": {
+          "eng": "Reading out loud doesn't feel natural to everyone at first."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did reading out loud to @field.child_name feel comfortable for you?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Reading out loud doesn't feel natural to everyone at first.",
+      "question": "Over the last two weeks, how often did reading out loud to @field.child_name feel comfortable for you?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "nonbook_reading",
+      "challenge_list": [
+        "not_reading"
+      ],
+      "title": "Use something other than a book to \"read\" with @field.child_name",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Use something other than a book to \"read\" with @field.child_name"
+        },
+        "normalising_statement": {
+          "eng": "Reading doesn't have to mean a book to count."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you use something other than a book to \"read\" with @field.child_name?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Reading doesn't have to mean a book to count.",
+      "question": "Over the last two weeks, how often did you use something other than a book to \"read\" with @field.child_name?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "task_focus",
+      "challenge_list": [
+        "focus_difficulty"
+      ],
+      "title": "@field.child_name finishes 1 task without wandering off",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name finishes 1 task without wandering off"
+        },
+        "normalising_statement": {
+          "eng": "Finishing a task without wandering off takes sustained focus."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name finish a task without wandering off?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Finishing a task without wandering off takes sustained focus.",
+      "question": "Over the last two weeks, how often did @field.child_name finish a task without wandering off?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "return_to_task",
+      "challenge_list": [
+        "focus_difficulty"
+      ],
+      "title": "@field.child_name returns to a task on their own within 5 minutes of a break",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name returns to a task on their own within 5 minutes of a break"
+        },
+        "normalising_statement": {
+          "eng": "Coming back to a task on their own after a break is a skill that builds over time."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name return to a task on their own within 5 minutes of a break?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Coming back to a task on their own after a break is a skill that builds over time.",
+      "question": "Over the last two weeks, how often did @field.child_name return to a task on their own within 5 minutes of a break?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "talks_about_school",
+      "challenge_list": [
+        "crams",
+        "disinterested_school",
+        "poor_grades"
+      ],
+      "title": "@field.child_name talks about at least 1 interesting thing from school",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name talks about at least 1 interesting thing from school"
+        },
+        "normalising_statement": {
+          "eng": "Getting more than a one-word answer about school isn't always easy."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name talk about at least 1 interesting thing from school?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Getting more than a one-word answer about school isn't always easy.",
+      "question": "Over the last two weeks, how often did @field.child_name talk about at least 1 interesting thing from school?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "finishes_schoolwork",
+      "challenge_list": [
+        "crams",
+        "disinterested_school",
+        "poor_grades"
+      ],
+      "title": "@field.child_name finishes at least 1 school task without being pushed",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name finishes at least 1 school task without being pushed"
+        },
+        "normalising_statement": {
+          "eng": "Finishing schoolwork without being pushed is a sign things are clicking."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name finish at least 1 school task without being pushed?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Finishing schoolwork without being pushed is a sign things are clicking.",
+      "question": "Over the last two weeks, how often did @field.child_name finish at least 1 school task without being pushed?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "homework_on_time",
+      "challenge_list": [
+        "poor_grades"
+      ],
+      "title": "@field.child_name turns in their homework on time",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name turns in their homework on time"
+        },
+        "normalising_statement": {
+          "eng": "Getting homework in on time is its own small win some weeks."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name turn in their homework on time?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Getting homework in on time is its own small win some weeks.",
+      "question": "Over the last two weeks, how often did @field.child_name turn in their homework on time?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "asks_study_help",
+      "challenge_list": [
+        "crams",
+        "disinterested_school",
+        "poor_grades"
+      ],
+      "title": "@field.child_name asks for help when stuck on at least 1 school task",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name asks for help when stuck on at least 1 school task"
+        },
+        "normalising_statement": {
+          "eng": "Asking for help when stuck, instead of giving up, is worth noticing."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name ask for help when stuck on at least 1 school task?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Asking for help when stuck, instead of giving up, is worth noticing.",
+      "question": "Over the last two weeks, how often did @field.child_name ask for help when stuck on at least 1 school task?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "set_study_time",
+      "challenge_list": [
+        "crams"
+      ],
+      "title": "@field.child_name and I set 1 regular study time",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name and I set 1 regular study time"
+        },
+        "normalising_statement": {
+          "eng": "Setting a regular study time together takes a bit of planning."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you and @field.child_name set a regular study time?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Setting a regular study time together takes a bit of planning.",
+      "question": "Over the last two weeks, how often did you and @field.child_name set a regular study time?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "invite_friend_hangout",
+      "challenge_list": [
+        "lonely_no_friends"
+      ],
+      "title": "Invite a friend of @field.child_name's to spend time together",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Invite a friend of @field.child_name's to spend time together"
+        },
+        "normalising_statement": {
+          "eng": "Making the first move to set up time with a friend takes some effort."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you invite a friend of @field.child_name's to spend time together?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Making the first move to set up time with a friend takes some effort.",
+      "question": "Over the last two weeks, how often did you invite a friend of @field.child_name's to spend time together?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "joins_club_team",
+      "challenge_list": [
+        "lonely_no_friends"
+      ],
+      "title": "@field.child_name join a group, club, or team centered around an interest they love",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name join a group, club, or team centered around an interest they love"
+        },
+        "normalising_statement": {
+          "eng": "Joining a new group or team can feel like a big step."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name take part in a group, club, or team centred on something they love?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Joining a new group or team can feel like a big step.",
+      "question": "Over the last two weeks, how often did @field.child_name take part in a group, club, or team centred on something they love?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "starts_conversation_peer",
+      "challenge_list": [
+        "lonely_no_friends"
+      ],
+      "title": "@field.child_name starts a conversation with 1 other kid",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name starts a conversation with 1 other kid"
+        },
+        "normalising_statement": {
+          "eng": "Starting a conversation with another kid takes some social nerve."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name start a conversation with another kid?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Starting a conversation with another kid takes some social nerve.",
+      "question": "Over the last two weeks, how often did @field.child_name start a conversation with another kid?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "pauses_before_reacting",
+      "challenge_list": [
+        "bullying_others"
+      ],
+      "title": "@field.child_name pauses and calms down before reacting when angry",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name pauses and calms down before reacting when angry"
+        },
+        "normalising_statement": {
+          "eng": "Pausing before reacting when angry is a skill that takes real practice."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name pause and calm down before reacting when angry?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Pausing before reacting when angry is a skill that takes real practice.",
+      "question": "Over the last two weeks, how often did @field.child_name pause and calm down before reacting when angry?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "treats_peer_kindly",
+      "challenge_list": [
+        "bullying_others"
+      ],
+      "title": "@field.child_name treats a sibling kindly instead of putting them down",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name treats a sibling kindly instead of putting them down"
+        },
+        "normalising_statement": {
+          "eng": "Choosing kindness over putting a sibling down is worth noticing when it happens."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name treat a sibling kindly instead of putting them down?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Choosing kindness over putting a sibling down is worth noticing when it happens.",
+      "question": "Over the last two weeks, how often did @field.child_name treat a sibling kindly instead of putting them down?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "calms_down_with_help",
+      "challenge_list": [
+        "intense_meltdown"
+      ],
+      "title": "@field.child_name calms down with my help within a set time",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name calms down with my help within a set time"
+        },
+        "normalising_statement": {
+          "eng": "Calming down, even with help, within a set time is real progress."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name calm down with your help within a set time?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Calming down, even with help, within a set time is real progress.",
+      "question": "Over the last two weeks, how often did @field.child_name calm down with your help within a set time?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "post_meltdown_calm",
+      "challenge_list": [
+        "intense_meltdown"
+      ],
+      "title": "Our home feels calm again shortly after a meltdown ends",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Our home feels calm again shortly after a meltdown ends"
+        },
+        "normalising_statement": {
+          "eng": "Getting back to a calm home after a meltdown doesn't always happen quickly."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did your home feel calm again shortly after a meltdown ended?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Getting back to a calm home after a meltdown doesn't always happen quickly.",
+      "question": "Over the last two weeks, how often did your home feel calm again shortly after a meltdown ended?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "bedtime_no_fight",
+      "challenge_list": [
+        "bedtimes"
+      ],
+      "title": "@field.child_name goes to bed without a fight",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@field.child_name goes to bed without a fight"
+        },
+        "normalising_statement": {
+          "eng": "Bedtime without a fight is a genuine win on a hard day."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did @field.child_name go to bed without a fight?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Bedtime without a fight is a genuine win on a hard day.",
+      "question": "Over the last two weeks, how often did @field.child_name go to bed without a fight?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "childcare_help_30min",
+      "challenge_list": [
+        "no_time_energy"
+      ],
+      "title": "Ask someone for help with the children for 30 minutes",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Ask someone for help with the children for 30 minutes"
+        },
+        "normalising_statement": {
+          "eng": "Asking for help with the children, even for a short while, doesn't always come easily."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you ask someone for help with the children for 30 minutes?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Asking for help with the children, even for a short while, doesn't always come easily.",
+      "question": "Over the last two weeks, how often did you ask someone for help with the children for 30 minutes?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "feel_calmer_parent",
+      "challenge_list": [
+        "stop_worry"
+      ],
+      "title": "Feel calmer about @field.child_name",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Feel calmer about @field.child_name"
+        },
+        "normalising_statement": {
+          "eng": "Worry about your child can be hard to put down, even for a moment."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you feel calmer about @field.child_name?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Worry about your child can be hard to put down, even for a moment.",
+      "question": "Over the last two weeks, how often did you feel calmer about @field.child_name?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "focus_on_strengths",
+      "challenge_list": [
+        "stop_worry"
+      ],
+      "title": "Focus on @field.child_name's strengths and progress today",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Focus on @field.child_name's strengths and progress today"
+        },
+        "normalising_statement": {
+          "eng": "It's easy for the day's challenges to overshadow a child's strengths and progress."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you focus on @field.child_name's strengths and progress?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "It's easy for the day's challenges to overshadow a child's strengths and progress.",
+      "question": "Over the last two weeks, how often did you focus on @field.child_name's strengths and progress?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "movement_10min",
+      "challenge_list": [
+        "stress_health"
+      ],
+      "title": "Move my body for 10 minutes today",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Move my body for 10 minutes today"
+        },
+        "normalising_statement": {
+          "eng": "Fitting in movement for yourself is often the first thing to slip on a busy day."
+        },
+        "question": {
+          "eng": "Over the last two weeks, how often did you move your body for 10 minutes?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        }
+      },
+      "normalising_statement": "Fitting in movement for yourself is often the first thing to slip on a busy day.",
+      "question": "Over the last two weeks, how often did you move your body for 10 minutes?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always"
+    },
+    {
+      "id": "other",
+      "challenge_list": [
+        "other"
+      ],
+      "title": "Something else",
+      "_translations": {
+        "title": {},
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Something else"
+        },
+        "normalising_statement": {
+          "eng": "Write your goal here"
+        },
+        "question": {
+          "eng": "Over the last two weeks, how confident do you feel about handling parenting challenges?"
+        },
+        "option_1_text": {
+          "eng": "Not at all confident"
+        },
+        "option_2_text": {
+          "eng": "Slightly confident"
+        },
+        "option_3_text": {
+          "eng": "Somewhat confident"
+        },
+        "option_4_text": {
+          "eng": "Confident"
+        },
+        "option_5_text": {
+          "eng": "Very confident"
+        }
+      },
+      "normalising_statement": "Write your goal here",
+      "question": "Over the last two weeks, how confident do you feel about handling parenting challenges?",
+      "option_1_text": "Not at all confident",
+      "option_2_text": "Slightly confident",
+      "option_3_text": "Somewhat confident",
+      "option_4_text": "Confident",
+      "option_5_text": "Very confident"
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "data/MX goals.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1jprYnAWfuA39fBB47YKMMJ1Wp06XjsNF8X0BoZV-nR8"
+  }
+}

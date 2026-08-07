@@ -1,0 +1,27 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "default_vars",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_field_default",
+      "name": "n_modules_completed",
+      "value": 0
+    },
+    {
+      "type": "declare_field_default",
+      "name": "last_module_in_progress",
+      "value": "NA"
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_global V2",
+    "path": "data/deployment_data.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1z0R12cS8umMm9ldaZSOhfDxT0ytTn-Usl7Mc8RjCxec"
+  },
+  "_metadata": {
+    "value": {
+      "type": "number"
+    }
+  }
+}

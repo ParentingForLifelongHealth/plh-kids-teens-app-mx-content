@@ -56,7 +56,7 @@
       "lifecycle_event": "app_start",
       "id": "asset_pack_download_progress",
       "priority": 9,
-      "condition_list": "@fields._asset_pack_download_in_progress",
+      "condition_list": "@fields.user_mode && @fields._asset_pack_download_in_progress",
       "action_list": "set_field: onboarding_settings_completed: false;\npop_up: onboarding_settings | fullscreen: true, showCloseButton: false;"
     },
     {

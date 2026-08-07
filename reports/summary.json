@@ -27,7 +27,7 @@
       },
       {
         "type": "button",
-        "count": 116
+        "count": 123
       },
       {
         "type": "combo_box",
@@ -35,7 +35,7 @@
       },
       {
         "type": "data_items",
-        "count": 240
+        "count": 247
       },
       {
         "type": "debug_toggle",
@@ -47,7 +47,7 @@
       },
       {
         "type": "display_group",
-        "count": 115
+        "count": 124
       },
       {
         "type": "drawer",
@@ -67,7 +67,7 @@
       },
       {
         "type": "lottie_animation",
-        "count": 5
+        "count": 6
       },
       {
         "type": "nested_properties",
@@ -111,7 +111,7 @@
       },
       {
         "type": "plh_progress_bar",
-        "count": 5
+        "count": 9
       },
       {
         "type": "qr_code",
@@ -119,11 +119,15 @@
       },
       {
         "type": "radio_button_grid",
-        "count": 9
+        "count": 10
+      },
+      {
+        "type": "radio_list",
+        "count": 3
       },
       {
         "type": "round_button",
-        "count": 20
+        "count": 23
       },
       {
         "type": "select_text",
@@ -135,7 +139,7 @@
       },
       {
         "type": "set_variable",
-        "count": 4348
+        "count": 3262
       },
       {
         "type": "simple_checkbox",
@@ -151,11 +155,11 @@
       },
       {
         "type": "template",
-        "count": 1361
+        "count": 784
       },
       {
         "type": "text",
-        "count": 296
+        "count": 306
       },
       {
         "type": "text_area",
@@ -167,11 +171,11 @@
       },
       {
         "type": "text_bubble",
-        "count": 17
+        "count": 21
       },
       {
         "type": "title",
-        "count": 63
+        "count": 66
       },
       {
         "type": "toggle_bar",
@@ -179,7 +183,7 @@
       },
       {
         "type": "update_action_list",
-        "count": 1
+        "count": 2
       },
       {
         "type": "video",
@@ -203,7 +207,7 @@
       },
       {
         "type": "asset_pack",
-        "count": 2
+        "count": 3
       },
       {
         "type": "auth",
@@ -211,7 +215,7 @@
       },
       {
         "type": "emit: completed",
-        "count": 975
+        "count": 404
       },
       {
         "type": "emit: force_reload",
@@ -235,7 +239,7 @@
       },
       {
         "type": "emit: uncompleted",
-        "count": 989
+        "count": 411
       },
       {
         "type": "feedback",
@@ -259,7 +263,7 @@
       },
       {
         "type": "pop_up",
-        "count": 96
+        "count": 99
       },
       {
         "type": "reset_app",
@@ -279,7 +283,7 @@
       },
       {
         "type": "set_field",
-        "count": 149
+        "count": 158
       },
       {
         "type": "set_item",
@@ -287,7 +291,7 @@
       },
       {
         "type": "set_local",
-        "count": 134
+        "count": 142
       },
       {
         "type": "share",
@@ -316,8 +320,8 @@
       },
       {
         "assets": "unused",
-        "KB": "1932 KB",
-        "MB": "1.9 MB"
+        "KB": "14585 KB",
+        "MB": "14.6 MB"
       }
     ]
   },
@@ -346,6 +350,22 @@
       {
         "path": "images/backgrounds/homescreen_pattern.svg",
         "size_kb": 156.3
+      },
+      {
+        "path": "images/character_icons/ANGELA_facilitator.svg",
+        "size_kb": 9477.2
+      },
+      {
+        "path": "images/character_icons/ANGELA_facilitator_intro.jpg",
+        "size_kb": 939
+      },
+      {
+        "path": "images/character_icons/ANGEL_facilitator.svg",
+        "size_kb": 921.4
+      },
+      {
+        "path": "images/character_icons/ANGEL_facilitator_intro.jpg",
+        "size_kb": 1316.2
       },
       {
         "path": "images/flags/gb.svg",
@@ -1136,7 +1156,7 @@
       },
       {
         "path": "images/character_icons/PROFESORA_1.svg",
-        "count": 1,
+        "count": 10,
         "size_kb": 919.8
       },
       {
@@ -3076,7 +3096,7 @@
       {
         "type": "data_list",
         "subtype": null,
-        "total": 12
+        "total": 20
       },
       {
         "type": "data_list",
@@ -3515,6 +3535,11 @@
       },
       {
         "type": "data_list",
+        "subtype": "proximal_outcomes",
+        "total": 4
+      },
+      {
+        "type": "data_list",
         "subtype": "relax",
         "total": 1
       },
@@ -3531,7 +3556,7 @@
       {
         "type": "generator",
         "subtype": null,
-        "total": 87
+        "total": 12
       },
       {
         "type": "global",
@@ -3544,6 +3569,11 @@
         "total": 15
       },
       {
+        "type": "global",
+        "subtype": "proximal_outcomes",
+        "total": 1
+      },
+      {
         "type": "template",
         "subtype": null,
         "total": 181
@@ -3551,12 +3581,17 @@
       {
         "type": "template",
         "subtype": "generated",
-        "total": 1093
+        "total": 512
       },
       {
         "type": "template",
         "subtype": "legal_terms",
         "total": 4
+      },
+      {
+        "type": "template",
+        "subtype": "proximal_outcomes",
+        "total": 8
       }
     ]
   }

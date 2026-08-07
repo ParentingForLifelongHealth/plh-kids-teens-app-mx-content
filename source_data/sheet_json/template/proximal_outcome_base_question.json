@@ -1,0 +1,220 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "proximal_outcomes",
+  "flow_name": "proximal_outcome_base_question",
+  "status": "released",
+  "rows": [
+    {
+      "name": "speaker_position",
+      "value": "left",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "variant",
+      "value": "gray",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "facilitator_id",
+      "value": "@fields.facilitator_id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "facilitator_data",
+      "value": "characters.@local.facilitator_id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "facilitator_row",
+      "value": "@data.@local.facilitator_data",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "speaker_name",
+      "value": "@local.facilitator_row.name",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "speaker_image_asset",
+      "value": "@local.facilitator_row.image_asset",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "row_id",
+      "value": "id"
+    },
+    {
+      "name": "field_name_value",
+      "value": "proximal_outcome_baseline_value"
+    },
+    {
+      "name": "field_name_id",
+      "value": "proximal_outcome_baseline_id"
+    },
+    {
+      "name": "proximal_data_list_name",
+      "value": "proximal_outcomes"
+    },
+    {
+      "name": "proximal_data_row",
+      "value": "@local.proximal_data_list_name.@local.row_id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "proximal_data",
+      "value": "@data.@local.proximal_data_row",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "normalising_statement_column_name",
+      "value": "normalising_statement",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "normalising_statement_column",
+      "value": "proximal_data.@local.normalising_statement_column_name",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "normalising_statement",
+      "value": "@local.@local.normalising_statement_column",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "question_column_name",
+      "value": "question",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "question_column",
+      "value": "proximal_data.@local.question_column_name",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "question",
+      "value": "@local.@local.question_column",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_1_column_name",
+      "value": "option_1_text",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_1_column",
+      "value": "proximal_data.@local.option_1_column_name",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_1",
+      "value": "@local.@local.option_1_column",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_2_column_name",
+      "value": "option_2_text",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_2_column",
+      "value": "proximal_data.@local.option_2_column_name",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_2",
+      "value": "@local.@local.option_2_column",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_3_column_name",
+      "value": "option_3_text",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_3_column",
+      "value": "proximal_data.@local.option_3_column_name",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_3",
+      "value": "@local.@local.option_3_column",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_4_column_name",
+      "value": "option_4_text",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_4_column",
+      "value": "proximal_data.@local.option_4_column_name",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_4",
+      "value": "@local.@local.option_4_column",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_5_column_name",
+      "value": "option_5_text",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_5_column",
+      "value": "proximal_data.@local.option_5_column_name",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_5",
+      "value": "@local.@local.option_5_column",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text_bubble",
+      "name": "text_bubble",
+      "value": "@local.normalising_statement",
+      "parameter_list": "speaker_image_asset: @local.speaker_image_asset;\nspeaker_name: @local.speaker_name;\nspeaker_position: @local.speaker_position;\nvariant: @local.variant;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "question",
+      "value": "@local.question",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "options_list",
+      "value": "name: 1 | text:@local.option_1; \nname: 2 | text:@local.option_2; \nname: 3 | text:@local.option_3; \nname: 4 | text:@local.option_4; \nname: 5 | text:@local.option_5; ",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "radio_list",
+      "name": "outcome_select",
+      "parameter_list": "variant: card;\nanswer_list: @local.options_list;\noptions_key: name;\noptions_value: text;",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "completed_enabled",
+      "value": "!!@local.outcome_select",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_completed",
+      "value": "@global.continue",
+      "action_list": "click | emit: completed;\nclick | set_field: @local.field_name_value: @local.outcome_select;\nclick | set_field: @local.field_name_id: @local.row_id;",
+      "parameter_list": "style: navigation;\ndisabled: !@local.completed_enabled",
+      "condition": "flex: 1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_skip",
+      "value": "<u>@global.skip_proximal</u>",
+      "action_list": "click | emit: completed;\nclick | set_field: @local.field_name_value: NA;\nclick | set_field: @local.field_name_id: @local.row_id",
+      "parameter_list": "variant: card;\nstyle: no-background;",
+      "exclude_from_translation": true
+    }
+  ]
+}

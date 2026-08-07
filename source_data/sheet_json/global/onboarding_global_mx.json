@@ -150,6 +150,11 @@
     },
     {
       "type": "declare_global_constant",
+      "name": "has_proximal_outcomes",
+      "value": true
+    },
+    {
+      "type": "declare_global_constant",
       "name": "asset_pack_id",
       "value": "assets_@fields.facilitator_id",
       "exclude_from_translation": true

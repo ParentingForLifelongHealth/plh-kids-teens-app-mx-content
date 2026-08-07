@@ -1,0 +1,126 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "proximal_outcomes",
+  "flow_name": "onboarding_baseline_questions",
+  "status": "released",
+  "rows": [
+    {
+      "type": "update_action_list",
+      "action_list": "nav_resume | set_local: start: true;"
+    },
+    {
+      "name": "start",
+      "value": true
+    },
+    {
+      "name": "show_success_page",
+      "value": false
+    },
+    {
+      "type": "begin_display_group",
+      "name": "page_downloading",
+      "parameter_list": "style: column",
+      "condition": "!@local.show_success_page"
+    },
+    {
+      "type": "title",
+      "name": "loading_profile_title",
+      "value": "@global.onboarding_loading_title",
+      "parameter_list": "variant: header"
+    },
+    {
+      "type": "text",
+      "name": "bar_1_title",
+      "value": "@data.onboarding_progress_bars.id_1.text",
+      "style_list": "color: @data.onboarding_progress_bars.id_1.colour"
+    },
+    {
+      "type": "plh_progress_bar",
+      "name": "bar_1",
+      "action_list": "on_progress: 50 | pop_up: proximal_outcome_qs_goal;\non_progress: 50 | set_local: start: false;",
+      "parameter_list": "duration: @data.onboarding_progress_bars.id_1.timespan;\nauto_play: @local.start;\ncolor: @data.onboarding_progress_bars.id_1.colour"
+    },
+    {
+      "type": "text",
+      "name": "bar_2_title",
+      "value": "@data.onboarding_progress_bars.id_2.text",
+      "style_list": "color: @data.onboarding_progress_bars.id_2.colour"
+    },
+    {
+      "type": "plh_progress_bar",
+      "name": "bar_2",
+      "action_list": "on_progress: 50 | pop_up: proximal_outcome_qs_base_1;\non_progress: 50 | set_local: start: false;",
+      "parameter_list": "duration: @data.onboarding_progress_bars.id_2.timespan;\nauto_play: @local.bar_1 == 100 && @local.start;\ncolor: @data.onboarding_progress_bars.id_2.colour;"
+    },
+    {
+      "type": "text",
+      "name": "bar_3_title",
+      "value": "@data.onboarding_progress_bars.id_3.text",
+      "style_list": "color: @data.onboarding_progress_bars.id_3.colour"
+    },
+    {
+      "type": "plh_progress_bar",
+      "name": "bar_3",
+      "action_list": "on_progress: 50 | pop_up: proximal_outcome_qs_base_2;\non_progress: 50 | set_local: start: false;",
+      "parameter_list": "duration: @data.onboarding_progress_bars.id_3.timespan;\nauto_play: @local.bar_2 == 100 && @local.start;;\ncolor: @data.onboarding_progress_bars.id_3.colour;"
+    },
+    {
+      "type": "text",
+      "name": "bar_4_title",
+      "value": "@data.onboarding_progress_bars.id_4.text",
+      "style_list": "color: @data.onboarding_progress_bars.id_4.colour"
+    },
+    {
+      "type": "plh_progress_bar",
+      "name": "bar_4",
+      "action_list": "completed | set_local: show_success_page: true;",
+      "parameter_list": "duration: @data.onboarding_progress_bars.id_4.timespan;\nauto_play: @local.bar_3 == 100 && @local.start;;\ncolor: @data.onboarding_progress_bars.id_4.colour;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "page_success",
+      "parameter_list": "style: column",
+      "condition": "@local.show_success_page"
+    },
+    {
+      "type": "lottie_animation",
+      "name": "lottie",
+      "value": "@global.onboarding_completed_lottie_asset",
+      "condition": "!!@global.onboarding_completed_lottie_asset"
+    },
+    {
+      "type": "title",
+      "name": "finish_profile_title",
+      "value": "@global.onboarding_completed_title",
+      "parameter_list": "variant: header"
+    },
+    {
+      "type": "text",
+      "name": "finish_profile_text",
+      "value": "@global.onboarding_completed_text",
+      "parameter_list": "text_align: center"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_footer",
+      "parameter_list": "sticky: bottom;",
+      "style_list": "padding: 12px 24px;"
+    },
+    {
+      "type": "button",
+      "name": "button_completed_3",
+      "value": "@global.continue",
+      "action_list": "click | emit: completed;\nclick | set_field: onboarding_settings_completed: true;",
+      "parameter_list": "style: navigation;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

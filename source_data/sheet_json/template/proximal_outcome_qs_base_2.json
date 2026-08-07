@@ -1,0 +1,44 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "proximal_outcomes",
+  "flow_name": "proximal_outcome_qs_base_2",
+  "status": "released",
+  "rows": [
+    {
+      "name": "row_id",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "data_items",
+      "name": "pick_random_qs",
+      "value": "@data.proximal_outcomes",
+      "action_list": "data_changed | set_local : row_id: @items[0]?.id",
+      "parameter_list": "filter: @item.id != @fields.proximal_outcome_base_1_value;\nshuffle;\nlimit: 1;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "value": "proximal_outcome_base_question",
+      "action_list": " completed | emit: completed;"
+    },
+    {
+      "name": "row_id",
+      "value": "@local.row_id"
+    },
+    {
+      "name": "field_name_value",
+      "value": "proximal_outcome_base_2_value"
+    },
+    {
+      "name": "field_name_id",
+      "value": "proximal_outcome_base_2_id"
+    },
+    {
+      "name": "proximal_data_list_name",
+      "value": "proximal_outcomes"
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}
