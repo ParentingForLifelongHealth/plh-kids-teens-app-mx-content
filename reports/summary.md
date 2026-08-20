@@ -9,15 +9,15 @@
 | animated_slides | 1 |
 | apple_sign_in_button | 2 |
 | audio | 3 |
-| button | 123 |
+| button | 125 |
 | combo_box | 27 |
-| data_items | 247 |
+| data_items | 249 |
 | debug_toggle | 1 |
 | display_grid | 4 |
-| display_group | 124 |
+| display_group | 128 |
 | drawer | 1 |
 | google_sign_in_button | 2 |
-| image | 23 |
+| image | 26 |
 | items | 16 |
 | lottie_animation | 6 |
 | nested_properties | 386 |
@@ -37,16 +37,16 @@
 | round_button | 23 |
 | select_text | 1 |
 | set_field | 4 |
-| set_variable | 3262 |
+| set_variable | 3192 |
 | simple_checkbox | 1 |
 | task_card | 4 |
 | task_progress_bar | 4 |
 | template | 784 |
-| text | 306 |
+| text | 314 |
 | text_area | 3 |
 | text_box | 21 |
 | text_bubble | 21 |
-| title | 66 |
+| title | 67 |
 | toggle_bar | 5 |
 | update_action_list | 2 |
 | video | 3 |
@@ -60,9 +60,9 @@
 | --- | --- |
 | add_data | 4 |
 | app_update | 1 |
-| asset_pack | 3 |
+| asset_pack | 4 |
 | auth | 3 |
-| emit: completed | 404 |
+| emit: completed | 405 |
 | emit: force_reload | 3 |
 | emit: force_reprocess | 13 |
 | emit: force_restart | 3 |
@@ -78,8 +78,8 @@
 | reset_app | 4 |
 | reset_data | 3 |
 | save_to_device | 1 |
-| set_data | 116 |
-| set_field | 158 |
+| set_data | 123 |
+| set_field | 162 |
 | set_item | 30 |
 | set_local | 142 |
 | share | 3 |
@@ -93,7 +93,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 76297 KB | 76.3 MB |
+| total | 76298 KB | 76.3 MB |
 | unused | 14585 KB | 14.6 MB |
 </details>
 
@@ -601,6 +601,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/homescreen/understand_t.svg | 738.3 | 15 |
 | images/icons/balance_blue.png | 4.7 | 16 |
 | images/icons/brain_blue.png | 5.2 | 14 |
+| images/icons/bug.svg | 1.2 | 2 |
 | images/icons/celebration.svg | 70.4 | 1 |
 | images/icons/change.png | 35.3 | 2 |
 | images/icons/chatbubble-ellipses-outline.svg | 0.8 | 1 |
@@ -784,7 +785,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_list | modules_toddler_change_c | 1 |
 | data_list | modules_young_change_c | 1 |
 | data_list | onboarding | 2 |
-| data_list | proximal_outcomes | 4 |
+| data_list | proximal_outcomes | 5 |
 | data_list | relax | 1 |
 | data_pipe |  | 4 |
 | data_pipe | generated | 150 |

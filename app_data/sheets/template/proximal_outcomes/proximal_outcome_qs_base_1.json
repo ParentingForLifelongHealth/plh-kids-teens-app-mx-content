@@ -5,84 +5,6 @@
   "status": "released",
   "rows": [
     {
-      "name": "tag_sensitive_value",
-      "value": "yes",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "tag_sensitive_value"
-    },
-    {
-      "name": "row_id",
-      "exclude_from_translation": true,
-      "type": "set_variable",
-      "_nested_name": "row_id"
-    },
-    {
-      "type": "data_items",
-      "name": "pick_random_qs",
-      "value": "@data.proximal_outcomes",
-      "_translations": {
-        "value": {}
-      },
-      "action_list": [
-        {
-          "trigger": "data_changed",
-          "action_id": "set_local",
-          "args": [
-            "row_id",
-            "@items[0]?.id"
-          ],
-          "_raw": "data_changed | set_local : row_id: @items[0]?.id"
-        }
-      ],
-      "parameter_list": {
-        "filter": "@item.tag_sensitive != @local.tag_sensitive_value",
-        "shuffle": "true",
-        "limit": "1"
-      },
-      "exclude_from_translation": true,
-      "_nested_name": "pick_random_qs",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "@data.proximal_outcomes",
-            "matchedExpression": "@data.proximal_outcomes",
-            "type": "data",
-            "fieldName": "proximal_outcomes"
-          }
-        ],
-        "parameter_list": {
-          "filter": [
-            {
-              "fullExpression": "@item.tag_sensitive != @local.tag_sensitive_value",
-              "matchedExpression": "@item.tag_sensitive",
-              "type": "item",
-              "fieldName": "tag_sensitive"
-            },
-            {
-              "fullExpression": "@item.tag_sensitive != @local.tag_sensitive_value",
-              "matchedExpression": "@local.tag_sensitive_value",
-              "type": "local",
-              "fieldName": "tag_sensitive_value"
-            }
-          ]
-        }
-      },
-      "_dynamicDependencies": {
-        "@data.proximal_outcomes": [
-          "value"
-        ],
-        "@item.tag_sensitive": [
-          "parameter_list.filter"
-        ],
-        "@local.tag_sensitive_value": [
-          "parameter_list.filter"
-        ]
-      }
-    },
-    {
       "type": "template",
       "value": "proximal_outcome_base_question",
       "action_list": [
@@ -98,7 +20,7 @@
       "rows": [
         {
           "name": "row_id",
-          "value": "@local.row_id",
+          "value": "@fields.proximal_outcome_base_1_id",
           "_translations": {
             "value": {}
           },
@@ -107,15 +29,15 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "@local.row_id",
-                "matchedExpression": "@local.row_id",
-                "type": "local",
-                "fieldName": "row_id"
+                "fullExpression": "@fields.proximal_outcome_base_1_id",
+                "matchedExpression": "@fields.proximal_outcome_base_1_id",
+                "type": "fields",
+                "fieldName": "proximal_outcome_base_1_id"
               }
             ]
           },
           "_dynamicDependencies": {
-            "@local.row_id": [
+            "@fields.proximal_outcome_base_1_id": [
               "value"
             ]
           }
@@ -153,8 +75,8 @@
     }
   ],
   "_source": {
-    "name": "kids_teens_global V2",
-    "path": "templates/PLH proximal outcomes.xlsx",
-    "url": "https://docs.google.com/spreadsheets/d/17Ti5gmQDWeKBrprr75UlTLVG7VCdYXQtLG31Ch8O4JE"
+    "name": "kids_teens_mx",
+    "path": "data/MX goals.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1jprYnAWfuA39fBB47YKMMJ1Wp06XjsNF8X0BoZV-nR8"
   }
 }

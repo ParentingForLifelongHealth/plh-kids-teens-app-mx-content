@@ -38,6 +38,17 @@
       "value": "@local.facilitator_row.image_asset"
     },
     {
+      "name": "displayed_goal_ids"
+    },
+    {
+      "type": "data_items",
+      "name": "store_options",
+      "value": "@data.goals",
+      "action_list": "data_changed | set_local: displayed_goal_ids: @items.map(i => i.id).join(\",\")",
+      "parameter_list": "filter: (!@item.challenge_list || @item.challenge_list.includes(@fields.selected_challenge_id)) ",
+      "exclude_from_translation": true
+    },
+    {
       "type": "text_bubble",
       "name": "text_bubble",
       "value": "@global.set_goal_intro",
@@ -52,8 +63,7 @@
     {
       "type": "begin_radio_list",
       "name": "goal_select",
-      "value": "@fields.selected_goal",
-      "parameter_list": "value_as_object: true;\nvariant: card;\noptions_key: id;\noptions_value: title;",
+      "parameter_list": "variant: card;\noptions_key: id;\noptions_value: title;\nvalue_as_object: true;\ninitial_selected_option_key: @fields.selected_goal_id",
       "exclude_from_translation": true
     },
     {
@@ -90,8 +100,18 @@
       "type": "button",
       "name": "button_completed",
       "value": "@global.continue",
-      "action_list": "click | set_field: selected_goal: @local.goal_select;\nclick | set_field: selected_goal_id: @local.goal_select.key;\nclick | emit: completed;",
+      "action_list": "click | set_field: selected_goal: @local.goal_select;\nclick | set_field: selected_goal_id: @local.goal_select.key;\nclick | set_data |\n_list_id: goal_setting_data,\n_id: goal,\nselected_id: @local.goal_select.key,\noptions_offered: @local.displayed_goal_ids,\nexited_ts: @calc(now());\nclick | emit: completed;",
       "parameter_list": "style: navigation;\ndisabled: !@local.completed_enabled",
+      "condition": "@local.goal_select && @local.goal_select.key != \"other_goal\"",
+      "style_list": "flex: 1"
+    },
+    {
+      "type": "button",
+      "name": "button_completed_other",
+      "value": "@global.continue",
+      "action_list": "click | set_field: selected_goal: @local.goal_select;\nclick | set_field: selected_goal_id: @local.goal_select.key;\nclick | set_data |\n_list_id: goal_setting_data,\n_id: goal,\nselected_id: @local.goal_select.key,\nfree_text: @local.goal_select.value,\noptions_offered: @local.displayed_goal_ids,\nexited_ts: @calc(now());\nclick | emit: completed;",
+      "parameter_list": "style: navigation;\ndisabled: !@local.completed_enabled",
+      "condition": "@local.goal_select && @local.goal_select.key == \"other_goal\"",
       "style_list": "flex: 1"
     },
     {

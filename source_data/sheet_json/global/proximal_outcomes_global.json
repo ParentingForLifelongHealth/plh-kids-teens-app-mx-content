@@ -7,33 +7,30 @@
     {
       "type": "declare_global_constant",
       "name": "set_domain_intro",
-      "value": "There's a lot we can work on together. "
+      "value": "There's a lot we can work on together. \n\nWhich area would you like to explore first?"
     },
     {
       "type": "declare_global_constant",
       "name": "set_domain_question",
-      "value": "Which area would you like to explore first?",
       "comment": "For baseline question random picking example, see PLH activity library"
     },
     {
       "type": "declare_global_constant",
       "name": "set_challenge_intro",
-      "value": "Let's team up for **@fields.child_name**. "
+      "value": "Let's team up for **@fields.child_name**. \n\nWhich problem should we work on first? Pick one."
     },
     {
       "type": "declare_global_constant",
-      "name": "set_challenge_question",
-      "value": "Which problem should we work on first? Pick one."
+      "name": "set_challenge_question"
     },
     {
       "type": "declare_global_constant",
       "name": "set_goal_intro",
-      "value": "Let's select a goal"
+      "value": "Let's select a goal\n\nWhich goal? Pick one."
     },
     {
       "type": "declare_global_constant",
-      "name": "set_goal_question",
-      "value": "Which goal? Pick one."
+      "name": "set_goal_question"
     },
     {
       "type": "declare_global_constant",

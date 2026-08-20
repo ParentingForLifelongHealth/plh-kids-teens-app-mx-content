@@ -41,19 +41,33 @@
     },
     {
       "name": "row_id",
-      "value": "id"
+      "value": "id",
+      "exclude_from_translation": true
     },
     {
       "name": "field_name_value",
-      "value": "proximal_outcome_baseline_value"
+      "value": "proximal_outcome_baseline_value",
+      "exclude_from_translation": true
     },
     {
       "name": "field_name_id",
-      "value": "proximal_outcome_baseline_id"
+      "value": "proximal_outcome_baseline_id",
+      "exclude_from_translation": true
     },
     {
       "name": "proximal_data_list_name",
-      "value": "proximal_outcomes"
+      "value": "proximal_outcomes",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "dynamic_data_list_name",
+      "value": "data",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "dynamic_data_list_row_id",
+      "value": "baseline",
+      "exclude_from_translation": true
     },
     {
       "name": "proximal_data_row",
@@ -171,6 +185,21 @@
       "exclude_from_translation": true
     },
     {
+      "name": "option_6_column_name",
+      "value": "option_6_text",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_6_column",
+      "value": "proximal_data.@local.option_6_column_name",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_6",
+      "value": "@local.@local.option_6_column",
+      "exclude_from_translation": true
+    },
+    {
       "type": "text_bubble",
       "name": "text_bubble",
       "value": "@local.normalising_statement",
@@ -185,7 +214,7 @@
     },
     {
       "name": "options_list",
-      "value": "name: 1 | text:@local.option_1; \nname: 2 | text:@local.option_2; \nname: 3 | text:@local.option_3; \nname: 4 | text:@local.option_4; \nname: 5 | text:@local.option_5; ",
+      "value": "name: 1 | text:@local.option_1; \nname: 2 | text:@local.option_2; \nname: 3 | text:@local.option_3; \nname: 4 | text:@local.option_4; \nname: 5 | text:@local.option_5; \nname: 6 | text:@local.option_6; ",
       "exclude_from_translation": true
     },
     {
@@ -203,17 +232,9 @@
       "type": "button",
       "name": "button_completed",
       "value": "@global.continue",
-      "action_list": "click | emit: completed;\nclick | set_field: @local.field_name_value: @local.outcome_select;\nclick | set_field: @local.field_name_id: @local.row_id;",
+      "action_list": "click | emit: completed;\nclick | set_field: @local.field_name_value: @local.outcome_select;",
       "parameter_list": "style: navigation;\ndisabled: !@local.completed_enabled",
       "condition": "flex: 1",
-      "exclude_from_translation": true
-    },
-    {
-      "type": "button",
-      "name": "button_skip",
-      "value": "<u>@global.skip_proximal</u>",
-      "action_list": "click | emit: completed;\nclick | set_field: @local.field_name_value: NA;\nclick | set_field: @local.field_name_id: @local.row_id",
-      "parameter_list": "variant: card;\nstyle: no-background;",
       "exclude_from_translation": true
     }
   ]

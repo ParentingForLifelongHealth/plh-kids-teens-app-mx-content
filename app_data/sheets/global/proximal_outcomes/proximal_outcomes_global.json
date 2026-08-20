@@ -7,50 +7,38 @@
     {
       "type": "declare_global_constant",
       "name": "set_domain_intro",
-      "value": "There's a lot we can work on together.",
+      "value": "There's a lot we can work on together. \n\nWhich area would you like to explore first?",
       "_translations": {
         "value": {}
       }
     },
     {
       "type": "declare_global_constant",
-      "name": "set_domain_question",
-      "value": "Which area would you like to explore first?",
-      "_translations": {
-        "value": {}
-      }
+      "name": "set_domain_question"
     },
     {
       "type": "declare_global_constant",
       "name": "set_challenge_intro",
-      "value": "Let's team up for **@fields.child_name**.",
+      "value": "Let's team up for **@fields.child_name**. \n\nWhich problem should we work on first? Pick one.",
       "_translations": {
         "value": {}
       }
     },
     {
       "type": "declare_global_constant",
-      "name": "set_challenge_question",
-      "value": "Which problem should we work on first? Pick one.",
-      "_translations": {
-        "value": {}
-      }
+      "name": "set_challenge_question"
     },
     {
       "type": "declare_global_constant",
       "name": "set_goal_intro",
-      "value": "Let's select a goal",
+      "value": "Let's select a goal\n\nWhich goal? Pick one.",
       "_translations": {
         "value": {}
       }
     },
     {
       "type": "declare_global_constant",
-      "name": "set_goal_question",
-      "value": "Which goal? Pick one.",
-      "_translations": {
-        "value": {}
-      }
+      "name": "set_goal_question"
     },
     {
       "type": "declare_global_constant",

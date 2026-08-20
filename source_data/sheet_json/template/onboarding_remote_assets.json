@@ -23,63 +23,16 @@
       "value": false
     },
     {
-      "name": "download_count",
-      "value": 0
-    },
-    {
-      "type": "data_items",
-      "value": "_asset_packs",
-      "action_list": "data_changed | set_local: download_count: @items.length;",
-      "comments": "check to see if at least one row is populated as if no internet it will never be added"
-    },
-    {
-      "type": "begin_display_group",
-      "name": "page_download_wrap",
-      "parameter_list": "style: column",
-      "condition": "!@local.show_success_page"
-    },
-    {
-      "type": "begin_display_group",
-      "name": "not_started",
-      "parameter_list": "style: column",
-      "condition": "@local.download_count  < 1"
-    },
-    {
-      "type": "title",
-      "name": "error_profile_title",
-      "value": "@global.onboarding_error_title",
-      "parameter_list": "variant: header"
-    },
-    {
       "type": "text",
-      "name": "error_profile_text",
-      "value": "@global.onboarding_error_text",
-      "parameter_list": "text_align: center"
-    },
-    {
-      "type": "begin_display_group",
-      "name": "dg_footer",
-      "parameter_list": "sticky: bottom;",
-      "style_list": "padding: 12px 24px;"
-    },
-    {
-      "type": "button",
-      "name": "button_retry",
-      "value": "@global.onboarding_error_button_text",
-      "action_list": "click | asset_pack: download: @local.asset_pack_id;",
-      "parameter_list": "style: navigation;"
-    },
-    {
-      "type": "end_display_group"
-    },
-    {
-      "type": "end_display_group"
+      "name": "debug_asset_pack_id",
+      "value": "Asset pack ID: @global.asset_pack_id",
+      "condition": false
     },
     {
       "type": "begin_display_group",
       "name": "page_downloading",
       "parameter_list": "style: column",
-      "condition": "@local.download_count > 0"
+      "condition": "!@local.show_success_page"
     },
     {
       "type": "title",
@@ -129,8 +82,10 @@
     {
       "type": "plh_progress_bar",
       "name": "bar_4",
-      "parameter_list": "duration: @data.onboarding_progress_bars.id_4.timespan;\nauto_play: @local.bar_3 == 100;\ncolor: @data.onboarding_progress_bars.id_4.colour;",
-      "condition": "@local.total_count == 0"
+      "value": 0,
+      "parameter_list": "color: @data.onboarding_progress_bars.id_4.colour;",
+      "condition": "@local.total_count == 0",
+      "comments": "If there are no assets to download then something as gone wrong. don't show bar 4 complete and error should be caught by the status below"
     },
     {
       "type": "plh_progress_bar",
@@ -178,8 +133,17 @@
     {
       "type": "begin_display_group",
       "name": "page_error",
-      "parameter_list": "style: column",
-      "condition": "@local.download_status == \"error\""
+      "parameter_list": "style: column;\nsticky: bottom;",
+      "condition": "@local.download_status == \"error\"",
+      "style_list": "background: #ffffff;\nborder-radius: 12px 12px 0 0;\nbox-shadow: 0 -4px 16px rgba(0, 0, 0, 0.12);\npadding: 16px 24px !important;\nmargin-top: 12px;\nposition: relative;\nz-index: 10;\njustify-items: center;",
+      "comments": "possible options for download status: \n\"in_progress\"\n\"waiting_for_connection\"\n\"cancelled\"\n\"completed\"\n\"error\""
+    },
+    {
+      "type": "image",
+      "name": "error_profile_image",
+      "value": "@global.onboarding_error_image",
+      "condition": "!!@global.onboarding_error_image",
+      "style_list": "width: 48px;\nheight: 48px;"
     },
     {
       "type": "title",
@@ -192,6 +156,28 @@
       "name": "error_profile_text",
       "value": "@global.onboarding_error_text",
       "parameter_list": "text_align: center"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "what_to_do",
+      "parameter_list": "style: column;",
+      "style_list": "background: #F8F9FA;\nborder-radius: 16px;"
+    },
+    {
+      "type": "text",
+      "name": "error_help_title",
+      "value": "@global.onboarding_no_connection_troubleshoot_title",
+      "parameter_list": "text_align: center",
+      "style_list": "font-size: 12px;\nfont-weight: 700;\nletter-spacing: 0.07em;\ntext-transform: uppercase;\ncolor: var(--nk-muted);"
+    },
+    {
+      "type": "text",
+      "name": "error_help",
+      "value": "@global.onboarding_no_connection_troubleshoot",
+      "parameter_list": "text_align: center"
+    },
+    {
+      "type": "end_display_group"
     },
     {
       "type": "begin_display_group",
@@ -208,6 +194,137 @@
     },
     {
       "type": "end_display_group"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "page_waiting_for_connection",
+      "parameter_list": "style: column;\nsticky: bottom;",
+      "condition": "@local.download_status == \"waiting_for_connection\"",
+      "style_list": "background: #ffffff;\nborder-radius: 12px 12px 0 0;\nbox-shadow: 0 -4px 16px rgba(0, 0, 0, 0.12);\npadding: 16px 24px !important;\nmargin-top: 12px;\nposition: relative;\nz-index: 10;\njustify-items: center;"
+    },
+    {
+      "type": "image",
+      "name": "error_profile_image",
+      "value": "@global.onboarding_no_connection_image",
+      "condition": "!!@global.onboarding_error_image",
+      "style_list": "width: 48px;\nheight: 48px;"
+    },
+    {
+      "type": "title",
+      "name": "error_profile_title",
+      "value": "@global.onboarding_no_connection_title",
+      "parameter_list": "variant: header"
+    },
+    {
+      "type": "text",
+      "name": "error_profile_text",
+      "value": "@global.onboarding_no_connection_text",
+      "parameter_list": "text_align: center"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "what_to_do",
+      "parameter_list": "style: column;",
+      "style_list": "background: #F8F9FA;\nborder-radius: 16px;"
+    },
+    {
+      "type": "text",
+      "name": "error_help_title",
+      "value": "@global.onboarding_no_connection_troubleshoot_title",
+      "parameter_list": "text_align: center",
+      "style_list": "font-size: 12px;\nfont-weight: 700;\nletter-spacing: 0.07em;\ntext-transform: uppercase;\ncolor: var(--nk-muted);"
+    },
+    {
+      "type": "text",
+      "name": "error_help",
+      "value": "@global.onboarding_no_connection_troubleshoot",
+      "parameter_list": "text_align: center"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_footer",
+      "parameter_list": "sticky: bottom;",
+      "style_list": "padding: 12px 24px;"
+    },
+    {
+      "type": "button",
+      "name": "button_retry",
+      "value": "@global.onboarding_no_connection_button_text",
+      "action_list": "click | asset_pack: download: @local.asset_pack_id;",
+      "parameter_list": "style: navigation;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "page_cancelled",
+      "parameter_list": "style: column;\nsticky: bottom;",
+      "condition": "@local.download_status == \"cancelled\"",
+      "style_list": "background: #ffffff;\nborder-radius: 12px 12px 0 0;\nbox-shadow: 0 -4px 16px rgba(0, 0, 0, 0.12);\npadding: 16px 24px !important;\nmargin-top: 12px;\nposition: relative;\nz-index: 10;\njustify-items: center;"
+    },
+    {
+      "type": "image",
+      "name": "error_profile_image",
+      "value": "@global.onboarding_error_image",
+      "condition": "!!@global.onboarding_error_image",
+      "style_list": "width: 48px;\nheight: 48px;"
+    },
+    {
+      "type": "title",
+      "name": "error_profile_title",
+      "value": "@global.onboarding_error_title",
+      "parameter_list": "variant: header"
+    },
+    {
+      "type": "text",
+      "name": "error_profile_text",
+      "value": "@global.onboarding_error_text",
+      "parameter_list": "text_align: center"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "what_to_do",
+      "parameter_list": "style: column;",
+      "style_list": "background: #F8F9FA;\nborder-radius: 16px;"
+    },
+    {
+      "type": "text",
+      "name": "error_help_title",
+      "value": "@global.onboarding_error_troubleshoot_title",
+      "parameter_list": "text_align: center",
+      "style_list": "font-size: 12px;\nfont-weight: 700;\nletter-spacing: 0.07em;\ntext-transform: uppercase;\ncolor: var(--nk-muted);"
+    },
+    {
+      "type": "text",
+      "name": "error_help",
+      "value": "@global.onboarding_error_troubleshoot",
+      "parameter_list": "text_align: center"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_footer",
+      "parameter_list": "sticky: bottom;",
+      "style_list": "padding: 12px 24px;"
+    },
+    {
+      "type": "button",
+      "name": "button_retry",
+      "value": "@global.onboarding_error_button_text",
+      "action_list": "click | asset_pack: download: @local.asset_pack_id;",
+      "parameter_list": "style: navigation;"
     },
     {
       "type": "end_display_group"

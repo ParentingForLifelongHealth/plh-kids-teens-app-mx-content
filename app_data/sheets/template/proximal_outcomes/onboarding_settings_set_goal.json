@@ -148,6 +148,81 @@
       }
     },
     {
+      "name": "displayed_goal_ids",
+      "type": "set_variable",
+      "_nested_name": "displayed_goal_ids"
+    },
+    {
+      "type": "data_items",
+      "name": "store_options",
+      "value": "@data.goals",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "data_changed",
+          "action_id": "set_local",
+          "args": [
+            "displayed_goal_ids",
+            "@items.map(i => i.id).join(\",\")"
+          ],
+          "_raw": "data_changed | set_local: displayed_goal_ids: @items.map(i => i.id).join(\",\")"
+        }
+      ],
+      "parameter_list": {
+        "filter": "(!@item.challenge_list || @item.challenge_list.includes(@fields.selected_challenge_id))"
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "store_options",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.goals",
+            "matchedExpression": "@data.goals",
+            "type": "data",
+            "fieldName": "goals"
+          }
+        ],
+        "parameter_list": {
+          "filter": [
+            {
+              "fullExpression": "(!@item.challenge_list || @item.challenge_list.includes(@fields.selected_challenge_id))",
+              "matchedExpression": "!@item.challenge_list",
+              "type": "item",
+              "fieldName": "challenge_list"
+            },
+            {
+              "fullExpression": "(!@item.challenge_list || @item.challenge_list.includes(@fields.selected_challenge_id))",
+              "matchedExpression": "@item.challenge_list.includes",
+              "type": "item",
+              "fieldName": "challenge_list"
+            },
+            {
+              "fullExpression": "(!@item.challenge_list || @item.challenge_list.includes(@fields.selected_challenge_id))",
+              "matchedExpression": "@fields.selected_challenge_id",
+              "type": "fields",
+              "fieldName": "selected_challenge_id"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@data.goals": [
+          "value"
+        ],
+        "!@item.challenge_list": [
+          "parameter_list.filter"
+        ],
+        "@item.challenge_list.includes": [
+          "parameter_list.filter"
+        ],
+        "@fields.selected_challenge_id": [
+          "parameter_list.filter"
+        ]
+      }
+    },
+    {
       "type": "text_bubble",
       "name": "text_bubble",
       "value": "@global.set_goal_intro",
@@ -251,12 +326,12 @@
     {
       "type": "radio_list",
       "name": "goal_select",
-      "value": "@fields.selected_goal",
       "parameter_list": {
-        "value_as_object": "true",
         "variant": "card",
         "options_key": "id",
-        "options_value": "title"
+        "options_value": "title",
+        "value_as_object": "true",
+        "initial_selected_option_key": "@fields.selected_goal_id"
       },
       "exclude_from_translation": true,
       "rows": [
@@ -309,18 +384,20 @@
       ],
       "_nested_name": "goal_select",
       "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "@fields.selected_goal",
-            "matchedExpression": "@fields.selected_goal",
-            "type": "fields",
-            "fieldName": "selected_goal"
-          }
-        ]
+        "parameter_list": {
+          "initial_selected_option_key": [
+            {
+              "fullExpression": "@fields.selected_goal_id",
+              "matchedExpression": "@fields.selected_goal_id",
+              "type": "fields",
+              "fieldName": "selected_goal_id"
+            }
+          ]
+        }
       },
       "_dynamicDependencies": {
-        "@fields.selected_goal": [
-          "value"
+        "@fields.selected_goal_id": [
+          "parameter_list.initial_selected_option_key"
         ]
       }
     },
@@ -406,6 +483,19 @@
             },
             {
               "trigger": "click",
+              "action_id": "set_data",
+              "args": [],
+              "_raw": "click | set_data |\n_list_id: goal_setting_data,\n_id: goal,\nselected_id: @local.goal_select.key,\noptions_offered: @local.displayed_goal_ids,\nexited_ts: @calc(now())",
+              "params": {
+                "_list_id": "goal_setting_data",
+                "_id": "goal",
+                "selected_id": "@local.goal_select.key",
+                "options_offered": "@local.displayed_goal_ids",
+                "exited_ts": "@calc(now())"
+              }
+            },
+            {
+              "trigger": "click",
               "action_id": "emit",
               "args": [
                 "completed"
@@ -417,6 +507,7 @@
             "style": "navigation",
             "disabled": "!@local.completed_enabled"
           },
+          "condition": "@local.goal_select && @local.goal_select.key != \"other_goal\"",
           "style_list": [
             "flex: 1"
           ],
@@ -470,6 +561,54 @@
                     "fieldName": "goal_select"
                   }
                 ]
+              },
+              "2": {
+                "_raw": [
+                  {
+                    "fullExpression": "click | set_data |\n_list_id: goal_setting_data,\n_id: goal,\nselected_id: @local.goal_select.key,\noptions_offered: @local.displayed_goal_ids,\nexited_ts: @calc(now())",
+                    "matchedExpression": "@local.goal_select.key",
+                    "type": "local",
+                    "fieldName": "goal_select"
+                  },
+                  {
+                    "fullExpression": "click | set_data |\n_list_id: goal_setting_data,\n_id: goal,\nselected_id: @local.goal_select.key,\noptions_offered: @local.displayed_goal_ids,\nexited_ts: @calc(now())",
+                    "matchedExpression": "@local.displayed_goal_ids",
+                    "type": "local",
+                    "fieldName": "displayed_goal_ids"
+                  },
+                  {
+                    "fullExpression": "click | set_data |\n_list_id: goal_setting_data,\n_id: goal,\nselected_id: @local.goal_select.key,\noptions_offered: @local.displayed_goal_ids,\nexited_ts: @calc(now())",
+                    "matchedExpression": "@calc(now())",
+                    "type": "calc",
+                    "fieldName": "now()"
+                  }
+                ],
+                "params": {
+                  "selected_id": [
+                    {
+                      "fullExpression": "@local.goal_select.key",
+                      "matchedExpression": "@local.goal_select.key",
+                      "type": "local",
+                      "fieldName": "goal_select"
+                    }
+                  ],
+                  "options_offered": [
+                    {
+                      "fullExpression": "@local.displayed_goal_ids",
+                      "matchedExpression": "@local.displayed_goal_ids",
+                      "type": "local",
+                      "fieldName": "displayed_goal_ids"
+                    }
+                  ],
+                  "exited_ts": [
+                    {
+                      "fullExpression": "@calc(now())",
+                      "matchedExpression": "@calc(now())",
+                      "type": "calc",
+                      "fieldName": "now()"
+                    }
+                  ]
+                }
               }
             },
             "parameter_list": {
@@ -481,7 +620,21 @@
                   "fieldName": "completed_enabled"
                 }
               ]
-            }
+            },
+            "condition": [
+              {
+                "fullExpression": "@local.goal_select && @local.goal_select.key != \"other_goal\"",
+                "matchedExpression": "@local.goal_select",
+                "type": "local",
+                "fieldName": "goal_select"
+              },
+              {
+                "fullExpression": "@local.goal_select && @local.goal_select.key != \"other_goal\"",
+                "matchedExpression": "@local.goal_select.key",
+                "type": "local",
+                "fieldName": "goal_select"
+              }
+            ]
           },
           "_dynamicDependencies": {
             "@global.continue": [
@@ -489,11 +642,252 @@
             ],
             "@local.goal_select": [
               "action_list.0.args.1",
-              "action_list.0._raw"
+              "action_list.0._raw",
+              "condition"
             ],
             "@local.goal_select.key": [
               "action_list.1.args.1",
-              "action_list.1._raw"
+              "action_list.1._raw",
+              "action_list.2._raw",
+              "action_list.2.params.selected_id",
+              "condition"
+            ],
+            "@local.displayed_goal_ids": [
+              "action_list.2._raw",
+              "action_list.2.params.options_offered"
+            ],
+            "@calc(now())": [
+              "action_list.2._raw",
+              "action_list.2.params.exited_ts"
+            ],
+            "!@local.completed_enabled": [
+              "parameter_list.disabled"
+            ]
+          }
+        },
+        {
+          "type": "button",
+          "name": "button_completed_other",
+          "value": "@global.continue",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "set_field",
+              "args": [
+                "selected_goal",
+                "@local.goal_select"
+              ],
+              "_raw": "click | set_field: selected_goal: @local.goal_select"
+            },
+            {
+              "trigger": "click",
+              "action_id": "set_field",
+              "args": [
+                "selected_goal_id",
+                "@local.goal_select.key"
+              ],
+              "_raw": "click | set_field: selected_goal_id: @local.goal_select.key"
+            },
+            {
+              "trigger": "click",
+              "action_id": "set_data",
+              "args": [],
+              "_raw": "click | set_data |\n_list_id: goal_setting_data,\n_id: goal,\nselected_id: @local.goal_select.key,\nfree_text: @local.goal_select.value,\noptions_offered: @local.displayed_goal_ids,\nexited_ts: @calc(now())",
+              "params": {
+                "_list_id": "goal_setting_data",
+                "_id": "goal",
+                "selected_id": "@local.goal_select.key",
+                "free_text": "@local.goal_select.value",
+                "options_offered": "@local.displayed_goal_ids",
+                "exited_ts": "@calc(now())"
+              }
+            },
+            {
+              "trigger": "click",
+              "action_id": "emit",
+              "args": [
+                "completed"
+              ],
+              "_raw": "click | emit: completed"
+            }
+          ],
+          "parameter_list": {
+            "style": "navigation",
+            "disabled": "!@local.completed_enabled"
+          },
+          "condition": "@local.goal_select && @local.goal_select.key == \"other_goal\"",
+          "style_list": [
+            "flex: 1"
+          ],
+          "_nested_name": "dg_footer.button_completed_other",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@global.continue",
+                "matchedExpression": "@global.continue",
+                "type": "global",
+                "fieldName": "continue"
+              }
+            ],
+            "action_list": {
+              "0": {
+                "args": {
+                  "1": [
+                    {
+                      "fullExpression": "@local.goal_select",
+                      "matchedExpression": "@local.goal_select",
+                      "type": "local",
+                      "fieldName": "goal_select"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "click | set_field: selected_goal: @local.goal_select",
+                    "matchedExpression": "@local.goal_select",
+                    "type": "local",
+                    "fieldName": "goal_select"
+                  }
+                ]
+              },
+              "1": {
+                "args": {
+                  "1": [
+                    {
+                      "fullExpression": "@local.goal_select.key",
+                      "matchedExpression": "@local.goal_select.key",
+                      "type": "local",
+                      "fieldName": "goal_select"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "click | set_field: selected_goal_id: @local.goal_select.key",
+                    "matchedExpression": "@local.goal_select.key",
+                    "type": "local",
+                    "fieldName": "goal_select"
+                  }
+                ]
+              },
+              "2": {
+                "_raw": [
+                  {
+                    "fullExpression": "click | set_data |\n_list_id: goal_setting_data,\n_id: goal,\nselected_id: @local.goal_select.key,\nfree_text: @local.goal_select.value,\noptions_offered: @local.displayed_goal_ids,\nexited_ts: @calc(now())",
+                    "matchedExpression": "@local.goal_select.key",
+                    "type": "local",
+                    "fieldName": "goal_select"
+                  },
+                  {
+                    "fullExpression": "click | set_data |\n_list_id: goal_setting_data,\n_id: goal,\nselected_id: @local.goal_select.key,\nfree_text: @local.goal_select.value,\noptions_offered: @local.displayed_goal_ids,\nexited_ts: @calc(now())",
+                    "matchedExpression": "@local.goal_select.value",
+                    "type": "local",
+                    "fieldName": "goal_select"
+                  },
+                  {
+                    "fullExpression": "click | set_data |\n_list_id: goal_setting_data,\n_id: goal,\nselected_id: @local.goal_select.key,\nfree_text: @local.goal_select.value,\noptions_offered: @local.displayed_goal_ids,\nexited_ts: @calc(now())",
+                    "matchedExpression": "@local.displayed_goal_ids",
+                    "type": "local",
+                    "fieldName": "displayed_goal_ids"
+                  },
+                  {
+                    "fullExpression": "click | set_data |\n_list_id: goal_setting_data,\n_id: goal,\nselected_id: @local.goal_select.key,\nfree_text: @local.goal_select.value,\noptions_offered: @local.displayed_goal_ids,\nexited_ts: @calc(now())",
+                    "matchedExpression": "@calc(now())",
+                    "type": "calc",
+                    "fieldName": "now()"
+                  }
+                ],
+                "params": {
+                  "selected_id": [
+                    {
+                      "fullExpression": "@local.goal_select.key",
+                      "matchedExpression": "@local.goal_select.key",
+                      "type": "local",
+                      "fieldName": "goal_select"
+                    }
+                  ],
+                  "free_text": [
+                    {
+                      "fullExpression": "@local.goal_select.value",
+                      "matchedExpression": "@local.goal_select.value",
+                      "type": "local",
+                      "fieldName": "goal_select"
+                    }
+                  ],
+                  "options_offered": [
+                    {
+                      "fullExpression": "@local.displayed_goal_ids",
+                      "matchedExpression": "@local.displayed_goal_ids",
+                      "type": "local",
+                      "fieldName": "displayed_goal_ids"
+                    }
+                  ],
+                  "exited_ts": [
+                    {
+                      "fullExpression": "@calc(now())",
+                      "matchedExpression": "@calc(now())",
+                      "type": "calc",
+                      "fieldName": "now()"
+                    }
+                  ]
+                }
+              }
+            },
+            "parameter_list": {
+              "disabled": [
+                {
+                  "fullExpression": "!@local.completed_enabled",
+                  "matchedExpression": "!@local.completed_enabled",
+                  "type": "local",
+                  "fieldName": "completed_enabled"
+                }
+              ]
+            },
+            "condition": [
+              {
+                "fullExpression": "@local.goal_select && @local.goal_select.key == \"other_goal\"",
+                "matchedExpression": "@local.goal_select",
+                "type": "local",
+                "fieldName": "goal_select"
+              },
+              {
+                "fullExpression": "@local.goal_select && @local.goal_select.key == \"other_goal\"",
+                "matchedExpression": "@local.goal_select.key",
+                "type": "local",
+                "fieldName": "goal_select"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@global.continue": [
+              "value"
+            ],
+            "@local.goal_select": [
+              "action_list.0.args.1",
+              "action_list.0._raw",
+              "condition"
+            ],
+            "@local.goal_select.key": [
+              "action_list.1.args.1",
+              "action_list.1._raw",
+              "action_list.2._raw",
+              "action_list.2.params.selected_id",
+              "condition"
+            ],
+            "@local.goal_select.value": [
+              "action_list.2._raw",
+              "action_list.2.params.free_text"
+            ],
+            "@local.displayed_goal_ids": [
+              "action_list.2._raw",
+              "action_list.2.params.options_offered"
+            ],
+            "@calc(now())": [
+              "action_list.2._raw",
+              "action_list.2.params.exited_ts"
             ],
             "!@local.completed_enabled": [
               "parameter_list.disabled"

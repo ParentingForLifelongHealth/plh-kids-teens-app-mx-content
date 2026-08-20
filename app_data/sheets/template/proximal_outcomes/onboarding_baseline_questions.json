@@ -33,6 +33,175 @@
       "_nested_name": "show_success_page"
     },
     {
+      "name": "tag_sensitive_value",
+      "value": "yes",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "tag_sensitive_value"
+    },
+    {
+      "type": "data_items",
+      "name": "pick_base_1",
+      "value": "@data.proximal_outcomes",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "data_changed",
+          "action_id": "set_field",
+          "args": [
+            "proximal_outcome_base_1_id",
+            "@items[0]?.id"
+          ],
+          "_raw": "data_changed | set_field: proximal_outcome_base_1_id: @items[0]?.id"
+        }
+      ],
+      "parameter_list": {
+        "filter": "@item.tag_sensitive != @local.tag_sensitive_value",
+        "shuffle": "true",
+        "limit": "1"
+      },
+      "condition": "!@fields.proximal_outcome_base_1_id",
+      "exclude_from_translation": true,
+      "_nested_name": "pick_base_1",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.proximal_outcomes",
+            "matchedExpression": "@data.proximal_outcomes",
+            "type": "data",
+            "fieldName": "proximal_outcomes"
+          }
+        ],
+        "parameter_list": {
+          "filter": [
+            {
+              "fullExpression": "@item.tag_sensitive != @local.tag_sensitive_value",
+              "matchedExpression": "@item.tag_sensitive",
+              "type": "item",
+              "fieldName": "tag_sensitive"
+            },
+            {
+              "fullExpression": "@item.tag_sensitive != @local.tag_sensitive_value",
+              "matchedExpression": "@local.tag_sensitive_value",
+              "type": "local",
+              "fieldName": "tag_sensitive_value"
+            }
+          ]
+        },
+        "condition": [
+          {
+            "fullExpression": "!@fields.proximal_outcome_base_1_id",
+            "matchedExpression": "!@fields.proximal_outcome_base_1_id",
+            "type": "fields",
+            "fieldName": "proximal_outcome_base_1_id"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.proximal_outcomes": [
+          "value"
+        ],
+        "@item.tag_sensitive": [
+          "parameter_list.filter"
+        ],
+        "@local.tag_sensitive_value": [
+          "parameter_list.filter"
+        ],
+        "!@fields.proximal_outcome_base_1_id": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "data_items",
+      "name": "pick_base_2",
+      "value": "@data.proximal_outcomes",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "data_changed",
+          "action_id": "set_field",
+          "args": [
+            "proximal_outcome_base_2_id",
+            "@items[0]?.id"
+          ],
+          "_raw": "data_changed | set_field: proximal_outcome_base_2_id: @items[0]?.id"
+        }
+      ],
+      "parameter_list": {
+        "filter": "@item.id != @fields.proximal_outcome_base_1_id",
+        "shuffle": "true",
+        "limit": "1"
+      },
+      "condition": "!!@fields.proximal_outcome_base_1_id && !@fields.proximal_outcome_base_2_id",
+      "exclude_from_translation": true,
+      "_nested_name": "pick_base_2",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.proximal_outcomes",
+            "matchedExpression": "@data.proximal_outcomes",
+            "type": "data",
+            "fieldName": "proximal_outcomes"
+          }
+        ],
+        "parameter_list": {
+          "filter": [
+            {
+              "fullExpression": "@item.id != @fields.proximal_outcome_base_1_id",
+              "matchedExpression": "@item.id",
+              "type": "item",
+              "fieldName": "id"
+            },
+            {
+              "fullExpression": "@item.id != @fields.proximal_outcome_base_1_id",
+              "matchedExpression": "@fields.proximal_outcome_base_1_id",
+              "type": "fields",
+              "fieldName": "proximal_outcome_base_1_id"
+            }
+          ]
+        },
+        "condition": [
+          {
+            "fullExpression": "!!@fields.proximal_outcome_base_1_id && !@fields.proximal_outcome_base_2_id",
+            "matchedExpression": "!@fields.proximal_outcome_base_1_id",
+            "type": "fields",
+            "fieldName": "proximal_outcome_base_1_id"
+          },
+          {
+            "fullExpression": "!!@fields.proximal_outcome_base_1_id && !@fields.proximal_outcome_base_2_id",
+            "matchedExpression": "!@fields.proximal_outcome_base_2_id",
+            "type": "fields",
+            "fieldName": "proximal_outcome_base_2_id"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.proximal_outcomes": [
+          "value"
+        ],
+        "@item.id": [
+          "parameter_list.filter"
+        ],
+        "@fields.proximal_outcome_base_1_id": [
+          "parameter_list.filter"
+        ],
+        "!@fields.proximal_outcome_base_1_id": [
+          "condition"
+        ],
+        "!@fields.proximal_outcome_base_2_id": [
+          "condition"
+        ]
+      }
+    },
+    {
       "type": "display_group",
       "name": "page_downloading",
       "parameter_list": {
