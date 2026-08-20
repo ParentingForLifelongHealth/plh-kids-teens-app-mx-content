@@ -70,30 +70,6 @@
           "value": true,
           "type": "set_variable",
           "_nested_name": "header.show_progress"
-        },
-        {
-          "name": "progress_data_list",
-          "value": "manage_stress_t@local.articles",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "header.progress_data_list",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "manage_stress_t@local.articles",
-                "matchedExpression": "@local.articles",
-                "type": "local",
-                "fieldName": "articles"
-              }
-            ]
-          },
-          "_dynamicDependencies": {
-            "@local.articles": [
-              "value"
-            ]
-          }
         }
       ],
       "_nested_name": "header"

@@ -155,6 +155,7 @@
       "_translations": {
         "value": {}
       },
+      "exclude_from_translation": true,
       "type": "set_variable",
       "_nested_name": "row_id"
     },
@@ -164,6 +165,7 @@
       "_translations": {
         "value": {}
       },
+      "exclude_from_translation": true,
       "type": "set_variable",
       "_nested_name": "field_name_value"
     },
@@ -173,6 +175,7 @@
       "_translations": {
         "value": {}
       },
+      "exclude_from_translation": true,
       "type": "set_variable",
       "_nested_name": "field_name_id"
     },
@@ -182,8 +185,29 @@
       "_translations": {
         "value": {}
       },
+      "exclude_from_translation": true,
       "type": "set_variable",
       "_nested_name": "proximal_data_list_name"
+    },
+    {
+      "name": "dynamic_data_list_name",
+      "value": "data",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "dynamic_data_list_name"
+    },
+    {
+      "name": "dynamic_data_list_row_id",
+      "value": "baseline",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "dynamic_data_list_row_id"
     },
     {
       "name": "proximal_data_row",
@@ -665,6 +689,66 @@
       }
     },
     {
+      "name": "option_6_column_name",
+      "value": "option_6_text",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "option_6_column_name"
+    },
+    {
+      "name": "option_6_column",
+      "value": "proximal_data.@local.option_6_column_name",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "option_6_column",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "proximal_data.@local.option_6_column_name",
+            "matchedExpression": "@local.option_6_column_name",
+            "type": "local",
+            "fieldName": "option_6_column_name"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.option_6_column_name": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "option_6",
+      "value": "@local.@local.option_6_column",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "option_6",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.@local.option_6_column",
+            "matchedExpression": "@local.option_6_column",
+            "type": "local",
+            "fieldName": "option_6_column"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.option_6_column": [
+          "value"
+        ]
+      }
+    },
+    {
       "type": "text_bubble",
       "name": "text_bubble",
       "value": "@local.normalising_statement",
@@ -788,6 +872,10 @@
         {
           "name": 5,
           "text": "@local.option_5"
+        },
+        {
+          "name": 6,
+          "text": "@local.option_6"
         }
       ],
       "exclude_from_translation": true,
@@ -844,6 +932,16 @@
                 "fieldName": "option_5"
               }
             ]
+          },
+          "5": {
+            "text": [
+              {
+                "fullExpression": "@local.option_6",
+                "matchedExpression": "@local.option_6",
+                "type": "local",
+                "fieldName": "option_6"
+              }
+            ]
           }
         }
       },
@@ -862,6 +960,9 @@
         ],
         "@local.option_5": [
           "value.4.text"
+        ],
+        "@local.option_6": [
+          "value.5.text"
         ]
       }
     },
@@ -943,15 +1044,6 @@
             "@local.outcome_select"
           ],
           "_raw": "click | set_field: @local.field_name_value: @local.outcome_select"
-        },
-        {
-          "trigger": "click",
-          "action_id": "set_field",
-          "args": [
-            "@local.field_name_id",
-            "@local.row_id"
-          ],
-          "_raw": "click | set_field: @local.field_name_id: @local.row_id"
         }
       ],
       "parameter_list": {
@@ -1004,40 +1096,6 @@
                 "fieldName": "outcome_select"
               }
             ]
-          },
-          "2": {
-            "args": {
-              "0": [
-                {
-                  "fullExpression": "@local.field_name_id",
-                  "matchedExpression": "@local.field_name_id",
-                  "type": "local",
-                  "fieldName": "field_name_id"
-                }
-              ],
-              "1": [
-                {
-                  "fullExpression": "@local.row_id",
-                  "matchedExpression": "@local.row_id",
-                  "type": "local",
-                  "fieldName": "row_id"
-                }
-              ]
-            },
-            "_raw": [
-              {
-                "fullExpression": "click | set_field: @local.field_name_id: @local.row_id",
-                "matchedExpression": "@local.field_name_id",
-                "type": "local",
-                "fieldName": "field_name_id"
-              },
-              {
-                "fullExpression": "click | set_field: @local.field_name_id: @local.row_id",
-                "matchedExpression": "@local.row_id",
-                "type": "local",
-                "fieldName": "row_id"
-              }
-            ]
           }
         },
         "parameter_list": {
@@ -1063,148 +1121,15 @@
           "action_list.1.args.1",
           "action_list.1._raw"
         ],
-        "@local.field_name_id": [
-          "action_list.2.args.0",
-          "action_list.2._raw"
-        ],
-        "@local.row_id": [
-          "action_list.2.args.1",
-          "action_list.2._raw"
-        ],
         "!@local.completed_enabled": [
           "parameter_list.disabled"
-        ]
-      }
-    },
-    {
-      "type": "button",
-      "name": "button_skip",
-      "value": "<u>@global.skip_proximal</u>",
-      "_translations": {
-        "value": {}
-      },
-      "action_list": [
-        {
-          "trigger": "click",
-          "action_id": "emit",
-          "args": [
-            "completed"
-          ],
-          "_raw": "click | emit: completed"
-        },
-        {
-          "trigger": "click",
-          "action_id": "set_field",
-          "args": [
-            "@local.field_name_value",
-            "NA"
-          ],
-          "_raw": "click | set_field: @local.field_name_value: NA"
-        },
-        {
-          "trigger": "click",
-          "action_id": "set_field",
-          "args": [
-            "@local.field_name_id",
-            "@local.row_id"
-          ],
-          "_raw": "click | set_field: @local.field_name_id: @local.row_id"
-        }
-      ],
-      "parameter_list": {
-        "variant": "card",
-        "style": "no-background"
-      },
-      "exclude_from_translation": true,
-      "_nested_name": "button_skip",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "<u>@global.skip_proximal</u>",
-            "matchedExpression": "@global.skip_proximal",
-            "type": "global",
-            "fieldName": "skip_proximal"
-          }
-        ],
-        "action_list": {
-          "1": {
-            "args": {
-              "0": [
-                {
-                  "fullExpression": "@local.field_name_value",
-                  "matchedExpression": "@local.field_name_value",
-                  "type": "local",
-                  "fieldName": "field_name_value"
-                }
-              ]
-            },
-            "_raw": [
-              {
-                "fullExpression": "click | set_field: @local.field_name_value: NA",
-                "matchedExpression": "@local.field_name_value",
-                "type": "local",
-                "fieldName": "field_name_value"
-              }
-            ]
-          },
-          "2": {
-            "args": {
-              "0": [
-                {
-                  "fullExpression": "@local.field_name_id",
-                  "matchedExpression": "@local.field_name_id",
-                  "type": "local",
-                  "fieldName": "field_name_id"
-                }
-              ],
-              "1": [
-                {
-                  "fullExpression": "@local.row_id",
-                  "matchedExpression": "@local.row_id",
-                  "type": "local",
-                  "fieldName": "row_id"
-                }
-              ]
-            },
-            "_raw": [
-              {
-                "fullExpression": "click | set_field: @local.field_name_id: @local.row_id",
-                "matchedExpression": "@local.field_name_id",
-                "type": "local",
-                "fieldName": "field_name_id"
-              },
-              {
-                "fullExpression": "click | set_field: @local.field_name_id: @local.row_id",
-                "matchedExpression": "@local.row_id",
-                "type": "local",
-                "fieldName": "row_id"
-              }
-            ]
-          }
-        }
-      },
-      "_dynamicDependencies": {
-        "@global.skip_proximal": [
-          "value"
-        ],
-        "@local.field_name_value": [
-          "action_list.1.args.0",
-          "action_list.1._raw"
-        ],
-        "@local.field_name_id": [
-          "action_list.2.args.0",
-          "action_list.2._raw"
-        ],
-        "@local.row_id": [
-          "action_list.2.args.1",
-          "action_list.2._raw"
         ]
       }
     }
   ],
   "_source": {
-    "name": "kids_teens_global V2",
-    "path": "templates/PLH proximal outcomes.xlsx",
-    "url": "https://docs.google.com/spreadsheets/d/17Ti5gmQDWeKBrprr75UlTLVG7VCdYXQtLG31Ch8O4JE"
+    "name": "kids_teens_mx",
+    "path": "data/MX goals.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1jprYnAWfuA39fBB47YKMMJ1Wp06XjsNF8X0BoZV-nR8"
   }
 }

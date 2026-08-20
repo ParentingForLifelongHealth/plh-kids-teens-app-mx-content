@@ -40,6 +40,17 @@
       "exclude_from_translation": true
     },
     {
+      "name": "displayed_domain_ids"
+    },
+    {
+      "type": "data_items",
+      "name": "store_options",
+      "value": "@data.domains",
+      "action_list": "data_changed | set_local: displayed_domain_ids: @items.map(i => i.id).join(\",\")",
+      "parameter_list": "filter:(!@item.child_age_list || @item.child_age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_gender_list || @item.caregiver_gender_list.includes(@fields.user_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+      "exclude_from_translation": true
+    },
+    {
       "type": "text_bubble",
       "name": "text_bubble",
       "value": "@global.set_domain_intro",
@@ -56,9 +67,8 @@
     {
       "type": "begin_radio_button_grid",
       "name": "domain_select",
-      "value": "@fields.selected_domain",
-      "parameter_list": "options_key: id;\noptions_value: title;\nstyle: secondary;\nitem_width: 140px;\ngrid_gap: 12px;",
-      "comment": "variant: card;"
+      "value": "@fields.selected_domain_id",
+      "parameter_list": "options_key: id;\noptions_value: title;\nstyle: secondary;\nitem_width: 140px;\ngrid_gap: 12px;"
     },
     {
       "type": "begin_data_items",
@@ -92,7 +102,7 @@
       "type": "button",
       "name": "button_completed",
       "value": "@global.continue",
-      "action_list": "click | set_field: selected_domain: @local.domain_select;\nclick | emit: completed;",
+      "action_list": "click | set_field: selected_domain_id: @local.domain_select;\nclick | set_data |\n_list_id: goal_setting_data,\n_id: domain,\nselected_id: @local.domain_select,\noptions_offered: @local.displayed_domain_ids,\nexited_ts: @calc(now());\nclick | emit: completed;",
       "parameter_list": "style: navigation;\ndisabled: !@local.completed_enabled",
       "style_list": "flex: 1",
       "exclude_from_translation": true

@@ -17,6 +17,29 @@
       "value": false
     },
     {
+      "name": "tag_sensitive_value",
+      "value": "yes",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "data_items",
+      "name": "pick_base_1",
+      "value": "@data.proximal_outcomes",
+      "action_list": "data_changed | set_field: proximal_outcome_base_1_id: @items[0]?.id",
+      "parameter_list": "filter: @item.tag_sensitive != @local.tag_sensitive_value;shuffle;limit: 1;",
+      "condition": "!@fields.proximal_outcome_base_1_id",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "data_items",
+      "name": "pick_base_2",
+      "value": "@data.proximal_outcomes",
+      "action_list": "data_changed | set_field: proximal_outcome_base_2_id: @items[0]?.id",
+      "parameter_list": "filter: @item.id != @fields.proximal_outcome_base_1_id;shuffle;limit: 1;",
+      "condition": "!!@fields.proximal_outcome_base_1_id && !@fields.proximal_outcome_base_2_id",
+      "exclude_from_translation": true
+    },
+    {
       "type": "begin_display_group",
       "name": "page_downloading",
       "parameter_list": "style: column",
