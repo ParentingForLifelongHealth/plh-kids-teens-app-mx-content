@@ -1,0 +1,18 @@
+{
+  "flow_type": "global",
+  "flow_subtype": "proximal_outcomes",
+  "flow_name": "proximal_outcome_settings",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_field_default",
+      "name": "proximal_outcome_time_point",
+      "value": "baseline"
+    },
+    {
+      "type": "declare_field_default",
+      "name": "proximal_outcome_time_point_count",
+      "value": 0
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "proximal_outcomes",
+  "flow_name": "proximal_outcome_progress",
+  "status": "released",
+  "rows": [
+    {
+      "type": "text",
+      "value": "show progress"
+    },
+    {
+      "type": "text",
+      "value": "goal"
+    },
+    {
+      "type": "text",
+      "value": "qs1"
+    },
+    {
+      "type": "text",
+      "value": "qs2"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_footer",
+      "parameter_list": "sticky: bottom;",
+      "style_list": "padding: 12px 24px;"
+    },
+    {
+      "type": "round_button",
+      "name": "button_back",
+      "action_list": "click | emit: uncompleted",
+      "parameter_list": "icon_src: arrow-back;\nvariant: no-background;"
+    },
+    {
+      "type": "round_button",
+      "name": "button_forward    ",
+      "action_list": "click | emit: completed;",
+      "parameter_list": "icon_src: @global.first_completion_icon;\nvariant: no-background;\ndisabled: !@local.completed_enabled",
+      "style_list": "flex: 1"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

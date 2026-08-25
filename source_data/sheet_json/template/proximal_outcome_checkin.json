@@ -1,0 +1,85 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "proximal_outcomes",
+  "flow_name": "proximal_outcome_checkin",
+  "status": "released",
+  "rows": [
+    {
+      "name": "last_page_index",
+      "value": "@calc(Object.keys(@data.proximal_outcome_checkin_pages).length - 1)",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_data_items",
+      "name": "loop_pages",
+      "value": "@data.proximal_outcome_checkin_pages",
+      "parameter_list": "filter: !@item.completed; limit: 1"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_top"
+    },
+    {
+      "type": "task_progress_bar",
+      "parameter_list": "task_group_data: proximal_outcome_checkin_pages",
+      "style_list": "flex: 1; \nmargin-bottom: var(--row-margin-top);"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_template",
+      "name": "page_@item.row_index",
+      "value": "proximal_outcome_@item.id",
+      "action_list": "completed | set_data |\n_list_id: proximal_outcome_checkin_pages,\n_index: @item.row_index,\ncompleted: true;\n\nuncompleted | set_data | \n_list_id: proximal_outcome_checkin_pages,\n_index: -1+@item.row_index,\ncompleted: false;"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "begin_data_items",
+      "name": "page_finished",
+      "value": "@data.proximal_outcome_checkin_pages",
+      "parameter_list": "filter: @item.row_index == @local.last_page_index && @item.completed"
+    },
+    {
+      "type": "lottie_animation",
+      "name": "lottie",
+      "value": "@global.onboarding_completed_lottie_asset"
+    },
+    {
+      "type": "title",
+      "name": "finish_profile_title",
+      "value": "@global.onboarding_completed_title",
+      "parameter_list": "variant: header"
+    },
+    {
+      "type": "text",
+      "name": "finish_profile_text",
+      "value": "@global.onboarding_completed_text",
+      "parameter_list": "text_align: center"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_footer",
+      "parameter_list": "sticky: bottom;",
+      "style_list": "padding: 12px 24px;"
+    },
+    {
+      "type": "button",
+      "name": "button_completed_3",
+      "value": "Go to lesson",
+      "action_list": "click | emit: completed;",
+      "parameter_list": "style: navigation;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

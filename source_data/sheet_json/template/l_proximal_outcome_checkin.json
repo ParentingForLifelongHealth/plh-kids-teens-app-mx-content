@@ -1,0 +1,14 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "proximal_outcomes",
+  "flow_name": "l_proximal_outcome_checkin",
+  "status": "released",
+  "rows": [
+    {
+      "type": "button",
+      "name": "reset_completion",
+      "value": "start",
+      "action_list": "click | go_to : proximal_outcome_checkin;\nclick | set_field : proximal_outcome_time_point_count: @calc(Number(@fields.proximal_outcome_time_point_count) + 1);\nclick | set_field : proximal_outcome_time_point : before_@fields.proximal_outcome_time_point_count;\nclick | set_field: curr_prox_out_row_id : new;\nclick | set_data | _list_id: proximal_outcome_checkin_pages, _id: qs_goal, completed: false;\nclick | set_data | _list_id: proximal_outcome_checkin_pages, _id: goal_refl, completed: false;\nclick | set_data | _list_id: proximal_outcome_checkin_pages, _id: qs_base_1, completed: false;\nclick | set_data | _list_id: proximal_outcome_checkin_pages, _id: qs_base_2, completed: false;\nclick | set_data | _list_id: proximal_outcome_checkin_pages, _id: progress, completed: false;\n\nclick | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentered_ts: @calc(now()),\nquestion_type: goal;\n\nclick | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentered_ts: @calc(now()),\nquestion_type: qs1;\n\nclick | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentered_ts: @calc(now()),\nquestion_type: qs2;"
+    }
+  ]
+}

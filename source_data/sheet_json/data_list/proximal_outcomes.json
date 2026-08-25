@@ -6,6 +6,7 @@
   "rows": [
     {
       "id": "vac_1",
+      "domain": "vac",
       "normalising_statement::eng": "All adults use certain methods to teach children the right behaviour or to stop them from behaving badly.",
       "question::eng": "How often do you physically discipline your children when they have done something wrong by hitting, spanking, pinching, or slapping with your hand or an object like a stick or a belt?",
       "option_1_text::eng": "Never",
@@ -16,8 +17,21 @@
       "option_6_text::eng": "Prefer not to say"
     },
     {
+      "id": "vac_2",
+      "domain": "vac",
+      "normalising_statement::eng": "Sometimes our children make us really angry or upset, and we do things we wish we hadn't.",
+      "question::eng": "How often do you shout, yell, or scream at your children when you are angry with them?",
+      "option_1_text::eng": "Never",
+      "option_2_text::eng": "Rarely",
+      "option_3_text::eng": "Sometimes",
+      "option_4_text::eng": "Often",
+      "option_5_text::eng": "Always",
+      "option_6_text::eng": "Prefer not to say"
+    },
+    {
       "id": "cgmh_2",
       "tag_sensitive": "yes",
+      "domain": "cgmh",
       "normalising_statement::eng": "We can experience many different emotions as part of daily life.",
       "question::eng": "How often are you bothered by feeling down, sad, depressed, or hopeless?",
       "option_1_text::eng": "Never",
@@ -30,6 +44,7 @@
     {
       "id": "cgmh_3",
       "tag_sensitive": "yes",
+      "domain": "cgmh",
       "normalising_statement::eng": "Daily life can bring up a lot of worries and feelings.",
       "question::eng": "How often have you not been able to stop or control worrying?",
       "option_1_text::eng": "Never",
@@ -41,8 +56,21 @@
     },
     {
       "id": "camh_1",
+      "domain": "camh",
       "normalising_statement::eng": "Every child has days when it is hard for them to listen and follow rules",
       "question::eng": "How often does your child not obey you, or is it difficult to make them obey you?",
+      "option_1_text::eng": "Never",
+      "option_2_text::eng": "Rarely",
+      "option_3_text::eng": "Sometimes",
+      "option_4_text::eng": "Often",
+      "option_5_text::eng": "Always",
+      "option_6_text::eng": "Prefer not to say"
+    },
+    {
+      "id": "camh_2",
+      "domain": "camh",
+      "normalising_statement::eng": "It is normal for our children to feel bad or behave badly sometimes.",
+      "question::eng": "Thinking about the child who has been having the most difficulties, how often does your child feel sad or empty?",
       "option_1_text::eng": "Never",
       "option_2_text::eng": "Rarely",
       "option_3_text::eng": "Sometimes",

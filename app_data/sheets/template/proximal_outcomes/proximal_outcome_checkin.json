@@ -1,0 +1,388 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "proximal_outcomes",
+  "flow_name": "proximal_outcome_checkin",
+  "status": "released",
+  "rows": [
+    {
+      "name": "last_page_index",
+      "value": "@calc(Object.keys(@data.proximal_outcome_checkin_pages).length - 1)",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "last_page_index",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(Object.keys(@data.proximal_outcome_checkin_pages).length - 1)",
+            "matchedExpression": "@data.proximal_outcome_checkin_pages",
+            "type": "data",
+            "fieldName": "proximal_outcome_checkin_pages"
+          },
+          {
+            "fullExpression": "@calc(Object.keys(@data.proximal_outcome_checkin_pages).length - 1)",
+            "matchedExpression": "@calc(Object.keys(@data.proximal_outcome_checkin_pages).length - 1)",
+            "type": "calc",
+            "fieldName": "Object.keys(@data.proximal_outcome_checkin_pages).length - 1"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.proximal_outcome_checkin_pages": [
+          "value"
+        ],
+        "@calc(Object.keys(@data.proximal_outcome_checkin_pages).length - 1)": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "data_items",
+      "name": "loop_pages",
+      "value": "@data.proximal_outcome_checkin_pages",
+      "parameter_list": {
+        "filter": "!@item.completed",
+        "limit": "1"
+      },
+      "rows": [
+        {
+          "type": "display_group",
+          "name": "dg_top",
+          "rows": [
+            {
+              "type": "task_progress_bar",
+              "parameter_list": {
+                "task_group_data": "proximal_outcome_checkin_pages"
+              },
+              "style_list": [
+                "flex: 1",
+                "margin-bottom: var(--row-margin-top)"
+              ],
+              "name": "task_progress_bar_1",
+              "_nested_name": "loop_pages.dg_top.task_progress_bar_1"
+            }
+          ],
+          "_nested_name": "loop_pages.dg_top"
+        },
+        {
+          "type": "template",
+          "name": "page_@item.row_index",
+          "value": "proximal_outcome_@item.id",
+          "action_list": [
+            {
+              "trigger": "completed",
+              "action_id": "set_data",
+              "args": [],
+              "_raw": "completed | set_data |\n_list_id: proximal_outcome_checkin_pages,\n_index: @item.row_index,\ncompleted: true",
+              "params": {
+                "_list_id": "proximal_outcome_checkin_pages",
+                "_index": "@item.row_index",
+                "completed": true
+              }
+            },
+            {
+              "trigger": "uncompleted",
+              "action_id": "set_data",
+              "args": [],
+              "_raw": "uncompleted | set_data | \n_list_id: proximal_outcome_checkin_pages,\n_index: -1+@item.row_index,\ncompleted: false",
+              "params": {
+                "_list_id": "proximal_outcome_checkin_pages",
+                "_index": "-1+@item.row_index",
+                "completed": false
+              }
+            }
+          ],
+          "rows": [],
+          "_nested_name": "loop_pages.page_@item.row_index",
+          "_dynamicFields": {
+            "name": [
+              {
+                "fullExpression": "page_@item.row_index",
+                "matchedExpression": "@item.row_index",
+                "type": "item",
+                "fieldName": "row_index"
+              }
+            ],
+            "value": [
+              {
+                "fullExpression": "proximal_outcome_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "action_list": {
+              "0": {
+                "_raw": [
+                  {
+                    "fullExpression": "completed | set_data |\n_list_id: proximal_outcome_checkin_pages,\n_index: @item.row_index,\ncompleted: true",
+                    "matchedExpression": "@item.row_index",
+                    "type": "item",
+                    "fieldName": "row_index"
+                  }
+                ],
+                "params": {
+                  "_index": [
+                    {
+                      "fullExpression": "@item.row_index",
+                      "matchedExpression": "@item.row_index",
+                      "type": "item",
+                      "fieldName": "row_index"
+                    }
+                  ]
+                }
+              },
+              "1": {
+                "_raw": [
+                  {
+                    "fullExpression": "uncompleted | set_data | \n_list_id: proximal_outcome_checkin_pages,\n_index: -1+@item.row_index,\ncompleted: false",
+                    "matchedExpression": "@item.row_index",
+                    "type": "item",
+                    "fieldName": "row_index"
+                  }
+                ],
+                "params": {
+                  "_index": [
+                    {
+                      "fullExpression": "-1+@item.row_index",
+                      "matchedExpression": "@item.row_index",
+                      "type": "item",
+                      "fieldName": "row_index"
+                    }
+                  ]
+                }
+              }
+            },
+            "_nested_name": [
+              {
+                "fullExpression": "loop_pages.page_@item.row_index",
+                "matchedExpression": "@item.row_index",
+                "type": "item",
+                "fieldName": "row_index"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.row_index": [
+              "name",
+              "action_list.0._raw",
+              "action_list.0.params._index",
+              "action_list.1._raw",
+              "action_list.1.params._index",
+              "_nested_name"
+            ],
+            "@item.id": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "loop_pages",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.proximal_outcome_checkin_pages",
+            "matchedExpression": "@data.proximal_outcome_checkin_pages",
+            "type": "data",
+            "fieldName": "proximal_outcome_checkin_pages"
+          }
+        ],
+        "parameter_list": {
+          "filter": [
+            {
+              "fullExpression": "!@item.completed",
+              "matchedExpression": "!@item.completed",
+              "type": "item",
+              "fieldName": "completed"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@data.proximal_outcome_checkin_pages": [
+          "value"
+        ],
+        "!@item.completed": [
+          "parameter_list.filter"
+        ]
+      }
+    },
+    {
+      "type": "data_items",
+      "name": "page_finished",
+      "value": "@data.proximal_outcome_checkin_pages",
+      "parameter_list": {
+        "filter": "@item.row_index == @local.last_page_index && @item.completed"
+      },
+      "rows": [
+        {
+          "type": "lottie_animation",
+          "name": "lottie",
+          "value": "@global.onboarding_completed_lottie_asset",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "page_finished.lottie",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@global.onboarding_completed_lottie_asset",
+                "matchedExpression": "@global.onboarding_completed_lottie_asset",
+                "type": "global",
+                "fieldName": "onboarding_completed_lottie_asset"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@global.onboarding_completed_lottie_asset": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "title",
+          "name": "finish_profile_title",
+          "value": "@global.onboarding_completed_title",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "variant": "header"
+          },
+          "_nested_name": "page_finished.finish_profile_title",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@global.onboarding_completed_title",
+                "matchedExpression": "@global.onboarding_completed_title",
+                "type": "global",
+                "fieldName": "onboarding_completed_title"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@global.onboarding_completed_title": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "name": "finish_profile_text",
+          "value": "@global.onboarding_completed_text",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "text_align": "center"
+          },
+          "_nested_name": "page_finished.finish_profile_text",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@global.onboarding_completed_text",
+                "matchedExpression": "@global.onboarding_completed_text",
+                "type": "global",
+                "fieldName": "onboarding_completed_text"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@global.onboarding_completed_text": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "display_group",
+          "name": "dg_footer",
+          "parameter_list": {
+            "sticky": "bottom"
+          },
+          "style_list": [
+            "padding: 12px 24px"
+          ],
+          "rows": [
+            {
+              "type": "button",
+              "name": "button_completed_3",
+              "value": "Go to lesson",
+              "_translations": {
+                "value": {}
+              },
+              "action_list": [
+                {
+                  "trigger": "click",
+                  "action_id": "emit",
+                  "args": [
+                    "completed"
+                  ],
+                  "_raw": "click | emit: completed"
+                }
+              ],
+              "parameter_list": {
+                "style": "navigation"
+              },
+              "_nested_name": "page_finished.dg_footer.button_completed_3"
+            }
+          ],
+          "_nested_name": "page_finished.dg_footer"
+        }
+      ],
+      "_nested_name": "page_finished",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.proximal_outcome_checkin_pages",
+            "matchedExpression": "@data.proximal_outcome_checkin_pages",
+            "type": "data",
+            "fieldName": "proximal_outcome_checkin_pages"
+          }
+        ],
+        "parameter_list": {
+          "filter": [
+            {
+              "fullExpression": "@item.row_index == @local.last_page_index && @item.completed",
+              "matchedExpression": "@item.row_index",
+              "type": "item",
+              "fieldName": "row_index"
+            },
+            {
+              "fullExpression": "@item.row_index == @local.last_page_index && @item.completed",
+              "matchedExpression": "@local.last_page_index",
+              "type": "local",
+              "fieldName": "last_page_index"
+            },
+            {
+              "fullExpression": "@item.row_index == @local.last_page_index && @item.completed",
+              "matchedExpression": "@item.completed",
+              "type": "item",
+              "fieldName": "completed"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@data.proximal_outcome_checkin_pages": [
+          "value"
+        ],
+        "@item.row_index": [
+          "parameter_list.filter"
+        ],
+        "@local.last_page_index": [
+          "parameter_list.filter"
+        ],
+        "@item.completed": [
+          "parameter_list.filter"
+        ]
+      }
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "templates/PLH proximal outcomes.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/17Ti5gmQDWeKBrprr75UlTLVG7VCdYXQtLG31Ch8O4JE"
+  }
+}

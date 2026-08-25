@@ -6,6 +6,7 @@
   "rows": [
     {
       "id": "vac_1",
+      "domain": "vac",
       "normalising_statement": "All adults use certain methods to teach children the right behaviour or to stop them from behaving badly.",
       "_translations": {
         "normalising_statement": {},
@@ -52,8 +53,57 @@
       "option_6_text": "Prefer not to say"
     },
     {
+      "id": "vac_2",
+      "domain": "vac",
+      "normalising_statement": "Sometimes our children make us really angry or upset, and we do things we wish we hadn't.",
+      "_translations": {
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {},
+        "option_6_text": {}
+      },
+      "_translatedFields": {
+        "normalising_statement": {
+          "eng": "Sometimes our children make us really angry or upset, and we do things we wish we hadn't."
+        },
+        "question": {
+          "eng": "How often do you shout, yell, or scream at your children when you are angry with them?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        },
+        "option_6_text": {
+          "eng": "Prefer not to say"
+        }
+      },
+      "question": "How often do you shout, yell, or scream at your children when you are angry with them?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always",
+      "option_6_text": "Prefer not to say"
+    },
+    {
       "id": "cgmh_2",
       "tag_sensitive": "yes",
+      "domain": "cgmh",
       "normalising_statement": "We can experience many different emotions as part of daily life.",
       "_translations": {
         "normalising_statement": {},
@@ -102,6 +152,7 @@
     {
       "id": "cgmh_3",
       "tag_sensitive": "yes",
+      "domain": "cgmh",
       "normalising_statement": "Daily life can bring up a lot of worries and feelings.",
       "_translations": {
         "normalising_statement": {},
@@ -149,6 +200,7 @@
     },
     {
       "id": "camh_1",
+      "domain": "camh",
       "normalising_statement": "Every child has days when it is hard for them to listen and follow rules",
       "_translations": {
         "normalising_statement": {},
@@ -187,6 +239,54 @@
         }
       },
       "question": "How often does your child not obey you, or is it difficult to make them obey you?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always",
+      "option_6_text": "Prefer not to say"
+    },
+    {
+      "id": "camh_2",
+      "domain": "camh",
+      "normalising_statement": "It is normal for our children to feel bad or behave badly sometimes.",
+      "_translations": {
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {},
+        "option_6_text": {}
+      },
+      "_translatedFields": {
+        "normalising_statement": {
+          "eng": "It is normal for our children to feel bad or behave badly sometimes."
+        },
+        "question": {
+          "eng": "Thinking about the child who has been having the most difficulties, how often does your child feel sad or empty?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        },
+        "option_6_text": {
+          "eng": "Prefer not to say"
+        }
+      },
+      "question": "Thinking about the child who has been having the most difficulties, how often does your child feel sad or empty?",
       "option_1_text": "Never",
       "option_2_text": "Rarely",
       "option_3_text": "Sometimes",
