@@ -40,38 +40,36 @@
       "exclude_from_translation": true
     },
     {
-      "name": "row_id",
+      "name": "qs_row_id",
       "value": "id",
       "exclude_from_translation": true
     },
     {
-      "name": "field_name_value",
-      "value": "proximal_outcome_baseline_value",
-      "exclude_from_translation": true
-    },
-    {
       "name": "field_name_id",
-      "value": "proximal_outcome_baseline_id",
+      "value": "proximal_outcome_var_name",
       "exclude_from_translation": true
     },
     {
       "name": "proximal_data_list_name",
-      "value": "proximal_outcomes",
+      "value": "data list name",
       "exclude_from_translation": true
     },
     {
-      "name": "dynamic_data_list_name",
-      "value": "data",
-      "exclude_from_translation": true
+      "name": "question_type",
+      "value": "type"
     },
     {
-      "name": "dynamic_data_list_row_id",
-      "value": "baseline",
+      "type": "data_items",
+      "name": "get_id",
+      "value": "proximal_outcome_data",
+      "action_list": "data_changed | set_field: curr_prox_out_row_id: @items[0]?.id;",
+      "parameter_list": "filter: @item.question_type== @local.question_type && @item.entry_point == @fields.proximal_outcome_time_point;limit: 1;",
+      "condition": "@fields.curr_prox_out_row_id== \"new\"",
       "exclude_from_translation": true
     },
     {
       "name": "proximal_data_row",
-      "value": "@local.proximal_data_list_name.@local.row_id",
+      "value": "@local.proximal_data_list_name.@local.qs_row_id",
       "exclude_from_translation": true
     },
     {
@@ -232,10 +230,34 @@
       "type": "button",
       "name": "button_completed",
       "value": "@global.continue",
-      "action_list": "click | emit: completed;\nclick | set_field: @local.field_name_value: @local.outcome_select;",
+      "action_list": "click | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nvalue: @local.outcome_select,\nexited_ts: @calc(now());\nclick | emit: completed;",
       "parameter_list": "style: navigation;\ndisabled: !@local.completed_enabled",
-      "condition": "flex: 1",
+      "condition": "@fields.proximal_outcome_time_point == \"baseline\"",
+      "style_list": "flex: 1",
       "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_footer",
+      "parameter_list": "sticky: bottom;",
+      "condition": "@fields.proximal_outcome_time_point != \"baseline\"",
+      "style_list": "padding: 12px 24px;"
+    },
+    {
+      "type": "round_button",
+      "name": "button_back",
+      "action_list": "click | emit: uncompleted",
+      "parameter_list": "icon_src: arrow-back;\nvariant: no-background;"
+    },
+    {
+      "type": "round_button",
+      "name": "button_forward    ",
+      "action_list": "click | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nvalue: @local.outcome_select,\nexited_ts: @calc(now());\nclick | set_field: curr_prox_out_row_id : new;\nclick | emit: completed;",
+      "parameter_list": "icon_src: arrow-forward;\nvariant: no-background;\ndisabled: !@local.completed_enabled",
+      "style_list": "flex: 1"
+    },
+    {
+      "type": "end_display_group"
     }
   ]
 }

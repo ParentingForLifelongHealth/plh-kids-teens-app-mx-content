@@ -19,13 +19,13 @@
       ],
       "rows": [
         {
-          "name": "row_id",
+          "name": "qs_row_id",
           "value": "@fields.proximal_outcome_base_2_id",
           "_translations": {
             "value": {}
           },
           "type": "set_variable",
-          "_nested_name": "proximal_outcome_base_question.row_id",
+          "_nested_name": "proximal_outcome_base_question.qs_row_id",
           "_dynamicFields": {
             "value": [
               {
@@ -61,6 +61,15 @@
           "_nested_name": "proximal_outcome_base_question.field_name_id"
         },
         {
+          "name": "question_type",
+          "value": "qs2",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "proximal_outcome_base_question.question_type"
+        },
+        {
           "name": "proximal_data_list_name",
           "value": "proximal_outcomes",
           "_translations": {
@@ -68,6 +77,15 @@
           },
           "type": "set_variable",
           "_nested_name": "proximal_outcome_base_question.proximal_data_list_name"
+        },
+        {
+          "name": "dynamic_data_list_row_id",
+          "value": "baseline",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "proximal_outcome_base_question.dynamic_data_list_row_id"
         }
       ],
       "name": "proximal_outcome_base_question",
@@ -76,7 +94,7 @@
   ],
   "_source": {
     "name": "kids_teens_mx",
-    "path": "data/MX goals.xlsx",
-    "url": "https://docs.google.com/spreadsheets/d/1jprYnAWfuA39fBB47YKMMJ1Wp06XjsNF8X0BoZV-nR8"
+    "path": "templates/PLH proximal outcomes.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/17Ti5gmQDWeKBrprr75UlTLVG7VCdYXQtLG31Ch8O4JE"
   }
 }

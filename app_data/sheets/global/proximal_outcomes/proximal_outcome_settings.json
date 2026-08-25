@@ -1,0 +1,26 @@
+{
+  "flow_type": "global",
+  "flow_subtype": "proximal_outcomes",
+  "flow_name": "proximal_outcome_settings",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_field_default",
+      "name": "proximal_outcome_time_point",
+      "value": "baseline",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_field_default",
+      "name": "proximal_outcome_time_point_count",
+      "value": 0
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "templates/PLH proximal outcomes.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/17Ti5gmQDWeKBrprr75UlTLVG7VCdYXQtLG31Ch8O4JE"
+  }
+}

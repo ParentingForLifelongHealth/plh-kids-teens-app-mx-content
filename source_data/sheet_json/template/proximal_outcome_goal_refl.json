@@ -1,0 +1,34 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "proximal_outcomes",
+  "flow_name": "proximal_outcome_goal_refl",
+  "status": "released",
+  "rows": [
+    {
+      "type": "text",
+      "value": "goal reflection"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_footer",
+      "parameter_list": "sticky: bottom;",
+      "style_list": "padding: 12px 24px;"
+    },
+    {
+      "type": "round_button",
+      "name": "button_back",
+      "action_list": "click | emit: uncompleted",
+      "parameter_list": "icon_src: arrow-back;\nvariant: no-background;"
+    },
+    {
+      "type": "round_button",
+      "name": "button_forward    ",
+      "action_list": "click | emit: completed;",
+      "parameter_list": "icon_src: arrow-forward;\nvariant: no-background;\ndisabled: !@local.completed_enabled",
+      "style_list": "flex: 1"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}
