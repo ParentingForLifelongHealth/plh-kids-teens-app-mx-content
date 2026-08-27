@@ -25,7 +25,7 @@
       "type": "data_items",
       "name": "pick_base_1",
       "value": "@data.proximal_outcomes",
-      "action_list": "data_changed | set_field: proximal_outcome_base_1_id: @items[0]?.id",
+      "action_list": "data_changed | set_field: proximal_outcome_base_1_id: @items[0]?.id;\ndata_changed | set_field: proximal_outcome_base_1_domain: @items[0]?.domain",
       "parameter_list": "filter: @item.tag_sensitive != @local.tag_sensitive_value;shuffle;limit: 1;",
       "condition": "!@fields.proximal_outcome_base_1_id",
       "exclude_from_translation": true
@@ -35,7 +35,7 @@
       "name": "pick_base_2",
       "value": "@data.proximal_outcomes",
       "action_list": "data_changed | set_field: proximal_outcome_base_2_id: @items[0]?.id",
-      "parameter_list": "filter: @item.id != @fields.proximal_outcome_base_1_id;shuffle;limit: 1;",
+      "parameter_list": "filter: (@item.id != @fields.proximal_outcome_base_1_id && @item.domain != @fields.proximal_outcome_base_1_domain);shuffle;limit: 1;",
       "condition": "!!@fields.proximal_outcome_base_1_id && !@fields.proximal_outcome_base_2_id",
       "exclude_from_translation": true
     },
@@ -60,7 +60,7 @@
     {
       "type": "plh_progress_bar",
       "name": "bar_1",
-      "action_list": "on_progress: 50 | pop_up: proximal_outcome_qs_goal;\non_progress: 50 | set_local: start: false;\non_progress: 50 | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentered_ts: @calc(now()),\nquestion_type: goal;\non_progress: 50 | set_field: curr_prox_out_row_id: new;",
+      "action_list": "on_progress: 50 | set_local: start: false;\non_progress: 50 | add_data |\n_list_id: proximal_outcome_data,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentry_point: @fields.proximal_outcome_time_point,\nentered_ts: @calc(now()),\nquestion_type: goal;\non_progress: 50 | set_field: curr_prox_out_row_id: new;\non_progress: 50 | pop_up: proximal_outcome_qs_goal;",
       "parameter_list": "duration: @data.onboarding_progress_bars.id_1.timespan;\nauto_play: @local.start;\ncolor: @data.onboarding_progress_bars.id_1.colour"
     },
     {
@@ -72,19 +72,20 @@
     {
       "type": "plh_progress_bar",
       "name": "bar_2",
-      "action_list": "on_progress: 50 | pop_up: proximal_outcome_qs_base_1;\non_progress: 50 | set_local: start: false;\non_progress: 50 | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentered_ts: @calc(now()),\nquestion_type: qs1;\non_progress: 50 | set_field: curr_prox_out_row_id: new;",
+      "action_list": "on_progress: 50 | set_local: start: false;\non_progress: 50 | add_data |\n_list_id: proximal_outcome_data,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentry_point: @fields.proximal_outcome_time_point,\nentered_ts: @calc(now()),\nquestion_type: qs1;\non_progress: 50 | set_field: curr_prox_out_row_id: new;\non_progress: 50 | pop_up: proximal_outcome_qs_base_1;",
       "parameter_list": "duration: @data.onboarding_progress_bars.id_2.timespan;\nauto_play: @local.bar_1 == 100 && @local.start;\ncolor: @data.onboarding_progress_bars.id_2.colour;"
     },
     {
       "type": "text",
       "name": "bar_3_title",
       "value": "@data.onboarding_progress_bars.id_3.text",
+      "action_list": "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t",
       "style_list": "color: @data.onboarding_progress_bars.id_3.colour"
     },
     {
       "type": "plh_progress_bar",
       "name": "bar_3",
-      "action_list": "on_progress: 50 | pop_up: proximal_outcome_qs_base_2;\non_progress: 50 | set_local: start: false;\non_progress: 50 | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentered_ts: @calc(now()),\nquestion_type: qs2;\non_progress: 50 | set_field: curr_prox_out_row_id: new;",
+      "action_list": "on_progress: 50 | set_local: start: false;\non_progress: 50 | add_data |\n_list_id: proximal_outcome_data,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentry_point: @fields.proximal_outcome_time_point,\nentered_ts: @calc(now()),\nquestion_type: qs2;\non_progress: 50 | set_field: curr_prox_out_row_id: new;\non_progress: 50 | pop_up: proximal_outcome_qs_base_2;",
       "parameter_list": "duration: @data.onboarding_progress_bars.id_3.timespan;\nauto_play: @local.bar_2 == 100 && @local.start;;\ncolor: @data.onboarding_progress_bars.id_3.colour;"
     },
     {
@@ -136,7 +137,7 @@
       "type": "button",
       "name": "button_completed_3",
       "value": "@global.continue",
-      "action_list": "click | emit: completed;\nclick | set_field: onboarding_settings_completed: true;\nclick | set_field: proximal_outcome_time_point : before_@fields.proximal_outcome_time_point_count;",
+      "action_list": "click | emit: completed;\nclick | set_field: onboarding_settings_completed: true;\nclick | set_field: proximal_outcome_time_point : before;",
       "parameter_list": "style: navigation;"
     },
     {

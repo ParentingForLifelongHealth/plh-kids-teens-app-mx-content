@@ -5,26 +5,95 @@
   "status": "released",
   "rows": [
     {
+      "name": "speaker_position",
+      "value": "left",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "variant",
+      "value": "gray",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "facilitator_id",
+      "value": "@fields.facilitator_id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "facilitator_data",
+      "value": "characters.@local.facilitator_id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "facilitator_row",
+      "value": "@data.@local.facilitator_data",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "speaker_name",
+      "value": "@local.facilitator_row.name",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "speaker_image_asset",
+      "value": "@local.facilitator_row.image_asset",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "entry_point_count ",
+      "value": "@calc(Number(@fields.proximal_outcome_time_point_count) - 1)"
+    },
+    {
+      "type": "data_items",
+      "name": "get_id",
+      "value": "proximal_outcome_data",
+      "action_list": "data_changed | set_field: curr_prox_out_row_id: @items[0]?.id;",
+      "parameter_list": "filter: (@item.question_type== \"goal\" && @item.entry_point_count == @local.entry_point_count && @item.entry_point == @fields.proximal_outcome_time_point);limit: 1;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text_bubble",
+      "name": "text_bubble",
+      "value": "@global.goal_reflection_question",
+      "parameter_list": "speaker_image_asset: @local.speaker_image_asset;\nspeaker_name: @local.speaker_name;\nspeaker_position: @local.speaker_position;\nvariant: @local.variant;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text_area",
+      "name": "goal_reflection_input",
+      "parameter_list": "placeholder: @global.goal_reflection_placeholder;",
+      "condition": "!@fields.curr_goal_reflection_input ",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text_area",
+      "name": "goal_reflection_input",
+      "value": "@fields.curr_goal_reflection_input",
+      "condition": "!!@fields.curr_goal_reflection_input "
+    },
+    {
       "type": "text",
-      "value": "goal reflection"
+      "name": "goal_reflection_skip",
+      "value": "@global.goal_reflection_skip",
+      "parameter_list": "text_align: center\n",
+      "exclude_from_translation": true
     },
     {
       "type": "begin_display_group",
       "name": "dg_footer",
-      "parameter_list": "sticky: bottom;",
-      "style_list": "padding: 12px 24px;"
+      "parameter_list": "sticky: bottom;"
     },
     {
       "type": "round_button",
       "name": "button_back",
       "action_list": "click | emit: uncompleted",
-      "parameter_list": "icon_src: arrow-back;\nvariant: no-background;"
+      "parameter_list": "icon_src: arrow-back;"
     },
     {
       "type": "round_button",
       "name": "button_forward    ",
-      "action_list": "click | emit: completed;",
-      "parameter_list": "icon_src: arrow-forward;\nvariant: no-background;\ndisabled: !@local.completed_enabled",
+      "action_list": "click | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nreflection: @local.goal_reflection_input;\nclick | set_field : curr_goal_reflection_input: @local.goal_reflection_input; \nclick | emit: completed;",
+      "parameter_list": "icon_src: arrow-forward;",
       "style_list": "flex: 1"
     },
     {
