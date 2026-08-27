@@ -7,19 +7,11 @@
     {
       "type": "begin_template",
       "value": "proximal_outcome_base_question",
-      "action_list": "completed | emit: completed;"
+      "action_list": "completed | emit: completed;\nuncompleted | emit: uncompleted;"
     },
     {
       "name": "qs_row_id",
       "value": "@fields.proximal_outcome_base_2_id"
-    },
-    {
-      "name": "field_name_value",
-      "value": "proximal_outcome_base_2_value"
-    },
-    {
-      "name": "field_name_id",
-      "value": "proximal_outcome_base_2_id"
     },
     {
       "name": "question_type",
@@ -28,10 +20,6 @@
     {
       "name": "proximal_data_list_name",
       "value": "proximal_outcomes"
-    },
-    {
-      "name": "dynamic_data_list_row_id",
-      "value": "baseline"
     },
     {
       "type": "end_template"

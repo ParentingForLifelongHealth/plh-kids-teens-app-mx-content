@@ -15,6 +15,14 @@
             "completed"
           ],
           "_raw": "completed | emit: completed"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "emit",
+          "args": [
+            "uncompleted"
+          ],
+          "_raw": "uncompleted | emit: uncompleted"
         }
       ],
       "rows": [
@@ -43,24 +51,6 @@
           }
         },
         {
-          "name": "field_name_value",
-          "value": "proximal_outcome_goal_value",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "proximal_outcome_base_question.field_name_value"
-        },
-        {
-          "name": "field_name_id",
-          "value": "proximal_outcome_goal_id",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "proximal_outcome_base_question.field_name_id"
-        },
-        {
           "name": "proximal_data_list_name",
           "value": "goals",
           "_translations": {
@@ -71,7 +61,7 @@
         },
         {
           "name": "question_type",
-          "value": "qs1",
+          "value": "goal",
           "_translations": {
             "value": {}
           },
@@ -79,13 +69,10 @@
           "_nested_name": "proximal_outcome_base_question.question_type"
         },
         {
-          "name": "dynamic_data_list_row_id",
-          "value": "baseline",
-          "_translations": {
-            "value": {}
-          },
+          "name": "show_previous",
+          "value": false,
           "type": "set_variable",
-          "_nested_name": "proximal_outcome_base_question.dynamic_data_list_row_id"
+          "_nested_name": "proximal_outcome_base_question.show_previous"
         }
       ],
       "name": "proximal_outcome_base_question",

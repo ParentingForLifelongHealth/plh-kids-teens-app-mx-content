@@ -5,19 +5,20 @@
 | --- | --- |
 | accordion | 3 |
 | accordion_section | 6 |
+| advanced_dashed_box | 3 |
 | animated_section | 1 |
 | animated_slides | 1 |
 | apple_sign_in_button | 2 |
 | audio | 3 |
-| button | 127 |
+| button | 129 |
 | combo_box | 27 |
-| data_items | 102 |
+| data_items | 106 |
 | debug_toggle | 1 |
 | display_grid | 4 |
-| display_group | 133 |
+| display_group | 134 |
 | drawer | 1 |
 | google_sign_in_button | 2 |
-| image | 26 |
+| image | 28 |
 | items | 16 |
 | lottie_animation | 7 |
 | nested_properties | 11 |
@@ -34,19 +35,19 @@
 | qr_code | 1 |
 | radio_button_grid | 10 |
 | radio_list | 3 |
-| round_button | 29 |
+| round_button | 27 |
 | select_text | 1 |
 | set_field | 4 |
-| set_variable | 1390 |
+| set_variable | 1416 |
 | simple_checkbox | 1 |
 | task_card | 4 |
 | task_progress_bar | 5 |
 | template | 263 |
-| text | 245 |
-| text_area | 3 |
+| text | 252 |
+| text_area | 5 |
 | text_box | 21 |
-| text_bubble | 21 |
-| title | 68 |
+| text_bubble | 24 |
+| title | 70 |
 | toggle_bar | 5 |
 | update_action_list | 2 |
 | video | 3 |
@@ -68,7 +69,7 @@
 | emit: force_restart | 3 |
 | emit: server_sync | 6 |
 | emit: set_language | 2 |
-| emit: uncompleted | 189 |
+| emit: uncompleted | 192 |
 | feedback | 13 |
 | go_to | 27 |
 | nav | 1 |
@@ -78,10 +79,10 @@
 | reset_app | 4 |
 | reset_data | 3 |
 | save_to_device | 1 |
-| set_data | 57 |
-| set_field | 95 |
+| set_data | 58 |
+| set_field | 97 |
 | set_item | 30 |
-| set_local | 67 |
+| set_local | 68 |
 | share | 3 |
 | task | 2 |
 | toast | 1 |
@@ -629,7 +630,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/diamond.png | 1.8 | 1 |
 | images/icons/diamond_active.png | 1.7 | 1 |
 | images/icons/document-lock-outline.svg | 0.7 | 1 |
-| images/icons/document-text-outline-thin.svg | 0.5 | 1 |
+| images/icons/document-text-outline-thin.svg | 0.5 | 2 |
 | images/icons/document-text-outline.svg | 0.5 | 1 |
 | images/icons/download.svg | 0.7 | 1 |
 | images/icons/expand_circle_right.png | 8.7 | 1 |
@@ -668,7 +669,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/share.svg | 4.2 | 3 |
 | images/icons/smile_eyes_down.svg | 0.9 | 2 |
 | images/icons/star_outline_blue.svg | 1 | 1 |
-| images/icons/tick.svg | 0.3 | 1 |
+| images/icons/tick.svg | 0.3 | 2 |
 | images/icons/trophy.png | 1.6 | 1 |
 | images/icons/trophy_active.png | 1.7 | 1 |
 | images/icons/trophy_large.svg | 2.2 | 1 |

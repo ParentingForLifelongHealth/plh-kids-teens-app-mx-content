@@ -15,6 +15,14 @@
             "completed"
           ],
           "_raw": "completed | emit: completed"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "emit",
+          "args": [
+            "uncompleted"
+          ],
+          "_raw": "uncompleted | emit: uncompleted"
         }
       ],
       "rows": [
@@ -41,24 +49,6 @@
               "value"
             ]
           }
-        },
-        {
-          "name": "field_name_value",
-          "value": "proximal_outcome_base_1_value",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "proximal_outcome_base_question.field_name_value"
-        },
-        {
-          "name": "field_name_id",
-          "value": "proximal_outcome_base_1_id",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "proximal_outcome_base_question.field_name_id"
         },
         {
           "name": "question_type",

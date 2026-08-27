@@ -58,6 +58,15 @@
             "@items[0]?.id"
           ],
           "_raw": "data_changed | set_field: proximal_outcome_base_1_id: @items[0]?.id"
+        },
+        {
+          "trigger": "data_changed",
+          "action_id": "set_field",
+          "args": [
+            "proximal_outcome_base_1_domain",
+            "@items[0]?.domain"
+          ],
+          "_raw": "data_changed | set_field: proximal_outcome_base_1_domain: @items[0]?.domain"
         }
       ],
       "parameter_list": {
@@ -136,7 +145,7 @@
         }
       ],
       "parameter_list": {
-        "filter": "@item.id != @fields.proximal_outcome_base_1_id",
+        "filter": "(@item.id != @fields.proximal_outcome_base_1_id && @item.domain != @fields.proximal_outcome_base_1_domain)",
         "shuffle": "true",
         "limit": "1"
       },
@@ -155,16 +164,28 @@
         "parameter_list": {
           "filter": [
             {
-              "fullExpression": "@item.id != @fields.proximal_outcome_base_1_id",
+              "fullExpression": "(@item.id != @fields.proximal_outcome_base_1_id && @item.domain != @fields.proximal_outcome_base_1_domain)",
               "matchedExpression": "@item.id",
               "type": "item",
               "fieldName": "id"
             },
             {
-              "fullExpression": "@item.id != @fields.proximal_outcome_base_1_id",
+              "fullExpression": "(@item.id != @fields.proximal_outcome_base_1_id && @item.domain != @fields.proximal_outcome_base_1_domain)",
               "matchedExpression": "@fields.proximal_outcome_base_1_id",
               "type": "fields",
               "fieldName": "proximal_outcome_base_1_id"
+            },
+            {
+              "fullExpression": "(@item.id != @fields.proximal_outcome_base_1_id && @item.domain != @fields.proximal_outcome_base_1_domain)",
+              "matchedExpression": "@item.domain",
+              "type": "item",
+              "fieldName": "domain"
+            },
+            {
+              "fullExpression": "(@item.id != @fields.proximal_outcome_base_1_id && @item.domain != @fields.proximal_outcome_base_1_domain)",
+              "matchedExpression": "@fields.proximal_outcome_base_1_domain",
+              "type": "fields",
+              "fieldName": "proximal_outcome_base_1_domain"
             }
           ]
         },
@@ -191,6 +212,12 @@
           "parameter_list.filter"
         ],
         "@fields.proximal_outcome_base_1_id": [
+          "parameter_list.filter"
+        ],
+        "@item.domain": [
+          "parameter_list.filter"
+        ],
+        "@fields.proximal_outcome_base_1_domain": [
           "parameter_list.filter"
         ],
         "!@fields.proximal_outcome_base_1_id": [
@@ -282,17 +309,6 @@
           "action_list": [
             {
               "trigger": "on_progress",
-              "action_id": "pop_up",
-              "args": [
-                "proximal_outcome_qs_goal"
-              ],
-              "_raw": "on_progress: 50 | pop_up: proximal_outcome_qs_goal",
-              "trigger_args": [
-                "50"
-              ]
-            },
-            {
-              "trigger": "on_progress",
               "action_id": "set_local",
               "args": [
                 "start",
@@ -307,12 +323,13 @@
               "trigger": "on_progress",
               "action_id": "add_data",
               "args": [],
-              "_raw": "on_progress: 50 | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentered_ts: @calc(now()),\nquestion_type: goal",
+              "_raw": "on_progress: 50 | add_data |\n_list_id: proximal_outcome_data,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentry_point: @fields.proximal_outcome_time_point,\nentered_ts: @calc(now()),\nquestion_type: goal",
               "trigger_args": [
                 "50"
               ],
               "params": {
                 "_list_id": "proximal_outcome_data",
+                "entry_point_count": "@fields.proximal_outcome_time_point_count",
                 "entry_point": "@fields.proximal_outcome_time_point",
                 "entered_ts": "@calc(now())",
                 "question_type": "goal"
@@ -329,6 +346,17 @@
               "trigger_args": [
                 "50"
               ]
+            },
+            {
+              "trigger": "on_progress",
+              "action_id": "pop_up",
+              "args": [
+                "proximal_outcome_qs_goal"
+              ],
+              "_raw": "on_progress: 50 | pop_up: proximal_outcome_qs_goal",
+              "trigger_args": [
+                "50"
+              ]
             }
           ],
           "parameter_list": {
@@ -339,16 +367,30 @@
           "_nested_name": "page_downloading.bar_1",
           "_dynamicFields": {
             "action_list": {
-              "2": {
+              "1": {
                 "_raw": [
                   {
-                    "fullExpression": "on_progress: 50 | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentered_ts: @calc(now()),\nquestion_type: goal",
+                    "fullExpression": "on_progress: 50 | add_data |\n_list_id: proximal_outcome_data,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentry_point: @fields.proximal_outcome_time_point,\nentered_ts: @calc(now()),\nquestion_type: goal",
+                    "matchedExpression": "@fields.proximal_outcome_time_point_count",
+                    "type": "fields",
+                    "fieldName": "proximal_outcome_time_point_count"
+                  },
+                  {
+                    "fullExpression": "on_progress: 50 | add_data |\n_list_id: proximal_outcome_data,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentry_point: @fields.proximal_outcome_time_point,\nentered_ts: @calc(now()),\nquestion_type: goal",
                     "matchedExpression": "@fields.proximal_outcome_time_point",
                     "type": "fields",
                     "fieldName": "proximal_outcome_time_point"
                   }
                 ],
                 "params": {
+                  "entry_point_count": [
+                    {
+                      "fullExpression": "@fields.proximal_outcome_time_point_count",
+                      "matchedExpression": "@fields.proximal_outcome_time_point_count",
+                      "type": "fields",
+                      "fieldName": "proximal_outcome_time_point_count"
+                    }
+                  ],
                   "entry_point": [
                     {
                       "fullExpression": "@fields.proximal_outcome_time_point",
@@ -396,12 +438,16 @@
             }
           },
           "_dynamicDependencies": {
+            "@fields.proximal_outcome_time_point_count": [
+              "action_list.1._raw",
+              "action_list.1.params.entry_point_count"
+            ],
             "@fields.proximal_outcome_time_point": [
-              "action_list.2._raw",
-              "action_list.2.params.entry_point"
+              "action_list.1._raw",
+              "action_list.1.params.entry_point"
             ],
             "@calc(now())": [
-              "action_list.2.params.entered_ts"
+              "action_list.1.params.entered_ts"
             ],
             "@data.onboarding_progress_bars.id_1.timespan": [
               "parameter_list.duration"
@@ -460,17 +506,6 @@
           "action_list": [
             {
               "trigger": "on_progress",
-              "action_id": "pop_up",
-              "args": [
-                "proximal_outcome_qs_base_1"
-              ],
-              "_raw": "on_progress: 50 | pop_up: proximal_outcome_qs_base_1",
-              "trigger_args": [
-                "50"
-              ]
-            },
-            {
-              "trigger": "on_progress",
               "action_id": "set_local",
               "args": [
                 "start",
@@ -485,12 +520,13 @@
               "trigger": "on_progress",
               "action_id": "add_data",
               "args": [],
-              "_raw": "on_progress: 50 | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentered_ts: @calc(now()),\nquestion_type: qs1",
+              "_raw": "on_progress: 50 | add_data |\n_list_id: proximal_outcome_data,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentry_point: @fields.proximal_outcome_time_point,\nentered_ts: @calc(now()),\nquestion_type: qs1",
               "trigger_args": [
                 "50"
               ],
               "params": {
                 "_list_id": "proximal_outcome_data",
+                "entry_point_count": "@fields.proximal_outcome_time_point_count",
                 "entry_point": "@fields.proximal_outcome_time_point",
                 "entered_ts": "@calc(now())",
                 "question_type": "qs1"
@@ -507,6 +543,17 @@
               "trigger_args": [
                 "50"
               ]
+            },
+            {
+              "trigger": "on_progress",
+              "action_id": "pop_up",
+              "args": [
+                "proximal_outcome_qs_base_1"
+              ],
+              "_raw": "on_progress: 50 | pop_up: proximal_outcome_qs_base_1",
+              "trigger_args": [
+                "50"
+              ]
             }
           ],
           "parameter_list": {
@@ -517,16 +564,30 @@
           "_nested_name": "page_downloading.bar_2",
           "_dynamicFields": {
             "action_list": {
-              "2": {
+              "1": {
                 "_raw": [
                   {
-                    "fullExpression": "on_progress: 50 | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentered_ts: @calc(now()),\nquestion_type: qs1",
+                    "fullExpression": "on_progress: 50 | add_data |\n_list_id: proximal_outcome_data,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentry_point: @fields.proximal_outcome_time_point,\nentered_ts: @calc(now()),\nquestion_type: qs1",
+                    "matchedExpression": "@fields.proximal_outcome_time_point_count",
+                    "type": "fields",
+                    "fieldName": "proximal_outcome_time_point_count"
+                  },
+                  {
+                    "fullExpression": "on_progress: 50 | add_data |\n_list_id: proximal_outcome_data,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentry_point: @fields.proximal_outcome_time_point,\nentered_ts: @calc(now()),\nquestion_type: qs1",
                     "matchedExpression": "@fields.proximal_outcome_time_point",
                     "type": "fields",
                     "fieldName": "proximal_outcome_time_point"
                   }
                 ],
                 "params": {
+                  "entry_point_count": [
+                    {
+                      "fullExpression": "@fields.proximal_outcome_time_point_count",
+                      "matchedExpression": "@fields.proximal_outcome_time_point_count",
+                      "type": "fields",
+                      "fieldName": "proximal_outcome_time_point_count"
+                    }
+                  ],
                   "entry_point": [
                     {
                       "fullExpression": "@fields.proximal_outcome_time_point",
@@ -580,12 +641,16 @@
             }
           },
           "_dynamicDependencies": {
+            "@fields.proximal_outcome_time_point_count": [
+              "action_list.1._raw",
+              "action_list.1.params.entry_point_count"
+            ],
             "@fields.proximal_outcome_time_point": [
-              "action_list.2._raw",
-              "action_list.2.params.entry_point"
+              "action_list.1._raw",
+              "action_list.1.params.entry_point"
             ],
             "@calc(now())": [
-              "action_list.2.params.entered_ts"
+              "action_list.1.params.entered_ts"
             ],
             "@data.onboarding_progress_bars.id_2.timespan": [
               "parameter_list.duration"
@@ -608,6 +673,7 @@
           "_translations": {
             "value": {}
           },
+          "action_list": [],
           "style_list": [
             "color: @data.onboarding_progress_bars.id_3.colour"
           ],
@@ -647,17 +713,6 @@
           "action_list": [
             {
               "trigger": "on_progress",
-              "action_id": "pop_up",
-              "args": [
-                "proximal_outcome_qs_base_2"
-              ],
-              "_raw": "on_progress: 50 | pop_up: proximal_outcome_qs_base_2",
-              "trigger_args": [
-                "50"
-              ]
-            },
-            {
-              "trigger": "on_progress",
               "action_id": "set_local",
               "args": [
                 "start",
@@ -672,12 +727,13 @@
               "trigger": "on_progress",
               "action_id": "add_data",
               "args": [],
-              "_raw": "on_progress: 50 | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentered_ts: @calc(now()),\nquestion_type: qs2",
+              "_raw": "on_progress: 50 | add_data |\n_list_id: proximal_outcome_data,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentry_point: @fields.proximal_outcome_time_point,\nentered_ts: @calc(now()),\nquestion_type: qs2",
               "trigger_args": [
                 "50"
               ],
               "params": {
                 "_list_id": "proximal_outcome_data",
+                "entry_point_count": "@fields.proximal_outcome_time_point_count",
                 "entry_point": "@fields.proximal_outcome_time_point",
                 "entered_ts": "@calc(now())",
                 "question_type": "qs2"
@@ -694,6 +750,17 @@
               "trigger_args": [
                 "50"
               ]
+            },
+            {
+              "trigger": "on_progress",
+              "action_id": "pop_up",
+              "args": [
+                "proximal_outcome_qs_base_2"
+              ],
+              "_raw": "on_progress: 50 | pop_up: proximal_outcome_qs_base_2",
+              "trigger_args": [
+                "50"
+              ]
             }
           ],
           "parameter_list": {
@@ -704,16 +771,30 @@
           "_nested_name": "page_downloading.bar_3",
           "_dynamicFields": {
             "action_list": {
-              "2": {
+              "1": {
                 "_raw": [
                   {
-                    "fullExpression": "on_progress: 50 | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentered_ts: @calc(now()),\nquestion_type: qs2",
+                    "fullExpression": "on_progress: 50 | add_data |\n_list_id: proximal_outcome_data,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentry_point: @fields.proximal_outcome_time_point,\nentered_ts: @calc(now()),\nquestion_type: qs2",
+                    "matchedExpression": "@fields.proximal_outcome_time_point_count",
+                    "type": "fields",
+                    "fieldName": "proximal_outcome_time_point_count"
+                  },
+                  {
+                    "fullExpression": "on_progress: 50 | add_data |\n_list_id: proximal_outcome_data,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentry_point: @fields.proximal_outcome_time_point,\nentered_ts: @calc(now()),\nquestion_type: qs2",
                     "matchedExpression": "@fields.proximal_outcome_time_point",
                     "type": "fields",
                     "fieldName": "proximal_outcome_time_point"
                   }
                 ],
                 "params": {
+                  "entry_point_count": [
+                    {
+                      "fullExpression": "@fields.proximal_outcome_time_point_count",
+                      "matchedExpression": "@fields.proximal_outcome_time_point_count",
+                      "type": "fields",
+                      "fieldName": "proximal_outcome_time_point_count"
+                    }
+                  ],
                   "entry_point": [
                     {
                       "fullExpression": "@fields.proximal_outcome_time_point",
@@ -767,12 +848,16 @@
             }
           },
           "_dynamicDependencies": {
+            "@fields.proximal_outcome_time_point_count": [
+              "action_list.1._raw",
+              "action_list.1.params.entry_point_count"
+            ],
             "@fields.proximal_outcome_time_point": [
-              "action_list.2._raw",
-              "action_list.2.params.entry_point"
+              "action_list.1._raw",
+              "action_list.1.params.entry_point"
             ],
             "@calc(now())": [
-              "action_list.2.params.entered_ts"
+              "action_list.1.params.entered_ts"
             ],
             "@data.onboarding_progress_bars.id_3.timespan": [
               "parameter_list.duration"
@@ -1053,9 +1138,9 @@
                   "action_id": "set_field",
                   "args": [
                     "proximal_outcome_time_point",
-                    "before_@fields.proximal_outcome_time_point_count"
+                    "before"
                   ],
-                  "_raw": "click | set_field: proximal_outcome_time_point : before_@fields.proximal_outcome_time_point_count"
+                  "_raw": "click | set_field: proximal_outcome_time_point : before"
                 }
               ],
               "parameter_list": {
@@ -1070,37 +1155,11 @@
                     "type": "global",
                     "fieldName": "continue"
                   }
-                ],
-                "action_list": {
-                  "2": {
-                    "args": {
-                      "1": [
-                        {
-                          "fullExpression": "before_@fields.proximal_outcome_time_point_count",
-                          "matchedExpression": "@fields.proximal_outcome_time_point_count",
-                          "type": "fields",
-                          "fieldName": "proximal_outcome_time_point_count"
-                        }
-                      ]
-                    },
-                    "_raw": [
-                      {
-                        "fullExpression": "click | set_field: proximal_outcome_time_point : before_@fields.proximal_outcome_time_point_count",
-                        "matchedExpression": "@fields.proximal_outcome_time_point_count",
-                        "type": "fields",
-                        "fieldName": "proximal_outcome_time_point_count"
-                      }
-                    ]
-                  }
-                }
+                ]
               },
               "_dynamicDependencies": {
                 "@global.continue": [
                   "value"
-                ],
-                "@fields.proximal_outcome_time_point_count": [
-                  "action_list.2.args.1",
-                  "action_list.2._raw"
                 ]
               }
             }
