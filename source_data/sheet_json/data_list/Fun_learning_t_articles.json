@@ -1,0 +1,84 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "Fun_learning_t_articles",
+  "data_list_name": "Fun_learning_t_articles",
+  "status": "released",
+  "flow_subtype": "modules_Fun_learning_t",
+  "module": "Fun_learning_t",
+  "rows": [
+    {
+      "id": "@default",
+      "nested": false
+    },
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Esta sesión trata sobre cómo ayudar a @fields.child_name a disfrutar de su aprendizaje para que sea algo que le guste y le sea divertido. 😃",
+      "text_2::eng": "Como madre, padre o persona cuidadora, desempeñas un papel importante en el modo en que @fields.child_name aprende y se desarrolla dentro y fuera de la escuela."
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "Aquí tienes una historieta que trata sobre cómo divertirte con tu adolescente mientras aprenden.",
+      "image_asset": "images/comic/learn/fun_learning_teen_1.svg",
+      "character_1_id": "f3_madre",
+      "character_1_text::eng": "@data.characters.f3_hija_12.name, ¿qué pasa?",
+      "character_2_id": "f3_hija_12",
+      "character_2_text::eng": "Me siento estresada, ya no puedo más. Ya no quiero hacer la tarea."
+    },
+    {
+      "id": "explore_2",
+      "category_id": "explore",
+      "image_asset": "images/comic/learn/fun_learning_teen_2.svg",
+      "character_1_id": "f3_madre",
+      "character_1_text::eng": "Entiendo que hacer la tarea puede ser muy estresante. Tómate un descanso y ¡vamos a bailar! ¡Esto siempre me ayudaba a sentirme con energía y preparada para seguir trabajando!"
+    },
+    {
+      "id": "explore_3",
+      "category_id": "explore",
+      "image_asset": "images/comic/learn/fun_learning_teen_3.svg",
+      "text_2::eng": "🎵 Suena la música 🎵"
+    },
+    {
+      "id": "explore_4",
+      "category_id": "explore",
+      "image_asset": "images/comic/learn/fun_learning_teen_4.svg",
+      "character_1_id": "f3_madre",
+      "character_1_text::eng": "Bien… ¿Lista? Ahora que tenemos algo de energía vamos a intentarlo de nuevo. ¿Por qué estás estresada?"
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Selecciona reproducir ▶️ para ver cómo apoyar a tu adolescente a disfrutar de su aprendizaje.\n\n1️⃣ JUGAR\n2️⃣ UTILIZAR PALABRAS AFIRMATIVAS\n3️⃣ PERMITIR LA CREATIVIDAD",
+      "media_type": "youtube",
+      "youtube_gb_en_f": "https://www.youtube.com/watch?v=H54HtevKQmM",
+      "youtube_gb_en_m": "https://www.youtube.com/watch?v=4nYQ6ydRWj4"
+    },
+    {
+      "id": "practical_tips_2",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Recuerda:",
+      "section_1_title::eng": "JUGAR",
+      "section_1_icon_asset": "images/icons/football_blue.png",
+      "section_1_text::eng": "🌱 Darle a tu adolescente tiempo para divertirse y ser feliz, así mejora su salud física y mental, ¡además de su capacidad para aprender y recordar datos importantes!\n\n⚽  ¡Recréate con tu adolescente!\n\n⏰ Si tu adolescente empieza a sentir estrés por algo que haya pasado en su día, ayúdale a reducir esta sensación haciendo una pausa o divirtiendose juntos.\n\n💡 Incorpora los intereses de tu adolescente en su aprendizaje, esto despertará su curiosidad.",
+      "section_2_title::eng": "UTILIZAR PALABRAS AFIRMATIVAS",
+      "section_2_icon_asset": "images/icons/tick.svg",
+      "section_2_text::eng": "A casi ningún adolescente le gusta hacer la tarea. Intenta entender su frustración, pero recuérdale por qué es importante hacerla: refuerza lo que han aprendido en la escuela y les enseña a gestionar su tiempo sabiamente.\n\n😃 Anima y elogia a tu adolescente cuando esté aprendiendo algo.",
+      "section_3_title::eng": "PERMITIR LA CREATIVIDAD",
+      "section_3_icon_asset": "images/icons/star_filled_blue.png",
+      "section_3_text::eng": "🎨 Permite que tu adolescente exprese su creatividad cuando esté aprendiendo algo nuevo. Por ejemplo, incita a tu adolescente a dibujar o a salir de la casa si eso ayuda a que entiendan mejor el tema.\n \n✨ Si a tu adolescente le interesa un tema nuevo, hablen sobre eso y anímale a que explore y averigüe más sobre el tema.\n\n💙 Da un buen ejemplo: Deja que tu adolescente te vea explorando tu propia creatividad y busca hacer cosas nuevas, aunque todavía no se te den del todo bien.\n\n💡 Es importante que el cerebro adolescente tome tiempo para descansar. Esto le va a permitir aprender y captar mejor la información. Muchas veces pensamos que entre más tiempo lea o estudie, es mejor pero nuestro cerebro no estaestá diseñado para leer o estudiar por horas sin descanso, podemos cansarlo y bloquearlo."
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "text_1_facilitator::eng": "**Actividad para casa** ⭐ \n\nInvita a @fields.child_name a tomarse un pequeño descanso de la tarea y a hacer algo que requiera actividad física durante cinco minutos. \n\nPueden bailar, jugar fútbol, saltar o salir a correr. Interrumpir el trabajo académico le ayudará a recordar la información y la actividad física le mantendrá alerta para seguir estudiando.",
+      "quiz_1_question::eng": "¿Tienes tiempo para hacerlo hoy? ⏰",
+      "quiz_1_option_1_text::eng": "Sí",
+      "quiz_1_feedback_1::eng": "¡Genial! Usa las estrategias que has aprendido hoy, ¡y diviértete! Experimentar alegría y felicidad durante el aprendizaje con tu adolescente es una forma estupenda de motivarle para seguir aprendiendo. 💙",
+      "quiz_1_option_2_text::eng": "Lo intentaré",
+      "quiz_1_feedback_2::eng": "¡Muy bien! 🌟 Lo importante es dar el primer paso. Intenta poner en práctica esta idea cuando tengas la oportunidad y observa qué sucede. 💛",
+      "quiz_1_option_3_text::eng": "No",
+      "quiz_1_feedback_3::eng": "¡De acuerdo! Si hoy no tienes tiempo, puedes apartar un poco para mañana."
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "i_one_on_one_c_articles",
+  "data_list_name": "i_one_on_one_c_articles",
+  "status": "released",
+  "flow_subtype": "modules_i_one_on_one_c",
+  "module": "i_one_on_one_c",
+  "rows": [
+    {
+      "id": "@default",
+      "nested": false,
+      "attached_single_doc": "https://docs.google.com/document/d/1-tg-SOLlmRdOvDnL5KJQSkXQ2eD6NAzEKZq3fQfX86E"
+    },
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "¡Te damos la bienvenida a tu primera sesión en @global.app_name!\n\nCada sesión comienza con un momento para relajarte y un breve registro sobre cómo te sientes.\n\nAprenderás consejos sencillos de crianza y, al final de cada sesión, encontrarás una actividad para practicar en casa con tu niña, niño o adolescente.\n\nCompleta el curso y responde las preguntas sobre las actividades prácticas para obtener tu certificado. 🎉"
+    },
+    {
+      "id": "intro_2",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Esta sesión trata sobre pasar tiempo de calidad con @fields.child_name: un rato exclusivo para ustedes dos, en el que podrá guiar la actividad y recibir toda tu atención.  \n\n\nDurante la niñez, @fields.child_name desarrolla confianza y seguridad contigo y con las otras personas que le cuidan.\n\n\nAquí exploraremos cómo el tiempo de calidad diario puede fortalecer la relación entre ustedes y mostrarle lo mucho que te importa. ¡Puedes empezar con 5 minutos!"
+    },
+    {
+      "id": "intro_3",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "¡Hagamos una actividad! 📝\n\n\nResponde: ¿verdadero o falso?",
+      "quiz_1_question::eng": "Cuando paso tiempo de calidad con @fields.child_name necesito tener siempre un plan y saber qué actividades haremos. ",
+      "quiz_1_option_1_text::eng": "Verdadero",
+      "quiz_1_feedback_1::eng": "👀 ¡Ups! ¡Buen intento!\n\n\nEl único plan que necesitas es dejar que te comparta qué le gustaría hacer. @fields.child_name puede guiar la actividad siempre y cuando sea segura. Esto aumentará su confianza y hará más probable que disfrute pasar tiempo contigo.",
+      "quiz_1_option_2_text::eng": "Falso",
+      "quiz_1_feedback_2::eng": "🎉 ¡Tienes razón!\n\n\nEl único plan que necesitas es dejar que te comparta qué le gustaría hacer. @fields.child_name puede guiar la actividad siempre y cuando sea segura. Esto aumentará su confianza y hará más probable que disfrute pasar tiempo contigo.",
+      "quiz_2_question::eng": "Aunque otras personas también cuiden a @fields.child_name, tu tiempo de calidad es indispensable para fortalecer su relación, incluso si solo son 5 minutos diarios. ",
+      "quiz_2_option_1_text::eng": "Verdadero",
+      "quiz_2_feedback_1::eng": "🎉 ¡Tienes razón! \n\n\nTu tiempo de calidad con @fields.child_name es único y no puede ser reemplazado por nadie más. \n\n\nDe todas formas, si compartes los cuidados con alguien más, cuéntale qué significa el tiempo de calidad e invítale a empezar con 5 minutos diarios también.\n",
+      "quiz_2_option_2_text::eng": "Falso",
+      "quiz_2_feedback_2::eng": "👀 ¡Ups! ¡Buen intento!\n\n\nTu tiempo de calidad con @fields.child_name es único y no puede ser reemplazado por nadie más. \n\n\nDe todas formas, si compartes los cuidados con alguien más, cuéntale qué significa el tiempo de calidad e invítale a empezar con 5 minutos diarios también"
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "Aquí te comparto tres estrategias para pasar tiempo de calidad con @fields.child_name. \n\n\n1️⃣ PRACTICA \n2️⃣ JUEGA\n3️⃣ CONECTA",
+      "media_type": "youtube",
+      "youtube_gb_en_f": "https://www.youtube.com/watch?v=SI5tIWR-Gzc",
+      "youtube_gb_en_m": "https://www.youtube.com/watch?v=w6izPKu3ygE"
+    },
+    {
+      "id": "explore_2",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "Exploremos cómo se ve el tiempo de calidad en acción.",
+      "image_asset": "images/comic/relation/one_on_one_yc_1.svg",
+      "character_1_id": "f1_padre",
+      "character_1_text::eng": "Oye, amor, ahorita me gustaría pasar mi tiempo de calidad con @data.characters.f1_hija_6.name mientras tú le ayudas a @data.characters.f1_hijo_5.name con su tarea, ¿te parece?",
+      "character_2_id": "f1_madre",
+      "character_2_text::eng": "Sí, ¡me parece bien! Luego ya los preparamos para dormir."
+    },
+    {
+      "id": "explore_3",
+      "category_id": "explore",
+      "image_asset": "images/comic/relation/one_on_one_yc_2.svg",
+      "character_1_id": "f1_padre",
+      "character_1_text::eng": "¡Es nuestro tiempo de calidad! ¿Qué quieres que hagamos, @data.characters.f1_hija_6.name?",
+      "character_2_id": "f1_hija_6",
+      "character_2_text::eng": "¡Quiero jugar a disfrazarnos!",
+      "character_3_id": "f1_padre",
+      "character_3_text::eng": "¡Me encanta la idea! ¡Vamos!"
+    },
+    {
+      "id": "explore_4",
+      "category_id": "explore",
+      "image_asset": "images/comic/relation/one_on_one_yc_3.svg",
+      "character_1_id": "f1_hija_6",
+      "character_1_text::eng": "Papá, este sombrero te puede servir.",
+      "character_2_id": "f1_padre",
+      "character_2_text::eng": "Gracias por ayudarme a elegir. ¿Qué personaje quieres que sea?",
+      "character_3_id": "f1_hija_6",
+      "character_3_text::eng": "¡Puedes ser un explorador!"
+    },
+    {
+      "id": "explore_5",
+      "category_id": "explore",
+      "image_asset": "images/comic/relation/one_on_one_yc_4.svg",
+      "character_1_id": "f1_padre",
+      "character_1_text::eng": "¡Qué divertido quedó tu disfraz con paliacate y capa, @data.characters.f1_hija_6.name!",
+      "character_2_id": "f1_hija_6",
+      "character_2_text::eng": "¡Soy una pirata voladora!"
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Recuerda las tres estrategias para pasar tiempo de calidad con @fields.child_name:",
+      "section_1_title::eng": "PRACTICA",
+      "section_1_icon_asset": "images/icons/clock_blue.png",
+      "section_1_text::eng": "Busca pasar al menos 5 minutos de tiempo de calidad cada día, además de su convivencia cotidiana. Recuerda que esto implica estar solo tú y @fields.child_name y dejarle decidir la actividad. La constancia ayuda a reforzar el vínculo. ",
+      "section_2_title::eng": "JUEGA",
+      "section_2_icon_asset": "images/icons/football_blue.png",
+      "section_2_text::eng": "Pregúntale qué le gustaría hacer o si puedes ayudarle o acompañarle en algo que ya esté haciendo. Deja que elija y guíe la actividad. Puede que te sorprenda a dónde lleva.",
+      "section_3_title::eng": "CONECTA",
+      "section_3_icon_asset": "images/icons/heart_filled_blue.png",
+      "section_3_text::eng": "Deja el teléfono, apaga la tele y mantente presente. @fields.child_name puede comunicarse contigo de distintas formas: palabras, gestos, o incluso silencios. \n\n\nMíralе con interés, usa su nombre, asiente con la cabeza, repite con tus propias palabras lo que te dice y acepta lo que comparte sin juzgar. En vez de hacer preguntas o dar tu opinión sobre el tema, intenta describir lo que ves. \n"
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "text_1_facilitator::eng": "Durante esta semana reserva cada día al menos 5 minutos para compartir tiempo de calidad con @fields.child_name, usando las estrategias que aprendiste. \n\n\nRecuerda que este es un rato especial entre ustedes, donde @fields.child_name puede elegir y liderar la actividad, sin que le corrijas ni apresures las cosas.",
+      "quiz_1_question::eng": "¿Puedes intentarlo esta semana?",
+      "quiz_1_option_1_text::eng": "Sí",
+      "quiz_1_feedback_1::eng": "¡Muy bien! Usa las estrategias que aprendiste hoy y disfrútenlo. \n\n\nSi compartes la crianza con alguien más, compártele estas estrategias para que también pueda pasar tiempo de calidad con @fields.child_name.",
+      "quiz_1_option_2_text::eng": "Lo intentaré",
+      "quiz_1_feedback_2::eng": "¡Muy bien! Usa las estrategias que aprendiste hoy y disfrútenlo. \n\n\nSi compartes la crianza con alguien más, compártele estas estrategias para que también pueda pasar tiempo de calidad con @fields.child_name.",
+      "quiz_1_option_3_text::eng": "No",
+      "quiz_1_feedback_3::eng": "¡Lo entiendo! Puede ser difícil encontrar un momento. \n\n\nRecuerda que no necesitas muchas horas: puedes empezar con 5 minutos. Si compartes la crianza con alguien más, compártele estas estrategias para que también pueda pasar tiempo de calidad con @fields.child_name."
+    }
+  ]
+}

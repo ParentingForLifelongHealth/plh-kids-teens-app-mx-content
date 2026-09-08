@@ -266,36 +266,28 @@
       "condition": false
     },
     {
-      "type": "begin_display_group",
-      "name": "dg_footer",
-      "parameter_list": "sticky: bottom;",
+      "type": "begin_template",
+      "name": "nav_buttons",
+      "value": "proximal_outcome_nav_buttons",
+      "action_list": "completed | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nvalue: @local.outcome_select,\nexited_ts: @calc(now());\n\ncompleted | emit: completed;\n\nuncompleted | emit: uncompleted;",
       "condition": "@fields.proximal_outcome_time_point != \"baseline\"",
-      "style_list": "padding: 12px 24px;\njustify-content: space-between"
+      "exclude_from_translation": true
     },
     {
-      "type": "button",
-      "name": "button_back",
-      "value": "back",
-      "action_list": "click | emit: uncompleted",
-      "parameter_list": "icon_src: arrow-back;\nstyle: navigation;",
-      "condition": "!!@local.show_previous"
+      "name": "show_previous",
+      "value": "!!@local.show_previous",
+      "exclude_from_translation": true
     },
     {
-      "type": "text",
-      "name": "spacer",
-      "condition": "!@local.show_previous",
-      "style_list": "flex: 1"
+      "name": "show_next",
+      "value": true
     },
     {
-      "type": "button",
-      "name": "button_forward    ",
-      "value": "forward",
-      "action_list": "click | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nvalue: @local.outcome_select,\nexited_ts: @calc(now());\nclick | emit: completed;",
-      "parameter_list": "icon_src: arrow-forward;\nstyle: navigation;\ndisabled: !@local.completed_enabled",
-      "style_list": "flex: 1"
+      "name": "next_disabled",
+      "value": "!@local.completed_enabled"
     },
     {
-      "type": "end_display_group"
+      "type": "end_template"
     }
   ]
 }

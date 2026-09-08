@@ -440,143 +440,134 @@
       }
     },
     {
-      "type": "display_group",
-      "name": "dg_footer",
-      "parameter_list": {
-        "sticky": "bottom"
-      },
-      "rows": [
+      "type": "template",
+      "name": "nav_buttons",
+      "value": "proximal_outcome_nav_buttons",
+      "action_list": [
         {
-          "type": "round_button",
-          "name": "button_back",
-          "action_list": [
-            {
-              "trigger": "click",
-              "action_id": "emit",
-              "args": [
-                "uncompleted"
-              ],
-              "_raw": "click | emit: uncompleted"
-            }
-          ],
-          "parameter_list": {
-            "icon_src": "arrow-back"
-          },
-          "_nested_name": "dg_footer.button_back"
+          "trigger": "completed",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "completed | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nreflection: @local.goal_reflection_input",
+          "params": {
+            "_list_id": "proximal_outcome_data",
+            "_id": "@fields.curr_prox_out_row_id",
+            "reflection": "@local.goal_reflection_input"
+          }
         },
         {
-          "type": "round_button",
-          "name": "button_forward",
-          "action_list": [
-            {
-              "trigger": "click",
-              "action_id": "set_data",
-              "args": [],
-              "_raw": "click | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nreflection: @local.goal_reflection_input",
-              "params": {
-                "_list_id": "proximal_outcome_data",
-                "_id": "@fields.curr_prox_out_row_id",
-                "reflection": "@local.goal_reflection_input"
-              }
-            },
-            {
-              "trigger": "click",
-              "action_id": "set_field",
-              "args": [
-                "curr_goal_reflection_input",
-                "@local.goal_reflection_input"
-              ],
-              "_raw": "click | set_field : curr_goal_reflection_input: @local.goal_reflection_input"
-            },
-            {
-              "trigger": "click",
-              "action_id": "emit",
-              "args": [
-                "completed"
-              ],
-              "_raw": "click | emit: completed"
-            }
+          "trigger": "click",
+          "action_id": "set_field",
+          "args": [
+            "curr_goal_reflection_input",
+            "@local.goal_reflection_input"
           ],
-          "parameter_list": {
-            "icon_src": "arrow-forward"
-          },
-          "style_list": [
-            "flex: 1"
+          "_raw": "click | set_field : curr_goal_reflection_input: @local.goal_reflection_input"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "emit",
+          "args": [
+            "completed"
           ],
-          "_nested_name": "dg_footer.button_forward",
-          "_dynamicFields": {
-            "action_list": {
-              "0": {
-                "_raw": [
-                  {
-                    "fullExpression": "click | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nreflection: @local.goal_reflection_input",
-                    "matchedExpression": "@fields.curr_prox_out_row_id",
-                    "type": "fields",
-                    "fieldName": "curr_prox_out_row_id"
-                  },
-                  {
-                    "fullExpression": "click | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nreflection: @local.goal_reflection_input",
-                    "matchedExpression": "@local.goal_reflection_input",
-                    "type": "local",
-                    "fieldName": "goal_reflection_input"
-                  }
-                ],
-                "params": {
-                  "_id": [
-                    {
-                      "fullExpression": "@fields.curr_prox_out_row_id",
-                      "matchedExpression": "@fields.curr_prox_out_row_id",
-                      "type": "fields",
-                      "fieldName": "curr_prox_out_row_id"
-                    }
-                  ],
-                  "reflection": [
-                    {
-                      "fullExpression": "@local.goal_reflection_input",
-                      "matchedExpression": "@local.goal_reflection_input",
-                      "type": "local",
-                      "fieldName": "goal_reflection_input"
-                    }
-                  ]
-                }
+          "_raw": "completed | emit: completed"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "emit",
+          "args": [
+            "uncompleted"
+          ],
+          "_raw": "uncompleted | emit: uncompleted"
+        }
+      ],
+      "exclude_from_translation": true,
+      "rows": [
+        {
+          "name": "show_previous",
+          "value": true,
+          "exclude_from_translation": true,
+          "type": "set_variable",
+          "_nested_name": "nav_buttons.show_previous"
+        },
+        {
+          "name": "show_next",
+          "value": true,
+          "type": "set_variable",
+          "_nested_name": "nav_buttons.show_next"
+        }
+      ],
+      "_nested_name": "nav_buttons",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "_raw": [
+              {
+                "fullExpression": "completed | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nreflection: @local.goal_reflection_input",
+                "matchedExpression": "@fields.curr_prox_out_row_id",
+                "type": "fields",
+                "fieldName": "curr_prox_out_row_id"
               },
-              "1": {
-                "args": {
-                  "1": [
-                    {
-                      "fullExpression": "@local.goal_reflection_input",
-                      "matchedExpression": "@local.goal_reflection_input",
-                      "type": "local",
-                      "fieldName": "goal_reflection_input"
-                    }
-                  ]
-                },
-                "_raw": [
-                  {
-                    "fullExpression": "click | set_field : curr_goal_reflection_input: @local.goal_reflection_input",
-                    "matchedExpression": "@local.goal_reflection_input",
-                    "type": "local",
-                    "fieldName": "goal_reflection_input"
-                  }
-                ]
+              {
+                "fullExpression": "completed | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nreflection: @local.goal_reflection_input",
+                "matchedExpression": "@local.goal_reflection_input",
+                "type": "local",
+                "fieldName": "goal_reflection_input"
               }
+            ],
+            "params": {
+              "_id": [
+                {
+                  "fullExpression": "@fields.curr_prox_out_row_id",
+                  "matchedExpression": "@fields.curr_prox_out_row_id",
+                  "type": "fields",
+                  "fieldName": "curr_prox_out_row_id"
+                }
+              ],
+              "reflection": [
+                {
+                  "fullExpression": "@local.goal_reflection_input",
+                  "matchedExpression": "@local.goal_reflection_input",
+                  "type": "local",
+                  "fieldName": "goal_reflection_input"
+                }
+              ]
             }
           },
-          "_dynamicDependencies": {
-            "@fields.curr_prox_out_row_id": [
-              "action_list.0._raw",
-              "action_list.0.params._id"
-            ],
-            "@local.goal_reflection_input": [
-              "action_list.0._raw",
-              "action_list.0.params.reflection",
-              "action_list.1.args.1",
-              "action_list.1._raw"
+          "1": {
+            "args": {
+              "1": [
+                {
+                  "fullExpression": "@local.goal_reflection_input",
+                  "matchedExpression": "@local.goal_reflection_input",
+                  "type": "local",
+                  "fieldName": "goal_reflection_input"
+                }
+              ]
+            },
+            "_raw": [
+              {
+                "fullExpression": "click | set_field : curr_goal_reflection_input: @local.goal_reflection_input",
+                "matchedExpression": "@local.goal_reflection_input",
+                "type": "local",
+                "fieldName": "goal_reflection_input"
+              }
             ]
           }
         }
-      ],
-      "_nested_name": "dg_footer"
+      },
+      "_dynamicDependencies": {
+        "@fields.curr_prox_out_row_id": [
+          "action_list.0._raw",
+          "action_list.0.params._id"
+        ],
+        "@local.goal_reflection_input": [
+          "action_list.0._raw",
+          "action_list.0.params.reflection",
+          "action_list.1.args.1",
+          "action_list.1._raw"
+        ]
+      }
     }
   ],
   "_source": {

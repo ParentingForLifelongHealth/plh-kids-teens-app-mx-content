@@ -1,0 +1,483 @@
+{
+  "flow_name": "i_give_praise_c_article_tasks",
+  "flow_subtype": "generated",
+  "flow_type": "data_list",
+  "rows": [
+    {
+      "id": "relax_2",
+      "in_library": "yes",
+      "title_oringinal_eng": "Power of three",
+      "lottie_asset": "lottie/relax/soothing_waves.json",
+      "media_asset_m": "audio/relax/male/relax_2.m4a",
+      "media_asset_f": "audio/relax/female/relax_14.m4a",
+      "media_type": "audio",
+      "transcript_m_original_eng": "Close your eyes.\nLet's use the magic power of 3 to stay present and relax. \n\nName 3 sounds you can hear right now.\nName 3 smells you can smell right now.\nName your 3 favourite foods.\nWhat are 3 things you can be grateful for right now.\n\nAt the end of a touch day, thinking of 3 things to be grateful for can help us find the courage to try again tomorrow.",
+      "transcript_f_original_eng": "Hello! How are you feeling right now? Happy, sad, angry, excited, worried?\n\nNotice where you feel it in your body. Notice what thoughts are connected to that feeling. Take a deep breath.\n\nThank yourself for taking the time to check in with your feelings and thoughts!",
+      "transcript_m": "Cierra los ojos.\nVamos a usar el poder mágico del 3 para mantenernos presentes y relajarnos.\n\nNombra 3 sonidos que puedas escuchar ahora mismo.\nNombra 3 olores que puedas sentir ahora mismo.\nNombra tus 3 comidas favoritas.\n¿Cuáles son 3 cosas por las que puedes sentir gratitud ahora mismo?\n\nAl final de un día difícil, pensar en 3 cosas por las que estás agradecido(a) puede ayudarte a encontrar el valor para intentarlo de nuevo mañana.",
+      "transcript_f": "Cierra los ojos.\n\nTómate un momento para sentir el suelo bajo tus pies.\nPiensa en algo por lo que te sientas agradecido(a).\nConcéntrate en tu respiración.\nInhala y exhala.\n\nAdentro y afuera.",
+      "title": "Conéctate con tu cuerpo",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Conéctate con tu cuerpo"
+        }
+      },
+      "category_id": "relax",
+      "nested": false,
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "check_in_2",
+      "_translatedFields": {
+        "text_1": {
+          "eng": "Toma un momento para ti. Cuidarte empieza por notar cómo te sientes."
+        },
+        "quiz_1_feedback_1": {
+          "eng": "¡Genial! Que bien saber que estás en un buen momento."
+        },
+        "quiz_1_feedback_2": {
+          "eng": "Las cosas no siempre son fáciles, pero así es como podemos crecer y aprender cada día."
+        },
+        "quiz_1_feedback_3": {
+          "eng": "La vida puede ser dura. Sea lo que sea que estés sintiendo, puedes sentirte orgullosa/o de ti y de estar aquí."
+        },
+        "quiz_1_question": {
+          "eng": "¿Cómo te sientes el día de hoy?"
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Feliz"
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Regular"
+        },
+        "quiz_1_option_3_text": {
+          "eng": "Triste"
+        }
+      },
+      "category_id": "check_in",
+      "nested": false,
+      "quiz_1_option_1_image_asset": "images/icons/faces/happy_face_new.svg",
+      "quiz_1_option_2_image_asset": "images/icons/faces/ok_face_new.svg",
+      "quiz_1_option_3_image_asset": "images/icons/faces/sad_face_new.svg",
+      "text_1": "Toma un momento para ti. Cuidarte empieza por notar cómo te sientes.",
+      "_translations": {
+        "text_1": {},
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_feedback_3": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_option_3_text": {}
+      },
+      "quiz_1_feedback_1": "¡Genial! Que bien saber que estás en un buen momento.",
+      "quiz_1_feedback_2": "Las cosas no siempre son fáciles, pero así es como podemos crecer y aprender cada día.",
+      "quiz_1_feedback_3": "La vida puede ser dura. Sea lo que sea que estés sintiendo, puedes sentirte orgullosa/o de ti y de estar aquí.",
+      "quiz_1_question": "¿Cómo te sientes el día de hoy?",
+      "quiz_1_option_1_text": "Feliz",
+      "quiz_1_option_2_text": "Regular",
+      "quiz_1_option_3_text": "Triste",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "intro_1",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "¡Felicidades por seguir aprendiendo sobre cómo mejorar la relación con @fields.child_name!\n\n¿Cómo te sentiste al leer eso?\nSe siente bien que noten tu esfuerzo, ¿verdad? ✨"
+        }
+      },
+      "category_id": "intro",
+      "nested": false,
+      "attached_single_doc": "https://docs.google.com/document/d/1-tg-SOLlmRdOvDnL5KJQSkXQ2eD6NAzEKZq3fQfX86E",
+      "text_1_facilitator": "¡Felicidades por seguir aprendiendo sobre cómo mejorar la relación con @fields.child_name!\n\n¿Cómo te sentiste al leer eso?\nSe siente bien que noten tu esfuerzo, ¿verdad? ✨",
+      "_translations": {
+        "text_1_facilitator": {}
+      },
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "intro_2",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Esta sesión trata sobre reconocer el buen comportamiento de @fields.child_name.\n\n\nA veces esto no es fácil, especialmente cuando el día estuvo difícil o si de niños no nos reconocían las cosas buenas que hacíamos.\n\n\nAquí practicaremos cómo reconocer a @fields.child_name en el momento justo, para que quiera comportarse así más seguido."
+        }
+      },
+      "category_id": "intro",
+      "nested": false,
+      "attached_single_doc": "https://docs.google.com/document/d/1-tg-SOLlmRdOvDnL5KJQSkXQ2eD6NAzEKZq3fQfX86E",
+      "text_1_facilitator": "Esta sesión trata sobre reconocer el buen comportamiento de @fields.child_name.\n\n\nA veces esto no es fácil, especialmente cuando el día estuvo difícil o si de niños no nos reconocían las cosas buenas que hacíamos.\n\n\nAquí practicaremos cómo reconocer a @fields.child_name en el momento justo, para que quiera comportarse así más seguido.",
+      "_translations": {
+        "text_1_facilitator": {}
+      },
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "intro_3",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "¡Hagamos una actividad! 📝\n\n\nResponde: ¿verdadero o falso?"
+        },
+        "quiz_1_question": {
+          "eng": "Verdadero o falso: Cualquier forma de reconocer lo que hace @fields.child_name es válida y efectiva."
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Verdadero"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "👀 ¡Ups! ¡Buen intento!\n\nLa forma de dar reconocimiento sí importa. \n\n\nEl reconocimiento es más efectivo si dices exactamente qué hizo bien, en cuanto pase y de corazón. Esto le ayuda a entender qué hizo bien y le motiva a repetirlo.\n\n\nPuedes empezar por reconocer cosas pequeñas, como respetar los acuerdos, compartir sus juguetes o esforzarse cuando está haciendo algo que le cuesta trabajo"
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Falso"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "🎉 ¡Tienes razón!\n\nLa forma de dar reconocimiento sí importa. \n\n\nEl reconocimiento es más efectivo si dices exactamente qué hizo bien, en cuanto pase y de corazón. Esto le ayuda a entender qué hizo bien y le motiva a repetirlo.\n\n\nPuedes empezar por reconocer cosas pequeñas, como respetar los acuerdos, compartir sus juguetes o esforzarse cuando está haciendo algo que le cuesta trabajo"
+        },
+        "quiz_2_question": {
+          "eng": "Verdadero o falso: La forma en que reconocemos a las niñas y los niños no solo influye en cómo se comportan, sino también en lo que creen que son capaces de hacer."
+        },
+        "quiz_2_option_1_text": {
+          "eng": "Verdadero"
+        },
+        "quiz_2_feedback_1": {
+          "eng": "🎉 ¡Tienes razón!\n\n\nReconocer un comportamiento hace más probable que vuelva a ocurrir, pero también les ayuda a descubrir todo lo que son capaces de hacer.\n\n\n\nPor eso, trata de reconocer el esfuerzo y las diferentes habilidades de @fields.child_name, sin pensar si algunas son solo de niñas o de niños. Por ejemplo: “¡Qué bien incluiste a tu hermanito en el juego!” o “¡Me encanta tu curiosidad sobre los animales!”."
+        },
+        "quiz_2_option_2_text": {
+          "eng": "Falso"
+        },
+        "quiz_2_feedback_2": {
+          "eng": "👀 ¡Ups! ¡Buen intento! \n\n\nReconocer un comportamiento hace más probable que vuelva a ocurrir, pero también les ayuda a descubrir todo lo que son capaces de hacer.\n\n\n\nPor eso, trata de reconocer el esfuerzo y las diferentes habilidades de @fields.child_name, sin pensar si algunas son solo de niñas o de niños. Por ejemplo: “¡Qué bien incluiste a tu hermanito en el juego!” o “¡Me encanta tu curiosidad sobre los animales!”."
+        },
+        "quiz_3_question": {
+          "eng": "¡Última!\n\n\nVerdadero o falso: Solo debes usar el nombre de @fields.child_name cuando se porta mal."
+        },
+        "quiz_3_option_1_text": {
+          "eng": "Verdadero"
+        },
+        "quiz_3_feedback_1": {
+          "eng": "👀¡Ups! ¡Buen intento!\n\nSi solo usas su nombre en los momentos difíciles, @fields.child_name aprende a asociarlo con algo negativo. \n\n\nAl usarlo también en momentos positivos, como: \"\"Gracias por pasar tiempo conmigo, @fields.child_name, ¡lo aprecio mucho!\"\", ayudas a que lo asocie con el reconocimiento, haciendo que reciba los límites y las instrucciones con menos resistencia y más confianza."
+        },
+        "quiz_3_option_2_text": {
+          "eng": "Falso"
+        },
+        "quiz_3_feedback_2": {
+          "eng": "🎉 ¡Tienes razón! \n\nSi solo usas su nombre en los momentos difíciles, @fields.child_name aprende a asociarlo con algo negativo. \n\n\nAl usarlo también en momentos positivos, como: \"Gracias por pasar tiempo conmigo, @fields.child_name, ¡lo aprecio mucho!\", ayudas a que lo asocie con el reconocimiento, haciendo que reciba los límites y las instrucciones con menos resistencia y más confianza."
+        }
+      },
+      "category_id": "intro",
+      "nested": false,
+      "quiz_1_feedback_1": "👀 ¡Ups! ¡Buen intento!\n\nLa forma de dar reconocimiento sí importa. \n\n\nEl reconocimiento es más efectivo si dices exactamente qué hizo bien, en cuanto pase y de corazón. Esto le ayuda a entender qué hizo bien y le motiva a repetirlo.\n\n\nPuedes empezar por reconocer cosas pequeñas, como respetar los acuerdos, compartir sus juguetes o esforzarse cuando está haciendo algo que le cuesta trabajo",
+      "_translations": {
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "text_1_facilitator": {},
+        "quiz_2_question": {},
+        "quiz_2_option_1_text": {},
+        "quiz_2_feedback_1": {},
+        "quiz_2_option_2_text": {},
+        "quiz_2_feedback_2": {},
+        "quiz_3_question": {},
+        "quiz_3_option_1_text": {},
+        "quiz_3_feedback_1": {},
+        "quiz_3_option_2_text": {},
+        "quiz_3_feedback_2": {}
+      },
+      "quiz_1_feedback_2": "🎉 ¡Tienes razón!\n\nLa forma de dar reconocimiento sí importa. \n\n\nEl reconocimiento es más efectivo si dices exactamente qué hizo bien, en cuanto pase y de corazón. Esto le ayuda a entender qué hizo bien y le motiva a repetirlo.\n\n\nPuedes empezar por reconocer cosas pequeñas, como respetar los acuerdos, compartir sus juguetes o esforzarse cuando está haciendo algo que le cuesta trabajo",
+      "quiz_1_question": "Verdadero o falso: Cualquier forma de reconocer lo que hace @fields.child_name es válida y efectiva.",
+      "quiz_1_option_1_text": "Verdadero",
+      "quiz_1_option_2_text": "Falso",
+      "attached_single_doc": "https://docs.google.com/document/d/1-tg-SOLlmRdOvDnL5KJQSkXQ2eD6NAzEKZq3fQfX86E",
+      "text_1_facilitator": "¡Hagamos una actividad! 📝\n\n\nResponde: ¿verdadero o falso?",
+      "quiz_2_question": "Verdadero o falso: La forma en que reconocemos a las niñas y los niños no solo influye en cómo se comportan, sino también en lo que creen que son capaces de hacer.",
+      "quiz_2_option_1_text": "Verdadero",
+      "quiz_2_feedback_1": "🎉 ¡Tienes razón!\n\n\nReconocer un comportamiento hace más probable que vuelva a ocurrir, pero también les ayuda a descubrir todo lo que son capaces de hacer.\n\n\n\nPor eso, trata de reconocer el esfuerzo y las diferentes habilidades de @fields.child_name, sin pensar si algunas son solo de niñas o de niños. Por ejemplo: “¡Qué bien incluiste a tu hermanito en el juego!” o “¡Me encanta tu curiosidad sobre los animales!”.",
+      "quiz_2_option_2_text": "Falso",
+      "quiz_2_feedback_2": "👀 ¡Ups! ¡Buen intento! \n\n\nReconocer un comportamiento hace más probable que vuelva a ocurrir, pero también les ayuda a descubrir todo lo que son capaces de hacer.\n\n\n\nPor eso, trata de reconocer el esfuerzo y las diferentes habilidades de @fields.child_name, sin pensar si algunas son solo de niñas o de niños. Por ejemplo: “¡Qué bien incluiste a tu hermanito en el juego!” o “¡Me encanta tu curiosidad sobre los animales!”.",
+      "quiz_3_question": "¡Última!\n\n\nVerdadero o falso: Solo debes usar el nombre de @fields.child_name cuando se porta mal.",
+      "quiz_3_option_1_text": "Verdadero",
+      "quiz_3_feedback_1": "👀¡Ups! ¡Buen intento!\n\nSi solo usas su nombre en los momentos difíciles, @fields.child_name aprende a asociarlo con algo negativo. \n\n\nAl usarlo también en momentos positivos, como: \"\"Gracias por pasar tiempo conmigo, @fields.child_name, ¡lo aprecio mucho!\"\", ayudas a que lo asocie con el reconocimiento, haciendo que reciba los límites y las instrucciones con menos resistencia y más confianza.",
+      "quiz_3_option_2_text": "Falso",
+      "quiz_3_feedback_2": "🎉 ¡Tienes razón! \n\nSi solo usas su nombre en los momentos difíciles, @fields.child_name aprende a asociarlo con algo negativo. \n\n\nAl usarlo también en momentos positivos, como: \"Gracias por pasar tiempo conmigo, @fields.child_name, ¡lo aprecio mucho!\", ayudas a que lo asocie con el reconocimiento, haciendo que reciba los límites y las instrucciones con menos resistencia y más confianza.",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_1",
+      "media_type": "video",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Aquí te comparto cuatro estrategias para que continues reconociendo lo que hace @fields.child_name:\n\n1️⃣ OBSERVA\n2️⃣ COMUNICA\n3️⃣ MOTIVA\n4️⃣ REPITE"
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "attached_single_doc": "https://docs.google.com/document/d/1-tg-SOLlmRdOvDnL5KJQSkXQ2eD6NAzEKZq3fQfX86E",
+      "text_1_facilitator": "Aquí te comparto cuatro estrategias para que continues reconociendo lo que hace @fields.child_name:\n\n1️⃣ OBSERVA\n2️⃣ COMUNICA\n3️⃣ MOTIVA\n4️⃣ REPITE",
+      "_translations": {
+        "text_1_facilitator": {}
+      },
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_2",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Exploremos cómo se ve dar reconocimiento durante el tiempo de calidad."
+        },
+        "character_1_text": {
+          "eng": "Encontraste un calcetín rojo y otro de puntos. Vamos a buscar los calcetines que sean iguales."
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "attached_single_doc": "https://docs.google.com/document/d/1-tg-SOLlmRdOvDnL5KJQSkXQ2eD6NAzEKZq3fQfX86E",
+      "text_1_facilitator": "Exploremos cómo se ve dar reconocimiento durante el tiempo de calidad.",
+      "_translations": {
+        "text_1_facilitator": {},
+        "character_1_text": {}
+      },
+      "image_asset": "images/comic/relation/give_praise_yc_1.svg",
+      "character_1_id": "f3_madre",
+      "character_1_text": "Encontraste un calcetín rojo y otro de puntos. Vamos a buscar los calcetines que sean iguales.",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_3",
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "¡Encontré un calcetín blanco!"
+        },
+        "character_2_text": {
+          "eng": "¡Eso! ¡Eres muy bueno identificando colores!"
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "attached_single_doc": "https://docs.google.com/document/d/1-tg-SOLlmRdOvDnL5KJQSkXQ2eD6NAzEKZq3fQfX86E",
+      "image_asset": "images/comic/relation/give_praise_yc_2.svg",
+      "character_1_id": "f3_hijo_4",
+      "character_1_text": "¡Encontré un calcetín blanco!",
+      "_translations": {
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "character_2_id": "f3_madre",
+      "character_2_text": "¡Eso! ¡Eres muy bueno identificando colores!",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_4",
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "Pero no encuentro el otro de puntitos."
+        },
+        "character_2_text": {
+          "eng": "A ver… ¡Ya lo encontraste! Fuiste muy paciente y mantuviste la calma."
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "attached_single_doc": "https://docs.google.com/document/d/1-tg-SOLlmRdOvDnL5KJQSkXQ2eD6NAzEKZq3fQfX86E",
+      "image_asset": "images/comic/relation/give_praise_yc_3.svg",
+      "character_1_id": "f3_hijo_4",
+      "character_1_text": "Pero no encuentro el otro de puntitos.",
+      "_translations": {
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "character_2_id": "f3_madre",
+      "character_2_text": "A ver… ¡Ya lo encontraste! Fuiste muy paciente y mantuviste la calma.",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_5",
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "¡Encontraste los calcetines que combinan con su par! ¡Hiciste un gran esfuerzo intentando, @data.characters.f3_hijo_4.name!"
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "attached_single_doc": "https://docs.google.com/document/d/1-tg-SOLlmRdOvDnL5KJQSkXQ2eD6NAzEKZq3fQfX86E",
+      "image_asset": "images/comic/relation/give_praise_yc_4.svg",
+      "character_1_id": "f3_madre",
+      "character_1_text": "¡Encontraste los calcetines que combinan con su par! ¡Hiciste un gran esfuerzo intentando, @data.characters.f3_hijo_4.name!",
+      "_translations": {
+        "character_1_text": {}
+      },
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_6",
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "¡Qué buen equipo son! Acabaron de doblar la ropa super rápido. Ahora tenemos tiempo para hacer algo todos juntos."
+        },
+        "character_2_text": {
+          "eng": "¡Sí, abue! A la próxima lo hacemos tú y yo."
+        },
+        "character_3_text": {
+          "eng": "¡Sí! Me gusta la idea."
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "attached_single_doc": "https://docs.google.com/document/d/1-tg-SOLlmRdOvDnL5KJQSkXQ2eD6NAzEKZq3fQfX86E",
+      "character_1_id": "abuela",
+      "character_1_text": "¡Qué buen equipo son! Acabaron de doblar la ropa super rápido. Ahora tenemos tiempo para hacer algo todos juntos.",
+      "_translations": {
+        "character_1_text": {},
+        "character_2_text": {},
+        "character_3_text": {}
+      },
+      "character_2_id": "f3_hijo_4",
+      "character_2_text": "¡Sí, abue! A la próxima lo hacemos tú y yo.",
+      "character_3_id": "abuela",
+      "character_3_text": "¡Sí! Me gusta la idea.",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "practical_tips_1",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Recuerda las cuatro estrategias para reconocer lo que hace @fields.child_name:"
+        },
+        "section_1_title": {
+          "eng": "OBSERVA"
+        },
+        "section_1_text": {
+          "eng": "Haz una pausa y presta atención a lo que está haciendo bien. Puede ser algo pequeño: seguir una instrucción sencilla, hacer una tarea en casa, tener un gesto de generosidad."
+        },
+        "section_2_title": {
+          "eng": "COMUNICA"
+        },
+        "section_2_text": {
+          "eng": "Dile específicamente lo que hizo bien, en el momento y con entusiasmo. Así será más probable que lo vuelva a hacer y que también aprenda a reconocer sus logros. Procura reconocer principalmente sus esfuerzos y sus habilidades."
+        },
+        "section_3_title": {
+          "eng": "MOTIVA"
+        },
+        "section_3_text": {
+          "eng": "Enfócate en su esfuerzo. Acompaña tu reconocimiento con una sonrisa genuina, palabras amables, un abrazo o un aplauso. Así sabrá lo mucho que te importa."
+        },
+        "section_4_title": {
+          "eng": "REPITE"
+        },
+        "section_4_text": {
+          "eng": "Busca algo que reconocerle todos los días. Los momentos cotidianos también cuentan y son los que construyen la confianza."
+        }
+      },
+      "category_id": "practical_tips",
+      "nested": false,
+      "attached_single_doc": "https://docs.google.com/document/d/1-tg-SOLlmRdOvDnL5KJQSkXQ2eD6NAzEKZq3fQfX86E",
+      "text_1_facilitator": "Recuerda las cuatro estrategias para reconocer lo que hace @fields.child_name:",
+      "_translations": {
+        "text_1_facilitator": {},
+        "section_1_title": {},
+        "section_1_text": {},
+        "section_2_title": {},
+        "section_2_text": {},
+        "section_3_title": {},
+        "section_3_text": {},
+        "section_4_title": {},
+        "section_4_text": {}
+      },
+      "section_1_icon_asset": "images/icons/eye_blue.png",
+      "section_2_icon_asset": "images/icons/single_speech_blue.png",
+      "section_3_icon_asset": "images/icons/star_filled_blue.png",
+      "section_4_icon_asset": "images/icons/heart_filled_blue.png",
+      "section_1_title": "OBSERVA",
+      "section_1_text": "Haz una pausa y presta atención a lo que está haciendo bien. Puede ser algo pequeño: seguir una instrucción sencilla, hacer una tarea en casa, tener un gesto de generosidad.",
+      "section_2_title": "COMUNICA",
+      "section_2_text": "Dile específicamente lo que hizo bien, en el momento y con entusiasmo. Así será más probable que lo vuelva a hacer y que también aprenda a reconocer sus logros. Procura reconocer principalmente sus esfuerzos y sus habilidades.",
+      "section_3_title": "MOTIVA",
+      "section_3_text": "Enfócate en su esfuerzo. Acompaña tu reconocimiento con una sonrisa genuina, palabras amables, un abrazo o un aplauso. Así sabrá lo mucho que te importa.",
+      "section_4_title": "REPITE",
+      "section_4_text": "Busca algo que reconocerle todos los días. Los momentos cotidianos también cuentan y son los que construyen la confianza.",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "home_activity_1",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "¡Actividad para casa! \n\nDurante el tiempo de calidad con @fields.child_name identifica una acción o esfuerzo que normalmente pasa desapercibido y reconócelo."
+        },
+        "text_2": {
+          "eng": "Algunos ejemplos:\n\n- Incluir en el juego a sus hermanos o hermanas\n- Compartir materiales o juguetes\n- Intentar algo nuevo aunque se sienta difícil\n- Ser paciente cuando algo no sale bien\n- Ayudar a recoger los juguetes"
+        },
+        "quiz_1_question": {
+          "eng": "¿Puedes intentarlo esta semana?"
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Sí"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "¡Increíble! 🎉 \n\n\nPuedes partir de un comportamiento con el que esté teniendo dificultades y reconocer cuando lo hace bien. ¡También puedes agradecerle por pasar tiempo de calidad contigo! Fíjate cómo responde a lo que le dices."
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Lo intentaré"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "¡Increíble! 🎉 \n\n\nPuedes comenzar reconociendo algo que ya hace bien y más adelante, enfocarte en un comportamiento con el que esté teniendo dificultades. ¡También puedes agradecerle por pasar tiempo de calidad contigo! Fíjate cómo responde a lo que le dices."
+        },
+        "quiz_1_option_3_text": {
+          "eng": "No"
+        },
+        "quiz_1_feedback_3": {
+          "eng": "¡Lo entiendo! A veces las cosas toman tiempo. Puedes comenzar reconociendo algo que ya hace bien, así te será más fácil identificarlo y reconocerlo. ¡También puedes agradecerle por pasar tiempo de calidad contigo! Fíjate cómo responde a lo que le dices."
+        }
+      },
+      "category_id": "home_activity",
+      "nested": false,
+      "quiz_1_feedback_1": "¡Increíble! 🎉 \n\n\nPuedes partir de un comportamiento con el que esté teniendo dificultades y reconocer cuando lo hace bien. ¡También puedes agradecerle por pasar tiempo de calidad contigo! Fíjate cómo responde a lo que le dices.",
+      "_translations": {
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_feedback_3": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_option_3_text": {},
+        "text_1_facilitator": {},
+        "text_2": {}
+      },
+      "quiz_1_feedback_2": "¡Increíble! 🎉 \n\n\nPuedes comenzar reconociendo algo que ya hace bien y más adelante, enfocarte en un comportamiento con el que esté teniendo dificultades. ¡También puedes agradecerle por pasar tiempo de calidad contigo! Fíjate cómo responde a lo que le dices.",
+      "quiz_1_feedback_3": "¡Lo entiendo! A veces las cosas toman tiempo. Puedes comenzar reconociendo algo que ya hace bien, así te será más fácil identificarlo y reconocerlo. ¡También puedes agradecerle por pasar tiempo de calidad contigo! Fíjate cómo responde a lo que le dices.",
+      "quiz_1_question": "¿Puedes intentarlo esta semana?",
+      "quiz_1_option_1_text": "Sí",
+      "quiz_1_option_2_text": "Lo intentaré",
+      "quiz_1_option_3_text": "No",
+      "attached_single_doc": "https://docs.google.com/document/d/1-tg-SOLlmRdOvDnL5KJQSkXQ2eD6NAzEKZq3fQfX86E",
+      "text_1_facilitator": "¡Actividad para casa! \n\nDurante el tiempo de calidad con @fields.child_name identifica una acción o esfuerzo que normalmente pasa desapercibido y reconócelo.",
+      "text_2": "Algunos ejemplos:\n\n- Incluir en el juego a sus hermanos o hermanas\n- Compartir materiales o juguetes\n- Intentar algo nuevo aunque se sienta difícil\n- Ser paciente cuando algo no sale bien\n- Ayudar a recoger los juguetes",
+      "completed": false,
+      "version": 1
+    }
+  ],
+  "_metadata": {
+    "nested": {
+      "type": "boolean"
+    },
+    "completed": {
+      "type": "boolean"
+    },
+    "version": {
+      "type": "number"
+    }
+  }
+}

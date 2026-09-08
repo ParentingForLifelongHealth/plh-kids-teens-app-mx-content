@@ -1,0 +1,441 @@
+{
+  "flow_name": "i_feelings_c_article_tasks",
+  "flow_subtype": "generated",
+  "flow_type": "data_list",
+  "rows": [
+    {
+      "id": "relax_9",
+      "in_library": "yes",
+      "title_oringinal_eng": "Self-care moment",
+      "lottie_asset": "lottie/relax/square_flow.json",
+      "media_asset_m": "audio/relax/male/relax_9.m4a",
+      "media_asset_f": "audio/relax/female/relax_17.m4a",
+      "media_type": "audio",
+      "transcript_m_original_eng": "Here is an activity to relax your body: \n\nSit comfortably and close your eyes if you can. \nImagine a golden ring scanning your body from your feet to your head.  \nPay attention as it moves up and down your body. Are there any areas that feel tense? Numb? Painful?  \nFocus on those areas for a moment. Breathe into the area and, when you breathe out, try to let go of any tension or pain.  \nDo this for a few breaths.  \n\nOpen your eyes. How does your body feel now?\n\nYou can also try this next time you find yourself lying in bed unable to sleep!",
+      "transcript_f_original_eng": "Self-praise can be really helpful, especially when we have difficult days. \n\nThink of your week and finish the following phrase: “This week, I am proud of myself for …” It can be anything, not just things about being a parent!\n\nThink of one thing you did well today. Now wrap your arms around yourself and give yourself a big HUG!",
+      "transcript_m": "Aquí tienes una actividad para relajar tu cuerpo:\n\nSiéntate cómodamente y cierra los ojos si puedes.\nImagina un aro dorado que escanea tu cuerpo desde los pies hasta la cabeza.\nPon atención mientras sube y baja por tu cuerpo. ¿Hay áreas que se sienten tensas? ¿Adormecidas? ¿Con dolor?\nConcéntrate en esas áreas por un momento. Respira hacia esa zona y, al exhalar, intenta soltar cualquier tensión o malestar.\nHazlo por algunas respiraciones.\n\nAbre los ojos. ¿Cómo se siente tu cuerpo ahora?\n\n¡También puedes probar esto la próxima vez que estés en la cama y no puedas dormir!",
+      "transcript_f": "Elogiarte a ti mismo(a) puede ser muy útil, especialmente en los días difíciles.\n\nPiensa en tu semana y completa esta frase: “Esta semana, estoy orgulloso(a) de mí por…” ¡Puede ser cualquier cosa, no solo sobre ser padre o madre!\n\nPiensa en algo que hiciste bien hoy. Ahora abraza tu cuerpo con tus brazos y date un GRAN ABRAZO.",
+      "title": "Momento de autocuidado",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Momento de autocuidado"
+        }
+      },
+      "category_id": "relax",
+      "nested": false,
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "check_in_4",
+      "_translatedFields": {
+        "text_1": {
+          "eng": "Cuida de ti reconociendo cómo te sientes. Te lo mereces."
+        },
+        "quiz_1_feedback_1": {
+          "eng": "¡Que bien! Me da mucha alegría. Sigue así, lo estás haciendo muy bien."
+        },
+        "quiz_1_feedback_2": {
+          "eng": "Siento mucho que las cosas estén siendo difíciles. Todas las familias pasan por momentos complicados. @global.app_name está aquí para acompañarte."
+        },
+        "quiz_1_feedback_3": {
+          "eng": "Lo que haya salido “mal” hoy, suéltalo y vuelve a intentarlo mañana. Está bien."
+        },
+        "quiz_1_question": {
+          "eng": "¿Cómo te sientes el día de hoy?"
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Feliz"
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Regular"
+        },
+        "quiz_1_option_3_text": {
+          "eng": "Triste"
+        }
+      },
+      "category_id": "check_in",
+      "nested": false,
+      "quiz_1_option_1_image_asset": "images/icons/faces/happy_face_new.svg",
+      "quiz_1_option_2_image_asset": "images/icons/faces/ok_face_new.svg",
+      "quiz_1_option_3_image_asset": "images/icons/faces/sad_face_new.svg",
+      "text_1": "Cuida de ti reconociendo cómo te sientes. Te lo mereces.",
+      "_translations": {
+        "text_1": {},
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_feedback_3": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_option_3_text": {}
+      },
+      "quiz_1_feedback_1": "¡Que bien! Me da mucha alegría. Sigue así, lo estás haciendo muy bien.",
+      "quiz_1_feedback_2": "Siento mucho que las cosas estén siendo difíciles. Todas las familias pasan por momentos complicados. @global.app_name está aquí para acompañarte.",
+      "quiz_1_feedback_3": "Lo que haya salido “mal” hoy, suéltalo y vuelve a intentarlo mañana. Está bien.",
+      "quiz_1_question": "¿Cómo te sientes el día de hoy?",
+      "quiz_1_option_1_text": "Feliz",
+      "quiz_1_option_2_text": "Regular",
+      "quiz_1_option_3_text": "Triste",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "intro_1",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "😃😣😔 Esta sesión trata sobre identificar tus emociones y las de @fields.child_name."
+        },
+        "text_2": {
+          "eng": "Identificar nuestras propias emociones nos ayuda a tomar decisiones claras y a mejorar la forma en que interactuamos con nuestras niñas, niños o adolescentes y con nosotros mismos.\n\n⭐Identificar emociones y conversar sobre ellas con @fields.child_name, le ayudará a aprender a expresarlas y a manejarlas.  \n\n👌Aprenderá que está bien experimentar cualquier emoción o sentimiento, incluso los incómodos o desagradables. \n\n🌷Puedes ayudar al escucharles, ponerte en su lugar y aceptar sus emociones.  \n\n🤗Esto también les ayudará a elogiar los sentimientos de las y los demás."
+        },
+        "quiz_1_question": {
+          "eng": "**¡Hagamos un ejercicio!**\n\n_Ejercicio no.1_\n\nConversar de las emociones agradables es igual de importante que conversar de las emociones incómodas."
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Verdadero"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "🎉Eso es correcto.\n\n6️⃣Existen 6 emociones básicas: alegría, tristeza, enojo, asco, sorpresa y miedo. \n\n✅Es importante que hablemos con nuestras niñas y niños sobre TODAS ellas."
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Falso"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "👀 ¡Ups! ¡Buen intento!\n\n6️⃣Existen 6 emociones básicas: alegría, tristeza, enojo, asco, sorpresa y miedo.\n\n✅Es importante que hablemos con nuestras niñas y niños sobre TODAS ellas."
+        },
+        "quiz_2_question": {
+          "eng": "**Hagamos uno más**\n\n_Ejercicio no. 2_\n\nLos niños y los hombres no deben conversar sobre cómo se sienten cuando están tristes o con miedo."
+        },
+        "quiz_2_option_1_text": {
+          "eng": "Verdadero"
+        },
+        "quiz_2_feedback_1": {
+          "eng": "👀 ¡Ups! ¡Buen intento!\n\n⭐ Es importante que niños, niñas, hombres y mujeres por igual aprendan a compartir sus sentimientos.  \n\n💙 Las niñas, niños y adolescentes deben aprender que es válido sentirse tristes o asustados y que pueden pedir ayuda cuando la necesiten, sin importar la edad y el género."
+        },
+        "quiz_2_option_2_text": {
+          "eng": "Falso"
+        },
+        "quiz_2_feedback_2": {
+          "eng": "🎉 ¡Tienes razón!\n\n⭐ Es importante que niños, niñas, hombres y mujeres por igual aprendan a compartir sus sentimientos.  \n\n💙 Las niñas, niños y adolescentes deben aprender que es válido sentirse tristes o asustados y que pueden pedir ayuda cuando la necesiten, sin importar la edad y el género."
+        },
+        "quiz_3_question": {
+          "eng": "**Un último ejercicio.**\n\n_Ejercicio no. 3_\n\nComo madres, padres o personas cuidadoras también podemos compartir nuestros sentimientos con nuestras niñas, niños o adolescentes."
+        },
+        "quiz_3_option_1_text": {
+          "eng": "Verdadero"
+        },
+        "quiz_3_feedback_1": {
+          "eng": "🎉 ¡Correcto!\n\n🌱 Compartir nuestras emociones, con amabilidad y calma, les da a las niñas, niños o adolescentes un ejemplo de cómo pueden hacerlo. Como cuidadores es válido sentirse estresados y compartirlo sanamente puede ayudarles a entendernos."
+        },
+        "quiz_3_option_2_text": {
+          "eng": "Falso"
+        },
+        "quiz_3_feedback_2": {
+          "eng": "👀¡Ups! ¡Buen intento!\n\n🌱 Compartir nuestras emociones, con amabilidad y calma, les da a las niñas, niños o adolescentes un ejemplo de cómo pueden hacerlo. Como cuidadores es válido sentirse estresados y compartirlo sanamente puede ayudarles a entendernos."
+        }
+      },
+      "category_id": "intro",
+      "nested": false,
+      "quiz_1_feedback_1": "🎉Eso es correcto.\n\n6️⃣Existen 6 emociones básicas: alegría, tristeza, enojo, asco, sorpresa y miedo. \n\n✅Es importante que hablemos con nuestras niñas y niños sobre TODAS ellas.",
+      "_translations": {
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "text_1_facilitator": {},
+        "text_2": {},
+        "quiz_2_question": {},
+        "quiz_2_option_1_text": {},
+        "quiz_2_feedback_1": {},
+        "quiz_2_option_2_text": {},
+        "quiz_2_feedback_2": {},
+        "quiz_3_question": {},
+        "quiz_3_option_1_text": {},
+        "quiz_3_feedback_1": {},
+        "quiz_3_option_2_text": {},
+        "quiz_3_feedback_2": {}
+      },
+      "quiz_1_feedback_2": "👀 ¡Ups! ¡Buen intento!\n\n6️⃣Existen 6 emociones básicas: alegría, tristeza, enojo, asco, sorpresa y miedo.\n\n✅Es importante que hablemos con nuestras niñas y niños sobre TODAS ellas.",
+      "quiz_1_question": "**¡Hagamos un ejercicio!**\n\n_Ejercicio no.1_\n\nConversar de las emociones agradables es igual de importante que conversar de las emociones incómodas.",
+      "quiz_1_option_1_text": "Verdadero",
+      "quiz_1_option_2_text": "Falso",
+      "text_1_facilitator": "😃😣😔 Esta sesión trata sobre identificar tus emociones y las de @fields.child_name.",
+      "text_2": "Identificar nuestras propias emociones nos ayuda a tomar decisiones claras y a mejorar la forma en que interactuamos con nuestras niñas, niños o adolescentes y con nosotros mismos.\n\n⭐Identificar emociones y conversar sobre ellas con @fields.child_name, le ayudará a aprender a expresarlas y a manejarlas.  \n\n👌Aprenderá que está bien experimentar cualquier emoción o sentimiento, incluso los incómodos o desagradables. \n\n🌷Puedes ayudar al escucharles, ponerte en su lugar y aceptar sus emociones.  \n\n🤗Esto también les ayudará a elogiar los sentimientos de las y los demás.",
+      "quiz_2_question": "**Hagamos uno más**\n\n_Ejercicio no. 2_\n\nLos niños y los hombres no deben conversar sobre cómo se sienten cuando están tristes o con miedo.",
+      "quiz_2_option_1_text": "Verdadero",
+      "quiz_2_feedback_1": "👀 ¡Ups! ¡Buen intento!\n\n⭐ Es importante que niños, niñas, hombres y mujeres por igual aprendan a compartir sus sentimientos.  \n\n💙 Las niñas, niños y adolescentes deben aprender que es válido sentirse tristes o asustados y que pueden pedir ayuda cuando la necesiten, sin importar la edad y el género.",
+      "quiz_2_option_2_text": "Falso",
+      "quiz_2_feedback_2": "🎉 ¡Tienes razón!\n\n⭐ Es importante que niños, niñas, hombres y mujeres por igual aprendan a compartir sus sentimientos.  \n\n💙 Las niñas, niños y adolescentes deben aprender que es válido sentirse tristes o asustados y que pueden pedir ayuda cuando la necesiten, sin importar la edad y el género.",
+      "quiz_3_question": "**Un último ejercicio.**\n\n_Ejercicio no. 3_\n\nComo madres, padres o personas cuidadoras también podemos compartir nuestros sentimientos con nuestras niñas, niños o adolescentes.",
+      "quiz_3_option_1_text": "Verdadero",
+      "quiz_3_feedback_1": "🎉 ¡Correcto!\n\n🌱 Compartir nuestras emociones, con amabilidad y calma, les da a las niñas, niños o adolescentes un ejemplo de cómo pueden hacerlo. Como cuidadores es válido sentirse estresados y compartirlo sanamente puede ayudarles a entendernos.",
+      "quiz_3_option_2_text": "Falso",
+      "quiz_3_feedback_2": "👀¡Ups! ¡Buen intento!\n\n🌱 Compartir nuestras emociones, con amabilidad y calma, les da a las niñas, niños o adolescentes un ejemplo de cómo pueden hacerlo. Como cuidadores es válido sentirse estresados y compartirlo sanamente puede ayudarles a entendernos.",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_1",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Veamos cómo @data.characters.f3_madre.name ayuda a su niña a persistir en una actividad difícil durante el tiempo juntos y conectados."
+        },
+        "character_1_text": {
+          "eng": "@data.characters.f3_hija_7.name, quiero pasar tiempo contigo. ¿Qué te gustaría hacer?"
+        },
+        "character_2_text": {
+          "eng": "¡Vamos a jugar afuera con la pelota!"
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "text_1_facilitator": "Veamos cómo @data.characters.f3_madre.name ayuda a su niña a persistir en una actividad difícil durante el tiempo juntos y conectados.",
+      "_translations": {
+        "text_1_facilitator": {},
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "image_asset": "images/comic/relation/feelings_yc_1.svg",
+      "character_1_id": "f3_madre",
+      "character_2_id": "f3_hija_7",
+      "character_1_text": "@data.characters.f3_hija_7.name, quiero pasar tiempo contigo. ¿Qué te gustaría hacer?",
+      "character_2_text": "¡Vamos a jugar afuera con la pelota!",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_2",
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "¡No soy buena con la pelota!"
+        },
+        "character_2_text": {
+          "eng": "Veo que tienes tus manos apretadas y estás levantando la voz. Parece que estás molesta, @data.characters.f3_hija_7.name. Sé que puede ser algo frustrante, tomemos una pausa y  cuándo estés lista para continuar avísame."
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/relation/feelings_yc_2.svg",
+      "character_1_id": "f3_hija_7",
+      "character_2_id": "f3_madre",
+      "character_1_text": "¡No soy buena con la pelota!",
+      "_translations": {
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "character_2_text": "Veo que tienes tus manos apretadas y estás levantando la voz. Parece que estás molesta, @data.characters.f3_hija_7.name. Sé que puede ser algo frustrante, tomemos una pausa y  cuándo estés lista para continuar avísame.",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_3",
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "¡Ya van cinco veces que la atrapas, @data.characters.f3_hija_7.name! ¡Debes de estar orgullosa de haber llegado a cinco!"
+        },
+        "character_2_text": {
+          "eng": "¡Vamos por 10!"
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/relation/feelings_yc_3.svg",
+      "character_1_id": "f3_madre",
+      "character_2_id": "f3_hija_7",
+      "character_1_text": "¡Ya van cinco veces que la atrapas, @data.characters.f3_hija_7.name! ¡Debes de estar orgullosa de haber llegado a cinco!",
+      "_translations": {
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "character_2_text": "¡Vamos por 10!",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_4",
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "Me hace muy feliz poder pasar este tiempo especial contigo, @data.characters.f3_hija_7.name."
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/relation/feelings_yc_4.svg",
+      "character_1_id": "f3_madre",
+      "character_1_text": "Me hace muy feliz poder pasar este tiempo especial contigo, @data.characters.f3_hija_7.name.",
+      "_translations": {
+        "character_1_text": {}
+      },
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "practical_tips_1",
+      "media_type": "youtube",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Selecciona reproducir ▶️ para aprender las 6️⃣ estrategias para identificar emociones y sentimientos durante el tiempo juntos y conectados:\n\n1️⃣ APRENDER\n2️⃣ IDENTIFICAR\n3️⃣ ABRIR TU MENTE\n4️⃣ HABLAR\n5️⃣ COMPARTIR\n6️⃣ MOSTRAR INTERÉS"
+        }
+      },
+      "category_id": "practical_tips",
+      "nested": false,
+      "text_1_facilitator": "Selecciona reproducir ▶️ para aprender las 6️⃣ estrategias para identificar emociones y sentimientos durante el tiempo juntos y conectados:\n\n1️⃣ APRENDER\n2️⃣ IDENTIFICAR\n3️⃣ ABRIR TU MENTE\n4️⃣ HABLAR\n5️⃣ COMPARTIR\n6️⃣ MOSTRAR INTERÉS",
+      "_translations": {
+        "text_1_facilitator": {}
+      },
+      "youtube_gb_en_f": "https://www.youtube.com/watch?v=zb8R8HCHu2s",
+      "youtube_gb_en_m": "https://www.youtube.com/watch?v=-qd5aVE-pc0",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "practical_tips_2",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Recuerda las 6️⃣ estrategias para identificar emociones y sentimientos durante el tiempo juntos y conectados:"
+        },
+        "section_1_title": {
+          "eng": "APRENDE"
+        },
+        "section_1_text": {
+          "eng": "💡 Aprende sobre las distintas emociones. Hay 6 emociones básicas, y cada una nos manda un mensaje específico:\n\n-😃Alegría: Sigue haciendo las cosas que te hacen sentir bien.\n-😔Tristeza: Algo importante en tu vida necesita atención.\n-🔴 Enojo: Defiéndete y pon límites.\n-😣Asco: Aléjate de lo que no te gusta.\n-👀Sorpresa: Detente y pon atención por un momento.\n-🚩Miedo: Protégete del peligro.\n\n🎨 A medida que las niñas y niños crecen, aprenden a identificar muchas otras emociones, como entusiasmo, frustración, orgullo, soledad, tranquilidad, culpa o confusión."
+        },
+        "section_2_title": {
+          "eng": "IDENTIFICA"
+        },
+        "section_2_text": {
+          "eng": "👀 Empieza a observar estas 6 emociones en ti y en @fields.child_name.\n\n😃😒😔😣Nota cómo se siente cada emoción en tu cuerpo.\n \n😃 También puedes tratar de identificar otras emociones agradables, como la sensación de paz, felicidad o calma.\n\n💙 ¡Aprender a identificar les permite a las niñas y niños apreciar un momento bonito o a alejarse de lo que hace daño!"
+        },
+        "section_3_title": {
+          "eng": "ABRE TU MENTE"
+        },
+        "section_3_text": {
+          "eng": "Abre tu mente, observa 👀, y escucha👂 a @fields.child_name cuando te comparte cómo se siente.\n\n💛 Acepta cómo te sientes tú y cómo se siente @fields.child_name. \n\nRecuerda, sus cuerpos les están mandando mensajes a través de lo que sienten; por eso los sentimientos y las emociones son tan importantes."
+        },
+        "section_4_title": {
+          "eng": "HABLA"
+        },
+        "section_4_text": {
+          "eng": "😒 Es normal tener dificultades para conversar y expresar nuestras emociones y sentimientos.\n\n📝 Recuerda que también es normal experimentar las emociones de distintas maneras.\n\n⭐ Cuando notas que @fields.child_name está sintiendo una emoción, coméntale, de manera calmada, lo que tú estás observando. \n\nPor ejemplo: \"Veo que estás pisoteando, levantas la voz y en tu carita se ve que algo te molesta. ¿Sientes enojo porque no pudiste salir a jugar?\"\n\nTambién puedes ayudar a @fields.child_name a aprender diferentes emociones usando expresiones faciales y movimientos con tus manos o tu cuerpo. Conviértelo en un juego."
+        },
+        "section_5_title": {
+          "eng": "COMPARTE"
+        },
+        "section_5_text": {
+          "eng": "😃 Comparte tus propias emociones con @fields.child_name.\n\nPor ejemplo, yo me sentiría igual si no pudiera salir cuando yo quisiera.\n\n 🎈Esto da un buen ejemplo y le muestra a @fields.child_name que está bien compartir sus propias emociones."
+        },
+        "section_6_title": {
+          "eng": "INTERÉSATE"
+        },
+        "section_6_text": {
+          "eng": "🌷 Manten la conexión con @fields.child_name mostrando atención con gestos y palabras de cariño para que sienta que es aceptado.\n\n⭐Puedes saltar con tu niña o niño para sacudir el enojo o pueden respirar profundo para calmarse. Estas son algunas formas de afrontar las emociones.\n\n💚 _Recuérdale a @fields.child_name que siempre estarás a su lado y que puede conversar contigo en cualquier momento._"
+        }
+      },
+      "category_id": "practical_tips",
+      "nested": false,
+      "text_1_facilitator": "Recuerda las 6️⃣ estrategias para identificar emociones y sentimientos durante el tiempo juntos y conectados:",
+      "_translations": {
+        "text_1_facilitator": {},
+        "section_1_title": {},
+        "section_1_text": {},
+        "section_2_title": {},
+        "section_2_text": {},
+        "section_3_title": {},
+        "section_3_text": {},
+        "section_4_title": {},
+        "section_4_text": {},
+        "section_5_title": {},
+        "section_5_text": {},
+        "section_6_title": {},
+        "section_6_text": {}
+      },
+      "section_1_icon_asset": "images/icons/lightbulb_blue.png",
+      "section_2_icon_asset": "images/icons/eye_blue.png",
+      "section_3_icon_asset": "images/icons/brain_blue.png",
+      "section_4_icon_asset": "images/icons/single_speech_blue.png",
+      "section_5_icon_asset": "images/icons/speech_bubble_blue.png",
+      "section_6_icon_asset": "images/icons/heart_filled_blue.png",
+      "section_1_title": "APRENDE",
+      "section_1_text": "💡 Aprende sobre las distintas emociones. Hay 6 emociones básicas, y cada una nos manda un mensaje específico:\n\n-😃Alegría: Sigue haciendo las cosas que te hacen sentir bien.\n-😔Tristeza: Algo importante en tu vida necesita atención.\n-🔴 Enojo: Defiéndete y pon límites.\n-😣Asco: Aléjate de lo que no te gusta.\n-👀Sorpresa: Detente y pon atención por un momento.\n-🚩Miedo: Protégete del peligro.\n\n🎨 A medida que las niñas y niños crecen, aprenden a identificar muchas otras emociones, como entusiasmo, frustración, orgullo, soledad, tranquilidad, culpa o confusión.",
+      "section_2_title": "IDENTIFICA",
+      "section_2_text": "👀 Empieza a observar estas 6 emociones en ti y en @fields.child_name.\n\n😃😒😔😣Nota cómo se siente cada emoción en tu cuerpo.\n \n😃 También puedes tratar de identificar otras emociones agradables, como la sensación de paz, felicidad o calma.\n\n💙 ¡Aprender a identificar les permite a las niñas y niños apreciar un momento bonito o a alejarse de lo que hace daño!",
+      "section_3_title": "ABRE TU MENTE",
+      "section_3_text": "Abre tu mente, observa 👀, y escucha👂 a @fields.child_name cuando te comparte cómo se siente.\n\n💛 Acepta cómo te sientes tú y cómo se siente @fields.child_name. \n\nRecuerda, sus cuerpos les están mandando mensajes a través de lo que sienten; por eso los sentimientos y las emociones son tan importantes.",
+      "section_4_title": "HABLA",
+      "section_4_text": "😒 Es normal tener dificultades para conversar y expresar nuestras emociones y sentimientos.\n\n📝 Recuerda que también es normal experimentar las emociones de distintas maneras.\n\n⭐ Cuando notas que @fields.child_name está sintiendo una emoción, coméntale, de manera calmada, lo que tú estás observando. \n\nPor ejemplo: \"Veo que estás pisoteando, levantas la voz y en tu carita se ve que algo te molesta. ¿Sientes enojo porque no pudiste salir a jugar?\"\n\nTambién puedes ayudar a @fields.child_name a aprender diferentes emociones usando expresiones faciales y movimientos con tus manos o tu cuerpo. Conviértelo en un juego.",
+      "section_5_title": "COMPARTE",
+      "section_5_text": "😃 Comparte tus propias emociones con @fields.child_name.\n\nPor ejemplo, yo me sentiría igual si no pudiera salir cuando yo quisiera.\n\n 🎈Esto da un buen ejemplo y le muestra a @fields.child_name que está bien compartir sus propias emociones.",
+      "section_6_title": "INTERÉSATE",
+      "section_6_text": "🌷 Manten la conexión con @fields.child_name mostrando atención con gestos y palabras de cariño para que sienta que es aceptado.\n\n⭐Puedes saltar con tu niña o niño para sacudir el enojo o pueden respirar profundo para calmarse. Estas son algunas formas de afrontar las emociones.\n\n💚 _Recuérdale a @fields.child_name que siempre estarás a su lado y que puede conversar contigo en cualquier momento._",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "home_activity_1",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "**Actividad para casa** ⭐ \n\nDurante el tiempo juntos y conectados, practica identificar las emociones de @fields.child_name. Conversa con él o ella describiendo tus propias emociones y las de @fields.child_name"
+        },
+        "quiz_1_question": {
+          "eng": "¿Tienes tiempo para hacerlo hoy?"
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Sí"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "¡Muy buen trabajo! ⭐\n\nEsto marcará una gran diferencia."
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Lo intentaré"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "🌟 Lo importante es dar el primer paso. Intenta poner en práctica esta idea cuando tengas la oportunidad y observa qué sucede. 💛"
+        },
+        "quiz_1_option_3_text": {
+          "eng": "No"
+        },
+        "quiz_1_feedback_3": {
+          "eng": "Está bien, no pasa nada. Intenta encontrar tiempo durante esta semana."
+        }
+      },
+      "category_id": "home_activity",
+      "nested": false,
+      "quiz_1_feedback_1": "¡Muy buen trabajo! ⭐\n\nEsto marcará una gran diferencia.",
+      "_translations": {
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_feedback_3": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_option_3_text": {},
+        "text_1_facilitator": {}
+      },
+      "quiz_1_feedback_2": "🌟 Lo importante es dar el primer paso. Intenta poner en práctica esta idea cuando tengas la oportunidad y observa qué sucede. 💛",
+      "quiz_1_feedback_3": "Está bien, no pasa nada. Intenta encontrar tiempo durante esta semana.",
+      "quiz_1_question": "¿Tienes tiempo para hacerlo hoy?",
+      "quiz_1_option_1_text": "Sí",
+      "quiz_1_option_2_text": "Lo intentaré",
+      "quiz_1_option_3_text": "No",
+      "text_1_facilitator": "**Actividad para casa** ⭐ \n\nDurante el tiempo juntos y conectados, practica identificar las emociones de @fields.child_name. Conversa con él o ella describiendo tus propias emociones y las de @fields.child_name",
+      "completed": false,
+      "version": 1
+    }
+  ],
+  "_metadata": {
+    "nested": {
+      "type": "boolean"
+    },
+    "completed": {
+      "type": "boolean"
+    },
+    "version": {
+      "type": "number"
+    }
+  }
+}

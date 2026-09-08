@@ -753,6 +753,30 @@
             },
             {
               "trigger": "on_progress",
+              "action_id": "set_field",
+              "args": [
+                "prox_7d_last_ts",
+                "@calc(now())"
+              ],
+              "_raw": "on_progress: 50 | set_field: prox_7d_last_ts: @calc(now())",
+              "trigger_args": [
+                "50"
+              ]
+            },
+            {
+              "trigger": "on_progress",
+              "action_id": "set_field",
+              "args": [
+                "prox_14d_last_ts",
+                "@calc(now())"
+              ],
+              "_raw": "on_progress: 50 | set_field: prox_14d_last_ts: @calc(now())",
+              "trigger_args": [
+                "50"
+              ]
+            },
+            {
+              "trigger": "on_progress",
               "action_id": "pop_up",
               "args": [
                 "proximal_outcome_qs_base_2"
@@ -812,6 +836,46 @@
                     }
                   ]
                 }
+              },
+              "3": {
+                "args": {
+                  "1": [
+                    {
+                      "fullExpression": "@calc(now())",
+                      "matchedExpression": "@calc(now())",
+                      "type": "calc",
+                      "fieldName": "now()"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "on_progress: 50 | set_field: prox_7d_last_ts: @calc(now())",
+                    "matchedExpression": "@calc(now())",
+                    "type": "calc",
+                    "fieldName": "now()"
+                  }
+                ]
+              },
+              "4": {
+                "args": {
+                  "1": [
+                    {
+                      "fullExpression": "@calc(now())",
+                      "matchedExpression": "@calc(now())",
+                      "type": "calc",
+                      "fieldName": "now()"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "on_progress: 50 | set_field: prox_14d_last_ts: @calc(now())",
+                    "matchedExpression": "@calc(now())",
+                    "type": "calc",
+                    "fieldName": "now()"
+                  }
+                ]
               }
             },
             "parameter_list": {
@@ -857,7 +921,11 @@
               "action_list.1.params.entry_point"
             ],
             "@calc(now())": [
-              "action_list.1.params.entered_ts"
+              "action_list.1.params.entered_ts",
+              "action_list.3.args.1",
+              "action_list.3._raw",
+              "action_list.4.args.1",
+              "action_list.4._raw"
             ],
             "@data.onboarding_progress_bars.id_3.timespan": [
               "parameter_list.duration"

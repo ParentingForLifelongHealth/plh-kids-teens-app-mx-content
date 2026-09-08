@@ -53,15 +53,8 @@
     {
       "type": "text_bubble",
       "name": "text_bubble",
-      "value": "@global.set_domain_intro",
-      "parameter_list": "speaker_image_asset: @local.speaker_image_asset;\nspeaker_name: @local.speaker_name;\nspeaker_position: @local.speaker_position;\nvariant: @local.variant;",
-      "exclude_from_translation": true
-    },
-    {
-      "type": "text",
-      "name": "question_domain",
       "value": "@global.set_domain_question",
-      "parameter_list": "style: emphasised;",
+      "parameter_list": "speaker_image_asset: @local.speaker_image_asset;\nspeaker_name: @local.speaker_name;\nspeaker_position: @local.speaker_position;\nvariant: @local.variant;",
       "exclude_from_translation": true
     },
     {

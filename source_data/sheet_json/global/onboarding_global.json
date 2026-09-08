@@ -16,6 +16,11 @@
     },
     {
       "type": "declare_global_constant",
+      "name": "asset_pack_prefix",
+      "value": "assets_"
+    },
+    {
+      "type": "declare_global_constant",
       "name": "asset_pack_id",
       "value": "assets_@fields._app_language",
       "exclude_from_translation": true

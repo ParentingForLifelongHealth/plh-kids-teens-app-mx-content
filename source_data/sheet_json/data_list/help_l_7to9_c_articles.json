@@ -1,0 +1,89 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "help_l_7to9_c_articles",
+  "data_list_name": "help_l_7to9_c_articles",
+  "status": "released",
+  "flow_subtype": "modules_help_l_7to9_c",
+  "module": "help_l_7to9_c",
+  "rows": [
+    {
+      "id": "@default",
+      "nested": false
+    },
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Tú desempeñas un papel importante en el aprendizaje de @fields.child_name y en cómo le da sentido a la vida.",
+      "text_2::eng": "Esta sesión trata sobre cómo ayudar a @fields.child_name a aprender a través del establecimiento de metas y objetivos. 😃"
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "Aquí tienes una historieta que trata sobre el establecimiento de metas y objetivos:",
+      "image_asset": "images/comic/learn/help_child_learn_7to9_yc_1.svg",
+      "character_1_id": "f2_abuelo",
+      "character_1_text::eng": "@data.characters.f2_hijo_8.name, ya vas a empezar un nuevo año en la escuela y estoy muy emocionado por ti. ¿Cuáles son tus metas para este año?",
+      "character_2_id": "f2_hijo_8",
+      "character_2_text::eng": "¡Quiero ser el mejor leyendo y contando historias!"
+    },
+    {
+      "id": "explore_2",
+      "category_id": "explore",
+      "image_asset": "images/comic/learn/help_child_learn_7to9_yc_2.svg",
+      "character_1_id": "f2_abuelo",
+      "character_1_text::eng": "Tu meta es buenísima, @data.characters.f2_hijo_8.name. ¿Qué crees que tendrás que hacer para llegar a ella?",
+      "character_2_id": "f2_hijo_8",
+      "character_2_text::eng": "Mmm... ¡Quizá tenga que leer mínimo 15 minutos todos los días de este año!"
+    },
+    {
+      "id": "explore_3",
+      "category_id": "explore",
+      "image_asset": "images/comic/learn/help_child_learn_7to9_yc_3.svg",
+      "character_1_id": "f2_abuelo",
+      "character_1_text::eng": "¡Muy buena idea! ¡Podríamos hacerlo a la hora de dormir! ¿Y qué otra cosa puedes hacer para mejorar tus habilidades para contar historias?",
+      "character_2_id": "f2_hijo_8",
+      "character_2_text::eng": "Bueno, tal vez podríamos inventar historias juntos, y tú podrías ayudarme con las palabras que no conozca, ¿sí?"
+    },
+    {
+      "id": "explore_4",
+      "category_id": "explore",
+      "image_asset": "images/comic/learn/help_child_learn_7to9_yc_4.svg",
+      "character_1_id": "f2_abuelo",
+      "character_1_text::eng": "¡Haré lo mejor que pueda! Si trabajas duro y mantienes tu rutina de lectura todos los días, ¡Estoy seguro de que podrás lograr tu objetivo!"
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Selecciona reproducir ▶️ para ver cómo ayudar a @fields.child_name a aprender a través del establecimiento de metas y objetivos:\n\n1️⃣ ESTABLECER METAS\n2️⃣ HACER PREGUNTAS\n3️⃣ CONECTAR\n4️⃣ ELOGIAR, ELOGIAR, ELOGIAR",
+      "media_type": "youtube",
+      "youtube_gb_en_f": "https://www.youtube.com/watch?v=eoPiTrGyiZE",
+      "youtube_gb_en_m": "https://www.youtube.com/watch?v=FjVjbikFO7M"
+    },
+    {
+      "id": "practical_tips_2",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Recuerda:",
+      "section_1_title::eng": "ESTABLECE METAS",
+      "section_1_icon_asset": "images/icons/trophy_blue.png",
+      "section_1_text::eng": "🏁 Ayuda a @fields.child_name a establecer metas para aquello que quiera lograr.\n\n📖 Ayúdale a que sus objetivos sean específicos, se puedan medir y se puedan lograr en un plazo de tiempo determinado.\n\n🎓 Ayúdale a comprender la conexión entre el aprendizaje y el logro de sus objetivos y metas.\n\n🌱 Esto aumenta su motivación para aprender.",
+      "section_2_title::eng": "HAZ PREGUNTAS",
+      "section_2_icon_asset": "images/icons/question_blue.png",
+      "section_2_text::eng": "❓ Anima a @fields.child_name a que haga preguntas.\n\n😃 Hazle preguntas a @fields.child_name.\n\n💡 No te preocupes si no sabes la respuesta. Intenten encontrarla buscando en internet o preguntándole a las personas docentes de la escuela.\n \n🎓 ¡La curiosidad ayuda a aumentar la capacidad cerebral de @fields.child_name!",
+      "section_3_title::eng": "CONECTA",
+      "section_3_icon_asset": "images/icons/speech_bubble_blue.png",
+      "section_3_text::eng": "📖 Pídele a @fields.child_name que relacione la información nueva con cosas que ya conozca, como algunos de sus intereses o un tema que haya visto anteriormente en la escuela.\n\n🔑 Esto desarrolla y fomenta el pensamiento crítico y una mejor comprensión de conceptos."
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "text_1_facilitator::eng": "**Actividad para casa** ⭐ \n\nDedícale 15 minutos a @fields.child_name para ayudarle a fijar un objetivo de estudio o para completar su tarea de la semana.",
+      "quiz_1_question::eng": "¿Tienes tiempo para hacerlo hoy? ⏰",
+      "quiz_1_option_1_text::eng": "Sí",
+      "quiz_1_feedback_1::eng": "¡Excelente! Usa las estrategias que has aprendido hoy y ¡diviértete! Sentir alegría y felicidad durante el aprendizaje con @fields.child_name es una forma estupenda de motivarle para seguir aprendiendo. 💙",
+      "quiz_1_option_2_text::eng": "Lo intentaré",
+      "quiz_1_feedback_2::eng": "¡Eso suena muy bien! 🌟 Intenta realizar esta actividad cuando puedas. Lo importante no es hacerlo perfecto, sino darte la oportunidad de practicar. 💛",
+      "quiz_1_option_3_text::eng": "No",
+      "quiz_1_feedback_3::eng": "¡De acuerdo! Si hoy no tienes tiempo, puedes apartar un poco para mañana y ayudarle a estudiar o completar su trabajo escolar. ☀️"
+    }
+  ]
+}

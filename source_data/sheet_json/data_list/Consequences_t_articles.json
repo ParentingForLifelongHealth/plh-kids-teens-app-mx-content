@@ -1,0 +1,101 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "Consequences_t_articles",
+  "data_list_name": "Consequences_t_articles",
+  "status": "released",
+  "flow_subtype": "modules_Consequences_t",
+  "module": "Consequences_t",
+  "rows": [
+    {
+      "id": "@default",
+      "nested": false
+    },
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Esta sesión te ayudará a saber qué hacer cuando tu adolescente ya se ha comportado de una manera que no nos gusta o ha hecho algo que consideramos un error.😔",
+      "text_2::eng": "Las y los adolescentes están en proceso de descubrir quiénes son y qué tipo de personas quieren ser en el mundo. \n\nLas consecuencias les enseñan a nuestros adolescentes que sus acciones les afectan directamente y también afectan a las demás personas. \n\n❗ Es importante que nuestros adolescentes aprendan esto en la medida en que van creciendo. \n\nLos golpes solamente servirán para enseñarles que la violencia es una solución aceptable para los problemas. Además, va en contra de la ley."
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "Aquí tienes una historieta que muestra cómo puedes involucrar a tu adolescente en el establecimiento de consecuencias justas.",
+      "image_asset": "images/comic/behave/consequences_teen_1.svg",
+      "character_1_id": "f1_padre",
+      "character_1_text::eng": "Me preocupa que sigas llegando tarde a casa, @data.characters.f1_hijo_17.name. ¿Qué podemos hacer para que te acuerdes de llegar a tiempo?",
+      "character_2_id": "f1_hijo_17",
+      "character_2_text::eng": "Si llego a casa temprano, ¿tal vez pueda quedarme despierto media hora más tarde de lo normal?"
+    },
+    {
+      "id": "explore_2",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/consequences_teen_2.svg",
+      "character_1_id": "f1_padre",
+      "character_1_text::eng": "Me parece bien esa idea. ¿Y qué hacemos si no sigues la regla?",
+      "character_2_id": "f1_hijo_17",
+      "character_2_text::eng": "Mmmm (murmurando)."
+    },
+    {
+      "id": "explore_3",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/consequences_teen_3.svg",
+      "character_1_id": "f1_padre",
+      "character_1_text::eng": "Ándale, sé que tienes algunas ideas.",
+      "character_2_id": "f1_hijo_17",
+      "character_2_text::eng": "A ver… ¿Y si tengo que llegar a hacer la tarea?"
+    },
+    {
+      "id": "explore_4",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/consequences_teen_4.svg",
+      "character_1_id": "f1_padre",
+      "character_1_text::eng": "La tarea la tienes que hacer de todas maneras. Si no cumples la regla, creo que es justo que no puedas ver a tus amigas y amigos al día siguiente. ¿Qué te parece?",
+      "character_2_id": "f1_hijo_17",
+      "character_2_text::eng": "De acuerdo, papá."
+    },
+    {
+      "id": "explore_5",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/consequences_teen_5.svg",
+      "character_1_id": "f1_padre",
+      "character_1_text::eng": "Gracias por entender mi preocupación y crear esta regla conmigo, @data.characters.f1_hijo_17.name."
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Selecciona reproducir ▶️ para aprender 4️⃣ cuatro pasos sobre como implementar consecuencias con tu adolescente:\n\n1️⃣ MANTENER LA CALMA\n2️⃣ ACTUAR DE FORMA JUSTA\n3️⃣ SER CONSTANTES\n4️⃣ MANTENERLO POSITIVO",
+      "media_type": "youtube",
+      "youtube_gb_en_f": "https://www.youtube.com/watch?v=Rt54XGM6uwo",
+      "youtube_gb_en_m": "https://www.youtube.com/watch?v=qJ6rVMoJbRc"
+    },
+    {
+      "id": "practical_tips_2",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Recuerda:",
+      "section_1_title::eng": "MANTEN LA CALMA",
+      "section_1_icon_asset": "images/icons/heart_filled_blue.png",
+      "section_1_text::eng": "✅ Usar la violencia con tu adolescente es ilegal y solo empeora las cosas. También le enseña que está bien tratar así a las demás personas cuando siente enojo o molestia.\n\n✅ Respira profundo, haz una pausa o aléjate de la situación si lo necesitas.\n\n✅ Luego, responde de forma tranquila y clara.",
+      "section_2_title::eng": "ACTÚA DE FORMA JUSTA",
+      "section_2_icon_asset": "images/icons/balance_blue.png",
+      "section_2_text::eng": "✅ Dale a tu adolescente la opción de modificar su conducta antes de ponerle una consecuencia. Por ejemplo, dile: \"Si no haces la tarea ahorita, no podrás ver tu programa de televisión favorito en la noche\"\n\n🎈 Cuando conversen sobre las reglas de la casa, hablen también sobre las consecuencias de incumplirlas, esto le ayudará a @fields.child_name  a entender lo que pasará si lo hace.\n\n👂 Escucha su punto de vista.\n\n✅ Fíjate si tu adolescente ya está experimentando una consecuencia natural por sus acciones. Si es así, puede que no necesites darle otra consecuencia.",
+      "section_3_title::eng": "SÉ CONSTANTE",
+      "section_3_icon_asset": "images/icons/clock_blue.png",
+      "section_3_text::eng": "➡️ Es importante que apliques las consecuencias relacionadas con las reglas que hayas establecido cada vez que no las cumplan.\n\n⭐ Esto le ayuda a tu adolescente a saber qué esperar y aumenta la probabilidad de que siga la regla.\n\n🎈 Cuando conversen sobre las reglas de la casa, hablen también sobre las consecuencias de incumplirlas,  esto le ayudará a @fields.child_name  a entender lo que pasará si lo hace.",
+      "section_4_title::eng": "MANTENLO POSITIVO",
+      "section_4_icon_asset": "images/icons/tick.svg",
+      "section_4_text::eng": "✅ Elogia a tu adolescente por los comportamientos que quieres que se repitan. Así, ¡sabrá que lo está haciendo bien!\n\n✅ Identifica si puedes evitar ponerle consecuencias a tu adolescente al redirigir su comportamiento antes de que se porte mal.\n\n✅ Las consecuencias ayudan a tu adolescente a aprender que sus acciones afectan a otras personas, y a pensar antes de actuar.\n\n✅ Poner consecuencias puede ser difícil al principio, ¡pero se irá haciendo más fácil con la práctica!"
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "text_1_facilitator::eng": "**Actividad para casa** ⭐ \n\nEscribe una lista de consecuencias que puedas usar y que te parezcan justas. \n\nEsto te preparará para la próxima vez que tu adolescente se porte mal.",
+      "quiz_1_question::eng": "¿Tienes tiempo para hacerlo hoy?",
+      "quiz_1_option_1_text::eng": "Sí",
+      "quiz_1_feedback_1::eng": "Bien hecho. Una consecuencia justa le ayudará a tu adolescente a aprender que sus acciones repercuten en su persona y en quien le rodea. También le enseña sobre la responsabilidad y el respeto. 😃",
+      "quiz_1_option_2_text::eng": "Lo intentaré",
+      "quiz_1_feedback_2::eng": "¡Perfecto! 💙 Cuando estés listo o lista, intenta poner en práctica esta actividad. Recuerda que cada paso cuenta, por pequeño que parezca. ✨",
+      "quiz_1_option_3_text::eng": "No",
+      "quiz_1_feedback_3::eng": "Entendemos. La próxima vez que tu adolescente se porte mal, intenta decirle con calma cómo te sientes y ponle una consecuencia justa. Podrás ver que así cambia su comportamiento en el futuro."
+    }
+  ]
+}

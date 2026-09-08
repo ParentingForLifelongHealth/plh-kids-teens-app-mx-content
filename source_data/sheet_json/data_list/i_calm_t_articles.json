@@ -1,0 +1,91 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "i_calm_t_articles",
+  "data_list_name": "i_calm_t_articles",
+  "status": "released",
+  "flow_subtype": "modules_i_calm_t",
+  "module": "i_calm_t",
+  "rows": [
+    {
+      "id": "@default",
+      "nested": false
+    },
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "🌷 Conforme empieces a observar tus sentimientos y emociones, podrías notar alguno de ellos, como enojo, frustración o tristeza.  \n\nEs verdad que amamos a nuestras y nuestros adolescentes, y también es cierto que el estrés de cuidarles y otros eventos del día a día pueden llevarnos a sentir enojo. ¡Esto es parte de la vida!  \n\n💡 Es importante que intentemos mantener la calma cuando hay estrés para poder regular nuestro enojo y evitar lastimar o herir a las y los demás. ",
+      "quiz_1_question::eng": "**¡Hagamos un ejercicio!**\n\n_Ejercicio no.1_\n\nCuando estoy sintiendo enojo contra mi adolescente, debo demostrárselo para que deje de portarse mal.",
+      "quiz_1_option_1_text::eng": "Verdadero",
+      "quiz_1_feedback_1::eng": "👀 ¡Ups! ¡Buen intento!\n\n💛 Puede ser muy difícil cuando tu niña, niño o adolescente se porta mal, pero intenta regular tu estrés y tu enojo antes de hacer cualquier cosa.  \n\n🌱 Respirar profundo te ayudará. Reaccionar cuando sientes enojo puede hacer que digas o hagas cosas de las que te puedes arrepentir después.",
+      "quiz_1_option_2_text::eng": "Falso",
+      "quiz_1_feedback_2::eng": "🎉 ¡Buen trabajo!\n\n💛 Puede ser muy difícil cuando tu niña, niño o adolescente se porta mal, pero intenta regular tu estrés y tu enojo antes de hacer cualquier cosa.  \n\n🌱 Respirar profundo te ayudará. Reaccionar cuando sientes enojo puede hacer que digas o hagas cosas de las que te puedes arrepentir después."
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "Aquí tienes una historieta sobre cómo puedes mantener la calma y regular tu enojo al enfrentar situaciones frustrantes.",
+      "image_asset": "images/comic/relation/calm_teen_1.svg",
+      "text_2::eng": "@data.characters.f2_abuela.name está a punto de pasar un tiempo juntos y conectados con @data.characters.f2_hijo_15.name, pero en el camino ve que la sala está hecha un desastre. Se da cuenta de que esto le hace sentir enojo.",
+      "character_1_id": "f2_abuela",
+      "character_1_text::eng": "(Pensando) Me estoy sintiendo muy enojada. Estoy cansada y siento la cabeza caliente. Mi boca y mi garganta se sienten tensas. Solo quiero gritarle a @data.characters.f2_hijo_15.name"
+    },
+    {
+      "id": "explore_2",
+      "category_id": "explore",
+      "image_asset": "images/comic/relation/calm_teen_2.svg",
+      "character_1_id": "f2_abuela",
+      "character_1_text::eng": "(Pensando) Tomaré una pausa y pondré mi canción favorita.\n\nUn momento después...\n\n(Pensando) Me siento más tranquila. Ahora sí puedo pensar con más claridad sobre qué hacer para apoyar a mi nieto."
+    },
+    {
+      "id": "explore_4",
+      "category_id": "explore",
+      "image_asset": "images/comic/relation/calm_teen_4.svg",
+      "character_1_id": "f2_abuela",
+      "character_1_text::eng": "@data.characters.f2_hijo_15.name, qué buen trabajo estás haciendo con tu tarea. Puede que ya te sientas cansado. Vamos a descansar 5 minutos y, después de eso, podemos recoger este tiradero juntos."
+    },
+    {
+      "id": "explore_5",
+      "category_id": "explore",
+      "image_asset": "images/comic/relation/calm_teen_5.svg",
+      "character_1_id": "f2_abuela",
+      "character_1_text::eng": "¡Gracias por hacer tu parte para que la casa esté limpia, @data.characters.f2_hijo_15.name! Estoy muy orgullosa de tu esfuerzo. Es hora de nuestro tiempo juntos y conectados. ¿Qué quieres hacer?"
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Aquí tienes un video con 4️⃣ estrategias para mantener la calma cuando enfrentes problemas con tu adolescente:\n\n1️⃣ MANTENER LA CALMA\n2️⃣ ACTÚA RÁPIDO\n3️⃣ SER CLARO\n4️⃣ SER POSITIVO",
+      "media_type": "youtube",
+      "youtube_gb_en_f": "https://www.youtube.com/watch?v=YiXJWujCEPs",
+      "youtube_gb_en_m": "https://www.youtube.com/watch?v=yu1EgsovYdg"
+    },
+    {
+      "id": "practical_tips_2",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Recuerda:",
+      "section_1_title::eng": "MANTEN LA CALMA",
+      "section_1_icon_asset": "images/icons/balance_blue.png",
+      "section_1_text::eng": "✅ Identifica tus propias emociones. \n✅ Maneja tus emociones. \n✅Recuerda tu objetivo: hacer que @fields.child_name sienta seguridad y amor sin importar lo que ocurra. \n✅ Haz una pausa o respira un poco antes de pedirle a @fields.child_name que haga otra cosa. \n✅ Usa un tono de voz tranquilo cuando hables con @fields.child_name.",
+      "section_2_title::eng": "ACTÚA RÁPIDO",
+      "section_2_icon_asset": "images/icons/clock_blue.png",
+      "section_2_text::eng": "⏰ Hay otras cosas que puedes hacer para manejar el comportamiento no deseado de @fields.child_name antes de que la situación se vuelva estresante. Dependiendo de la situación, puedes escoger alguna de las siguientes estrategias: \n\n✨ Elogia algo positivo que haya hecho hoy.  \n\n✨Comprende sus sentimientos y ayúdalo a manejar sus emociones. Por ejemplo, pídele que respire y que trate de expresar cómo se siente.  \n\n✨Pídele que haga otra cosa, y genera una distracción  antes de que empiece o empeore el comportamiento no deseado.\n\nPor ejemplo, invita a @fields.child_name a que te ayude con algo en la casa que tú ya estés haciendo. Puedes pedirle que te dé ideas de formas divertidas, rápidas y diferentes de hacer las tareas del hogar.  \n\n💡 ¡Esto es mucho más fácil que usar consecuencias negativas o castigos después de que hacen algo!",
+      "section_3_title::eng": "SÉ CLARO",
+      "section_3_icon_asset": "images/icons/lightbulb_blue.png",
+      "section_3_text::eng": "✅ En vez de decir lo que NO quieres, dile a @fields.child_name lo que SÍ quieres que haga. \n\nPor ejemplo: \n\n✨ En vez de decirle “No grites”, dile \"Por favor, habla más bajito.\" \n\n✨ En vez de decirle “No corras”, dile \"Acuérdate de caminar despacio adentro de la casa.\" \n\n✨ En vez de decirle “No juegues con la pelota dentro de la casa”, dile “Puedes jugar afuera con la pelota” o le propones otra actividad de juego. \n\n¡Así será más fácil que puedan seguir tu ejemplo! ⭐ ",
+      "section_4_title::eng": "SÉ POSITIVO",
+      "section_4_icon_asset": "images/icons/star_filled_blue.png",
+      "section_4_text::eng": "✅ ¡Elogia y elogia a @fields.child_name cuando se porte bien! \n\n✅ ¡También le ayudará a saber lo que esperas de él o ella! "
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "text_1_facilitator::eng": "**Actividad para casa** ⭐ \n\nRecuerda usar estos cuatro pasos si empiezas a sentir estrés o enojo durante el tiempo juntos y conectados con @fields.child_name. \n\nComparte estas estrategias con otros miembros de la familia, ya que será de beneficio para todas y todos➡️",
+      "quiz_1_question::eng": "¿Puedes hacerlo hoy? ",
+      "quiz_1_option_1_text::eng": "Sí",
+      "quiz_1_feedback_1::eng": "¡Increíble! ✨ Durante los próximos días, intenta mantener la calma cuando hay estrés y redirigir el comportamiento negativo de @fields.child_name hacia uno positivo antes de que empeore.",
+      "quiz_1_option_2_text::eng": "Lo intentaré",
+      "quiz_1_feedback_2::eng": "¡Eso suena muy bien! 🌟 Intenta realizar esta actividad cuando puedas. Lo importante no es hacerlo perfecto, sino darte la oportunidad de practicar. 💛",
+      "quiz_1_option_3_text::eng": "No",
+      "quiz_1_feedback_3::eng": "¡De acuerdo! A veces toma tiempo empezar a usar una habilidad nueva. 📝 Puedes empezar por practicar el tomar una pausa incluso cuando te sientas bien. Esto te ayudará a estar más preparado para cuando sientas estrés. ⭐"
+    }
+  ]
+}

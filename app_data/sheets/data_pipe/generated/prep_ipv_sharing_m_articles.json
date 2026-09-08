@@ -1,0 +1,75 @@
+{
+  "flow_name": "prep_ipv_sharing_m_articles",
+  "flow_subtype": "generated",
+  "flow_type": "data_pipe",
+  "rows": [
+    {
+      "operation": "filter",
+      "args_list": [
+        "id == \"relax_2\""
+      ],
+      "input_source": "relax"
+    },
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "category_id: relax",
+        "nested: FALSE"
+      ],
+      "output_target": "ipv_sharing_m_relax | local_only;"
+    },
+    {
+      "operation": "filter",
+      "args_list": [
+        "id == \"check_in_14\""
+      ],
+      "input_source": "check_in"
+    },
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "category_id: check_in",
+        "nested: FALSE"
+      ],
+      "output_target": "ipv_sharing_m_check_in | local_only;"
+    },
+    {
+      "operation": "filter",
+      "args_list": [
+        "!nested"
+      ],
+      "input_source": "ipv_sharing_m_articles",
+      "output_target": "ipv_sharing_m_testing | local_only;"
+    },
+    {
+      "operation": "concat",
+      "args_list": [
+        "ipv_sharing_m_relax",
+        "ipv_sharing_m_check_in",
+        "ipv_sharing_m_testing"
+      ],
+      "input_source": false
+    },
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "completed: FALSE"
+      ],
+      "output_target": "ipv_sharing_m_article_tasks"
+    },
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "version: 1"
+      ],
+      "output_target": "ipv_sharing_m_article_tasks"
+    }
+  ],
+  "_output_flows": [
+    {
+      "flow_name": "ipv_sharing_m_article_tasks",
+      "flow_subtype": "generated",
+      "flow_type": "data_list"
+    }
+  ]
+}
