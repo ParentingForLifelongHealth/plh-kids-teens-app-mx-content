@@ -6,14 +6,12 @@
   "rows": [
     {
       "id": "facilitator_female",
-      "name": "Ángela",
       "role": "facilitator",
       "image_asset": "images/character_icons/ANGELA_comic.svg",
       "intro_image_asset": "images/character_icons/ANGELA_comic.svg"
     },
     {
       "id": "facilitator_male",
-      "name": "Ángel",
       "role": "facilitator",
       "image_asset": "images/character_icons/ANGEL_comic.svg",
       "intro_image_asset": "images/character_icons/ANGEL_comic.svg"
@@ -21,7 +19,7 @@
     {
       "id": "f1_madre",
       "caps_id": "F1_MADRE",
-      "name": "Librada",
+      "name": "Isabel",
       "role": "caregiver",
       "image_asset": "images/character_icons/F1_MADRE.svg"
     },
@@ -35,55 +33,55 @@
     {
       "id": "f1_hijo_5",
       "caps_id": "F1_HIJO_5",
-      "name": "Juan",
+      "name": "René",
       "role": "child",
       "image_asset": "images/character_icons/F1_HIJO_5.svg"
     },
     {
       "id": "f1_hija_6",
       "caps_id": "f1_HIJA_6",
-      "name": "Rita",
+      "name": "Alex",
       "role": "child",
       "image_asset": "images/character_icons/F1_HIJA_6.svg"
     },
     {
       "id": "f1_hija_16",
       "caps_id": "F1_HIJA_16",
-      "name": "Dilsia",
+      "name": "Regina",
       "role": "child",
       "image_asset": "images/character_icons/F1_HIJA_16.svg"
     },
     {
       "id": "f1_hija_13",
       "caps_id": "F1_HIJA_13",
-      "name": "Jazmin",
+      "name": "Marifer",
       "role": "child",
       "image_asset": "images/character_icons/F1_HIJA_13.svg"
     },
     {
       "id": "f1_hijo_17",
       "caps_id": "F1_HIJO_17",
-      "name": "Camilo",
+      "name": "Diego",
       "role": "child",
       "image_asset": "images/character_icons/F1_HIJO_17.svg"
     },
     {
-      "id": "f2_abuela",
-      "caps_id": "F2_ABUELA",
-      "name": "Abuela María",
+      "id": "f2_father",
+      "caps_id": "F2_FATHER",
+      "name": "TBD",
       "role": "caregiver",
       "image_asset": "images/character_icons/F2_ABUELA.svg"
     },
     {
       "id": "f2_abuelo",
       "caps_id": "F2_ABUELO",
-      "name": "Abuelo Francisco",
+      "name": "TBD",
       "role": "caregiver",
       "image_asset": "images/character_icons/F2_ABUELO.svg"
     },
     {
-      "id": "f2_hija_17",
-      "caps_id": "F2_HIJA_17",
+      "id": "f2_hija_13",
+      "caps_id": "F2_HIJA_13",
       "name": "Pati",
       "role": "child",
       "image_asset": "images/character_icons/F2_HIJA_17.svg"
@@ -91,7 +89,7 @@
     {
       "id": "f2_hija_3",
       "caps_id": "F2_HIJA_3",
-      "name": "Yani",
+      "name": "Quetzalli",
       "role": "child",
       "image_asset": "images/character_icons/F2_HIJA_3.svg"
     },
@@ -105,14 +103,14 @@
     {
       "id": "f2_hijo_15",
       "caps_id": "F2_HIJO_15",
-      "name": "Isaac",
+      "name": "Santi",
       "role": "child",
       "image_asset": "images/character_icons/F2_HIJO_15.svg"
     },
     {
       "id": "f3_madre",
       "caps_id": "F3_MADRE",
-      "name": "Mariela",
+      "name": "Silvia",
       "role": "caregiver",
       "image_asset": "images/character_icons/F3_MADRE.svg"
     },
@@ -126,14 +124,14 @@
     {
       "id": "f3_hija_7",
       "caps_id": "F3_HIJA_7",
-      "name": "Nayelis",
+      "name": "Itzel",
       "role": "child",
       "image_asset": "images/character_icons/F3_HIJA_7.svg"
     },
     {
       "id": "f3_hijo_4",
       "caps_id": "F3_HIJO_4",
-      "name": "Brayan",
+      "name": "Toño",
       "role": "child",
       "image_asset": "images/character_icons/F3_HIJO_4.svg"
     },
@@ -143,6 +141,21 @@
       "name": "Rosa",
       "role": "child",
       "image_asset": "images/character_icons/F3_HIJA_12.svg"
+    },
+    {
+      "id": "f3_hijo_14",
+      "caps_id": "F3_HIJO_14",
+      "name": "TBD"
+    },
+    {
+      "id": "abuela",
+      "caps_id": "ABUELA",
+      "name": "Abue María"
+    },
+    {
+      "id": "abuelo",
+      "caps_id": "ABUELO",
+      "name": "Abuelo Francisco"
     },
     {
       "id": "hombre_en_coche",

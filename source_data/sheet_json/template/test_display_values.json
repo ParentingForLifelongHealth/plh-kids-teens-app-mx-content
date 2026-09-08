@@ -1,0 +1,19 @@
+{
+  "flow_type": "template",
+  "flow_name": "test_display_values",
+  "status": "released",
+  "rows": [
+    {
+      "type": "text",
+      "value": "domain: @fields.selected_domain_value\n"
+    },
+    {
+      "type": "text",
+      "value": "challenge: @fields.selected_challenge_value\n"
+    },
+    {
+      "type": "text",
+      "value": "goal: @fields.selected_goal_value"
+    }
+  ]
+}

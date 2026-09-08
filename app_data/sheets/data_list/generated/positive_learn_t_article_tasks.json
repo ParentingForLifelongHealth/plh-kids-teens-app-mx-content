@@ -1,0 +1,339 @@
+{
+  "flow_name": "positive_learn_t_article_tasks",
+  "flow_subtype": "generated",
+  "flow_type": "data_list",
+  "rows": [
+    {
+      "id": "relax_2",
+      "in_library": "yes",
+      "title_oringinal_eng": "Power of three",
+      "lottie_asset": "lottie/relax/soothing_waves.json",
+      "media_asset_m": "audio/relax/male/relax_2.m4a",
+      "media_asset_f": "audio/relax/female/relax_14.m4a",
+      "media_type": "audio",
+      "transcript_m_original_eng": "Close your eyes.\nLet's use the magic power of 3 to stay present and relax. \n\nName 3 sounds you can hear right now.\nName 3 smells you can smell right now.\nName your 3 favourite foods.\nWhat are 3 things you can be grateful for right now.\n\nAt the end of a touch day, thinking of 3 things to be grateful for can help us find the courage to try again tomorrow.",
+      "transcript_f_original_eng": "Hello! How are you feeling right now? Happy, sad, angry, excited, worried?\n\nNotice where you feel it in your body. Notice what thoughts are connected to that feeling. Take a deep breath.\n\nThank yourself for taking the time to check in with your feelings and thoughts!",
+      "transcript_m": "Cierra los ojos.\nVamos a usar el poder mágico del 3 para mantenernos presentes y relajarnos.\n\nNombra 3 sonidos que puedas escuchar ahora mismo.\nNombra 3 olores que puedas sentir ahora mismo.\nNombra tus 3 comidas favoritas.\n¿Cuáles son 3 cosas por las que puedes sentir gratitud ahora mismo?\n\nAl final de un día difícil, pensar en 3 cosas por las que estás agradecido(a) puede ayudarte a encontrar el valor para intentarlo de nuevo mañana.",
+      "transcript_f": "Cierra los ojos.\n\nTómate un momento para sentir el suelo bajo tus pies.\nPiensa en algo por lo que te sientas agradecido(a).\nConcéntrate en tu respiración.\nInhala y exhala.\n\nAdentro y afuera.",
+      "title": "Conéctate con tu cuerpo",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Conéctate con tu cuerpo"
+        }
+      },
+      "category_id": "relax",
+      "nested": false,
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "check_in_58",
+      "_translatedFields": {
+        "text_1": {
+          "eng": "Ser una gran madre, padre o persona cuidadora también implica dedicar tiempo para ti. Comienza por reconocer cómo te sientes."
+        },
+        "quiz_1_feedback_1": {
+          "eng": "Que gusto saber que hoy te sientes bien. ¡Eres increíble!"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "Hay días en los que simplemente no sabemos qué hacer, y eso está bien. Estás aquí, y eso es lo que importa."
+        },
+        "quiz_1_feedback_3": {
+          "eng": "La crianza puede ser desafiante. Pero estar aquí muestra que quieres seguir mejorando, y eso ya es un gran logro."
+        },
+        "quiz_1_question": {
+          "eng": "¿Cómo te sientes el día de hoy?"
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Feliz"
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Regular"
+        },
+        "quiz_1_option_3_text": {
+          "eng": "Triste"
+        }
+      },
+      "category_id": "check_in",
+      "nested": false,
+      "quiz_1_option_1_image_asset": "images/icons/faces/happy_face_new.svg",
+      "quiz_1_option_2_image_asset": "images/icons/faces/ok_face_new.svg",
+      "quiz_1_option_3_image_asset": "images/icons/faces/sad_face_new.svg",
+      "text_1": "Ser una gran madre, padre o persona cuidadora también implica dedicar tiempo para ti. Comienza por reconocer cómo te sientes.",
+      "_translations": {
+        "text_1": {},
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_feedback_3": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_option_3_text": {}
+      },
+      "quiz_1_feedback_1": "Que gusto saber que hoy te sientes bien. ¡Eres increíble!",
+      "quiz_1_feedback_2": "Hay días en los que simplemente no sabemos qué hacer, y eso está bien. Estás aquí, y eso es lo que importa.",
+      "quiz_1_feedback_3": "La crianza puede ser desafiante. Pero estar aquí muestra que quieres seguir mejorando, y eso ya es un gran logro.",
+      "quiz_1_question": "¿Cómo te sientes el día de hoy?",
+      "quiz_1_option_1_text": "Feliz",
+      "quiz_1_option_2_text": "Regular",
+      "quiz_1_option_3_text": "Triste",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "intro_1",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Esta sesión trata sobre cómo crear un espacio de aprendizaje positivo para  @fields.child_name."
+        },
+        "text_2": {
+          "eng": "@fields.child_name aprenderá mucho mejor cuando se encuentre en un espacio que apoye y fomente su aprendizaje. 😃"
+        }
+      },
+      "category_id": "intro",
+      "nested": false,
+      "text_1_facilitator": "Esta sesión trata sobre cómo crear un espacio de aprendizaje positivo para  @fields.child_name.",
+      "_translations": {
+        "text_1_facilitator": {},
+        "text_2": {}
+      },
+      "text_2": "@fields.child_name aprenderá mucho mejor cuando se encuentre en un espacio que apoye y fomente su aprendizaje. 😃",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_1",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Aquí tienes una historieta sobre crear un espacio positivo de aprendizaje para tu adolescente:"
+        },
+        "character_1_text": {
+          "eng": "Mamá, ¡ya llegué!"
+        },
+        "character_2_text": {
+          "eng": "Bienvenido a casa, hijo. ¿Tuviste un buen día en la escuela?"
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "text_1_facilitator": "Aquí tienes una historieta sobre crear un espacio positivo de aprendizaje para tu adolescente:",
+      "_translations": {
+        "text_1_facilitator": {},
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "image_asset": "images/comic/learn/positive_learning_teen_1.svg",
+      "character_1_id": "f1_hijo_17",
+      "character_2_id": "f1_madre",
+      "character_1_text": "Mamá, ¡ya llegué!",
+      "character_2_text": "Bienvenido a casa, hijo. ¿Tuviste un buen día en la escuela?",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_2",
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "Sí, ¡ahora tengo que hacer la tarea!"
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/learn/positive_learning_teen_2.svg",
+      "character_1_id": "f1_hijo_17",
+      "character_1_text": "Sí, ¡ahora tengo que hacer la tarea!",
+      "_translations": {
+        "character_1_text": {}
+      },
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_3",
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "Perfecto, te dejé un espacio para que puedas concentrarte y estar tranquilo."
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/learn/positive_learning_teen_3.svg",
+      "character_1_id": "f1_madre",
+      "character_1_text": "Perfecto, te dejé un espacio para que puedas concentrarte y estar tranquilo.",
+      "_translations": {
+        "character_1_text": {}
+      },
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_4",
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "¡Gracias, mamá! Ya que termine, iré a ver a mi amigo."
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/learn/positive_learning_teen_4.svg",
+      "character_1_id": "f1_hijo_17",
+      "character_1_text": "¡Gracias, mamá! Ya que termine, iré a ver a mi amigo.",
+      "_translations": {
+        "character_1_text": {}
+      },
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_5",
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "De acuerdo, solo acuérdate de regresar a la casa para la hora de la cena."
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/learn/positive_learning_teen_5.svg",
+      "character_1_id": "f1_madre",
+      "character_1_text": "De acuerdo, solo acuérdate de regresar a la casa para la hora de la cena.",
+      "_translations": {
+        "character_1_text": {}
+      },
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "practical_tips_1",
+      "media_type": "youtube",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Selecciona reproducir ▶️ para ver cómo a apoyar a tu adolescente creando un espacio de aprendizaje positivo:\n\n1️⃣ ESTABLECER LA CALMA Y LA TRANQUILIDAD\n2️⃣ CREAR RUTINAS\n3️⃣ APOYAR"
+        }
+      },
+      "category_id": "practical_tips",
+      "nested": false,
+      "text_1_facilitator": "Selecciona reproducir ▶️ para ver cómo a apoyar a tu adolescente creando un espacio de aprendizaje positivo:\n\n1️⃣ ESTABLECER LA CALMA Y LA TRANQUILIDAD\n2️⃣ CREAR RUTINAS\n3️⃣ APOYAR",
+      "_translations": {
+        "text_1_facilitator": {}
+      },
+      "youtube_gb_en_f": "https://www.youtube.com/watch?v=UAQTy1NVwsU",
+      "youtube_gb_en_m": "https://www.youtube.com/watch?v=T63e2EmvJXw",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "practical_tips_2",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Recuerda:"
+        },
+        "section_1_title": {
+          "eng": "ESTABLECE LA CALMA Y LA TRANQUILIDAD"
+        },
+        "section_1_text": {
+          "eng": "✅ El aprendizaje efectivo requiere de concentración. Encuentra tiempo y un buen espacio para que tu adolescente pueda aprender sin muchas distracciones.\n\n❌ Pídele a tu adolescente que mantenga el teléfono alejado de su lugar de estudio.\n\n❌ Apaga la música y reduce otros ruidos para que tu adolescente pueda concentrarse."
+        },
+        "section_2_title": {
+          "eng": "CREA RUTINAS"
+        },
+        "section_2_text": {
+          "eng": "✅ Si es posible, anima a tu adolescente a que termine la tarea antes de empezar sus tareas del hogar. Esto le demuestra a tu adolescente que su educación es importante para ti."
+        },
+        "section_3_title": {
+          "eng": "APOYA"
+        },
+        "section_3_text": {
+          "eng": "❌ Procura no molestar a @fields.child_name mientras esté estudiando.\n\n✅ Hazle saber que tienes toda la disposición de ayudarle si es que necesita apoyo.\n\n✅ Pregúntale qué es lo que tiene que lograr para hoy, y si cumple con su objetivo y reconócele."
+        }
+      },
+      "category_id": "practical_tips",
+      "nested": false,
+      "text_1_facilitator": "Recuerda:",
+      "_translations": {
+        "text_1_facilitator": {},
+        "section_1_title": {},
+        "section_1_text": {},
+        "section_2_title": {},
+        "section_2_text": {},
+        "section_3_title": {},
+        "section_3_text": {}
+      },
+      "section_1_icon_asset": "images/icons/diamond_blue.png",
+      "section_2_icon_asset": "images/icons/clock_blue.png",
+      "section_3_icon_asset": "images/icons/heart_filled_blue.png",
+      "section_1_title": "ESTABLECE LA CALMA Y LA TRANQUILIDAD",
+      "section_1_text": "✅ El aprendizaje efectivo requiere de concentración. Encuentra tiempo y un buen espacio para que tu adolescente pueda aprender sin muchas distracciones.\n\n❌ Pídele a tu adolescente que mantenga el teléfono alejado de su lugar de estudio.\n\n❌ Apaga la música y reduce otros ruidos para que tu adolescente pueda concentrarse.",
+      "section_2_title": "CREA RUTINAS",
+      "section_2_text": "✅ Si es posible, anima a tu adolescente a que termine la tarea antes de empezar sus tareas del hogar. Esto le demuestra a tu adolescente que su educación es importante para ti.",
+      "section_3_title": "APOYA",
+      "section_3_text": "❌ Procura no molestar a @fields.child_name mientras esté estudiando.\n\n✅ Hazle saber que tienes toda la disposición de ayudarle si es que necesita apoyo.\n\n✅ Pregúntale qué es lo que tiene que lograr para hoy, y si cumple con su objetivo y reconócele.",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "home_activity_1",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "**Actividad para casa** ⭐  \n\nConversa con tu adolescente para encontrar un lugar de estudio adecuado en tu casa."
+        },
+        "quiz_1_question": {
+          "eng": "¿Tienes tiempo para hacerlo hoy? ⏰"
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Sí"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "¡Muy bien! Utiliza las estrategias que has aprendido hoy para impulsar a tu adolescente hacia el aprovechamiento académico. 💙"
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Lo intentaré"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "¡Qué bueno que lo intentarás! 🌱 No tiene que ser perfecto. Encuentra un momento que funcione para ti y prueba esta estrategia a tu manera. 💚"
+        },
+        "quiz_1_option_3_text": {
+          "eng": "No"
+        },
+        "quiz_1_feedback_3": {
+          "eng": "¡De acuerdo! Si hoy no tienes tiempo, puedes apartar un poco para mañana."
+        }
+      },
+      "category_id": "home_activity",
+      "nested": false,
+      "quiz_1_feedback_1": "¡Muy bien! Utiliza las estrategias que has aprendido hoy para impulsar a tu adolescente hacia el aprovechamiento académico. 💙",
+      "_translations": {
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_feedback_3": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_option_3_text": {},
+        "text_1_facilitator": {}
+      },
+      "quiz_1_feedback_2": "¡Qué bueno que lo intentarás! 🌱 No tiene que ser perfecto. Encuentra un momento que funcione para ti y prueba esta estrategia a tu manera. 💚",
+      "quiz_1_feedback_3": "¡De acuerdo! Si hoy no tienes tiempo, puedes apartar un poco para mañana.",
+      "quiz_1_question": "¿Tienes tiempo para hacerlo hoy? ⏰",
+      "quiz_1_option_1_text": "Sí",
+      "quiz_1_option_2_text": "Lo intentaré",
+      "quiz_1_option_3_text": "No",
+      "text_1_facilitator": "**Actividad para casa** ⭐  \n\nConversa con tu adolescente para encontrar un lugar de estudio adecuado en tu casa.",
+      "completed": false,
+      "version": 1
+    }
+  ],
+  "_metadata": {
+    "nested": {
+      "type": "boolean"
+    },
+    "completed": {
+      "type": "boolean"
+    },
+    "version": {
+      "type": "number"
+    }
+  }
+}

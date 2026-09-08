@@ -1,0 +1,92 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "pos_learn_7to9_c_articles",
+  "data_list_name": "pos_learn_7to9_c_articles",
+  "status": "released",
+  "flow_subtype": "modules_pos_learn_7to9_c",
+  "module": "pos_learn_7to9_c",
+  "rows": [
+    {
+      "id": "@default",
+      "nested": false
+    },
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Esta sesión trata sobre cómo crear un ambiente positivo para el aprendizaje de @fields.child_name.",
+      "text_2::eng": "@fields.child_name aprenderá mucho mejor estando en un ambiente que apoye y fomente su aprendizaje. 😃"
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "Aquí tienes una historieta sobre crear ambientes positivos para @fields.child_name:",
+      "image_asset": "images/comic/learn/positive_learning_7to9_yc_1.svg",
+      "character_1_id": "f3_hija_7",
+      "character_1_text::eng": "Papá, ¡ya llegué!",
+      "character_2_id": "f3_padre",
+      "character_2_text::eng": "Bienvenida a casa, @data.characters.f3_hija_7.name. ¿Tuviste un buen día en la escuela?"
+    },
+    {
+      "id": "explore_2",
+      "category_id": "explore",
+      "image_asset": "images/comic/learn/positive_learning_7to9_yc_2.svg",
+      "character_1_id": "f3_hija_7",
+      "character_1_text::eng": "¡Sí, pero la maestra nos dejó mucho trabajo!"
+    },
+    {
+      "id": "explore_3",
+      "category_id": "explore",
+      "image_asset": "images/comic/learn/positive_learning_7to9_yc_3.svg",
+      "character_1_id": "f3_padre",
+      "character_1_text::eng": "Eso suena frustrante, pero estoy seguro de que puedes hacerlo. Te despejé un espacio en la cocina para que puedas concentrarte y tener un poco de tranquilidad mientras preparo la comida."
+    },
+    {
+      "id": "explore_4",
+      "category_id": "explore",
+      "image_asset": "images/comic/learn/positive_learning_7to9_yc_4.svg",
+      "character_1_id": "f3_hija_7",
+      "character_1_text::eng": "Gracias, papá. ¿Ya que termine, puedo ir a jugar a casa de María?"
+    },
+    {
+      "id": "explore_5",
+      "category_id": "explore",
+      "image_asset": "images/comic/learn/positive_learning_7to9_yc_5.svg",
+      "character_1_id": "f3_padre",
+      "character_1_text::eng": "¡Sí, claro! Puedes jugar con ella en lo que está lista la comida. Le diré a su mamá."
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Selecciona reproducir ▶️ para ver cómo a apoyar a @fields.child_name a crear un ambiente positivo para su aprendizaje:\n\n1️⃣ PROCURAR CALMA Y TRANQUILIDAD\n2️⃣ CREAR RUTINAS\n3️⃣ APOYAR",
+      "media_type": "youtube",
+      "youtube_gb_en_f": "https://www.youtube.com/watch?v=N76qdE4IB4Y",
+      "youtube_gb_en_m": "https://www.youtube.com/watch?v=D_ZTCuNWsBQ"
+    },
+    {
+      "id": "practical_tips_2",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Recuerda:",
+      "section_1_title::eng": "PROCURA CALMA Y TRANQUILIDAD",
+      "section_1_icon_asset": "images/icons/diamond_blue.png",
+      "section_1_text::eng": "✅ El aprendizaje efectivo requiere de concentración. Encuentra tiempo y un buen espacio para que @fields.child_name pueda aprender sin muchas distracciones.\n\n❌ Apaga la música y reduce otros ruidos para que @fields.child_name se pueda concentrar.",
+      "section_2_title::eng": "CREA RUTINAS",
+      "section_2_icon_asset": "images/icons/clock_blue.png",
+      "section_2_text::eng": "✅ Si es posible, anima a @fields.child_name a terminar su tarea de la escuela antes de jugar con sus amigas o amigos y sus dispositivos. Esto le demuestra a @fields.child_name que su educación es importante para ti.",
+      "section_3_title::eng": "APOYA",
+      "section_3_icon_asset": "images/icons/heart_filled_blue.png",
+      "section_3_text::eng": "❌ Procura no molestar a @fields.child_name mientras esté estudiando.\n\n✅ Hazle saber que tienes toda la disposición de ayudarle si es que necesita apoyo.\n\n✅ Pregúntale qué es lo que tiene que lograr para hoy, y si cumple con su objetivo y reconócele."
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "text_1_facilitator::eng": "**Actividad para casa** ⭐\n\nConversa con @fields.child_name para encontrar un lugar de estudio adecuado en tu casa.",
+      "quiz_1_question::eng": "¿Tienes tiempo para hacerlo hoy? ⏰",
+      "quiz_1_option_1_text::eng": "Sí",
+      "quiz_1_feedback_1::eng": "¡Muy bien! Utiliza las estrategias que has aprendido hoy para impulsar a @fields.child_name hacia un mejor aprovechamiento académico. 💙",
+      "quiz_1_option_2_text::eng": "Lo intentaré",
+      "quiz_1_feedback_2::eng": "¡Muy bien! 😊 Intenta poner en práctica esta idea cuando tengas la oportunidad. Cada vez que pruebas algo nuevo, estás dando un paso para fortalecer a tu familia. 💛",
+      "quiz_1_option_3_text::eng": "No",
+      "quiz_1_feedback_3::eng": "¡De acuerdo! Si hoy no tienes tiempo, puedes apartar un poco para mañana."
+    }
+  ]
+}

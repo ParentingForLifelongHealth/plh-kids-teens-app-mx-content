@@ -16,6 +16,20 @@
       "type": "declare_field_default",
       "name": "proximal_outcome_time_point_count",
       "value": 0
+    },
+    {
+      "type": "declare_field_default",
+      "name": "prox_outcome_access"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "proximal_outcome_frequency",
+      "value": 7
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "proximal_outcome_alternation",
+      "value": 2
     }
   ],
   "_source": {

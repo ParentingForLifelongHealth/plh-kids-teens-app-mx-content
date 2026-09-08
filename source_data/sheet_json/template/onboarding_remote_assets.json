@@ -8,11 +8,7 @@
       "value": "@global.asset_pack_id"
     },
     {
-      "name": "completed_count ",
-      "value": 0
-    },
-    {
-      "name": "total_count",
+      "name": "download_progress_percent",
       "value": 0
     },
     {
@@ -26,7 +22,8 @@
       "type": "text",
       "name": "debug_asset_pack_id",
       "value": "Asset pack ID: @global.asset_pack_id",
-      "condition": false
+      "condition": false,
+      "exclude_from_translation": true
     },
     {
       "type": "begin_display_group",
@@ -82,23 +79,14 @@
     {
       "type": "plh_progress_bar",
       "name": "bar_4",
-      "value": 0,
+      "value": "@local.download_progress_percent",
       "parameter_list": "color: @data.onboarding_progress_bars.id_4.colour;",
-      "condition": "@local.total_count == 0",
       "comments": "If there are no assets to download then something as gone wrong. don't show bar 4 complete and error should be caught by the status below"
-    },
-    {
-      "type": "plh_progress_bar",
-      "name": "bar_4",
-      "value": "@calc((@local.completed_count / @local.total_count) * 100)",
-      "parameter_list": "color: @data.onboarding_progress_bars.id_4.colour;",
-      "condition": "@local.total_count !== 0",
-      "exclude_from_translation": true
     },
     {
       "type": "data_items",
       "value": "_asset_packs",
-      "action_list": "data_changed | set_local: total_count: @items[0].assets_total_count;\ndata_changed | set_local: completed_count: @items[0].assets_downloaded_count;\ndata_changed | set_local: download_status: @items[0].download_status;",
+      "action_list": "data_changed | set_local: download_status: @items[0].download_status;\ndata_changed | set_local: download_progress_percent: @items[0].download_progress_percent",
       "parameter_list": "filter: @item.id == @local.asset_pack_id",
       "condition": "@local.bar_3 == 100"
     },

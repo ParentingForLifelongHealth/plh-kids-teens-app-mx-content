@@ -1,0 +1,94 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "learn_mistakes_t_articles",
+  "data_list_name": "learn_mistakes_t_articles",
+  "status": "released",
+  "flow_subtype": "modules_learn_mistakes_t",
+  "module": "learn_mistakes_t",
+  "rows": [
+    {
+      "id": "@default",
+      "nested": false
+    },
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "La sesión de estrategias de crianza para el día de hoy trata sobre cómo ayudar a @fields.child_name a aprender de sus errores.",
+      "text_2::eng": "Aprender de nuestros errores puede ayudar a evitarlos en el futuro. También puede ayudar a tratarnos con más empatía y con menos dureza cuando las cosas no van bien. 😃"
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "Aquí tienes una historieta sobre cómo aprender de los errores:",
+      "image_asset": "images/comic/learn/learning_mistakes_teen_1.svg",
+      "character_1_id": "f2_abuela",
+      "character_1_text::eng": "¿Qué pasó, @data.characters.f2_hijo_15.name?",
+      "character_2_id": "f2_hijo_15",
+      "character_2_text::eng": "Fracasé el examen de matemáticas."
+    },
+    {
+      "id": "explore_2",
+      "category_id": "explore",
+      "image_asset": "images/comic/learn/learning_mistakes_teen_2.svg",
+      "character_1_id": "f2_abuela",
+      "character_1_text::eng": "Siento escuchar que te haya ido mal. Seguramente estás muy frustrado.",
+      "character_2_id": "f2_hijo_15",
+      "character_2_text::eng": "Sí, sobre todo porque pensaba que ya lo había entendido todo."
+    },
+    {
+      "id": "explore_3",
+      "category_id": "explore",
+      "image_asset": "images/comic/learn/learning_mistakes_teen_3.svg",
+      "character_1_id": "f2_abuela",
+      "character_1_text::eng": "Sé que eres increíble e inteligente. ¿Sabes qué pasó? ¿Por qué te fue mal?",
+      "character_2_id": "f2_hijo_15",
+      "character_2_text::eng": "Supongo me sentía muy seguro y, pues, no estudié."
+    },
+    {
+      "id": "explore_4",
+      "category_id": "explore",
+      "image_asset": "images/comic/learn/learning_mistakes_teen_4.svg",
+      "character_1_id": "f2_abuela",
+      "character_1_text::eng": "Ah bueno, al menos ahora sabes que es importante estudiar para cada examen, por muy seguro que te sientas. ¿Quieres que te ayude a recordarlo para la próxima vez?",
+      "character_2_id": "f2_hijo_15",
+      "character_2_text::eng": "Así está bien, abuela. Lo recordaré. Gracias por entender."
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Selecciona reproducir ▶️ para ver cómo ayudar a @fields.child_name a aprender de sus errores:\n\n1️⃣ HABLAR\n2️⃣ ELOGIAR EL ESFUERZO\n3️⃣ PERMITIR QUE LOS ERRORES SUCEDAN\n4️⃣ COMPARTIR",
+      "media_type": "youtube",
+      "youtube_gb_en_f": "youtube link",
+      "youtube_gb_en_m": "https://www.youtube.com/watch?v=16A33t17YNo"
+    },
+    {
+      "id": "practical_tips_2",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Recuerda:",
+      "section_1_title::eng": "HABLA",
+      "section_1_icon_asset": "images/icons/speech_bubble_blue.png",
+      "section_1_text::eng": "👂 Dedica un espacio y un momento para que tu adolescente hable contigo sobre su vida.\n\n💙 Si tuvo un día difícil, escucha con atención y dale un espacio en donde pueda compartir lo que siente y piensa.\n\n💛 Dale tu apoyo y demuéstrale que te importa. Di: \"qué difícil\", “debes sentirte mal”, “te entiendo”, “cuentas conmigo”, “no estás solo”.",
+      "section_2_title::eng": "ELOGIA EL ESFUERZO",
+      "section_2_icon_asset": "images/icons/star_filled_blue.png",
+      "section_2_text::eng": "💛 Elogia a tu adolescente por el esfuerzo que invierte en su aprendizaje aunque no siempre cumpla sus objetivos.\n\n✨ El esfuerzo es más importante que el simple hecho de dominar una habilidad específica.",
+      "section_3_title::eng": "PERMITE QUE LOS ERRORES SUCEDAN",
+      "section_3_icon_asset": "images/icons/diamond_blue.png",
+      "section_3_text::eng": "🌱 Permite que tu adolescente cometa errores. Deja que aprenda de sus propios errores para que pueda seguir aprendiendo y creciendo.\n\n❓ Es tentador querer resolverle todos los problemas a tu adolescente, sobre todo cuando sabes cuáles podrían ser las soluciones. Pero esto no le enseñará a tu adolescente a resolver sus propios problemas.\n\n😃 Habla con tu adolescente sobre sus errores, permite que encuentre una forma de resolver sus problemas y cómo puede hacerlo mejor la próxima vez.",
+      "section_4_title::eng": "COMPARTE",
+      "section_4_icon_asset": "images/icons/parent_child.svg",
+      "section_4_text::eng": "📖 Intenta compartir tus propios errores con tu adolescente y habla de cómo estos te ayudaron a desarrollarte y crecer.\n\n✅Esto le ayuda a tu adolescente a aprender que no tenemos que ser perfectas o perfectos en la vida."
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "text_1_facilitator::eng": "**Actividad para casa** ⭐ \n\nComparte con tu adolescente alguna ocasión en la que aprendiste de un error. Puede ser de la escuela o de otra sesión de vida que tuviste.",
+      "quiz_1_question::eng": "¿Tienes tiempo para hacerlo hoy? ⏰",
+      "quiz_1_option_1_text::eng": "Sí",
+      "quiz_1_feedback_1::eng": "¡Excelente! 💡 Usa estas estrategias que aprendiste hoy para ayudar a tu adolescente a fortalecer su agilidad mental.",
+      "quiz_1_option_2_text::eng": "Lo intentaré",
+      "quiz_1_feedback_2::eng": "¡Gracias por intentarlo! 💛 Las nuevas habilidades se desarrollan poco a poco. Cuando tengas la oportunidad, pon esta idea en práctica y observa qué cambia. ✨",
+      "quiz_1_option_3_text::eng": "No",
+      "quiz_1_feedback_3::eng": "¡Entendemos! Si hoy no tienes tiempo, puedes apartar un poco para mañana. ⏰"
+    }
+  ]
+}

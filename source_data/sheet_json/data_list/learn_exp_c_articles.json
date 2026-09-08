@@ -1,0 +1,105 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "learn_exp_c_articles",
+  "data_list_name": "learn_exp_c_articles",
+  "status": "released",
+  "flow_subtype": "modules_learn_exp_c",
+  "module": "learn_exp_c",
+  "rows": [
+    {
+      "id": "@default",
+      "nested": false
+    },
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "La sesión de habilidades de crianza para el día de hoy trata sobre cómo ayudar a @fields.child_name a aprender de sus errores. 💚",
+      "text_2::eng": "Aprender de nuestros errores puede ayudarnos a evitarlos en el futuro. 🌷\n\nTambién nos ayuda a ser personas más comprensivas y menos duras con nosotras mismas cuando las cosas no salen bien. 😃",
+      "quiz_1_question::eng": "📝 **¡Hagamos un ejercicio!**\n\n_Ejercicio no.1_\n\nSi mi niña o niño comprende su error y pide perdón, significa que puedo sacar a relucir otros errores que haya cometido para que aprenda.",
+      "quiz_1_option_1_text::eng": "Verdadero",
+      "quiz_1_feedback_1::eng": "👀 ¡Ups! ¡Buen intento!\n\n✨ @fields.child_name probablemente se sienta muy mal por haber cometido un error.\nFelicítale por haberse disculpado y demuéstrale que te da mucho orgullo que lo haya hecho. 💙\n\n😔 Si @fields.child_name no siente tu apoyo, puede que tenga la tentación de ocultarte sus errores por miedo.",
+      "quiz_1_option_2_text::eng": "Falso",
+      "quiz_1_feedback_2::eng": "🌷 ¡Muy bien!\n\n✨ @fields.child_name probablemente se sienta muy mal por haber cometido un error.\nFelicítale por haberse disculpado y demuéstrale que te da mucho orgullo que se haya dado cuenta y que haya pedido perdón. 💙\n\n😔 Si @fields.child_name no siente tu apoyo, puede que tenga la tentación de ocultarte sus errores por miedo."
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "@data.characters.f2_hijo_8.name está demasiado activo dentro de la casa el día de hoy. Veamos cómo reacciona su @data.characters.f2_abuelo.name:",
+      "image_asset": "images/comic/understand/learn_experience_yc_1.svg",
+      "character_1_id": "f2_abuelo",
+      "character_1_text::eng": "@data.characters.f2_hijo_8.name, ¡fíjate bien por dónde vas! Vas a romper algo.",
+      "character_2_id": "f2_hijo_8",
+      "character_2_text::eng": "¡No va a pasar nada!"
+    },
+    {
+      "id": "explore_2",
+      "category_id": "explore",
+      "image_asset": "images/comic/understand/learn_experience_yc_2.svg",
+      "text_2::eng": "@data.characters.f2_hijo_8.name choca contra una mesa y rompe un florero. @data.characters.f2_abuelo.name lo ve y se preocupa."
+    },
+    {
+      "id": "explore_3",
+      "category_id": "explore",
+      "image_asset": "images/comic/understand/learn_experience_yc_3.svg",
+      "character_1_id": "f2_abuelo",
+      "character_1_text::eng": "¿Te lastimaste?",
+      "character_2_id": "f2_hijo_8",
+      "character_2_text::eng": "No, abuelo. Perdón por romper el florero…No lo vi."
+    },
+    {
+      "id": "explore_4",
+      "category_id": "explore",
+      "image_asset": "images/comic/understand/learn_experience_yc_4.svg",
+      "character_1_id": "f2_abuelo",
+      "character_1_text::eng": "Gracias por darte cuenta de tu error y por disculparte. ¿Sabes cómo podrías haber evitado que esto pasara?",
+      "character_2_id": "f2_hijo_8",
+      "character_2_text::eng": "Sí, debí hacerte caso. Seguí corriendo aunque me dijiste que no lo hiciera."
+    },
+    {
+      "id": "explore_5",
+      "category_id": "explore",
+      "image_asset": "images/comic/understand/learn_experience_yc_5.svg",
+      "character_1_id": "f2_abuelo",
+      "character_1_text::eng": "Está bien, @data.characters.f2_hijo_8.name. Estoy orgulloso de que seas capaz de aprender de tus errores. Vamos a buscar una escoba y un trapo para recoger esto. Igual y se puede arreglar el florero con un poco de pegamento.",
+      "character_2_id": "f2_hijo_8",
+      "character_2_text::eng": "Bueno…"
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Selecciona reproducir ▶️ para aprender ️algunas estrategias que puedes seguir para ayudar a @fields.child_name a aprender de sus errores:\n\n1️⃣ CONVERSAR\n2️⃣ ELOGIAR EL ESFUERZO\n3️⃣ PERMITIR QUE LOS ERRORES SUCEDAN\n4️⃣ COMPARTIR",
+      "media_type": "youtube",
+      "youtube_gb_en_f": "https://www.youtube.com/watch?v=F74-jAc4cBg",
+      "youtube_gb_en_m": "https://www.youtube.com/watch?v=lNn8cOitnmQ"
+    },
+    {
+      "id": "practical_tips_2",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Recuerda:",
+      "section_1_title::eng": "CONVERSA",
+      "section_1_icon_asset": "images/icons/speech_bubble_blue.png",
+      "section_1_text::eng": "👂 Crea un espacio y establece un tiempo para que @fields.child_name hable contigo sobre su vida. Puedes preguntarle cómo le va en la escuela, sobre sus amistades, lo que le gusta o lo que no le gusta.\n\n💙 Si tuvo un día difícil, escucha con atención y dale un espacio en donde pueda compartir lo que siente y piensa.\n\n💛 Dale tu apoyo y demuéstrale que realmente te importa. Dile: \"eso parece difícil\". Acepta lo que te diga sin juzgar.",
+      "section_2_title::eng": "ELOGIA EL ESFUERZO",
+      "section_2_icon_asset": "images/icons/trophy_blue.png",
+      "section_2_text::eng": "💛 _Elogia a @fields.child_name por el esfuerzo que invierte en su aprendizaje aunque no siempre cumpla su cometido._\n\n✨ El esfuerzo es más importante que el simple hecho de dominar algo en específico.",
+      "section_3_title::eng": "PERMITIE QUE LOS ERRORES SUCEDAN",
+      "section_3_icon_asset": "images/icons/star_filled_blue.png",
+      "section_3_text::eng": "🌱 Permite que @fields.child_name cometa errores. Deja que aprenda de sus propios errores para que pueda seguir aprendiendo y creciendo.\n\n❓ Puede que quieras resolverle todos los problemas a @fields.child_name, sobre todo cuando sabes que lo puedes hacer. Pero esto no le enseñará a resolver sus propios problemas.\n\n😃 _Habla con @fields.child_name sobre sus errores y permite que encuentre una forma de resolver sus problemas y hacerlo mejor para la próxima vez._",
+      "section_4_title::eng": "COMPARTE",
+      "section_4_icon_asset": "images/icons/parent_child_heart.svg",
+      "section_4_text::eng": "📖 Intenta compartir tus propios fracasos con tu niña o niño y habla de cómo te ayudaron a desarrollarte y a crecer.\n\n✅ Esto le ayuda a @fields.child_name a aprender que no tienen que ser personas perfectas todo el tiempo."
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "text_1_facilitator::eng": "**Actividad para casa** ⭐ \n\nComparte una historia con @fields.child_name sobre un momento en el que aprendiste de un error. Puede ser algo de cuando tú eras menor u otra sesión de vida que hayas tenido.",
+      "quiz_1_question::eng": "¿Tienes tiempo para hacerlo hoy? ⏰",
+      "quiz_1_option_1_text::eng": "Sí",
+      "quiz_1_feedback_1::eng": "¡Maravilloso!\n💙 Usa estas estrategias que aprendiste hoy para ayudar a @fields.child_name a fortalecer sus habilidades mentales y emocionales.",
+      "quiz_1_option_2_text::eng": "Lo intentaré",
+      "quiz_1_feedback_2::eng": "¡Perfecto! 💙 Cuando estés listo o lista, intenta poner en práctica esta actividad. Recuerda que cada paso cuenta, por pequeño que parezca. ✨",
+      "quiz_1_option_3_text::eng": "No",
+      "quiz_1_feedback_3::eng": "Si hoy no puedes, aparta un tiempo para mañana u otro día de la semana."
+    }
+  ]
+}

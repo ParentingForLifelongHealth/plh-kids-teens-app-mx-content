@@ -4,7 +4,7 @@ const config = generateDeploymentConfig("plh_kids_teens_mx");
 
 config.git = {
   content_repo: "https://github.com/ParentingForLifelongHealth/plh-kids-teens-app-mx-content.git",
-  content_tag_latest: "1.1.9",
+  content_tag_latest: "1.1.10",
 };
 
 config.google_drive.sheets_folders = [
@@ -13,7 +13,7 @@ config.google_drive.sheets_folders = [
   { id: "1jCeiY4AUIzAqjsym4woqc-gD9wkYlw_U", name: "kids_teens_global V2" },
   { id: "1XBq4iGIZHEwzwPk3xbHDAm9WCesjR7kR", name: "library PLH onboarding" },
   { id: "1hgONPg9pMhIBgJjZVbX-n3USz-7dRKOf", name: "kids_teens_mx" },
-  //{ id: "1GTYwElcrMQWIUqgTrGP7zA9N9wLoipx_", name: "modules_mx" }
+  { id: "1GTYwElcrMQWIUqgTrGP7zA9N9wLoipx_", name: "modules_mx" }
 ];
 
 config.google_drive.assets_folders = [
@@ -97,8 +97,8 @@ config.app_config.APP_HEADER_DEFAULTS.hidden = true;
 config.app_config.APP_FOOTER_DEFAULTS.template = "footer";
 config.app_config.NOTIFICATION_DEFAULTS.title = "New message from MexicoApp";
 config.app_config.NOTIFICATION_DEFAULTS.text = "You have a new message from MexicoApp";
-config.app_config.APP_THEMES.available = ["plh_facilitator_mx"];
-config.app_config.APP_THEMES.defaultThemeName = "plh_facilitator_mx";
+config.app_config.APP_THEMES.available = ["plh_kids_teens_pa"];
+config.app_config.APP_THEMES.defaultThemeName = "plh_kids_teens_pa";
 config.error_logging = { dsn: "https://17df9395def549e7835dfac8225d53e1@app.glitchtip.com/14124" };
 
 

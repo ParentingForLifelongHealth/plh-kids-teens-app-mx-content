@@ -51,14 +51,9 @@
     {
       "type": "text_bubble",
       "name": "text_bubble",
-      "value": "@global.set_challenge_intro",
+      "value": "@global.set_challenge_question",
       "parameter_list": "speaker_image_asset: @local.speaker_image_asset;\nspeaker_name: @local.speaker_name;\nspeaker_position: @local.speaker_position;\nvariant: @local.variant;",
       "exclude_from_translation": true
-    },
-    {
-      "type": "text",
-      "name": "question_challenge",
-      "value": "@global.set_challenge_question"
     },
     {
       "type": "begin_radio_list",
@@ -100,7 +95,7 @@
       "type": "button",
       "name": "button_completed",
       "value": "@global.continue",
-      "action_list": "click | set_field: selected_challenge_id: @local.challenge_select.key;\nclick | set_field: selected_challenge: @local.challenge_select;\nclick | set_data |\n_list_id: goal_setting_data,\n_id: challenge,\nselected_id: @local.challenge_select.key,\noptions_offered: @local.displayed_challenge_ids,\nexited_ts: @calc(now());\nclick | emit: completed;",
+      "action_list": "click | set_field: selected_challenge_id: @local.challenge_select.key;\nclick | set_field: selected_challenge_value: @local.challenge_select.value;\nclick | set_field: selected_challenge: @local.challenge_select;\nclick | set_data |\n_list_id: goal_setting_data,\n_id: challenge,\nselected_id: @local.challenge_select.key,\noptions_offered: @local.displayed_challenge_ids,\nexited_ts: @calc(now());\nclick | emit: completed;",
       "parameter_list": "style: navigation;\ndisabled: !@local.completed_enabled",
       "condition": "!@local.challenge_select || (@local.challenge_select && @local.challenge_select.key != \"other\")",
       "style_list": "flex: 1"
@@ -109,7 +104,7 @@
       "type": "button",
       "name": "button_completed_other_goal",
       "value": "@global.continue",
-      "action_list": "click | set_field: selected_challenge_id: @local.challenge_select.key;\nclick | set_field: selected_challenge: @local.challenge_select;\nclick | set_field: selected_goal_id: other;\nclick | set_data |\n_list_id: onboarding_settings_pages,\n_id: set_goal,\ncompleted: true;\nclick | set_data |\n_list_id: goal_setting_data,\n_id: challenge,\nselected_id: @local.challenge_select.key,\noptions_offered: @local.displayed_challenge_ids,\nfree_text: @local.challenge_select.value,\nexited_ts: @calc(now());\nclick | set_data |\n_list_id: goal_setting_data,\n_id: goal,\noptions_offered: NA,\nselected_id: other;\nclick | emit: completed;",
+      "action_list": "click | set_field: selected_challenge_id: @local.challenge_select.key;\nclick | set_field: selected_challenge_value: @local.challenge_select.value;\nclick | set_field: selected_challenge: @local.challenge_select;\nclick | set_field: selected_goal_id: other;\nclick | set_data |\n_list_id: onboarding_settings_pages,\n_id: set_goal,\ncompleted: true;\nclick | set_data |\n_list_id: goal_setting_data,\n_id: challenge,\nselected_id: @local.challenge_select.key,\noptions_offered: @local.displayed_challenge_ids,\nfree_text: @local.challenge_select.value,\nexited_ts: @calc(now());\nclick | set_data |\n_list_id: goal_setting_data,\n_id: goal,\noptions_offered: NA,\nselected_id: other;\nclick | emit: completed;",
       "parameter_list": "style: navigation;\ndisabled: !@local.completed_enabled",
       "condition": "@local.challenge_select && @local.challenge_select.key == \"other\"",
       "style_list": "flex: 1"

@@ -308,7 +308,7 @@
     {
       "type": "text_bubble",
       "name": "text_bubble",
-      "value": "@global.set_domain_intro",
+      "value": "@global.set_domain_question",
       "_translations": {
         "value": {}
       },
@@ -323,10 +323,10 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@global.set_domain_intro",
-            "matchedExpression": "@global.set_domain_intro",
+            "fullExpression": "@global.set_domain_question",
+            "matchedExpression": "@global.set_domain_question",
             "type": "global",
-            "fieldName": "set_domain_intro"
+            "fieldName": "set_domain_question"
           }
         ],
         "parameter_list": {
@@ -365,7 +365,7 @@
         }
       },
       "_dynamicDependencies": {
-        "@global.set_domain_intro": [
+        "@global.set_domain_question": [
           "value"
         ],
         "@local.speaker_image_asset": [
@@ -379,34 +379,6 @@
         ],
         "@local.variant": [
           "parameter_list.variant"
-        ]
-      }
-    },
-    {
-      "type": "text",
-      "name": "question_domain",
-      "value": "@global.set_domain_question",
-      "_translations": {
-        "value": {}
-      },
-      "parameter_list": {
-        "style": "emphasised"
-      },
-      "exclude_from_translation": true,
-      "_nested_name": "question_domain",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "@global.set_domain_question",
-            "matchedExpression": "@global.set_domain_question",
-            "type": "global",
-            "fieldName": "set_domain_question"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@global.set_domain_question": [
-          "value"
         ]
       }
     },

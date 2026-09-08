@@ -1455,42 +1455,53 @@
       }
     },
     {
-      "type": "display_group",
-      "name": "dg_footer",
-      "parameter_list": {
-        "sticky": "bottom"
-      },
-      "condition": "@fields.proximal_outcome_time_point != \"baseline\"",
-      "style_list": [
-        "padding: 12px 24px",
-        "justify-content: space-between"
+      "type": "template",
+      "name": "nav_buttons",
+      "value": "proximal_outcome_nav_buttons",
+      "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "completed | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nvalue: @local.outcome_select,\nexited_ts: @calc(now())",
+          "params": {
+            "_list_id": "proximal_outcome_data",
+            "_id": "@fields.curr_prox_out_row_id",
+            "value": "@local.outcome_select",
+            "exited_ts": "@calc(now())"
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "emit",
+          "args": [
+            "completed"
+          ],
+          "_raw": "completed | emit: completed"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "emit",
+          "args": [
+            "uncompleted"
+          ],
+          "_raw": "uncompleted | emit: uncompleted"
+        }
       ],
+      "condition": "@fields.proximal_outcome_time_point != \"baseline\"",
+      "exclude_from_translation": true,
       "rows": [
         {
-          "type": "button",
-          "name": "button_back",
-          "value": "back",
+          "name": "show_previous",
+          "value": "!!@local.show_previous",
           "_translations": {
             "value": {}
           },
-          "action_list": [
-            {
-              "trigger": "click",
-              "action_id": "emit",
-              "args": [
-                "uncompleted"
-              ],
-              "_raw": "click | emit: uncompleted"
-            }
-          ],
-          "parameter_list": {
-            "icon_src": "arrow-back",
-            "style": "navigation"
-          },
-          "condition": "!!@local.show_previous",
-          "_nested_name": "dg_footer.button_back",
+          "exclude_from_translation": true,
+          "type": "set_variable",
+          "_nested_name": "nav_buttons.show_previous",
           "_dynamicFields": {
-            "condition": [
+            "value": [
               {
                 "fullExpression": "!!@local.show_previous",
                 "matchedExpression": "!@local.show_previous",
@@ -1501,155 +1512,93 @@
           },
           "_dynamicDependencies": {
             "!@local.show_previous": [
-              "condition"
+              "value"
             ]
           }
         },
         {
-          "type": "text",
-          "name": "spacer",
-          "condition": "!@local.show_previous",
-          "style_list": [
-            "flex: 1"
-          ],
-          "_nested_name": "dg_footer.spacer",
-          "_dynamicFields": {
-            "condition": [
-              {
-                "fullExpression": "!@local.show_previous",
-                "matchedExpression": "!@local.show_previous",
-                "type": "local",
-                "fieldName": "show_previous"
-              }
-            ]
-          },
-          "_dynamicDependencies": {
-            "!@local.show_previous": [
-              "condition"
-            ]
-          }
+          "name": "show_next",
+          "value": true,
+          "type": "set_variable",
+          "_nested_name": "nav_buttons.show_next"
         },
         {
-          "type": "button",
-          "name": "button_forward",
-          "value": "forward",
+          "name": "next_disabled",
+          "value": "!@local.completed_enabled",
           "_translations": {
             "value": {}
           },
-          "action_list": [
-            {
-              "trigger": "click",
-              "action_id": "set_data",
-              "args": [],
-              "_raw": "click | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nvalue: @local.outcome_select,\nexited_ts: @calc(now())",
-              "params": {
-                "_list_id": "proximal_outcome_data",
-                "_id": "@fields.curr_prox_out_row_id",
-                "value": "@local.outcome_select",
-                "exited_ts": "@calc(now())"
-              }
-            },
-            {
-              "trigger": "click",
-              "action_id": "emit",
-              "args": [
-                "completed"
-              ],
-              "_raw": "click | emit: completed"
-            }
-          ],
-          "parameter_list": {
-            "icon_src": "arrow-forward",
-            "style": "navigation",
-            "disabled": "!@local.completed_enabled"
-          },
-          "style_list": [
-            "flex: 1"
-          ],
-          "_nested_name": "dg_footer.button_forward",
+          "type": "set_variable",
+          "_nested_name": "nav_buttons.next_disabled",
           "_dynamicFields": {
-            "action_list": {
-              "0": {
-                "_raw": [
-                  {
-                    "fullExpression": "click | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nvalue: @local.outcome_select,\nexited_ts: @calc(now())",
-                    "matchedExpression": "@fields.curr_prox_out_row_id",
-                    "type": "fields",
-                    "fieldName": "curr_prox_out_row_id"
-                  },
-                  {
-                    "fullExpression": "click | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nvalue: @local.outcome_select,\nexited_ts: @calc(now())",
-                    "matchedExpression": "@local.outcome_select",
-                    "type": "local",
-                    "fieldName": "outcome_select"
-                  },
-                  {
-                    "fullExpression": "click | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nvalue: @local.outcome_select,\nexited_ts: @calc(now())",
-                    "matchedExpression": "@calc(now())",
-                    "type": "calc",
-                    "fieldName": "now()"
-                  }
-                ],
-                "params": {
-                  "_id": [
-                    {
-                      "fullExpression": "@fields.curr_prox_out_row_id",
-                      "matchedExpression": "@fields.curr_prox_out_row_id",
-                      "type": "fields",
-                      "fieldName": "curr_prox_out_row_id"
-                    }
-                  ],
-                  "value": [
-                    {
-                      "fullExpression": "@local.outcome_select",
-                      "matchedExpression": "@local.outcome_select",
-                      "type": "local",
-                      "fieldName": "outcome_select"
-                    }
-                  ],
-                  "exited_ts": [
-                    {
-                      "fullExpression": "@calc(now())",
-                      "matchedExpression": "@calc(now())",
-                      "type": "calc",
-                      "fieldName": "now()"
-                    }
-                  ]
-                }
+            "value": [
+              {
+                "fullExpression": "!@local.completed_enabled",
+                "matchedExpression": "!@local.completed_enabled",
+                "type": "local",
+                "fieldName": "completed_enabled"
               }
-            },
-            "parameter_list": {
-              "disabled": [
-                {
-                  "fullExpression": "!@local.completed_enabled",
-                  "matchedExpression": "!@local.completed_enabled",
-                  "type": "local",
-                  "fieldName": "completed_enabled"
-                }
-              ]
-            }
+            ]
           },
           "_dynamicDependencies": {
-            "@fields.curr_prox_out_row_id": [
-              "action_list.0._raw",
-              "action_list.0.params._id"
-            ],
-            "@local.outcome_select": [
-              "action_list.0._raw",
-              "action_list.0.params.value"
-            ],
-            "@calc(now())": [
-              "action_list.0._raw",
-              "action_list.0.params.exited_ts"
-            ],
             "!@local.completed_enabled": [
-              "parameter_list.disabled"
+              "value"
             ]
           }
         }
       ],
-      "_nested_name": "dg_footer",
+      "_nested_name": "nav_buttons",
       "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "_raw": [
+              {
+                "fullExpression": "completed | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nvalue: @local.outcome_select,\nexited_ts: @calc(now())",
+                "matchedExpression": "@fields.curr_prox_out_row_id",
+                "type": "fields",
+                "fieldName": "curr_prox_out_row_id"
+              },
+              {
+                "fullExpression": "completed | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nvalue: @local.outcome_select,\nexited_ts: @calc(now())",
+                "matchedExpression": "@local.outcome_select",
+                "type": "local",
+                "fieldName": "outcome_select"
+              },
+              {
+                "fullExpression": "completed | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nvalue: @local.outcome_select,\nexited_ts: @calc(now())",
+                "matchedExpression": "@calc(now())",
+                "type": "calc",
+                "fieldName": "now()"
+              }
+            ],
+            "params": {
+              "_id": [
+                {
+                  "fullExpression": "@fields.curr_prox_out_row_id",
+                  "matchedExpression": "@fields.curr_prox_out_row_id",
+                  "type": "fields",
+                  "fieldName": "curr_prox_out_row_id"
+                }
+              ],
+              "value": [
+                {
+                  "fullExpression": "@local.outcome_select",
+                  "matchedExpression": "@local.outcome_select",
+                  "type": "local",
+                  "fieldName": "outcome_select"
+                }
+              ],
+              "exited_ts": [
+                {
+                  "fullExpression": "@calc(now())",
+                  "matchedExpression": "@calc(now())",
+                  "type": "calc",
+                  "fieldName": "now()"
+                }
+              ]
+            }
+          }
+        },
         "condition": [
           {
             "fullExpression": "@fields.proximal_outcome_time_point != \"baseline\"",
@@ -1660,6 +1609,18 @@
         ]
       },
       "_dynamicDependencies": {
+        "@fields.curr_prox_out_row_id": [
+          "action_list.0._raw",
+          "action_list.0.params._id"
+        ],
+        "@local.outcome_select": [
+          "action_list.0._raw",
+          "action_list.0.params.value"
+        ],
+        "@calc(now())": [
+          "action_list.0._raw",
+          "action_list.0.params.exited_ts"
+        ],
         "@fields.proximal_outcome_time_point": [
           "condition"
         ]

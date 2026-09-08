@@ -1,0 +1,398 @@
+{
+  "flow_name": "s_language_c_article_tasks",
+  "flow_subtype": "generated",
+  "flow_type": "data_list",
+  "rows": [
+    {
+      "id": "relax_9",
+      "in_library": "yes",
+      "title_oringinal_eng": "Self-care moment",
+      "lottie_asset": "lottie/relax/square_flow.json",
+      "media_asset_m": "audio/relax/male/relax_9.m4a",
+      "media_asset_f": "audio/relax/female/relax_17.m4a",
+      "media_type": "audio",
+      "transcript_m_original_eng": "Here is an activity to relax your body: \n\nSit comfortably and close your eyes if you can. \nImagine a golden ring scanning your body from your feet to your head.  \nPay attention as it moves up and down your body. Are there any areas that feel tense? Numb? Painful?  \nFocus on those areas for a moment. Breathe into the area and, when you breathe out, try to let go of any tension or pain.  \nDo this for a few breaths.  \n\nOpen your eyes. How does your body feel now?\n\nYou can also try this next time you find yourself lying in bed unable to sleep!",
+      "transcript_f_original_eng": "Self-praise can be really helpful, especially when we have difficult days. \n\nThink of your week and finish the following phrase: “This week, I am proud of myself for …” It can be anything, not just things about being a parent!\n\nThink of one thing you did well today. Now wrap your arms around yourself and give yourself a big HUG!",
+      "transcript_m": "Aquí tienes una actividad para relajar tu cuerpo:\n\nSiéntate cómodamente y cierra los ojos si puedes.\nImagina un aro dorado que escanea tu cuerpo desde los pies hasta la cabeza.\nPon atención mientras sube y baja por tu cuerpo. ¿Hay áreas que se sienten tensas? ¿Adormecidas? ¿Con dolor?\nConcéntrate en esas áreas por un momento. Respira hacia esa zona y, al exhalar, intenta soltar cualquier tensión o malestar.\nHazlo por algunas respiraciones.\n\nAbre los ojos. ¿Cómo se siente tu cuerpo ahora?\n\n¡También puedes probar esto la próxima vez que estés en la cama y no puedas dormir!",
+      "transcript_f": "Elogiarte a ti mismo(a) puede ser muy útil, especialmente en los días difíciles.\n\nPiensa en tu semana y completa esta frase: “Esta semana, estoy orgulloso(a) de mí por…” ¡Puede ser cualquier cosa, no solo sobre ser padre o madre!\n\nPiensa en algo que hiciste bien hoy. Ahora abraza tu cuerpo con tus brazos y date un GRAN ABRAZO.",
+      "title": "Momento de autocuidado",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Momento de autocuidado"
+        }
+      },
+      "category_id": "relax",
+      "nested": false,
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "check_in_44",
+      "_translatedFields": {
+        "text_1": {
+          "eng": "Cuidarte empieza por darte cuenta de cómo te sientes."
+        },
+        "quiz_1_feedback_1": {
+          "eng": "¡Fantástico! Y muy bien por invertir en ti y en tu familia. Has logrado mucho."
+        },
+        "quiz_1_feedback_2": {
+          "eng": "Lamento que hoy no esté siendo un buen día. Estás haciendo un gran trabajo al intentar entender lo que está pasando. @global.app_name está aquí para apoyarte."
+        },
+        "quiz_1_feedback_3": {
+          "eng": "La crianza puede ser retadora. Toma una respiración profunda y piensa en todo lo que has hecho por tu familia. ¡Reconoce tus esfuerzos!"
+        },
+        "quiz_1_question": {
+          "eng": "¿Cómo te sientes el día de hoy?"
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Feliz"
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Regular"
+        },
+        "quiz_1_option_3_text": {
+          "eng": "Triste"
+        }
+      },
+      "category_id": "check_in",
+      "nested": false,
+      "quiz_1_option_1_image_asset": "images/icons/faces/happy_face_new.svg",
+      "quiz_1_option_2_image_asset": "images/icons/faces/ok_face_new.svg",
+      "quiz_1_option_3_image_asset": "images/icons/faces/sad_face_new.svg",
+      "text_1": "Cuidarte empieza por darte cuenta de cómo te sientes.",
+      "_translations": {
+        "text_1": {},
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_feedback_3": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_option_3_text": {}
+      },
+      "quiz_1_feedback_1": "¡Fantástico! Y muy bien por invertir en ti y en tu familia. Has logrado mucho.",
+      "quiz_1_feedback_2": "Lamento que hoy no esté siendo un buen día. Estás haciendo un gran trabajo al intentar entender lo que está pasando. @global.app_name está aquí para apoyarte.",
+      "quiz_1_feedback_3": "La crianza puede ser retadora. Toma una respiración profunda y piensa en todo lo que has hecho por tu familia. ¡Reconoce tus esfuerzos!",
+      "quiz_1_question": "¿Cómo te sientes el día de hoy?",
+      "quiz_1_option_1_text": "Feliz",
+      "quiz_1_option_2_text": "Regular",
+      "quiz_1_option_3_text": "Triste",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "intro_1",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "🔑 Este curso trata sobre cómo preparar a @fields.child_name para el aprovechamiento escolar. Las estrategias que te compartiremos son una guía: úsalas en la medida que @fields.child_name vaya mostrando disposición.\n\n👂 Esta primera sesión consiste en ayudar a @fields.child_name a aprender palabras nuevas y mejorar sus habilidades del habla!\n\n🎓 ¡Aprender a conversar y a mantener una conversación es importante para aprender a leer y lograr un buen desempeño escolar!"
+        },
+        "quiz_1_question": {
+          "eng": "📝 **¡Hagamos un ejercicio!**\n\n_Ejercicio no.1_\n\nCualquier niña o niño, independientemente de su crecimiento, puede aprender y desarrollar habilidades."
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Verdadero"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "✨ ¡Estás en lo correcto!\n\n🎉 Las niñas y los niños, independientemente de su crecimiento, son capaces de aprender y desarrollar habilidades, ya que se encuentran en un proceso de formación constante lo que les permite adquirir toda información que se les brinde \n\n🔑 Cada niña o niño es diferente. Aprenden a ritmos distintos y las cosas que pueden hacer van cambiando con su edad."
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Falso"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "👀 ¡Ups! ¡Buen intento!\n\n🎉 Las niñas y los niños, independientemente de su crecimiento, son capaces de aprender y desarrollar habilidades, ya que se encuentran en un proceso de formación constante lo que les permite adquirir toda información que se les brinde \n\n🔑 Cada niña o niño es diferente. Aprenden a ritmos distintos y las cosas que pueden hacer van cambiando con su edad."
+        },
+        "quiz_2_question": {
+          "eng": "📝 **¡Hagamos uno más!**\n\n_Ejercicio no.2_\n\nHablarle a tu niña o niño es lo mismo que mantener una conversación."
+        },
+        "quiz_2_option_1_text": {
+          "eng": "Verdadero"
+        },
+        "quiz_2_feedback_1": {
+          "eng": "👀 ¡Ups! ¡Buen intento!\n\n🎈 Las niñas y los niños aprenden palabras nuevas y adquieren confianza en sus capacidades lingüísticas cuando intentamos mantener una conversación con ellas y ellos. \n\n🌷 Puede que las niñas y los niños no sepan pronunciar muchas palabras, ¡pero es importante seguir animándolos!"
+        },
+        "quiz_2_option_2_text": {
+          "eng": "Falso"
+        },
+        "quiz_2_feedback_2": {
+          "eng": "🎉 ¡Buen trabajo!\n\n🎈 Las niñas y los niños aprenden palabras nuevas y adquieren confianza en sus capacidades lingüísticas cuando intentamos mantener una conversación con ellas y ellos. \n\n🌷 Puede que las niñas y los niños no sepan pronunciar muchas palabras, ¡pero es importante seguir animándolos!"
+        }
+      },
+      "category_id": "intro",
+      "nested": false,
+      "quiz_1_feedback_1": "✨ ¡Estás en lo correcto!\n\n🎉 Las niñas y los niños, independientemente de su crecimiento, son capaces de aprender y desarrollar habilidades, ya que se encuentran en un proceso de formación constante lo que les permite adquirir toda información que se les brinde \n\n🔑 Cada niña o niño es diferente. Aprenden a ritmos distintos y las cosas que pueden hacer van cambiando con su edad.",
+      "_translations": {
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "text_1_facilitator": {},
+        "quiz_2_question": {},
+        "quiz_2_option_1_text": {},
+        "quiz_2_feedback_1": {},
+        "quiz_2_option_2_text": {},
+        "quiz_2_feedback_2": {}
+      },
+      "quiz_1_feedback_2": "👀 ¡Ups! ¡Buen intento!\n\n🎉 Las niñas y los niños, independientemente de su crecimiento, son capaces de aprender y desarrollar habilidades, ya que se encuentran en un proceso de formación constante lo que les permite adquirir toda información que se les brinde \n\n🔑 Cada niña o niño es diferente. Aprenden a ritmos distintos y las cosas que pueden hacer van cambiando con su edad.",
+      "quiz_1_question": "📝 **¡Hagamos un ejercicio!**\n\n_Ejercicio no.1_\n\nCualquier niña o niño, independientemente de su crecimiento, puede aprender y desarrollar habilidades.",
+      "quiz_1_option_1_text": "Verdadero",
+      "quiz_1_option_2_text": "Falso",
+      "text_1_facilitator": "🔑 Este curso trata sobre cómo preparar a @fields.child_name para el aprovechamiento escolar. Las estrategias que te compartiremos son una guía: úsalas en la medida que @fields.child_name vaya mostrando disposición.\n\n👂 Esta primera sesión consiste en ayudar a @fields.child_name a aprender palabras nuevas y mejorar sus habilidades del habla!\n\n🎓 ¡Aprender a conversar y a mantener una conversación es importante para aprender a leer y lograr un buen desempeño escolar!",
+      "quiz_2_question": "📝 **¡Hagamos uno más!**\n\n_Ejercicio no.2_\n\nHablarle a tu niña o niño es lo mismo que mantener una conversación.",
+      "quiz_2_option_1_text": "Verdadero",
+      "quiz_2_feedback_1": "👀 ¡Ups! ¡Buen intento!\n\n🎈 Las niñas y los niños aprenden palabras nuevas y adquieren confianza en sus capacidades lingüísticas cuando intentamos mantener una conversación con ellas y ellos. \n\n🌷 Puede que las niñas y los niños no sepan pronunciar muchas palabras, ¡pero es importante seguir animándolos!",
+      "quiz_2_option_2_text": "Falso",
+      "quiz_2_feedback_2": "🎉 ¡Buen trabajo!\n\n🎈 Las niñas y los niños aprenden palabras nuevas y adquieren confianza en sus capacidades lingüísticas cuando intentamos mantener una conversación con ellas y ellos. \n\n🌷 Puede que las niñas y los niños no sepan pronunciar muchas palabras, ¡pero es importante seguir animándolos!",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_1",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Aquí tienes un ejemplo de cómo apoyar a tu niña o niño a mejorar sus habilidades de lenguaje."
+        },
+        "text_2": {
+          "eng": "@data.characters.f2_abuelo.name es una persona comprometida con la crianza positiva. Veamos cómo aborda el pasar tiempo con su nieta, @data.characters.f2_hija_3.name"
+        },
+        "character_1_text": {
+          "eng": "Veo que estás concentrada jugando con los bloques en silencio, @data.characters.f2_hija_3.name."
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "text_1_facilitator": "Aquí tienes un ejemplo de cómo apoyar a tu niña o niño a mejorar sus habilidades de lenguaje.",
+      "_translations": {
+        "text_1_facilitator": {},
+        "text_2": {},
+        "character_1_text": {}
+      },
+      "image_asset": "images/comic/learn/language_yc_1.svg",
+      "character_1_id": "f2_abuelo",
+      "text_2": "@data.characters.f2_abuelo.name es una persona comprometida con la crianza positiva. Veamos cómo aborda el pasar tiempo con su nieta, @data.characters.f2_hija_3.name",
+      "character_1_text": "Veo que estás concentrada jugando con los bloques en silencio, @data.characters.f2_hija_3.name.",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_2",
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "¡Guau! Estás construyendo un muro muy alto y fuerte con esos bloques."
+        },
+        "character_2_text": {
+          "eng": "Es para las vacas."
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/learn/language_yc_2.svg",
+      "character_1_id": "f2_abuelo",
+      "character_1_text": "¡Guau! Estás construyendo un muro muy alto y fuerte con esos bloques.",
+      "_translations": {
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "character_2_id": "f2_hija_3",
+      "character_2_text": "Es para las vacas.",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_3",
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "Para las vacas, claro, ¡las mantendrá a salvo!"
+        },
+        "character_2_text": {
+          "eng": "¡Ahora me puedes ayudar a construir una casa para que nuestra familia pueda dormir!"
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/learn/language_yc_3.svg",
+      "character_1_id": "f2_abuelo",
+      "character_1_text": "Para las vacas, claro, ¡las mantendrá a salvo!",
+      "_translations": {
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "character_2_id": "f2_hija_3",
+      "character_2_text": "¡Ahora me puedes ayudar a construir una casa para que nuestra familia pueda dormir!",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_4",
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "Esta casa nos va a mantener frescos y seguros. ¡Qué buena eres para construir, @data.characters.f2_hija_3.name!"
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/learn/language_yc_4.svg",
+      "character_1_id": "f2_abuelo",
+      "character_1_text": "Esta casa nos va a mantener frescos y seguros. ¡Qué buena eres para construir, @data.characters.f2_hija_3.name!",
+      "_translations": {
+        "character_1_text": {}
+      },
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "practical_tips_1",
+      "media_type": "youtube",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Selecciona reproducir ▶️ para aprender ️cinco estrategias que te ayudarán a desarrollar las habilidades de habla de @fields.child_name:\n\n1️⃣ EXPLICAR\n2️⃣ HACER PREGUNTAS\n3️⃣ ESCUCHAR\n4️⃣ CONSTRUIR\n5️⃣ CONTAR HISTORIAS"
+        }
+      },
+      "category_id": "practical_tips",
+      "nested": false,
+      "text_1_facilitator": "Selecciona reproducir ▶️ para aprender ️cinco estrategias que te ayudarán a desarrollar las habilidades de habla de @fields.child_name:\n\n1️⃣ EXPLICAR\n2️⃣ HACER PREGUNTAS\n3️⃣ ESCUCHAR\n4️⃣ CONSTRUIR\n5️⃣ CONTAR HISTORIAS",
+      "_translations": {
+        "text_1_facilitator": {}
+      },
+      "youtube_gb_en_f": "https://www.youtube.com/watch?v=7ME3LzGWpBQ",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "practical_tips_2",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Recuerda:"
+        },
+        "section_1_title": {
+          "eng": "EXPLICAR"
+        },
+        "section_1_text": {
+          "eng": "😃 Establece conversaciones con @fields.child_name al involucrarle en actividades cotidianas. Describe y explica lo que estás haciendo, utilizando diferentes palabras. Por ejemplo, si estás en el mercado o en el súper, puedes decir: \"Hoy vamos a comprar tomates\" o \"Hoy voy a hacer arroz con pollo y necesitamos pollo y arroz para hacerlo\".\n\n👂 ¡Hazle preguntas a @fields.child_name y escucha sus respuestas!\n\n⏯️ Muéstrale a @fields.child_name a distintas oportunidades de aprendizaje para que las pueda enfrentar a su propio ritmo. Cuando le des actividades que se adapten a sus capacidades, aumentará su confianza y su entusiasmo por aprender. 😃"
+        },
+        "section_2_title": {
+          "eng": "HACER PREGUNTAS"
+        },
+        "section_2_text": {
+          "eng": "Ayúdale a @fields.child_name a conversar más al hacerle preguntas que no se puedan responder con un simple \"sí\" o \"no\".  \n\nPor ejemplo: \"¿Qué te gustaría hacer con tu amigo más tarde?\" o \"¿Hiciste algo divertido en la escuela el día de hoy?\" “¿Cuál fue tu parte favorita del día? ¿Cuál fue tu parte menos favorita?”.  \n\nEsto ayudará a que @fields.child_name aprenda palabras nuevas y también te ayudará a ti a conocer sus intereses y las opiniones."
+        },
+        "section_3_title": {
+          "eng": "ESCUCHAR"
+        },
+        "section_3_text": {
+          "eng": "👂 Deja que @fields.child_name hable también. \n\n⏰ Dale tiempo para responder. Es posible que necesite tiempo para pensar y poderse expresar, ¡sobre todo si va a dar una respuesta más larga! \n\n😃 Después de darle un poco de tiempo, si todavía le resulta difícil expresar lo que quiere decir, ¡ayúdale a iniciar la oración o con alguna indicación corta!"
+        },
+        "section_4_title": {
+          "eng": "CONSTRUIR"
+        },
+        "section_4_text": {
+          "eng": "👂Escucha atentamente a @fields.child_name y siempre respóndele.\n\n🔄 Confirma lo que te dice y agrégale algo más para ayudarle a conectar su comprensión de la situación con el lenguaje. Por ejemplo, si @fields.child_name dice: \"Hay un gato\", podrías responder: \"Sí, hay un gato haciendo un agujero grande en el suelo\".\n\nEvita corregir en exceso. En vez de decir: \"No, no se dice japón, se debe decir jabón con B\", prueba con \"¡Ah, claro! La niña está usando el jabón para lavarse las manos\"."
+        },
+        "section_5_title": {
+          "eng": "CONTAR HISTORIAS"
+        },
+        "section_5_text": {
+          "eng": "🎈 ¡Cuéntale historias a @fields.child_name! Pueden ser reales, inventadas, basadas en sus vidas o tomadas de un libro.\n\n😃 Anima a @fields.child_name a que también cuente sus propias historias. ¡Podrías mostrarle fotos para crear una historia juntos!\n\n📖 Usa los cuentos y las historias para aprender palabras nuevas e incorpóralas a varias frases a lo largo del día.\n\n🔄 ¡Ten paciencia! Se necesita mucha práctica para escuchar historias y aún más para desarrollar la habilidad de contarlas. 💙"
+        }
+      },
+      "category_id": "practical_tips",
+      "nested": false,
+      "text_1_facilitator": "Recuerda:",
+      "_translations": {
+        "text_1_facilitator": {},
+        "section_1_title": {},
+        "section_1_text": {},
+        "section_2_title": {},
+        "section_2_text": {},
+        "section_3_title": {},
+        "section_3_text": {},
+        "section_4_title": {},
+        "section_4_text": {},
+        "section_5_title": {},
+        "section_5_text": {}
+      },
+      "section_1_icon_asset": "images/icons/single_speech_blue.png",
+      "section_2_icon_asset": "images/icons/question_blue.png",
+      "section_3_icon_asset": "images/icons/heart_filled_blue.png",
+      "section_4_icon_asset": "images/icons/tick.svg",
+      "section_5_icon_asset": "images/icons/picture_book.svg",
+      "section_1_title": "EXPLICAR",
+      "section_1_text": "😃 Establece conversaciones con @fields.child_name al involucrarle en actividades cotidianas. Describe y explica lo que estás haciendo, utilizando diferentes palabras. Por ejemplo, si estás en el mercado o en el súper, puedes decir: \"Hoy vamos a comprar tomates\" o \"Hoy voy a hacer arroz con pollo y necesitamos pollo y arroz para hacerlo\".\n\n👂 ¡Hazle preguntas a @fields.child_name y escucha sus respuestas!\n\n⏯️ Muéstrale a @fields.child_name a distintas oportunidades de aprendizaje para que las pueda enfrentar a su propio ritmo. Cuando le des actividades que se adapten a sus capacidades, aumentará su confianza y su entusiasmo por aprender. 😃",
+      "section_2_title": "HACER PREGUNTAS",
+      "section_2_text": "Ayúdale a @fields.child_name a conversar más al hacerle preguntas que no se puedan responder con un simple \"sí\" o \"no\".  \n\nPor ejemplo: \"¿Qué te gustaría hacer con tu amigo más tarde?\" o \"¿Hiciste algo divertido en la escuela el día de hoy?\" “¿Cuál fue tu parte favorita del día? ¿Cuál fue tu parte menos favorita?”.  \n\nEsto ayudará a que @fields.child_name aprenda palabras nuevas y también te ayudará a ti a conocer sus intereses y las opiniones.",
+      "section_3_title": "ESCUCHAR",
+      "section_3_text": "👂 Deja que @fields.child_name hable también. \n\n⏰ Dale tiempo para responder. Es posible que necesite tiempo para pensar y poderse expresar, ¡sobre todo si va a dar una respuesta más larga! \n\n😃 Después de darle un poco de tiempo, si todavía le resulta difícil expresar lo que quiere decir, ¡ayúdale a iniciar la oración o con alguna indicación corta!",
+      "section_4_title": "CONSTRUIR",
+      "section_4_text": "👂Escucha atentamente a @fields.child_name y siempre respóndele.\n\n🔄 Confirma lo que te dice y agrégale algo más para ayudarle a conectar su comprensión de la situación con el lenguaje. Por ejemplo, si @fields.child_name dice: \"Hay un gato\", podrías responder: \"Sí, hay un gato haciendo un agujero grande en el suelo\".\n\nEvita corregir en exceso. En vez de decir: \"No, no se dice japón, se debe decir jabón con B\", prueba con \"¡Ah, claro! La niña está usando el jabón para lavarse las manos\".",
+      "section_5_title": "CONTAR HISTORIAS",
+      "section_5_text": "🎈 ¡Cuéntale historias a @fields.child_name! Pueden ser reales, inventadas, basadas en sus vidas o tomadas de un libro.\n\n😃 Anima a @fields.child_name a que también cuente sus propias historias. ¡Podrías mostrarle fotos para crear una historia juntos!\n\n📖 Usa los cuentos y las historias para aprender palabras nuevas e incorpóralas a varias frases a lo largo del día.\n\n🔄 ¡Ten paciencia! Se necesita mucha práctica para escuchar historias y aún más para desarrollar la habilidad de contarlas. 💙",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "home_activity_1",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "**Actividad para casa** ⭐\n\nDurante su tiempo juntos y conectados, intenta usar palabras y gestos para describir sus actividades. \n\nAsegúrate de que te comunicas de forma que @fields.child_name pueda entenderte."
+        },
+        "quiz_1_question": {
+          "eng": "¿Puedes hacerlo hoy?"
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Sí"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "¡Excelente! ¡Usar palabras y gestos que @fields.child_name pueda entender para describir sus actividades es una forma estupenda de ayudarle a aprender! 💡"
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Lo intentaré"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "¡Muy bien! 😊 Intenta poner en práctica esta idea cuando tengas la oportunidad. Cada vez que pruebas algo nuevo, estás dando un paso para fortalecer a tu familia. 💛"
+        },
+        "quiz_1_option_3_text": {
+          "eng": "No"
+        },
+        "quiz_1_feedback_3": {
+          "eng": "Entendemos. Intenta encontrar un momento para conversar con @fields.child_name, puede ser para explicarle algo que ya estén haciendo en casa. 💡"
+        }
+      },
+      "category_id": "home_activity",
+      "nested": false,
+      "quiz_1_feedback_1": "¡Excelente! ¡Usar palabras y gestos que @fields.child_name pueda entender para describir sus actividades es una forma estupenda de ayudarle a aprender! 💡",
+      "_translations": {
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_feedback_3": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_option_3_text": {},
+        "text_1_facilitator": {}
+      },
+      "quiz_1_feedback_2": "¡Muy bien! 😊 Intenta poner en práctica esta idea cuando tengas la oportunidad. Cada vez que pruebas algo nuevo, estás dando un paso para fortalecer a tu familia. 💛",
+      "quiz_1_feedback_3": "Entendemos. Intenta encontrar un momento para conversar con @fields.child_name, puede ser para explicarle algo que ya estén haciendo en casa. 💡",
+      "quiz_1_question": "¿Puedes hacerlo hoy?",
+      "quiz_1_option_1_text": "Sí",
+      "quiz_1_option_2_text": "Lo intentaré",
+      "quiz_1_option_3_text": "No",
+      "text_1_facilitator": "**Actividad para casa** ⭐\n\nDurante su tiempo juntos y conectados, intenta usar palabras y gestos para describir sus actividades. \n\nAsegúrate de que te comunicas de forma que @fields.child_name pueda entenderte.",
+      "completed": false,
+      "version": 1
+    }
+  ],
+  "_metadata": {
+    "nested": {
+      "type": "boolean"
+    },
+    "completed": {
+      "type": "boolean"
+    },
+    "version": {
+      "type": "number"
+    }
+  }
+}

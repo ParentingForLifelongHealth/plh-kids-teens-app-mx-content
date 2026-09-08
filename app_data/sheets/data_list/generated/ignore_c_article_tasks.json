@@ -1,0 +1,429 @@
+{
+  "flow_name": "ignore_c_article_tasks",
+  "flow_subtype": "generated",
+  "flow_type": "data_list",
+  "rows": [
+    {
+      "id": "relax_2",
+      "in_library": "yes",
+      "title_oringinal_eng": "Power of three",
+      "lottie_asset": "lottie/relax/soothing_waves.json",
+      "media_asset_m": "audio/relax/male/relax_2.m4a",
+      "media_asset_f": "audio/relax/female/relax_14.m4a",
+      "media_type": "audio",
+      "transcript_m_original_eng": "Close your eyes.\nLet's use the magic power of 3 to stay present and relax. \n\nName 3 sounds you can hear right now.\nName 3 smells you can smell right now.\nName your 3 favourite foods.\nWhat are 3 things you can be grateful for right now.\n\nAt the end of a touch day, thinking of 3 things to be grateful for can help us find the courage to try again tomorrow.",
+      "transcript_f_original_eng": "Hello! How are you feeling right now? Happy, sad, angry, excited, worried?\n\nNotice where you feel it in your body. Notice what thoughts are connected to that feeling. Take a deep breath.\n\nThank yourself for taking the time to check in with your feelings and thoughts!",
+      "transcript_m": "Cierra los ojos.\nVamos a usar el poder mágico del 3 para mantenernos presentes y relajarnos.\n\nNombra 3 sonidos que puedas escuchar ahora mismo.\nNombra 3 olores que puedas sentir ahora mismo.\nNombra tus 3 comidas favoritas.\n¿Cuáles son 3 cosas por las que puedes sentir gratitud ahora mismo?\n\nAl final de un día difícil, pensar en 3 cosas por las que estás agradecido(a) puede ayudarte a encontrar el valor para intentarlo de nuevo mañana.",
+      "transcript_f": "Cierra los ojos.\n\nTómate un momento para sentir el suelo bajo tus pies.\nPiensa en algo por lo que te sientas agradecido(a).\nConcéntrate en tu respiración.\nInhala y exhala.\n\nAdentro y afuera.",
+      "title": "Conéctate con tu cuerpo",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Conéctate con tu cuerpo"
+        }
+      },
+      "category_id": "relax",
+      "nested": false,
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "check_in_34",
+      "_translatedFields": {
+        "text_1": {
+          "eng": "Toma un momento para ti. Cuidarte empieza por notar cómo te sientes."
+        },
+        "quiz_1_feedback_1": {
+          "eng": "¡Genial! Que bien saber que estás en un buen momento."
+        },
+        "quiz_1_feedback_2": {
+          "eng": "Las cosas no siempre son fáciles, pero así es como podemos crecer y aprender cada día."
+        },
+        "quiz_1_feedback_3": {
+          "eng": "La vida puede ser dura. Sea lo que sea que estés sintiendo, puedes sentirte orgullosa/o de ti y de estar aquí."
+        },
+        "quiz_1_question": {
+          "eng": "¿Cómo te sientes el día de hoy?"
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Feliz"
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Regular"
+        },
+        "quiz_1_option_3_text": {
+          "eng": "Triste"
+        }
+      },
+      "category_id": "check_in",
+      "nested": false,
+      "quiz_1_option_1_image_asset": "images/icons/faces/happy_face_new.svg",
+      "quiz_1_option_2_image_asset": "images/icons/faces/ok_face_new.svg",
+      "quiz_1_option_3_image_asset": "images/icons/faces/sad_face_new.svg",
+      "text_1": "Toma un momento para ti. Cuidarte empieza por notar cómo te sientes.",
+      "_translations": {
+        "text_1": {},
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_feedback_3": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_option_3_text": {}
+      },
+      "quiz_1_feedback_1": "¡Genial! Que bien saber que estás en un buen momento.",
+      "quiz_1_feedback_2": "Las cosas no siempre son fáciles, pero así es como podemos crecer y aprender cada día.",
+      "quiz_1_feedback_3": "La vida puede ser dura. Sea lo que sea que estés sintiendo, puedes sentirte orgullosa/o de ti y de estar aquí.",
+      "quiz_1_question": "¿Cómo te sientes el día de hoy?",
+      "quiz_1_option_1_text": "Feliz",
+      "quiz_1_option_2_text": "Regular",
+      "quiz_1_option_3_text": "Triste",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "intro_1",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Esta sesión  trata sobre qué hacer cuando las niñas y los niños buscan atención con comportamientos exagerados. 🚩"
+        },
+        "text_2": {
+          "eng": "Las niñas y los niños necesitan atención positiva desde muy temprana edad. 💛\n\nEs una forma estupenda de ayudarles a sentirse bien consigo mismos. ¡Hace más probable que hagan lo que se les pide! 🔄"
+        },
+        "quiz_1_question": {
+          "eng": "📝 **¡Hagamos un ejercicio!**\n\n_Ejercicio no.1_\n\nDebes darle a @fields.child_name lo que quiera cuando se queje por algo o haga algún berrinche."
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Verdadero"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "👀 ¡Ups! ¡Buen intento!\n\nCeder ante las exigencias, quejas o berrinches de @fields.child_name, solo empeorará la situación.\n\n@fields.child_name aprenderá que se puede salir con la suya cuando se comporta de esa manera.\n\nEn lugar de eso, _intenta averiguar qué es lo que @fields.child_name necesita y dale todo el apoyo emocional positivo necesario, sin ceder a sus demandas si no son razonables._ Si tú mantienes la calma, @fields.child_name también la mantendrá."
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Falso"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "⭐ ¡Estás en lo correcto!\n\nCeder ante las exigencias, quejas o berrinches de @fields.child_name, solo empeorará la situación.\n\n@fields.child_name aprenderá que se puede salir con la suya cuando se comporta de esa manera.\n\nEn lugar de eso, _intenta averiguar qué es lo que @fields.child_name necesita y dale todo el apoyo emocional positivo necesario, sin ceder a sus demandas si no son razonables._ Si tú mantienes la calma, @fields.child_name también la mantendrá."
+        },
+        "quiz_2_question": {
+          "eng": "📝 **¡Hagamos uno más!**\n\n_Ejercicio no.2_\n\nDebes ignorar a tu niña o niño para que deje de quejarse y amenazarle con pegarle si sigue así."
+        },
+        "quiz_2_option_1_text": {
+          "eng": "Verdadero"
+        },
+        "quiz_2_feedback_1": {
+          "eng": "👀 ¡Ups! ¡Buen intento!\n\nDecirle a tu niña o niño que pare o amenazarle puede empeorar aún más las cosas. Los golpes solo le enseñarán a tu niña o niño que la violencia es una solución aceptable para los problemas. Además, es algo que va en contra de la ley.\n\nEn lugar de pelearte con @fields.child_name, explícale tranquilamente el por qué y luego intenta redirigir a @fields.child_name hacia otra cosa.\n\nSi @fields.child_name continúa el comportamiento o pierde el control, mantén la calma y quédate con tu niña o niño sin discutir con ella o él. Puede que sea muy difícil, pero al final tu niña o niño se calmará también. En ese momento, ya podrás atender a sus necesidades.\n\n_Es importante tener en cuenta que los berrinches pueden ser una conducta normal en niños y niñas ya que se encuentran en una edad donde apenas están aprendiendo a regular sus emociones adecuadamente._"
+        },
+        "quiz_2_option_2_text": {
+          "eng": "Falso"
+        },
+        "quiz_2_feedback_2": {
+          "eng": "⭐ ¡Estás en lo correcto!\n\nDecirle a tu niña o niño que pare o amenazarle puede empeorar aún más las cosas. Los golpes solo le enseñarán a tu niña o niño que la violencia es una solución aceptable para los problemas. Además, es algo que va en contra de la ley.\n\nEn lugar de pelearte con @fields.child_name, explícale tranquilamente el por qué y luego intenta redirigir a @fields.child_name hacia otra cosa.\n\nSi @fields.child_name continúa el comportamiento o pierde el control, mantén la calma y quédate con tu niña o niño sin discutir con ella o él. Puede que sea muy difícil, pero al final tu niña o niño se calmará también. En ese momento, ya podrás atender a sus necesidades.\n\n_Es importante tener en cuenta que los berrinches pueden ser una conducta normal en niños y niñas ya que se encuentran en una edad donde apenas están aprendiendo a regular sus emociones adecuadamente._"
+        }
+      },
+      "category_id": "intro",
+      "nested": false,
+      "quiz_1_feedback_1": "👀 ¡Ups! ¡Buen intento!\n\nCeder ante las exigencias, quejas o berrinches de @fields.child_name, solo empeorará la situación.\n\n@fields.child_name aprenderá que se puede salir con la suya cuando se comporta de esa manera.\n\nEn lugar de eso, _intenta averiguar qué es lo que @fields.child_name necesita y dale todo el apoyo emocional positivo necesario, sin ceder a sus demandas si no son razonables._ Si tú mantienes la calma, @fields.child_name también la mantendrá.",
+      "_translations": {
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "text_1_facilitator": {},
+        "text_2": {},
+        "quiz_2_question": {},
+        "quiz_2_option_1_text": {},
+        "quiz_2_feedback_1": {},
+        "quiz_2_option_2_text": {},
+        "quiz_2_feedback_2": {}
+      },
+      "quiz_1_feedback_2": "⭐ ¡Estás en lo correcto!\n\nCeder ante las exigencias, quejas o berrinches de @fields.child_name, solo empeorará la situación.\n\n@fields.child_name aprenderá que se puede salir con la suya cuando se comporta de esa manera.\n\nEn lugar de eso, _intenta averiguar qué es lo que @fields.child_name necesita y dale todo el apoyo emocional positivo necesario, sin ceder a sus demandas si no son razonables._ Si tú mantienes la calma, @fields.child_name también la mantendrá.",
+      "quiz_1_question": "📝 **¡Hagamos un ejercicio!**\n\n_Ejercicio no.1_\n\nDebes darle a @fields.child_name lo que quiera cuando se queje por algo o haga algún berrinche.",
+      "quiz_1_option_1_text": "Verdadero",
+      "quiz_1_option_2_text": "Falso",
+      "text_1_facilitator": "Esta sesión  trata sobre qué hacer cuando las niñas y los niños buscan atención con comportamientos exagerados. 🚩",
+      "text_2": "Las niñas y los niños necesitan atención positiva desde muy temprana edad. 💛\n\nEs una forma estupenda de ayudarles a sentirse bien consigo mismos. ¡Hace más probable que hagan lo que se les pide! 🔄",
+      "quiz_2_question": "📝 **¡Hagamos uno más!**\n\n_Ejercicio no.2_\n\nDebes ignorar a tu niña o niño para que deje de quejarse y amenazarle con pegarle si sigue así.",
+      "quiz_2_option_1_text": "Verdadero",
+      "quiz_2_feedback_1": "👀 ¡Ups! ¡Buen intento!\n\nDecirle a tu niña o niño que pare o amenazarle puede empeorar aún más las cosas. Los golpes solo le enseñarán a tu niña o niño que la violencia es una solución aceptable para los problemas. Además, es algo que va en contra de la ley.\n\nEn lugar de pelearte con @fields.child_name, explícale tranquilamente el por qué y luego intenta redirigir a @fields.child_name hacia otra cosa.\n\nSi @fields.child_name continúa el comportamiento o pierde el control, mantén la calma y quédate con tu niña o niño sin discutir con ella o él. Puede que sea muy difícil, pero al final tu niña o niño se calmará también. En ese momento, ya podrás atender a sus necesidades.\n\n_Es importante tener en cuenta que los berrinches pueden ser una conducta normal en niños y niñas ya que se encuentran en una edad donde apenas están aprendiendo a regular sus emociones adecuadamente._",
+      "quiz_2_option_2_text": "Falso",
+      "quiz_2_feedback_2": "⭐ ¡Estás en lo correcto!\n\nDecirle a tu niña o niño que pare o amenazarle puede empeorar aún más las cosas. Los golpes solo le enseñarán a tu niña o niño que la violencia es una solución aceptable para los problemas. Además, es algo que va en contra de la ley.\n\nEn lugar de pelearte con @fields.child_name, explícale tranquilamente el por qué y luego intenta redirigir a @fields.child_name hacia otra cosa.\n\nSi @fields.child_name continúa el comportamiento o pierde el control, mantén la calma y quédate con tu niña o niño sin discutir con ella o él. Puede que sea muy difícil, pero al final tu niña o niño se calmará también. En ese momento, ya podrás atender a sus necesidades.\n\n_Es importante tener en cuenta que los berrinches pueden ser una conducta normal en niños y niñas ya que se encuentran en una edad donde apenas están aprendiendo a regular sus emociones adecuadamente._",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_1",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "La hora de la cena no está saliendo como @data.characters.f3_hijo_4.name quiere. Veamos cómo su madre, @data.characters.f3_madre.name, maneja su comportamiento:"
+        },
+        "character_1_text": {
+          "eng": "Quiero otro jugo."
+        },
+        "character_2_text": {
+          "eng": "Entiendo, está delicioso, y la regla de la casa es que solo puedes tomar un vaso de jugo durante la cena. Oh... pero mira @data.characters.f3_hijo_4.name, ¿y si nos traes las cucharas para el arroz con leche?"
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "text_1_facilitator": "La hora de la cena no está saliendo como @data.characters.f3_hijo_4.name quiere. Veamos cómo su madre, @data.characters.f3_madre.name, maneja su comportamiento:",
+      "_translations": {
+        "text_1_facilitator": {},
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "image_asset": "images/comic/behave/ignore_yc_1.svg",
+      "character_1_id": "f3_hijo_4",
+      "character_2_id": "f3_madre",
+      "character_1_text": "Quiero otro jugo.",
+      "character_2_text": "Entiendo, está delicioso, y la regla de la casa es que solo puedes tomar un vaso de jugo durante la cena. Oh... pero mira @data.characters.f3_hijo_4.name, ¿y si nos traes las cucharas para el arroz con leche?",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_2",
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "¡Pero yo QUIERO! ¡Dame!"
+        },
+        "character_2_text": {
+          "eng": "@data.characters.f3_hija_7.name, estás cenando muy bien."
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/behave/ignore_yc_2.svg",
+      "character_1_id": "f3_hijo_4",
+      "character_2_id": "f3_madre",
+      "character_1_text": "¡Pero yo QUIERO! ¡Dame!",
+      "_translations": {
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "character_2_text": "@data.characters.f3_hija_7.name, estás cenando muy bien.",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_3",
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "¡Buaaaaaa! ¡Buaaaaaa! ¡BUAAAAAA!"
+        },
+        "character_2_text": {
+          "eng": "@data.characters.f3_hija_7.name, ¿puedes agarrar el arroz con leche de la barra de la cocina?"
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/behave/ignore_yc_3.svg",
+      "character_1_id": "f3_hijo_4",
+      "character_2_id": "f3_madre",
+      "character_1_text": "¡Buaaaaaa! ¡Buaaaaaa! ¡BUAAAAAA!",
+      "_translations": {
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "character_2_text": "@data.characters.f3_hija_7.name, ¿puedes agarrar el arroz con leche de la barra de la cocina?",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_4",
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "¡Buaaaaaa! ¡Buaaaaaa! ¡BUAAAAAA!"
+        },
+        "character_2_text": {
+          "eng": "(Pensando) Respira hondo. Puedo hacerlo…\n\nVeo tu frustración, @data.characters.f3_hijo_4.name. Vamos a respirar como si sopláramos las velas de un pastel."
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/behave/ignore_yc_4.svg",
+      "character_1_id": "f3_hijo_4",
+      "character_2_id": "f3_madre",
+      "character_1_text": "¡Buaaaaaa! ¡Buaaaaaa! ¡BUAAAAAA!",
+      "_translations": {
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "character_2_text": "(Pensando) Respira hondo. Puedo hacerlo…\n\nVeo tu frustración, @data.characters.f3_hijo_4.name. Vamos a respirar como si sopláramos las velas de un pastel.",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_5",
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "Me da gusto verte sentado tranquilamente, @data.characters.f3_hijo_4.name. Toma, cómete este delicioso arroz con leche."
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/behave/ignore_yc_5.svg",
+      "character_1_id": "f3_madre",
+      "character_1_text": "Me da gusto verte sentado tranquilamente, @data.characters.f3_hijo_4.name. Toma, cómete este delicioso arroz con leche.",
+      "_translations": {
+        "character_1_text": {}
+      },
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "practical_tips_1",
+      "media_type": "youtube",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Selecciona reproducir ▶️ para aprender los 5️⃣ cinco pasos que debes de seguir cuando tu niña o niño se queje o haga un berrinche:\n\n1️⃣ REDIRIGIR\n2️⃣ MANTENER LA CALMA\n3️⃣ OBSERVAR\n4️⃣ CUIDAR\n5️⃣ SER CONSTANTES"
+        }
+      },
+      "category_id": "practical_tips",
+      "nested": false,
+      "text_1_facilitator": "Selecciona reproducir ▶️ para aprender los 5️⃣ cinco pasos que debes de seguir cuando tu niña o niño se queje o haga un berrinche:\n\n1️⃣ REDIRIGIR\n2️⃣ MANTENER LA CALMA\n3️⃣ OBSERVAR\n4️⃣ CUIDAR\n5️⃣ SER CONSTANTES",
+      "_translations": {
+        "text_1_facilitator": {}
+      },
+      "youtube_gb_en_f": "https://www.youtube.com/watch?v=InkNPqnlxrs",
+      "youtube_gb_en_m": "https://www.youtube.com/watch?v=bZs5CgN2ns4",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "practical_tips_2",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Recuerda:"
+        },
+        "section_1_title": {
+          "eng": "REDIRIGE"
+        },
+        "section_1_text": {
+          "eng": "🎨 Intenta redirigir la atención de @fields.child_name hacia una conducta o actividad positiva.\n\n🌷 ¡Elógiale por este comportamiento positivo!\n\nEn el primer curso de Crianza Responsable y Amorosa,aprendiste sobre redirigir la conducta."
+        },
+        "section_2_title": {
+          "eng": "MANTEN LA CALMA"
+        },
+        "section_2_text": {
+          "eng": "Haz una Pausa. Incluso un par de respiraciones profundas pueden hacer la diferencia. Te ayudará a mantener la calma y a ver con claridad lo que @fields.child_name necesita.\n\nEs muy tentador (y, sinceramente fácil) que tu reacción baje al nivel de la reacción de tu niña o niño al gritar, sobre todo cuando el berrinche no se detiene o tienes mucho cansancio y se te está acabando la paciencia.\n\nIntenta tener preparado un plan para ayudarte en situaciones en las que sientas que vas a explotar y gritar.\n\nQuédate cerca de tu niña o niño y que tu presencia sea tranquilizadora. @fields.child_name se irá tranquilizando si tú mantienes la calma. Puede que no sea fácil hacerlo, ¡pero funciona!"
+        },
+        "section_3_title": {
+          "eng": "OBSERVA"
+        },
+        "section_3_text": {
+          "eng": "Pregúntate: \"¿qué es lo que @fields.child_name realmente necesita en este momento? ¿Será que siente cansancio, estrés, miedo?\"\n\nLa mayoría de las veces, puede ser que lo que @fields.child_name necesite sea atención o cariño.\n\nPuedes dárselo sin ceder a sus exigencias si es que se están quejando por algo que no pueden tener."
+        },
+        "section_4_title": {
+          "eng": "CUIDA"
+        },
+        "section_4_text": {
+          "eng": "🎈 Una vez que @fields.child_name haya parado su berrinche o se haya calmado, necesitará mucho cariño y atención positiva.\n\n🧸 Pueden Conversar sobre lo que pasó más tarde o al día siguiente. De momento, involucra a @fields.child_name en una actividad positiva."
+        },
+        "section_5_title": {
+          "eng": "SÉ CONSTANTE"
+        },
+        "section_5_text": {
+          "eng": "⭐ Aunque el comportamiento de @fields.child_name empeore al principio cuando no estás cediendo a lo que quiere, es importante mantener la calma sin discutir ni gritarle a @fields.child_name.\n\nPuedes explicar, con calma, la razón por la que tu niña o niño no puede tener eso que quiere, pero hazlo una sola vez, sin entrar en debates ni discusiones.\n\nCon el paso del tiempo, @fields.child_name aprenderá a calmarse por su cuenta.\n\n💚 Pasa mucho tiempo positivo con @fields.child_name, sobre todo Tiempo Juntos y Conectados. ¡Es superimportante!"
+        }
+      },
+      "category_id": "practical_tips",
+      "nested": false,
+      "text_1_facilitator": "Recuerda:",
+      "_translations": {
+        "text_1_facilitator": {},
+        "section_1_title": {},
+        "section_1_text": {},
+        "section_2_title": {},
+        "section_2_text": {},
+        "section_3_title": {},
+        "section_3_text": {},
+        "section_4_title": {},
+        "section_4_text": {},
+        "section_5_title": {},
+        "section_5_text": {}
+      },
+      "section_1_icon_asset": "images/icons/change.png",
+      "section_2_icon_asset": "images/icons/heart_filled_blue.png",
+      "section_3_icon_asset": "images/icons/eye_blue.png",
+      "section_4_icon_asset": "images/icons/parent_child.svg",
+      "section_5_icon_asset": "images/icons/clock_blue.png",
+      "section_1_title": "REDIRIGE",
+      "section_1_text": "🎨 Intenta redirigir la atención de @fields.child_name hacia una conducta o actividad positiva.\n\n🌷 ¡Elógiale por este comportamiento positivo!\n\nEn el primer curso de Crianza Responsable y Amorosa,aprendiste sobre redirigir la conducta.",
+      "section_2_title": "MANTEN LA CALMA",
+      "section_2_text": "Haz una Pausa. Incluso un par de respiraciones profundas pueden hacer la diferencia. Te ayudará a mantener la calma y a ver con claridad lo que @fields.child_name necesita.\n\nEs muy tentador (y, sinceramente fácil) que tu reacción baje al nivel de la reacción de tu niña o niño al gritar, sobre todo cuando el berrinche no se detiene o tienes mucho cansancio y se te está acabando la paciencia.\n\nIntenta tener preparado un plan para ayudarte en situaciones en las que sientas que vas a explotar y gritar.\n\nQuédate cerca de tu niña o niño y que tu presencia sea tranquilizadora. @fields.child_name se irá tranquilizando si tú mantienes la calma. Puede que no sea fácil hacerlo, ¡pero funciona!",
+      "section_3_title": "OBSERVA",
+      "section_3_text": "Pregúntate: \"¿qué es lo que @fields.child_name realmente necesita en este momento? ¿Será que siente cansancio, estrés, miedo?\"\n\nLa mayoría de las veces, puede ser que lo que @fields.child_name necesite sea atención o cariño.\n\nPuedes dárselo sin ceder a sus exigencias si es que se están quejando por algo que no pueden tener.",
+      "section_4_title": "CUIDA",
+      "section_4_text": "🎈 Una vez que @fields.child_name haya parado su berrinche o se haya calmado, necesitará mucho cariño y atención positiva.\n\n🧸 Pueden Conversar sobre lo que pasó más tarde o al día siguiente. De momento, involucra a @fields.child_name en una actividad positiva.",
+      "section_5_title": "SÉ CONSTANTE",
+      "section_5_text": "⭐ Aunque el comportamiento de @fields.child_name empeore al principio cuando no estás cediendo a lo que quiere, es importante mantener la calma sin discutir ni gritarle a @fields.child_name.\n\nPuedes explicar, con calma, la razón por la que tu niña o niño no puede tener eso que quiere, pero hazlo una sola vez, sin entrar en debates ni discusiones.\n\nCon el paso del tiempo, @fields.child_name aprenderá a calmarse por su cuenta.\n\n💚 Pasa mucho tiempo positivo con @fields.child_name, sobre todo Tiempo Juntos y Conectados. ¡Es superimportante!",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "home_activity_1",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "**Actividad para casa** ⭐ \n\nBusca una cosa positiva que @fields.child_name haga el día de hoy y elógiale por ello. \n\nSi @fields.child_name se empieza a quejar por algo o a hacer berrinche, intenta usar las estrategias de esta sesión para redirigir, mantener la calma, observar y cuidar. \n\nPuede que al principio no sea facil, ¡pero síguele, tú puedes hacerlo!"
+        },
+        "quiz_1_question": {
+          "eng": "¿Puedes encontrar algo por lo que puedas elogiar a @fields.child_name hoy? ⏰"
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Sí"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "¡Genial! 💙 elogiar a nuestras niñas y niños significa que es más probable que repitan este comportamiento positivo. Mantener la calma cuando tu niña o niño está haciendo berrinche puede ser difícil, pero si tienes paciencia y le das tiempo, realmente funciona."
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Lo intentaré"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "¡Muy bien! 🌟 Lo importante es dar el primer paso. Intenta poner en práctica esta idea cuando tengas la oportunidad y observa qué sucede. 💛"
+        },
+        "quiz_1_option_3_text": {
+          "eng": "No"
+        },
+        "quiz_1_feedback_3": {
+          "eng": "¡Está bien! 💙 Mantener la calma cuando tu niña o niño está haciendo berrinche puede ser difícil. ¡elogiar a nuestras niñas y niños por su comportamiento positivo hace más probable que lo repitan! \n\nSiempre puedes volver a revisar lo que aprendiste hoy en el Menú Principal para construir y fortalecer tu confianza. ¡Tú puedes!"
+        }
+      },
+      "category_id": "home_activity",
+      "nested": false,
+      "quiz_1_feedback_1": "¡Genial! 💙 elogiar a nuestras niñas y niños significa que es más probable que repitan este comportamiento positivo. Mantener la calma cuando tu niña o niño está haciendo berrinche puede ser difícil, pero si tienes paciencia y le das tiempo, realmente funciona.",
+      "_translations": {
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_feedback_3": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_option_3_text": {},
+        "text_1_facilitator": {}
+      },
+      "quiz_1_feedback_2": "¡Muy bien! 🌟 Lo importante es dar el primer paso. Intenta poner en práctica esta idea cuando tengas la oportunidad y observa qué sucede. 💛",
+      "quiz_1_feedback_3": "¡Está bien! 💙 Mantener la calma cuando tu niña o niño está haciendo berrinche puede ser difícil. ¡elogiar a nuestras niñas y niños por su comportamiento positivo hace más probable que lo repitan! \n\nSiempre puedes volver a revisar lo que aprendiste hoy en el Menú Principal para construir y fortalecer tu confianza. ¡Tú puedes!",
+      "quiz_1_question": "¿Puedes encontrar algo por lo que puedas elogiar a @fields.child_name hoy? ⏰",
+      "quiz_1_option_1_text": "Sí",
+      "quiz_1_option_2_text": "Lo intentaré",
+      "quiz_1_option_3_text": "No",
+      "text_1_facilitator": "**Actividad para casa** ⭐ \n\nBusca una cosa positiva que @fields.child_name haga el día de hoy y elógiale por ello. \n\nSi @fields.child_name se empieza a quejar por algo o a hacer berrinche, intenta usar las estrategias de esta sesión para redirigir, mantener la calma, observar y cuidar. \n\nPuede que al principio no sea facil, ¡pero síguele, tú puedes hacerlo!",
+      "completed": false,
+      "version": 1
+    }
+  ],
+  "_metadata": {
+    "nested": {
+      "type": "boolean"
+    },
+    "completed": {
+      "type": "boolean"
+    },
+    "version": {
+      "type": "number"
+    }
+  }
+}

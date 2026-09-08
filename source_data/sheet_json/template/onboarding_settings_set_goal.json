@@ -51,14 +51,9 @@
     {
       "type": "text_bubble",
       "name": "text_bubble",
-      "value": "@global.set_goal_intro",
+      "value": "@global.set_goal_question",
       "parameter_list": "speaker_image_asset: @local.speaker_image_asset;\nspeaker_name: @local.speaker_name;\nspeaker_position: @local.speaker_position;\nvariant: @local.variant;",
       "exclude_from_translation": true
-    },
-    {
-      "type": "text",
-      "name": "question_goal",
-      "value": "@global.set_goal_question"
     },
     {
       "type": "begin_radio_list",
@@ -100,7 +95,7 @@
       "type": "button",
       "name": "button_completed",
       "value": "@global.continue",
-      "action_list": "click | set_field: selected_goal: @local.goal_select;\nclick | set_field: selected_goal_id: @local.goal_select.key;\nclick | set_data |\n_list_id: goal_setting_data,\n_id: goal,\nselected_id: @local.goal_select.key,\noptions_offered: @local.displayed_goal_ids,\nexited_ts: @calc(now());\nclick | emit: completed;",
+      "action_list": "click | set_field: selected_goal: @local.goal_select;\nclick | set_field: selected_goal_id: @local.goal_select.key;\nclick | set_field: selected_goal_value: @local.goal_select.value;\nclick | set_data |\n_list_id: goal_setting_data,\n_id: goal,\nselected_id: @local.goal_select.key,\noptions_offered: @local.displayed_goal_ids,\nexited_ts: @calc(now());\nclick | emit: completed;",
       "parameter_list": "style: navigation;\ndisabled: !@local.completed_enabled",
       "condition": "@local.goal_select && @local.goal_select.key != \"other_goal\"",
       "style_list": "flex: 1"
@@ -109,7 +104,7 @@
       "type": "button",
       "name": "button_completed_other",
       "value": "@global.continue",
-      "action_list": "click | set_field: selected_goal: @local.goal_select;\nclick | set_field: selected_goal_id: @local.goal_select.key;\nclick | set_data |\n_list_id: goal_setting_data,\n_id: goal,\nselected_id: @local.goal_select.key,\nfree_text: @local.goal_select.value,\noptions_offered: @local.displayed_goal_ids,\nexited_ts: @calc(now());\nclick | emit: completed;",
+      "action_list": "click | set_field: selected_goal: @local.goal_select;\nclick | set_field: selected_goal_id: @local.goal_select.key;\nclick | set_field: selected_goal_value: @local.goal_select.value;\nclick | set_data |\n_list_id: goal_setting_data,\n_id: goal,\nselected_id: @local.goal_select.key,\nfree_text: @local.goal_select.value,\noptions_offered: @local.displayed_goal_ids,\nexited_ts: @calc(now());\nclick | emit: completed;",
       "parameter_list": "style: navigation;\ndisabled: !@local.completed_enabled",
       "condition": "@local.goal_select && @local.goal_select.key == \"other_goal\"",
       "style_list": "flex: 1"

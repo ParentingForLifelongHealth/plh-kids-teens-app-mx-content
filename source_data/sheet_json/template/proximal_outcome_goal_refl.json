@@ -79,25 +79,23 @@
       "exclude_from_translation": true
     },
     {
-      "type": "begin_display_group",
-      "name": "dg_footer",
-      "parameter_list": "sticky: bottom;"
+      "type": "begin_template",
+      "name": "nav_buttons",
+      "value": "proximal_outcome_nav_buttons",
+      "action_list": "completed | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nreflection: @local.goal_reflection_input;\nclick | set_field : curr_goal_reflection_input: @local.goal_reflection_input; \n\ncompleted | emit: completed;\n\nuncompleted | emit: uncompleted;",
+      "exclude_from_translation": true
     },
     {
-      "type": "round_button",
-      "name": "button_back",
-      "action_list": "click | emit: uncompleted",
-      "parameter_list": "icon_src: arrow-back;"
+      "name": "show_previous",
+      "value": true,
+      "exclude_from_translation": true
     },
     {
-      "type": "round_button",
-      "name": "button_forward    ",
-      "action_list": "click | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nreflection: @local.goal_reflection_input;\nclick | set_field : curr_goal_reflection_input: @local.goal_reflection_input; \nclick | emit: completed;",
-      "parameter_list": "icon_src: arrow-forward;",
-      "style_list": "flex: 1"
+      "name": "show_next",
+      "value": true
     },
     {
-      "type": "end_display_group"
+      "type": "end_template"
     }
   ]
 }

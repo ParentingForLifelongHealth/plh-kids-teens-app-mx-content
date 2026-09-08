@@ -333,7 +333,7 @@
     {
       "type": "text_bubble",
       "name": "text_bubble",
-      "value": "@global.set_challenge_intro",
+      "value": "@global.set_challenge_question",
       "_translations": {
         "value": {}
       },
@@ -348,10 +348,10 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@global.set_challenge_intro",
-            "matchedExpression": "@global.set_challenge_intro",
+            "fullExpression": "@global.set_challenge_question",
+            "matchedExpression": "@global.set_challenge_question",
             "type": "global",
-            "fieldName": "set_challenge_intro"
+            "fieldName": "set_challenge_question"
           }
         ],
         "parameter_list": {
@@ -390,7 +390,7 @@
         }
       },
       "_dynamicDependencies": {
-        "@global.set_challenge_intro": [
+        "@global.set_challenge_question": [
           "value"
         ],
         "@local.speaker_image_asset": [
@@ -404,30 +404,6 @@
         ],
         "@local.variant": [
           "parameter_list.variant"
-        ]
-      }
-    },
-    {
-      "type": "text",
-      "name": "question_challenge",
-      "value": "@global.set_challenge_question",
-      "_translations": {
-        "value": {}
-      },
-      "_nested_name": "question_challenge",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "@global.set_challenge_question",
-            "matchedExpression": "@global.set_challenge_question",
-            "type": "global",
-            "fieldName": "set_challenge_question"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@global.set_challenge_question": [
-          "value"
         ]
       }
     },
@@ -692,6 +668,15 @@
               "trigger": "click",
               "action_id": "set_field",
               "args": [
+                "selected_challenge_value",
+                "@local.challenge_select.value"
+              ],
+              "_raw": "click | set_field: selected_challenge_value: @local.challenge_select.value"
+            },
+            {
+              "trigger": "click",
+              "action_id": "set_field",
+              "args": [
                 "selected_challenge",
                 "@local.challenge_select"
               ],
@@ -762,6 +747,26 @@
                 "args": {
                   "1": [
                     {
+                      "fullExpression": "@local.challenge_select.value",
+                      "matchedExpression": "@local.challenge_select.value",
+                      "type": "local",
+                      "fieldName": "challenge_select"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "click | set_field: selected_challenge_value: @local.challenge_select.value",
+                    "matchedExpression": "@local.challenge_select.value",
+                    "type": "local",
+                    "fieldName": "challenge_select"
+                  }
+                ]
+              },
+              "2": {
+                "args": {
+                  "1": [
+                    {
                       "fullExpression": "@local.challenge_select",
                       "matchedExpression": "@local.challenge_select",
                       "type": "local",
@@ -778,7 +783,7 @@
                   }
                 ]
               },
-              "2": {
+              "3": {
                 "_raw": [
                   {
                     "fullExpression": "click | set_data |\n_list_id: goal_setting_data,\n_id: challenge,\nselected_id: @local.challenge_select.key,\noptions_offered: @local.displayed_challenge_ids,\nexited_ts: @calc(now())",
@@ -865,22 +870,26 @@
             "@local.challenge_select.key": [
               "action_list.0.args.1",
               "action_list.0._raw",
-              "action_list.2._raw",
-              "action_list.2.params.selected_id",
+              "action_list.3._raw",
+              "action_list.3.params.selected_id",
               "condition"
             ],
-            "@local.challenge_select": [
+            "@local.challenge_select.value": [
               "action_list.1.args.1",
-              "action_list.1._raw",
+              "action_list.1._raw"
+            ],
+            "@local.challenge_select": [
+              "action_list.2.args.1",
+              "action_list.2._raw",
               "condition"
             ],
             "@local.displayed_challenge_ids": [
-              "action_list.2._raw",
-              "action_list.2.params.options_offered"
+              "action_list.3._raw",
+              "action_list.3.params.options_offered"
             ],
             "@calc(now())": [
-              "action_list.2._raw",
-              "action_list.2.params.exited_ts"
+              "action_list.3._raw",
+              "action_list.3.params.exited_ts"
             ],
             "!@local.completed_enabled": [
               "parameter_list.disabled"
@@ -906,6 +915,15 @@
                 "@local.challenge_select.key"
               ],
               "_raw": "click | set_field: selected_challenge_id: @local.challenge_select.key"
+            },
+            {
+              "trigger": "click",
+              "action_id": "set_field",
+              "args": [
+                "selected_challenge_value",
+                "@local.challenge_select.value"
+              ],
+              "_raw": "click | set_field: selected_challenge_value: @local.challenge_select.value"
             },
             {
               "trigger": "click",
@@ -1014,6 +1032,26 @@
                 "args": {
                   "1": [
                     {
+                      "fullExpression": "@local.challenge_select.value",
+                      "matchedExpression": "@local.challenge_select.value",
+                      "type": "local",
+                      "fieldName": "challenge_select"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "click | set_field: selected_challenge_value: @local.challenge_select.value",
+                    "matchedExpression": "@local.challenge_select.value",
+                    "type": "local",
+                    "fieldName": "challenge_select"
+                  }
+                ]
+              },
+              "2": {
+                "args": {
+                  "1": [
+                    {
                       "fullExpression": "@local.challenge_select",
                       "matchedExpression": "@local.challenge_select",
                       "type": "local",
@@ -1030,7 +1068,7 @@
                   }
                 ]
               },
-              "4": {
+              "5": {
                 "_raw": [
                   {
                     "fullExpression": "click | set_data |\n_list_id: goal_setting_data,\n_id: challenge,\nselected_id: @local.challenge_select.key,\noptions_offered: @local.displayed_challenge_ids,\nfree_text: @local.challenge_select.value,\nexited_ts: @calc(now())",
@@ -1125,26 +1163,28 @@
             "@local.challenge_select.key": [
               "action_list.0.args.1",
               "action_list.0._raw",
-              "action_list.4._raw",
-              "action_list.4.params.selected_id",
+              "action_list.5._raw",
+              "action_list.5.params.selected_id",
               "condition"
             ],
-            "@local.challenge_select": [
+            "@local.challenge_select.value": [
               "action_list.1.args.1",
               "action_list.1._raw",
+              "action_list.5._raw",
+              "action_list.5.params.free_text"
+            ],
+            "@local.challenge_select": [
+              "action_list.2.args.1",
+              "action_list.2._raw",
               "condition"
             ],
             "@local.displayed_challenge_ids": [
-              "action_list.4._raw",
-              "action_list.4.params.options_offered"
-            ],
-            "@local.challenge_select.value": [
-              "action_list.4._raw",
-              "action_list.4.params.free_text"
+              "action_list.5._raw",
+              "action_list.5.params.options_offered"
             ],
             "@calc(now())": [
-              "action_list.4._raw",
-              "action_list.4.params.exited_ts"
+              "action_list.5._raw",
+              "action_list.5.params.exited_ts"
             ],
             "!@local.completed_enabled": [
               "parameter_list.disabled"

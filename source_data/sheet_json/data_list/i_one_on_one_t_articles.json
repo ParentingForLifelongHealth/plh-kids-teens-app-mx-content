@@ -1,0 +1,109 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "i_one_on_one_t_articles",
+  "data_list_name": "i_one_on_one_t_articles",
+  "status": "released",
+  "flow_subtype": "modules_i_one_on_one_t",
+  "module": "i_one_on_one_t",
+  "rows": [
+    {
+      "id": "@default",
+      "nested": false
+    },
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "¡Pasar tiempo juntos y conectados con @fields.child_name es una forma increíble de construir una buena relación entre ustedes! Esto mostrará que te interesas por lo que hace. 💙 \n\nTambién fomentará la confianza y el respeto, y les ayudará a aprender cosas nuevas. ✨",
+      "quiz_1_question::eng": "**¡Hagamos un ejercicio!**\n\n_Ejercicio no.1_\n\nCuando paso tiempo juntos y conectados con mi adolescente, necesito tener un plan y saber qué haremos juntos.",
+      "quiz_1_option_1_text::eng": "Verdadero",
+      "quiz_1_feedback_1::eng": "👀 ¡Ups! ¡Buen intento!\n\n🚲 No tienes que planear una actividad. ¡Tu adolescente puede guiarte! Deja que escoja, siempre y cuando sea seguro. Esto aumentará su confianza y hará más probable que disfrute pasar tiempo contigo.",
+      "quiz_1_option_2_text::eng": "Falso",
+      "quiz_1_feedback_2::eng": "\n🎉 ¡Tienes razón!\n\n🚲Tu adolescente puede escoger la actividad siempre y cuando sea segura. Esto aumentará su confianza y hará más probable que disfrute pasar tiempo contigo."
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "Veamos como @data.characters.f1_padre.name y su hija @data.characters.f1_hija_13.name pasan tiempo juntos y conectados.",
+      "image_asset": "images/comic/relation/one_on_one_teen_1.svg",
+      "character_1_id": "f1_padre",
+      "character_1_text::eng": "@data.characters.f1_hija_13.name, ¿cómo estuvo tu día?",
+      "character_2_id": "f1_hija_13",
+      "character_2_text::eng": "Bien, papá. Voy llegando de la escuela."
+    },
+    {
+      "id": "explore_2",
+      "category_id": "explore",
+      "image_asset": "images/comic/relation/one_on_one_teen_2.svg",
+      "character_1_id": "f1_padre",
+      "character_1_text::eng": "Quiero pasar tiempo contigo, antes de que tenga que volver al trabajo. ¿Qué quieres que hagamos juntos?",
+      "character_2_id": "f1_hija_13",
+      "character_2_text::eng": "Iba a hacer mi tarea de Biología. El tema de la tarea es crear algo usando materiales reciclados. ¿Me quieres ayudar?",
+      "character_3_id": "f1_padre",
+      "character_3_text::eng": "¡Me encantaría!"
+    },
+    {
+      "id": "explore_3",
+      "category_id": "explore",
+      "image_asset": "images/comic/relation/one_on_one_teen_3.svg",
+      "character_1_id": "f1_hija_13",
+      "character_1_text::eng": "Yo estaba pensando en construir una casa reciclada usando botellas viejas, cartón y otros materiales reciclados. Mira, estos los recogí de camino a la casa. Estaban tirados junto a la parada del bus y enfrente de la tienda de la esquina.",
+      "character_2_id": "f1_padre",
+      "character_2_text::eng": "¡Qué buena idea, @data.characters.f1_hija_13.name! Se nota que lo has pensado bien y que te interesa esta tarea. ¿Cómo quieres que te ayude?"
+    },
+    {
+      "id": "explore_4",
+      "category_id": "explore",
+      "image_asset": "images/comic/relation/one_on_one_teen_4.svg",
+      "character_1_id": "f1_hija_13",
+      "character_1_text::eng": "¿Me ayudas a limpiar estas botellas? Van a ser los pilares de la casa. Con los cartones haré las paredes y el techo. Después, estoy pensando que podríamos pintar los cartones y las botellas para que queden bonitos.",
+      "character_2_id": "f1_padre",
+      "character_2_text::eng": "Creo que en algún lugar, tengo un poco de pintura que me sobró. Puedo buscarla más tarde."
+    },
+    {
+      "id": "explore_5",
+      "category_id": "explore",
+      "image_asset": "images/comic/relation/one_on_one_teen_5.svg",
+      "text_2::eng": "Más tarde, el mismo día",
+      "character_1_id": "f1_padre",
+      "character_1_text::eng": "¡Guau, se ve muy diferente! Ni parece que todos los materiales salieron de la basura. Además, ¡qué bonitas te quedaron las paredes pintadas y el techo también! ¡Tu maestra va a estar orgullosa de tu esfuerzo cuando vea esta tarea!",
+      "character_2_id": "f1_hija_13",
+      "character_2_text::eng": "Gracias por tu ayuda, papá. Sabes, hoy pasaron muchas cosas divertidas en la escuela.",
+      "character_3_id": "f1_padre",
+      "character_3_text::eng": "A ver, cuéntame."
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Aquí tienes un video para aprender 3️⃣ estrategias de crianza para pasar tiempo juntos y conectados con @fields.child_name:\n\n1️⃣ PRACTICAR\n2️⃣ JUGAR\n3️⃣ PERMANECER",
+      "media_type": "youtube",
+      "youtube_gb_en_f": "https://www.youtube.com/watch?v=SI5tIWR-Gzc",
+      "youtube_gb_en_m": "https://www.youtube.com/watch?v=w6izPKu3ygE"
+    },
+    {
+      "id": "practical_tips_2",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Recuerda:",
+      "section_1_title::eng": "PRACTICA",
+      "section_1_icon_asset": "images/icons/clock_blue.png",
+      "section_1_text::eng": "Intenta hacerlo todos los días \n\n⏰ Dedícale 15 minutos al día (¡o más!) a @fields.child_name",
+      "section_2_title::eng": "JUEGA",
+      "section_2_icon_asset": "images/icons/football_blue.png",
+      "section_2_text::eng": "⚽ Deja que @fields.child_name escoja qué hacer o de qué conversar.\n\n🎈Prueben hacer diferentes actividades juntos.\n\n😃 ¡Diviértanse!",
+      "section_3_title::eng": "PERMANECE",
+      "section_3_icon_asset": "images/icons/heart_filled_blue.png",
+      "section_3_text::eng": "📺 Elimina las distracciones como el televisor o el teléfono.\n\n👀 Presta atención a @fields.child_name. Afirma con la cabeza o usa frases como \"entiendo\" para demostrar que realmente le estás poniendo atención.\n\n💛 Acéptale como es y evita juzgarle.\n\n💡 Recuerda que @fields.child_name también puede comunicarse con gestos, movimientos o sonidos, no solo con palabras, por eso es importante mirarle."
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "text_1_facilitator::eng": "**Actividad para casa** ⭐ \n\nEsta semana, intenta pasar por lo menos 15 minutos de tiempo juntos y conectados con @fields.child_name todos los días. ¡Hará una gran diferencia! ",
+      "quiz_1_question::eng": "¿Puedes hacerlo hoy? ",
+      "quiz_1_option_1_text::eng": "Sí",
+      "quiz_1_feedback_1::eng": "¡Muy bien! Usa las estrategias que aprendiste hoy y diviértete, ya que es una forma estupenda de establecer una relación positiva💙",
+      "quiz_1_option_2_text::eng": "Lo intentaré",
+      "quiz_1_feedback_2::eng": "¡Gracias por intentarlo! 💛 Las nuevas habilidades se desarrollan poco a poco. Cuando tengas la oportunidad, pon esta idea en práctica y observa qué cambia. ✨",
+      "quiz_1_option_3_text::eng": "No",
+      "quiz_1_feedback_3::eng": "¡De acuerdo! Si hoy no tienes tiempo, puedes apartar un poco para mañana."
+    }
+  ]
+}
