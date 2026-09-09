@@ -8,6 +8,28 @@
       "value": "@fields.countdown_days"
     },
     {
+      "name": "days_since_prox_7d_last",
+      "value": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@field.prox_7d_last_ts).setHours(0,0,0,0))))"
+    },
+    {
+      "name": "days_since_prox_14d_last",
+      "value": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@field.prox_14d_last_ts).setHours(0,0,0,0))))"
+    },
+    {
+      "name": "has_proximal_outcome",
+      "value": "@local.days_since_prox_7d_last >= @global.proximal_outcome_frequency"
+    },
+    {
+      "name": "PO_type",
+      "value": "7days",
+      "condition": "@local.days_since_prox_14d_last < @global.proximal_outcome_frequency * @global.proximal_outcome_alternation"
+    },
+    {
+      "name": "PO_type",
+      "value": "14days",
+      "condition": "@local.days_since_prox_14d_last >= @global.proximal_outcome_frequency * @global.proximal_outcome_alternation"
+    },
+    {
       "name": "hp_uncompleted_ids"
     },
     {
@@ -131,6 +153,34 @@
       "condition": false
     },
     {
+      "name": "has_in_progress",
+      "value": 0
+    },
+    {
+      "type": "data_items",
+      "name": "get_last_in_progress",
+      "value": "@data.module_tasks",
+      "action_list": "data_changed | set_local : has_in_progress : @items.length;",
+      "parameter_list": "filter: !!@item.last_accessed_ts&& !@item.completed_ts && (!@item.tag_list || @item.tag_list.includes(@fields.child_age_tag)) && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.user_gender_list || @item.user_gender_list.includes(@fields.user_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship)) ;\nsort: last_accessed_ts;\nreverse;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "proximal_outcome",
+      "value": "proximal_outcome_header_b",
+      "condition": "(@local.has_in_progress == 0) && @local.has_proximal_outcome",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "PO_type",
+      "value": "@local.PO_type",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    },
+    {
       "name": "start_at_id",
       "value": "_start_at_id"
     },
@@ -142,7 +192,7 @@
     {
       "type": "begin_template",
       "value": "header_button",
-      "condition": "!!@local.up_next.module_id",
+      "condition": "(!!@local.up_next.module_id) && ((@local.has_in_progress > 0) || !@local.has_proximal_outcome)",
       "exclude_from_translation": true
     },
     {

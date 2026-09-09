@@ -48,26 +48,30 @@
     {
       "type": "title",
       "name": "loading_profile_title",
-      "value": "@global.onboarding_loading_title",
-      "parameter_list": "variant: header"
+      "value": "**@global.onboarding_loading_title**",
+      "parameter_list": "variant: header",
+      "exclude_from_translation": true
     },
     {
       "type": "text",
       "name": "bar_1_title",
       "value": "@data.onboarding_progress_bars.id_1.text",
-      "style_list": "color: @data.onboarding_progress_bars.id_1.colour"
+      "style_list": "color: @data.onboarding_progress_bars.id_1.colour",
+      "exclude_from_translation": true
     },
     {
       "type": "plh_progress_bar",
       "name": "bar_1",
       "action_list": "on_progress: 50 | set_local: start: false;\non_progress: 50 | add_data |\n_list_id: proximal_outcome_data,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentry_point: @fields.proximal_outcome_time_point,\nentered_ts: @calc(now()),\nquestion_type: goal;\non_progress: 50 | set_field: curr_prox_out_row_id: new;\non_progress: 50 | pop_up: proximal_outcome_qs_goal;",
-      "parameter_list": "duration: @data.onboarding_progress_bars.id_1.timespan;\nauto_play: @local.start;\ncolor: @data.onboarding_progress_bars.id_1.colour"
+      "parameter_list": "duration: @data.onboarding_progress_bars.id_1.timespan;\nauto_play: @local.start;\ncolor: @data.onboarding_progress_bars.id_1.colour",
+      "exclude_from_translation": true
     },
     {
       "type": "text",
       "name": "bar_2_title",
       "value": "@data.onboarding_progress_bars.id_2.text",
-      "style_list": "color: @data.onboarding_progress_bars.id_2.colour"
+      "style_list": "color: @data.onboarding_progress_bars.id_2.colour",
+      "exclude_from_translation": true
     },
     {
       "type": "plh_progress_bar",

@@ -1,0 +1,53 @@
+{
+  "flow_type": "global",
+  "flow_subtype": "onboarding",
+  "flow_name": "onboarding_page_14_faci_group",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "facilitator_message_faci_group_id",
+      "value": "**Are you joining a parenting group?**\n\nIf your facilitator gave you a Group ID, enter it below. If you don't have one, tap Skip.",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "question_user_facilitator_group",
+      "value": "What is your facilitator's Group ID?",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "placeholder_user_facilitator_group",
+      "value": "Enter 4-digit ID",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "facilitator_input_restriction",
+      "value": "Please enter a valid ID.",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "error_invalid_group",
+      "value": "Incorrect Group ID. Try again.",
+      "_translations": {
+        "value": {}
+      }
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "data/MX onboarding.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1VOolSeQCn71-GP1JbiDp2zqWg4ZZYqrtHIAjY7h4A-A"
+  }
+}

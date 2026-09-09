@@ -239,18 +239,19 @@
         {
           "type": "title",
           "name": "loading_profile_title",
-          "value": "@global.onboarding_loading_title",
+          "value": "**@global.onboarding_loading_title**",
           "_translations": {
             "value": {}
           },
           "parameter_list": {
             "variant": "header"
           },
+          "exclude_from_translation": true,
           "_nested_name": "page_downloading.loading_profile_title",
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "@global.onboarding_loading_title",
+                "fullExpression": "**@global.onboarding_loading_title**",
                 "matchedExpression": "@global.onboarding_loading_title",
                 "type": "global",
                 "fieldName": "onboarding_loading_title"
@@ -273,6 +274,7 @@
           "style_list": [
             "color: @data.onboarding_progress_bars.id_1.colour"
           ],
+          "exclude_from_translation": true,
           "_nested_name": "page_downloading.bar_1_title",
           "_dynamicFields": {
             "value": [
@@ -364,6 +366,7 @@
             "auto_play": "@local.start",
             "color": "@data.onboarding_progress_bars.id_1.colour"
           },
+          "exclude_from_translation": true,
           "_nested_name": "page_downloading.bar_1",
           "_dynamicFields": {
             "action_list": {
@@ -470,6 +473,7 @@
           "style_list": [
             "color: @data.onboarding_progress_bars.id_2.colour"
           ],
+          "exclude_from_translation": true,
           "_nested_name": "page_downloading.bar_2_title",
           "_dynamicFields": {
             "value": [

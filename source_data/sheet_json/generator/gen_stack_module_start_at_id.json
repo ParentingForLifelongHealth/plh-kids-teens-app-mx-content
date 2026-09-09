@@ -17,6 +17,9 @@
       "value": "@gen.id"
     },
     {
+      "name": "picked_activity_id"
+    },
+    {
       "type": "data_items",
       "name": "count_modules",
       "value": "@data.module_tasks",
@@ -26,28 +29,76 @@
       "comments": "filter: (@item.id !== @gen.id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship)) ;"
     },
     {
+      "name": "days_since_prox_7d_last",
+      "value": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@field.prox_7d_last_ts).setHours(0,0,0,0))))",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "days_since_prox_14d_last",
+      "value": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@field.prox_14d_last_ts).setHours(0,0,0,0))))",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "has_PO_questions",
+      "value": "@local.days_since_prox_7d_last >= @global.proximal_outcome_frequency",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "has_PO_7",
+      "value": "@local.days_since_prox_14d_last < @global.proximal_outcome_frequency * @global.proximal_outcome_alternation",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "has_PO_14",
+      "value": "@local.days_since_prox_14d_last >= @global.proximal_outcome_frequency * @global.proximal_outcome_alternation",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "PO_type",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "show_PO",
+      "value": false,
+      "exclude_from_translation": true
+    },
+    {
       "type": "text",
-      "value": "not comp: @local.not_comp_count",
+      "value": "space",
       "condition": false,
       "exclude_from_translation": true
     },
     {
-      "type": "begin_data_items",
+      "type": "text",
+      "value": "space",
+      "condition": false,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "has_PO_questions: @local.has_PO_questions\ndays_since_prox_7d_last: @local.days_since_prox_7d_last\ndays_since_prox_14d_last: @local.days_since_prox_14d_last\nhas_PO_7: @local.has_PO_7\nhas_PO_14: @local.has_PO_14\nPO_type: @local.PO_type\nshow_PO: @local.show_PO",
+      "condition": false,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "data_items",
       "name": "pick_random_locked_activity",
       "value": "@data.activity_tasks",
+      "action_list": "data_changed | set_local: picked_activity_id: @items[0]?.id; ",
       "parameter_list": "filter: @item.locked && (@fields.child_age === undefined || !@item.child_age_list || ([].concat(@item.child_age_list)).map(x => String(x)).includes(String(@fields.child_age)));\nshuffle;\nlimit: 1;",
       "exclude_from_translation": true,
       "comments": "filter: @item.locked && (!@item.child_age_list || @item.child_age_list.includes(@fields.child_age));\nshuffle;\nlimit: 1;"
     },
     {
       "type": "begin_template",
-      "name": "module_start_at_id",
+      "name": "module_start_at_id_prox_out_7",
       "value": "module_start_at_id_get_unlock",
-      "action_list": "completed | set_data | _list_id: module_tasks, _id: @gen.id, unlocked_activity: TRUE;\ncompleted | set_field: latest_unlocked_activity: @item.id;\ncompleted | nav_stack: close_top; \ncompleted | pop_up: unlock_play | variant: plh_completion;\nuncompleted | nav_stack: close_top;"
+      "action_list": "completed | set_local: show_PO: true;\ncompleted | set_local: PO_type: 7days;\ncompleted | set_data | _list_id: module_tasks, _id: @gen.id, unlocked_activity: TRUE;\ncompleted | set_field: latest_unlocked_activity: @local.picked_activity_id;\n\ncompleted | set_field : proximal_outcome_time_point_count: @calc(Number(@fields.proximal_outcome_time_point_count) + 1);\ncompleted | set_field: curr_prox_out_row_id : new;\ncompleted | set_field: curr_goal_reflection_input : ;\ncompleted | set_data | _list_id: proximal_outcome_7d_pages, _id: qs_goal, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_7d_pages, _id: goal_refl, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_7d_pages, _id: progress_7, completed: false;\n\ncompleted | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: goal;\n\ncompleted | set_field: prox_outcome_access: module;\ncompleted | set_field: prox_7d_last_ts: @calc(now());\n\n\nuncompleted | nav_stack: close_top;",
+      "condition": "@local.has_PO_questions && !@local.show_PO && @local.has_PO_7"
     },
     {
       "name": "activity_id",
-      "value": "@item.id"
+      "value": "@local.picked_activity_id"
     },
     {
       "name": "module_id",
@@ -65,7 +116,76 @@
       "type": "end_template"
     },
     {
-      "type": "end_data_items"
+      "type": "begin_template",
+      "name": "module_start_at_id_prox_out_14",
+      "value": "module_start_at_id_get_unlock",
+      "action_list": "completed | set_local: show_PO: true;\ncompleted | set_local: PO_type: 14days;\ncompleted | set_data | _list_id: module_tasks, _id: @gen.id, unlocked_activity: TRUE;\ncompleted | set_field: latest_unlocked_activity: @local.picked_activity_id;\n\ncompleted | set_field : proximal_outcome_time_point_count: @calc(Number(@fields.proximal_outcome_time_point_count) + 1);\ncompleted | set_field: curr_prox_out_row_id : new;\ncompleted | set_field: curr_goal_reflection_input : ;\ncompleted | set_data | _list_id: proximal_outcome_14d_pages, _id: qs_goal, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_14d_pages, _id: goal_refl, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_14d_pages, _id: qs_base_1, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_14d_pages, _id: qs_base_2, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_14d_pages, _id: progress_14, completed: false;\n\ncompleted | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: goal;\n\ncompleted | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: qs1;\n\ncompleted | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: qs2;\n\ncompleted | set_field: prox_outcome_access: module;\ncompleted | set_field: prox_7d_last_ts: @calc(now());\ncompleted | set_field: prox_14d_last_ts: @calc(now());\n\nuncompleted | nav_stack: close_top;",
+      "condition": "@local.has_PO_questions && !@local.show_PO && @local.has_PO_14"
+    },
+    {
+      "name": "activity_id",
+      "value": "@local.picked_activity_id"
+    },
+    {
+      "name": "module_id",
+      "value": "@gen.id"
+    },
+    {
+      "name": "course_id",
+      "value": "@gen.tag_course"
+    },
+    {
+      "name": "unlock_all",
+      "value": "@calc(@local.not_comp_count == 0)"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "begin_template",
+      "name": "module_start_at_id",
+      "value": "module_start_at_id_get_unlock",
+      "action_list": "completed | set_data | _list_id: module_tasks, _id: @gen.id, unlocked_activity: TRUE;\ncompleted | set_field: latest_unlocked_activity: @local.picked_activity_id;\ncompleted | nav_stack: close_top; \ncompleted | pop_up: unlock_play | variant: plh_completion;\nuncompleted | nav_stack: close_top;",
+      "condition": "!@local.has_PO_questions && !@local.show_PO"
+    },
+    {
+      "name": "activity_id",
+      "value": "@local.picked_activity_id"
+    },
+    {
+      "name": "module_id",
+      "value": "@gen.id"
+    },
+    {
+      "name": "course_id",
+      "value": "@gen.tag_course"
+    },
+    {
+      "name": "unlock_all",
+      "value": "@calc(@local.not_comp_count == 0)"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "begin_template",
+      "name": "proximal_outcome_page_7",
+      "value": "proximal_outcome_7d_checkin",
+      "action_list": "completed | nav_stack: close_top; \ncompleted | pop_up: unlock_play | variant: plh_completion;\nuncompleted | nav_stack: close_top;\nuncompleted | pop_up: unlock_play | variant: plh_completion;",
+      "condition": "@local.show_PO && @local.PO_type == \"7days\""
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "begin_template",
+      "name": "proximal_outcome_page_14",
+      "value": "proximal_outcome_14d_checkin",
+      "action_list": "completed | nav_stack: close_top; \ncompleted | pop_up: unlock_play | variant: plh_completion;\nuncompleted | nav_stack: close_top;\nuncompleted | pop_up: unlock_play | variant: plh_completion;",
+      "condition": "@local.show_PO && @local.PO_type == \"14days\""
+    },
+    {
+      "type": "end_template"
     }
   ]
 }
