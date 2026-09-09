@@ -5,13 +5,15 @@
   "status": "released",
   "rows": [
     {
-      "name": "prox_outcome_access ",
-      "value": false
-    },
-    {
       "name": "last_page_index",
       "value": "@calc(Object.keys(@data.proximal_outcome_14d_pages).length - 1)",
       "exclude_from_translation": true
+    },
+    {
+      "type": "update_action_list",
+      "name": "close_on_exit",
+      "action_list": "uncompleted | nav_stack: close_top",
+      "condition": "@fields.prox_outcome_access == \"cta\""
     },
     {
       "type": "begin_data_items",
@@ -117,18 +119,18 @@
     {
       "type": "lottie_animation",
       "name": "lottie",
-      "value": "@global.onboarding_completed_lottie_asset"
+      "value": "@global.proximal_outcome_completed_lottie_asset"
     },
     {
       "type": "title",
       "name": "finish_profile_title",
-      "value": "@global.onboarding_completed_title",
+      "value": "@global.proximal_outcome_completed_title",
       "parameter_list": "variant: header"
     },
     {
       "type": "text",
       "name": "finish_profile_text",
-      "value": "@global.onboarding_completed_text",
+      "value": "@global.proximal_outcome_completed_text",
       "parameter_list": "text_align: center"
     },
     {
@@ -140,8 +142,8 @@
     {
       "type": "button",
       "name": "button_completed_3",
-      "value": "Go to lesson",
-      "action_list": "click | emit: completed;",
+      "value": "@global.proximal_outcome_completed_button",
+      "action_list": "click | emit: completed;\nclick | nav_stack: close_top;",
       "parameter_list": "style: navigation;"
     },
     {

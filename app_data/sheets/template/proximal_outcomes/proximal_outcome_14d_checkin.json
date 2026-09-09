@@ -5,12 +5,6 @@
   "status": "released",
   "rows": [
     {
-      "name": "prox_outcome_access",
-      "value": false,
-      "type": "set_variable",
-      "_nested_name": "prox_outcome_access"
-    },
-    {
       "name": "last_page_index",
       "value": "@calc(Object.keys(@data.proximal_outcome_14d_pages).length - 1)",
       "_translations": {
@@ -41,6 +35,37 @@
         ],
         "@calc(Object.keys(@data.proximal_outcome_14d_pages).length - 1)": [
           "value"
+        ]
+      }
+    },
+    {
+      "type": "update_action_list",
+      "name": "close_on_exit",
+      "action_list": [
+        {
+          "trigger": "uncompleted",
+          "action_id": "nav_stack",
+          "args": [
+            "close_top"
+          ],
+          "_raw": "uncompleted | nav_stack: close_top"
+        }
+      ],
+      "condition": "@fields.prox_outcome_access == \"cta\"",
+      "_nested_name": "close_on_exit",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@fields.prox_outcome_access == \"cta\"",
+            "matchedExpression": "@fields.prox_outcome_access",
+            "type": "fields",
+            "fieldName": "prox_outcome_access"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.prox_outcome_access": [
+          "condition"
         ]
       }
     },
@@ -844,7 +869,7 @@
         {
           "type": "lottie_animation",
           "name": "lottie",
-          "value": "@global.onboarding_completed_lottie_asset",
+          "value": "@global.proximal_outcome_completed_lottie_asset",
           "_translations": {
             "value": {}
           },
@@ -852,15 +877,15 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "@global.onboarding_completed_lottie_asset",
-                "matchedExpression": "@global.onboarding_completed_lottie_asset",
+                "fullExpression": "@global.proximal_outcome_completed_lottie_asset",
+                "matchedExpression": "@global.proximal_outcome_completed_lottie_asset",
                 "type": "global",
-                "fieldName": "onboarding_completed_lottie_asset"
+                "fieldName": "proximal_outcome_completed_lottie_asset"
               }
             ]
           },
           "_dynamicDependencies": {
-            "@global.onboarding_completed_lottie_asset": [
+            "@global.proximal_outcome_completed_lottie_asset": [
               "value"
             ]
           }
@@ -868,7 +893,7 @@
         {
           "type": "title",
           "name": "finish_profile_title",
-          "value": "@global.onboarding_completed_title",
+          "value": "@global.proximal_outcome_completed_title",
           "_translations": {
             "value": {}
           },
@@ -879,15 +904,15 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "@global.onboarding_completed_title",
-                "matchedExpression": "@global.onboarding_completed_title",
+                "fullExpression": "@global.proximal_outcome_completed_title",
+                "matchedExpression": "@global.proximal_outcome_completed_title",
                 "type": "global",
-                "fieldName": "onboarding_completed_title"
+                "fieldName": "proximal_outcome_completed_title"
               }
             ]
           },
           "_dynamicDependencies": {
-            "@global.onboarding_completed_title": [
+            "@global.proximal_outcome_completed_title": [
               "value"
             ]
           }
@@ -895,7 +920,7 @@
         {
           "type": "text",
           "name": "finish_profile_text",
-          "value": "@global.onboarding_completed_text",
+          "value": "@global.proximal_outcome_completed_text",
           "_translations": {
             "value": {}
           },
@@ -906,15 +931,15 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "@global.onboarding_completed_text",
-                "matchedExpression": "@global.onboarding_completed_text",
+                "fullExpression": "@global.proximal_outcome_completed_text",
+                "matchedExpression": "@global.proximal_outcome_completed_text",
                 "type": "global",
-                "fieldName": "onboarding_completed_text"
+                "fieldName": "proximal_outcome_completed_text"
               }
             ]
           },
           "_dynamicDependencies": {
-            "@global.onboarding_completed_text": [
+            "@global.proximal_outcome_completed_text": [
               "value"
             ]
           }
@@ -932,7 +957,7 @@
             {
               "type": "button",
               "name": "button_completed_3",
-              "value": "Go to lesson",
+              "value": "@global.proximal_outcome_completed_button",
               "_translations": {
                 "value": {}
               },
@@ -944,12 +969,35 @@
                     "completed"
                   ],
                   "_raw": "click | emit: completed"
+                },
+                {
+                  "trigger": "click",
+                  "action_id": "nav_stack",
+                  "args": [
+                    "close_top"
+                  ],
+                  "_raw": "click | nav_stack: close_top"
                 }
               ],
               "parameter_list": {
                 "style": "navigation"
               },
-              "_nested_name": "page_finished.dg_footer.button_completed_3"
+              "_nested_name": "page_finished.dg_footer.button_completed_3",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@global.proximal_outcome_completed_button",
+                    "matchedExpression": "@global.proximal_outcome_completed_button",
+                    "type": "global",
+                    "fieldName": "proximal_outcome_completed_button"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@global.proximal_outcome_completed_button": [
+                  "value"
+                ]
+              }
             }
           ],
           "_nested_name": "page_finished.dg_footer"

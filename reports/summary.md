@@ -10,9 +10,9 @@
 | animated_slides | 1 |
 | apple_sign_in_button | 2 |
 | audio | 3 |
-| button | 129 |
+| button | 127 |
 | combo_box | 27 |
-| data_items | 259 |
+| data_items | 260 |
 | debug_toggle | 1 |
 | display_grid | 4 |
 | display_group | 139 |
@@ -28,7 +28,7 @@
 | plh_course_lesson_accordion | 4 |
 | plh_course_sub_item | 2 |
 | plh_get_up_next | 2 |
-| plh_lesson_cta | 2 |
+| plh_lesson_cta | 4 |
 | plh_module_details_header | 1 |
 | plh_module_list_item | 2 |
 | plh_progress_bar | 8 |
@@ -38,18 +38,18 @@
 | round_button | 26 |
 | select_text | 1 |
 | set_field | 4 |
-| set_variable | 4445 |
+| set_variable | 5656 |
 | simple_checkbox | 1 |
 | task_card | 4 |
 | task_progress_bar | 7 |
-| template | 1381 |
-| text | 331 |
+| template | 1682 |
+| text | 478 |
 | text_area | 5 |
 | text_box | 21 |
 | text_bubble | 26 |
 | title | 70 |
 | toggle_bar | 5 |
-| update_action_list | 2 |
+| update_action_list | 4 |
 | video | 3 |
 | youtube | 6 |
 </details>
@@ -59,30 +59,30 @@
 
 | type | count |
 | --- | --- |
-| add_data | 11 |
+| add_data | 311 |
 | app_update | 1 |
 | asset_pack | 4 |
 | auth | 3 |
 | emit: completed | 999 |
-| emit: force_reload | 3 |
+| emit: force_reload | 5 |
 | emit: force_reprocess | 13 |
 | emit: force_restart | 3 |
 | emit: server_sync | 6 |
 | emit: set_language | 2 |
 | emit: uncompleted | 1007 |
 | feedback | 13 |
-| go_to | 28 |
+| go_to | 26 |
 | nav | 1 |
-| nav_stack | 493 |
+| nav_stack | 949 |
 | plh_certificate | 12 |
-| pop_up | 99 |
+| pop_up | 399 |
 | reset_app | 4 |
 | reset_data | 3 |
 | save_to_device | 1 |
-| set_data | 146 |
-| set_field | 181 |
+| set_data | 896 |
+| set_field | 1163 |
 | set_item | 30 |
-| set_local | 142 |
+| set_local | 518 |
 | share | 3 |
 | task | 2 |
 | toast | 1 |
@@ -277,7 +277,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/backgrounds/bottom_banner.svg | 3.6 | 1 |
 | images/backgrounds/complete_module.svg | 4.5 | 1 |
 | images/backgrounds/kites.svg | 37.3 | 1 |
-| images/backgrounds/lesson-cta-bg.svg | 4 | 2 |
+| images/backgrounds/lesson-cta-bg.svg | 4 | 4 |
 | images/backgrounds/library_top_right.png | 1358.6 | 3 |
 | images/backgrounds/mountains_trees.svg | 23.2 | 1 |
 | images/character_icons/AMIGA_MUJER_1.svg | 978.5 | 1 |
@@ -689,7 +689,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | lottie/relax/soothing_waves.json | 7.6 | 24 |
 | lottie/relax/square_flow.json | 5.9 | 47 |
 | lottie/ux/bulging_circles.json | 11.8 | 1 |
-| lottie/ux/checkmark.json | 24.6 | 1 |
+| lottie/ux/checkmark.json | 24.6 | 2 |
 | lottie/ux/gift_box.json | 674.5 | 1 |
 </details>
 
@@ -792,10 +792,10 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_pipe | generated | 150 |
 | generator |  | 87 |
 | global |  | 14 |
-| global | onboarding | 15 |
+| global | onboarding | 16 |
 | global | proximal_outcomes | 2 |
 | template |  | 182 |
 | template | generated | 1097 |
 | template | legal_terms | 4 |
-| template | proximal_outcomes | 16 |
+| template | proximal_outcomes | 15 |
 </details>
