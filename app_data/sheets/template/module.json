@@ -176,8 +176,14 @@
       "_nested_name": "article_count"
     },
     {
+      "name": "extra_steps",
+      "value": 0,
+      "type": "set_variable",
+      "_nested_name": "extra_steps"
+    },
+    {
       "name": "progress",
-      "value": "@calc(((@local.active_index)/@local.article_count)*100)",
+      "value": "@calc(((@local.active_index)/(@local.article_count + Number(@local.extra_steps)))*100)",
       "_translations": {
         "value": {}
       },
@@ -186,22 +192,28 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@calc(((@local.active_index)/@local.article_count)*100)",
+            "fullExpression": "@calc(((@local.active_index)/(@local.article_count + Number(@local.extra_steps)))*100)",
             "matchedExpression": "@local.active_index",
             "type": "local",
             "fieldName": "active_index"
           },
           {
-            "fullExpression": "@calc(((@local.active_index)/@local.article_count)*100)",
+            "fullExpression": "@calc(((@local.active_index)/(@local.article_count + Number(@local.extra_steps)))*100)",
             "matchedExpression": "@local.article_count",
             "type": "local",
             "fieldName": "article_count"
           },
           {
-            "fullExpression": "@calc(((@local.active_index)/@local.article_count)*100)",
-            "matchedExpression": "@calc(((@local.active_index)/@local.article_count)*100)",
+            "fullExpression": "@calc(((@local.active_index)/(@local.article_count + Number(@local.extra_steps)))*100)",
+            "matchedExpression": "@local.extra_steps",
+            "type": "local",
+            "fieldName": "extra_steps"
+          },
+          {
+            "fullExpression": "@calc(((@local.active_index)/(@local.article_count + Number(@local.extra_steps)))*100)",
+            "matchedExpression": "@calc(((@local.active_index)/(@local.article_count + Number(@local.extra_steps)))*100)",
             "type": "calc",
-            "fieldName": "((@local.active_index)/@local.article_count)*100"
+            "fieldName": "((@local.active_index)/(@local.article_count + Number(@local.extra_steps)))*100"
           }
         ]
       },
@@ -212,7 +224,10 @@
         "@local.article_count": [
           "value"
         ],
-        "@calc(((@local.active_index)/@local.article_count)*100)": [
+        "@local.extra_steps": [
+          "value"
+        ],
+        "@calc(((@local.active_index)/(@local.article_count + Number(@local.extra_steps)))*100)": [
           "value"
         ]
       }
@@ -225,8 +240,8 @@
       },
       "exclude_from_translation": true,
       "condition": false,
-      "name": "text_17",
-      "_nested_name": "text_17",
+      "name": "text_18",
+      "_nested_name": "text_18",
       "_dynamicFields": {
         "value": [
           {
@@ -251,8 +266,8 @@
       },
       "exclude_from_translation": true,
       "condition": false,
-      "name": "text_18",
-      "_nested_name": "text_18",
+      "name": "text_19",
+      "_nested_name": "text_19",
       "_dynamicFields": {
         "value": [
           {
@@ -277,8 +292,8 @@
       },
       "exclude_from_translation": true,
       "condition": false,
-      "name": "text_19",
-      "_nested_name": "text_19",
+      "name": "text_20",
+      "_nested_name": "text_20",
       "_dynamicFields": {
         "value": [
           {
@@ -303,8 +318,8 @@
       },
       "exclude_from_translation": true,
       "condition": false,
-      "name": "text_20",
-      "_nested_name": "text_20",
+      "name": "text_21",
+      "_nested_name": "text_21",
       "_dynamicFields": {
         "value": [
           {
@@ -329,8 +344,8 @@
       },
       "exclude_from_translation": true,
       "condition": false,
-      "name": "text_21",
-      "_nested_name": "text_21",
+      "name": "text_22",
+      "_nested_name": "text_22",
       "_dynamicFields": {
         "value": [
           {
@@ -368,8 +383,8 @@
         "filter": "@item.tag_course == @local.course_id && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))"
       },
       "condition": "@local.course_id !== \"test\"",
-      "name": "data_items_22",
-      "_nested_name": "data_items_22",
+      "name": "data_items_23",
+      "_nested_name": "data_items_23",
       "_dynamicFields": {
         "value": [
           {
@@ -524,8 +539,8 @@
           "_raw": "data_changed | set_local : article_count: @items.length"
         }
       ],
-      "name": "data_items_23",
-      "_nested_name": "data_items_23",
+      "name": "data_items_24",
+      "_nested_name": "data_items_24",
       "_dynamicFields": {
         "value": [
           {
@@ -843,8 +858,8 @@
         "value": {}
       },
       "condition": false,
-      "name": "text_31",
-      "_nested_name": "text_31",
+      "name": "text_32",
+      "_nested_name": "text_32",
       "_dynamicFields": {
         "value": [
           {
@@ -1751,6 +1766,7 @@
                                 "value": {}
                               },
                               "exclude_from_translation": true,
+                              "condition": "@local.extra_steps== 0",
                               "type": "set_variable",
                               "_nested_name": "enable_dynamic_data_actions.only_for_active_index.cond_multi_art.article_last.article.nav_buttons.next_icon_src",
                               "_dynamicFields": {
@@ -1761,11 +1777,22 @@
                                     "type": "global",
                                     "fieldName": "first_completion_icon"
                                   }
+                                ],
+                                "condition": [
+                                  {
+                                    "fullExpression": "@local.extra_steps== 0",
+                                    "matchedExpression": "@local.extra_steps",
+                                    "type": "local",
+                                    "fieldName": "extra_steps"
+                                  }
                                 ]
                               },
                               "_dynamicDependencies": {
                                 "@global.first_completion_icon": [
                                   "value"
+                                ],
+                                "@local.extra_steps": [
+                                  "condition"
                                 ]
                               }
                             }
@@ -2092,6 +2119,7 @@
                                 "value": {}
                               },
                               "exclude_from_translation": true,
+                              "condition": "@local.extra_steps == 0",
                               "type": "set_variable",
                               "_nested_name": "enable_dynamic_data_actions.only_for_active_index.cond_multi_art.article_last_in_course.article.nav_buttons.next_icon_src",
                               "_dynamicFields": {
@@ -2102,11 +2130,22 @@
                                     "type": "global",
                                     "fieldName": "first_completion_icon"
                                   }
+                                ],
+                                "condition": [
+                                  {
+                                    "fullExpression": "@local.extra_steps == 0",
+                                    "matchedExpression": "@local.extra_steps",
+                                    "type": "local",
+                                    "fieldName": "extra_steps"
+                                  }
                                 ]
                               },
                               "_dynamicDependencies": {
                                 "@global.first_completion_icon": [
                                   "value"
+                                ],
+                                "@local.extra_steps": [
+                                  "condition"
                                 ]
                               }
                             }
@@ -2413,8 +2452,8 @@
     }
   ],
   "_source": {
-    "name": "kids_teens_global V2",
-    "path": "templates/PLH module_navigation.xlsx",
-    "url": "https://docs.google.com/spreadsheets/d/1upg0i3Kz-ccJ44ZfbV49SWmehVpvHW3r9kBtc-bDRFI"
+    "name": "kids_teens_mx",
+    "path": "templates/PLH proximal outcomes.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/17Ti5gmQDWeKBrprr75UlTLVG7VCdYXQtLG31Ch8O4JE"
   }
 }

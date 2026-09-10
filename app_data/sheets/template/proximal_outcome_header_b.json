@@ -110,7 +110,7 @@
     },
     {
       "type": "plh_lesson_cta",
-      "value": "@local.title 14",
+      "value": "@local.title",
       "action_list": [
         {
           "trigger": "click",
@@ -303,7 +303,7 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@local.title 14",
+            "fullExpression": "@local.title",
             "matchedExpression": "@local.title",
             "type": "local",
             "fieldName": "title"
@@ -595,7 +595,7 @@
     },
     {
       "type": "plh_lesson_cta",
-      "value": "@local.title 7",
+      "value": "@local.title",
       "action_list": [
         {
           "trigger": "click",
@@ -731,7 +731,7 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@local.title 7",
+            "fullExpression": "@local.title",
             "matchedExpression": "@local.title",
             "type": "local",
             "fieldName": "title"

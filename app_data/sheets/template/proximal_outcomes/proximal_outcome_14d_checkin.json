@@ -39,6 +39,12 @@
       }
     },
     {
+      "name": "module_article_count",
+      "value": 0,
+      "type": "set_variable",
+      "_nested_name": "module_article_count"
+    },
+    {
       "type": "update_action_list",
       "name": "close_on_exit",
       "action_list": [
@@ -284,6 +290,75 @@
               }
             },
             {
+              "name": "page_progress",
+              "value": "@calc((Number(@local.module_article_count) + @item.row_index) / (Number(@local.module_article_count) + @local.last_page_index + 1) * 100)",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "loop_pages.display_group_1_@item.id.page_progress",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@calc((Number(@local.module_article_count) + @item.row_index) / (Number(@local.module_article_count) + @local.last_page_index + 1) * 100)",
+                    "matchedExpression": "@local.module_article_count",
+                    "type": "local",
+                    "fieldName": "module_article_count"
+                  },
+                  {
+                    "fullExpression": "@calc((Number(@local.module_article_count) + @item.row_index) / (Number(@local.module_article_count) + @local.last_page_index + 1) * 100)",
+                    "matchedExpression": "@item.row_index",
+                    "type": "item",
+                    "fieldName": "row_index"
+                  },
+                  {
+                    "fullExpression": "@calc((Number(@local.module_article_count) + @item.row_index) / (Number(@local.module_article_count) + @local.last_page_index + 1) * 100)",
+                    "matchedExpression": "@local.module_article_count",
+                    "type": "local",
+                    "fieldName": "module_article_count"
+                  },
+                  {
+                    "fullExpression": "@calc((Number(@local.module_article_count) + @item.row_index) / (Number(@local.module_article_count) + @local.last_page_index + 1) * 100)",
+                    "matchedExpression": "@local.last_page_index",
+                    "type": "local",
+                    "fieldName": "last_page_index"
+                  },
+                  {
+                    "fullExpression": "@calc((Number(@local.module_article_count) + @item.row_index) / (Number(@local.module_article_count) + @local.last_page_index + 1) * 100)",
+                    "matchedExpression": "@calc((Number(@local.module_article_count) + @item.row_index) / (Number(@local.module_article_count) + @local.last_page_index + 1) * 100)",
+                    "type": "calc",
+                    "fieldName": "(Number(@local.module_article_count) + @item.row_index) / (Number(@local.module_article_count) + @local.last_page_index + 1) * 100"
+                  }
+                ],
+                "_nested_name": [
+                  {
+                    "fullExpression": "loop_pages.display_group_1_@item.id.page_progress",
+                    "matchedExpression": "@item.id.page_progress",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.module_article_count": [
+                  "value",
+                  "value"
+                ],
+                "@item.row_index": [
+                  "value"
+                ],
+                "@local.last_page_index": [
+                  "value"
+                ],
+                "@calc((Number(@local.module_article_count) + @item.row_index) / (Number(@local.module_article_count) + @local.last_page_index + 1) * 100)": [
+                  "value"
+                ],
+                "@item.id.page_progress": [
+                  "_nested_name"
+                ]
+              }
+            },
+            {
               "type": "template",
               "name": "page_header",
               "value": "proximal_outcome_header",
@@ -367,6 +442,62 @@
                       "_nested_name"
                     ]
                   }
+                },
+                {
+                  "name": "show_progress",
+                  "value": true,
+                  "type": "set_variable",
+                  "_nested_name": "loop_pages.display_group_1_@item.id.page_header.show_progress",
+                  "_dynamicFields": {
+                    "_nested_name": [
+                      {
+                        "fullExpression": "loop_pages.display_group_1_@item.id.page_header.show_progress",
+                        "matchedExpression": "@item.id.page_header.show_progress",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.id.page_header.show_progress": [
+                      "_nested_name"
+                    ]
+                  }
+                },
+                {
+                  "name": "progress",
+                  "value": "@local.page_progress",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "type": "set_variable",
+                  "_nested_name": "loop_pages.display_group_1_@item.id.page_header.progress",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@local.page_progress",
+                        "matchedExpression": "@local.page_progress",
+                        "type": "local",
+                        "fieldName": "page_progress"
+                      }
+                    ],
+                    "_nested_name": [
+                      {
+                        "fullExpression": "loop_pages.display_group_1_@item.id.page_header.progress",
+                        "matchedExpression": "@item.id.page_header.progress",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.page_progress": [
+                      "value"
+                    ],
+                    "@item.id.page_header.progress": [
+                      "_nested_name"
+                    ]
+                  }
                 }
               ],
               "_nested_name": "loop_pages.display_group_1_@item.id.page_header",
@@ -413,24 +544,6 @@
               "_nested_name"
             ]
           }
-        },
-        {
-          "type": "display_group",
-          "name": "dg_top",
-          "rows": [
-            {
-              "type": "task_progress_bar",
-              "parameter_list": {
-                "task_group_data": "proximal_outcome_14d_pages"
-              },
-              "style_list": [
-                "flex: 1"
-              ],
-              "name": "task_progress_bar_1",
-              "_nested_name": "loop_pages.dg_top.task_progress_bar_1"
-            }
-          ],
-          "_nested_name": "loop_pages.dg_top"
         },
         {
           "type": "template",
