@@ -29,6 +29,22 @@
       "comments": "filter: (@item.id !== @gen.id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship)) ;"
     },
     {
+      "name": "articles_suffix",
+      "value": "_article_tasks"
+    },
+    {
+      "name": "articles_list_name",
+      "value": "@local.module_id@local.articles_suffix"
+    },
+    {
+      "name": "articles_data",
+      "value": "@data.@local.articles_list_name"
+    },
+    {
+      "name": "module_article_count",
+      "value": "@calc(Object.keys(@local.articles_data).length)"
+    },
+    {
       "name": "days_since_prox_7d_last",
       "value": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@field.prox_7d_last_ts).setHours(0,0,0,0))))",
       "exclude_from_translation": true
@@ -76,7 +92,7 @@
     },
     {
       "type": "text",
-      "value": "has_PO_questions: @local.has_PO_questions\ndays_since_prox_7d_last: @local.days_since_prox_7d_last\ndays_since_prox_14d_last: @local.days_since_prox_14d_last\nhas_PO_7: @local.has_PO_7\nhas_PO_14: @local.has_PO_14\nPO_type: @local.PO_type\nshow_PO: @local.show_PO",
+      "value": "has_PO_questions: @local.has_PO_questions\ndays_since_prox_7d_last: @local.days_since_prox_7d_last\ndays_since_prox_14d_last: @local.days_since_prox_14d_last\nhas_PO_7: @local.has_PO_7\nhas_PO_14: @local.has_PO_14\nPO_type: @local.PO_type\nshow_PO: @local.show_PO\nm article count: @local.module_article_count\narticle list name: @local.articles_list_name",
       "condition": false,
       "exclude_from_translation": true
     },
@@ -86,6 +102,7 @@
       "value": "@data.activity_tasks",
       "action_list": "data_changed | set_local: picked_activity_id: @items[0]?.id; ",
       "parameter_list": "filter: @item.locked && (@fields.child_age === undefined || !@item.child_age_list || ([].concat(@item.child_age_list)).map(x => String(x)).includes(String(@fields.child_age)));\nshuffle;\nlimit: 1;",
+      "condition": "!@local.picked_activity_id",
       "exclude_from_translation": true,
       "comments": "filter: @item.locked && (!@item.child_age_list || @item.child_age_list.includes(@fields.child_age));\nshuffle;\nlimit: 1;"
     },
@@ -113,6 +130,42 @@
       "value": "@calc(@local.not_comp_count == 0)"
     },
     {
+      "type": "begin_nested_properties",
+      "name": "module_start_at_id"
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "module"
+    },
+    {
+      "name": "extra_steps",
+      "value": "@calc(Object.keys(@data.proximal_outcome_7d_pages).length)"
+    },
+    {
+      "type": "end_nested_properties"
+    },
+    {
+      "type": "end_nested_properties"
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "module_start_at_id_unlock_all"
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "module"
+    },
+    {
+      "name": "extra_steps",
+      "value": "@calc(Object.keys(@data.proximal_outcome_7d_pages).length)"
+    },
+    {
+      "type": "end_nested_properties"
+    },
+    {
+      "type": "end_nested_properties"
+    },
+    {
       "type": "end_template"
     },
     {
@@ -137,6 +190,42 @@
     {
       "name": "unlock_all",
       "value": "@calc(@local.not_comp_count == 0)"
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "module_start_at_id"
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "module"
+    },
+    {
+      "name": "extra_steps",
+      "value": "@calc(Object.keys(@data.proximal_outcome_14d_pages).length)"
+    },
+    {
+      "type": "end_nested_properties"
+    },
+    {
+      "type": "end_nested_properties"
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "module_start_at_id_unlock_all"
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "module"
+    },
+    {
+      "name": "extra_steps",
+      "value": "@calc(Object.keys(@data.proximal_outcome_14d_pages).length)"
+    },
+    {
+      "type": "end_nested_properties"
+    },
+    {
+      "type": "end_nested_properties"
     },
     {
       "type": "end_template"
@@ -175,6 +264,10 @@
       "condition": "@local.show_PO && @local.PO_type == \"7days\""
     },
     {
+      "name": "module_article_count",
+      "value": "@local.module_article_count"
+    },
+    {
       "type": "end_template"
     },
     {
@@ -183,6 +276,10 @@
       "value": "proximal_outcome_14d_checkin",
       "action_list": "completed | nav_stack: close_top; \ncompleted | pop_up: unlock_play | variant: plh_completion;\nuncompleted | nav_stack: close_top;\nuncompleted | pop_up: unlock_play | variant: plh_completion;",
       "condition": "@local.show_PO && @local.PO_type == \"14days\""
+    },
+    {
+      "name": "module_article_count",
+      "value": "@local.module_article_count"
     },
     {
       "type": "end_template"

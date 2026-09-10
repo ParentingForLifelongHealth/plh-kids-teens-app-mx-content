@@ -71,8 +71,12 @@
       "value": 0
     },
     {
+      "name": "extra_steps",
+      "value": 0
+    },
+    {
       "name": "progress",
-      "value": "@calc(((@local.active_index)/@local.article_count)*100)"
+      "value": "@calc(((@local.active_index)/(@local.article_count + Number(@local.extra_steps)))*100)"
     },
     {
       "type": "text",
@@ -296,7 +300,8 @@
     {
       "name": "next_icon_src",
       "value": "@global.first_completion_icon",
-      "exclude_from_translation": true
+      "exclude_from_translation": true,
+      "condition": "@local.extra_steps== 0"
     },
     {
       "type": "end_nested_properties",
@@ -339,7 +344,8 @@
     {
       "name": "next_icon_src",
       "value": "@global.first_completion_icon",
-      "exclude_from_translation": true
+      "exclude_from_translation": true,
+      "condition": "@local.extra_steps == 0"
     },
     {
       "type": "end_nested_properties",
