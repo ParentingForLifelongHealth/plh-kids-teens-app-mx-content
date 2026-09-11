@@ -237,15 +237,18 @@
       "condition": "!@local.show_success_page",
       "rows": [
         {
-          "type": "title",
+          "type": "text",
           "name": "loading_profile_title",
           "value": "**@global.onboarding_loading_title**",
           "_translations": {
             "value": {}
           },
-          "parameter_list": {
-            "variant": "header"
-          },
+          "style_list": [
+            "font-size: 28px",
+            "font-weight: 700",
+            "line-height: 1.25",
+            "margin: 0"
+          ],
           "exclude_from_translation": true,
           "_nested_name": "page_downloading.loading_profile_title",
           "_dynamicFields": {
@@ -261,47 +264,6 @@
           "_dynamicDependencies": {
             "@global.onboarding_loading_title": [
               "value"
-            ]
-          }
-        },
-        {
-          "type": "text",
-          "name": "bar_1_title",
-          "value": "@data.onboarding_progress_bars.id_1.text",
-          "_translations": {
-            "value": {}
-          },
-          "style_list": [
-            "color: @data.onboarding_progress_bars.id_1.colour"
-          ],
-          "exclude_from_translation": true,
-          "_nested_name": "page_downloading.bar_1_title",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "@data.onboarding_progress_bars.id_1.text",
-                "matchedExpression": "@data.onboarding_progress_bars.id_1.text",
-                "type": "data",
-                "fieldName": "onboarding_progress_bars"
-              }
-            ],
-            "style_list": {
-              "0": [
-                {
-                  "fullExpression": "color: @data.onboarding_progress_bars.id_1.colour",
-                  "matchedExpression": "@data.onboarding_progress_bars.id_1.colour",
-                  "type": "data",
-                  "fieldName": "onboarding_progress_bars"
-                }
-              ]
-            }
-          },
-          "_dynamicDependencies": {
-            "@data.onboarding_progress_bars.id_1.text": [
-              "value"
-            ],
-            "@data.onboarding_progress_bars.id_1.colour": [
-              "style_list.0"
             ]
           }
         },
@@ -362,10 +324,15 @@
             }
           ],
           "parameter_list": {
+            "title": "@data.onboarding_progress_bars.id_1.text",
             "duration": "@data.onboarding_progress_bars.id_1.timespan",
             "auto_play": "@local.start",
-            "color": "@data.onboarding_progress_bars.id_1.colour"
+            "color": "@data.onboarding_progress_bars.id_1.colour",
+            "show_percentage": "true"
           },
+          "style_list": [
+            "margin-top: 28px"
+          ],
           "exclude_from_translation": true,
           "_nested_name": "page_downloading.bar_1",
           "_dynamicFields": {
@@ -414,6 +381,14 @@
               }
             },
             "parameter_list": {
+              "title": [
+                {
+                  "fullExpression": "@data.onboarding_progress_bars.id_1.text",
+                  "matchedExpression": "@data.onboarding_progress_bars.id_1.text",
+                  "type": "data",
+                  "fieldName": "onboarding_progress_bars"
+                }
+              ],
               "duration": [
                 {
                   "fullExpression": "@data.onboarding_progress_bars.id_1.timespan",
@@ -452,6 +427,9 @@
             "@calc(now())": [
               "action_list.1.params.entered_ts"
             ],
+            "@data.onboarding_progress_bars.id_1.text": [
+              "parameter_list.title"
+            ],
             "@data.onboarding_progress_bars.id_1.timespan": [
               "parameter_list.duration"
             ],
@@ -460,47 +438,6 @@
             ],
             "@data.onboarding_progress_bars.id_1.colour": [
               "parameter_list.color"
-            ]
-          }
-        },
-        {
-          "type": "text",
-          "name": "bar_2_title",
-          "value": "@data.onboarding_progress_bars.id_2.text",
-          "_translations": {
-            "value": {}
-          },
-          "style_list": [
-            "color: @data.onboarding_progress_bars.id_2.colour"
-          ],
-          "exclude_from_translation": true,
-          "_nested_name": "page_downloading.bar_2_title",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "@data.onboarding_progress_bars.id_2.text",
-                "matchedExpression": "@data.onboarding_progress_bars.id_2.text",
-                "type": "data",
-                "fieldName": "onboarding_progress_bars"
-              }
-            ],
-            "style_list": {
-              "0": [
-                {
-                  "fullExpression": "color: @data.onboarding_progress_bars.id_2.colour",
-                  "matchedExpression": "@data.onboarding_progress_bars.id_2.colour",
-                  "type": "data",
-                  "fieldName": "onboarding_progress_bars"
-                }
-              ]
-            }
-          },
-          "_dynamicDependencies": {
-            "@data.onboarding_progress_bars.id_2.text": [
-              "value"
-            ],
-            "@data.onboarding_progress_bars.id_2.colour": [
-              "style_list.0"
             ]
           }
         },
@@ -561,9 +498,11 @@
             }
           ],
           "parameter_list": {
+            "title": "@data.onboarding_progress_bars.id_2.text",
             "duration": "@data.onboarding_progress_bars.id_2.timespan",
             "auto_play": "@local.bar_1 == 100 && @local.start",
-            "color": "@data.onboarding_progress_bars.id_2.colour"
+            "color": "@data.onboarding_progress_bars.id_2.colour",
+            "show_percentage": "true"
           },
           "_nested_name": "page_downloading.bar_2",
           "_dynamicFields": {
@@ -612,6 +551,14 @@
               }
             },
             "parameter_list": {
+              "title": [
+                {
+                  "fullExpression": "@data.onboarding_progress_bars.id_2.text",
+                  "matchedExpression": "@data.onboarding_progress_bars.id_2.text",
+                  "type": "data",
+                  "fieldName": "onboarding_progress_bars"
+                }
+              ],
               "duration": [
                 {
                   "fullExpression": "@data.onboarding_progress_bars.id_2.timespan",
@@ -656,6 +603,9 @@
             "@calc(now())": [
               "action_list.1.params.entered_ts"
             ],
+            "@data.onboarding_progress_bars.id_2.text": [
+              "parameter_list.title"
+            ],
             "@data.onboarding_progress_bars.id_2.timespan": [
               "parameter_list.duration"
             ],
@@ -667,47 +617,6 @@
             ],
             "@data.onboarding_progress_bars.id_2.colour": [
               "parameter_list.color"
-            ]
-          }
-        },
-        {
-          "type": "text",
-          "name": "bar_3_title",
-          "value": "@data.onboarding_progress_bars.id_3.text",
-          "_translations": {
-            "value": {}
-          },
-          "action_list": [],
-          "style_list": [
-            "color: @data.onboarding_progress_bars.id_3.colour"
-          ],
-          "_nested_name": "page_downloading.bar_3_title",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "@data.onboarding_progress_bars.id_3.text",
-                "matchedExpression": "@data.onboarding_progress_bars.id_3.text",
-                "type": "data",
-                "fieldName": "onboarding_progress_bars"
-              }
-            ],
-            "style_list": {
-              "0": [
-                {
-                  "fullExpression": "color: @data.onboarding_progress_bars.id_3.colour",
-                  "matchedExpression": "@data.onboarding_progress_bars.id_3.colour",
-                  "type": "data",
-                  "fieldName": "onboarding_progress_bars"
-                }
-              ]
-            }
-          },
-          "_dynamicDependencies": {
-            "@data.onboarding_progress_bars.id_3.text": [
-              "value"
-            ],
-            "@data.onboarding_progress_bars.id_3.colour": [
-              "style_list.0"
             ]
           }
         },
@@ -792,9 +701,11 @@
             }
           ],
           "parameter_list": {
+            "title": "@data.onboarding_progress_bars.id_3.text",
             "duration": "@data.onboarding_progress_bars.id_3.timespan",
             "auto_play": "@local.bar_2 == 100 && @local.start",
-            "color": "@data.onboarding_progress_bars.id_3.colour"
+            "color": "@data.onboarding_progress_bars.id_3.colour",
+            "show_percentage": "true"
           },
           "_nested_name": "page_downloading.bar_3",
           "_dynamicFields": {
@@ -883,6 +794,14 @@
               }
             },
             "parameter_list": {
+              "title": [
+                {
+                  "fullExpression": "@data.onboarding_progress_bars.id_3.text",
+                  "matchedExpression": "@data.onboarding_progress_bars.id_3.text",
+                  "type": "data",
+                  "fieldName": "onboarding_progress_bars"
+                }
+              ],
               "duration": [
                 {
                   "fullExpression": "@data.onboarding_progress_bars.id_3.timespan",
@@ -931,6 +850,9 @@
               "action_list.4.args.1",
               "action_list.4._raw"
             ],
+            "@data.onboarding_progress_bars.id_3.text": [
+              "parameter_list.title"
+            ],
             "@data.onboarding_progress_bars.id_3.timespan": [
               "parameter_list.duration"
             ],
@@ -942,46 +864,6 @@
             ],
             "@data.onboarding_progress_bars.id_3.colour": [
               "parameter_list.color"
-            ]
-          }
-        },
-        {
-          "type": "text",
-          "name": "bar_4_title",
-          "value": "@data.onboarding_progress_bars.id_4.text",
-          "_translations": {
-            "value": {}
-          },
-          "style_list": [
-            "color: @data.onboarding_progress_bars.id_4.colour"
-          ],
-          "_nested_name": "page_downloading.bar_4_title",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "@data.onboarding_progress_bars.id_4.text",
-                "matchedExpression": "@data.onboarding_progress_bars.id_4.text",
-                "type": "data",
-                "fieldName": "onboarding_progress_bars"
-              }
-            ],
-            "style_list": {
-              "0": [
-                {
-                  "fullExpression": "color: @data.onboarding_progress_bars.id_4.colour",
-                  "matchedExpression": "@data.onboarding_progress_bars.id_4.colour",
-                  "type": "data",
-                  "fieldName": "onboarding_progress_bars"
-                }
-              ]
-            }
-          },
-          "_dynamicDependencies": {
-            "@data.onboarding_progress_bars.id_4.text": [
-              "value"
-            ],
-            "@data.onboarding_progress_bars.id_4.colour": [
-              "style_list.0"
             ]
           }
         },
@@ -1000,13 +882,23 @@
             }
           ],
           "parameter_list": {
+            "title": "@data.onboarding_progress_bars.id_4.text",
             "duration": "@data.onboarding_progress_bars.id_4.timespan",
             "auto_play": "@local.bar_3 == 100 && @local.start",
-            "color": "@data.onboarding_progress_bars.id_4.colour"
+            "color": "@data.onboarding_progress_bars.id_4.colour",
+            "show_percentage": "true"
           },
           "_nested_name": "page_downloading.bar_4",
           "_dynamicFields": {
             "parameter_list": {
+              "title": [
+                {
+                  "fullExpression": "@data.onboarding_progress_bars.id_4.text",
+                  "matchedExpression": "@data.onboarding_progress_bars.id_4.text",
+                  "type": "data",
+                  "fieldName": "onboarding_progress_bars"
+                }
+              ],
               "duration": [
                 {
                   "fullExpression": "@data.onboarding_progress_bars.id_4.timespan",
@@ -1040,6 +932,9 @@
             }
           },
           "_dynamicDependencies": {
+            "@data.onboarding_progress_bars.id_4.text": [
+              "parameter_list.title"
+            ],
             "@data.onboarding_progress_bars.id_4.timespan": [
               "parameter_list.duration"
             ],
@@ -1182,7 +1077,7 @@
           "rows": [
             {
               "type": "button",
-              "name": "button_completed_3",
+              "name": "button_completed",
               "value": "@global.continue",
               "_translations": {
                 "value": {}
@@ -1218,7 +1113,7 @@
               "parameter_list": {
                 "style": "navigation"
               },
-              "_nested_name": "page_success.dg_footer.button_completed_3",
+              "_nested_name": "page_success.dg_footer.button_completed",
               "_dynamicFields": {
                 "value": [
                   {

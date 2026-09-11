@@ -12,10 +12,10 @@
 | audio | 3 |
 | button | 127 |
 | combo_box | 27 |
-| data_items | 260 |
+| data_items | 249 |
 | debug_toggle | 1 |
 | display_grid | 4 |
-| display_group | 137 |
+| display_group | 159 |
 | drawer | 1 |
 | google_sign_in_button | 2 |
 | image | 27 |
@@ -38,16 +38,16 @@
 | round_button | 26 |
 | select_text | 1 |
 | set_field | 4 |
-| set_variable | 6415 |
+| set_variable | 6624 |
 | simple_checkbox | 1 |
 | task_card | 4 |
 | task_progress_bar | 5 |
-| template | 1682 |
-| text | 478 |
+| template | 1781 |
+| text | 508 |
 | text_area | 5 |
 | text_box | 21 |
 | text_bubble | 26 |
-| title | 70 |
+| title | 69 |
 | toggle_bar | 5 |
 | update_action_list | 4 |
 | video | 3 |
@@ -59,7 +59,7 @@
 
 | type | count |
 | --- | --- |
-| add_data | 311 |
+| add_data | 399 |
 | app_update | 1 |
 | asset_pack | 4 |
 | auth | 3 |
@@ -73,19 +73,19 @@
 | feedback | 13 |
 | go_to | 26 |
 | nav | 1 |
-| nav_stack | 949 |
-| plh_certificate | 12 |
-| pop_up | 399 |
+| nav_stack | 1103 |
+| plh_certificate | 34 |
+| pop_up | 443 |
 | reset_app | 4 |
 | reset_data | 3 |
 | save_to_device | 1 |
-| set_data | 896 |
-| set_field | 1163 |
+| set_data | 1193 |
+| set_field | 1462 |
 | set_item | 30 |
-| set_local | 518 |
+| set_local | 606 |
 | share | 3 |
 | task | 2 |
-| toast | 1 |
+| toast | 56 |
 | user | 3 |
 </details>
 
@@ -94,7 +94,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 76298 KB | 76.3 MB |
+| total | 79025 KB | 79 MB |
 | unused | 14585 KB | 14.6 MB |
 </details>
 
@@ -195,6 +195,26 @@ Assets that have references within sheets but do not appear in app-data
 
 | path | count |
 | --- | --- |
+| audio/relax/relax _22.m4a | 1 |
+| audio/relax/relax_10.m4a | 1 |
+| audio/relax/relax_11.m4a | 1 |
+| audio/relax/relax_12.m4a | 1 |
+| audio/relax/relax_13.m4a | 1 |
+| audio/relax/relax_14.m4a | 1 |
+| audio/relax/relax_15.m4a | 1 |
+| audio/relax/relax_16.m4a | 1 |
+| audio/relax/relax_17.m4a | 1 |
+| audio/relax/relax_18.m4a | 1 |
+| audio/relax/relax_19.m4a | 1 |
+| audio/relax/relax_20.m4a | 1 |
+| audio/relax/relax_21.m4a | 1 |
+| audio/relax/relax_23.m4a | 1 |
+| audio/relax/relax_24.m4a | 1 |
+| audio/relax/relax_4.m4a | 1 |
+| audio/relax/relax_5.m4a | 1 |
+| audio/relax/relax_6.m4a | 1 |
+| audio/relax/relax_7.m4a | 1 |
+| audio/relax/relax_8.m4a | 1 |
 | images/logos/app_logo.png | 1 |
 | images/logos/plh_logomark.png | 1 |
 </details>
@@ -206,6 +226,14 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | path | size_kb | count |
 | --- | --- | --- |
+| audio/relax/female/relax_14.m4a | 290.6 | 21 |
+| audio/relax/female/relax_15.m4a | 360.2 | 21 |
+| audio/relax/female/relax_16.m4a | 301.4 | 21 |
+| audio/relax/female/relax_17.m4a | 335.8 | 20 |
+| audio/relax/male/relax_1.m4a | 213.2 | 21 |
+| audio/relax/male/relax_2.m4a | 451.3 | 21 |
+| audio/relax/male/relax_3.m4a | 244.5 | 21 |
+| audio/relax/male/relax_9.m4a | 530.4 | 20 |
 | images/activities/aciegas_c.svg | 32.8 | 2 |
 | images/activities/aciegas_t.svg | 27.2 | 2 |
 | images/activities/activate_c.svg | 146.8 | 2 |

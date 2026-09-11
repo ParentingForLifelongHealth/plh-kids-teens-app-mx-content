@@ -385,13 +385,14 @@
     {
       "type": "radio_button_grid",
       "name": "domain_select",
-      "value": "@fields.selected_domain_id",
       "parameter_list": {
         "options_key": "id",
         "options_value": "title",
         "style": "secondary",
         "item_width": "140px",
-        "grid_gap": "12px"
+        "grid_gap": "12px",
+        "value_as_object": "true",
+        "initial_selected_option_key": "@fields.selected_domain_id"
       },
       "rows": [
         {
@@ -523,18 +524,20 @@
       ],
       "_nested_name": "domain_select",
       "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "@fields.selected_domain_id",
-            "matchedExpression": "@fields.selected_domain_id",
-            "type": "fields",
-            "fieldName": "selected_domain_id"
-          }
-        ]
+        "parameter_list": {
+          "initial_selected_option_key": [
+            {
+              "fullExpression": "@fields.selected_domain_id",
+              "matchedExpression": "@fields.selected_domain_id",
+              "type": "fields",
+              "fieldName": "selected_domain_id"
+            }
+          ]
+        }
       },
       "_dynamicDependencies": {
         "@fields.selected_domain_id": [
-          "value"
+          "parameter_list.initial_selected_option_key"
         ]
       }
     },
@@ -605,19 +608,37 @@
               "action_id": "set_field",
               "args": [
                 "selected_domain_id",
+                "@local.domain_select.key"
+              ],
+              "_raw": "click | set_field: selected_domain_id: @local.domain_select.key"
+            },
+            {
+              "trigger": "click",
+              "action_id": "set_field",
+              "args": [
+                "selected_domain_value",
+                "@local.domain_select.value"
+              ],
+              "_raw": "click | set_field: selected_domain_value: @local.domain_select.value"
+            },
+            {
+              "trigger": "click",
+              "action_id": "set_field",
+              "args": [
+                "selected_domain",
                 "@local.domain_select"
               ],
-              "_raw": "click | set_field: selected_domain_id: @local.domain_select"
+              "_raw": "click | set_field: selected_domain: @local.domain_select"
             },
             {
               "trigger": "click",
               "action_id": "set_data",
               "args": [],
-              "_raw": "click | set_data |\n_list_id: goal_setting_data,\n_id: domain,\nselected_id: @local.domain_select,\noptions_offered: @local.displayed_domain_ids,\nexited_ts: @calc(now())",
+              "_raw": "click | set_data |\n_list_id: goal_setting_data,\n_id: domain,\nselected_id: @local.domain_select.key,\noptions_offered: @local.displayed_domain_ids,\nexited_ts: @calc(now())",
               "params": {
                 "_list_id": "goal_setting_data",
                 "_id": "domain",
-                "selected_id": "@local.domain_select",
+                "selected_id": "@local.domain_select.key",
                 "options_offered": "@local.displayed_domain_ids",
                 "exited_ts": "@calc(now())"
               }
@@ -654,6 +675,46 @@
                 "args": {
                   "1": [
                     {
+                      "fullExpression": "@local.domain_select.key",
+                      "matchedExpression": "@local.domain_select.key",
+                      "type": "local",
+                      "fieldName": "domain_select"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "click | set_field: selected_domain_id: @local.domain_select.key",
+                    "matchedExpression": "@local.domain_select.key",
+                    "type": "local",
+                    "fieldName": "domain_select"
+                  }
+                ]
+              },
+              "1": {
+                "args": {
+                  "1": [
+                    {
+                      "fullExpression": "@local.domain_select.value",
+                      "matchedExpression": "@local.domain_select.value",
+                      "type": "local",
+                      "fieldName": "domain_select"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "click | set_field: selected_domain_value: @local.domain_select.value",
+                    "matchedExpression": "@local.domain_select.value",
+                    "type": "local",
+                    "fieldName": "domain_select"
+                  }
+                ]
+              },
+              "2": {
+                "args": {
+                  "1": [
+                    {
                       "fullExpression": "@local.domain_select",
                       "matchedExpression": "@local.domain_select",
                       "type": "local",
@@ -663,29 +724,29 @@
                 },
                 "_raw": [
                   {
-                    "fullExpression": "click | set_field: selected_domain_id: @local.domain_select",
+                    "fullExpression": "click | set_field: selected_domain: @local.domain_select",
                     "matchedExpression": "@local.domain_select",
                     "type": "local",
                     "fieldName": "domain_select"
                   }
                 ]
               },
-              "1": {
+              "3": {
                 "_raw": [
                   {
-                    "fullExpression": "click | set_data |\n_list_id: goal_setting_data,\n_id: domain,\nselected_id: @local.domain_select,\noptions_offered: @local.displayed_domain_ids,\nexited_ts: @calc(now())",
-                    "matchedExpression": "@local.domain_select",
+                    "fullExpression": "click | set_data |\n_list_id: goal_setting_data,\n_id: domain,\nselected_id: @local.domain_select.key,\noptions_offered: @local.displayed_domain_ids,\nexited_ts: @calc(now())",
+                    "matchedExpression": "@local.domain_select.key",
                     "type": "local",
                     "fieldName": "domain_select"
                   },
                   {
-                    "fullExpression": "click | set_data |\n_list_id: goal_setting_data,\n_id: domain,\nselected_id: @local.domain_select,\noptions_offered: @local.displayed_domain_ids,\nexited_ts: @calc(now())",
+                    "fullExpression": "click | set_data |\n_list_id: goal_setting_data,\n_id: domain,\nselected_id: @local.domain_select.key,\noptions_offered: @local.displayed_domain_ids,\nexited_ts: @calc(now())",
                     "matchedExpression": "@local.displayed_domain_ids",
                     "type": "local",
                     "fieldName": "displayed_domain_ids"
                   },
                   {
-                    "fullExpression": "click | set_data |\n_list_id: goal_setting_data,\n_id: domain,\nselected_id: @local.domain_select,\noptions_offered: @local.displayed_domain_ids,\nexited_ts: @calc(now())",
+                    "fullExpression": "click | set_data |\n_list_id: goal_setting_data,\n_id: domain,\nselected_id: @local.domain_select.key,\noptions_offered: @local.displayed_domain_ids,\nexited_ts: @calc(now())",
                     "matchedExpression": "@calc(now())",
                     "type": "calc",
                     "fieldName": "now()"
@@ -694,8 +755,8 @@
                 "params": {
                   "selected_id": [
                     {
-                      "fullExpression": "@local.domain_select",
-                      "matchedExpression": "@local.domain_select",
+                      "fullExpression": "@local.domain_select.key",
+                      "matchedExpression": "@local.domain_select.key",
                       "type": "local",
                       "fieldName": "domain_select"
                     }
@@ -734,19 +795,27 @@
             "@global.continue": [
               "value"
             ],
-            "@local.domain_select": [
+            "@local.domain_select.key": [
               "action_list.0.args.1",
               "action_list.0._raw",
-              "action_list.1._raw",
-              "action_list.1.params.selected_id"
+              "action_list.3._raw",
+              "action_list.3.params.selected_id"
+            ],
+            "@local.domain_select.value": [
+              "action_list.1.args.1",
+              "action_list.1._raw"
+            ],
+            "@local.domain_select": [
+              "action_list.2.args.1",
+              "action_list.2._raw"
             ],
             "@local.displayed_domain_ids": [
-              "action_list.1._raw",
-              "action_list.1.params.options_offered"
+              "action_list.3._raw",
+              "action_list.3.params.options_offered"
             ],
             "@calc(now())": [
-              "action_list.1._raw",
-              "action_list.1.params.exited_ts"
+              "action_list.3._raw",
+              "action_list.3.params.exited_ts"
             ],
             "!@local.completed_enabled": [
               "parameter_list.disabled"

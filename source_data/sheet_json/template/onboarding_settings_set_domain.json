@@ -60,8 +60,7 @@
     {
       "type": "begin_radio_button_grid",
       "name": "domain_select",
-      "value": "@fields.selected_domain_id",
-      "parameter_list": "options_key: id;\noptions_value: title;\nstyle: secondary;\nitem_width: 140px;\ngrid_gap: 12px;"
+      "parameter_list": "options_key: id;\noptions_value: title;\nstyle: secondary;\nitem_width: 140px;\ngrid_gap: 12px;\nvalue_as_object: true;\ninitial_selected_option_key: @fields.selected_domain_id;"
     },
     {
       "type": "begin_data_items",
@@ -95,7 +94,7 @@
       "type": "button",
       "name": "button_completed",
       "value": "@global.continue",
-      "action_list": "click | set_field: selected_domain_id: @local.domain_select;\nclick | set_data |\n_list_id: goal_setting_data,\n_id: domain,\nselected_id: @local.domain_select,\noptions_offered: @local.displayed_domain_ids,\nexited_ts: @calc(now());\nclick | emit: completed;",
+      "action_list": "click | set_field: selected_domain_id: @local.domain_select.key;\nclick | set_field: selected_domain_value: @local.domain_select.value;\nclick | set_field: selected_domain: @local.domain_select;\nclick | set_data |\n_list_id: goal_setting_data,\n_id: domain,\nselected_id: @local.domain_select.key,\noptions_offered: @local.displayed_domain_ids,\nexited_ts: @calc(now());\nclick | emit: completed;",
       "parameter_list": "style: navigation;\ndisabled: !@local.completed_enabled",
       "style_list": "flex: 1",
       "exclude_from_translation": true
