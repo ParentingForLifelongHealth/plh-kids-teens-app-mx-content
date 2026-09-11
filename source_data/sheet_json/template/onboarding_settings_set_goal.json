@@ -97,7 +97,7 @@
       "value": "@global.continue",
       "action_list": "click | set_field: selected_goal: @local.goal_select;\nclick | set_field: selected_goal_id: @local.goal_select.key;\nclick | set_field: selected_goal_value: @local.goal_select.value;\nclick | set_data |\n_list_id: goal_setting_data,\n_id: goal,\nselected_id: @local.goal_select.key,\noptions_offered: @local.displayed_goal_ids,\nexited_ts: @calc(now());\nclick | emit: completed;",
       "parameter_list": "style: navigation;\ndisabled: !@local.completed_enabled",
-      "condition": "@local.goal_select && @local.goal_select.key != \"other_goal\"",
+      "condition": "!@local.goal_select || (@local.goal_select && @local.goal_select.key != \"other_goal\")",
       "style_list": "flex: 1"
     },
     {

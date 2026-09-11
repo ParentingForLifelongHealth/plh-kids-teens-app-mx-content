@@ -492,7 +492,7 @@
             "style": "navigation",
             "disabled": "!@local.completed_enabled"
           },
-          "condition": "@local.goal_select && @local.goal_select.key != \"other_goal\"",
+          "condition": "!@local.goal_select || (@local.goal_select && @local.goal_select.key != \"other_goal\")",
           "style_list": [
             "flex: 1"
           ],
@@ -628,13 +628,19 @@
             },
             "condition": [
               {
-                "fullExpression": "@local.goal_select && @local.goal_select.key != \"other_goal\"",
+                "fullExpression": "!@local.goal_select || (@local.goal_select && @local.goal_select.key != \"other_goal\")",
+                "matchedExpression": "!@local.goal_select",
+                "type": "local",
+                "fieldName": "goal_select"
+              },
+              {
+                "fullExpression": "!@local.goal_select || (@local.goal_select && @local.goal_select.key != \"other_goal\")",
                 "matchedExpression": "@local.goal_select",
                 "type": "local",
                 "fieldName": "goal_select"
               },
               {
-                "fullExpression": "@local.goal_select && @local.goal_select.key != \"other_goal\"",
+                "fullExpression": "!@local.goal_select || (@local.goal_select && @local.goal_select.key != \"other_goal\")",
                 "matchedExpression": "@local.goal_select.key",
                 "type": "local",
                 "fieldName": "goal_select"
@@ -671,6 +677,9 @@
             ],
             "!@local.completed_enabled": [
               "parameter_list.disabled"
+            ],
+            "!@local.goal_select": [
+              "condition"
             ]
           }
         },
