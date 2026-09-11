@@ -46,63 +46,37 @@
       "condition": "!@local.show_success_page"
     },
     {
-      "type": "title",
+      "type": "text",
       "name": "loading_profile_title",
       "value": "**@global.onboarding_loading_title**",
-      "parameter_list": "variant: header",
-      "exclude_from_translation": true
-    },
-    {
-      "type": "text",
-      "name": "bar_1_title",
-      "value": "@data.onboarding_progress_bars.id_1.text",
-      "style_list": "color: @data.onboarding_progress_bars.id_1.colour",
+      "style_list": "font-size: 28px;\nfont-weight: 700;\nline-height: 1.25;\nmargin: 0; ",
       "exclude_from_translation": true
     },
     {
       "type": "plh_progress_bar",
       "name": "bar_1",
       "action_list": "on_progress: 50 | set_local: start: false;\non_progress: 50 | add_data |\n_list_id: proximal_outcome_data,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentry_point: @fields.proximal_outcome_time_point,\nentered_ts: @calc(now()),\nquestion_type: goal;\non_progress: 50 | set_field: curr_prox_out_row_id: new;\non_progress: 50 | pop_up: proximal_outcome_qs_goal;",
-      "parameter_list": "duration: @data.onboarding_progress_bars.id_1.timespan;\nauto_play: @local.start;\ncolor: @data.onboarding_progress_bars.id_1.colour",
-      "exclude_from_translation": true
-    },
-    {
-      "type": "text",
-      "name": "bar_2_title",
-      "value": "@data.onboarding_progress_bars.id_2.text",
-      "style_list": "color: @data.onboarding_progress_bars.id_2.colour",
+      "parameter_list": "title: @data.onboarding_progress_bars.id_1.text;\nduration: @data.onboarding_progress_bars.id_1.timespan;\nauto_play: @local.start;\ncolor: @data.onboarding_progress_bars.id_1.colour;\nshow_percentage: true;",
+      "style_list": "margin-top: 28px;",
       "exclude_from_translation": true
     },
     {
       "type": "plh_progress_bar",
       "name": "bar_2",
       "action_list": "on_progress: 50 | set_local: start: false;\non_progress: 50 | add_data |\n_list_id: proximal_outcome_data,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentry_point: @fields.proximal_outcome_time_point,\nentered_ts: @calc(now()),\nquestion_type: qs1;\non_progress: 50 | set_field: curr_prox_out_row_id: new;\non_progress: 50 | pop_up: proximal_outcome_qs_base_1;",
-      "parameter_list": "duration: @data.onboarding_progress_bars.id_2.timespan;\nauto_play: @local.bar_1 == 100 && @local.start;\ncolor: @data.onboarding_progress_bars.id_2.colour;"
-    },
-    {
-      "type": "text",
-      "name": "bar_3_title",
-      "value": "@data.onboarding_progress_bars.id_3.text",
-      "action_list": "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t",
-      "style_list": "color: @data.onboarding_progress_bars.id_3.colour"
+      "parameter_list": "title: @data.onboarding_progress_bars.id_2.text;\nduration: @data.onboarding_progress_bars.id_2.timespan;\nauto_play: @local.bar_1 == 100 && @local.start;\ncolor: @data.onboarding_progress_bars.id_2.colour;\nshow_percentage: true;"
     },
     {
       "type": "plh_progress_bar",
       "name": "bar_3",
       "action_list": "on_progress: 50 | set_local: start: false;\non_progress: 50 | add_data |\n_list_id: proximal_outcome_data,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentry_point: @fields.proximal_outcome_time_point,\nentered_ts: @calc(now()),\nquestion_type: qs2;\non_progress: 50 | set_field: curr_prox_out_row_id: new;\non_progress: 50 | set_field: prox_7d_last_ts: @calc(now());\non_progress: 50 | set_field: prox_14d_last_ts: @calc(now());\non_progress: 50 | pop_up: proximal_outcome_qs_base_2;",
-      "parameter_list": "duration: @data.onboarding_progress_bars.id_3.timespan;\nauto_play: @local.bar_2 == 100 && @local.start;;\ncolor: @data.onboarding_progress_bars.id_3.colour;"
-    },
-    {
-      "type": "text",
-      "name": "bar_4_title",
-      "value": "@data.onboarding_progress_bars.id_4.text",
-      "style_list": "color: @data.onboarding_progress_bars.id_4.colour"
+      "parameter_list": "title: @data.onboarding_progress_bars.id_3.text;\nduration: @data.onboarding_progress_bars.id_3.timespan;\nauto_play: @local.bar_2 == 100 && @local.start;\ncolor: @data.onboarding_progress_bars.id_3.colour;\nshow_percentage: true;"
     },
     {
       "type": "plh_progress_bar",
       "name": "bar_4",
       "action_list": "completed | set_local: show_success_page: true;",
-      "parameter_list": "duration: @data.onboarding_progress_bars.id_4.timespan;\nauto_play: @local.bar_3 == 100 && @local.start;;\ncolor: @data.onboarding_progress_bars.id_4.colour;"
+      "parameter_list": "title: @data.onboarding_progress_bars.id_4.text;\nduration: @data.onboarding_progress_bars.id_4.timespan;\nauto_play: @local.bar_3 == 100 && @local.start;\ncolor: @data.onboarding_progress_bars.id_4.colour;\nshow_percentage: true;"
     },
     {
       "type": "end_display_group"
@@ -139,7 +113,7 @@
     },
     {
       "type": "button",
-      "name": "button_completed_3",
+      "name": "button_completed",
       "value": "@global.continue",
       "action_list": "click | emit: completed;\nclick | set_field: onboarding_settings_completed: true;\nclick | set_field: proximal_outcome_time_point : before;",
       "parameter_list": "style: navigation;"
