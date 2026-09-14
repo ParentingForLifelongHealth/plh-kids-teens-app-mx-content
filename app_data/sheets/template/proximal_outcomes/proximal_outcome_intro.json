@@ -1,0 +1,483 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "proximal_outcomes",
+  "flow_name": "proximal_outcome_intro",
+  "status": "released",
+  "rows": [
+    {
+      "name": "speaker_position",
+      "value": "left",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "speaker_position"
+    },
+    {
+      "name": "variant",
+      "value": "gray",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "variant"
+    },
+    {
+      "name": "facilitator_id",
+      "value": "@fields.facilitator_id",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "facilitator_id",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields.facilitator_id",
+            "matchedExpression": "@fields.facilitator_id",
+            "type": "fields",
+            "fieldName": "facilitator_id"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.facilitator_id": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "facilitator_data",
+      "value": "characters.@local.facilitator_id",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "facilitator_data",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "characters.@local.facilitator_id",
+            "matchedExpression": "@local.facilitator_id",
+            "type": "local",
+            "fieldName": "facilitator_id"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.facilitator_id": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "facilitator_row",
+      "value": "@data.@local.facilitator_data",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "facilitator_row",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.@local.facilitator_data",
+            "matchedExpression": "@local.facilitator_data",
+            "type": "local",
+            "fieldName": "facilitator_data"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.facilitator_data": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "speaker_name",
+      "value": "@local.facilitator_row.name",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "speaker_name",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.facilitator_row.name",
+            "matchedExpression": "@local.facilitator_row.name",
+            "type": "local",
+            "fieldName": "facilitator_row"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.facilitator_row.name": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "speaker_image_asset",
+      "value": "@local.facilitator_row.image_asset",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "speaker_image_asset",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.facilitator_row.image_asset",
+            "matchedExpression": "@local.facilitator_row.image_asset",
+            "type": "local",
+            "fieldName": "facilitator_row"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.facilitator_row.image_asset": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text_bubble",
+      "name": "text_bubble",
+      "value": "@global.proximal_outcome_checkin_intro",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "speaker_image_asset": "@local.speaker_image_asset",
+        "speaker_name": "@local.speaker_name",
+        "speaker_position": "@local.speaker_position",
+        "variant": "@local.variant"
+      },
+      "condition": "@fields.selected_challenge_id != \"other\" && @fields.selected_goal_id != \"other_goal\"",
+      "exclude_from_translation": true,
+      "_nested_name": "text_bubble",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@global.proximal_outcome_checkin_intro",
+            "matchedExpression": "@global.proximal_outcome_checkin_intro",
+            "type": "global",
+            "fieldName": "proximal_outcome_checkin_intro"
+          }
+        ],
+        "parameter_list": {
+          "speaker_image_asset": [
+            {
+              "fullExpression": "@local.speaker_image_asset",
+              "matchedExpression": "@local.speaker_image_asset",
+              "type": "local",
+              "fieldName": "speaker_image_asset"
+            }
+          ],
+          "speaker_name": [
+            {
+              "fullExpression": "@local.speaker_name",
+              "matchedExpression": "@local.speaker_name",
+              "type": "local",
+              "fieldName": "speaker_name"
+            }
+          ],
+          "speaker_position": [
+            {
+              "fullExpression": "@local.speaker_position",
+              "matchedExpression": "@local.speaker_position",
+              "type": "local",
+              "fieldName": "speaker_position"
+            }
+          ],
+          "variant": [
+            {
+              "fullExpression": "@local.variant",
+              "matchedExpression": "@local.variant",
+              "type": "local",
+              "fieldName": "variant"
+            }
+          ]
+        },
+        "condition": [
+          {
+            "fullExpression": "@fields.selected_challenge_id != \"other\" && @fields.selected_goal_id != \"other_goal\"",
+            "matchedExpression": "@fields.selected_challenge_id",
+            "type": "fields",
+            "fieldName": "selected_challenge_id"
+          },
+          {
+            "fullExpression": "@fields.selected_challenge_id != \"other\" && @fields.selected_goal_id != \"other_goal\"",
+            "matchedExpression": "@fields.selected_goal_id",
+            "type": "fields",
+            "fieldName": "selected_goal_id"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@global.proximal_outcome_checkin_intro": [
+          "value"
+        ],
+        "@local.speaker_image_asset": [
+          "parameter_list.speaker_image_asset"
+        ],
+        "@local.speaker_name": [
+          "parameter_list.speaker_name"
+        ],
+        "@local.speaker_position": [
+          "parameter_list.speaker_position"
+        ],
+        "@local.variant": [
+          "parameter_list.variant"
+        ],
+        "@fields.selected_challenge_id": [
+          "condition"
+        ],
+        "@fields.selected_goal_id": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "text_bubble",
+      "name": "text_bubble",
+      "value": "@global.proximal_outcome_checkin_intro_no_goal",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "speaker_image_asset": "@local.speaker_image_asset",
+        "speaker_name": "@local.speaker_name",
+        "speaker_position": "@local.speaker_position",
+        "variant": "@local.variant"
+      },
+      "condition": "@fields.selected_challenge_id != \"other\" && @fields.selected_goal_id == \"other_goal\"",
+      "exclude_from_translation": true,
+      "_nested_name": "text_bubble",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@global.proximal_outcome_checkin_intro_no_goal",
+            "matchedExpression": "@global.proximal_outcome_checkin_intro_no_goal",
+            "type": "global",
+            "fieldName": "proximal_outcome_checkin_intro_no_goal"
+          }
+        ],
+        "parameter_list": {
+          "speaker_image_asset": [
+            {
+              "fullExpression": "@local.speaker_image_asset",
+              "matchedExpression": "@local.speaker_image_asset",
+              "type": "local",
+              "fieldName": "speaker_image_asset"
+            }
+          ],
+          "speaker_name": [
+            {
+              "fullExpression": "@local.speaker_name",
+              "matchedExpression": "@local.speaker_name",
+              "type": "local",
+              "fieldName": "speaker_name"
+            }
+          ],
+          "speaker_position": [
+            {
+              "fullExpression": "@local.speaker_position",
+              "matchedExpression": "@local.speaker_position",
+              "type": "local",
+              "fieldName": "speaker_position"
+            }
+          ],
+          "variant": [
+            {
+              "fullExpression": "@local.variant",
+              "matchedExpression": "@local.variant",
+              "type": "local",
+              "fieldName": "variant"
+            }
+          ]
+        },
+        "condition": [
+          {
+            "fullExpression": "@fields.selected_challenge_id != \"other\" && @fields.selected_goal_id == \"other_goal\"",
+            "matchedExpression": "@fields.selected_challenge_id",
+            "type": "fields",
+            "fieldName": "selected_challenge_id"
+          },
+          {
+            "fullExpression": "@fields.selected_challenge_id != \"other\" && @fields.selected_goal_id == \"other_goal\"",
+            "matchedExpression": "@fields.selected_goal_id",
+            "type": "fields",
+            "fieldName": "selected_goal_id"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@global.proximal_outcome_checkin_intro_no_goal": [
+          "value"
+        ],
+        "@local.speaker_image_asset": [
+          "parameter_list.speaker_image_asset"
+        ],
+        "@local.speaker_name": [
+          "parameter_list.speaker_name"
+        ],
+        "@local.speaker_position": [
+          "parameter_list.speaker_position"
+        ],
+        "@local.variant": [
+          "parameter_list.variant"
+        ],
+        "@fields.selected_challenge_id": [
+          "condition"
+        ],
+        "@fields.selected_goal_id": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "text_bubble",
+      "name": "text_bubble",
+      "value": "@global.proximal_outcome_checkin_intro_no_goal_no_chall",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "speaker_image_asset": "@local.speaker_image_asset",
+        "speaker_name": "@local.speaker_name",
+        "speaker_position": "@local.speaker_position",
+        "variant": "@local.variant"
+      },
+      "condition": "@fields.selected_challenge_id == \"other\"",
+      "exclude_from_translation": true,
+      "_nested_name": "text_bubble",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@global.proximal_outcome_checkin_intro_no_goal_no_chall",
+            "matchedExpression": "@global.proximal_outcome_checkin_intro_no_goal_no_chall",
+            "type": "global",
+            "fieldName": "proximal_outcome_checkin_intro_no_goal_no_chall"
+          }
+        ],
+        "parameter_list": {
+          "speaker_image_asset": [
+            {
+              "fullExpression": "@local.speaker_image_asset",
+              "matchedExpression": "@local.speaker_image_asset",
+              "type": "local",
+              "fieldName": "speaker_image_asset"
+            }
+          ],
+          "speaker_name": [
+            {
+              "fullExpression": "@local.speaker_name",
+              "matchedExpression": "@local.speaker_name",
+              "type": "local",
+              "fieldName": "speaker_name"
+            }
+          ],
+          "speaker_position": [
+            {
+              "fullExpression": "@local.speaker_position",
+              "matchedExpression": "@local.speaker_position",
+              "type": "local",
+              "fieldName": "speaker_position"
+            }
+          ],
+          "variant": [
+            {
+              "fullExpression": "@local.variant",
+              "matchedExpression": "@local.variant",
+              "type": "local",
+              "fieldName": "variant"
+            }
+          ]
+        },
+        "condition": [
+          {
+            "fullExpression": "@fields.selected_challenge_id == \"other\"",
+            "matchedExpression": "@fields.selected_challenge_id",
+            "type": "fields",
+            "fieldName": "selected_challenge_id"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@global.proximal_outcome_checkin_intro_no_goal_no_chall": [
+          "value"
+        ],
+        "@local.speaker_image_asset": [
+          "parameter_list.speaker_image_asset"
+        ],
+        "@local.speaker_name": [
+          "parameter_list.speaker_name"
+        ],
+        "@local.speaker_position": [
+          "parameter_list.speaker_position"
+        ],
+        "@local.variant": [
+          "parameter_list.variant"
+        ],
+        "@fields.selected_challenge_id": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "template",
+      "name": "nav_buttons",
+      "value": "proximal_outcome_nav_buttons",
+      "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "emit",
+          "args": [
+            "completed"
+          ],
+          "_raw": "completed | emit: completed"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "emit",
+          "args": [
+            "uncompleted"
+          ],
+          "_raw": "uncompleted | emit: uncompleted"
+        }
+      ],
+      "exclude_from_translation": true,
+      "rows": [
+        {
+          "name": "show_previous",
+          "value": false,
+          "exclude_from_translation": true,
+          "type": "set_variable",
+          "_nested_name": "nav_buttons.show_previous"
+        },
+        {
+          "name": "show_next",
+          "value": true,
+          "type": "set_variable",
+          "_nested_name": "nav_buttons.show_next"
+        }
+      ],
+      "_nested_name": "nav_buttons"
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "templates/PLH proximal outcomes.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/17Ti5gmQDWeKBrprr75UlTLVG7VCdYXQtLG31Ch8O4JE"
+  }
+}

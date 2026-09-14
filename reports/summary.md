@@ -38,15 +38,15 @@
 | round_button | 26 |
 | select_text | 1 |
 | set_field | 4 |
-| set_variable | 6668 |
+| set_variable | 6677 |
 | simple_checkbox | 1 |
 | task_card | 4 |
 | task_progress_bar | 5 |
-| template | 1781 |
+| template | 1782 |
 | text | 508 |
-| text_area | 5 |
+| text_area | 4 |
 | text_box | 21 |
-| text_bubble | 26 |
+| text_bubble | 29 |
 | title | 69 |
 | toggle_bar | 5 |
 | update_action_list | 4 |
@@ -63,13 +63,13 @@
 | app_update | 1 |
 | asset_pack | 4 |
 | auth | 3 |
-| emit: completed | 999 |
+| emit: completed | 1000 |
 | emit: force_reload | 5 |
 | emit: force_reprocess | 13 |
 | emit: force_restart | 3 |
 | emit: server_sync | 6 |
 | emit: set_language | 2 |
-| emit: uncompleted | 1007 |
+| emit: uncompleted | 1008 |
 | feedback | 13 |
 | go_to | 26 |
 | nav | 1 |
@@ -79,7 +79,7 @@
 | reset_app | 4 |
 | reset_data | 3 |
 | save_to_device | 1 |
-| set_data | 1193 |
+| set_data | 1389 |
 | set_field | 1462 |
 | set_item | 30 |
 | set_local | 606 |
@@ -825,5 +825,5 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | template |  | 182 |
 | template | generated | 1097 |
 | template | legal_terms | 4 |
-| template | proximal_outcomes | 15 |
+| template | proximal_outcomes | 16 |
 </details>

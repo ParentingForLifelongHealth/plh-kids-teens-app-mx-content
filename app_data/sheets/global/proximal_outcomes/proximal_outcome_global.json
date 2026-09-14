@@ -151,6 +151,30 @@
       "_translations": {
         "value": {}
       }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "proximal_outcome_checkin_intro",
+      "value": "Congratulations on making it this far in the program!\n\nWhen you started, you shared:\n• Your challenge: \"@fields.selected_challenge_value\"\n• Your goal: \"@fields.selected_goal_value\"\n\nLet's check in and see how things have been going!",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "proximal_outcome_checkin_intro_no_goal",
+      "value": "Congratulations on making it this far in the program!\n\nWhen you started, you shared:\n• Your challenge: \"@fields.selected_challenge_value\"\n\nLet's check in and see how things have been going!",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "proximal_outcome_checkin_intro_no_goal_no_chall",
+      "value": "Congratulations on making it this far in the program!\n\nLet's check in and see how things have been going!",
+      "_translations": {
+        "value": {}
+      }
     }
   ],
   "_source": {

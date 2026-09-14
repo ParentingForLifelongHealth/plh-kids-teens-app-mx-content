@@ -626,6 +626,17 @@
               "trigger": "completed",
               "action_id": "set_data",
               "args": [],
+              "_raw": "completed | set_data | _list_id: proximal_outcome_7d_pages, _id: intro, completed: false",
+              "params": {
+                "_list_id": "proximal_outcome_7d_pages",
+                "_id": "intro",
+                "completed": false
+              }
+            },
+            {
+              "trigger": "completed",
+              "action_id": "set_data",
+              "args": [],
               "_raw": "completed | set_data | _list_id: proximal_outcome_7d_pages, _id: qs_goal, completed: false",
               "params": {
                 "_list_id": "proximal_outcome_7d_pages",
@@ -849,7 +860,7 @@
                   }
                 ]
               },
-              "13": {
+              "14": {
                 "_raw": [
                   {
                     "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: goal",
@@ -891,7 +902,7 @@
                   ]
                 }
               },
-              "15": {
+              "16": {
                 "args": {
                   "1": [
                     {
@@ -959,21 +970,21 @@
             "@fields.proximal_outcome_time_point_count": [
               "action_list.7.args.1",
               "action_list.7._raw",
-              "action_list.13._raw",
-              "action_list.13.params.entry_point_count"
+              "action_list.14._raw",
+              "action_list.14.params.entry_point_count"
             ],
             "@calc(Number(@fields.proximal_outcome_time_point_count) + 1)": [
               "action_list.7.args.1",
               "action_list.7._raw"
             ],
             "@fields.proximal_outcome_time_point": [
-              "action_list.13._raw",
-              "action_list.13.params.entry_point"
+              "action_list.14._raw",
+              "action_list.14.params.entry_point"
             ],
             "@calc(now())": [
-              "action_list.13.params.entered_ts",
-              "action_list.15.args.1",
-              "action_list.15._raw"
+              "action_list.14.params.entered_ts",
+              "action_list.16.args.1",
+              "action_list.16._raw"
             ],
             "@local.has_PO_questions": [
               "condition"
@@ -1091,6 +1102,17 @@
                 ""
               ],
               "_raw": "completed | set_field: curr_goal_reflection_input :"
+            },
+            {
+              "trigger": "completed",
+              "action_id": "set_data",
+              "args": [],
+              "_raw": "completed | set_data | _list_id: proximal_outcome_14d_pages, _id: intro, completed: false",
+              "params": {
+                "_list_id": "proximal_outcome_14d_pages",
+                "_id": "intro",
+                "completed": false
+              }
             },
             {
               "trigger": "completed",
@@ -1376,58 +1398,16 @@
                   }
                 ]
               },
-              "15": {
-                "_raw": [
-                  {
-                    "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: goal",
-                    "matchedExpression": "@fields.proximal_outcome_time_point",
-                    "type": "fields",
-                    "fieldName": "proximal_outcome_time_point"
-                  },
-                  {
-                    "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: goal",
-                    "matchedExpression": "@fields.proximal_outcome_time_point_count",
-                    "type": "fields",
-                    "fieldName": "proximal_outcome_time_point_count"
-                  }
-                ],
-                "params": {
-                  "entry_point": [
-                    {
-                      "fullExpression": "@fields.proximal_outcome_time_point",
-                      "matchedExpression": "@fields.proximal_outcome_time_point",
-                      "type": "fields",
-                      "fieldName": "proximal_outcome_time_point"
-                    }
-                  ],
-                  "entry_point_count": [
-                    {
-                      "fullExpression": "@fields.proximal_outcome_time_point_count",
-                      "matchedExpression": "@fields.proximal_outcome_time_point_count",
-                      "type": "fields",
-                      "fieldName": "proximal_outcome_time_point_count"
-                    }
-                  ],
-                  "entered_ts": [
-                    {
-                      "fullExpression": "@calc(now())",
-                      "matchedExpression": "@calc(now())",
-                      "type": "calc",
-                      "fieldName": "now()"
-                    }
-                  ]
-                }
-              },
               "16": {
                 "_raw": [
                   {
-                    "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: qs1",
+                    "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: goal",
                     "matchedExpression": "@fields.proximal_outcome_time_point",
                     "type": "fields",
                     "fieldName": "proximal_outcome_time_point"
                   },
                   {
-                    "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: qs1",
+                    "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: goal",
                     "matchedExpression": "@fields.proximal_outcome_time_point_count",
                     "type": "fields",
                     "fieldName": "proximal_outcome_time_point_count"
@@ -1463,6 +1443,48 @@
               "17": {
                 "_raw": [
                   {
+                    "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: qs1",
+                    "matchedExpression": "@fields.proximal_outcome_time_point",
+                    "type": "fields",
+                    "fieldName": "proximal_outcome_time_point"
+                  },
+                  {
+                    "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: qs1",
+                    "matchedExpression": "@fields.proximal_outcome_time_point_count",
+                    "type": "fields",
+                    "fieldName": "proximal_outcome_time_point_count"
+                  }
+                ],
+                "params": {
+                  "entry_point": [
+                    {
+                      "fullExpression": "@fields.proximal_outcome_time_point",
+                      "matchedExpression": "@fields.proximal_outcome_time_point",
+                      "type": "fields",
+                      "fieldName": "proximal_outcome_time_point"
+                    }
+                  ],
+                  "entry_point_count": [
+                    {
+                      "fullExpression": "@fields.proximal_outcome_time_point_count",
+                      "matchedExpression": "@fields.proximal_outcome_time_point_count",
+                      "type": "fields",
+                      "fieldName": "proximal_outcome_time_point_count"
+                    }
+                  ],
+                  "entered_ts": [
+                    {
+                      "fullExpression": "@calc(now())",
+                      "matchedExpression": "@calc(now())",
+                      "type": "calc",
+                      "fieldName": "now()"
+                    }
+                  ]
+                }
+              },
+              "18": {
+                "_raw": [
+                  {
                     "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: qs2",
                     "matchedExpression": "@fields.proximal_outcome_time_point",
                     "type": "fields",
@@ -1502,7 +1524,7 @@
                   ]
                 }
               },
-              "19": {
+              "20": {
                 "args": {
                   "1": [
                     {
@@ -1522,7 +1544,7 @@
                   }
                 ]
               },
-              "20": {
+              "21": {
                 "args": {
                   "1": [
                     {
@@ -1590,33 +1612,33 @@
             "@fields.proximal_outcome_time_point_count": [
               "action_list.7.args.1",
               "action_list.7._raw",
-              "action_list.15._raw",
-              "action_list.15.params.entry_point_count",
               "action_list.16._raw",
               "action_list.16.params.entry_point_count",
               "action_list.17._raw",
-              "action_list.17.params.entry_point_count"
+              "action_list.17.params.entry_point_count",
+              "action_list.18._raw",
+              "action_list.18.params.entry_point_count"
             ],
             "@calc(Number(@fields.proximal_outcome_time_point_count) + 1)": [
               "action_list.7.args.1",
               "action_list.7._raw"
             ],
             "@fields.proximal_outcome_time_point": [
-              "action_list.15._raw",
-              "action_list.15.params.entry_point",
               "action_list.16._raw",
               "action_list.16.params.entry_point",
               "action_list.17._raw",
-              "action_list.17.params.entry_point"
+              "action_list.17.params.entry_point",
+              "action_list.18._raw",
+              "action_list.18.params.entry_point"
             ],
             "@calc(now())": [
-              "action_list.15.params.entered_ts",
               "action_list.16.params.entered_ts",
               "action_list.17.params.entered_ts",
-              "action_list.19.args.1",
-              "action_list.19._raw",
+              "action_list.18.params.entered_ts",
               "action_list.20.args.1",
-              "action_list.20._raw"
+              "action_list.20._raw",
+              "action_list.21.args.1",
+              "action_list.21._raw"
             ],
             "@local.has_PO_questions": [
               "condition"
@@ -2309,6 +2331,17 @@
               "trigger": "completed",
               "action_id": "set_data",
               "args": [],
+              "_raw": "completed | set_data | _list_id: proximal_outcome_7d_pages, _id: intro, completed: false",
+              "params": {
+                "_list_id": "proximal_outcome_7d_pages",
+                "_id": "intro",
+                "completed": false
+              }
+            },
+            {
+              "trigger": "completed",
+              "action_id": "set_data",
+              "args": [],
               "_raw": "completed | set_data | _list_id: proximal_outcome_7d_pages, _id: qs_goal, completed: false",
               "params": {
                 "_list_id": "proximal_outcome_7d_pages",
@@ -2436,7 +2469,7 @@
                   }
                 ]
               },
-              "10": {
+              "11": {
                 "_raw": [
                   {
                     "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: goal",
@@ -2478,7 +2511,7 @@
                   ]
                 }
               },
-              "12": {
+              "13": {
                 "args": {
                   "1": [
                     {
@@ -2524,21 +2557,21 @@
             "@fields.proximal_outcome_time_point_count": [
               "action_list.4.args.1",
               "action_list.4._raw",
-              "action_list.10._raw",
-              "action_list.10.params.entry_point_count"
+              "action_list.11._raw",
+              "action_list.11.params.entry_point_count"
             ],
             "@calc(Number(@fields.proximal_outcome_time_point_count) + 1)": [
               "action_list.4.args.1",
               "action_list.4._raw"
             ],
             "@fields.proximal_outcome_time_point": [
-              "action_list.10._raw",
-              "action_list.10.params.entry_point"
+              "action_list.11._raw",
+              "action_list.11.params.entry_point"
             ],
             "@calc(now())": [
-              "action_list.10.params.entered_ts",
-              "action_list.12.args.1",
-              "action_list.12._raw"
+              "action_list.11.params.entered_ts",
+              "action_list.13.args.1",
+              "action_list.13._raw"
             ],
             "@local.has_PO_questions": [
               "condition"
@@ -2622,6 +2655,17 @@
                 ""
               ],
               "_raw": "completed | set_field: curr_goal_reflection_input :"
+            },
+            {
+              "trigger": "completed",
+              "action_id": "set_data",
+              "args": [],
+              "_raw": "completed | set_data | _list_id: proximal_outcome_14d_pages, _id: intro, completed: false",
+              "params": {
+                "_list_id": "proximal_outcome_14d_pages",
+                "_id": "intro",
+                "completed": false
+              }
             },
             {
               "trigger": "completed",
@@ -2811,58 +2855,16 @@
                   }
                 ]
               },
-              "12": {
-                "_raw": [
-                  {
-                    "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: goal",
-                    "matchedExpression": "@fields.proximal_outcome_time_point",
-                    "type": "fields",
-                    "fieldName": "proximal_outcome_time_point"
-                  },
-                  {
-                    "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: goal",
-                    "matchedExpression": "@fields.proximal_outcome_time_point_count",
-                    "type": "fields",
-                    "fieldName": "proximal_outcome_time_point_count"
-                  }
-                ],
-                "params": {
-                  "entry_point": [
-                    {
-                      "fullExpression": "@fields.proximal_outcome_time_point",
-                      "matchedExpression": "@fields.proximal_outcome_time_point",
-                      "type": "fields",
-                      "fieldName": "proximal_outcome_time_point"
-                    }
-                  ],
-                  "entry_point_count": [
-                    {
-                      "fullExpression": "@fields.proximal_outcome_time_point_count",
-                      "matchedExpression": "@fields.proximal_outcome_time_point_count",
-                      "type": "fields",
-                      "fieldName": "proximal_outcome_time_point_count"
-                    }
-                  ],
-                  "entered_ts": [
-                    {
-                      "fullExpression": "@calc(now())",
-                      "matchedExpression": "@calc(now())",
-                      "type": "calc",
-                      "fieldName": "now()"
-                    }
-                  ]
-                }
-              },
               "13": {
                 "_raw": [
                   {
-                    "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: qs1",
+                    "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: goal",
                     "matchedExpression": "@fields.proximal_outcome_time_point",
                     "type": "fields",
                     "fieldName": "proximal_outcome_time_point"
                   },
                   {
-                    "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: qs1",
+                    "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: goal",
                     "matchedExpression": "@fields.proximal_outcome_time_point_count",
                     "type": "fields",
                     "fieldName": "proximal_outcome_time_point_count"
@@ -2898,6 +2900,48 @@
               "14": {
                 "_raw": [
                   {
+                    "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: qs1",
+                    "matchedExpression": "@fields.proximal_outcome_time_point",
+                    "type": "fields",
+                    "fieldName": "proximal_outcome_time_point"
+                  },
+                  {
+                    "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: qs1",
+                    "matchedExpression": "@fields.proximal_outcome_time_point_count",
+                    "type": "fields",
+                    "fieldName": "proximal_outcome_time_point_count"
+                  }
+                ],
+                "params": {
+                  "entry_point": [
+                    {
+                      "fullExpression": "@fields.proximal_outcome_time_point",
+                      "matchedExpression": "@fields.proximal_outcome_time_point",
+                      "type": "fields",
+                      "fieldName": "proximal_outcome_time_point"
+                    }
+                  ],
+                  "entry_point_count": [
+                    {
+                      "fullExpression": "@fields.proximal_outcome_time_point_count",
+                      "matchedExpression": "@fields.proximal_outcome_time_point_count",
+                      "type": "fields",
+                      "fieldName": "proximal_outcome_time_point_count"
+                    }
+                  ],
+                  "entered_ts": [
+                    {
+                      "fullExpression": "@calc(now())",
+                      "matchedExpression": "@calc(now())",
+                      "type": "calc",
+                      "fieldName": "now()"
+                    }
+                  ]
+                }
+              },
+              "15": {
+                "_raw": [
+                  {
                     "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: qs2",
                     "matchedExpression": "@fields.proximal_outcome_time_point",
                     "type": "fields",
@@ -2937,7 +2981,7 @@
                   ]
                 }
               },
-              "16": {
+              "17": {
                 "args": {
                   "1": [
                     {
@@ -2957,7 +3001,7 @@
                   }
                 ]
               },
-              "17": {
+              "18": {
                 "args": {
                   "1": [
                     {
@@ -3003,33 +3047,33 @@
             "@fields.proximal_outcome_time_point_count": [
               "action_list.4.args.1",
               "action_list.4._raw",
-              "action_list.12._raw",
-              "action_list.12.params.entry_point_count",
               "action_list.13._raw",
               "action_list.13.params.entry_point_count",
               "action_list.14._raw",
-              "action_list.14.params.entry_point_count"
+              "action_list.14.params.entry_point_count",
+              "action_list.15._raw",
+              "action_list.15.params.entry_point_count"
             ],
             "@calc(Number(@fields.proximal_outcome_time_point_count) + 1)": [
               "action_list.4.args.1",
               "action_list.4._raw"
             ],
             "@fields.proximal_outcome_time_point": [
-              "action_list.12._raw",
-              "action_list.12.params.entry_point",
               "action_list.13._raw",
               "action_list.13.params.entry_point",
               "action_list.14._raw",
-              "action_list.14.params.entry_point"
+              "action_list.14.params.entry_point",
+              "action_list.15._raw",
+              "action_list.15.params.entry_point"
             ],
             "@calc(now())": [
-              "action_list.12.params.entered_ts",
               "action_list.13.params.entered_ts",
               "action_list.14.params.entered_ts",
-              "action_list.16.args.1",
-              "action_list.16._raw",
+              "action_list.15.params.entered_ts",
               "action_list.17.args.1",
-              "action_list.17._raw"
+              "action_list.17._raw",
+              "action_list.18.args.1",
+              "action_list.18._raw"
             ],
             "@local.has_PO_questions": [
               "condition"
