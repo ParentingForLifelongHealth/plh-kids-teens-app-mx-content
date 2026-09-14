@@ -340,49 +340,14 @@
     {
       "type": "text_area",
       "name": "goal_reflection_input",
-      "parameter_list": {
-        "placeholder": "@global.goal_reflection_placeholder"
-      },
-      "condition": "!@fields.curr_goal_reflection_input",
-      "exclude_from_translation": true,
-      "_nested_name": "goal_reflection_input",
-      "_dynamicFields": {
-        "parameter_list": {
-          "placeholder": [
-            {
-              "fullExpression": "@global.goal_reflection_placeholder",
-              "matchedExpression": "@global.goal_reflection_placeholder",
-              "type": "global",
-              "fieldName": "goal_reflection_placeholder"
-            }
-          ]
-        },
-        "condition": [
-          {
-            "fullExpression": "!@fields.curr_goal_reflection_input",
-            "matchedExpression": "!@fields.curr_goal_reflection_input",
-            "type": "fields",
-            "fieldName": "curr_goal_reflection_input"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@global.goal_reflection_placeholder": [
-          "parameter_list.placeholder"
-        ],
-        "!@fields.curr_goal_reflection_input": [
-          "condition"
-        ]
-      }
-    },
-    {
-      "type": "text_area",
-      "name": "goal_reflection_input",
       "value": "@fields.curr_goal_reflection_input",
       "_translations": {
         "value": {}
       },
-      "condition": "!!@fields.curr_goal_reflection_input",
+      "parameter_list": {
+        "placeholder": "@global.goal_reflection_placeholder"
+      },
+      "exclude_from_translation": true,
       "_nested_name": "goal_reflection_input",
       "_dynamicFields": {
         "value": [
@@ -393,21 +358,23 @@
             "fieldName": "curr_goal_reflection_input"
           }
         ],
-        "condition": [
-          {
-            "fullExpression": "!!@fields.curr_goal_reflection_input",
-            "matchedExpression": "!@fields.curr_goal_reflection_input",
-            "type": "fields",
-            "fieldName": "curr_goal_reflection_input"
-          }
-        ]
+        "parameter_list": {
+          "placeholder": [
+            {
+              "fullExpression": "@global.goal_reflection_placeholder",
+              "matchedExpression": "@global.goal_reflection_placeholder",
+              "type": "global",
+              "fieldName": "goal_reflection_placeholder"
+            }
+          ]
+        }
       },
       "_dynamicDependencies": {
         "@fields.curr_goal_reflection_input": [
           "value"
         ],
-        "!@fields.curr_goal_reflection_input": [
-          "condition"
+        "@global.goal_reflection_placeholder": [
+          "parameter_list.placeholder"
         ]
       }
     },
@@ -456,13 +423,13 @@
           }
         },
         {
-          "trigger": "click",
+          "trigger": "completed",
           "action_id": "set_field",
           "args": [
             "curr_goal_reflection_input",
             "@local.goal_reflection_input"
           ],
-          "_raw": "click | set_field : curr_goal_reflection_input: @local.goal_reflection_input"
+          "_raw": "completed  | set_field : curr_goal_reflection_input: @local.goal_reflection_input"
         },
         {
           "trigger": "completed",
@@ -547,7 +514,7 @@
             },
             "_raw": [
               {
-                "fullExpression": "click | set_field : curr_goal_reflection_input: @local.goal_reflection_input",
+                "fullExpression": "completed  | set_field : curr_goal_reflection_input: @local.goal_reflection_input",
                 "matchedExpression": "@local.goal_reflection_input",
                 "type": "local",
                 "fieldName": "goal_reflection_input"

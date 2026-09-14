@@ -248,6 +248,17 @@
               "trigger": "completed",
               "action_id": "set_data",
               "args": [],
+              "_raw": "completed | set_data | _list_id: proximal_outcome_7d_pages, _id: intro, completed: false",
+              "params": {
+                "_list_id": "proximal_outcome_7d_pages",
+                "_id": "intro",
+                "completed": false
+              }
+            },
+            {
+              "trigger": "completed",
+              "action_id": "set_data",
+              "args": [],
               "_raw": "completed | set_data | _list_id: proximal_outcome_7d_pages, _id: qs_goal, completed: false",
               "params": {
                 "_list_id": "proximal_outcome_7d_pages",
@@ -436,6 +447,17 @@
                 ""
               ],
               "_raw": "completed | set_field: curr_goal_reflection_input :"
+            },
+            {
+              "trigger": "completed",
+              "action_id": "set_data",
+              "args": [],
+              "_raw": "completed | set_data | _list_id: proximal_outcome_14d_pages, _id: intro, completed: false",
+              "params": {
+                "_list_id": "proximal_outcome_14d_pages",
+                "_id": "intro",
+                "completed": false
+              }
             },
             {
               "trigger": "completed",
@@ -901,6 +923,17 @@
               "trigger": "completed",
               "action_id": "set_data",
               "args": [],
+              "_raw": "completed | set_data | _list_id: proximal_outcome_7d_pages, _id: intro, completed: false",
+              "params": {
+                "_list_id": "proximal_outcome_7d_pages",
+                "_id": "intro",
+                "completed": false
+              }
+            },
+            {
+              "trigger": "completed",
+              "action_id": "set_data",
+              "args": [],
               "_raw": "completed | set_data | _list_id: proximal_outcome_7d_pages, _id: qs_goal, completed: false",
               "params": {
                 "_list_id": "proximal_outcome_7d_pages",
@@ -1055,6 +1088,17 @@
                 ""
               ],
               "_raw": "completed | set_field: curr_goal_reflection_input :"
+            },
+            {
+              "trigger": "completed",
+              "action_id": "set_data",
+              "args": [],
+              "_raw": "completed | set_data | _list_id: proximal_outcome_14d_pages, _id: intro, completed: false",
+              "params": {
+                "_list_id": "proximal_outcome_14d_pages",
+                "_id": "intro",
+                "completed": false
+              }
             },
             {
               "trigger": "completed",
