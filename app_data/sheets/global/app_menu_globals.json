@@ -45,15 +45,7 @@
     {
       "type": "declare_global_constant",
       "name": "about_this_app",
-      "value": "About @global.app_name",
-      "_translations": {
-        "value": {}
-      }
-    },
-    {
-      "type": "declare_global_constant",
-      "name": "language",
-      "value": "Language",
+      "value": "Acerca de @global.app_name",
       "_translations": {
         "value": {}
       }
@@ -73,7 +65,7 @@
     {
       "type": "declare_global_constant",
       "name": "user_id_text",
-      "value": "User ID",
+      "value": "ID de usuario",
       "_translations": {
         "value": {}
       }
@@ -81,7 +73,7 @@
     {
       "type": "declare_global_constant",
       "name": "skip",
-      "value": "Skip",
+      "value": "Omitir",
       "_translations": {
         "value": {}
       }
@@ -89,7 +81,7 @@
     {
       "type": "declare_global_constant",
       "name": "continue",
-      "value": "Continue",
+      "value": "Continuar",
       "_translations": {
         "value": {}
       }
@@ -97,7 +89,7 @@
     {
       "type": "declare_global_constant",
       "name": "user_id_copy_code",
-      "value": "Copy code",
+      "value": "Copiar código",
       "_translations": {
         "value": {}
       }
@@ -105,7 +97,7 @@
     {
       "type": "declare_global_constant",
       "name": "user_id_copied",
-      "value": "Copied!",
+      "value": "¡Copiado!",
       "_translations": {
         "value": {}
       }
@@ -113,7 +105,7 @@
     {
       "type": "declare_global_constant",
       "name": "user_id_last_sync",
-      "value": "Last sync at: @local.sync_latest",
+      "value": "Última sincronización: @local.sync_latest",
       "_translations": {
         "value": {}
       }
@@ -121,7 +113,7 @@
     {
       "type": "declare_global_constant",
       "name": "user_id_never_synced",
-      "value": "This device has never been synced. Sync to reveal your code.",
+      "value": "Este dispositivo nunca se ha sincronizado. Sincronízalo para revelar tu código.",
       "_translations": {
         "value": {}
       }
@@ -129,7 +121,7 @@
     {
       "type": "declare_global_constant",
       "name": "user_id_sync_button",
-      "value": "Sync now",
+      "value": "Sincronizar ahora",
       "_translations": {
         "value": {}
       }
@@ -137,15 +129,15 @@
     {
       "type": "declare_global_constant",
       "name": "user_id_syncing",
-      "value": "Syncing...",
+      "value": "Sincronizando...",
       "_translations": {
         "value": {}
       }
     }
   ],
   "_source": {
-    "name": "library_app_menu",
-    "path": "app_menu.xlsx",
-    "url": "https://docs.google.com/spreadsheets/d/1SqgpcbW5RNRKq6NIKZre5Pc406U4z3VJHcfSNUBmTTs"
+    "name": "kids_teens_mx",
+    "path": "data/MX deployment_data.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/13MITRQ3ltpZObRU8Nr3_D-gc-bVX2SvKt1NO-IngD-I"
   }
 }

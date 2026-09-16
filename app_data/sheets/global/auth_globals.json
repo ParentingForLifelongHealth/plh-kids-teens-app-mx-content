@@ -11,7 +11,7 @@
     {
       "type": "declare_global_constant",
       "name": "login_optional_why",
-      "value": "Would you like to create an account? This will allow you to retrieve your data if you lose your device.",
+      "value": "¿Te gustaría crear una cuenta? Esto te permitirá recuperar tus datos si pierdes tu dispositivo.",
       "_translations": {
         "value": {}
       }
@@ -19,7 +19,7 @@
     {
       "type": "declare_global_constant",
       "name": "login",
-      "value": "Sign in",
+      "value": "Iniciar sesión",
       "_translations": {
         "value": {}
       }
@@ -27,7 +27,7 @@
     {
       "type": "declare_global_constant",
       "name": "login_apple",
-      "value": "Sign in with Apple",
+      "value": "Iniciar sesión con Apple",
       "_translations": {
         "value": {}
       }
@@ -35,7 +35,7 @@
     {
       "type": "declare_global_constant",
       "name": "login_google",
-      "value": "Sign in with Google",
+      "value": "Iniciar sesión con Google",
       "_translations": {
         "value": {}
       }
@@ -43,7 +43,7 @@
     {
       "type": "declare_global_constant",
       "name": "logout",
-      "value": "Sign out",
+      "value": "Cerrar sesión",
       "_translations": {
         "value": {}
       }
@@ -51,7 +51,7 @@
     {
       "type": "declare_global_constant",
       "name": "logged_in",
-      "value": "You are logged in.",
+      "value": "Has iniciado sesión.",
       "_translations": {
         "value": {}
       }
@@ -59,7 +59,7 @@
     {
       "type": "declare_global_constant",
       "name": "account",
-      "value": "Account",
+      "value": "Cuenta",
       "_translations": {
         "value": {}
       }
@@ -67,7 +67,7 @@
     {
       "type": "declare_global_constant",
       "name": "delete_account",
-      "value": "Delete account",
+      "value": "Eliminar cuenta",
       "_translations": {
         "value": {}
       }
@@ -75,7 +75,7 @@
     {
       "type": "declare_global_constant",
       "name": "delete_account_warning_title",
-      "value": "Are you sure you want to delete your account?",
+      "value": "¿Estás seguro de que quieres eliminar tu cuenta?",
       "_translations": {
         "value": {}
       }
@@ -83,7 +83,7 @@
     {
       "type": "declare_global_constant",
       "name": "delete_account_warning_text",
-      "value": "This action is permanent and cannot be undone. You will lose all your progress.",
+      "value": "Esta acción es permanente e irreversible. Perderás todo tu progreso.",
       "_translations": {
         "value": {}
       }
@@ -91,7 +91,7 @@
     {
       "type": "declare_global_constant",
       "name": "yes",
-      "value": "Yes",
+      "value": "Sí",
       "_translations": {
         "value": {}
       }
@@ -107,7 +107,7 @@
     {
       "type": "declare_global_constant",
       "name": "previous_login",
-      "value": "It looks like you've logged in on another device before. Would you like to continue from where you left off? \n\nIf you do, any progress made on this device will be lost.",
+      "value": "Parece que ya has iniciado sesión en otro dispositivo. ¿Deseas continuar desde donde lo dejaste?\n\nSi lo haces, perderás todo el progreso realizado en este dispositivo.",
       "_translations": {
         "value": {}
       }
@@ -115,15 +115,15 @@
     {
       "type": "declare_global_constant",
       "name": "restore_data",
-      "value": "Load saved progress",
+      "value": "Cargar progreso guardado",
       "_translations": {
         "value": {}
       }
     }
   ],
   "_source": {
-    "name": "library_app_menu",
-    "path": "app_auth.xlsx",
-    "url": "https://docs.google.com/spreadsheets/d/1sgEFVcnisQMCpDrT7O2_Rb3ATV38cI1Elv3ATfr_RvE"
+    "name": "kids_teens_mx",
+    "path": "data/MX deployment_data.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/13MITRQ3ltpZObRU8Nr3_D-gc-bVX2SvKt1NO-IngD-I"
   }
 }

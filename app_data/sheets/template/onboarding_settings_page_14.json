@@ -251,24 +251,23 @@
     {
       "type": "text_box",
       "name": "facilitator_group_id_input",
-      "value": "@fields.facilitator_group_id",
+      "value": "@fields.faci_group_id",
       "_translations": {
         "value": {}
       },
       "parameter_list": {
-        "placeholder": "@global.placeholder_facilitator_group_id",
-        "number_input": "true"
+        "placeholder": "@global.placeholder_facilitator_group_id"
       },
-      "condition": "!!@fields.facilitator_group_id",
+      "condition": "!!@fields.faci_group_id",
       "exclude_from_translation": true,
       "_nested_name": "facilitator_group_id_input",
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@fields.facilitator_group_id",
-            "matchedExpression": "@fields.facilitator_group_id",
+            "fullExpression": "@fields.faci_group_id",
+            "matchedExpression": "@fields.faci_group_id",
             "type": "fields",
-            "fieldName": "facilitator_group_id"
+            "fieldName": "faci_group_id"
           }
         ],
         "parameter_list": {
@@ -283,21 +282,21 @@
         },
         "condition": [
           {
-            "fullExpression": "!!@fields.facilitator_group_id",
-            "matchedExpression": "!@fields.facilitator_group_id",
+            "fullExpression": "!!@fields.faci_group_id",
+            "matchedExpression": "!@fields.faci_group_id",
             "type": "fields",
-            "fieldName": "facilitator_group_id"
+            "fieldName": "faci_group_id"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@fields.facilitator_group_id": [
+        "@fields.faci_group_id": [
           "value"
         ],
         "@global.placeholder_facilitator_group_id": [
           "parameter_list.placeholder"
         ],
-        "!@fields.facilitator_group_id": [
+        "!@fields.faci_group_id": [
           "condition"
         ]
       }
@@ -306,10 +305,9 @@
       "type": "text_box",
       "name": "facilitator_group_id_input",
       "parameter_list": {
-        "placeholder": "@global.placeholder_facilitator_group_id",
-        "number_input": "true"
+        "placeholder": "@global.placeholder_facilitator_group_id"
       },
-      "condition": "!@fields.facilitator_group_id",
+      "condition": "!@fields.faci_group_id",
       "exclude_from_translation": true,
       "_nested_name": "facilitator_group_id_input",
       "_dynamicFields": {
@@ -325,10 +323,10 @@
         },
         "condition": [
           {
-            "fullExpression": "!@fields.facilitator_group_id",
-            "matchedExpression": "!@fields.facilitator_group_id",
+            "fullExpression": "!@fields.faci_group_id",
+            "matchedExpression": "!@fields.faci_group_id",
             "type": "fields",
-            "fieldName": "facilitator_group_id"
+            "fieldName": "faci_group_id"
           }
         ]
       },
@@ -336,16 +334,53 @@
         "@global.placeholder_facilitator_group_id": [
           "parameter_list.placeholder"
         ],
-        "!@fields.facilitator_group_id": [
+        "!@fields.faci_group_id": [
           "condition"
         ]
       }
     },
     {
       "name": "valid_facilitator_group_id",
+      "value": "@calc(/^(SEP|IMSS|DIF)(?!000)\\d{3}$/i.test(String(@local.facilitator_group_id_input || '').trim()) || !@local.facilitator_group_id_input)",
+      "_translations": {
+        "value": {}
+      },
       "exclude_from_translation": true,
       "type": "set_variable",
-      "_nested_name": "valid_facilitator_group_id"
+      "_nested_name": "valid_facilitator_group_id",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(/^(SEP|IMSS|DIF)(?!000)\\d{3}$/i.test(String(@local.facilitator_group_id_input || '').trim()) || !@local.facilitator_group_id_input)",
+            "matchedExpression": "@local.facilitator_group_id_input",
+            "type": "local",
+            "fieldName": "facilitator_group_id_input"
+          },
+          {
+            "fullExpression": "@calc(/^(SEP|IMSS|DIF)(?!000)\\d{3}$/i.test(String(@local.facilitator_group_id_input || '').trim()) || !@local.facilitator_group_id_input)",
+            "matchedExpression": "!@local.facilitator_group_id_input",
+            "type": "local",
+            "fieldName": "facilitator_group_id_input"
+          },
+          {
+            "fullExpression": "@calc(/^(SEP|IMSS|DIF)(?!000)\\d{3}$/i.test(String(@local.facilitator_group_id_input || '').trim()) || !@local.facilitator_group_id_input)",
+            "matchedExpression": "@calc(/^(SEP|IMSS|DIF)(?!000)\\d{3}$/i.test(String(@local.facilitator_group_id_input || '').trim()) || !@local.facilitator_group_id_input)",
+            "type": "calc",
+            "fieldName": "/^(SEP|IMSS|DIF)(?!000)\\d{3}$/i.test(String(@local.facilitator_group_id_input || '').trim()) || !@local.facilitator_group_id_input"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.facilitator_group_id_input": [
+          "value"
+        ],
+        "!@local.facilitator_group_id_input": [
+          "value"
+        ],
+        "@calc(/^(SEP|IMSS|DIF)(?!000)\\d{3}$/i.test(String(@local.facilitator_group_id_input || '').trim()) || !@local.facilitator_group_id_input)": [
+          "value"
+        ]
+      }
     },
     {
       "type": "text",
@@ -390,7 +425,7 @@
     },
     {
       "name": "completed_enabled",
-      "value": "!!@local.facilitator_group_id_input && @local.valid_facilitator_group_id_input",
+      "value": "!!@local.facilitator_group_id_input && @local.valid_facilitator_group_id",
       "_translations": {
         "value": {}
       },
@@ -400,16 +435,16 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "!!@local.facilitator_group_id_input && @local.valid_facilitator_group_id_input",
+            "fullExpression": "!!@local.facilitator_group_id_input && @local.valid_facilitator_group_id",
             "matchedExpression": "!@local.facilitator_group_id_input",
             "type": "local",
             "fieldName": "facilitator_group_id_input"
           },
           {
-            "fullExpression": "!!@local.facilitator_group_id_input && @local.valid_facilitator_group_id_input",
-            "matchedExpression": "@local.valid_facilitator_group_id_input",
+            "fullExpression": "!!@local.facilitator_group_id_input && @local.valid_facilitator_group_id",
+            "matchedExpression": "@local.valid_facilitator_group_id",
             "type": "local",
-            "fieldName": "valid_facilitator_group_id_input"
+            "fieldName": "valid_facilitator_group_id"
           }
         ]
       },
@@ -417,7 +452,7 @@
         "!@local.facilitator_group_id_input": [
           "value"
         ],
-        "@local.valid_facilitator_group_id_input": [
+        "@local.valid_facilitator_group_id": [
           "value"
         ]
       }
@@ -449,6 +484,7 @@
             "icon_src": "arrow-back",
             "variant": "no-background"
           },
+          "exclude_from_translation": true,
           "_nested_name": "dg_footer.button_back"
         },
         {
@@ -463,10 +499,10 @@
               "trigger": "click",
               "action_id": "set_field",
               "args": [
-                "facilitator_group_id",
-                "@local.facilitator_group_id_input"
+                "faci_group_id",
+                "@calc(String(@local.facilitator_group_id_input).trim().toUpperCase())"
               ],
-              "_raw": "click | set_field: facilitator_group_id: @local.facilitator_group_id_input"
+              "_raw": "click | set_field: faci_group_id: @calc(String(@local.facilitator_group_id_input).trim().toUpperCase())"
             },
             {
               "trigger": "click",
@@ -484,6 +520,7 @@
           "style_list": [
             "flex: 1"
           ],
+          "exclude_from_translation": true,
           "_nested_name": "dg_footer.button_completed",
           "_dynamicFields": {
             "value": [
@@ -499,19 +536,31 @@
                 "args": {
                   "1": [
                     {
-                      "fullExpression": "@local.facilitator_group_id_input",
+                      "fullExpression": "@calc(String(@local.facilitator_group_id_input).trim().toUpperCase())",
                       "matchedExpression": "@local.facilitator_group_id_input",
                       "type": "local",
                       "fieldName": "facilitator_group_id_input"
+                    },
+                    {
+                      "fullExpression": "@calc(String(@local.facilitator_group_id_input).trim().toUpperCase())",
+                      "matchedExpression": "@calc(String(@local.facilitator_group_id_input).trim().toUpperCase())",
+                      "type": "calc",
+                      "fieldName": "String(@local.facilitator_group_id_input).trim().toUpperCase()"
                     }
                   ]
                 },
                 "_raw": [
                   {
-                    "fullExpression": "click | set_field: facilitator_group_id: @local.facilitator_group_id_input",
+                    "fullExpression": "click | set_field: faci_group_id: @calc(String(@local.facilitator_group_id_input).trim().toUpperCase())",
                     "matchedExpression": "@local.facilitator_group_id_input",
                     "type": "local",
                     "fieldName": "facilitator_group_id_input"
+                  },
+                  {
+                    "fullExpression": "click | set_field: faci_group_id: @calc(String(@local.facilitator_group_id_input).trim().toUpperCase())",
+                    "matchedExpression": "@calc(String(@local.facilitator_group_id_input).trim().toUpperCase())",
+                    "type": "calc",
+                    "fieldName": "String(@local.facilitator_group_id_input).trim().toUpperCase()"
                   }
                 ]
               }
@@ -535,8 +584,51 @@
               "action_list.0.args.1",
               "action_list.0._raw"
             ],
+            "@calc(String(@local.facilitator_group_id_input).trim().toUpperCase())": [
+              "action_list.0.args.1",
+              "action_list.0._raw"
+            ],
             "!@local.completed_enabled": [
               "parameter_list.disabled"
+            ]
+          }
+        },
+        {
+          "type": "button",
+          "name": "button_skip",
+          "value": "<u>@global.skip</u>",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "emit",
+              "args": [
+                "completed"
+              ],
+              "_raw": "click | emit: completed"
+            }
+          ],
+          "parameter_list": {
+            "variant": "card",
+            "style": "no-background"
+          },
+          "exclude_from_translation": true,
+          "_nested_name": "dg_footer.button_skip",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "<u>@global.skip</u>",
+                "matchedExpression": "@global.skip",
+                "type": "global",
+                "fieldName": "skip"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@global.skip": [
+              "value"
             ]
           }
         }

@@ -10,7 +10,7 @@
 | animated_slides | 1 |
 | apple_sign_in_button | 2 |
 | audio | 3 |
-| button | 128 |
+| button | 129 |
 | combo_box | 27 |
 | data_items | 249 |
 | debug_toggle | 1 |
@@ -38,11 +38,11 @@
 | round_button | 27 |
 | select_text | 1 |
 | set_field | 4 |
-| set_variable | 6024 |
+| set_variable | 6688 |
 | simple_checkbox | 1 |
 | task_card | 4 |
 | task_progress_bar | 5 |
-| template | 1450 |
+| template | 1782 |
 | text | 510 |
 | text_area | 4 |
 | text_box | 23 |
@@ -63,13 +63,13 @@
 | app_update | 1 |
 | asset_pack | 4 |
 | auth | 3 |
-| emit: completed | 669 |
+| emit: completed | 1002 |
 | emit: force_reload | 5 |
 | emit: force_reprocess | 13 |
 | emit: force_restart | 3 |
 | emit: server_sync | 6 |
 | emit: set_language | 2 |
-| emit: uncompleted | 677 |
+| emit: uncompleted | 1009 |
 | feedback | 13 |
 | go_to | 26 |
 | nav | 1 |
@@ -816,12 +816,12 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_list | relax | 1 |
 | data_pipe |  | 4 |
 | data_pipe | generated | 150 |
-| generator |  | 42 |
-| global |  | 14 |
+| generator |  | 87 |
+| global |  | 12 |
 | global | onboarding | 16 |
 | global | proximal_outcomes | 2 |
 | template |  | 183 |
-| template | generated | 765 |
+| template | generated | 1097 |
 | template | legal_terms | 4 |
 | template | proximal_outcomes | 16 |
 </details>

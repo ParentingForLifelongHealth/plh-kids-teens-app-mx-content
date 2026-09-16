@@ -1,0 +1,31 @@
+{
+  "flow_type": "generator",
+  "flow_name": "know_role_c_article_gen",
+  "status": "released",
+  "parameter_list": {
+    "input_data_list": "know_role_c_articles",
+    "output_flow_name": "article_know_role_c_@gen.id",
+    "output_flow_type": "template"
+  },
+  "module_id": "know_role_c",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "article",
+      "value": "article",
+      "action_list": "completed | emit: completed; uncompleted | emit: uncompleted"
+    },
+    {
+      "name": "article_id",
+      "value": "@gen.id"
+    },
+    {
+      "name": "module_id",
+      "value": "know_role_c",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

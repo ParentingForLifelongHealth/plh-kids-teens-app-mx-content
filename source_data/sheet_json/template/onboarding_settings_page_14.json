@@ -50,20 +50,21 @@
     {
       "type": "text_box",
       "name": "facilitator_group_id_input",
-      "value": "@fields.facilitator_group_id",
-      "parameter_list": "placeholder: @global.placeholder_facilitator_group_id;\nnumber_input: true;",
-      "condition": "!!@fields.facilitator_group_id",
+      "value": "@fields.faci_group_id",
+      "parameter_list": "placeholder: @global.placeholder_facilitator_group_id;",
+      "condition": "!!@fields.faci_group_id",
       "exclude_from_translation": true
     },
     {
       "type": "text_box",
       "name": "facilitator_group_id_input",
-      "parameter_list": "placeholder: @global.placeholder_facilitator_group_id;\nnumber_input: true;",
-      "condition": "!@fields.facilitator_group_id",
+      "parameter_list": "placeholder: @global.placeholder_facilitator_group_id;",
+      "condition": "!@fields.faci_group_id",
       "exclude_from_translation": true
     },
     {
       "name": "valid_facilitator_group_id",
+      "value": "@calc(/^(SEP|IMSS|DIF)(?!000)\\d{3}$/i.test(String(@local.facilitator_group_id_input || '').trim()) || !@local.facilitator_group_id_input)\n",
       "exclude_from_translation": true
     },
     {
@@ -76,7 +77,7 @@
     },
     {
       "name": "completed_enabled",
-      "value": "!!@local.facilitator_group_id_input && @local.valid_facilitator_group_id_input ",
+      "value": "!!@local.facilitator_group_id_input && @local.valid_facilitator_group_id",
       "exclude_from_translation": true
     },
     {
@@ -89,15 +90,25 @@
       "type": "round_button",
       "name": "button_back",
       "action_list": "click | emit: uncompleted",
-      "parameter_list": "icon_src: arrow-back;\nvariant: no-background;"
+      "parameter_list": "icon_src: arrow-back;\nvariant: no-background;",
+      "exclude_from_translation": true
     },
     {
       "type": "button",
       "name": "button_completed",
       "value": "@global.continue",
-      "action_list": "click | set_field: facilitator_group_id: @local.facilitator_group_id_input;\nclick | emit: completed;",
+      "action_list": "click | set_field: faci_group_id: @calc(String(@local.facilitator_group_id_input).trim().toUpperCase()); \nclick | emit: completed;",
       "parameter_list": "style: navigation;\ndisabled: !@local.completed_enabled",
-      "style_list": "flex: 1"
+      "style_list": "flex: 1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_skip",
+      "value": "<u>@global.skip</u>",
+      "action_list": "click | emit: completed;",
+      "parameter_list": "variant: card;\nstyle: no-background;",
+      "exclude_from_translation": true
     },
     {
       "type": "end_display_group"
