@@ -10,7 +10,7 @@
 | animated_slides | 1 |
 | apple_sign_in_button | 2 |
 | audio | 3 |
-| button | 127 |
+| button | 128 |
 | combo_box | 27 |
 | data_items | 249 |
 | debug_toggle | 1 |
@@ -35,18 +35,18 @@
 | qr_code | 1 |
 | radio_button_grid | 10 |
 | radio_list | 3 |
-| round_button | 26 |
+| round_button | 27 |
 | select_text | 1 |
 | set_field | 4 |
-| set_variable | 6677 |
+| set_variable | 6024 |
 | simple_checkbox | 1 |
 | task_card | 4 |
 | task_progress_bar | 5 |
-| template | 1782 |
-| text | 508 |
+| template | 1450 |
+| text | 510 |
 | text_area | 4 |
-| text_box | 21 |
-| text_bubble | 29 |
+| text_box | 23 |
+| text_bubble | 30 |
 | title | 69 |
 | toggle_bar | 5 |
 | update_action_list | 4 |
@@ -63,13 +63,13 @@
 | app_update | 1 |
 | asset_pack | 4 |
 | auth | 3 |
-| emit: completed | 1000 |
+| emit: completed | 669 |
 | emit: force_reload | 5 |
 | emit: force_reprocess | 13 |
 | emit: force_restart | 3 |
 | emit: server_sync | 6 |
 | emit: set_language | 2 |
-| emit: uncompleted | 1008 |
+| emit: uncompleted | 677 |
 | feedback | 13 |
 | go_to | 26 |
 | nav | 1 |
@@ -80,9 +80,9 @@
 | reset_data | 3 |
 | save_to_device | 1 |
 | set_data | 1389 |
-| set_field | 1462 |
+| set_field | 1463 |
 | set_item | 30 |
-| set_local | 606 |
+| set_local | 608 |
 | share | 3 |
 | task | 2 |
 | toast | 56 |
@@ -95,7 +95,7 @@
 | assets | KB | MB |
 | --- | --- | --- |
 | total | 79025 KB | 79 MB |
-| unused | 14585 KB | 14.6 MB |
+| unused | 14313 KB | 14.3 MB |
 </details>
 
 <details open>
@@ -105,10 +105,8 @@ Assets that appear in app-data but do not have references within sheets
 
 | path | size_kb |
 | --- | --- |
-| android/icon-background.png | 21.4 |
 | android/icon-foreground.png | 44 |
-| android/icon.png | 70.3 |
-| android/splash.png | 239 |
+| android/icon.png | 58.3 |
 | images/activities/personajes_t.svg | 204 |
 | images/backgrounds/homescreen_pattern.svg | 156.3 |
 | images/character_icons/ANGELA_facilitator.svg | 9477.2 |
@@ -818,12 +816,12 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_list | relax | 1 |
 | data_pipe |  | 4 |
 | data_pipe | generated | 150 |
-| generator |  | 87 |
+| generator |  | 42 |
 | global |  | 14 |
 | global | onboarding | 16 |
 | global | proximal_outcomes | 2 |
-| template |  | 182 |
-| template | generated | 1097 |
+| template |  | 183 |
+| template | generated | 765 |
 | template | legal_terms | 4 |
 | template | proximal_outcomes | 16 |
 </details>

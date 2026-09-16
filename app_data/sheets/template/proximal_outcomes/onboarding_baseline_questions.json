@@ -974,6 +974,9 @@
         "style": "column"
       },
       "condition": "@local.show_success_page",
+      "style_list": [
+        "background-color: @global.onboarding_completed_background_colour"
+      ],
       "rows": [
         {
           "type": "lottie_animation",
@@ -981,6 +984,9 @@
           "value": "@global.onboarding_completed_lottie_asset",
           "_translations": {
             "value": {}
+          },
+          "parameter_list": {
+            "loop": "false"
           },
           "condition": "!!@global.onboarding_completed_lottie_asset",
           "_nested_name": "page_success.lottie",
@@ -1072,13 +1078,14 @@
             "sticky": "bottom"
           },
           "style_list": [
-            "padding: 12px 24px"
+            "padding: 12px 24px",
+            "background-color: @global.onboarding_completed_background_colour"
           ],
           "rows": [
             {
               "type": "button",
               "name": "button_completed",
-              "value": "@global.continue",
+              "value": "@global.onboarding_completed_button",
               "_translations": {
                 "value": {}
               },
@@ -1117,21 +1124,38 @@
               "_dynamicFields": {
                 "value": [
                   {
-                    "fullExpression": "@global.continue",
-                    "matchedExpression": "@global.continue",
+                    "fullExpression": "@global.onboarding_completed_button",
+                    "matchedExpression": "@global.onboarding_completed_button",
                     "type": "global",
-                    "fieldName": "continue"
+                    "fieldName": "onboarding_completed_button"
                   }
                 ]
               },
               "_dynamicDependencies": {
-                "@global.continue": [
+                "@global.onboarding_completed_button": [
                   "value"
                 ]
               }
             }
           ],
-          "_nested_name": "page_success.dg_footer"
+          "_nested_name": "page_success.dg_footer",
+          "_dynamicFields": {
+            "style_list": {
+              "1": [
+                {
+                  "fullExpression": "background-color: @global.onboarding_completed_background_colour",
+                  "matchedExpression": "@global.onboarding_completed_background_colour",
+                  "type": "global",
+                  "fieldName": "onboarding_completed_background_colour"
+                }
+              ]
+            }
+          },
+          "_dynamicDependencies": {
+            "@global.onboarding_completed_background_colour": [
+              "style_list.1"
+            ]
+          }
         }
       ],
       "_nested_name": "page_success",
@@ -1143,11 +1167,24 @@
             "type": "local",
             "fieldName": "show_success_page"
           }
-        ]
+        ],
+        "style_list": {
+          "0": [
+            {
+              "fullExpression": "background-color: @global.onboarding_completed_background_colour",
+              "matchedExpression": "@global.onboarding_completed_background_colour",
+              "type": "global",
+              "fieldName": "onboarding_completed_background_colour"
+            }
+          ]
+        }
       },
       "_dynamicDependencies": {
         "@local.show_success_page": [
           "condition"
+        ],
+        "@global.onboarding_completed_background_colour": [
+          "style_list.0"
         ]
       }
     }

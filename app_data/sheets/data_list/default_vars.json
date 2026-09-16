@@ -11,7 +11,8 @@
     {
       "type": "declare_field_default",
       "name": "last_module_in_progress",
-      "value": "NA"
+      "value": "NA",
+      "exclude_from_translation": true
     }
   ],
   "_source": {
@@ -22,6 +23,9 @@
   "_metadata": {
     "value": {
       "type": "number"
+    },
+    "exclude_from_translation": {
+      "type": "boolean"
     }
   }
 }

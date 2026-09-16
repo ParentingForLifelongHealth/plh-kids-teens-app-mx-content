@@ -6,7 +6,7 @@
   "rows": [
     {
       "type": "declare_global_constant",
-      "name": "facilitator_message_faci_group_id",
+      "name": "facilitator_message_facilitator_group_id",
       "value": "**¿Formas parte de algún grupo de crianza?**\n\nSi tu guía te dio su clave, escríbela aquí. Si no tienes una, da clic en Saltar.",
       "_translations": {
         "value": {}
@@ -14,7 +14,7 @@
     },
     {
       "type": "declare_global_constant",
-      "name": "question_user_facilitator_group",
+      "name": "question_facilitator_group_id",
       "value": "¿Cuál es la clave de tu guía?",
       "_translations": {
         "value": {}
@@ -22,23 +22,15 @@
     },
     {
       "type": "declare_global_constant",
-      "name": "placeholder_user_facilitator_group",
-      "value": "Escribe la clave de 4 dígitos",
+      "name": "placeholder_facilitator_group_id",
+      "value": "Escribe la clave",
       "_translations": {
         "value": {}
       }
     },
     {
       "type": "declare_global_constant",
-      "name": "facilitator_input_restriction",
-      "value": "Por favor escribe una clave válida",
-      "_translations": {
-        "value": {}
-      }
-    },
-    {
-      "type": "declare_global_constant",
-      "name": "error_invalid_group",
+      "name": "error_invalid_facilitator_group_id",
       "value": "Clave incorrecta. Por favor, vuelve a intentar.",
       "_translations": {
         "value": {}

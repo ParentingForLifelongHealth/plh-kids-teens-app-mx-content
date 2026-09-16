@@ -6,7 +6,6 @@
     {
       "name": "article_id",
       "value": "intro_connect",
-      "comments": "intro_connect",
       "exclude_from_translation": true
     },
     {
@@ -22,19 +21,16 @@
     {
       "name": "data",
       "value": "@local.module_id@local.articles",
-      "comments": "connect_articles",
       "exclude_from_translation": true
     },
     {
       "name": "concat_article_id",
       "value": "@local.data.@local.article_id",
-      "comments": "connect_articles.intro_connect",
       "exclude_from_translation": true
     },
     {
       "name": "article_data",
       "value": "@data.@local.concat_article_id",
-      "comments": "@data.connect_articles.intro_connect",
       "exclude_from_translation": true
     },
     {
