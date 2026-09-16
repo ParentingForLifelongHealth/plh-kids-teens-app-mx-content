@@ -971,11 +971,15 @@
       "type": "display_group",
       "name": "page_success",
       "parameter_list": {
-        "style": "column"
+        "style": "column",
+        "sticky": "top"
       },
       "condition": "@local.show_success_page",
       "style_list": [
-        "background-color: @global.onboarding_completed_background_colour"
+        "background-color: @global.onboarding_completed_background_colour",
+        "height: 100vh",
+        "overflow: scroll",
+        "padding: 24px"
       ],
       "rows": [
         {

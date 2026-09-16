@@ -1,0 +1,31 @@
+{
+  "flow_type": "generator",
+  "flow_name": "anxiety_t_article_gen",
+  "status": "released",
+  "parameter_list": {
+    "input_data_list": "anxiety_t_articles",
+    "output_flow_name": "article_anxiety_t_@gen.id",
+    "output_flow_type": "template"
+  },
+  "module_id": "anxiety_t",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "article",
+      "value": "article",
+      "action_list": "completed | emit: completed; uncompleted | emit: uncompleted"
+    },
+    {
+      "name": "article_id",
+      "value": "@gen.id"
+    },
+    {
+      "name": "module_id",
+      "value": "anxiety_t",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

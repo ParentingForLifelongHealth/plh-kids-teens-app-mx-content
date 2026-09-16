@@ -1,0 +1,31 @@
+{
+  "flow_type": "generator",
+  "flow_name": "keep_positive_t_article_gen",
+  "status": "released",
+  "parameter_list": {
+    "input_data_list": "keep_positive_t_articles",
+    "output_flow_name": "article_keep_positive_t_@gen.id",
+    "output_flow_type": "template"
+  },
+  "module_id": "keep_positive_t",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "article",
+      "value": "article",
+      "action_list": "completed | emit: completed; uncompleted | emit: uncompleted"
+    },
+    {
+      "name": "article_id",
+      "value": "@gen.id"
+    },
+    {
+      "name": "module_id",
+      "value": "keep_positive_t",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}
