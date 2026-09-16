@@ -30,15 +30,26 @@
       "condition": "@local.days_since_prox_14d_last >= @global.proximal_outcome_frequency * @global.proximal_outcome_alternation"
     },
     {
+      "name": "hp_uncompleted_loaded",
+      "value": false,
+      "comment": "to fix PO CTA card flashing briefly before the hp review/module card showing"
+    },
+    {
+      "name": "hp_unlocked_loaded",
+      "value": false,
+      "comment": "to fix PO CTA card flashing briefly before the hp review/module card showing"
+    },
+    {
       "name": "hp_uncompleted_ids"
     },
     {
       "type": "begin_data_items",
       "name": "loop_2",
       "value": "@data.hp_check_in",
-      "action_list": "data_changed | set_local : hp_uncompleted_ids : @items.map(item => item.id)",
+      "action_list": "data_changed | set_local : hp_uncompleted_ids : @items.map(item => item.id);\ndata_changed | set_local : hp_uncompleted_loaded : true;",
       "parameter_list": "filter: !@item.unlocked_activity",
-      "exclude_from_translation": true
+      "exclude_from_translation": true,
+      "comment": "to fix PO CTA card flashing briefly before the hp review/module card showing"
     },
     {
       "type": "end_data_items"
@@ -50,9 +61,10 @@
       "type": "begin_data_items",
       "name": "loop_1",
       "value": "@data.courses",
-      "action_list": "data_changed | set_local : hp_unlocked_ids : @items.map(item => item.id)",
+      "action_list": "data_changed | set_local : hp_unlocked_ids : @items.map(item => item.id);\ndata_changed | set_local : hp_unlocked_loaded : true;",
       "parameter_list": "filter: !!@item.completed_ts && window.date_fns.differenceInDays(new Date(),new Date(new Date(@item.completed_ts).setHours(0,0,0,0))) >= @local.countdown_days;\nsort: completed_ts;",
-      "exclude_from_translation": true
+      "exclude_from_translation": true,
+      "comment": "to fix PO CTA card flashing briefly before the hp review/module card showing"
     },
     {
       "type": "end_data_items"
@@ -136,7 +148,8 @@
     {
       "type": "begin_display_group",
       "parameter_list": "style: column",
-      "condition": "!@local.hp_id"
+      "condition": "!@local.hp_id && !!@local.hp_unlocked_loaded && !!@local.hp_uncompleted_loaded",
+      "comment": "to fix PO CTA card flashing briefly before the hp review/module card showing"
     },
     {
       "type": "plh_get_up_next",
@@ -154,7 +167,7 @@
     },
     {
       "name": "has_in_progress",
-      "value": 0
+      "comment": "to fix PO CTA card flashing briefly before the hp review/module card showing\nwith no starting value, has_in_progress == 0 and has_in_progress > 0 are both false until get_last_in_progress reports. So neither the CTA nor \"up next\" shows until the real count is known"
     },
     {
       "type": "data_items",

@@ -5,13 +5,13 @@
   "rows": [
     {
       "name": "article_id",
-      "value": "explore_5",
-      "exclude_from_translation": true
+      "exclude_from_translation": true,
+      "comments": "explore_5"
     },
     {
       "name": "module_id",
-      "value": "feelings",
-      "exclude_from_translation": true
+      "exclude_from_translation": true,
+      "comments": "feelings"
     },
     {
       "name": "facilitator_id",
@@ -45,62 +45,63 @@
     },
     {
       "name": "perform_category_header_computations",
-      "value": true
+      "value": true,
+      "exclude_from_translation": true
     },
     {
       "name": "show_header",
-      "value": "!@local.article_data.nested"
+      "value": "!@local.article_data.nested",
+      "exclude_from_translation": true
     },
     {
       "name": "show_nav_buttons",
-      "value": "!@local.article_data.nested"
+      "value": "!@local.article_data.nested",
+      "exclude_from_translation": true
     },
     {
       "name": "is_tips",
-      "value": false
+      "value": false,
+      "exclude_from_translation": true
     },
     {
       "name": "show_progress",
-      "value": false
+      "value": false,
+      "exclude_from_translation": true
     },
     {
       "name": "progress",
-      "value": 0
-    },
-    {
-      "type": "begin_display_group",
-      "name": "dg_category_header_computations",
-      "condition": "!!(@local.perform_category_header_computations)",
-      "parameter_list": "style: column",
+      "value": 0,
       "exclude_from_translation": true
     },
     {
       "name": "category_id",
       "value": "@local.article_data.category_id",
+      "condition": "!!(@local.perform_category_header_computations)",
       "exclude_from_translation": true
     },
     {
       "name": "categories",
       "value": "_category_tasks",
+      "condition": "!!(@local.perform_category_header_computations)",
       "exclude_from_translation": true
     },
     {
       "name": "c_data",
       "value": "@local.module_id@local.categories",
+      "condition": "!!(@local.perform_category_header_computations)",
       "exclude_from_translation": true
     },
     {
       "name": "concat_category_id",
       "value": "@local.c_data.@local.category_id",
+      "condition": "!!(@local.perform_category_header_computations)",
       "exclude_from_translation": true
     },
     {
       "name": "category_data",
       "value": "@data.@local.concat_category_id",
+      "condition": "!!(@local.perform_category_header_computations)",
       "exclude_from_translation": true
-    },
-    {
-      "type": "end_display_group"
     },
     {
       "type": "begin_template",

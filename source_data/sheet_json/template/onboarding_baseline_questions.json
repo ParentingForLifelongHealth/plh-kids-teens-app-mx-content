@@ -85,12 +85,14 @@
       "type": "begin_display_group",
       "name": "page_success",
       "parameter_list": "style: column",
-      "condition": "@local.show_success_page"
+      "condition": "@local.show_success_page",
+      "style_list": "background-color: @global.onboarding_completed_background_colour"
     },
     {
       "type": "lottie_animation",
       "name": "lottie",
       "value": "@global.onboarding_completed_lottie_asset",
+      "parameter_list": "loop: false",
       "condition": "!!@global.onboarding_completed_lottie_asset"
     },
     {
@@ -109,12 +111,12 @@
       "type": "begin_display_group",
       "name": "dg_footer",
       "parameter_list": "sticky: bottom;",
-      "style_list": "padding: 12px 24px;"
+      "style_list": "padding: 12px 24px;\nbackground-color: @global.onboarding_completed_background_colour;"
     },
     {
       "type": "button",
       "name": "button_completed",
-      "value": "@global.continue",
+      "value": "@global.onboarding_completed_button",
       "action_list": "click | emit: completed;\nclick | set_field: onboarding_settings_completed: true;\nclick | set_field: proximal_outcome_time_point : before;",
       "parameter_list": "style: navigation;"
     },

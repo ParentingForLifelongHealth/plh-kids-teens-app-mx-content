@@ -18,7 +18,7 @@
       "type": "begin_display_group",
       "name": "dg_header",
       "parameter_list": "sticky: top; \nstyle: background_solid;",
-      "style_list": "align-items: center;\npadding-top: 12px;\npadding-inline-start: 24px;\npadding-inline-end: 12px;"
+      "style_list": "align-items: center;\npadding-top: 12px;\npadding-inline: 24px;"
     },
     {
       "type": "begin_display_group",
@@ -48,7 +48,8 @@
       "type": "round_button",
       "name": "close_button",
       "action_list": "click | nav_stack: close_top;",
-      "parameter_list": "variant: no-background; \nicon_src: @local.close_icon_asset"
+      "parameter_list": "variant: no-background; \nicon_src: @local.close_icon_asset",
+      "style_list": "margin-inline-end: -12px;"
     },
     {
       "type": "end_display_group"
