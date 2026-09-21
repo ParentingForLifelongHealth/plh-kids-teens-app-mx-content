@@ -405,7 +405,7 @@
     },
     {
       "name": "is_last",
-      "value": true,
+      "value": false,
       "exclude_from_translation": true
     },
     {
@@ -448,7 +448,50 @@
     },
     {
       "name": "is_last",
+      "value": false,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "article_with_PO_7_last_in_course",
+      "value": "article_wrap",
+      "action_list": "completed | set_local | PO_data_set: true;\ncompleted | set_local: active_index: @item._index  + 1;\ncompleted | set_item | completed: true;\ncompleted | set_item | last_completed_ts: @calc(now());\ncompleted | set_data | _list_id: module_tasks, _id: @local.module_id, completed: true, completed_ts: @calc(now());\ncompleted | set_data | _list_id: courses, _id: @local.course_id, completed: true, completed_ts: @calc(now());\ncompleted | set_field : n_modules_completed :  @local.curr_n_mod_or_plus_one;\ncompleted | set_field : last_module_in_progress: @local.last_module_in_progress;\n\ncompleted | set_data | _list_id: module_tasks, _id: @local.module_id, unlocked_activity: TRUE;\ncompleted | set_field: latest_unlocked_activity: @local.picked_activity_id;\n\ncompleted | set_field : proximal_outcome_time_point_count: @calc(Number(@fields.proximal_outcome_time_point_count) + 1);\ncompleted | set_field: curr_prox_out_row_id : new;\ncompleted | set_field: curr_goal_reflection_input : ;\ncompleted | set_data | _list_id: proximal_outcome_7d_pages, _id: intro, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_7d_pages, _id: qs_goal, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_7d_pages, _id: goal_refl, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_7d_pages, _id: progress_7, completed: false;\n\ncompleted | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: goal;\n\ncompleted | set_field: prox_outcome_access: module;\ncompleted | set_field: prox_7d_last_ts: @calc(now());\nuncompleted | set_local: active_index: @item._index  - 1;",
+      "exclude_from_translation": true,
+      "condition": "!@local.PO_data && @local.has_PO_7",
+      "comment": "need to add the add data here"
+    },
+    {
+      "name": "article_id",
+      "value": "@item.id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "module_id",
+      "value": "@local.module_id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "show_progress",
       "value": true,
+      "exclude_from_translation": true
+    },
+    {
+      "name": "progress",
+      "value": "@local.progress",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "category_id",
+      "value": "@item.category_id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "is_last",
+      "value": false,
       "exclude_from_translation": true
     },
     {
@@ -490,7 +533,49 @@
     },
     {
       "name": "is_last",
+      "value": false,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "article_with_PO_14_last_in_course",
+      "value": "article_wrap",
+      "action_list": "completed | set_local | PO_data_set: true;\ncompleted | set_local: active_index: @item._index  + 1;\ncompleted | set_item | completed: true;\ncompleted | set_item | last_completed_ts: @calc(now());\ncompleted | set_data | _list_id: module_tasks, _id: @local.module_id, completed: true, completed_ts: @calc(now());\ncompleted | set_data | _list_id: courses, _id: @local.course_id, completed: true, completed_ts: @calc(now());\ncompleted | set_field : n_modules_completed :  @local.curr_n_mod_or_plus_one;\ncompleted | set_field : last_module_in_progress: @local.last_module_in_progress;\n\ncompleted | set_data | _list_id: module_tasks, _id: @local.module_id, unlocked_activity: TRUE;\ncompleted | set_field: latest_unlocked_activity: @local.picked_activity_id;\n\ncompleted | set_field : proximal_outcome_time_point_count: @calc(Number(@fields.proximal_outcome_time_point_count) + 1);\ncompleted | set_field: curr_prox_out_row_id : new;\ncompleted | set_field: curr_goal_reflection_input : ;\n\ncompleted | set_data | _list_id: proximal_outcome_14d_pages, _id: intro, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_14d_pages, _id: qs_goal, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_14d_pages, _id: goal_refl, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_14d_pages, _id: qs_base_1, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_14d_pages, _id: qs_base_2, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_14d_pages, _id: progress_14, completed: false;\n\ncompleted | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: goal;\n\ncompleted | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: qs1;\n\ncompleted | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: qs2;\n\ncompleted | set_field: prox_outcome_access: module;\ncompleted | set_field: prox_7d_last_ts: @calc(now());\ncompleted | set_field: prox_14d_last_ts: @calc(now());\n\nuncompleted | set_local: active_index: @item._index  - 1;",
+      "exclude_from_translation": true,
+      "condition": "!@local.PO_data && @local.has_PO_14"
+    },
+    {
+      "name": "article_id",
+      "value": "@item.id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "module_id",
+      "value": "@local.module_id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "show_progress",
       "value": true,
+      "exclude_from_translation": true
+    },
+    {
+      "name": "progress",
+      "value": "@local.progress",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "category_id",
+      "value": "@item.category_id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "is_last",
+      "value": false,
       "exclude_from_translation": true
     },
     {
