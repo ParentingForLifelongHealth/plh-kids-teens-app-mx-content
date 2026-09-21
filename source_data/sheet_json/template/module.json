@@ -71,6 +71,22 @@
       "value": 0
     },
     {
+      "name": "PO_data_set",
+      "value": false
+    },
+    {
+      "name": "picked_activity_id",
+      "value": 0
+    },
+    {
+      "name": "has_PO_7",
+      "value": false
+    },
+    {
+      "name": "has_PO_14",
+      "value": false
+    },
+    {
       "name": "extra_steps",
       "value": 0
     },
@@ -203,38 +219,40 @@
     {
       "type": "begin_template",
       "name": "article_first",
-      "value": "article_@local.template_name",
+      "value": "article_wrap",
       "action_list": "completed | set_item | completed: true;\ncompleted | set_item | last_completed_ts: @calc(now());\ncompleted | set_data | _list_id: module_tasks, _id: @local.module_id, last_accessed_ts: @calc(now()), started_ts: @calc(now());\ncompleted | task: evaluate | data_list_name: module_tasks, row_id: @local.module_id;\ncompleted | set_local: active_index: @item._index  + 1;\ncompleted | set_field : last_module_in_progress: @local.curr_module_or_last_in_progress;\nuncompleted | set_field : last_module_in_progress: @local.curr_module_or_last_in_progress;\nuncompleted | emit: uncompleted;",
       "exclude_from_translation": true,
       "condition": "@item._first"
     },
     {
-      "type": "begin_nested_properties",
-      "name": "article"
+      "name": "article_id",
+      "value": "@item.id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "module_id",
+      "value": "@local.module_id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "category_id",
+      "value": "@item.category_id",
+      "exclude_from_translation": true
     },
     {
       "name": "show_progress",
-      "value": true
+      "value": true,
+      "exclude_from_translation": true
     },
     {
       "name": "progress",
-      "value": "@local.progress"
-    },
-    {
-      "type": "begin_nested_properties",
-      "name": "nav_buttons",
+      "value": "@local.progress",
       "exclude_from_translation": true
     },
     {
-      "name": "show_previous",
-      "value": false,
+      "name": "is_first",
+      "value": true,
       "exclude_from_translation": true
-    },
-    {
-      "type": "end_nested_properties"
-    },
-    {
-      "type": "end_nested_properties"
     },
     {
       "type": "end_template",
@@ -243,16 +261,19 @@
     {
       "type": "begin_template",
       "name": "article_middle",
-      "value": "article_@local.template_name",
+      "value": "article_wrap",
       "action_list": "completed | set_item | completed: true;\ncompleted | set_item | last_completed_ts: @calc(now());\ncompleted | set_data | _list_id: module_tasks, _id: @local.module_id, last_accessed_ts: @calc(now());\ncompleted | task: evaluate | data_list_name: module_tasks, row_id: @local.module_id;\ncompleted | set_local: active_index: @item._index  + 1;\nuncompleted | set_local: active_index: @item._index  - 1;",
       "exclude_from_translation": true,
       "condition": "!@item._last && !@item._first",
       "comment": "Use different conditions to allow for conditional nav buttons and triggered actions depending on whether first, last or intermediate template.\n\nThis could be simplified once proposed data_action triggers implemented"
     },
     {
-      "type": "begin_nested_properties",
-      "name": "article",
-      "exclude_from_translation": true
+      "name": "article_id",
+      "value": "@item.id"
+    },
+    {
+      "name": "module_id",
+      "value": "@local.module_id"
     },
     {
       "name": "show_progress",
@@ -263,8 +284,8 @@
       "value": "@local.progress"
     },
     {
-      "type": "end_nested_properties",
-      "exclude_from_translation": true
+      "name": "category_id",
+      "value": "@item.category_id"
     },
     {
       "type": "end_template",
@@ -273,16 +294,19 @@
     {
       "type": "begin_template",
       "name": "article_last",
-      "value": "article_@local.template_name",
+      "value": "article_wrap",
       "action_list": "completed | set_item | completed: true;\ncompleted | set_item | last_completed_ts: @calc(now());\ncompleted | set_data | _list_id: module_tasks, _id: @local.module_id, completed: true, completed_ts: @calc(now());\ncompleted | set_field : n_modules_completed :  @local.curr_n_mod_or_plus_one;\ncompleted | set_field : last_module_in_progress: @local.last_module_in_progress;\ncompleted | emit: completed;\ncompleted | emit: server_sync;\nuncompleted | set_local: active_index: @item._index  - 1;",
       "exclude_from_translation": true,
-      "condition": "@item._last && (@local.uncompleted_in_course !== 1)",
+      "condition": "@item._last && (@local.uncompleted_in_course !== 1) && (local.extra_steps == 0)",
       "comment": "completed | set_item | completed: true;\ncompleted | set_item | last_completed_ts: @calc(now());\ncompleted | task: evaluate | data_list_name: module_tasks, row_id: @local.module_id;\ncompleted | set_data | _list_id: module_tasks, _id: @local.module_id, completed_ts: @calc(now());\ncompleted | emit: completed;\ncompleted | emit: server_sync;\nuncompleted | set_local: active_index: @item._index  - 1;"
     },
     {
-      "type": "begin_nested_properties",
-      "name": "article",
-      "exclude_from_translation": true
+      "name": "article_id",
+      "value": "@item.id"
+    },
+    {
+      "name": "module_id",
+      "value": "@local.module_id"
     },
     {
       "name": "show_progress",
@@ -293,23 +317,12 @@
       "value": "@local.progress"
     },
     {
-      "type": "begin_nested_properties",
-      "name": "nav_buttons",
-      "exclude_from_translation": true
+      "name": "category_id",
+      "value": "@item.category_id"
     },
     {
-      "name": "next_icon_src",
-      "value": "@global.first_completion_icon",
-      "exclude_from_translation": true,
-      "condition": "@local.extra_steps== 0"
-    },
-    {
-      "type": "end_nested_properties",
-      "exclude_from_translation": true
-    },
-    {
-      "type": "end_nested_properties",
-      "exclude_from_translation": true
+      "name": "is_last",
+      "value": true
     },
     {
       "type": "end_template",
@@ -321,12 +334,15 @@
       "value": "article_@local.template_name",
       "action_list": "completed | set_item | completed: true;\ncompleted | set_item | last_completed_ts: @calc(now());\ncompleted | set_data | _list_id: module_tasks, _id: @local.module_id, completed: true, completed_ts: @calc(now());\ncompleted | set_data | _list_id: courses, _id: @local.course_id, completed: true, completed_ts: @calc(now());\ncompleted | set_field : n_modules_completed : @local.curr_n_mod_or_plus_one;\ncompleted | set_field : last_module_in_progress: @local.last_module_in_progress;\ncompleted | emit: completed;\ncompleted | emit: server_sync;\nuncompleted | set_local: active_index: @item._index  - 1;",
       "exclude_from_translation": true,
-      "condition": "@item._last && (@local.uncompleted_in_course == 1)"
+      "condition": "@item._last && (@local.uncompleted_in_course == 1) && (local.extra_steps == 0)"
     },
     {
-      "type": "begin_nested_properties",
-      "name": "article",
-      "exclude_from_translation": true
+      "name": "article_id",
+      "value": "@item.id"
+    },
+    {
+      "name": "module_id",
+      "value": "@local.module_id"
     },
     {
       "name": "show_progress",
@@ -337,22 +353,144 @@
       "value": "@local.progress"
     },
     {
-      "type": "begin_nested_properties",
-      "name": "nav_buttons",
+      "name": "category_id",
+      "value": "@item.category_id"
+    },
+    {
+      "name": "is_last",
+      "value": true
+    },
+    {
+      "type": "end_template",
       "exclude_from_translation": true
     },
     {
-      "name": "next_icon_src",
-      "value": "@global.first_completion_icon",
+      "type": "begin_display_group",
+      "name": "article_last_with_PO",
+      "condition": "@item._last && (@local.uncompleted_in_course !== 1) && (local.extra_steps == 0)"
+    },
+    {
+      "type": "begin_template",
+      "name": "article_with_PO_data_set",
+      "value": "article_wrap",
+      "action_list": "completed | set_local: active_index: @item._index  + 1;\nuncompleted | set_local: active_index: @item._index  - 1;",
       "exclude_from_translation": true,
-      "condition": "@local.extra_steps == 0"
+      "condition": "!!@local.PO_data",
+      "comment": "need to add the add data here"
     },
     {
-      "type": "end_nested_properties",
+      "name": "article_id",
+      "value": "@item.id",
       "exclude_from_translation": true
     },
     {
-      "type": "end_nested_properties",
+      "name": "module_id",
+      "value": "@local.module_id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "show_progress",
+      "value": true,
+      "exclude_from_translation": true
+    },
+    {
+      "name": "progress",
+      "value": "@local.progress",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "category_id",
+      "value": "@item.category_id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "is_last",
+      "value": true,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "article_with_PO_7",
+      "value": "article_wrap",
+      "action_list": "completed | set_local | PO_data_set: true;\ncompleted | set_local: active_index: @item._index  + 1;\ncompleted | set_item | completed: true;\ncompleted | set_item | last_completed_ts: @calc(now());\ncompleted | set_data | _list_id: module_tasks, _id: @local.module_id, completed: true, completed_ts: @calc(now());\ncompleted | set_field : n_modules_completed :  @local.curr_n_mod_or_plus_one;\ncompleted | set_field : last_module_in_progress: @local.last_module_in_progress;\n\ncompleted | set_data | _list_id: module_tasks, _id: @local.module_id, unlocked_activity: TRUE;\ncompleted | set_field: latest_unlocked_activity: @local.picked_activity_id;\n\ncompleted | set_field : proximal_outcome_time_point_count: @calc(Number(@fields.proximal_outcome_time_point_count) + 1);\ncompleted | set_field: curr_prox_out_row_id : new;\ncompleted | set_field: curr_goal_reflection_input : ;\ncompleted | set_data | _list_id: proximal_outcome_7d_pages, _id: intro, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_7d_pages, _id: qs_goal, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_7d_pages, _id: goal_refl, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_7d_pages, _id: progress_7, completed: false;\n\ncompleted | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: goal;\n\ncompleted | set_field: prox_outcome_access: module;\ncompleted | set_field: prox_7d_last_ts: @calc(now());\nuncompleted | set_local: active_index: @item._index  - 1;",
+      "exclude_from_translation": true,
+      "condition": "!@local.PO_data && @local.has_PO_7",
+      "comment": "need to add the add data here"
+    },
+    {
+      "name": "article_id",
+      "value": "@item.id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "module_id",
+      "value": "@local.module_id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "show_progress",
+      "value": true,
+      "exclude_from_translation": true
+    },
+    {
+      "name": "progress",
+      "value": "@local.progress",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "category_id",
+      "value": "@item.category_id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "is_last",
+      "value": true,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "article_with_PO_14",
+      "value": "article_wrap",
+      "action_list": "completed | set_local | PO_data_set: true;\ncompleted | set_local: active_index: @item._index  + 1;\ncompleted | set_item | completed: true;\ncompleted | set_item | last_completed_ts: @calc(now());\ncompleted | set_data | _list_id: module_tasks, _id: @local.module_id, completed: true, completed_ts: @calc(now());\ncompleted | set_field : n_modules_completed :  @local.curr_n_mod_or_plus_one;\ncompleted | set_field : last_module_in_progress: @local.last_module_in_progress;\n\ncompleted | set_data | _list_id: module_tasks, _id: @local.module_id, unlocked_activity: TRUE;\ncompleted | set_field: latest_unlocked_activity: @local.picked_activity_id;\n\ncompleted | set_field : proximal_outcome_time_point_count: @calc(Number(@fields.proximal_outcome_time_point_count) + 1);\ncompleted | set_field: curr_prox_out_row_id : new;\ncompleted | set_field: curr_goal_reflection_input : ;\n\ncompleted | set_data | _list_id: proximal_outcome_14d_pages, _id: intro, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_14d_pages, _id: qs_goal, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_14d_pages, _id: goal_refl, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_14d_pages, _id: qs_base_1, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_14d_pages, _id: qs_base_2, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_14d_pages, _id: progress_14, completed: false;\n\ncompleted | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: goal;\n\ncompleted | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: qs1;\n\ncompleted | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: qs2;\n\ncompleted | set_field: prox_outcome_access: module;\ncompleted | set_field: prox_7d_last_ts: @calc(now());\ncompleted | set_field: prox_14d_last_ts: @calc(now());\n\nuncompleted | set_local: active_index: @item._index  - 1;",
+      "exclude_from_translation": true,
+      "condition": "!@local.PO_data && @local.has_PO_14"
+    },
+    {
+      "name": "article_id",
+      "value": "@item.id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "module_id",
+      "value": "@local.module_id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "show_progress",
+      "value": true,
+      "exclude_from_translation": true
+    },
+    {
+      "name": "progress",
+      "value": "@local.progress",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "category_id",
+      "value": "@item.category_id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "is_last",
+      "value": true,
       "exclude_from_translation": true
     },
     {
@@ -366,7 +504,45 @@
       "type": "end_display_group"
     },
     {
+      "type": "end_display_group"
+    },
+    {
       "type": "end_data_items"
+    },
+    {
+      "type": "begin_display_group",
+      "condition": "(@local.active_index == @local.article_count) && (local.extra_steps !== 0)"
+    },
+    {
+      "type": "begin_template",
+      "name": "proximal_outcome_page_7",
+      "value": "proximal_outcome_7d_checkin",
+      "action_list": "completed | emit: completed;\ncompleted | emit: server_sync;\nuncompleted | set_local: active_index: @item._index  - 1;",
+      "condition": "@local.has_PO_7"
+    },
+    {
+      "name": "module_article_count",
+      "value": "@local.article_count"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "begin_template",
+      "name": "proximal_outcome_page_14",
+      "value": "proximal_outcome_14d_checkin",
+      "action_list": "completed | emit: completed;\ncompleted | emit: server_sync;\nuncompleted | set_local: active_index: @item._index  - 1;",
+      "condition": "@local.has_PO_14"
+    },
+    {
+      "name": "module_article_count",
+      "value": "@local.module_article_count"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "end_display_group"
     }
   ]
 }

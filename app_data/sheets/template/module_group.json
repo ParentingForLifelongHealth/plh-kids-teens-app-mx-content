@@ -139,31 +139,6 @@
           "exclude_from_translation": true,
           "rows": [
             {
-              "name": "completed_template",
-              "value": "module_landing_@item.id",
-              "_translations": {
-                "value": {}
-              },
-              "exclude_from_translation": true,
-              "type": "set_variable",
-              "_nested_name": "plh_course_accordion_12.loop_modules.completed_template",
-              "_dynamicFields": {
-                "value": [
-                  {
-                    "fullExpression": "module_landing_@item.id",
-                    "matchedExpression": "@item.id",
-                    "type": "item",
-                    "fieldName": "id"
-                  }
-                ]
-              },
-              "_dynamicDependencies": {
-                "@item.id": [
-                  "value"
-                ]
-              }
-            },
-            {
               "name": "not_started_template",
               "value": "stack_module_@item.id",
               "_translations": {
@@ -412,11 +387,20 @@
               "action_list": [
                 {
                   "trigger": "click",
+                  "action_id": "set_field",
+                  "args": [
+                    "current_module_id",
+                    "@item.id"
+                  ],
+                  "_raw": "click | set_field: current_module_id : @item.id"
+                },
+                {
+                  "trigger": "click",
                   "action_id": "go_to",
                   "args": [
-                    "@local.completed_template"
+                    "module_landing"
                   ],
-                  "_raw": "click | go_to: @local.completed_template"
+                  "_raw": "click | go_to: module_landing"
                 },
                 {
                   "trigger": "click",
@@ -450,25 +434,25 @@
                 "action_list": {
                   "0": {
                     "args": {
-                      "0": [
+                      "1": [
                         {
-                          "fullExpression": "@local.completed_template",
-                          "matchedExpression": "@local.completed_template",
-                          "type": "local",
-                          "fieldName": "completed_template"
+                          "fullExpression": "@item.id",
+                          "matchedExpression": "@item.id",
+                          "type": "item",
+                          "fieldName": "id"
                         }
                       ]
                     },
                     "_raw": [
                       {
-                        "fullExpression": "click | go_to: @local.completed_template",
-                        "matchedExpression": "@local.completed_template",
-                        "type": "local",
-                        "fieldName": "completed_template"
+                        "fullExpression": "click | set_field: current_module_id : @item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
                       }
                     ]
                   },
-                  "1": {
+                  "2": {
                     "args": {
                       "1": [
                         {
@@ -544,13 +528,13 @@
                 "@item.title": [
                   "value"
                 ],
-                "@local.completed_template": [
-                  "action_list.0.args.0",
+                "@item.id": [
+                  "action_list.0.args.1",
                   "action_list.0._raw"
                 ],
                 "@local.course": [
-                  "action_list.1.args.1",
-                  "action_list.1._raw"
+                  "action_list.2.args.1",
+                  "action_list.2._raw"
                 ],
                 "!@item.started_ts": [
                   "parameter_list.highlighted"
@@ -943,6 +927,6 @@
   "_source": {
     "name": "kids_teens_global V2",
     "path": "templates/module_list.xlsx",
-    "url": "https://docs.google.com/spreadsheets/d/1SkxfFFUzSjkUaxGKvYxiec-mx0szbeR6TaqBwfbBJyQ"
+    "url": "https://docs.google.com/spreadsheets/d/1jyM-bt2RA6T7-N9uI8pRCUYq2LhScnTznnDdTXI6vU8"
   }
 }

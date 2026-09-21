@@ -2,6 +2,13 @@
   "flow_type": "template",
   "flow_name": "module_landing",
   "status": "released",
+  "parameter_list": {
+    "app_config": {
+      "LAYOUT": {
+        "page_padding": "0 0"
+      }
+    }
+  },
   "rows": [
     {
       "type": "update_action_list",
@@ -22,13 +29,28 @@
     },
     {
       "name": "module_id",
-      "value": "selfcare",
+      "value": "@fields.current_module_id",
       "_translations": {
         "value": {}
       },
       "exclude_from_translation": true,
       "type": "set_variable",
-      "_nested_name": "module_id"
+      "_nested_name": "module_id",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields.current_module_id",
+            "matchedExpression": "@fields.current_module_id",
+            "type": "fields",
+            "fieldName": "current_module_id"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.current_module_id": [
+          "value"
+        ]
+      }
     },
     {
       "name": "course_id",
@@ -920,6 +942,6 @@
   "_source": {
     "name": "kids_teens_global V2",
     "path": "templates/PLH module_navigation.xlsx",
-    "url": "https://docs.google.com/spreadsheets/d/1upg0i3Kz-ccJ44ZfbV49SWmehVpvHW3r9kBtc-bDRFI"
+    "url": "https://docs.google.com/spreadsheets/d/1OrFP6fI6mwuL-ZMvzWh2Qf36Fdm_pwXNdthubmh9tQA"
   }
 }

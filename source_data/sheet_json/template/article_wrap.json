@@ -1,0 +1,199 @@
+{
+  "flow_type": "template",
+  "flow_name": "article_wrap",
+  "status": "released",
+  "rows": [
+    {
+      "name": "article_id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "module_id",
+      "value": "solve_problem_c",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "show_progress",
+      "value": false,
+      "exclude_from_translation": true
+    },
+    {
+      "name": "progress",
+      "value": 0,
+      "exclude_from_translation": true
+    },
+    {
+      "name": "category_id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "is_last",
+      "value": false,
+      "exclude_from_translation": true
+    },
+    {
+      "name": "is_first",
+      "value": false,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "is_relax",
+      "condition": "@local.category_id == \"relax\""
+    },
+    {
+      "name": "articles",
+      "value": "_article_tasks"
+    },
+    {
+      "type": "begin_template",
+      "name": "header",
+      "value": "header"
+    },
+    {
+      "name": "title",
+      "value": "@data.common_categories.relax.title"
+    },
+    {
+      "name": "icon_asset",
+      "value": "@data.common_categories.relax.icon_asset"
+    },
+    {
+      "name": "show_progress",
+      "value": true
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "begin_template",
+      "name": "article",
+      "value": "relax",
+      "action_list": "completed | emit: completed; uncompleted | emit: uncompleted"
+    },
+    {
+      "name": "id",
+      "value": "@local.article_id"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "is_check_in",
+      "condition": "@local.category_id == \"check_in\""
+    },
+    {
+      "type": "begin_template",
+      "name": "article",
+      "value": "article",
+      "action_list": "completed | emit: completed; uncompleted | emit: uncompleted",
+      "condition": true
+    },
+    {
+      "name": "data",
+      "value": "check_in",
+      "condition": true
+    },
+    {
+      "name": "article_id",
+      "value": "@local.article_id",
+      "condition": true
+    },
+    {
+      "name": "perform_category_header_computations",
+      "value": false
+    },
+    {
+      "name": "show_progress",
+      "value": "@local.show_progress"
+    },
+    {
+      "name": "progress",
+      "value": "@local.progress"
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "header"
+    },
+    {
+      "name": "title",
+      "value": "@global.check_in_title"
+    },
+    {
+      "name": "icon_asset",
+      "value": "images/icons/smile_eyes_up.svg"
+    },
+    {
+      "type": "end_nested_properties"
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "question_1"
+    },
+    {
+      "name": "radio_button_grid_width",
+      "value": "100%",
+      "condition": true
+    },
+    {
+      "type": "end_nested_properties"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_template",
+      "name": "is_article",
+      "value": "article",
+      "action_list": "completed | emit: completed; uncompleted | emit: uncompleted",
+      "condition": "(@local.category_id !== \"relax\") && (@local.category_id !== \"check_in\")"
+    },
+    {
+      "name": "article_id",
+      "value": "@local.article_id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "module_id",
+      "value": "@local.module_id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "show_progress",
+      "value": "@local.show_progress",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "progress",
+      "value": "@local.progress",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "nav_buttons"
+    },
+    {
+      "name": "next_icon_src",
+      "value": "@global.first_completion_icon",
+      "condition": "@local.is_last"
+    },
+    {
+      "name": "show_previous",
+      "value": false,
+      "condition": "@local.is_first"
+    },
+    {
+      "type": "end_nested_properties"
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

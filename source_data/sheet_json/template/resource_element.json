@@ -1,0 +1,166 @@
+{
+  "flow_type": "template",
+  "flow_name": "resource_element",
+  "status": "released",
+  "rows": [
+    {
+      "name": "resource_type",
+      "value": "pdf",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "resource_id",
+      "value": "onboard_guide_study",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "@local.resource_type",
+      "condition": false,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "@local.resource_id",
+      "condition": false,
+      "exclude_from_translation": true
+    },
+    {
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "condition": "@local.resource_type == \"pdf\"",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_data_items",
+      "value": "pdf_data",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "condition": "@item.id == @local.resource_id",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "round_button",
+      "name": "main_view",
+      "action_list": "click | go_to: pdf_@local.resource_id",
+      "parameter_list": "variant: no-background; \nicon_src: images/icons/docs.svg;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "@item.title",
+      "style_list": "flex: 1;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "round_button",
+      "name": "view",
+      "action_list": "click | go_to: pdf_@local.resource_id",
+      "parameter_list": "variant: no-background; \nicon_src: images/icons/visibility.svg;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "round_button",
+      "name": "download",
+      "action_list": "click | save_to_device: @item.pdf_asset",
+      "parameter_list": "variant: no-background; \nicon_src: images/icons/download.svg;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_data_items",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "condition": "@local.resource_type == \"media\"",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_data_items",
+      "value": "media_data",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "condition": "@item.id == @local.resource_id",
+      "parameter_list": "style: column",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "video",
+      "name": "video",
+      "value": "@item.media_asset",
+      "condition": "@item.type == \"video\"",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "audio",
+      "name": "audio",
+      "value": "@item.media_asset",
+      "condition": "@item.type == \"audio\"",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "youtube",
+      "name": "message_youtube",
+      "value": "@item.youtube_gb_en",
+      "condition": "@item.type == \"youtube\"",
+      "comments": "(@fields._app_language == \"cw_pap\") && (@item.type == \"youtube\")"
+    },
+    {
+      "type": "youtube",
+      "name": "message_youtube_za_xh",
+      "value": "@item.youtube_za_xh",
+      "condition": false,
+      "comments": "for different language"
+    },
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "style_list": "flex: 1;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "round_button",
+      "name": "download",
+      "action_list": "click | save_to_device: @item.media_asset",
+      "style_list": "margin-top:-15px",
+      "parameter_list": "variant: dark_orange;\nicon_src: images/icons/download_white.svg;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_data_items",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    }
+  ]
+}
