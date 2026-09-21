@@ -2679,7 +2679,7 @@
                         },
                         {
                           "name": "is_last",
-                          "value": true,
+                          "value": false,
                           "exclude_from_translation": true,
                           "type": "set_variable",
                           "_nested_name": "enable_dynamic_data_actions.only_for_active_index.cond_multi_art.article_last_with_PO.article_with_PO_data_set.is_last"
@@ -3065,7 +3065,7 @@
                         },
                         {
                           "name": "is_last",
-                          "value": true,
+                          "value": false,
                           "exclude_from_translation": true,
                           "type": "set_variable",
                           "_nested_name": "enable_dynamic_data_actions.only_for_active_index.cond_multi_art.article_last_with_PO.article_with_PO_7.is_last"
@@ -3405,6 +3405,722 @@
                         "@fields.proximal_outcome_time_point": [
                           "action_list.16._raw",
                           "action_list.16.params.entry_point"
+                        ],
+                        "!@local.PO_data": [
+                          "condition"
+                        ],
+                        "@local.has_PO_7": [
+                          "condition"
+                        ]
+                      }
+                    },
+                    {
+                      "type": "template",
+                      "name": "article_with_PO_7_last_in_course",
+                      "value": "article_wrap",
+                      "action_list": [
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_local",
+                          "args": [],
+                          "_raw": "completed | set_local | PO_data_set: true",
+                          "params": {
+                            "PO_data_set": true
+                          }
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_local",
+                          "args": [
+                            "active_index",
+                            "@item._index  + 1"
+                          ],
+                          "_raw": "completed | set_local: active_index: @item._index  + 1"
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_item",
+                          "args": [],
+                          "_raw": "completed | set_item | completed: true",
+                          "params": {
+                            "completed": true
+                          }
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_item",
+                          "args": [],
+                          "_raw": "completed | set_item | last_completed_ts: @calc(now())",
+                          "params": {
+                            "last_completed_ts": "@calc(now())"
+                          }
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_data",
+                          "args": [],
+                          "_raw": "completed | set_data | _list_id: module_tasks, _id: @local.module_id, completed: true, completed_ts: @calc(now())",
+                          "params": {
+                            "_list_id": "module_tasks",
+                            "_id": "@local.module_id",
+                            "completed": true,
+                            "completed_ts": "@calc(now())"
+                          }
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_data",
+                          "args": [],
+                          "_raw": "completed | set_data | _list_id: courses, _id: @local.course_id, completed: true, completed_ts: @calc(now())",
+                          "params": {
+                            "_list_id": "courses",
+                            "_id": "@local.course_id",
+                            "completed": true,
+                            "completed_ts": "@calc(now())"
+                          }
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_field",
+                          "args": [
+                            "n_modules_completed",
+                            "@local.curr_n_mod_or_plus_one"
+                          ],
+                          "_raw": "completed | set_field : n_modules_completed :  @local.curr_n_mod_or_plus_one"
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_field",
+                          "args": [
+                            "last_module_in_progress",
+                            "@local.last_module_in_progress"
+                          ],
+                          "_raw": "completed | set_field : last_module_in_progress: @local.last_module_in_progress"
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_data",
+                          "args": [],
+                          "_raw": "completed | set_data | _list_id: module_tasks, _id: @local.module_id, unlocked_activity: TRUE",
+                          "params": {
+                            "_list_id": "module_tasks",
+                            "_id": "@local.module_id",
+                            "unlocked_activity": true
+                          }
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_field",
+                          "args": [
+                            "latest_unlocked_activity",
+                            "@local.picked_activity_id"
+                          ],
+                          "_raw": "completed | set_field: latest_unlocked_activity: @local.picked_activity_id"
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_field",
+                          "args": [
+                            "proximal_outcome_time_point_count",
+                            "@calc(Number(@fields.proximal_outcome_time_point_count) + 1)"
+                          ],
+                          "_raw": "completed | set_field : proximal_outcome_time_point_count: @calc(Number(@fields.proximal_outcome_time_point_count) + 1)"
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_field",
+                          "args": [
+                            "curr_prox_out_row_id",
+                            "new"
+                          ],
+                          "_raw": "completed | set_field: curr_prox_out_row_id : new"
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_field",
+                          "args": [
+                            "curr_goal_reflection_input",
+                            ""
+                          ],
+                          "_raw": "completed | set_field: curr_goal_reflection_input :"
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_data",
+                          "args": [],
+                          "_raw": "completed | set_data | _list_id: proximal_outcome_7d_pages, _id: intro, completed: false",
+                          "params": {
+                            "_list_id": "proximal_outcome_7d_pages",
+                            "_id": "intro",
+                            "completed": false
+                          }
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_data",
+                          "args": [],
+                          "_raw": "completed | set_data | _list_id: proximal_outcome_7d_pages, _id: qs_goal, completed: false",
+                          "params": {
+                            "_list_id": "proximal_outcome_7d_pages",
+                            "_id": "qs_goal",
+                            "completed": false
+                          }
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_data",
+                          "args": [],
+                          "_raw": "completed | set_data | _list_id: proximal_outcome_7d_pages, _id: goal_refl, completed: false",
+                          "params": {
+                            "_list_id": "proximal_outcome_7d_pages",
+                            "_id": "goal_refl",
+                            "completed": false
+                          }
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_data",
+                          "args": [],
+                          "_raw": "completed | set_data | _list_id: proximal_outcome_7d_pages, _id: progress_7, completed: false",
+                          "params": {
+                            "_list_id": "proximal_outcome_7d_pages",
+                            "_id": "progress_7",
+                            "completed": false
+                          }
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "add_data",
+                          "args": [],
+                          "_raw": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: goal",
+                          "params": {
+                            "_list_id": "proximal_outcome_data",
+                            "entry_point": "@fields.proximal_outcome_time_point",
+                            "entry_point_count": "@fields.proximal_outcome_time_point_count",
+                            "entered_ts": "@calc(now())",
+                            "question_type": "goal"
+                          }
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_field",
+                          "args": [
+                            "prox_outcome_access",
+                            "module"
+                          ],
+                          "_raw": "completed | set_field: prox_outcome_access: module"
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_field",
+                          "args": [
+                            "prox_7d_last_ts",
+                            "@calc(now())"
+                          ],
+                          "_raw": "completed | set_field: prox_7d_last_ts: @calc(now())"
+                        },
+                        {
+                          "trigger": "uncompleted",
+                          "action_id": "set_local",
+                          "args": [
+                            "active_index",
+                            "@item._index  - 1"
+                          ],
+                          "_raw": "uncompleted | set_local: active_index: @item._index  - 1"
+                        }
+                      ],
+                      "exclude_from_translation": true,
+                      "condition": "!@local.PO_data && @local.has_PO_7",
+                      "rows": [
+                        {
+                          "name": "article_id",
+                          "value": "@item.id",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "exclude_from_translation": true,
+                          "type": "set_variable",
+                          "_nested_name": "enable_dynamic_data_actions.only_for_active_index.cond_multi_art.article_last_with_PO.article_with_PO_7_last_in_course.article_id",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "@item.id",
+                                "matchedExpression": "@item.id",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@item.id": [
+                              "value"
+                            ]
+                          }
+                        },
+                        {
+                          "name": "module_id",
+                          "value": "@local.module_id",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "exclude_from_translation": true,
+                          "type": "set_variable",
+                          "_nested_name": "enable_dynamic_data_actions.only_for_active_index.cond_multi_art.article_last_with_PO.article_with_PO_7_last_in_course.module_id",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "@local.module_id",
+                                "matchedExpression": "@local.module_id",
+                                "type": "local",
+                                "fieldName": "module_id"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@local.module_id": [
+                              "value"
+                            ]
+                          }
+                        },
+                        {
+                          "name": "show_progress",
+                          "value": true,
+                          "exclude_from_translation": true,
+                          "type": "set_variable",
+                          "_nested_name": "enable_dynamic_data_actions.only_for_active_index.cond_multi_art.article_last_with_PO.article_with_PO_7_last_in_course.show_progress"
+                        },
+                        {
+                          "name": "progress",
+                          "value": "@local.progress",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "exclude_from_translation": true,
+                          "type": "set_variable",
+                          "_nested_name": "enable_dynamic_data_actions.only_for_active_index.cond_multi_art.article_last_with_PO.article_with_PO_7_last_in_course.progress",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "@local.progress",
+                                "matchedExpression": "@local.progress",
+                                "type": "local",
+                                "fieldName": "progress"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@local.progress": [
+                              "value"
+                            ]
+                          }
+                        },
+                        {
+                          "name": "category_id",
+                          "value": "@item.category_id",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "exclude_from_translation": true,
+                          "type": "set_variable",
+                          "_nested_name": "enable_dynamic_data_actions.only_for_active_index.cond_multi_art.article_last_with_PO.article_with_PO_7_last_in_course.category_id",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "@item.category_id",
+                                "matchedExpression": "@item.category_id",
+                                "type": "item",
+                                "fieldName": "category_id"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@item.category_id": [
+                              "value"
+                            ]
+                          }
+                        },
+                        {
+                          "name": "is_last",
+                          "value": false,
+                          "exclude_from_translation": true,
+                          "type": "set_variable",
+                          "_nested_name": "enable_dynamic_data_actions.only_for_active_index.cond_multi_art.article_last_with_PO.article_with_PO_7_last_in_course.is_last"
+                        }
+                      ],
+                      "_nested_name": "enable_dynamic_data_actions.only_for_active_index.cond_multi_art.article_last_with_PO.article_with_PO_7_last_in_course",
+                      "_dynamicFields": {
+                        "action_list": {
+                          "1": {
+                            "args": {
+                              "1": [
+                                {
+                                  "fullExpression": "@item._index  + 1",
+                                  "matchedExpression": "@item._index",
+                                  "type": "item",
+                                  "fieldName": "_index"
+                                }
+                              ]
+                            },
+                            "_raw": [
+                              {
+                                "fullExpression": "completed | set_local: active_index: @item._index  + 1",
+                                "matchedExpression": "@item._index",
+                                "type": "item",
+                                "fieldName": "_index"
+                              }
+                            ]
+                          },
+                          "3": {
+                            "_raw": [
+                              {
+                                "fullExpression": "completed | set_item | last_completed_ts: @calc(now())",
+                                "matchedExpression": "@calc(now())",
+                                "type": "calc",
+                                "fieldName": "now()"
+                              }
+                            ],
+                            "params": {
+                              "last_completed_ts": [
+                                {
+                                  "fullExpression": "@calc(now())",
+                                  "matchedExpression": "@calc(now())",
+                                  "type": "calc",
+                                  "fieldName": "now()"
+                                }
+                              ]
+                            }
+                          },
+                          "4": {
+                            "_raw": [
+                              {
+                                "fullExpression": "completed | set_data | _list_id: module_tasks, _id: @local.module_id, completed: true, completed_ts: @calc(now())",
+                                "matchedExpression": "@local.module_id",
+                                "type": "local",
+                                "fieldName": "module_id"
+                              },
+                              {
+                                "fullExpression": "completed | set_data | _list_id: module_tasks, _id: @local.module_id, completed: true, completed_ts: @calc(now())",
+                                "matchedExpression": "@calc(now())",
+                                "type": "calc",
+                                "fieldName": "now()"
+                              }
+                            ],
+                            "params": {
+                              "_id": [
+                                {
+                                  "fullExpression": "@local.module_id",
+                                  "matchedExpression": "@local.module_id",
+                                  "type": "local",
+                                  "fieldName": "module_id"
+                                }
+                              ],
+                              "completed_ts": [
+                                {
+                                  "fullExpression": "@calc(now())",
+                                  "matchedExpression": "@calc(now())",
+                                  "type": "calc",
+                                  "fieldName": "now()"
+                                }
+                              ]
+                            }
+                          },
+                          "5": {
+                            "_raw": [
+                              {
+                                "fullExpression": "completed | set_data | _list_id: courses, _id: @local.course_id, completed: true, completed_ts: @calc(now())",
+                                "matchedExpression": "@local.course_id",
+                                "type": "local",
+                                "fieldName": "course_id"
+                              },
+                              {
+                                "fullExpression": "completed | set_data | _list_id: courses, _id: @local.course_id, completed: true, completed_ts: @calc(now())",
+                                "matchedExpression": "@calc(now())",
+                                "type": "calc",
+                                "fieldName": "now()"
+                              }
+                            ],
+                            "params": {
+                              "_id": [
+                                {
+                                  "fullExpression": "@local.course_id",
+                                  "matchedExpression": "@local.course_id",
+                                  "type": "local",
+                                  "fieldName": "course_id"
+                                }
+                              ],
+                              "completed_ts": [
+                                {
+                                  "fullExpression": "@calc(now())",
+                                  "matchedExpression": "@calc(now())",
+                                  "type": "calc",
+                                  "fieldName": "now()"
+                                }
+                              ]
+                            }
+                          },
+                          "6": {
+                            "args": {
+                              "1": [
+                                {
+                                  "fullExpression": "@local.curr_n_mod_or_plus_one",
+                                  "matchedExpression": "@local.curr_n_mod_or_plus_one",
+                                  "type": "local",
+                                  "fieldName": "curr_n_mod_or_plus_one"
+                                }
+                              ]
+                            },
+                            "_raw": [
+                              {
+                                "fullExpression": "completed | set_field : n_modules_completed :  @local.curr_n_mod_or_plus_one",
+                                "matchedExpression": "@local.curr_n_mod_or_plus_one",
+                                "type": "local",
+                                "fieldName": "curr_n_mod_or_plus_one"
+                              }
+                            ]
+                          },
+                          "7": {
+                            "args": {
+                              "1": [
+                                {
+                                  "fullExpression": "@local.last_module_in_progress",
+                                  "matchedExpression": "@local.last_module_in_progress",
+                                  "type": "local",
+                                  "fieldName": "last_module_in_progress"
+                                }
+                              ]
+                            },
+                            "_raw": [
+                              {
+                                "fullExpression": "completed | set_field : last_module_in_progress: @local.last_module_in_progress",
+                                "matchedExpression": "@local.last_module_in_progress",
+                                "type": "local",
+                                "fieldName": "last_module_in_progress"
+                              }
+                            ]
+                          },
+                          "8": {
+                            "_raw": [
+                              {
+                                "fullExpression": "completed | set_data | _list_id: module_tasks, _id: @local.module_id, unlocked_activity: TRUE",
+                                "matchedExpression": "@local.module_id",
+                                "type": "local",
+                                "fieldName": "module_id"
+                              }
+                            ],
+                            "params": {
+                              "_id": [
+                                {
+                                  "fullExpression": "@local.module_id",
+                                  "matchedExpression": "@local.module_id",
+                                  "type": "local",
+                                  "fieldName": "module_id"
+                                }
+                              ]
+                            }
+                          },
+                          "9": {
+                            "args": {
+                              "1": [
+                                {
+                                  "fullExpression": "@local.picked_activity_id",
+                                  "matchedExpression": "@local.picked_activity_id",
+                                  "type": "local",
+                                  "fieldName": "picked_activity_id"
+                                }
+                              ]
+                            },
+                            "_raw": [
+                              {
+                                "fullExpression": "completed | set_field: latest_unlocked_activity: @local.picked_activity_id",
+                                "matchedExpression": "@local.picked_activity_id",
+                                "type": "local",
+                                "fieldName": "picked_activity_id"
+                              }
+                            ]
+                          },
+                          "10": {
+                            "args": {
+                              "1": [
+                                {
+                                  "fullExpression": "@calc(Number(@fields.proximal_outcome_time_point_count) + 1)",
+                                  "matchedExpression": "@fields.proximal_outcome_time_point_count",
+                                  "type": "fields",
+                                  "fieldName": "proximal_outcome_time_point_count"
+                                },
+                                {
+                                  "fullExpression": "@calc(Number(@fields.proximal_outcome_time_point_count) + 1)",
+                                  "matchedExpression": "@calc(Number(@fields.proximal_outcome_time_point_count) + 1)",
+                                  "type": "calc",
+                                  "fieldName": "Number(@fields.proximal_outcome_time_point_count) + 1"
+                                }
+                              ]
+                            },
+                            "_raw": [
+                              {
+                                "fullExpression": "completed | set_field : proximal_outcome_time_point_count: @calc(Number(@fields.proximal_outcome_time_point_count) + 1)",
+                                "matchedExpression": "@fields.proximal_outcome_time_point_count",
+                                "type": "fields",
+                                "fieldName": "proximal_outcome_time_point_count"
+                              },
+                              {
+                                "fullExpression": "completed | set_field : proximal_outcome_time_point_count: @calc(Number(@fields.proximal_outcome_time_point_count) + 1)",
+                                "matchedExpression": "@calc(Number(@fields.proximal_outcome_time_point_count) + 1)",
+                                "type": "calc",
+                                "fieldName": "Number(@fields.proximal_outcome_time_point_count) + 1"
+                              }
+                            ]
+                          },
+                          "17": {
+                            "_raw": [
+                              {
+                                "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: goal",
+                                "matchedExpression": "@fields.proximal_outcome_time_point",
+                                "type": "fields",
+                                "fieldName": "proximal_outcome_time_point"
+                              },
+                              {
+                                "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: goal",
+                                "matchedExpression": "@fields.proximal_outcome_time_point_count",
+                                "type": "fields",
+                                "fieldName": "proximal_outcome_time_point_count"
+                              }
+                            ],
+                            "params": {
+                              "entry_point": [
+                                {
+                                  "fullExpression": "@fields.proximal_outcome_time_point",
+                                  "matchedExpression": "@fields.proximal_outcome_time_point",
+                                  "type": "fields",
+                                  "fieldName": "proximal_outcome_time_point"
+                                }
+                              ],
+                              "entry_point_count": [
+                                {
+                                  "fullExpression": "@fields.proximal_outcome_time_point_count",
+                                  "matchedExpression": "@fields.proximal_outcome_time_point_count",
+                                  "type": "fields",
+                                  "fieldName": "proximal_outcome_time_point_count"
+                                }
+                              ],
+                              "entered_ts": [
+                                {
+                                  "fullExpression": "@calc(now())",
+                                  "matchedExpression": "@calc(now())",
+                                  "type": "calc",
+                                  "fieldName": "now()"
+                                }
+                              ]
+                            }
+                          },
+                          "19": {
+                            "args": {
+                              "1": [
+                                {
+                                  "fullExpression": "@calc(now())",
+                                  "matchedExpression": "@calc(now())",
+                                  "type": "calc",
+                                  "fieldName": "now()"
+                                }
+                              ]
+                            },
+                            "_raw": [
+                              {
+                                "fullExpression": "completed | set_field: prox_7d_last_ts: @calc(now())",
+                                "matchedExpression": "@calc(now())",
+                                "type": "calc",
+                                "fieldName": "now()"
+                              }
+                            ]
+                          },
+                          "20": {
+                            "args": {
+                              "1": [
+                                {
+                                  "fullExpression": "@item._index  - 1",
+                                  "matchedExpression": "@item._index",
+                                  "type": "item",
+                                  "fieldName": "_index"
+                                }
+                              ]
+                            },
+                            "_raw": [
+                              {
+                                "fullExpression": "uncompleted | set_local: active_index: @item._index  - 1",
+                                "matchedExpression": "@item._index",
+                                "type": "item",
+                                "fieldName": "_index"
+                              }
+                            ]
+                          }
+                        },
+                        "condition": [
+                          {
+                            "fullExpression": "!@local.PO_data && @local.has_PO_7",
+                            "matchedExpression": "!@local.PO_data",
+                            "type": "local",
+                            "fieldName": "PO_data"
+                          },
+                          {
+                            "fullExpression": "!@local.PO_data && @local.has_PO_7",
+                            "matchedExpression": "@local.has_PO_7",
+                            "type": "local",
+                            "fieldName": "has_PO_7"
+                          }
+                        ]
+                      },
+                      "_dynamicDependencies": {
+                        "@item._index": [
+                          "action_list.1.args.1",
+                          "action_list.1._raw",
+                          "action_list.20.args.1",
+                          "action_list.20._raw"
+                        ],
+                        "@calc(now())": [
+                          "action_list.3._raw",
+                          "action_list.3.params.last_completed_ts",
+                          "action_list.4._raw",
+                          "action_list.4.params.completed_ts",
+                          "action_list.5._raw",
+                          "action_list.5.params.completed_ts",
+                          "action_list.17.params.entered_ts",
+                          "action_list.19.args.1",
+                          "action_list.19._raw"
+                        ],
+                        "@local.module_id": [
+                          "action_list.4._raw",
+                          "action_list.4.params._id",
+                          "action_list.8._raw",
+                          "action_list.8.params._id"
+                        ],
+                        "@local.course_id": [
+                          "action_list.5._raw",
+                          "action_list.5.params._id"
+                        ],
+                        "@local.curr_n_mod_or_plus_one": [
+                          "action_list.6.args.1",
+                          "action_list.6._raw"
+                        ],
+                        "@local.last_module_in_progress": [
+                          "action_list.7.args.1",
+                          "action_list.7._raw"
+                        ],
+                        "@local.picked_activity_id": [
+                          "action_list.9.args.1",
+                          "action_list.9._raw"
+                        ],
+                        "@fields.proximal_outcome_time_point_count": [
+                          "action_list.10.args.1",
+                          "action_list.10._raw",
+                          "action_list.17._raw",
+                          "action_list.17.params.entry_point_count"
+                        ],
+                        "@calc(Number(@fields.proximal_outcome_time_point_count) + 1)": [
+                          "action_list.10.args.1",
+                          "action_list.10._raw"
+                        ],
+                        "@fields.proximal_outcome_time_point": [
+                          "action_list.17._raw",
+                          "action_list.17.params.entry_point"
                         ],
                         "!@local.PO_data": [
                           "condition"
@@ -3786,7 +4502,7 @@
                         },
                         {
                           "name": "is_last",
-                          "value": true,
+                          "value": false,
                           "exclude_from_translation": true,
                           "type": "set_variable",
                           "_nested_name": "enable_dynamic_data_actions.only_for_active_index.cond_multi_art.article_last_with_PO.article_with_PO_14.is_last"
@@ -4242,6 +4958,895 @@
                           "action_list.19.params.entry_point",
                           "action_list.20._raw",
                           "action_list.20.params.entry_point"
+                        ],
+                        "!@local.PO_data": [
+                          "condition"
+                        ],
+                        "@local.has_PO_14": [
+                          "condition"
+                        ]
+                      }
+                    },
+                    {
+                      "type": "template",
+                      "name": "article_with_PO_14_last_in_course",
+                      "value": "article_wrap",
+                      "action_list": [
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_local",
+                          "args": [],
+                          "_raw": "completed | set_local | PO_data_set: true",
+                          "params": {
+                            "PO_data_set": true
+                          }
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_local",
+                          "args": [
+                            "active_index",
+                            "@item._index  + 1"
+                          ],
+                          "_raw": "completed | set_local: active_index: @item._index  + 1"
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_item",
+                          "args": [],
+                          "_raw": "completed | set_item | completed: true",
+                          "params": {
+                            "completed": true
+                          }
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_item",
+                          "args": [],
+                          "_raw": "completed | set_item | last_completed_ts: @calc(now())",
+                          "params": {
+                            "last_completed_ts": "@calc(now())"
+                          }
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_data",
+                          "args": [],
+                          "_raw": "completed | set_data | _list_id: module_tasks, _id: @local.module_id, completed: true, completed_ts: @calc(now())",
+                          "params": {
+                            "_list_id": "module_tasks",
+                            "_id": "@local.module_id",
+                            "completed": true,
+                            "completed_ts": "@calc(now())"
+                          }
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_data",
+                          "args": [],
+                          "_raw": "completed | set_data | _list_id: courses, _id: @local.course_id, completed: true, completed_ts: @calc(now())",
+                          "params": {
+                            "_list_id": "courses",
+                            "_id": "@local.course_id",
+                            "completed": true,
+                            "completed_ts": "@calc(now())"
+                          }
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_field",
+                          "args": [
+                            "n_modules_completed",
+                            "@local.curr_n_mod_or_plus_one"
+                          ],
+                          "_raw": "completed | set_field : n_modules_completed :  @local.curr_n_mod_or_plus_one"
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_field",
+                          "args": [
+                            "last_module_in_progress",
+                            "@local.last_module_in_progress"
+                          ],
+                          "_raw": "completed | set_field : last_module_in_progress: @local.last_module_in_progress"
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_data",
+                          "args": [],
+                          "_raw": "completed | set_data | _list_id: module_tasks, _id: @local.module_id, unlocked_activity: TRUE",
+                          "params": {
+                            "_list_id": "module_tasks",
+                            "_id": "@local.module_id",
+                            "unlocked_activity": true
+                          }
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_field",
+                          "args": [
+                            "latest_unlocked_activity",
+                            "@local.picked_activity_id"
+                          ],
+                          "_raw": "completed | set_field: latest_unlocked_activity: @local.picked_activity_id"
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_field",
+                          "args": [
+                            "proximal_outcome_time_point_count",
+                            "@calc(Number(@fields.proximal_outcome_time_point_count) + 1)"
+                          ],
+                          "_raw": "completed | set_field : proximal_outcome_time_point_count: @calc(Number(@fields.proximal_outcome_time_point_count) + 1)"
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_field",
+                          "args": [
+                            "curr_prox_out_row_id",
+                            "new"
+                          ],
+                          "_raw": "completed | set_field: curr_prox_out_row_id : new"
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_field",
+                          "args": [
+                            "curr_goal_reflection_input",
+                            ""
+                          ],
+                          "_raw": "completed | set_field: curr_goal_reflection_input :"
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_data",
+                          "args": [],
+                          "_raw": "completed | set_data | _list_id: proximal_outcome_14d_pages, _id: intro, completed: false",
+                          "params": {
+                            "_list_id": "proximal_outcome_14d_pages",
+                            "_id": "intro",
+                            "completed": false
+                          }
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_data",
+                          "args": [],
+                          "_raw": "completed | set_data | _list_id: proximal_outcome_14d_pages, _id: qs_goal, completed: false",
+                          "params": {
+                            "_list_id": "proximal_outcome_14d_pages",
+                            "_id": "qs_goal",
+                            "completed": false
+                          }
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_data",
+                          "args": [],
+                          "_raw": "completed | set_data | _list_id: proximal_outcome_14d_pages, _id: goal_refl, completed: false",
+                          "params": {
+                            "_list_id": "proximal_outcome_14d_pages",
+                            "_id": "goal_refl",
+                            "completed": false
+                          }
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_data",
+                          "args": [],
+                          "_raw": "completed | set_data | _list_id: proximal_outcome_14d_pages, _id: qs_base_1, completed: false",
+                          "params": {
+                            "_list_id": "proximal_outcome_14d_pages",
+                            "_id": "qs_base_1",
+                            "completed": false
+                          }
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_data",
+                          "args": [],
+                          "_raw": "completed | set_data | _list_id: proximal_outcome_14d_pages, _id: qs_base_2, completed: false",
+                          "params": {
+                            "_list_id": "proximal_outcome_14d_pages",
+                            "_id": "qs_base_2",
+                            "completed": false
+                          }
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_data",
+                          "args": [],
+                          "_raw": "completed | set_data | _list_id: proximal_outcome_14d_pages, _id: progress_14, completed: false",
+                          "params": {
+                            "_list_id": "proximal_outcome_14d_pages",
+                            "_id": "progress_14",
+                            "completed": false
+                          }
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "add_data",
+                          "args": [],
+                          "_raw": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: goal",
+                          "params": {
+                            "_list_id": "proximal_outcome_data",
+                            "entry_point": "@fields.proximal_outcome_time_point",
+                            "entry_point_count": "@fields.proximal_outcome_time_point_count",
+                            "entered_ts": "@calc(now())",
+                            "question_type": "goal"
+                          }
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "add_data",
+                          "args": [],
+                          "_raw": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: qs1",
+                          "params": {
+                            "_list_id": "proximal_outcome_data",
+                            "entry_point": "@fields.proximal_outcome_time_point",
+                            "entry_point_count": "@fields.proximal_outcome_time_point_count",
+                            "entered_ts": "@calc(now())",
+                            "question_type": "qs1"
+                          }
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "add_data",
+                          "args": [],
+                          "_raw": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: qs2",
+                          "params": {
+                            "_list_id": "proximal_outcome_data",
+                            "entry_point": "@fields.proximal_outcome_time_point",
+                            "entry_point_count": "@fields.proximal_outcome_time_point_count",
+                            "entered_ts": "@calc(now())",
+                            "question_type": "qs2"
+                          }
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_field",
+                          "args": [
+                            "prox_outcome_access",
+                            "module"
+                          ],
+                          "_raw": "completed | set_field: prox_outcome_access: module"
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_field",
+                          "args": [
+                            "prox_7d_last_ts",
+                            "@calc(now())"
+                          ],
+                          "_raw": "completed | set_field: prox_7d_last_ts: @calc(now())"
+                        },
+                        {
+                          "trigger": "completed",
+                          "action_id": "set_field",
+                          "args": [
+                            "prox_14d_last_ts",
+                            "@calc(now())"
+                          ],
+                          "_raw": "completed | set_field: prox_14d_last_ts: @calc(now())"
+                        },
+                        {
+                          "trigger": "uncompleted",
+                          "action_id": "set_local",
+                          "args": [
+                            "active_index",
+                            "@item._index  - 1"
+                          ],
+                          "_raw": "uncompleted | set_local: active_index: @item._index  - 1"
+                        }
+                      ],
+                      "exclude_from_translation": true,
+                      "condition": "!@local.PO_data && @local.has_PO_14",
+                      "rows": [
+                        {
+                          "name": "article_id",
+                          "value": "@item.id",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "exclude_from_translation": true,
+                          "type": "set_variable",
+                          "_nested_name": "enable_dynamic_data_actions.only_for_active_index.cond_multi_art.article_last_with_PO.article_with_PO_14_last_in_course.article_id",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "@item.id",
+                                "matchedExpression": "@item.id",
+                                "type": "item",
+                                "fieldName": "id"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@item.id": [
+                              "value"
+                            ]
+                          }
+                        },
+                        {
+                          "name": "module_id",
+                          "value": "@local.module_id",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "exclude_from_translation": true,
+                          "type": "set_variable",
+                          "_nested_name": "enable_dynamic_data_actions.only_for_active_index.cond_multi_art.article_last_with_PO.article_with_PO_14_last_in_course.module_id",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "@local.module_id",
+                                "matchedExpression": "@local.module_id",
+                                "type": "local",
+                                "fieldName": "module_id"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@local.module_id": [
+                              "value"
+                            ]
+                          }
+                        },
+                        {
+                          "name": "show_progress",
+                          "value": true,
+                          "exclude_from_translation": true,
+                          "type": "set_variable",
+                          "_nested_name": "enable_dynamic_data_actions.only_for_active_index.cond_multi_art.article_last_with_PO.article_with_PO_14_last_in_course.show_progress"
+                        },
+                        {
+                          "name": "progress",
+                          "value": "@local.progress",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "exclude_from_translation": true,
+                          "type": "set_variable",
+                          "_nested_name": "enable_dynamic_data_actions.only_for_active_index.cond_multi_art.article_last_with_PO.article_with_PO_14_last_in_course.progress",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "@local.progress",
+                                "matchedExpression": "@local.progress",
+                                "type": "local",
+                                "fieldName": "progress"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@local.progress": [
+                              "value"
+                            ]
+                          }
+                        },
+                        {
+                          "name": "category_id",
+                          "value": "@item.category_id",
+                          "_translations": {
+                            "value": {}
+                          },
+                          "exclude_from_translation": true,
+                          "type": "set_variable",
+                          "_nested_name": "enable_dynamic_data_actions.only_for_active_index.cond_multi_art.article_last_with_PO.article_with_PO_14_last_in_course.category_id",
+                          "_dynamicFields": {
+                            "value": [
+                              {
+                                "fullExpression": "@item.category_id",
+                                "matchedExpression": "@item.category_id",
+                                "type": "item",
+                                "fieldName": "category_id"
+                              }
+                            ]
+                          },
+                          "_dynamicDependencies": {
+                            "@item.category_id": [
+                              "value"
+                            ]
+                          }
+                        },
+                        {
+                          "name": "is_last",
+                          "value": false,
+                          "exclude_from_translation": true,
+                          "type": "set_variable",
+                          "_nested_name": "enable_dynamic_data_actions.only_for_active_index.cond_multi_art.article_last_with_PO.article_with_PO_14_last_in_course.is_last"
+                        }
+                      ],
+                      "_nested_name": "enable_dynamic_data_actions.only_for_active_index.cond_multi_art.article_last_with_PO.article_with_PO_14_last_in_course",
+                      "_dynamicFields": {
+                        "action_list": {
+                          "1": {
+                            "args": {
+                              "1": [
+                                {
+                                  "fullExpression": "@item._index  + 1",
+                                  "matchedExpression": "@item._index",
+                                  "type": "item",
+                                  "fieldName": "_index"
+                                }
+                              ]
+                            },
+                            "_raw": [
+                              {
+                                "fullExpression": "completed | set_local: active_index: @item._index  + 1",
+                                "matchedExpression": "@item._index",
+                                "type": "item",
+                                "fieldName": "_index"
+                              }
+                            ]
+                          },
+                          "3": {
+                            "_raw": [
+                              {
+                                "fullExpression": "completed | set_item | last_completed_ts: @calc(now())",
+                                "matchedExpression": "@calc(now())",
+                                "type": "calc",
+                                "fieldName": "now()"
+                              }
+                            ],
+                            "params": {
+                              "last_completed_ts": [
+                                {
+                                  "fullExpression": "@calc(now())",
+                                  "matchedExpression": "@calc(now())",
+                                  "type": "calc",
+                                  "fieldName": "now()"
+                                }
+                              ]
+                            }
+                          },
+                          "4": {
+                            "_raw": [
+                              {
+                                "fullExpression": "completed | set_data | _list_id: module_tasks, _id: @local.module_id, completed: true, completed_ts: @calc(now())",
+                                "matchedExpression": "@local.module_id",
+                                "type": "local",
+                                "fieldName": "module_id"
+                              },
+                              {
+                                "fullExpression": "completed | set_data | _list_id: module_tasks, _id: @local.module_id, completed: true, completed_ts: @calc(now())",
+                                "matchedExpression": "@calc(now())",
+                                "type": "calc",
+                                "fieldName": "now()"
+                              }
+                            ],
+                            "params": {
+                              "_id": [
+                                {
+                                  "fullExpression": "@local.module_id",
+                                  "matchedExpression": "@local.module_id",
+                                  "type": "local",
+                                  "fieldName": "module_id"
+                                }
+                              ],
+                              "completed_ts": [
+                                {
+                                  "fullExpression": "@calc(now())",
+                                  "matchedExpression": "@calc(now())",
+                                  "type": "calc",
+                                  "fieldName": "now()"
+                                }
+                              ]
+                            }
+                          },
+                          "5": {
+                            "_raw": [
+                              {
+                                "fullExpression": "completed | set_data | _list_id: courses, _id: @local.course_id, completed: true, completed_ts: @calc(now())",
+                                "matchedExpression": "@local.course_id",
+                                "type": "local",
+                                "fieldName": "course_id"
+                              },
+                              {
+                                "fullExpression": "completed | set_data | _list_id: courses, _id: @local.course_id, completed: true, completed_ts: @calc(now())",
+                                "matchedExpression": "@calc(now())",
+                                "type": "calc",
+                                "fieldName": "now()"
+                              }
+                            ],
+                            "params": {
+                              "_id": [
+                                {
+                                  "fullExpression": "@local.course_id",
+                                  "matchedExpression": "@local.course_id",
+                                  "type": "local",
+                                  "fieldName": "course_id"
+                                }
+                              ],
+                              "completed_ts": [
+                                {
+                                  "fullExpression": "@calc(now())",
+                                  "matchedExpression": "@calc(now())",
+                                  "type": "calc",
+                                  "fieldName": "now()"
+                                }
+                              ]
+                            }
+                          },
+                          "6": {
+                            "args": {
+                              "1": [
+                                {
+                                  "fullExpression": "@local.curr_n_mod_or_plus_one",
+                                  "matchedExpression": "@local.curr_n_mod_or_plus_one",
+                                  "type": "local",
+                                  "fieldName": "curr_n_mod_or_plus_one"
+                                }
+                              ]
+                            },
+                            "_raw": [
+                              {
+                                "fullExpression": "completed | set_field : n_modules_completed :  @local.curr_n_mod_or_plus_one",
+                                "matchedExpression": "@local.curr_n_mod_or_plus_one",
+                                "type": "local",
+                                "fieldName": "curr_n_mod_or_plus_one"
+                              }
+                            ]
+                          },
+                          "7": {
+                            "args": {
+                              "1": [
+                                {
+                                  "fullExpression": "@local.last_module_in_progress",
+                                  "matchedExpression": "@local.last_module_in_progress",
+                                  "type": "local",
+                                  "fieldName": "last_module_in_progress"
+                                }
+                              ]
+                            },
+                            "_raw": [
+                              {
+                                "fullExpression": "completed | set_field : last_module_in_progress: @local.last_module_in_progress",
+                                "matchedExpression": "@local.last_module_in_progress",
+                                "type": "local",
+                                "fieldName": "last_module_in_progress"
+                              }
+                            ]
+                          },
+                          "8": {
+                            "_raw": [
+                              {
+                                "fullExpression": "completed | set_data | _list_id: module_tasks, _id: @local.module_id, unlocked_activity: TRUE",
+                                "matchedExpression": "@local.module_id",
+                                "type": "local",
+                                "fieldName": "module_id"
+                              }
+                            ],
+                            "params": {
+                              "_id": [
+                                {
+                                  "fullExpression": "@local.module_id",
+                                  "matchedExpression": "@local.module_id",
+                                  "type": "local",
+                                  "fieldName": "module_id"
+                                }
+                              ]
+                            }
+                          },
+                          "9": {
+                            "args": {
+                              "1": [
+                                {
+                                  "fullExpression": "@local.picked_activity_id",
+                                  "matchedExpression": "@local.picked_activity_id",
+                                  "type": "local",
+                                  "fieldName": "picked_activity_id"
+                                }
+                              ]
+                            },
+                            "_raw": [
+                              {
+                                "fullExpression": "completed | set_field: latest_unlocked_activity: @local.picked_activity_id",
+                                "matchedExpression": "@local.picked_activity_id",
+                                "type": "local",
+                                "fieldName": "picked_activity_id"
+                              }
+                            ]
+                          },
+                          "10": {
+                            "args": {
+                              "1": [
+                                {
+                                  "fullExpression": "@calc(Number(@fields.proximal_outcome_time_point_count) + 1)",
+                                  "matchedExpression": "@fields.proximal_outcome_time_point_count",
+                                  "type": "fields",
+                                  "fieldName": "proximal_outcome_time_point_count"
+                                },
+                                {
+                                  "fullExpression": "@calc(Number(@fields.proximal_outcome_time_point_count) + 1)",
+                                  "matchedExpression": "@calc(Number(@fields.proximal_outcome_time_point_count) + 1)",
+                                  "type": "calc",
+                                  "fieldName": "Number(@fields.proximal_outcome_time_point_count) + 1"
+                                }
+                              ]
+                            },
+                            "_raw": [
+                              {
+                                "fullExpression": "completed | set_field : proximal_outcome_time_point_count: @calc(Number(@fields.proximal_outcome_time_point_count) + 1)",
+                                "matchedExpression": "@fields.proximal_outcome_time_point_count",
+                                "type": "fields",
+                                "fieldName": "proximal_outcome_time_point_count"
+                              },
+                              {
+                                "fullExpression": "completed | set_field : proximal_outcome_time_point_count: @calc(Number(@fields.proximal_outcome_time_point_count) + 1)",
+                                "matchedExpression": "@calc(Number(@fields.proximal_outcome_time_point_count) + 1)",
+                                "type": "calc",
+                                "fieldName": "Number(@fields.proximal_outcome_time_point_count) + 1"
+                              }
+                            ]
+                          },
+                          "19": {
+                            "_raw": [
+                              {
+                                "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: goal",
+                                "matchedExpression": "@fields.proximal_outcome_time_point",
+                                "type": "fields",
+                                "fieldName": "proximal_outcome_time_point"
+                              },
+                              {
+                                "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: goal",
+                                "matchedExpression": "@fields.proximal_outcome_time_point_count",
+                                "type": "fields",
+                                "fieldName": "proximal_outcome_time_point_count"
+                              }
+                            ],
+                            "params": {
+                              "entry_point": [
+                                {
+                                  "fullExpression": "@fields.proximal_outcome_time_point",
+                                  "matchedExpression": "@fields.proximal_outcome_time_point",
+                                  "type": "fields",
+                                  "fieldName": "proximal_outcome_time_point"
+                                }
+                              ],
+                              "entry_point_count": [
+                                {
+                                  "fullExpression": "@fields.proximal_outcome_time_point_count",
+                                  "matchedExpression": "@fields.proximal_outcome_time_point_count",
+                                  "type": "fields",
+                                  "fieldName": "proximal_outcome_time_point_count"
+                                }
+                              ],
+                              "entered_ts": [
+                                {
+                                  "fullExpression": "@calc(now())",
+                                  "matchedExpression": "@calc(now())",
+                                  "type": "calc",
+                                  "fieldName": "now()"
+                                }
+                              ]
+                            }
+                          },
+                          "20": {
+                            "_raw": [
+                              {
+                                "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: qs1",
+                                "matchedExpression": "@fields.proximal_outcome_time_point",
+                                "type": "fields",
+                                "fieldName": "proximal_outcome_time_point"
+                              },
+                              {
+                                "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: qs1",
+                                "matchedExpression": "@fields.proximal_outcome_time_point_count",
+                                "type": "fields",
+                                "fieldName": "proximal_outcome_time_point_count"
+                              }
+                            ],
+                            "params": {
+                              "entry_point": [
+                                {
+                                  "fullExpression": "@fields.proximal_outcome_time_point",
+                                  "matchedExpression": "@fields.proximal_outcome_time_point",
+                                  "type": "fields",
+                                  "fieldName": "proximal_outcome_time_point"
+                                }
+                              ],
+                              "entry_point_count": [
+                                {
+                                  "fullExpression": "@fields.proximal_outcome_time_point_count",
+                                  "matchedExpression": "@fields.proximal_outcome_time_point_count",
+                                  "type": "fields",
+                                  "fieldName": "proximal_outcome_time_point_count"
+                                }
+                              ],
+                              "entered_ts": [
+                                {
+                                  "fullExpression": "@calc(now())",
+                                  "matchedExpression": "@calc(now())",
+                                  "type": "calc",
+                                  "fieldName": "now()"
+                                }
+                              ]
+                            }
+                          },
+                          "21": {
+                            "_raw": [
+                              {
+                                "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: qs2",
+                                "matchedExpression": "@fields.proximal_outcome_time_point",
+                                "type": "fields",
+                                "fieldName": "proximal_outcome_time_point"
+                              },
+                              {
+                                "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: qs2",
+                                "matchedExpression": "@fields.proximal_outcome_time_point_count",
+                                "type": "fields",
+                                "fieldName": "proximal_outcome_time_point_count"
+                              }
+                            ],
+                            "params": {
+                              "entry_point": [
+                                {
+                                  "fullExpression": "@fields.proximal_outcome_time_point",
+                                  "matchedExpression": "@fields.proximal_outcome_time_point",
+                                  "type": "fields",
+                                  "fieldName": "proximal_outcome_time_point"
+                                }
+                              ],
+                              "entry_point_count": [
+                                {
+                                  "fullExpression": "@fields.proximal_outcome_time_point_count",
+                                  "matchedExpression": "@fields.proximal_outcome_time_point_count",
+                                  "type": "fields",
+                                  "fieldName": "proximal_outcome_time_point_count"
+                                }
+                              ],
+                              "entered_ts": [
+                                {
+                                  "fullExpression": "@calc(now())",
+                                  "matchedExpression": "@calc(now())",
+                                  "type": "calc",
+                                  "fieldName": "now()"
+                                }
+                              ]
+                            }
+                          },
+                          "23": {
+                            "args": {
+                              "1": [
+                                {
+                                  "fullExpression": "@calc(now())",
+                                  "matchedExpression": "@calc(now())",
+                                  "type": "calc",
+                                  "fieldName": "now()"
+                                }
+                              ]
+                            },
+                            "_raw": [
+                              {
+                                "fullExpression": "completed | set_field: prox_7d_last_ts: @calc(now())",
+                                "matchedExpression": "@calc(now())",
+                                "type": "calc",
+                                "fieldName": "now()"
+                              }
+                            ]
+                          },
+                          "24": {
+                            "args": {
+                              "1": [
+                                {
+                                  "fullExpression": "@calc(now())",
+                                  "matchedExpression": "@calc(now())",
+                                  "type": "calc",
+                                  "fieldName": "now()"
+                                }
+                              ]
+                            },
+                            "_raw": [
+                              {
+                                "fullExpression": "completed | set_field: prox_14d_last_ts: @calc(now())",
+                                "matchedExpression": "@calc(now())",
+                                "type": "calc",
+                                "fieldName": "now()"
+                              }
+                            ]
+                          },
+                          "25": {
+                            "args": {
+                              "1": [
+                                {
+                                  "fullExpression": "@item._index  - 1",
+                                  "matchedExpression": "@item._index",
+                                  "type": "item",
+                                  "fieldName": "_index"
+                                }
+                              ]
+                            },
+                            "_raw": [
+                              {
+                                "fullExpression": "uncompleted | set_local: active_index: @item._index  - 1",
+                                "matchedExpression": "@item._index",
+                                "type": "item",
+                                "fieldName": "_index"
+                              }
+                            ]
+                          }
+                        },
+                        "condition": [
+                          {
+                            "fullExpression": "!@local.PO_data && @local.has_PO_14",
+                            "matchedExpression": "!@local.PO_data",
+                            "type": "local",
+                            "fieldName": "PO_data"
+                          },
+                          {
+                            "fullExpression": "!@local.PO_data && @local.has_PO_14",
+                            "matchedExpression": "@local.has_PO_14",
+                            "type": "local",
+                            "fieldName": "has_PO_14"
+                          }
+                        ]
+                      },
+                      "_dynamicDependencies": {
+                        "@item._index": [
+                          "action_list.1.args.1",
+                          "action_list.1._raw",
+                          "action_list.25.args.1",
+                          "action_list.25._raw"
+                        ],
+                        "@calc(now())": [
+                          "action_list.3._raw",
+                          "action_list.3.params.last_completed_ts",
+                          "action_list.4._raw",
+                          "action_list.4.params.completed_ts",
+                          "action_list.5._raw",
+                          "action_list.5.params.completed_ts",
+                          "action_list.19.params.entered_ts",
+                          "action_list.20.params.entered_ts",
+                          "action_list.21.params.entered_ts",
+                          "action_list.23.args.1",
+                          "action_list.23._raw",
+                          "action_list.24.args.1",
+                          "action_list.24._raw"
+                        ],
+                        "@local.module_id": [
+                          "action_list.4._raw",
+                          "action_list.4.params._id",
+                          "action_list.8._raw",
+                          "action_list.8.params._id"
+                        ],
+                        "@local.course_id": [
+                          "action_list.5._raw",
+                          "action_list.5.params._id"
+                        ],
+                        "@local.curr_n_mod_or_plus_one": [
+                          "action_list.6.args.1",
+                          "action_list.6._raw"
+                        ],
+                        "@local.last_module_in_progress": [
+                          "action_list.7.args.1",
+                          "action_list.7._raw"
+                        ],
+                        "@local.picked_activity_id": [
+                          "action_list.9.args.1",
+                          "action_list.9._raw"
+                        ],
+                        "@fields.proximal_outcome_time_point_count": [
+                          "action_list.10.args.1",
+                          "action_list.10._raw",
+                          "action_list.19._raw",
+                          "action_list.19.params.entry_point_count",
+                          "action_list.20._raw",
+                          "action_list.20.params.entry_point_count",
+                          "action_list.21._raw",
+                          "action_list.21.params.entry_point_count"
+                        ],
+                        "@calc(Number(@fields.proximal_outcome_time_point_count) + 1)": [
+                          "action_list.10.args.1",
+                          "action_list.10._raw"
+                        ],
+                        "@fields.proximal_outcome_time_point": [
+                          "action_list.19._raw",
+                          "action_list.19.params.entry_point",
+                          "action_list.20._raw",
+                          "action_list.20.params.entry_point",
+                          "action_list.21._raw",
+                          "action_list.21.params.entry_point"
                         ],
                         "!@local.PO_data": [
                           "condition"
