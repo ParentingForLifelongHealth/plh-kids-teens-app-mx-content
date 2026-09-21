@@ -8,6 +8,16 @@
       "value": false
     },
     {
+      "name": "article_id",
+      "value": "tf",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "module_id",
+      "value": "tf",
+      "exclude_from_translation": true
+    },
+    {
       "name": "bubble_text",
       "exclude_from_translation": true
     },
@@ -16,16 +26,6 @@
       "name": "dg_module_related",
       "parameter_list": "style: column",
       "condition": "!@local.bubble_text",
-      "exclude_from_translation": true
-    },
-    {
-      "name": "article_id",
-      "value": "intro_connect_child",
-      "exclude_from_translation": true
-    },
-    {
-      "name": "module_id",
-      "value": "connect",
       "exclude_from_translation": true
     },
     {

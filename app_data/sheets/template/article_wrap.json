@@ -1,0 +1,616 @@
+{
+  "flow_type": "template",
+  "flow_name": "article_wrap",
+  "status": "released",
+  "rows": [
+    {
+      "name": "article_id",
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "article_id"
+    },
+    {
+      "name": "module_id",
+      "value": "solve_problem_c",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "module_id"
+    },
+    {
+      "name": "show_progress",
+      "value": false,
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "show_progress"
+    },
+    {
+      "name": "progress",
+      "value": 0,
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "progress"
+    },
+    {
+      "name": "category_id",
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "category_id"
+    },
+    {
+      "name": "is_last",
+      "value": false,
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "is_last"
+    },
+    {
+      "name": "is_first",
+      "value": false,
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "is_first"
+    },
+    {
+      "name": "articles",
+      "value": "_article_tasks",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "articles"
+    },
+    {
+      "type": "display_group",
+      "name": "is_relax",
+      "condition": "@local.category_id == \"relax\"",
+      "rows": [
+        {
+          "type": "template",
+          "name": "header",
+          "value": "header",
+          "rows": [
+            {
+              "name": "title",
+              "value": "@data.common_categories.relax.title",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "is_relax.header.title",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@data.common_categories.relax.title",
+                    "matchedExpression": "@data.common_categories.relax.title",
+                    "type": "data",
+                    "fieldName": "common_categories"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@data.common_categories.relax.title": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "icon_asset",
+              "value": "@data.common_categories.relax.icon_asset",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "is_relax.header.icon_asset",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@data.common_categories.relax.icon_asset",
+                    "matchedExpression": "@data.common_categories.relax.icon_asset",
+                    "type": "data",
+                    "fieldName": "common_categories"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@data.common_categories.relax.icon_asset": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "show_progress",
+              "value": true,
+              "type": "set_variable",
+              "_nested_name": "is_relax.header.show_progress"
+            }
+          ],
+          "_nested_name": "is_relax.header"
+        },
+        {
+          "type": "template",
+          "name": "article",
+          "value": "relax",
+          "action_list": [
+            {
+              "trigger": "completed",
+              "action_id": "emit",
+              "args": [
+                "completed"
+              ],
+              "_raw": "completed | emit: completed"
+            },
+            {
+              "trigger": "uncompleted",
+              "action_id": "emit",
+              "args": [
+                "uncompleted"
+              ],
+              "_raw": "uncompleted | emit: uncompleted"
+            }
+          ],
+          "rows": [
+            {
+              "name": "id",
+              "value": "@local.article_id",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "is_relax.article.id",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@local.article_id",
+                    "matchedExpression": "@local.article_id",
+                    "type": "local",
+                    "fieldName": "article_id"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.article_id": [
+                  "value"
+                ]
+              }
+            }
+          ],
+          "_nested_name": "is_relax.article"
+        }
+      ],
+      "_nested_name": "is_relax",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.category_id == \"relax\"",
+            "matchedExpression": "@local.category_id",
+            "type": "local",
+            "fieldName": "category_id"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.category_id": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "display_group",
+      "name": "is_check_in",
+      "condition": "@local.category_id == \"check_in\"",
+      "rows": [
+        {
+          "type": "template",
+          "name": "article",
+          "value": "article",
+          "action_list": [
+            {
+              "trigger": "completed",
+              "action_id": "emit",
+              "args": [
+                "completed"
+              ],
+              "_raw": "completed | emit: completed"
+            },
+            {
+              "trigger": "uncompleted",
+              "action_id": "emit",
+              "args": [
+                "uncompleted"
+              ],
+              "_raw": "uncompleted | emit: uncompleted"
+            }
+          ],
+          "condition": true,
+          "rows": [
+            {
+              "name": "data",
+              "value": "check_in",
+              "_translations": {
+                "value": {}
+              },
+              "condition": true,
+              "type": "set_variable",
+              "_nested_name": "is_check_in.article.data"
+            },
+            {
+              "name": "article_id",
+              "value": "@local.article_id",
+              "_translations": {
+                "value": {}
+              },
+              "condition": true,
+              "type": "set_variable",
+              "_nested_name": "is_check_in.article.article_id",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@local.article_id",
+                    "matchedExpression": "@local.article_id",
+                    "type": "local",
+                    "fieldName": "article_id"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.article_id": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "perform_category_header_computations",
+              "value": false,
+              "type": "set_variable",
+              "_nested_name": "is_check_in.article.perform_category_header_computations"
+            },
+            {
+              "name": "show_progress",
+              "value": "@local.show_progress",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "is_check_in.article.show_progress",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@local.show_progress",
+                    "matchedExpression": "@local.show_progress",
+                    "type": "local",
+                    "fieldName": "show_progress"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.show_progress": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "progress",
+              "value": "@local.progress",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "is_check_in.article.progress",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@local.progress",
+                    "matchedExpression": "@local.progress",
+                    "type": "local",
+                    "fieldName": "progress"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.progress": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "type": "nested_properties",
+              "name": "header",
+              "rows": [
+                {
+                  "name": "title",
+                  "value": "@global.check_in_title",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "type": "set_variable",
+                  "_nested_name": "is_check_in.article.header.title",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@global.check_in_title",
+                        "matchedExpression": "@global.check_in_title",
+                        "type": "global",
+                        "fieldName": "check_in_title"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@global.check_in_title": [
+                      "value"
+                    ]
+                  }
+                },
+                {
+                  "name": "icon_asset",
+                  "value": "images/icons/smile_eyes_up.svg",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "type": "set_variable",
+                  "_nested_name": "is_check_in.article.header.icon_asset"
+                }
+              ],
+              "_nested_name": "is_check_in.article.header"
+            },
+            {
+              "type": "nested_properties",
+              "name": "question_1",
+              "rows": [
+                {
+                  "name": "radio_button_grid_width",
+                  "value": "100%",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "condition": true,
+                  "type": "set_variable",
+                  "_nested_name": "is_check_in.article.question_1.radio_button_grid_width"
+                }
+              ],
+              "_nested_name": "is_check_in.article.question_1"
+            }
+          ],
+          "_nested_name": "is_check_in.article"
+        }
+      ],
+      "_nested_name": "is_check_in",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.category_id == \"check_in\"",
+            "matchedExpression": "@local.category_id",
+            "type": "local",
+            "fieldName": "category_id"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.category_id": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "template",
+      "name": "is_article",
+      "value": "article",
+      "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "emit",
+          "args": [
+            "completed"
+          ],
+          "_raw": "completed | emit: completed"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "emit",
+          "args": [
+            "uncompleted"
+          ],
+          "_raw": "uncompleted | emit: uncompleted"
+        }
+      ],
+      "condition": "(@local.category_id !== \"relax\") && (@local.category_id !== \"check_in\")",
+      "rows": [
+        {
+          "name": "article_id",
+          "value": "@local.article_id",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "type": "set_variable",
+          "_nested_name": "is_article.article_id",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.article_id",
+                "matchedExpression": "@local.article_id",
+                "type": "local",
+                "fieldName": "article_id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.article_id": [
+              "value"
+            ]
+          }
+        },
+        {
+          "name": "module_id",
+          "value": "@local.module_id",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "type": "set_variable",
+          "_nested_name": "is_article.module_id",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.module_id",
+                "matchedExpression": "@local.module_id",
+                "type": "local",
+                "fieldName": "module_id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.module_id": [
+              "value"
+            ]
+          }
+        },
+        {
+          "name": "show_progress",
+          "value": "@local.show_progress",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "type": "set_variable",
+          "_nested_name": "is_article.show_progress",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.show_progress",
+                "matchedExpression": "@local.show_progress",
+                "type": "local",
+                "fieldName": "show_progress"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.show_progress": [
+              "value"
+            ]
+          }
+        },
+        {
+          "name": "progress",
+          "value": "@local.progress",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "type": "set_variable",
+          "_nested_name": "is_article.progress",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.progress",
+                "matchedExpression": "@local.progress",
+                "type": "local",
+                "fieldName": "progress"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.progress": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "nested_properties",
+          "name": "nav_buttons",
+          "rows": [
+            {
+              "name": "next_icon_src",
+              "value": "@global.first_completion_icon",
+              "_translations": {
+                "value": {}
+              },
+              "condition": "@local.is_last",
+              "type": "set_variable",
+              "_nested_name": "is_article.nav_buttons.next_icon_src",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@global.first_completion_icon",
+                    "matchedExpression": "@global.first_completion_icon",
+                    "type": "global",
+                    "fieldName": "first_completion_icon"
+                  }
+                ],
+                "condition": [
+                  {
+                    "fullExpression": "@local.is_last",
+                    "matchedExpression": "@local.is_last",
+                    "type": "local",
+                    "fieldName": "is_last"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@global.first_completion_icon": [
+                  "value"
+                ],
+                "@local.is_last": [
+                  "condition"
+                ]
+              }
+            },
+            {
+              "name": "show_previous",
+              "value": false,
+              "condition": "@local.is_first",
+              "type": "set_variable",
+              "_nested_name": "is_article.nav_buttons.show_previous",
+              "_dynamicFields": {
+                "condition": [
+                  {
+                    "fullExpression": "@local.is_first",
+                    "matchedExpression": "@local.is_first",
+                    "type": "local",
+                    "fieldName": "is_first"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.is_first": [
+                  "condition"
+                ]
+              }
+            }
+          ],
+          "_nested_name": "is_article.nav_buttons"
+        }
+      ],
+      "_nested_name": "is_article",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "(@local.category_id !== \"relax\") && (@local.category_id !== \"check_in\")",
+            "matchedExpression": "@local.category_id",
+            "type": "local",
+            "fieldName": "category_id"
+          },
+          {
+            "fullExpression": "(@local.category_id !== \"relax\") && (@local.category_id !== \"check_in\")",
+            "matchedExpression": "@local.category_id",
+            "type": "local",
+            "fieldName": "category_id"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.category_id": [
+          "condition",
+          "condition"
+        ]
+      }
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_global V2",
+    "path": "templates/PLH module_navigation.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1OrFP6fI6mwuL-ZMvzWh2Qf36Fdm_pwXNdthubmh9tQA"
+  }
+}
