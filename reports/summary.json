@@ -27,11 +27,11 @@
       },
       {
         "type": "audio",
-        "count": 3
+        "count": 4
       },
       {
         "type": "button",
-        "count": 129
+        "count": 127
       },
       {
         "type": "combo_box",
@@ -39,7 +39,7 @@
       },
       {
         "type": "data_items",
-        "count": 249
+        "count": 250
       },
       {
         "type": "debug_toggle",
@@ -51,7 +51,7 @@
       },
       {
         "type": "display_group",
-        "count": 159
+        "count": 168
       },
       {
         "type": "drawer",
@@ -75,7 +75,7 @@
       },
       {
         "type": "nested_properties",
-        "count": 986
+        "count": 531
       },
       {
         "type": "number_selector",
@@ -131,7 +131,7 @@
       },
       {
         "type": "round_button",
-        "count": 27
+        "count": 31
       },
       {
         "type": "select_text",
@@ -143,7 +143,7 @@
       },
       {
         "type": "set_variable",
-        "count": 6688
+        "count": 4447
       },
       {
         "type": "simple_checkbox",
@@ -159,7 +159,7 @@
       },
       {
         "type": "template",
-        "count": 1782
+        "count": 587
       },
       {
         "type": "text",
@@ -175,7 +175,7 @@
       },
       {
         "type": "text_bubble",
-        "count": 30
+        "count": 31
       },
       {
         "type": "title",
@@ -191,11 +191,11 @@
       },
       {
         "type": "video",
-        "count": 3
+        "count": 4
       },
       {
         "type": "youtube",
-        "count": 6
+        "count": 8
       }
     ]
   },
@@ -203,7 +203,7 @@
     "data": [
       {
         "type": "add_data",
-        "count": 399
+        "count": 107
       },
       {
         "type": "app_update",
@@ -219,7 +219,7 @@
       },
       {
         "type": "emit: completed",
-        "count": 1002
+        "count": 173
       },
       {
         "type": "emit: force_reload",
@@ -235,7 +235,7 @@
       },
       {
         "type": "emit: server_sync",
-        "count": 6
+        "count": 8
       },
       {
         "type": "emit: set_language",
@@ -243,7 +243,7 @@
       },
       {
         "type": "emit: uncompleted",
-        "count": 1009
+        "count": 178
       },
       {
         "type": "feedback",
@@ -251,7 +251,7 @@
       },
       {
         "type": "go_to",
-        "count": 26
+        "count": 28
       },
       {
         "type": "nav",
@@ -259,7 +259,7 @@
       },
       {
         "type": "nav_stack",
-        "count": 1103
+        "count": 651
       },
       {
         "type": "plh_certificate",
@@ -267,7 +267,7 @@
       },
       {
         "type": "pop_up",
-        "count": 443
+        "count": 143
       },
       {
         "type": "reset_app",
@@ -279,23 +279,23 @@
       },
       {
         "type": "save_to_device",
-        "count": 1
+        "count": 3
       },
       {
         "type": "set_data",
-        "count": 1389
+        "count": 518
       },
       {
         "type": "set_field",
-        "count": 1463
+        "count": 521
       },
       {
         "type": "set_item",
-        "count": 30
+        "count": 38
       },
       {
         "type": "set_local",
-        "count": 608
+        "count": 324
       },
       {
         "type": "share",
@@ -752,12 +752,32 @@
         "missing": true
       },
       {
+        "path": "images/icons/docs.svg",
+        "count": 1,
+        "missing": true
+      },
+      {
+        "path": "images/icons/download_white.svg",
+        "count": 1,
+        "missing": true
+      },
+      {
+        "path": "images/icons/visibility.svg",
+        "count": 1,
+        "missing": true
+      },
+      {
         "path": "images/logos/app_logo.png",
         "count": 1,
         "missing": true
       },
       {
         "path": "images/logos/plh_logomark.png",
+        "count": 1,
+        "missing": true
+      },
+      {
+        "path": "temp/congrats.json",
         "count": 1,
         "missing": true
       }
@@ -2847,7 +2867,7 @@
       },
       {
         "path": "images/icons/download.svg",
-        "count": 1,
+        "count": 2,
         "size_kb": 0.7
       },
       {
@@ -3087,7 +3107,7 @@
       },
       {
         "path": "images/icons/smile_eyes_up.svg",
-        "count": 160,
+        "count": 85,
         "size_kb": 1
       },
       {
@@ -3222,7 +3242,7 @@
       },
       {
         "path": "lottie/ux/checkmark.json",
-        "count": 2,
+        "count": 1,
         "size_kb": 24.6
       },
       {
@@ -3697,7 +3717,7 @@
       {
         "type": "generator",
         "subtype": null,
-        "total": 87
+        "total": 9
       },
       {
         "type": "global",
@@ -3717,12 +3737,12 @@
       {
         "type": "template",
         "subtype": null,
-        "total": 183
+        "total": 110
       },
       {
         "type": "template",
         "subtype": "generated",
-        "total": 1097
+        "total": 338
       },
       {
         "type": "template",
