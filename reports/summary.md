@@ -9,19 +9,19 @@
 | animated_section | 1 |
 | animated_slides | 1 |
 | apple_sign_in_button | 2 |
-| audio | 3 |
-| button | 129 |
+| audio | 4 |
+| button | 127 |
 | combo_box | 27 |
-| data_items | 249 |
+| data_items | 250 |
 | debug_toggle | 1 |
 | display_grid | 4 |
-| display_group | 159 |
+| display_group | 168 |
 | drawer | 1 |
 | google_sign_in_button | 2 |
 | image | 27 |
 | items | 16 |
 | lottie_animation | 8 |
-| nested_properties | 986 |
+| nested_properties | 531 |
 | number_selector | 1 |
 | plh_bottom_nav | 1 |
 | plh_course_accordion | 1 |
@@ -35,23 +35,23 @@
 | qr_code | 1 |
 | radio_button_grid | 10 |
 | radio_list | 3 |
-| round_button | 27 |
+| round_button | 31 |
 | select_text | 1 |
 | set_field | 4 |
-| set_variable | 6688 |
+| set_variable | 4447 |
 | simple_checkbox | 1 |
 | task_card | 4 |
 | task_progress_bar | 5 |
-| template | 1782 |
+| template | 587 |
 | text | 510 |
 | text_area | 4 |
 | text_box | 23 |
-| text_bubble | 30 |
+| text_bubble | 31 |
 | title | 69 |
 | toggle_bar | 5 |
 | update_action_list | 4 |
-| video | 3 |
-| youtube | 6 |
+| video | 4 |
+| youtube | 8 |
 </details>
 
 <details >
@@ -59,30 +59,30 @@
 
 | type | count |
 | --- | --- |
-| add_data | 399 |
+| add_data | 107 |
 | app_update | 1 |
 | asset_pack | 4 |
 | auth | 3 |
-| emit: completed | 1002 |
+| emit: completed | 173 |
 | emit: force_reload | 5 |
 | emit: force_reprocess | 13 |
 | emit: force_restart | 3 |
-| emit: server_sync | 6 |
+| emit: server_sync | 8 |
 | emit: set_language | 2 |
-| emit: uncompleted | 1009 |
+| emit: uncompleted | 178 |
 | feedback | 13 |
-| go_to | 26 |
+| go_to | 28 |
 | nav | 1 |
-| nav_stack | 1103 |
+| nav_stack | 651 |
 | plh_certificate | 34 |
-| pop_up | 443 |
+| pop_up | 143 |
 | reset_app | 4 |
 | reset_data | 3 |
-| save_to_device | 1 |
-| set_data | 1389 |
-| set_field | 1463 |
-| set_item | 30 |
-| set_local | 608 |
+| save_to_device | 3 |
+| set_data | 518 |
+| set_field | 521 |
+| set_item | 38 |
+| set_local | 324 |
 | share | 3 |
 | task | 2 |
 | toast | 56 |
@@ -213,8 +213,12 @@ Assets that have references within sheets but do not appear in app-data
 | audio/relax/relax_6.m4a | 1 |
 | audio/relax/relax_7.m4a | 1 |
 | audio/relax/relax_8.m4a | 1 |
+| images/icons/docs.svg | 1 |
+| images/icons/download_white.svg | 1 |
+| images/icons/visibility.svg | 1 |
 | images/logos/app_logo.png | 1 |
 | images/logos/plh_logomark.png | 1 |
+| temp/congrats.json | 1 |
 </details>
 
 <details >
@@ -640,7 +644,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/document-lock-outline.svg | 0.7 | 1 |
 | images/icons/document-text-outline-thin.svg | 0.5 | 3 |
 | images/icons/document-text-outline.svg | 0.5 | 1 |
-| images/icons/download.svg | 0.7 | 1 |
+| images/icons/download.svg | 0.7 | 2 |
 | images/icons/expand_circle_right.png | 8.7 | 1 |
 | images/icons/expand_circle_right_blue.svg | 2.1 | 2 |
 | images/icons/eye_blue.png | 4.2 | 40 |
@@ -688,7 +692,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/share.svg | 4.2 | 3 |
 | images/icons/single_speech_blue.png | 3.3 | 16 |
 | images/icons/smile_eyes_down.svg | 0.9 | 82 |
-| images/icons/smile_eyes_up.svg | 1 | 160 |
+| images/icons/smile_eyes_up.svg | 1 | 85 |
 | images/icons/spark.png | 1.6 | 4 |
 | images/icons/speech_bubble_blue.png | 4.2 | 54 |
 | images/icons/star_filled_blue.png | 5.1 | 54 |
@@ -715,7 +719,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | lottie/relax/soothing_waves.json | 7.6 | 24 |
 | lottie/relax/square_flow.json | 5.9 | 47 |
 | lottie/ux/bulging_circles.json | 11.8 | 1 |
-| lottie/ux/checkmark.json | 24.6 | 2 |
+| lottie/ux/checkmark.json | 24.6 | 1 |
 | lottie/ux/gift_box.json | 674.5 | 1 |
 </details>
 
@@ -816,12 +820,12 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_list | relax | 1 |
 | data_pipe |  | 4 |
 | data_pipe | generated | 150 |
-| generator |  | 87 |
+| generator |  | 9 |
 | global |  | 12 |
 | global | onboarding | 16 |
 | global | proximal_outcomes | 2 |
-| template |  | 183 |
-| template | generated | 1097 |
+| template |  | 110 |
+| template | generated | 338 |
 | template | legal_terms | 4 |
 | template | proximal_outcomes | 16 |
 </details>
