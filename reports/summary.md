@@ -95,7 +95,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 79025 KB | 79 MB |
+| total | 79076 KB | 79.1 MB |
 | unused | 14313 KB | 14.3 MB |
 </details>
 
@@ -219,7 +219,6 @@ Assets that have references within sheets but do not appear in app-data
 | images/icons/visibility.svg | 1 |
 | images/logos/app_logo.png | 1 |
 | images/logos/plh_logomark.png | 1 |
-| temp/congrats.json | 1 |
 </details>
 
 <details >
@@ -722,6 +721,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | lottie/ux/bulging_circles.json | 11.8 | 1 |
 | lottie/ux/checkmark.json | 24.6 | 1 |
 | lottie/ux/gift_box.json | 674.5 | 1 |
+| temp/congrats.json | 50.4 | 1 |
 </details>
 
 <details >
