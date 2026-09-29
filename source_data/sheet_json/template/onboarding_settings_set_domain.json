@@ -60,7 +60,7 @@
     {
       "type": "begin_radio_button_grid",
       "name": "domain_select",
-      "parameter_list": "options_key: id;\noptions_value: title;\nstyle: secondary;\nitem_width: 140px;\ngrid_gap: 12px;\nvalue_as_object: true;\ninitial_selected_option_key: @fields.selected_domain_id;"
+      "parameter_list": "options_key: id;\noptions_value: title;\nitem_width: 140px;\ngrid_gap: 12px;\nvalue_as_object: true;\ninitial_selected_option_key: @fields.selected_domain_id;"
     },
     {
       "type": "begin_data_items",

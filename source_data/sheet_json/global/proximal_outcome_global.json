@@ -113,6 +113,35 @@
       "type": "declare_global_constant",
       "name": "proximal_outcome_checkin_intro_no_goal_no_chall",
       "value": "Congratulations on making it this far in the program!\n\nLet's check in and see how things have been going!"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "proximal_outcome_checkin_intro_post",
+      "value": "Congratulations for completing the programme\n\nLet's check in and see how things have been going!"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "po_post_nf_first_title",
+      "value": "<to write> title",
+      "comment": "First notification of each 30-day cycle: title."
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "po_post_nf_first_text",
+      "value": "<to write> text",
+      "comment": "First notification: text."
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "po_post_nf_reminder_title",
+      "value": "<to write> title",
+      "comment": " +7 / +14 day reminders: title."
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "po_post_nf_reminder_text",
+      "value": "<to write> text",
+      "comment": "Reminders: text."
     }
   ]
 }

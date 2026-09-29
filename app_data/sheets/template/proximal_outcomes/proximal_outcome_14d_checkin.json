@@ -574,7 +574,32 @@
             }
           ],
           "condition": "@fields.prox_outcome_access == \"cta\"",
-          "rows": [],
+          "rows": [
+            {
+              "name": "po_type",
+              "value": "14days",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "loop_pages.page_@item.row_index.po_type",
+              "_dynamicFields": {
+                "_nested_name": [
+                  {
+                    "fullExpression": "loop_pages.page_@item.row_index.po_type",
+                    "matchedExpression": "@item.row_index.po_type",
+                    "type": "item",
+                    "fieldName": "row_index"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.row_index.po_type": [
+                  "_nested_name"
+                ]
+              }
+            }
+          ],
           "_nested_name": "loop_pages.page_@item.row_index",
           "_dynamicFields": {
             "name": [
@@ -698,7 +723,32 @@
             }
           ],
           "condition": "@fields.prox_outcome_access != \"cta\" && @item.row_index != @local.last_page_index",
-          "rows": [],
+          "rows": [
+            {
+              "name": "po_type",
+              "value": "14days",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "loop_pages.page_@item.row_index.po_type",
+              "_dynamicFields": {
+                "_nested_name": [
+                  {
+                    "fullExpression": "loop_pages.page_@item.row_index.po_type",
+                    "matchedExpression": "@item.row_index.po_type",
+                    "type": "item",
+                    "fieldName": "row_index"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.row_index.po_type": [
+                  "_nested_name"
+                ]
+              }
+            }
+          ],
           "_nested_name": "loop_pages.page_@item.row_index",
           "_dynamicFields": {
             "name": [
@@ -1177,7 +1227,7 @@
     }
   ],
   "_source": {
-    "name": "kids_teens_mx",
+    "name": "kids_teens_global V3",
     "path": "templates/PLH proximal outcomes.xlsx",
     "url": "https://docs.google.com/spreadsheets/d/17Ti5gmQDWeKBrprr75UlTLVG7VCdYXQtLG31Ch8O4JE"
   }

@@ -37,9 +37,22 @@
       "exclude_from_translation": true
     },
     {
+      "name": "po_last_7d_ts",
+      "value": "@global.proximal_outcome_due_from == \"viewed\" && @fields.prox_7d_viewed_ts ? @fields.prox_7d_viewed_ts : @fields.prox_7d_last_ts"
+    },
+    {
+      "name": "days_since_prox_7d_last",
+      "value": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@local.po_last_7d_ts).setHours(0,0,0,0))))"
+    },
+    {
+      "name": "po_due",
+      "value": "!!@global.has_proximal_outcomes && @local.days_since_prox_7d_last >= @global.proximal_outcome_frequency"
+    },
+    {
       "type": "begin_display_group",
       "name": "is_relax",
-      "condition": "@local.category_id == \"relax\""
+      "condition": "@local.category_id == \"relax\"",
+      "parameter_list": "style: column "
     },
     {
       "name": "articles",
@@ -63,6 +76,10 @@
       "value": true
     },
     {
+      "name": "progress",
+      "value": "@local.progress"
+    },
+    {
       "type": "end_template"
     },
     {
@@ -76,6 +93,18 @@
       "value": "@local.article_id"
     },
     {
+      "type": "begin_nested_properties",
+      "name": "nav_buttons"
+    },
+    {
+      "name": "show_previous",
+      "value": false,
+      "condition": "@local.is_first"
+    },
+    {
+      "type": "end_nested_properties"
+    },
+    {
       "type": "end_template"
     },
     {
@@ -84,7 +113,8 @@
     {
       "type": "begin_display_group",
       "name": "is_check_in",
-      "condition": "@local.category_id == \"check_in\""
+      "condition": "@local.category_id == \"check_in\"",
+      "parameter_list": "style: column "
     },
     {
       "type": "begin_template",
@@ -182,7 +212,7 @@
     {
       "name": "next_icon_src",
       "value": "@global.first_completion_icon",
-      "condition": "@local.is_last"
+      "condition": "@local.is_last && !@local.po_due"
     },
     {
       "name": "show_previous",

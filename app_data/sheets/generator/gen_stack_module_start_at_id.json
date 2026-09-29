@@ -18,9 +18,6 @@
       "value": "@gen.id"
     },
     {
-      "name": "picked_activity_id"
-    },
-    {
       "type": "data_items",
       "name": "count_modules",
       "value": "@data.module_tasks",
@@ -41,72 +38,76 @@
       "exclude_from_translation": true
     },
     {
-      "name": "articles_suffix",
-      "value": "_article_tasks"
+      "name": "po_last_7d_ts",
+      "value": "@global.proximal_outcome_due_from == \"viewed\" && @fields.prox_7d_viewed_ts ? @fields.prox_7d_viewed_ts : @fields.prox_7d_last_ts"
     },
     {
-      "name": "articles_list_name",
-      "value": "@local.module_id@local.articles_suffix"
-    },
-    {
-      "name": "articles_data",
-      "value": "@data.@local.articles_list_name"
-    },
-    {
-      "name": "module_article_count",
-      "value": "@calc(Object.keys(@local.articles_data).length)"
+      "name": "po_last_14d_ts",
+      "value": "@global.proximal_outcome_due_from == \"viewed\" && @fields.prox_14d_viewed_ts ? @fields.prox_14d_viewed_ts : @fields.prox_14d_last_ts"
     },
     {
       "name": "days_since_prox_7d_last",
-      "value": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@field.prox_7d_last_ts).setHours(0,0,0,0))))",
-      "exclude_from_translation": true
+      "value": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@local.po_last_7d_ts).setHours(0,0,0,0))))"
     },
     {
       "name": "days_since_prox_14d_last",
-      "value": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@field.prox_14d_last_ts).setHours(0,0,0,0))))",
-      "exclude_from_translation": true
+      "value": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@local.po_last_14d_ts).setHours(0,0,0,0))))"
     },
     {
-      "name": "has_PO_questions",
-      "value": "@local.days_since_prox_7d_last >= @global.proximal_outcome_frequency",
-      "exclude_from_translation": true
+      "name": "po_due",
+      "value": "@calc(!!@global.has_proximal_outcomes && @local.days_since_prox_7d_last >= @global.proximal_outcome_frequency)"
     },
     {
-      "name": "has_PO_7",
-      "value": "@local.days_since_prox_14d_last < @global.proximal_outcome_frequency * @global.proximal_outcome_alternation",
-      "exclude_from_translation": true
+      "name": "po_due_type",
+      "value": "7days",
+      "condition": "!(@local.days_since_prox_14d_last >= @global.proximal_outcome_frequency * @global.proximal_outcome_alternation)"
     },
     {
-      "name": "has_PO_14",
-      "value": "@local.days_since_prox_14d_last >= @global.proximal_outcome_frequency * @global.proximal_outcome_alternation",
-      "exclude_from_translation": true
-    },
-    {
-      "name": "PO_type",
-      "exclude_from_translation": true
+      "name": "po_due_type",
+      "value": "14days",
+      "condition": "@local.days_since_prox_14d_last >= @global.proximal_outcome_frequency * @global.proximal_outcome_alternation"
     },
     {
       "name": "show_PO",
-      "value": false,
-      "exclude_from_translation": true
+      "value": false
+    },
+    {
+      "name": "PO_type"
+    },
+    {
+      "name": "articles",
+      "value": "_article_tasks"
+    },
+    {
+      "name": "articles_data_list_name",
+      "value": "@local.module_id@local.articles"
+    },
+    {
+      "name": "articles_data",
+      "value": "@data.@local.articles_data_list_name"
+    },
+    {
+      "name": "module_page_count",
+      "value": "@calc(Object.keys(@local.articles_data).length)"
+    },
+    {
+      "name": "po_extra_steps",
+      "value": "@calc(Object.keys(@data.proximal_outcome_7d_pages).length)",
+      "condition": "@local.po_due_type == \"7days\""
+    },
+    {
+      "name": "po_extra_steps",
+      "value": "@calc(Object.keys(@data.proximal_outcome_14d_pages).length)",
+      "condition": "@local.po_due_type == \"14days\""
     },
     {
       "type": "text",
-      "value": "space",
+      "value": "not comp: @local.not_comp_count",
       "condition": false,
       "exclude_from_translation": true
     },
     {
-      "type": "text",
-      "value": "space",
-      "condition": false,
-      "exclude_from_translation": true
-    },
-    {
-      "type": "text",
-      "value": "has_PO_questions: @local.has_PO_questions\ndays_since_prox_7d_last: @local.days_since_prox_7d_last\ndays_since_prox_14d_last: @local.days_since_prox_14d_last\nhas_PO_7: @local.has_PO_7\nhas_PO_14: @local.has_PO_14\nPO_type: @local.PO_type\nshow_PO: @local.show_PO\nm article count: @local.module_article_count\narticle list name: @local.articles_list_name",
-      "condition": false,
-      "exclude_from_translation": true
+      "name": "picked_activity_id"
     },
     {
       "type": "data_items",
@@ -130,20 +131,6 @@
       ],
       "condition": "!@local.picked_activity_id",
       "exclude_from_translation": true
-    },
-    {
-      "name": "extra_steps",
-      "value": 0
-    },
-    {
-      "name": "extra_steps",
-      "value": "@calc(Object.keys(@data.proximal_outcome_14d_pages).length)",
-      "condition": "@local.has_PO_7"
-    },
-    {
-      "name": "extra_steps",
-      "value": "@calc(Object.keys(@data.proximal_outcome_7d_pages).length)",
-      "condition": "@local.has_PO_14"
     },
     {
       "type": "template",
@@ -198,7 +185,108 @@
           "_raw": "uncompleted | nav_stack: close_top"
         }
       ],
-      "condition": "!@local.has_PO_questions && !@local.show_PO",
+      "condition": "!@local.po_due && !@local.show_PO",
+      "rows": [
+        {
+          "name": "activity_id",
+          "value": "@local.picked_activity_id"
+        },
+        {
+          "name": "module_id",
+          "value": "@gen.id"
+        },
+        {
+          "name": "course_id",
+          "value": "@gen.tag_course"
+        },
+        {
+          "name": "unlock_all",
+          "value": "@calc(@local.not_comp_count == 0)"
+        }
+      ]
+    },
+    {
+      "type": "template",
+      "name": "module_start_at_id_checkin",
+      "value": "module_start_at_id_get_unlock",
+      "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "completed | set_data | _list_id: module_tasks, _id: @gen.id, unlocked_activity: TRUE",
+          "params": {
+            "_list_id": "module_tasks",
+            "_id": "@gen.id",
+            "unlocked_activity": true
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_field",
+          "args": [
+            "latest_unlocked_activity",
+            "@local.picked_activity_id"
+          ],
+          "_raw": "completed | set_field: latest_unlocked_activity: @local.picked_activity_id"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_field",
+          "args": [
+            "prox_outcome_access",
+            "module"
+          ],
+          "_raw": "completed | set_field: prox_outcome_access: module"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "completed | set_data | _list_id: proximal_outcome_7d_pages, completed: false",
+          "params": {
+            "_list_id": "proximal_outcome_7d_pages",
+            "completed": false
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "completed | set_data | _list_id: proximal_outcome_14d_pages, completed: false",
+          "params": {
+            "_list_id": "proximal_outcome_14d_pages",
+            "completed": false
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_local",
+          "args": [
+            "PO_type",
+            "@local.po_due_type"
+          ],
+          "_raw": "completed | set_local: PO_type: @local.po_due_type"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_local",
+          "args": [
+            "show_PO",
+            true
+          ],
+          "_raw": "completed | set_local: show_PO: true"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "nav_stack",
+          "args": [
+            "close_top"
+          ],
+          "_raw": "uncompleted | nav_stack: close_top"
+        }
+      ],
+      "condition": "@local.po_due && !@local.show_PO",
       "rows": [
         {
           "name": "activity_id",
@@ -226,19 +314,7 @@
               "rows": [
                 {
                   "name": "extra_steps",
-                  "value": "@local.extra_steps"
-                },
-                {
-                  "name": "picked_activity_id",
-                  "value": "@local.picked_activity_id"
-                },
-                {
-                  "name": "has_PO_7",
-                  "value": "@local.has_PO_7"
-                },
-                {
-                  "name": "has_PO_14",
-                  "value": "@local.has_PO_14"
+                  "value": "@local.po_extra_steps"
                 }
               ]
             }
@@ -254,31 +330,123 @@
               "rows": [
                 {
                   "name": "extra_steps",
-                  "value": "@local.extra_steps"
-                },
-                {
-                  "name": "picked_activity_id",
-                  "value": "@local.picked_activity_id"
-                },
-                {
-                  "name": "has_PO_7",
-                  "value": "@local.has_PO_7"
-                },
-                {
-                  "name": "has_PO_14",
-                  "value": "@local.has_PO_14"
+                  "value": "@local.po_extra_steps"
                 }
               ]
             }
           ]
         }
       ]
+    },
+    {
+      "type": "template",
+      "name": "proximal_outcome_page_7",
+      "value": "proximal_outcome_7d_checkin",
+      "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "nav_stack",
+          "args": [
+            "close_top"
+          ],
+          "_raw": "completed | nav_stack: close_top"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "pop_up",
+          "args": [
+            "unlock_play"
+          ],
+          "_raw": "completed | pop_up: unlock_play | variant: plh_completion",
+          "params": {
+            "variant": "plh_completion"
+          }
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "nav_stack",
+          "args": [
+            "close_top"
+          ],
+          "_raw": "uncompleted | nav_stack: close_top"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "pop_up",
+          "args": [
+            "unlock_play"
+          ],
+          "_raw": "uncompleted | pop_up: unlock_play | variant: plh_completion",
+          "params": {
+            "variant": "plh_completion"
+          }
+        }
+      ],
+      "condition": "@local.show_PO && @local.PO_type == \"7days\"",
+      "rows": [
+        {
+          "name": "module_article_count",
+          "value": "@local.module_page_count"
+        }
+      ]
+    },
+    {
+      "type": "template",
+      "name": "proximal_outcome_page_14",
+      "value": "proximal_outcome_14d_checkin",
+      "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "nav_stack",
+          "args": [
+            "close_top"
+          ],
+          "_raw": "completed | nav_stack: close_top"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "pop_up",
+          "args": [
+            "unlock_play"
+          ],
+          "_raw": "completed | pop_up: unlock_play | variant: plh_completion",
+          "params": {
+            "variant": "plh_completion"
+          }
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "nav_stack",
+          "args": [
+            "close_top"
+          ],
+          "_raw": "uncompleted | nav_stack: close_top"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "pop_up",
+          "args": [
+            "unlock_play"
+          ],
+          "_raw": "uncompleted | pop_up: unlock_play | variant: plh_completion",
+          "params": {
+            "variant": "plh_completion"
+          }
+        }
+      ],
+      "condition": "@local.show_PO && @local.PO_type == \"14days\"",
+      "rows": [
+        {
+          "name": "module_article_count",
+          "value": "@local.module_page_count"
+        }
+      ]
     }
   ],
   "_source": {
-    "name": "kids_teens_mx",
-    "path": "templates/PLH proximal outcomes.xlsx",
-    "url": "https://docs.google.com/spreadsheets/d/17Ti5gmQDWeKBrprr75UlTLVG7VCdYXQtLG31Ch8O4JE"
+    "name": "kids_teens_global V3",
+    "path": "templates/PLH module_navigation.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1OrFP6fI6mwuL-ZMvzWh2Qf36Fdm_pwXNdthubmh9tQA"
   },
   "_output_flows": [
     {

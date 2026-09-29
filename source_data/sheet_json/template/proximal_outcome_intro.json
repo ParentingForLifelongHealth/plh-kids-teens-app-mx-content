@@ -5,79 +5,48 @@
   "status": "released",
   "rows": [
     {
-      "name": "speaker_position",
-      "value": "left",
-      "exclude_from_translation": true
+      "name": "po_type",
+      "comment": "Passed in by the check-in container (7days / 14days)."
     },
     {
-      "name": "variant",
-      "value": "gray",
-      "exclude_from_translation": true
+      "type": "data_items",
+      "name": "po_viewed_7d",
+      "value": "@data.proximal_outcome_7d_pages",
+      "action_list": "data_changed | set_field: prox_7d_viewed_ts: @calc(now());\ndata_changed | add_data |\n_list_id: proximal_outcome_views,\nviewed_ts: @calc(now()),\npo_type: @local.po_type,\naccess: @fields.prox_outcome_access,\ncompleted_all: @fields.completed_all;",
+      "parameter_list": "filter: @item.id == \"intro\"; limit: 1;",
+      "comment": "Fires once the intro has been drawn (data_changed), whatever opened it: home button, module, review or notification. Stamps the 7-day 'viewed' time and adds a history row. Looping over the intro's own pages-list row keeps it to one run per view."
     },
     {
-      "name": "facilitator_id",
-      "value": "@fields.facilitator_id",
-      "exclude_from_translation": true
-    },
-    {
-      "name": "facilitator_data",
-      "value": "characters.@local.facilitator_id",
-      "exclude_from_translation": true
-    },
-    {
-      "name": "facilitator_row",
-      "value": "@data.@local.facilitator_data",
-      "exclude_from_translation": true
-    },
-    {
-      "name": "speaker_name",
-      "value": "@local.facilitator_row.name",
-      "exclude_from_translation": true
-    },
-    {
-      "name": "speaker_image_asset",
-      "value": "@local.facilitator_row.image_asset",
-      "exclude_from_translation": true
-    },
-    {
-      "type": "text_bubble",
-      "name": "text_bubble",
-      "value": "@global.proximal_outcome_checkin_intro",
-      "parameter_list": "speaker_image_asset: @local.speaker_image_asset;\nspeaker_name: @local.speaker_name;\nspeaker_position: @local.speaker_position;\nvariant: @local.variant;",
-      "condition": "@fields.selected_challenge_id != \"other\" && @fields.selected_goal_id != \"other_goal\"",
-      "exclude_from_translation": true
-    },
-    {
-      "type": "text_bubble",
-      "name": "text_bubble",
-      "value": "@global.proximal_outcome_checkin_intro_no_goal",
-      "parameter_list": "speaker_image_asset: @local.speaker_image_asset;\nspeaker_name: @local.speaker_name;\nspeaker_position: @local.speaker_position;\nvariant: @local.variant;",
-      "condition": "@fields.selected_challenge_id != \"other\" && @fields.selected_goal_id == \"other_goal\"",
-      "exclude_from_translation": true
-    },
-    {
-      "type": "text_bubble",
-      "name": "text_bubble",
-      "value": "@global.proximal_outcome_checkin_intro_no_goal_no_chall",
-      "parameter_list": "speaker_image_asset: @local.speaker_image_asset;\nspeaker_name: @local.speaker_name;\nspeaker_position: @local.speaker_position;\nvariant: @local.variant;",
-      "condition": "@fields.selected_challenge_id == \"other\"",
-      "exclude_from_translation": true
+      "type": "data_items",
+      "name": "po_viewed_14d",
+      "value": "@data.proximal_outcome_14d_pages",
+      "action_list": "data_changed | set_field: prox_14d_viewed_ts: @calc(now());",
+      "parameter_list": "filter: @item.id == \"intro\"; limit: 1;",
+      "condition": "@local.po_type == \"14days\"",
+      "comment": "14-day check-ins also stamp the 14-day 'viewed' time (as prox_14d_last_ts does for started)."
     },
     {
       "type": "begin_template",
-      "name": "nav_buttons",
-      "value": "proximal_outcome_nav_buttons",
-      "action_list": "completed | emit: completed;\n\nuncompleted | emit: uncompleted;",
-      "exclude_from_translation": true
+      "name": "intro_during",
+      "value": "proximal_outcome_intro_during",
+      "action_list": "completed | emit: completed;\nuncompleted | emit: uncompleted;",
+      "condition": "!@fields.completed_all || @fields.prox_outcome_access != \"cta\" || @local.po_type != \"14days\"",
+      "comment": "During the programme, and any check-in not opened from the home button or a notification (modules, hp_review)."
     },
     {
-      "name": "show_previous",
-      "value": false,
-      "exclude_from_translation": true
+      "name": "po_type",
+      "value": "@local.po_type"
     },
     {
-      "name": "show_next",
-      "value": true
+      "type": "end_template"
+    },
+    {
+      "type": "begin_template",
+      "name": "intro_post",
+      "value": "proximal_outcome_intro_post",
+      "action_list": "completed | emit: completed;\nuncompleted | emit: uncompleted;",
+      "condition": "!!@fields.completed_all && @fields.prox_outcome_access == \"cta\" && @local.po_type == \"14days\"",
+      "comment": "After programme completion, 14-day check-in from the home button or a notification."
     },
     {
       "type": "end_template"
