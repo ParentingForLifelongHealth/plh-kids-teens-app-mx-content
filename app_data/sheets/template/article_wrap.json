@@ -54,6 +54,130 @@
       "_nested_name": "is_first"
     },
     {
+      "name": "po_last_7d_ts",
+      "value": "@global.proximal_outcome_due_from == \"viewed\" && @fields.prox_7d_viewed_ts ? @fields.prox_7d_viewed_ts : @fields.prox_7d_last_ts",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "po_last_7d_ts",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@global.proximal_outcome_due_from == \"viewed\" && @fields.prox_7d_viewed_ts ? @fields.prox_7d_viewed_ts : @fields.prox_7d_last_ts",
+            "matchedExpression": "@global.proximal_outcome_due_from",
+            "type": "global",
+            "fieldName": "proximal_outcome_due_from"
+          },
+          {
+            "fullExpression": "@global.proximal_outcome_due_from == \"viewed\" && @fields.prox_7d_viewed_ts ? @fields.prox_7d_viewed_ts : @fields.prox_7d_last_ts",
+            "matchedExpression": "@fields.prox_7d_viewed_ts",
+            "type": "fields",
+            "fieldName": "prox_7d_viewed_ts"
+          },
+          {
+            "fullExpression": "@global.proximal_outcome_due_from == \"viewed\" && @fields.prox_7d_viewed_ts ? @fields.prox_7d_viewed_ts : @fields.prox_7d_last_ts",
+            "matchedExpression": "@fields.prox_7d_viewed_ts",
+            "type": "fields",
+            "fieldName": "prox_7d_viewed_ts"
+          },
+          {
+            "fullExpression": "@global.proximal_outcome_due_from == \"viewed\" && @fields.prox_7d_viewed_ts ? @fields.prox_7d_viewed_ts : @fields.prox_7d_last_ts",
+            "matchedExpression": "@fields.prox_7d_last_ts",
+            "type": "fields",
+            "fieldName": "prox_7d_last_ts"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@global.proximal_outcome_due_from": [
+          "value"
+        ],
+        "@fields.prox_7d_viewed_ts": [
+          "value",
+          "value"
+        ],
+        "@fields.prox_7d_last_ts": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "days_since_prox_7d_last",
+      "value": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@local.po_last_7d_ts).setHours(0,0,0,0))))",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "days_since_prox_7d_last",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@local.po_last_7d_ts).setHours(0,0,0,0))))",
+            "matchedExpression": "@local.po_last_7d_ts",
+            "type": "local",
+            "fieldName": "po_last_7d_ts"
+          },
+          {
+            "fullExpression": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@local.po_last_7d_ts).setHours(0,0,0,0))))",
+            "matchedExpression": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@local.po_last_7d_ts).setHours(0,0,0,0))))",
+            "type": "calc",
+            "fieldName": "window.date_fns.differenceInDays(new Date(),new Date(new Date(@local.po_last_7d_ts).setHours(0,0,0,0)))"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.po_last_7d_ts": [
+          "value"
+        ],
+        "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@local.po_last_7d_ts).setHours(0,0,0,0))))": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "po_due",
+      "value": "!!@global.has_proximal_outcomes && @local.days_since_prox_7d_last >= @global.proximal_outcome_frequency",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "po_due",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "!!@global.has_proximal_outcomes && @local.days_since_prox_7d_last >= @global.proximal_outcome_frequency",
+            "matchedExpression": "!@global.has_proximal_outcomes",
+            "type": "global",
+            "fieldName": "has_proximal_outcomes"
+          },
+          {
+            "fullExpression": "!!@global.has_proximal_outcomes && @local.days_since_prox_7d_last >= @global.proximal_outcome_frequency",
+            "matchedExpression": "@local.days_since_prox_7d_last",
+            "type": "local",
+            "fieldName": "days_since_prox_7d_last"
+          },
+          {
+            "fullExpression": "!!@global.has_proximal_outcomes && @local.days_since_prox_7d_last >= @global.proximal_outcome_frequency",
+            "matchedExpression": "@global.proximal_outcome_frequency",
+            "type": "global",
+            "fieldName": "proximal_outcome_frequency"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "!@global.has_proximal_outcomes": [
+          "value"
+        ],
+        "@local.days_since_prox_7d_last": [
+          "value"
+        ],
+        "@global.proximal_outcome_frequency": [
+          "value"
+        ]
+      }
+    },
+    {
       "name": "articles",
       "value": "_article_tasks",
       "_translations": {
@@ -66,6 +190,9 @@
       "type": "display_group",
       "name": "is_relax",
       "condition": "@local.category_id == \"relax\"",
+      "parameter_list": {
+        "style": "column"
+      },
       "rows": [
         {
           "type": "template",
@@ -125,6 +252,30 @@
               "value": true,
               "type": "set_variable",
               "_nested_name": "is_relax.header.show_progress"
+            },
+            {
+              "name": "progress",
+              "value": "@local.progress",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "is_relax.header.progress",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@local.progress",
+                    "matchedExpression": "@local.progress",
+                    "type": "local",
+                    "fieldName": "progress"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.progress": [
+                  "value"
+                ]
+              }
             }
           ],
           "_nested_name": "is_relax.header"
@@ -175,6 +326,35 @@
                   "value"
                 ]
               }
+            },
+            {
+              "type": "nested_properties",
+              "name": "nav_buttons",
+              "rows": [
+                {
+                  "name": "show_previous",
+                  "value": false,
+                  "condition": "@local.is_first",
+                  "type": "set_variable",
+                  "_nested_name": "is_relax.article.nav_buttons.show_previous",
+                  "_dynamicFields": {
+                    "condition": [
+                      {
+                        "fullExpression": "@local.is_first",
+                        "matchedExpression": "@local.is_first",
+                        "type": "local",
+                        "fieldName": "is_first"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.is_first": [
+                      "condition"
+                    ]
+                  }
+                }
+              ],
+              "_nested_name": "is_relax.article.nav_buttons"
             }
           ],
           "_nested_name": "is_relax.article"
@@ -201,6 +381,9 @@
       "type": "display_group",
       "name": "is_check_in",
       "condition": "@local.category_id == \"check_in\"",
+      "parameter_list": {
+        "style": "column"
+      },
       "rows": [
         {
           "type": "template",
@@ -527,7 +710,7 @@
               "_translations": {
                 "value": {}
               },
-              "condition": "@local.is_last",
+              "condition": "@local.is_last && !@local.po_due",
               "type": "set_variable",
               "_nested_name": "is_article.nav_buttons.next_icon_src",
               "_dynamicFields": {
@@ -541,10 +724,16 @@
                 ],
                 "condition": [
                   {
-                    "fullExpression": "@local.is_last",
+                    "fullExpression": "@local.is_last && !@local.po_due",
                     "matchedExpression": "@local.is_last",
                     "type": "local",
                     "fieldName": "is_last"
+                  },
+                  {
+                    "fullExpression": "@local.is_last && !@local.po_due",
+                    "matchedExpression": "!@local.po_due",
+                    "type": "local",
+                    "fieldName": "po_due"
                   }
                 ]
               },
@@ -553,6 +742,9 @@
                   "value"
                 ],
                 "@local.is_last": [
+                  "condition"
+                ],
+                "!@local.po_due": [
                   "condition"
                 ]
               }

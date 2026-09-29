@@ -19,11 +19,6 @@
       "_nested_name": "module_id"
     },
     {
-      "name": "picked_activity_id",
-      "type": "set_variable",
-      "_nested_name": "picked_activity_id"
-    },
-    {
       "type": "data_items",
       "name": "count_modules",
       "value": "@data.module_tasks",
@@ -175,35 +170,347 @@
       }
     },
     {
-      "name": "articles_suffix",
+      "name": "po_last_7d_ts",
+      "value": "@global.proximal_outcome_due_from == \"viewed\" && @fields.prox_7d_viewed_ts ? @fields.prox_7d_viewed_ts : @fields.prox_7d_last_ts",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "po_last_7d_ts",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@global.proximal_outcome_due_from == \"viewed\" && @fields.prox_7d_viewed_ts ? @fields.prox_7d_viewed_ts : @fields.prox_7d_last_ts",
+            "matchedExpression": "@global.proximal_outcome_due_from",
+            "type": "global",
+            "fieldName": "proximal_outcome_due_from"
+          },
+          {
+            "fullExpression": "@global.proximal_outcome_due_from == \"viewed\" && @fields.prox_7d_viewed_ts ? @fields.prox_7d_viewed_ts : @fields.prox_7d_last_ts",
+            "matchedExpression": "@fields.prox_7d_viewed_ts",
+            "type": "fields",
+            "fieldName": "prox_7d_viewed_ts"
+          },
+          {
+            "fullExpression": "@global.proximal_outcome_due_from == \"viewed\" && @fields.prox_7d_viewed_ts ? @fields.prox_7d_viewed_ts : @fields.prox_7d_last_ts",
+            "matchedExpression": "@fields.prox_7d_viewed_ts",
+            "type": "fields",
+            "fieldName": "prox_7d_viewed_ts"
+          },
+          {
+            "fullExpression": "@global.proximal_outcome_due_from == \"viewed\" && @fields.prox_7d_viewed_ts ? @fields.prox_7d_viewed_ts : @fields.prox_7d_last_ts",
+            "matchedExpression": "@fields.prox_7d_last_ts",
+            "type": "fields",
+            "fieldName": "prox_7d_last_ts"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@global.proximal_outcome_due_from": [
+          "value"
+        ],
+        "@fields.prox_7d_viewed_ts": [
+          "value",
+          "value"
+        ],
+        "@fields.prox_7d_last_ts": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "po_last_14d_ts",
+      "value": "@global.proximal_outcome_due_from == \"viewed\" && @fields.prox_14d_viewed_ts ? @fields.prox_14d_viewed_ts : @fields.prox_14d_last_ts",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "po_last_14d_ts",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@global.proximal_outcome_due_from == \"viewed\" && @fields.prox_14d_viewed_ts ? @fields.prox_14d_viewed_ts : @fields.prox_14d_last_ts",
+            "matchedExpression": "@global.proximal_outcome_due_from",
+            "type": "global",
+            "fieldName": "proximal_outcome_due_from"
+          },
+          {
+            "fullExpression": "@global.proximal_outcome_due_from == \"viewed\" && @fields.prox_14d_viewed_ts ? @fields.prox_14d_viewed_ts : @fields.prox_14d_last_ts",
+            "matchedExpression": "@fields.prox_14d_viewed_ts",
+            "type": "fields",
+            "fieldName": "prox_14d_viewed_ts"
+          },
+          {
+            "fullExpression": "@global.proximal_outcome_due_from == \"viewed\" && @fields.prox_14d_viewed_ts ? @fields.prox_14d_viewed_ts : @fields.prox_14d_last_ts",
+            "matchedExpression": "@fields.prox_14d_viewed_ts",
+            "type": "fields",
+            "fieldName": "prox_14d_viewed_ts"
+          },
+          {
+            "fullExpression": "@global.proximal_outcome_due_from == \"viewed\" && @fields.prox_14d_viewed_ts ? @fields.prox_14d_viewed_ts : @fields.prox_14d_last_ts",
+            "matchedExpression": "@fields.prox_14d_last_ts",
+            "type": "fields",
+            "fieldName": "prox_14d_last_ts"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@global.proximal_outcome_due_from": [
+          "value"
+        ],
+        "@fields.prox_14d_viewed_ts": [
+          "value",
+          "value"
+        ],
+        "@fields.prox_14d_last_ts": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "days_since_prox_7d_last",
+      "value": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@local.po_last_7d_ts).setHours(0,0,0,0))))",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "days_since_prox_7d_last",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@local.po_last_7d_ts).setHours(0,0,0,0))))",
+            "matchedExpression": "@local.po_last_7d_ts",
+            "type": "local",
+            "fieldName": "po_last_7d_ts"
+          },
+          {
+            "fullExpression": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@local.po_last_7d_ts).setHours(0,0,0,0))))",
+            "matchedExpression": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@local.po_last_7d_ts).setHours(0,0,0,0))))",
+            "type": "calc",
+            "fieldName": "window.date_fns.differenceInDays(new Date(),new Date(new Date(@local.po_last_7d_ts).setHours(0,0,0,0)))"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.po_last_7d_ts": [
+          "value"
+        ],
+        "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@local.po_last_7d_ts).setHours(0,0,0,0))))": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "days_since_prox_14d_last",
+      "value": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@local.po_last_14d_ts).setHours(0,0,0,0))))",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "days_since_prox_14d_last",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@local.po_last_14d_ts).setHours(0,0,0,0))))",
+            "matchedExpression": "@local.po_last_14d_ts",
+            "type": "local",
+            "fieldName": "po_last_14d_ts"
+          },
+          {
+            "fullExpression": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@local.po_last_14d_ts).setHours(0,0,0,0))))",
+            "matchedExpression": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@local.po_last_14d_ts).setHours(0,0,0,0))))",
+            "type": "calc",
+            "fieldName": "window.date_fns.differenceInDays(new Date(),new Date(new Date(@local.po_last_14d_ts).setHours(0,0,0,0)))"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.po_last_14d_ts": [
+          "value"
+        ],
+        "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@local.po_last_14d_ts).setHours(0,0,0,0))))": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "po_due",
+      "value": "@calc(!!@global.has_proximal_outcomes && @local.days_since_prox_7d_last >= @global.proximal_outcome_frequency)",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "po_due",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(!!@global.has_proximal_outcomes && @local.days_since_prox_7d_last >= @global.proximal_outcome_frequency)",
+            "matchedExpression": "!@global.has_proximal_outcomes",
+            "type": "global",
+            "fieldName": "has_proximal_outcomes"
+          },
+          {
+            "fullExpression": "@calc(!!@global.has_proximal_outcomes && @local.days_since_prox_7d_last >= @global.proximal_outcome_frequency)",
+            "matchedExpression": "@local.days_since_prox_7d_last",
+            "type": "local",
+            "fieldName": "days_since_prox_7d_last"
+          },
+          {
+            "fullExpression": "@calc(!!@global.has_proximal_outcomes && @local.days_since_prox_7d_last >= @global.proximal_outcome_frequency)",
+            "matchedExpression": "@global.proximal_outcome_frequency",
+            "type": "global",
+            "fieldName": "proximal_outcome_frequency"
+          },
+          {
+            "fullExpression": "@calc(!!@global.has_proximal_outcomes && @local.days_since_prox_7d_last >= @global.proximal_outcome_frequency)",
+            "matchedExpression": "@calc(!!@global.has_proximal_outcomes && @local.days_since_prox_7d_last >= @global.proximal_outcome_frequency)",
+            "type": "calc",
+            "fieldName": "!!@global.has_proximal_outcomes && @local.days_since_prox_7d_last >= @global.proximal_outcome_frequency"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "!@global.has_proximal_outcomes": [
+          "value"
+        ],
+        "@local.days_since_prox_7d_last": [
+          "value"
+        ],
+        "@global.proximal_outcome_frequency": [
+          "value"
+        ],
+        "@calc(!!@global.has_proximal_outcomes && @local.days_since_prox_7d_last >= @global.proximal_outcome_frequency)": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "po_due_type",
+      "value": "7days",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "!(@local.days_since_prox_14d_last >= @global.proximal_outcome_frequency * @global.proximal_outcome_alternation)",
+      "type": "set_variable",
+      "_nested_name": "po_due_type",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "!(@local.days_since_prox_14d_last >= @global.proximal_outcome_frequency * @global.proximal_outcome_alternation)",
+            "matchedExpression": "@local.days_since_prox_14d_last",
+            "type": "local",
+            "fieldName": "days_since_prox_14d_last"
+          },
+          {
+            "fullExpression": "!(@local.days_since_prox_14d_last >= @global.proximal_outcome_frequency * @global.proximal_outcome_alternation)",
+            "matchedExpression": "@global.proximal_outcome_frequency",
+            "type": "global",
+            "fieldName": "proximal_outcome_frequency"
+          },
+          {
+            "fullExpression": "!(@local.days_since_prox_14d_last >= @global.proximal_outcome_frequency * @global.proximal_outcome_alternation)",
+            "matchedExpression": "@global.proximal_outcome_alternation",
+            "type": "global",
+            "fieldName": "proximal_outcome_alternation"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.days_since_prox_14d_last": [
+          "condition"
+        ],
+        "@global.proximal_outcome_frequency": [
+          "condition"
+        ],
+        "@global.proximal_outcome_alternation": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "name": "po_due_type",
+      "value": "14days",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "@local.days_since_prox_14d_last >= @global.proximal_outcome_frequency * @global.proximal_outcome_alternation",
+      "type": "set_variable",
+      "_nested_name": "po_due_type",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.days_since_prox_14d_last >= @global.proximal_outcome_frequency * @global.proximal_outcome_alternation",
+            "matchedExpression": "@local.days_since_prox_14d_last",
+            "type": "local",
+            "fieldName": "days_since_prox_14d_last"
+          },
+          {
+            "fullExpression": "@local.days_since_prox_14d_last >= @global.proximal_outcome_frequency * @global.proximal_outcome_alternation",
+            "matchedExpression": "@global.proximal_outcome_frequency",
+            "type": "global",
+            "fieldName": "proximal_outcome_frequency"
+          },
+          {
+            "fullExpression": "@local.days_since_prox_14d_last >= @global.proximal_outcome_frequency * @global.proximal_outcome_alternation",
+            "matchedExpression": "@global.proximal_outcome_alternation",
+            "type": "global",
+            "fieldName": "proximal_outcome_alternation"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.days_since_prox_14d_last": [
+          "condition"
+        ],
+        "@global.proximal_outcome_frequency": [
+          "condition"
+        ],
+        "@global.proximal_outcome_alternation": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "name": "show_PO",
+      "value": false,
+      "type": "set_variable",
+      "_nested_name": "show_PO"
+    },
+    {
+      "name": "PO_type",
+      "type": "set_variable",
+      "_nested_name": "PO_type"
+    },
+    {
+      "name": "articles",
       "value": "_article_tasks",
       "_translations": {
         "value": {}
       },
       "type": "set_variable",
-      "_nested_name": "articles_suffix"
+      "_nested_name": "articles"
     },
     {
-      "name": "articles_list_name",
-      "value": "@local.module_id@local.articles_suffix",
+      "name": "articles_data_list_name",
+      "value": "@local.module_id@local.articles",
       "_translations": {
         "value": {}
       },
       "type": "set_variable",
-      "_nested_name": "articles_list_name",
+      "_nested_name": "articles_data_list_name",
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@local.module_id@local.articles_suffix",
+            "fullExpression": "@local.module_id@local.articles",
             "matchedExpression": "@local.module_id",
             "type": "local",
             "fieldName": "module_id"
           },
           {
-            "fullExpression": "@local.module_id@local.articles_suffix",
-            "matchedExpression": "@local.articles_suffix",
+            "fullExpression": "@local.module_id@local.articles",
+            "matchedExpression": "@local.articles",
             "type": "local",
-            "fieldName": "articles_suffix"
+            "fieldName": "articles"
           }
         ]
       },
@@ -211,14 +518,14 @@
         "@local.module_id": [
           "value"
         ],
-        "@local.articles_suffix": [
+        "@local.articles": [
           "value"
         ]
       }
     },
     {
       "name": "articles_data",
-      "value": "@data.@local.articles_list_name",
+      "value": "@data.@local.articles_data_list_name",
       "_translations": {
         "value": {}
       },
@@ -227,27 +534,27 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@data.@local.articles_list_name",
-            "matchedExpression": "@local.articles_list_name",
+            "fullExpression": "@data.@local.articles_data_list_name",
+            "matchedExpression": "@local.articles_data_list_name",
             "type": "local",
-            "fieldName": "articles_list_name"
+            "fieldName": "articles_data_list_name"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@local.articles_list_name": [
+        "@local.articles_data_list_name": [
           "value"
         ]
       }
     },
     {
-      "name": "module_article_count",
+      "name": "module_page_count",
       "value": "@calc(Object.keys(@local.articles_data).length)",
       "_translations": {
         "value": {}
       },
       "type": "set_variable",
-      "_nested_name": "module_article_count",
+      "_nested_name": "module_page_count",
       "_dynamicFields": {
         "value": [
           {
@@ -274,325 +581,125 @@
       }
     },
     {
-      "name": "days_since_prox_7d_last",
-      "value": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@field.prox_7d_last_ts).setHours(0,0,0,0))))",
+      "name": "po_extra_steps",
+      "value": "@calc(Object.keys(@data.proximal_outcome_7d_pages).length)",
       "_translations": {
         "value": {}
       },
-      "exclude_from_translation": true,
+      "condition": "@local.po_due_type == \"7days\"",
       "type": "set_variable",
-      "_nested_name": "days_since_prox_7d_last",
+      "_nested_name": "po_extra_steps",
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@field.prox_7d_last_ts).setHours(0,0,0,0))))",
-            "matchedExpression": "@field.prox_7d_last_ts",
-            "type": "field",
-            "fieldName": "prox_7d_last_ts"
+            "fullExpression": "@calc(Object.keys(@data.proximal_outcome_7d_pages).length)",
+            "matchedExpression": "@data.proximal_outcome_7d_pages",
+            "type": "data",
+            "fieldName": "proximal_outcome_7d_pages"
           },
           {
-            "fullExpression": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@field.prox_7d_last_ts).setHours(0,0,0,0))))",
-            "matchedExpression": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@field.prox_7d_last_ts).setHours(0,0,0,0))))",
+            "fullExpression": "@calc(Object.keys(@data.proximal_outcome_7d_pages).length)",
+            "matchedExpression": "@calc(Object.keys(@data.proximal_outcome_7d_pages).length)",
             "type": "calc",
-            "fieldName": "window.date_fns.differenceInDays(new Date(),new Date(new Date(@field.prox_7d_last_ts).setHours(0,0,0,0)))"
+            "fieldName": "Object.keys(@data.proximal_outcome_7d_pages).length"
+          }
+        ],
+        "condition": [
+          {
+            "fullExpression": "@local.po_due_type == \"7days\"",
+            "matchedExpression": "@local.po_due_type",
+            "type": "local",
+            "fieldName": "po_due_type"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@field.prox_7d_last_ts": [
+        "@data.proximal_outcome_7d_pages": [
           "value"
         ],
-        "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@field.prox_7d_last_ts).setHours(0,0,0,0))))": [
+        "@calc(Object.keys(@data.proximal_outcome_7d_pages).length)": [
           "value"
+        ],
+        "@local.po_due_type": [
+          "condition"
         ]
       }
     },
     {
-      "name": "days_since_prox_14d_last",
-      "value": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@field.prox_14d_last_ts).setHours(0,0,0,0))))",
+      "name": "po_extra_steps",
+      "value": "@calc(Object.keys(@data.proximal_outcome_14d_pages).length)",
       "_translations": {
         "value": {}
       },
-      "exclude_from_translation": true,
+      "condition": "@local.po_due_type == \"14days\"",
       "type": "set_variable",
-      "_nested_name": "days_since_prox_14d_last",
+      "_nested_name": "po_extra_steps",
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@field.prox_14d_last_ts).setHours(0,0,0,0))))",
-            "matchedExpression": "@field.prox_14d_last_ts",
-            "type": "field",
-            "fieldName": "prox_14d_last_ts"
+            "fullExpression": "@calc(Object.keys(@data.proximal_outcome_14d_pages).length)",
+            "matchedExpression": "@data.proximal_outcome_14d_pages",
+            "type": "data",
+            "fieldName": "proximal_outcome_14d_pages"
           },
           {
-            "fullExpression": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@field.prox_14d_last_ts).setHours(0,0,0,0))))",
-            "matchedExpression": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@field.prox_14d_last_ts).setHours(0,0,0,0))))",
+            "fullExpression": "@calc(Object.keys(@data.proximal_outcome_14d_pages).length)",
+            "matchedExpression": "@calc(Object.keys(@data.proximal_outcome_14d_pages).length)",
             "type": "calc",
-            "fieldName": "window.date_fns.differenceInDays(new Date(),new Date(new Date(@field.prox_14d_last_ts).setHours(0,0,0,0)))"
+            "fieldName": "Object.keys(@data.proximal_outcome_14d_pages).length"
           }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@field.prox_14d_last_ts": [
-          "value"
         ],
-        "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@field.prox_14d_last_ts).setHours(0,0,0,0))))": [
-          "value"
-        ]
-      }
-    },
-    {
-      "name": "has_PO_questions",
-      "value": "@local.days_since_prox_7d_last >= @global.proximal_outcome_frequency",
-      "_translations": {
-        "value": {}
-      },
-      "exclude_from_translation": true,
-      "type": "set_variable",
-      "_nested_name": "has_PO_questions",
-      "_dynamicFields": {
-        "value": [
+        "condition": [
           {
-            "fullExpression": "@local.days_since_prox_7d_last >= @global.proximal_outcome_frequency",
-            "matchedExpression": "@local.days_since_prox_7d_last",
+            "fullExpression": "@local.po_due_type == \"14days\"",
+            "matchedExpression": "@local.po_due_type",
             "type": "local",
-            "fieldName": "days_since_prox_7d_last"
-          },
-          {
-            "fullExpression": "@local.days_since_prox_7d_last >= @global.proximal_outcome_frequency",
-            "matchedExpression": "@global.proximal_outcome_frequency",
-            "type": "global",
-            "fieldName": "proximal_outcome_frequency"
+            "fieldName": "po_due_type"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@local.days_since_prox_7d_last": [
+        "@data.proximal_outcome_14d_pages": [
           "value"
         ],
-        "@global.proximal_outcome_frequency": [
+        "@calc(Object.keys(@data.proximal_outcome_14d_pages).length)": [
           "value"
+        ],
+        "@local.po_due_type": [
+          "condition"
         ]
       }
-    },
-    {
-      "name": "has_PO_7",
-      "value": "@local.days_since_prox_14d_last < @global.proximal_outcome_frequency * @global.proximal_outcome_alternation",
-      "_translations": {
-        "value": {}
-      },
-      "exclude_from_translation": true,
-      "type": "set_variable",
-      "_nested_name": "has_PO_7",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "@local.days_since_prox_14d_last < @global.proximal_outcome_frequency * @global.proximal_outcome_alternation",
-            "matchedExpression": "@local.days_since_prox_14d_last",
-            "type": "local",
-            "fieldName": "days_since_prox_14d_last"
-          },
-          {
-            "fullExpression": "@local.days_since_prox_14d_last < @global.proximal_outcome_frequency * @global.proximal_outcome_alternation",
-            "matchedExpression": "@global.proximal_outcome_frequency",
-            "type": "global",
-            "fieldName": "proximal_outcome_frequency"
-          },
-          {
-            "fullExpression": "@local.days_since_prox_14d_last < @global.proximal_outcome_frequency * @global.proximal_outcome_alternation",
-            "matchedExpression": "@global.proximal_outcome_alternation",
-            "type": "global",
-            "fieldName": "proximal_outcome_alternation"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@local.days_since_prox_14d_last": [
-          "value"
-        ],
-        "@global.proximal_outcome_frequency": [
-          "value"
-        ],
-        "@global.proximal_outcome_alternation": [
-          "value"
-        ]
-      }
-    },
-    {
-      "name": "has_PO_14",
-      "value": "@local.days_since_prox_14d_last >= @global.proximal_outcome_frequency * @global.proximal_outcome_alternation",
-      "_translations": {
-        "value": {}
-      },
-      "exclude_from_translation": true,
-      "type": "set_variable",
-      "_nested_name": "has_PO_14",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "@local.days_since_prox_14d_last >= @global.proximal_outcome_frequency * @global.proximal_outcome_alternation",
-            "matchedExpression": "@local.days_since_prox_14d_last",
-            "type": "local",
-            "fieldName": "days_since_prox_14d_last"
-          },
-          {
-            "fullExpression": "@local.days_since_prox_14d_last >= @global.proximal_outcome_frequency * @global.proximal_outcome_alternation",
-            "matchedExpression": "@global.proximal_outcome_frequency",
-            "type": "global",
-            "fieldName": "proximal_outcome_frequency"
-          },
-          {
-            "fullExpression": "@local.days_since_prox_14d_last >= @global.proximal_outcome_frequency * @global.proximal_outcome_alternation",
-            "matchedExpression": "@global.proximal_outcome_alternation",
-            "type": "global",
-            "fieldName": "proximal_outcome_alternation"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@local.days_since_prox_14d_last": [
-          "value"
-        ],
-        "@global.proximal_outcome_frequency": [
-          "value"
-        ],
-        "@global.proximal_outcome_alternation": [
-          "value"
-        ]
-      }
-    },
-    {
-      "name": "PO_type",
-      "exclude_from_translation": true,
-      "type": "set_variable",
-      "_nested_name": "PO_type"
-    },
-    {
-      "name": "show_PO",
-      "value": false,
-      "exclude_from_translation": true,
-      "type": "set_variable",
-      "_nested_name": "show_PO"
     },
     {
       "type": "text",
-      "value": "space",
+      "value": "not comp: @local.not_comp_count",
       "_translations": {
         "value": {}
       },
       "condition": false,
       "exclude_from_translation": true,
-      "name": "text_17",
-      "_nested_name": "text_17"
-    },
-    {
-      "type": "text",
-      "value": "space",
-      "_translations": {
-        "value": {}
-      },
-      "condition": false,
-      "exclude_from_translation": true,
-      "name": "text_18",
-      "_nested_name": "text_18"
-    },
-    {
-      "type": "text",
-      "value": "has_PO_questions: @local.has_PO_questions\ndays_since_prox_7d_last: @local.days_since_prox_7d_last\ndays_since_prox_14d_last: @local.days_since_prox_14d_last\nhas_PO_7: @local.has_PO_7\nhas_PO_14: @local.has_PO_14\nPO_type: @local.PO_type\nshow_PO: @local.show_PO\nm article count: @local.module_article_count\narticle list name: @local.articles_list_name",
-      "_translations": {
-        "value": {}
-      },
-      "condition": false,
-      "exclude_from_translation": true,
-      "name": "text_19",
-      "_nested_name": "text_19",
+      "name": "text_20",
+      "_nested_name": "text_20",
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "has_PO_questions: @local.has_PO_questions\ndays_since_prox_7d_last: @local.days_since_prox_7d_last\ndays_since_prox_14d_last: @local.days_since_prox_14d_last\nhas_PO_7: @local.has_PO_7\nhas_PO_14: @local.has_PO_14\nPO_type: @local.PO_type\nshow_PO: @local.show_PO\nm article count: @local.module_article_count\narticle list name: @local.articles_list_name",
-            "matchedExpression": "@local.has_PO_questions",
+            "fullExpression": "not comp: @local.not_comp_count",
+            "matchedExpression": "@local.not_comp_count",
             "type": "local",
-            "fieldName": "has_PO_questions"
-          },
-          {
-            "fullExpression": "has_PO_questions: @local.has_PO_questions\ndays_since_prox_7d_last: @local.days_since_prox_7d_last\ndays_since_prox_14d_last: @local.days_since_prox_14d_last\nhas_PO_7: @local.has_PO_7\nhas_PO_14: @local.has_PO_14\nPO_type: @local.PO_type\nshow_PO: @local.show_PO\nm article count: @local.module_article_count\narticle list name: @local.articles_list_name",
-            "matchedExpression": "@local.days_since_prox_7d_last",
-            "type": "local",
-            "fieldName": "days_since_prox_7d_last"
-          },
-          {
-            "fullExpression": "has_PO_questions: @local.has_PO_questions\ndays_since_prox_7d_last: @local.days_since_prox_7d_last\ndays_since_prox_14d_last: @local.days_since_prox_14d_last\nhas_PO_7: @local.has_PO_7\nhas_PO_14: @local.has_PO_14\nPO_type: @local.PO_type\nshow_PO: @local.show_PO\nm article count: @local.module_article_count\narticle list name: @local.articles_list_name",
-            "matchedExpression": "@local.days_since_prox_14d_last",
-            "type": "local",
-            "fieldName": "days_since_prox_14d_last"
-          },
-          {
-            "fullExpression": "has_PO_questions: @local.has_PO_questions\ndays_since_prox_7d_last: @local.days_since_prox_7d_last\ndays_since_prox_14d_last: @local.days_since_prox_14d_last\nhas_PO_7: @local.has_PO_7\nhas_PO_14: @local.has_PO_14\nPO_type: @local.PO_type\nshow_PO: @local.show_PO\nm article count: @local.module_article_count\narticle list name: @local.articles_list_name",
-            "matchedExpression": "@local.has_PO_7",
-            "type": "local",
-            "fieldName": "has_PO_7"
-          },
-          {
-            "fullExpression": "has_PO_questions: @local.has_PO_questions\ndays_since_prox_7d_last: @local.days_since_prox_7d_last\ndays_since_prox_14d_last: @local.days_since_prox_14d_last\nhas_PO_7: @local.has_PO_7\nhas_PO_14: @local.has_PO_14\nPO_type: @local.PO_type\nshow_PO: @local.show_PO\nm article count: @local.module_article_count\narticle list name: @local.articles_list_name",
-            "matchedExpression": "@local.has_PO_14",
-            "type": "local",
-            "fieldName": "has_PO_14"
-          },
-          {
-            "fullExpression": "has_PO_questions: @local.has_PO_questions\ndays_since_prox_7d_last: @local.days_since_prox_7d_last\ndays_since_prox_14d_last: @local.days_since_prox_14d_last\nhas_PO_7: @local.has_PO_7\nhas_PO_14: @local.has_PO_14\nPO_type: @local.PO_type\nshow_PO: @local.show_PO\nm article count: @local.module_article_count\narticle list name: @local.articles_list_name",
-            "matchedExpression": "@local.PO_type",
-            "type": "local",
-            "fieldName": "PO_type"
-          },
-          {
-            "fullExpression": "has_PO_questions: @local.has_PO_questions\ndays_since_prox_7d_last: @local.days_since_prox_7d_last\ndays_since_prox_14d_last: @local.days_since_prox_14d_last\nhas_PO_7: @local.has_PO_7\nhas_PO_14: @local.has_PO_14\nPO_type: @local.PO_type\nshow_PO: @local.show_PO\nm article count: @local.module_article_count\narticle list name: @local.articles_list_name",
-            "matchedExpression": "@local.show_PO",
-            "type": "local",
-            "fieldName": "show_PO"
-          },
-          {
-            "fullExpression": "has_PO_questions: @local.has_PO_questions\ndays_since_prox_7d_last: @local.days_since_prox_7d_last\ndays_since_prox_14d_last: @local.days_since_prox_14d_last\nhas_PO_7: @local.has_PO_7\nhas_PO_14: @local.has_PO_14\nPO_type: @local.PO_type\nshow_PO: @local.show_PO\nm article count: @local.module_article_count\narticle list name: @local.articles_list_name",
-            "matchedExpression": "@local.module_article_count",
-            "type": "local",
-            "fieldName": "module_article_count"
-          },
-          {
-            "fullExpression": "has_PO_questions: @local.has_PO_questions\ndays_since_prox_7d_last: @local.days_since_prox_7d_last\ndays_since_prox_14d_last: @local.days_since_prox_14d_last\nhas_PO_7: @local.has_PO_7\nhas_PO_14: @local.has_PO_14\nPO_type: @local.PO_type\nshow_PO: @local.show_PO\nm article count: @local.module_article_count\narticle list name: @local.articles_list_name",
-            "matchedExpression": "@local.articles_list_name",
-            "type": "local",
-            "fieldName": "articles_list_name"
+            "fieldName": "not_comp_count"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@local.has_PO_questions": [
-          "value"
-        ],
-        "@local.days_since_prox_7d_last": [
-          "value"
-        ],
-        "@local.days_since_prox_14d_last": [
-          "value"
-        ],
-        "@local.has_PO_7": [
-          "value"
-        ],
-        "@local.has_PO_14": [
-          "value"
-        ],
-        "@local.PO_type": [
-          "value"
-        ],
-        "@local.show_PO": [
-          "value"
-        ],
-        "@local.module_article_count": [
-          "value"
-        ],
-        "@local.articles_list_name": [
+        "@local.not_comp_count": [
           "value"
         ]
       }
+    },
+    {
+      "name": "picked_activity_id",
+      "type": "set_variable",
+      "_nested_name": "picked_activity_id"
     },
     {
       "type": "data_items",
@@ -695,102 +802,6 @@
       }
     },
     {
-      "name": "extra_steps",
-      "value": 0,
-      "type": "set_variable",
-      "_nested_name": "extra_steps"
-    },
-    {
-      "name": "extra_steps",
-      "value": "@calc(Object.keys(@data.proximal_outcome_14d_pages).length)",
-      "_translations": {
-        "value": {}
-      },
-      "condition": "@local.has_PO_7",
-      "type": "set_variable",
-      "_nested_name": "extra_steps",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "@calc(Object.keys(@data.proximal_outcome_14d_pages).length)",
-            "matchedExpression": "@data.proximal_outcome_14d_pages",
-            "type": "data",
-            "fieldName": "proximal_outcome_14d_pages"
-          },
-          {
-            "fullExpression": "@calc(Object.keys(@data.proximal_outcome_14d_pages).length)",
-            "matchedExpression": "@calc(Object.keys(@data.proximal_outcome_14d_pages).length)",
-            "type": "calc",
-            "fieldName": "Object.keys(@data.proximal_outcome_14d_pages).length"
-          }
-        ],
-        "condition": [
-          {
-            "fullExpression": "@local.has_PO_7",
-            "matchedExpression": "@local.has_PO_7",
-            "type": "local",
-            "fieldName": "has_PO_7"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@data.proximal_outcome_14d_pages": [
-          "value"
-        ],
-        "@calc(Object.keys(@data.proximal_outcome_14d_pages).length)": [
-          "value"
-        ],
-        "@local.has_PO_7": [
-          "condition"
-        ]
-      }
-    },
-    {
-      "name": "extra_steps",
-      "value": "@calc(Object.keys(@data.proximal_outcome_7d_pages).length)",
-      "_translations": {
-        "value": {}
-      },
-      "condition": "@local.has_PO_14",
-      "type": "set_variable",
-      "_nested_name": "extra_steps",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "@calc(Object.keys(@data.proximal_outcome_7d_pages).length)",
-            "matchedExpression": "@data.proximal_outcome_7d_pages",
-            "type": "data",
-            "fieldName": "proximal_outcome_7d_pages"
-          },
-          {
-            "fullExpression": "@calc(Object.keys(@data.proximal_outcome_7d_pages).length)",
-            "matchedExpression": "@calc(Object.keys(@data.proximal_outcome_7d_pages).length)",
-            "type": "calc",
-            "fieldName": "Object.keys(@data.proximal_outcome_7d_pages).length"
-          }
-        ],
-        "condition": [
-          {
-            "fullExpression": "@local.has_PO_14",
-            "matchedExpression": "@local.has_PO_14",
-            "type": "local",
-            "fieldName": "has_PO_14"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@data.proximal_outcome_7d_pages": [
-          "value"
-        ],
-        "@calc(Object.keys(@data.proximal_outcome_7d_pages).length)": [
-          "value"
-        ],
-        "@local.has_PO_14": [
-          "condition"
-        ]
-      }
-    },
-    {
       "type": "template",
       "name": "module_start_at_id",
       "value": "module_start_at_id_get_unlock",
@@ -843,7 +854,7 @@
           "_raw": "uncompleted | nav_stack: close_top"
         }
       ],
-      "condition": "!@local.has_PO_questions && !@local.show_PO",
+      "condition": "!@local.po_due && !@local.show_PO",
       "rows": [
         {
           "name": "activity_id",
@@ -919,226 +930,6 @@
               "value"
             ]
           }
-        },
-        {
-          "type": "nested_properties",
-          "name": "module_start_at_id",
-          "rows": [
-            {
-              "type": "nested_properties",
-              "name": "module",
-              "rows": [
-                {
-                  "name": "extra_steps",
-                  "value": "@local.extra_steps",
-                  "_translations": {
-                    "value": {}
-                  },
-                  "type": "set_variable",
-                  "_nested_name": "module_start_at_id.module_start_at_id.module.extra_steps",
-                  "_dynamicFields": {
-                    "value": [
-                      {
-                        "fullExpression": "@local.extra_steps",
-                        "matchedExpression": "@local.extra_steps",
-                        "type": "local",
-                        "fieldName": "extra_steps"
-                      }
-                    ]
-                  },
-                  "_dynamicDependencies": {
-                    "@local.extra_steps": [
-                      "value"
-                    ]
-                  }
-                },
-                {
-                  "name": "picked_activity_id",
-                  "value": "@local.picked_activity_id",
-                  "_translations": {
-                    "value": {}
-                  },
-                  "type": "set_variable",
-                  "_nested_name": "module_start_at_id.module_start_at_id.module.picked_activity_id",
-                  "_dynamicFields": {
-                    "value": [
-                      {
-                        "fullExpression": "@local.picked_activity_id",
-                        "matchedExpression": "@local.picked_activity_id",
-                        "type": "local",
-                        "fieldName": "picked_activity_id"
-                      }
-                    ]
-                  },
-                  "_dynamicDependencies": {
-                    "@local.picked_activity_id": [
-                      "value"
-                    ]
-                  }
-                },
-                {
-                  "name": "has_PO_7",
-                  "value": "@local.has_PO_7",
-                  "_translations": {
-                    "value": {}
-                  },
-                  "type": "set_variable",
-                  "_nested_name": "module_start_at_id.module_start_at_id.module.has_PO_7",
-                  "_dynamicFields": {
-                    "value": [
-                      {
-                        "fullExpression": "@local.has_PO_7",
-                        "matchedExpression": "@local.has_PO_7",
-                        "type": "local",
-                        "fieldName": "has_PO_7"
-                      }
-                    ]
-                  },
-                  "_dynamicDependencies": {
-                    "@local.has_PO_7": [
-                      "value"
-                    ]
-                  }
-                },
-                {
-                  "name": "has_PO_14",
-                  "value": "@local.has_PO_14",
-                  "_translations": {
-                    "value": {}
-                  },
-                  "type": "set_variable",
-                  "_nested_name": "module_start_at_id.module_start_at_id.module.has_PO_14",
-                  "_dynamicFields": {
-                    "value": [
-                      {
-                        "fullExpression": "@local.has_PO_14",
-                        "matchedExpression": "@local.has_PO_14",
-                        "type": "local",
-                        "fieldName": "has_PO_14"
-                      }
-                    ]
-                  },
-                  "_dynamicDependencies": {
-                    "@local.has_PO_14": [
-                      "value"
-                    ]
-                  }
-                }
-              ],
-              "_nested_name": "module_start_at_id.module_start_at_id.module"
-            }
-          ],
-          "_nested_name": "module_start_at_id.module_start_at_id"
-        },
-        {
-          "type": "nested_properties",
-          "name": "module_start_at_id_unlock_all",
-          "rows": [
-            {
-              "type": "nested_properties",
-              "name": "module",
-              "rows": [
-                {
-                  "name": "extra_steps",
-                  "value": "@local.extra_steps",
-                  "_translations": {
-                    "value": {}
-                  },
-                  "type": "set_variable",
-                  "_nested_name": "module_start_at_id.module_start_at_id_unlock_all.module.extra_steps",
-                  "_dynamicFields": {
-                    "value": [
-                      {
-                        "fullExpression": "@local.extra_steps",
-                        "matchedExpression": "@local.extra_steps",
-                        "type": "local",
-                        "fieldName": "extra_steps"
-                      }
-                    ]
-                  },
-                  "_dynamicDependencies": {
-                    "@local.extra_steps": [
-                      "value"
-                    ]
-                  }
-                },
-                {
-                  "name": "picked_activity_id",
-                  "value": "@local.picked_activity_id",
-                  "_translations": {
-                    "value": {}
-                  },
-                  "type": "set_variable",
-                  "_nested_name": "module_start_at_id.module_start_at_id_unlock_all.module.picked_activity_id",
-                  "_dynamicFields": {
-                    "value": [
-                      {
-                        "fullExpression": "@local.picked_activity_id",
-                        "matchedExpression": "@local.picked_activity_id",
-                        "type": "local",
-                        "fieldName": "picked_activity_id"
-                      }
-                    ]
-                  },
-                  "_dynamicDependencies": {
-                    "@local.picked_activity_id": [
-                      "value"
-                    ]
-                  }
-                },
-                {
-                  "name": "has_PO_7",
-                  "value": "@local.has_PO_7",
-                  "_translations": {
-                    "value": {}
-                  },
-                  "type": "set_variable",
-                  "_nested_name": "module_start_at_id.module_start_at_id_unlock_all.module.has_PO_7",
-                  "_dynamicFields": {
-                    "value": [
-                      {
-                        "fullExpression": "@local.has_PO_7",
-                        "matchedExpression": "@local.has_PO_7",
-                        "type": "local",
-                        "fieldName": "has_PO_7"
-                      }
-                    ]
-                  },
-                  "_dynamicDependencies": {
-                    "@local.has_PO_7": [
-                      "value"
-                    ]
-                  }
-                },
-                {
-                  "name": "has_PO_14",
-                  "value": "@local.has_PO_14",
-                  "_translations": {
-                    "value": {}
-                  },
-                  "type": "set_variable",
-                  "_nested_name": "module_start_at_id.module_start_at_id_unlock_all.module.has_PO_14",
-                  "_dynamicFields": {
-                    "value": [
-                      {
-                        "fullExpression": "@local.has_PO_14",
-                        "matchedExpression": "@local.has_PO_14",
-                        "type": "local",
-                        "fieldName": "has_PO_14"
-                      }
-                    ]
-                  },
-                  "_dynamicDependencies": {
-                    "@local.has_PO_14": [
-                      "value"
-                    ]
-                  }
-                }
-              ],
-              "_nested_name": "module_start_at_id.module_start_at_id_unlock_all.module"
-            }
-          ],
-          "_nested_name": "module_start_at_id.module_start_at_id_unlock_all"
         }
       ],
       "_nested_name": "module_start_at_id",
@@ -1167,13 +958,13 @@
         },
         "condition": [
           {
-            "fullExpression": "!@local.has_PO_questions && !@local.show_PO",
-            "matchedExpression": "!@local.has_PO_questions",
+            "fullExpression": "!@local.po_due && !@local.show_PO",
+            "matchedExpression": "!@local.po_due",
             "type": "local",
-            "fieldName": "has_PO_questions"
+            "fieldName": "po_due"
           },
           {
-            "fullExpression": "!@local.has_PO_questions && !@local.show_PO",
+            "fullExpression": "!@local.po_due && !@local.show_PO",
             "matchedExpression": "!@local.show_PO",
             "type": "local",
             "fieldName": "show_PO"
@@ -1185,10 +976,515 @@
           "action_list.1.args.1",
           "action_list.1._raw"
         ],
-        "!@local.has_PO_questions": [
+        "!@local.po_due": [
           "condition"
         ],
         "!@local.show_PO": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "template",
+      "name": "module_start_at_id_checkin",
+      "value": "module_start_at_id_get_unlock",
+      "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "completed | set_data | _list_id: module_tasks, _id: school_3to9_c, unlocked_activity: TRUE",
+          "params": {
+            "_list_id": "module_tasks",
+            "_id": "school_3to9_c",
+            "unlocked_activity": true
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_field",
+          "args": [
+            "latest_unlocked_activity",
+            "@local.picked_activity_id"
+          ],
+          "_raw": "completed | set_field: latest_unlocked_activity: @local.picked_activity_id"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_field",
+          "args": [
+            "prox_outcome_access",
+            "module"
+          ],
+          "_raw": "completed | set_field: prox_outcome_access: module"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "completed | set_data | _list_id: proximal_outcome_7d_pages, completed: false",
+          "params": {
+            "_list_id": "proximal_outcome_7d_pages",
+            "completed": false
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "completed | set_data | _list_id: proximal_outcome_14d_pages, completed: false",
+          "params": {
+            "_list_id": "proximal_outcome_14d_pages",
+            "completed": false
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_local",
+          "args": [
+            "PO_type",
+            "@local.po_due_type"
+          ],
+          "_raw": "completed | set_local: PO_type: @local.po_due_type"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_local",
+          "args": [
+            "show_PO",
+            true
+          ],
+          "_raw": "completed | set_local: show_PO: true"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "nav_stack",
+          "args": [
+            "close_top"
+          ],
+          "_raw": "uncompleted | nav_stack: close_top"
+        }
+      ],
+      "condition": "@local.po_due && !@local.show_PO",
+      "rows": [
+        {
+          "name": "activity_id",
+          "value": "@local.picked_activity_id",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "module_start_at_id_checkin.activity_id",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.picked_activity_id",
+                "matchedExpression": "@local.picked_activity_id",
+                "type": "local",
+                "fieldName": "picked_activity_id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.picked_activity_id": [
+              "value"
+            ]
+          }
+        },
+        {
+          "name": "module_id",
+          "value": "school_3to9_c",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "module_start_at_id_checkin.module_id"
+        },
+        {
+          "name": "course_id",
+          "value": "learn_c",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "module_start_at_id_checkin.course_id"
+        },
+        {
+          "name": "unlock_all",
+          "value": "@calc(@local.not_comp_count == 0)",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "module_start_at_id_checkin.unlock_all",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@calc(@local.not_comp_count == 0)",
+                "matchedExpression": "@local.not_comp_count",
+                "type": "local",
+                "fieldName": "not_comp_count"
+              },
+              {
+                "fullExpression": "@calc(@local.not_comp_count == 0)",
+                "matchedExpression": "@calc(@local.not_comp_count == 0)",
+                "type": "calc",
+                "fieldName": "@local.not_comp_count == 0"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.not_comp_count": [
+              "value"
+            ],
+            "@calc(@local.not_comp_count == 0)": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "nested_properties",
+          "name": "module_start_at_id",
+          "rows": [
+            {
+              "type": "nested_properties",
+              "name": "module",
+              "rows": [
+                {
+                  "name": "extra_steps",
+                  "value": "@local.po_extra_steps",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "type": "set_variable",
+                  "_nested_name": "module_start_at_id_checkin.module_start_at_id.module.extra_steps",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@local.po_extra_steps",
+                        "matchedExpression": "@local.po_extra_steps",
+                        "type": "local",
+                        "fieldName": "po_extra_steps"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.po_extra_steps": [
+                      "value"
+                    ]
+                  }
+                }
+              ],
+              "_nested_name": "module_start_at_id_checkin.module_start_at_id.module"
+            }
+          ],
+          "_nested_name": "module_start_at_id_checkin.module_start_at_id"
+        },
+        {
+          "type": "nested_properties",
+          "name": "module_start_at_id_unlock_all",
+          "rows": [
+            {
+              "type": "nested_properties",
+              "name": "module",
+              "rows": [
+                {
+                  "name": "extra_steps",
+                  "value": "@local.po_extra_steps",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "type": "set_variable",
+                  "_nested_name": "module_start_at_id_checkin.module_start_at_id_unlock_all.module.extra_steps",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@local.po_extra_steps",
+                        "matchedExpression": "@local.po_extra_steps",
+                        "type": "local",
+                        "fieldName": "po_extra_steps"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.po_extra_steps": [
+                      "value"
+                    ]
+                  }
+                }
+              ],
+              "_nested_name": "module_start_at_id_checkin.module_start_at_id_unlock_all.module"
+            }
+          ],
+          "_nested_name": "module_start_at_id_checkin.module_start_at_id_unlock_all"
+        }
+      ],
+      "_nested_name": "module_start_at_id_checkin",
+      "_dynamicFields": {
+        "action_list": {
+          "1": {
+            "args": {
+              "1": [
+                {
+                  "fullExpression": "@local.picked_activity_id",
+                  "matchedExpression": "@local.picked_activity_id",
+                  "type": "local",
+                  "fieldName": "picked_activity_id"
+                }
+              ]
+            },
+            "_raw": [
+              {
+                "fullExpression": "completed | set_field: latest_unlocked_activity: @local.picked_activity_id",
+                "matchedExpression": "@local.picked_activity_id",
+                "type": "local",
+                "fieldName": "picked_activity_id"
+              }
+            ]
+          },
+          "5": {
+            "args": {
+              "1": [
+                {
+                  "fullExpression": "@local.po_due_type",
+                  "matchedExpression": "@local.po_due_type",
+                  "type": "local",
+                  "fieldName": "po_due_type"
+                }
+              ]
+            },
+            "_raw": [
+              {
+                "fullExpression": "completed | set_local: PO_type: @local.po_due_type",
+                "matchedExpression": "@local.po_due_type",
+                "type": "local",
+                "fieldName": "po_due_type"
+              }
+            ]
+          }
+        },
+        "condition": [
+          {
+            "fullExpression": "@local.po_due && !@local.show_PO",
+            "matchedExpression": "@local.po_due",
+            "type": "local",
+            "fieldName": "po_due"
+          },
+          {
+            "fullExpression": "@local.po_due && !@local.show_PO",
+            "matchedExpression": "!@local.show_PO",
+            "type": "local",
+            "fieldName": "show_PO"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.picked_activity_id": [
+          "action_list.1.args.1",
+          "action_list.1._raw"
+        ],
+        "@local.po_due_type": [
+          "action_list.5.args.1",
+          "action_list.5._raw"
+        ],
+        "@local.po_due": [
+          "condition"
+        ],
+        "!@local.show_PO": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "template",
+      "name": "proximal_outcome_page_7",
+      "value": "proximal_outcome_7d_checkin",
+      "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "nav_stack",
+          "args": [
+            "close_top"
+          ],
+          "_raw": "completed | nav_stack: close_top"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "pop_up",
+          "args": [
+            "unlock_play"
+          ],
+          "_raw": "completed | pop_up: unlock_play | variant: plh_completion",
+          "params": {
+            "variant": "plh_completion"
+          }
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "nav_stack",
+          "args": [
+            "close_top"
+          ],
+          "_raw": "uncompleted | nav_stack: close_top"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "pop_up",
+          "args": [
+            "unlock_play"
+          ],
+          "_raw": "uncompleted | pop_up: unlock_play | variant: plh_completion",
+          "params": {
+            "variant": "plh_completion"
+          }
+        }
+      ],
+      "condition": "@local.show_PO && @local.PO_type == \"7days\"",
+      "rows": [
+        {
+          "name": "module_article_count",
+          "value": "@local.module_page_count",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "proximal_outcome_page_7.module_article_count",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.module_page_count",
+                "matchedExpression": "@local.module_page_count",
+                "type": "local",
+                "fieldName": "module_page_count"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.module_page_count": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "proximal_outcome_page_7",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.show_PO && @local.PO_type == \"7days\"",
+            "matchedExpression": "@local.show_PO",
+            "type": "local",
+            "fieldName": "show_PO"
+          },
+          {
+            "fullExpression": "@local.show_PO && @local.PO_type == \"7days\"",
+            "matchedExpression": "@local.PO_type",
+            "type": "local",
+            "fieldName": "PO_type"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.show_PO": [
+          "condition"
+        ],
+        "@local.PO_type": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "template",
+      "name": "proximal_outcome_page_14",
+      "value": "proximal_outcome_14d_checkin",
+      "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "nav_stack",
+          "args": [
+            "close_top"
+          ],
+          "_raw": "completed | nav_stack: close_top"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "pop_up",
+          "args": [
+            "unlock_play"
+          ],
+          "_raw": "completed | pop_up: unlock_play | variant: plh_completion",
+          "params": {
+            "variant": "plh_completion"
+          }
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "nav_stack",
+          "args": [
+            "close_top"
+          ],
+          "_raw": "uncompleted | nav_stack: close_top"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "pop_up",
+          "args": [
+            "unlock_play"
+          ],
+          "_raw": "uncompleted | pop_up: unlock_play | variant: plh_completion",
+          "params": {
+            "variant": "plh_completion"
+          }
+        }
+      ],
+      "condition": "@local.show_PO && @local.PO_type == \"14days\"",
+      "rows": [
+        {
+          "name": "module_article_count",
+          "value": "@local.module_page_count",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "proximal_outcome_page_14.module_article_count",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.module_page_count",
+                "matchedExpression": "@local.module_page_count",
+                "type": "local",
+                "fieldName": "module_page_count"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.module_page_count": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "proximal_outcome_page_14",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.show_PO && @local.PO_type == \"14days\"",
+            "matchedExpression": "@local.show_PO",
+            "type": "local",
+            "fieldName": "show_PO"
+          },
+          {
+            "fullExpression": "@local.show_PO && @local.PO_type == \"14days\"",
+            "matchedExpression": "@local.PO_type",
+            "type": "local",
+            "fieldName": "PO_type"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.show_PO": [
+          "condition"
+        ],
+        "@local.PO_type": [
           "condition"
         ]
       }

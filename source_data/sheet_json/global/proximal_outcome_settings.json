@@ -21,12 +21,26 @@
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_frequency ",
-      "value": 7
+      "value": 7,
+      "comment": "days between check-ins during programme"
     },
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_alternation",
-      "value": 2
+      "value": 2,
+      "comment": "frequency at which proximal outcomes questions are asked (every other check-in)"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "proximal_outcome_post_frequency",
+      "value": 30,
+      "comment": "days between check-ins after programme completion"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "proximal_outcome_due_from",
+      "value": "started",
+      "comment": "Which timestamp decides when the next check-in is due: \"viewed\" (intro shown) or \"started\" (intro's next pressed). More values can be added later."
     }
   ]
 }

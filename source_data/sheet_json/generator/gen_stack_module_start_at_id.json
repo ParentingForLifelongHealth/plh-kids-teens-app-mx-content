@@ -17,9 +17,6 @@
       "value": "@gen.id"
     },
     {
-      "name": "picked_activity_id"
-    },
-    {
       "type": "data_items",
       "name": "count_modules",
       "value": "@data.module_tasks",
@@ -29,104 +26,126 @@
       "comments": "filter: (@item.id !== @gen.id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship)) ;"
     },
     {
-      "name": "articles_suffix",
-      "value": "_article_tasks"
+      "name": "po_last_7d_ts",
+      "value": "@global.proximal_outcome_due_from == \"viewed\" && @fields.prox_7d_viewed_ts ? @fields.prox_7d_viewed_ts : @fields.prox_7d_last_ts"
     },
     {
-      "name": "articles_list_name",
-      "value": "@local.module_id@local.articles_suffix"
-    },
-    {
-      "name": "articles_data",
-      "value": "@data.@local.articles_list_name"
-    },
-    {
-      "name": "module_article_count",
-      "value": "@calc(Object.keys(@local.articles_data).length)"
+      "name": "po_last_14d_ts",
+      "value": "@global.proximal_outcome_due_from == \"viewed\" && @fields.prox_14d_viewed_ts ? @fields.prox_14d_viewed_ts : @fields.prox_14d_last_ts"
     },
     {
       "name": "days_since_prox_7d_last",
-      "value": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@field.prox_7d_last_ts).setHours(0,0,0,0))))",
-      "exclude_from_translation": true
+      "value": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@local.po_last_7d_ts).setHours(0,0,0,0))))"
     },
     {
       "name": "days_since_prox_14d_last",
-      "value": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@field.prox_14d_last_ts).setHours(0,0,0,0))))",
-      "exclude_from_translation": true
+      "value": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@local.po_last_14d_ts).setHours(0,0,0,0))))"
     },
     {
-      "name": "has_PO_questions",
-      "value": "@local.days_since_prox_7d_last >= @global.proximal_outcome_frequency",
-      "exclude_from_translation": true
+      "name": "po_due",
+      "value": "@calc(!!@global.has_proximal_outcomes && @local.days_since_prox_7d_last >= @global.proximal_outcome_frequency)",
+      "comments": "Check-in due. Off unless the deployment sets has_proximal_outcomes (only mx does). "
     },
     {
-      "name": "has_PO_7",
-      "value": "@local.days_since_prox_14d_last < @global.proximal_outcome_frequency * @global.proximal_outcome_alternation",
-      "exclude_from_translation": true
+      "name": "po_due_type",
+      "value": "7days",
+      "condition": "!(@local.days_since_prox_14d_last >= @global.proximal_outcome_frequency * @global.proximal_outcome_alternation)",
+      "comments": "Which check-in is due (same rule as home_screen_header). Written as the exact opposite of the 14-day row so a missing prox_14d_last_ts falls back to 7days."
     },
     {
-      "name": "has_PO_14",
-      "value": "@local.days_since_prox_14d_last >= @global.proximal_outcome_frequency * @global.proximal_outcome_alternation",
-      "exclude_from_translation": true
-    },
-    {
-      "name": "PO_type",
-      "exclude_from_translation": true
+      "name": "po_due_type",
+      "value": "14days",
+      "condition": "@local.days_since_prox_14d_last >= @global.proximal_outcome_frequency * @global.proximal_outcome_alternation"
     },
     {
       "name": "show_PO",
       "value": false,
-      "exclude_from_translation": true
+      "comments": "Set to true with set_local at hand-over; keeps the check-in on screen even when the timestamps change."
+    },
+    {
+      "name": "PO_type",
+      "comments": "Fixed with set_local at hand-over."
+    },
+    {
+      "name": "articles",
+      "value": "_article_tasks",
+      "comments": "Same list name the module builds."
+    },
+    {
+      "name": "articles_data_list_name",
+      "value": "@local.module_id@local.articles"
+    },
+    {
+      "name": "articles_data",
+      "value": "@data.@local.articles_data_list_name"
+    },
+    {
+      "name": "module_page_count",
+      "value": "@calc(Object.keys(@local.articles_data).length)",
+      "comments": "Number of module pages, passed to the check-in so its pages continue the module's bar."
+    },
+    {
+      "name": "po_extra_steps",
+      "value": "@calc(Object.keys(@data.proximal_outcome_7d_pages).length)",
+      "condition": "@local.po_due_type == \"7days\"",
+      "comments": "Number of check-in pages, passed to the module so its bar leaves room for them."
+    },
+    {
+      "name": "po_extra_steps",
+      "value": "@calc(Object.keys(@data.proximal_outcome_14d_pages).length)",
+      "condition": "@local.po_due_type == \"14days\""
     },
     {
       "type": "text",
-      "value": "space",
+      "value": "not comp: @local.not_comp_count",
       "condition": false,
       "exclude_from_translation": true
     },
     {
-      "type": "text",
-      "value": "space",
-      "condition": false,
-      "exclude_from_translation": true
-    },
-    {
-      "type": "text",
-      "value": "has_PO_questions: @local.has_PO_questions\ndays_since_prox_7d_last: @local.days_since_prox_7d_last\ndays_since_prox_14d_last: @local.days_since_prox_14d_last\nhas_PO_7: @local.has_PO_7\nhas_PO_14: @local.has_PO_14\nPO_type: @local.PO_type\nshow_PO: @local.show_PO\nm article count: @local.module_article_count\narticle list name: @local.articles_list_name",
-      "condition": false,
-      "exclude_from_translation": true
+      "name": "picked_activity_id"
     },
     {
       "type": "data_items",
       "name": "pick_random_locked_activity",
       "value": "@data.activity_tasks",
-      "action_list": "data_changed | set_local: picked_activity_id: @items[0]?.id; ",
+      "action_list": "data_changed | set_local: picked_activity_id: @items[0]?.id;",
       "parameter_list": "filter: @item.locked && (@fields.child_age === undefined || !@item.child_age_list || ([].concat(@item.child_age_list)).map(x => String(x)).includes(String(@fields.child_age)));\nshuffle;\nlimit: 1;",
       "condition": "!@local.picked_activity_id",
-      "exclude_from_translation": true,
-      "comments": "filter: @item.locked && (!@item.child_age_list || @item.child_age_list.includes(@fields.child_age));\nshuffle;\nlimit: 1;"
-    },
-    {
-      "name": "extra_steps",
-      "value": 0
-    },
-    {
-      "name": "extra_steps",
-      "value": "@calc(Object.keys(@data.proximal_outcome_14d_pages).length)",
-      "condition": "@local.has_PO_7"
-    },
-    {
-      "name": "extra_steps",
-      "value": "@calc(Object.keys(@data.proximal_outcome_7d_pages).length)",
-      "condition": "@local.has_PO_14"
+      "exclude_from_translation": true
     },
     {
       "type": "begin_template",
       "name": "module_start_at_id",
       "value": "module_start_at_id_get_unlock",
       "action_list": "completed | set_data | _list_id: module_tasks, _id: @gen.id, unlocked_activity: TRUE;\ncompleted | set_field: latest_unlocked_activity: @local.picked_activity_id;\ncompleted | nav_stack: close_top; \ncompleted | pop_up: unlock_play | variant: plh_completion;\nuncompleted | nav_stack: close_top;",
-      "condition": "!@local.has_PO_questions && !@local.show_PO",
-      "comments": "unlock play must be done in module. not sure about pop up"
+      "condition": "!@local.po_due && !@local.show_PO"
+    },
+    {
+      "name": "activity_id",
+      "value": "@local.picked_activity_id"
+    },
+    {
+      "name": "module_id",
+      "value": "@gen.id"
+    },
+    {
+      "name": "course_id",
+      "value": "@gen.tag_course"
+    },
+    {
+      "name": "unlock_all",
+      "value": "@calc(@local.not_comp_count == 0)"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "begin_template",
+      "name": "module_start_at_id_checkin",
+      "value": "module_start_at_id_get_unlock",
+      "action_list": "completed | set_data | _list_id: module_tasks, _id: @gen.id, unlocked_activity: TRUE;\ncompleted | set_field: latest_unlocked_activity: @local.picked_activity_id;\ncompleted | set_field: prox_outcome_access: module;\ncompleted | set_data | _list_id: proximal_outcome_7d_pages, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_14d_pages, completed: false;\ncompleted | set_local: PO_type: @local.po_due_type;\ncompleted | set_local: show_PO: true;\nuncompleted | nav_stack: close_top;",
+      "condition": "@local.po_due && !@local.show_PO",
+      "comments": "copy of the block above for when a check-in is due: same unlock data, then hands over to the check-in instead of closing."
     },
     {
       "name": "activity_id",
@@ -146,7 +165,8 @@
     },
     {
       "type": "begin_nested_properties",
-      "name": "module_start_at_id"
+      "name": "module_start_at_id",
+      "comments": "NEW. Reaches module › extra_steps through get_unlock › module_start_at_id."
     },
     {
       "type": "begin_nested_properties",
@@ -154,19 +174,7 @@
     },
     {
       "name": "extra_steps",
-      "value": "@local.extra_steps"
-    },
-    {
-      "name": "picked_activity_id",
-      "value": "@local.picked_activity_id"
-    },
-    {
-      "name": "has_PO_7",
-      "value": "@local.has_PO_7"
-    },
-    {
-      "name": "has_PO_14",
-      "value": "@local.has_PO_14"
+      "value": "@local.po_extra_steps"
     },
     {
       "type": "end_nested_properties"
@@ -176,7 +184,8 @@
     },
     {
       "type": "begin_nested_properties",
-      "name": "module_start_at_id_unlock_all"
+      "name": "module_start_at_id_unlock_all",
+      "comments": "NEW. Reaches module › extra_steps through get_unlock › module_start_at_id_unlock_all."
     },
     {
       "type": "begin_nested_properties",
@@ -184,25 +193,44 @@
     },
     {
       "name": "extra_steps",
-      "value": "@local.extra_steps"
-    },
-    {
-      "name": "picked_activity_id",
-      "value": "@local.picked_activity_id"
-    },
-    {
-      "name": "has_PO_7",
-      "value": "@local.has_PO_7"
-    },
-    {
-      "name": "has_PO_14",
-      "value": "@local.has_PO_14"
+      "value": "@local.po_extra_steps"
     },
     {
       "type": "end_nested_properties"
     },
     {
       "type": "end_nested_properties"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "begin_template",
+      "name": "proximal_outcome_page_7",
+      "value": "proximal_outcome_7d_checkin",
+      "action_list": "completed | nav_stack: close_top;\ncompleted | pop_up: unlock_play | variant: plh_completion;\nuncompleted | nav_stack: close_top;\nuncompleted | pop_up: unlock_play | variant: plh_completion;",
+      "condition": "@local.show_PO && @local.PO_type == \"7days\"",
+      "comments": "Finishing or leaving the check-in closes the stack and shows the unlock pop-up the module would have shown."
+    },
+    {
+      "name": "module_article_count",
+      "value": "@local.module_page_count",
+      "comments": "The check-in pages continue from the module's last page."
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "begin_template",
+      "name": "proximal_outcome_page_14",
+      "value": "proximal_outcome_14d_checkin",
+      "action_list": "completed | nav_stack: close_top;\ncompleted | pop_up: unlock_play | variant: plh_completion;\nuncompleted | nav_stack: close_top;\nuncompleted | pop_up: unlock_play | variant: plh_completion;",
+      "condition": "@local.show_PO && @local.PO_type == \"14days\""
+    },
+    {
+      "name": "module_article_count",
+      "value": "@local.module_page_count",
+      "comments": "The check-in pages continue from the module's last page."
     },
     {
       "type": "end_template"

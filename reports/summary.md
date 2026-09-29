@@ -12,16 +12,16 @@
 | audio | 4 |
 | button | 127 |
 | combo_box | 27 |
-| data_items | 250 |
+| data_items | 263 |
 | debug_toggle | 1 |
 | display_grid | 4 |
-| display_group | 168 |
+| display_group | 144 |
 | drawer | 1 |
 | google_sign_in_button | 2 |
 | image | 27 |
 | items | 16 |
 | lottie_animation | 8 |
-| nested_properties | 531 |
+| nested_properties | 532 |
 | number_selector | 1 |
 | plh_bottom_nav | 1 |
 | plh_course_accordion | 1 |
@@ -38,15 +38,15 @@
 | round_button | 31 |
 | select_text | 1 |
 | set_field | 4 |
-| set_variable | 4447 |
+| set_variable | 4513 |
 | simple_checkbox | 1 |
 | task_card | 4 |
 | task_progress_bar | 5 |
-| template | 587 |
-| text | 510 |
+| template | 787 |
+| text | 326 |
 | text_area | 4 |
 | text_box | 23 |
-| text_bubble | 31 |
+| text_bubble | 32 |
 | title | 69 |
 | toggle_bar | 5 |
 | update_action_list | 4 |
@@ -59,30 +59,31 @@
 
 | type | count |
 | --- | --- |
-| add_data | 107 |
+| add_data | 15 |
 | app_update | 1 |
 | asset_pack | 4 |
 | auth | 3 |
-| emit: completed | 173 |
+| emit: completed | 175 |
 | emit: force_reload | 5 |
 | emit: force_reprocess | 13 |
 | emit: force_restart | 3 |
-| emit: server_sync | 8 |
+| emit: server_sync | 6 |
 | emit: set_language | 2 |
-| emit: uncompleted | 178 |
+| emit: uncompleted | 182 |
 | feedback | 13 |
 | go_to | 28 |
 | nav | 1 |
-| nav_stack | 651 |
-| plh_certificate | 34 |
-| pop_up | 143 |
+| nav_stack | 1004 |
+| notification | 16 |
+| plh_certificate | 23 |
+| pop_up | 443 |
 | reset_app | 4 |
 | reset_data | 3 |
 | save_to_device | 3 |
-| set_data | 518 |
-| set_field | 521 |
-| set_item | 38 |
-| set_local | 324 |
+| set_data | 485 |
+| set_field | 400 |
+| set_item | 30 |
+| set_local | 414 |
 | share | 3 |
 | task | 2 |
 | toast | 56 |
@@ -816,7 +817,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_list | modules_toddler_change_c | 1 |
 | data_list | modules_young_change_c | 1 |
 | data_list | onboarding | 2 |
-| data_list | proximal_outcomes | 8 |
+| data_list | proximal_outcomes | 9 |
 | data_list | relax | 1 |
 | data_pipe |  | 4 |
 | data_pipe | generated | 150 |
@@ -827,5 +828,5 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | template |  | 110 |
 | template | generated | 338 |
 | template | legal_terms | 4 |
-| template | proximal_outcomes | 16 |
+| template | proximal_outcomes | 18 |
 </details>

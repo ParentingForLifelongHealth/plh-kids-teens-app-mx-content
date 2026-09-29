@@ -89,6 +89,10 @@
       "condition": "@fields.prox_outcome_access == \"cta\""
     },
     {
+      "name": "po_type",
+      "value": "14days"
+    },
+    {
       "type": "end_template"
     },
     {
@@ -97,6 +101,10 @@
       "value": "proximal_outcome_@item.id",
       "action_list": "completed | set_data |\n_list_id: proximal_outcome_14d_pages,\n_index: @item.row_index,\ncompleted: true;\n\nuncompleted | set_data | \n_list_id: proximal_outcome_14d_pages,\n_index: -1+@item.row_index,\ncompleted: false;",
       "condition": "@fields.prox_outcome_access != \"cta\" && @item.row_index != @local.last_page_index"
+    },
+    {
+      "name": "po_type",
+      "value": "14days"
     },
     {
       "type": "end_template"
