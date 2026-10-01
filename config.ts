@@ -69,7 +69,8 @@ config.android = {
 
 config.ios = {
   app_id: "international.idems.plh-kids-teens-mx",
-  app_name: "Crianza con Conciencia +",
+  app_name: "Crianza con Conciencia",
+  app_display_name: "Crianza con Conciencia +",
   logo_asset_path: "./app_data/assets/android/icon-foreground.png",
   logo_background_color: "#FFFFFF",
   zoom_enabled: true
