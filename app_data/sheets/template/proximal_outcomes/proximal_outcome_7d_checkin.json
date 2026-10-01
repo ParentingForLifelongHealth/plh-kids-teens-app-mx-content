@@ -720,6 +720,14 @@
                 "_index": "-1+@item.row_index",
                 "completed": false
               }
+            },
+            {
+              "trigger": "changed",
+              "action_id": "emit",
+              "args": [
+                "changed"
+              ],
+              "_raw": "changed | emit: changed"
             }
           ],
           "condition": "@fields.prox_outcome_access != \"cta\" && @item.row_index != @local.last_page_index",

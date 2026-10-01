@@ -100,13 +100,13 @@
       }
     },
     {
-      "name": "PO_type",
+      "name": "po_type",
       "value": "7days",
       "_translations": {
         "value": {}
       },
       "type": "set_variable",
-      "_nested_name": "PO_type"
+      "_nested_name": "po_type"
     },
     {
       "type": "plh_lesson_cta",
@@ -130,6 +130,15 @@
             "_list_id": "proximal_outcome_14d_pages",
             "completed": false
           }
+        },
+        {
+          "trigger": "click",
+          "action_id": "set_field",
+          "args": [
+            "po_setup_pending",
+            true
+          ],
+          "_raw": "click | set_field: po_setup_pending: true"
         },
         {
           "trigger": "click",
@@ -158,7 +167,7 @@
         "badge_text": "@local.badge_text",
         "background_image_asset": "images/backgrounds/lesson-cta-bg.svg"
       },
-      "condition": "@local.PO_type == \"14days\"",
+      "condition": "@local.po_type == \"14days\"",
       "rows": [],
       "name": "plh_lesson_cta_7",
       "_nested_name": "plh_lesson_cta_7",
@@ -199,10 +208,10 @@
         },
         "condition": [
           {
-            "fullExpression": "@local.PO_type == \"14days\"",
-            "matchedExpression": "@local.PO_type",
+            "fullExpression": "@local.po_type == \"14days\"",
+            "matchedExpression": "@local.po_type",
             "type": "local",
-            "fieldName": "PO_type"
+            "fieldName": "po_type"
           }
         ]
       },
@@ -219,7 +228,7 @@
         "@local.badge_text": [
           "parameter_list.badge_text"
         ],
-        "@local.PO_type": [
+        "@local.po_type": [
           "condition"
         ]
       }
@@ -249,6 +258,15 @@
         },
         {
           "trigger": "click",
+          "action_id": "set_field",
+          "args": [
+            "po_setup_pending",
+            true
+          ],
+          "_raw": "click | set_field: po_setup_pending: true"
+        },
+        {
+          "trigger": "click",
           "action_id": "nav_stack",
           "args": [
             "open"
@@ -274,7 +292,7 @@
         "badge_text": "@local.badge_text",
         "background_image_asset": "images/backgrounds/lesson-cta-bg.svg"
       },
-      "condition": "@local.PO_type == \"7days\"",
+      "condition": "@local.po_type == \"7days\"",
       "rows": [],
       "name": "plh_lesson_cta_9",
       "_nested_name": "plh_lesson_cta_9",
@@ -315,10 +333,10 @@
         },
         "condition": [
           {
-            "fullExpression": "@local.PO_type == \"7days\"",
-            "matchedExpression": "@local.PO_type",
+            "fullExpression": "@local.po_type == \"7days\"",
+            "matchedExpression": "@local.po_type",
             "type": "local",
-            "fieldName": "PO_type"
+            "fieldName": "po_type"
           }
         ]
       },
@@ -335,7 +353,7 @@
         "@local.badge_text": [
           "parameter_list.badge_text"
         ],
-        "@local.PO_type": [
+        "@local.po_type": [
           "condition"
         ]
       }

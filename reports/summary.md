@@ -12,7 +12,7 @@
 | audio | 4 |
 | button | 127 |
 | combo_box | 27 |
-| data_items | 263 |
+| data_items | 252 |
 | debug_toggle | 1 |
 | display_grid | 4 |
 | display_group | 144 |
@@ -21,7 +21,7 @@
 | image | 27 |
 | items | 16 |
 | lottie_animation | 8 |
-| nested_properties | 532 |
+| nested_properties | 533 |
 | number_selector | 1 |
 | plh_bottom_nav | 1 |
 | plh_course_accordion | 1 |
@@ -35,14 +35,14 @@
 | qr_code | 1 |
 | radio_button_grid | 10 |
 | radio_list | 3 |
-| round_button | 31 |
+| round_button | 33 |
 | select_text | 1 |
 | set_field | 4 |
-| set_variable | 4513 |
+| set_variable | 5269 |
 | simple_checkbox | 1 |
 | task_card | 4 |
 | task_progress_bar | 5 |
-| template | 787 |
+| template | 811 |
 | text | 326 |
 | text_area | 4 |
 | text_box | 23 |
@@ -63,30 +63,31 @@
 | app_update | 1 |
 | asset_pack | 4 |
 | auth | 3 |
-| emit: completed | 175 |
+| emit: changed | 7 |
+| emit: completed | 177 |
 | emit: force_reload | 5 |
 | emit: force_reprocess | 13 |
 | emit: force_restart | 3 |
 | emit: server_sync | 6 |
 | emit: set_language | 2 |
-| emit: uncompleted | 182 |
+| emit: uncompleted | 170 |
 | feedback | 13 |
 | go_to | 28 |
 | nav | 1 |
-| nav_stack | 1004 |
+| nav_stack | 1038 |
 | notification | 16 |
 | plh_certificate | 23 |
-| pop_up | 443 |
+| pop_up | 466 |
 | reset_app | 4 |
 | reset_data | 3 |
 | save_to_device | 3 |
-| set_data | 485 |
-| set_field | 400 |
+| set_data | 529 |
+| set_field | 527 |
 | set_item | 30 |
-| set_local | 414 |
+| set_local | 727 |
 | share | 3 |
 | task | 2 |
-| toast | 56 |
+| toast | 78 |
 | user | 3 |
 </details>
 

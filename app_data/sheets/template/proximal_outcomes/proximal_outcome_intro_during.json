@@ -502,6 +502,15 @@
         },
         {
           "trigger": "completed",
+          "action_id": "set_field",
+          "args": [
+            "po_setup_pending",
+            false
+          ],
+          "_raw": "completed | set_field: po_setup_pending: false"
+        },
+        {
+          "trigger": "completed",
           "action_id": "emit",
           "args": [
             "completed"
@@ -512,18 +521,36 @@
           "trigger": "uncompleted",
           "action_id": "emit",
           "args": [
-            "uncompleted"
+            "changed"
           ],
-          "_raw": "uncompleted | emit: uncompleted"
+          "_raw": "uncompleted | emit: changed"
         }
       ],
-      "condition": "@local.po_type == \"7days\"",
+      "condition": "@local.po_type == \"7days\" && !!@fields.po_setup_pending",
       "rows": [
         {
           "name": "show_previous",
-          "value": false,
+          "value": "@fields.prox_outcome_access != \"cta\"",
+          "_translations": {
+            "value": {}
+          },
           "type": "set_variable",
-          "_nested_name": "nav_buttons_7d.show_previous"
+          "_nested_name": "nav_buttons_7d.show_previous",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@fields.prox_outcome_access != \"cta\"",
+                "matchedExpression": "@fields.prox_outcome_access",
+                "type": "fields",
+                "fieldName": "prox_outcome_access"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@fields.prox_outcome_access": [
+              "value"
+            ]
+          }
         },
         {
           "name": "show_next",
@@ -632,10 +659,16 @@
         },
         "condition": [
           {
-            "fullExpression": "@local.po_type == \"7days\"",
+            "fullExpression": "@local.po_type == \"7days\" && !!@fields.po_setup_pending",
             "matchedExpression": "@local.po_type",
             "type": "local",
             "fieldName": "po_type"
+          },
+          {
+            "fullExpression": "@local.po_type == \"7days\" && !!@fields.po_setup_pending",
+            "matchedExpression": "!@fields.po_setup_pending",
+            "type": "fields",
+            "fieldName": "po_setup_pending"
           }
         ]
       },
@@ -660,6 +693,90 @@
           "action_list.4.params.entry_point"
         ],
         "@local.po_type": [
+          "condition"
+        ],
+        "!@fields.po_setup_pending": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "template",
+      "name": "nav_buttons_7d_again",
+      "value": "proximal_outcome_nav_buttons",
+      "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "emit",
+          "args": [
+            "completed"
+          ],
+          "_raw": "completed | emit: completed"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "emit",
+          "args": [
+            "changed"
+          ],
+          "_raw": "uncompleted | emit: changed"
+        }
+      ],
+      "condition": "@local.po_type == \"7days\" && !@fields.po_setup_pending",
+      "rows": [
+        {
+          "name": "show_previous",
+          "value": "@fields.prox_outcome_access != \"cta\"",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "nav_buttons_7d_again.show_previous",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@fields.prox_outcome_access != \"cta\"",
+                "matchedExpression": "@fields.prox_outcome_access",
+                "type": "fields",
+                "fieldName": "prox_outcome_access"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@fields.prox_outcome_access": [
+              "value"
+            ]
+          }
+        },
+        {
+          "name": "show_next",
+          "value": true,
+          "type": "set_variable",
+          "_nested_name": "nav_buttons_7d_again.show_next"
+        }
+      ],
+      "_nested_name": "nav_buttons_7d_again",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.po_type == \"7days\" && !@fields.po_setup_pending",
+            "matchedExpression": "@local.po_type",
+            "type": "local",
+            "fieldName": "po_type"
+          },
+          {
+            "fullExpression": "@local.po_type == \"7days\" && !@fields.po_setup_pending",
+            "matchedExpression": "!@fields.po_setup_pending",
+            "type": "fields",
+            "fieldName": "po_setup_pending"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.po_type": [
+          "condition"
+        ],
+        "!@fields.po_setup_pending": [
           "condition"
         ]
       }
@@ -755,6 +872,15 @@
         },
         {
           "trigger": "completed",
+          "action_id": "set_field",
+          "args": [
+            "po_setup_pending",
+            false
+          ],
+          "_raw": "completed | set_field: po_setup_pending: false"
+        },
+        {
+          "trigger": "completed",
           "action_id": "emit",
           "args": [
             "completed"
@@ -765,18 +891,36 @@
           "trigger": "uncompleted",
           "action_id": "emit",
           "args": [
-            "uncompleted"
+            "changed"
           ],
-          "_raw": "uncompleted | emit: uncompleted"
+          "_raw": "uncompleted | emit: changed"
         }
       ],
-      "condition": "@local.po_type == \"14days\"",
+      "condition": "@local.po_type == \"14days\" && !!@fields.po_setup_pending",
       "rows": [
         {
           "name": "show_previous",
-          "value": false,
+          "value": "@fields.prox_outcome_access != \"cta\"",
+          "_translations": {
+            "value": {}
+          },
           "type": "set_variable",
-          "_nested_name": "nav_buttons_14d.show_previous"
+          "_nested_name": "nav_buttons_14d.show_previous",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@fields.prox_outcome_access != \"cta\"",
+                "matchedExpression": "@fields.prox_outcome_access",
+                "type": "fields",
+                "fieldName": "prox_outcome_access"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@fields.prox_outcome_access": [
+              "value"
+            ]
+          }
         },
         {
           "name": "show_next",
@@ -989,10 +1133,16 @@
         },
         "condition": [
           {
-            "fullExpression": "@local.po_type == \"14days\"",
+            "fullExpression": "@local.po_type == \"14days\" && !!@fields.po_setup_pending",
             "matchedExpression": "@local.po_type",
             "type": "local",
             "fieldName": "po_type"
+          },
+          {
+            "fullExpression": "@local.po_type == \"14days\" && !!@fields.po_setup_pending",
+            "matchedExpression": "!@fields.po_setup_pending",
+            "type": "fields",
+            "fieldName": "po_setup_pending"
           }
         ]
       },
@@ -1029,6 +1179,90 @@
           "action_list.7.params.entry_point"
         ],
         "@local.po_type": [
+          "condition"
+        ],
+        "!@fields.po_setup_pending": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "template",
+      "name": "nav_buttons_14d_again",
+      "value": "proximal_outcome_nav_buttons",
+      "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "emit",
+          "args": [
+            "completed"
+          ],
+          "_raw": "completed | emit: completed"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "emit",
+          "args": [
+            "changed"
+          ],
+          "_raw": "uncompleted | emit: changed"
+        }
+      ],
+      "condition": "@local.po_type == \"14days\" && !@fields.po_setup_pending",
+      "rows": [
+        {
+          "name": "show_previous",
+          "value": "@fields.prox_outcome_access != \"cta\"",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "nav_buttons_14d_again.show_previous",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@fields.prox_outcome_access != \"cta\"",
+                "matchedExpression": "@fields.prox_outcome_access",
+                "type": "fields",
+                "fieldName": "prox_outcome_access"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@fields.prox_outcome_access": [
+              "value"
+            ]
+          }
+        },
+        {
+          "name": "show_next",
+          "value": true,
+          "type": "set_variable",
+          "_nested_name": "nav_buttons_14d_again.show_next"
+        }
+      ],
+      "_nested_name": "nav_buttons_14d_again",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.po_type == \"14days\" && !@fields.po_setup_pending",
+            "matchedExpression": "@local.po_type",
+            "type": "local",
+            "fieldName": "po_type"
+          },
+          {
+            "fullExpression": "@local.po_type == \"14days\" && !@fields.po_setup_pending",
+            "matchedExpression": "!@fields.po_setup_pending",
+            "type": "fields",
+            "fieldName": "po_setup_pending"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.po_type": [
+          "condition"
+        ],
+        "!@fields.po_setup_pending": [
           "condition"
         ]
       }

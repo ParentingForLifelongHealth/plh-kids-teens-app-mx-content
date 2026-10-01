@@ -66,650 +66,881 @@
       "condition": "@local.days_since_prox_14d_last >= @global.proximal_outcome_frequency * @global.proximal_outcome_alternation"
     },
     {
-      "name": "show_PO",
+      "name": "show_po",
       "value": false
     },
     {
-      "name": "PO_type"
+      "name": "po_type"
     },
     {
-      "type": "data_items",
-      "name": "get_check_in",
-      "value": "hp_check_in",
-      "parameter_list": [
-        "filter: @item.id == \"@gen.id\"",
-        "limit: 1"
+      "name": "po_active",
+      "value": false
+    },
+    {
+      "type": "template",
+      "name": "header",
+      "value": "header",
+      "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "emit",
+          "args": [
+            "completed"
+          ],
+          "_raw": "completed | emit: completed"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "nav_stack",
+          "args": [
+            "close_top"
+          ],
+          "_raw": "uncompleted | nav_stack: close_top"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "pop_up",
+          "args": [
+            "show_certificate"
+          ],
+          "_raw": "uncompleted | pop_up: show_certificate"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "toast",
+          "args": [],
+          "_raw": "uncompleted | toast | message: @global.certificates_location",
+          "params": {
+            "message": "@global.certificates_location"
+          }
+        }
       ],
       "exclude_from_translation": true,
+      "condition": "!@local.show_po",
       "rows": [
         {
-          "type": "template",
-          "name": "header",
-          "value": "header",
-          "action_list": [
-            {
-              "trigger": "completed",
-              "action_id": "emit",
-              "args": [
-                "completed"
-              ],
-              "_raw": "completed | emit: completed"
-            },
-            {
-              "trigger": "uncompleted",
-              "action_id": "emit",
-              "args": [
-                "uncompleted"
-              ],
-              "_raw": "uncompleted | emit: uncompleted"
-            }
-          ],
-          "exclude_from_translation": true,
-          "condition": "!@local.show_PO",
-          "rows": [
-            {
-              "name": "title",
-              "exclude_from_translation": true
-            },
-            {
-              "name": "display_icon",
-              "value": false,
-              "exclude_from_translation": true
-            },
-            {
-              "name": "show_progress",
-              "value": false,
-              "exclude_from_translation": true
-            },
-            {
-              "name": "progress",
-              "value": 0,
-              "exclude_from_translation": true
-            }
-          ]
+          "name": "title",
+          "exclude_from_translation": true
         },
         {
-          "type": "template",
-          "name": "if_yes",
-          "value": "hp_review",
-          "action_list": [
-            {
-              "trigger": "completed",
-              "action_id": "plh_certificate",
-              "args": [
-                "generate"
-              ],
-              "_raw": "completed | plh_certificate: generate |\nurl: @global.certificator_url,\nname: @fields.certificate_name,\nid: @gen.id,\ncertificate_template: @local.certificate_template,\ncertificate_data_list: @local.certificate_data_list,\nresult_local_variable_name: @local.result",
-              "params": {
-                "url": "@global.certificator_url",
-                "name": "@fields.certificate_name",
-                "id": "@gen.id",
-                "certificate_template": "@local.certificate_template",
-                "certificate_data_list": "@local.certificate_data_list",
-                "result_local_variable_name": "@local.result"
-              }
-            },
-            {
-              "trigger": "completed",
-              "action_id": "set_field",
-              "args": [
-                "cert_to_print",
-                "@item.id"
-              ],
-              "_raw": "completed | set_field: cert_to_print: @item.id"
-            },
-            {
-              "trigger": "completed",
-              "action_id": "set_field",
-              "args": [
-                "debugcert",
-                "@local.certificate_template"
-              ],
-              "_raw": "completed | set_field: debugcert: @local.certificate_template"
-            },
-            {
-              "trigger": "completed",
-              "action_id": "set_data",
-              "args": [],
-              "_raw": "completed | set_data | _list_id: hp_check_in, _id: @gen.id, unlocked_activity: TRUE",
-              "params": {
-                "_list_id": "hp_check_in",
-                "_id": "@gen.id",
-                "unlocked_activity": true
-              }
-            },
-            {
-              "trigger": "completed",
-              "action_id": "set_data",
-              "args": [],
-              "_raw": "completed | set_data | _list_id: courses, _id: @gen.id, n_reprints: 0",
-              "params": {
-                "_list_id": "courses",
-                "_id": "@gen.id",
-                "n_reprints": 0
-              }
-            },
-            {
-              "trigger": "completed",
-              "action_id": "nav_stack",
-              "args": [
-                "close_top"
-              ],
-              "_raw": "completed | nav_stack: close_top"
-            },
-            {
-              "trigger": "completed",
-              "action_id": "pop_up",
-              "args": [
-                "show_certificate"
-              ],
-              "_raw": "completed | pop_up: show_certificate"
-            },
-            {
-              "trigger": "completed",
-              "action_id": "toast",
-              "args": [],
-              "_raw": "completed | toast | message: @global.certificates_location",
-              "params": {
-                "message": "@global.certificates_location"
-              }
-            },
-            {
-              "trigger": "uncompleted",
-              "action_id": "nav_stack",
-              "args": [
-                "close_top"
-              ],
-              "_raw": "uncompleted | nav_stack: close_top"
-            }
-          ],
-          "exclude_from_translation": true,
-          "condition": "!!@global.certificator_url && !@local.po_due && !@local.show_PO",
-          "rows": [
-            {
-              "name": "row_id",
-              "value": "@gen.id",
-              "exclude_from_translation": true
-            },
-            {
-              "name": "completion_icon",
-              "value": "@global.first_completion_icon"
-            }
-          ]
+          "name": "display_icon",
+          "value": false,
+          "exclude_from_translation": true
         },
         {
-          "type": "template",
-          "name": "if_yes_then_checkin",
-          "value": "hp_review",
-          "action_list": [
-            {
-              "trigger": "completed",
-              "action_id": "plh_certificate",
-              "args": [
-                "generate"
-              ],
-              "_raw": "completed | plh_certificate: generate |\nurl: @global.certificator_url,\nname: @fields.certificate_name,\nid: @gen.id,\ncertificate_template: @local.certificate_template,\ncertificate_data_list: @local.certificate_data_list,\nresult_local_variable_name: @local.result",
-              "params": {
-                "url": "@global.certificator_url",
-                "name": "@fields.certificate_name",
-                "id": "@gen.id",
-                "certificate_template": "@local.certificate_template",
-                "certificate_data_list": "@local.certificate_data_list",
-                "result_local_variable_name": "@local.result"
-              }
-            },
-            {
-              "trigger": "completed",
-              "action_id": "set_field",
-              "args": [
-                "cert_to_print",
-                "@item.id"
-              ],
-              "_raw": "completed | set_field: cert_to_print: @item.id"
-            },
-            {
-              "trigger": "completed",
-              "action_id": "set_field",
-              "args": [
-                "debugcert",
-                "@local.certificate_template"
-              ],
-              "_raw": "completed | set_field: debugcert: @local.certificate_template"
-            },
-            {
-              "trigger": "completed",
-              "action_id": "set_data",
-              "args": [],
-              "_raw": "completed | set_data | _list_id: hp_check_in, _id: @gen.id, unlocked_activity: TRUE",
-              "params": {
-                "_list_id": "hp_check_in",
-                "_id": "@gen.id",
-                "unlocked_activity": true
-              }
-            },
-            {
-              "trigger": "completed",
-              "action_id": "set_data",
-              "args": [],
-              "_raw": "completed | set_data | _list_id: courses, _id: @gen.id, n_reprints: 0",
-              "params": {
-                "_list_id": "courses",
-                "_id": "@gen.id",
-                "n_reprints": 0
-              }
-            },
-            {
-              "trigger": "completed",
-              "action_id": "set_field",
-              "args": [
-                "prox_outcome_access",
-                "module"
-              ],
-              "_raw": "completed | set_field: prox_outcome_access: module"
-            },
-            {
-              "trigger": "completed",
-              "action_id": "set_data",
-              "args": [],
-              "_raw": "completed | set_data | _list_id: proximal_outcome_7d_pages, completed: false",
-              "params": {
-                "_list_id": "proximal_outcome_7d_pages",
-                "completed": false
-              }
-            },
-            {
-              "trigger": "completed",
-              "action_id": "set_data",
-              "args": [],
-              "_raw": "completed | set_data | _list_id: proximal_outcome_14d_pages, completed: false",
-              "params": {
-                "_list_id": "proximal_outcome_14d_pages",
-                "completed": false
-              }
-            },
-            {
-              "trigger": "completed",
-              "action_id": "set_local",
-              "args": [
-                "PO_type",
-                "@local.po_due_type"
-              ],
-              "_raw": "completed | set_local: PO_type: @local.po_due_type"
-            },
-            {
-              "trigger": "completed",
-              "action_id": "set_local",
-              "args": [
-                "show_PO",
-                true
-              ],
-              "_raw": "completed | set_local: show_PO: true"
-            },
-            {
-              "trigger": "uncompleted",
-              "action_id": "nav_stack",
-              "args": [
-                "close_top"
-              ],
-              "_raw": "uncompleted | nav_stack: close_top"
-            }
-          ],
-          "exclude_from_translation": true,
-          "condition": "!!@global.certificator_url && @local.po_due && !@local.show_PO",
-          "rows": [
-            {
-              "name": "row_id",
-              "value": "@gen.id",
-              "exclude_from_translation": true
-            },
-            {
-              "name": "completion_icon",
-              "value": "@global.first_completion_icon"
-            }
-          ]
+          "name": "show_progress",
+          "value": false,
+          "exclude_from_translation": true
         },
         {
-          "type": "template",
-          "name": "if_yes_no_certificates",
-          "value": "hp_review",
-          "action_list": [
-            {
-              "trigger": "completed",
-              "action_id": "set_data",
-              "args": [],
-              "_raw": "completed | set_data | _list_id: hp_check_in, _id: @gen.id, unlocked_activity: TRUE",
-              "params": {
-                "_list_id": "hp_check_in",
-                "_id": "@gen.id",
-                "unlocked_activity": true
-              }
-            },
-            {
-              "trigger": "completed",
-              "action_id": "set_data",
-              "args": [],
-              "_raw": "completed | set_data | _list_id: courses, _id: @gen.id, n_reprints: 0",
-              "params": {
-                "_list_id": "courses",
-                "_id": "@gen.id",
-                "n_reprints": 0
-              }
-            },
-            {
-              "trigger": "completed",
-              "action_id": "nav_stack",
-              "args": [
-                "close_top"
-              ],
-              "_raw": "completed | nav_stack: close_top"
-            },
-            {
-              "trigger": "uncompleted",
-              "action_id": "nav_stack",
-              "args": [
-                "close_top"
-              ],
-              "_raw": "uncompleted | nav_stack: close_top"
-            }
-          ],
-          "exclude_from_translation": true,
-          "condition": "!@global.certificator_url && !@local.po_due && !@local.show_PO",
-          "rows": [
-            {
-              "name": "row_id",
-              "value": "@gen.id",
-              "exclude_from_translation": true
-            },
-            {
-              "name": "completion_icon",
-              "value": "@global.first_completion_icon"
-            }
-          ]
+          "name": "progress",
+          "value": 0,
+          "exclude_from_translation": true
         },
         {
-          "type": "template",
-          "name": "if_yes_no_certificates_then_checkin",
-          "value": "hp_review",
-          "action_list": [
-            {
-              "trigger": "completed",
-              "action_id": "set_data",
-              "args": [],
-              "_raw": "completed | set_data | _list_id: hp_check_in, _id: @gen.id, unlocked_activity: TRUE",
-              "params": {
-                "_list_id": "hp_check_in",
-                "_id": "@gen.id",
-                "unlocked_activity": true
-              }
-            },
-            {
-              "trigger": "completed",
-              "action_id": "set_data",
-              "args": [],
-              "_raw": "completed | set_data | _list_id: courses, _id: @gen.id, n_reprints: 0",
-              "params": {
-                "_list_id": "courses",
-                "_id": "@gen.id",
-                "n_reprints": 0
-              }
-            },
-            {
-              "trigger": "completed",
-              "action_id": "set_field",
-              "args": [
-                "prox_outcome_access",
-                "module"
-              ],
-              "_raw": "completed | set_field: prox_outcome_access: module"
-            },
-            {
-              "trigger": "completed",
-              "action_id": "set_data",
-              "args": [],
-              "_raw": "completed | set_data | _list_id: proximal_outcome_7d_pages, completed: false",
-              "params": {
-                "_list_id": "proximal_outcome_7d_pages",
-                "completed": false
-              }
-            },
-            {
-              "trigger": "completed",
-              "action_id": "set_data",
-              "args": [],
-              "_raw": "completed | set_data | _list_id: proximal_outcome_14d_pages, completed: false",
-              "params": {
-                "_list_id": "proximal_outcome_14d_pages",
-                "completed": false
-              }
-            },
-            {
-              "trigger": "completed",
-              "action_id": "set_local",
-              "args": [
-                "PO_type",
-                "@local.po_due_type"
-              ],
-              "_raw": "completed | set_local: PO_type: @local.po_due_type"
-            },
-            {
-              "trigger": "completed",
-              "action_id": "set_local",
-              "args": [
-                "show_PO",
-                true
-              ],
-              "_raw": "completed | set_local: show_PO: true"
-            },
-            {
-              "trigger": "uncompleted",
-              "action_id": "nav_stack",
-              "args": [
-                "close_top"
-              ],
-              "_raw": "uncompleted | nav_stack: close_top"
-            }
+          "name": "close_emits",
+          "value": "@local.po_active && !!@global.certificator_url",
+          "exclude_from_translation": true
+        }
+      ]
+    },
+    {
+      "type": "template",
+      "name": "if_yes",
+      "value": "hp_review",
+      "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "plh_certificate",
+          "args": [
+            "generate"
           ],
-          "exclude_from_translation": true,
-          "condition": "!@global.certificator_url && @local.po_due && !@local.show_PO",
-          "rows": [
-            {
-              "name": "row_id",
-              "value": "@gen.id",
-              "exclude_from_translation": true
-            },
-            {
-              "name": "completion_icon",
-              "value": "@global.first_completion_icon"
-            }
-          ]
+          "_raw": "completed | plh_certificate: generate |\nurl: @global.certificator_url,\nname: @fields.certificate_name,\nid: @gen.id,\ncertificate_template: @local.certificate_template,\ncertificate_data_list: @local.certificate_data_list,\nresult_local_variable_name: @local.result",
+          "params": {
+            "url": "@global.certificator_url",
+            "name": "@fields.certificate_name",
+            "id": "@gen.id",
+            "certificate_template": "@local.certificate_template",
+            "certificate_data_list": "@local.certificate_data_list",
+            "result_local_variable_name": "@local.result"
+          }
         },
         {
-          "type": "template",
-          "name": "proximal_outcome_page_7",
-          "value": "proximal_outcome_7d_checkin",
-          "action_list": [
-            {
-              "trigger": "completed",
-              "action_id": "nav_stack",
-              "args": [
-                "close_top"
-              ],
-              "_raw": "completed | nav_stack: close_top"
-            },
-            {
-              "trigger": "completed",
-              "action_id": "pop_up",
-              "args": [
-                "show_certificate"
-              ],
-              "_raw": "completed | pop_up: show_certificate"
-            },
-            {
-              "trigger": "completed",
-              "action_id": "toast",
-              "args": [],
-              "_raw": "completed | toast | message: @global.certificates_location",
-              "params": {
-                "message": "@global.certificates_location"
-              }
-            },
-            {
-              "trigger": "uncompleted",
-              "action_id": "nav_stack",
-              "args": [
-                "close_top"
-              ],
-              "_raw": "uncompleted | nav_stack: close_top"
-            },
-            {
-              "trigger": "uncompleted",
-              "action_id": "pop_up",
-              "args": [
-                "show_certificate"
-              ],
-              "_raw": "uncompleted | pop_up: show_certificate"
-            },
-            {
-              "trigger": "uncompleted",
-              "action_id": "toast",
-              "args": [],
-              "_raw": "uncompleted | toast | message: @global.certificates_location",
-              "params": {
-                "message": "@global.certificates_location"
-              }
-            }
+          "trigger": "completed",
+          "action_id": "set_field",
+          "args": [
+            "cert_to_print",
+            "@gen.id"
           ],
-          "condition": "@local.show_PO && @local.PO_type == \"7days\" && !!@global.certificator_url",
-          "rows": [
-            {
-              "name": "module_article_count",
-              "value": 0
-            }
-          ]
+          "_raw": "completed | set_field: cert_to_print: @gen.id"
         },
         {
-          "type": "template",
-          "name": "proximal_outcome_page_14",
-          "value": "proximal_outcome_14d_checkin",
-          "action_list": [
-            {
-              "trigger": "completed",
-              "action_id": "nav_stack",
-              "args": [
-                "close_top"
-              ],
-              "_raw": "completed | nav_stack: close_top"
-            },
-            {
-              "trigger": "completed",
-              "action_id": "pop_up",
-              "args": [
-                "show_certificate"
-              ],
-              "_raw": "completed | pop_up: show_certificate"
-            },
-            {
-              "trigger": "completed",
-              "action_id": "toast",
-              "args": [],
-              "_raw": "completed | toast | message: @global.certificates_location",
-              "params": {
-                "message": "@global.certificates_location"
-              }
-            },
-            {
-              "trigger": "uncompleted",
-              "action_id": "nav_stack",
-              "args": [
-                "close_top"
-              ],
-              "_raw": "uncompleted | nav_stack: close_top"
-            },
-            {
-              "trigger": "uncompleted",
-              "action_id": "pop_up",
-              "args": [
-                "show_certificate"
-              ],
-              "_raw": "uncompleted | pop_up: show_certificate"
-            },
-            {
-              "trigger": "uncompleted",
-              "action_id": "toast",
-              "args": [],
-              "_raw": "uncompleted | toast | message: @global.certificates_location",
-              "params": {
-                "message": "@global.certificates_location"
-              }
-            }
+          "trigger": "completed",
+          "action_id": "set_field",
+          "args": [
+            "debugcert",
+            "@local.certificate_template"
           ],
-          "condition": "@local.show_PO && @local.PO_type == \"14days\" && !!@global.certificator_url",
-          "rows": [
-            {
-              "name": "module_article_count",
-              "value": 0
-            }
-          ]
+          "_raw": "completed | set_field: debugcert: @local.certificate_template"
         },
         {
-          "type": "template",
-          "name": "proximal_outcome_page_7_no_cert",
-          "value": "proximal_outcome_7d_checkin",
-          "action_list": [
-            {
-              "trigger": "completed",
-              "action_id": "nav_stack",
-              "args": [
-                "close_top"
-              ],
-              "_raw": "completed | nav_stack: close_top"
-            },
-            {
-              "trigger": "uncompleted",
-              "action_id": "nav_stack",
-              "args": [
-                "close_top"
-              ],
-              "_raw": "uncompleted | nav_stack: close_top"
-            }
-          ],
-          "condition": "@local.show_PO && @local.PO_type == \"7days\" && !@global.certificator_url",
-          "rows": [
-            {
-              "name": "module_article_count",
-              "value": 0
-            }
-          ]
+          "trigger": "completed",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "completed | set_data | _list_id: hp_check_in, _id: @gen.id, unlocked_activity: TRUE",
+          "params": {
+            "_list_id": "hp_check_in",
+            "_id": "@gen.id",
+            "unlocked_activity": true
+          }
         },
         {
-          "type": "template",
-          "name": "proximal_outcome_page_14_no_cert",
-          "value": "proximal_outcome_14d_checkin",
-          "action_list": [
-            {
-              "trigger": "completed",
-              "action_id": "nav_stack",
-              "args": [
-                "close_top"
-              ],
-              "_raw": "completed | nav_stack: close_top"
-            },
-            {
-              "trigger": "uncompleted",
-              "action_id": "nav_stack",
-              "args": [
-                "close_top"
-              ],
-              "_raw": "uncompleted | nav_stack: close_top"
-            }
+          "trigger": "completed",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "completed | set_data | _list_id: courses, _id: @gen.id, n_reprints: 0",
+          "params": {
+            "_list_id": "courses",
+            "_id": "@gen.id",
+            "n_reprints": 0
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "nav_stack",
+          "args": [
+            "close_top"
           ],
-          "condition": "@local.show_PO && @local.PO_type == \"14days\" && !@global.certificator_url",
-          "rows": [
-            {
-              "name": "module_article_count",
-              "value": 0
-            }
-          ]
+          "_raw": "completed | nav_stack: close_top"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "pop_up",
+          "args": [
+            "show_certificate"
+          ],
+          "_raw": "completed | pop_up: show_certificate"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "toast",
+          "args": [],
+          "_raw": "completed | toast | message: @global.certificates_location",
+          "params": {
+            "message": "@global.certificates_location"
+          }
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "nav_stack",
+          "args": [
+            "close_top"
+          ],
+          "_raw": "uncompleted | nav_stack: close_top"
+        }
+      ],
+      "exclude_from_translation": true,
+      "condition": "!!@global.certificator_url && !@local.po_due && !@local.po_active && !@local.show_po",
+      "rows": [
+        {
+          "name": "row_id",
+          "value": "@gen.id",
+          "exclude_from_translation": true
+        },
+        {
+          "name": "completion_icon",
+          "value": "@global.first_completion_icon"
+        }
+      ]
+    },
+    {
+      "type": "template",
+      "name": "if_yes_then_checkin",
+      "value": "hp_review",
+      "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "plh_certificate",
+          "args": [
+            "generate"
+          ],
+          "_raw": "completed | plh_certificate: generate |\nurl: @global.certificator_url,\nname: @fields.certificate_name,\nid: @gen.id,\ncertificate_template: @local.certificate_template,\ncertificate_data_list: @local.certificate_data_list,\nresult_local_variable_name: @local.result",
+          "params": {
+            "url": "@global.certificator_url",
+            "name": "@fields.certificate_name",
+            "id": "@gen.id",
+            "certificate_template": "@local.certificate_template",
+            "certificate_data_list": "@local.certificate_data_list",
+            "result_local_variable_name": "@local.result"
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_field",
+          "args": [
+            "cert_to_print",
+            "@gen.id"
+          ],
+          "_raw": "completed | set_field: cert_to_print: @gen.id"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_field",
+          "args": [
+            "debugcert",
+            "@local.certificate_template"
+          ],
+          "_raw": "completed | set_field: debugcert: @local.certificate_template"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "completed | set_data | _list_id: hp_check_in, _id: @gen.id, unlocked_activity: TRUE",
+          "params": {
+            "_list_id": "hp_check_in",
+            "_id": "@gen.id",
+            "unlocked_activity": true
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "completed | set_data | _list_id: courses, _id: @gen.id, n_reprints: 0",
+          "params": {
+            "_list_id": "courses",
+            "_id": "@gen.id",
+            "n_reprints": 0
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_field",
+          "args": [
+            "prox_outcome_access",
+            "hp_review"
+          ],
+          "_raw": "completed | set_field: prox_outcome_access: hp_review"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_field",
+          "args": [
+            "po_setup_pending",
+            true
+          ],
+          "_raw": "completed | set_field: po_setup_pending: true"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "completed | set_data | _list_id: proximal_outcome_7d_pages, completed: false",
+          "params": {
+            "_list_id": "proximal_outcome_7d_pages",
+            "completed": false
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "completed | set_data | _list_id: proximal_outcome_14d_pages, completed: false",
+          "params": {
+            "_list_id": "proximal_outcome_14d_pages",
+            "completed": false
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_local",
+          "args": [
+            "po_type",
+            "@local.po_due_type"
+          ],
+          "_raw": "completed | set_local: po_type: @local.po_due_type"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_local",
+          "args": [
+            "show_po",
+            true
+          ],
+          "_raw": "completed | set_local: show_po: true"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_local",
+          "args": [
+            "po_active",
+            true
+          ],
+          "_raw": "completed | set_local: po_active: true"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "nav_stack",
+          "args": [
+            "close_top"
+          ],
+          "_raw": "uncompleted | nav_stack: close_top"
+        }
+      ],
+      "exclude_from_translation": true,
+      "condition": "!!@global.certificator_url && @local.po_due && !@local.po_active && !@local.show_po",
+      "rows": [
+        {
+          "name": "row_id",
+          "value": "@gen.id",
+          "exclude_from_translation": true
+        },
+        {
+          "name": "completion_icon",
+          "value": "arrow-forward"
+        }
+      ]
+    },
+    {
+      "type": "template",
+      "name": "if_yes_return",
+      "value": "hp_review",
+      "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "set_field",
+          "args": [
+            "prox_outcome_access",
+            "hp_review"
+          ],
+          "_raw": "completed | set_field: prox_outcome_access: hp_review"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "completed | set_data | _list_id: proximal_outcome_7d_pages, completed: false",
+          "params": {
+            "_list_id": "proximal_outcome_7d_pages",
+            "completed": false
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "completed | set_data | _list_id: proximal_outcome_14d_pages, completed: false",
+          "params": {
+            "_list_id": "proximal_outcome_14d_pages",
+            "completed": false
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_local",
+          "args": [
+            "show_po",
+            true
+          ],
+          "_raw": "completed | set_local: show_po: true"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "nav_stack",
+          "args": [
+            "close_top"
+          ],
+          "_raw": "uncompleted | nav_stack: close_top"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "pop_up",
+          "args": [
+            "show_certificate"
+          ],
+          "_raw": "uncompleted | pop_up: show_certificate"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "toast",
+          "args": [],
+          "_raw": "uncompleted | toast | message: @global.certificates_location",
+          "params": {
+            "message": "@global.certificates_location"
+          }
+        }
+      ],
+      "condition": "!!@global.certificator_url && @local.po_active && !@local.show_po",
+      "rows": [
+        {
+          "name": "row_id",
+          "value": "@gen.id"
+        },
+        {
+          "name": "completion_icon",
+          "value": "arrow-forward"
+        }
+      ]
+    },
+    {
+      "type": "template",
+      "name": "if_yes_no_certificates",
+      "value": "hp_review",
+      "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "completed | set_data | _list_id: hp_check_in, _id: @gen.id, unlocked_activity: TRUE",
+          "params": {
+            "_list_id": "hp_check_in",
+            "_id": "@gen.id",
+            "unlocked_activity": true
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "completed | set_data | _list_id: courses, _id: @gen.id, n_reprints: 0",
+          "params": {
+            "_list_id": "courses",
+            "_id": "@gen.id",
+            "n_reprints": 0
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "nav_stack",
+          "args": [
+            "close_top"
+          ],
+          "_raw": "completed | nav_stack: close_top"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "nav_stack",
+          "args": [
+            "close_top"
+          ],
+          "_raw": "uncompleted | nav_stack: close_top"
+        }
+      ],
+      "exclude_from_translation": true,
+      "condition": "!@global.certificator_url && !@local.po_due && !@local.po_active && !@local.show_po",
+      "rows": [
+        {
+          "name": "row_id",
+          "value": "@gen.id",
+          "exclude_from_translation": true
+        },
+        {
+          "name": "completion_icon",
+          "value": "@global.first_completion_icon"
+        }
+      ]
+    },
+    {
+      "type": "template",
+      "name": "if_yes_no_certificates_then_checkin",
+      "value": "hp_review",
+      "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "completed | set_data | _list_id: hp_check_in, _id: @gen.id, unlocked_activity: TRUE",
+          "params": {
+            "_list_id": "hp_check_in",
+            "_id": "@gen.id",
+            "unlocked_activity": true
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "completed | set_data | _list_id: courses, _id: @gen.id, n_reprints: 0",
+          "params": {
+            "_list_id": "courses",
+            "_id": "@gen.id",
+            "n_reprints": 0
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_field",
+          "args": [
+            "prox_outcome_access",
+            "hp_review"
+          ],
+          "_raw": "completed | set_field: prox_outcome_access: hp_review"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_field",
+          "args": [
+            "po_setup_pending",
+            true
+          ],
+          "_raw": "completed | set_field: po_setup_pending: true"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "completed | set_data | _list_id: proximal_outcome_7d_pages, completed: false",
+          "params": {
+            "_list_id": "proximal_outcome_7d_pages",
+            "completed": false
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "completed | set_data | _list_id: proximal_outcome_14d_pages, completed: false",
+          "params": {
+            "_list_id": "proximal_outcome_14d_pages",
+            "completed": false
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_local",
+          "args": [
+            "po_type",
+            "@local.po_due_type"
+          ],
+          "_raw": "completed | set_local: po_type: @local.po_due_type"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_local",
+          "args": [
+            "show_po",
+            true
+          ],
+          "_raw": "completed | set_local: show_po: true"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_local",
+          "args": [
+            "po_active",
+            true
+          ],
+          "_raw": "completed | set_local: po_active: true"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "nav_stack",
+          "args": [
+            "close_top"
+          ],
+          "_raw": "uncompleted | nav_stack: close_top"
+        }
+      ],
+      "exclude_from_translation": true,
+      "condition": "!@global.certificator_url && @local.po_due && !@local.po_active && !@local.show_po",
+      "rows": [
+        {
+          "name": "row_id",
+          "value": "@gen.id",
+          "exclude_from_translation": true
+        },
+        {
+          "name": "completion_icon",
+          "value": "arrow-forward"
+        }
+      ]
+    },
+    {
+      "type": "template",
+      "name": "if_yes_no_certificates_return",
+      "value": "hp_review",
+      "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "set_field",
+          "args": [
+            "prox_outcome_access",
+            "hp_review"
+          ],
+          "_raw": "completed | set_field: prox_outcome_access: hp_review"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "completed | set_data | _list_id: proximal_outcome_7d_pages, completed: false",
+          "params": {
+            "_list_id": "proximal_outcome_7d_pages",
+            "completed": false
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "completed | set_data | _list_id: proximal_outcome_14d_pages, completed: false",
+          "params": {
+            "_list_id": "proximal_outcome_14d_pages",
+            "completed": false
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_local",
+          "args": [
+            "show_po",
+            true
+          ],
+          "_raw": "completed | set_local: show_po: true"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "nav_stack",
+          "args": [
+            "close_top"
+          ],
+          "_raw": "uncompleted | nav_stack: close_top"
+        }
+      ],
+      "condition": "!@global.certificator_url && @local.po_active && !@local.show_po",
+      "rows": [
+        {
+          "name": "row_id",
+          "value": "@gen.id"
+        },
+        {
+          "name": "completion_icon",
+          "value": "arrow-forward"
+        }
+      ]
+    },
+    {
+      "type": "template",
+      "name": "proximal_outcome_page_7",
+      "value": "proximal_outcome_7d_checkin",
+      "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "nav_stack",
+          "args": [
+            "close_top"
+          ],
+          "_raw": "completed | nav_stack: close_top"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "pop_up",
+          "args": [
+            "show_certificate"
+          ],
+          "_raw": "completed | pop_up: show_certificate"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "toast",
+          "args": [],
+          "_raw": "completed | toast | message: @global.certificates_location",
+          "params": {
+            "message": "@global.certificates_location"
+          }
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "nav_stack",
+          "args": [
+            "close_top"
+          ],
+          "_raw": "uncompleted | nav_stack: close_top"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "pop_up",
+          "args": [
+            "show_certificate"
+          ],
+          "_raw": "uncompleted | pop_up: show_certificate"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "toast",
+          "args": [],
+          "_raw": "uncompleted | toast | message: @global.certificates_location",
+          "params": {
+            "message": "@global.certificates_location"
+          }
+        },
+        {
+          "trigger": "changed",
+          "action_id": "set_local",
+          "args": [
+            "show_po",
+            false
+          ],
+          "_raw": "changed | set_local: show_po: false"
+        }
+      ],
+      "condition": "@local.show_po && @local.po_type == \"7days\" && !!@global.certificator_url",
+      "rows": [
+        {
+          "name": "module_article_count",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "type": "template",
+      "name": "proximal_outcome_page_14",
+      "value": "proximal_outcome_14d_checkin",
+      "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "nav_stack",
+          "args": [
+            "close_top"
+          ],
+          "_raw": "completed | nav_stack: close_top"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "pop_up",
+          "args": [
+            "show_certificate"
+          ],
+          "_raw": "completed | pop_up: show_certificate"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "toast",
+          "args": [],
+          "_raw": "completed | toast | message: @global.certificates_location",
+          "params": {
+            "message": "@global.certificates_location"
+          }
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "nav_stack",
+          "args": [
+            "close_top"
+          ],
+          "_raw": "uncompleted | nav_stack: close_top"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "pop_up",
+          "args": [
+            "show_certificate"
+          ],
+          "_raw": "uncompleted | pop_up: show_certificate"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "toast",
+          "args": [],
+          "_raw": "uncompleted | toast | message: @global.certificates_location",
+          "params": {
+            "message": "@global.certificates_location"
+          }
+        },
+        {
+          "trigger": "changed",
+          "action_id": "set_local",
+          "args": [
+            "show_po",
+            false
+          ],
+          "_raw": "changed | set_local: show_po: false"
+        }
+      ],
+      "condition": "@local.show_po && @local.po_type == \"14days\" && !!@global.certificator_url",
+      "rows": [
+        {
+          "name": "module_article_count",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "type": "template",
+      "name": "proximal_outcome_page_7_no_cert",
+      "value": "proximal_outcome_7d_checkin",
+      "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "nav_stack",
+          "args": [
+            "close_top"
+          ],
+          "_raw": "completed | nav_stack: close_top"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "nav_stack",
+          "args": [
+            "close_top"
+          ],
+          "_raw": "uncompleted | nav_stack: close_top"
+        },
+        {
+          "trigger": "changed",
+          "action_id": "set_local",
+          "args": [
+            "show_po",
+            false
+          ],
+          "_raw": "changed | set_local: show_po: false"
+        }
+      ],
+      "condition": "@local.show_po && @local.po_type == \"7days\" && !@global.certificator_url",
+      "rows": [
+        {
+          "name": "module_article_count",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "type": "template",
+      "name": "proximal_outcome_page_14_no_cert",
+      "value": "proximal_outcome_14d_checkin",
+      "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "nav_stack",
+          "args": [
+            "close_top"
+          ],
+          "_raw": "completed | nav_stack: close_top"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "nav_stack",
+          "args": [
+            "close_top"
+          ],
+          "_raw": "uncompleted | nav_stack: close_top"
+        },
+        {
+          "trigger": "changed",
+          "action_id": "set_local",
+          "args": [
+            "show_po",
+            false
+          ],
+          "_raw": "changed | set_local: show_po: false"
+        }
+      ],
+      "condition": "@local.show_po && @local.po_type == \"14days\" && !@global.certificator_url",
+      "rows": [
+        {
+          "name": "module_article_count",
+          "value": 0
         }
       ]
     }
