@@ -23,6 +23,12 @@
       "_nested_name": "is_already_completed"
     },
     {
+      "name": "po_return",
+      "value": false,
+      "type": "set_variable",
+      "_nested_name": "po_return"
+    },
+    {
       "name": "last_module_in_progress_or_undefined",
       "type": "set_variable",
       "_nested_name": "last_module_in_progress_or_undefined"
@@ -230,8 +236,8 @@
       },
       "exclude_from_translation": true,
       "condition": false,
-      "name": "text_17",
-      "_nested_name": "text_17",
+      "name": "text_18",
+      "_nested_name": "text_18",
       "_dynamicFields": {
         "value": [
           {
@@ -256,8 +262,8 @@
       },
       "exclude_from_translation": true,
       "condition": false,
-      "name": "text_18",
-      "_nested_name": "text_18",
+      "name": "text_19",
+      "_nested_name": "text_19",
       "_dynamicFields": {
         "value": [
           {
@@ -282,8 +288,8 @@
       },
       "exclude_from_translation": true,
       "condition": false,
-      "name": "text_19",
-      "_nested_name": "text_19",
+      "name": "text_20",
+      "_nested_name": "text_20",
       "_dynamicFields": {
         "value": [
           {
@@ -308,8 +314,8 @@
       },
       "exclude_from_translation": true,
       "condition": false,
-      "name": "text_20",
-      "_nested_name": "text_20",
+      "name": "text_21",
+      "_nested_name": "text_21",
       "_dynamicFields": {
         "value": [
           {
@@ -334,8 +340,8 @@
       },
       "exclude_from_translation": true,
       "condition": false,
-      "name": "text_21",
-      "_nested_name": "text_21",
+      "name": "text_22",
+      "_nested_name": "text_22",
       "_dynamicFields": {
         "value": [
           {
@@ -373,8 +379,8 @@
         "filter": "@item.tag_course == @local.course_id && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))"
       },
       "condition": "@local.course_id !== \"test\"",
-      "name": "data_items_22",
-      "_nested_name": "data_items_22",
+      "name": "data_items_23",
+      "_nested_name": "data_items_23",
       "_dynamicFields": {
         "value": [
           {
@@ -529,8 +535,8 @@
           "_raw": "data_changed | set_local : article_count: @items.length"
         }
       ],
-      "name": "data_items_23",
-      "_nested_name": "data_items_23",
+      "name": "data_items_24",
+      "_nested_name": "data_items_24",
       "_dynamicFields": {
         "value": [
           {
@@ -848,8 +854,8 @@
         "value": {}
       },
       "condition": false,
-      "name": "text_31",
-      "_nested_name": "text_31",
+      "name": "text_32",
+      "_nested_name": "text_32",
       "_dynamicFields": {
         "value": [
           {
@@ -1143,6 +1149,30 @@
                       "exclude_from_translation": true,
                       "type": "set_variable",
                       "_nested_name": "enable_dynamic_data_actions.only_for_active_index.cond_multi_art.article_first.is_first"
+                    },
+                    {
+                      "name": "po_return",
+                      "value": "@local.po_return",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "type": "set_variable",
+                      "_nested_name": "enable_dynamic_data_actions.only_for_active_index.cond_multi_art.article_first.po_return",
+                      "_dynamicFields": {
+                        "value": [
+                          {
+                            "fullExpression": "@local.po_return",
+                            "matchedExpression": "@local.po_return",
+                            "type": "local",
+                            "fieldName": "po_return"
+                          }
+                        ]
+                      },
+                      "_dynamicDependencies": {
+                        "@local.po_return": [
+                          "value"
+                        ]
+                      }
                     }
                   ],
                   "_nested_name": "enable_dynamic_data_actions.only_for_active_index.cond_multi_art.article_first",
@@ -1505,6 +1535,30 @@
                           "value"
                         ]
                       }
+                    },
+                    {
+                      "name": "po_return",
+                      "value": "@local.po_return",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "type": "set_variable",
+                      "_nested_name": "enable_dynamic_data_actions.only_for_active_index.cond_multi_art.article_middle.po_return",
+                      "_dynamicFields": {
+                        "value": [
+                          {
+                            "fullExpression": "@local.po_return",
+                            "matchedExpression": "@local.po_return",
+                            "type": "local",
+                            "fieldName": "po_return"
+                          }
+                        ]
+                      },
+                      "_dynamicDependencies": {
+                        "@local.po_return": [
+                          "value"
+                        ]
+                      }
                     }
                   ],
                   "_nested_name": "enable_dynamic_data_actions.only_for_active_index.cond_multi_art.article_middle",
@@ -1862,6 +1916,54 @@
                       "exclude_from_translation": true,
                       "type": "set_variable",
                       "_nested_name": "enable_dynamic_data_actions.only_for_active_index.cond_multi_art.article_last.is_last"
+                    },
+                    {
+                      "name": "po_return",
+                      "value": "@local.po_return",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "type": "set_variable",
+                      "_nested_name": "enable_dynamic_data_actions.only_for_active_index.cond_multi_art.article_last.po_return",
+                      "_dynamicFields": {
+                        "value": [
+                          {
+                            "fullExpression": "@local.po_return",
+                            "matchedExpression": "@local.po_return",
+                            "type": "local",
+                            "fieldName": "po_return"
+                          }
+                        ]
+                      },
+                      "_dynamicDependencies": {
+                        "@local.po_return": [
+                          "value"
+                        ]
+                      }
+                    },
+                    {
+                      "name": "po_follows",
+                      "value": "@local.extra_steps > 0",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "type": "set_variable",
+                      "_nested_name": "enable_dynamic_data_actions.only_for_active_index.cond_multi_art.article_last.po_follows",
+                      "_dynamicFields": {
+                        "value": [
+                          {
+                            "fullExpression": "@local.extra_steps > 0",
+                            "matchedExpression": "@local.extra_steps",
+                            "type": "local",
+                            "fieldName": "extra_steps"
+                          }
+                        ]
+                      },
+                      "_dynamicDependencies": {
+                        "@local.extra_steps": [
+                          "value"
+                        ]
+                      }
                     }
                   ],
                   "_nested_name": "enable_dynamic_data_actions.only_for_active_index.cond_multi_art.article_last",
@@ -2235,6 +2337,54 @@
                       "exclude_from_translation": true,
                       "type": "set_variable",
                       "_nested_name": "enable_dynamic_data_actions.only_for_active_index.cond_multi_art.article_last_in_course.is_last"
+                    },
+                    {
+                      "name": "po_return",
+                      "value": "@local.po_return",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "type": "set_variable",
+                      "_nested_name": "enable_dynamic_data_actions.only_for_active_index.cond_multi_art.article_last_in_course.po_return",
+                      "_dynamicFields": {
+                        "value": [
+                          {
+                            "fullExpression": "@local.po_return",
+                            "matchedExpression": "@local.po_return",
+                            "type": "local",
+                            "fieldName": "po_return"
+                          }
+                        ]
+                      },
+                      "_dynamicDependencies": {
+                        "@local.po_return": [
+                          "value"
+                        ]
+                      }
+                    },
+                    {
+                      "name": "po_follows",
+                      "value": "@local.extra_steps > 0",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "type": "set_variable",
+                      "_nested_name": "enable_dynamic_data_actions.only_for_active_index.cond_multi_art.article_last_in_course.po_follows",
+                      "_dynamicFields": {
+                        "value": [
+                          {
+                            "fullExpression": "@local.extra_steps > 0",
+                            "matchedExpression": "@local.extra_steps",
+                            "type": "local",
+                            "fieldName": "extra_steps"
+                          }
+                        ]
+                      },
+                      "_dynamicDependencies": {
+                        "@local.extra_steps": [
+                          "value"
+                        ]
+                      }
                     }
                   ],
                   "_nested_name": "enable_dynamic_data_actions.only_for_active_index.cond_multi_art.article_last_in_course",

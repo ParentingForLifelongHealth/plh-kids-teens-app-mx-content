@@ -1046,6 +1046,15 @@
           "trigger": "notification_interacted",
           "action_id": "set_field",
           "args": [
+            "po_setup_pending",
+            true
+          ],
+          "_raw": "notification_interacted | set_field: po_setup_pending: true"
+        },
+        {
+          "trigger": "notification_interacted",
+          "action_id": "set_field",
+          "args": [
             "prox_outcome_access",
             "cta"
           ],
@@ -1474,6 +1483,15 @@
             "schedule_at": "@local.po_c5_r2",
             "action_list": "@local.po_tap_action_list"
           }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_field",
+          "args": [
+            "po_setup_pending",
+            false
+          ],
+          "_raw": "completed | set_field: po_setup_pending: false"
         },
         {
           "trigger": "completed",

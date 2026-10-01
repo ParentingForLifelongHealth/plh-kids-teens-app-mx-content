@@ -68,29 +68,26 @@
       "condition": "@local.days_since_prox_14d_last >= @global.proximal_outcome_frequency * @global.proximal_outcome_alternation"
     },
     {
-      "name": "show_PO",
+      "name": "show_po",
       "value": false,
       "comment": "Set to true with set_local at hand-over; keeps the check-in on screen even when the timestamps change."
     },
     {
-      "name": "PO_type",
+      "name": "po_type",
       "comment": "Fixed with set_local at hand-over."
     },
     {
-      "type": "begin_data_items",
-      "name": "get_check_in",
-      "value": "hp_check_in",
-      "parameter_list": "filter: @item.id == \"@gen.id\";\nlimit: 1;",
-      "exclude_from_translation": true
+      "name": "po_active",
+      "value": false
     },
     {
       "type": "begin_template",
       "name": "header",
       "value": "header",
-      "action_list": "completed | emit: completed; \nuncompleted | emit: uncompleted",
+      "action_list": "completed | emit: completed;\nuncompleted | nav_stack: close_top;\nuncompleted | pop_up: show_certificate;\nuncompleted | toast | message: @global.certificates_location;",
       "exclude_from_translation": true,
-      "condition": "!@local.show_PO",
-      "comment": "condition added. The check-in has its own header."
+      "condition": "!@local.show_po",
+      "comment": "uncompleted closes + shows the certificate (only reached when close_emits is on)"
     },
     {
       "name": "title",
@@ -112,6 +109,12 @@
       "exclude_from_translation": true
     },
     {
+      "name": "close_emits",
+      "value": "@local.po_active && !!@global.certificator_url",
+      "exclude_from_translation": true,
+      "comment": "After the check-in has been opened (po_active) and certificates are on: the header's X emits 'uncompleted' instead of closing, so this row's actions close + show the certificate."
+    },
+    {
       "type": "end_template",
       "exclude_from_translation": true
     },
@@ -119,9 +122,9 @@
       "type": "begin_template",
       "name": "if_yes",
       "value": "hp_review",
-      "action_list": "completed | plh_certificate: generate |\nurl: @global.certificator_url,\nname: @fields.certificate_name,\nid: @gen.id,\ncertificate_template: @local.certificate_template,\ncertificate_data_list: @local.certificate_data_list,\nresult_local_variable_name: @local.result;\ncompleted | set_field: cert_to_print: @item.id;\ncompleted | set_field: debugcert: @local.certificate_template;\ncompleted | set_data | _list_id: hp_check_in, _id: @gen.id, unlocked_activity: TRUE;\ncompleted | set_data | _list_id: courses, _id: @gen.id, n_reprints: 0;\ncompleted | nav_stack: close_top;\ncompleted | pop_up: show_certificate;\ncompleted | toast | message: @global.certificates_location;\nuncompleted | nav_stack: close_top;",
+      "action_list": "completed | plh_certificate: generate |\nurl: @global.certificator_url,\nname: @fields.certificate_name,\nid: @gen.id,\ncertificate_template: @local.certificate_template,\ncertificate_data_list: @local.certificate_data_list,\nresult_local_variable_name: @local.result;\ncompleted | set_field: cert_to_print: @gen.id;\ncompleted | set_field: debugcert: @local.certificate_template;\ncompleted | set_data | _list_id: hp_check_in, _id: @gen.id, unlocked_activity: TRUE;\ncompleted | set_data | _list_id: courses, _id: @gen.id, n_reprints: 0;\ncompleted | nav_stack: close_top;\ncompleted | pop_up: show_certificate;\ncompleted | toast | message: @global.certificates_location;\nuncompleted | nav_stack: close_top;",
       "exclude_from_translation": true,
-      "condition": "!!@global.certificator_url && !@local.po_due && !@local.show_PO",
+      "condition": "!!@global.certificator_url && !@local.po_due && !@local.po_active && !@local.show_po",
       "comment": "condition extended. No check-in due: unchanged."
     },
     {
@@ -140,10 +143,10 @@
       "type": "begin_template",
       "name": "if_yes_then_checkin",
       "value": "hp_review",
-      "action_list": "completed | plh_certificate: generate |\nurl: @global.certificator_url,\nname: @fields.certificate_name,\nid: @gen.id,\ncertificate_template: @local.certificate_template,\ncertificate_data_list: @local.certificate_data_list,\nresult_local_variable_name: @local.result;\ncompleted | set_field: cert_to_print: @item.id;\ncompleted | set_field: debugcert: @local.certificate_template;\ncompleted | set_data | _list_id: hp_check_in, _id: @gen.id, unlocked_activity: TRUE;\ncompleted | set_data | _list_id: courses, _id: @gen.id, n_reprints: 0;\ncompleted | set_field: prox_outcome_access: module;\ncompleted | set_data | _list_id: proximal_outcome_7d_pages, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_14d_pages, completed: false;\ncompleted | set_local: PO_type: @local.po_due_type;\ncompleted | set_local: show_PO: true;\nuncompleted | nav_stack: close_top;",
+      "action_list": "completed | plh_certificate: generate |\nurl: @global.certificator_url,\nname: @fields.certificate_name,\nid: @gen.id,\ncertificate_template: @local.certificate_template,\ncertificate_data_list: @local.certificate_data_list,\nresult_local_variable_name: @local.result;\ncompleted | set_field: cert_to_print: @gen.id;\ncompleted | set_field: debugcert: @local.certificate_template;\n\ncompleted | set_data | _list_id: hp_check_in, _id: @gen.id, unlocked_activity: TRUE;\ncompleted | set_data | _list_id: courses, _id: @gen.id, n_reprints: 0;\n\ncompleted | set_field: prox_outcome_access: hp_review;\ncompleted | set_field: po_setup_pending: true;\ncompleted | set_data | _list_id: proximal_outcome_7d_pages, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_14d_pages, completed: false;\ncompleted | set_local: po_type: @local.po_due_type;\ncompleted | set_local: show_po: true;\ncompleted | set_local: po_active: true;\n\nuncompleted | nav_stack: close_top;",
       "exclude_from_translation": true,
-      "condition": "!!@global.certificator_url && @local.po_due && !@local.show_PO",
-      "comment": " Copy of if_yes for when a check-in is due: certificate is generated, then the check-in shows; pop-up + toast come after it."
+      "condition": "!!@global.certificator_url && @local.po_due && !@local.po_active && !@local.show_po",
+      "comment": "Copy of if_yes for when a check-in is due: certificate is generated, then the check-in shows; pop-up + toast come after it."
     },
     {
       "name": "row_id",
@@ -152,7 +155,27 @@
     },
     {
       "name": "completion_icon",
-      "value": "@global.first_completion_icon"
+      "value": "arrow-forward",
+      "comment": "arrow instead of the trophy: the check-in follows."
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "begin_template",
+      "name": "if_yes_return",
+      "value": "hp_review",
+      "action_list": "completed | set_field: prox_outcome_access: hp_review;\ncompleted | set_data | _list_id: proximal_outcome_7d_pages, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_14d_pages, completed: false;\ncompleted | set_local: show_po: true;\nuncompleted | nav_stack: close_top;\nuncompleted | pop_up: show_certificate;\nuncompleted | toast | message: @global.certificates_location;",
+      "condition": "!!@global.certificator_url && @local.po_active && !@local.show_po",
+      "comment": "The review shown again after 'back' from the check-in. Finishing it only goes back to the check-in: no second certificate, no data saved again. po_setup_pending is left as it is."
+    },
+    {
+      "name": "row_id",
+      "value": "@gen.id"
+    },
+    {
+      "name": "completion_icon",
+      "value": "arrow-forward"
     },
     {
       "type": "end_template"
@@ -163,8 +186,8 @@
       "value": "hp_review",
       "action_list": "completed | set_data | _list_id: hp_check_in, _id: @gen.id, unlocked_activity: TRUE;\ncompleted | set_data | _list_id: courses, _id: @gen.id, n_reprints: 0;\ncompleted | nav_stack: close_top;\nuncompleted | nav_stack: close_top;",
       "exclude_from_translation": true,
-      "condition": "!@global.certificator_url && !@local.po_due && !@local.show_PO",
-      "comment": "condition extended. No check-in due: unchanged."
+      "condition": "!@global.certificator_url && !@local.po_due && !@local.po_active && !@local.show_po",
+      "comment": "No check-in due"
     },
     {
       "name": "row_id",
@@ -182,10 +205,10 @@
       "type": "begin_template",
       "name": "if_yes_no_certificates_then_checkin",
       "value": "hp_review",
-      "action_list": "completed | set_data | _list_id: hp_check_in, _id: @gen.id, unlocked_activity: TRUE;\ncompleted | set_data | _list_id: courses, _id: @gen.id, n_reprints: 0;\ncompleted | set_field: prox_outcome_access: module;\ncompleted | set_data | _list_id: proximal_outcome_7d_pages, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_14d_pages, completed: false;\ncompleted | set_local: PO_type: @local.po_due_type;\ncompleted | set_local: show_PO: true;\nuncompleted | nav_stack: close_top;",
+      "action_list": "completed | set_data | _list_id: hp_check_in, _id: @gen.id, unlocked_activity: TRUE;\ncompleted | set_data | _list_id: courses, _id: @gen.id, n_reprints: 0;\ncompleted | set_field: prox_outcome_access: hp_review;\ncompleted | set_field: po_setup_pending: true;\ncompleted | set_data | _list_id: proximal_outcome_7d_pages, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_14d_pages, completed: false;\ncompleted | set_local: po_type: @local.po_due_type;\ncompleted | set_local: show_po: true;\ncompleted | set_local: po_active: true;\nuncompleted | nav_stack: close_top;",
       "exclude_from_translation": true,
-      "condition": "!@global.certificator_url && @local.po_due && !@local.show_PO",
-      "comment": "Copy of if_yes_no_certificates for when a check-in is due."
+      "condition": "!@global.certificator_url && @local.po_due && !@local.po_active && !@local.show_po",
+      "comment": "Copy of if_yes_no_certificates for when a check-in is due"
     },
     {
       "name": "row_id",
@@ -194,7 +217,25 @@
     },
     {
       "name": "completion_icon",
-      "value": "@global.first_completion_icon"
+      "value": "arrow-forward"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "begin_template",
+      "name": "if_yes_no_certificates_return",
+      "value": "hp_review",
+      "action_list": "completed | set_field: prox_outcome_access: hp_review;\ncompleted | set_data | _list_id: proximal_outcome_7d_pages, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_14d_pages, completed: false;\ncompleted | set_local: show_po: true;\nuncompleted | nav_stack: close_top;",
+      "condition": "!@global.certificator_url && @local.po_active && !@local.show_po"
+    },
+    {
+      "name": "row_id",
+      "value": "@gen.id"
+    },
+    {
+      "name": "completion_icon",
+      "value": "arrow-forward"
     },
     {
       "type": "end_template"
@@ -203,8 +244,8 @@
       "type": "begin_template",
       "name": "proximal_outcome_page_7",
       "value": "proximal_outcome_7d_checkin",
-      "action_list": "completed | nav_stack: close_top;\ncompleted | pop_up: show_certificate;\ncompleted | toast | message: @global.certificates_location;\nuncompleted | nav_stack: close_top;\nuncompleted | pop_up: show_certificate;\nuncompleted | toast | message: @global.certificates_location;",
-      "condition": "@local.show_PO && @local.PO_type == \"7days\" && !!@global.certificator_url",
+      "action_list": "completed | nav_stack: close_top;\ncompleted | pop_up: show_certificate;\ncompleted | toast | message: @global.certificates_location;\nuncompleted | nav_stack: close_top;\nuncompleted | pop_up: show_certificate;\nuncompleted | toast | message: @global.certificates_location;\nchanged | set_local: show_po: false;",
+      "condition": "@local.show_po && @local.po_type == \"7days\" && !!@global.certificator_url",
       "comment": "After the check-in: close, then certificate pop-up + toast (what the review did before)."
     },
     {
@@ -218,8 +259,8 @@
       "type": "begin_template",
       "name": "proximal_outcome_page_14",
       "value": "proximal_outcome_14d_checkin",
-      "action_list": "completed | nav_stack: close_top;\ncompleted | pop_up: show_certificate;\ncompleted | toast | message: @global.certificates_location;\nuncompleted | nav_stack: close_top;\nuncompleted | pop_up: show_certificate;\nuncompleted | toast | message: @global.certificates_location;",
-      "condition": "@local.show_PO && @local.PO_type == \"14days\" && !!@global.certificator_url"
+      "action_list": "completed | nav_stack: close_top;\ncompleted | pop_up: show_certificate;\ncompleted | toast | message: @global.certificates_location;\nuncompleted | nav_stack: close_top;\nuncompleted | pop_up: show_certificate;\nuncompleted | toast | message: @global.certificates_location;\nchanged | set_local: show_po: false;",
+      "condition": "@local.show_po && @local.po_type == \"14days\" && !!@global.certificator_url"
     },
     {
       "name": "module_article_count",
@@ -232,8 +273,8 @@
       "type": "begin_template",
       "name": "proximal_outcome_page_7_no_cert",
       "value": "proximal_outcome_7d_checkin",
-      "action_list": "completed | nav_stack: close_top;\nuncompleted | nav_stack: close_top;",
-      "condition": "@local.show_PO && @local.PO_type == \"7days\" && !@global.certificator_url"
+      "action_list": "completed | nav_stack: close_top;\nuncompleted | nav_stack: close_top;\nchanged | set_local: show_po: false;",
+      "condition": "@local.show_po && @local.po_type == \"7days\" && !@global.certificator_url"
     },
     {
       "name": "module_article_count",
@@ -246,8 +287,8 @@
       "type": "begin_template",
       "name": "proximal_outcome_page_14_no_cert",
       "value": "proximal_outcome_14d_checkin",
-      "action_list": "completed | nav_stack: close_top;\nuncompleted | nav_stack: close_top;",
-      "condition": "@local.show_PO && @local.PO_type == \"14days\" && !@global.certificator_url"
+      "action_list": "completed | nav_stack: close_top;\nuncompleted | nav_stack: close_top;\nchanged | set_local: show_po: false;",
+      "condition": "@local.show_po && @local.po_type == \"14days\" && !@global.certificator_url"
     },
     {
       "name": "module_article_count",
@@ -255,9 +296,6 @@
     },
     {
       "type": "end_template"
-    },
-    {
-      "type": "end_data_items"
     }
   ]
 }

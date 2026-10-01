@@ -14,7 +14,7 @@
     },
     {
       "name": "show_first",
-      "value": true,
+      "value": "@fields.hp_review_second_page_id != @local.row_id",
       "exclude_from_translation": true
     },
     {
@@ -235,9 +235,10 @@
       "type": "begin_template",
       "name": "nav_buttons_next",
       "value": "nav_buttons",
-      "action_list": "completed | set_local: show_first: false;\nuncompleted | emit:uncompleted; ",
+      "action_list": "completed | set_field: hp_review_second_page_id: @local.row_id;\ncompleted | set_local: show_first: false;\nuncompleted | emit:uncompleted; ",
       "condition": "!(@item.done_response == \"yes\" && @item.mood_response == \"happy\" )",
-      "exclude_from_translation": true
+      "exclude_from_translation": true,
+      "comments": "Going to page 2 records the review's id (row_id, e.g. selfcare) in hp_review_second_page_id.\nGoing back to page 1 clears it (none).\nWhen the review is drawn, show_first is true unless the field holds this review's id. So:\ncoming back from the check-in lands on page 2 if the user came from page 2;\nit lands on page 1 on the \"yes + happy\" path, where the field was never set."
     },
     {
       "name": "show_previous",
@@ -259,7 +260,7 @@
       "type": "begin_template",
       "name": "hp_challenges",
       "value": "hp_challenges",
-      "action_list": "completed | emit:completed; \nuncompleted | set_local: show_first: true"
+      "action_list": "completed | emit:completed;\nuncompleted | set_field: hp_review_second_page_id: none;\nuncompleted | set_local: show_first: true; "
     },
     {
       "name": "row_id",

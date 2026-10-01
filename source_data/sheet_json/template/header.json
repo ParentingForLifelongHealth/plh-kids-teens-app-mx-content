@@ -15,6 +15,15 @@
       "value": true
     },
     {
+      "name": "close_with_unlock_popup",
+      "value": false
+    },
+    {
+      "name": "close_emits",
+      "value": false,
+      "comments": "When on, the X tells the parent row (uncompleted) instead of closing, so the parent decides what happens."
+    },
+    {
       "type": "begin_display_group",
       "name": "dg_header",
       "parameter_list": "sticky: top; \nstyle: background_solid;",
@@ -49,7 +58,26 @@
       "name": "close_button",
       "action_list": "click | nav_stack: close_top;",
       "parameter_list": "variant: no-background; \nicon_src: @local.close_icon_asset",
+      "condition": "!@local.close_with_unlock_popup && !@local.close_emits",
       "style_list": "margin-inline-end: -12px;"
+    },
+    {
+      "type": "round_button",
+      "name": "close_button_unlock",
+      "action_list": "click | nav_stack: close_top;\nclick | pop_up: unlock_play | variant: plh_completion;",
+      "parameter_list": "variant: no-background; \nicon_src: @local.close_icon_asset",
+      "condition": "!!@local.close_with_unlock_popup",
+      "style_list": "margin-inline-end: -12px;",
+      "comments": "closes AND shows the unlock pop-up (what the module stack does when a check-in ends)."
+    },
+    {
+      "type": "round_button",
+      "name": "close_button_emit",
+      "action_list": "click | emit: uncompleted;",
+      "parameter_list": "variant: no-background; \nicon_src: @local.close_icon_asset",
+      "condition": "!!@local.close_emits",
+      "style_list": "margin-inline-end: -12px;",
+      "comments": "hands the close to the parent row"
     },
     {
       "type": "end_display_group"

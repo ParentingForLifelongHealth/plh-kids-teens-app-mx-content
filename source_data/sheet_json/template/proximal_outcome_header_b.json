@@ -20,15 +20,15 @@
       "value": "@global.proximal_outcome_cta_badge_text"
     },
     {
-      "name": "PO_type",
+      "name": "po_type",
       "value": "7days"
     },
     {
       "type": "begin_plh_lesson_cta",
       "value": "@local.title",
-      "action_list": "click | set_field: prox_outcome_access: cta;\nclick | set_data | _list_id: proximal_outcome_14d_pages, completed: false;\nclick | nav_stack: open | template: proximal_outcome_14d_checkin, header: false;\nclick | emit: force_reload;",
+      "action_list": "click | set_field: prox_outcome_access: cta;\nclick | set_data | _list_id: proximal_outcome_14d_pages, completed: false;\nclick | set_field: po_setup_pending: true;\nclick | nav_stack: open | template: proximal_outcome_14d_checkin, header: false;\nclick | emit: force_reload;",
       "parameter_list": "subtitle: @local.subtitle;\ncta_text: @local.action_text;\nbadge_text: @local.badge_text;\nbackground_image_asset: images/backgrounds/lesson-cta-bg.svg;",
-      "condition": "@local.PO_type == \"14days\"",
+      "condition": "@local.po_type == \"14days\"",
       "comment": "action_list replaced. Setup now happens on the intro (14-day button)."
     },
     {
@@ -37,9 +37,9 @@
     {
       "type": "begin_plh_lesson_cta",
       "value": "@local.title",
-      "action_list": "click | set_field: prox_outcome_access: cta;\nclick | set_data | _list_id: proximal_outcome_7d_pages, completed: false;\nclick | nav_stack: open | template: proximal_outcome_7d_checkin, header: false;\nclick | emit: force_reload;",
+      "action_list": "click | set_field: prox_outcome_access: cta;\nclick | set_data | _list_id: proximal_outcome_7d_pages, completed: false;\nclick | set_field: po_setup_pending: true;\nclick | nav_stack: open | template: proximal_outcome_7d_checkin, header: false;\nclick | emit: force_reload;",
       "parameter_list": "subtitle: @local.subtitle;\ncta_text: @local.action_text;\nbadge_text: @local.badge_text;\nbackground_image_asset: images/backgrounds/lesson-cta-bg.svg;",
-      "condition": "@local.PO_type == \"7days\"",
+      "condition": "@local.po_type == \"7days\"",
       "comment": "action_list replaced. Setup now happens on the intro (7-day button). |\n was: click | emit: force_reload; is needed so that home screen re-renders behind the proximal outcome check-in and shows the module version when the check-in is completed (otherwise the condition on the date is not re-evaluated and it shows again the PO check-in)"
     },
     {

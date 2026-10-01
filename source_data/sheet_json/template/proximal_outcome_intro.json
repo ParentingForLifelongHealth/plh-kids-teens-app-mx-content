@@ -29,7 +29,7 @@
       "type": "begin_template",
       "name": "intro_during",
       "value": "proximal_outcome_intro_during",
-      "action_list": "completed | emit: completed;\nuncompleted | emit: uncompleted;",
+      "action_list": "completed | emit: completed;\nuncompleted | emit: uncompleted;\nchanged | emit: changed;",
       "condition": "!@fields.completed_all || @fields.prox_outcome_access != \"cta\" || @local.po_type != \"14days\"",
       "comment": "During the programme, and any check-in not opened from the home button or a notification (modules, hp_review)."
     },

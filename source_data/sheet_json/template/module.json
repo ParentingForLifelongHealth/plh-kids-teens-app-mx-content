@@ -17,6 +17,11 @@
       "value": false
     },
     {
+      "name": "po_return",
+      "value": false,
+      "comment": "Set by the stack when the module is reopened from the check-in"
+    },
+    {
       "name": "last_module_in_progress_or_undefined"
     },
     {
@@ -222,6 +227,10 @@
       "exclude_from_translation": true
     },
     {
+      "name": "po_return",
+      "value": "@local.po_return"
+    },
+    {
       "type": "end_template",
       "exclude_from_translation": true
     },
@@ -258,6 +267,10 @@
       "name": "category_id",
       "value": "@item.category_id",
       "exclude_from_translation": true
+    },
+    {
+      "name": "po_return",
+      "value": "@local.po_return"
     },
     {
       "type": "end_template",
@@ -303,6 +316,15 @@
       "exclude_from_translation": true
     },
     {
+      "name": "po_return",
+      "value": "@local.po_return"
+    },
+    {
+      "name": "po_follows",
+      "value": "@local.extra_steps > 0",
+      "comment": "A check-in follows this page (extra_steps is only passed on the check-in path): arrow instead of trophy"
+    },
+    {
       "type": "end_template",
       "exclude_from_translation": true
     },
@@ -343,6 +365,15 @@
       "name": "is_last",
       "value": true,
       "exclude_from_translation": true
+    },
+    {
+      "name": "po_return",
+      "value": "@local.po_return"
+    },
+    {
+      "name": "po_follows",
+      "value": "@local.extra_steps > 0",
+      "comment": "A check-in follows this page (extra_steps is only passed on the check-in path): arrow instead of trophy"
     },
     {
       "type": "end_template",

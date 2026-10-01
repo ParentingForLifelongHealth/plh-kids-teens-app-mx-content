@@ -279,6 +279,14 @@
             "uncompleted"
           ],
           "_raw": "uncompleted | emit: uncompleted"
+        },
+        {
+          "trigger": "changed",
+          "action_id": "emit",
+          "args": [
+            "changed"
+          ],
+          "_raw": "changed | emit: changed"
         }
       ],
       "condition": "!@fields.completed_all || @fields.prox_outcome_access != \"cta\" || @local.po_type != \"14days\"",

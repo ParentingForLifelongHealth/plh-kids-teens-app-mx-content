@@ -24,10 +24,37 @@
     },
     {
       "name": "show_first",
-      "value": true,
+      "value": "@fields.hp_review_second_page_id != @local.row_id",
+      "_translations": {
+        "value": {}
+      },
       "exclude_from_translation": true,
       "type": "set_variable",
-      "_nested_name": "show_first"
+      "_nested_name": "show_first",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields.hp_review_second_page_id != @local.row_id",
+            "matchedExpression": "@fields.hp_review_second_page_id",
+            "type": "fields",
+            "fieldName": "hp_review_second_page_id"
+          },
+          {
+            "fullExpression": "@fields.hp_review_second_page_id != @local.row_id",
+            "matchedExpression": "@local.row_id",
+            "type": "local",
+            "fieldName": "row_id"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.hp_review_second_page_id": [
+          "value"
+        ],
+        "@local.row_id": [
+          "value"
+        ]
+      }
     },
     {
       "name": "completion_icon",
@@ -1055,6 +1082,15 @@
               "action_list": [
                 {
                   "trigger": "completed",
+                  "action_id": "set_field",
+                  "args": [
+                    "hp_review_second_page_id",
+                    "@local.row_id"
+                  ],
+                  "_raw": "completed | set_field: hp_review_second_page_id: @local.row_id"
+                },
+                {
+                  "trigger": "completed",
                   "action_id": "set_local",
                   "args": [
                     "show_first",
@@ -1083,6 +1119,28 @@
               ],
               "_nested_name": "loop_data.dg_1.nav_buttons_next",
               "_dynamicFields": {
+                "action_list": {
+                  "0": {
+                    "args": {
+                      "1": [
+                        {
+                          "fullExpression": "@local.row_id",
+                          "matchedExpression": "@local.row_id",
+                          "type": "local",
+                          "fieldName": "row_id"
+                        }
+                      ]
+                    },
+                    "_raw": [
+                      {
+                        "fullExpression": "completed | set_field: hp_review_second_page_id: @local.row_id",
+                        "matchedExpression": "@local.row_id",
+                        "type": "local",
+                        "fieldName": "row_id"
+                      }
+                    ]
+                  }
+                },
                 "condition": [
                   {
                     "fullExpression": "!(@item.done_response == \"yes\" && @item.mood_response == \"happy\" )",
@@ -1099,6 +1157,10 @@
                 ]
               },
               "_dynamicDependencies": {
+                "@local.row_id": [
+                  "action_list.0.args.1",
+                  "action_list.0._raw"
+                ],
                 "@item.done_response": [
                   "condition"
                 ],
@@ -1145,6 +1207,15 @@
                     "completed"
                   ],
                   "_raw": "completed | emit:completed"
+                },
+                {
+                  "trigger": "uncompleted",
+                  "action_id": "set_field",
+                  "args": [
+                    "hp_review_second_page_id",
+                    "none"
+                  ],
+                  "_raw": "uncompleted | set_field: hp_review_second_page_id: none"
                 },
                 {
                   "trigger": "uncompleted",
