@@ -54,128 +54,16 @@
       "_nested_name": "is_first"
     },
     {
-      "name": "po_last_7d_ts",
-      "value": "@global.proximal_outcome_due_from == \"viewed\" && @fields.prox_7d_viewed_ts ? @fields.prox_7d_viewed_ts : @fields.prox_7d_last_ts",
-      "_translations": {
-        "value": {}
-      },
+      "name": "po_follows",
+      "value": false,
       "type": "set_variable",
-      "_nested_name": "po_last_7d_ts",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "@global.proximal_outcome_due_from == \"viewed\" && @fields.prox_7d_viewed_ts ? @fields.prox_7d_viewed_ts : @fields.prox_7d_last_ts",
-            "matchedExpression": "@global.proximal_outcome_due_from",
-            "type": "global",
-            "fieldName": "proximal_outcome_due_from"
-          },
-          {
-            "fullExpression": "@global.proximal_outcome_due_from == \"viewed\" && @fields.prox_7d_viewed_ts ? @fields.prox_7d_viewed_ts : @fields.prox_7d_last_ts",
-            "matchedExpression": "@fields.prox_7d_viewed_ts",
-            "type": "fields",
-            "fieldName": "prox_7d_viewed_ts"
-          },
-          {
-            "fullExpression": "@global.proximal_outcome_due_from == \"viewed\" && @fields.prox_7d_viewed_ts ? @fields.prox_7d_viewed_ts : @fields.prox_7d_last_ts",
-            "matchedExpression": "@fields.prox_7d_viewed_ts",
-            "type": "fields",
-            "fieldName": "prox_7d_viewed_ts"
-          },
-          {
-            "fullExpression": "@global.proximal_outcome_due_from == \"viewed\" && @fields.prox_7d_viewed_ts ? @fields.prox_7d_viewed_ts : @fields.prox_7d_last_ts",
-            "matchedExpression": "@fields.prox_7d_last_ts",
-            "type": "fields",
-            "fieldName": "prox_7d_last_ts"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@global.proximal_outcome_due_from": [
-          "value"
-        ],
-        "@fields.prox_7d_viewed_ts": [
-          "value",
-          "value"
-        ],
-        "@fields.prox_7d_last_ts": [
-          "value"
-        ]
-      }
+      "_nested_name": "po_follows"
     },
     {
-      "name": "days_since_prox_7d_last",
-      "value": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@local.po_last_7d_ts).setHours(0,0,0,0))))",
-      "_translations": {
-        "value": {}
-      },
+      "name": "po_return",
+      "value": false,
       "type": "set_variable",
-      "_nested_name": "days_since_prox_7d_last",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@local.po_last_7d_ts).setHours(0,0,0,0))))",
-            "matchedExpression": "@local.po_last_7d_ts",
-            "type": "local",
-            "fieldName": "po_last_7d_ts"
-          },
-          {
-            "fullExpression": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@local.po_last_7d_ts).setHours(0,0,0,0))))",
-            "matchedExpression": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@local.po_last_7d_ts).setHours(0,0,0,0))))",
-            "type": "calc",
-            "fieldName": "window.date_fns.differenceInDays(new Date(),new Date(new Date(@local.po_last_7d_ts).setHours(0,0,0,0)))"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@local.po_last_7d_ts": [
-          "value"
-        ],
-        "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@local.po_last_7d_ts).setHours(0,0,0,0))))": [
-          "value"
-        ]
-      }
-    },
-    {
-      "name": "po_due",
-      "value": "!!@global.has_proximal_outcomes && @local.days_since_prox_7d_last >= @global.proximal_outcome_frequency",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "po_due",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "!!@global.has_proximal_outcomes && @local.days_since_prox_7d_last >= @global.proximal_outcome_frequency",
-            "matchedExpression": "!@global.has_proximal_outcomes",
-            "type": "global",
-            "fieldName": "has_proximal_outcomes"
-          },
-          {
-            "fullExpression": "!!@global.has_proximal_outcomes && @local.days_since_prox_7d_last >= @global.proximal_outcome_frequency",
-            "matchedExpression": "@local.days_since_prox_7d_last",
-            "type": "local",
-            "fieldName": "days_since_prox_7d_last"
-          },
-          {
-            "fullExpression": "!!@global.has_proximal_outcomes && @local.days_since_prox_7d_last >= @global.proximal_outcome_frequency",
-            "matchedExpression": "@global.proximal_outcome_frequency",
-            "type": "global",
-            "fieldName": "proximal_outcome_frequency"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "!@global.has_proximal_outcomes": [
-          "value"
-        ],
-        "@local.days_since_prox_7d_last": [
-          "value"
-        ],
-        "@global.proximal_outcome_frequency": [
-          "value"
-        ]
-      }
+      "_nested_name": "po_return"
     },
     {
       "name": "articles",
@@ -273,6 +161,30 @@
               },
               "_dynamicDependencies": {
                 "@local.progress": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "close_with_unlock_popup",
+              "value": "@local.po_return",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "is_relax.header.close_with_unlock_popup",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@local.po_return",
+                    "matchedExpression": "@local.po_return",
+                    "type": "local",
+                    "fieldName": "po_return"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.po_return": [
                   "value"
                 ]
               }
@@ -534,6 +446,30 @@
                   },
                   "type": "set_variable",
                   "_nested_name": "is_check_in.article.header.icon_asset"
+                },
+                {
+                  "name": "close_with_unlock_popup",
+                  "value": "@local.po_return",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "type": "set_variable",
+                  "_nested_name": "is_check_in.article.header.close_with_unlock_popup",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@local.po_return",
+                        "matchedExpression": "@local.po_return",
+                        "type": "local",
+                        "fieldName": "po_return"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.po_return": [
+                      "value"
+                    ]
+                  }
                 }
               ],
               "_nested_name": "is_check_in.article.header"
@@ -702,6 +638,37 @@
         },
         {
           "type": "nested_properties",
+          "name": "header",
+          "rows": [
+            {
+              "name": "close_with_unlock_popup",
+              "value": "@local.po_return",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "is_article.header.close_with_unlock_popup",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@local.po_return",
+                    "matchedExpression": "@local.po_return",
+                    "type": "local",
+                    "fieldName": "po_return"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.po_return": [
+                  "value"
+                ]
+              }
+            }
+          ],
+          "_nested_name": "is_article.header"
+        },
+        {
+          "type": "nested_properties",
           "name": "nav_buttons",
           "rows": [
             {
@@ -710,7 +677,7 @@
               "_translations": {
                 "value": {}
               },
-              "condition": "@local.is_last && !@local.po_due",
+              "condition": "@local.is_last && !@local.po_follows",
               "type": "set_variable",
               "_nested_name": "is_article.nav_buttons.next_icon_src",
               "_dynamicFields": {
@@ -724,16 +691,16 @@
                 ],
                 "condition": [
                   {
-                    "fullExpression": "@local.is_last && !@local.po_due",
+                    "fullExpression": "@local.is_last && !@local.po_follows",
                     "matchedExpression": "@local.is_last",
                     "type": "local",
                     "fieldName": "is_last"
                   },
                   {
-                    "fullExpression": "@local.is_last && !@local.po_due",
-                    "matchedExpression": "!@local.po_due",
+                    "fullExpression": "@local.is_last && !@local.po_follows",
+                    "matchedExpression": "!@local.po_follows",
                     "type": "local",
-                    "fieldName": "po_due"
+                    "fieldName": "po_follows"
                   }
                 ]
               },
@@ -744,7 +711,7 @@
                 "@local.is_last": [
                   "condition"
                 ],
-                "!@local.po_due": [
+                "!@local.po_follows": [
                   "condition"
                 ]
               }

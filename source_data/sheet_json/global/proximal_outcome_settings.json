@@ -7,7 +7,8 @@
     {
       "type": "declare_field_default",
       "name": "proximal_outcome_time_point",
-      "value": "baseline"
+      "value": "baseline",
+      "exclude_from_translation": true
     },
     {
       "type": "declare_field_default",
@@ -40,6 +41,7 @@
       "type": "declare_global_constant",
       "name": "proximal_outcome_due_from",
       "value": "started",
+      "exclude_from_translation": true,
       "comment": "Which timestamp decides when the next check-in is due: \"viewed\" (intro shown) or \"started\" (intro's next pressed). More values can be added later."
     }
   ]

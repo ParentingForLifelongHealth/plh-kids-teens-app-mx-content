@@ -58,13 +58,18 @@
       "condition": "@local.days_since_prox_14d_last >= @global.proximal_outcome_frequency * @global.proximal_outcome_alternation"
     },
     {
-      "name": "show_PO",
+      "name": "show_po",
       "value": false,
       "comments": "Set to true with set_local at hand-over; keeps the check-in on screen even when the timestamps change."
     },
     {
-      "name": "PO_type",
+      "name": "po_type",
       "comments": "Fixed with set_local at hand-over."
+    },
+    {
+      "name": "po_active",
+      "value": false,
+      "comments": "keeps the check-in path on after 'due' turns false."
     },
     {
       "name": "articles",
@@ -78,6 +83,15 @@
     {
       "name": "articles_data",
       "value": "@data.@local.articles_data_list_name"
+    },
+    {
+      "name": "po_last_article_id",
+      "value": "@calc(Object.keys(@local.articles_data).slice(-1)[0])"
+    },
+    {
+      "name": "po_start_article_id",
+      "value": "@local.po_active ? @local.po_last_article_id : @fields.current_start_article_id",
+      "comments": "Where the module opens: as now the first time, on its last page when coming back from the check-in."
     },
     {
       "name": "module_page_count",
@@ -118,7 +132,7 @@
       "name": "module_start_at_id",
       "value": "module_start_at_id_get_unlock",
       "action_list": "completed | set_data | _list_id: module_tasks, _id: @gen.id, unlocked_activity: TRUE;\ncompleted | set_field: latest_unlocked_activity: @local.picked_activity_id;\ncompleted | nav_stack: close_top; \ncompleted | pop_up: unlock_play | variant: plh_completion;\nuncompleted | nav_stack: close_top;",
-      "condition": "!@local.po_due && !@local.show_PO"
+      "condition": "!@local.po_due && !@local.po_active && !@local.show_po"
     },
     {
       "name": "activity_id",
@@ -143,9 +157,9 @@
       "type": "begin_template",
       "name": "module_start_at_id_checkin",
       "value": "module_start_at_id_get_unlock",
-      "action_list": "completed | set_data | _list_id: module_tasks, _id: @gen.id, unlocked_activity: TRUE;\ncompleted | set_field: latest_unlocked_activity: @local.picked_activity_id;\ncompleted | set_field: prox_outcome_access: module;\ncompleted | set_data | _list_id: proximal_outcome_7d_pages, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_14d_pages, completed: false;\ncompleted | set_local: PO_type: @local.po_due_type;\ncompleted | set_local: show_PO: true;\nuncompleted | nav_stack: close_top;",
-      "condition": "@local.po_due && !@local.show_PO",
-      "comments": "copy of the block above for when a check-in is due: same unlock data, then hands over to the check-in instead of closing."
+      "action_list": "completed | set_data | _list_id: module_tasks, _id: @gen.id, unlocked_activity: TRUE;\ncompleted | set_field: latest_unlocked_activity: @local.picked_activity_id;\ncompleted | set_field: prox_outcome_access: module;\ncompleted | set_data | _list_id: proximal_outcome_7d_pages, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_14d_pages, completed: false;\ncompleted | set_field: po_setup_pending: @calc(!@local.po_active);\ncompleted | set_local: po_type: @local.po_due_type;\ncompleted | set_local: show_po: true;\ncompleted | set_local: po_active: true;\nuncompleted | nav_stack: close_top;",
+      "condition": "(@local.po_due || @local.po_active) && !@local.show_po",
+      "comments": "when a check-in is due: same unlock data, then hands over to the check-in instead of closing."
     },
     {
       "name": "activity_id",
@@ -166,7 +180,11 @@
     {
       "type": "begin_nested_properties",
       "name": "module_start_at_id",
-      "comments": "NEW. Reaches module › extra_steps through get_unlock › module_start_at_id."
+      "comments": "Reaches module › extra_steps through get_unlock › module_start_at_id."
+    },
+    {
+      "name": "article_id",
+      "value": "@local.po_start_article_id"
     },
     {
       "type": "begin_nested_properties",
@@ -175,6 +193,16 @@
     {
       "name": "extra_steps",
       "value": "@local.po_extra_steps"
+    },
+    {
+      "name": "is_already_completed",
+      "value": "@local.po_active",
+      "comments": "Coming back the module counts as already completed (n_modules_completed isn't incremented again)"
+    },
+    {
+      "name": "po_return",
+      "value": "@local.po_active",
+      "comments": "Tells the module pages they were reopened from the check-in (close X shows the unlock pop-up)"
     },
     {
       "type": "end_nested_properties"
@@ -185,7 +213,11 @@
     {
       "type": "begin_nested_properties",
       "name": "module_start_at_id_unlock_all",
-      "comments": "NEW. Reaches module › extra_steps through get_unlock › module_start_at_id_unlock_all."
+      "comments": "Reaches module › extra_steps through get_unlock › module_start_at_id_unlock_all"
+    },
+    {
+      "name": "article_id",
+      "value": "@local.po_start_article_id"
     },
     {
       "type": "begin_nested_properties",
@@ -194,6 +226,14 @@
     {
       "name": "extra_steps",
       "value": "@local.po_extra_steps"
+    },
+    {
+      "name": "is_already_completed",
+      "value": "@local.po_active"
+    },
+    {
+      "name": "po_return",
+      "value": "@local.po_active"
     },
     {
       "type": "end_nested_properties"
@@ -208,8 +248,8 @@
       "type": "begin_template",
       "name": "proximal_outcome_page_7",
       "value": "proximal_outcome_7d_checkin",
-      "action_list": "completed | nav_stack: close_top;\ncompleted | pop_up: unlock_play | variant: plh_completion;\nuncompleted | nav_stack: close_top;\nuncompleted | pop_up: unlock_play | variant: plh_completion;",
-      "condition": "@local.show_PO && @local.PO_type == \"7days\"",
+      "action_list": "completed | nav_stack: close_top;\ncompleted | pop_up: unlock_play | variant: plh_completion;\nuncompleted | nav_stack: close_top;\nuncompleted | pop_up: unlock_play | variant: plh_completion;\nchanged | set_local: show_po: false;",
+      "condition": "@local.show_po && @local.po_type == \"7days\"",
       "comments": "Finishing or leaving the check-in closes the stack and shows the unlock pop-up the module would have shown."
     },
     {
@@ -224,8 +264,8 @@
       "type": "begin_template",
       "name": "proximal_outcome_page_14",
       "value": "proximal_outcome_14d_checkin",
-      "action_list": "completed | nav_stack: close_top;\ncompleted | pop_up: unlock_play | variant: plh_completion;\nuncompleted | nav_stack: close_top;\nuncompleted | pop_up: unlock_play | variant: plh_completion;",
-      "condition": "@local.show_PO && @local.PO_type == \"14days\""
+      "action_list": "completed | nav_stack: close_top;\ncompleted | pop_up: unlock_play | variant: plh_completion;\nuncompleted | nav_stack: close_top;\nuncompleted | pop_up: unlock_play | variant: plh_completion;\nchanged | set_local: show_po: false;",
+      "condition": "@local.show_po && @local.po_type == \"14days\""
     },
     {
       "name": "module_article_count",

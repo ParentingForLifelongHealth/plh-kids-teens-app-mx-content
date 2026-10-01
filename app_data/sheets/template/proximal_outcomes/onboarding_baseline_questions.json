@@ -1119,6 +1119,15 @@
                     "before"
                   ],
                   "_raw": "click | set_field: proximal_outcome_time_point : before"
+                },
+                {
+                  "trigger": "click",
+                  "action_id": "set_field",
+                  "args": [
+                    "onboarding_completed_ts",
+                    "@calc(now())"
+                  ],
+                  "_raw": "click | set_field: onboarding_completed_ts: @calc(now())"
                 }
               ],
               "parameter_list": {
@@ -1133,11 +1142,37 @@
                     "type": "global",
                     "fieldName": "onboarding_completed_button"
                   }
-                ]
+                ],
+                "action_list": {
+                  "3": {
+                    "args": {
+                      "1": [
+                        {
+                          "fullExpression": "@calc(now())",
+                          "matchedExpression": "@calc(now())",
+                          "type": "calc",
+                          "fieldName": "now()"
+                        }
+                      ]
+                    },
+                    "_raw": [
+                      {
+                        "fullExpression": "click | set_field: onboarding_completed_ts: @calc(now())",
+                        "matchedExpression": "@calc(now())",
+                        "type": "calc",
+                        "fieldName": "now()"
+                      }
+                    ]
+                  }
+                }
               },
               "_dynamicDependencies": {
                 "@global.onboarding_completed_button": [
                   "value"
+                ],
+                "@calc(now())": [
+                  "action_list.3.args.1",
+                  "action_list.3._raw"
                 ]
               }
             }

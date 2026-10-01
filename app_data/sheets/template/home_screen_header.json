@@ -1201,13 +1201,13 @@
           "condition": "(@local.has_in_progress == 0) && @local.po_due",
           "rows": [
             {
-              "name": "PO_type",
+              "name": "po_type",
               "value": "@local.po_due_type",
               "_translations": {
                 "value": {}
               },
               "type": "set_variable",
-              "_nested_name": "display_group_30.proximal_outcome.PO_type",
+              "_nested_name": "display_group_30.proximal_outcome.po_type",
               "_dynamicFields": {
                 "value": [
                   {

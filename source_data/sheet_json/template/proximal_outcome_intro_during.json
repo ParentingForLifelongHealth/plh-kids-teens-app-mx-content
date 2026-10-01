@@ -75,13 +75,33 @@
       "type": "begin_template",
       "name": "nav_buttons_7d",
       "value": "proximal_outcome_nav_buttons",
-      "action_list": "completed | set_field : proximal_outcome_time_point_count: @calc(Number(@fields.proximal_outcome_time_point_count) + 1);\ncompleted | set_field: curr_prox_out_row_id : new;\ncompleted | set_field: curr_goal_reflection_input : ;\ncompleted | set_field: prox_7d_last_ts: @calc(now());\n\ncompleted | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: goal;\n\ncompleted | emit: completed;\nuncompleted | emit: uncompleted;",
-      "condition": "@local.po_type == \"7days\"",
+      "action_list": "completed | set_field : proximal_outcome_time_point_count: @calc(Number(@fields.proximal_outcome_time_point_count) + 1);\ncompleted | set_field: curr_prox_out_row_id : new;\ncompleted | set_field: curr_goal_reflection_input : ;\ncompleted | set_field: prox_7d_last_ts: @calc(now());\n\ncompleted | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: goal;\n\ncompleted | set_field: po_setup_pending: false;\ncompleted | emit: completed;\nuncompleted | emit: changed;",
+      "condition": "@local.po_type == \"7days\" && !!@fields.po_setup_pending",
       "comment": "forward button now does the 7-day setup that every entry point used to do."
     },
     {
       "name": "show_previous",
-      "value": false
+      "value": "@fields.prox_outcome_access != \"cta\""
+    },
+    {
+      "name": "show_next",
+      "value": true
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "begin_template",
+      "name": "nav_buttons_7d_again",
+      "value": "proximal_outcome_nav_buttons",
+      "action_list": "completed | emit: completed;\nuncompleted | emit: changed;",
+      "condition": "@local.po_type == \"7days\" && !@fields.po_setup_pending",
+      "comment": "Setup already done (user came back from the module): just move on, no new data rows."
+    },
+    {
+      "name": "show_previous",
+      "value": "@fields.prox_outcome_access != \"cta\"",
+      "comment": "Back arrow only for check-ins opened from a module"
     },
     {
       "name": "show_next",
@@ -94,13 +114,32 @@
       "type": "begin_template",
       "name": "nav_buttons_14d",
       "value": "proximal_outcome_nav_buttons",
-      "action_list": "completed | set_field : proximal_outcome_time_point_count: @calc(Number(@fields.proximal_outcome_time_point_count) + 1);\ncompleted | set_field: curr_prox_out_row_id : new;\ncompleted | set_field: curr_goal_reflection_input : ;\ncompleted | set_field: prox_7d_last_ts: @calc(now());\ncompleted | set_field: prox_14d_last_ts: @calc(now());\n\ncompleted | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: goal;\n\ncompleted | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: qs1;\n\ncompleted | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: qs2;\n\ncompleted | emit: completed;\nuncompleted | emit: uncompleted;",
-      "condition": "@local.po_type == \"14days\"",
+      "action_list": "completed | set_field : proximal_outcome_time_point_count: @calc(Number(@fields.proximal_outcome_time_point_count) + 1);\ncompleted | set_field: curr_prox_out_row_id : new;\ncompleted | set_field: curr_goal_reflection_input : ;\ncompleted | set_field: prox_7d_last_ts: @calc(now());\ncompleted | set_field: prox_14d_last_ts: @calc(now());\n\ncompleted | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: goal;\n\ncompleted | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: qs1;\n\ncompleted | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: qs2;\n\ncompleted | set_field: po_setup_pending: false;\ncompleted | emit: completed;\nuncompleted | emit: changed;",
+      "condition": "@local.po_type == \"14days\" && !!@fields.po_setup_pending",
       "comment": "14-day setup."
     },
     {
       "name": "show_previous",
-      "value": false
+      "value": "@fields.prox_outcome_access != \"cta\""
+    },
+    {
+      "name": "show_next",
+      "value": true
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "begin_template",
+      "name": "nav_buttons_14d_again",
+      "value": "proximal_outcome_nav_buttons",
+      "action_list": "completed | emit: completed;\nuncompleted | emit: changed;",
+      "condition": "@local.po_type == \"14days\" && !@fields.po_setup_pending",
+      "comment": "Setup already done (user came back from the module): just move on, no new data rows"
+    },
+    {
+      "name": "show_previous",
+      "value": "@fields.prox_outcome_access != \"cta\""
     },
     {
       "name": "show_next",

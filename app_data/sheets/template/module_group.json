@@ -197,7 +197,7 @@
             },
             {
               "type": "plh_course_sub_item",
-              "name": "in_progress_button",
+              "name": "in_progress_button_@item.id",
               "value": "@item.title",
               "_translations": {
                 "value": {}
@@ -242,8 +242,16 @@
                 "locked_text": "@global.locked_text"
               },
               "condition": "!@item.completed_ts",
-              "_nested_name": "plh_course_accordion_12.loop_modules.in_progress_button",
+              "_nested_name": "plh_course_accordion_12.loop_modules.in_progress_button_@item.id",
               "_dynamicFields": {
+                "name": [
+                  {
+                    "fullExpression": "in_progress_button_@item.id",
+                    "matchedExpression": "@item.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ],
                 "value": [
                   {
                     "fullExpression": "@item.title",
@@ -343,9 +351,21 @@
                     "type": "item",
                     "fieldName": "completed_ts"
                   }
+                ],
+                "_nested_name": [
+                  {
+                    "fullExpression": "plh_course_accordion_12.loop_modules.in_progress_button_@item.id",
+                    "matchedExpression": "@item.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
                 ]
               },
               "_dynamicDependencies": {
+                "@item.id": [
+                  "name",
+                  "_nested_name"
+                ],
                 "@item.title": [
                   "value"
                 ],
@@ -379,7 +399,7 @@
             },
             {
               "type": "plh_course_sub_item",
-              "name": "completed_button",
+              "name": "completed_button_@item.id",
               "value": "@item.title",
               "_translations": {
                 "value": {}
@@ -421,8 +441,16 @@
               },
               "condition": "!!@item.completed_ts",
               "exclude_from_translation": true,
-              "_nested_name": "plh_course_accordion_12.loop_modules.completed_button",
+              "_nested_name": "plh_course_accordion_12.loop_modules.completed_button_@item.id",
               "_dynamicFields": {
+                "name": [
+                  {
+                    "fullExpression": "completed_button_@item.id",
+                    "matchedExpression": "@item.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ],
                 "value": [
                   {
                     "fullExpression": "@item.title",
@@ -522,15 +550,25 @@
                     "type": "item",
                     "fieldName": "completed_ts"
                   }
+                ],
+                "_nested_name": [
+                  {
+                    "fullExpression": "plh_course_accordion_12.loop_modules.completed_button_@item.id",
+                    "matchedExpression": "@item.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
                 ]
               },
               "_dynamicDependencies": {
+                "@item.id": [
+                  "name",
+                  "action_list.0.args.1",
+                  "action_list.0._raw",
+                  "_nested_name"
+                ],
                 "@item.title": [
                   "value"
-                ],
-                "@item.id": [
-                  "action_list.0.args.1",
-                  "action_list.0._raw"
                 ],
                 "@local.course": [
                   "action_list.2.args.1",

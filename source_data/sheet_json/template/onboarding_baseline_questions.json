@@ -117,7 +117,7 @@
       "type": "button",
       "name": "button_completed",
       "value": "@global.onboarding_completed_button",
-      "action_list": "click | emit: completed;\nclick | set_field: onboarding_settings_completed: true;\nclick | set_field: proximal_outcome_time_point : before;",
+      "action_list": "click | emit: completed;\nclick | set_field: onboarding_settings_completed: true;\nclick | set_field: proximal_outcome_time_point : before;\nclick | set_field: onboarding_completed_ts: @calc(now());",
       "parameter_list": "style: navigation;"
     },
     {
