@@ -10,7 +10,7 @@
 | animated_slides | 1 |
 | apple_sign_in_button | 2 |
 | audio | 4 |
-| button | 127 |
+| button | 129 |
 | combo_box | 27 |
 | data_items | 252 |
 | debug_toggle | 1 |
@@ -20,6 +20,7 @@
 | google_sign_in_button | 2 |
 | image | 27 |
 | items | 16 |
+| lottie | 1 |
 | lottie_animation | 8 |
 | nested_properties | 533 |
 | number_selector | 1 |
@@ -43,11 +44,11 @@
 | task_card | 4 |
 | task_progress_bar | 5 |
 | template | 811 |
-| text | 326 |
+| text | 327 |
 | text_area | 4 |
 | text_box | 23 |
 | text_bubble | 32 |
-| title | 69 |
+| title | 70 |
 | toggle_bar | 5 |
 | update_action_list | 4 |
 | video | 4 |
@@ -64,13 +65,13 @@
 | asset_pack | 4 |
 | auth | 3 |
 | emit: changed | 7 |
-| emit: completed | 177 |
+| emit: completed | 178 |
 | emit: force_reload | 5 |
 | emit: force_reprocess | 13 |
 | emit: force_restart | 3 |
 | emit: server_sync | 6 |
 | emit: set_language | 2 |
-| emit: uncompleted | 170 |
+| emit: uncompleted | 171 |
 | feedback | 13 |
 | go_to | 28 |
 | nav | 1 |
@@ -721,7 +722,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | lottie/relax/square_flow.json | 5.9 | 47 |
 | lottie/ux/bulging_circles.json | 11.8 | 1 |
 | lottie/ux/checkmark.json | 24.6 | 1 |
-| lottie/ux/gift_box.json | 674.5 | 1 |
+| lottie/ux/gift_box.json | 674.5 | 2 |
 | temp/congrats.json | 50.4 | 1 |
 </details>
 
@@ -823,10 +824,10 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_pipe |  | 4 |
 | data_pipe | generated | 150 |
 | generator |  | 9 |
-| global |  | 12 |
+| global |  | 13 |
 | global | onboarding | 16 |
 | global | proximal_outcomes | 2 |
-| template |  | 110 |
+| template |  | 111 |
 | template | generated | 338 |
 | template | legal_terms | 4 |
 | template | proximal_outcomes | 18 |

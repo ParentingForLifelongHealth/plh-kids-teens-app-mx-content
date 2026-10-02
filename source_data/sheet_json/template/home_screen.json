@@ -4,6 +4,19 @@
   "status": "released",
   "rows": [
     {
+      "type": "begin_data_items",
+      "name": "module_tasks",
+      "parameter_list": "filter: @item.completed; limit: 1;"
+    },
+    {
+      "type": "update_action_list",
+      "action_list": "nav_resume | pop_up: notification_permission;\nnav_resume | set_field: notification_permission_shown: true",
+      "condition": "@fields._notification_permission_status !== 'granted' && !@fields.notification_permission_shown"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
       "name": "home_screen_logo",
       "value": "images/logos/app_logo.png",
       "condition": "!@global.home_screen_logo_asset"

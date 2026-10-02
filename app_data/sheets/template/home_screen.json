@@ -4,6 +4,103 @@
   "status": "released",
   "rows": [
     {
+      "type": "data_items",
+      "name": "module_tasks",
+      "parameter_list": {
+        "filter": "@item.completed",
+        "limit": "1"
+      },
+      "rows": [
+        {
+          "type": "update_action_list",
+          "action_list": [
+            {
+              "trigger": "nav_resume",
+              "action_id": "pop_up",
+              "args": [
+                "notification_permission"
+              ],
+              "_raw": "nav_resume | pop_up: notification_permission"
+            },
+            {
+              "trigger": "nav_resume",
+              "action_id": "set_field",
+              "args": [
+                "notification_permission_shown",
+                true
+              ],
+              "_raw": "nav_resume | set_field: notification_permission_shown: true"
+            }
+          ],
+          "condition": "@fields._notification_permission_status !== 'granted' && !@fields.notification_permission_shown",
+          "name": "update_action_list_1_@item.id",
+          "_nested_name": "module_tasks.update_action_list_1_@item.id",
+          "_dynamicFields": {
+            "condition": [
+              {
+                "fullExpression": "@fields._notification_permission_status !== 'granted' && !@fields.notification_permission_shown",
+                "matchedExpression": "@fields._notification_permission_status",
+                "type": "fields",
+                "fieldName": "_notification_permission_status"
+              },
+              {
+                "fullExpression": "@fields._notification_permission_status !== 'granted' && !@fields.notification_permission_shown",
+                "matchedExpression": "!@fields.notification_permission_shown",
+                "type": "fields",
+                "fieldName": "notification_permission_shown"
+              }
+            ],
+            "name": [
+              {
+                "fullExpression": "update_action_list_1_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "module_tasks.update_action_list_1_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@fields._notification_permission_status": [
+              "condition"
+            ],
+            "!@fields.notification_permission_shown": [
+              "condition"
+            ],
+            "@item.id": [
+              "name",
+              "_nested_name"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "module_tasks",
+      "_dynamicFields": {
+        "parameter_list": {
+          "filter": [
+            {
+              "fullExpression": "@item.completed",
+              "matchedExpression": "@item.completed",
+              "type": "item",
+              "fieldName": "completed"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@item.completed": [
+          "parameter_list.filter"
+        ]
+      }
+    },
+    {
       "name": "home_screen_logo",
       "value": "images/logos/app_logo.png",
       "_translations": {

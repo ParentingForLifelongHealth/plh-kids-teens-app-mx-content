@@ -1,0 +1,57 @@
+{
+  "flow_type": "global",
+  "flow_name": "notification_permission_global",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "notification_permission_lottie",
+      "value": "lottie/ux/checkmark.json",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "notification_permission_title",
+      "value": "First lesson done!",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "notification_permission_text",
+      "value": "Would you like to be reminded when it's time for your next lesson?\n1. Tap the button below.\n2. Tap Allow on the next box.",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "notification_permission_button_text_yes",
+      "value": "Yes, remind me!",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "notification_permission_button_text_no",
+      "value": "Maybe later",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_field_default",
+      "name": "notification_permission_shown",
+      "value": false
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_global V3",
+    "path": "templates/notification_permission.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1RYEkujjiH6k3MAQkrNnZz0UikvzJ_M5IL9_5WDxY0cQ"
+  }
+}
