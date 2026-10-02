@@ -1,0 +1,165 @@
+{
+  "flow_type": "template",
+  "flow_name": "notification_permission",
+  "status": "released",
+  "rows": [
+    {
+      "type": "lottie_animation",
+      "name": "notification_permission_lottie",
+      "value": "@global.notification_permission_lottie",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "notification_permission_lottie",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@global.notification_permission_lottie",
+            "matchedExpression": "@global.notification_permission_lottie",
+            "type": "global",
+            "fieldName": "notification_permission_lottie"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@global.notification_permission_lottie": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "name": "notification_permission_title",
+      "value": "@global.notification_permission_title",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "variant": "header"
+      },
+      "_nested_name": "notification_permission_title",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@global.notification_permission_title",
+            "matchedExpression": "@global.notification_permission_title",
+            "type": "global",
+            "fieldName": "notification_permission_title"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@global.notification_permission_title": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "notification_permission_text",
+      "value": "@global.notification_permission_text",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "text_align": "center"
+      },
+      "_nested_name": "notification_permission_text",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@global.notification_permission_text",
+            "matchedExpression": "@global.notification_permission_text",
+            "type": "global",
+            "fieldName": "notification_permission_text"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@global.notification_permission_text": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "name": "notification_permission_button_text_yes",
+      "value": "@global.notification_permission_button_text_yes",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "completed"
+          ],
+          "_raw": "click | emit: completed"
+        }
+      ],
+      "parameter_list": {
+        "style": "navigation"
+      },
+      "_nested_name": "notification_permission_button_text_yes",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@global.notification_permission_button_text_yes",
+            "matchedExpression": "@global.notification_permission_button_text_yes",
+            "type": "global",
+            "fieldName": "notification_permission_button_text_yes"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@global.notification_permission_button_text_yes": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "name": "notification_permission_button_text_no",
+      "value": "<u>@global.notification_permission_button_text_no</u>",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "uncompleted"
+          ],
+          "_raw": "click | emit: uncompleted"
+        }
+      ],
+      "parameter_list": {
+        "variant": "card",
+        "style": "no-background"
+      },
+      "_nested_name": "notification_permission_button_text_no",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "<u>@global.notification_permission_button_text_no</u>",
+            "matchedExpression": "@global.notification_permission_button_text_no",
+            "type": "global",
+            "fieldName": "notification_permission_button_text_no"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@global.notification_permission_button_text_no": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_global V3",
+    "path": "templates/notification_permission.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1RYEkujjiH6k3MAQkrNnZz0UikvzJ_M5IL9_5WDxY0cQ"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "flow_type": "template",
+  "flow_name": "notification_permission",
+  "status": "released",
+  "rows": [
+    {
+      "type": "lottie_animation",
+      "name": "notification_permission_lottie",
+      "value": "@global.notification_permission_lottie"
+    },
+    {
+      "type": "title",
+      "name": "notification_permission_title",
+      "value": "@global.notification_permission_title",
+      "parameter_list": "variant: header"
+    },
+    {
+      "type": "text",
+      "name": "notification_permission_text",
+      "value": "@global.notification_permission_text",
+      "parameter_list": "text_align: center"
+    },
+    {
+      "type": "button",
+      "name": "notification_permission_button_text_yes",
+      "value": "@global.notification_permission_button_text_yes",
+      "action_list": "click | emit: completed",
+      "parameter_list": "style: navigation;"
+    },
+    {
+      "type": "button",
+      "name": "notification_permission_button_text_no",
+      "value": "<u>@global.notification_permission_button_text_no</u>",
+      "action_list": "click | emit: uncompleted",
+      "parameter_list": "variant: card;\nstyle: no-background;"
+    }
+  ]
+}
