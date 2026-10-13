@@ -6,7 +6,7 @@
   "override_condition": "(@fields._deployment_name == \"plh_kids_teens_mx\")",
   "rows": [
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "app_name",
       "value": "Crianza con Conciencia +",
       "_translations": {
@@ -14,7 +14,7 @@
       }
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "deployment_id",
       "value": "mexico",
       "_translations": {
@@ -23,7 +23,7 @@
       "exclude_from_translation": true
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "app_name_full",
       "value": "Crianza con Conciencia +",
       "_translations": {
@@ -31,7 +31,7 @@
       }
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "home_screen_logo_asset",
       "value": "images/logos/CRyA_logo.png",
       "_translations": {
@@ -39,15 +39,15 @@
       }
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "hp_locked_image_asset"
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "hp_unlocked_image_asset"
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "activity_footer_image_asset",
       "value": "images/backgrounds/mountains_trees.svg",
       "_translations": {
@@ -55,7 +55,7 @@
       }
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "home_screen_logo_height",
       "value": "48px",
       "_translations": {
@@ -63,7 +63,7 @@
       }
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "deployment_terms_field",
       "value": "terms_v20241205_accepted",
       "_translations": {
@@ -72,7 +72,7 @@
       "exclude_from_translation": true
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "deployment_terms_text",
       "value": "5 de Diciembre de 2024",
       "_translations": {
@@ -80,24 +80,24 @@
       }
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "has_multiple_content_packages",
       "value": true
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "has_multiple_languages",
       "value": true,
       "exclude_from_translation": true
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "has_optional_login",
       "value": false,
       "exclude_from_translation": true
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "combo_box_placeholder",
       "value": "Selecciona una opción",
       "_translations": {
@@ -105,7 +105,7 @@
       }
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "section_variant",
       "value": "box_primary",
       "_translations": {
@@ -114,7 +114,7 @@
       "exclude_from_translation": true
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "first_completion_icon",
       "value": "trophy",
       "_translations": {
@@ -123,7 +123,7 @@
       "exclude_from_translation": true
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "subsequent_completion_icon",
       "value": "checkmark",
       "_translations": {
@@ -132,7 +132,7 @@
       "exclude_from_translation": true
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "test_mode_code",
       "value": "ParentAppTest",
       "_translations": {
@@ -141,13 +141,13 @@
       "exclude_from_translation": true
     },
     {
-      "es": "declare_field_default",
+      "type": "declare_field_default",
       "name": "countdown_days",
       "value": 0,
       "exclude_from_translation": true
     },
     {
-      "es": "declare_field_default",
+      "type": "declare_field_default",
       "name": "child_age_tag",
       "value": "teen",
       "_translations": {
@@ -156,7 +156,7 @@
       "exclude_from_translation": true
     },
     {
-      "es": "declare_field_default",
+      "type": "declare_field_default",
       "name": "user_type",
       "value": "parent",
       "_translations": {
@@ -165,13 +165,13 @@
       "exclude_from_translation": true
     },
     {
-      "es": "declare_field_default",
+      "type": "declare_field_default",
       "name": "display_modules_as_list",
       "value": true,
       "exclude_from_translation": true
     },
     {
-      "es": "declare_field_default",
+      "type": "declare_field_default",
       "name": "facilitator_id",
       "value": "facilitator_female",
       "_translations": {
@@ -180,7 +180,7 @@
       "exclude_from_translation": true
     },
     {
-      "es": "declare_field_default",
+      "type": "declare_field_default",
       "name": "facilitator_name",
       "value": "@data.characters.facilitator_female.name",
       "_translations": {
@@ -189,7 +189,7 @@
       "exclude_from_translation": true
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "greeting",
       "value": "Hola",
       "_translations": {
@@ -197,7 +197,7 @@
       }
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "unlock_course_title",
       "value": "Cursos",
       "_translations": {
@@ -205,7 +205,7 @@
       }
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "unlock_course_text",
       "value": "¡Gana un certificado por cada curso completado!",
       "_translations": {
@@ -213,15 +213,15 @@
       }
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "lock_course_title"
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "lock_course_text"
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "complete_course_title",
       "value": "Cursos completados",
       "_translations": {
@@ -229,11 +229,11 @@
       }
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "complete_course_text"
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "all_unlock_course_title",
       "value": "Explorar cursos",
       "_translations": {
@@ -241,11 +241,11 @@
       }
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "all_unlock_course_text"
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "completed_text",
       "value": "COMPLETO",
       "_translations": {
@@ -253,7 +253,7 @@
       }
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "locked_text",
       "value": "AUN NO DISPONIBLE",
       "_translations": {
@@ -261,7 +261,7 @@
       }
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "sub_items_name",
       "value": "estrategias",
       "_translations": {
@@ -269,7 +269,7 @@
       }
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "course_action_text",
       "value": "Continuar",
       "_translations": {
@@ -277,7 +277,7 @@
       }
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "course_badge_text",
       "value": "Estrategias",
       "_translations": {
@@ -285,7 +285,7 @@
       }
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "review_action_text",
       "value": "Continuar",
       "_translations": {
@@ -293,7 +293,7 @@
       }
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "review_badge_text",
       "value": "Reflexionemos",
       "_translations": {
@@ -301,7 +301,7 @@
       }
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "all_complete_title",
       "value": "Lo lograste, ¡Felicidades!",
       "_translations": {
@@ -309,7 +309,7 @@
       }
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "all_complete_text",
       "value": "Has completado todas las sesiones. ¡Bien hecho!",
       "_translations": {
@@ -317,7 +317,7 @@
       }
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "all_complete_image",
       "value": "images/icons/celebration.svg",
       "_translations": {
@@ -326,7 +326,7 @@
       "exclude_from_translation": true
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "back_to_home",
       "value": "Volver a los cursos",
       "_translations": {
@@ -334,7 +334,7 @@
       }
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "restart",
       "value": "Reiniciar",
       "_translations": {
@@ -342,7 +342,7 @@
       }
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "feedback",
       "value": "Comentarios",
       "_translations": {
@@ -350,12 +350,12 @@
       }
     },
     {
-      "es": "declare_field_default",
+      "type": "declare_field_default",
       "name": "n_modules_completed",
       "value": 0
     },
     {
-      "es": "declare_field_default",
+      "type": "declare_field_default",
       "name": "last_module_in_progress",
       "value": "NA",
       "_translations": {
@@ -363,7 +363,7 @@
       }
     },
     {
-      "es": "declare_global_constant",
+      "type": "declare_global_constant",
       "name": "gender_youtube_link",
       "value": true
     }

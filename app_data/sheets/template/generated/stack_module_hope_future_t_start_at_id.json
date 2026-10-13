@@ -37,7 +37,7 @@
         }
       ],
       "parameter_list": {
-        "filter": "(@item.id !== @local.module_id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))"
+        "filter": "(@item.id !== @local.module_id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.user_gender_list || @item.user_gender_list.includes(@fields.user_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))"
       },
       "exclude_from_translation": true,
       "_nested_name": "count_modules",
@@ -53,73 +53,91 @@
         "parameter_list": {
           "filter": [
             {
-              "fullExpression": "(@item.id !== @local.module_id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "fullExpression": "(@item.id !== @local.module_id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.user_gender_list || @item.user_gender_list.includes(@fields.user_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
               "matchedExpression": "@item.id",
               "type": "item",
               "fieldName": "id"
             },
             {
-              "fullExpression": "(@item.id !== @local.module_id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "fullExpression": "(@item.id !== @local.module_id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.user_gender_list || @item.user_gender_list.includes(@fields.user_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
               "matchedExpression": "@local.module_id",
               "type": "local",
               "fieldName": "module_id"
             },
             {
-              "fullExpression": "(@item.id !== @local.module_id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "fullExpression": "(@item.id !== @local.module_id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.user_gender_list || @item.user_gender_list.includes(@fields.user_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
               "matchedExpression": "!@item.completed",
               "type": "item",
               "fieldName": "completed"
             },
             {
-              "fullExpression": "(@item.id !== @local.module_id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "fullExpression": "(@item.id !== @local.module_id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.user_gender_list || @item.user_gender_list.includes(@fields.user_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
               "matchedExpression": "!@item.age_list",
               "type": "item",
               "fieldName": "age_list"
             },
             {
-              "fullExpression": "(@item.id !== @local.module_id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "fullExpression": "(@item.id !== @local.module_id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.user_gender_list || @item.user_gender_list.includes(@fields.user_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
               "matchedExpression": "@item.age_list.includes",
               "type": "item",
               "fieldName": "age_list"
             },
             {
-              "fullExpression": "(@item.id !== @local.module_id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "fullExpression": "(@item.id !== @local.module_id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.user_gender_list || @item.user_gender_list.includes(@fields.user_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
               "matchedExpression": "@fields.child_age",
               "type": "fields",
               "fieldName": "child_age"
             },
             {
-              "fullExpression": "(@item.id !== @local.module_id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "fullExpression": "(@item.id !== @local.module_id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.user_gender_list || @item.user_gender_list.includes(@fields.user_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
               "matchedExpression": "!@item.child_gender_list",
               "type": "item",
               "fieldName": "child_gender_list"
             },
             {
-              "fullExpression": "(@item.id !== @local.module_id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "fullExpression": "(@item.id !== @local.module_id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.user_gender_list || @item.user_gender_list.includes(@fields.user_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
               "matchedExpression": "@item.child_gender_list.includes",
               "type": "item",
               "fieldName": "child_gender_list"
             },
             {
-              "fullExpression": "(@item.id !== @local.module_id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "fullExpression": "(@item.id !== @local.module_id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.user_gender_list || @item.user_gender_list.includes(@fields.user_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
               "matchedExpression": "@fields.child_gender",
               "type": "fields",
               "fieldName": "child_gender"
             },
             {
-              "fullExpression": "(@item.id !== @local.module_id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "fullExpression": "(@item.id !== @local.module_id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.user_gender_list || @item.user_gender_list.includes(@fields.user_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "matchedExpression": "!@item.user_gender_list",
+              "type": "item",
+              "fieldName": "user_gender_list"
+            },
+            {
+              "fullExpression": "(@item.id !== @local.module_id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.user_gender_list || @item.user_gender_list.includes(@fields.user_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "matchedExpression": "@item.user_gender_list.includes",
+              "type": "item",
+              "fieldName": "user_gender_list"
+            },
+            {
+              "fullExpression": "(@item.id !== @local.module_id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.user_gender_list || @item.user_gender_list.includes(@fields.user_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "matchedExpression": "@fields.user_gender",
+              "type": "fields",
+              "fieldName": "user_gender"
+            },
+            {
+              "fullExpression": "(@item.id !== @local.module_id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.user_gender_list || @item.user_gender_list.includes(@fields.user_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
               "matchedExpression": "!@item.caregiver_relationship_list",
               "type": "item",
               "fieldName": "caregiver_relationship_list"
             },
             {
-              "fullExpression": "(@item.id !== @local.module_id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "fullExpression": "(@item.id !== @local.module_id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.user_gender_list || @item.user_gender_list.includes(@fields.user_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
               "matchedExpression": "@item.caregiver_relationship_list.includes",
               "type": "item",
               "fieldName": "caregiver_relationship_list"
             },
             {
-              "fullExpression": "(@item.id !== @local.module_id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
+              "fullExpression": "(@item.id !== @local.module_id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.user_gender_list || @item.user_gender_list.includes(@fields.user_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))",
               "matchedExpression": "@fields.user_relationship",
               "type": "fields",
               "fieldName": "user_relationship"
@@ -156,6 +174,15 @@
           "parameter_list.filter"
         ],
         "@fields.child_gender": [
+          "parameter_list.filter"
+        ],
+        "!@item.user_gender_list": [
+          "parameter_list.filter"
+        ],
+        "@item.user_gender_list.includes": [
+          "parameter_list.filter"
+        ],
+        "@fields.user_gender": [
           "parameter_list.filter"
         ],
         "!@item.caregiver_relationship_list": [
@@ -757,7 +784,6 @@
       "_translations": {
         "value": {}
       },
-      "condition": false,
       "exclude_from_translation": true,
       "name": "text_23",
       "_nested_name": "text_23",

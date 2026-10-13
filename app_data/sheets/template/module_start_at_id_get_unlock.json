@@ -34,6 +34,2490 @@
       "_nested_name": "unlocked_activity_count"
     },
     {
+      "name": "po_last_7d_ts",
+      "value": "@global.proximal_outcome_due_from == \"viewed\" && @fields.prox_7d_viewed_ts ? @fields.prox_7d_viewed_ts : @fields.prox_7d_last_ts",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "po_last_7d_ts",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@global.proximal_outcome_due_from == \"viewed\" && @fields.prox_7d_viewed_ts ? @fields.prox_7d_viewed_ts : @fields.prox_7d_last_ts",
+            "matchedExpression": "@global.proximal_outcome_due_from",
+            "type": "global",
+            "fieldName": "proximal_outcome_due_from"
+          },
+          {
+            "fullExpression": "@global.proximal_outcome_due_from == \"viewed\" && @fields.prox_7d_viewed_ts ? @fields.prox_7d_viewed_ts : @fields.prox_7d_last_ts",
+            "matchedExpression": "@fields.prox_7d_viewed_ts",
+            "type": "fields",
+            "fieldName": "prox_7d_viewed_ts"
+          },
+          {
+            "fullExpression": "@global.proximal_outcome_due_from == \"viewed\" && @fields.prox_7d_viewed_ts ? @fields.prox_7d_viewed_ts : @fields.prox_7d_last_ts",
+            "matchedExpression": "@fields.prox_7d_viewed_ts",
+            "type": "fields",
+            "fieldName": "prox_7d_viewed_ts"
+          },
+          {
+            "fullExpression": "@global.proximal_outcome_due_from == \"viewed\" && @fields.prox_7d_viewed_ts ? @fields.prox_7d_viewed_ts : @fields.prox_7d_last_ts",
+            "matchedExpression": "@fields.prox_7d_last_ts",
+            "type": "fields",
+            "fieldName": "prox_7d_last_ts"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@global.proximal_outcome_due_from": [
+          "value"
+        ],
+        "@fields.prox_7d_viewed_ts": [
+          "value",
+          "value"
+        ],
+        "@fields.prox_7d_last_ts": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "days_since_prox_7d_last",
+      "value": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@local.po_last_7d_ts).setHours(0,0,0,0))))",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "days_since_prox_7d_last",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@local.po_last_7d_ts).setHours(0,0,0,0))))",
+            "matchedExpression": "@local.po_last_7d_ts",
+            "type": "local",
+            "fieldName": "po_last_7d_ts"
+          },
+          {
+            "fullExpression": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@local.po_last_7d_ts).setHours(0,0,0,0))))",
+            "matchedExpression": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@local.po_last_7d_ts).setHours(0,0,0,0))))",
+            "type": "calc",
+            "fieldName": "window.date_fns.differenceInDays(new Date(),new Date(new Date(@local.po_last_7d_ts).setHours(0,0,0,0)))"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.po_last_7d_ts": [
+          "value"
+        ],
+        "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@local.po_last_7d_ts).setHours(0,0,0,0))))": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "po_due_now",
+      "value": "@calc(!!@global.has_proximal_outcomes && @local.days_since_prox_7d_last >= @global.proximal_outcome_frequency)",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "po_due_now",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(!!@global.has_proximal_outcomes && @local.days_since_prox_7d_last >= @global.proximal_outcome_frequency)",
+            "matchedExpression": "!@global.has_proximal_outcomes",
+            "type": "global",
+            "fieldName": "has_proximal_outcomes"
+          },
+          {
+            "fullExpression": "@calc(!!@global.has_proximal_outcomes && @local.days_since_prox_7d_last >= @global.proximal_outcome_frequency)",
+            "matchedExpression": "@local.days_since_prox_7d_last",
+            "type": "local",
+            "fieldName": "days_since_prox_7d_last"
+          },
+          {
+            "fullExpression": "@calc(!!@global.has_proximal_outcomes && @local.days_since_prox_7d_last >= @global.proximal_outcome_frequency)",
+            "matchedExpression": "@global.proximal_outcome_frequency",
+            "type": "global",
+            "fieldName": "proximal_outcome_frequency"
+          },
+          {
+            "fullExpression": "@calc(!!@global.has_proximal_outcomes && @local.days_since_prox_7d_last >= @global.proximal_outcome_frequency)",
+            "matchedExpression": "@calc(!!@global.has_proximal_outcomes && @local.days_since_prox_7d_last >= @global.proximal_outcome_frequency)",
+            "type": "calc",
+            "fieldName": "!!@global.has_proximal_outcomes && @local.days_since_prox_7d_last >= @global.proximal_outcome_frequency"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "!@global.has_proximal_outcomes": [
+          "value"
+        ],
+        "@local.days_since_prox_7d_last": [
+          "value"
+        ],
+        "@global.proximal_outcome_frequency": [
+          "value"
+        ],
+        "@calc(!!@global.has_proximal_outcomes && @local.days_since_prox_7d_last >= @global.proximal_outcome_frequency)": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "po_base_ms",
+      "value": "@calc(date_fns.set(date_fns.startOfDay(@local.po_due_now || !@local.po_last_7d_ts ? new Date() : new Date(@local.po_last_7d_ts)), {hours: 19}).getTime())",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "po_base_ms",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(date_fns.set(date_fns.startOfDay(@local.po_due_now || !@local.po_last_7d_ts ? new Date() : new Date(@local.po_last_7d_ts)), {hours: 19}).getTime())",
+            "matchedExpression": "@local.po_due_now",
+            "type": "local",
+            "fieldName": "po_due_now"
+          },
+          {
+            "fullExpression": "@calc(date_fns.set(date_fns.startOfDay(@local.po_due_now || !@local.po_last_7d_ts ? new Date() : new Date(@local.po_last_7d_ts)), {hours: 19}).getTime())",
+            "matchedExpression": "!@local.po_last_7d_ts",
+            "type": "local",
+            "fieldName": "po_last_7d_ts"
+          },
+          {
+            "fullExpression": "@calc(date_fns.set(date_fns.startOfDay(@local.po_due_now || !@local.po_last_7d_ts ? new Date() : new Date(@local.po_last_7d_ts)), {hours: 19}).getTime())",
+            "matchedExpression": "@local.po_last_7d_ts",
+            "type": "local",
+            "fieldName": "po_last_7d_ts"
+          },
+          {
+            "fullExpression": "@calc(date_fns.set(date_fns.startOfDay(@local.po_due_now || !@local.po_last_7d_ts ? new Date() : new Date(@local.po_last_7d_ts)), {hours: 19}).getTime())",
+            "matchedExpression": "@calc(date_fns.set(date_fns.startOfDay(@local.po_due_now || !@local.po_last_7d_ts ? new Date() : new Date(@local.po_last_7d_ts)), {hours: 19}).getTime())",
+            "type": "calc",
+            "fieldName": "date_fns.set(date_fns.startOfDay(@local.po_due_now || !@local.po_last_7d_ts ? new Date() : new Date(@local.po_last_7d_ts)), {hours: 19}).getTime()"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.po_due_now": [
+          "value"
+        ],
+        "!@local.po_last_7d_ts": [
+          "value"
+        ],
+        "@local.po_last_7d_ts": [
+          "value"
+        ],
+        "@calc(date_fns.set(date_fns.startOfDay(@local.po_due_now || !@local.po_last_7d_ts ? new Date() : new Date(@local.po_last_7d_ts)), {hours: 19}).getTime())": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "po_cap_ms",
+      "value": "@calc(date_fns.addDays(new Date(@fields.onboarding_completed_ts || this.app_first_launch), 180).getTime())",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "po_cap_ms",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(date_fns.addDays(new Date(@fields.onboarding_completed_ts || this.app_first_launch), 180).getTime())",
+            "matchedExpression": "@fields.onboarding_completed_ts",
+            "type": "fields",
+            "fieldName": "onboarding_completed_ts"
+          },
+          {
+            "fullExpression": "@calc(date_fns.addDays(new Date(@fields.onboarding_completed_ts || this.app_first_launch), 180).getTime())",
+            "matchedExpression": "@calc(date_fns.addDays(new Date(@fields.onboarding_completed_ts || this.app_first_launch), 180).getTime())",
+            "type": "calc",
+            "fieldName": "date_fns.addDays(new Date(@fields.onboarding_completed_ts || this.app_first_launch), 180).getTime()"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.onboarding_completed_ts": [
+          "value"
+        ],
+        "@calc(date_fns.addDays(new Date(@fields.onboarding_completed_ts || this.app_first_launch), 180).getTime())": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "po_ok_1",
+      "value": "@calc(date_fns.addDays(new Date(@local.po_base_ms), 30).getTime() < @local.po_cap_ms)",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "po_ok_1",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(date_fns.addDays(new Date(@local.po_base_ms), 30).getTime() < @local.po_cap_ms)",
+            "matchedExpression": "@local.po_base_ms",
+            "type": "local",
+            "fieldName": "po_base_ms"
+          },
+          {
+            "fullExpression": "@calc(date_fns.addDays(new Date(@local.po_base_ms), 30).getTime() < @local.po_cap_ms)",
+            "matchedExpression": "@local.po_cap_ms",
+            "type": "local",
+            "fieldName": "po_cap_ms"
+          },
+          {
+            "fullExpression": "@calc(date_fns.addDays(new Date(@local.po_base_ms), 30).getTime() < @local.po_cap_ms)",
+            "matchedExpression": "@calc(date_fns.addDays(new Date(@local.po_base_ms), 30).getTime() < @local.po_cap_ms)",
+            "type": "calc",
+            "fieldName": "date_fns.addDays(new Date(@local.po_base_ms), 30).getTime() < @local.po_cap_ms"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.po_base_ms": [
+          "value"
+        ],
+        "@local.po_cap_ms": [
+          "value"
+        ],
+        "@calc(date_fns.addDays(new Date(@local.po_base_ms), 30).getTime() < @local.po_cap_ms)": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "po_ok_2",
+      "value": "@calc(date_fns.addDays(new Date(@local.po_base_ms), 60).getTime() < @local.po_cap_ms)",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "po_ok_2",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(date_fns.addDays(new Date(@local.po_base_ms), 60).getTime() < @local.po_cap_ms)",
+            "matchedExpression": "@local.po_base_ms",
+            "type": "local",
+            "fieldName": "po_base_ms"
+          },
+          {
+            "fullExpression": "@calc(date_fns.addDays(new Date(@local.po_base_ms), 60).getTime() < @local.po_cap_ms)",
+            "matchedExpression": "@local.po_cap_ms",
+            "type": "local",
+            "fieldName": "po_cap_ms"
+          },
+          {
+            "fullExpression": "@calc(date_fns.addDays(new Date(@local.po_base_ms), 60).getTime() < @local.po_cap_ms)",
+            "matchedExpression": "@calc(date_fns.addDays(new Date(@local.po_base_ms), 60).getTime() < @local.po_cap_ms)",
+            "type": "calc",
+            "fieldName": "date_fns.addDays(new Date(@local.po_base_ms), 60).getTime() < @local.po_cap_ms"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.po_base_ms": [
+          "value"
+        ],
+        "@local.po_cap_ms": [
+          "value"
+        ],
+        "@calc(date_fns.addDays(new Date(@local.po_base_ms), 60).getTime() < @local.po_cap_ms)": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "po_ok_3",
+      "value": "@calc(date_fns.addDays(new Date(@local.po_base_ms), 90).getTime() < @local.po_cap_ms)",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "po_ok_3",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(date_fns.addDays(new Date(@local.po_base_ms), 90).getTime() < @local.po_cap_ms)",
+            "matchedExpression": "@local.po_base_ms",
+            "type": "local",
+            "fieldName": "po_base_ms"
+          },
+          {
+            "fullExpression": "@calc(date_fns.addDays(new Date(@local.po_base_ms), 90).getTime() < @local.po_cap_ms)",
+            "matchedExpression": "@local.po_cap_ms",
+            "type": "local",
+            "fieldName": "po_cap_ms"
+          },
+          {
+            "fullExpression": "@calc(date_fns.addDays(new Date(@local.po_base_ms), 90).getTime() < @local.po_cap_ms)",
+            "matchedExpression": "@calc(date_fns.addDays(new Date(@local.po_base_ms), 90).getTime() < @local.po_cap_ms)",
+            "type": "calc",
+            "fieldName": "date_fns.addDays(new Date(@local.po_base_ms), 90).getTime() < @local.po_cap_ms"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.po_base_ms": [
+          "value"
+        ],
+        "@local.po_cap_ms": [
+          "value"
+        ],
+        "@calc(date_fns.addDays(new Date(@local.po_base_ms), 90).getTime() < @local.po_cap_ms)": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "po_ok_4",
+      "value": "@calc(date_fns.addDays(new Date(@local.po_base_ms), 120).getTime() < @local.po_cap_ms)",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "po_ok_4",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(date_fns.addDays(new Date(@local.po_base_ms), 120).getTime() < @local.po_cap_ms)",
+            "matchedExpression": "@local.po_base_ms",
+            "type": "local",
+            "fieldName": "po_base_ms"
+          },
+          {
+            "fullExpression": "@calc(date_fns.addDays(new Date(@local.po_base_ms), 120).getTime() < @local.po_cap_ms)",
+            "matchedExpression": "@local.po_cap_ms",
+            "type": "local",
+            "fieldName": "po_cap_ms"
+          },
+          {
+            "fullExpression": "@calc(date_fns.addDays(new Date(@local.po_base_ms), 120).getTime() < @local.po_cap_ms)",
+            "matchedExpression": "@calc(date_fns.addDays(new Date(@local.po_base_ms), 120).getTime() < @local.po_cap_ms)",
+            "type": "calc",
+            "fieldName": "date_fns.addDays(new Date(@local.po_base_ms), 120).getTime() < @local.po_cap_ms"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.po_base_ms": [
+          "value"
+        ],
+        "@local.po_cap_ms": [
+          "value"
+        ],
+        "@calc(date_fns.addDays(new Date(@local.po_base_ms), 120).getTime() < @local.po_cap_ms)": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "po_ok_5",
+      "value": "@calc(date_fns.addDays(new Date(@local.po_base_ms), 150).getTime() < @local.po_cap_ms)",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "po_ok_5",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(date_fns.addDays(new Date(@local.po_base_ms), 150).getTime() < @local.po_cap_ms)",
+            "matchedExpression": "@local.po_base_ms",
+            "type": "local",
+            "fieldName": "po_base_ms"
+          },
+          {
+            "fullExpression": "@calc(date_fns.addDays(new Date(@local.po_base_ms), 150).getTime() < @local.po_cap_ms)",
+            "matchedExpression": "@local.po_cap_ms",
+            "type": "local",
+            "fieldName": "po_cap_ms"
+          },
+          {
+            "fullExpression": "@calc(date_fns.addDays(new Date(@local.po_base_ms), 150).getTime() < @local.po_cap_ms)",
+            "matchedExpression": "@calc(date_fns.addDays(new Date(@local.po_base_ms), 150).getTime() < @local.po_cap_ms)",
+            "type": "calc",
+            "fieldName": "date_fns.addDays(new Date(@local.po_base_ms), 150).getTime() < @local.po_cap_ms"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.po_base_ms": [
+          "value"
+        ],
+        "@local.po_cap_ms": [
+          "value"
+        ],
+        "@calc(date_fns.addDays(new Date(@local.po_base_ms), 150).getTime() < @local.po_cap_ms)": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "po_c1_first",
+      "value": "@calc(@local.po_ok_1 ? date_fns.addDays(new Date(@local.po_base_ms), 30) : \"\")",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "po_c1_first",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(@local.po_ok_1 ? date_fns.addDays(new Date(@local.po_base_ms), 30) : \"\")",
+            "matchedExpression": "@local.po_ok_1",
+            "type": "local",
+            "fieldName": "po_ok_1"
+          },
+          {
+            "fullExpression": "@calc(@local.po_ok_1 ? date_fns.addDays(new Date(@local.po_base_ms), 30) : \"\")",
+            "matchedExpression": "@local.po_base_ms",
+            "type": "local",
+            "fieldName": "po_base_ms"
+          },
+          {
+            "fullExpression": "@calc(@local.po_ok_1 ? date_fns.addDays(new Date(@local.po_base_ms), 30) : \"\")",
+            "matchedExpression": "@calc(@local.po_ok_1 ? date_fns.addDays(new Date(@local.po_base_ms), 30) : \"\")",
+            "type": "calc",
+            "fieldName": "@local.po_ok_1 ? date_fns.addDays(new Date(@local.po_base_ms), 30) : \"\""
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.po_ok_1": [
+          "value"
+        ],
+        "@local.po_base_ms": [
+          "value"
+        ],
+        "@calc(@local.po_ok_1 ? date_fns.addDays(new Date(@local.po_base_ms), 30) : \"\")": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "po_c1_r1",
+      "value": "@calc(@local.po_ok_1 ? date_fns.addDays(new Date(@local.po_base_ms), 37) : \"\")",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "po_c1_r1",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(@local.po_ok_1 ? date_fns.addDays(new Date(@local.po_base_ms), 37) : \"\")",
+            "matchedExpression": "@local.po_ok_1",
+            "type": "local",
+            "fieldName": "po_ok_1"
+          },
+          {
+            "fullExpression": "@calc(@local.po_ok_1 ? date_fns.addDays(new Date(@local.po_base_ms), 37) : \"\")",
+            "matchedExpression": "@local.po_base_ms",
+            "type": "local",
+            "fieldName": "po_base_ms"
+          },
+          {
+            "fullExpression": "@calc(@local.po_ok_1 ? date_fns.addDays(new Date(@local.po_base_ms), 37) : \"\")",
+            "matchedExpression": "@calc(@local.po_ok_1 ? date_fns.addDays(new Date(@local.po_base_ms), 37) : \"\")",
+            "type": "calc",
+            "fieldName": "@local.po_ok_1 ? date_fns.addDays(new Date(@local.po_base_ms), 37) : \"\""
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.po_ok_1": [
+          "value"
+        ],
+        "@local.po_base_ms": [
+          "value"
+        ],
+        "@calc(@local.po_ok_1 ? date_fns.addDays(new Date(@local.po_base_ms), 37) : \"\")": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "po_c1_r2",
+      "value": "@calc(@local.po_ok_1 ? date_fns.addDays(new Date(@local.po_base_ms), 44) : \"\")",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "po_c1_r2",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(@local.po_ok_1 ? date_fns.addDays(new Date(@local.po_base_ms), 44) : \"\")",
+            "matchedExpression": "@local.po_ok_1",
+            "type": "local",
+            "fieldName": "po_ok_1"
+          },
+          {
+            "fullExpression": "@calc(@local.po_ok_1 ? date_fns.addDays(new Date(@local.po_base_ms), 44) : \"\")",
+            "matchedExpression": "@local.po_base_ms",
+            "type": "local",
+            "fieldName": "po_base_ms"
+          },
+          {
+            "fullExpression": "@calc(@local.po_ok_1 ? date_fns.addDays(new Date(@local.po_base_ms), 44) : \"\")",
+            "matchedExpression": "@calc(@local.po_ok_1 ? date_fns.addDays(new Date(@local.po_base_ms), 44) : \"\")",
+            "type": "calc",
+            "fieldName": "@local.po_ok_1 ? date_fns.addDays(new Date(@local.po_base_ms), 44) : \"\""
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.po_ok_1": [
+          "value"
+        ],
+        "@local.po_base_ms": [
+          "value"
+        ],
+        "@calc(@local.po_ok_1 ? date_fns.addDays(new Date(@local.po_base_ms), 44) : \"\")": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "po_c2_first",
+      "value": "@calc(@local.po_ok_2 ? date_fns.addDays(new Date(@local.po_base_ms), 60) : \"\")",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "po_c2_first",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(@local.po_ok_2 ? date_fns.addDays(new Date(@local.po_base_ms), 60) : \"\")",
+            "matchedExpression": "@local.po_ok_2",
+            "type": "local",
+            "fieldName": "po_ok_2"
+          },
+          {
+            "fullExpression": "@calc(@local.po_ok_2 ? date_fns.addDays(new Date(@local.po_base_ms), 60) : \"\")",
+            "matchedExpression": "@local.po_base_ms",
+            "type": "local",
+            "fieldName": "po_base_ms"
+          },
+          {
+            "fullExpression": "@calc(@local.po_ok_2 ? date_fns.addDays(new Date(@local.po_base_ms), 60) : \"\")",
+            "matchedExpression": "@calc(@local.po_ok_2 ? date_fns.addDays(new Date(@local.po_base_ms), 60) : \"\")",
+            "type": "calc",
+            "fieldName": "@local.po_ok_2 ? date_fns.addDays(new Date(@local.po_base_ms), 60) : \"\""
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.po_ok_2": [
+          "value"
+        ],
+        "@local.po_base_ms": [
+          "value"
+        ],
+        "@calc(@local.po_ok_2 ? date_fns.addDays(new Date(@local.po_base_ms), 60) : \"\")": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "po_c2_r1",
+      "value": "@calc(@local.po_ok_2 ? date_fns.addDays(new Date(@local.po_base_ms), 67) : \"\")",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "po_c2_r1",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(@local.po_ok_2 ? date_fns.addDays(new Date(@local.po_base_ms), 67) : \"\")",
+            "matchedExpression": "@local.po_ok_2",
+            "type": "local",
+            "fieldName": "po_ok_2"
+          },
+          {
+            "fullExpression": "@calc(@local.po_ok_2 ? date_fns.addDays(new Date(@local.po_base_ms), 67) : \"\")",
+            "matchedExpression": "@local.po_base_ms",
+            "type": "local",
+            "fieldName": "po_base_ms"
+          },
+          {
+            "fullExpression": "@calc(@local.po_ok_2 ? date_fns.addDays(new Date(@local.po_base_ms), 67) : \"\")",
+            "matchedExpression": "@calc(@local.po_ok_2 ? date_fns.addDays(new Date(@local.po_base_ms), 67) : \"\")",
+            "type": "calc",
+            "fieldName": "@local.po_ok_2 ? date_fns.addDays(new Date(@local.po_base_ms), 67) : \"\""
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.po_ok_2": [
+          "value"
+        ],
+        "@local.po_base_ms": [
+          "value"
+        ],
+        "@calc(@local.po_ok_2 ? date_fns.addDays(new Date(@local.po_base_ms), 67) : \"\")": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "po_c2_r2",
+      "value": "@calc(@local.po_ok_2 ? date_fns.addDays(new Date(@local.po_base_ms), 74) : \"\")",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "po_c2_r2",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(@local.po_ok_2 ? date_fns.addDays(new Date(@local.po_base_ms), 74) : \"\")",
+            "matchedExpression": "@local.po_ok_2",
+            "type": "local",
+            "fieldName": "po_ok_2"
+          },
+          {
+            "fullExpression": "@calc(@local.po_ok_2 ? date_fns.addDays(new Date(@local.po_base_ms), 74) : \"\")",
+            "matchedExpression": "@local.po_base_ms",
+            "type": "local",
+            "fieldName": "po_base_ms"
+          },
+          {
+            "fullExpression": "@calc(@local.po_ok_2 ? date_fns.addDays(new Date(@local.po_base_ms), 74) : \"\")",
+            "matchedExpression": "@calc(@local.po_ok_2 ? date_fns.addDays(new Date(@local.po_base_ms), 74) : \"\")",
+            "type": "calc",
+            "fieldName": "@local.po_ok_2 ? date_fns.addDays(new Date(@local.po_base_ms), 74) : \"\""
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.po_ok_2": [
+          "value"
+        ],
+        "@local.po_base_ms": [
+          "value"
+        ],
+        "@calc(@local.po_ok_2 ? date_fns.addDays(new Date(@local.po_base_ms), 74) : \"\")": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "po_c3_first",
+      "value": "@calc(@local.po_ok_3 ? date_fns.addDays(new Date(@local.po_base_ms), 90) : \"\")",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "po_c3_first",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(@local.po_ok_3 ? date_fns.addDays(new Date(@local.po_base_ms), 90) : \"\")",
+            "matchedExpression": "@local.po_ok_3",
+            "type": "local",
+            "fieldName": "po_ok_3"
+          },
+          {
+            "fullExpression": "@calc(@local.po_ok_3 ? date_fns.addDays(new Date(@local.po_base_ms), 90) : \"\")",
+            "matchedExpression": "@local.po_base_ms",
+            "type": "local",
+            "fieldName": "po_base_ms"
+          },
+          {
+            "fullExpression": "@calc(@local.po_ok_3 ? date_fns.addDays(new Date(@local.po_base_ms), 90) : \"\")",
+            "matchedExpression": "@calc(@local.po_ok_3 ? date_fns.addDays(new Date(@local.po_base_ms), 90) : \"\")",
+            "type": "calc",
+            "fieldName": "@local.po_ok_3 ? date_fns.addDays(new Date(@local.po_base_ms), 90) : \"\""
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.po_ok_3": [
+          "value"
+        ],
+        "@local.po_base_ms": [
+          "value"
+        ],
+        "@calc(@local.po_ok_3 ? date_fns.addDays(new Date(@local.po_base_ms), 90) : \"\")": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "po_c3_r1",
+      "value": "@calc(@local.po_ok_3 ? date_fns.addDays(new Date(@local.po_base_ms), 97) : \"\")",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "po_c3_r1",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(@local.po_ok_3 ? date_fns.addDays(new Date(@local.po_base_ms), 97) : \"\")",
+            "matchedExpression": "@local.po_ok_3",
+            "type": "local",
+            "fieldName": "po_ok_3"
+          },
+          {
+            "fullExpression": "@calc(@local.po_ok_3 ? date_fns.addDays(new Date(@local.po_base_ms), 97) : \"\")",
+            "matchedExpression": "@local.po_base_ms",
+            "type": "local",
+            "fieldName": "po_base_ms"
+          },
+          {
+            "fullExpression": "@calc(@local.po_ok_3 ? date_fns.addDays(new Date(@local.po_base_ms), 97) : \"\")",
+            "matchedExpression": "@calc(@local.po_ok_3 ? date_fns.addDays(new Date(@local.po_base_ms), 97) : \"\")",
+            "type": "calc",
+            "fieldName": "@local.po_ok_3 ? date_fns.addDays(new Date(@local.po_base_ms), 97) : \"\""
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.po_ok_3": [
+          "value"
+        ],
+        "@local.po_base_ms": [
+          "value"
+        ],
+        "@calc(@local.po_ok_3 ? date_fns.addDays(new Date(@local.po_base_ms), 97) : \"\")": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "po_c3_r2",
+      "value": "@calc(@local.po_ok_3 ? date_fns.addDays(new Date(@local.po_base_ms), 104) : \"\")",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "po_c3_r2",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(@local.po_ok_3 ? date_fns.addDays(new Date(@local.po_base_ms), 104) : \"\")",
+            "matchedExpression": "@local.po_ok_3",
+            "type": "local",
+            "fieldName": "po_ok_3"
+          },
+          {
+            "fullExpression": "@calc(@local.po_ok_3 ? date_fns.addDays(new Date(@local.po_base_ms), 104) : \"\")",
+            "matchedExpression": "@local.po_base_ms",
+            "type": "local",
+            "fieldName": "po_base_ms"
+          },
+          {
+            "fullExpression": "@calc(@local.po_ok_3 ? date_fns.addDays(new Date(@local.po_base_ms), 104) : \"\")",
+            "matchedExpression": "@calc(@local.po_ok_3 ? date_fns.addDays(new Date(@local.po_base_ms), 104) : \"\")",
+            "type": "calc",
+            "fieldName": "@local.po_ok_3 ? date_fns.addDays(new Date(@local.po_base_ms), 104) : \"\""
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.po_ok_3": [
+          "value"
+        ],
+        "@local.po_base_ms": [
+          "value"
+        ],
+        "@calc(@local.po_ok_3 ? date_fns.addDays(new Date(@local.po_base_ms), 104) : \"\")": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "po_c4_first",
+      "value": "@calc(@local.po_ok_4 ? date_fns.addDays(new Date(@local.po_base_ms), 120) : \"\")",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "po_c4_first",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(@local.po_ok_4 ? date_fns.addDays(new Date(@local.po_base_ms), 120) : \"\")",
+            "matchedExpression": "@local.po_ok_4",
+            "type": "local",
+            "fieldName": "po_ok_4"
+          },
+          {
+            "fullExpression": "@calc(@local.po_ok_4 ? date_fns.addDays(new Date(@local.po_base_ms), 120) : \"\")",
+            "matchedExpression": "@local.po_base_ms",
+            "type": "local",
+            "fieldName": "po_base_ms"
+          },
+          {
+            "fullExpression": "@calc(@local.po_ok_4 ? date_fns.addDays(new Date(@local.po_base_ms), 120) : \"\")",
+            "matchedExpression": "@calc(@local.po_ok_4 ? date_fns.addDays(new Date(@local.po_base_ms), 120) : \"\")",
+            "type": "calc",
+            "fieldName": "@local.po_ok_4 ? date_fns.addDays(new Date(@local.po_base_ms), 120) : \"\""
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.po_ok_4": [
+          "value"
+        ],
+        "@local.po_base_ms": [
+          "value"
+        ],
+        "@calc(@local.po_ok_4 ? date_fns.addDays(new Date(@local.po_base_ms), 120) : \"\")": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "po_c4_r1",
+      "value": "@calc(@local.po_ok_4 ? date_fns.addDays(new Date(@local.po_base_ms), 127) : \"\")",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "po_c4_r1",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(@local.po_ok_4 ? date_fns.addDays(new Date(@local.po_base_ms), 127) : \"\")",
+            "matchedExpression": "@local.po_ok_4",
+            "type": "local",
+            "fieldName": "po_ok_4"
+          },
+          {
+            "fullExpression": "@calc(@local.po_ok_4 ? date_fns.addDays(new Date(@local.po_base_ms), 127) : \"\")",
+            "matchedExpression": "@local.po_base_ms",
+            "type": "local",
+            "fieldName": "po_base_ms"
+          },
+          {
+            "fullExpression": "@calc(@local.po_ok_4 ? date_fns.addDays(new Date(@local.po_base_ms), 127) : \"\")",
+            "matchedExpression": "@calc(@local.po_ok_4 ? date_fns.addDays(new Date(@local.po_base_ms), 127) : \"\")",
+            "type": "calc",
+            "fieldName": "@local.po_ok_4 ? date_fns.addDays(new Date(@local.po_base_ms), 127) : \"\""
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.po_ok_4": [
+          "value"
+        ],
+        "@local.po_base_ms": [
+          "value"
+        ],
+        "@calc(@local.po_ok_4 ? date_fns.addDays(new Date(@local.po_base_ms), 127) : \"\")": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "po_c4_r2",
+      "value": "@calc(@local.po_ok_4 ? date_fns.addDays(new Date(@local.po_base_ms), 134) : \"\")",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "po_c4_r2",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(@local.po_ok_4 ? date_fns.addDays(new Date(@local.po_base_ms), 134) : \"\")",
+            "matchedExpression": "@local.po_ok_4",
+            "type": "local",
+            "fieldName": "po_ok_4"
+          },
+          {
+            "fullExpression": "@calc(@local.po_ok_4 ? date_fns.addDays(new Date(@local.po_base_ms), 134) : \"\")",
+            "matchedExpression": "@local.po_base_ms",
+            "type": "local",
+            "fieldName": "po_base_ms"
+          },
+          {
+            "fullExpression": "@calc(@local.po_ok_4 ? date_fns.addDays(new Date(@local.po_base_ms), 134) : \"\")",
+            "matchedExpression": "@calc(@local.po_ok_4 ? date_fns.addDays(new Date(@local.po_base_ms), 134) : \"\")",
+            "type": "calc",
+            "fieldName": "@local.po_ok_4 ? date_fns.addDays(new Date(@local.po_base_ms), 134) : \"\""
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.po_ok_4": [
+          "value"
+        ],
+        "@local.po_base_ms": [
+          "value"
+        ],
+        "@calc(@local.po_ok_4 ? date_fns.addDays(new Date(@local.po_base_ms), 134) : \"\")": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "po_c5_first",
+      "value": "@calc(@local.po_ok_5 ? date_fns.addDays(new Date(@local.po_base_ms), 150) : \"\")",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "po_c5_first",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(@local.po_ok_5 ? date_fns.addDays(new Date(@local.po_base_ms), 150) : \"\")",
+            "matchedExpression": "@local.po_ok_5",
+            "type": "local",
+            "fieldName": "po_ok_5"
+          },
+          {
+            "fullExpression": "@calc(@local.po_ok_5 ? date_fns.addDays(new Date(@local.po_base_ms), 150) : \"\")",
+            "matchedExpression": "@local.po_base_ms",
+            "type": "local",
+            "fieldName": "po_base_ms"
+          },
+          {
+            "fullExpression": "@calc(@local.po_ok_5 ? date_fns.addDays(new Date(@local.po_base_ms), 150) : \"\")",
+            "matchedExpression": "@calc(@local.po_ok_5 ? date_fns.addDays(new Date(@local.po_base_ms), 150) : \"\")",
+            "type": "calc",
+            "fieldName": "@local.po_ok_5 ? date_fns.addDays(new Date(@local.po_base_ms), 150) : \"\""
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.po_ok_5": [
+          "value"
+        ],
+        "@local.po_base_ms": [
+          "value"
+        ],
+        "@calc(@local.po_ok_5 ? date_fns.addDays(new Date(@local.po_base_ms), 150) : \"\")": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "po_c5_r1",
+      "value": "@calc(@local.po_ok_5 ? date_fns.addDays(new Date(@local.po_base_ms), 157) : \"\")",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "po_c5_r1",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(@local.po_ok_5 ? date_fns.addDays(new Date(@local.po_base_ms), 157) : \"\")",
+            "matchedExpression": "@local.po_ok_5",
+            "type": "local",
+            "fieldName": "po_ok_5"
+          },
+          {
+            "fullExpression": "@calc(@local.po_ok_5 ? date_fns.addDays(new Date(@local.po_base_ms), 157) : \"\")",
+            "matchedExpression": "@local.po_base_ms",
+            "type": "local",
+            "fieldName": "po_base_ms"
+          },
+          {
+            "fullExpression": "@calc(@local.po_ok_5 ? date_fns.addDays(new Date(@local.po_base_ms), 157) : \"\")",
+            "matchedExpression": "@calc(@local.po_ok_5 ? date_fns.addDays(new Date(@local.po_base_ms), 157) : \"\")",
+            "type": "calc",
+            "fieldName": "@local.po_ok_5 ? date_fns.addDays(new Date(@local.po_base_ms), 157) : \"\""
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.po_ok_5": [
+          "value"
+        ],
+        "@local.po_base_ms": [
+          "value"
+        ],
+        "@calc(@local.po_ok_5 ? date_fns.addDays(new Date(@local.po_base_ms), 157) : \"\")": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "po_c5_r2",
+      "value": "@calc(@local.po_ok_5 ? date_fns.addDays(new Date(@local.po_base_ms), 164) : \"\")",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "po_c5_r2",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(@local.po_ok_5 ? date_fns.addDays(new Date(@local.po_base_ms), 164) : \"\")",
+            "matchedExpression": "@local.po_ok_5",
+            "type": "local",
+            "fieldName": "po_ok_5"
+          },
+          {
+            "fullExpression": "@calc(@local.po_ok_5 ? date_fns.addDays(new Date(@local.po_base_ms), 164) : \"\")",
+            "matchedExpression": "@local.po_base_ms",
+            "type": "local",
+            "fieldName": "po_base_ms"
+          },
+          {
+            "fullExpression": "@calc(@local.po_ok_5 ? date_fns.addDays(new Date(@local.po_base_ms), 164) : \"\")",
+            "matchedExpression": "@calc(@local.po_ok_5 ? date_fns.addDays(new Date(@local.po_base_ms), 164) : \"\")",
+            "type": "calc",
+            "fieldName": "@local.po_ok_5 ? date_fns.addDays(new Date(@local.po_base_ms), 164) : \"\""
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.po_ok_5": [
+          "value"
+        ],
+        "@local.po_base_ms": [
+          "value"
+        ],
+        "@calc(@local.po_ok_5 ? date_fns.addDays(new Date(@local.po_base_ms), 164) : \"\")": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "po_tap_action_list",
+      "value": [
+        {
+          "trigger": "notification_interacted",
+          "action_id": "set_field",
+          "args": [
+            "po_setup_pending",
+            true
+          ],
+          "_raw": "notification_interacted | set_field: po_setup_pending: true"
+        },
+        {
+          "trigger": "notification_interacted",
+          "action_id": "set_field",
+          "args": [
+            "prox_outcome_access",
+            "cta"
+          ],
+          "_raw": "notification_interacted | set_field: prox_outcome_access: cta"
+        },
+        {
+          "trigger": "notification_interacted",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "notification_interacted | set_data | _list_id: proximal_outcome_14d_pages, completed: false",
+          "params": {
+            "_list_id": "proximal_outcome_14d_pages",
+            "completed": false
+          }
+        },
+        {
+          "trigger": "notification_interacted",
+          "action_id": "nav_stack",
+          "args": [
+            "open"
+          ],
+          "_raw": "notification_interacted | nav_stack: open | template: proximal_outcome_14d_checkin, header: false",
+          "params": {
+            "template": "proximal_outcome_14d_checkin",
+            "header": false
+          }
+        }
+      ],
+      "type": "set_variable",
+      "_nested_name": "po_tap_action_list"
+    },
+    {
+      "name": "po_schedule_action_list",
+      "value": [
+        {
+          "trigger": "completed",
+          "action_id": "notification",
+          "args": [
+            "cancel_all"
+          ],
+          "_raw": "completed | notification: cancel_all"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "notification",
+          "args": [
+            "create"
+          ],
+          "_raw": "completed | notification: create |\nid: po_c1_first,\ntitle: @global.po_post_nf_first_title,\ntext: @global.po_post_nf_first_text,\nschedule_at: @local.po_c1_first,\naction_list: @local.po_tap_action_list",
+          "params": {
+            "id": "po_c1_first",
+            "title": "@global.po_post_nf_first_title",
+            "text": "@global.po_post_nf_first_text",
+            "schedule_at": "@local.po_c1_first",
+            "action_list": "@local.po_tap_action_list"
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "notification",
+          "args": [
+            "create"
+          ],
+          "_raw": "completed | notification: create |\nid: po_c1_r1,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c1_r1,\naction_list: @local.po_tap_action_list",
+          "params": {
+            "id": "po_c1_r1",
+            "title": "@global.po_post_nf_reminder_title",
+            "text": "@global.po_post_nf_reminder_text",
+            "schedule_at": "@local.po_c1_r1",
+            "action_list": "@local.po_tap_action_list"
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "notification",
+          "args": [
+            "create"
+          ],
+          "_raw": "completed | notification: create |\nid: po_c1_r2,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c1_r2,\naction_list: @local.po_tap_action_list",
+          "params": {
+            "id": "po_c1_r2",
+            "title": "@global.po_post_nf_reminder_title",
+            "text": "@global.po_post_nf_reminder_text",
+            "schedule_at": "@local.po_c1_r2",
+            "action_list": "@local.po_tap_action_list"
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "notification",
+          "args": [
+            "create"
+          ],
+          "_raw": "completed | notification: create |\nid: po_c2_first,\ntitle: @global.po_post_nf_first_title,\ntext: @global.po_post_nf_first_text,\nschedule_at: @local.po_c2_first,\naction_list: @local.po_tap_action_list",
+          "params": {
+            "id": "po_c2_first",
+            "title": "@global.po_post_nf_first_title",
+            "text": "@global.po_post_nf_first_text",
+            "schedule_at": "@local.po_c2_first",
+            "action_list": "@local.po_tap_action_list"
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "notification",
+          "args": [
+            "create"
+          ],
+          "_raw": "completed | notification: create |\nid: po_c2_r1,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c2_r1,\naction_list: @local.po_tap_action_list",
+          "params": {
+            "id": "po_c2_r1",
+            "title": "@global.po_post_nf_reminder_title",
+            "text": "@global.po_post_nf_reminder_text",
+            "schedule_at": "@local.po_c2_r1",
+            "action_list": "@local.po_tap_action_list"
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "notification",
+          "args": [
+            "create"
+          ],
+          "_raw": "completed | notification: create |\nid: po_c2_r2,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c2_r2,\naction_list: @local.po_tap_action_list",
+          "params": {
+            "id": "po_c2_r2",
+            "title": "@global.po_post_nf_reminder_title",
+            "text": "@global.po_post_nf_reminder_text",
+            "schedule_at": "@local.po_c2_r2",
+            "action_list": "@local.po_tap_action_list"
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "notification",
+          "args": [
+            "create"
+          ],
+          "_raw": "completed | notification: create |\nid: po_c3_first,\ntitle: @global.po_post_nf_first_title,\ntext: @global.po_post_nf_first_text,\nschedule_at: @local.po_c3_first,\naction_list: @local.po_tap_action_list",
+          "params": {
+            "id": "po_c3_first",
+            "title": "@global.po_post_nf_first_title",
+            "text": "@global.po_post_nf_first_text",
+            "schedule_at": "@local.po_c3_first",
+            "action_list": "@local.po_tap_action_list"
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "notification",
+          "args": [
+            "create"
+          ],
+          "_raw": "completed | notification: create |\nid: po_c3_r1,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c3_r1,\naction_list: @local.po_tap_action_list",
+          "params": {
+            "id": "po_c3_r1",
+            "title": "@global.po_post_nf_reminder_title",
+            "text": "@global.po_post_nf_reminder_text",
+            "schedule_at": "@local.po_c3_r1",
+            "action_list": "@local.po_tap_action_list"
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "notification",
+          "args": [
+            "create"
+          ],
+          "_raw": "completed | notification: create |\nid: po_c3_r2,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c3_r2,\naction_list: @local.po_tap_action_list",
+          "params": {
+            "id": "po_c3_r2",
+            "title": "@global.po_post_nf_reminder_title",
+            "text": "@global.po_post_nf_reminder_text",
+            "schedule_at": "@local.po_c3_r2",
+            "action_list": "@local.po_tap_action_list"
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "notification",
+          "args": [
+            "create"
+          ],
+          "_raw": "completed | notification: create |\nid: po_c4_first,\ntitle: @global.po_post_nf_first_title,\ntext: @global.po_post_nf_first_text,\nschedule_at: @local.po_c4_first,\naction_list: @local.po_tap_action_list",
+          "params": {
+            "id": "po_c4_first",
+            "title": "@global.po_post_nf_first_title",
+            "text": "@global.po_post_nf_first_text",
+            "schedule_at": "@local.po_c4_first",
+            "action_list": "@local.po_tap_action_list"
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "notification",
+          "args": [
+            "create"
+          ],
+          "_raw": "completed | notification: create |\nid: po_c4_r1,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c4_r1,\naction_list: @local.po_tap_action_list",
+          "params": {
+            "id": "po_c4_r1",
+            "title": "@global.po_post_nf_reminder_title",
+            "text": "@global.po_post_nf_reminder_text",
+            "schedule_at": "@local.po_c4_r1",
+            "action_list": "@local.po_tap_action_list"
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "notification",
+          "args": [
+            "create"
+          ],
+          "_raw": "completed | notification: create |\nid: po_c4_r2,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c4_r2,\naction_list: @local.po_tap_action_list",
+          "params": {
+            "id": "po_c4_r2",
+            "title": "@global.po_post_nf_reminder_title",
+            "text": "@global.po_post_nf_reminder_text",
+            "schedule_at": "@local.po_c4_r2",
+            "action_list": "@local.po_tap_action_list"
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "notification",
+          "args": [
+            "create"
+          ],
+          "_raw": "completed | notification: create |\nid: po_c5_first,\ntitle: @global.po_post_nf_first_title,\ntext: @global.po_post_nf_first_text,\nschedule_at: @local.po_c5_first,\naction_list: @local.po_tap_action_list",
+          "params": {
+            "id": "po_c5_first",
+            "title": "@global.po_post_nf_first_title",
+            "text": "@global.po_post_nf_first_text",
+            "schedule_at": "@local.po_c5_first",
+            "action_list": "@local.po_tap_action_list"
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "notification",
+          "args": [
+            "create"
+          ],
+          "_raw": "completed | notification: create |\nid: po_c5_r1,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c5_r1,\naction_list: @local.po_tap_action_list",
+          "params": {
+            "id": "po_c5_r1",
+            "title": "@global.po_post_nf_reminder_title",
+            "text": "@global.po_post_nf_reminder_text",
+            "schedule_at": "@local.po_c5_r1",
+            "action_list": "@local.po_tap_action_list"
+          }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "notification",
+          "args": [
+            "create"
+          ],
+          "_raw": "completed | notification: create |\nid: po_c5_r2,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c5_r2,\naction_list: @local.po_tap_action_list",
+          "params": {
+            "id": "po_c5_r2",
+            "title": "@global.po_post_nf_reminder_title",
+            "text": "@global.po_post_nf_reminder_text",
+            "schedule_at": "@local.po_c5_r2",
+            "action_list": "@local.po_tap_action_list"
+          }
+        }
+      ],
+      "condition": "!!@global.has_proximal_outcomes",
+      "type": "set_variable",
+      "_nested_name": "po_schedule_action_list",
+      "_dynamicFields": {
+        "value": {
+          "1": {
+            "_raw": [
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c1_first,\ntitle: @global.po_post_nf_first_title,\ntext: @global.po_post_nf_first_text,\nschedule_at: @local.po_c1_first,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@global.po_post_nf_first_title",
+                "type": "global",
+                "fieldName": "po_post_nf_first_title"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c1_first,\ntitle: @global.po_post_nf_first_title,\ntext: @global.po_post_nf_first_text,\nschedule_at: @local.po_c1_first,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@global.po_post_nf_first_text",
+                "type": "global",
+                "fieldName": "po_post_nf_first_text"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c1_first,\ntitle: @global.po_post_nf_first_title,\ntext: @global.po_post_nf_first_text,\nschedule_at: @local.po_c1_first,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@local.po_c1_first",
+                "type": "local",
+                "fieldName": "po_c1_first"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c1_first,\ntitle: @global.po_post_nf_first_title,\ntext: @global.po_post_nf_first_text,\nschedule_at: @local.po_c1_first,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@local.po_tap_action_list",
+                "type": "local",
+                "fieldName": "po_tap_action_list"
+              }
+            ],
+            "params": {
+              "title": [
+                {
+                  "fullExpression": "@global.po_post_nf_first_title",
+                  "matchedExpression": "@global.po_post_nf_first_title",
+                  "type": "global",
+                  "fieldName": "po_post_nf_first_title"
+                }
+              ],
+              "text": [
+                {
+                  "fullExpression": "@global.po_post_nf_first_text",
+                  "matchedExpression": "@global.po_post_nf_first_text",
+                  "type": "global",
+                  "fieldName": "po_post_nf_first_text"
+                }
+              ],
+              "schedule_at": [
+                {
+                  "fullExpression": "@local.po_c1_first",
+                  "matchedExpression": "@local.po_c1_first",
+                  "type": "local",
+                  "fieldName": "po_c1_first"
+                }
+              ],
+              "action_list": [
+                {
+                  "fullExpression": "@local.po_tap_action_list",
+                  "matchedExpression": "@local.po_tap_action_list",
+                  "type": "local",
+                  "fieldName": "po_tap_action_list"
+                }
+              ]
+            }
+          },
+          "2": {
+            "_raw": [
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c1_r1,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c1_r1,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@global.po_post_nf_reminder_title",
+                "type": "global",
+                "fieldName": "po_post_nf_reminder_title"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c1_r1,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c1_r1,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@global.po_post_nf_reminder_text",
+                "type": "global",
+                "fieldName": "po_post_nf_reminder_text"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c1_r1,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c1_r1,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@local.po_c1_r1",
+                "type": "local",
+                "fieldName": "po_c1_r1"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c1_r1,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c1_r1,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@local.po_tap_action_list",
+                "type": "local",
+                "fieldName": "po_tap_action_list"
+              }
+            ],
+            "params": {
+              "title": [
+                {
+                  "fullExpression": "@global.po_post_nf_reminder_title",
+                  "matchedExpression": "@global.po_post_nf_reminder_title",
+                  "type": "global",
+                  "fieldName": "po_post_nf_reminder_title"
+                }
+              ],
+              "text": [
+                {
+                  "fullExpression": "@global.po_post_nf_reminder_text",
+                  "matchedExpression": "@global.po_post_nf_reminder_text",
+                  "type": "global",
+                  "fieldName": "po_post_nf_reminder_text"
+                }
+              ],
+              "schedule_at": [
+                {
+                  "fullExpression": "@local.po_c1_r1",
+                  "matchedExpression": "@local.po_c1_r1",
+                  "type": "local",
+                  "fieldName": "po_c1_r1"
+                }
+              ],
+              "action_list": [
+                {
+                  "fullExpression": "@local.po_tap_action_list",
+                  "matchedExpression": "@local.po_tap_action_list",
+                  "type": "local",
+                  "fieldName": "po_tap_action_list"
+                }
+              ]
+            }
+          },
+          "3": {
+            "_raw": [
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c1_r2,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c1_r2,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@global.po_post_nf_reminder_title",
+                "type": "global",
+                "fieldName": "po_post_nf_reminder_title"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c1_r2,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c1_r2,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@global.po_post_nf_reminder_text",
+                "type": "global",
+                "fieldName": "po_post_nf_reminder_text"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c1_r2,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c1_r2,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@local.po_c1_r2",
+                "type": "local",
+                "fieldName": "po_c1_r2"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c1_r2,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c1_r2,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@local.po_tap_action_list",
+                "type": "local",
+                "fieldName": "po_tap_action_list"
+              }
+            ],
+            "params": {
+              "title": [
+                {
+                  "fullExpression": "@global.po_post_nf_reminder_title",
+                  "matchedExpression": "@global.po_post_nf_reminder_title",
+                  "type": "global",
+                  "fieldName": "po_post_nf_reminder_title"
+                }
+              ],
+              "text": [
+                {
+                  "fullExpression": "@global.po_post_nf_reminder_text",
+                  "matchedExpression": "@global.po_post_nf_reminder_text",
+                  "type": "global",
+                  "fieldName": "po_post_nf_reminder_text"
+                }
+              ],
+              "schedule_at": [
+                {
+                  "fullExpression": "@local.po_c1_r2",
+                  "matchedExpression": "@local.po_c1_r2",
+                  "type": "local",
+                  "fieldName": "po_c1_r2"
+                }
+              ],
+              "action_list": [
+                {
+                  "fullExpression": "@local.po_tap_action_list",
+                  "matchedExpression": "@local.po_tap_action_list",
+                  "type": "local",
+                  "fieldName": "po_tap_action_list"
+                }
+              ]
+            }
+          },
+          "4": {
+            "_raw": [
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c2_first,\ntitle: @global.po_post_nf_first_title,\ntext: @global.po_post_nf_first_text,\nschedule_at: @local.po_c2_first,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@global.po_post_nf_first_title",
+                "type": "global",
+                "fieldName": "po_post_nf_first_title"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c2_first,\ntitle: @global.po_post_nf_first_title,\ntext: @global.po_post_nf_first_text,\nschedule_at: @local.po_c2_first,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@global.po_post_nf_first_text",
+                "type": "global",
+                "fieldName": "po_post_nf_first_text"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c2_first,\ntitle: @global.po_post_nf_first_title,\ntext: @global.po_post_nf_first_text,\nschedule_at: @local.po_c2_first,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@local.po_c2_first",
+                "type": "local",
+                "fieldName": "po_c2_first"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c2_first,\ntitle: @global.po_post_nf_first_title,\ntext: @global.po_post_nf_first_text,\nschedule_at: @local.po_c2_first,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@local.po_tap_action_list",
+                "type": "local",
+                "fieldName": "po_tap_action_list"
+              }
+            ],
+            "params": {
+              "title": [
+                {
+                  "fullExpression": "@global.po_post_nf_first_title",
+                  "matchedExpression": "@global.po_post_nf_first_title",
+                  "type": "global",
+                  "fieldName": "po_post_nf_first_title"
+                }
+              ],
+              "text": [
+                {
+                  "fullExpression": "@global.po_post_nf_first_text",
+                  "matchedExpression": "@global.po_post_nf_first_text",
+                  "type": "global",
+                  "fieldName": "po_post_nf_first_text"
+                }
+              ],
+              "schedule_at": [
+                {
+                  "fullExpression": "@local.po_c2_first",
+                  "matchedExpression": "@local.po_c2_first",
+                  "type": "local",
+                  "fieldName": "po_c2_first"
+                }
+              ],
+              "action_list": [
+                {
+                  "fullExpression": "@local.po_tap_action_list",
+                  "matchedExpression": "@local.po_tap_action_list",
+                  "type": "local",
+                  "fieldName": "po_tap_action_list"
+                }
+              ]
+            }
+          },
+          "5": {
+            "_raw": [
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c2_r1,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c2_r1,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@global.po_post_nf_reminder_title",
+                "type": "global",
+                "fieldName": "po_post_nf_reminder_title"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c2_r1,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c2_r1,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@global.po_post_nf_reminder_text",
+                "type": "global",
+                "fieldName": "po_post_nf_reminder_text"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c2_r1,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c2_r1,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@local.po_c2_r1",
+                "type": "local",
+                "fieldName": "po_c2_r1"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c2_r1,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c2_r1,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@local.po_tap_action_list",
+                "type": "local",
+                "fieldName": "po_tap_action_list"
+              }
+            ],
+            "params": {
+              "title": [
+                {
+                  "fullExpression": "@global.po_post_nf_reminder_title",
+                  "matchedExpression": "@global.po_post_nf_reminder_title",
+                  "type": "global",
+                  "fieldName": "po_post_nf_reminder_title"
+                }
+              ],
+              "text": [
+                {
+                  "fullExpression": "@global.po_post_nf_reminder_text",
+                  "matchedExpression": "@global.po_post_nf_reminder_text",
+                  "type": "global",
+                  "fieldName": "po_post_nf_reminder_text"
+                }
+              ],
+              "schedule_at": [
+                {
+                  "fullExpression": "@local.po_c2_r1",
+                  "matchedExpression": "@local.po_c2_r1",
+                  "type": "local",
+                  "fieldName": "po_c2_r1"
+                }
+              ],
+              "action_list": [
+                {
+                  "fullExpression": "@local.po_tap_action_list",
+                  "matchedExpression": "@local.po_tap_action_list",
+                  "type": "local",
+                  "fieldName": "po_tap_action_list"
+                }
+              ]
+            }
+          },
+          "6": {
+            "_raw": [
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c2_r2,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c2_r2,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@global.po_post_nf_reminder_title",
+                "type": "global",
+                "fieldName": "po_post_nf_reminder_title"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c2_r2,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c2_r2,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@global.po_post_nf_reminder_text",
+                "type": "global",
+                "fieldName": "po_post_nf_reminder_text"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c2_r2,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c2_r2,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@local.po_c2_r2",
+                "type": "local",
+                "fieldName": "po_c2_r2"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c2_r2,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c2_r2,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@local.po_tap_action_list",
+                "type": "local",
+                "fieldName": "po_tap_action_list"
+              }
+            ],
+            "params": {
+              "title": [
+                {
+                  "fullExpression": "@global.po_post_nf_reminder_title",
+                  "matchedExpression": "@global.po_post_nf_reminder_title",
+                  "type": "global",
+                  "fieldName": "po_post_nf_reminder_title"
+                }
+              ],
+              "text": [
+                {
+                  "fullExpression": "@global.po_post_nf_reminder_text",
+                  "matchedExpression": "@global.po_post_nf_reminder_text",
+                  "type": "global",
+                  "fieldName": "po_post_nf_reminder_text"
+                }
+              ],
+              "schedule_at": [
+                {
+                  "fullExpression": "@local.po_c2_r2",
+                  "matchedExpression": "@local.po_c2_r2",
+                  "type": "local",
+                  "fieldName": "po_c2_r2"
+                }
+              ],
+              "action_list": [
+                {
+                  "fullExpression": "@local.po_tap_action_list",
+                  "matchedExpression": "@local.po_tap_action_list",
+                  "type": "local",
+                  "fieldName": "po_tap_action_list"
+                }
+              ]
+            }
+          },
+          "7": {
+            "_raw": [
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c3_first,\ntitle: @global.po_post_nf_first_title,\ntext: @global.po_post_nf_first_text,\nschedule_at: @local.po_c3_first,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@global.po_post_nf_first_title",
+                "type": "global",
+                "fieldName": "po_post_nf_first_title"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c3_first,\ntitle: @global.po_post_nf_first_title,\ntext: @global.po_post_nf_first_text,\nschedule_at: @local.po_c3_first,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@global.po_post_nf_first_text",
+                "type": "global",
+                "fieldName": "po_post_nf_first_text"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c3_first,\ntitle: @global.po_post_nf_first_title,\ntext: @global.po_post_nf_first_text,\nschedule_at: @local.po_c3_first,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@local.po_c3_first",
+                "type": "local",
+                "fieldName": "po_c3_first"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c3_first,\ntitle: @global.po_post_nf_first_title,\ntext: @global.po_post_nf_first_text,\nschedule_at: @local.po_c3_first,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@local.po_tap_action_list",
+                "type": "local",
+                "fieldName": "po_tap_action_list"
+              }
+            ],
+            "params": {
+              "title": [
+                {
+                  "fullExpression": "@global.po_post_nf_first_title",
+                  "matchedExpression": "@global.po_post_nf_first_title",
+                  "type": "global",
+                  "fieldName": "po_post_nf_first_title"
+                }
+              ],
+              "text": [
+                {
+                  "fullExpression": "@global.po_post_nf_first_text",
+                  "matchedExpression": "@global.po_post_nf_first_text",
+                  "type": "global",
+                  "fieldName": "po_post_nf_first_text"
+                }
+              ],
+              "schedule_at": [
+                {
+                  "fullExpression": "@local.po_c3_first",
+                  "matchedExpression": "@local.po_c3_first",
+                  "type": "local",
+                  "fieldName": "po_c3_first"
+                }
+              ],
+              "action_list": [
+                {
+                  "fullExpression": "@local.po_tap_action_list",
+                  "matchedExpression": "@local.po_tap_action_list",
+                  "type": "local",
+                  "fieldName": "po_tap_action_list"
+                }
+              ]
+            }
+          },
+          "8": {
+            "_raw": [
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c3_r1,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c3_r1,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@global.po_post_nf_reminder_title",
+                "type": "global",
+                "fieldName": "po_post_nf_reminder_title"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c3_r1,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c3_r1,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@global.po_post_nf_reminder_text",
+                "type": "global",
+                "fieldName": "po_post_nf_reminder_text"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c3_r1,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c3_r1,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@local.po_c3_r1",
+                "type": "local",
+                "fieldName": "po_c3_r1"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c3_r1,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c3_r1,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@local.po_tap_action_list",
+                "type": "local",
+                "fieldName": "po_tap_action_list"
+              }
+            ],
+            "params": {
+              "title": [
+                {
+                  "fullExpression": "@global.po_post_nf_reminder_title",
+                  "matchedExpression": "@global.po_post_nf_reminder_title",
+                  "type": "global",
+                  "fieldName": "po_post_nf_reminder_title"
+                }
+              ],
+              "text": [
+                {
+                  "fullExpression": "@global.po_post_nf_reminder_text",
+                  "matchedExpression": "@global.po_post_nf_reminder_text",
+                  "type": "global",
+                  "fieldName": "po_post_nf_reminder_text"
+                }
+              ],
+              "schedule_at": [
+                {
+                  "fullExpression": "@local.po_c3_r1",
+                  "matchedExpression": "@local.po_c3_r1",
+                  "type": "local",
+                  "fieldName": "po_c3_r1"
+                }
+              ],
+              "action_list": [
+                {
+                  "fullExpression": "@local.po_tap_action_list",
+                  "matchedExpression": "@local.po_tap_action_list",
+                  "type": "local",
+                  "fieldName": "po_tap_action_list"
+                }
+              ]
+            }
+          },
+          "9": {
+            "_raw": [
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c3_r2,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c3_r2,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@global.po_post_nf_reminder_title",
+                "type": "global",
+                "fieldName": "po_post_nf_reminder_title"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c3_r2,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c3_r2,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@global.po_post_nf_reminder_text",
+                "type": "global",
+                "fieldName": "po_post_nf_reminder_text"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c3_r2,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c3_r2,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@local.po_c3_r2",
+                "type": "local",
+                "fieldName": "po_c3_r2"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c3_r2,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c3_r2,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@local.po_tap_action_list",
+                "type": "local",
+                "fieldName": "po_tap_action_list"
+              }
+            ],
+            "params": {
+              "title": [
+                {
+                  "fullExpression": "@global.po_post_nf_reminder_title",
+                  "matchedExpression": "@global.po_post_nf_reminder_title",
+                  "type": "global",
+                  "fieldName": "po_post_nf_reminder_title"
+                }
+              ],
+              "text": [
+                {
+                  "fullExpression": "@global.po_post_nf_reminder_text",
+                  "matchedExpression": "@global.po_post_nf_reminder_text",
+                  "type": "global",
+                  "fieldName": "po_post_nf_reminder_text"
+                }
+              ],
+              "schedule_at": [
+                {
+                  "fullExpression": "@local.po_c3_r2",
+                  "matchedExpression": "@local.po_c3_r2",
+                  "type": "local",
+                  "fieldName": "po_c3_r2"
+                }
+              ],
+              "action_list": [
+                {
+                  "fullExpression": "@local.po_tap_action_list",
+                  "matchedExpression": "@local.po_tap_action_list",
+                  "type": "local",
+                  "fieldName": "po_tap_action_list"
+                }
+              ]
+            }
+          },
+          "10": {
+            "_raw": [
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c4_first,\ntitle: @global.po_post_nf_first_title,\ntext: @global.po_post_nf_first_text,\nschedule_at: @local.po_c4_first,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@global.po_post_nf_first_title",
+                "type": "global",
+                "fieldName": "po_post_nf_first_title"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c4_first,\ntitle: @global.po_post_nf_first_title,\ntext: @global.po_post_nf_first_text,\nschedule_at: @local.po_c4_first,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@global.po_post_nf_first_text",
+                "type": "global",
+                "fieldName": "po_post_nf_first_text"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c4_first,\ntitle: @global.po_post_nf_first_title,\ntext: @global.po_post_nf_first_text,\nschedule_at: @local.po_c4_first,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@local.po_c4_first",
+                "type": "local",
+                "fieldName": "po_c4_first"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c4_first,\ntitle: @global.po_post_nf_first_title,\ntext: @global.po_post_nf_first_text,\nschedule_at: @local.po_c4_first,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@local.po_tap_action_list",
+                "type": "local",
+                "fieldName": "po_tap_action_list"
+              }
+            ],
+            "params": {
+              "title": [
+                {
+                  "fullExpression": "@global.po_post_nf_first_title",
+                  "matchedExpression": "@global.po_post_nf_first_title",
+                  "type": "global",
+                  "fieldName": "po_post_nf_first_title"
+                }
+              ],
+              "text": [
+                {
+                  "fullExpression": "@global.po_post_nf_first_text",
+                  "matchedExpression": "@global.po_post_nf_first_text",
+                  "type": "global",
+                  "fieldName": "po_post_nf_first_text"
+                }
+              ],
+              "schedule_at": [
+                {
+                  "fullExpression": "@local.po_c4_first",
+                  "matchedExpression": "@local.po_c4_first",
+                  "type": "local",
+                  "fieldName": "po_c4_first"
+                }
+              ],
+              "action_list": [
+                {
+                  "fullExpression": "@local.po_tap_action_list",
+                  "matchedExpression": "@local.po_tap_action_list",
+                  "type": "local",
+                  "fieldName": "po_tap_action_list"
+                }
+              ]
+            }
+          },
+          "11": {
+            "_raw": [
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c4_r1,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c4_r1,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@global.po_post_nf_reminder_title",
+                "type": "global",
+                "fieldName": "po_post_nf_reminder_title"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c4_r1,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c4_r1,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@global.po_post_nf_reminder_text",
+                "type": "global",
+                "fieldName": "po_post_nf_reminder_text"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c4_r1,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c4_r1,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@local.po_c4_r1",
+                "type": "local",
+                "fieldName": "po_c4_r1"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c4_r1,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c4_r1,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@local.po_tap_action_list",
+                "type": "local",
+                "fieldName": "po_tap_action_list"
+              }
+            ],
+            "params": {
+              "title": [
+                {
+                  "fullExpression": "@global.po_post_nf_reminder_title",
+                  "matchedExpression": "@global.po_post_nf_reminder_title",
+                  "type": "global",
+                  "fieldName": "po_post_nf_reminder_title"
+                }
+              ],
+              "text": [
+                {
+                  "fullExpression": "@global.po_post_nf_reminder_text",
+                  "matchedExpression": "@global.po_post_nf_reminder_text",
+                  "type": "global",
+                  "fieldName": "po_post_nf_reminder_text"
+                }
+              ],
+              "schedule_at": [
+                {
+                  "fullExpression": "@local.po_c4_r1",
+                  "matchedExpression": "@local.po_c4_r1",
+                  "type": "local",
+                  "fieldName": "po_c4_r1"
+                }
+              ],
+              "action_list": [
+                {
+                  "fullExpression": "@local.po_tap_action_list",
+                  "matchedExpression": "@local.po_tap_action_list",
+                  "type": "local",
+                  "fieldName": "po_tap_action_list"
+                }
+              ]
+            }
+          },
+          "12": {
+            "_raw": [
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c4_r2,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c4_r2,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@global.po_post_nf_reminder_title",
+                "type": "global",
+                "fieldName": "po_post_nf_reminder_title"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c4_r2,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c4_r2,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@global.po_post_nf_reminder_text",
+                "type": "global",
+                "fieldName": "po_post_nf_reminder_text"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c4_r2,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c4_r2,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@local.po_c4_r2",
+                "type": "local",
+                "fieldName": "po_c4_r2"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c4_r2,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c4_r2,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@local.po_tap_action_list",
+                "type": "local",
+                "fieldName": "po_tap_action_list"
+              }
+            ],
+            "params": {
+              "title": [
+                {
+                  "fullExpression": "@global.po_post_nf_reminder_title",
+                  "matchedExpression": "@global.po_post_nf_reminder_title",
+                  "type": "global",
+                  "fieldName": "po_post_nf_reminder_title"
+                }
+              ],
+              "text": [
+                {
+                  "fullExpression": "@global.po_post_nf_reminder_text",
+                  "matchedExpression": "@global.po_post_nf_reminder_text",
+                  "type": "global",
+                  "fieldName": "po_post_nf_reminder_text"
+                }
+              ],
+              "schedule_at": [
+                {
+                  "fullExpression": "@local.po_c4_r2",
+                  "matchedExpression": "@local.po_c4_r2",
+                  "type": "local",
+                  "fieldName": "po_c4_r2"
+                }
+              ],
+              "action_list": [
+                {
+                  "fullExpression": "@local.po_tap_action_list",
+                  "matchedExpression": "@local.po_tap_action_list",
+                  "type": "local",
+                  "fieldName": "po_tap_action_list"
+                }
+              ]
+            }
+          },
+          "13": {
+            "_raw": [
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c5_first,\ntitle: @global.po_post_nf_first_title,\ntext: @global.po_post_nf_first_text,\nschedule_at: @local.po_c5_first,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@global.po_post_nf_first_title",
+                "type": "global",
+                "fieldName": "po_post_nf_first_title"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c5_first,\ntitle: @global.po_post_nf_first_title,\ntext: @global.po_post_nf_first_text,\nschedule_at: @local.po_c5_first,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@global.po_post_nf_first_text",
+                "type": "global",
+                "fieldName": "po_post_nf_first_text"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c5_first,\ntitle: @global.po_post_nf_first_title,\ntext: @global.po_post_nf_first_text,\nschedule_at: @local.po_c5_first,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@local.po_c5_first",
+                "type": "local",
+                "fieldName": "po_c5_first"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c5_first,\ntitle: @global.po_post_nf_first_title,\ntext: @global.po_post_nf_first_text,\nschedule_at: @local.po_c5_first,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@local.po_tap_action_list",
+                "type": "local",
+                "fieldName": "po_tap_action_list"
+              }
+            ],
+            "params": {
+              "title": [
+                {
+                  "fullExpression": "@global.po_post_nf_first_title",
+                  "matchedExpression": "@global.po_post_nf_first_title",
+                  "type": "global",
+                  "fieldName": "po_post_nf_first_title"
+                }
+              ],
+              "text": [
+                {
+                  "fullExpression": "@global.po_post_nf_first_text",
+                  "matchedExpression": "@global.po_post_nf_first_text",
+                  "type": "global",
+                  "fieldName": "po_post_nf_first_text"
+                }
+              ],
+              "schedule_at": [
+                {
+                  "fullExpression": "@local.po_c5_first",
+                  "matchedExpression": "@local.po_c5_first",
+                  "type": "local",
+                  "fieldName": "po_c5_first"
+                }
+              ],
+              "action_list": [
+                {
+                  "fullExpression": "@local.po_tap_action_list",
+                  "matchedExpression": "@local.po_tap_action_list",
+                  "type": "local",
+                  "fieldName": "po_tap_action_list"
+                }
+              ]
+            }
+          },
+          "14": {
+            "_raw": [
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c5_r1,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c5_r1,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@global.po_post_nf_reminder_title",
+                "type": "global",
+                "fieldName": "po_post_nf_reminder_title"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c5_r1,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c5_r1,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@global.po_post_nf_reminder_text",
+                "type": "global",
+                "fieldName": "po_post_nf_reminder_text"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c5_r1,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c5_r1,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@local.po_c5_r1",
+                "type": "local",
+                "fieldName": "po_c5_r1"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c5_r1,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c5_r1,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@local.po_tap_action_list",
+                "type": "local",
+                "fieldName": "po_tap_action_list"
+              }
+            ],
+            "params": {
+              "title": [
+                {
+                  "fullExpression": "@global.po_post_nf_reminder_title",
+                  "matchedExpression": "@global.po_post_nf_reminder_title",
+                  "type": "global",
+                  "fieldName": "po_post_nf_reminder_title"
+                }
+              ],
+              "text": [
+                {
+                  "fullExpression": "@global.po_post_nf_reminder_text",
+                  "matchedExpression": "@global.po_post_nf_reminder_text",
+                  "type": "global",
+                  "fieldName": "po_post_nf_reminder_text"
+                }
+              ],
+              "schedule_at": [
+                {
+                  "fullExpression": "@local.po_c5_r1",
+                  "matchedExpression": "@local.po_c5_r1",
+                  "type": "local",
+                  "fieldName": "po_c5_r1"
+                }
+              ],
+              "action_list": [
+                {
+                  "fullExpression": "@local.po_tap_action_list",
+                  "matchedExpression": "@local.po_tap_action_list",
+                  "type": "local",
+                  "fieldName": "po_tap_action_list"
+                }
+              ]
+            }
+          },
+          "15": {
+            "_raw": [
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c5_r2,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c5_r2,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@global.po_post_nf_reminder_title",
+                "type": "global",
+                "fieldName": "po_post_nf_reminder_title"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c5_r2,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c5_r2,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@global.po_post_nf_reminder_text",
+                "type": "global",
+                "fieldName": "po_post_nf_reminder_text"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c5_r2,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c5_r2,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@local.po_c5_r2",
+                "type": "local",
+                "fieldName": "po_c5_r2"
+              },
+              {
+                "fullExpression": "completed | notification: create |\nid: po_c5_r2,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c5_r2,\naction_list: @local.po_tap_action_list",
+                "matchedExpression": "@local.po_tap_action_list",
+                "type": "local",
+                "fieldName": "po_tap_action_list"
+              }
+            ],
+            "params": {
+              "title": [
+                {
+                  "fullExpression": "@global.po_post_nf_reminder_title",
+                  "matchedExpression": "@global.po_post_nf_reminder_title",
+                  "type": "global",
+                  "fieldName": "po_post_nf_reminder_title"
+                }
+              ],
+              "text": [
+                {
+                  "fullExpression": "@global.po_post_nf_reminder_text",
+                  "matchedExpression": "@global.po_post_nf_reminder_text",
+                  "type": "global",
+                  "fieldName": "po_post_nf_reminder_text"
+                }
+              ],
+              "schedule_at": [
+                {
+                  "fullExpression": "@local.po_c5_r2",
+                  "matchedExpression": "@local.po_c5_r2",
+                  "type": "local",
+                  "fieldName": "po_c5_r2"
+                }
+              ],
+              "action_list": [
+                {
+                  "fullExpression": "@local.po_tap_action_list",
+                  "matchedExpression": "@local.po_tap_action_list",
+                  "type": "local",
+                  "fieldName": "po_tap_action_list"
+                }
+              ]
+            }
+          }
+        },
+        "condition": [
+          {
+            "fullExpression": "!!@global.has_proximal_outcomes",
+            "matchedExpression": "!@global.has_proximal_outcomes",
+            "type": "global",
+            "fieldName": "has_proximal_outcomes"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@global.po_post_nf_first_title": [
+          "value.1._raw",
+          "value.1.params.title",
+          "value.4._raw",
+          "value.4.params.title",
+          "value.7._raw",
+          "value.7.params.title",
+          "value.10._raw",
+          "value.10.params.title",
+          "value.13._raw",
+          "value.13.params.title"
+        ],
+        "@global.po_post_nf_first_text": [
+          "value.1._raw",
+          "value.1.params.text",
+          "value.4._raw",
+          "value.4.params.text",
+          "value.7._raw",
+          "value.7.params.text",
+          "value.10._raw",
+          "value.10.params.text",
+          "value.13._raw",
+          "value.13.params.text"
+        ],
+        "@local.po_c1_first": [
+          "value.1._raw",
+          "value.1.params.schedule_at"
+        ],
+        "@local.po_tap_action_list": [
+          "value.1._raw",
+          "value.1.params.action_list",
+          "value.2._raw",
+          "value.2.params.action_list",
+          "value.3._raw",
+          "value.3.params.action_list",
+          "value.4._raw",
+          "value.4.params.action_list",
+          "value.5._raw",
+          "value.5.params.action_list",
+          "value.6._raw",
+          "value.6.params.action_list",
+          "value.7._raw",
+          "value.7.params.action_list",
+          "value.8._raw",
+          "value.8.params.action_list",
+          "value.9._raw",
+          "value.9.params.action_list",
+          "value.10._raw",
+          "value.10.params.action_list",
+          "value.11._raw",
+          "value.11.params.action_list",
+          "value.12._raw",
+          "value.12.params.action_list",
+          "value.13._raw",
+          "value.13.params.action_list",
+          "value.14._raw",
+          "value.14.params.action_list",
+          "value.15._raw",
+          "value.15.params.action_list"
+        ],
+        "@global.po_post_nf_reminder_title": [
+          "value.2._raw",
+          "value.2.params.title",
+          "value.3._raw",
+          "value.3.params.title",
+          "value.5._raw",
+          "value.5.params.title",
+          "value.6._raw",
+          "value.6.params.title",
+          "value.8._raw",
+          "value.8.params.title",
+          "value.9._raw",
+          "value.9.params.title",
+          "value.11._raw",
+          "value.11.params.title",
+          "value.12._raw",
+          "value.12.params.title",
+          "value.14._raw",
+          "value.14.params.title",
+          "value.15._raw",
+          "value.15.params.title"
+        ],
+        "@global.po_post_nf_reminder_text": [
+          "value.2._raw",
+          "value.2.params.text",
+          "value.3._raw",
+          "value.3.params.text",
+          "value.5._raw",
+          "value.5.params.text",
+          "value.6._raw",
+          "value.6.params.text",
+          "value.8._raw",
+          "value.8.params.text",
+          "value.9._raw",
+          "value.9.params.text",
+          "value.11._raw",
+          "value.11.params.text",
+          "value.12._raw",
+          "value.12.params.text",
+          "value.14._raw",
+          "value.14.params.text",
+          "value.15._raw",
+          "value.15.params.text"
+        ],
+        "@local.po_c1_r1": [
+          "value.2._raw",
+          "value.2.params.schedule_at"
+        ],
+        "@local.po_c1_r2": [
+          "value.3._raw",
+          "value.3.params.schedule_at"
+        ],
+        "@local.po_c2_first": [
+          "value.4._raw",
+          "value.4.params.schedule_at"
+        ],
+        "@local.po_c2_r1": [
+          "value.5._raw",
+          "value.5.params.schedule_at"
+        ],
+        "@local.po_c2_r2": [
+          "value.6._raw",
+          "value.6.params.schedule_at"
+        ],
+        "@local.po_c3_first": [
+          "value.7._raw",
+          "value.7.params.schedule_at"
+        ],
+        "@local.po_c3_r1": [
+          "value.8._raw",
+          "value.8.params.schedule_at"
+        ],
+        "@local.po_c3_r2": [
+          "value.9._raw",
+          "value.9.params.schedule_at"
+        ],
+        "@local.po_c4_first": [
+          "value.10._raw",
+          "value.10.params.schedule_at"
+        ],
+        "@local.po_c4_r1": [
+          "value.11._raw",
+          "value.11.params.schedule_at"
+        ],
+        "@local.po_c4_r2": [
+          "value.12._raw",
+          "value.12.params.schedule_at"
+        ],
+        "@local.po_c5_first": [
+          "value.13._raw",
+          "value.13.params.schedule_at"
+        ],
+        "@local.po_c5_r1": [
+          "value.14._raw",
+          "value.14.params.schedule_at"
+        ],
+        "@local.po_c5_r2": [
+          "value.15._raw",
+          "value.15.params.schedule_at"
+        ],
+        "!@global.has_proximal_outcomes": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "name": "po_schedule_action_list",
+      "value": [
+        {
+          "trigger": "completed",
+          "action_id": "set_local",
+          "args": [
+            "po_notifications_scheduled",
+            false
+          ],
+          "_raw": "completed | set_local: po_notifications_scheduled: false"
+        }
+      ],
+      "condition": "!@global.has_proximal_outcomes",
+      "type": "set_variable",
+      "_nested_name": "po_schedule_action_list",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "!@global.has_proximal_outcomes",
+            "matchedExpression": "!@global.has_proximal_outcomes",
+            "type": "global",
+            "fieldName": "has_proximal_outcomes"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "!@global.has_proximal_outcomes": [
+          "condition"
+        ]
+      }
+    },
+    {
       "type": "template",
       "name": "module_start_at_id",
       "value": "module_start_at_id",
@@ -248,6 +2732,14 @@
         },
         {
           "trigger": "completed",
+          "action_id": "trigger_actions",
+          "args": [
+            "@local.po_schedule_action_list"
+          ],
+          "_raw": "completed | trigger_actions: @local.po_schedule_action_list"
+        },
+        {
+          "trigger": "completed",
           "action_id": "emit",
           "args": [
             "completed"
@@ -378,6 +2870,28 @@
       ],
       "_nested_name": "module_start_at_id_unlock_all",
       "_dynamicFields": {
+        "action_list": {
+          "2": {
+            "args": {
+              "0": [
+                {
+                  "fullExpression": "@local.po_schedule_action_list",
+                  "matchedExpression": "@local.po_schedule_action_list",
+                  "type": "local",
+                  "fieldName": "po_schedule_action_list"
+                }
+              ]
+            },
+            "_raw": [
+              {
+                "fullExpression": "completed | trigger_actions: @local.po_schedule_action_list",
+                "matchedExpression": "@local.po_schedule_action_list",
+                "type": "local",
+                "fieldName": "po_schedule_action_list"
+              }
+            ]
+          }
+        },
         "condition": [
           {
             "fullExpression": "@local.unlock_all",
@@ -388,15 +2902,14 @@
         ]
       },
       "_dynamicDependencies": {
+        "@local.po_schedule_action_list": [
+          "action_list.2.args.0",
+          "action_list.2._raw"
+        ],
         "@local.unlock_all": [
           "condition"
         ]
       }
-    },
-    {
-      "type": "set_variable",
-      "name": "set_variable_11",
-      "_nested_name": "set_variable_11"
     }
   ],
   "_source": {

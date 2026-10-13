@@ -4,6 +4,12 @@
   "status": "released",
   "rows": [
     {
+      "type": "update_action_list",
+      "name": "update_action_list_1",
+      "action_list": "nav_resume | pop_up: notification_permission;\nnav_resume | set_field: notification_permission_shown: true;",
+      "condition": "(@fields._notification_permission_status =='prompt_with_rationale' || @fields._notification_permission_status =='prompt') && !@fields.notification_permission_shown && @fields.n_modules_completed > 0"
+    },
+    {
       "name": "home_screen_logo",
       "value": "images/logos/app_logo.png",
       "condition": "!@global.home_screen_logo_asset"

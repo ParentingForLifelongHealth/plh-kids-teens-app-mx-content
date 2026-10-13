@@ -24,13 +24,154 @@
       "value": 0
     },
     {
+      "name": "po_last_7d_ts",
+      "value": "@global.proximal_outcome_due_from == \"viewed\" && @fields.prox_7d_viewed_ts ? @fields.prox_7d_viewed_ts : @fields.prox_7d_last_ts",
+      "comments": "Last check-in, same rule as home_screen_header."
+    },
+    {
+      "name": "days_since_prox_7d_last",
+      "value": "@calc(window.date_fns.differenceInDays(new Date(),new Date(new Date(@local.po_last_7d_ts).setHours(0,0,0,0))))",
+      "comments": "Same as home_screen_header."
+    },
+    {
+      "name": "po_due_now",
+      "value": "@calc(!!@global.has_proximal_outcomes && @local.days_since_prox_7d_last >= @global.proximal_outcome_frequency)",
+      "comments": "True when the stack will show a check-in right after this module (same rule as the stack's po_due)."
+    },
+    {
+      "name": "po_base_ms",
+      "value": "@calc(date_fns.set(date_fns.startOfDay(@local.po_due_now || !@local.po_last_7d_ts ? new Date() : new Date(@local.po_last_7d_ts)), {hours: 19}).getTime())",
+      "comments": "Anchor T at 19:00: today if a check-in is about to happen (or none ever done), else the day of the last check-in."
+    },
+    {
+      "name": "po_cap_ms",
+      "value": "@calc(date_fns.addDays(new Date(@fields.onboarding_completed_ts || this.app_first_launch), 180).getTime())",
+      "comments": "180-day cap for first notifications (|| is fine in a value cell)."
+    },
+    {
+      "name": "po_ok_1",
+      "value": "@calc(date_fns.addDays(new Date(@local.po_base_ms), 30).getTime() < @local.po_cap_ms)",
+      "comments": "Cycle 1 within the cap."
+    },
+    {
+      "name": "po_ok_2",
+      "value": "@calc(date_fns.addDays(new Date(@local.po_base_ms), 60).getTime() < @local.po_cap_ms)",
+      "comments": "Cycle 2 within the cap."
+    },
+    {
+      "name": "po_ok_3",
+      "value": "@calc(date_fns.addDays(new Date(@local.po_base_ms), 90).getTime() < @local.po_cap_ms)",
+      "comments": "Cycle 3 within the cap."
+    },
+    {
+      "name": "po_ok_4",
+      "value": "@calc(date_fns.addDays(new Date(@local.po_base_ms), 120).getTime() < @local.po_cap_ms)",
+      "comments": "Cycle 4 within the cap."
+    },
+    {
+      "name": "po_ok_5",
+      "value": "@calc(date_fns.addDays(new Date(@local.po_base_ms), 150).getTime() < @local.po_cap_ms)",
+      "comments": "Cycle 5 within the cap."
+    },
+    {
+      "name": "po_c1_first",
+      "value": "@calc(@local.po_ok_1 ? date_fns.addDays(new Date(@local.po_base_ms), 30) : \"\")",
+      "comments": "T + 30 days at 19:00; empty past the cap (create skips it)."
+    },
+    {
+      "name": "po_c1_r1",
+      "value": "@calc(@local.po_ok_1 ? date_fns.addDays(new Date(@local.po_base_ms), 37) : \"\")",
+      "comments": "T + 37 days at 19:00; empty past the cap (create skips it)."
+    },
+    {
+      "name": "po_c1_r2",
+      "value": "@calc(@local.po_ok_1 ? date_fns.addDays(new Date(@local.po_base_ms), 44) : \"\")",
+      "comments": "T + 44 days at 19:00; empty past the cap (create skips it)."
+    },
+    {
+      "name": "po_c2_first",
+      "value": "@calc(@local.po_ok_2 ? date_fns.addDays(new Date(@local.po_base_ms), 60) : \"\")",
+      "comments": "T + 60 days at 19:00; empty past the cap (create skips it)."
+    },
+    {
+      "name": "po_c2_r1",
+      "value": "@calc(@local.po_ok_2 ? date_fns.addDays(new Date(@local.po_base_ms), 67) : \"\")",
+      "comments": "T + 67 days at 19:00; empty past the cap (create skips it)."
+    },
+    {
+      "name": "po_c2_r2",
+      "value": "@calc(@local.po_ok_2 ? date_fns.addDays(new Date(@local.po_base_ms), 74) : \"\")",
+      "comments": "T + 74 days at 19:00; empty past the cap (create skips it)."
+    },
+    {
+      "name": "po_c3_first",
+      "value": "@calc(@local.po_ok_3 ? date_fns.addDays(new Date(@local.po_base_ms), 90) : \"\")",
+      "comments": "T + 90 days at 19:00; empty past the cap (create skips it)."
+    },
+    {
+      "name": "po_c3_r1",
+      "value": "@calc(@local.po_ok_3 ? date_fns.addDays(new Date(@local.po_base_ms), 97) : \"\")",
+      "comments": "T + 97 days at 19:00; empty past the cap (create skips it)."
+    },
+    {
+      "name": "po_c3_r2",
+      "value": "@calc(@local.po_ok_3 ? date_fns.addDays(new Date(@local.po_base_ms), 104) : \"\")",
+      "comments": "T + 104 days at 19:00; empty past the cap (create skips it)."
+    },
+    {
+      "name": "po_c4_first",
+      "value": "@calc(@local.po_ok_4 ? date_fns.addDays(new Date(@local.po_base_ms), 120) : \"\")",
+      "comments": "T + 120 days at 19:00; empty past the cap (create skips it)."
+    },
+    {
+      "name": "po_c4_r1",
+      "value": "@calc(@local.po_ok_4 ? date_fns.addDays(new Date(@local.po_base_ms), 127) : \"\")",
+      "comments": "T + 127 days at 19:00; empty past the cap (create skips it)."
+    },
+    {
+      "name": "po_c4_r2",
+      "value": "@calc(@local.po_ok_4 ? date_fns.addDays(new Date(@local.po_base_ms), 134) : \"\")",
+      "comments": "T + 134 days at 19:00; empty past the cap (create skips it)."
+    },
+    {
+      "name": "po_c5_first",
+      "value": "@calc(@local.po_ok_5 ? date_fns.addDays(new Date(@local.po_base_ms), 150) : \"\")",
+      "comments": "T + 150 days at 19:00; empty past the cap (create skips it)."
+    },
+    {
+      "name": "po_c5_r1",
+      "value": "@calc(@local.po_ok_5 ? date_fns.addDays(new Date(@local.po_base_ms), 157) : \"\")",
+      "comments": "T + 157 days at 19:00; empty past the cap (create skips it)."
+    },
+    {
+      "name": "po_c5_r2",
+      "value": "@calc(@local.po_ok_5 ? date_fns.addDays(new Date(@local.po_base_ms), 164) : \"\")",
+      "comments": "T + 164 days at 19:00; empty past the cap (create skips it)."
+    },
+    {
+      "name": "po_tap_action_list",
+      "value": "notification_interacted | set_field: po_setup_pending: true;\nnotification_interacted | set_field: prox_outcome_access: cta;\nnotification_interacted | set_data | _list_id: proximal_outcome_14d_pages, completed: false;\nnotification_interacted | nav_stack: open | template: proximal_outcome_14d_checkin, header: false;",
+      "comments": "Tap on a notification. Name must end in _action_list; static values only (no emit, no @calc)."
+    },
+    {
+      "name": "po_schedule_action_list",
+      "value": "completed | notification: cancel_all;\ncompleted | notification: create |\nid: po_c1_first,\ntitle: @global.po_post_nf_first_title,\ntext: @global.po_post_nf_first_text,\nschedule_at: @local.po_c1_first,\naction_list: @local.po_tap_action_list;\ncompleted | notification: create |\nid: po_c1_r1,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c1_r1,\naction_list: @local.po_tap_action_list;\ncompleted | notification: create |\nid: po_c1_r2,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c1_r2,\naction_list: @local.po_tap_action_list;\ncompleted | notification: create |\nid: po_c2_first,\ntitle: @global.po_post_nf_first_title,\ntext: @global.po_post_nf_first_text,\nschedule_at: @local.po_c2_first,\naction_list: @local.po_tap_action_list;\ncompleted | notification: create |\nid: po_c2_r1,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c2_r1,\naction_list: @local.po_tap_action_list;\ncompleted | notification: create |\nid: po_c2_r2,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c2_r2,\naction_list: @local.po_tap_action_list;\ncompleted | notification: create |\nid: po_c3_first,\ntitle: @global.po_post_nf_first_title,\ntext: @global.po_post_nf_first_text,\nschedule_at: @local.po_c3_first,\naction_list: @local.po_tap_action_list;\ncompleted | notification: create |\nid: po_c3_r1,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c3_r1,\naction_list: @local.po_tap_action_list;\ncompleted | notification: create |\nid: po_c3_r2,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c3_r2,\naction_list: @local.po_tap_action_list;\ncompleted | notification: create |\nid: po_c4_first,\ntitle: @global.po_post_nf_first_title,\ntext: @global.po_post_nf_first_text,\nschedule_at: @local.po_c4_first,\naction_list: @local.po_tap_action_list;\ncompleted | notification: create |\nid: po_c4_r1,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c4_r1,\naction_list: @local.po_tap_action_list;\ncompleted | notification: create |\nid: po_c4_r2,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c4_r2,\naction_list: @local.po_tap_action_list;\ncompleted | notification: create |\nid: po_c5_first,\ntitle: @global.po_post_nf_first_title,\ntext: @global.po_post_nf_first_text,\nschedule_at: @local.po_c5_first,\naction_list: @local.po_tap_action_list;\ncompleted | notification: create |\nid: po_c5_r1,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c5_r1,\naction_list: @local.po_tap_action_list;\ncompleted | notification: create |\nid: po_c5_r2,\ntitle: @global.po_post_nf_reminder_title,\ntext: @global.po_post_nf_reminder_text,\nschedule_at: @local.po_c5_r2,\naction_list: @local.po_tap_action_list;",
+      "condition": "!!@global.has_proximal_outcomes",
+      "comments": "Deployments with check-ins: rebuild the 15 notifications (same ids as intro_post, so they replace each other)."
+    },
+    {
+      "name": "po_schedule_action_list",
+      "value": "completed | set_local: po_notifications_scheduled: false;",
+      "condition": "!@global.has_proximal_outcomes",
+      "comments": "Deployments without check-ins: harmless placeholder, so no permission prompt and no cancel_all."
+    },
+    {
       "type": "begin_template",
       "name": "module_start_at_id",
       "value": "module_start_at_id",
       "action_list": "completed | set_data | _list_id: activity_tasks, _id: @local.activity_id, locked: false;\ncompleted | emit: completed; \nuncompleted | emit: uncompleted;",
       "condition": "!@local.unlock_all",
-      "exclude_from_translation": true,
-      "comments": "!(@local.unlocked_activity_count == 1)"
+      "exclude_from_translation": true
     },
     {
       "name": "module_id",
@@ -67,10 +208,9 @@
       "type": "begin_template",
       "name": "module_start_at_id_unlock_all",
       "value": "module_start_at_id",
-      "action_list": "completed | set_data | _list_id: activity_tasks, locked: false;\ncompleted | set_field | completed_all : true;\ncompleted | emit: completed; \nuncompleted | emit: uncompleted;",
+      "action_list": "completed | set_data | _list_id: activity_tasks, locked: false;\ncompleted | set_field | completed_all : true;\ncompleted | trigger_actions: @local.po_schedule_action_list;\ncompleted | emit: completed; \nuncompleted | emit: uncompleted;",
       "condition": "@local.unlock_all",
-      "exclude_from_translation": true,
-      "comments": "@local.unlocked_activity_count == 1"
+      "exclude_from_translation": true
     },
     {
       "name": "module_id",
@@ -101,9 +241,6 @@
     },
     {
       "type": "end_template"
-    },
-    {
-      "type": " "
     }
   ]
 }
