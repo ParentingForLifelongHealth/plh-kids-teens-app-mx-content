@@ -10,9 +10,9 @@
 | animated_slides | 1 |
 | apple_sign_in_button | 2 |
 | audio | 4 |
-| button | 127 |
+| button | 129 |
 | combo_box | 27 |
-| data_items | 252 |
+| data_items | 273 |
 | debug_toggle | 1 |
 | display_grid | 4 |
 | display_group | 144 |
@@ -20,8 +20,8 @@
 | google_sign_in_button | 2 |
 | image | 27 |
 | items | 16 |
-| lottie_animation | 8 |
-| nested_properties | 533 |
+| lottie_animation | 9 |
+| nested_properties | 603 |
 | number_selector | 1 |
 | plh_bottom_nav | 1 |
 | plh_course_accordion | 1 |
@@ -38,18 +38,18 @@
 | round_button | 33 |
 | select_text | 1 |
 | set_field | 4 |
-| set_variable | 5269 |
+| set_variable | 5718 |
 | simple_checkbox | 1 |
 | task_card | 4 |
 | task_progress_bar | 5 |
-| template | 811 |
-| text | 326 |
+| template | 871 |
+| text | 338 |
 | text_area | 4 |
 | text_box | 23 |
 | text_bubble | 32 |
-| title | 69 |
+| title | 70 |
 | toggle_bar | 5 |
-| update_action_list | 4 |
+| update_action_list | 6 |
 | video | 4 |
 | youtube | 8 |
 </details>
@@ -64,27 +64,27 @@
 | asset_pack | 4 |
 | auth | 3 |
 | emit: changed | 7 |
-| emit: completed | 177 |
-| emit: force_reload | 5 |
+| emit: completed | 178 |
+| emit: force_reload | 7 |
 | emit: force_reprocess | 13 |
 | emit: force_restart | 3 |
 | emit: server_sync | 6 |
 | emit: set_language | 2 |
-| emit: uncompleted | 170 |
+| emit: uncompleted | 171 |
 | feedback | 13 |
 | go_to | 28 |
 | nav | 1 |
-| nav_stack | 1038 |
-| notification | 16 |
+| nav_stack | 1148 |
+| notification | 17 |
 | plh_certificate | 23 |
-| pop_up | 466 |
+| pop_up | 518 |
 | reset_app | 4 |
 | reset_data | 3 |
 | save_to_device | 3 |
-| set_data | 529 |
-| set_field | 527 |
+| set_data | 569 |
+| set_field | 569 |
 | set_item | 30 |
-| set_local | 727 |
+| set_local | 797 |
 | share | 3 |
 | task | 2 |
 | toast | 78 |
@@ -96,8 +96,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 79076 KB | 79.1 MB |
-| unused | 14313 KB | 14.3 MB |
+| total | 78315 KB | 78.3 MB |
+| unused | 15073 KB | 15.1 MB |
 </details>
 
 <details open>
@@ -115,6 +115,24 @@ Assets that appear in app-data but do not have references within sheets
 | images/character_icons/ANGELA_facilitator_intro.jpg | 939 |
 | images/character_icons/ANGEL_facilitator.svg | 921.4 |
 | images/character_icons/ANGEL_facilitator_intro.jpg | 1316.2 |
+| images/comic/relation/calm_yc_1.svg | 45.5 |
+| images/comic/relation/calm_yc_2.svg | 8 |
+| images/comic/relation/calm_yc_4.svg | 45.1 |
+| images/comic/relation/calm_yc_5.svg | 37.8 |
+| images/comic/relation/feelings_yc_1.svg | 28 |
+| images/comic/relation/feelings_yc_2.svg | 46.8 |
+| images/comic/relation/feelings_yc_3.svg | 48.3 |
+| images/comic/relation/feelings_yc_4.svg | 158.1 |
+| images/comic/relation/give_praise_yc_1.svg | 29.7 |
+| images/comic/relation/give_praise_yc_2.svg | 30 |
+| images/comic/relation/give_praise_yc_3.svg | 30.1 |
+| images/comic/relation/give_praise_yc_4.svg | 29.4 |
+| images/comic/relation/routines_yc_1.svg | 29 |
+| images/comic/relation/routines_yc_2.svg | 30.8 |
+| images/comic/relation/routines_yc_3.svg | 48.7 |
+| images/comic/relation/routines_yc_4.svg | 33.7 |
+| images/comic/relation/routines_yc_5.svg | 45.4 |
+| images/comic/relation/routines_yc_6.svg | 36 |
 | images/flags/gb.svg | 0.5 |
 | images/icons/123.png | 45.5 |
 | images/icons/123.svg | 18.9 |
@@ -218,7 +236,6 @@ Assets that have references within sheets but do not appear in app-data
 | images/icons/docs.svg | 1 |
 | images/icons/download_white.svg | 1 |
 | images/icons/visibility.svg | 1 |
-| images/logos/app_logo.png | 1 |
 | images/logos/plh_logomark.png | 1 |
 </details>
 
@@ -229,12 +246,12 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | path | size_kb | count |
 | --- | --- | --- |
-| audio/relax/female/relax_14.m4a | 290.6 | 21 |
+| audio/relax/female/relax_14.m4a | 290.6 | 20 |
 | audio/relax/female/relax_15.m4a | 360.2 | 21 |
-| audio/relax/female/relax_16.m4a | 301.4 | 21 |
+| audio/relax/female/relax_16.m4a | 301.4 | 22 |
 | audio/relax/female/relax_17.m4a | 335.8 | 20 |
-| audio/relax/male/relax_1.m4a | 213.2 | 21 |
-| audio/relax/male/relax_2.m4a | 451.3 | 21 |
+| audio/relax/male/relax_1.m4a | 213.2 | 22 |
+| audio/relax/male/relax_2.m4a | 451.3 | 20 |
 | audio/relax/male/relax_3.m4a | 244.5 | 21 |
 | audio/relax/male/relax_9.m4a | 530.4 | 20 |
 | images/activities/aciegas_c.svg | 32.8 | 2 |
@@ -464,49 +481,31 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/comic/learn/reading_2to3_yc_2.svg | 46.1 | 2 |
 | images/comic/learn/reading_2to3_yc_3.svg | 39.3 | 2 |
 | images/comic/learn/reading_2to3_yc_4.svg | 37.9 | 2 |
-| images/comic/relation/calm_teen_1.svg | 41.9 | 2 |
-| images/comic/relation/calm_teen_2.svg | 7 | 2 |
-| images/comic/relation/calm_teen_4.svg | 41.1 | 2 |
-| images/comic/relation/calm_teen_5.svg | 37.3 | 2 |
-| images/comic/relation/calm_yc_1.svg | 45.5 | 2 |
-| images/comic/relation/calm_yc_2.svg | 8 | 2 |
-| images/comic/relation/calm_yc_4.svg | 45.1 | 2 |
-| images/comic/relation/calm_yc_5.svg | 37.8 | 2 |
-| images/comic/relation/feelings_teen_1.svg | 61 | 2 |
-| images/comic/relation/feelings_teen_2.svg | 32.1 | 2 |
-| images/comic/relation/feelings_teen_3.svg | 30.9 | 2 |
-| images/comic/relation/feelings_teen_4.svg | 32 | 2 |
-| images/comic/relation/feelings_yc_1.svg | 28 | 2 |
-| images/comic/relation/feelings_yc_2.svg | 46.8 | 2 |
-| images/comic/relation/feelings_yc_3.svg | 48.3 | 2 |
-| images/comic/relation/feelings_yc_4.svg | 158.1 | 2 |
-| images/comic/relation/give_praise_teen_1.svg | 13.9 | 2 |
-| images/comic/relation/give_praise_teen_2.svg | 14.7 | 2 |
-| images/comic/relation/give_praise_teen_3.svg | 14.4 | 2 |
-| images/comic/relation/give_praise_yc_1.svg | 29.7 | 2 |
-| images/comic/relation/give_praise_yc_2.svg | 30 | 2 |
-| images/comic/relation/give_praise_yc_3.svg | 30.1 | 2 |
-| images/comic/relation/give_praise_yc_4.svg | 29.4 | 2 |
-| images/comic/relation/one_on_one_teen_1.svg | 34.2 | 2 |
-| images/comic/relation/one_on_one_teen_2.svg | 23 | 2 |
-| images/comic/relation/one_on_one_teen_3.svg | 28.5 | 2 |
-| images/comic/relation/one_on_one_teen_4.svg | 27.2 | 2 |
-| images/comic/relation/one_on_one_teen_5.svg | 54.3 | 2 |
-| images/comic/relation/one_on_one_yc_1.svg | 32.8 | 2 |
-| images/comic/relation/one_on_one_yc_2.svg | 33.4 | 2 |
-| images/comic/relation/one_on_one_yc_3.svg | 33.2 | 2 |
-| images/comic/relation/one_on_one_yc_4.svg | 33.3 | 2 |
-| images/comic/relation/routines_teen_1.svg | 15.7 | 2 |
-| images/comic/relation/routines_teen_2.svg | 16.9 | 2 |
-| images/comic/relation/routines_teen_3.svg | 19 | 2 |
-| images/comic/relation/routines_teen_4.svg | 18.4 | 2 |
-| images/comic/relation/routines_teen_5.svg | 17.4 | 2 |
-| images/comic/relation/routines_yc_1.svg | 29 | 2 |
-| images/comic/relation/routines_yc_2.svg | 30.8 | 2 |
-| images/comic/relation/routines_yc_3.svg | 48.7 | 2 |
-| images/comic/relation/routines_yc_4.svg | 33.7 | 2 |
-| images/comic/relation/routines_yc_5.svg | 45.4 | 2 |
-| images/comic/relation/routines_yc_6.svg | 36 | 2 |
+| images/comic/relation/calm_teen_1.svg | 41.9 | 1 |
+| images/comic/relation/calm_teen_2.svg | 7 | 1 |
+| images/comic/relation/calm_teen_4.svg | 41.1 | 1 |
+| images/comic/relation/calm_teen_5.svg | 37.3 | 1 |
+| images/comic/relation/feelings_teen_1.svg | 61 | 1 |
+| images/comic/relation/feelings_teen_2.svg | 32.1 | 1 |
+| images/comic/relation/feelings_teen_3.svg | 30.9 | 1 |
+| images/comic/relation/feelings_teen_4.svg | 32 | 1 |
+| images/comic/relation/give_praise_teen_1.svg | 13.9 | 1 |
+| images/comic/relation/give_praise_teen_2.svg | 14.7 | 1 |
+| images/comic/relation/give_praise_teen_3.svg | 14.4 | 1 |
+| images/comic/relation/one_on_one_teen_1.svg | 34.2 | 1 |
+| images/comic/relation/one_on_one_teen_2.svg | 23 | 1 |
+| images/comic/relation/one_on_one_teen_3.svg | 28.5 | 1 |
+| images/comic/relation/one_on_one_teen_4.svg | 27.2 | 1 |
+| images/comic/relation/one_on_one_teen_5.svg | 54.3 | 1 |
+| images/comic/relation/one_on_one_yc_1.svg | 32.8 | 4 |
+| images/comic/relation/one_on_one_yc_2.svg | 33.4 | 4 |
+| images/comic/relation/one_on_one_yc_3.svg | 33.2 | 4 |
+| images/comic/relation/one_on_one_yc_4.svg | 33.3 | 4 |
+| images/comic/relation/routines_teen_1.svg | 15.7 | 1 |
+| images/comic/relation/routines_teen_2.svg | 16.9 | 1 |
+| images/comic/relation/routines_teen_3.svg | 19 | 1 |
+| images/comic/relation/routines_teen_4.svg | 18.4 | 1 |
+| images/comic/relation/routines_teen_5.svg | 17.4 | 1 |
 | images/comic/safe/com_safety_2to4_yc_1.svg | 147.9 | 2 |
 | images/comic/safe/com_safety_2to4_yc_2.svg | 170.4 | 2 |
 | images/comic/safe/com_safety_2to4_yc_3.svg | 126.5 | 2 |
@@ -620,24 +619,24 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/comic/understand/young_child_change_yc_2.svg | 101.1 | 2 |
 | images/comic/understand/young_child_change_yc_3.svg | 85.4 | 2 |
 | images/comic/understand/young_child_change_yc_4.svg | 94.2 | 2 |
-| images/homescreen/behave_c.svg | 929.8 | 15 |
-| images/homescreen/behave_t.svg | 518.5 | 15 |
+| images/homescreen/behave_c.svg | 929.8 | 17 |
+| images/homescreen/behave_t.svg | 518.5 | 17 |
 | images/homescreen/ipv.svg | 691.3 | 13 |
-| images/homescreen/learn_c.svg | 578.4 | 15 |
-| images/homescreen/learn_t.svg | 534.4 | 13 |
-| images/homescreen/relation_c.svg | 835.9 | 15 |
-| images/homescreen/relation_t.svg | 754.8 | 15 |
-| images/homescreen/safety_c.svg | 468.4 | 15 |
-| images/homescreen/safety_t.svg | 652.6 | 15 |
-| images/homescreen/understand_c.svg | 754.1 | 15 |
-| images/homescreen/understand_t.svg | 738.3 | 15 |
-| images/icons/balance_blue.png | 4.7 | 16 |
-| images/icons/brain_blue.png | 5.2 | 14 |
+| images/homescreen/learn_c.svg | 578.4 | 17 |
+| images/homescreen/learn_t.svg | 534.4 | 15 |
+| images/homescreen/relation_c.svg | 835.9 | 17 |
+| images/homescreen/relation_t.svg | 754.8 | 17 |
+| images/homescreen/safety_c.svg | 468.4 | 17 |
+| images/homescreen/safety_t.svg | 652.6 | 17 |
+| images/homescreen/understand_c.svg | 754.1 | 17 |
+| images/homescreen/understand_t.svg | 738.3 | 17 |
+| images/icons/balance_blue.png | 4.7 | 13 |
+| images/icons/brain_blue.png | 5.2 | 15 |
 | images/icons/bug.svg | 1.2 | 2 |
 | images/icons/celebration.svg | 70.4 | 1 |
 | images/icons/change.png | 35.3 | 2 |
 | images/icons/chatbubble-ellipses-outline.svg | 0.8 | 1 |
-| images/icons/clock_blue.png | 4.5 | 36 |
+| images/icons/clock_blue.png | 4.5 | 35 |
 | images/icons/diamond-outline.svg | 0.6 | 2 |
 | images/icons/diamond.png | 1.8 | 1 |
 | images/icons/diamond_active.png | 1.7 | 1 |
@@ -648,21 +647,21 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/download.svg | 0.7 | 2 |
 | images/icons/expand_circle_right.png | 8.7 | 1 |
 | images/icons/expand_circle_right_blue.svg | 2.1 | 2 |
-| images/icons/eye_blue.png | 4.2 | 40 |
+| images/icons/eye_blue.png | 4.2 | 42 |
 | images/icons/faces/happy.svg | 0.6 | 11 |
 | images/icons/faces/happy_face_new.svg | 1.4 | 150 |
 | images/icons/faces/neutral.svg | 0.5 | 11 |
 | images/icons/faces/ok_face_new.svg | 0.5 | 150 |
 | images/icons/faces/sad.svg | 0.6 | 11 |
 | images/icons/faces/sad_face_new.svg | 1.5 | 150 |
-| images/icons/football_blue.png | 5.1 | 14 |
+| images/icons/football_blue.png | 5.1 | 15 |
 | images/icons/globe-outline.svg | 0.8 | 1 |
 | images/icons/heart-outline.png | 1.5 | 1 |
 | images/icons/heart.png | 1.3 | 2 |
 | images/icons/heart_filled.png | 1.4 | 1 |
 | images/icons/heart_filled.svg | 1.4 | 1 |
 | images/icons/heart_filled_active.png | 1.5 | 1 |
-| images/icons/heart_filled_blue.png | 4.9 | 66 |
+| images/icons/heart_filled_blue.png | 4.9 | 70 |
 | images/icons/heart_filled_red.png | 1.4 | 3 |
 | images/icons/heart_filled_red.svg | 0.4 | 1 |
 | images/icons/home.svg | 0.4 | 1 |
@@ -670,7 +669,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/home_white.svg | 0.7 | 1 |
 | images/icons/in_progress.svg | 1.1 | 1 |
 | images/icons/information-circle-outline.svg | 0.6 | 1 |
-| images/icons/lightbulb_blue.png | 3.6 | 38 |
+| images/icons/lightbulb_blue.png | 3.6 | 36 |
 | images/icons/local_library.svg | 1.6 | 1 |
 | images/icons/local_library_active.svg | 1.6 | 1 |
 | images/icons/local_library_white.svg | 1.9 | 1 |
@@ -678,27 +677,27 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/lock-open-outline.svg | 0.4 | 2 |
 | images/icons/locked.png | 0.7 | 2 |
 | images/icons/log-in-outline.svg | 0.5 | 1 |
-| images/icons/magnifying_glass.svg | 0.9 | 76 |
+| images/icons/magnifying_glass.svg | 0.9 | 86 |
 | images/icons/parent_child.svg | 2 | 28 |
-| images/icons/parent_child_heart.svg | 3 | 88 |
-| images/icons/pause.svg | 0.7 | 82 |
-| images/icons/pencil.svg | 1.1 | 88 |
+| images/icons/parent_child_heart.svg | 3 | 98 |
+| images/icons/pause.svg | 0.7 | 92 |
+| images/icons/pencil.svg | 1.1 | 98 |
 | images/icons/person-circle-outline.svg | 0.8 | 1 |
-| images/icons/picture_book.svg | 1.8 | 84 |
+| images/icons/picture_book.svg | 1.8 | 94 |
 | images/icons/question_blue.png | 3.4 | 14 |
 | images/icons/question_mark_blue.svg | 0.8 | 1 |
 | images/icons/settings.svg | 2.4 | 1 |
 | images/icons/settings_active.svg | 2.4 | 1 |
 | images/icons/settings_white.svg | 2.4 | 1 |
 | images/icons/share.svg | 4.2 | 3 |
-| images/icons/single_speech_blue.png | 3.3 | 16 |
-| images/icons/smile_eyes_down.svg | 0.9 | 82 |
-| images/icons/smile_eyes_up.svg | 1 | 85 |
+| images/icons/single_speech_blue.png | 3.3 | 18 |
+| images/icons/smile_eyes_down.svg | 0.9 | 92 |
+| images/icons/smile_eyes_up.svg | 1 | 95 |
 | images/icons/spark.png | 1.6 | 4 |
-| images/icons/speech_bubble_blue.png | 4.2 | 54 |
-| images/icons/star_filled_blue.png | 5.1 | 54 |
+| images/icons/speech_bubble_blue.png | 4.2 | 56 |
+| images/icons/star_filled_blue.png | 5.1 | 52 |
 | images/icons/star_outline_blue.svg | 1 | 5 |
-| images/icons/thought_bubble.svg | 2.1 | 78 |
+| images/icons/thought_bubble.svg | 2.1 | 88 |
 | images/icons/tick.svg | 0.3 | 41 |
 | images/icons/trophy.png | 1.6 | 1 |
 | images/icons/trophy_active.png | 1.7 | 1 |
@@ -717,10 +716,10 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | lottie/relax/blue_dots.json | 14.7 | 4 |
 | lottie/relax/heart.json | 46.7 | 4 |
 | lottie/relax/looping_rings.json | 10.4 | 24 |
-| lottie/relax/soothing_waves.json | 7.6 | 24 |
-| lottie/relax/square_flow.json | 5.9 | 47 |
+| lottie/relax/soothing_waves.json | 7.6 | 23 |
+| lottie/relax/square_flow.json | 5.9 | 48 |
 | lottie/ux/bulging_circles.json | 11.8 | 1 |
-| lottie/ux/checkmark.json | 24.6 | 1 |
+| lottie/ux/checkmark.json | 24.6 | 2 |
 | lottie/ux/gift_box.json | 674.5 | 1 |
 | temp/congrats.json | 50.4 | 1 |
 </details>
@@ -736,7 +735,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_list | campaign_rows | 1 |
 | data_list | campaign_schedule | 1 |
 | data_list | check_in | 1 |
-| data_list | generated | 154 |
+| data_list | generated | 164 |
 | data_list | hp_review | 2 |
 | data_list | legal_terms | 2 |
 | data_list | library | 2 |
@@ -762,15 +761,20 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_list | modules_help_l_7to9_c | 1 |
 | data_list | modules_help_learn_t | 1 |
 | data_list | modules_hope_future_t | 1 |
-| data_list | modules_i_calm_c | 1 |
+| data_list | modules_i_calm_c_fc | 1 |
+| data_list | modules_i_calm_c_mc | 1 |
 | data_list | modules_i_calm_t | 1 |
-| data_list | modules_i_feelings_c | 1 |
+| data_list | modules_i_feelings_c_fc | 1 |
+| data_list | modules_i_feelings_c_mc | 1 |
 | data_list | modules_i_feelings_t | 1 |
-| data_list | modules_i_give_praise_c | 1 |
+| data_list | modules_i_give_praise_c_fc | 1 |
+| data_list | modules_i_give_praise_c_mc | 1 |
 | data_list | modules_i_give_praise_t | 1 |
-| data_list | modules_i_one_on_one_c | 1 |
+| data_list | modules_i_one_on_one_c_fc | 1 |
+| data_list | modules_i_one_on_one_c_mc | 1 |
 | data_list | modules_i_one_on_one_t | 1 |
-| data_list | modules_i_routines_c | 1 |
+| data_list | modules_i_routines_c_fc | 1 |
+| data_list | modules_i_routines_c_mc | 1 |
 | data_list | modules_i_routines_t | 1 |
 | data_list | modules_ignore_c | 1 |
 | data_list | modules_ipv_conflicts_m | 1 |
@@ -821,13 +825,13 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_list | proximal_outcomes | 9 |
 | data_list | relax | 1 |
 | data_pipe |  | 4 |
-| data_pipe | generated | 150 |
+| data_pipe | generated | 160 |
 | generator |  | 9 |
-| global |  | 12 |
+| global |  | 13 |
 | global | onboarding | 16 |
 | global | proximal_outcomes | 2 |
-| template |  | 110 |
-| template | generated | 338 |
+| template |  | 111 |
+| template | generated | 368 |
 | template | legal_terms | 4 |
 | template | proximal_outcomes | 18 |
 </details>

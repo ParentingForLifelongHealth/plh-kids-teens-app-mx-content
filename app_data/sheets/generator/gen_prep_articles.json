@@ -60,8 +60,7 @@
       "operation": "append_columns",
       "args_list": [
         "completed: FALSE"
-      ],
-      "output_target": "{@gen.id}_article_tasks"
+      ]
     },
     {
       "operation": "append_columns",
@@ -78,52 +77,102 @@
   },
   "_output_flows": [
     {
-      "flow_name": "prep_i_one_on_one_c_articles",
+      "flow_name": "prep_i_one_on_one_c_fc_articles",
       "flow_subtype": "generated",
       "flow_type": "data_pipe"
     },
     {
-      "flow_name": "prep_i_give_praise_c_articles",
+      "flow_name": "prep_i_one_on_one_c_mc_articles",
       "flow_subtype": "generated",
       "flow_type": "data_pipe"
     },
     {
-      "flow_name": "prep_i_routines_c_articles",
+      "flow_name": "prep_i_give_praise_c_fc_articles",
       "flow_subtype": "generated",
       "flow_type": "data_pipe"
     },
     {
-      "flow_name": "prep_i_feelings_c_articles",
+      "flow_name": "prep_i_give_praise_c_mc_articles",
       "flow_subtype": "generated",
       "flow_type": "data_pipe"
     },
     {
-      "flow_name": "prep_i_calm_c_articles",
+      "flow_name": "prep_i_routines_c_fc_articles",
       "flow_subtype": "generated",
       "flow_type": "data_pipe"
     },
     {
-      "flow_name": "prep_i_one_on_one_t_articles",
+      "flow_name": "prep_i_routines_c_mc_articles",
       "flow_subtype": "generated",
       "flow_type": "data_pipe"
     },
     {
-      "flow_name": "prep_i_give_praise_t_articles",
+      "flow_name": "prep_i_feelings_c_fc_articles",
       "flow_subtype": "generated",
       "flow_type": "data_pipe"
     },
     {
-      "flow_name": "prep_i_routines_t_articles",
+      "flow_name": "prep_i_feelings_c_mc_articles",
       "flow_subtype": "generated",
       "flow_type": "data_pipe"
     },
     {
-      "flow_name": "prep_i_feelings_t_articles",
+      "flow_name": "prep_i_calm_c_fc_articles",
       "flow_subtype": "generated",
       "flow_type": "data_pipe"
     },
     {
-      "flow_name": "prep_i_calm_t_articles",
+      "flow_name": "prep_i_calm_c_mc_articles",
+      "flow_subtype": "generated",
+      "flow_type": "data_pipe"
+    },
+    {
+      "flow_name": "prep_i_one_on_one_t_fc_articles",
+      "flow_subtype": "generated",
+      "flow_type": "data_pipe"
+    },
+    {
+      "flow_name": "prep_i_one_on_one_t_mc_articles",
+      "flow_subtype": "generated",
+      "flow_type": "data_pipe"
+    },
+    {
+      "flow_name": "prep_i_give_praise_t_fc_articles",
+      "flow_subtype": "generated",
+      "flow_type": "data_pipe"
+    },
+    {
+      "flow_name": "prep_i_give_praise_t_mc_articles",
+      "flow_subtype": "generated",
+      "flow_type": "data_pipe"
+    },
+    {
+      "flow_name": "prep_i_routines_t_fc_articles",
+      "flow_subtype": "generated",
+      "flow_type": "data_pipe"
+    },
+    {
+      "flow_name": "prep_i_routines_t_mc_articles",
+      "flow_subtype": "generated",
+      "flow_type": "data_pipe"
+    },
+    {
+      "flow_name": "prep_i_feelings_t_fc_articles",
+      "flow_subtype": "generated",
+      "flow_type": "data_pipe"
+    },
+    {
+      "flow_name": "prep_i_feelings_t_mc_articles",
+      "flow_subtype": "generated",
+      "flow_type": "data_pipe"
+    },
+    {
+      "flow_name": "prep_i_calm_t_fc_articles",
+      "flow_subtype": "generated",
+      "flow_type": "data_pipe"
+    },
+    {
+      "flow_name": "prep_i_calm_t_mc_articles",
       "flow_subtype": "generated",
       "flow_type": "data_pipe"
     },

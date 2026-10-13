@@ -4,7 +4,7 @@
   "flow_type": "data_list",
   "rows": [
     {
-      "id": "i_one_on_one_c",
+      "id": "i_one_on_one_c_fc",
       "tag_course": "relation_c",
       "age_list": [
         "2",
@@ -22,7 +22,6 @@
         "opt_out"
       ],
       "user_gender_list": [
-        "man",
         "woman",
         "opt_out"
       ],
@@ -33,14 +32,14 @@
       "image_asset": "images/homescreen/relation_c.svg",
       "relax_id": "relax_1",
       "check_in_id": "check_in_1",
-      "title": "Pasar tiempo juntos y conectados",
+      "title": "Tiempo para conectar",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Pasar tiempo juntos y conectados"
+          "eng": "Tiempo para conectar"
         },
         "home_activity": {
           "eng": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name."
@@ -48,10 +47,10 @@
       },
       "home_activity": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name.",
       "completed": false,
-      "task_child": "i_one_on_one_c_article_tasks"
+      "task_child": "i_one_on_one_c_fc_article_tasks"
     },
     {
-      "id": "i_give_praise_c",
+      "id": "i_one_on_one_c_mc",
       "tag_course": "relation_c",
       "age_list": [
         "2",
@@ -69,25 +68,23 @@
         "opt_out"
       ],
       "user_gender_list": [
-        "man",
-        "woman",
-        "opt_out"
+        "man"
       ],
       "tag_list": [
         "child"
       ],
       "number": 2,
-      "image_asset": "images/homescreen/relation_t.svg",
-      "relax_id": "relax_2",
-      "check_in_id": "check_in_2",
-      "title": "Dar reconocimiento",
+      "image_asset": "images/homescreen/relation_c.svg",
+      "relax_id": "relax_1",
+      "check_in_id": "check_in_1",
+      "title": "Tiempo para conectar",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Dar reconocimiento"
+          "eng": "Tiempo para conectar"
         },
         "home_activity": {
           "eng": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name."
@@ -95,10 +92,10 @@
       },
       "home_activity": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name.",
       "completed": false,
-      "task_child": "i_give_praise_c_article_tasks"
+      "task_child": "i_one_on_one_c_mc_article_tasks"
     },
     {
-      "id": "i_routines_c",
+      "id": "i_give_praise_c_fc",
       "tag_course": "relation_c",
       "age_list": [
         "2",
@@ -116,7 +113,6 @@
         "opt_out"
       ],
       "user_gender_list": [
-        "man",
         "woman",
         "opt_out"
       ],
@@ -124,17 +120,17 @@
         "child"
       ],
       "number": 3,
-      "image_asset": "images/homescreen/understand_c.svg",
-      "relax_id": "relax_3",
-      "check_in_id": "check_in_3",
-      "title": "Crear rutinas",
+      "image_asset": "images/homescreen/relation_t.svg",
+      "relax_id": "relax_2",
+      "check_in_id": "check_in_2",
+      "title": "Reconocer sus esfuerzos y logros",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Crear rutinas"
+          "eng": "Reconocer sus esfuerzos y logros"
         },
         "home_activity": {
           "eng": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name."
@@ -142,10 +138,10 @@
       },
       "home_activity": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name.",
       "completed": false,
-      "task_child": "i_routines_c_article_tasks"
+      "task_child": "i_give_praise_c_fc_article_tasks"
     },
     {
-      "id": "i_feelings_c",
+      "id": "i_give_praise_c_mc",
       "tag_course": "relation_c",
       "age_list": [
         "2",
@@ -163,14 +159,149 @@
         "opt_out"
       ],
       "user_gender_list": [
-        "man",
+        "man"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number": 4,
+      "image_asset": "images/homescreen/relation_t.svg",
+      "relax_id": "relax_2",
+      "check_in_id": "check_in_2",
+      "title": "Reconocer sus esfuerzos y logros",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Reconocer sus esfuerzos y logros"
+        },
+        "home_activity": {
+          "eng": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name."
+        }
+      },
+      "home_activity": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name.",
+      "completed": false,
+      "task_child": "i_give_praise_c_mc_article_tasks"
+    },
+    {
+      "id": "i_routines_c_fc",
+      "tag_course": "relation_c",
+      "age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "user_gender_list": [
         "woman",
         "opt_out"
       ],
       "tag_list": [
         "child"
       ],
-      "number": 4,
+      "number": 5,
+      "image_asset": "images/homescreen/understand_c.svg",
+      "relax_id": "relax_3",
+      "check_in_id": "check_in_3",
+      "title": "Crear rutinas de bienestar",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Crear rutinas de bienestar"
+        },
+        "home_activity": {
+          "eng": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name."
+        }
+      },
+      "home_activity": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name.",
+      "completed": false,
+      "task_child": "i_routines_c_fc_article_tasks"
+    },
+    {
+      "id": "i_routines_c_mc",
+      "tag_course": "relation_c",
+      "age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "user_gender_list": [
+        "man"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number": 6,
+      "image_asset": "images/homescreen/understand_c.svg",
+      "relax_id": "relax_3",
+      "check_in_id": "check_in_3",
+      "title": "Crear rutinas de bienestar",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Crear rutinas de bienestar"
+        },
+        "home_activity": {
+          "eng": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name."
+        }
+      },
+      "home_activity": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name.",
+      "completed": false,
+      "task_child": "i_routines_c_mc_article_tasks"
+    },
+    {
+      "id": "i_feelings_c_fc",
+      "tag_course": "relation_c",
+      "age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "user_gender_list": [
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number": 7,
       "image_asset": "images/homescreen/understand_t.svg",
       "relax_id": "relax_9",
       "check_in_id": "check_in_4",
@@ -189,10 +320,10 @@
       },
       "home_activity": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name.",
       "completed": false,
-      "task_child": "i_feelings_c_article_tasks"
+      "task_child": "i_feelings_c_fc_article_tasks"
     },
     {
-      "id": "i_calm_c",
+      "id": "i_feelings_c_mc",
       "tag_course": "relation_c",
       "age_list": [
         "2",
@@ -210,25 +341,23 @@
         "opt_out"
       ],
       "user_gender_list": [
-        "man",
-        "woman",
-        "opt_out"
+        "man"
       ],
       "tag_list": [
         "child"
       ],
-      "number": 5,
-      "image_asset": "images/homescreen/behave_c.svg",
-      "relax_id": "relax_1",
-      "check_in_id": "check_in_5",
-      "title": "Mantener la calma cuando hay estrés",
+      "number": 8,
+      "image_asset": "images/homescreen/understand_t.svg",
+      "relax_id": "relax_9",
+      "check_in_id": "check_in_4",
+      "title": "Identificar emociones",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Mantener la calma cuando hay estrés"
+          "eng": "Identificar emociones"
         },
         "home_activity": {
           "eng": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name."
@@ -236,10 +365,101 @@
       },
       "home_activity": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name.",
       "completed": false,
-      "task_child": "i_calm_c_article_tasks"
+      "task_child": "i_feelings_c_mc_article_tasks"
     },
     {
-      "id": "i_one_on_one_t",
+      "id": "i_calm_c_fc",
+      "tag_course": "relation_c",
+      "age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "user_gender_list": [
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number": 9,
+      "image_asset": "images/homescreen/behave_c.svg",
+      "relax_id": "relax_1",
+      "check_in_id": "check_in_5",
+      "title": "Mantener la calma",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Mantener la calma"
+        },
+        "home_activity": {
+          "eng": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name."
+        }
+      },
+      "home_activity": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name.",
+      "completed": false,
+      "task_child": "i_calm_c_fc_article_tasks"
+    },
+    {
+      "id": "i_calm_c_mc",
+      "tag_course": "relation_c",
+      "age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "user_gender_list": [
+        "man"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number": 10,
+      "image_asset": "images/homescreen/behave_c.svg",
+      "relax_id": "relax_1",
+      "check_in_id": "check_in_5",
+      "title": "Mantener la calma",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Mantener la calma"
+        },
+        "home_activity": {
+          "eng": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name."
+        }
+      },
+      "home_activity": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name.",
+      "completed": false,
+      "task_child": "i_calm_c_mc_article_tasks"
+    },
+    {
+      "id": "i_one_on_one_t_fc",
       "tag_course": "relation_t",
       "age_list": [
         "10",
@@ -257,36 +477,35 @@
         "opt_out"
       ],
       "user_gender_list": [
-        "man",
         "woman",
         "opt_out"
       ],
       "tag_list": [
         "teen"
       ],
-      "number": 6,
+      "number": 11,
       "image_asset": "images/homescreen/behave_t.svg",
       "relax_id": "relax_2",
       "check_in_id": "check_in_6",
-      "title": "Pasar tiempo juntos y conectados",
+      "title": "Tiempo para conectar",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Pasar tiempo juntos y conectados"
+          "eng": "Tiempo para conectar"
         },
         "home_activity": {
-          "eng": "¡Muy bien!  \n\nEs momento de dedicar al menos 15 minutos del día para compartir, jugar o conversar con @fields.child_name y disfrutar un momento especial juntos."
+          "eng": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name."
         }
       },
-      "home_activity": "¡Muy bien!  \n\nEs momento de dedicar al menos 15 minutos del día para compartir, jugar o conversar con @fields.child_name y disfrutar un momento especial juntos.",
+      "home_activity": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name.",
       "completed": false,
-      "task_child": "i_one_on_one_t_article_tasks"
+      "task_child": "i_one_on_one_t_fc_article_tasks"
     },
     {
-      "id": "i_give_praise_t",
+      "id": "i_one_on_one_t_mc",
       "tag_course": "relation_t",
       "age_list": [
         "10",
@@ -304,36 +523,80 @@
         "opt_out"
       ],
       "user_gender_list": [
-        "man",
+        "man"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number": 12,
+      "image_asset": "images/homescreen/behave_t.svg",
+      "relax_id": "relax_2",
+      "check_in_id": "check_in_6",
+      "title": "Tiempo para conectar",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Tiempo para conectar"
+        },
+        "home_activity": {
+          "eng": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name."
+        }
+      },
+      "home_activity": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name.",
+      "completed": false,
+      "task_child": "i_one_on_one_t_mc_article_tasks"
+    },
+    {
+      "id": "i_give_praise_t_fc",
+      "tag_course": "relation_t",
+      "age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "user_gender_list": [
         "woman",
         "opt_out"
       ],
       "tag_list": [
         "teen"
       ],
-      "number": 7,
+      "number": 13,
       "image_asset": "images/homescreen/safety_c.svg",
       "relax_id": "relax_3",
       "check_in_id": "check_in_7",
-      "title": "Dar reconocimiento",
+      "title": "Reconocer sus esfuerzos y logros",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Dar reconocimiento"
+          "eng": "Reconocer sus esfuerzos y logros"
         },
         "home_activity": {
-          "eng": "Continúa practicando el reconocer y valorar las cosas positivas que hace @fields.child_name, incluso en los pequeños esfuerzos del día a día."
+          "eng": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name."
         }
       },
-      "home_activity": "Continúa practicando el reconocer y valorar las cosas positivas que hace @fields.child_name, incluso en los pequeños esfuerzos del día a día.",
+      "home_activity": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name.",
       "completed": false,
-      "task_child": "i_give_praise_t_article_tasks"
+      "task_child": "i_give_praise_t_fc_article_tasks"
     },
     {
-      "id": "i_routines_t",
+      "id": "i_give_praise_t_mc",
       "tag_course": "relation_t",
       "age_list": [
         "10",
@@ -351,31 +614,34 @@
         "opt_out"
       ],
       "user_gender_list": [
-        "man",
-        "woman",
-        "opt_out"
+        "man"
       ],
       "tag_list": [
         "teen"
       ],
-      "number": 8,
-      "image_asset": "images/homescreen/safety_t.svg",
-      "relax_id": "relax_9",
-      "check_in_id": "check_in_8",
-      "title": "Crear rutinas",
+      "number": 14,
+      "image_asset": "images/homescreen/safety_c.svg",
+      "relax_id": "relax_3",
+      "check_in_id": "check_in_7",
+      "title": "Reconocer sus esfuerzos y logros",
       "_translations": {
-        "title": {}
+        "title": {},
+        "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Crear rutinas"
+          "eng": "Reconocer sus esfuerzos y logros"
+        },
+        "home_activity": {
+          "eng": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name."
         }
       },
+      "home_activity": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name.",
       "completed": false,
-      "task_child": "i_routines_t_article_tasks"
+      "task_child": "i_give_praise_t_mc_article_tasks"
     },
     {
-      "id": "i_feelings_t",
+      "id": "i_routines_t_fc",
       "tag_course": "relation_t",
       "age_list": [
         "10",
@@ -393,31 +659,126 @@
         "opt_out"
       ],
       "user_gender_list": [
-        "man",
         "woman",
         "opt_out"
       ],
       "tag_list": [
         "teen"
       ],
-      "number": 9,
+      "number": 15,
+      "image_asset": "images/homescreen/safety_t.svg",
+      "relax_id": "relax_9",
+      "check_in_id": "check_in_8",
+      "title": "Crear rutinas de bienestar",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Crear rutinas de bienestar"
+        },
+        "home_activity": {
+          "eng": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name."
+        }
+      },
+      "home_activity": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name.",
+      "completed": false,
+      "task_child": "i_routines_t_fc_article_tasks"
+    },
+    {
+      "id": "i_routines_t_mc",
+      "tag_course": "relation_t",
+      "age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "user_gender_list": [
+        "man"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number": 16,
+      "image_asset": "images/homescreen/safety_t.svg",
+      "relax_id": "relax_9",
+      "check_in_id": "check_in_8",
+      "title": "Crear rutinas de bienestar",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Crear rutinas de bienestar"
+        },
+        "home_activity": {
+          "eng": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name."
+        }
+      },
+      "home_activity": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name.",
+      "completed": false,
+      "task_child": "i_routines_t_mc_article_tasks"
+    },
+    {
+      "id": "i_feelings_t_fc",
+      "tag_course": "relation_t",
+      "age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "user_gender_list": [
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number": 17,
       "image_asset": "images/homescreen/learn_c.svg",
       "relax_id": "relax_1",
       "check_in_id": "check_in_9",
       "title": "Identificar emociones",
       "_translations": {
-        "title": {}
+        "title": {},
+        "home_activity": {}
       },
       "_translatedFields": {
         "title": {
           "eng": "Identificar emociones"
+        },
+        "home_activity": {
+          "eng": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name."
         }
       },
+      "home_activity": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name.",
       "completed": false,
-      "task_child": "i_feelings_t_article_tasks"
+      "task_child": "i_feelings_t_fc_article_tasks"
     },
     {
-      "id": "i_calm_t",
+      "id": "i_feelings_t_mc",
       "tag_course": "relation_t",
       "age_list": [
         "10",
@@ -435,28 +796,122 @@
         "opt_out"
       ],
       "user_gender_list": [
-        "man",
+        "man"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number": 18,
+      "image_asset": "images/homescreen/learn_c.svg",
+      "relax_id": "relax_1",
+      "check_in_id": "check_in_9",
+      "title": "Identificar emociones",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Identificar emociones"
+        },
+        "home_activity": {
+          "eng": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name."
+        }
+      },
+      "home_activity": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name.",
+      "completed": false,
+      "task_child": "i_feelings_t_mc_article_tasks"
+    },
+    {
+      "id": "i_calm_t_fc",
+      "tag_course": "relation_t",
+      "age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "user_gender_list": [
         "woman",
         "opt_out"
       ],
       "tag_list": [
         "teen"
       ],
-      "number": 10,
+      "number": 19,
       "image_asset": "images/homescreen/learn_t.svg",
       "relax_id": "relax_2",
       "check_in_id": "check_in_10",
-      "title": "Mantener la calma cuando hay estrés",
+      "title": "Mantener la calma",
       "_translations": {
-        "title": {}
+        "title": {},
+        "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Mantener la calma cuando hay estrés"
+          "eng": "Mantener la calma"
+        },
+        "home_activity": {
+          "eng": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name."
         }
       },
+      "home_activity": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name.",
       "completed": false,
-      "task_child": "i_calm_t_article_tasks"
+      "task_child": "i_calm_t_fc_article_tasks"
+    },
+    {
+      "id": "i_calm_t_mc",
+      "tag_course": "relation_t",
+      "age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "user_gender_list": [
+        "man"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number": 20,
+      "image_asset": "images/homescreen/learn_t.svg",
+      "relax_id": "relax_2",
+      "check_in_id": "check_in_10",
+      "title": "Mantener la calma",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Mantener la calma"
+        },
+        "home_activity": {
+          "eng": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name."
+        }
+      },
+      "home_activity": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name.",
+      "completed": false,
+      "task_child": "i_calm_t_mc_article_tasks"
     },
     {
       "id": "ipv_listen_m",
@@ -491,7 +946,7 @@
         "child",
         "teen"
       ],
-      "number": 11,
+      "number": 21,
       "image_asset": "images/homescreen/ipv.svg",
       "relax_id": "relax_3",
       "check_in_id": "check_in_11",
@@ -545,7 +1000,7 @@
         "child",
         "teen"
       ],
-      "number": 12,
+      "number": 22,
       "image_asset": "images/homescreen/relation_c.svg",
       "relax_id": "relax_9",
       "check_in_id": "check_in_12",
@@ -599,7 +1054,7 @@
         "child",
         "teen"
       ],
-      "number": 13,
+      "number": 23,
       "image_asset": "images/homescreen/relation_t.svg",
       "relax_id": "relax_1",
       "check_in_id": "check_in_13",
@@ -653,7 +1108,7 @@
         "child",
         "teen"
       ],
-      "number": 14,
+      "number": 24,
       "image_asset": "images/homescreen/understand_c.svg",
       "relax_id": "relax_2",
       "check_in_id": "check_in_14",
@@ -707,7 +1162,7 @@
         "child",
         "teen"
       ],
-      "number": 15,
+      "number": 25,
       "image_asset": "images/homescreen/understand_t.svg",
       "relax_id": "relax_3",
       "check_in_id": "check_in_15",
@@ -748,7 +1203,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 16,
+      "number": 26,
       "image_asset": "images/homescreen/behave_c.svg",
       "relax_id": "relax_9",
       "check_in_id": "check_in_16",
@@ -790,7 +1245,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 17,
+      "number": 27,
       "image_asset": "images/homescreen/behave_t.svg",
       "relax_id": "relax_1",
       "check_in_id": "check_in_17",
@@ -833,7 +1288,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 18,
+      "number": 28,
       "image_asset": "images/homescreen/safety_c.svg",
       "relax_id": "relax_2",
       "check_in_id": "check_in_18",
@@ -875,7 +1330,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 19,
+      "number": 29,
       "image_asset": "images/homescreen/safety_t.svg",
       "relax_id": "relax_3",
       "check_in_id": "check_in_19",
@@ -919,7 +1374,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 20,
+      "number": 30,
       "image_asset": "images/homescreen/learn_c.svg",
       "relax_id": "relax_9",
       "check_in_id": "check_in_20",
@@ -963,7 +1418,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 21,
+      "number": 31,
       "image_asset": "images/homescreen/learn_t.svg",
       "relax_id": "relax_1",
       "check_in_id": "check_in_21",
@@ -1005,7 +1460,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 22,
+      "number": 32,
       "image_asset": "images/homescreen/ipv.svg",
       "relax_id": "relax_2",
       "check_in_id": "check_in_22",
@@ -1052,7 +1507,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 23,
+      "number": 33,
       "image_asset": "images/homescreen/relation_c.svg",
       "relax_id": "relax_3",
       "check_in_id": "check_in_23",
@@ -1099,7 +1554,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 24,
+      "number": 34,
       "image_asset": "images/homescreen/relation_t.svg",
       "relax_id": "relax_9",
       "check_in_id": "check_in_24",
@@ -1146,7 +1601,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 25,
+      "number": 35,
       "image_asset": "images/homescreen/understand_c.svg",
       "relax_id": "relax_1",
       "check_in_id": "check_in_25",
@@ -1193,7 +1648,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 26,
+      "number": 36,
       "image_asset": "images/homescreen/understand_t.svg",
       "relax_id": "relax_2",
       "check_in_id": "check_in_26",
@@ -1238,7 +1693,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 27,
+      "number": 37,
       "image_asset": "images/homescreen/behave_c.svg",
       "relax_id": "relax_3",
       "check_in_id": "check_in_27",
@@ -1284,7 +1739,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 28,
+      "number": 38,
       "image_asset": "images/homescreen/behave_t.svg",
       "relax_id": "relax_9",
       "check_in_id": "check_in_28",
@@ -1331,7 +1786,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 29,
+      "number": 39,
       "image_asset": "images/homescreen/safety_c.svg",
       "relax_id": "relax_1",
       "check_in_id": "check_in_29",
@@ -1378,7 +1833,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 30,
+      "number": 40,
       "image_asset": "images/homescreen/safety_t.svg",
       "relax_id": "relax_2",
       "check_in_id": "check_in_30",
@@ -1425,7 +1880,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 31,
+      "number": 41,
       "image_asset": "images/homescreen/learn_c.svg",
       "relax_id": "relax_3",
       "check_in_id": "check_in_31",
@@ -1472,7 +1927,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 32,
+      "number": 42,
       "image_asset": "images/homescreen/learn_t.svg",
       "relax_id": "relax_9",
       "check_in_id": "check_in_32",
@@ -1519,7 +1974,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 33,
+      "number": 43,
       "image_asset": "images/homescreen/ipv.svg",
       "relax_id": "relax_1",
       "check_in_id": "check_in_33",
@@ -1566,7 +2021,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 34,
+      "number": 44,
       "image_asset": "images/homescreen/relation_c.svg",
       "relax_id": "relax_2",
       "check_in_id": "check_in_34",
@@ -1613,7 +2068,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 35,
+      "number": 45,
       "image_asset": "images/homescreen/relation_t.svg",
       "relax_id": "relax_3",
       "check_in_id": "check_in_35",
@@ -1660,7 +2115,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 36,
+      "number": 46,
       "image_asset": "images/homescreen/understand_c.svg",
       "relax_id": "relax_9",
       "check_in_id": "check_in_36",
@@ -1707,7 +2162,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 37,
+      "number": 47,
       "image_asset": "images/homescreen/understand_t.svg",
       "relax_id": "relax_1",
       "check_in_id": "check_in_37",
@@ -1754,7 +2209,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 38,
+      "number": 48,
       "image_asset": "images/homescreen/behave_c.svg",
       "relax_id": "relax_2",
       "check_in_id": "check_in_38",
@@ -1801,7 +2256,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 39,
+      "number": 49,
       "image_asset": "images/homescreen/behave_t.svg",
       "relax_id": "relax_3",
       "check_in_id": "check_in_39",
@@ -1848,7 +2303,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 40,
+      "number": 50,
       "image_asset": "images/homescreen/safety_c.svg",
       "relax_id": "relax_9",
       "check_in_id": "check_in_40",
@@ -1895,7 +2350,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 41,
+      "number": 51,
       "image_asset": "images/homescreen/safety_t.svg",
       "relax_id": "relax_1",
       "check_in_id": "check_in_41",
@@ -1942,7 +2397,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 42,
+      "number": 52,
       "image_asset": "images/homescreen/learn_c.svg",
       "relax_id": "relax_2",
       "check_in_id": "check_in_42",
@@ -1989,7 +2444,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 43,
+      "number": 53,
       "image_asset": "images/homescreen/learn_t.svg",
       "relax_id": "relax_3",
       "check_in_id": "check_in_43",
@@ -2036,7 +2491,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 44,
+      "number": 54,
       "image_asset": "images/homescreen/ipv.svg",
       "relax_id": "relax_9",
       "check_in_id": "check_in_44",
@@ -2077,7 +2532,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 45,
+      "number": 55,
       "image_asset": "images/homescreen/relation_c.svg",
       "relax_id": "relax_1",
       "check_in_id": "check_in_45",
@@ -2119,7 +2574,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 46,
+      "number": 56,
       "image_asset": "images/homescreen/relation_t.svg",
       "relax_id": "relax_2",
       "check_in_id": "check_in_46",
@@ -2161,7 +2616,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 47,
+      "number": 57,
       "image_asset": "images/homescreen/understand_c.svg",
       "relax_id": "relax_3",
       "check_in_id": "check_in_47",
@@ -2202,7 +2657,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 48,
+      "number": 58,
       "image_asset": "images/homescreen/understand_t.svg",
       "relax_id": "relax_9",
       "check_in_id": "check_in_48",
@@ -2244,7 +2699,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 49,
+      "number": 59,
       "image_asset": "images/homescreen/behave_c.svg",
       "relax_id": "relax_1",
       "check_in_id": "check_in_49",
@@ -2286,7 +2741,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 50,
+      "number": 60,
       "image_asset": "images/homescreen/behave_t.svg",
       "relax_id": "relax_2",
       "check_in_id": "check_in_50",
@@ -2332,7 +2787,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 51,
+      "number": 61,
       "image_asset": "images/homescreen/safety_c.svg",
       "relax_id": "relax_3",
       "check_in_id": "check_in_51",
@@ -2374,7 +2829,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 52,
+      "number": 62,
       "image_asset": "images/homescreen/safety_t.svg",
       "relax_id": "relax_9",
       "check_in_id": "check_in_52",
@@ -2416,7 +2871,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 53,
+      "number": 63,
       "image_asset": "images/homescreen/learn_c.svg",
       "relax_id": "relax_1",
       "check_in_id": "check_in_53",
@@ -2458,7 +2913,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 54,
+      "number": 64,
       "image_asset": "images/homescreen/learn_t.svg",
       "relax_id": "relax_2",
       "check_in_id": "check_in_54",
@@ -2500,7 +2955,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 55,
+      "number": 65,
       "image_asset": "images/homescreen/ipv.svg",
       "relax_id": "relax_3",
       "check_in_id": "check_in_55",
@@ -2547,7 +3002,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 58,
+      "number": 66,
       "image_asset": "images/homescreen/relation_c.svg",
       "relax_id": "relax_9",
       "check_in_id": "check_in_56",
@@ -2594,7 +3049,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 59,
+      "number": 67,
       "image_asset": "images/homescreen/relation_t.svg",
       "relax_id": "relax_1",
       "check_in_id": "check_in_57",
@@ -2641,7 +3096,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 60,
+      "number": 68,
       "image_asset": "images/homescreen/understand_c.svg",
       "relax_id": "relax_2",
       "check_in_id": "check_in_58",
@@ -2688,7 +3143,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 61,
+      "number": 69,
       "image_asset": "images/homescreen/understand_t.svg",
       "relax_id": "relax_3",
       "check_in_id": "check_in_59",
@@ -2735,7 +3190,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 62,
+      "number": 70,
       "image_asset": "images/homescreen/behave_c.svg",
       "relax_id": "relax_9",
       "check_in_id": "check_in_60",
@@ -2782,7 +3237,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 65,
+      "number": 71,
       "image_asset": "images/homescreen/behave_t.svg",
       "relax_id": "relax_1",
       "check_in_id": "check_in_61",
@@ -2829,7 +3284,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 66,
+      "number": 72,
       "image_asset": "images/homescreen/safety_c.svg",
       "relax_id": "relax_2",
       "check_in_id": "check_in_62",
@@ -2870,7 +3325,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 67,
+      "number": 73,
       "image_asset": "images/homescreen/safety_t.svg",
       "relax_id": "relax_3",
       "check_in_id": "check_in_63",
@@ -2912,7 +3367,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 68,
+      "number": 74,
       "image_asset": "images/homescreen/learn_c.svg",
       "relax_id": "relax_9",
       "check_in_id": "check_in_64",
@@ -2954,7 +3409,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 69,
+      "number": 75,
       "image_asset": "images/homescreen/learn_t.svg",
       "relax_id": "relax_1",
       "check_in_id": "check_in_65",
@@ -3001,7 +3456,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 56,
+      "number": 76,
       "image_asset": "images/homescreen/ipv.svg",
       "relax_id": "relax_2",
       "check_in_id": "check_in_66",
@@ -3048,7 +3503,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 57,
+      "number": 77,
       "image_asset": "images/homescreen/relation_c.svg",
       "relax_id": "relax_3",
       "check_in_id": "check_in_67",
@@ -3095,7 +3550,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 63,
+      "number": 78,
       "image_asset": "images/homescreen/relation_t.svg",
       "relax_id": "relax_9",
       "check_in_id": "check_in_68",
@@ -3142,7 +3597,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 64,
+      "number": 79,
       "image_asset": "images/homescreen/understand_c.svg",
       "relax_id": "relax_1",
       "check_in_id": "check_in_69",
@@ -3189,7 +3644,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 70,
+      "number": 80,
       "image_asset": "images/homescreen/understand_t.svg",
       "relax_id": "relax_2",
       "check_in_id": "check_in_70",
@@ -3236,7 +3691,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 71,
+      "number": 81,
       "image_asset": "images/homescreen/behave_c.svg",
       "relax_id": "relax_3",
       "check_in_id": "check_in_71",
@@ -3283,7 +3738,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 72,
+      "number": 82,
       "image_asset": "images/homescreen/behave_t.svg",
       "relax_id": "relax_9",
       "check_in_id": "check_in_72",
@@ -3330,7 +3785,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 73,
+      "number": 83,
       "image_asset": "images/homescreen/safety_c.svg",
       "relax_id": "relax_1",
       "check_in_id": "check_in_73",
@@ -3377,7 +3832,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 74,
+      "number": 84,
       "image_asset": "images/homescreen/safety_t.svg",
       "relax_id": "relax_2",
       "check_in_id": "check_in_74",
@@ -3424,7 +3879,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 75,
+      "number": 85,
       "image_asset": "images/homescreen/learn_c.svg",
       "relax_id": "relax_3",
       "check_in_id": "check_in_75",

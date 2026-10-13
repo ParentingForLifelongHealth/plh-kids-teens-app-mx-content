@@ -383,8 +383,18 @@
   },
   {
     "flow_type": "data_list",
-    "flow_subtype": "modules_i_calm_c",
-    "flow_name": "i_calm_c_articles",
+    "flow_subtype": "modules_i_calm_c_fc",
+    "flow_name": "i_calm_c_fc_articles",
+    "_source": {
+      "name": "modules_mx",
+      "path": "MX modules_i (1-15).xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1dumE6EODyxm0cb9mf3BuiwbEIJ5gQj9h8VRt_Mfxd3k"
+    }
+  },
+  {
+    "flow_type": "data_list",
+    "flow_subtype": "modules_i_calm_c_mc",
+    "flow_name": "i_calm_c_mc_articles",
     "_source": {
       "name": "modules_mx",
       "path": "MX modules_i (1-15).xlsx",
@@ -403,8 +413,18 @@
   },
   {
     "flow_type": "data_list",
-    "flow_subtype": "modules_i_feelings_c",
-    "flow_name": "i_feelings_c_articles",
+    "flow_subtype": "modules_i_feelings_c_fc",
+    "flow_name": "i_feelings_c_fc_articles",
+    "_source": {
+      "name": "modules_mx",
+      "path": "MX modules_i (1-15).xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1dumE6EODyxm0cb9mf3BuiwbEIJ5gQj9h8VRt_Mfxd3k"
+    }
+  },
+  {
+    "flow_type": "data_list",
+    "flow_subtype": "modules_i_feelings_c_mc",
+    "flow_name": "i_feelings_c_mc_articles",
     "_source": {
       "name": "modules_mx",
       "path": "MX modules_i (1-15).xlsx",
@@ -423,8 +443,18 @@
   },
   {
     "flow_type": "data_list",
-    "flow_subtype": "modules_i_give_praise_c",
-    "flow_name": "i_give_praise_c_articles",
+    "flow_subtype": "modules_i_give_praise_c_fc",
+    "flow_name": "i_give_praise_c_fc_articles",
+    "_source": {
+      "name": "modules_mx",
+      "path": "MX modules_i (1-15).xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1dumE6EODyxm0cb9mf3BuiwbEIJ5gQj9h8VRt_Mfxd3k"
+    }
+  },
+  {
+    "flow_type": "data_list",
+    "flow_subtype": "modules_i_give_praise_c_mc",
+    "flow_name": "i_give_praise_c_mc_articles",
     "_source": {
       "name": "modules_mx",
       "path": "MX modules_i (1-15).xlsx",
@@ -443,8 +473,18 @@
   },
   {
     "flow_type": "data_list",
-    "flow_subtype": "modules_i_one_on_one_c",
-    "flow_name": "i_one_on_one_c_articles",
+    "flow_subtype": "modules_i_one_on_one_c_fc",
+    "flow_name": "i_one_on_one_c_fc_articles",
+    "_source": {
+      "name": "modules_mx",
+      "path": "MX modules_i (1-15).xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1dumE6EODyxm0cb9mf3BuiwbEIJ5gQj9h8VRt_Mfxd3k"
+    }
+  },
+  {
+    "flow_type": "data_list",
+    "flow_subtype": "modules_i_one_on_one_c_mc",
+    "flow_name": "i_one_on_one_c_mc_articles",
     "_source": {
       "name": "modules_mx",
       "path": "MX modules_i (1-15).xlsx",
@@ -463,8 +503,18 @@
   },
   {
     "flow_type": "data_list",
-    "flow_subtype": "modules_i_routines_c",
-    "flow_name": "i_routines_c_articles",
+    "flow_subtype": "modules_i_routines_c_fc",
+    "flow_name": "i_routines_c_fc_articles",
+    "_source": {
+      "name": "modules_mx",
+      "path": "MX modules_i (1-15).xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1dumE6EODyxm0cb9mf3BuiwbEIJ5gQj9h8VRt_Mfxd3k"
+    }
+  },
+  {
+    "flow_type": "data_list",
+    "flow_subtype": "modules_i_routines_c_mc",
+    "flow_name": "i_routines_c_mc_articles",
     "_source": {
       "name": "modules_mx",
       "path": "MX modules_i (1-15).xlsx",
@@ -1550,6 +1600,15 @@
   },
   {
     "flow_type": "global",
+    "flow_name": "notification_permission_global",
+    "_source": {
+      "name": "kids_teens_global V3",
+      "path": "templates/notification_permission.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1RYEkujjiH6k3MAQkrNnZz0UikvzJ_M5IL9_5WDxY0cQ"
+    }
+  },
+  {
+    "flow_type": "global",
     "flow_subtype": "onboarding",
     "flow_name": "onboarding_global",
     "_source": {
@@ -2342,6 +2401,15 @@
       "name": "kids_teens_global V3",
       "path": "templates/PLH certificates.xlsx",
       "url": "https://docs.google.com/spreadsheets/d/1CUyO3tW2rpZC5wDaDypdY-rRn51YenWh2s_adSL8GJc"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_name": "notification_permission",
+    "_source": {
+      "name": "kids_teens_global V3",
+      "path": "templates/notification_permission.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1RYEkujjiH6k3MAQkrNnZz0UikvzJ_M5IL9_5WDxY0cQ"
     }
   },
   {
