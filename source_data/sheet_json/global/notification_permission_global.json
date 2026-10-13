@@ -1,0 +1,37 @@
+{
+  "flow_type": "global",
+  "flow_name": "notification_permission_global",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "notification_permission_lottie",
+      "value": "lottie/ux/checkmark.json"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "notification_permission_title",
+      "value": "First lesson done!"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "notification_permission_text",
+      "value": "Would you like to be reminded when it's time for your next lesson?\n1. Tap the button below.\n2. Tap Allow on the next box."
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "notification_permission_button_text_yes",
+      "value": "Yes, remind me!"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "notification_permission_button_text_no",
+      "value": "Maybe later"
+    },
+    {
+      "type": "declare_field_default",
+      "name": "notification_permission_shown",
+      "value": false
+    }
+  ]
+}
