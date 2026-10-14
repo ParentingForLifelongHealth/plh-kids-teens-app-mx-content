@@ -33,7 +33,7 @@
         }
       ],
       "parameter_list": [
-        "filter: (@item.id !== @local.module_id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))"
+        "filter: (@item.id !== @local.module_id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.user_gender_list || @item.user_gender_list.includes(@fields.user_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))"
       ],
       "exclude_from_translation": true
     },
@@ -115,7 +115,6 @@
     {
       "type": "text",
       "value": "not comp: @local.not_comp_count",
-      "condition": false,
       "exclude_from_translation": true
     },
     {

@@ -135,18 +135,18 @@
           "action_id": "set_local",
           "args": [
             "article_id",
-            "@items[0].id"
+            "@items[0]?.id"
           ],
-          "_raw": "data_changed | set_local : article_id: @items[0].id"
+          "_raw": "data_changed | set_local : article_id: @items[0]?.id"
         },
         {
           "trigger": "data_changed",
           "action_id": "set_field",
           "args": [
             "current_start_article_id",
-            "@items[0].id"
+            "@items[0]?.id"
           ],
-          "_raw": "data_changed | set_field : current_start_article_id: @items[0].id"
+          "_raw": "data_changed | set_field : current_start_article_id: @items[0]?.id"
         }
       ],
       "parameter_list": {
