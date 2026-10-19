@@ -10,7 +10,7 @@
 | animated_slides | 1 |
 | apple_sign_in_button | 2 |
 | audio | 4 |
-| button | 129 |
+| button | 130 |
 | combo_box | 27 |
 | data_items | 273 |
 | debug_toggle | 1 |
@@ -38,7 +38,7 @@
 | round_button | 33 |
 | select_text | 1 |
 | set_field | 4 |
-| set_variable | 5718 |
+| set_variable | 5747 |
 | simple_checkbox | 1 |
 | task_card | 4 |
 | task_progress_bar | 5 |
@@ -47,9 +47,9 @@
 | text_area | 4 |
 | text_box | 23 |
 | text_bubble | 32 |
-| title | 70 |
+| title | 71 |
 | toggle_bar | 5 |
-| update_action_list | 6 |
+| update_action_list | 5 |
 | video | 4 |
 | youtube | 8 |
 </details>
@@ -64,8 +64,8 @@
 | asset_pack | 4 |
 | auth | 3 |
 | emit: changed | 7 |
-| emit: completed | 178 |
-| emit: force_reload | 7 |
+| emit: completed | 179 |
+| emit: force_reload | 5 |
 | emit: force_reprocess | 13 |
 | emit: force_restart | 3 |
 | emit: server_sync | 6 |
@@ -74,20 +74,21 @@
 | feedback | 13 |
 | go_to | 28 |
 | nav | 1 |
-| nav_stack | 1148 |
+| nav_stack | 1149 |
 | notification | 17 |
 | plh_certificate | 23 |
-| pop_up | 518 |
+| pop_up | 517 |
 | reset_app | 4 |
 | reset_data | 3 |
 | save_to_device | 3 |
 | set_data | 569 |
 | set_field | 569 |
 | set_item | 30 |
-| set_local | 797 |
+| set_local | 798 |
 | share | 3 |
 | task | 2 |
 | toast | 78 |
+| trigger_actions | 1 |
 | user | 3 |
 </details>
 
@@ -236,7 +237,8 @@ Assets that have references within sheets but do not appear in app-data
 | images/icons/docs.svg | 1 |
 | images/icons/download_white.svg | 1 |
 | images/icons/visibility.svg | 1 |
-| images/logos/plh_logomark.png | 1 |
+| images/logos/app_logo.png | 1 |
+| images/logos/partners/plh_logomark.png | 1 |
 </details>
 
 <details >
@@ -351,7 +353,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/character_icons/F3_MADRE.svg | 1057.1 | 1 |
 | images/character_icons/F3_PADRE.svg | 1057.1 | 1 |
 | images/character_icons/HOMBRE_EN_COCHE.svg | 203.7 | 1 |
-| images/character_icons/PROFESORA_1.svg | 919.8 | 10 |
+| images/character_icons/PROFESORA_1.svg | 919.8 | 8 |
 | images/comic/behave/consequences_teen_1.svg | 196.4 | 2 |
 | images/comic/behave/consequences_teen_2.svg | 194.4 | 2 |
 | images/comic/behave/consequences_teen_3.svg | 195.4 | 2 |
@@ -653,7 +655,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/faces/neutral.svg | 0.5 | 11 |
 | images/icons/faces/ok_face_new.svg | 0.5 | 150 |
 | images/icons/faces/sad.svg | 0.6 | 11 |
-| images/icons/faces/sad_face_new.svg | 1.5 | 150 |
+| images/icons/faces/sad_face_new.svg | 1.5 | 600 |
 | images/icons/football_blue.png | 5.1 | 15 |
 | images/icons/globe-outline.svg | 0.8 | 1 |
 | images/icons/heart-outline.png | 1.5 | 1 |

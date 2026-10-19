@@ -254,7 +254,7 @@
     {
       "type": "begin_template",
       "name": "challenge_1",
-      "value": "feedback",
+      "value": "feedback_article",
       "condition": "@item.@local.response_column==\"challenge_1\""
     },
     {
@@ -267,7 +267,7 @@
     {
       "type": "begin_template",
       "name": "challenge_2",
-      "value": "feedback",
+      "value": "feedback_article",
       "condition": "@item.@local.response_column==\"challenge_2\""
     },
     {
@@ -280,7 +280,7 @@
     {
       "type": "begin_template",
       "name": "challenge_3",
-      "value": "feedback",
+      "value": "feedback_article",
       "condition": "@item.@local.response_column==\"challenge_3\""
     },
     {
@@ -293,7 +293,7 @@
     {
       "type": "begin_template",
       "name": "challenge_4",
-      "value": "feedback",
+      "value": "feedback_article",
       "condition": "@item.@local.response_column==\"challenge_4\""
     },
     {
@@ -306,7 +306,7 @@
     {
       "type": "begin_template",
       "name": "challenge_5",
-      "value": "feedback",
+      "value": "feedback_article",
       "condition": "@item.@local.response_column==\"challenge_5\""
     },
     {
@@ -319,7 +319,7 @@
     {
       "type": "begin_template",
       "name": "challenge_6",
-      "value": "feedback",
+      "value": "feedback_article",
       "condition": "@item.@local.response_column==\"challenge_6\""
     },
     {
@@ -332,7 +332,7 @@
     {
       "type": "begin_template",
       "name": "challenge_7",
-      "value": "feedback",
+      "value": "feedback_article",
       "condition": "@item.@local.response_column==\"challenge_7\""
     },
     {
@@ -352,7 +352,7 @@
     {
       "type": "begin_template",
       "name": "facilitator_bubble_other",
-      "value": "feedback"
+      "value": "feedback_article"
     },
     {
       "name": "bubble_text",
@@ -371,7 +371,7 @@
     {
       "type": "begin_template",
       "name": "facilitator_bubble_text_input",
-      "value": "feedback",
+      "value": "feedback_article",
       "condition": "!!@item.@local.response_other_challenge_column"
     },
     {

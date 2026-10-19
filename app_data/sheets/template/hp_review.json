@@ -521,7 +521,7 @@
             {
               "type": "template",
               "name": "reply_no",
-              "value": "feedback",
+              "value": "feedback_article",
               "hidden": "@item.done_response !=\"no\"",
               "rows": [
                 {
@@ -829,7 +829,7 @@
                 {
                   "type": "template",
                   "name": "feedback_happy",
-                  "value": "feedback",
+                  "value": "feedback_article",
                   "hidden": "@item.mood_response !=\"happy\"",
                   "rows": [
                     {
@@ -878,7 +878,7 @@
                 {
                   "type": "template",
                   "name": "feedback_okay",
-                  "value": "feedback",
+                  "value": "feedback_article",
                   "hidden": "@item.mood_response !=\"ok\"",
                   "rows": [
                     {
@@ -927,7 +927,7 @@
                 {
                   "type": "template",
                   "name": "feedback_sad",
-                  "value": "feedback",
+                  "value": "feedback_article",
                   "hidden": "@item.mood_response !=\"sad\"",
                   "rows": [
                     {

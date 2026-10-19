@@ -126,7 +126,7 @@
     {
       "type": "begin_template",
       "name": "reply_no",
-      "value": "feedback",
+      "value": "feedback_article",
       "hidden": "@item.done_response !=\"no\" "
     },
     {
@@ -168,7 +168,7 @@
     {
       "type": "begin_template",
       "name": "feedback_happy",
-      "value": "feedback",
+      "value": "feedback_article",
       "hidden": "@item.mood_response !=\"happy\""
     },
     {
@@ -182,7 +182,7 @@
     {
       "type": "begin_template",
       "name": "feedback_okay",
-      "value": "feedback",
+      "value": "feedback_article",
       "hidden": "@item.mood_response !=\"ok\" "
     },
     {
@@ -196,7 +196,7 @@
     {
       "type": "begin_template",
       "name": "feedback_sad",
-      "value": "feedback",
+      "value": "feedback_article",
       "hidden": "@item.mood_response !=\"sad\""
     },
     {
