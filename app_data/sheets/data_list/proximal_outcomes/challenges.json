@@ -5,7 +5,46 @@
   "status": "released",
   "rows": [
     {
-      "id": "not_enough_time",
+      "id": "not_enough_time_10to17",
+      "domain_list": [
+        "connection"
+      ],
+      "child_age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number_of_goals": 4,
+      "title": "Don't have enough time",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Don't have enough time"
+        }
+      }
+    },
+    {
+      "id": "hard_to_enjoy_time_2to9",
       "domain_list": [
         "connection"
       ],
@@ -17,15 +56,7 @@
         "6",
         "7",
         "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
+        "9"
       ],
       "child_gender_list": [
         "male",
@@ -38,121 +69,21 @@
         "opt_out"
       ],
       "tag_list": [
-        "child",
-        "teen"
+        "child"
       ],
       "number_of_goals": 4,
-      "title": "Hard to find time to connect",
+      "title": "Struggling to enjoy spending time with @fields.child_name",
       "_translations": {
         "title": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Hard to find time to connect"
+          "eng": "Struggling to enjoy spending time with @fields.child_name"
         }
       }
     },
     {
-      "id": "prefer_screen",
-      "domain_list": [
-        "connection",
-        "online_safety"
-      ],
-      "child_age_list": [
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out"
-      ],
-      "caregiver_gender_list": [
-        "man",
-        "woman",
-        "opt_out"
-      ],
-      "tag_list": [
-        "child",
-        "teen"
-      ],
-      "number_of_goals": 4,
-      "title": "@fields.child_name only wants a screen",
-      "_translations": {
-        "title": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "@fields.child_name only wants a screen"
-        }
-      }
-    },
-    {
-      "id": "too_tired",
-      "domain_list": [
-        "connection",
-        "mental_health",
-        "parent_wellbeing"
-      ],
-      "child_age_list": [
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out"
-      ],
-      "caregiver_gender_list": [
-        "man",
-        "woman",
-        "opt_out"
-      ],
-      "tag_list": [
-        "child",
-        "teen"
-      ],
-      "number_of_goals": 7,
-      "title": "Feel too tired to connect",
-      "_translations": {
-        "title": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Feel too tired to connect"
-        }
-      }
-    },
-    {
-      "id": "how_to_play_2to5",
+      "id": "child_avoids_time_2to9",
       "domain_list": [
         "connection"
       ],
@@ -160,7 +91,11 @@
         "2",
         "3",
         "4",
-        "5"
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
       ],
       "child_gender_list": [
         "male",
@@ -176,28 +111,77 @@
         "child"
       ],
       "number_of_goals": 5,
-      "title": "Don't know how to play with @fields.child_name",
+      "title": "@fields.child_name does not want to spend time with me",
       "_translations": {
         "title": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Don't know how to play with @fields.child_name"
+          "eng": "@fields.child_name does not want to spend time with me"
         }
       }
     },
     {
-      "id": "how_to_play_6to11",
+      "id": "understand_feelings_2to9",
       "domain_list": [
         "connection"
       ],
       "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number_of_goals": 4,
+      "title": "Struggling to understand @fields.child_name's feelings or needs",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Struggling to understand @fields.child_name's feelings or needs"
+        }
+      }
+    },
+    {
+      "id": "show_love_praise",
+      "domain_list": [
+        "connection"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
         "6",
         "7",
         "8",
         "9",
         "10",
-        "11"
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
       ],
       "child_gender_list": [
         "male",
@@ -214,22 +198,72 @@
         "teen"
       ],
       "number_of_goals": 4,
-      "title": "Don't know how to share @fields.child_name interests",
+      "title": "Struggle to show @fields.child_name love or praise",
       "_translations": {
         "title": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Don't know how to share @fields.child_name interests"
+          "eng": "Struggle to show @fields.child_name love or praise"
         }
       }
     },
     {
-      "id": "how_to_play_12to17",
+      "id": "only_wants_device",
       "domain_list": [
         "connection"
       ],
       "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 4,
+      "title": "@fields.child_name only wants their device",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name only wants their device"
+        }
+      }
+    },
+    {
+      "id": "child_avoids_time_10to17",
+      "domain_list": [
+        "connection"
+      ],
+      "child_age_list": [
+        "10",
+        "11",
         "12",
         "13",
         "14",
@@ -251,59 +285,20 @@
         "teen"
       ],
       "number_of_goals": 6,
-      "title": "Don't know how to spend time with @fields.child_name",
+      "title": "@fields.child_name does not want to spend time with me",
       "_translations": {
         "title": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Don't know how to spend time with @fields.child_name"
+          "eng": "@fields.child_name does not want to spend time with me"
         }
       }
     },
     {
-      "id": "child_shuts_down",
+      "id": "talks_only_rules",
       "domain_list": [
-        "connection",
-        "mental_health"
-      ],
-      "child_age_list": [
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out"
-      ],
-      "caregiver_gender_list": [
-        "man",
-        "woman",
-        "opt_out"
-      ],
-      "tag_list": [
-        "teen"
-      ],
-      "number_of_goals": 4,
-      "title": "@fields.child_name shuts down when I try to connect",
-      "_translations": {
-        "title": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "@fields.child_name shuts down when I try to connect"
-        }
-      }
-    },
-    {
-      "id": "daily_arguments",
-      "domain_list": [
-        "connection",
-        "peaceful_home"
+        "connection"
       ],
       "child_age_list": [
         "10",
@@ -329,18 +324,96 @@
         "teen"
       ],
       "number_of_goals": 4,
-      "title": "We argue more than we talk",
+      "title": "Most talks with @fields.child_name are about rules, problems, or chores",
       "_translations": {
         "title": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "We argue more than we talk"
+          "eng": "Most talks with @fields.child_name are about rules, problems, or chores"
         }
       }
     },
     {
-      "id": "aggressive_play",
+      "id": "keeps_things_inside",
+      "domain_list": [
+        "connection"
+      ],
+      "child_age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number_of_goals": 4,
+      "title": "@fields.child_name keeps things to themselves",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name keeps things to themselves"
+        }
+      }
+    },
+    {
+      "id": "argue_often",
+      "domain_list": [
+        "connection"
+      ],
+      "child_age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number_of_goals": 4,
+      "title": "Argue often with @fields.child_name",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Argue often with @fields.child_name"
+        }
+      }
+    },
+    {
+      "id": "lots_of_fights",
       "domain_list": [
         "behaviour"
       ],
@@ -348,7 +421,19 @@
         "2",
         "3",
         "4",
-        "5"
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
       ],
       "child_gender_list": [
         "male",
@@ -361,31 +446,34 @@
         "opt_out"
       ],
       "tag_list": [
-        "child"
+        "child",
+        "teen"
       ],
       "number_of_goals": 3,
-      "title": "@fields.child_name hits or bites while playing",
+      "title": "@fields.child_name gets in lots of fights",
       "_translations": {
         "title": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "@fields.child_name hits or bites while playing"
+          "eng": "@fields.child_name gets in lots of fights"
         }
       }
     },
     {
-      "id": "tantrum",
+      "id": "tantrums_2to9",
       "domain_list": [
-        "behaviour",
-        "online_safety",
-        "peaceful_home"
+        "behaviour"
       ],
       "child_age_list": [
         "2",
         "3",
         "4",
-        "5"
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
       ],
       "child_gender_list": [
         "male",
@@ -400,7 +488,7 @@
       "tag_list": [
         "child"
       ],
-      "number_of_goals": 5,
+      "number_of_goals": 4,
       "title": "@fields.child_name has lots of tantrums",
       "_translations": {
         "title": {}
@@ -412,136 +500,7 @@
       }
     },
     {
-      "id": "arguing",
-      "domain_list": [
-        "behaviour",
-        "peaceful_home"
-      ],
-      "child_age_list": [
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out"
-      ],
-      "caregiver_gender_list": [
-        "man",
-        "woman",
-        "opt_out"
-      ],
-      "tag_list": [
-        "child",
-        "teen"
-      ],
-      "number_of_goals": 4,
-      "title": "@fields.child_name argues or talks back a lot",
-      "_translations": {
-        "title": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "@fields.child_name argues or talks back a lot"
-        }
-      }
-    },
-    {
-      "id": "avoid_chores",
-      "domain_list": [
-        "behaviour",
-        "peaceful_home"
-      ],
-      "child_age_list": [
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out"
-      ],
-      "caregiver_gender_list": [
-        "man",
-        "woman",
-        "opt_out"
-      ],
-      "tag_list": [
-        "child",
-        "teen"
-      ],
-      "number_of_goals": 4,
-      "title": "@fields.child_name avoids or delays doing their chores",
-      "_translations": {
-        "title": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "@fields.child_name avoids or delays doing their chores"
-        }
-      }
-    },
-    {
-      "id": "descalate",
-      "domain_list": [
-        "behaviour"
-      ],
-      "child_age_list": [
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out"
-      ],
-      "caregiver_gender_list": [
-        "man",
-        "woman",
-        "opt_out"
-      ],
-      "tag_list": [
-        "teen"
-      ],
-      "number_of_goals": 6,
-      "title": "Calming things down after we argue",
-      "_translations": {
-        "title": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Calming things down after we argue"
-        }
-      }
-    },
-    {
-      "id": "not_listening",
+      "id": "refuses_routines_2to9",
       "domain_list": [
         "behaviour"
       ],
@@ -553,101 +512,7 @@
         "6",
         "7",
         "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out"
-      ],
-      "caregiver_gender_list": [
-        "man",
-        "woman",
-        "opt_out"
-      ],
-      "tag_list": [
-        "child",
-        "teen"
-      ],
-      "number_of_goals": 4,
-      "title": "@fields.child_name does not listen",
-      "_translations": {
-        "title": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "@fields.child_name does not listen"
-        }
-      }
-    },
-    {
-      "id": "losing_temper",
-      "domain_list": [
-        "behaviour",
-        "mental_health",
-        "peaceful_home"
-      ],
-      "child_age_list": [
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out"
-      ],
-      "caregiver_gender_list": [
-        "man",
-        "woman",
-        "opt_out"
-      ],
-      "tag_list": [
-        "child",
-        "teen"
-      ],
-      "number_of_goals": 3,
-      "title": "Lose temper with @fields.child_name",
-      "_translations": {
-        "title": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Lose temper with @fields.child_name"
-        }
-      }
-    },
-    {
-      "id": "wandering_off",
-      "domain_list": [
-        "health_safety"
-      ],
-      "child_age_list": [
-        "2",
-        "3",
-        "4",
-        "5"
+        "9"
       ],
       "child_gender_list": [
         "male",
@@ -663,18 +528,192 @@
         "child"
       ],
       "number_of_goals": 3,
-      "title": "@fields.child_name wanders off when I'm not watching",
+      "title": "@fields.child_name refuses to follow daily routines",
       "_translations": {
         "title": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "@fields.child_name wanders off when I'm not watching"
+          "eng": "@fields.child_name refuses to follow daily routines"
         }
       }
     },
     {
-      "id": "body_safety_awareness",
+      "id": "not_follow_rules_2to9",
+      "domain_list": [
+        "behaviour"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number_of_goals": 4,
+      "title": "@fields.child_name does not follow my rules",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name does not follow my rules"
+        }
+      }
+    },
+    {
+      "id": "refuses_rules_10to17",
+      "domain_list": [
+        "behaviour"
+      ],
+      "child_age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number_of_goals": 5,
+      "title": "@fields.child_name refuses to follow my rules",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name refuses to follow my rules"
+        }
+      }
+    },
+    {
+      "id": "argues_a_lot",
+      "domain_list": [
+        "behaviour"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 3,
+      "title": "@fields.child_name argues a lot",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name argues a lot"
+        }
+      }
+    },
+    {
+      "id": "not_follow_instructions",
+      "domain_list": [
+        "behaviour"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 4,
+      "title": "@fields.child_name does not follow instructions",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name does not follow instructions"
+        }
+      }
+    },
+    {
+      "id": "safety_at_home_2to9",
       "domain_list": [
         "health_safety"
       ],
@@ -702,18 +741,18 @@
         "child"
       ],
       "number_of_goals": 3,
-      "title": "Worried about @fields.child_name safety",
+      "title": "Worried about @fields.child_name safety at home",
       "_translations": {
         "title": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Worried about @fields.child_name safety"
+          "eng": "Worried about @fields.child_name safety at home"
         }
       }
     },
     {
-      "id": "rough_play_injuries",
+      "id": "safety_outside_2to9",
       "domain_list": [
         "health_safety"
       ],
@@ -723,7 +762,9 @@
         "4",
         "5",
         "6",
-        "7"
+        "7",
+        "8",
+        "9"
       ],
       "child_gender_list": [
         "male",
@@ -738,37 +779,31 @@
       "tag_list": [
         "child"
       ],
-      "number_of_goals": 3,
-      "title": "@fields.child_name often gets hurt from rough play",
+      "number_of_goals": 5,
+      "title": "Worried about @fields.child_name safety outside home",
       "_translations": {
         "title": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "@fields.child_name often gets hurt from rough play"
+          "eng": "Worried about @fields.child_name safety outside home"
         }
       }
     },
     {
-      "id": "wont_share",
+      "id": "body_safety_2to9",
       "domain_list": [
         "health_safety"
       ],
       "child_age_list": [
+        "2",
+        "3",
         "4",
         "5",
         "6",
         "7",
         "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
+        "9"
       ],
       "child_gender_list": [
         "male",
@@ -781,28 +816,103 @@
         "opt_out"
       ],
       "tag_list": [
-        "child",
-        "teen"
+        "child"
       ],
-      "number_of_goals": 3,
-      "title": "@fields.child_name won't share when struggling",
+      "number_of_goals": 4,
+      "title": "Teaching about body safety",
       "_translations": {
         "title": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "@fields.child_name won't share when struggling"
+          "eng": "Teaching about body safety"
         }
       }
     },
     {
-      "id": "body_changes_talk",
+      "id": "whereabouts_2to9",
       "domain_list": [
         "health_safety"
       ],
       "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
         "8",
-        "9",
+        "9"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number_of_goals": 5,
+      "title": "Not sure where @fields.child_name is or if they are safe",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Not sure where @fields.child_name is or if they are safe"
+        }
+      }
+    },
+    {
+      "id": "safety_around_others_2to9",
+      "domain_list": [
+        "health_safety"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number_of_goals": 4,
+      "title": "Worried about @fields.child_name safety around others",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Worried about @fields.child_name safety around others"
+        }
+      }
+    },
+    {
+      "id": "body_safety_10to17",
+      "domain_list": [
+        "health_safety"
+      ],
+      "child_age_list": [
         "10",
         "11",
         "12",
@@ -823,27 +933,26 @@
         "opt_out"
       ],
       "tag_list": [
-        "child",
         "teen"
       ],
-      "number_of_goals": 3,
-      "title": "Feel uncomfortable talking about body changes",
+      "number_of_goals": 5,
+      "title": "Helping @fields.child_name keep their body safe",
       "_translations": {
         "title": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Feel uncomfortable talking about body changes"
+          "eng": "Helping @fields.child_name keep their body safe"
         }
       }
     },
     {
-      "id": "substance_peer_pressure",
+      "id": "safe_choices_people_10to17",
       "domain_list": [
-        "health_safety",
-        "friends_bullying"
+        "health_safety"
       ],
       "child_age_list": [
+        "10",
         "11",
         "12",
         "13",
@@ -866,22 +975,24 @@
         "teen"
       ],
       "number_of_goals": 4,
-      "title": "@fields.child_name might try alcohol, drugs, or smoking",
+      "title": "Helping @fields.child_name make safe choices with other people",
       "_translations": {
         "title": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "@fields.child_name might try alcohol, drugs, or smoking"
+          "eng": "Helping @fields.child_name make safe choices with other people"
         }
       }
     },
     {
-      "id": "risky_behavior",
+      "id": "substance_use_10to17",
       "domain_list": [
         "health_safety"
       ],
       "child_age_list": [
+        "10",
+        "11",
         "12",
         "13",
         "14",
@@ -903,67 +1014,22 @@
         "teen"
       ],
       "number_of_goals": 3,
-      "title": "@fields.child_name does risky things without thinking",
+      "title": "Worried that @fields.child_name is doing alcohol, drugs, or smoking",
       "_translations": {
         "title": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "@fields.child_name does risky things without thinking"
+          "eng": "Worried that @fields.child_name is doing alcohol, drugs, or smoking"
         }
       }
     },
     {
-      "id": "sex_dating_talk",
+      "id": "whereabouts_10to17",
       "domain_list": [
         "health_safety"
       ],
       "child_age_list": [
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out"
-      ],
-      "caregiver_gender_list": [
-        "man",
-        "woman",
-        "opt_out"
-      ],
-      "tag_list": [
-        "teen"
-      ],
-      "number_of_goals": 5,
-      "title": "Feel uncomfortable talking about sex and dating",
-      "_translations": {
-        "title": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Feel uncomfortable talking about sex and dating"
-        }
-      }
-    },
-    {
-      "id": "lonely_parent",
-      "domain_list": [
-        "mental_health",
-        "parent_wellbeing"
-      ],
-      "child_age_list": [
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
         "10",
         "11",
         "12",
@@ -984,505 +1050,65 @@
         "opt_out"
       ],
       "tag_list": [
-        "child",
+        "teen"
+      ],
+      "number_of_goals": 4,
+      "title": "Not sure where @fields.child_name is or if they are safe",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Not sure where @fields.child_name is or if they are safe"
+        }
+      }
+    },
+    {
+      "id": "talk_dating_sex_10to17",
+      "domain_list": [
+        "health_safety"
+      ],
+      "child_age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
         "teen"
       ],
       "number_of_goals": 3,
-      "title": "Feel lonely and isolated as a parent",
+      "title": "Feel uncomfortable talking about dating, sex, and sexuality",
       "_translations": {
         "title": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Feel lonely and isolated as a parent"
+          "eng": "Feel uncomfortable talking about dating, sex, and sexuality"
         }
       }
     },
     {
-      "id": "peer_struggles",
-      "domain_list": [
-        "mental_health",
-        "school_learning",
-        "peaceful_home"
-      ],
-      "child_age_list": [
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out"
-      ],
-      "caregiver_gender_list": [
-        "man",
-        "woman",
-        "opt_out"
-      ],
-      "tag_list": [
-        "child",
-        "teen"
-      ],
-      "number_of_goals": 5,
-      "title": "@fields.child_name struggles to get along",
-      "_translations": {
-        "title": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "@fields.child_name struggles to get along"
-        }
-      }
-    },
-    {
-      "id": "bullying",
-      "domain_list": [
-        "mental_health",
-        "school_learning",
-        "friends_bullying"
-      ],
-      "child_age_list": [
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out"
-      ],
-      "caregiver_gender_list": [
-        "man",
-        "woman",
-        "opt_out"
-      ],
-      "tag_list": [
-        "child",
-        "teen"
-      ],
-      "number_of_goals": 5,
-      "title": "@fields.child_name is being bullied",
-      "_translations": {
-        "title": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "@fields.child_name is being bullied"
-        }
-      }
-    },
-    {
-      "id": "mental_health_worry",
+      "id": "worry_afraid_2to9",
       "domain_list": [
         "mental_health"
       ],
       "child_age_list": [
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out"
-      ],
-      "caregiver_gender_list": [
-        "man",
-        "woman",
-        "opt_out"
-      ],
-      "tag_list": [
-        "child",
-        "teen"
-      ],
-      "number_of_goals": 5,
-      "title": "@fields.child_name's mental health and moodiness",
-      "_translations": {
-        "title": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "@fields.child_name's mental health and moodiness"
-        }
-      }
-    },
-    {
-      "id": "cyberbullying",
-      "domain_list": [
-        "mental_health",
-        "online_safety",
-        "friends_bullying"
-      ],
-      "child_age_list": [
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out"
-      ],
-      "caregiver_gender_list": [
-        "man",
-        "woman",
-        "opt_out"
-      ],
-      "tag_list": [
-        "teen"
-      ],
-      "number_of_goals": 4,
-      "title": "@fields.child_name might be being bullied online",
-      "_translations": {
-        "title": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "@fields.child_name might be being bullied online"
-        }
-      }
-    },
-    {
-      "id": "social_media_mental_health",
-      "domain_list": [
-        "mental_health",
-        "online_safety"
-      ],
-      "child_age_list": [
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out"
-      ],
-      "caregiver_gender_list": [
-        "man",
-        "woman",
-        "opt_out"
-      ],
-      "tag_list": [
-        "teen"
-      ],
-      "number_of_goals": 7,
-      "title": "Social media hurting @fields.child_name's mental health",
-      "_translations": {
-        "title": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Social media hurting @fields.child_name's mental health"
-        }
-      }
-    },
-    {
-      "id": "excessive_screen_time",
-      "domain_list": [
-        "online_safety"
-      ],
-      "child_age_list": [
         "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out"
-      ],
-      "caregiver_gender_list": [
-        "man",
-        "woman",
-        "opt_out"
-      ],
-      "tag_list": [
-        "child",
-        "teen"
-      ],
-      "number_of_goals": 4,
-      "title": "@fields.child_name spends too much time on a screen",
-      "_translations": {
-        "title": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "@fields.child_name spends too much time on a screen"
-        }
-      }
-    },
-    {
-      "id": "other_caregivers_rules",
-      "domain_list": [
-        "online_safety",
-        "peaceful_home"
-      ],
-      "child_age_list": [
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out"
-      ],
-      "caregiver_gender_list": [
-        "man",
-        "woman",
-        "opt_out"
-      ],
-      "tag_list": [
-        "child",
-        "teen"
-      ],
-      "number_of_goals": 3,
-      "title": "Other caregivers don't follow the screen rules",
-      "_translations": {
-        "title": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Other caregivers don't follow the screen rules"
-        }
-      }
-    },
-    {
-      "id": "tech_knowledge",
-      "domain_list": [
-        "online_safety"
-      ],
-      "child_age_list": [
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out"
-      ],
-      "caregiver_gender_list": [
-        "man",
-        "woman",
-        "opt_out"
-      ],
-      "tag_list": [
-        "child",
-        "teen"
-      ],
-      "number_of_goals": 3,
-      "title": "Do not understand technology enough",
-      "_translations": {
-        "title": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Do not understand technology enough"
-        }
-      }
-    },
-    {
-      "id": "inappropriate_content",
-      "domain_list": [
-        "online_safety"
-      ],
-      "child_age_list": [
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out"
-      ],
-      "caregiver_gender_list": [
-        "man",
-        "woman",
-        "opt_out"
-      ],
-      "tag_list": [
-        "child",
-        "teen"
-      ],
-      "number_of_goals": 5,
-      "title": "@fields.child_name might be seeing inappropriate videos or games",
-      "_translations": {
-        "title": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "@fields.child_name might be seeing inappropriate videos or games"
-        }
-      }
-    },
-    {
-      "id": "missing_developmental_milestones",
-      "domain_list": [
-        "school_learning"
-      ],
-      "child_age_list": [
-        "2",
-        "3",
-        "4",
-        "5"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out"
-      ],
-      "caregiver_gender_list": [
-        "man",
-        "woman",
-        "opt_out"
-      ],
-      "tag_list": [
-        "child"
-      ],
-      "number_of_goals": 7,
-      "title": "@fields.child_name is behind on developmental milestones",
-      "_translations": {
-        "title": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "@fields.child_name is behind on developmental milestones"
-        }
-      }
-    },
-    {
-      "id": "not_reading",
-      "domain_list": [
-        "school_learning"
-      ],
-      "child_age_list": [
-        "2",
-        "3",
-        "4",
-        "5",
-        "6"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out"
-      ],
-      "caregiver_gender_list": [
-        "man",
-        "woman",
-        "opt_out"
-      ],
-      "tag_list": [
-        "child"
-      ],
-      "number_of_goals": 5,
-      "title": "Don't read to @fields.child_name enough",
-      "_translations": {
-        "title": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Don't read to @fields.child_name enough"
-        }
-      }
-    },
-    {
-      "id": "focus_difficulty",
-      "domain_list": [
-        "school_learning"
-      ],
-      "child_age_list": [
         "3",
         "4",
         "5",
@@ -1504,279 +1130,31 @@
       "tag_list": [
         "child"
       ],
-      "number_of_goals": 2,
-      "title": "@fields.child_name cannot sit still or focus",
-      "_translations": {
-        "title": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "@fields.child_name cannot sit still or focus"
-        }
-      }
-    },
-    {
-      "id": "poor_grades",
-      "domain_list": [
-        "school_learning"
-      ],
-      "child_age_list": [
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out"
-      ],
-      "caregiver_gender_list": [
-        "man",
-        "woman",
-        "opt_out"
-      ],
-      "tag_list": [
-        "child",
-        "teen"
-      ],
-      "number_of_goals": 4,
-      "title": "@fields.child_name not doing well in school",
-      "_translations": {
-        "title": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "@fields.child_name not doing well in school"
-        }
-      }
-    },
-    {
-      "id": "disinterested_school",
-      "domain_list": [
-        "school_learning"
-      ],
-      "child_age_list": [
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out"
-      ],
-      "caregiver_gender_list": [
-        "man",
-        "woman",
-        "opt_out"
-      ],
-      "tag_list": [
-        "child",
-        "teen"
-      ],
-      "number_of_goals": 3,
-      "title": "@fields.child_name not interested in school or learning",
-      "_translations": {
-        "title": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "@fields.child_name not interested in school or learning"
-        }
-      }
-    },
-    {
-      "id": "crams",
-      "domain_list": [
-        "school_learning"
-      ],
-      "child_age_list": [
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out"
-      ],
-      "caregiver_gender_list": [
-        "man",
-        "woman",
-        "opt_out"
-      ],
-      "tag_list": [
-        "teen"
-      ],
-      "number_of_goals": 4,
-      "title": "@fields.child_name does not study regularly",
-      "_translations": {
-        "title": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "@fields.child_name does not study regularly"
-        }
-      }
-    },
-    {
-      "id": "lonely_no_friends",
-      "domain_list": [
-        "friends_bullying"
-      ],
-      "child_age_list": [
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out"
-      ],
-      "caregiver_gender_list": [
-        "man",
-        "woman",
-        "opt_out"
-      ],
-      "tag_list": [
-        "child",
-        "teen"
-      ],
-      "number_of_goals": 3,
-      "title": "@fields.child_name has no friends",
-      "_translations": {
-        "title": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "@fields.child_name has no friends"
-        }
-      }
-    },
-    {
-      "id": "bullying_others",
-      "domain_list": [
-        "friends_bullying"
-      ],
-      "child_age_list": [
-        "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out"
-      ],
-      "caregiver_gender_list": [
-        "man",
-        "woman",
-        "opt_out"
-      ],
-      "tag_list": [
-        "child",
-        "teen"
-      ],
       "number_of_goals": 5,
-      "title": "@fields.child_name is bullying others",
+      "title": "@fields.child_name worries or feels afraid a lot",
       "_translations": {
         "title": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "@fields.child_name is bullying others"
+          "eng": "@fields.child_name worries or feels afraid a lot"
         }
       }
     },
     {
-      "id": "peer_pressure_support",
+      "id": "strong_emotions_2to9",
       "domain_list": [
-        "friends_bullying"
-      ],
-      "child_age_list": [
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out"
-      ],
-      "caregiver_gender_list": [
-        "man",
-        "woman",
-        "opt_out"
-      ],
-      "tag_list": [
-        "teen"
-      ],
-      "number_of_goals": 4,
-      "title": "Support @fields.child_name handle peer pressure",
-      "_translations": {
-        "title": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Support @fields.child_name handle peer pressure"
-        }
-      }
-    },
-    {
-      "id": "intense_meltdown",
-      "domain_list": [
-        "peaceful_home"
+        "mental_health"
       ],
       "child_age_list": [
         "2",
         "3",
         "4",
-        "5"
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
       ],
       "child_gender_list": [
         "male",
@@ -1791,21 +1169,117 @@
       "tag_list": [
         "child"
       ],
-      "number_of_goals": 5,
-      "title": "@fields.child_name's intense meltdowns disrupt our home",
+      "number_of_goals": 6,
+      "title": "@fields.child_name gets very upset or has strong emotions",
       "_translations": {
         "title": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "@fields.child_name's intense meltdowns disrupt our home"
+          "eng": "@fields.child_name gets very upset or has strong emotions"
         }
       }
     },
     {
-      "id": "bedtimes",
+      "id": "seems_unhappy",
       "domain_list": [
-        "peaceful_home"
+        "mental_health"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 4,
+      "title": "@fields.child_name often seems unhappy",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name often seems unhappy"
+        }
+      }
+    },
+    {
+      "id": "low_self_confidence",
+      "domain_list": [
+        "mental_health"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 5,
+      "title": "@fields.child_name has low self-confidence",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name has low self-confidence"
+        }
+      }
+    },
+    {
+      "id": "make_friends_2to9",
+      "domain_list": [
+        "mental_health"
       ],
       "child_age_list": [
         "2",
@@ -1831,18 +1305,1279 @@
         "child"
       ],
       "number_of_goals": 5,
-      "title": "Bedtimes are exhausting",
+      "title": "@fields.child_name struggles to make friends",
       "_translations": {
         "title": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Bedtimes are exhausting"
+          "eng": "@fields.child_name struggles to make friends"
         }
       }
     },
     {
-      "id": "no_time_energy",
+      "id": "bullied_or_bullying",
+      "domain_list": [
+        "mental_health"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 5,
+      "title": "@fields.child_name is being bullied or bullying others",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name is being bullied or bullying others"
+        }
+      }
+    },
+    {
+      "id": "worry_anxious_10to17",
+      "domain_list": [
+        "mental_health"
+      ],
+      "child_age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number_of_goals": 5,
+      "title": "@fields.child_name worries or feels anxious a lot",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name worries or feels anxious a lot"
+        }
+      }
+    },
+    {
+      "id": "strong_emotions_10to17",
+      "domain_list": [
+        "mental_health"
+      ],
+      "child_age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number_of_goals": 5,
+      "title": "@fields.child_name gets very upset or has strong emotions",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name gets very upset or has strong emotions"
+        }
+      }
+    },
+    {
+      "id": "fit_in_peers_10to17",
+      "domain_list": [
+        "mental_health"
+      ],
+      "child_age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number_of_goals": 6,
+      "title": "@fields.child_name struggles to fit in with peers",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name struggles to fit in with peers"
+        }
+      }
+    },
+    {
+      "id": "too_much_device_2to9",
+      "domain_list": [
+        "online_safety"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number_of_goals": 4,
+      "title": "@fields.child_name spends too much time on devices",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name spends too much time on devices"
+        }
+      }
+    },
+    {
+      "id": "device_rules",
+      "domain_list": [
+        "online_safety"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 6,
+      "title": "Struggle to set and stick to rules about device use",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Struggle to set and stick to rules about device use"
+        }
+      }
+    },
+    {
+      "id": "upset_device_ends_2to9",
+      "domain_list": [
+        "online_safety"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number_of_goals": 5,
+      "title": "@fields.child_name gets upset when device time ends",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name gets upset when device time ends"
+        }
+      }
+    },
+    {
+      "id": "devices_disrupt_routine_2to9",
+      "domain_list": [
+        "online_safety"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number_of_goals": 5,
+      "title": "Devices get in the way of @fields.child_name's daily routine",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Devices get in the way of @fields.child_name's daily routine"
+        }
+      }
+    },
+    {
+      "id": "online_content_2to9",
+      "domain_list": [
+        "online_safety"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number_of_goals": 5,
+      "title": "Worried about what @fields.child_name sees or does online",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Worried about what @fields.child_name sees or does online"
+        }
+      }
+    },
+    {
+      "id": "online_privacy_2to9",
+      "domain_list": [
+        "online_safety"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number_of_goals": 4,
+      "title": "Worried about @fields.child_name's online safety and privacy",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Worried about @fields.child_name's online safety and privacy"
+        }
+      }
+    },
+    {
+      "id": "too_much_screen_10to17",
+      "domain_list": [
+        "online_safety"
+      ],
+      "child_age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number_of_goals": 6,
+      "title": "@fields.child_name spends too much time using screens",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name spends too much time using screens"
+        }
+      }
+    },
+    {
+      "id": "online_content_10to17",
+      "domain_list": [
+        "online_safety"
+      ],
+      "child_age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number_of_goals": 6,
+      "title": "Worried about what @fields.child_name sees or does online",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Worried about what @fields.child_name sees or does online"
+        }
+      }
+    },
+    {
+      "id": "online_privacy_10to17",
+      "domain_list": [
+        "online_safety"
+      ],
+      "child_age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number_of_goals": 6,
+      "title": "Worried about @fields.child_name's online safety and privacy",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Worried about @fields.child_name's online safety and privacy"
+        }
+      }
+    },
+    {
+      "id": "cyberbullying_10to17",
+      "domain_list": [
+        "online_safety"
+      ],
+      "child_age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number_of_goals": 6,
+      "title": "Worried about @fields.child_name being bullied or bullying others online",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Worried about @fields.child_name being bullied or bullying others online"
+        }
+      }
+    },
+    {
+      "id": "device_mental_health_10to17",
+      "domain_list": [
+        "online_safety"
+      ],
+      "child_age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number_of_goals": 4,
+      "title": "Worried that device use is affecting @fields.child_name's mental health",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Worried that device use is affecting @fields.child_name's mental health"
+        }
+      }
+    },
+    {
+      "id": "development_2to5",
+      "domain_list": [
+        "school_learning"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number_of_goals": 5,
+      "title": "Worried about @fields.child_name's development",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Worried about @fields.child_name's development"
+        }
+      }
+    },
+    {
+      "id": "communicating_2to5",
+      "domain_list": [
+        "school_learning"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number_of_goals": 5,
+      "title": "@fields.child_name has difficulty communicating or expressing themselves",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name has difficulty communicating or expressing themselves"
+        }
+      }
+    },
+    {
+      "id": "learning_new_things_2to5",
+      "domain_list": [
+        "school_learning"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number_of_goals": 6,
+      "title": "@fields.child_name has difficulty learning new things",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name has difficulty learning new things"
+        }
+      }
+    },
+    {
+      "id": "interest_learning_2to5",
+      "domain_list": [
+        "school_learning"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number_of_goals": 5,
+      "title": "@fields.child_name does not seem interested in learning",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name does not seem interested in learning"
+        }
+      }
+    },
+    {
+      "id": "independence_2to5",
+      "domain_list": [
+        "school_learning"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number_of_goals": 5,
+      "title": "@fields.child_name finds it hard to do things independently",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name finds it hard to do things independently"
+        }
+      }
+    },
+    {
+      "id": "preschool_difficulty_2to5",
+      "domain_list": [
+        "school_learning"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number_of_goals": 6,
+      "title": "@fields.child_name has difficulty at preschool, nursery, or childcare",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name has difficulty at preschool, nursery, or childcare"
+        }
+      }
+    },
+    {
+      "id": "schoolwork_hard_6to9",
+      "domain_list": [
+        "school_learning"
+      ],
+      "child_age_list": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number_of_goals": 7,
+      "title": "@fields.child_name finds schoolwork hard",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name finds schoolwork hard"
+        }
+      }
+    },
+    {
+      "id": "homework_refusal_6to9",
+      "domain_list": [
+        "school_learning"
+      ],
+      "child_age_list": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number_of_goals": 4,
+      "title": "@fields.child_name does not want to do homework",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name does not want to do homework"
+        }
+      }
+    },
+    {
+      "id": "school_difficulty_6to9",
+      "domain_list": [
+        "school_learning"
+      ],
+      "child_age_list": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number_of_goals": 5,
+      "title": "@fields.child_name has difficulty in school",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name has difficulty in school"
+        }
+      }
+    },
+    {
+      "id": "learning_confidence_6to9",
+      "domain_list": [
+        "school_learning"
+      ],
+      "child_age_list": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number_of_goals": 6,
+      "title": "@fields.child_name loses confidence or gets discouraged when learning",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name loses confidence or gets discouraged when learning"
+        }
+      }
+    },
+    {
+      "id": "extra_learning_help_6to9",
+      "domain_list": [
+        "school_learning"
+      ],
+      "child_age_list": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number_of_goals": 5,
+      "title": "@fields.child_name may need extra help with their learning or development",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name may need extra help with their learning or development"
+        }
+      }
+    },
+    {
+      "id": "schoolwork_hard_10to17",
+      "domain_list": [
+        "school_learning"
+      ],
+      "child_age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number_of_goals": 5,
+      "title": "@fields.child_name finds schoolwork hard",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name finds schoolwork hard"
+        }
+      }
+    },
+    {
+      "id": "school_motivation_10to17",
+      "domain_list": [
+        "school_learning"
+      ],
+      "child_age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number_of_goals": 5,
+      "title": "@fields.child_name finds it hard to stay motivated at school",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name finds it hard to stay motivated at school"
+        }
+      }
+    },
+    {
+      "id": "school_organisation_10to17",
+      "domain_list": [
+        "school_learning"
+      ],
+      "child_age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number_of_goals": 4,
+      "title": "@fields.child_name finds it hard to organise school work and time",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name finds it hard to organise school work and time"
+        }
+      }
+    },
+    {
+      "id": "school_stress_10to17",
+      "domain_list": [
+        "school_learning"
+      ],
+      "child_age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number_of_goals": 5,
+      "title": "@fields.child_name feels stressed or under too much pressure about school",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name feels stressed or under too much pressure about school"
+        }
+      }
+    },
+    {
+      "id": "learning_confidence_10to17",
+      "domain_list": [
+        "school_learning"
+      ],
+      "child_age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number_of_goals": 5,
+      "title": "@fields.child_name loses confidence or gets discouraged when learning",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name loses confidence or gets discouraged when learning"
+        }
+      }
+    },
+    {
+      "id": "school_problems_10to17",
+      "domain_list": [
+        "school_learning"
+      ],
+      "child_age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number_of_goals": 5,
+      "title": "@fields.child_name is having problems at school",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name is having problems at school"
+        }
+      }
+    },
+    {
+      "id": "school_future_10to17",
+      "domain_list": [
+        "school_learning"
+      ],
+      "child_age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number_of_goals": 5,
+      "title": "@fields.child_name is unsure about school or their future",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "@fields.child_name is unsure about school or their future"
+        }
+      }
+    },
+    {
+      "id": "parent_stress",
       "domain_list": [
         "parent_wellbeing"
       ],
@@ -1878,19 +2613,19 @@
         "child",
         "teen"
       ],
-      "number_of_goals": 4,
-      "title": "No time or energy to take care of myself",
+      "number_of_goals": 5,
+      "title": "I often feel stressed or overwhelmed",
       "_translations": {
         "title": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "No time or energy to take care of myself"
+          "eng": "I often feel stressed or overwhelmed"
         }
       }
     },
     {
-      "id": "feel_guilty",
+      "id": "parent_low_mood",
       "domain_list": [
         "parent_wellbeing"
       ],
@@ -1926,19 +2661,67 @@
         "child",
         "teen"
       ],
-      "number_of_goals": 4,
-      "title": "Feel guilty when I take care of myself",
+      "number_of_goals": 5,
+      "title": "I often feel sad, low, or have little energy",
       "_translations": {
         "title": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Feel guilty when I take care of myself"
+          "eng": "I often feel sad, low, or have little energy"
         }
       }
     },
     {
-      "id": "stop_worry",
+      "id": "parent_worry",
+      "domain_list": [
+        "parent_wellbeing"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 5,
+      "title": "I worry a lot or often feel anxious",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "I worry a lot or often feel anxious"
+        }
+      }
+    },
+    {
+      "id": "parent_calm",
       "domain_list": [
         "parent_wellbeing"
       ],
@@ -1975,18 +2758,18 @@
         "teen"
       ],
       "number_of_goals": 6,
-      "title": "Can not stop worrying about @fields.child_name",
+      "title": "I find it difficult to stay calm when parenting gets stressful",
       "_translations": {
         "title": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Can not stop worrying about @fields.child_name"
+          "eng": "I find it difficult to stay calm when parenting gets stressful"
         }
       }
     },
     {
-      "id": "stress_health",
+      "id": "parent_time_support",
       "domain_list": [
         "parent_wellbeing"
       ],
@@ -2022,14 +2805,110 @@
         "child",
         "teen"
       ],
-      "number_of_goals": 4,
-      "title": "Parenting stress is affecting my health",
+      "number_of_goals": 5,
+      "title": "I do not have enough time or support to take care of myself",
       "_translations": {
         "title": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Parenting stress is affecting my health"
+          "eng": "I do not have enough time or support to take care of myself"
+        }
+      }
+    },
+    {
+      "id": "coparent_difficulties",
+      "domain_list": [
+        "parent_wellbeing"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 6,
+      "title": "Difficulties with my partner, co-parent, family, or other caregivers make parenting harder",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Difficulties with my partner, co-parent, family, or other caregivers make parenting harder"
+        }
+      }
+    },
+    {
+      "id": "money_worries",
+      "domain_list": [
+        "parent_wellbeing"
+      ],
+      "child_age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out"
+      ],
+      "caregiver_gender_list": [
+        "man",
+        "woman",
+        "opt_out"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number_of_goals": 5,
+      "title": "Money worries are causing stress for my family",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Money worries are causing stress for my family"
         }
       }
     },
@@ -2044,8 +2923,6 @@
         "mental_health",
         "online_safety",
         "school_learning",
-        "friends_bullying",
-        "peaceful_home",
         "parent_wellbeing"
       ],
       "child_age_list": [
@@ -2080,7 +2957,7 @@
         "child",
         "teen"
       ],
-      "number_of_goals": "11",
+      "number_of_goals": 11,
       "title": "Something else",
       "_translations": {
         "title": {}
