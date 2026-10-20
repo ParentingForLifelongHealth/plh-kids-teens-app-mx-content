@@ -2724,11 +2724,20 @@
         {
           "trigger": "completed",
           "action_id": "set_field",
-          "args": [],
-          "_raw": "completed | set_field | completed_all : true",
-          "params": {
-            "completed_all ": true
-          }
+          "args": [
+            "completed_all",
+            true
+          ],
+          "_raw": "completed | set_field : completed_all : true"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_field",
+          "args": [
+            "proximal_outcome_time_point",
+            "after"
+          ],
+          "_raw": "completed | set_field: proximal_outcome_time_point : after"
         },
         {
           "trigger": "completed",
@@ -2871,7 +2880,7 @@
       "_nested_name": "module_start_at_id_unlock_all",
       "_dynamicFields": {
         "action_list": {
-          "2": {
+          "3": {
             "args": {
               "0": [
                 {
@@ -2903,8 +2912,8 @@
       },
       "_dynamicDependencies": {
         "@local.po_schedule_action_list": [
-          "action_list.2.args.0",
-          "action_list.2._raw"
+          "action_list.3.args.0",
+          "action_list.3._raw"
         ],
         "@local.unlock_all": [
           "condition"

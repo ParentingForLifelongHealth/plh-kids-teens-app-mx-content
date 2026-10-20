@@ -10,7 +10,7 @@
 | animated_slides | 1 |
 | apple_sign_in_button | 2 |
 | audio | 4 |
-| button | 130 |
+| button | 129 |
 | combo_box | 27 |
 | data_items | 273 |
 | debug_toggle | 1 |
@@ -43,11 +43,11 @@
 | task_card | 4 |
 | task_progress_bar | 5 |
 | template | 871 |
-| text | 338 |
+| text | 337 |
 | text_area | 4 |
 | text_box | 23 |
 | text_bubble | 32 |
-| title | 71 |
+| title | 70 |
 | toggle_bar | 5 |
 | update_action_list | 5 |
 | video | 4 |
@@ -64,7 +64,7 @@
 | asset_pack | 4 |
 | auth | 3 |
 | emit: changed | 7 |
-| emit: completed | 179 |
+| emit: completed | 178 |
 | emit: force_reload | 5 |
 | emit: force_reprocess | 13 |
 | emit: force_restart | 3 |
@@ -74,7 +74,7 @@
 | feedback | 13 |
 | go_to | 28 |
 | nav | 1 |
-| nav_stack | 1149 |
+| nav_stack | 1148 |
 | notification | 17 |
 | plh_certificate | 23 |
 | pop_up | 517 |

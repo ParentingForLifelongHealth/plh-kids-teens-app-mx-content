@@ -208,7 +208,7 @@
       "type": "begin_template",
       "name": "module_start_at_id_unlock_all",
       "value": "module_start_at_id",
-      "action_list": "completed | set_data | _list_id: activity_tasks, locked: false;\ncompleted | set_field | completed_all : true;\ncompleted | trigger_actions: @local.po_schedule_action_list;\ncompleted | emit: completed; \nuncompleted | emit: uncompleted;",
+      "action_list": "completed | set_data | _list_id: activity_tasks, locked: false;\ncompleted | set_field : completed_all : true;\ncompleted | set_field: proximal_outcome_time_point : after;\ncompleted | trigger_actions: @local.po_schedule_action_list;\ncompleted | emit: completed; \nuncompleted | emit: uncompleted;",
       "condition": "@local.unlock_all",
       "exclude_from_translation": true
     },

@@ -18,10 +18,19 @@
       "name": "courses_not_done"
     },
     {
+      "name": "has_other_course"
+    },
+    {
       "type": "data_items",
       "value": "@data.courses",
       "action_list": "data_changed | set_local : has_core_course: @items.length;",
       "parameter_list": "filter: @item.core && !@item.completed && (!@item.tag_list || @item.tag_list.includes(@fields.child_age_tag)) && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.user_gender_list || @item.user_gender_list.includes(@fields.user_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))"
+    },
+    {
+      "type": "data_items",
+      "value": "@data.courses",
+      "action_list": "data_changed | set_local : has_other_course: @items.length;",
+      "parameter_list": "filter: !@item.core && !@item.completed && (!@item.tag_list || @item.tag_list.includes(@fields.child_age_tag)) && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.user_gender_list || @item.user_gender_list.includes(@fields.user_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship));"
     },
     {
       "type": "begin_display_group",
@@ -33,7 +42,7 @@
       "type": "title",
       "value": "@global.unlock_course_title",
       "condition": "!!@global.unlock_course_title",
-      "style_list": "margin-top: -8px;"
+      "style_list": "margin-top: var(--small-padding)"
     },
     {
       "type": "text",
@@ -48,13 +57,13 @@
       "type": "begin_display_group",
       "name": "unlocked_title",
       "parameter_list": "style: column",
-      "condition": "@local.has_core_course == 0"
+      "condition": "@local.has_core_course == 0 && @local.has_other_course > 0"
     },
     {
       "type": "title",
       "value": "@global.all_unlock_course_title",
       "condition": "!!@global.all_unlock_course_title",
-      "style_list": "margin-top: -8px;"
+      "style_list": "margin-top: var(--small-padding)"
     },
     {
       "type": "text",
@@ -110,7 +119,7 @@
       "type": "title",
       "value": "@global.lock_course_title",
       "condition": "!!@global.lock_course_title",
-      "style_list": "margin-top: -8px;"
+      "style_list": "margin-top: var(--small-padding)"
     },
     {
       "type": "text",

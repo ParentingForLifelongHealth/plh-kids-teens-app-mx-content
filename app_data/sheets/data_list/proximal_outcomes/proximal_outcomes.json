@@ -5,7 +5,8 @@
   "status": "released",
   "rows": [
     {
-      "id": "vac_1",
+      "id": "vac_physical",
+      "tag_desired_change": "decrease",
       "domain": "vac",
       "normalising_statement": "All adults use certain methods to teach children the right behaviour or to stop them from behaving badly.",
       "_translations": {
@@ -23,7 +24,7 @@
           "eng": "All adults use certain methods to teach children the right behaviour or to stop them from behaving badly."
         },
         "question": {
-          "eng": "How often do you physically discipline your children when they have done something wrong by hitting, spanking, pinching, or slapping with your hand or an object like a stick or a belt?"
+          "eng": "How often do you hit, spank, or slap your child when they do something wrong? This includes using your hand or something like a belt or stick"
         },
         "option_1_text": {
           "eng": "Never"
@@ -44,7 +45,7 @@
           "eng": "Prefer not to say"
         }
       },
-      "question": "How often do you physically discipline your children when they have done something wrong by hitting, spanking, pinching, or slapping with your hand or an object like a stick or a belt?",
+      "question": "How often do you hit, spank, or slap your child when they do something wrong? This includes using your hand or something like a belt or stick",
       "option_1_text": "Never",
       "option_2_text": "Rarely",
       "option_3_text": "Sometimes",
@@ -53,9 +54,10 @@
       "option_6_text": "Prefer not to say"
     },
     {
-      "id": "vac_2",
+      "id": "vac_emotional",
+      "tag_desired_change": "decrease",
       "domain": "vac",
-      "normalising_statement": "Sometimes our children make us really angry or upset, and we do things we wish we hadn't.",
+      "normalising_statement": "Sometimes our children make us really angry or upset and we do things we wish we hadn't.",
       "_translations": {
         "normalising_statement": {},
         "question": {},
@@ -68,10 +70,10 @@
       },
       "_translatedFields": {
         "normalising_statement": {
-          "eng": "Sometimes our children make us really angry or upset, and we do things we wish we hadn't."
+          "eng": "Sometimes our children make us really angry or upset and we do things we wish we hadn't."
         },
         "question": {
-          "eng": "How often do you shout, yell, or scream at your children when you are angry with them?"
+          "eng": "How often do you shout, yell or scream at @field.child_name when you are angry or upset with them?"
         },
         "option_1_text": {
           "eng": "Never"
@@ -92,7 +94,7 @@
           "eng": "Prefer not to say"
         }
       },
-      "question": "How often do you shout, yell, or scream at your children when you are angry with them?",
+      "question": "How often do you shout, yell or scream at @field.child_name when you are angry or upset with them?",
       "option_1_text": "Never",
       "option_2_text": "Rarely",
       "option_3_text": "Sometimes",
@@ -101,8 +103,254 @@
       "option_6_text": "Prefer not to say"
     },
     {
-      "id": "cgmh_2",
+      "id": "vac_acceptability",
+      "tag_desired_change": "decrease",
+      "domain": "vac",
+      "normalising_statement": "Every family has their own way of teaching their child how to act.",
+      "_translations": {
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {},
+        "option_6_text": {}
+      },
+      "_translatedFields": {
+        "normalising_statement": {
+          "eng": "Every family has their own way of teaching their child how to act."
+        },
+        "question": {
+          "eng": "How much do you agree with this statement: In order to bring up, raise, or educate a child properly, a child needs to be physically punished."
+        },
+        "option_1_text": {
+          "eng": "Strongly disagree"
+        },
+        "option_2_text": {
+          "eng": "Disagree"
+        },
+        "option_3_text": {
+          "eng": "Neither agree nor disagree"
+        },
+        "option_4_text": {
+          "eng": "Agree"
+        },
+        "option_5_text": {
+          "eng": "Strongly agree"
+        },
+        "option_6_text": {
+          "eng": "Prefer not to say"
+        }
+      },
+      "question": "How much do you agree with this statement: In order to bring up, raise, or educate a child properly, a child needs to be physically punished.",
+      "option_1_text": "Strongly disagree",
+      "option_2_text": "Disagree",
+      "option_3_text": "Neither agree nor disagree",
+      "option_4_text": "Agree",
+      "option_5_text": "Strongly agree",
+      "option_6_text": "Prefer not to say"
+    },
+    {
+      "id": "pci_child_led_play",
+      "tag_desired_change": "increase",
+      "domain": "pci",
+      "normalising_statement": "It is hard to find time to have fun with our children.",
+      "_translations": {
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {},
+        "option_6_text": {}
+      },
+      "_translatedFields": {
+        "normalising_statement": {
+          "eng": "It is hard to find time to have fun with our children."
+        },
+        "question": {
+          "eng": "How often do you interact with @field.child_name in fun activities that @field.child_name likes to do?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        },
+        "option_6_text": {
+          "eng": "Prefer not to say"
+        }
+      },
+      "question": "How often do you interact with @field.child_name in fun activities that @field.child_name likes to do?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always",
+      "option_6_text": "Prefer not to say"
+    },
+    {
+      "id": "pci_positive_reinforcement",
+      "tag_desired_change": "increase",
+      "domain": "pci",
+      "normalising_statement": "We notice and respond to our child's behaviour in different ways.",
+      "_translations": {
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {},
+        "option_6_text": {}
+      },
+      "_translatedFields": {
+        "normalising_statement": {
+          "eng": "We notice and respond to our child's behaviour in different ways."
+        },
+        "question": {
+          "eng": "How often do you praise @field.child_name when @field.child_name behaves well?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        },
+        "option_6_text": {
+          "eng": "Prefer not to say"
+        }
+      },
+      "question": "How often do you praise @field.child_name when @field.child_name behaves well?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always",
+      "option_6_text": "Prefer not to say"
+    },
+    {
+      "id": "pci_learning_engagement",
+      "tag_desired_change": "increase",
+      "domain": "pci",
+      "normalising_statement": "We have lots of ways to help our children learn and grow.",
+      "_translations": {
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {},
+        "option_6_text": {}
+      },
+      "_translatedFields": {
+        "normalising_statement": {
+          "eng": "We have lots of ways to help our children learn and grow."
+        },
+        "question": {
+          "eng": "How often do you read or tell stories to @field.child_name, or support @field.child_name with schoolwork?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        },
+        "option_6_text": {
+          "eng": "Prefer not to say"
+        }
+      },
+      "question": "How often do you read or tell stories to @field.child_name, or support @field.child_name with schoolwork?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always",
+      "option_6_text": "Prefer not to say"
+    },
+    {
+      "id": "cgmh_parenting_stress",
+      "tag_desired_change": "decrease",
+      "domain": "cgmh",
+      "normalising_statement": "Being responsible for taking care of children can be very stressful at times.",
+      "_translations": {
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {},
+        "option_6_text": {}
+      },
+      "_translatedFields": {
+        "normalising_statement": {
+          "eng": "Being responsible for taking care of children can be very stressful at times."
+        },
+        "question": {
+          "eng": "How often do you feel overwhelmed by your responsibility of being a caregiver?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        },
+        "option_6_text": {
+          "eng": "Prefer not to say"
+        }
+      },
+      "question": "How often do you feel overwhelmed by your responsibility of being a caregiver?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always",
+      "option_6_text": "Prefer not to say"
+    },
+    {
+      "id": "cgmh_depression",
       "tag_sensitive": "yes",
+      "tag_desired_change": "decrease",
       "domain": "cgmh",
       "normalising_statement": "We can experience many different emotions as part of daily life.",
       "_translations": {
@@ -120,7 +368,7 @@
           "eng": "We can experience many different emotions as part of daily life."
         },
         "question": {
-          "eng": "How often are you bothered by feeling down, sad, depressed, or hopeless?"
+          "eng": "How often are you bothered by feeling sad, depressed, or hopeless?"
         },
         "option_1_text": {
           "eng": "Never"
@@ -141,7 +389,7 @@
           "eng": "Prefer not to say"
         }
       },
-      "question": "How often are you bothered by feeling down, sad, depressed, or hopeless?",
+      "question": "How often are you bothered by feeling sad, depressed, or hopeless?",
       "option_1_text": "Never",
       "option_2_text": "Rarely",
       "option_3_text": "Sometimes",
@@ -150,8 +398,9 @@
       "option_6_text": "Prefer not to say"
     },
     {
-      "id": "cgmh_3",
+      "id": "cgmh_anxiety",
       "tag_sensitive": "yes",
+      "tag_desired_change": "decrease",
       "domain": "cgmh",
       "normalising_statement": "Daily life can bring up a lot of worries and feelings.",
       "_translations": {
@@ -169,7 +418,7 @@
           "eng": "Daily life can bring up a lot of worries and feelings."
         },
         "question": {
-          "eng": "How often have you not been able to stop or control worrying?"
+          "eng": "How often have you been bothered by not being able to stop or control worrying?"
         },
         "option_1_text": {
           "eng": "Never"
@@ -190,7 +439,7 @@
           "eng": "Prefer not to say"
         }
       },
-      "question": "How often have you not been able to stop or control worrying?",
+      "question": "How often have you been bothered by not being able to stop or control worrying?",
       "option_1_text": "Never",
       "option_2_text": "Rarely",
       "option_3_text": "Sometimes",
@@ -199,9 +448,10 @@
       "option_6_text": "Prefer not to say"
     },
     {
-      "id": "camh_1",
+      "id": "camh_behaviour",
+      "tag_desired_change": "decrease",
       "domain": "camh",
-      "normalising_statement": "Every child has days when it is hard for them to listen and follow rules",
+      "normalising_statement": "Every child has days when it is hard for them to listen and follow rules.",
       "_translations": {
         "normalising_statement": {},
         "question": {},
@@ -214,10 +464,10 @@
       },
       "_translatedFields": {
         "normalising_statement": {
-          "eng": "Every child has days when it is hard for them to listen and follow rules"
+          "eng": "Every child has days when it is hard for them to listen and follow rules."
         },
         "question": {
-          "eng": "How often does your child not obey you, or is it difficult to make them obey you?"
+          "eng": "How often is it difficult to make @field.child_name obey you?"
         },
         "option_1_text": {
           "eng": "Never"
@@ -238,7 +488,7 @@
           "eng": "Prefer not to say"
         }
       },
-      "question": "How often does your child not obey you, or is it difficult to make them obey you?",
+      "question": "How often is it difficult to make @field.child_name obey you?",
       "option_1_text": "Never",
       "option_2_text": "Rarely",
       "option_3_text": "Sometimes",
@@ -247,9 +497,10 @@
       "option_6_text": "Prefer not to say"
     },
     {
-      "id": "camh_2",
+      "id": "camh_depression",
+      "tag_desired_change": "decrease",
       "domain": "camh",
-      "normalising_statement": "It is normal for our children to feel bad or behave badly sometimes.",
+      "normalising_statement": "It is normal for our children to feel unhappy or sad.",
       "_translations": {
         "normalising_statement": {},
         "question": {},
@@ -262,10 +513,10 @@
       },
       "_translatedFields": {
         "normalising_statement": {
-          "eng": "It is normal for our children to feel bad or behave badly sometimes."
+          "eng": "It is normal for our children to feel unhappy or sad."
         },
         "question": {
-          "eng": "Thinking about the child who has been having the most difficulties, how often does your child feel sad or empty?"
+          "eng": "How often does @field.child_name feel sad?"
         },
         "option_1_text": {
           "eng": "Never"
@@ -286,12 +537,308 @@
           "eng": "Prefer not to say"
         }
       },
-      "question": "Thinking about the child who has been having the most difficulties, how often does your child feel sad or empty?",
+      "question": "How often does @field.child_name feel sad?",
       "option_1_text": "Never",
       "option_2_text": "Rarely",
       "option_3_text": "Sometimes",
       "option_4_text": "Often",
       "option_5_text": "Always",
+      "option_6_text": "Prefer not to say"
+    },
+    {
+      "id": "camh_anxiety",
+      "tag_desired_change": "decrease",
+      "domain": "camh",
+      "normalising_statement": "All children worry about things sometimes.",
+      "_translations": {
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {},
+        "option_6_text": {}
+      },
+      "_translatedFields": {
+        "normalising_statement": {
+          "eng": "All children worry about things sometimes."
+        },
+        "question": {
+          "eng": "How often has @field.child_name seemed worried, nervous, or anxious?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        },
+        "option_6_text": {
+          "eng": "Prefer not to say"
+        }
+      },
+      "question": "How often has @field.child_name seemed worried, nervous, or anxious?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always",
+      "option_6_text": "Prefer not to say"
+    },
+    {
+      "id": "safety_home",
+      "tag_desired_change": "decrease",
+      "domain": "safety",
+      "normalising_statement": "Families have different routines and childcare arrangements.",
+      "_translations": {
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {},
+        "option_6_text": {}
+      },
+      "_translatedFields": {
+        "normalising_statement": {
+          "eng": "Families have different routines and childcare arrangements."
+        },
+        "question": {
+          "eng": "How often is @field.child_name at home without adult supervision?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        },
+        "option_6_text": {
+          "eng": "Prefer not to say"
+        }
+      },
+      "question": "How often is @field.child_name at home without adult supervision?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always",
+      "option_6_text": "Prefer not to say"
+    },
+    {
+      "id": "safety_community",
+      "tag_desired_change": "decrease",
+      "domain": "safety",
+      "normalising_statement": "Families have different routines and childcare arrangements.",
+      "_translations": {
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {},
+        "option_6_text": {}
+      },
+      "_translatedFields": {
+        "normalising_statement": {
+          "eng": "Families have different routines and childcare arrangements."
+        },
+        "question": {
+          "eng": "How often is @field.child_name outside the home without a trusted adult after dark?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        },
+        "option_6_text": {
+          "eng": "Prefer not to say"
+        }
+      },
+      "question": "How often is @field.child_name outside the home without a trusted adult after dark?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always",
+      "option_6_text": "Prefer not to say"
+    },
+    {
+      "id": "safety_online",
+      "tag_desired_change": "increase",
+      "domain": "safety",
+      "normalising_statement": "Children use digital devices in different ways, and it isn't always easy to keep track of everything they do.",
+      "_translations": {
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {},
+        "option_6_text": {}
+      },
+      "_translatedFields": {
+        "normalising_statement": {
+          "eng": "Children use digital devices in different ways, and it isn't always easy to keep track of everything they do."
+        },
+        "question": {
+          "eng": "How often do you know what @field.child_name is doing when they are using a tablet, computer, phone, or other device?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Rarely"
+        },
+        "option_3_text": {
+          "eng": "Sometimes"
+        },
+        "option_4_text": {
+          "eng": "Often"
+        },
+        "option_5_text": {
+          "eng": "Always"
+        },
+        "option_6_text": {
+          "eng": "Prefer not to say"
+        }
+      },
+      "question": "How often do you know what @field.child_name is doing when they are using a tablet, computer, phone, or other device?",
+      "option_1_text": "Never",
+      "option_2_text": "Rarely",
+      "option_3_text": "Sometimes",
+      "option_4_text": "Often",
+      "option_5_text": "Always",
+      "option_6_text": "Prefer not to say"
+    },
+    {
+      "id": "csa_self_efficacy",
+      "tag_sensitive": "yes",
+      "tag_desired_change": "increase",
+      "domain": "csa",
+      "normalising_statement": "We all want to keep our children safe.\n\nSexual abuse includes being forced to send or view sexual pictures and acts, as well as unwanted sexual touching.",
+      "_translations": {
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {},
+        "option_6_text": {}
+      },
+      "_translatedFields": {
+        "normalising_statement": {
+          "eng": "We all want to keep our children safe.\n\nSexual abuse includes being forced to send or view sexual pictures and acts, as well as unwanted sexual touching."
+        },
+        "question": {
+          "eng": "How confident do you feel you are to protect @field.child_name from sexual abuse online or in-person?"
+        },
+        "option_1_text": {
+          "eng": "Not at all confident"
+        },
+        "option_2_text": {
+          "eng": "Slightly confident"
+        },
+        "option_3_text": {
+          "eng": "Moderately confident"
+        },
+        "option_4_text": {
+          "eng": "Very confident"
+        },
+        "option_5_text": {
+          "eng": "Extremely confident"
+        },
+        "option_6_text": {
+          "eng": "Prefer not to say"
+        }
+      },
+      "question": "How confident do you feel you are to protect @field.child_name from sexual abuse online or in-person?",
+      "option_1_text": "Not at all confident",
+      "option_2_text": "Slightly confident",
+      "option_3_text": "Moderately confident",
+      "option_4_text": "Very confident",
+      "option_5_text": "Extremely confident",
+      "option_6_text": "Prefer not to say"
+    },
+    {
+      "id": "csa_exposure",
+      "tag_sensitive": "yes",
+      "tag_desired_change": "decrease",
+      "domain": "csa",
+      "normalising_statement": "Sometimes children experience unwanted sexual behaviours, online or in person, such as unwanted sexual touching, being shown sexual content, being asked to do something sexual, or being pressured to share sexual images.",
+      "_translations": {
+        "normalising_statement": {},
+        "question": {},
+        "option_1_text": {},
+        "option_2_text": {},
+        "option_3_text": {},
+        "option_4_text": {},
+        "option_5_text": {},
+        "option_6_text": {}
+      },
+      "_translatedFields": {
+        "normalising_statement": {
+          "eng": "Sometimes children experience unwanted sexual behaviours, online or in person, such as unwanted sexual touching, being shown sexual content, being asked to do something sexual, or being pressured to share sexual images."
+        },
+        "question": {
+          "eng": "How often have you worried that @field.child_name might experience unwanted sexual behavior?"
+        },
+        "option_1_text": {
+          "eng": "Never"
+        },
+        "option_2_text": {
+          "eng": "Once"
+        },
+        "option_3_text": {
+          "eng": "More than once"
+        },
+        "option_4_text": {
+          "eng": "Many times"
+        },
+        "option_5_text": {
+          "eng": "Very often"
+        },
+        "option_6_text": {
+          "eng": "Prefer not to say"
+        }
+      },
+      "question": "How often have you worried that @field.child_name might experience unwanted sexual behavior?",
+      "option_1_text": "Never",
+      "option_2_text": "Once",
+      "option_3_text": "More than once",
+      "option_4_text": "Many times",
+      "option_5_text": "Very often",
       "option_6_text": "Prefer not to say"
     }
   ],

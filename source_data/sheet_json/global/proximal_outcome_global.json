@@ -13,12 +13,12 @@
     {
       "type": "declare_global_constant",
       "name": "set_challenge_question",
-      "value": "Let's team up for **@fields.child_name**. \n\n\nWhich problem should we work on first? Pick one."
+      "value": "Thanks for sharing. You selected: “@fields.selected_domain_value”. \nMany parents need support in this area. \n\nWhat is your main challenge with @field.child_name?"
     },
     {
       "type": "declare_global_constant",
       "name": "set_goal_question",
-      "value": "Let's select a goal.\n\nWhich goal? Pick one."
+      "value": "Now let's turn that around.\nYour main challenge is: \"@fields.selected_challenge_value\". \n\nWhat would you like to happen instead?"
     },
     {
       "type": "declare_global_constant",
