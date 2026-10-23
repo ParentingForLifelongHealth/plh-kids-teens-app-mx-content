@@ -38,7 +38,7 @@
 | round_button | 33 |
 | select_text | 1 |
 | set_field | 4 |
-| set_variable | 5747 |
+| set_variable | 5753 |
 | simple_checkbox | 1 |
 | task_card | 4 |
 | task_progress_bar | 5 |
@@ -97,8 +97,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 78315 KB | 78.3 MB |
-| unused | 15073 KB | 15.1 MB |
+| total | 72147 KB | 72.1 MB |
+| unused | 30423 KB | 30.4 MB |
 </details>
 
 <details open>
@@ -116,6 +116,32 @@ Assets that appear in app-data but do not have references within sheets
 | images/character_icons/ANGELA_facilitator_intro.jpg | 939 |
 | images/character_icons/ANGEL_facilitator.svg | 921.4 |
 | images/character_icons/ANGEL_facilitator_intro.jpg | 1316.2 |
+| images/character_icons/F1_HIJA_13.svg | 1907.1 |
+| images/character_icons/F1_PADRE.png | 406.3 |
+| images/character_icons/F2_ABUELA.svg | 1419.4 |
+| images/character_icons/F2_ABUELO.svg | 1419.4 |
+| images/character_icons/F2_HIJA_17.svg | 1419.3 |
+| images/character_icons/circulos-02.png | 400.9 |
+| images/character_icons/circulos-03.png | 468.1 |
+| images/character_icons/circulos-04.png | 417.6 |
+| images/character_icons/circulos-05.png | 386.3 |
+| images/character_icons/circulos-06.png | 412.1 |
+| images/character_icons/circulos-07.png | 372.6 |
+| images/character_icons/circulos-08.png | 407.7 |
+| images/character_icons/circulos-09.png | 432.1 |
+| images/character_icons/circulos-10.png | 370.8 |
+| images/character_icons/circulos-11.png | 419.8 |
+| images/character_icons/circulos-12.png | 424.2 |
+| images/character_icons/circulos-13.png | 362 |
+| images/character_icons/circulos-14.png | 441.3 |
+| images/character_icons/circulos-15.png | 479.8 |
+| images/character_icons/circulos-16.png | 374.2 |
+| images/character_icons/circulos-17.png | 444.8 |
+| images/character_icons/circulos-18.png | 362.4 |
+| images/character_icons/circulos-19.png | 397.8 |
+| images/character_icons/circulos-20.png | 502.5 |
+| images/character_icons/circulos-21.png | 432.4 |
+| images/character_icons/circulos-22.png | 465.4 |
 | images/comic/relation/calm_yc_1.svg | 45.5 |
 | images/comic/relation/calm_yc_2.svg | 8 |
 | images/comic/relation/calm_yc_4.svg | 45.1 |
@@ -157,6 +183,9 @@ Assets that appear in app-data but do not have references within sheets
 | images/icons/faces/confused.svg | 1.8 |
 | images/icons/faces/happier.svg | 0.6 |
 | images/icons/faces/happiest.svg | 1.3 |
+| images/icons/faces/happy_face_new.svg | 1.4 |
+| images/icons/faces/ok_face_new.svg | 0.5 |
+| images/icons/faces/sad_face_new.svg | 1.5 |
 | images/icons/faces/sadder.svg | 1.1 |
 | images/icons/faces/saddest.svg | 2 |
 | images/icons/faces/scared.svg | 2.1 |
@@ -234,6 +263,21 @@ Assets that have references within sheets but do not appear in app-data
 | audio/relax/relax_6.m4a | 1 |
 | audio/relax/relax_7.m4a | 1 |
 | audio/relax/relax_8.m4a | 1 |
+| images/character_icons/ABUELA_1.svg | 1 |
+| images/character_icons/ABUELO_1.svg | 1 |
+| images/character_icons/F1_HIJA_11.svg | 1 |
+| images/character_icons/F2_HIJA_13.svg | 1 |
+| images/character_icons/F2_MADRE.svg | 1 |
+| images/character_icons/F2_PADRE.svg | 1 |
+| images/character_icons/F3_HIJO_14.svg | 1 |
+| images/character_icons/PROFESOR_1.svg | 1 |
+| images/character_icons/TIA_1.svg | 1 |
+| images/faces/angry.svg | 155 |
+| images/faces/happy.svg | 155 |
+| images/faces/ok.svg | 155 |
+| images/faces/sad.svg | 155 |
+| images/faces/smiling.svg | 155 |
+| images/faces/tired.svg | 155 |
 | images/icons/docs.svg | 1 |
 | images/icons/download_white.svg | 1 |
 | images/icons/visibility.svg | 1 |
@@ -334,16 +378,12 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/character_icons/AMIGA_MUJER_2.svg | 1412.5 | 1 |
 | images/character_icons/ANGELA_comic.svg | 909.5 | 3 |
 | images/character_icons/ANGEL_comic.svg | 910.1 | 3 |
-| images/character_icons/F1_HIJA_13.svg | 1907.1 | 1 |
 | images/character_icons/F1_HIJA_16.svg | 1876.8 | 1 |
 | images/character_icons/F1_HIJA_6.svg | 1876.9 | 1 |
 | images/character_icons/F1_HIJO_17.svg | 1876.9 | 1 |
 | images/character_icons/F1_HIJO_5.svg | 1877 | 1 |
-| images/character_icons/F1_MADRE.svg | 1877 | 1 |
+| images/character_icons/F1_MADRE.svg | 1877 | 2 |
 | images/character_icons/F1_PADRE.svg | 1877 | 1 |
-| images/character_icons/F2_ABUELA.svg | 1419.4 | 1 |
-| images/character_icons/F2_ABUELO.svg | 1419.4 | 1 |
-| images/character_icons/F2_HIJA_17.svg | 1419.3 | 1 |
 | images/character_icons/F2_HIJA_3.svg | 1784.1 | 1 |
 | images/character_icons/F2_HIJO_15.svg | 1419.3 | 1 |
 | images/character_icons/F2_HIJO_8.svg | 1784.1 | 1 |
@@ -651,11 +691,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/expand_circle_right_blue.svg | 2.1 | 2 |
 | images/icons/eye_blue.png | 4.2 | 42 |
 | images/icons/faces/happy.svg | 0.6 | 11 |
-| images/icons/faces/happy_face_new.svg | 1.4 | 150 |
 | images/icons/faces/neutral.svg | 0.5 | 11 |
-| images/icons/faces/ok_face_new.svg | 0.5 | 150 |
 | images/icons/faces/sad.svg | 0.6 | 11 |
-| images/icons/faces/sad_face_new.svg | 1.5 | 600 |
 | images/icons/football_blue.png | 5.1 | 15 |
 | images/icons/globe-outline.svg | 0.8 | 1 |
 | images/icons/heart-outline.png | 1.5 | 1 |

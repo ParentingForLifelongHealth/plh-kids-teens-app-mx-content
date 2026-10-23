@@ -104,12 +104,12 @@
     },
     {
       "name": "po_extra_steps",
-      "value": "@calc(Object.keys(@data.proximal_outcome_7d_pages).length)",
+      "value": "@calc(Object.keys(@data.proximal_outcome_7d_pages).filter(id => !(\" \" + @global.proximal_outcome_hidden_pages + \" \").includes(\" \" + id + \" \")).length)",
       "condition": "@local.po_due_type == \"7days\""
     },
     {
       "name": "po_extra_steps",
-      "value": "@calc(Object.keys(@data.proximal_outcome_14d_pages).length)",
+      "value": "@calc(Object.keys(@data.proximal_outcome_14d_pages).filter(id => !(\" \" + @global.proximal_outcome_hidden_pages + \" \").includes(\" \" + id + \" \")).length)",
       "condition": "@local.po_due_type == \"14days\""
     },
     {

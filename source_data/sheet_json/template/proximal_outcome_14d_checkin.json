@@ -5,8 +5,23 @@
   "status": "released",
   "rows": [
     {
+      "name": "hidden_pages",
+      "value": "@calc(\" \" + @global.proximal_outcome_hidden_pages + \" \")",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "page_ids",
+      "value": "@calc(Object.keys(@data.proximal_outcome_14d_pages))",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "visible_count",
+      "value": "@calc([].concat(@local.page_ids).filter(id => !(@local.hidden_pages).includes(\" \" + id + \" \")).length)",
+      "exclude_from_translation": true
+    },
+    {
       "name": "last_page_index",
-      "value": "@calc(Object.keys(@data.proximal_outcome_14d_pages).length - 1)",
+      "value": "@calc(Math.max(...[].concat(@local.page_ids).map((id, i) => (@local.hidden_pages).includes(\" \" + id + \" \") ? -1 : i)))",
       "exclude_from_translation": true
     },
     {
@@ -24,7 +39,7 @@
       "type": "begin_data_items",
       "name": "loop_pages",
       "value": "@data.proximal_outcome_14d_pages",
-      "parameter_list": "filter: !@item.completed; limit: 1"
+      "parameter_list": "filter: !@item.completed && !(@local.hidden_pages).includes(\" \" + @item.id + \" \"); limit: 1"
     },
     {
       "type": "begin_display_group"
@@ -51,7 +66,7 @@
     },
     {
       "name": "page_progress",
-      "value": "@calc((Number(@local.module_article_count) + @item.row_index) / (Number(@local.module_article_count) + @local.last_page_index + 1) * 100)"
+      "value": "@calc((Number(@local.module_article_count) + [].concat(@local.page_ids).slice(0, @item.row_index).filter(id => !(@local.hidden_pages).includes(\" \" + id + \" \")).length) / (Number(@local.module_article_count) + @local.visible_count) * 100)"
     },
     {
       "type": "begin_template",
@@ -85,7 +100,7 @@
       "type": "begin_template",
       "name": "page_@item.row_index",
       "value": "proximal_outcome_@item.id",
-      "action_list": "completed | set_data |\n_list_id: proximal_outcome_14d_pages,\n_index: @item.row_index,\ncompleted: true;\n\nuncompleted | set_data | \n_list_id: proximal_outcome_14d_pages,\n_index: -1+@item.row_index,\ncompleted: false;",
+      "action_list": "completed | set_data |\n_list_id: proximal_outcome_14d_pages,\n_index: @item.row_index,\ncompleted: true;\n\nuncompleted | set_data |\n_list_id: proximal_outcome_14d_pages,\n_filter: @item.completed,\n_reverse: true,\n_limit: 1,\ncompleted: false;",
       "condition": "@fields.prox_outcome_access == \"cta\""
     },
     {
@@ -99,7 +114,7 @@
       "type": "begin_template",
       "name": "page_@item.row_index",
       "value": "proximal_outcome_@item.id",
-      "action_list": "completed | set_data |\n_list_id: proximal_outcome_14d_pages,\n_index: @item.row_index,\ncompleted: true;\n\nuncompleted | set_data | \n_list_id: proximal_outcome_14d_pages,\n_index: -1+@item.row_index,\ncompleted: false;\nchanged | emit: changed;",
+      "action_list": "completed | set_data |\n_list_id: proximal_outcome_14d_pages,\n_index: @item.row_index,\ncompleted: true;\n\nuncompleted | set_data |\n_list_id: proximal_outcome_14d_pages,\n_filter: @item.completed,\n_reverse: true,\n_limit: 1,\ncompleted: false;\nchanged | emit: changed;",
       "condition": "@fields.prox_outcome_access != \"cta\" && @item.row_index != @local.last_page_index"
     },
     {
@@ -113,7 +128,7 @@
       "type": "begin_template",
       "name": "page_last",
       "value": "proximal_outcome_@item.id",
-      "action_list": "completed | set_data |\n_list_id: proximal_outcome_14d_pages,\n_index: @item.row_index,\ncompleted: true;\n\ncompleted | emit: completed;\n\nuncompleted | set_data | \n_list_id: proximal_outcome_14d_pages,\n_index: -1+@item.row_index,\ncompleted: false;",
+      "action_list": "completed | set_data |\n_list_id: proximal_outcome_14d_pages,\n_index: @item.row_index,\ncompleted: true;\n\ncompleted | emit: completed;\n\nuncompleted | set_data |\n_list_id: proximal_outcome_14d_pages,\n_filter: @item.completed,\n_reverse: true,\n_limit: 1,\ncompleted: false;",
       "condition": "@fields.prox_outcome_access != \"cta\" && @item.row_index == @local.last_page_index"
     },
     {

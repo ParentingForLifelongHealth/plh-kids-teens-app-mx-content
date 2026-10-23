@@ -6,14 +6,14 @@
   "rows": [
     {
       "id": "facilitator_female",
-      "name": "Daniela",
+      "name": "Dani",
       "role": "facilitator",
       "image_asset": "images/character_icons/ANGELA_comic.svg",
       "intro_image_asset": "images/character_icons/ANGELA_comic.svg"
     },
     {
       "id": "facilitator_male",
-      "name": "Cristian",
+      "name": "Cris",
       "role": "facilitator",
       "image_asset": "images/character_icons/ANGEL_comic.svg",
       "intro_image_asset": "images/character_icons/ANGEL_comic.svg"
@@ -23,7 +23,8 @@
       "caps_id": "F1_MADRE",
       "name": "Isabel",
       "role": "caregiver",
-      "image_asset": "images/character_icons/F1_MADRE.svg"
+      "image_asset": "images/character_icons/F1_MADRE.svg",
+      "intro_image_asset": "images/character_icons/F1_MADRE.svg"
     },
     {
       "id": "f1_padre",
@@ -58,7 +59,7 @@
       "caps_id": "F1_HIJA_11",
       "name": "Marifer",
       "role": "child",
-      "image_asset": "images/character_icons/F1_HIJA_13.svg"
+      "image_asset": "images/character_icons/F1_HIJA_11.svg"
     },
     {
       "id": "f1_hijo_17",
@@ -72,21 +73,21 @@
       "caps_id": "F2_PADRE",
       "name": "Adrián",
       "role": "caregiver",
-      "image_asset": "images/character_icons/F2_ABUELA.svg"
+      "image_asset": "images/character_icons/F2_PADRE.svg"
     },
     {
       "id": "f2_madre",
       "caps_id": "F2_MADRE",
       "name": "Laura",
       "role": "caregiver",
-      "image_asset": "images/character_icons/F2_ABUELO.svg"
+      "image_asset": "images/character_icons/F2_MADRE.svg"
     },
     {
       "id": "f2_hija_13",
       "caps_id": "F2_HIJA_13",
       "name": "Pati",
       "role": "child",
-      "image_asset": "images/character_icons/F2_HIJA_17.svg"
+      "image_asset": "images/character_icons/F2_HIJA_13.svg"
     },
     {
       "id": "f2_hija_3",
@@ -148,25 +149,29 @@
       "id": "f3_hijo_14",
       "caps_id": "F3_HIJO_14",
       "name": "Carlos",
-      "role": "child"
+      "role": "child",
+      "image_asset": "images/character_icons/F3_HIJO_14.svg"
     },
     {
       "id": "abuela_1",
       "caps_id": "ABUELA_1",
       "name": "Abue María",
-      "role": "caregiver"
+      "role": "caregiver",
+      "image_asset": "images/character_icons/ABUELA_1.svg"
     },
     {
       "id": "abuelo_1",
       "caps_id": "ABUELO_1",
       "name": "Abuelo Francisco",
-      "role": "caregiver"
+      "role": "caregiver",
+      "image_asset": "images/character_icons/ABUELO_1.svg"
     },
     {
       "id": "tia_1",
       "caps_id": "TIA_1",
       "name": "Natalia",
-      "role": "caregiver"
+      "role": "caregiver",
+      "image_asset": "images/character_icons/TIA_1.svg"
     },
     {
       "id": "hombre_en_coche",
@@ -195,6 +200,13 @@
       "name": "Teresa",
       "role": "caregiver",
       "image_asset": "images/character_icons/PROFESORA_1.svg"
+    },
+    {
+      "id": "profesor_1",
+      "caps_id": "PROFESOR_1",
+      "name": "Marcos",
+      "role": "caregiver",
+      "image_asset": "images/character_icons/PROFESOR_1.svg"
     }
   ]
 }

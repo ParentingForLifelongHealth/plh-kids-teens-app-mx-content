@@ -5,8 +5,119 @@
   "status": "released",
   "rows": [
     {
+      "name": "hidden_pages",
+      "value": "@calc(\" \" + @global.proximal_outcome_hidden_pages + \" \")",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "hidden_pages",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(\" \" + @global.proximal_outcome_hidden_pages + \" \")",
+            "matchedExpression": "@global.proximal_outcome_hidden_pages",
+            "type": "global",
+            "fieldName": "proximal_outcome_hidden_pages"
+          },
+          {
+            "fullExpression": "@calc(\" \" + @global.proximal_outcome_hidden_pages + \" \")",
+            "matchedExpression": "@calc(\" \" + @global.proximal_outcome_hidden_pages + \" \")",
+            "type": "calc",
+            "fieldName": "\" \" + @global.proximal_outcome_hidden_pages + \" \""
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@global.proximal_outcome_hidden_pages": [
+          "value"
+        ],
+        "@calc(\" \" + @global.proximal_outcome_hidden_pages + \" \")": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "page_ids",
+      "value": "@calc(Object.keys(@data.proximal_outcome_7d_pages))",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "page_ids",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(Object.keys(@data.proximal_outcome_7d_pages))",
+            "matchedExpression": "@data.proximal_outcome_7d_pages",
+            "type": "data",
+            "fieldName": "proximal_outcome_7d_pages"
+          },
+          {
+            "fullExpression": "@calc(Object.keys(@data.proximal_outcome_7d_pages))",
+            "matchedExpression": "@calc(Object.keys(@data.proximal_outcome_7d_pages))",
+            "type": "calc",
+            "fieldName": "Object.keys(@data.proximal_outcome_7d_pages)"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.proximal_outcome_7d_pages": [
+          "value"
+        ],
+        "@calc(Object.keys(@data.proximal_outcome_7d_pages))": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "visible_count",
+      "value": "@calc([].concat(@local.page_ids).filter(id => !(@local.hidden_pages).includes(\" \" + id + \" \")).length)",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "visible_count",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc([].concat(@local.page_ids).filter(id => !(@local.hidden_pages).includes(\" \" + id + \" \")).length)",
+            "matchedExpression": "@local.page_ids",
+            "type": "local",
+            "fieldName": "page_ids"
+          },
+          {
+            "fullExpression": "@calc([].concat(@local.page_ids).filter(id => !(@local.hidden_pages).includes(\" \" + id + \" \")).length)",
+            "matchedExpression": "@local.hidden_pages",
+            "type": "local",
+            "fieldName": "hidden_pages"
+          },
+          {
+            "fullExpression": "@calc([].concat(@local.page_ids).filter(id => !(@local.hidden_pages).includes(\" \" + id + \" \")).length)",
+            "matchedExpression": "@calc([].concat(@local.page_ids).filter(id => !(@local.hidden_pages).includes(\" \" + id + \" \")).length)",
+            "type": "calc",
+            "fieldName": "[].concat(@local.page_ids).filter(id => !(@local.hidden_pages).includes(\" \" + id + \" \")).length"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.page_ids": [
+          "value"
+        ],
+        "@local.hidden_pages": [
+          "value"
+        ],
+        "@calc([].concat(@local.page_ids).filter(id => !(@local.hidden_pages).includes(\" \" + id + \" \")).length)": [
+          "value"
+        ]
+      }
+    },
+    {
       "name": "last_page_index",
-      "value": "@calc(Object.keys(@data.proximal_outcome_7d_pages).length - 1)",
+      "value": "@calc(Math.max(...[].concat(@local.page_ids).map((id, i) => (@local.hidden_pages).includes(\" \" + id + \" \") ? -1 : i)))",
       "_translations": {
         "value": {}
       },
@@ -16,24 +127,33 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@calc(Object.keys(@data.proximal_outcome_7d_pages).length - 1)",
-            "matchedExpression": "@data.proximal_outcome_7d_pages",
-            "type": "data",
-            "fieldName": "proximal_outcome_7d_pages"
+            "fullExpression": "@calc(Math.max(...[].concat(@local.page_ids).map((id, i) => (@local.hidden_pages).includes(\" \" + id + \" \") ? -1 : i)))",
+            "matchedExpression": "@local.page_ids",
+            "type": "local",
+            "fieldName": "page_ids"
           },
           {
-            "fullExpression": "@calc(Object.keys(@data.proximal_outcome_7d_pages).length - 1)",
-            "matchedExpression": "@calc(Object.keys(@data.proximal_outcome_7d_pages).length - 1)",
+            "fullExpression": "@calc(Math.max(...[].concat(@local.page_ids).map((id, i) => (@local.hidden_pages).includes(\" \" + id + \" \") ? -1 : i)))",
+            "matchedExpression": "@local.hidden_pages",
+            "type": "local",
+            "fieldName": "hidden_pages"
+          },
+          {
+            "fullExpression": "@calc(Math.max(...[].concat(@local.page_ids).map((id, i) => (@local.hidden_pages).includes(\" \" + id + \" \") ? -1 : i)))",
+            "matchedExpression": "@calc(Math.max(...[].concat(@local.page_ids).map((id, i) => (@local.hidden_pages).includes(\" \" + id + \" \") ? -1 : i)))",
             "type": "calc",
-            "fieldName": "Object.keys(@data.proximal_outcome_7d_pages).length - 1"
+            "fieldName": "Math.max(...[].concat(@local.page_ids).map((id, i) => (@local.hidden_pages).includes(\" \" + id + \" \") ? -1 : i))"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@data.proximal_outcome_7d_pages": [
+        "@local.page_ids": [
           "value"
         ],
-        "@calc(Object.keys(@data.proximal_outcome_7d_pages).length - 1)": [
+        "@local.hidden_pages": [
+          "value"
+        ],
+        "@calc(Math.max(...[].concat(@local.page_ids).map((id, i) => (@local.hidden_pages).includes(\" \" + id + \" \") ? -1 : i)))": [
           "value"
         ]
       }
@@ -80,7 +200,7 @@
       "name": "loop_pages",
       "value": "@data.proximal_outcome_7d_pages",
       "parameter_list": {
-        "filter": "!@item.completed",
+        "filter": "!@item.completed && !(@local.hidden_pages).includes(\" \" + @item.id + \" \")",
         "limit": "1"
       },
       "rows": [
@@ -291,7 +411,7 @@
             },
             {
               "name": "page_progress",
-              "value": "@calc((Number(@local.module_article_count) + @item.row_index) / (Number(@local.module_article_count) + @local.last_page_index + 1) * 100)",
+              "value": "@calc((Number(@local.module_article_count) + [].concat(@local.page_ids).slice(0, @item.row_index).filter(id => !(@local.hidden_pages).includes(\" \" + id + \" \")).length) / (Number(@local.module_article_count) + @local.visible_count) * 100)",
               "_translations": {
                 "value": {}
               },
@@ -300,34 +420,46 @@
               "_dynamicFields": {
                 "value": [
                   {
-                    "fullExpression": "@calc((Number(@local.module_article_count) + @item.row_index) / (Number(@local.module_article_count) + @local.last_page_index + 1) * 100)",
+                    "fullExpression": "@calc((Number(@local.module_article_count) + [].concat(@local.page_ids).slice(0, @item.row_index).filter(id => !(@local.hidden_pages).includes(\" \" + id + \" \")).length) / (Number(@local.module_article_count) + @local.visible_count) * 100)",
                     "matchedExpression": "@local.module_article_count",
                     "type": "local",
                     "fieldName": "module_article_count"
                   },
                   {
-                    "fullExpression": "@calc((Number(@local.module_article_count) + @item.row_index) / (Number(@local.module_article_count) + @local.last_page_index + 1) * 100)",
+                    "fullExpression": "@calc((Number(@local.module_article_count) + [].concat(@local.page_ids).slice(0, @item.row_index).filter(id => !(@local.hidden_pages).includes(\" \" + id + \" \")).length) / (Number(@local.module_article_count) + @local.visible_count) * 100)",
+                    "matchedExpression": "@local.page_ids",
+                    "type": "local",
+                    "fieldName": "page_ids"
+                  },
+                  {
+                    "fullExpression": "@calc((Number(@local.module_article_count) + [].concat(@local.page_ids).slice(0, @item.row_index).filter(id => !(@local.hidden_pages).includes(\" \" + id + \" \")).length) / (Number(@local.module_article_count) + @local.visible_count) * 100)",
                     "matchedExpression": "@item.row_index",
                     "type": "item",
                     "fieldName": "row_index"
                   },
                   {
-                    "fullExpression": "@calc((Number(@local.module_article_count) + @item.row_index) / (Number(@local.module_article_count) + @local.last_page_index + 1) * 100)",
+                    "fullExpression": "@calc((Number(@local.module_article_count) + [].concat(@local.page_ids).slice(0, @item.row_index).filter(id => !(@local.hidden_pages).includes(\" \" + id + \" \")).length) / (Number(@local.module_article_count) + @local.visible_count) * 100)",
+                    "matchedExpression": "@local.hidden_pages",
+                    "type": "local",
+                    "fieldName": "hidden_pages"
+                  },
+                  {
+                    "fullExpression": "@calc((Number(@local.module_article_count) + [].concat(@local.page_ids).slice(0, @item.row_index).filter(id => !(@local.hidden_pages).includes(\" \" + id + \" \")).length) / (Number(@local.module_article_count) + @local.visible_count) * 100)",
                     "matchedExpression": "@local.module_article_count",
                     "type": "local",
                     "fieldName": "module_article_count"
                   },
                   {
-                    "fullExpression": "@calc((Number(@local.module_article_count) + @item.row_index) / (Number(@local.module_article_count) + @local.last_page_index + 1) * 100)",
-                    "matchedExpression": "@local.last_page_index",
+                    "fullExpression": "@calc((Number(@local.module_article_count) + [].concat(@local.page_ids).slice(0, @item.row_index).filter(id => !(@local.hidden_pages).includes(\" \" + id + \" \")).length) / (Number(@local.module_article_count) + @local.visible_count) * 100)",
+                    "matchedExpression": "@local.visible_count",
                     "type": "local",
-                    "fieldName": "last_page_index"
+                    "fieldName": "visible_count"
                   },
                   {
-                    "fullExpression": "@calc((Number(@local.module_article_count) + @item.row_index) / (Number(@local.module_article_count) + @local.last_page_index + 1) * 100)",
-                    "matchedExpression": "@calc((Number(@local.module_article_count) + @item.row_index) / (Number(@local.module_article_count) + @local.last_page_index + 1) * 100)",
+                    "fullExpression": "@calc((Number(@local.module_article_count) + [].concat(@local.page_ids).slice(0, @item.row_index).filter(id => !(@local.hidden_pages).includes(\" \" + id + \" \")).length) / (Number(@local.module_article_count) + @local.visible_count) * 100)",
+                    "matchedExpression": "@calc((Number(@local.module_article_count) + [].concat(@local.page_ids).slice(0, @item.row_index).filter(id => !(@local.hidden_pages).includes(\" \" + id + \" \")).length) / (Number(@local.module_article_count) + @local.visible_count) * 100)",
                     "type": "calc",
-                    "fieldName": "(Number(@local.module_article_count) + @item.row_index) / (Number(@local.module_article_count) + @local.last_page_index + 1) * 100"
+                    "fieldName": "(Number(@local.module_article_count) + [].concat(@local.page_ids).slice(0, @item.row_index).filter(id => !(@local.hidden_pages).includes(\" \" + id + \" \")).length) / (Number(@local.module_article_count) + @local.visible_count) * 100"
                   }
                 ],
                 "_nested_name": [
@@ -344,13 +476,19 @@
                   "value",
                   "value"
                 ],
+                "@local.page_ids": [
+                  "value"
+                ],
                 "@item.row_index": [
                   "value"
                 ],
-                "@local.last_page_index": [
+                "@local.hidden_pages": [
                   "value"
                 ],
-                "@calc((Number(@local.module_article_count) + @item.row_index) / (Number(@local.module_article_count) + @local.last_page_index + 1) * 100)": [
+                "@local.visible_count": [
+                  "value"
+                ],
+                "@calc((Number(@local.module_article_count) + [].concat(@local.page_ids).slice(0, @item.row_index).filter(id => !(@local.hidden_pages).includes(\" \" + id + \" \")).length) / (Number(@local.module_article_count) + @local.visible_count) * 100)": [
                   "value"
                 ],
                 "@item.id.page_progress": [
@@ -565,10 +703,12 @@
               "trigger": "uncompleted",
               "action_id": "set_data",
               "args": [],
-              "_raw": "uncompleted | set_data | \n_list_id: proximal_outcome_7d_pages,\n_index: -1+@item.row_index,\ncompleted: false",
+              "_raw": "uncompleted | set_data |\n_list_id: proximal_outcome_7d_pages,\n_filter: @item.completed,\n_reverse: true,\n_limit: 1,\ncompleted: false",
               "params": {
                 "_list_id": "proximal_outcome_7d_pages",
-                "_index": "-1+@item.row_index",
+                "_filter": "@item.completed",
+                "_reverse": true,
+                "_limit": 1,
                 "completed": false
               }
             }
@@ -642,19 +782,19 @@
               "1": {
                 "_raw": [
                   {
-                    "fullExpression": "uncompleted | set_data | \n_list_id: proximal_outcome_7d_pages,\n_index: -1+@item.row_index,\ncompleted: false",
-                    "matchedExpression": "@item.row_index",
+                    "fullExpression": "uncompleted | set_data |\n_list_id: proximal_outcome_7d_pages,\n_filter: @item.completed,\n_reverse: true,\n_limit: 1,\ncompleted: false",
+                    "matchedExpression": "@item.completed",
                     "type": "item",
-                    "fieldName": "row_index"
+                    "fieldName": "completed"
                   }
                 ],
                 "params": {
-                  "_index": [
+                  "_filter": [
                     {
-                      "fullExpression": "-1+@item.row_index",
-                      "matchedExpression": "@item.row_index",
+                      "fullExpression": "@item.completed",
+                      "matchedExpression": "@item.completed",
                       "type": "item",
-                      "fieldName": "row_index"
+                      "fieldName": "completed"
                     }
                   ]
                 }
@@ -682,12 +822,14 @@
               "name",
               "action_list.0._raw",
               "action_list.0.params._index",
-              "action_list.1._raw",
-              "action_list.1.params._index",
               "_nested_name"
             ],
             "@item.id": [
               "value"
+            ],
+            "@item.completed": [
+              "action_list.1._raw",
+              "action_list.1.params._filter"
             ],
             "@fields.prox_outcome_access": [
               "condition"
@@ -714,10 +856,12 @@
               "trigger": "uncompleted",
               "action_id": "set_data",
               "args": [],
-              "_raw": "uncompleted | set_data | \n_list_id: proximal_outcome_7d_pages,\n_index: -1+@item.row_index,\ncompleted: false",
+              "_raw": "uncompleted | set_data |\n_list_id: proximal_outcome_7d_pages,\n_filter: @item.completed,\n_reverse: true,\n_limit: 1,\ncompleted: false",
               "params": {
                 "_list_id": "proximal_outcome_7d_pages",
-                "_index": "-1+@item.row_index",
+                "_filter": "@item.completed",
+                "_reverse": true,
+                "_limit": 1,
                 "completed": false
               }
             },
@@ -799,19 +943,19 @@
               "1": {
                 "_raw": [
                   {
-                    "fullExpression": "uncompleted | set_data | \n_list_id: proximal_outcome_7d_pages,\n_index: -1+@item.row_index,\ncompleted: false",
-                    "matchedExpression": "@item.row_index",
+                    "fullExpression": "uncompleted | set_data |\n_list_id: proximal_outcome_7d_pages,\n_filter: @item.completed,\n_reverse: true,\n_limit: 1,\ncompleted: false",
+                    "matchedExpression": "@item.completed",
                     "type": "item",
-                    "fieldName": "row_index"
+                    "fieldName": "completed"
                   }
                 ],
                 "params": {
-                  "_index": [
+                  "_filter": [
                     {
-                      "fullExpression": "-1+@item.row_index",
-                      "matchedExpression": "@item.row_index",
+                      "fullExpression": "@item.completed",
+                      "matchedExpression": "@item.completed",
                       "type": "item",
-                      "fieldName": "row_index"
+                      "fieldName": "completed"
                     }
                   ]
                 }
@@ -851,13 +995,15 @@
               "name",
               "action_list.0._raw",
               "action_list.0.params._index",
-              "action_list.1._raw",
-              "action_list.1.params._index",
               "condition",
               "_nested_name"
             ],
             "@item.id": [
               "value"
+            ],
+            "@item.completed": [
+              "action_list.1._raw",
+              "action_list.1.params._filter"
             ],
             "@fields.prox_outcome_access": [
               "condition"
@@ -895,10 +1041,12 @@
               "trigger": "uncompleted",
               "action_id": "set_data",
               "args": [],
-              "_raw": "uncompleted | set_data | \n_list_id: proximal_outcome_7d_pages,\n_index: -1+@item.row_index,\ncompleted: false",
+              "_raw": "uncompleted | set_data |\n_list_id: proximal_outcome_7d_pages,\n_filter: @item.completed,\n_reverse: true,\n_limit: 1,\ncompleted: false",
               "params": {
                 "_list_id": "proximal_outcome_7d_pages",
-                "_index": "-1+@item.row_index",
+                "_filter": "@item.completed",
+                "_reverse": true,
+                "_limit": 1,
                 "completed": false
               }
             }
@@ -939,19 +1087,19 @@
               "2": {
                 "_raw": [
                   {
-                    "fullExpression": "uncompleted | set_data | \n_list_id: proximal_outcome_7d_pages,\n_index: -1+@item.row_index,\ncompleted: false",
-                    "matchedExpression": "@item.row_index",
+                    "fullExpression": "uncompleted | set_data |\n_list_id: proximal_outcome_7d_pages,\n_filter: @item.completed,\n_reverse: true,\n_limit: 1,\ncompleted: false",
+                    "matchedExpression": "@item.completed",
                     "type": "item",
-                    "fieldName": "row_index"
+                    "fieldName": "completed"
                   }
                 ],
                 "params": {
-                  "_index": [
+                  "_filter": [
                     {
-                      "fullExpression": "-1+@item.row_index",
-                      "matchedExpression": "@item.row_index",
+                      "fullExpression": "@item.completed",
+                      "matchedExpression": "@item.completed",
                       "type": "item",
-                      "fieldName": "row_index"
+                      "fieldName": "completed"
                     }
                   ]
                 }
@@ -985,9 +1133,11 @@
             "@item.row_index": [
               "action_list.0._raw",
               "action_list.0.params._index",
-              "action_list.2._raw",
-              "action_list.2.params._index",
               "condition"
+            ],
+            "@item.completed": [
+              "action_list.2._raw",
+              "action_list.2.params._filter"
             ],
             "@fields.prox_outcome_access": [
               "condition"
@@ -1011,10 +1161,22 @@
         "parameter_list": {
           "filter": [
             {
-              "fullExpression": "!@item.completed",
+              "fullExpression": "!@item.completed && !(@local.hidden_pages).includes(\" \" + @item.id + \" \")",
               "matchedExpression": "!@item.completed",
               "type": "item",
               "fieldName": "completed"
+            },
+            {
+              "fullExpression": "!@item.completed && !(@local.hidden_pages).includes(\" \" + @item.id + \" \")",
+              "matchedExpression": "@local.hidden_pages",
+              "type": "local",
+              "fieldName": "hidden_pages"
+            },
+            {
+              "fullExpression": "!@item.completed && !(@local.hidden_pages).includes(\" \" + @item.id + \" \")",
+              "matchedExpression": "@item.id",
+              "type": "item",
+              "fieldName": "id"
             }
           ]
         }
@@ -1024,6 +1186,12 @@
           "value"
         ],
         "!@item.completed": [
+          "parameter_list.filter"
+        ],
+        "@local.hidden_pages": [
+          "parameter_list.filter"
+        ],
+        "@item.id": [
           "parameter_list.filter"
         ]
       }
