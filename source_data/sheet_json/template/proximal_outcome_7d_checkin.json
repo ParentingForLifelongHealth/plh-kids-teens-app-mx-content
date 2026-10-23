@@ -5,9 +5,28 @@
   "status": "released",
   "rows": [
     {
+      "name": "hidden_pages",
+      "value": "@calc(\" \" + @global.proximal_outcome_hidden_pages + \" \")",
+      "exclude_from_translation": true,
+      "comments": "Page ids to hide, padded with spaces so qs_base_1 doesn't match inside qs_base_10. Must stay text (not a list): the loop filter needs it as text."
+    },
+    {
+      "name": "page_ids",
+      "value": "@calc(Object.keys(@data.proximal_outcome_7d_pages))",
+      "exclude_from_translation": true,
+      "comments": "All page ids in list order."
+    },
+    {
+      "name": "visible_count",
+      "value": "@calc([].concat(@local.page_ids).filter(id => !(@local.hidden_pages).includes(\" \" + id + \" \")).length)",
+      "exclude_from_translation": true,
+      "comments": "Number of pages shown (for the progress bar)."
+    },
+    {
       "name": "last_page_index",
-      "value": "@calc(Object.keys(@data.proximal_outcome_7d_pages).length - 1)",
-      "exclude_from_translation": true
+      "value": "@calc(Math.max(...[].concat(@local.page_ids).map((id, i) => (@local.hidden_pages).includes(\" \" + id + \" \") ? -1 : i)))",
+      "exclude_from_translation": true,
+      "comments": "value: row_index of the last page that is shown (was: last row), so page_last, page_finished and the last-page icon/title still work if the final page is hidden."
     },
     {
       "name": "module_article_count",
@@ -24,7 +43,8 @@
       "type": "begin_data_items",
       "name": "loop_pages",
       "value": "@data.proximal_outcome_7d_pages",
-      "parameter_list": "filter: !@item.completed; limit: 1"
+      "parameter_list": "filter: !@item.completed && !(@local.hidden_pages).includes(\" \" + @item.id + \" \"); limit: 1",
+      "comments": "parameter_list: skip hidden pages."
     },
     {
       "type": "begin_display_group"
@@ -51,7 +71,8 @@
     },
     {
       "name": "page_progress",
-      "value": "@calc((Number(@local.module_article_count) + @item.row_index) / (Number(@local.module_article_count) + @local.last_page_index + 1) * 100)"
+      "value": "@calc((Number(@local.module_article_count) + [].concat(@local.page_ids).slice(0, @item.row_index).filter(id => !(@local.hidden_pages).includes(\" \" + id + \" \")).length) / (Number(@local.module_article_count) + @local.visible_count) * 100)",
+      "comments": "position and total count only shown pages, so the bar steps evenly."
     },
     {
       "type": "begin_template",
@@ -85,8 +106,9 @@
       "type": "begin_template",
       "name": "page_@item.row_index",
       "value": "proximal_outcome_@item.id",
-      "action_list": "completed | set_data |\n_list_id: proximal_outcome_7d_pages,\n_index: @item.row_index,\ncompleted: true;\n\nuncompleted | set_data | \n_list_id: proximal_outcome_7d_pages,\n_index: -1+@item.row_index,\ncompleted: false;",
-      "condition": "@fields.prox_outcome_access == \"cta\""
+      "action_list": "completed | set_data |\n_list_id: proximal_outcome_7d_pages,\n_index: @item.row_index,\ncompleted: true;\n\nuncompleted | set_data |\n_list_id: proximal_outcome_7d_pages,\n_filter: @item.completed,\n_reverse: true,\n_limit: 1,\ncompleted: false;",
+      "condition": "@fields.prox_outcome_access == \"cta\"",
+      "comments": "Back now un-completes the last completed page instead of row_index - 1. Hidden pages are never completed, so they are skipped."
     },
     {
       "name": "po_type",
@@ -99,7 +121,7 @@
       "type": "begin_template",
       "name": "page_@item.row_index",
       "value": "proximal_outcome_@item.id",
-      "action_list": "completed | set_data |\n_list_id: proximal_outcome_7d_pages,\n_index: @item.row_index,\ncompleted: true;\n\nuncompleted | set_data | \n_list_id: proximal_outcome_7d_pages,\n_index: -1+@item.row_index,\ncompleted: false;\nchanged | emit: changed;",
+      "action_list": "completed | set_data |\n_list_id: proximal_outcome_7d_pages,\n_index: @item.row_index,\ncompleted: true;\n\nuncompleted | set_data |\n_list_id: proximal_outcome_7d_pages,\n_filter: @item.completed,\n_reverse: true,\n_limit: 1,\ncompleted: false;\nchanged | emit: changed;",
       "condition": "@fields.prox_outcome_access != \"cta\" && @item.row_index != @local.last_page_index"
     },
     {
@@ -113,7 +135,7 @@
       "type": "begin_template",
       "name": "page_last",
       "value": "proximal_outcome_@item.id",
-      "action_list": "completed | set_data |\n_list_id: proximal_outcome_7d_pages,\n_index: @item.row_index,\ncompleted: true;\n\ncompleted | emit: completed;\n\nuncompleted | set_data | \n_list_id: proximal_outcome_7d_pages,\n_index: -1+@item.row_index,\ncompleted: false;",
+      "action_list": "completed | set_data |\n_list_id: proximal_outcome_7d_pages,\n_index: @item.row_index,\ncompleted: true;\n\ncompleted | emit: completed;\n\nuncompleted | set_data |\n_list_id: proximal_outcome_7d_pages,\n_filter: @item.completed,\n_reverse: true,\n_limit: 1,\ncompleted: false;",
       "condition": "@fields.prox_outcome_access != \"cta\" && @item.row_index == @local.last_page_index"
     },
     {

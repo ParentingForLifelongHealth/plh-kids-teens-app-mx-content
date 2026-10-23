@@ -690,7 +690,7 @@
     },
     {
       "name": "po_extra_steps",
-      "value": "@calc(Object.keys(@data.proximal_outcome_7d_pages).length)",
+      "value": "@calc(Object.keys(@data.proximal_outcome_7d_pages).filter(id => !(\" \" + @global.proximal_outcome_hidden_pages + \" \").includes(\" \" + id + \" \")).length)",
       "_translations": {
         "value": {}
       },
@@ -700,16 +700,22 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@calc(Object.keys(@data.proximal_outcome_7d_pages).length)",
+            "fullExpression": "@calc(Object.keys(@data.proximal_outcome_7d_pages).filter(id => !(\" \" + @global.proximal_outcome_hidden_pages + \" \").includes(\" \" + id + \" \")).length)",
             "matchedExpression": "@data.proximal_outcome_7d_pages",
             "type": "data",
             "fieldName": "proximal_outcome_7d_pages"
           },
           {
-            "fullExpression": "@calc(Object.keys(@data.proximal_outcome_7d_pages).length)",
-            "matchedExpression": "@calc(Object.keys(@data.proximal_outcome_7d_pages).length)",
+            "fullExpression": "@calc(Object.keys(@data.proximal_outcome_7d_pages).filter(id => !(\" \" + @global.proximal_outcome_hidden_pages + \" \").includes(\" \" + id + \" \")).length)",
+            "matchedExpression": "@global.proximal_outcome_hidden_pages",
+            "type": "global",
+            "fieldName": "proximal_outcome_hidden_pages"
+          },
+          {
+            "fullExpression": "@calc(Object.keys(@data.proximal_outcome_7d_pages).filter(id => !(\" \" + @global.proximal_outcome_hidden_pages + \" \").includes(\" \" + id + \" \")).length)",
+            "matchedExpression": "@calc(Object.keys(@data.proximal_outcome_7d_pages).filter(id => !(\" \" + @global.proximal_outcome_hidden_pages + \" \").includes(\" \" + id + \" \")).length)",
             "type": "calc",
-            "fieldName": "Object.keys(@data.proximal_outcome_7d_pages).length"
+            "fieldName": "Object.keys(@data.proximal_outcome_7d_pages).filter(id => !(\" \" + @global.proximal_outcome_hidden_pages + \" \").includes(\" \" + id + \" \")).length"
           }
         ],
         "condition": [
@@ -725,7 +731,10 @@
         "@data.proximal_outcome_7d_pages": [
           "value"
         ],
-        "@calc(Object.keys(@data.proximal_outcome_7d_pages).length)": [
+        "@global.proximal_outcome_hidden_pages": [
+          "value"
+        ],
+        "@calc(Object.keys(@data.proximal_outcome_7d_pages).filter(id => !(\" \" + @global.proximal_outcome_hidden_pages + \" \").includes(\" \" + id + \" \")).length)": [
           "value"
         ],
         "@local.po_due_type": [
@@ -735,7 +744,7 @@
     },
     {
       "name": "po_extra_steps",
-      "value": "@calc(Object.keys(@data.proximal_outcome_14d_pages).length)",
+      "value": "@calc(Object.keys(@data.proximal_outcome_14d_pages).filter(id => !(\" \" + @global.proximal_outcome_hidden_pages + \" \").includes(\" \" + id + \" \")).length)",
       "_translations": {
         "value": {}
       },
@@ -745,16 +754,22 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@calc(Object.keys(@data.proximal_outcome_14d_pages).length)",
+            "fullExpression": "@calc(Object.keys(@data.proximal_outcome_14d_pages).filter(id => !(\" \" + @global.proximal_outcome_hidden_pages + \" \").includes(\" \" + id + \" \")).length)",
             "matchedExpression": "@data.proximal_outcome_14d_pages",
             "type": "data",
             "fieldName": "proximal_outcome_14d_pages"
           },
           {
-            "fullExpression": "@calc(Object.keys(@data.proximal_outcome_14d_pages).length)",
-            "matchedExpression": "@calc(Object.keys(@data.proximal_outcome_14d_pages).length)",
+            "fullExpression": "@calc(Object.keys(@data.proximal_outcome_14d_pages).filter(id => !(\" \" + @global.proximal_outcome_hidden_pages + \" \").includes(\" \" + id + \" \")).length)",
+            "matchedExpression": "@global.proximal_outcome_hidden_pages",
+            "type": "global",
+            "fieldName": "proximal_outcome_hidden_pages"
+          },
+          {
+            "fullExpression": "@calc(Object.keys(@data.proximal_outcome_14d_pages).filter(id => !(\" \" + @global.proximal_outcome_hidden_pages + \" \").includes(\" \" + id + \" \")).length)",
+            "matchedExpression": "@calc(Object.keys(@data.proximal_outcome_14d_pages).filter(id => !(\" \" + @global.proximal_outcome_hidden_pages + \" \").includes(\" \" + id + \" \")).length)",
             "type": "calc",
-            "fieldName": "Object.keys(@data.proximal_outcome_14d_pages).length"
+            "fieldName": "Object.keys(@data.proximal_outcome_14d_pages).filter(id => !(\" \" + @global.proximal_outcome_hidden_pages + \" \").includes(\" \" + id + \" \")).length"
           }
         ],
         "condition": [
@@ -770,7 +785,10 @@
         "@data.proximal_outcome_14d_pages": [
           "value"
         ],
-        "@calc(Object.keys(@data.proximal_outcome_14d_pages).length)": [
+        "@global.proximal_outcome_hidden_pages": [
+          "value"
+        ],
+        "@calc(Object.keys(@data.proximal_outcome_14d_pages).filter(id => !(\" \" + @global.proximal_outcome_hidden_pages + \" \").includes(\" \" + id + \" \")).length)": [
           "value"
         ],
         "@local.po_due_type": [
