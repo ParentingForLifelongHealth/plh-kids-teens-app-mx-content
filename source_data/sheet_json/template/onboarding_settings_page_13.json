@@ -50,10 +50,10 @@
       "exclude_from_translation": true
     },
     {
-      "type": "begin_combo_box",
+      "type": "begin_radio_list",
       "name": "family_relation_select",
       "value": "@fields.family_relation",
-      "parameter_list": "placeholder: @global.placeholder_family_relation;\nvariant: dropdown;\nwrap: true;",
+      "parameter_list": "variant: card;",
       "condition": "!!@fields.family_relation",
       "exclude_from_translation": true
     },
@@ -70,14 +70,14 @@
       "exclude_from_translation": true
     },
     {
-      "type": "end_combo_box",
+      "type": "end_radio_list",
       "condition": "!!@fields.family_relation",
       "exclude_from_translation": true
     },
     {
-      "type": "begin_combo_box",
+      "type": "begin_radio_list",
       "name": "family_relation_select",
-      "parameter_list": "placeholder: @global.placeholder_family_relation;\nvariant: dropdown;\nwrap: true;",
+      "parameter_list": "variant: card;",
       "condition": "!@fields.family_relation",
       "exclude_from_translation": true
     },
@@ -94,7 +94,7 @@
       "exclude_from_translation": true
     },
     {
-      "type": "end_combo_box",
+      "type": "end_radio_list",
       "condition": "!@fields.family_relation",
       "exclude_from_translation": true
     },
@@ -124,17 +124,6 @@
       "action_list": "click | set_field: family_relation: @local.family_relation_select;\nclick | emit: completed;",
       "parameter_list": "style: navigation;\ndisabled: !@local.completed_enabled",
       "style_list": "flex: 1",
-      "condition": "@fields.facilitator_id== \"facilitator_male\"",
-      "exclude_from_translation": true
-    },
-    {
-      "type": "button",
-      "name": "button_completed_teens",
-      "value": "@global.continue",
-      "action_list": "click | set_field: family_relation: @local.family_relation_select;\nclick | emit: completed;",
-      "parameter_list": "style: navigation;\ndisabled: !@local.completed_enabled",
-      "style_list": "flex: 1",
-      "condition": "@fields.facilitator_id !== \"facilitator_male\"",
       "exclude_from_translation": true
     },
     {

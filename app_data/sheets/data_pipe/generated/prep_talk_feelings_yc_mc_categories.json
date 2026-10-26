@@ -1,0 +1,19 @@
+{
+  "flow_name": "prep_talk_feelings_yc_mc_categories",
+  "flow_subtype": "generated",
+  "flow_type": "data_pipe",
+  "rows": [
+    {
+      "operation": "append_columns",
+      "input_source": "common_categories",
+      "output_target": "talk_feelings_yc_mc_category_tasks"
+    }
+  ],
+  "_output_flows": [
+    {
+      "flow_name": "talk_feelings_yc_mc_category_tasks",
+      "flow_subtype": "generated",
+      "flow_type": "data_list"
+    }
+  ]
+}

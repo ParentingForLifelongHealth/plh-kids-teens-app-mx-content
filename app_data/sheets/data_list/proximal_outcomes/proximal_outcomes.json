@@ -5,55 +5,6 @@
   "status": "released",
   "rows": [
     {
-      "id": "vac_physical",
-      "tag_desired_change": "decrease",
-      "domain": "vac",
-      "normalising_statement": "All adults use certain methods to teach children the right behaviour or to stop them from behaving badly.",
-      "_translations": {
-        "normalising_statement": {},
-        "question": {},
-        "option_1_text": {},
-        "option_2_text": {},
-        "option_3_text": {},
-        "option_4_text": {},
-        "option_5_text": {},
-        "option_6_text": {}
-      },
-      "_translatedFields": {
-        "normalising_statement": {
-          "eng": "All adults use certain methods to teach children the right behaviour or to stop them from behaving badly."
-        },
-        "question": {
-          "eng": "How often do you hit, spank, or slap your child when they do something wrong? This includes using your hand or something like a belt or stick"
-        },
-        "option_1_text": {
-          "eng": "Never"
-        },
-        "option_2_text": {
-          "eng": "Rarely"
-        },
-        "option_3_text": {
-          "eng": "Sometimes"
-        },
-        "option_4_text": {
-          "eng": "Often"
-        },
-        "option_5_text": {
-          "eng": "Always"
-        },
-        "option_6_text": {
-          "eng": "Prefer not to say"
-        }
-      },
-      "question": "How often do you hit, spank, or slap your child when they do something wrong? This includes using your hand or something like a belt or stick",
-      "option_1_text": "Never",
-      "option_2_text": "Rarely",
-      "option_3_text": "Sometimes",
-      "option_4_text": "Often",
-      "option_5_text": "Always",
-      "option_6_text": "Prefer not to say"
-    },
-    {
       "id": "vac_emotional",
       "tag_desired_change": "decrease",
       "domain": "vac",
@@ -498,6 +449,7 @@
     },
     {
       "id": "camh_depression",
+      "tag_sensitive": "yes",
       "tag_desired_change": "decrease",
       "domain": "camh",
       "normalising_statement": "It is normal for our children to feel unhappy or sad.",
@@ -547,6 +499,7 @@
     },
     {
       "id": "camh_anxiety",
+      "tag_sensitive": "yes",
       "tag_desired_change": "decrease",
       "domain": "camh",
       "normalising_statement": "All children worry about things sometimes.",

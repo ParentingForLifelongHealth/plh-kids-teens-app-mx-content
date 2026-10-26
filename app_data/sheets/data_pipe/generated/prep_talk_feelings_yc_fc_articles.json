@@ -1,0 +1,74 @@
+{
+  "flow_name": "prep_talk_feelings_yc_fc_articles",
+  "flow_subtype": "generated",
+  "flow_type": "data_pipe",
+  "rows": [
+    {
+      "operation": "filter",
+      "args_list": [
+        "id == \"relax_9\""
+      ],
+      "input_source": "relax"
+    },
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "category_id: relax",
+        "nested: FALSE"
+      ],
+      "output_target": "talk_feelings_yc_fc_relax | local_only;"
+    },
+    {
+      "operation": "filter",
+      "args_list": [
+        "id == \"check_in_4\""
+      ],
+      "input_source": "check_in"
+    },
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "category_id: check_in",
+        "nested: FALSE"
+      ],
+      "output_target": "talk_feelings_yc_fc_check_in | local_only;"
+    },
+    {
+      "operation": "filter",
+      "args_list": [
+        "!nested"
+      ],
+      "input_source": "talk_feelings_yc_fc_articles",
+      "output_target": "talk_feelings_yc_fc_testing | local_only;"
+    },
+    {
+      "operation": "concat",
+      "args_list": [
+        "talk_feelings_yc_fc_relax",
+        "talk_feelings_yc_fc_check_in",
+        "talk_feelings_yc_fc_testing"
+      ],
+      "input_source": false
+    },
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "completed: FALSE"
+      ]
+    },
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "version: 1"
+      ],
+      "output_target": "talk_feelings_yc_fc_article_tasks"
+    }
+  ],
+  "_output_flows": [
+    {
+      "flow_name": "talk_feelings_yc_fc_article_tasks",
+      "flow_subtype": "generated",
+      "flow_type": "data_list"
+    }
+  ]
+}

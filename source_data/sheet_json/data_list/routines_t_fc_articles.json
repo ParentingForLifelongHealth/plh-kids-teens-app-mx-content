@@ -1,0 +1,129 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "routines_t_fc_articles",
+  "data_list_name": "routines_t_fc_articles",
+  "status": "released",
+  "flow_subtype": "modules_routines_t_fc",
+  "module": "routines_t_fc",
+  "rows": [
+    {
+      "id": "@default",
+      "nested": false
+    },
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Esta sesión trata sobre cómo **crear rutinas diarias** con @fields.child_name e integrar el tiempo para conectar en ellas.\n\n\nLas y los adolescentes necesitan estructura en su día a día para sentir seguridad y desarrollar buenos hábitos, pero también valoran tener más autonomía. \n\n\nCuando participan en la creación de sus rutinas para el descanso, comidas, tareas del hogar, escuela, uso de pantallas y actividades recreativas, es más probable que las sigan y que adquieran habilidades de liderazgo en el proceso. 🙌"
+    },
+    {
+      "id": "intro_2",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Aquí exploraremos cómo podemos involucrar a @fields.child_name en la creación de sus rutinas diarias, especialmente en torno al tiempo para conectar. 🕒"
+    },
+    {
+      "id": "intro_3",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Antes de empezar, reflexionemos un momento📝",
+      "quiz_1_question::eng": "Verdadero o falso: Una rutina funciona mejor cuando @fields.child_name ayuda a crearla.",
+      "quiz_1_option_1_text::eng": "Verdadero",
+      "quiz_1_feedback_1::eng": "🎉 ¡Tienes razón!\n\n\nCuando @fields.child_name participa en la creación de las rutinas del hogar, es más probable que las entienda, las haga propias y las siga. \n\n\nInvolucrarles en estas decisiones desarrolla su sentido de responsabilidad y cooperación.",
+      "quiz_1_option_2_text::eng": "Falso",
+      "quiz_1_feedback_2::eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\n\nCuando @fields.child_name participa en la creación de las rutinas del hogar, es más probable que las entienda, las haga propias y las siga. \n\nInvolucrarles en estas decisiones desarrolla su sentido de responsabilidad y cooperación."
+    },
+    {
+      "id": "intro_4",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "¡Una pregunta más!",
+      "quiz_1_question::eng": "Verdadero o falso: Establecer las rutinas y tareas del hogar es responsabilidad de todas las personas adultas que cuidan a @fields.child_name, no solo de una.",
+      "quiz_1_option_1_text::eng": "Verdadero",
+      "quiz_1_feedback_1::eng": "🎉 ¡Tienes razón!\n\n\nEstablecer rutinas y organizar tareas en casa es un trabajo que muchas veces no se ve, pero que requiere tiempo, energía y coordinación.\n\nCuando estas responsabilidades se comparten, @fields.child_name aprende que las tareas del hogar son de todas y todos, ¡incluyéndole!",
+      "quiz_1_option_2_text::eng": "Falso",
+      "quiz_1_feedback_2::eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\n\nEstablecer rutinas y organizar tareas en casa es un trabajo que muchas veces no se ve, pero que requiere tiempo, energía y coordinación.\n\nCuando estas responsabilidades se comparten, @fields.child_name aprende que las tareas del hogar son de todas y todos, ¡incluyéndole!"
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo puedes empezar a crear rutinas con @fields.child_name.\n\nEn este video te compartimos tres estrategias recomendadas por especialistas:\n\n1️⃣ SÉ EQUIPO\n2️⃣ SÉ CONSTANTE\n3️⃣ RECONOCE\n",
+      "media_type": "youtube"
+    },
+    {
+      "id": "explore_2",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "Vamos a ver estas estrategias en la práctica.",
+      "image_asset": "images/comic/relation/routines_t_fc_1.svg",
+      "text_2::eng": "_Mira cómo @data.characters.f2_madre.name le propone a f2_hija_13 hacer una rutina en torno a su tiempo para conectar._",
+      "character_1_id": "f2_madre",
+      "character_1_text::eng": "Siento que los dos hemos estado muy ocupados últimamente. Qué bueno poder relajarnos juntos.",
+      "character_2_id": "f2_hija_13",
+      "character_2_text::eng": "¡Sí, ya sé! Entre la escuela, mis entrenamientos y tus horarios de trabajo, no paramos.",
+      "character_3_id": "f2_madre",
+      "character_3_text::eng": "¿Qué tal si acordamos un momento fijo todos los días para pasar un rato sólo tú y yo?"
+    },
+    {
+      "id": "explore_3",
+      "category_id": "explore",
+      "image_asset": "images/comic/relation/routines_t_fc_2.svg",
+      "text_2::eng": "_Fíjate cómo @data.characters.f2_madre.name trabaja en equipo con @data.characters.f2_hija_13.name para acordar un horario que les funciona a ambas y poder ser constantes._",
+      "character_1_id": "f2_madre",
+      "character_1_text::eng": "¿Cuándo crees que nos convenga? Necesitamos que sea una hora en la que podamos cumplir.",
+      "character_2_id": "f2_hija_13",
+      "character_2_text::eng": "Podría ser después de mi entrenamiento.",
+      "character_3_id": "f2_madre",
+      "character_3_text::eng": "Perfecto, justo cuando yo salgo de trabajar. Podemos empezar mañana."
+    },
+    {
+      "id": "explore_4",
+      "category_id": "explore",
+      "image_asset": "images/comic/relation/routines_t_fc_3.svg",
+      "text_2::eng": "_@data.characters.f2_madre.name deja que @data.characters.f2_hija_13.name elija la actividad._",
+      "character_1_id": "f2_madre",
+      "character_1_text::eng": "¡Hola, @data.characters.f2_hija_13.name! Qué gusto pasar este rato juntas, ¿qué te gustaría hacer?",
+      "character_2_id": "f2_hija_13",
+      "character_2_text::eng": "Mmm… tengo sed. ¿Y si vamos por una agua fresca y platicamos?",
+      "character_3_id": "f2_madre",
+      "character_3_text::eng": "Me gusta la idea, yo también tengo algo de sed."
+    },
+    {
+      "id": "explore_5",
+      "category_id": "explore",
+      "image_asset": "images/comic/relation/routines_t_fc_4.svg",
+      "text_2::eng": "_Observa cómo @data.characters.f2_madre.name le agradece a @data.characters.f2_hija_13.name por su tiempo para conectar y cómo se ponen de acuerdo para mantener su rutina._",
+      "character_1_id": "f2_madre",
+      "character_1_text::eng": "Gracias por pasar este tiempo conmigo, @data.characters.f2_hija_13.name, lo estoy disfrutando. Me encanta escuchar cómo apoyas y cuidas a tu equipo.",
+      "character_2_id": "f2_hija_13",
+      "character_2_text::eng": "Gracias, ma. Oye, mañana cancelaron el entrenamiento, ¿te animas a ir al parque a jugar béisbol conmigo?",
+      "character_3_id": "f2_madre",
+      "character_3_text::eng": "¡Claro! A ver si todavía le sé… y si no, me enseñas tus mejores trucos."
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "¡Ya viste cómo @data.characters.f2_madre.name usó las estrategias! 👀\n\nVamos a recordarlas una vez más para que puedas seguir creando rutinas con @fields.child_name:",
+      "quiz_3_feedback_6::eng": "https://drive.google.com/file/d/19m7O3_jqHUfyLx4PRG1NnnwzXiYlAhwS/view?usp=drive_link",
+      "section_1_title::eng": "SÉ EQUIPO",
+      "section_1_icon_asset": "images/icons/speech_bubble_blue.png",
+      "section_1_text::eng": "Organicen la rutina en conjunto. Cuando @fields.child_name participa en crearla, es más probable que la siga. Involucra también a las otras personas en tu casa. Asegurar que @fields.child_name siga la rutina es responsabilidad de todos y todas.",
+      "section_1_extra_text::eng": "https://drive.google.com/file/d/1M5CuT6Sl0sJy9NmcNsnQiEiJSmgbzWAZ/view?usp=drive_link",
+      "section_2_title::eng": "SÉ CONSTANTE",
+      "section_2_icon_asset": "images/icons/clock_blue.png",
+      "section_2_text::eng": "Una rutina funciona cuando se repite todos los días. Con el tiempo, @fields.child_name sabrá qué sigue sin que nadie se lo recuerde. Esto le ayudará a ganar confianza y mantenerse en calma.",
+      "section_2_extra_text::eng": "https://drive.google.com/file/d/1b7ywkfyRt8DgqJrocfNefIOeE8oOW6bB/view?usp=drive_link",
+      "section_3_title::eng": "RECONOCE",
+      "section_3_icon_asset": "images/icons/heart_filled_blue.png",
+      "section_3_text::eng": "Reconoce a @fields.child_name cuando siga las rutinas que crearon en conjunto y a las otras personas del hogar que colaboran para mantenerlas. Ese reconocimiento es lo que hace que toda la familia continúe esforzándose y colaborando. Algunas ideas para empezar a crear rutinas en equipo: la hora de dormir, las tareas escolares, las tareas del hogar, la hora de la comida, el tiempo para conectar y el uso de aparatos electrónicos."
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "text_1_facilitator::eng": "¡Ahora es tu turno!\n\nEsta semana, elige con @fields.child_name el mejor momento del día para pasar al menos 5 minutos de tiempo para conectar. 😊",
+      "text_2::eng": "_Reflexiona: ¿quién más en tu hogar debería apoyar para que @fields.child_name siga esta rutina? Busca un momento para incluirle en esa conversación._",
+      "quiz_1_question::eng": "¿Puedes hacerlo esta semana? ⏰",
+      "quiz_1_option_1_text::eng": "Sí",
+      "quiz_1_feedback_1::eng": "¡Muy bien! Hacer una rutina para el tiempo para conectar ayudará a @fields.child_name a sentir seguridad. 🎉\n\n\nTambién pueden establecer otras rutinas, como salir a pasear o preparar la comida juntos. Pídele ideas para diseñar las rutinas, ¡puede que te sorprenda!",
+      "quiz_1_option_2_text::eng": "Lo intentaré",
+      "quiz_1_feedback_2::eng": "¡Muy bien! Hacer una rutina para el tiempo para conectar ayudará a @fields.child_name a sentir seguridad. 🙌\n\n\nTambién pueden establecer otras rutinas, como salir a pasear o preparar la comida juntos. Pídele ideas para diseñar las rutinas, ¡puede que te sorprenda!",
+      "quiz_1_option_3_text::eng": "No",
+      "quiz_1_feedback_3::eng": "¡Lo entiendo! Al inicio puede ser abrumador pensar en un tiempo específico. ❤️‍🩹\n\n\nRecuerda que las rutinas pueden partir de actividades que ya hagan normalmente. Pueden aprovechar esos momentos para compartir ideas sobre las rutinas, ¡puede que te sorprenda!"
+    }
+  ]
+}

@@ -251,13 +251,11 @@
       }
     },
     {
-      "type": "combo_box",
+      "type": "radio_list",
       "name": "family_relation_select",
       "value": "@fields.family_relation",
       "parameter_list": {
-        "placeholder": "@global.placeholder_family_relation",
-        "variant": "dropdown",
-        "wrap": "true"
+        "variant": "card"
       },
       "condition": "!!@fields.family_relation",
       "exclude_from_translation": true,
@@ -322,16 +320,6 @@
             "fieldName": "family_relation"
           }
         ],
-        "parameter_list": {
-          "placeholder": [
-            {
-              "fullExpression": "@global.placeholder_family_relation",
-              "matchedExpression": "@global.placeholder_family_relation",
-              "type": "global",
-              "fieldName": "placeholder_family_relation"
-            }
-          ]
-        },
         "condition": [
           {
             "fullExpression": "!!@fields.family_relation",
@@ -345,21 +333,16 @@
         "@fields.family_relation": [
           "value"
         ],
-        "@global.placeholder_family_relation": [
-          "parameter_list.placeholder"
-        ],
         "!@fields.family_relation": [
           "condition"
         ]
       }
     },
     {
-      "type": "combo_box",
+      "type": "radio_list",
       "name": "family_relation_select",
       "parameter_list": {
-        "placeholder": "@global.placeholder_family_relation",
-        "variant": "dropdown",
-        "wrap": "true"
+        "variant": "card"
       },
       "condition": "!@fields.family_relation",
       "exclude_from_translation": true,
@@ -416,16 +399,6 @@
       ],
       "_nested_name": "family_relation_select",
       "_dynamicFields": {
-        "parameter_list": {
-          "placeholder": [
-            {
-              "fullExpression": "@global.placeholder_family_relation",
-              "matchedExpression": "@global.placeholder_family_relation",
-              "type": "global",
-              "fieldName": "placeholder_family_relation"
-            }
-          ]
-        },
         "condition": [
           {
             "fullExpression": "!@fields.family_relation",
@@ -436,9 +409,6 @@
         ]
       },
       "_dynamicDependencies": {
-        "@global.placeholder_family_relation": [
-          "parameter_list.placeholder"
-        ],
         "!@fields.family_relation": [
           "condition"
         ]
@@ -533,7 +503,6 @@
           "style_list": [
             "flex: 1"
           ],
-          "condition": "@fields.facilitator_id== \"facilitator_male\"",
           "exclude_from_translation": true,
           "_nested_name": "dg_footer.button_completed_child",
           "_dynamicFields": {
@@ -576,117 +545,7 @@
                   "fieldName": "completed_enabled"
                 }
               ]
-            },
-            "condition": [
-              {
-                "fullExpression": "@fields.facilitator_id== \"facilitator_male\"",
-                "matchedExpression": "@fields.facilitator_id",
-                "type": "fields",
-                "fieldName": "facilitator_id"
-              }
-            ]
-          },
-          "_dynamicDependencies": {
-            "@global.continue": [
-              "value"
-            ],
-            "@local.family_relation_select": [
-              "action_list.0.args.1",
-              "action_list.0._raw"
-            ],
-            "!@local.completed_enabled": [
-              "parameter_list.disabled"
-            ],
-            "@fields.facilitator_id": [
-              "condition"
-            ]
-          }
-        },
-        {
-          "type": "button",
-          "name": "button_completed_teens",
-          "value": "@global.continue",
-          "_translations": {
-            "value": {}
-          },
-          "action_list": [
-            {
-              "trigger": "click",
-              "action_id": "set_field",
-              "args": [
-                "family_relation",
-                "@local.family_relation_select"
-              ],
-              "_raw": "click | set_field: family_relation: @local.family_relation_select"
-            },
-            {
-              "trigger": "click",
-              "action_id": "emit",
-              "args": [
-                "completed"
-              ],
-              "_raw": "click | emit: completed"
             }
-          ],
-          "parameter_list": {
-            "style": "navigation",
-            "disabled": "!@local.completed_enabled"
-          },
-          "style_list": [
-            "flex: 1"
-          ],
-          "condition": "@fields.facilitator_id !== \"facilitator_male\"",
-          "exclude_from_translation": true,
-          "_nested_name": "dg_footer.button_completed_teens",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "@global.continue",
-                "matchedExpression": "@global.continue",
-                "type": "global",
-                "fieldName": "continue"
-              }
-            ],
-            "action_list": {
-              "0": {
-                "args": {
-                  "1": [
-                    {
-                      "fullExpression": "@local.family_relation_select",
-                      "matchedExpression": "@local.family_relation_select",
-                      "type": "local",
-                      "fieldName": "family_relation_select"
-                    }
-                  ]
-                },
-                "_raw": [
-                  {
-                    "fullExpression": "click | set_field: family_relation: @local.family_relation_select",
-                    "matchedExpression": "@local.family_relation_select",
-                    "type": "local",
-                    "fieldName": "family_relation_select"
-                  }
-                ]
-              }
-            },
-            "parameter_list": {
-              "disabled": [
-                {
-                  "fullExpression": "!@local.completed_enabled",
-                  "matchedExpression": "!@local.completed_enabled",
-                  "type": "local",
-                  "fieldName": "completed_enabled"
-                }
-              ]
-            },
-            "condition": [
-              {
-                "fullExpression": "@fields.facilitator_id !== \"facilitator_male\"",
-                "matchedExpression": "@fields.facilitator_id",
-                "type": "fields",
-                "fieldName": "facilitator_id"
-              }
-            ]
           },
           "_dynamicDependencies": {
             "@global.continue": [
@@ -698,9 +557,6 @@
             ],
             "!@local.completed_enabled": [
               "parameter_list.disabled"
-            ],
-            "@fields.facilitator_id": [
-              "condition"
             ]
           }
         }

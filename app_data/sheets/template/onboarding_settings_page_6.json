@@ -520,7 +520,9 @@
       "parameter_list": {
         "placeholder": "@global.placeholder_user_district",
         "variant": "dropdown",
-        "wrap": "true"
+        "wrap": "true",
+        "input_allowed": "true",
+        "input_position": "top"
       },
       "condition": "!!@fields.user_location_district",
       "exclude_from_translation": true,
@@ -623,7 +625,9 @@
         "placeholder": "@global.placeholder_user_district",
         "variant": "dropdown",
         "wrap": "true",
-        "disabled": "!@local.user_location_select"
+        "disabled": "!@local.user_location_select",
+        "input_allowed": "true",
+        "input_position": "top"
       },
       "condition": "!@fields.user_location_district",
       "exclude_from_translation": true,

@@ -1,0 +1,93 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "proximal_outcomes",
+  "flow_name": "proximal_outcome_progress",
+  "status": "released",
+  "rows": [
+    {
+      "name": "speaker_position",
+      "value": "left",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "variant",
+      "value": "gray",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "facilitator_id",
+      "value": "@fields.facilitator_id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "facilitator_data",
+      "value": "characters.@local.facilitator_id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "facilitator_row",
+      "value": "@data.@local.facilitator_data",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "speaker_name",
+      "value": "@local.facilitator_row.name",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "speaker_image_asset",
+      "value": "@local.facilitator_row.image_asset",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "checkins_completed",
+      "value": 2,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "data_items",
+      "name": "count_goal_answers",
+      "value": "@data.proximal_outcome_data",
+      "action_list": "data_changed | set_local: checkins_completed: @items.length",
+      "parameter_list": "filter: @item.question_type == 'goal' && !!@item.value",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "checkins_placeholder",
+      "value": "Check-ins completed: @local.checkins_completed",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text_bubble",
+      "name": "text_bubble",
+      "value": "@global.proximal_outcome_progress_final_msg",
+      "parameter_list": "speaker_image_asset: @local.speaker_image_asset;\nspeaker_name: @local.speaker_name;\nspeaker_position: @local.speaker_position;\nvariant: @local.variant;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "nav_buttons",
+      "value": "proximal_outcome_nav_buttons",
+      "action_list": "completed | emit: completed;\nuncompleted | emit: uncompleted;",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "show_previous",
+      "value": true,
+      "exclude_from_translation": true
+    },
+    {
+      "name": "show_next",
+      "value": true,
+      "exclude_from_translation": true
+    },
+    {
+      "name": "next_icon_src",
+      "value": "@global.first_completion_icon"
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

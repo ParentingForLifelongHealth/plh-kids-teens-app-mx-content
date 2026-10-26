@@ -1,0 +1,23 @@
+{
+  "flow_type": "global",
+  "flow_subtype": "onboarding",
+  "flow_name": "onboarding_page_14_occupation",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "facilitator_message_occupation",
+      "value": "¡Casi listo!"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "question_occupation",
+      "value": "¿A qué te dedicas?"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "placeholder_occupation",
+      "value": "Selecciona una opción"
+    }
+  ]
+}

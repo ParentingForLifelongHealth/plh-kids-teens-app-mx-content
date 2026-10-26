@@ -1,0 +1,74 @@
+{
+  "flow_name": "prep_one_on_one_time_t_mc_articles",
+  "flow_subtype": "generated",
+  "flow_type": "data_pipe",
+  "rows": [
+    {
+      "operation": "filter",
+      "args_list": [
+        "id == \"relax_2\""
+      ],
+      "input_source": "relax"
+    },
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "category_id: relax",
+        "nested: FALSE"
+      ],
+      "output_target": "one_on_one_time_t_mc_relax | local_only;"
+    },
+    {
+      "operation": "filter",
+      "args_list": [
+        "id == \"check_in_6\""
+      ],
+      "input_source": "check_in"
+    },
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "category_id: check_in",
+        "nested: FALSE"
+      ],
+      "output_target": "one_on_one_time_t_mc_check_in | local_only;"
+    },
+    {
+      "operation": "filter",
+      "args_list": [
+        "!nested"
+      ],
+      "input_source": "one_on_one_time_t_mc_articles",
+      "output_target": "one_on_one_time_t_mc_testing | local_only;"
+    },
+    {
+      "operation": "concat",
+      "args_list": [
+        "one_on_one_time_t_mc_relax",
+        "one_on_one_time_t_mc_check_in",
+        "one_on_one_time_t_mc_testing"
+      ],
+      "input_source": false
+    },
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "completed: FALSE"
+      ]
+    },
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "version: 1"
+      ],
+      "output_target": "one_on_one_time_t_mc_article_tasks"
+    }
+  ],
+  "_output_flows": [
+    {
+      "flow_name": "one_on_one_time_t_mc_article_tasks",
+      "flow_subtype": "generated",
+      "flow_type": "data_list"
+    }
+  ]
+}
