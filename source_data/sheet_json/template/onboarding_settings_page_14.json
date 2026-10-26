@@ -17,11 +17,13 @@
     },
     {
       "name": "speaker_name",
-      "value": "@local.facilitator_row.name"
+      "value": "@local.facilitator_row.name",
+      "exclude_from_translation": true
     },
     {
       "name": "speaker_image_asset",
-      "value": "@local.facilitator_row.image_asset"
+      "value": "@local.facilitator_row.image_asset",
+      "exclude_from_translation": true
     },
     {
       "name": "speaker_position",
@@ -36,55 +38,75 @@
     {
       "type": "text_bubble",
       "name": "text_bubble",
-      "value": "@global.facilitator_message_facilitator_group_id",
+      "value": "@global.facilitator_message_occupation",
       "parameter_list": "speaker_image_asset: @local.speaker_image_asset;\nspeaker_name: @local.speaker_name;\nspeaker_position: @local.speaker_position;\nvariant: @local.variant;",
       "exclude_from_translation": true
     },
     {
       "type": "text",
-      "name": "question_facilitator_group_id",
-      "value": "@global.question_facilitator_group_id",
+      "name": "question_occupation",
+      "value": "@global.question_occupation",
       "parameter_list": "style: emphasised;",
       "exclude_from_translation": true
     },
     {
-      "type": "text_box",
-      "name": "facilitator_group_id_input",
-      "value": "@fields.faci_group_id",
-      "parameter_list": "placeholder: @global.placeholder_facilitator_group_id;",
-      "condition": "!!@fields.faci_group_id",
+      "type": "begin_combo_box",
+      "name": "occupation_select",
+      "value": "@fields.occupation",
+      "parameter_list": "placeholder: @global.placeholder_occupation;\nvariant: dropdown;\nwrap: true;",
+      "condition": "!!@fields.occupation",
       "exclude_from_translation": true
     },
     {
-      "type": "text_box",
-      "name": "facilitator_group_id_input",
-      "parameter_list": "placeholder: @global.placeholder_facilitator_group_id;",
-      "condition": "!@fields.faci_group_id",
+      "type": "begin_data_items",
+      "value": "occupation",
+      "condition": "!!@fields.occupation",
       "exclude_from_translation": true
     },
     {
-      "name": "valid_facilitator_group_id",
-      "value": "@calc(/^(SEP|IMSS|DIF)(?!000)\\d{3}$/i.test(String(@local.facilitator_group_id_input || '').trim()) || !@local.facilitator_group_id_input)\n",
+      "type": "end_data_items",
+      "condition": "!!@fields.occupation",
       "exclude_from_translation": true
     },
     {
-      "type": "text",
-      "name": "warning_facilitator_group_id_input",
-      "value": "@global.error_invalid_facilitator_group_id",
-      "condition": "!@local.valid_facilitator_group_id",
-      "style_list": "color: #FF0000;\nfont-size: 14px",
+      "type": "end_combo_box",
+      "condition": "!!@fields.occupation",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_combo_box",
+      "name": "occupation_select",
+      "parameter_list": "placeholder: @global.placeholder_occupation;\nvariant: dropdown;\nwrap: true;",
+      "condition": "!@fields.occupation",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_data_items",
+      "value": "occupation",
+      "condition": "!@fields.occupation",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_data_items",
+      "condition": "!@fields.occupation",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_combo_box",
+      "condition": "!@fields.occupation",
       "exclude_from_translation": true
     },
     {
       "name": "completed_enabled",
-      "value": "!!@local.facilitator_group_id_input && @local.valid_facilitator_group_id",
+      "value": "!!@local.occupation_select",
       "exclude_from_translation": true
     },
     {
       "type": "begin_display_group",
       "name": "dg_footer",
       "parameter_list": "sticky: bottom;",
-      "style_list": "padding: 12px 24px;"
+      "style_list": "padding: 12px 24px;",
+      "exclude_from_translation": true
     },
     {
       "type": "round_button",
@@ -95,19 +117,11 @@
     },
     {
       "type": "button",
-      "name": "button_completed",
+      "name": "button_completed_child",
       "value": "@global.continue",
-      "action_list": "click | set_field: faci_group_id: @calc(String(@local.facilitator_group_id_input).trim().toUpperCase()); \nclick | emit: completed;",
+      "action_list": "click | set_field: occupation: @local.occupation_select;\nclick | emit: completed;",
       "parameter_list": "style: navigation;\ndisabled: !@local.completed_enabled",
       "style_list": "flex: 1",
-      "exclude_from_translation": true
-    },
-    {
-      "type": "button",
-      "name": "button_skip",
-      "value": "<u>@global.skip</u>",
-      "action_list": "click | emit: completed;",
-      "parameter_list": "variant: card;\nstyle: no-background;",
       "exclude_from_translation": true
     },
     {

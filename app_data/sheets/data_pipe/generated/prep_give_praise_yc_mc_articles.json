@@ -1,0 +1,74 @@
+{
+  "flow_name": "prep_give_praise_yc_mc_articles",
+  "flow_subtype": "generated",
+  "flow_type": "data_pipe",
+  "rows": [
+    {
+      "operation": "filter",
+      "args_list": [
+        "id == \"relax_2\""
+      ],
+      "input_source": "relax"
+    },
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "category_id: relax",
+        "nested: FALSE"
+      ],
+      "output_target": "give_praise_yc_mc_relax | local_only;"
+    },
+    {
+      "operation": "filter",
+      "args_list": [
+        "id == \"check_in_2\""
+      ],
+      "input_source": "check_in"
+    },
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "category_id: check_in",
+        "nested: FALSE"
+      ],
+      "output_target": "give_praise_yc_mc_check_in | local_only;"
+    },
+    {
+      "operation": "filter",
+      "args_list": [
+        "!nested"
+      ],
+      "input_source": "give_praise_yc_mc_articles",
+      "output_target": "give_praise_yc_mc_testing | local_only;"
+    },
+    {
+      "operation": "concat",
+      "args_list": [
+        "give_praise_yc_mc_relax",
+        "give_praise_yc_mc_check_in",
+        "give_praise_yc_mc_testing"
+      ],
+      "input_source": false
+    },
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "completed: FALSE"
+      ]
+    },
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "version: 1"
+      ],
+      "output_target": "give_praise_yc_mc_article_tasks"
+    }
+  ],
+  "_output_flows": [
+    {
+      "flow_name": "give_praise_yc_mc_article_tasks",
+      "flow_subtype": "generated",
+      "flow_type": "data_list"
+    }
+  ]
+}

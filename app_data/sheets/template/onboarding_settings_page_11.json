@@ -250,7 +250,7 @@
       }
     },
     {
-      "type": "combo_box",
+      "type": "radio_list",
       "name": "child_gender_select",
       "value": "@fields.child_gender",
       "_translations": {
@@ -258,9 +258,7 @@
       },
       "parameter_list": {
         "answer_list": "@data.child_gender",
-        "placeholder": "@global.placeholder_child_gender",
-        "variant": "dropdown",
-        "wrap": "true"
+        "variant": "card"
       },
       "condition": "!!@fields.child_gender",
       "exclude_from_translation": true,
@@ -282,14 +280,6 @@
               "type": "data",
               "fieldName": "child_gender"
             }
-          ],
-          "placeholder": [
-            {
-              "fullExpression": "@global.placeholder_child_gender",
-              "matchedExpression": "@global.placeholder_child_gender",
-              "type": "global",
-              "fieldName": "placeholder_child_gender"
-            }
           ]
         },
         "condition": [
@@ -308,22 +298,17 @@
         "@data.child_gender": [
           "parameter_list.answer_list"
         ],
-        "@global.placeholder_child_gender": [
-          "parameter_list.placeholder"
-        ],
         "!@fields.child_gender": [
           "condition"
         ]
       }
     },
     {
-      "type": "combo_box",
+      "type": "radio_list",
       "name": "child_gender_select",
       "parameter_list": {
         "answer_list": "@data.child_gender",
-        "placeholder": "@global.placeholder_child_gender",
-        "variant": "dropdown",
-        "wrap": "true"
+        "variant": "card"
       },
       "condition": "!@fields.child_gender",
       "exclude_from_translation": true,
@@ -336,14 +321,6 @@
               "matchedExpression": "@data.child_gender",
               "type": "data",
               "fieldName": "child_gender"
-            }
-          ],
-          "placeholder": [
-            {
-              "fullExpression": "@global.placeholder_child_gender",
-              "matchedExpression": "@global.placeholder_child_gender",
-              "type": "global",
-              "fieldName": "placeholder_child_gender"
             }
           ]
         },
@@ -359,9 +336,6 @@
       "_dynamicDependencies": {
         "@data.child_gender": [
           "parameter_list.answer_list"
-        ],
-        "@global.placeholder_child_gender": [
-          "parameter_list.placeholder"
         ],
         "!@fields.child_gender": [
           "condition"

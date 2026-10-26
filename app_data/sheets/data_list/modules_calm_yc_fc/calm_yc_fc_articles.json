@@ -1,0 +1,384 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "calm_yc_fc_articles",
+  "data_list_name": "calm_yc_fc_articles",
+  "status": "released",
+  "flow_subtype": "modules_calm_yc_fc",
+  "module": "calm_yc_fc",
+  "rows": [
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "nested": false,
+      "text_1_facilitator": "Esta sesión trata sobre cómo **mantener la calma** con @fields.child_name ante situaciones difíciles.\n\n\nEl estrés relacionado con el cuidado y las situaciones del día a día pueden hacernos sentir enojo, cansancio, frustración o tristeza. Tener estas emociones es natural. ❤️‍🩹",
+      "_translations": {
+        "text_1_facilitator": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Esta sesión trata sobre cómo **mantener la calma** con @fields.child_name ante situaciones difíciles.\n\n\nEl estrés relacionado con el cuidado y las situaciones del día a día pueden hacernos sentir enojo, cansancio, frustración o tristeza. Tener estas emociones es natural. ❤️‍🩹"
+        }
+      }
+    },
+    {
+      "id": "intro_2",
+      "category_id": "intro",
+      "nested": false,
+      "text_1_facilitator": "Aquí exploraremos cómo reconocer y manejar el enojo y el estrés para que puedas responder con más calma. 😌",
+      "_translations": {
+        "text_1_facilitator": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Aquí exploraremos cómo reconocer y manejar el enojo y el estrés para que puedas responder con más calma. 😌"
+        }
+      }
+    },
+    {
+      "id": "intro_3",
+      "category_id": "intro",
+      "nested": false,
+      "text_1_facilitator": "Antes de empezar, reflexionemos un momento📝",
+      "_translations": {
+        "text_1_facilitator": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_feedback_1": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_feedback_2": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Antes de empezar, reflexionemos un momento📝"
+        },
+        "quiz_1_question": {
+          "eng": "Verdadero o falso: Cuando siento enojo por algo que hace @fields.child_name, está bien gritarle."
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Verdadero"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\n\nCuando sientas que el enojo aumenta, el primer paso es reconocer \"estoy sintiendo enojo\" y hacer una pausa. Respirar lenta y profundamente ayuda a recuperar la calma. \n\nReaccionar o gritar sin ese momento de pausa puede llevarte a decir o hacer algo que lastime a @fields.child_name y que después tengas que reparar."
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Falso"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "🎉 ¡Tienes razón!\n\n\nCuando sientas que el enojo aumenta, el primer paso es reconocer \"estoy sintiendo enojo\" y hacer una pausa. Respirar lenta y profundamente ayuda a recuperar la calma. \n\nReaccionar o gritar sin ese momento de pausa puede llevarte a decir o hacer algo que lastime a @fields.child_name y que después tengas que reparar."
+        }
+      },
+      "quiz_1_question": "Verdadero o falso: Cuando siento enojo por algo que hace @fields.child_name, está bien gritarle.",
+      "quiz_1_option_1_text": "Verdadero",
+      "quiz_1_feedback_1": "👀 ¡Ups! ¡Revisemos esta idea!\n\n\nCuando sientas que el enojo aumenta, el primer paso es reconocer \"estoy sintiendo enojo\" y hacer una pausa. Respirar lenta y profundamente ayuda a recuperar la calma. \n\nReaccionar o gritar sin ese momento de pausa puede llevarte a decir o hacer algo que lastime a @fields.child_name y que después tengas que reparar.",
+      "quiz_1_option_2_text": "Falso",
+      "quiz_1_feedback_2": "🎉 ¡Tienes razón!\n\n\nCuando sientas que el enojo aumenta, el primer paso es reconocer \"estoy sintiendo enojo\" y hacer una pausa. Respirar lenta y profundamente ayuda a recuperar la calma. \n\nReaccionar o gritar sin ese momento de pausa puede llevarte a decir o hacer algo que lastime a @fields.child_name y que después tengas que reparar."
+    },
+    {
+      "id": "intro_4",
+      "category_id": "intro",
+      "nested": false,
+      "text_1_facilitator": "¡Una pregunta más!",
+      "_translations": {
+        "text_1_facilitator": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_feedback_1": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_feedback_2": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "¡Una pregunta más!"
+        },
+        "quiz_1_question": {
+          "eng": "Verdadero o falso: Poner atención a tus propias emociones y reservar tiempo para ti te ayuda a cuidar mejor a @fields.child_name."
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Verdadero"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "🎉 ¡Tienes razón!\n\n\nDescansar o pedir apoyo a personas de confianza puede ayudar a que te sientas mejor y estés más disponible para tu familia. \n\nTu bienestar importa: cuidarte es parte de cuidar a otras personas."
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Falso"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\n\nDescansar o pedir apoyo a personas de confianza puede ayudar a que te sientas mejor y estés más disponible para tu familia. \n\nTu bienestar importa: cuidarte es parte de cuidar a otras personas."
+        }
+      },
+      "quiz_1_question": "Verdadero o falso: Poner atención a tus propias emociones y reservar tiempo para ti te ayuda a cuidar mejor a @fields.child_name.",
+      "quiz_1_option_1_text": "Verdadero",
+      "quiz_1_feedback_1": "🎉 ¡Tienes razón!\n\n\nDescansar o pedir apoyo a personas de confianza puede ayudar a que te sientas mejor y estés más disponible para tu familia. \n\nTu bienestar importa: cuidarte es parte de cuidar a otras personas.",
+      "quiz_1_option_2_text": "Falso",
+      "quiz_1_feedback_2": "👀 ¡Ups! ¡Revisemos esta idea!\n\n\nDescansar o pedir apoyo a personas de confianza puede ayudar a que te sientas mejor y estés más disponible para tu familia. \n\nTu bienestar importa: cuidarte es parte de cuidar a otras personas."
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
+      "media_type": "youtube",
+      "nested": false,
+      "text_1_facilitator": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo puedes empezar a regular tus emociones ante situaciones difíciles.\n\nEn este video te compartimos cuatro estrategias recomendadas por especialistas:\n\n1️⃣ PAUSA\n2️⃣ ACTÚA RÁPIDO\n3️⃣ HABLA CLARO\n4️⃣ REDIRIGE",
+      "_translations": {
+        "text_1_facilitator": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo puedes empezar a regular tus emociones ante situaciones difíciles.\n\nEn este video te compartimos cuatro estrategias recomendadas por especialistas:\n\n1️⃣ PAUSA\n2️⃣ ACTÚA RÁPIDO\n3️⃣ HABLA CLARO\n4️⃣ REDIRIGE"
+        }
+      }
+    },
+    {
+      "id": "explore_2",
+      "category_id": "explore",
+      "image_asset": "images/comic/relation/calm_yc_fc_1.svg",
+      "character_1_id": "f2_madre",
+      "character_2_id": "f2_hijo_8",
+      "nested": false,
+      "text_1_facilitator": "¡Vamos a ver estas estrategias en la práctica!",
+      "_translations": {
+        "text_1_facilitator": {},
+        "text_2": {},
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "¡Vamos a ver estas estrategias en la práctica!"
+        },
+        "text_2": {
+          "eng": "_@data.characters.f2_madre.name se prepara para su tiempo para conectar con @data.characters.f2_hijo_8.name_"
+        },
+        "character_1_text": {
+          "eng": "Tengo 5 minutos para que pasemos un rato juntos, @data.characters.f2_hijo_8.name. ¿Qué te gustaría hacer?"
+        },
+        "character_2_text": {
+          "eng": "¡Vamos a jugar con mis juguetes!"
+        }
+      },
+      "text_2": "_@data.characters.f2_madre.name se prepara para su tiempo para conectar con @data.characters.f2_hijo_8.name_",
+      "character_1_text": "Tengo 5 minutos para que pasemos un rato juntos, @data.characters.f2_hijo_8.name. ¿Qué te gustaría hacer?",
+      "character_2_text": "¡Vamos a jugar con mis juguetes!"
+    },
+    {
+      "id": "explore_3",
+      "category_id": "explore",
+      "image_asset": "images/comic/relation/calm_yc_fc_2.svg",
+      "character_1_id": "f2_hijo_8",
+      "character_2_id": "f2_madre",
+      "character_3_id": "f2_madre",
+      "nested": false,
+      "text_2": "_Mira cómo @data.characters.f2_madre.name reconoce las primeras señales de tensión y decide hacer una pausa._",
+      "_translations": {
+        "text_2": {},
+        "character_1_text": {},
+        "character_2_text": {},
+        "character_3_text": {}
+      },
+      "_translatedFields": {
+        "text_2": {
+          "eng": "_Mira cómo @data.characters.f2_madre.name reconoce las primeras señales de tensión y decide hacer una pausa._"
+        },
+        "character_1_text": {
+          "eng": "¡Brrrruuuum...!"
+        },
+        "character_2_text": {
+          "eng": "(pensando) ¡Ay, no! El cuarto está quedando todo desordenado y vamos a tener que recoger todo antes de la cena. Estoy empezando a sentir mucho calor y tensión. Necesito hacer una pausa para recuperar la calma y disfrutar de nuestro tiempo para conectar."
+        },
+        "character_3_text": {
+          "eng": "@data.characters.f2_hijo_8.name, voy por un vaso de agua, ahorita regreso a seguir jugando contigo."
+        }
+      },
+      "character_1_text": "¡Brrrruuuum...!",
+      "character_2_text": "(pensando) ¡Ay, no! El cuarto está quedando todo desordenado y vamos a tener que recoger todo antes de la cena. Estoy empezando a sentir mucho calor y tensión. Necesito hacer una pausa para recuperar la calma y disfrutar de nuestro tiempo para conectar.",
+      "character_3_text": "@data.characters.f2_hijo_8.name, voy por un vaso de agua, ahorita regreso a seguir jugando contigo."
+    },
+    {
+      "id": "explore_4",
+      "category_id": "explore",
+      "image_asset": "images/comic/relation/calm_yc_fc_3.svg",
+      "nested": false,
+      "text_2": "_@data.characters.f2_madre.name actuó rápidamente y decidió ir por un vaso con agua para recuperar la calma._",
+      "_translations": {
+        "text_2": {}
+      },
+      "_translatedFields": {
+        "text_2": {
+          "eng": "_@data.characters.f2_madre.name actuó rápidamente y decidió ir por un vaso con agua para recuperar la calma._"
+        }
+      }
+    },
+    {
+      "id": "explore_5",
+      "category_id": "explore",
+      "image_asset": "images/comic/relation/calm_yc_fc_4.svg",
+      "character_1_id": "f2_madre",
+      "character_2_id": "f2_hijo_8",
+      "nested": false,
+      "text_2": "_Después de tranquilizarse, @data.characters.f2_madre.name regresa a disfrutar su tiempo para conectar._",
+      "_translations": {
+        "text_2": {},
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "_translatedFields": {
+        "text_2": {
+          "eng": "_Después de tranquilizarse, @data.characters.f2_madre.name regresa a disfrutar su tiempo para conectar._"
+        },
+        "character_1_text": {
+          "eng": "¡Guau! Mira qué rápido va tu carrito."
+        },
+        "character_2_text": {
+          "eng": "¡Es muy veloz!"
+        }
+      },
+      "character_1_text": "¡Guau! Mira qué rápido va tu carrito.",
+      "character_2_text": "¡Es muy veloz!"
+    },
+    {
+      "id": "explore_6",
+      "category_id": "explore",
+      "image_asset": "images/comic/relation/calm_yc_fc_5.svg",
+      "character_1_id": "f2_madre",
+      "character_2_id": "f2_hijo_8",
+      "character_3_id": "f2_madre",
+      "nested": false,
+      "text_2": "_@data.characters.f2_madre.name le dice claramente a @data.characters.f2_hijo_8.name qué espera y redirige la actividad hacia una tarea compartida._",
+      "_translations": {
+        "text_2": {},
+        "character_1_text": {},
+        "character_2_text": {},
+        "character_3_text": {}
+      },
+      "_translatedFields": {
+        "text_2": {
+          "eng": "_@data.characters.f2_madre.name le dice claramente a @data.characters.f2_hijo_8.name qué espera y redirige la actividad hacia una tarea compartida._"
+        },
+        "character_1_text": {
+          "eng": "Nos divertimos mucho en nuestro tiempo especial, pero ya es tiempo de recoger los juguetes, ¿lo hacemos juntos?"
+        },
+        "character_2_text": {
+          "eng": "¡Sí, qué divertido estuvo! ¡Aquí va uno a la caja!"
+        },
+        "character_3_text": {
+          "eng": "(pensando) ¡Uf! Menos mal que me tomé una pausa en vez de gritarle. ¡Creo que cada vez se me da mejor esto!"
+        }
+      },
+      "character_1_text": "Nos divertimos mucho en nuestro tiempo especial, pero ya es tiempo de recoger los juguetes, ¿lo hacemos juntos?",
+      "character_2_text": "¡Sí, qué divertido estuvo! ¡Aquí va uno a la caja!",
+      "character_3_text": "(pensando) ¡Uf! Menos mal que me tomé una pausa en vez de gritarle. ¡Creo que cada vez se me da mejor esto!"
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "nested": false,
+      "text_1_facilitator": "¡Ya viste cómo @data.characters.f2_madre.name usó las estrategias! 👀\n\nVamos a recordarlas una vez más para que puedas regular tus emociones ante situaciones difíciles:",
+      "_translations": {
+        "text_1_facilitator": {},
+        "section_1_title": {},
+        "section_1_text": {},
+        "section_2_title": {},
+        "section_2_text": {},
+        "section_3_title": {},
+        "section_3_text": {},
+        "section_4_title": {},
+        "section_4_text": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "¡Ya viste cómo @data.characters.f2_madre.name usó las estrategias! 👀\n\nVamos a recordarlas una vez más para que puedas regular tus emociones ante situaciones difíciles:"
+        },
+        "section_1_title": {
+          "eng": "PAUSA"
+        },
+        "section_1_text": {
+          "eng": "Sé consciente de tus emociones para poder manejarlas mejor. En una situación tensa, haz una pausa antes de actuar: puedes caminar, salir a tomar aire, poner música o platicar con alguien de confianza. Al cuidarte a ti, también cuidas a @fields.child_name."
+        },
+        "section_2_title": {
+          "eng": "ACTÚA"
+        },
+        "section_2_text": {
+          "eng": "Cuando identifiques que una situación podría volverse tensa, toma acción inmediatamente: reconoce algo positivo que hizo @fields.child_name, trata de comprender sus emociones, invítale a respirar profundo o pídele hacer otra cosa para distraerle."
+        },
+        "section_3_title": {
+          "eng": "HABLA CLARO"
+        },
+        "section_3_text": {
+          "eng": "Dar instrucciones claras y directas hará más fácil que @fields.child_name las siga, evitando momentos de más estrés. Dile lo que sí quieres que haga, por ejemplo, \"por favor, habla más bajito\", en vez de \"no grites\"."
+        },
+        "section_4_title": {
+          "eng": "REDIRIGE"
+        },
+        "section_4_text": {
+          "eng": "Reconoce cuando @fields.child_name colabore o haga lo que esperas. Y, si necesita modificar una conducta, indícale con calma qué puede hacer en su lugar. Esto puede reducir la tensión y ayudarle a comprender mejor qué esperas y por qué."
+        }
+      },
+      "section_1_title": "PAUSA",
+      "section_1_text": "Sé consciente de tus emociones para poder manejarlas mejor. En una situación tensa, haz una pausa antes de actuar: puedes caminar, salir a tomar aire, poner música o platicar con alguien de confianza. Al cuidarte a ti, también cuidas a @fields.child_name.",
+      "section_2_title": "ACTÚA",
+      "section_2_text": "Cuando identifiques que una situación podría volverse tensa, toma acción inmediatamente: reconoce algo positivo que hizo @fields.child_name, trata de comprender sus emociones, invítale a respirar profundo o pídele hacer otra cosa para distraerle.",
+      "section_3_title": "HABLA CLARO",
+      "section_3_text": "Dar instrucciones claras y directas hará más fácil que @fields.child_name las siga, evitando momentos de más estrés. Dile lo que sí quieres que haga, por ejemplo, \"por favor, habla más bajito\", en vez de \"no grites\".",
+      "section_4_title": "REDIRIGE",
+      "section_4_text": "Reconoce cuando @fields.child_name colabore o haga lo que esperas. Y, si necesita modificar una conducta, indícale con calma qué puede hacer en su lugar. Esto puede reducir la tensión y ayudarle a comprender mejor qué esperas y por qué."
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "nested": false,
+      "text_1_facilitator": "¡Ahora es tu turno!\n\nDurante tu tiempo para conectar con @fields.child_name, intenta hacer una pausa antes de reaccionar e identifica qué te ayuda a calmarte en las situaciones difíciles. \n\nSi compartes la crianza con alguien más, invítale a practicarlo también. 😊",
+      "_translations": {
+        "text_1_facilitator": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_feedback_1": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_option_3_text": {},
+        "quiz_1_feedback_3": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "¡Ahora es tu turno!\n\nDurante tu tiempo para conectar con @fields.child_name, intenta hacer una pausa antes de reaccionar e identifica qué te ayuda a calmarte en las situaciones difíciles. \n\nSi compartes la crianza con alguien más, invítale a practicarlo también. 😊"
+        },
+        "quiz_1_question": {
+          "eng": "¿Puedes intentarlo esta semana? 🧘"
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Sí"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "¡Muy bien! Cuando empieces a sentir estrés o enojo, recuerda usar las estrategias que exploramos. 🎉\n\n\nCon el tiempo, también las podrás usar en otras situaciones difíciles del día a día. Y recuerda: escuchar tus propias emociones y reservar tiempo para ti también importa."
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Lo intentaré"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "¡Muy bien! Cuando empieces a sentir estrés o enojo, recuerda usar las estrategias que exploramos. 🙌\n\n\nCon el tiempo, también las podrás usar en otras situaciones difíciles del día a día. Y recuerda: escuchar tus propias emociones y reservar tiempo para ti también importa."
+        },
+        "quiz_1_option_3_text": {
+          "eng": "No"
+        },
+        "quiz_1_feedback_3": {
+          "eng": "¡Lo entiendo! Puedes comenzar por practicar estas estrategias en momentos de tranquilidad. ❤️‍🩹\n\n\nCon el tiempo, también las podrás usar en otras situaciones difíciles del día a día. Y recuerda: escuchar tus propias emociones y reservar tiempo para ti también importa."
+        }
+      },
+      "quiz_1_question": "¿Puedes intentarlo esta semana? 🧘",
+      "quiz_1_option_1_text": "Sí",
+      "quiz_1_feedback_1": "¡Muy bien! Cuando empieces a sentir estrés o enojo, recuerda usar las estrategias que exploramos. 🎉\n\n\nCon el tiempo, también las podrás usar en otras situaciones difíciles del día a día. Y recuerda: escuchar tus propias emociones y reservar tiempo para ti también importa.",
+      "quiz_1_option_2_text": "Lo intentaré",
+      "quiz_1_feedback_2": "¡Muy bien! Cuando empieces a sentir estrés o enojo, recuerda usar las estrategias que exploramos. 🙌\n\n\nCon el tiempo, también las podrás usar en otras situaciones difíciles del día a día. Y recuerda: escuchar tus propias emociones y reservar tiempo para ti también importa.",
+      "quiz_1_option_3_text": "No",
+      "quiz_1_feedback_3": "¡Lo entiendo! Puedes comenzar por practicar estas estrategias en momentos de tranquilidad. ❤️‍🩹\n\n\nCon el tiempo, también las podrás usar en otras situaciones difíciles del día a día. Y recuerda: escuchar tus propias emociones y reservar tiempo para ti también importa."
+    }
+  ],
+  "_source": {
+    "name": "modules_mx",
+    "path": "MX modules_i (1-15).xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1dumE6EODyxm0cb9mf3BuiwbEIJ5gQj9h8VRt_Mfxd3k"
+  },
+  "_metadata": {
+    "nested": {
+      "type": "boolean"
+    }
+  }
+}

@@ -8,41 +8,83 @@
       "id": "referral_share",
       "name": "share",
       "experience": "digital",
-      "text": "Familia o amigos",
+      "text": "Familia o amistades",
       "_translations": {
         "text": {}
       },
       "_translatedFields": {
         "text": {
-          "eng": "Familia o amigos"
+          "eng": "Familia o amistades"
         }
       }
     },
     {
-      "id": "referral_staff_event",
-      "name": "staff_event",
+      "id": "referral_school",
+      "name": "school",
       "experience": "hybrid",
-      "text": "Por evento o personal de MIDES",
+      "text": "En la escuela",
       "_translations": {
         "text": {}
       },
       "_translatedFields": {
         "text": {
-          "eng": "Por evento o personal de MIDES"
+          "eng": "En la escuela"
         }
       }
     },
     {
-      "id": "referral_parenttext",
-      "name": "parenttext",
-      "experience": "digital",
-      "text": "Curso Crianza Responsable y Amororsa en WhatsApp",
+      "id": "referral_health_centre",
+      "name": "health_centre",
+      "experience": "hybrid",
+      "text": "En el centro de salud",
       "_translations": {
         "text": {}
       },
       "_translatedFields": {
         "text": {
-          "eng": "Curso Crianza Responsable y Amororsa en WhatsApp"
+          "eng": "En el centro de salud"
+        }
+      }
+    },
+    {
+      "id": "referral_community_centre",
+      "name": "community_centre",
+      "experience": "hybrid",
+      "text": "En un centro comunitario o deportivo",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "En un centro comunitario o deportivo"
+        }
+      }
+    },
+    {
+      "id": "referral_social_media",
+      "name": "social_media",
+      "experience": "digital",
+      "text": "En redes sociales",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "En redes sociales"
+        }
+      }
+    },
+    {
+      "id": "referral_event",
+      "name": "event",
+      "experience": "hybrid",
+      "text": "En un evento",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "En un evento"
         }
       }
     },

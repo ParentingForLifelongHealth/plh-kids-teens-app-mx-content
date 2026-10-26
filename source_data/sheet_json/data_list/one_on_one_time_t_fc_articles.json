@@ -1,0 +1,134 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "one_on_one_time_t_fc_articles",
+  "data_list_name": "one_on_one_time_t_fc_articles",
+  "status": "released",
+  "flow_subtype": "modules_one_on_one_time_t_fc",
+  "module": "one_on_one_time_t_fc",
+  "rows": [
+    {
+      "id": "@default",
+      "nested": false
+    },
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Esta sesión trata sobre pasar **tiempo para conectar** con @fields.child_name: un rato exclusivo para ustedes dos, en el que podrá guiar la actividad y recibir toda tu atención.\n\n\nEn la adolescencia, es esperable que @fields.child_name quiera hacer más cosas por su cuenta y pase más tiempo con sus amistades. Esto puede dificultarles encontrar momentos para conectar. 💗"
+    },
+    {
+      "id": "intro_2",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Aquí exploraremos cómo el tiempo para conectar puede fortalecer la relación entre ustedes y mostrarle lo mucho que te importa. ¡Puedes empezar con 5 minutos cada día! 📅"
+    },
+    {
+      "id": "intro_3",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Antes de empezar, reflexionemos un momento📝",
+      "quiz_1_question::eng": "Verdadero o falso: Durante el tiempo para conectar con @fields.child_name necesito tener siempre un plan y saber qué actividades haremos.",
+      "quiz_1_option_1_text::eng": "Verdadero",
+      "quiz_1_feedback_1::eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\n\nEl único plan que necesitas es dejar que te comparta qué le gustaría hacer. @fields.child_name puede guiar la actividad siempre y cuando sea segura. Esto aumentará su confianza y hará más probable que disfrute pasar tiempo contigo.",
+      "quiz_1_option_2_text::eng": "Falso",
+      "quiz_1_feedback_2::eng": "🎉 ¡Tienes razón!\n\n\nEl único plan que necesitas es dejar que te comparta qué le gustaría hacer. @fields.child_name puede guiar la actividad siempre y cuando sea segura. Esto aumentará su confianza y hará más probable que disfrute pasar tiempo contigo."
+    },
+    {
+      "id": "intro_4",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "¡Una pregunta más!",
+      "quiz_1_question::eng": "Verdadero o falso: Aunque otras personas también cuiden a @fields.child_name, tu tiempo para conectar es indispensable para fortalecer la relación, incluso si solo son 5 minutos diarios.",
+      "quiz_1_option_1_text::eng": "Verdadero",
+      "quiz_1_feedback_1::eng": "🎉 ¡Tienes razón!\n\n\nTu tiempo para conectar con @fields.child_name es único y no puede ser reemplazado por nadie más. De todas formas, si compartes los cuidados con alguien más, cuéntale qué significa el tiempo para conectar e invítale a empezar con 5 minutos diarios también. Así se construye confianza, cooperación y comunicación entre todas y todos en casa.",
+      "quiz_1_option_2_text::eng": "Falso",
+      "quiz_1_feedback_2::eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\n\nTu tiempo para conectar con @fields.child_name es único y no puede ser reemplazado por nadie más. De todas formas, si compartes los cuidados con alguien más, cuéntale qué significa el tiempo para conectar e invítale a empezar con 5 minutos diarios también. Así se construye confianza, cooperación y comunicación entre todas y todos en casa."
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo puedes empezar a disfrutar el tiempo para conectar con @fields.child_name.\n\nEn este video te compartimos tres estrategias recomendadas por especialistas:\n\n1️⃣ PRACTICA\n2️⃣ JUEGA\n3️⃣ CONECTA\n",
+      "media_type": "youtube"
+    },
+    {
+      "id": "explore_2",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "Vamos a ver estas estrategias en la práctica.",
+      "image_asset": "images/comic/relation/one_on_one_time_t_fc_1.svg",
+      "text_2::eng": "_Mira cómo @data.characters.f1_madre.name se pone de acuerdo con @data.characters.f1_hija_11.name sobre su tiempo para conectar_",
+      "character_1_id": "f1_madre",
+      "character_1_text::eng": "¡Hola, @data.characters.f1_hija_11.name! Quisiera pasar un rato contigo antes de la cena, ¿qué te gustaría hacer?",
+      "character_2_id": "f1_hija_11",
+      "character_2_text::eng": "Tengo que terminar mi tarea…",
+      "character_3_id": "f1_madre",
+      "character_3_text::eng": "No te preocupes, podemos hacerlo cuando acabes. "
+    },
+    {
+      "id": "explore_3",
+      "category_id": "explore",
+      "image_asset": "images/comic/relation/one_on_one_time_t_fc_2.svg",
+      "text_2::eng": "_Fíjate cómo @data.characters.f1_madre.name muestra interés por lo que está haciendo data.characters.f1_hija_11.name y acepta pasar su tiempo para conectar más tarde._",
+      "character_1_id": "f1_madre",
+      "character_1_text::eng": "Oye, ¡parece que tienes un gran proyecto de construcción con todo este cartón!",
+      "character_2_id": "f1_hija_11",
+      "character_2_text::eng": "Es para una tarea de biología. Tengo que hacer algo con materiales reciclados y voy a hacer una casita. La verdad, qué flojera.",
+      "character_3_id": "f1_madre",
+      "character_3_text::eng": "¡Se nota que ya lo pensaste mucho! Seguro te quedará muy bien. Cuando termines, me avisas, para pasar nuestro rato juntos."
+    },
+    {
+      "id": "explore_4",
+      "category_id": "explore",
+      "image_asset": "images/comic/relation/one_on_one_time_t_fc_3.svg",
+      "text_2::eng": "_Un rato después_",
+      "character_1_id": "f1_madre",
+      "character_1_text::eng": "¡Guau! Te quedó súper estable, ni parecen materiales reciclados.",
+      "character_2_id": "f1_hija_11",
+      "character_2_text::eng": "La verdad sí quedó bien, ¡pensé que no se iba a sostener!"
+    },
+    {
+      "id": "explore_5",
+      "category_id": "explore",
+      "image_asset": "images/comic/relation/one_on_one_time_t_fc_3.svg",
+      "text_2::eng": "_Observa cómo @data.characters.f1_madre.name la deja elegir qué hacer en su tiempo para conectar._",
+      "character_1_id": "f1_madre",
+      "character_1_text::eng": "¿Lista para pasar un rato juntos? ¿Qué se te antoja hacer?",
+      "character_2_id": "f1_hija_11",
+      "character_2_text::eng": "No sé... Creo que necesito despejarme. ¿Podemos ir a caminar al parque para despejar la cabeza después de todo ese trabajo? Me haría bien salir de la casa."
+    },
+    {
+      "id": "explore_6",
+      "category_id": "explore",
+      "image_asset": "images/comic/relation/one_on_one_time_t_fc_4.svg",
+      "text_2::eng": "_@data.characters.f1_madre.name busca conectar con @data.characters.f1_hija_11.name, dándole espacio para expresarse y escuchando con interés lo que quiere contarle._",
+      "character_1_id": "f1_madre",
+      "character_1_text::eng": "Y entonces, ¿cómo te fue hoy?",
+      "character_2_id": "f1_hija_11",
+      "character_2_text::eng": "Bien... aunque una compañera se burló de mí por querer hacer la casita con botellas.",
+      "character_3_id": "f1_madre",
+      "character_3_text::eng": "¿En serio? Cuéntame más, te escucho."
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "¡Ya viste cómo @data.characters.f1_madre.name usó las estrategias! 👀\n\nVamos a recordarlas una vez más para que disfrutes tu tiempo para conectar con @fields.child_name:",
+      "section_1_title::eng": "PRACTICA",
+      "section_1_icon_asset": "images/icons/clock_blue.png",
+      "section_1_text::eng": "Recuerda que este es un rato especial entre ustedes. @fields.child_name puede elegir y dirigir una actividad segura, mientras tú le prestas toda tu atención, sin corregir ni apresurarse. La constancia ayuda a reforzar el vínculo.",
+      "section_2_title::eng": "JUEGA",
+      "section_2_icon_asset": "images/icons/football_blue.png",
+      "section_2_text::eng": "Pregúntale qué le gustaría hacer o si puedes ayudarle o acompañarle en algo que ya esté haciendo. Deja que elija y guíe la actividad. Puede que te sorprenda a dónde lleva.",
+      "section_3_title::eng": "CONECTA",
+      "section_3_icon_asset": "images/icons/heart_filled_blue.png",
+      "section_3_text::eng": "Deja el teléfono, apaga la tele y mantente presente. @fields.child_name puede comunicarse contigo de distintas formas: palabras, gestos, o incluso silencios.\n\n\nMírale con interés, usa su nombre, asiente con la cabeza, repite con tus propias palabras lo que te dice y acepta lo que comparte sin juzgar. En vez de hacer preguntas o dar tu opinión sobre el tema, intenta describir lo que ves."
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "text_1_facilitator::eng": "¡Ahora es tu turno!\n\nDurante esta semana reserva al menos 5 minutos de tiempo para conectar con @fields.child_name cada día, usando las estrategias que has aprendido. 😊",
+      "text_2::eng": "_Recuerda que este es un rato especial entre ustedes. @fields.child_name puede elegir y dirigir una actividad segura, mientras tú le prestas toda tu atención, sin corregir ni apresurarse._",
+      "quiz_1_question::eng": "¿Puedes intentarlo esta semana? 📅",
+      "quiz_1_option_1_text::eng": "Sí",
+      "quiz_1_feedback_1::eng": "¡Muy bien! Usa las estrategias que aprendiste hoy y disfrútenlo. 🎉\n\n\nSi compartes la crianza con alguien más, compártele estas estrategias para que también pueda pasar tiempo para conectar con @fields.child_name.",
+      "quiz_1_option_2_text::eng": "Lo intentaré",
+      "quiz_1_feedback_2::eng": "¡Muy bien! Usa las estrategias que aprendiste hoy y disfrútenlo. 🙌\n\n\nSi compartes la crianza con alguien más, compártele estas estrategias para que también pueda pasar tiempo para conectar con @fields.child_name.",
+      "quiz_1_option_3_text::eng": "No",
+      "quiz_1_feedback_3::eng": "¡Lo entiendo! Puede ser difícil encontrar un momento. ❤️‍🩹\n\n\nRecuerda que no necesitas muchas horas: puedes empezar con 5 minutos. Si compartes la crianza con alguien más, compártele estas estrategias para que también pueda pasar tiempo para conectar con @fields.child_name."
+    }
+  ]
+}

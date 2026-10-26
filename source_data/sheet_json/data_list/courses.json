@@ -4,10 +4,10 @@
   "data_list_name": "courses",
   "status": "released",
   "flow_subtype": "modules",
-  "comment": "draft",
+  "comment": "released",
   "rows": [
     {
-      "id": "relation_c",
+      "id": "relation_yc",
       "core": false,
       "tag_list": "child",
       "user_gender_list": "man; woman; opt_out;",
@@ -28,7 +28,7 @@
       "id": "ipv",
       "core": false,
       "tag_list": "child; teen;",
-      "user_gender_list": "man",
+      "user_gender_list": "man; woman; opt_out;",
       "title::eng": "Crianza compartida",
       "image_asset": "images/homescreen/ipv.svg",
       "completed": false

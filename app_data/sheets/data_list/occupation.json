@@ -1,0 +1,104 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "occupation",
+  "status": "released",
+  "data_list_name": "occupation",
+  "rows": [
+    {
+      "id": "family",
+      "name": "family",
+      "text": "Al cuidado de mi familia",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Al cuidado de mi familia"
+        }
+      }
+    },
+    {
+      "id": "self_employed",
+      "name": "self_employed",
+      "text": "Trabajo por mi cuenta",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Trabajo por mi cuenta"
+        }
+      }
+    },
+    {
+      "id": "shop",
+      "name": "shop",
+      "text": "Trabajo en una empresa o negocio",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Trabajo en una empresa o negocio"
+        }
+      }
+    },
+    {
+      "id": "government",
+      "name": "government",
+      "text": "Trabajo en el gobierno",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Trabajo en el gobierno"
+        }
+      }
+    },
+    {
+      "id": "no_occupation",
+      "name": "no_occupation",
+      "text": "Ya no trabajo (jubilación o pensión)",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Ya no trabajo (jubilación o pensión)"
+        }
+      }
+    },
+    {
+      "id": "opt_out",
+      "name": "opt_out",
+      "text": "Prefiero no decir",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Prefiero no decir"
+        }
+      }
+    },
+    {
+      "id": "other",
+      "name": "other",
+      "text": "Otro",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Otro"
+        }
+      }
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "data/MX onboarding.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1VOolSeQCn71-GP1JbiDp2zqWg4ZZYqrtHIAjY7h4A-A"
+  }
+}

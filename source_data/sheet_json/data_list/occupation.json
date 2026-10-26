@@ -1,0 +1,43 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "occupation",
+  "status": "released",
+  "data_list_name": "occupation",
+  "rows": [
+    {
+      "id": "family",
+      "name": "family",
+      "text::eng": "Al cuidado de mi familia"
+    },
+    {
+      "id": "self_employed",
+      "name": "self_employed",
+      "text::eng": "Trabajo por mi cuenta"
+    },
+    {
+      "id": "shop",
+      "name": "shop",
+      "text::eng": "Trabajo en una empresa o negocio"
+    },
+    {
+      "id": "government",
+      "name": "government",
+      "text::eng": "Trabajo en el gobierno"
+    },
+    {
+      "id": "no_occupation",
+      "name": "no_occupation",
+      "text::eng": "Ya no trabajo (jubilación o pensión)"
+    },
+    {
+      "id": "opt_out",
+      "name": "opt_out",
+      "text::eng": "Prefiero no decir"
+    },
+    {
+      "id": "other",
+      "name": "other",
+      "text::eng": "Otro"
+    }
+  ]
+}

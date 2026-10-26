@@ -7,13 +7,13 @@
     {
       "id": "single",
       "name": "single",
-      "text": "Soltera o soltero (sin pareja)",
+      "text": "Soltera o soltero",
       "_translations": {
         "text": {}
       },
       "_translatedFields": {
         "text": {
-          "eng": "Soltera o soltero (sin pareja)"
+          "eng": "Soltera o soltero"
         }
       }
     },
@@ -31,28 +31,41 @@
       }
     },
     {
-      "id": "partner",
-      "name": "partner",
-      "text": "En pareja (sin matrimonio)",
+      "id": "free_union",
+      "name": "free_union",
+      "text": "Unión libre",
       "_translations": {
         "text": {}
       },
       "_translatedFields": {
         "text": {
-          "eng": "En pareja (sin matrimonio)"
+          "eng": "Unión libre"
+        }
+      }
+    },
+    {
+      "id": "separated",
+      "name": "separated",
+      "text": "Separada o separado",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Separada o separado"
         }
       }
     },
     {
       "id": "divorced",
       "name": "divorced",
-      "text": "Separación o divorcio",
+      "text": "Divorciada o divorciado",
       "_translations": {
         "text": {}
       },
       "_translatedFields": {
         "text": {
-          "eng": "Separación o divorcio"
+          "eng": "Divorciada o divorciado"
         }
       }
     },

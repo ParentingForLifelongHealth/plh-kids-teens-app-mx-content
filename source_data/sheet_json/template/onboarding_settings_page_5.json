@@ -47,17 +47,17 @@
       "parameter_list": "style: emphasised;"
     },
     {
-      "type": "combo_box",
+      "type": "radio_list",
       "name": "user_gender_select",
       "value": "@fields.user_gender",
-      "parameter_list": "answer_list: @data.user_gender;\nvariant: dropdown;\nwrap: true;",
+      "parameter_list": "answer_list: @data.user_gender;\nvariant: card;",
       "condition": "!!@fields.user_gender",
       "exclude_from_translation": true
     },
     {
-      "type": "combo_box",
+      "type": "radio_list",
       "name": "user_gender_select",
-      "parameter_list": "answer_list: @data.user_gender;\nvariant: dropdown;\nwrap: true;",
+      "parameter_list": "answer_list: @data.user_gender;\nvariant: card;",
       "condition": "!@fields.user_gender",
       "exclude_from_translation": true
     },

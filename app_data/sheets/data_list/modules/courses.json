@@ -4,10 +4,10 @@
   "data_list_name": "courses",
   "status": "released",
   "flow_subtype": "modules",
-  "comment": "draft",
+  "comment": "released",
   "rows": [
     {
-      "id": "relation_c",
+      "id": "relation_yc",
       "core": false,
       "tag_list": [
         "child"
@@ -60,7 +60,9 @@
         "teen"
       ],
       "user_gender_list": [
-        "man"
+        "man",
+        "woman",
+        "opt_out"
       ],
       "image_asset": "images/homescreen/ipv.svg",
       "completed": false,
@@ -261,8 +263,8 @@
   ],
   "_source": {
     "name": "modules_mx",
-    "path": "DO NOT EDIT working Copy of MX modules_i (1-15).xlsx",
-    "url": "https://docs.google.com/spreadsheets/d/1q33pQPs_bNqkODZbfOIvLLlWO5SsbXLF-0i3Yo-uT7s"
+    "path": "working copy modules.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1OvbZssgjOnbG1WkrBsPt4_GSGK8cM5uR3yfE8LEU71o"
   },
   "_metadata": {
     "core": {
