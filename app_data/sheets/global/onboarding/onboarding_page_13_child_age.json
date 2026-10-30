@@ -1,13 +1,37 @@
 {
   "flow_type": "global",
   "flow_subtype": "onboarding",
-  "flow_name": "onboarding_page_13_child_relat",
+  "flow_name": "onboarding_page_13_child_age",
   "status": "released",
   "rows": [
     {
       "type": "declare_global_constant",
+      "name": "facilitator_message_child_age",
+      "value": "Conocer un poco más sobre @fields.child_name nos permite acompañarte mejor.",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "question_child_age",
+      "value": "¿Cuántos años tiene @fields.child_name?",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "placeholder_child_age",
+      "value": "Ingresa su edad",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
       "name": "facilitator_message_child_relation",
-      "value": "¡Casi listo!",
+      "value": "¡Una más!",
       "_translations": {
         "value": {}
       }

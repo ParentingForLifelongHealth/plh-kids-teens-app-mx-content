@@ -10,13 +10,13 @@
       "id": "intro_1",
       "category_id": "intro",
       "nested": false,
-      "text_1_facilitator": "Esta sesión trata sobre cómo **crear rutinas diarias** con @fields.child_name e integrar el tiempo para conectar en ellas.\n\n\nLas niñas y los niños necesitan estructura en su día a día para sentir seguridad y desarrollar buenos hábitos. \n\n\nCuando participan en la creación de sus rutinas para el descanso, comidas, tareas del hogar, escuela y juego, es más probable que las sigan y que adquieran habilidades de liderazgo en el proceso. 🙌",
+      "text_1_facilitator": "Esta sesión trata sobre cómo **crear rutinas diarias** con @fields.child_name e integrar el tiempo para conectar en ellas.\n\n\nLas niñas y los niños necesitan estructura para sentir seguridad y desarrollar buenos hábitos. Si participan en la creación de sus rutinas, será más probable que las sigan y que adquieran habilidades de liderazgo en el proceso. 🙌",
       "_translations": {
         "text_1_facilitator": {}
       },
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "Esta sesión trata sobre cómo **crear rutinas diarias** con @fields.child_name e integrar el tiempo para conectar en ellas.\n\n\nLas niñas y los niños necesitan estructura en su día a día para sentir seguridad y desarrollar buenos hábitos. \n\n\nCuando participan en la creación de sus rutinas para el descanso, comidas, tareas del hogar, escuela y juego, es más probable que las sigan y que adquieran habilidades de liderazgo en el proceso. 🙌"
+          "eng": "Esta sesión trata sobre cómo **crear rutinas diarias** con @fields.child_name e integrar el tiempo para conectar en ellas.\n\n\nLas niñas y los niños necesitan estructura para sentir seguridad y desarrollar buenos hábitos. Si participan en la creación de sus rutinas, será más probable que las sigan y que adquieran habilidades de liderazgo en el proceso. 🙌"
         }
       }
     },
@@ -24,13 +24,13 @@
       "id": "intro_2",
       "category_id": "intro",
       "nested": false,
-      "text_1_facilitator": "Aquí exploraremos cómo podemos involucrar a @fields.child_name en la creación de sus rutinas diarias, especialmente en torno al tiempo para conectar. 🕒",
+      "text_1_facilitator": "Aquí exploraremos cómo podemos involucrar a @fields.child_name en la creación de sus rutinas diarias, especialmente en torno al tiempo para conectar. 🕒\n\n¡También pueden participar en la creación de sus rutinas para el descanso, las comidas, las tareas del hogar, la escuela y el juego!",
       "_translations": {
         "text_1_facilitator": {}
       },
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "Aquí exploraremos cómo podemos involucrar a @fields.child_name en la creación de sus rutinas diarias, especialmente en torno al tiempo para conectar. 🕒"
+          "eng": "Aquí exploraremos cómo podemos involucrar a @fields.child_name en la creación de sus rutinas diarias, especialmente en torno al tiempo para conectar. 🕒\n\n¡También pueden participar en la creación de sus rutinas para el descanso, las comidas, las tareas del hogar, la escuela y el juego!"
         }
       }
     },
@@ -146,7 +146,7 @@
           "eng": "Vamos a ver estas estrategias en la práctica."
         },
         "text_2": {
-          "eng": "_@data.characters.abuela_1.name se prepara para acordar la rutina del tiempo para conectar con @data.characters.f2_hija_3.name_"
+          "eng": "@data.characters.abuela_1.name se prepara para acordar la rutina del tiempo para conectar con @data.characters.f2_hija_3.name"
         },
         "character_1_text": {
           "eng": "Me encanta este tiempo para conectar contigo, @data.characters.f2_hija_3.name."
@@ -155,7 +155,7 @@
           "eng": "¡A mí también!"
         }
       },
-      "text_2": "_@data.characters.abuela_1.name se prepara para acordar la rutina del tiempo para conectar con @data.characters.f2_hija_3.name_",
+      "text_2": "@data.characters.abuela_1.name se prepara para acordar la rutina del tiempo para conectar con @data.characters.f2_hija_3.name",
       "character_1_text": "Me encanta este tiempo para conectar contigo, @data.characters.f2_hija_3.name.",
       "character_2_text": "¡A mí también!"
     },
@@ -167,7 +167,7 @@
       "character_2_id": "f2_hija_3",
       "character_3_id": "abuela_1",
       "nested": false,
-      "text_2": "_Fíjate cómo acuerdan un horario juntas, para poder ser constantes._",
+      "text_2": "Fíjate cómo acuerdan un horario juntas, para poder ser constantes.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
@@ -176,7 +176,7 @@
       },
       "_translatedFields": {
         "text_2": {
-          "eng": "_Fíjate cómo acuerdan un horario juntas, para poder ser constantes._"
+          "eng": "Fíjate cómo acuerdan un horario juntas, para poder ser constantes."
         },
         "character_1_text": {
           "eng": "Me gustaría que pasemos un tiempo así todos los días. ¿A qué hora te gustaría?"
@@ -200,7 +200,7 @@
       "character_2_id": "f2_hija_3",
       "character_3_id": "abuela_1",
       "nested": false,
-      "text_2": "_@data.characters.abuela_1.name le recuerda a @data.characters.f2_hija_3.name que ella puede elegir qué hacer en su tiempo para conectar._",
+      "text_2": "@data.characters.abuela_1.name le recuerda a @data.characters.f2_hija_3.name que ella puede elegir qué hacer en su tiempo para conectar.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
@@ -209,7 +209,7 @@
       },
       "_translatedFields": {
         "text_2": {
-          "eng": "_@data.characters.abuela_1.name le recuerda a @data.characters.f2_hija_3.name que ella puede elegir qué hacer en su tiempo para conectar._"
+          "eng": "@data.characters.abuela_1.name le recuerda a @data.characters.f2_hija_3.name que ella puede elegir qué hacer en su tiempo para conectar."
         },
         "character_1_text": {
           "eng": "@data.characters.f2_hija_3.name, vamos a recoger la mesa y guardar el rompecabezas."
@@ -298,7 +298,7 @@
           "eng": "¡Ahora es tu turno!\n\nEsta semana, elige con @fields.child_name el mejor momento del día para pasar al menos 5 minutos de tiempo para conectar. 😊"
         },
         "text_2": {
-          "eng": "_Reflexiona: ¿quién más en tu hogar debería apoyar para que @fields.child_name siga esta rutina? Busca un momento para incluirle en esa conversación._"
+          "eng": "Reflexiona: ¿quién más en tu hogar debería apoyar para que @fields.child_name siga esta rutina? Busca un momento para incluirle en esa conversación."
         },
         "quiz_1_question": {
           "eng": "¿Puedes hacerlo esta semana? ⏰"
@@ -322,7 +322,7 @@
           "eng": "¡Lo entiendo! Al inicio puede ser abrumador pensar en un tiempo específico. ❤️‍🩹\n\n\nRecuerda que las rutinas pueden partir de actividades que ya hagan normalmente. Pueden aprovechar esos momentos para compartir ideas sobre las rutinas, ¡puede que te sorprenda!"
         }
       },
-      "text_2": "_Reflexiona: ¿quién más en tu hogar debería apoyar para que @fields.child_name siga esta rutina? Busca un momento para incluirle en esa conversación._",
+      "text_2": "Reflexiona: ¿quién más en tu hogar debería apoyar para que @fields.child_name siga esta rutina? Busca un momento para incluirle en esa conversación.",
       "quiz_1_question": "¿Puedes hacerlo esta semana? ⏰",
       "quiz_1_option_1_text": "Sí",
       "quiz_1_feedback_1": "¡Muy bien! Hacer una rutina para el tiempo para conectar ayudará a @fields.child_name a sentir seguridad. 🎉\n\n\nTambién pueden establecer otras rutinas, como salir a pasear o preparar la comida juntos. Pídele ideas para diseñar las rutinas, ¡puede que te sorprenda!",

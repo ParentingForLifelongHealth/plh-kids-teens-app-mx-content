@@ -2061,6 +2061,24 @@
         "url": "https://docs.google.com/spreadsheets/d/1j_lM3vThYrDN1WbzWtzV3ZXtIQvFszHKnaJXiGE3R_o"
       }
     },
+    "ab_test_assignment_po_scale": {
+      "flow_type": "data_list",
+      "flow_subtype": "lifecycle_actions",
+      "flow_name": "ab_test_assignment_po_scale",
+      "_source": {
+        "name": "ab_test_po_scale",
+        "path": "ab_test_po_scale.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/12GRCrn4ehd-SeCi3oY8kcX5EPWdF6yZ2N96zsIC6mb0"
+      },
+      "_metadata": {
+        "priority": {
+          "type": "number"
+        },
+        "condition_list": {
+          "type": "boolean"
+        }
+      }
+    },
     "launch_actions": {
       "flow_type": "data_list",
       "flow_subtype": "lifecycle_actions",
@@ -3839,9 +3857,9 @@
       "flow_name": "user_type",
       "data_list_name": "user_type",
       "_source": {
-        "name": "kids_teens_mx",
-        "path": "data/MX onboarding.xlsx",
-        "url": "https://docs.google.com/spreadsheets/d/1VOolSeQCn71-GP1JbiDp2zqWg4ZZYqrtHIAjY7h4A-A"
+        "name": "kids_teens_global V3",
+        "path": "templates/kids app_launch.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/14Qbr1G5G7J4FClpbONFdELSbiLNmX-7IKMCTjnYYEV8"
       }
     },
     "where_options": {
@@ -8806,6 +8824,16 @@
     }
   },
   "global": {
+    "ab_test_global_po_scale": {
+      "flow_type": "global",
+      "flow_subtype": "ab_testing",
+      "flow_name": "ab_test_global_po_scale",
+      "_source": {
+        "name": "kids_teens_mx",
+        "path": "templates/MX AB testing.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/148jgwYZ_8cc2nSzRrCNkfghSl2cEIIGzbQDG1NkubOM"
+      }
+    },
     "activity_global": {
       "flow_type": "global",
       "flow_name": "activity_global",
@@ -8937,50 +8965,50 @@
         "url": "https://docs.google.com/spreadsheets/d/1VOolSeQCn71-GP1JbiDp2zqWg4ZZYqrtHIAjY7h4A-A"
       }
     },
-    "onboarding_page_10_child_name": {
+    "onboarding_page_10_user_family": {
       "flow_type": "global",
       "flow_subtype": "onboarding",
-      "flow_name": "onboarding_page_10_child_name",
+      "flow_name": "onboarding_page_10_user_family",
       "_source": {
         "name": "kids_teens_mx",
         "path": "data/MX onboarding.xlsx",
         "url": "https://docs.google.com/spreadsheets/d/1VOolSeQCn71-GP1JbiDp2zqWg4ZZYqrtHIAjY7h4A-A"
       }
     },
-    "onboarding_page_11_child_gender": {
+    "onboarding_page_11_child_name": {
       "flow_type": "global",
       "flow_subtype": "onboarding",
-      "flow_name": "onboarding_page_11_child_gender",
+      "flow_name": "onboarding_page_11_child_name",
       "_source": {
         "name": "kids_teens_mx",
         "path": "data/MX onboarding.xlsx",
         "url": "https://docs.google.com/spreadsheets/d/1VOolSeQCn71-GP1JbiDp2zqWg4ZZYqrtHIAjY7h4A-A"
       }
     },
-    "onboarding_page_12_child_age": {
+    "onboarding_page_12_child_gender": {
       "flow_type": "global",
       "flow_subtype": "onboarding",
-      "flow_name": "onboarding_page_12_child_age",
+      "flow_name": "onboarding_page_12_child_gender",
       "_source": {
         "name": "kids_teens_mx",
         "path": "data/MX onboarding.xlsx",
         "url": "https://docs.google.com/spreadsheets/d/1VOolSeQCn71-GP1JbiDp2zqWg4ZZYqrtHIAjY7h4A-A"
       }
     },
-    "onboarding_page_13_child_relat": {
+    "onboarding_page_13_child_age": {
       "flow_type": "global",
       "flow_subtype": "onboarding",
-      "flow_name": "onboarding_page_13_child_relat",
+      "flow_name": "onboarding_page_13_child_age",
       "_source": {
         "name": "kids_teens_mx",
         "path": "data/MX onboarding.xlsx",
         "url": "https://docs.google.com/spreadsheets/d/1VOolSeQCn71-GP1JbiDp2zqWg4ZZYqrtHIAjY7h4A-A"
       }
     },
-    "onboarding_page_14_occupation": {
+    "onboarding_page_14_child_relat": {
       "flow_type": "global",
       "flow_subtype": "onboarding",
-      "flow_name": "onboarding_page_14_occupation",
+      "flow_name": "onboarding_page_14_child_relat",
       "_source": {
         "name": "kids_teens_mx",
         "path": "data/MX onboarding.xlsx",
@@ -9057,30 +9085,30 @@
         "url": "https://docs.google.com/spreadsheets/d/1VOolSeQCn71-GP1JbiDp2zqWg4ZZYqrtHIAjY7h4A-A"
       }
     },
-    "onboarding_page_7_user_referral": {
+    "onboarding_page_7_occupation": {
       "flow_type": "global",
       "flow_subtype": "onboarding",
-      "flow_name": "onboarding_page_7_user_referral",
+      "flow_name": "onboarding_page_7_occupation",
       "_source": {
         "name": "kids_teens_mx",
         "path": "data/MX onboarding.xlsx",
         "url": "https://docs.google.com/spreadsheets/d/1VOolSeQCn71-GP1JbiDp2zqWg4ZZYqrtHIAjY7h4A-A"
       }
     },
-    "onboarding_page_8_user_relation": {
+    "onboarding_page_8_user_referral": {
       "flow_type": "global",
       "flow_subtype": "onboarding",
-      "flow_name": "onboarding_page_8_user_relation",
+      "flow_name": "onboarding_page_8_user_referral",
       "_source": {
         "name": "kids_teens_mx",
         "path": "data/MX onboarding.xlsx",
         "url": "https://docs.google.com/spreadsheets/d/1VOolSeQCn71-GP1JbiDp2zqWg4ZZYqrtHIAjY7h4A-A"
       }
     },
-    "onboarding_page_9_user_family": {
+    "onboarding_page_9_user_relation": {
       "flow_type": "global",
       "flow_subtype": "onboarding",
-      "flow_name": "onboarding_page_9_user_family",
+      "flow_name": "onboarding_page_9_user_relation",
       "_source": {
         "name": "kids_teens_mx",
         "path": "data/MX onboarding.xlsx",
@@ -9118,6 +9146,19 @@
     }
   },
   "template": {
+    "po_base_question_ab_po_scale_3": {
+      "flow_type": "template",
+      "flow_subtype": "ab_testing",
+      "flow_name": "po_base_question_ab_po_scale_3",
+      "override_target": "proximal_outcome_base_question",
+      "override_condition": "@fields.ab_mode_po_scale == \"all_3\" || (@fields.ab_mode_po_scale == \"test\" && @fields.ab_arm_po_scale == \"3\")",
+      "comment": "3 replaces 5 when the mode is all_3, or the mode is test and the caregiver's arm is 3. ",
+      "_source": {
+        "name": "ab_test_po_scale",
+        "path": "ab_test_po_scale.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/12GRCrn4ehd-SeCi3oY8kcX5EPWdF6yZ2N96zsIC6mb0"
+      }
+    },
     "account": {
       "flow_type": "template",
       "flow_name": "account",
@@ -11866,6 +11907,9 @@
         "name": "kids_teens_global V3",
         "path": "templates/PLH proximal outcomes.xlsx",
         "url": "https://docs.google.com/spreadsheets/d/17Ti5gmQDWeKBrprr75UlTLVG7VCdYXQtLG31Ch8O4JE"
+      },
+      "_overrides": {
+        "po_base_question_ab_po_scale_3": "@fields.ab_mode_po_scale == \"all_3\" || (@fields.ab_mode_po_scale == \"test\" && @fields.ab_arm_po_scale == \"3\")"
       }
     },
     "proximal_outcome_goal_refl": {

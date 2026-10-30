@@ -1,37 +1,37 @@
 {
   "flow_type": "global",
   "flow_subtype": "onboarding",
-  "flow_name": "onboarding_page_10_child_name",
+  "flow_name": "onboarding_page_10_user_family",
   "status": "released",
   "rows": [
     {
       "type": "declare_global_constant",
-      "name": "facilitator_message_one_child",
-      "value": "Cuéntame sobre tu niña, niño o adolescente.",
+      "name": "facilitator_message_user_family",
+      "value": "Gracias por compartir. Ahora quisiera saber un poco más sobre el resto de tu familia.",
       "_translations": {
         "value": {}
       }
     },
     {
       "type": "declare_global_constant",
-      "name": "facilitator_message_multiple_children",
-      "value": "Para comenzar, pensemos en la niña, niño o adolescente con quien enfrentas más retos. Así podré darte orientación adecuada a su edad.",
+      "name": "question_household_children",
+      "value": "¿Cuántas niñas, niños o adolescentes están a tu cuidado?",
       "_translations": {
         "value": {}
       }
     },
     {
       "type": "declare_global_constant",
-      "name": "question_child_name",
-      "value": "¿Cómo se llama tu niña, niño o adolescente?",
+      "name": "placeholder_household_children",
+      "value": "Ingresa un número",
       "_translations": {
         "value": {}
       }
     },
     {
       "type": "declare_global_constant",
-      "name": "placeholder_child_name",
-      "value": "Ingresa un nombre",
+      "name": "household_children_input_restriction",
+      "value": "Por favor ingresa un número entre 1 y 20.",
       "_translations": {
         "value": {}
       }

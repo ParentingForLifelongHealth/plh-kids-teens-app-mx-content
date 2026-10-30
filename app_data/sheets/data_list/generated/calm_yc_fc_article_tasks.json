@@ -42,16 +42,16 @@
           "eng": "¡Gracias por notarlo! Lo que sentimos importa."
         },
         "quiz_1_feedback_3": {
-          "eng": "Lamento que las cosas estén siendo difíciles. @global.app_name está aquí para acompañarte en cada paso."
+          "eng": "¡Gracias por notarlo! Lo que sentimos importa."
         },
         "quiz_1_feedback_4": {
-          "eng": "Lamento que las cosas estén siendo difíciles. @global.app_name está aquí para acompañarte en cada paso."
+          "eng": "¡Gracias por notarlo! Lo que sentimos importa.\n\n@global.app_name está aquí para acompañarte en cada paso."
         },
         "quiz_1_feedback_5": {
-          "eng": "Lamento que las cosas estén siendo difíciles. @global.app_name está aquí para acompañarte en cada paso."
+          "eng": "¡Gracias por notarlo! Lo que sentimos importa.\n\n@global.app_name está aquí para acompañarte en cada paso."
         },
         "quiz_1_feedback_6": {
-          "eng": "Lamento que las cosas estén siendo difíciles. @global.app_name está aquí para acompañarte en cada paso."
+          "eng": "¡Gracias por notarlo! Lo que sentimos importa.\n\n@global.app_name está aquí para acompañarte en cada paso."
         },
         "quiz_1_question": {
           "eng": "¿Qué emoción sientes en este momento? Elige la que más se acerque."
@@ -63,7 +63,7 @@
           "eng": "Tranquilidad"
         },
         "quiz_1_option_3_text": {
-          "eng": "Preocupación"
+          "eng": "Gratitud"
         },
         "quiz_1_option_4_text": {
           "eng": "Enojo"
@@ -72,7 +72,7 @@
           "eng": "Tristeza"
         },
         "quiz_1_option_6_text": {
-          "eng": "Cansancio"
+          "eng": "Estrés"
         }
       },
       "category_id": "check_in",
@@ -82,7 +82,7 @@
       "quiz_1_option_3_image_asset": "images/faces/ok.svg",
       "quiz_1_option_4_image_asset": "images/faces/angry.svg",
       "quiz_1_option_5_image_asset": "images/faces/sad.svg",
-      "quiz_1_option_6_image_asset": "images/faces/tired.svg",
+      "quiz_1_option_6_image_asset": "images/faces/ok.svg",
       "text_1": "Cuidarte es importante. ¡Y cómo te sientes, también lo es!",
       "_translations": {
         "text_1": {},
@@ -102,17 +102,17 @@
       },
       "quiz_1_feedback_1": "¡Gracias por notarlo! Lo que sentimos importa.",
       "quiz_1_feedback_2": "¡Gracias por notarlo! Lo que sentimos importa.",
-      "quiz_1_feedback_3": "Lamento que las cosas estén siendo difíciles. @global.app_name está aquí para acompañarte en cada paso.",
-      "quiz_1_feedback_4": "Lamento que las cosas estén siendo difíciles. @global.app_name está aquí para acompañarte en cada paso.",
-      "quiz_1_feedback_5": "Lamento que las cosas estén siendo difíciles. @global.app_name está aquí para acompañarte en cada paso.",
-      "quiz_1_feedback_6": "Lamento que las cosas estén siendo difíciles. @global.app_name está aquí para acompañarte en cada paso.",
+      "quiz_1_feedback_3": "¡Gracias por notarlo! Lo que sentimos importa.",
+      "quiz_1_feedback_4": "¡Gracias por notarlo! Lo que sentimos importa.\n\n@global.app_name está aquí para acompañarte en cada paso.",
+      "quiz_1_feedback_5": "¡Gracias por notarlo! Lo que sentimos importa.\n\n@global.app_name está aquí para acompañarte en cada paso.",
+      "quiz_1_feedback_6": "¡Gracias por notarlo! Lo que sentimos importa.\n\n@global.app_name está aquí para acompañarte en cada paso.",
       "quiz_1_question": "¿Qué emoción sientes en este momento? Elige la que más se acerque.",
       "quiz_1_option_1_text": "Alegría",
       "quiz_1_option_2_text": "Tranquilidad",
-      "quiz_1_option_3_text": "Preocupación",
+      "quiz_1_option_3_text": "Gratitud",
       "quiz_1_option_4_text": "Enojo",
       "quiz_1_option_5_text": "Tristeza",
-      "quiz_1_option_6_text": "Cansancio",
+      "quiz_1_option_6_text": "Estrés",
       "completed": false,
       "version": 1
     },
@@ -254,7 +254,7 @@
           "eng": "¡Vamos a ver estas estrategias en la práctica!"
         },
         "text_2": {
-          "eng": "_@data.characters.f2_madre.name se prepara para su tiempo para conectar con @data.characters.f2_hijo_8.name_"
+          "eng": "@data.characters.f2_madre.name se prepara para su tiempo para conectar con @data.characters.f2_hijo_8.name."
         },
         "character_1_text": {
           "eng": "Tengo 5 minutos para que pasemos un rato juntos, @data.characters.f2_hijo_8.name. ¿Qué te gustaría hacer?"
@@ -275,7 +275,7 @@
       "image_asset": "images/comic/relation/calm_yc_fc_1.svg",
       "character_1_id": "f2_madre",
       "character_2_id": "f2_hijo_8",
-      "text_2": "_@data.characters.f2_madre.name se prepara para su tiempo para conectar con @data.characters.f2_hijo_8.name_",
+      "text_2": "@data.characters.f2_madre.name se prepara para su tiempo para conectar con @data.characters.f2_hijo_8.name.",
       "character_1_text": "Tengo 5 minutos para que pasemos un rato juntos, @data.characters.f2_hijo_8.name. ¿Qué te gustaría hacer?",
       "character_2_text": "¡Vamos a jugar con mis juguetes!",
       "completed": false,
@@ -285,34 +285,34 @@
       "id": "explore_3",
       "_translatedFields": {
         "text_2": {
-          "eng": "_Mira cómo @data.characters.f2_madre.name reconoce las primeras señales de tensión y decide hacer una pausa._"
+          "eng": "Mira cómo @data.characters.f2_madre.name reconoce las primeras señales de tensión y decide hacer una pausa."
         },
         "character_1_text": {
-          "eng": "¡Brrrruuuum...!"
+          "eng": "(pensando) ¡Ay, no! El cuarto está todo desordenado y vamos a tener que recogerlo antes de cenar. Estoy empezando a sentir calor y tensión. Necesito hacer una pausa para calmarme y disfrutar de nuestro tiempo para conectar."
         },
         "character_2_text": {
-          "eng": "(pensando) ¡Ay, no! El cuarto está quedando todo desordenado y vamos a tener que recoger todo antes de la cena. Estoy empezando a sentir mucho calor y tensión. Necesito hacer una pausa para recuperar la calma y disfrutar de nuestro tiempo para conectar."
+          "eng": "¡Brrrruuuum...!"
         },
         "character_3_text": {
-          "eng": "@data.characters.f2_hijo_8.name, voy por un vaso de agua, ahorita regreso a seguir jugando contigo."
+          "eng": "@data.characters.f2_hijo_8.name, voy por un vaso de agua. Ahorita regreso a seguir jugando contigo."
         }
       },
       "category_id": "explore",
       "nested": false,
       "image_asset": "images/comic/relation/calm_yc_fc_2.svg",
-      "character_1_id": "f2_hijo_8",
-      "character_2_id": "f2_madre",
-      "text_2": "_Mira cómo @data.characters.f2_madre.name reconoce las primeras señales de tensión y decide hacer una pausa._",
+      "character_1_id": "f2_madre",
+      "character_2_id": "f2_hijo_8",
+      "text_2": "Mira cómo @data.characters.f2_madre.name reconoce las primeras señales de tensión y decide hacer una pausa.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
         "character_2_text": {},
         "character_3_text": {}
       },
-      "character_1_text": "¡Brrrruuuum...!",
-      "character_2_text": "(pensando) ¡Ay, no! El cuarto está quedando todo desordenado y vamos a tener que recoger todo antes de la cena. Estoy empezando a sentir mucho calor y tensión. Necesito hacer una pausa para recuperar la calma y disfrutar de nuestro tiempo para conectar.",
+      "character_1_text": "(pensando) ¡Ay, no! El cuarto está todo desordenado y vamos a tener que recogerlo antes de cenar. Estoy empezando a sentir calor y tensión. Necesito hacer una pausa para calmarme y disfrutar de nuestro tiempo para conectar.",
+      "character_2_text": "¡Brrrruuuum...!",
       "character_3_id": "f2_madre",
-      "character_3_text": "@data.characters.f2_hijo_8.name, voy por un vaso de agua, ahorita regreso a seguir jugando contigo.",
+      "character_3_text": "@data.characters.f2_hijo_8.name, voy por un vaso de agua. Ahorita regreso a seguir jugando contigo.",
       "completed": false,
       "version": 1
     },
@@ -320,13 +320,13 @@
       "id": "explore_4",
       "_translatedFields": {
         "text_2": {
-          "eng": "_@data.characters.f2_madre.name actuó rápidamente y decidió ir por un vaso con agua para recuperar la calma._"
+          "eng": "@data.characters.f2_madre.name actuó rápidamente y decidió ir por un vaso con agua para recuperar la calma."
         }
       },
       "category_id": "explore",
       "nested": false,
       "image_asset": "images/comic/relation/calm_yc_fc_3.svg",
-      "text_2": "_@data.characters.f2_madre.name actuó rápidamente y decidió ir por un vaso con agua para recuperar la calma._",
+      "text_2": "@data.characters.f2_madre.name actuó rápidamente y decidió ir por un vaso con agua para recuperar la calma.",
       "_translations": {
         "text_2": {}
       },
@@ -337,7 +337,7 @@
       "id": "explore_5",
       "_translatedFields": {
         "text_2": {
-          "eng": "_Después de tranquilizarse, @data.characters.f2_madre.name regresa a disfrutar su tiempo para conectar._"
+          "eng": "Después de tranquilizarse, @data.characters.f2_madre.name regresa a disfrutar su tiempo para conectar."
         },
         "character_1_text": {
           "eng": "¡Guau! Mira qué rápido va tu carrito."
@@ -351,7 +351,7 @@
       "image_asset": "images/comic/relation/calm_yc_fc_4.svg",
       "character_1_id": "f2_madre",
       "character_2_id": "f2_hijo_8",
-      "text_2": "_Después de tranquilizarse, @data.characters.f2_madre.name regresa a disfrutar su tiempo para conectar._",
+      "text_2": "Después de tranquilizarse, @data.characters.f2_madre.name regresa a disfrutar su tiempo para conectar.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
@@ -366,13 +366,13 @@
       "id": "explore_6",
       "_translatedFields": {
         "text_2": {
-          "eng": "_@data.characters.f2_madre.name le dice claramente a @data.characters.f2_hijo_8.name qué espera y redirige la actividad hacia una tarea compartida._"
+          "eng": "@data.characters.f2_madre.name le dice claramente a @data.characters.f2_hijo_8.name qué espera y redirige la actividad hacia una tarea compartida."
         },
         "character_1_text": {
           "eng": "Nos divertimos mucho en nuestro tiempo especial, pero ya es tiempo de recoger los juguetes, ¿lo hacemos juntos?"
         },
         "character_2_text": {
-          "eng": "¡Sí, qué divertido estuvo! ¡Aquí va uno a la caja!"
+          "eng": "¡Sí, estuvo divertido! ¡Aquí va uno a la caja!"
         },
         "character_3_text": {
           "eng": "(pensando) ¡Uf! Menos mal que me tomé una pausa en vez de gritarle. ¡Creo que cada vez se me da mejor esto!"
@@ -383,7 +383,7 @@
       "image_asset": "images/comic/relation/calm_yc_fc_5.svg",
       "character_1_id": "f2_madre",
       "character_2_id": "f2_hijo_8",
-      "text_2": "_@data.characters.f2_madre.name le dice claramente a @data.characters.f2_hijo_8.name qué espera y redirige la actividad hacia una tarea compartida._",
+      "text_2": "@data.characters.f2_madre.name le dice claramente a @data.characters.f2_hijo_8.name qué espera y redirige la actividad hacia una tarea compartida.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
@@ -391,7 +391,7 @@
         "character_3_text": {}
       },
       "character_1_text": "Nos divertimos mucho en nuestro tiempo especial, pero ya es tiempo de recoger los juguetes, ¿lo hacemos juntos?",
-      "character_2_text": "¡Sí, qué divertido estuvo! ¡Aquí va uno a la caja!",
+      "character_2_text": "¡Sí, estuvo divertido! ¡Aquí va uno a la caja!",
       "character_3_id": "f2_madre",
       "character_3_text": "(pensando) ¡Uf! Menos mal que me tomé una pausa en vez de gritarle. ¡Creo que cada vez se me da mejor esto!",
       "completed": false,
@@ -460,7 +460,7 @@
           "eng": "¡Ahora es tu turno!\n\nDurante tu tiempo para conectar con @fields.child_name, intenta hacer una pausa antes de reaccionar e identifica qué te ayuda a calmarte en las situaciones difíciles. \n\nSi compartes la crianza con alguien más, invítale a practicarlo también. 😊"
         },
         "quiz_1_question": {
-          "eng": "¿Puedes intentarlo esta semana? 🧘"
+          "eng": "¿Puedes intentarlo esta semana? 👏"
         },
         "quiz_1_option_1_text": {
           "eng": "Sí"
@@ -496,7 +496,7 @@
       },
       "quiz_1_feedback_2": "¡Muy bien! Cuando empieces a sentir estrés o enojo, recuerda usar las estrategias que exploramos. 🙌\n\n\nCon el tiempo, también las podrás usar en otras situaciones difíciles del día a día. Y recuerda: escuchar tus propias emociones y reservar tiempo para ti también importa.",
       "quiz_1_feedback_3": "¡Lo entiendo! Puedes comenzar por practicar estas estrategias en momentos de tranquilidad. ❤️‍🩹\n\n\nCon el tiempo, también las podrás usar en otras situaciones difíciles del día a día. Y recuerda: escuchar tus propias emociones y reservar tiempo para ti también importa.",
-      "quiz_1_question": "¿Puedes intentarlo esta semana? 🧘",
+      "quiz_1_question": "¿Puedes intentarlo esta semana? 👏",
       "quiz_1_option_1_text": "Sí",
       "quiz_1_option_2_text": "Lo intentaré",
       "quiz_1_option_3_text": "No",

@@ -38,34 +38,44 @@
     {
       "type": "text_bubble",
       "name": "text_bubble",
-      "value": "@global.facilitator_message_child_gender",
+      "value": "@global.facilitator_message_one_child",
       "parameter_list": "speaker_image_asset: @local.speaker_image_asset;\nspeaker_name: @local.speaker_name;\nspeaker_position: @local.speaker_position;\nvariant: @local.variant;",
+      "condition": "@fields.household_children == 1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text_bubble",
+      "name": "text_bubble",
+      "value": "@global.facilitator_message_multiple_children",
+      "parameter_list": "speaker_image_asset: @local.speaker_image_asset;\nspeaker_name: @local.speaker_name;\nspeaker_position: @local.speaker_position;\nvariant: @local.variant;",
+      "condition": "@fields.household_children > 1",
       "exclude_from_translation": true
     },
     {
       "type": "text",
-      "name": "question_child_gender",
-      "value": "@global.question_child_gender",
-      "parameter_list": "style: emphasised;"
-    },
-    {
-      "type": "radio_list",
-      "name": "child_gender_select",
-      "value": "@fields.child_gender",
-      "parameter_list": "answer_list: @data.child_gender;\nvariant: card;",
-      "condition": "!!@fields.child_gender",
+      "name": "question_child_name",
+      "value": "@global.question_child_name",
+      "parameter_list": "style: emphasised;",
       "exclude_from_translation": true
     },
     {
-      "type": "radio_list",
-      "name": "child_gender_select",
-      "parameter_list": "answer_list: @data.child_gender;\nvariant: card;",
-      "condition": "!@fields.child_gender",
+      "type": "text_box",
+      "name": "child_name_input",
+      "value": "@fields.child_name",
+      "parameter_list": "placeholder: @global.placeholder_child_name;",
+      "condition": "!!@fields.child_name",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text_box",
+      "name": "child_name_input",
+      "parameter_list": "placeholder: @global.placeholder_child_name;",
+      "condition": "!@fields.child_name",
       "exclude_from_translation": true
     },
     {
       "name": "completed_enabled",
-      "value": "!!@local.child_gender_select",
+      "value": "!!@local.child_name_input ",
       "exclude_from_translation": true
     },
     {
@@ -86,7 +96,7 @@
       "type": "button",
       "name": "button_completed",
       "value": "@global.continue",
-      "action_list": "click | set_field: child_gender: @local.child_gender_select;\nclick | emit: completed;",
+      "action_list": "click | set_field: child_name: @local.child_name_input;\nclick | emit: completed;",
       "parameter_list": "style: navigation;\ndisabled: !@local.completed_enabled",
       "style_list": "flex: 1",
       "exclude_from_translation": true

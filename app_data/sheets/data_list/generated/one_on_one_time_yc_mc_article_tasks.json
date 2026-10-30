@@ -36,22 +36,22 @@
           "eng": "Toma un momento para conectar contigo."
         },
         "quiz_1_feedback_1": {
-          "eng": "¡Maravilloso! Me da mucho gusto saber que las cosas van bien."
+          "eng": "¡Gracias por notarlo! Lo que sentimos importa.\n \nMe da mucho gusto saber que las cosas van bien."
         },
         "quiz_1_feedback_2": {
-          "eng": "¡Maravilloso! Me da mucho gusto saber que las cosas van bien."
+          "eng": "¡Gracias por notarlo! Lo que sentimos importa.\n \nMe da mucho gusto saber que las cosas van bien."
         },
         "quiz_1_feedback_3": {
-          "eng": "Lamento que estés teniendo un día difícil. Recuerda que @global.app_name está aquí para apoyarte."
+          "eng": "¡Gracias por notarlo! Lo que sentimos importa.\n \nMe da mucho gusto saber que las cosas van bien."
         },
         "quiz_1_feedback_4": {
-          "eng": "Lamento que estés teniendo un día difícil. Recuerda que @global.app_name está aquí para apoyarte."
+          "eng": "¡Gracias por notarlo! Lo que sentimos importa.\n\nLamento que estés teniendo un día difícil."
         },
         "quiz_1_feedback_5": {
-          "eng": "Lamento que estés teniendo un día difícil. Recuerda que @global.app_name está aquí para apoyarte."
+          "eng": "¡Gracias por notarlo! Lo que sentimos importa.\n\nLamento que estés teniendo un día difícil."
         },
         "quiz_1_feedback_6": {
-          "eng": "Lamento que estés teniendo un día difícil. Recuerda que @global.app_name está aquí para apoyarte."
+          "eng": "¡Gracias por notarlo! Lo que sentimos importa.\n\nLamento que estés teniendo un día difícil."
         },
         "quiz_1_question": {
           "eng": "¿Qué emoción sientes en este momento? Elige la que más se acerque."
@@ -63,7 +63,7 @@
           "eng": "Tranquilidad"
         },
         "quiz_1_option_3_text": {
-          "eng": "Preocupación"
+          "eng": "Gratitud"
         },
         "quiz_1_option_4_text": {
           "eng": "Enojo"
@@ -72,7 +72,7 @@
           "eng": "Tristeza"
         },
         "quiz_1_option_6_text": {
-          "eng": "Cansancio"
+          "eng": "Estrés"
         }
       },
       "category_id": "check_in",
@@ -82,7 +82,7 @@
       "quiz_1_option_3_image_asset": "images/faces/ok.svg",
       "quiz_1_option_4_image_asset": "images/faces/angry.svg",
       "quiz_1_option_5_image_asset": "images/faces/sad.svg",
-      "quiz_1_option_6_image_asset": "images/faces/tired.svg",
+      "quiz_1_option_6_image_asset": "images/faces/ok.svg",
       "text_1": "Toma un momento para conectar contigo.",
       "_translations": {
         "text_1": {},
@@ -100,19 +100,19 @@
         "quiz_1_option_5_text": {},
         "quiz_1_option_6_text": {}
       },
-      "quiz_1_feedback_1": "¡Maravilloso! Me da mucho gusto saber que las cosas van bien.",
-      "quiz_1_feedback_2": "¡Maravilloso! Me da mucho gusto saber que las cosas van bien.",
-      "quiz_1_feedback_3": "Lamento que estés teniendo un día difícil. Recuerda que @global.app_name está aquí para apoyarte.",
-      "quiz_1_feedback_4": "Lamento que estés teniendo un día difícil. Recuerda que @global.app_name está aquí para apoyarte.",
-      "quiz_1_feedback_5": "Lamento que estés teniendo un día difícil. Recuerda que @global.app_name está aquí para apoyarte.",
-      "quiz_1_feedback_6": "Lamento que estés teniendo un día difícil. Recuerda que @global.app_name está aquí para apoyarte.",
+      "quiz_1_feedback_1": "¡Gracias por notarlo! Lo que sentimos importa.\n \nMe da mucho gusto saber que las cosas van bien.",
+      "quiz_1_feedback_2": "¡Gracias por notarlo! Lo que sentimos importa.\n \nMe da mucho gusto saber que las cosas van bien.",
+      "quiz_1_feedback_3": "¡Gracias por notarlo! Lo que sentimos importa.\n \nMe da mucho gusto saber que las cosas van bien.",
+      "quiz_1_feedback_4": "¡Gracias por notarlo! Lo que sentimos importa.\n\nLamento que estés teniendo un día difícil.",
+      "quiz_1_feedback_5": "¡Gracias por notarlo! Lo que sentimos importa.\n\nLamento que estés teniendo un día difícil.",
+      "quiz_1_feedback_6": "¡Gracias por notarlo! Lo que sentimos importa.\n\nLamento que estés teniendo un día difícil.",
       "quiz_1_question": "¿Qué emoción sientes en este momento? Elige la que más se acerque.",
       "quiz_1_option_1_text": "Alegría",
       "quiz_1_option_2_text": "Tranquilidad",
-      "quiz_1_option_3_text": "Preocupación",
+      "quiz_1_option_3_text": "Gratitud",
       "quiz_1_option_4_text": "Enojo",
       "quiz_1_option_5_text": "Tristeza",
-      "quiz_1_option_6_text": "Cansancio",
+      "quiz_1_option_6_text": "Estrés",
       "completed": false,
       "version": 1
     },
@@ -261,7 +261,7 @@
           "eng": "Vamos a ver estas estrategias en la práctica."
         },
         "text_2": {
-          "eng": "_@data.characters.f1_padre.name está por empezar su tiempo para conectar con @data.characters.f1_hija_6.name._"
+          "eng": "@data.characters.f1_padre.name está por empezar su tiempo para conectar con @data.characters.f1_hija_6.name."
         },
         "character_1_text": {
           "eng": "Oye, amor, ahorita me gustaría pasar mi tiempo de calidad con @data.characters.f1_hija_6.name mientras tú le ayudas a @data.characters.f1_hijo_5.name con su tarea, ¿te parece?"
@@ -283,7 +283,7 @@
       "image_asset": "images/comic/relation/one_on_one_time_yc_mc_1.svg",
       "character_1_id": "f1_padre",
       "character_2_id": "f1_madre",
-      "text_2": "_@data.characters.f1_padre.name está por empezar su tiempo para conectar con @data.characters.f1_hija_6.name._",
+      "text_2": "@data.characters.f1_padre.name está por empezar su tiempo para conectar con @data.characters.f1_hija_6.name.",
       "character_1_text": "Oye, amor, ahorita me gustaría pasar mi tiempo de calidad con @data.characters.f1_hija_6.name mientras tú le ayudas a @data.characters.f1_hijo_5.name con su tarea, ¿te parece?",
       "character_2_text": "Sí, ¡me parece bien! Luego ya les preparamos para dormir.",
       "completed": false,
@@ -293,7 +293,7 @@
       "id": "explore_3",
       "_translatedFields": {
         "text_2": {
-          "eng": "_Mira cómo @data.characters.f1_padre.name deja elegir a @data.characters.f1_hija_6.name la actividad._"
+          "eng": "Mira cómo @data.characters.f1_padre.name deja elegir a @data.characters.f1_hija_6.name la actividad."
         },
         "character_1_text": {
           "eng": "¡Es nuestro tiempo para conectar! ¿Qué quieres que hagamos, @data.characters.f1_hija_6.name?"
@@ -311,7 +311,7 @@
       "image_asset": "images/comic/relation/one_on_one_time_yc_mc_2.svg",
       "character_1_id": "f1_padre",
       "character_2_id": "f1_hija_6",
-      "text_2": "_Mira cómo @data.characters.f1_padre.name deja elegir a @data.characters.f1_hija_6.name la actividad._",
+      "text_2": "Mira cómo @data.characters.f1_padre.name deja elegir a @data.characters.f1_hija_6.name la actividad.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
@@ -329,7 +329,7 @@
       "id": "explore_4",
       "_translatedFields": {
         "text_2": {
-          "eng": "_Fíjate cómo @data.characters.f1_padre.name juega con @data.characters.f1_hija_6.name dejándola guiar, sin decirle qué hacer._"
+          "eng": "Fíjate cómo @data.characters.f1_padre.name juega con @data.characters.f1_hija_6.name dejándola guiar, sin decirle qué hacer."
         },
         "character_1_text": {
           "eng": "Papá, este sombrero te puede servir."
@@ -347,7 +347,7 @@
       "image_asset": "images/comic/relation/one_on_one_time_yc_mc_3.svg",
       "character_1_id": "f1_hija_6",
       "character_2_id": "f1_padre",
-      "text_2": "_Fíjate cómo @data.characters.f1_padre.name juega con @data.characters.f1_hija_6.name dejándola guiar, sin decirle qué hacer._",
+      "text_2": "Fíjate cómo @data.characters.f1_padre.name juega con @data.characters.f1_hija_6.name dejándola guiar, sin decirle qué hacer.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
@@ -365,7 +365,7 @@
       "id": "explore_5",
       "_translatedFields": {
         "text_2": {
-          "eng": "_@data.characters.f1_padre.name también busca conectar con @data.characters.f1_hija_6.name reconociendo su creatividad._"
+          "eng": "@data.characters.f1_padre.name también busca conectar con @data.characters.f1_hija_6.name reconociendo su creatividad."
         },
         "character_1_text": {
           "eng": "¡Qué divertido quedó tu disfraz con paliacate y capa, @data.characters.f1_hija_6.name!"
@@ -380,7 +380,7 @@
       "image_asset": "images/comic/relation/one_on_one_time_yc_mc_4.svg",
       "character_1_id": "f1_padre",
       "character_2_id": "f1_hija_6",
-      "text_2": "_@data.characters.f1_padre.name también busca conectar con @data.characters.f1_hija_6.name reconociendo su creatividad._",
+      "text_2": "@data.characters.f1_padre.name también busca conectar con @data.characters.f1_hija_6.name reconociendo su creatividad.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
@@ -448,7 +448,7 @@
           "eng": "¡Ahora es tu turno!\n\nDurante esta semana reserva al menos 5 minutos de tiempo para conectar con @fields.child_name cada día, usando las estrategias que has aprendido. 😊"
         },
         "text_2": {
-          "eng": "_Recuerda que este es un rato especial entre ustedes, donde @fields.child_name puede elegir y liderar la actividad, sin que le corrijas ni apresures las cosas._"
+          "eng": "Recuerda que este es un rato especial entre ustedes, donde @fields.child_name puede elegir y liderar la actividad, sin que le corrijas ni apresures las cosas."
         },
         "quiz_1_question": {
           "eng": "¿Puedes intentarlo esta semana? 📅"
@@ -457,13 +457,13 @@
           "eng": "Sí"
         },
         "quiz_1_feedback_1": {
-          "eng": "¡Muy bien! Usa las estrategias que aprendiste hoy y disfrútenlo. 🎉\n\n\nSi compartes la crianza con alguien más, compártele estas estrategias para que también pueda pasar tiempo de calidad con @fields.child_name."
+          "eng": "¡Excelente! Usa las estrategias que aprendiste hoy y disfrútenlo. 🎉\n\n\nSi compartes la crianza con alguien más, compártele estas estrategias para que también pueda pasar tiempo de calidad con @fields.child_name."
         },
         "quiz_1_option_2_text": {
           "eng": "Lo intentaré"
         },
         "quiz_1_feedback_2": {
-          "eng": "¡Muy bien! Usa las estrategias que aprendiste hoy y disfrútenlo. 🙌\n\n\nSi compartes la crianza con alguien más, compártele estas estrategias para que también pueda pasar tiempo de calidad con @fields.child_name."
+          "eng": "¡Muy bien! Trata de encontrar el momento adecuado. Usa las estrategias que aprendiste hoy y disfrútenlo. 🙌\n\n\nSi compartes la crianza con alguien más, compártele estas estrategias para que también pueda pasar tiempo de calidad con @fields.child_name."
         },
         "quiz_1_option_3_text": {
           "eng": "No"
@@ -474,7 +474,7 @@
       },
       "category_id": "home_activity",
       "nested": false,
-      "quiz_1_feedback_1": "¡Muy bien! Usa las estrategias que aprendiste hoy y disfrútenlo. 🎉\n\n\nSi compartes la crianza con alguien más, compártele estas estrategias para que también pueda pasar tiempo de calidad con @fields.child_name.",
+      "quiz_1_feedback_1": "¡Excelente! Usa las estrategias que aprendiste hoy y disfrútenlo. 🎉\n\n\nSi compartes la crianza con alguien más, compártele estas estrategias para que también pueda pasar tiempo de calidad con @fields.child_name.",
       "_translations": {
         "quiz_1_feedback_1": {},
         "quiz_1_feedback_2": {},
@@ -486,7 +486,7 @@
         "text_1_facilitator": {},
         "text_2": {}
       },
-      "quiz_1_feedback_2": "¡Muy bien! Usa las estrategias que aprendiste hoy y disfrútenlo. 🙌\n\n\nSi compartes la crianza con alguien más, compártele estas estrategias para que también pueda pasar tiempo de calidad con @fields.child_name.",
+      "quiz_1_feedback_2": "¡Muy bien! Trata de encontrar el momento adecuado. Usa las estrategias que aprendiste hoy y disfrútenlo. 🙌\n\n\nSi compartes la crianza con alguien más, compártele estas estrategias para que también pueda pasar tiempo de calidad con @fields.child_name.",
       "quiz_1_feedback_3": "¡Lo entiendo! Puede ser difícil encontrar un momento. ❤️‍🩹\n\n\nRecuerda puedes empezar con solo 5 minutos. Si compartes la crianza con alguien más, compártele estas estrategias para que también pueda pasar tiempo de calidad con @fields.child_name",
       "quiz_1_question": "¿Puedes intentarlo esta semana? 📅",
       "quiz_1_option_1_text": "Sí",
@@ -494,7 +494,7 @@
       "quiz_1_option_3_text": "No",
       "attached_single_doc": "https://docs.google.com/document/d/1-tg-SOLlmRdOvDnL5KJQSkXQ2eD6NAzEKZq3fQfX86E",
       "text_1_facilitator": "¡Ahora es tu turno!\n\nDurante esta semana reserva al menos 5 minutos de tiempo para conectar con @fields.child_name cada día, usando las estrategias que has aprendido. 😊",
-      "text_2": "_Recuerda que este es un rato especial entre ustedes, donde @fields.child_name puede elegir y liderar la actividad, sin que le corrijas ni apresures las cosas._",
+      "text_2": "Recuerda que este es un rato especial entre ustedes, donde @fields.child_name puede elegir y liderar la actividad, sin que le corrijas ni apresures las cosas.",
       "completed": false,
       "version": 1
     }

@@ -1,0 +1,297 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "ab_testing",
+  "flow_name": "po_base_question_ab_po_scale_3",
+  "override_target": "proximal_outcome_base_question",
+  "override_condition": "@fields.ab_mode_po_scale == \"all_3\" || (@fields.ab_mode_po_scale == \"test\" && @fields.ab_arm_po_scale == \"3\")",
+  "status": "released",
+  "comment": "3 replaces 5 when the mode is all_3, or the mode is test and the caregiver's arm is 3. ",
+  "rows": [
+    {
+      "name": "speaker_position",
+      "value": "left",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "variant",
+      "value": "gray",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "facilitator_id",
+      "value": "@fields.facilitator_id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "facilitator_data",
+      "value": "characters.@local.facilitator_id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "facilitator_row",
+      "value": "@data.@local.facilitator_data",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "speaker_name",
+      "value": "@local.facilitator_row.name",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "speaker_image_asset",
+      "value": "@local.facilitator_row.image_asset",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "show_previous",
+      "value": true,
+      "exclude_from_translation": true
+    },
+    {
+      "name": "qs_row_id",
+      "value": "id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "proximal_data_list_name",
+      "value": "data list name",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "question_type",
+      "value": "type"
+    },
+    {
+      "name": "entry_point_count ",
+      "value": "@fields.proximal_outcome_time_point_count",
+      "condition": "@fields.proximal_outcome_time_point == \"baseline\""
+    },
+    {
+      "name": "entry_point_count ",
+      "value": "@calc(Number(@fields.proximal_outcome_time_point_count) - 1)",
+      "condition": "@fields.proximal_outcome_time_point != \"baseline\""
+    },
+    {
+      "name": "prev_answer"
+    },
+    {
+      "type": "text",
+      "value": "count: @local.entry_point_count \nquestion_type:  @local.question_type\nentry_point : @fields.proximal_outcome_time_point",
+      "condition": false
+    },
+    {
+      "type": "data_items",
+      "name": "get_id",
+      "value": "proximal_outcome_data",
+      "action_list": "data_changed | set_field: curr_prox_out_row_id: @items[0]?.id;\ndata_changed | set_local: prev_answer: @items[0]?.value;",
+      "parameter_list": "filter: (@item.question_type== @local.question_type && @item.entry_point_count == @local.entry_point_count && @item.entry_point == @fields.proximal_outcome_time_point);limit: 1;",
+      "exclude_from_translation": true,
+      "comment": "@fields.curr_prox_out_row_id== \"new\""
+    },
+    {
+      "type": "text",
+      "value": "prev answer: @local.prev_answer",
+      "condition": false
+    },
+    {
+      "name": "proximal_data_row",
+      "value": "@local.proximal_data_list_name.@local.qs_row_id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "proximal_data",
+      "value": "@data.@local.proximal_data_row",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "normalising_statement_column_name",
+      "value": "normalising_statement",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "normalising_statement_column",
+      "value": "proximal_data.@local.normalising_statement_column_name",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "normalising_statement",
+      "value": "@local.@local.normalising_statement_column",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "question_column_name",
+      "value": "question",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "question_column",
+      "value": "proximal_data.@local.question_column_name",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "question",
+      "value": "@local.@local.question_column",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_1_column_name",
+      "value": "option_1_text",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_1_column",
+      "value": "proximal_data.@local.option_1_column_name",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_1",
+      "value": "@local.@local.option_1_column",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_2_column_name",
+      "value": "option_2_text",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_2_column",
+      "value": "proximal_data.@local.option_2_column_name",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_2",
+      "value": "@local.@local.option_2_column",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_3_column_name",
+      "value": "option_3_text",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_3_column",
+      "value": "proximal_data.@local.option_3_column_name",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_3",
+      "value": "@local.@local.option_3_column",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_4_column_name",
+      "value": "option_4_text",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_4_column",
+      "value": "proximal_data.@local.option_4_column_name",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_4",
+      "value": "@local.@local.option_4_column",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_5_column_name",
+      "value": "option_5_text",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_5_column",
+      "value": "proximal_data.@local.option_5_column_name",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_5",
+      "value": "@local.@local.option_5_column",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_6_column_name",
+      "value": "option_6_text",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_6_column",
+      "value": "proximal_data.@local.option_6_column_name",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_6",
+      "value": "@local.@local.option_6_column",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text_bubble",
+      "name": "text_bubble",
+      "value": "@local.normalising_statement",
+      "parameter_list": "speaker_image_asset: @local.speaker_image_asset;\nspeaker_name: @local.speaker_name;\nspeaker_position: @local.speaker_position;\nvariant: @local.variant;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "question",
+      "value": "@local.question",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "options_list",
+      "value": "name: 1 | text:@local.option_1; \nname: 3 | text:@local.option_3; \nname: 5 | text:@local.option_5; \nname: 6 | text:@local.option_6;",
+      "exclude_from_translation": true,
+      "comment": " 3 options + prefer not to say; numbers 1/3/5/6 kept so values line up with the 5-option scale (score = (value-1)/4, 6 = missing)."
+    },
+    {
+      "type": "radio_list",
+      "name": "outcome_select",
+      "value": "@local.prev_answer",
+      "parameter_list": "variant: card;\nanswer_list: @local.options_list;\noptions_key: name;\noptions_value: text;",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "completed_enabled",
+      "value": "!!@local.outcome_select",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_completed",
+      "value": "@global.continue",
+      "action_list": "click | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nvalue: @local.outcome_select,\nscale: @calc(@local.options_list.length - 1),\nexited_ts: @calc(now());\nclick | emit: completed;",
+      "parameter_list": "style: navigation;\ndisabled: !@local.completed_enabled",
+      "condition": "@fields.proximal_outcome_time_point == \"baseline\"",
+      "style_list": "flex: 1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "row: @fields.curr_prox_out_row_id\ntype: @local.question_type\nentry_point == @fields.proximal_outcome_time_point\nselection: @local.outcome_select",
+      "condition": false
+    },
+    {
+      "type": "begin_template",
+      "name": "nav_buttons",
+      "value": "proximal_outcome_nav_buttons",
+      "action_list": "completed | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nvalue: @local.outcome_select,\nscale: @calc(@local.options_list.length - 1),\nexited_ts: @calc(now());\n\ncompleted | emit: completed;\n\nuncompleted | emit: uncompleted;",
+      "condition": "@fields.proximal_outcome_time_point != \"baseline\"",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "show_previous",
+      "value": "!!@local.show_previous",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "show_next",
+      "value": true
+    },
+    {
+      "name": "next_disabled",
+      "value": "!@local.completed_enabled"
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

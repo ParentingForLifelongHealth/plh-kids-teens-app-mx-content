@@ -1,18 +1,18 @@
 {
   "flow_type": "global",
   "flow_subtype": "onboarding",
-  "flow_name": "onboarding_page_11_child_gender",
+  "flow_name": "onboarding_page_12_child_gender",
   "status": "released",
   "rows": [
     {
       "type": "declare_global_constant",
       "name": "facilitator_message_child_gender",
-      "value": "Gracias. Queremos conocer a @fields.child_name mejor."
+      "value": "¡Gracias por compartir! Nos gustaría conocer a @fields.child_name un poco mejor."
     },
     {
       "type": "declare_global_constant",
       "name": "question_child_gender",
-      "value": "¿@fields.child_name es niño o niña?"
+      "value": "¿Cuál es el género de @fields.child_name?"
     },
     {
       "type": "declare_global_constant",

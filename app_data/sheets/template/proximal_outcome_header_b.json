@@ -156,9 +156,9 @@
           "trigger": "click",
           "action_id": "emit",
           "args": [
-            "force_reload"
+            "completed"
           ],
-          "_raw": "click | emit: force_reload"
+          "_raw": "click | emit: completed"
         }
       ],
       "parameter_list": {
@@ -281,9 +281,9 @@
           "trigger": "click",
           "action_id": "emit",
           "args": [
-            "force_reload"
+            "completed"
           ],
-          "_raw": "click | emit: force_reload"
+          "_raw": "click | emit: completed"
         }
       ],
       "parameter_list": {

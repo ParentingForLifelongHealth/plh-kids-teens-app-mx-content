@@ -1273,11 +1273,12 @@
           "trigger": "click",
           "action_id": "set_data",
           "args": [],
-          "_raw": "click | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nvalue: @local.outcome_select,\nexited_ts: @calc(now())",
+          "_raw": "click | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nvalue: @local.outcome_select,\nscale: @calc(@local.options_list.length - 1),\nexited_ts: @calc(now())",
           "params": {
             "_list_id": "proximal_outcome_data",
             "_id": "@fields.curr_prox_out_row_id",
             "value": "@local.outcome_select",
+            "scale": "@calc(@local.options_list.length - 1)",
             "exited_ts": "@calc(now())"
           }
         },
@@ -1313,19 +1314,25 @@
           "0": {
             "_raw": [
               {
-                "fullExpression": "click | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nvalue: @local.outcome_select,\nexited_ts: @calc(now())",
+                "fullExpression": "click | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nvalue: @local.outcome_select,\nscale: @calc(@local.options_list.length - 1),\nexited_ts: @calc(now())",
                 "matchedExpression": "@fields.curr_prox_out_row_id",
                 "type": "fields",
                 "fieldName": "curr_prox_out_row_id"
               },
               {
-                "fullExpression": "click | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nvalue: @local.outcome_select,\nexited_ts: @calc(now())",
+                "fullExpression": "click | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nvalue: @local.outcome_select,\nscale: @calc(@local.options_list.length - 1),\nexited_ts: @calc(now())",
                 "matchedExpression": "@local.outcome_select",
                 "type": "local",
                 "fieldName": "outcome_select"
               },
               {
-                "fullExpression": "click | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nvalue: @local.outcome_select,\nexited_ts: @calc(now())",
+                "fullExpression": "click | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nvalue: @local.outcome_select,\nscale: @calc(@local.options_list.length - 1),\nexited_ts: @calc(now())",
+                "matchedExpression": "@local.options_list.length",
+                "type": "local",
+                "fieldName": "options_list"
+              },
+              {
+                "fullExpression": "click | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nvalue: @local.outcome_select,\nscale: @calc(@local.options_list.length - 1),\nexited_ts: @calc(now())",
                 "matchedExpression": "@calc(now())",
                 "type": "calc",
                 "fieldName": "now()"
@@ -1346,6 +1353,20 @@
                   "matchedExpression": "@local.outcome_select",
                   "type": "local",
                   "fieldName": "outcome_select"
+                }
+              ],
+              "scale": [
+                {
+                  "fullExpression": "@calc(@local.options_list.length - 1)",
+                  "matchedExpression": "@local.options_list.length",
+                  "type": "local",
+                  "fieldName": "options_list"
+                },
+                {
+                  "fullExpression": "@calc(@local.options_list.length - 1)",
+                  "matchedExpression": "@calc(@local.options_list.length - 1)",
+                  "type": "calc",
+                  "fieldName": "@local.options_list.length - 1"
                 }
               ],
               "exited_ts": [
@@ -1390,9 +1411,16 @@
           "action_list.0._raw",
           "action_list.0.params.value"
         ],
+        "@local.options_list.length": [
+          "action_list.0._raw",
+          "action_list.0.params.scale"
+        ],
         "@calc(now())": [
           "action_list.0._raw",
           "action_list.0.params.exited_ts"
+        ],
+        "@calc(@local.options_list.length - 1)": [
+          "action_list.0.params.scale"
         ],
         "!@local.completed_enabled": [
           "parameter_list.disabled"
@@ -1463,11 +1491,12 @@
           "trigger": "completed",
           "action_id": "set_data",
           "args": [],
-          "_raw": "completed | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nvalue: @local.outcome_select,\nexited_ts: @calc(now())",
+          "_raw": "completed | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nvalue: @local.outcome_select,\nscale: @calc(@local.options_list.length - 1),\nexited_ts: @calc(now())",
           "params": {
             "_list_id": "proximal_outcome_data",
             "_id": "@fields.curr_prox_out_row_id",
             "value": "@local.outcome_select",
+            "scale": "@calc(@local.options_list.length - 1)",
             "exited_ts": "@calc(now())"
           }
         },
@@ -1553,19 +1582,25 @@
           "0": {
             "_raw": [
               {
-                "fullExpression": "completed | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nvalue: @local.outcome_select,\nexited_ts: @calc(now())",
+                "fullExpression": "completed | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nvalue: @local.outcome_select,\nscale: @calc(@local.options_list.length - 1),\nexited_ts: @calc(now())",
                 "matchedExpression": "@fields.curr_prox_out_row_id",
                 "type": "fields",
                 "fieldName": "curr_prox_out_row_id"
               },
               {
-                "fullExpression": "completed | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nvalue: @local.outcome_select,\nexited_ts: @calc(now())",
+                "fullExpression": "completed | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nvalue: @local.outcome_select,\nscale: @calc(@local.options_list.length - 1),\nexited_ts: @calc(now())",
                 "matchedExpression": "@local.outcome_select",
                 "type": "local",
                 "fieldName": "outcome_select"
               },
               {
-                "fullExpression": "completed | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nvalue: @local.outcome_select,\nexited_ts: @calc(now())",
+                "fullExpression": "completed | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nvalue: @local.outcome_select,\nscale: @calc(@local.options_list.length - 1),\nexited_ts: @calc(now())",
+                "matchedExpression": "@local.options_list.length",
+                "type": "local",
+                "fieldName": "options_list"
+              },
+              {
+                "fullExpression": "completed | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nvalue: @local.outcome_select,\nscale: @calc(@local.options_list.length - 1),\nexited_ts: @calc(now())",
                 "matchedExpression": "@calc(now())",
                 "type": "calc",
                 "fieldName": "now()"
@@ -1586,6 +1621,20 @@
                   "matchedExpression": "@local.outcome_select",
                   "type": "local",
                   "fieldName": "outcome_select"
+                }
+              ],
+              "scale": [
+                {
+                  "fullExpression": "@calc(@local.options_list.length - 1)",
+                  "matchedExpression": "@local.options_list.length",
+                  "type": "local",
+                  "fieldName": "options_list"
+                },
+                {
+                  "fullExpression": "@calc(@local.options_list.length - 1)",
+                  "matchedExpression": "@calc(@local.options_list.length - 1)",
+                  "type": "calc",
+                  "fieldName": "@local.options_list.length - 1"
                 }
               ],
               "exited_ts": [
@@ -1617,9 +1666,16 @@
           "action_list.0._raw",
           "action_list.0.params.value"
         ],
+        "@local.options_list.length": [
+          "action_list.0._raw",
+          "action_list.0.params.scale"
+        ],
         "@calc(now())": [
           "action_list.0._raw",
           "action_list.0.params.exited_ts"
+        ],
+        "@calc(@local.options_list.length - 1)": [
+          "action_list.0.params.scale"
         ],
         "@fields.proximal_outcome_time_point": [
           "condition"
@@ -1631,5 +1687,8 @@
     "name": "kids_teens_global V3",
     "path": "templates/PLH proximal outcomes.xlsx",
     "url": "https://docs.google.com/spreadsheets/d/17Ti5gmQDWeKBrprr75UlTLVG7VCdYXQtLG31Ch8O4JE"
+  },
+  "_overrides": {
+    "po_base_question_ab_po_scale_3": "@fields.ab_mode_po_scale == \"all_3\" || (@fields.ab_mode_po_scale == \"test\" && @fields.ab_arm_po_scale == \"3\")"
   }
 }

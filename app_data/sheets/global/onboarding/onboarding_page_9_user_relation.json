@@ -1,29 +1,29 @@
 {
   "flow_type": "global",
   "flow_subtype": "onboarding",
-  "flow_name": "onboarding_page_11_child_gender",
+  "flow_name": "onboarding_page_9_user_relation",
   "status": "released",
   "rows": [
     {
       "type": "declare_global_constant",
-      "name": "facilitator_message_child_gender",
-      "value": "Gracias. Queremos conocer a @fields.child_name mejor.",
+      "name": "facilitator_message_user_relation",
+      "value": "Ahora, nos gustaría saber un poco sobre tu familia. Así podremos compartirte consejos que se adapten a ti.",
       "_translations": {
         "value": {}
       }
     },
     {
       "type": "declare_global_constant",
-      "name": "question_child_gender",
-      "value": "¿@fields.child_name es niño o niña?",
+      "name": "question_user_relationship",
+      "value": "¿Cuál es tu estado civil?",
       "_translations": {
         "value": {}
       }
     },
     {
       "type": "declare_global_constant",
-      "name": "placeholder_child_gender",
-      "value": "Selecciona una opción",
+      "name": "placeholder_user_relationship",
+      "value": "Selecciona un estado civil",
       "_translations": {
         "value": {}
       }

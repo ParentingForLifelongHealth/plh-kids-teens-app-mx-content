@@ -254,7 +254,7 @@
       "type": "button",
       "name": "button_completed",
       "value": "@global.continue",
-      "action_list": "click | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nvalue: @local.outcome_select,\nexited_ts: @calc(now());\nclick | emit: completed;",
+      "action_list": "click | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nvalue: @local.outcome_select,\nscale: @calc(@local.options_list.length - 1),\nexited_ts: @calc(now());\nclick | emit: completed;",
       "parameter_list": "style: navigation;\ndisabled: !@local.completed_enabled",
       "condition": "@fields.proximal_outcome_time_point == \"baseline\"",
       "style_list": "flex: 1",
@@ -269,7 +269,7 @@
       "type": "begin_template",
       "name": "nav_buttons",
       "value": "proximal_outcome_nav_buttons",
-      "action_list": "completed | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nvalue: @local.outcome_select,\nexited_ts: @calc(now());\n\ncompleted | emit: completed;\n\nuncompleted | emit: uncompleted;",
+      "action_list": "completed | set_data |\n_list_id: proximal_outcome_data,\n_id: @fields.curr_prox_out_row_id,\nvalue: @local.outcome_select,\nscale: @calc(@local.options_list.length - 1),\nexited_ts: @calc(now());\n\ncompleted | emit: completed;\n\nuncompleted | emit: uncompleted;",
       "condition": "@fields.proximal_outcome_time_point != \"baseline\"",
       "exclude_from_translation": true
     },
