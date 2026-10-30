@@ -7,19 +7,6 @@
     {
       "id": "female",
       "name": "female",
-      "text": "Hombre",
-      "_translations": {
-        "text": {}
-      },
-      "_translatedFields": {
-        "text": {
-          "eng": "Hombre"
-        }
-      }
-    },
-    {
-      "id": "male",
-      "name": "male",
       "text": "Mujer",
       "_translations": {
         "text": {}
@@ -31,8 +18,21 @@
       }
     },
     {
+      "id": "male",
+      "name": "male",
+      "text": "Hombre",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Hombre"
+        }
+      }
+    },
+    {
       "id": "other",
-      "name": "other",
+      "name": "non_binary",
       "text": "Persona no binaria",
       "_translations": {
         "text": {}

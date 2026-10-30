@@ -18,27 +18,27 @@
     {
       "id": "intro_2",
       "category_id": "intro",
-      "text_1_facilitator::eng": "Aquí exploraremos cómo el tiempo para conectar puede fortalecer la relación entre ustedes y mostrarle lo mucho que te importa. ¡Puedes empezar con 5 minutos cada día! 📅"
+      "text_1_facilitator::eng": "Aquí exploraremos cómo el tiempo para conectar puede fortalecer la relación entre ustedes y mostrarle lo mucho que te importa. \n\n¡Puedes empezar con 5 minutos cada día! 📅"
     },
     {
       "id": "intro_3",
       "category_id": "intro",
       "text_1_facilitator::eng": "Antes de empezar, reflexionemos un momento📝",
-      "quiz_1_question::eng": "Verdadero o falso: Durante el tiempo para conectar con @fields.child_name necesito tener siempre un plan y saber qué actividades haremos.",
+      "quiz_1_question::eng": "Verdadero o falso: Durante el tiempo para conectar con @fields.child_name, necesito siempre tener un plan y saber qué actividades haremos.",
       "quiz_1_option_1_text::eng": "Verdadero",
-      "quiz_1_feedback_1::eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\n\nEl único plan que necesitas es dejar que te comparta qué le gustaría hacer. @fields.child_name puede guiar la actividad siempre y cuando sea segura. Esto aumentará su confianza y hará más probable que disfrute pasar tiempo contigo.",
+      "quiz_1_feedback_1::eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\n\nEn realidad, solo necesitas que @fields.child_name te comparta qué le gustaría hacer y dejarle guiar la actividad, siempre y cuando sea segura.\n\nEsto aumentará su confianza y hará más probable que disfrute pasar tiempo contigo.",
       "quiz_1_option_2_text::eng": "Falso",
-      "quiz_1_feedback_2::eng": "🎉 ¡Tienes razón!\n\n\nEl único plan que necesitas es dejar que te comparta qué le gustaría hacer. @fields.child_name puede guiar la actividad siempre y cuando sea segura. Esto aumentará su confianza y hará más probable que disfrute pasar tiempo contigo."
+      "quiz_1_feedback_2::eng": "🎉 ¡Tienes razón!\n\n\nEn realidad, solo necesitas que @fields.child_name te comparta qué le gustaría hacer y dejarle guiar la actividad, siempre y cuando sea segura.\n\nEsto aumentará su confianza y hará más probable que disfrute pasar tiempo contigo."
     },
     {
       "id": "intro_4",
       "category_id": "intro",
       "text_1_facilitator::eng": "¡Una pregunta más!",
-      "quiz_1_question::eng": "Verdadero o falso: Aunque otras personas también cuiden a @fields.child_name, tu tiempo para conectar es indispensable para fortalecer la relación, incluso si solo son 5 minutos diarios.",
+      "quiz_1_question::eng": "Verdadero o falso: Aunque otras personas también cuiden a @fields.child_name, tu tiempo para conectar es indispensable, incluso si solo son 5 minutos diarios.",
       "quiz_1_option_1_text::eng": "Verdadero",
-      "quiz_1_feedback_1::eng": "🎉 ¡Tienes razón!\n\n\nTu tiempo para conectar con @fields.child_name es único y no puede ser reemplazado por nadie más. De todas formas, si compartes los cuidados con alguien más, cuéntale qué significa el tiempo para conectar e invítale a empezar con 5 minutos diarios también. Así se construye confianza, cooperación y comunicación entre todas y todos en casa.",
+      "quiz_1_feedback_1::eng": "🎉 ¡Tienes razón!\n\n\nTu tiempo para conectar con @fields.child_name es único y muy importante.\n\nSi compartes los cuidados con alguien más, puedes contarle sobre el tiempo para conectar e invitarle a empezar con sus 5 minutos diarios también.",
       "quiz_1_option_2_text::eng": "Falso",
-      "quiz_1_feedback_2::eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\n\nTu tiempo para conectar con @fields.child_name es único y no puede ser reemplazado por nadie más. De todas formas, si compartes los cuidados con alguien más, cuéntale qué significa el tiempo para conectar e invítale a empezar con 5 minutos diarios también. Así se construye confianza, cooperación y comunicación entre todas y todos en casa."
+      "quiz_1_feedback_2::eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\n\nTu tiempo para conectar con @fields.child_name es único y muy importante.\n\nSi compartes los cuidados con alguien más, puedes contarle sobre el tiempo para conectar e invitarle a empezar con sus 5 minutos diarios también."
     },
     {
       "id": "explore_1",
@@ -51,7 +51,7 @@
       "category_id": "explore",
       "text_1_facilitator::eng": "Vamos a ver estas estrategias en la práctica.",
       "image_asset": "images/comic/relation/one_on_one_time_t_fc_1.svg",
-      "text_2::eng": "_Mira cómo @data.characters.f1_madre.name se pone de acuerdo con @data.characters.f1_hija_11.name sobre su tiempo para conectar_",
+      "text_2::eng": "Mira cómo @data.characters.f1_madre.name se pone de acuerdo con @data.characters.f1_hija_11.name sobre su tiempo para conectar.",
       "character_1_id": "f1_madre",
       "character_1_text::eng": "¡Hola, @data.characters.f1_hija_11.name! Quisiera pasar un rato contigo antes de la cena, ¿qué te gustaría hacer?",
       "character_2_id": "f1_hija_11",
@@ -63,7 +63,7 @@
       "id": "explore_3",
       "category_id": "explore",
       "image_asset": "images/comic/relation/one_on_one_time_t_fc_2.svg",
-      "text_2::eng": "_Fíjate cómo @data.characters.f1_madre.name muestra interés por lo que está haciendo data.characters.f1_hija_11.name y acepta pasar su tiempo para conectar más tarde._",
+      "text_2::eng": "Fíjate cómo @data.characters.f1_madre.name muestra interés por lo que está haciendo data.characters.f1_hija_11.name y acepta pasar su tiempo para conectar más tarde.",
       "character_1_id": "f1_madre",
       "character_1_text::eng": "Oye, ¡parece que tienes un gran proyecto de construcción con todo este cartón!",
       "character_2_id": "f1_hija_11",
@@ -75,7 +75,7 @@
       "id": "explore_4",
       "category_id": "explore",
       "image_asset": "images/comic/relation/one_on_one_time_t_fc_3.svg",
-      "text_2::eng": "_Un rato después_",
+      "text_2::eng": "Un rato después...",
       "character_1_id": "f1_madre",
       "character_1_text::eng": "¡Guau! Te quedó súper estable, ni parecen materiales reciclados.",
       "character_2_id": "f1_hija_11",
@@ -85,7 +85,7 @@
       "id": "explore_5",
       "category_id": "explore",
       "image_asset": "images/comic/relation/one_on_one_time_t_fc_3.svg",
-      "text_2::eng": "_Observa cómo @data.characters.f1_madre.name la deja elegir qué hacer en su tiempo para conectar._",
+      "text_2::eng": "Observa cómo @data.characters.f1_madre.name la deja elegir qué hacer en su tiempo para conectar.",
       "character_1_id": "f1_madre",
       "character_1_text::eng": "¿Lista para pasar un rato juntos? ¿Qué se te antoja hacer?",
       "character_2_id": "f1_hija_11",
@@ -95,7 +95,7 @@
       "id": "explore_6",
       "category_id": "explore",
       "image_asset": "images/comic/relation/one_on_one_time_t_fc_4.svg",
-      "text_2::eng": "_@data.characters.f1_madre.name busca conectar con @data.characters.f1_hija_11.name, dándole espacio para expresarse y escuchando con interés lo que quiere contarle._",
+      "text_2::eng": "@data.characters.f1_madre.name busca conectar con @data.characters.f1_hija_11.name, dándole espacio para expresarse y escuchando con interés lo que quiere contarle.",
       "character_1_id": "f1_madre",
       "character_1_text::eng": "Y entonces, ¿cómo te fue hoy?",
       "character_2_id": "f1_hija_11",
@@ -121,7 +121,7 @@
       "id": "home_activity_1",
       "category_id": "home_activity",
       "text_1_facilitator::eng": "¡Ahora es tu turno!\n\nDurante esta semana reserva al menos 5 minutos de tiempo para conectar con @fields.child_name cada día, usando las estrategias que has aprendido. 😊",
-      "text_2::eng": "_Recuerda que este es un rato especial entre ustedes. @fields.child_name puede elegir y dirigir una actividad segura, mientras tú le prestas toda tu atención, sin corregir ni apresurarse._",
+      "text_2::eng": "Recuerda que este es un rato especial entre ustedes. @fields.child_name puede elegir y dirigir una actividad segura, mientras tú le prestas toda tu atención, sin corregir ni apresurarse.",
       "quiz_1_question::eng": "¿Puedes intentarlo esta semana? 📅",
       "quiz_1_option_1_text::eng": "Sí",
       "quiz_1_feedback_1::eng": "¡Muy bien! Usa las estrategias que aprendiste hoy y disfrútenlo. 🎉\n\n\nSi compartes la crianza con alguien más, compártele estas estrategias para que también pueda pasar tiempo para conectar con @fields.child_name.",

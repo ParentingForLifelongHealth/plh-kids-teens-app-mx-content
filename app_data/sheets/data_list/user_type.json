@@ -5,61 +5,61 @@
   "data_list_name": "user_type",
   "rows": [
     {
-      "id": "parent",
-      "name": "parent",
-      "text": "Madre, padre o persona cuidadora",
+      "id": "caregiver",
+      "name": "caregiver",
+      "text": "Parent or caregiver",
       "_translations": {
         "text": {}
       },
       "_translatedFields": {
         "text": {
-          "eng": "Madre, padre o persona cuidadora"
+          "eng": "Parent or caregiver"
         }
       }
     },
     {
       "id": "facilitator",
       "name": "facilitator",
-      "text": "Persona facilitadora",
+      "text": "Facilitator",
       "_translations": {
         "text": {}
       },
       "_translatedFields": {
         "text": {
-          "eng": "Persona facilitadora"
+          "eng": "Facilitator"
         }
       }
     },
     {
       "id": "tester",
       "name": "tester",
-      "text": "Persona evaluadora del sistema",
+      "text": "System tester",
       "_translations": {
         "text": {}
       },
       "_translatedFields": {
         "text": {
-          "eng": "Persona evaluadora del sistema"
+          "eng": "System tester"
         }
       }
     },
     {
       "id": "other",
       "name": "other",
-      "text": "Ninguna de las anteriores",
+      "text": "None of the above",
       "_translations": {
         "text": {}
       },
       "_translatedFields": {
         "text": {
-          "eng": "Ninguna de las anteriores"
+          "eng": "None of the above"
         }
       }
     }
   ],
   "_source": {
-    "name": "kids_teens_mx",
-    "path": "data/MX onboarding.xlsx",
-    "url": "https://docs.google.com/spreadsheets/d/1VOolSeQCn71-GP1JbiDp2zqWg4ZZYqrtHIAjY7h4A-A"
+    "name": "kids_teens_global V3",
+    "path": "templates/kids app_launch.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/14Qbr1G5G7J4FClpbONFdELSbiLNmX-7IKMCTjnYYEV8"
   }
 }

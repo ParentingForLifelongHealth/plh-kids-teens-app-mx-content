@@ -1,0 +1,14 @@
+{
+  "flow_type": "global",
+  "flow_subtype": "ab_testing",
+  "flow_name": "ab_test_global_po_scale",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "ab_mode_po_scale",
+      "value": "test",
+      "exclude_from_translation": true
+    }
+  ]
+}

@@ -54,6 +54,11 @@
       "comment": "Always the 14-day check-in after programme completion."
     },
     {
+      "name": "po_opened",
+      "value": false,
+      "comment": "previously: home only decides whether to show the check-in button when it's drawn. The check-in opens in a nav_stack modal, and closing a modal doesn't redraw the page behind it. The check-in's timestamps (the *_viewed_ts stamps) are only set later, inside the modal, so home keeps showing the old check-in button.\nsheet workaround:Home remembers that the check-in button was used and swaps it for the up-next button while the check-in is still open. The next time home is drawn, it's recalculated from the fields as usual.\ncode fix (the real solution, for a developer): When the last nav stack closes, re-render the page underneath. "
+    },
+    {
       "name": "hp_uncompleted_loaded",
       "value": false,
       "comment": " Set once loop_2 has loaded, so no button shows before the home-practice data is known."
@@ -214,7 +219,8 @@
       "type": "begin_template",
       "name": "proximal_outcome",
       "value": "proximal_outcome_header_b",
-      "condition": "(@local.has_in_progress == 0) && @local.po_due",
+      "action_list": "completed | set_local: po_opened: true;",
+      "condition": "(@local.has_in_progress == 0) && @local.po_due && !@local.po_opened",
       "comment": "Check-in button: only when no module is in progress and a check-in is due."
     },
     {
@@ -227,7 +233,7 @@
     {
       "type": "begin_template",
       "value": "header_button",
-      "condition": "!!@local.up_next.module_id && ((@local.has_in_progress > 0) || !@local.po_due)",
+      "condition": "!!@local.up_next.module_id && ((@local.has_in_progress > 0) || !@local.po_due || @local.po_opened)",
       "exclude_from_translation": true,
       "comment": " also hidden while the check-in button shows. With no check-ins (po_due false) it behaves as before."
     },

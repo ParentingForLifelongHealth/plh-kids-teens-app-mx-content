@@ -1,28 +1,28 @@
 {
   "flow_type": "global",
   "flow_subtype": "onboarding",
-  "flow_name": "onboarding_page_7_user_referral",
+  "flow_name": "onboarding_page_7_occupation",
   "status": "released",
   "rows": [
     {
       "type": "declare_global_constant",
-      "name": "facilitator_message_user_referral",
-      "value": "Saber cómo te enteraste de @global.app_name nos ayuda a llegar a más familias.",
+      "name": "facilitator_message_occupation",
+      "value": "¡Una pregunta más sobre ti!",
       "_translations": {
         "value": {}
       }
     },
     {
       "type": "declare_global_constant",
-      "name": "question_user_referral",
-      "value": "Cuéntanos, ¿cómo te enteraste de @global.app_name?",
+      "name": "question_occupation",
+      "value": "¿A qué te dedicas?",
       "_translations": {
         "value": {}
       }
     },
     {
       "type": "declare_global_constant",
-      "name": "placeholder_user_referral",
+      "name": "placeholder_occupation",
       "value": "Selecciona una opción",
       "_translations": {
         "value": {}

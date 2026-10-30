@@ -1,37 +1,29 @@
 {
   "flow_type": "global",
   "flow_subtype": "onboarding",
-  "flow_name": "onboarding_page_9_user_family",
+  "flow_name": "onboarding_page_8_user_referral",
   "status": "released",
   "rows": [
     {
       "type": "declare_global_constant",
-      "name": "facilitator_message_user_family",
-      "value": "Gracias por compartir. Ahora cuéntame sobre tu familia.",
+      "name": "facilitator_message_user_referral",
+      "value": "¡Pasemos a otro tema! Saber cómo te enteraste de @global.app_name nos ayuda a llegar a más familias.",
       "_translations": {
         "value": {}
       }
     },
     {
       "type": "declare_global_constant",
-      "name": "question_household_children",
-      "value": "¿Cuántas niñas, niños o adolescentes están a tu cuidado?",
+      "name": "question_user_referral",
+      "value": "Cuéntanos, ¿cómo te enteraste de @global.app_name?",
       "_translations": {
         "value": {}
       }
     },
     {
       "type": "declare_global_constant",
-      "name": "placeholder_household_children",
-      "value": "Ingresa un número",
-      "_translations": {
-        "value": {}
-      }
-    },
-    {
-      "type": "declare_global_constant",
-      "name": "household_children_input_restriction",
-      "value": "Por favor ingresa un número entre 1 y 20.",
+      "name": "placeholder_user_referral",
+      "value": "Selecciona una opción",
       "_translations": {
         "value": {}
       }

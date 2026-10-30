@@ -81,6 +81,7 @@
       "_translations": {
         "value": {}
       },
+      "exclude_from_translation": true,
       "type": "set_variable",
       "_nested_name": "speaker_name",
       "_dynamicFields": {
@@ -105,6 +106,7 @@
       "_translations": {
         "value": {}
       },
+      "exclude_from_translation": true,
       "type": "set_variable",
       "_nested_name": "speaker_image_asset",
       "_dynamicFields": {
@@ -146,7 +148,7 @@
     {
       "type": "text_bubble",
       "name": "text_bubble",
-      "value": "@global.facilitator_message_user_referral",
+      "value": "@global.facilitator_message_occupation",
       "_translations": {
         "value": {}
       },
@@ -161,10 +163,10 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@global.facilitator_message_user_referral",
-            "matchedExpression": "@global.facilitator_message_user_referral",
+            "fullExpression": "@global.facilitator_message_occupation",
+            "matchedExpression": "@global.facilitator_message_occupation",
             "type": "global",
-            "fieldName": "facilitator_message_user_referral"
+            "fieldName": "facilitator_message_occupation"
           }
         ],
         "parameter_list": {
@@ -203,7 +205,7 @@
         }
       },
       "_dynamicDependencies": {
-        "@global.facilitator_message_user_referral": [
+        "@global.facilitator_message_occupation": [
           "value"
         ],
         "@local.speaker_image_asset": [
@@ -222,220 +224,179 @@
     },
     {
       "type": "text",
-      "name": "question_user_referral",
-      "value": "@global.question_user_referral",
+      "name": "question_occupation",
+      "value": "@global.question_occupation",
       "_translations": {
         "value": {}
       },
       "parameter_list": {
         "style": "emphasised"
       },
-      "_nested_name": "question_user_referral",
+      "exclude_from_translation": true,
+      "_nested_name": "question_occupation",
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@global.question_user_referral",
-            "matchedExpression": "@global.question_user_referral",
+            "fullExpression": "@global.question_occupation",
+            "matchedExpression": "@global.question_occupation",
             "type": "global",
-            "fieldName": "question_user_referral"
+            "fieldName": "question_occupation"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@global.question_user_referral": [
+        "@global.question_occupation": [
           "value"
         ]
       }
     },
     {
       "type": "combo_box",
-      "name": "user_referral_select",
-      "value": "@fields.user_referral",
-      "_translations": {
-        "value": {}
-      },
+      "name": "occupation_select",
+      "value": "@fields.occupation",
       "parameter_list": {
-        "answer_list": "@data.user_referral",
-        "placeholder": "@global.placeholder_user_referral",
+        "placeholder": "@global.placeholder_occupation",
         "variant": "dropdown",
         "wrap": "true"
       },
-      "condition": "!!@fields.user_referral",
+      "condition": "!!@fields.occupation",
       "exclude_from_translation": true,
-      "_nested_name": "user_referral_select",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "@fields.user_referral",
-            "matchedExpression": "@fields.user_referral",
-            "type": "fields",
-            "fieldName": "user_referral"
-          }
-        ],
-        "parameter_list": {
-          "answer_list": [
-            {
-              "fullExpression": "@data.user_referral",
-              "matchedExpression": "@data.user_referral",
-              "type": "data",
-              "fieldName": "user_referral"
-            }
-          ],
-          "placeholder": [
-            {
-              "fullExpression": "@global.placeholder_user_referral",
-              "matchedExpression": "@global.placeholder_user_referral",
-              "type": "global",
-              "fieldName": "placeholder_user_referral"
-            }
-          ]
-        },
-        "condition": [
-          {
-            "fullExpression": "!!@fields.user_referral",
-            "matchedExpression": "!@fields.user_referral",
-            "type": "fields",
-            "fieldName": "user_referral"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@fields.user_referral": [
-          "value"
-        ],
-        "@data.user_referral": [
-          "parameter_list.answer_list"
-        ],
-        "@global.placeholder_user_referral": [
-          "parameter_list.placeholder"
-        ],
-        "!@fields.user_referral": [
-          "condition"
-        ]
-      }
-    },
-    {
-      "type": "combo_box",
-      "name": "user_referral_select",
-      "parameter_list": {
-        "answer_list": "@data.user_referral",
-        "placeholder": "@global.placeholder_user_referral",
-        "variant": "dropdown",
-        "wrap": "true"
-      },
-      "condition": "!@fields.user_referral",
-      "exclude_from_translation": true,
-      "_nested_name": "user_referral_select",
-      "_dynamicFields": {
-        "parameter_list": {
-          "answer_list": [
-            {
-              "fullExpression": "@data.user_referral",
-              "matchedExpression": "@data.user_referral",
-              "type": "data",
-              "fieldName": "user_referral"
-            }
-          ],
-          "placeholder": [
-            {
-              "fullExpression": "@global.placeholder_user_referral",
-              "matchedExpression": "@global.placeholder_user_referral",
-              "type": "global",
-              "fieldName": "placeholder_user_referral"
-            }
-          ]
-        },
-        "condition": [
-          {
-            "fullExpression": "!@fields.user_referral",
-            "matchedExpression": "!@fields.user_referral",
-            "type": "fields",
-            "fieldName": "user_referral"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@data.user_referral": [
-          "parameter_list.answer_list"
-        ],
-        "@global.placeholder_user_referral": [
-          "parameter_list.placeholder"
-        ],
-        "!@fields.user_referral": [
-          "condition"
-        ]
-      }
-    },
-    {
-      "name": "referral_type",
-      "type": "set_variable",
-      "_nested_name": "referral_type"
-    },
-    {
-      "type": "data_items",
-      "name": "get_referral_type",
-      "value": "@data.user_referral",
-      "_translations": {
-        "value": {}
-      },
-      "action_list": [
+      "rows": [
         {
-          "trigger": "data_changed",
-          "action_id": "set_local",
-          "args": [
-            "referral_type",
-            "@items[0]?.experience"
-          ],
-          "_raw": "data_changed | set_local : referral_type: @items[0]?.experience"
+          "type": "data_items",
+          "value": "occupation",
+          "condition": "!!@fields.occupation",
+          "exclude_from_translation": true,
+          "rows": [],
+          "name": "data_items_1",
+          "_nested_name": "occupation_select.data_items_1",
+          "_dynamicFields": {
+            "condition": [
+              {
+                "fullExpression": "!!@fields.occupation",
+                "matchedExpression": "!@fields.occupation",
+                "type": "fields",
+                "fieldName": "occupation"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "!@fields.occupation": [
+              "condition"
+            ]
+          }
         }
       ],
-      "parameter_list": {
-        "filter": "@item.id == @local.user_referral_select",
-        "limit": "1"
-      },
-      "exclude_from_translation": true,
-      "_nested_name": "get_referral_type",
+      "_nested_name": "occupation_select",
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@data.user_referral",
-            "matchedExpression": "@data.user_referral",
-            "type": "data",
-            "fieldName": "user_referral"
+            "fullExpression": "@fields.occupation",
+            "matchedExpression": "@fields.occupation",
+            "type": "fields",
+            "fieldName": "occupation"
           }
         ],
         "parameter_list": {
-          "filter": [
+          "placeholder": [
             {
-              "fullExpression": "@item.id == @local.user_referral_select",
-              "matchedExpression": "@item.id",
-              "type": "item",
-              "fieldName": "id"
-            },
-            {
-              "fullExpression": "@item.id == @local.user_referral_select",
-              "matchedExpression": "@local.user_referral_select",
-              "type": "local",
-              "fieldName": "user_referral_select"
+              "fullExpression": "@global.placeholder_occupation",
+              "matchedExpression": "@global.placeholder_occupation",
+              "type": "global",
+              "fieldName": "placeholder_occupation"
             }
           ]
-        }
+        },
+        "condition": [
+          {
+            "fullExpression": "!!@fields.occupation",
+            "matchedExpression": "!@fields.occupation",
+            "type": "fields",
+            "fieldName": "occupation"
+          }
+        ]
       },
       "_dynamicDependencies": {
-        "@data.user_referral": [
+        "@fields.occupation": [
           "value"
         ],
-        "@item.id": [
-          "parameter_list.filter"
+        "@global.placeholder_occupation": [
+          "parameter_list.placeholder"
         ],
-        "@local.user_referral_select": [
-          "parameter_list.filter"
+        "!@fields.occupation": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "combo_box",
+      "name": "occupation_select",
+      "parameter_list": {
+        "placeholder": "@global.placeholder_occupation",
+        "variant": "dropdown",
+        "wrap": "true"
+      },
+      "condition": "!@fields.occupation",
+      "exclude_from_translation": true,
+      "rows": [
+        {
+          "type": "data_items",
+          "value": "occupation",
+          "condition": "!@fields.occupation",
+          "exclude_from_translation": true,
+          "rows": [],
+          "name": "data_items_1",
+          "_nested_name": "occupation_select.data_items_1",
+          "_dynamicFields": {
+            "condition": [
+              {
+                "fullExpression": "!@fields.occupation",
+                "matchedExpression": "!@fields.occupation",
+                "type": "fields",
+                "fieldName": "occupation"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "!@fields.occupation": [
+              "condition"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "occupation_select",
+      "_dynamicFields": {
+        "parameter_list": {
+          "placeholder": [
+            {
+              "fullExpression": "@global.placeholder_occupation",
+              "matchedExpression": "@global.placeholder_occupation",
+              "type": "global",
+              "fieldName": "placeholder_occupation"
+            }
+          ]
+        },
+        "condition": [
+          {
+            "fullExpression": "!@fields.occupation",
+            "matchedExpression": "!@fields.occupation",
+            "type": "fields",
+            "fieldName": "occupation"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@global.placeholder_occupation": [
+          "parameter_list.placeholder"
+        ],
+        "!@fields.occupation": [
+          "condition"
         ]
       }
     },
     {
       "name": "completed_enabled",
-      "value": "!!@local.user_referral_select",
+      "value": "!!@local.occupation_select",
       "_translations": {
         "value": {}
       },
@@ -445,15 +406,15 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "!!@local.user_referral_select",
-            "matchedExpression": "!@local.user_referral_select",
+            "fullExpression": "!!@local.occupation_select",
+            "matchedExpression": "!@local.occupation_select",
             "type": "local",
-            "fieldName": "user_referral_select"
+            "fieldName": "occupation_select"
           }
         ]
       },
       "_dynamicDependencies": {
-        "!@local.user_referral_select": [
+        "!@local.occupation_select": [
           "value"
         ]
       }
@@ -467,6 +428,7 @@
       "style_list": [
         "padding: 12px 24px"
       ],
+      "exclude_from_translation": true,
       "rows": [
         {
           "type": "round_button",
@@ -485,11 +447,12 @@
             "icon_src": "arrow-back",
             "variant": "no-background"
           },
+          "exclude_from_translation": true,
           "_nested_name": "dg_footer.button_back"
         },
         {
           "type": "button",
-          "name": "button_completed",
+          "name": "button_completed_child",
           "value": "@global.continue",
           "_translations": {
             "value": {}
@@ -499,19 +462,10 @@
               "trigger": "click",
               "action_id": "set_field",
               "args": [
-                "user_referral",
-                "@local.user_referral_select"
+                "occupation",
+                "@local.occupation_select"
               ],
-              "_raw": "click | set_field: user_referral: @local.user_referral_select"
-            },
-            {
-              "trigger": "click",
-              "action_id": "set_field",
-              "args": [
-                "user_referral_type",
-                "@local.referral_type"
-              ],
-              "_raw": "click | set_field: user_referral_type: @local.referral_type"
+              "_raw": "click | set_field: occupation: @local.occupation_select"
             },
             {
               "trigger": "click",
@@ -529,7 +483,8 @@
           "style_list": [
             "flex: 1"
           ],
-          "_nested_name": "dg_footer.button_completed",
+          "exclude_from_translation": true,
+          "_nested_name": "dg_footer.button_completed_child",
           "_dynamicFields": {
             "value": [
               {
@@ -544,39 +499,19 @@
                 "args": {
                   "1": [
                     {
-                      "fullExpression": "@local.user_referral_select",
-                      "matchedExpression": "@local.user_referral_select",
+                      "fullExpression": "@local.occupation_select",
+                      "matchedExpression": "@local.occupation_select",
                       "type": "local",
-                      "fieldName": "user_referral_select"
+                      "fieldName": "occupation_select"
                     }
                   ]
                 },
                 "_raw": [
                   {
-                    "fullExpression": "click | set_field: user_referral: @local.user_referral_select",
-                    "matchedExpression": "@local.user_referral_select",
+                    "fullExpression": "click | set_field: occupation: @local.occupation_select",
+                    "matchedExpression": "@local.occupation_select",
                     "type": "local",
-                    "fieldName": "user_referral_select"
-                  }
-                ]
-              },
-              "1": {
-                "args": {
-                  "1": [
-                    {
-                      "fullExpression": "@local.referral_type",
-                      "matchedExpression": "@local.referral_type",
-                      "type": "local",
-                      "fieldName": "referral_type"
-                    }
-                  ]
-                },
-                "_raw": [
-                  {
-                    "fullExpression": "click | set_field: user_referral_type: @local.referral_type",
-                    "matchedExpression": "@local.referral_type",
-                    "type": "local",
-                    "fieldName": "referral_type"
+                    "fieldName": "occupation_select"
                   }
                 ]
               }
@@ -596,13 +531,9 @@
             "@global.continue": [
               "value"
             ],
-            "@local.user_referral_select": [
+            "@local.occupation_select": [
               "action_list.0.args.1",
               "action_list.0._raw"
-            ],
-            "@local.referral_type": [
-              "action_list.1.args.1",
-              "action_list.1._raw"
             ],
             "!@local.completed_enabled": [
               "parameter_list.disabled"

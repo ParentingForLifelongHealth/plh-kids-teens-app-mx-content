@@ -146,7 +146,7 @@
           "eng": "¡Vamos a ver estas estrategias en la práctica!"
         },
         "text_2": {
-          "eng": "_@data.characters.f2_padre.name se prepara para su tiempo para conectar con @data.characters.f2_hijo_8.name_"
+          "eng": "@data.characters.f2_padre.name se prepara para su tiempo para conectar con @data.characters.f2_hijo_8.name"
         },
         "character_1_text": {
           "eng": "Tengo 5 minutos para que pasemos un rato juntos, @data.characters.f2_hijo_8.name. ¿Qué te gustaría hacer?"
@@ -155,7 +155,7 @@
           "eng": "¡Vamos a jugar con mis juguetes!"
         }
       },
-      "text_2": "_@data.characters.f2_padre.name se prepara para su tiempo para conectar con @data.characters.f2_hijo_8.name_",
+      "text_2": "@data.characters.f2_padre.name se prepara para su tiempo para conectar con @data.characters.f2_hijo_8.name",
       "character_1_text": "Tengo 5 minutos para que pasemos un rato juntos, @data.characters.f2_hijo_8.name. ¿Qué te gustaría hacer?",
       "character_2_text": "¡Vamos a jugar con mis juguetes!"
     },
@@ -163,11 +163,11 @@
       "id": "explore_3",
       "category_id": "explore",
       "image_asset": "images/comic/relation/calm_yc_mc_2.svg",
-      "character_1_id": "f2_hijo_8",
-      "character_2_id": "f2_padre",
+      "character_1_id": "f2_padre",
+      "character_2_id": "f2_hijo_8",
       "character_3_id": "f2_padre",
       "nested": false,
-      "text_2": "_Mira cómo @data.characters.f2_padre.name reconoce las primeras señales de tensión y decide hacer una pausa._",
+      "text_2": "Mira cómo @data.characters.f2_padre.name reconoce las primeras señales de tensión y decide hacer una pausa.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
@@ -176,34 +176,34 @@
       },
       "_translatedFields": {
         "text_2": {
-          "eng": "_Mira cómo @data.characters.f2_padre.name reconoce las primeras señales de tensión y decide hacer una pausa._"
+          "eng": "Mira cómo @data.characters.f2_padre.name reconoce las primeras señales de tensión y decide hacer una pausa."
         },
         "character_1_text": {
-          "eng": "¡Brrrruuuum...!"
+          "eng": "(pensando) ¡Ay, no! El cuarto está todo desordenado y vamos a tener que recogerlo antes de cenar. Estoy empezando a sentir calor y tensión. Necesito hacer una pausa para calmarme y disfrutar de nuestro tiempo para conectar."
         },
         "character_2_text": {
-          "eng": "(pensando) ¡Ay, no! El cuarto está quedando todo desordenado y vamos a tener que recoger todo antes de la cena. Estoy empezando a sentir mucho calor y tensión. Necesito hacer una pausa para recuperar la calma y disfrutar de nuestro tiempo para conectar."
+          "eng": "¡Brrrruuuum...!"
         },
         "character_3_text": {
-          "eng": "@data.characters.f2_hijo_8.name, voy por un vaso de agua, ahorita regreso a seguir jugando contigo."
+          "eng": "@data.characters.f2_hijo_8.name, voy por un vaso de agua. Ahorita regreso a seguir jugando contigo."
         }
       },
-      "character_1_text": "¡Brrrruuuum...!",
-      "character_2_text": "(pensando) ¡Ay, no! El cuarto está quedando todo desordenado y vamos a tener que recoger todo antes de la cena. Estoy empezando a sentir mucho calor y tensión. Necesito hacer una pausa para recuperar la calma y disfrutar de nuestro tiempo para conectar.",
-      "character_3_text": "@data.characters.f2_hijo_8.name, voy por un vaso de agua, ahorita regreso a seguir jugando contigo."
+      "character_1_text": "(pensando) ¡Ay, no! El cuarto está todo desordenado y vamos a tener que recogerlo antes de cenar. Estoy empezando a sentir calor y tensión. Necesito hacer una pausa para calmarme y disfrutar de nuestro tiempo para conectar.",
+      "character_2_text": "¡Brrrruuuum...!",
+      "character_3_text": "@data.characters.f2_hijo_8.name, voy por un vaso de agua. Ahorita regreso a seguir jugando contigo."
     },
     {
       "id": "explore_4",
       "category_id": "explore",
       "image_asset": "images/comic/relation/calm_yc_mc_3.svg",
       "nested": false,
-      "text_2": "_@data.characters.f2_padre.name actuó rápidamente y decidió ir por un vaso con agua para recuperar la calma._",
+      "text_2": "@data.characters.f2_padre.name actuó rápidamente y decidió ir por un vaso con agua para recuperar la calma.",
       "_translations": {
         "text_2": {}
       },
       "_translatedFields": {
         "text_2": {
-          "eng": "_@data.characters.f2_padre.name actuó rápidamente y decidió ir por un vaso con agua para recuperar la calma._"
+          "eng": "@data.characters.f2_padre.name actuó rápidamente y decidió ir por un vaso con agua para recuperar la calma."
         }
       }
     },
@@ -214,7 +214,7 @@
       "character_1_id": "f2_padre",
       "character_2_id": "f2_hijo_8",
       "nested": false,
-      "text_2": "_Después de tranquilizarse, @data.characters.f2_padre.name regresa a disfrutar su tiempo para conectar._",
+      "text_2": "Después de tranquilizarse, @data.characters.f2_padre.name regresa a disfrutar su tiempo para conectar.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
@@ -222,7 +222,7 @@
       },
       "_translatedFields": {
         "text_2": {
-          "eng": "_Después de tranquilizarse, @data.characters.f2_padre.name regresa a disfrutar su tiempo para conectar._"
+          "eng": "Después de tranquilizarse, @data.characters.f2_padre.name regresa a disfrutar su tiempo para conectar."
         },
         "character_1_text": {
           "eng": "¡Guau! Mira qué rápido va tu carrito."
@@ -242,7 +242,7 @@
       "character_2_id": "f2_hijo_8",
       "character_3_id": "f2_padre",
       "nested": false,
-      "text_2": "_@data.characters.f2_padre.name le dice claramente a @data.characters.f2_hijo_8.name qué espera y redirige la actividad hacia una tarea compartida._",
+      "text_2": "@data.characters.f2_padre.name le dice claramente a @data.characters.f2_hijo_8.name qué espera y redirige la actividad hacia una tarea compartida.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
@@ -251,20 +251,20 @@
       },
       "_translatedFields": {
         "text_2": {
-          "eng": "_@data.characters.f2_padre.name le dice claramente a @data.characters.f2_hijo_8.name qué espera y redirige la actividad hacia una tarea compartida._"
+          "eng": "@data.characters.f2_padre.name le dice claramente a @data.characters.f2_hijo_8.name qué espera y redirige la actividad hacia una tarea compartida."
         },
         "character_1_text": {
           "eng": "Nos divertimos mucho en nuestro tiempo especial, pero ya es tiempo de recoger los juguetes, ¿lo hacemos juntos?"
         },
         "character_2_text": {
-          "eng": "¡Sí, qué divertido estuvo! ¡Aquí va uno a la caja!"
+          "eng": "¡Sí, estuvo divertido! ¡Aquí va uno a la caja!"
         },
         "character_3_text": {
           "eng": "(pensando) ¡Uf! Menos mal que me tomé una pausa en vez de gritarle. ¡Creo que cada vez se me da mejor esto!"
         }
       },
       "character_1_text": "Nos divertimos mucho en nuestro tiempo especial, pero ya es tiempo de recoger los juguetes, ¿lo hacemos juntos?",
-      "character_2_text": "¡Sí, qué divertido estuvo! ¡Aquí va uno a la caja!",
+      "character_2_text": "¡Sí, estuvo divertido! ¡Aquí va uno a la caja!",
       "character_3_text": "(pensando) ¡Uf! Menos mal que me tomé una pausa en vez de gritarle. ¡Creo que cada vez se me da mejor esto!"
     },
     {
@@ -341,7 +341,7 @@
           "eng": "¡Ahora es tu turno!\n\nDurante tu tiempo para conectar con @fields.child_name, intenta hacer una pausa antes de reaccionar e identifica qué te ayuda a calmarte en las situaciones difíciles. \n\nSi compartes la crianza con alguien más, invítale a practicarlo también. 😊"
         },
         "quiz_1_question": {
-          "eng": "¿Puedes intentarlo esta semana? 🧘"
+          "eng": "¿Puedes intentarlo esta semana? 👏"
         },
         "quiz_1_option_1_text": {
           "eng": "Sí"
@@ -362,7 +362,7 @@
           "eng": "¡Lo entiendo! Puedes comenzar por practicar estas estrategias en momentos de tranquilidad. ❤️‍🩹\n\n\nCon el tiempo, también las podrás usar en otras situaciones difíciles del día a día. Y recuerda: escuchar tus propias emociones y reservar tiempo para ti también importa."
         }
       },
-      "quiz_1_question": "¿Puedes intentarlo esta semana? 🧘",
+      "quiz_1_question": "¿Puedes intentarlo esta semana? 👏",
       "quiz_1_option_1_text": "Sí",
       "quiz_1_feedback_1": "¡Muy bien! Cuando empieces a sentir estrés o enojo, recuerda usar las estrategias que exploramos. 🎉\n\n\nCon el tiempo, también las podrás usar en otras situaciones difíciles del día a día. Y recuerda: escuchar tus propias emociones y reservar tiempo para ti también importa.",
       "quiz_1_option_2_text": "Lo intentaré",

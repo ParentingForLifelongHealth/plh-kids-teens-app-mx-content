@@ -1,13 +1,13 @@
 {
   "flow_type": "global",
   "flow_subtype": "onboarding",
-  "flow_name": "onboarding_page_12_child_age",
+  "flow_name": "onboarding_page_13_child_age",
   "status": "released",
   "rows": [
     {
       "type": "declare_global_constant",
       "name": "facilitator_message_child_age",
-      "value": "Cada persona es única. Es momento de conocer un poco más sobre @fields.child_name para acompañarte mejor."
+      "value": "Conocer un poco más sobre @fields.child_name nos permite acompañarte mejor."
     },
     {
       "type": "declare_global_constant",
@@ -22,7 +22,7 @@
     {
       "type": "declare_global_constant",
       "name": "facilitator_message_child_relation",
-      "value": "¡Casi listo!"
+      "value": "¡Una más!"
     },
     {
       "type": "declare_global_constant",

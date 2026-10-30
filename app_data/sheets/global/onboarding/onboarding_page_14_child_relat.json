@@ -1,28 +1,28 @@
 {
   "flow_type": "global",
   "flow_subtype": "onboarding",
-  "flow_name": "onboarding_page_14_occupation",
+  "flow_name": "onboarding_page_14_child_relat",
   "status": "released",
   "rows": [
     {
       "type": "declare_global_constant",
-      "name": "facilitator_message_occupation",
-      "value": "¡Casi listo!",
+      "name": "facilitator_message_child_relation",
+      "value": "¡Ya casi terminamos!",
       "_translations": {
         "value": {}
       }
     },
     {
       "type": "declare_global_constant",
-      "name": "question_occupation",
-      "value": "¿A qué te dedicas?",
+      "name": "question_family_relation",
+      "value": "¿Cuál es tu relación con @fields.child_name?",
       "_translations": {
         "value": {}
       }
     },
     {
       "type": "declare_global_constant",
-      "name": "placeholder_occupation",
+      "name": "placeholder_family_relation",
       "value": "Selecciona una opción",
       "_translations": {
         "value": {}
