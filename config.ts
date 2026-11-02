@@ -4,7 +4,7 @@ const config = generateDeploymentConfig("plh_kids_teens_mx");
 
 config.git = {
   content_repo: "https://github.com/ParentingForLifelongHealth/plh-kids-teens-app-mx-content.git",
-  content_tag_latest: "1.1.39",
+  content_tag_latest: "1.1.40",
 };
 
 config.google_drive.sheets_folders = [
@@ -12,8 +12,8 @@ config.google_drive.sheets_folders = [
   { id: "1UXVz71HniwdtklFnGUEBzzj8ZHI9oQVo", name: "library_field_values" },
   { id: "1hZt4L2JosXHqzyAsKeG9QWzxQQf54kmF", name: "kids_teens_global V3" },
   { id: "1XBq4iGIZHEwzwPk3xbHDAm9WCesjR7kR", name: "library PLH onboarding" },
-  { id: "1brg6jkdX06BsjaC9rz59gec5Pq8SONW5", name: "modules_mx" },
   { id: "1gpkEat_BX_sORGV2O7VD88NIKPC_D0Ss", name: "ab_test_po_scale" },
+  { id: "1brg6jkdX06BsjaC9rz59gec5Pq8SONW5", name: "modules_mx" },
   { id: "1hgONPg9pMhIBgJjZVbX-n3USz-7dRKOf", name: "kids_teens_mx" }  
   
 ];
@@ -21,14 +21,14 @@ config.google_drive.sheets_folders = [
 config.google_drive.assets_folders = [
   { id: "1abaL1QGd33NqqLoKuo2t9fVWKmh5ouM9", name: "kids_global_assets" },
   { id: "11FFBdMbwQ8aiUkprH-qXYC-uONXmJLHs", name: "kids_teens_global V2 assets" },
-  { id: "18QBUUI7k9KYKCJHWCnNAHo-_9z1oDf3G", name: "temp_assets_mx"}
+ // { id: "18QBUUI7k9KYKCJHWCnNAHo-_9z1oDf3G", name: "temp_assets_mx"}
 ];
 
 config.canto = {
   url: "https://parentingforlifelonghealth.canto.com",
   sourceFolders: [
     {
-      id: "KU9TL", name: "Mexico Canto Assets",
+      id: "VSU1U", name: "Mexico Canto Assets" /*,
       remote_assets: [
         {
           name: "assets_facilitator_female",
@@ -47,6 +47,7 @@ config.canto = {
           },
         }
       ],
+      */
     }
   ],
   languageMappings: {
