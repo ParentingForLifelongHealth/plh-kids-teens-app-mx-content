@@ -50,14 +50,14 @@
       "type": "combo_box",
       "name": "user_location_select",
       "value": "@fields.user_location",
-      "parameter_list": "answer_list: @data.user_location;\nplaceholder: @global.placeholder_user_location;\nvariant: dropdown;\nwrap: true;",
+      "parameter_list": "answer_list: @data.user_location;\nplaceholder: @global.placeholder_user_location;\nvariant: dropdown;\nwrap: true;\ninput_allowed: true;\ninput_position: top;",
       "condition": "!!@fields.user_location",
       "exclude_from_translation": true
     },
     {
       "type": "combo_box",
       "name": "user_location_select",
-      "parameter_list": "answer_list: @data.user_location;\nplaceholder: @global.placeholder_user_location;\nvariant: dropdown;\nwrap: true;",
+      "parameter_list": "answer_list: @data.user_location;\nplaceholder: @global.placeholder_user_location;\nvariant: dropdown;\nwrap: true;\ninput_allowed: true;\ninput_position: top;",
       "condition": "!@fields.user_location",
       "exclude_from_translation": true
     },

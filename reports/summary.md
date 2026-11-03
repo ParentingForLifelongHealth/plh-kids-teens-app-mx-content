@@ -96,8 +96,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 7809 KB | 7.8 MB |
-| unused | 14253 KB | 14.3 MB |
+| total | 10285 KB | 10.3 MB |
+| unused | 11778 KB | 11.8 MB |
 </details>
 
 <details open>
@@ -259,8 +259,6 @@ Assets that appear in app-data but do not have references within sheets
 | images/faces/flushed_face.svg | 4.9 |
 | images/faces/stressed.svg | 60 |
 | images/faces/tired.svg | 54 |
-| images/facilitators/avatar_femenino.png | 1067.5 |
-| images/facilitators/avatar_masculino.png | 1408 |
 | images/flags/gb.svg | 0.5 |
 | images/icons/book_outline_blue.svg | 0.7 |
 | images/icons/book_outline_white.svg | 0.7 |
@@ -786,6 +784,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/faces/ok.svg | 46.6 | 330 |
 | images/faces/sad.svg | 48.2 | 165 |
 | images/faces/smiling.svg | 5.1 | 165 |
+| images/facilitators/avatar_femenino.png | 1067.5 | 1 |
+| images/facilitators/avatar_masculino.png | 1408 | 1 |
 | images/icons/balance_blue.png | 4.7 | 16 |
 | images/icons/brain_blue.png | 5.2 | 18 |
 | images/icons/bug.svg | 1.2 | 2 |

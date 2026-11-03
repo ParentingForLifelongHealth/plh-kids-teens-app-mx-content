@@ -343,7 +343,7 @@
     },
     {
       "name": "valid_user_age_input",
-      "value": "@calc((/^\\d+$/.test(@local.user_age_input) && @local.user_age_input>= 18 && @local.user_age_input<= 99) || @local.user_age_input == '' || !@local.user_age_input)",
+      "value": "@calc((/^\\d+$/.test(@local.user_age_input) && @local.user_age_input>= 18 && @local.user_age_input<= 99) || @local.user_age_input === '' || @local.user_age_input == null)",
       "_translations": {
         "value": {}
       },
@@ -353,40 +353,40 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@calc((/^\\d+$/.test(@local.user_age_input) && @local.user_age_input>= 18 && @local.user_age_input<= 99) || @local.user_age_input == '' || !@local.user_age_input)",
+            "fullExpression": "@calc((/^\\d+$/.test(@local.user_age_input) && @local.user_age_input>= 18 && @local.user_age_input<= 99) || @local.user_age_input === '' || @local.user_age_input == null)",
             "matchedExpression": "@local.user_age_input",
             "type": "local",
             "fieldName": "user_age_input"
           },
           {
-            "fullExpression": "@calc((/^\\d+$/.test(@local.user_age_input) && @local.user_age_input>= 18 && @local.user_age_input<= 99) || @local.user_age_input == '' || !@local.user_age_input)",
+            "fullExpression": "@calc((/^\\d+$/.test(@local.user_age_input) && @local.user_age_input>= 18 && @local.user_age_input<= 99) || @local.user_age_input === '' || @local.user_age_input == null)",
             "matchedExpression": "@local.user_age_input",
             "type": "local",
             "fieldName": "user_age_input"
           },
           {
-            "fullExpression": "@calc((/^\\d+$/.test(@local.user_age_input) && @local.user_age_input>= 18 && @local.user_age_input<= 99) || @local.user_age_input == '' || !@local.user_age_input)",
+            "fullExpression": "@calc((/^\\d+$/.test(@local.user_age_input) && @local.user_age_input>= 18 && @local.user_age_input<= 99) || @local.user_age_input === '' || @local.user_age_input == null)",
             "matchedExpression": "@local.user_age_input",
             "type": "local",
             "fieldName": "user_age_input"
           },
           {
-            "fullExpression": "@calc((/^\\d+$/.test(@local.user_age_input) && @local.user_age_input>= 18 && @local.user_age_input<= 99) || @local.user_age_input == '' || !@local.user_age_input)",
+            "fullExpression": "@calc((/^\\d+$/.test(@local.user_age_input) && @local.user_age_input>= 18 && @local.user_age_input<= 99) || @local.user_age_input === '' || @local.user_age_input == null)",
             "matchedExpression": "@local.user_age_input",
             "type": "local",
             "fieldName": "user_age_input"
           },
           {
-            "fullExpression": "@calc((/^\\d+$/.test(@local.user_age_input) && @local.user_age_input>= 18 && @local.user_age_input<= 99) || @local.user_age_input == '' || !@local.user_age_input)",
-            "matchedExpression": "!@local.user_age_input",
+            "fullExpression": "@calc((/^\\d+$/.test(@local.user_age_input) && @local.user_age_input>= 18 && @local.user_age_input<= 99) || @local.user_age_input === '' || @local.user_age_input == null)",
+            "matchedExpression": "@local.user_age_input",
             "type": "local",
             "fieldName": "user_age_input"
           },
           {
-            "fullExpression": "@calc((/^\\d+$/.test(@local.user_age_input) && @local.user_age_input>= 18 && @local.user_age_input<= 99) || @local.user_age_input == '' || !@local.user_age_input)",
-            "matchedExpression": "@calc((/^\\d+$/.test(@local.user_age_input) && @local.user_age_input>= 18 && @local.user_age_input<= 99) || @local.user_age_input == '' || !@local.user_age_input)",
+            "fullExpression": "@calc((/^\\d+$/.test(@local.user_age_input) && @local.user_age_input>= 18 && @local.user_age_input<= 99) || @local.user_age_input === '' || @local.user_age_input == null)",
+            "matchedExpression": "@calc((/^\\d+$/.test(@local.user_age_input) && @local.user_age_input>= 18 && @local.user_age_input<= 99) || @local.user_age_input === '' || @local.user_age_input == null)",
             "type": "calc",
-            "fieldName": "(/^\\d+$/.test(@local.user_age_input) && @local.user_age_input>= 18 && @local.user_age_input<= 99) || @local.user_age_input == '' || !@local.user_age_input"
+            "fieldName": "(/^\\d+$/.test(@local.user_age_input) && @local.user_age_input>= 18 && @local.user_age_input<= 99) || @local.user_age_input === '' || @local.user_age_input == null"
           }
         ]
       },
@@ -395,12 +395,10 @@
           "value",
           "value",
           "value",
+          "value",
           "value"
         ],
-        "!@local.user_age_input": [
-          "value"
-        ],
-        "@calc((/^\\d+$/.test(@local.user_age_input) && @local.user_age_input>= 18 && @local.user_age_input<= 99) || @local.user_age_input == '' || !@local.user_age_input)": [
+        "@calc((/^\\d+$/.test(@local.user_age_input) && @local.user_age_input>= 18 && @local.user_age_input<= 99) || @local.user_age_input === '' || @local.user_age_input == null)": [
           "value"
         ]
       }
