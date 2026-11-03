@@ -37,7 +37,7 @@
 | round_button | 34 |
 | select_text | 1 |
 | set_field | 4 |
-| set_variable | 5771 |
+| set_variable | 5720 |
 | simple_checkbox | 1 |
 | task_card | 4 |
 | task_progress_bar | 5 |
@@ -74,7 +74,7 @@
 | go_to | 28 |
 | nav | 1 |
 | nav_stack | 1148 |
-| notification | 17 |
+| notification | 1 |
 | plh_certificate | 23 |
 | pop_up | 517 |
 | reset_app | 4 |
@@ -87,7 +87,6 @@
 | share | 3 |
 | task | 2 |
 | toast | 78 |
-| trigger_actions | 1 |
 | user | 3 |
 </details>
 
