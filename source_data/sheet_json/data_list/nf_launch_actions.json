@@ -1,0 +1,20 @@
+{
+  "flow_type": "data_list",
+  "flow_subtype": "lifecycle_actions",
+  "flow_name": "nf_launch_actions",
+  "status": "released",
+  "rows": [
+    {
+      "id": "pick_resume_lesson_first",
+      "lifecycle_event": "app_start",
+      "priority": 0,
+      "action_list": "set_field: nf_resume_lesson_first: @calc(pick_random([\"a\",\"b\"]))"
+    },
+    {
+      "id": "pick_win_back_first",
+      "lifecycle_event": "app_start",
+      "priority": 0.1,
+      "action_list": "set_field: nf_win_back_first: @calc(pick_random([\"a\",\"b\"]))"
+    }
+  ]
+}
