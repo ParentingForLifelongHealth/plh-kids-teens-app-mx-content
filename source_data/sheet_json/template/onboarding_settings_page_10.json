@@ -64,7 +64,7 @@
     },
     {
       "name": "valid_household_children_input",
-      "value": "@calc((/^\\d+$/.test(@local.household_children_input) && @local.household_children_input>= 1 && @local.household_children_input<= 20) || @local.household_children_input == '' || !@local.household_children_input)",
+      "value": "@calc((/^\\d+$/.test(@local.household_children_input) && @local.household_children_input >= 1 && @local.household_children_input <= 20) || @local.household_children_input === '' || @local.household_children_input == null) ",
       "exclude_from_translation": true
     },
     {

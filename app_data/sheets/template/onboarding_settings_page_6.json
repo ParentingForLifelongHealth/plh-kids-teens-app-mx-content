@@ -258,7 +258,9 @@
         "answer_list": "@data.user_location",
         "placeholder": "@global.placeholder_user_location",
         "variant": "dropdown",
-        "wrap": "true"
+        "wrap": "true",
+        "input_allowed": "true",
+        "input_position": "top"
       },
       "condition": "!!@fields.user_location",
       "exclude_from_translation": true,
@@ -321,7 +323,9 @@
         "answer_list": "@data.user_location",
         "placeholder": "@global.placeholder_user_location",
         "variant": "dropdown",
-        "wrap": "true"
+        "wrap": "true",
+        "input_allowed": "true",
+        "input_position": "top"
       },
       "condition": "!@fields.user_location",
       "exclude_from_translation": true,
