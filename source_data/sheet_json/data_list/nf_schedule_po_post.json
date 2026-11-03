@@ -1,0 +1,44 @@
+{
+  "flow_type": "data_list",
+  "flow_subtype": "campaign_schedule",
+  "flow_name": "nf_schedule_po_post",
+  "status": "released",
+  "rows": [
+    {
+      "id": "nf_po_first",
+      "activation_condition_list": "@fields.completed_all && @fields.prox_7d_last_ts",
+      "schedule.start_date": "@fields.prox_7d_last_ts",
+      "schedule.end_date": "@calc(date_fns.addDays(new Date(@fields.onboarding_completed_ts || this.app_first_launch), 150))",
+      "schedule.repeat_every_days": 30,
+      "schedule.repeat_count": 5,
+      "time.hour": 19,
+      "time.minute": 0,
+      "delay.days": 30,
+      "comment": "First notification of each cycle: T+30, 60, 90, 120, 150 at 19:00 (T = day of the last check-in). A cycle is booked only if its series date (before the delay) is ≤ onboarding + 150 days, i.e. its first notification is ≤ onboarding + 180. Re-checked automatically when any of the three fields changes."
+    },
+    {
+      "id": "nf_po_r1",
+      "activation_condition_list": "@fields.completed_all && @fields.prox_7d_last_ts",
+      "schedule.start_date": "@fields.prox_7d_last_ts",
+      "schedule.end_date": "@calc(date_fns.addDays(new Date(@fields.onboarding_completed_ts || this.app_first_launch), 150))",
+      "schedule.repeat_every_days": 30,
+      "schedule.repeat_count": 5,
+      "time.hour": 19,
+      "time.minute": 0,
+      "delay.days": 37,
+      "comment": "First reminder, 7 days after each first notification. Same series dates and end date as nf_po_first, so it stops exactly when its first notification stops (may fall after day 180)."
+    },
+    {
+      "id": "nf_po_r2",
+      "activation_condition_list": "@fields.completed_all && @fields.prox_7d_last_ts",
+      "schedule.start_date": "@fields.prox_7d_last_ts",
+      "schedule.end_date": "@calc(date_fns.addDays(new Date(@fields.onboarding_completed_ts || this.app_first_launch), 150))",
+      "schedule.repeat_every_days": 30,
+      "schedule.repeat_count": 5,
+      "time.hour": 19,
+      "time.minute": 0,
+      "delay.days": 44,
+      "comment": "Second reminder, 14 days after each first notification. Same rule as nf_po_r1."
+    }
+  ]
+}

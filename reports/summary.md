@@ -96,8 +96,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 7795 KB | 7.8 MB |
-| unused | 14232 KB | 14.2 MB |
+| total | 7809 KB | 7.8 MB |
+| unused | 14253 KB | 14.3 MB |
 </details>
 
 <details open>
@@ -259,8 +259,8 @@ Assets that appear in app-data but do not have references within sheets
 | images/faces/flushed_face.svg | 4.9 |
 | images/faces/stressed.svg | 60 |
 | images/faces/tired.svg | 54 |
-| images/facilitators/Cris Avatar masculino.png | 1408 |
-| images/facilitators/Dani avatar femenino.png | 1067.5 |
+| images/facilitators/avatar_femenino.png | 1067.5 |
+| images/facilitators/avatar_masculino.png | 1408 |
 | images/flags/gb.svg | 0.5 |
 | images/icons/book_outline_blue.svg | 0.7 |
 | images/icons/book_outline_white.svg | 0.7 |
@@ -296,6 +296,7 @@ Assets that appear in app-data but do not have references within sheets
 | images/icons/trophy_footer_active.svg | 3.9 |
 | images/icons/verified.svg | 0.5 |
 | images/icons/world.svg | 6.2 |
+| images/logos/crianza_logo_horizontal.png | 21.9 |
 | images/logos/favicon.png | 6.3 |
 | images/logos/plh_white.png | 12.8 |
 | lottie/bulging_circles.txt | 0.2 |
@@ -729,7 +730,6 @@ Assets that have references within sheets but do not appear in app-data
 | images/icons/trophy_active.png | 1 |
 | images/icons/visibility.svg | 1 |
 | images/logos/ARIADNE.png | 1 |
-| images/logos/CRyA_logo.png | 1 |
 | images/logos/Crianza-03.png | 1 |
 | images/logos/JUCONI.png | 1 |
 | images/logos/KERING.png | 1 |
@@ -845,6 +845,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/logos/IDEMS.png | 42.7 | 1 |
 | images/logos/PLH.png | 34.7 | 1 |
 | images/logos/UNICEF.png | 90.5 | 1 |
+| images/logos/crianza_logo.png | 14.4 | 1 |
 | lottie/bulging_circles.json | 11.8 | 1 |
 | lottie/relax/blue_dots.json | 14.7 | 4 |
 | lottie/relax/heart.json | 46.7 | 4 |
@@ -865,8 +866,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_list |  | 21 |
 | data_list | activities | 2 |
 | data_list | app_config_language_list | 1 |
-| data_list | campaign_rows | 1 |
-| data_list | campaign_schedule | 1 |
+| data_list | campaign_rows | 2 |
+| data_list | campaign_schedule | 2 |
 | data_list | check_in | 1 |
 | data_list | generated | 174 |
 | data_list | hp_review | 2 |

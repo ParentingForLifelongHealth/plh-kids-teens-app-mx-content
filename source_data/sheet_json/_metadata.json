@@ -871,8 +871,28 @@
   },
   {
     "flow_type": "data_list",
+    "flow_subtype": "campaign_rows",
+    "flow_name": "nf_definition_po_post",
+    "_source": {
+      "name": "kids_teens_mx",
+      "path": "data/MX notifications.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/19djnbR4ynZYLAasRMjhw1C0rpnCghuY47whYaLgkbVE"
+    }
+  },
+  {
+    "flow_type": "data_list",
     "flow_subtype": "campaign_schedule",
     "flow_name": "nf_schedule_inactive",
+    "_source": {
+      "name": "kids_teens_mx",
+      "path": "data/MX notifications.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/19djnbR4ynZYLAasRMjhw1C0rpnCghuY47whYaLgkbVE"
+    }
+  },
+  {
+    "flow_type": "data_list",
+    "flow_subtype": "campaign_schedule",
+    "flow_name": "nf_schedule_po_post",
     "_source": {
       "name": "kids_teens_mx",
       "path": "data/MX notifications.xlsx",

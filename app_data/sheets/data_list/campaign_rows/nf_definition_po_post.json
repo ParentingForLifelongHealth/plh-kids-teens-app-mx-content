@@ -1,0 +1,201 @@
+{
+  "flow_type": "data_list",
+  "flow_subtype": "campaign_rows",
+  "flow_name": "nf_definition_po_post",
+  "status": "released",
+  "rows": [
+    {
+      "id": "po_first",
+      "workshop": "independent",
+      "message_type": "post_programme",
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_field",
+          "args": [
+            "po_setup_pending",
+            true
+          ],
+          "_raw": "click | set_field: po_setup_pending: true"
+        },
+        {
+          "trigger": "click",
+          "action_id": "set_field",
+          "args": [
+            "prox_outcome_access",
+            "cta"
+          ],
+          "_raw": "click | set_field: prox_outcome_access: cta"
+        },
+        {
+          "trigger": "click",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "click | set_data | _list_id: proximal_outcome_14d_pages, completed: false",
+          "params": {
+            "_list_id": "proximal_outcome_14d_pages",
+            "completed": false
+          }
+        },
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "home_screen"
+          ],
+          "_raw": "click | go_to: home_screen"
+        },
+        {
+          "trigger": "click",
+          "action_id": "nav_stack",
+          "args": [
+            "open"
+          ],
+          "_raw": "click | nav_stack: open | template: proximal_outcome_14d_checkin, header: false",
+          "params": {
+            "template": "proximal_outcome_14d_checkin",
+            "header": false
+          }
+        }
+      ],
+      "priority": 1,
+      "campaign_list": [
+        "nf_po_first"
+      ],
+      "title": "@global.po_post_nf_first_title",
+      "text": "@global.po_post_nf_first_text"
+    },
+    {
+      "id": "po_reminder_1",
+      "workshop": "independent",
+      "message_type": "post_programme",
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_field",
+          "args": [
+            "po_setup_pending",
+            true
+          ],
+          "_raw": "click | set_field: po_setup_pending: true"
+        },
+        {
+          "trigger": "click",
+          "action_id": "set_field",
+          "args": [
+            "prox_outcome_access",
+            "cta"
+          ],
+          "_raw": "click | set_field: prox_outcome_access: cta"
+        },
+        {
+          "trigger": "click",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "click | set_data | _list_id: proximal_outcome_14d_pages, completed: false",
+          "params": {
+            "_list_id": "proximal_outcome_14d_pages",
+            "completed": false
+          }
+        },
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "home_screen"
+          ],
+          "_raw": "click | go_to: home_screen"
+        },
+        {
+          "trigger": "click",
+          "action_id": "nav_stack",
+          "args": [
+            "open"
+          ],
+          "_raw": "click | nav_stack: open | template: proximal_outcome_14d_checkin, header: false",
+          "params": {
+            "template": "proximal_outcome_14d_checkin",
+            "header": false
+          }
+        }
+      ],
+      "priority": 1,
+      "campaign_list": [
+        "nf_po_r1"
+      ],
+      "title": "@global.po_post_nf_reminder_title",
+      "text": "@global.po_post_nf_reminder_text"
+    },
+    {
+      "id": "po_reminder_2",
+      "workshop": "independent",
+      "message_type": "post_programme",
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_field",
+          "args": [
+            "po_setup_pending",
+            true
+          ],
+          "_raw": "click | set_field: po_setup_pending: true"
+        },
+        {
+          "trigger": "click",
+          "action_id": "set_field",
+          "args": [
+            "prox_outcome_access",
+            "cta"
+          ],
+          "_raw": "click | set_field: prox_outcome_access: cta"
+        },
+        {
+          "trigger": "click",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "click | set_data | _list_id: proximal_outcome_14d_pages, completed: false",
+          "params": {
+            "_list_id": "proximal_outcome_14d_pages",
+            "completed": false
+          }
+        },
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "home_screen"
+          ],
+          "_raw": "click | go_to: home_screen"
+        },
+        {
+          "trigger": "click",
+          "action_id": "nav_stack",
+          "args": [
+            "open"
+          ],
+          "_raw": "click | nav_stack: open | template: proximal_outcome_14d_checkin, header: false",
+          "params": {
+            "template": "proximal_outcome_14d_checkin",
+            "header": false
+          }
+        }
+      ],
+      "priority": 1,
+      "campaign_list": [
+        "nf_po_r2"
+      ],
+      "title": "@global.po_post_nf_reminder_title",
+      "text": "@global.po_post_nf_reminder_text"
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "data/MX notifications.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/19djnbR4ynZYLAasRMjhw1C0rpnCghuY47whYaLgkbVE"
+  },
+  "_metadata": {
+    "priority": {
+      "type": "number"
+    }
+  }
+}
