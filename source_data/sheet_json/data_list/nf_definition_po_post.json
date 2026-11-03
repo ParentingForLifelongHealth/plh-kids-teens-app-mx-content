@@ -1,0 +1,41 @@
+{
+  "flow_type": "data_list",
+  "flow_subtype": "campaign_rows",
+  "flow_name": "nf_definition_po_post",
+  "status": "released",
+  "rows": [
+    {
+      "id": "po_first",
+      "workshop": "independent",
+      "message_type": "post_programme",
+      "action_list": "click | set_field: po_setup_pending: true;\nclick | set_field: prox_outcome_access: cta;\nclick | set_data | _list_id: proximal_outcome_14d_pages, completed: false;\nclick | go_to: home_screen;\nclick | nav_stack: open | template: proximal_outcome_14d_checkin, header: false;",
+      "priority": 1,
+      "campaign_list": "nf_po_first",
+      "title": "@global.po_post_nf_first_title",
+      "text": "@global.po_post_nf_first_text",
+      "comment": "Tap opens the 14-day check-in on top of home (same setup as the old po_tap_action_list; trigger is click for campaigns). Wording lives in proximal_outcome_global."
+    },
+    {
+      "id": "po_reminder_1",
+      "workshop": "independent",
+      "message_type": "post_programme",
+      "action_list": "click | set_field: po_setup_pending: true;\nclick | set_field: prox_outcome_access: cta;\nclick | set_data | _list_id: proximal_outcome_14d_pages, completed: false;\nclick | go_to: home_screen;\nclick | nav_stack: open | template: proximal_outcome_14d_checkin, header: false;",
+      "priority": 1,
+      "campaign_list": "nf_po_r1",
+      "title": "@global.po_post_nf_reminder_title",
+      "text": "@global.po_post_nf_reminder_text",
+      "comment": "Separate row per reminder schedule: a row listed in two schedules is only booked for one of them."
+    },
+    {
+      "id": "po_reminder_2",
+      "workshop": "independent",
+      "message_type": "post_programme",
+      "action_list": "click | set_field: po_setup_pending: true;\nclick | set_field: prox_outcome_access: cta;\nclick | set_data | _list_id: proximal_outcome_14d_pages, completed: false;\nclick | go_to: home_screen;\nclick | nav_stack: open | template: proximal_outcome_14d_checkin, header: false;",
+      "priority": 1,
+      "campaign_list": "nf_po_r2",
+      "title": "@global.po_post_nf_reminder_title",
+      "text": "@global.po_post_nf_reminder_text",
+      "comment": "Same text as po_reminder_1."
+    }
+  ]
+}

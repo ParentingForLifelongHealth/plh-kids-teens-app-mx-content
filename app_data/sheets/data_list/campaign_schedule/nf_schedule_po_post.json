@@ -1,0 +1,99 @@
+{
+  "flow_type": "data_list",
+  "flow_subtype": "campaign_schedule",
+  "flow_name": "nf_schedule_po_post",
+  "status": "released",
+  "rows": [
+    {
+      "id": "nf_po_first",
+      "activation_condition_list": [
+        {
+          "condition_type": "calc",
+          "condition_args": {
+            "calc": "@fields.completed_all && @fields.prox_7d_last_ts"
+          },
+          "_raw": "@fields.completed_all && @fields.prox_7d_last_ts"
+        }
+      ],
+      "schedule": {
+        "start_date": "@fields.prox_7d_last_ts",
+        "end_date": "@calc(date_fns.addDays(new Date(@fields.onboarding_completed_ts || this.app_first_launch), 150))",
+        "repeat_every_days": 30,
+        "repeat_count": 5
+      },
+      "time": {
+        "hour": 19,
+        "minute": 0
+      },
+      "delay": {
+        "days": 30
+      }
+    },
+    {
+      "id": "nf_po_r1",
+      "activation_condition_list": [
+        {
+          "condition_type": "calc",
+          "condition_args": {
+            "calc": "@fields.completed_all && @fields.prox_7d_last_ts"
+          },
+          "_raw": "@fields.completed_all && @fields.prox_7d_last_ts"
+        }
+      ],
+      "schedule": {
+        "start_date": "@fields.prox_7d_last_ts",
+        "end_date": "@calc(date_fns.addDays(new Date(@fields.onboarding_completed_ts || this.app_first_launch), 150))",
+        "repeat_every_days": 30,
+        "repeat_count": 5
+      },
+      "time": {
+        "hour": 19,
+        "minute": 0
+      },
+      "delay": {
+        "days": 37
+      }
+    },
+    {
+      "id": "nf_po_r2",
+      "activation_condition_list": [
+        {
+          "condition_type": "calc",
+          "condition_args": {
+            "calc": "@fields.completed_all && @fields.prox_7d_last_ts"
+          },
+          "_raw": "@fields.completed_all && @fields.prox_7d_last_ts"
+        }
+      ],
+      "schedule": {
+        "start_date": "@fields.prox_7d_last_ts",
+        "end_date": "@calc(date_fns.addDays(new Date(@fields.onboarding_completed_ts || this.app_first_launch), 150))",
+        "repeat_every_days": 30,
+        "repeat_count": 5
+      },
+      "time": {
+        "hour": 19,
+        "minute": 0
+      },
+      "delay": {
+        "days": 44
+      }
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "data/MX notifications.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/19djnbR4ynZYLAasRMjhw1C0rpnCghuY47whYaLgkbVE"
+  },
+  "_metadata": {
+    "schedule": {
+      "type": "object"
+    },
+    "time": {
+      "type": "object"
+    },
+    "delay": {
+      "type": "object"
+    }
+  }
+}
