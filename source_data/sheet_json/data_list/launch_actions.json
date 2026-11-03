@@ -16,28 +16,28 @@
       "id": "language_select",
       "priority": 2,
       "condition_list": "@fields.user_mode && !@fields.onboarding_language_select_completed && @global.has_onboarding_language_select",
-      "action_list": "pop_up: onboarding_language_select | fullscreen: true, showCloseButton: false;"
+      "action_list": "pop_up: onboarding_language_select | fullscreen: true, showCloseButton: false;\nemit: server_sync;"
     },
     {
       "lifecycle_event": "app_start",
       "id": "splash_auto_advance",
       "priority": 3,
       "condition_list": "@fields.user_mode && !@fields.onboarding_splash_completed && @global.has_onboarding_splash && !@global.onboarding_splash_manual_advance",
-      "action_list": "pop_up: onboarding_splash_auto | fullscreen: true, showCloseButton: false;\nset_field: onboarding_splash_completed: true;"
+      "action_list": "pop_up: onboarding_splash_auto | fullscreen: true, showCloseButton: false;\nset_field: onboarding_splash_completed: true;\nemit: server_sync;"
     },
     {
       "lifecycle_event": "app_start",
       "id": "splash_manual_advance",
       "priority": 3.1,
       "condition_list": "@fields.user_mode && !@fields.onboarding_splash_completed && @global.has_onboarding_splash && @global.onboarding_splash_manual_advance",
-      "action_list": "pop_up: onboarding_splash_manual | fullscreen: true, showCloseButton: false"
+      "action_list": "pop_up: onboarding_splash_manual | fullscreen: true, showCloseButton: false;\nemit: server_sync;"
     },
     {
       "lifecycle_event": "app_start",
       "id": "terms_login",
       "priority": 4,
       "condition_list": "@fields.user_mode && !@fields.onboarding_terms_login_completed && @global.has_onboarding_terms_login",
-      "action_list": "pop_up: onboarding_terms_login | fullscreen: true, showCloseButton: false;"
+      "action_list": "pop_up: onboarding_terms_login | fullscreen: true, showCloseButton: false;\nemit: server_sync;"
     },
     {
       "lifecycle_event": "app_start",
@@ -65,7 +65,7 @@
       "id": "server_sync",
       "priority": 7,
       "condition_list": "@fields.user_mode && !@fields.onboarding_completed",
-      "action_list": "emit: server_sync;\nset_field: onboarding_completed: true;"
+      "action_list": "set_field: onboarding_completed: true;\nemit: server_sync;"
     },
     {
       "lifecycle_event": "app_start",
