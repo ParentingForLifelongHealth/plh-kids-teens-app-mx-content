@@ -142,6 +142,7 @@
       "name": "youtube_lang",
       "value": "@local.@local.youtube_concat",
       "condition": "!!(@local.@local.youtube_concat)",
+      "parameter_list": "orientation: @global.youtube_orientation",
       "exclude_from_translation": true
     },
     {
@@ -149,6 +150,7 @@
       "name": "youtube_lang_missing",
       "value": "@local.@local.youtube_concat_missing",
       "condition": "!(@local.@local.youtube_concat)",
+      "parameter_list": "orientation: @global.youtube_orientation",
       "exclude_from_translation": true
     },
     {

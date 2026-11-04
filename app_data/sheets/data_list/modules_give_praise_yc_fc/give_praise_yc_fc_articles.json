@@ -24,18 +24,32 @@
       "id": "intro_2",
       "category_id": "intro",
       "nested": false,
-      "text_1_facilitator": "¿Cómo te sentiste al leer eso? Se siente bien que noten tu esfuerzo, ¿verdad? 😊\n\n\nEsta sesión trata sobre **reconocer el buen comportamiento** de @fields.child_name. \n\n\nEsto puede ser difícil, especialmente si el día estuvo pesado o si de niños no nos reconocían las cosas buenas que hacíamos.",
+      "text_1_facilitator": "¿Cómo te sentiste al leer eso? Se siente bien que noten tu esfuerzo, ¿verdad? 😊",
       "_translations": {
         "text_1_facilitator": {}
       },
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "¿Cómo te sentiste al leer eso? Se siente bien que noten tu esfuerzo, ¿verdad? 😊\n\n\nEsta sesión trata sobre **reconocer el buen comportamiento** de @fields.child_name. \n\n\nEsto puede ser difícil, especialmente si el día estuvo pesado o si de niños no nos reconocían las cosas buenas que hacíamos."
+          "eng": "¿Cómo te sentiste al leer eso? Se siente bien que noten tu esfuerzo, ¿verdad? 😊"
         }
       }
     },
     {
       "id": "intro_3",
+      "category_id": "intro",
+      "nested": false,
+      "text_1_facilitator": "Esta sesión trata sobre **reconocer el buen comportamiento** de @fields.child_name.  🎉\n\n\nEsto puede ser difícil, especialmente si el día estuvo pesado o si de niños no nos reconocían las cosas buenas que hacíamos.",
+      "_translations": {
+        "text_1_facilitator": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Esta sesión trata sobre **reconocer el buen comportamiento** de @fields.child_name.  🎉\n\n\nEsto puede ser difícil, especialmente si el día estuvo pesado o si de niños no nos reconocían las cosas buenas que hacíamos."
+        }
+      }
+    },
+    {
+      "id": "intro_4",
       "category_id": "intro",
       "nested": false,
       "text_1_facilitator": "Aquí practicaremos cómo reconocer a @fields.child_name en el momento justo, para que quiera comportarse así más seguido. ⏰",
@@ -49,7 +63,7 @@
       }
     },
     {
-      "id": "intro_4",
+      "id": "intro_5",
       "category_id": "intro",
       "nested": false,
       "text_1_facilitator": "Antes de empezar, reflexionemos un momento📝",
@@ -88,7 +102,7 @@
       "quiz_1_feedback_2": "🎉 ¡Tienes razón!\n\n\nLa forma de reconocer sí importa. El reconocimiento es más efectivo si dices exactamente qué hizo bien, en cuanto pase y de corazón. Esto le motiva a repetirlo.\n\nPuedes empezar por reconocer cosas pequeñas, como respetar los acuerdos, compartir sus juguetes o esforzarse cuando está haciendo algo que le cuesta trabajo."
     },
     {
-      "id": "intro_5",
+      "id": "intro_6",
       "category_id": "intro",
       "nested": false,
       "text_1_facilitator": "¡Una pregunta más!",
@@ -127,7 +141,7 @@
       "quiz_1_feedback_2": "👀 ¡Ups! ¡Revisemos esta idea!\n\n\nReconocerles hace más probable que repitan un comportamiento y también les ayuda a descubrir todo lo que son capaces de hacer. \n\nTrata de reconocer el esfuerzo y las diferentes habilidades de @fields.child_name, sin pensar si algunas son solo de niñas o de niños. \n\nPor ejemplo: \"¡Qué bien incluiste a tu hermanito en el juego!\" o \"¡Me encanta tu curiosidad sobre los animales!\"."
     },
     {
-      "id": "intro_6",
+      "id": "intro_7",
       "category_id": "intro",
       "nested": false,
       "text_1_facilitator": "¡Última!",
@@ -183,7 +197,7 @@
     {
       "id": "explore_2",
       "category_id": "explore",
-      "image_asset": "images/comic/relation/give_praise_yc_fc_1.svg",
+      "image_asset": "images/comic/relation/give_praise/give_praise_yc_fc_1.svg",
       "character_1_id": "f3_madre",
       "nested": false,
       "text_1_facilitator": "Vamos a ver estas estrategias en la práctica.",
@@ -209,7 +223,7 @@
     {
       "id": "explore_3",
       "category_id": "explore",
-      "image_asset": "images/comic/relation/give_praise_yc_fc_2.svg",
+      "image_asset": "images/comic/relation/give_praise/give_praise_yc_fc_2.svg",
       "character_1_id": "f3_hijo_4",
       "character_2_id": "f3_madre",
       "nested": false,
@@ -236,7 +250,7 @@
     {
       "id": "explore_4",
       "category_id": "explore",
-      "image_asset": "images/comic/relation/give_praise_yc_fc_3.svg",
+      "image_asset": "images/comic/relation/give_praise/give_praise_yc_fc_3.svg",
       "character_1_id": "f3_hijo_4",
       "character_2_id": "f3_madre",
       "nested": false,
@@ -263,7 +277,7 @@
     {
       "id": "explore_5",
       "category_id": "explore",
-      "image_asset": "images/comic/relation/give_praise_yc_fc_4.svg",
+      "image_asset": "images/comic/relation/give_praise/give_praise_yc_fc_4.svg",
       "character_1_id": "abuela_1",
       "character_2_id": "f3_hijo_4",
       "character_3_id": "abuela_1",

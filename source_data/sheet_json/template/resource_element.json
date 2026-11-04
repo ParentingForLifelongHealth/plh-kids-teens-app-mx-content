@@ -120,6 +120,7 @@
       "name": "message_youtube",
       "value": "@item.youtube_gb_en",
       "condition": "@item.type == \"youtube\"",
+      "parameter_list": "orientation: @global.youtube_orientation",
       "comments": "(@fields._app_language == \"cw_pap\") && (@item.type == \"youtube\")"
     },
     {
@@ -127,6 +128,7 @@
       "name": "message_youtube_za_xh",
       "value": "@item.youtube_za_xh",
       "condition": false,
+      "parameter_list": "orientation: @global.youtube_orientation",
       "comments": "for different language"
     },
     {

@@ -515,6 +515,9 @@
                     "value": {}
                   },
                   "condition": "@item.type == \"youtube\"",
+                  "parameter_list": {
+                    "orientation": "@global.youtube_orientation"
+                  },
                   "_nested_name": "display_group_10.data_items_1.display_group_1_@item.id.message_youtube",
                   "_dynamicFields": {
                     "value": [
@@ -533,6 +536,16 @@
                         "fieldName": "type"
                       }
                     ],
+                    "parameter_list": {
+                      "orientation": [
+                        {
+                          "fullExpression": "@global.youtube_orientation",
+                          "matchedExpression": "@global.youtube_orientation",
+                          "type": "global",
+                          "fieldName": "youtube_orientation"
+                        }
+                      ]
+                    },
                     "_nested_name": [
                       {
                         "fullExpression": "display_group_10.data_items_1.display_group_1_@item.id.message_youtube",
@@ -549,6 +562,9 @@
                     "@item.type": [
                       "condition"
                     ],
+                    "@global.youtube_orientation": [
+                      "parameter_list.orientation"
+                    ],
                     "@item.id.message_youtube": [
                       "_nested_name"
                     ]
@@ -562,6 +578,9 @@
                     "value": {}
                   },
                   "condition": false,
+                  "parameter_list": {
+                    "orientation": "@global.youtube_orientation"
+                  },
                   "_nested_name": "display_group_10.data_items_1.display_group_1_@item.id.message_youtube_za_xh",
                   "_dynamicFields": {
                     "value": [
@@ -572,6 +591,16 @@
                         "fieldName": "youtube_za_xh"
                       }
                     ],
+                    "parameter_list": {
+                      "orientation": [
+                        {
+                          "fullExpression": "@global.youtube_orientation",
+                          "matchedExpression": "@global.youtube_orientation",
+                          "type": "global",
+                          "fieldName": "youtube_orientation"
+                        }
+                      ]
+                    },
                     "_nested_name": [
                       {
                         "fullExpression": "display_group_10.data_items_1.display_group_1_@item.id.message_youtube_za_xh",
@@ -584,6 +613,9 @@
                   "_dynamicDependencies": {
                     "@item.youtube_za_xh": [
                       "value"
+                    ],
+                    "@global.youtube_orientation": [
+                      "parameter_list.orientation"
                     ],
                     "@item.id.message_youtube_za_xh": [
                       "_nested_name"

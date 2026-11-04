@@ -638,6 +638,9 @@
             "value": {}
           },
           "condition": "!!(@local.@local.youtube_concat)",
+          "parameter_list": {
+            "orientation": "@global.youtube_orientation"
+          },
           "exclude_from_translation": true,
           "_nested_name": "youtube_dg.youtube_lang",
           "_dynamicFields": {
@@ -656,12 +659,25 @@
                 "type": "local",
                 "fieldName": "youtube_concat"
               }
-            ]
+            ],
+            "parameter_list": {
+              "orientation": [
+                {
+                  "fullExpression": "@global.youtube_orientation",
+                  "matchedExpression": "@global.youtube_orientation",
+                  "type": "global",
+                  "fieldName": "youtube_orientation"
+                }
+              ]
+            }
           },
           "_dynamicDependencies": {
             "@local.youtube_concat": [
               "value",
               "condition"
+            ],
+            "@global.youtube_orientation": [
+              "parameter_list.orientation"
             ]
           }
         },
@@ -673,6 +689,9 @@
             "value": {}
           },
           "condition": "!(@local.@local.youtube_concat)",
+          "parameter_list": {
+            "orientation": "@global.youtube_orientation"
+          },
           "exclude_from_translation": true,
           "_nested_name": "youtube_dg.youtube_lang_missing",
           "_dynamicFields": {
@@ -691,7 +710,17 @@
                 "type": "local",
                 "fieldName": "youtube_concat"
               }
-            ]
+            ],
+            "parameter_list": {
+              "orientation": [
+                {
+                  "fullExpression": "@global.youtube_orientation",
+                  "matchedExpression": "@global.youtube_orientation",
+                  "type": "global",
+                  "fieldName": "youtube_orientation"
+                }
+              ]
+            }
           },
           "_dynamicDependencies": {
             "@local.youtube_concat_missing": [
@@ -699,6 +728,9 @@
             ],
             "@local.youtube_concat": [
               "condition"
+            ],
+            "@global.youtube_orientation": [
+              "parameter_list.orientation"
             ]
           }
         }

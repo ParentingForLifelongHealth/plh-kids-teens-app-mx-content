@@ -62,8 +62,8 @@
       "campaign_list": [
         "nf_po_first"
       ],
-      "title": "@global.po_post_nf_first_title",
-      "text": "@global.po_post_nf_first_text"
+      "title": "@calc((v => v[Number(@fields.po_nf_index || 0) % v.length]?.title)(Object.values(@data.po_post_nf_texts).filter(r => r.type == \"first\")))",
+      "text": "@calc((v => v[Number(@fields.po_nf_index || 0) % v.length]?.text)(Object.values(@data.po_post_nf_texts).filter(r => r.type == \"first\")))"
     },
     {
       "id": "po_reminder_1",
@@ -123,8 +123,8 @@
       "campaign_list": [
         "nf_po_r1"
       ],
-      "title": "@global.po_post_nf_reminder_title",
-      "text": "@global.po_post_nf_reminder_text"
+      "title": "@calc((v => v[Number(@fields.po_nf_index || 0) % v.length]?.title)(Object.values(@data.po_post_nf_texts).filter(r => r.type == \"reminder\")))",
+      "text": "@calc((v => v[Number(@fields.po_nf_index || 0) % v.length]?.text)(Object.values(@data.po_post_nf_texts).filter(r => r.type == \"reminder\")))"
     },
     {
       "id": "po_reminder_2",
@@ -184,13 +184,13 @@
       "campaign_list": [
         "nf_po_r2"
       ],
-      "title": "@global.po_post_nf_reminder_title",
-      "text": "@global.po_post_nf_reminder_text"
+      "title": "@calc((v => v[Number(@fields.po_nf_index || 0) % v.length]?.title)(Object.values(@data.po_post_nf_texts).filter(r => r.type == \"reminder\")))",
+      "text": "@calc((v => v[Number(@fields.po_nf_index || 0) % v.length]?.text)(Object.values(@data.po_post_nf_texts).filter(r => r.type == \"reminder\")))"
     }
   ],
   "_source": {
-    "name": "kids_teens_mx",
-    "path": "data/MX notifications.xlsx",
+    "name": "kids_teens_global V3",
+    "path": "templates/PLH notifications.xlsx",
     "url": "https://docs.google.com/spreadsheets/d/19djnbR4ynZYLAasRMjhw1C0rpnCghuY47whYaLgkbVE"
   },
   "_metadata": {
