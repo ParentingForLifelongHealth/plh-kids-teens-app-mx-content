@@ -1,0 +1,390 @@
+{
+  "flow_type": "template",
+  "flow_name": "onboarding_data_consent",
+  "status": "released",
+  "rows": [
+    {
+      "type": "lottie_animation",
+      "name": "lottie",
+      "value": "@global.onboarding_data_consent_lottie_asset",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "!!@global.onboarding_data_consent_lottie_asset",
+      "_nested_name": "lottie",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@global.onboarding_data_consent_lottie_asset",
+            "matchedExpression": "@global.onboarding_data_consent_lottie_asset",
+            "type": "global",
+            "fieldName": "onboarding_data_consent_lottie_asset"
+          }
+        ],
+        "condition": [
+          {
+            "fullExpression": "!!@global.onboarding_data_consent_lottie_asset",
+            "matchedExpression": "!@global.onboarding_data_consent_lottie_asset",
+            "type": "global",
+            "fieldName": "onboarding_data_consent_lottie_asset"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@global.onboarding_data_consent_lottie_asset": [
+          "value"
+        ],
+        "!@global.onboarding_data_consent_lottie_asset": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "image",
+      "name": "image",
+      "value": "@global.onboarding_data_consent_image_asset",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "!!@global.onboarding_data_consent_image_asset",
+      "_nested_name": "image",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@global.onboarding_data_consent_image_asset",
+            "matchedExpression": "@global.onboarding_data_consent_image_asset",
+            "type": "global",
+            "fieldName": "onboarding_data_consent_image_asset"
+          }
+        ],
+        "condition": [
+          {
+            "fullExpression": "!!@global.onboarding_data_consent_image_asset",
+            "matchedExpression": "!@global.onboarding_data_consent_image_asset",
+            "type": "global",
+            "fieldName": "onboarding_data_consent_image_asset"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@global.onboarding_data_consent_image_asset": [
+          "value"
+        ],
+        "!@global.onboarding_data_consent_image_asset": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "text_intro",
+      "value": "@global.onboarding_data_consent_intro_text",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "text_align": "center"
+      },
+      "_nested_name": "text_intro",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@global.onboarding_data_consent_intro_text",
+            "matchedExpression": "@global.onboarding_data_consent_intro_text",
+            "type": "global",
+            "fieldName": "onboarding_data_consent_intro_text"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@global.onboarding_data_consent_intro_text": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "display_group",
+      "name": "dg_onboarding_data_consent_personalisation",
+      "rows": [
+        {
+          "type": "simple_checkbox",
+          "name": "onboarding_data_consent_personalisation",
+          "value": false,
+          "parameter_list": {
+            "align": "left"
+          },
+          "style_list": [
+            "margin-top: -0.75em"
+          ],
+          "_nested_name": "dg_onboarding_data_consent_personalisation.onboarding_data_consent_personalisation"
+        },
+        {
+          "type": "text",
+          "name": "text_onboarding_data_consent_personalisation",
+          "value": "@global.onboarding_data_consent_personalisation_text",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_onboarding_data_consent_personalisation.text_onboarding_data_consent_personalisation",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@global.onboarding_data_consent_personalisation_text",
+                "matchedExpression": "@global.onboarding_data_consent_personalisation_text",
+                "type": "global",
+                "fieldName": "onboarding_data_consent_personalisation_text"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@global.onboarding_data_consent_personalisation_text": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "dg_onboarding_data_consent_personalisation"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_onboarding_data_consent_impact",
+      "rows": [
+        {
+          "type": "simple_checkbox",
+          "name": "onboarding_data_consent_impact",
+          "value": false,
+          "parameter_list": {
+            "align": "left"
+          },
+          "style_list": [
+            "margin-top: -0.75em"
+          ],
+          "_nested_name": "dg_onboarding_data_consent_impact.onboarding_data_consent_impact"
+        },
+        {
+          "type": "text",
+          "name": "text_onboarding_data_consent_impact",
+          "value": "@global.onboarding_data_consent_impact_text",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_onboarding_data_consent_impact.text_onboarding_data_consent_impact",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@global.onboarding_data_consent_impact_text",
+                "matchedExpression": "@global.onboarding_data_consent_impact_text",
+                "type": "global",
+                "fieldName": "onboarding_data_consent_impact_text"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@global.onboarding_data_consent_impact_text": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "dg_onboarding_data_consent_impact"
+    },
+    {
+      "type": "text",
+      "name": "text_onboarding_data_consent_required",
+      "value": "@global.onboarding_data_consent_required_text",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "!@local.onboarding_data_consent_personalisation",
+      "parameter_list": {
+        "text_align": "center",
+        "style": "contextual"
+      },
+      "_nested_name": "text_onboarding_data_consent_required",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@global.onboarding_data_consent_required_text",
+            "matchedExpression": "@global.onboarding_data_consent_required_text",
+            "type": "global",
+            "fieldName": "onboarding_data_consent_required_text"
+          }
+        ],
+        "condition": [
+          {
+            "fullExpression": "!@local.onboarding_data_consent_personalisation",
+            "matchedExpression": "!@local.onboarding_data_consent_personalisation",
+            "type": "local",
+            "fieldName": "onboarding_data_consent_personalisation"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@global.onboarding_data_consent_required_text": [
+          "value"
+        ],
+        "!@local.onboarding_data_consent_personalisation": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "name": "button_continue",
+      "value": "@global.continue",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "style": "navigation",
+        "disabled": "!@local.onboarding_data_consent_personalisation"
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_field",
+          "args": [
+            "onboarding_data_consent_personalisation",
+            true
+          ],
+          "_raw": "click | set_field: onboarding_data_consent_personalisation: true"
+        },
+        {
+          "trigger": "click",
+          "action_id": "set_field",
+          "args": [
+            "onboarding_data_consent_impact",
+            "@calc(!!@local.onboarding_data_consent_impact)"
+          ],
+          "_raw": "click | set_field: onboarding_data_consent_impact: @calc(!!@local.onboarding_data_consent_impact)"
+        },
+        {
+          "trigger": "click",
+          "action_id": "set_field",
+          "args": [
+            "onboarding_data_consent_ts",
+            "@calc(new Date().toISOString())"
+          ],
+          "_raw": "click | set_field: onboarding_data_consent_ts: @calc(new Date().toISOString())"
+        },
+        {
+          "trigger": "click",
+          "action_id": "set_field",
+          "args": [
+            "onboarding_data_consent_completed",
+            true
+          ],
+          "_raw": "click | set_field: onboarding_data_consent_completed: true"
+        },
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "completed"
+          ],
+          "_raw": "click | emit: completed"
+        }
+      ],
+      "_nested_name": "button_continue",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@global.continue",
+            "matchedExpression": "@global.continue",
+            "type": "global",
+            "fieldName": "continue"
+          }
+        ],
+        "parameter_list": {
+          "disabled": [
+            {
+              "fullExpression": "!@local.onboarding_data_consent_personalisation",
+              "matchedExpression": "!@local.onboarding_data_consent_personalisation",
+              "type": "local",
+              "fieldName": "onboarding_data_consent_personalisation"
+            }
+          ]
+        },
+        "action_list": {
+          "1": {
+            "args": {
+              "1": [
+                {
+                  "fullExpression": "@calc(!!@local.onboarding_data_consent_impact)",
+                  "matchedExpression": "!@local.onboarding_data_consent_impact",
+                  "type": "local",
+                  "fieldName": "onboarding_data_consent_impact"
+                },
+                {
+                  "fullExpression": "@calc(!!@local.onboarding_data_consent_impact)",
+                  "matchedExpression": "@calc(!!@local.onboarding_data_consent_impact)",
+                  "type": "calc",
+                  "fieldName": "!!@local.onboarding_data_consent_impact"
+                }
+              ]
+            },
+            "_raw": [
+              {
+                "fullExpression": "click | set_field: onboarding_data_consent_impact: @calc(!!@local.onboarding_data_consent_impact)",
+                "matchedExpression": "!@local.onboarding_data_consent_impact",
+                "type": "local",
+                "fieldName": "onboarding_data_consent_impact"
+              },
+              {
+                "fullExpression": "click | set_field: onboarding_data_consent_impact: @calc(!!@local.onboarding_data_consent_impact)",
+                "matchedExpression": "@calc(!!@local.onboarding_data_consent_impact)",
+                "type": "calc",
+                "fieldName": "!!@local.onboarding_data_consent_impact"
+              }
+            ]
+          },
+          "2": {
+            "args": {
+              "1": [
+                {
+                  "fullExpression": "@calc(new Date().toISOString())",
+                  "matchedExpression": "@calc(new Date().toISOString())",
+                  "type": "calc",
+                  "fieldName": "new Date().toISOString()"
+                }
+              ]
+            },
+            "_raw": [
+              {
+                "fullExpression": "click | set_field: onboarding_data_consent_ts: @calc(new Date().toISOString())",
+                "matchedExpression": "@calc(new Date().toISOString())",
+                "type": "calc",
+                "fieldName": "new Date().toISOString()"
+              }
+            ]
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@global.continue": [
+          "value"
+        ],
+        "!@local.onboarding_data_consent_personalisation": [
+          "parameter_list.disabled"
+        ],
+        "!@local.onboarding_data_consent_impact": [
+          "action_list.1.args.1",
+          "action_list.1._raw"
+        ],
+        "@calc(!!@local.onboarding_data_consent_impact)": [
+          "action_list.1.args.1",
+          "action_list.1._raw"
+        ],
+        "@calc(new Date().toISOString())": [
+          "action_list.2.args.1",
+          "action_list.2._raw"
+        ]
+      }
+    }
+  ],
+  "_source": {
+    "name": "library PLH onboarding",
+    "path": "PLH onboarding.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1LUIu_aqkzYjyUq0ecQEmWJa62CEvQ4E2L4Fkz_94ydw"
+  }
+}

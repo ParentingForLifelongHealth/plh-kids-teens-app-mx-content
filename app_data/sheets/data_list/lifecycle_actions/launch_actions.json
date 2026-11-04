@@ -153,6 +153,36 @@
     },
     {
       "lifecycle_event": "app_start",
+      "id": "data_consent",
+      "priority": 5,
+      "condition_list": [
+        "@fields.user_mode && !@fields.onboarding_data_consent_completed && @global.has_onboarding_data_consent"
+      ],
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "pop_up",
+          "args": [
+            "onboarding_data_consent"
+          ],
+          "_raw": "pop_up: onboarding_data_consent | fullscreen: true, showCloseButton: false",
+          "params": {
+            "fullscreen": true,
+            "showCloseButton": false
+          }
+        },
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "server_sync"
+          ],
+          "_raw": "emit: server_sync"
+        }
+      ]
+    },
+    {
+      "lifecycle_event": "app_start",
       "id": "settings",
       "priority": 6,
       "condition_list": [

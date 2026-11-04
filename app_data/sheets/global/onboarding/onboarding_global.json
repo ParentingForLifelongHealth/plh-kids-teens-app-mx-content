@@ -61,6 +61,11 @@
     },
     {
       "type": "declare_global_constant",
+      "name": "has_onboarding_data_consent",
+      "value": false
+    },
+    {
+      "type": "declare_global_constant",
       "name": "has_onboarding_settings",
       "value": false
     },
@@ -328,6 +333,46 @@
       "type": "declare_global_constant",
       "name": "onboarding_no_connection_troubleshoot",
       "value": "📱 Open Settings\n\n📶 Turn on Wi-Fi or Mobile Data\n\n↩️ Come back here and tap the button below",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_constant",
+      "name": "data_consent_lottie_asset"
+    },
+    {
+      "type": "declare_constant",
+      "name": "data_consent_image_asset"
+    },
+    {
+      "type": "declare_constant",
+      "name": "data_consent_intro_text",
+      "value": "[PLACEHOLDER] How we use your data…",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_constant",
+      "name": "data_consent_personalisation_text",
+      "value": "[PLACEHOLDER] I agree to my data being used to personalise the app.",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_constant",
+      "name": "data_consent_impact_text",
+      "value": "[PLACEHOLDER] I agree to my data being used to measure the programme's impact.",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_constant",
+      "name": "data_consent_required_text",
+      "value": "[PLACEHOLDER] Please tick the first box to continue.",
       "_translations": {
         "value": {}
       }

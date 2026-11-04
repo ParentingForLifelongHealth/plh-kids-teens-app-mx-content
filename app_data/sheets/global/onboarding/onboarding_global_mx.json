@@ -24,6 +24,12 @@
     },
     {
       "type": "declare_global_constant",
+      "name": "has_onboarding_data_consent",
+      "value": true,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "declare_global_constant",
       "name": "login_is_mandatory",
       "value": false,
       "exclude_from_translation": true
@@ -240,6 +246,50 @@
         "value": {}
       },
       "exclude_from_translation": true
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "onboarding_data_consent_lottie_asset",
+      "value": "lottie/ux/congrats.json",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "onboarding_data_consent_image_asset"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "onboarding_data_consent_intro_text",
+      "value": "[PLACEHOLDER] Cómo usamos tus datos…",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "onboarding_data_consent_personalisation_text",
+      "value": "[PLACEHOLDER] Acepto que se usen mis datos para personalizar la app.",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "onboarding_data_consent_impact_text",
+      "value": "[PLACEHOLDER] Acepto que se usen mis datos para medir el impacto del programa.",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "onboarding_data_consent_required_text",
+      "value": "[PLACEHOLDER] Debes aceptar la primera casilla para continuar.",
+      "_translations": {
+        "value": {}
+      }
     }
   ],
   "_source": {

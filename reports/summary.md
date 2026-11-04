@@ -9,17 +9,17 @@
 | animated_slides | 1 |
 | apple_sign_in_button | 2 |
 | audio | 4 |
-| button | 130 |
+| button | 131 |
 | combo_box | 23 |
 | data_items | 273 |
 | debug_toggle | 1 |
 | display_grid | 4 |
-| display_group | 145 |
+| display_group | 147 |
 | drawer | 1 |
 | google_sign_in_button | 2 |
-| image | 27 |
+| image | 28 |
 | items | 16 |
-| lottie_animation | 9 |
+| lottie_animation | 10 |
 | nested_properties | 603 |
 | number_selector | 1 |
 | plh_bottom_nav | 1 |
@@ -38,11 +38,11 @@
 | select_text | 1 |
 | set_field | 4 |
 | set_variable | 5776 |
-| simple_checkbox | 1 |
+| simple_checkbox | 3 |
 | task_card | 4 |
 | task_progress_bar | 5 |
 | template | 928 |
-| text | 333 |
+| text | 337 |
 | text_area | 4 |
 | text_box | 23 |
 | text_bubble | 31 |
@@ -63,7 +63,7 @@
 | asset_pack | 4 |
 | auth | 3 |
 | emit: changed | 7 |
-| emit: completed | 237 |
+| emit: completed | 238 |
 | emit: force_reload | 3 |
 | emit: force_reprocess | 13 |
 | emit: force_restart | 3 |
@@ -81,7 +81,7 @@
 | reset_data | 3 |
 | save_to_device | 3 |
 | set_data | 571 |
-| set_field | 571 |
+| set_field | 575 |
 | set_item | 30 |
 | set_local | 801 |
 | share | 3 |
@@ -95,8 +95,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 11767 KB | 11.8 MB |
-| unused | 14940 KB | 14.9 MB |
+| total | 12373 KB | 12.4 MB |
+| unused | 14333 KB | 14.3 MB |
 </details>
 
 <details open>
@@ -111,22 +111,6 @@ Assets that appear in app-data but do not have references within sheets
 | images/comic/relation/calm/calm_yc_mc_3.svg | 8.5 |
 | images/comic/relation/calm/calm_yc_mc_4.svg | 33.9 |
 | images/comic/relation/calm/calm_yc_mc_5.svg | 28.1 |
-| images/comic/relation/one_on_one_time/one_on_one_t_fc_1.svg | 28.8 |
-| images/comic/relation/one_on_one_time/one_on_one_t_fc_2.svg | 28.1 |
-| images/comic/relation/one_on_one_time/one_on_one_t_fc_3.svg | 42.6 |
-| images/comic/relation/one_on_one_time/one_on_one_t_fc_4.svg | 42.8 |
-| images/comic/relation/one_on_one_time/one_on_one_t_mc_1.svg | 29 |
-| images/comic/relation/one_on_one_time/one_on_one_t_mc_2.svg | 28 |
-| images/comic/relation/one_on_one_time/one_on_one_t_mc_3.svg | 43.2 |
-| images/comic/relation/one_on_one_time/one_on_one_t_mc_4.svg | 44.2 |
-| images/comic/relation/one_on_one_time/one_on_one_yc_fc_1.svg | 50 |
-| images/comic/relation/one_on_one_time/one_on_one_yc_fc_2.svg | 35.2 |
-| images/comic/relation/one_on_one_time/one_on_one_yc_fc_3.svg | 36.2 |
-| images/comic/relation/one_on_one_time/one_on_one_yc_fc_4.svg | 37.9 |
-| images/comic/relation/one_on_one_time/one_on_one_yc_mc_1.svg | 50 |
-| images/comic/relation/one_on_one_time/one_on_one_yc_mc_2.svg | 35.8 |
-| images/comic/relation/one_on_one_time/one_on_one_yc_mc_3.svg | 36.7 |
-| images/comic/relation/one_on_one_time/one_on_one_yc_mc_4.svg | 38.4 |
 | images/comic/safety/crisis/crises_2to6_yc_1.svg | 36.2 |
 | images/comic/safety/crisis/crises_2to6_yc_2.svg | 36.7 |
 | images/comic/safety/crisis/crises_2to6_yc_3.svg | 37.9 |
@@ -423,22 +407,6 @@ Assets that have references within sheets but do not appear in app-data
 | images/comic/relation/calm_yc_mc_3.svg | 2 |
 | images/comic/relation/calm_yc_mc_4.svg | 2 |
 | images/comic/relation/calm_yc_mc_5.svg | 2 |
-| images/comic/relation/one_on_one_time/one_on_one_time_t_fc_1.svg | 2 |
-| images/comic/relation/one_on_one_time/one_on_one_time_t_fc_2.svg | 2 |
-| images/comic/relation/one_on_one_time/one_on_one_time_t_fc_3.svg | 4 |
-| images/comic/relation/one_on_one_time/one_on_one_time_t_fc_4.svg | 2 |
-| images/comic/relation/one_on_one_time/one_on_one_time_t_mc_1.svg | 2 |
-| images/comic/relation/one_on_one_time/one_on_one_time_t_mc_2.svg | 2 |
-| images/comic/relation/one_on_one_time/one_on_one_time_t_mc_3.svg | 4 |
-| images/comic/relation/one_on_one_time/one_on_one_time_t_mc_4.svg | 2 |
-| images/comic/relation/one_on_one_time/one_on_one_time_yc_fc_1.svg | 2 |
-| images/comic/relation/one_on_one_time/one_on_one_time_yc_fc_2.svg | 2 |
-| images/comic/relation/one_on_one_time/one_on_one_time_yc_fc_3.svg | 2 |
-| images/comic/relation/one_on_one_time/one_on_one_time_yc_fc_4.svg | 2 |
-| images/comic/relation/one_on_one_time/one_on_one_time_yc_mc_1.svg | 2 |
-| images/comic/relation/one_on_one_time/one_on_one_time_yc_mc_2.svg | 2 |
-| images/comic/relation/one_on_one_time/one_on_one_time_yc_mc_3.svg | 2 |
-| images/comic/relation/one_on_one_time/one_on_one_time_yc_mc_4.svg | 2 |
 | images/comic/safe/com_safety_2to4_yc_1.svg | 2 |
 | images/comic/safe/com_safety_2to4_yc_2.svg | 2 |
 | images/comic/safe/com_safety_2to4_yc_3.svg | 2 |
@@ -703,6 +671,22 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/comic/relation/give_praise/give_praise_yc_mc_2.svg | 32.3 | 2 |
 | images/comic/relation/give_praise/give_praise_yc_mc_3.svg | 32.3 | 2 |
 | images/comic/relation/give_praise/give_praise_yc_mc_4.svg | 37.9 | 2 |
+| images/comic/relation/one_on_one_time/one_on_one_time_t_fc_1.svg | 28.8 | 2 |
+| images/comic/relation/one_on_one_time/one_on_one_time_t_fc_2.svg | 28.1 | 2 |
+| images/comic/relation/one_on_one_time/one_on_one_time_t_fc_3.svg | 42.6 | 4 |
+| images/comic/relation/one_on_one_time/one_on_one_time_t_fc_4.svg | 42.8 | 2 |
+| images/comic/relation/one_on_one_time/one_on_one_time_t_mc_1.svg | 29 | 2 |
+| images/comic/relation/one_on_one_time/one_on_one_time_t_mc_2.svg | 28 | 2 |
+| images/comic/relation/one_on_one_time/one_on_one_time_t_mc_3.svg | 43.2 | 4 |
+| images/comic/relation/one_on_one_time/one_on_one_time_t_mc_4.svg | 44.2 | 2 |
+| images/comic/relation/one_on_one_time/one_on_one_time_yc_fc_1.svg | 50 | 2 |
+| images/comic/relation/one_on_one_time/one_on_one_time_yc_fc_2.svg | 35.2 | 2 |
+| images/comic/relation/one_on_one_time/one_on_one_time_yc_fc_3.svg | 36.2 | 2 |
+| images/comic/relation/one_on_one_time/one_on_one_time_yc_fc_4.svg | 37.9 | 2 |
+| images/comic/relation/one_on_one_time/one_on_one_time_yc_mc_1.svg | 50 | 2 |
+| images/comic/relation/one_on_one_time/one_on_one_time_yc_mc_2.svg | 35.8 | 2 |
+| images/comic/relation/one_on_one_time/one_on_one_time_yc_mc_3.svg | 36.7 | 2 |
+| images/comic/relation/one_on_one_time/one_on_one_time_yc_mc_4.svg | 38.4 | 2 |
 | images/comic/relation/routines/routines_t_fc_1.svg | 29.7 | 2 |
 | images/comic/relation/routines/routines_t_fc_2.svg | 30.2 | 2 |
 | images/comic/relation/routines/routines_t_fc_3.svg | 36.7 | 2 |
@@ -767,7 +751,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | lottie/relax/square_flow.json | 5.9 | 53 |
 | lottie/ux/bulging_circles.json | 11.8 | 1 |
 | lottie/ux/checkmark.json | 24.6 | 2 |
-| lottie/ux/congrats.json | 50.4 | 1 |
+| lottie/ux/congrats.json | 50.4 | 3 |
 | lottie/ux/gift_box.json | 674.5 | 1 |
 </details>
 
@@ -884,7 +868,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global | ab_testing | 1 |
 | global | onboarding | 17 |
 | global | proximal_outcomes | 2 |
-| template |  | 112 |
+| template |  | 113 |
 | template | ab_testing | 1 |
 | template | generated | 425 |
 | template | legal_terms | 4 |
