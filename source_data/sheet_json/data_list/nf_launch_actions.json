@@ -5,16 +5,11 @@
   "status": "released",
   "rows": [
     {
-      "id": "pick_resume_lesson_first",
+      "id": "pick_nf_variant_seed",
       "lifecycle_event": "app_start",
       "priority": 0,
-      "action_list": "set_field: nf_resume_lesson_first: @calc(pick_random([\"a\",\"b\"]))"
-    },
-    {
-      "id": "pick_win_back_first",
-      "lifecycle_event": "app_start",
-      "priority": 0.1,
-      "action_list": "set_field: nf_win_back_first: @calc(pick_random([\"a\",\"b\"]))"
+      "action_list": "set_field: nf_variant_seed: @calc(Math.floor(Math.random() * 1000));",
+      "comment": "New random number on every app start: inactivity notifications use variant (seed % count), the 1-week ones seed + 1. Replaces pick_resume_lesson_first / pick_win_back_first."
     }
   ]
 }

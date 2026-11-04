@@ -5,7 +5,7 @@
   "status": "released",
   "rows": [
     {
-      "id": "install_nudge_a",
+      "id": "install_nudge",
       "workshop": "independent",
       "message_type": "inactive",
       "action_list": "sent | set_field: install_nudge_sent : true;",
@@ -13,20 +13,9 @@
       "activation_condition_list": "@fields.n_modules_completed == 0 && @fields.last_module_in_progress == \"NA\"",
       "deactivation_condition_list": "@fields.install_nudge_sent",
       "campaign_list": "nf_inactive_day",
-      "title::eng": "Tu camino en la crianza comienza aquí",
-      "text::eng": "¡Te damos la bienvenida a @global.app_name! Nos da mucho gusto tenerte aquí. Una estrategia sencilla puede hacer la vida familiar más tranquila y positiva. Toca aquí para comenzar tu primera sesión."
-    },
-    {
-      "id": "install_nudge_b",
-      "workshop": "independent",
-      "message_type": "inactive",
-      "action_list": "sent | set_field: install_nudge_sent : true;",
-      "priority": 1,
-      "activation_condition_list": "@fields.n_modules_completed == 0 && @fields.last_module_in_progress == \"NA\"",
-      "deactivation_condition_list": "@fields.install_nudge_sent",
-      "campaign_list": "nf_inactive_day",
-      "title::eng": "Una mejor vida familiar comienza contigo",
-      "text::eng": "Te damos la bienvenida a @global.app_name. Dedicar 10 minutos hoy para aprender puede hacer una gran diferencia. Toca aquí para descubrir más."
+      "title::eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"install_nudge\")))",
+      "text::eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"install_nudge\")))",
+      "comment": "Day after the last visit, before the first module. Variant: nf_texts type install_nudge, picked by nf_variant_seed."
     },
     {
       "id": "positive_reinforcement",
@@ -34,95 +23,58 @@
       "message_type": "inactive",
       "action_list": "sent | set_field: positive_reinforcement_sent : true;",
       "priority": 1,
-      "activation_condition_list": "@fields.n_modules_completed > 0 ",
+      "activation_condition_list": "@fields.n_modules_completed > 0",
       "deactivation_condition_list": "@fields.positive_reinforcement_sent",
       "campaign_list": "nf_inactive_day",
-      "title::eng": "¡Bien hecho!",
-      "text::eng": "Terminaste tu primera habilidad. Toca aquí para continuar."
+      "title::eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"positive_reinforcement\")))",
+      "text::eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"positive_reinforcement\")))",
+      "comment": "Day after the first module is completed. Sent once (positive_reinforcement_sent)."
     },
     {
-      "id": "resume_lesson_a_afternoon",
+      "id": "resume_lesson_afternoon",
       "workshop": "independent",
       "message_type": "inactive",
       "action_list": "click | set_field: current_start_article_id: uncomplete;\nclick | go_to : home_screen;\nclick | nav_stack: open | template: stack_module_@fields.last_module_in_progress@global.start_at_id, header: false;",
       "priority": 1,
-      "activation_condition_list": "@fields.last_module_in_progress != \"NA\" && @fields.nf_resume_lesson_first == \"a\"",
-      "campaign_list": "nf_inactive_2_days_afternoon; ",
-      "title::eng": "Sigue adelante: comenzaste algo muy valioso",
-      "text::eng": "@fields.user_name, comenzaste algo muy valioso. Toca aquí para continuar."
+      "activation_condition_list": "@fields.last_module_in_progress != \"NA\"",
+      "campaign_list": "nf_inactive_2_days_afternoon",
+      "title::eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"resume_lesson_afternoon\")))",
+      "text::eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"resume_lesson_afternoon\")))",
+      "comment": "2 days after the last visit, a module in progress. Tap reopens it."
     },
     {
-      "id": "resume_lesson_b_afternoon",
+      "id": "resume_lesson_week",
       "workshop": "independent",
       "message_type": "inactive",
       "action_list": "click | set_field: current_start_article_id: uncomplete;\nclick | go_to : home_screen;\nclick | nav_stack: open | template: stack_module_@fields.last_module_in_progress@global.start_at_id, header: false;",
       "priority": 1,
-      "activation_condition_list": "@fields.last_module_in_progress != \"NA\" && @fields.nf_resume_lesson_first == \"b\"",
-      "campaign_list": "nf_inactive_2_days_afternoon; ",
-      "title::eng": "Continúa donde te quedaste",
-      "text::eng": "@fields.user_name, tu sesión está esperándote. Solo faltan unos minutos más para terminarla. Toca aquí para continuar."
+      "activation_condition_list": "@fields.last_module_in_progress != \"NA\"",
+      "campaign_list": "nf_inactive_week",
+      "title::eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0) + 1) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"resume_lesson_week\")))",
+      "text::eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0) + 1) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"resume_lesson_week\")))",
+      "comment": "7 days after the last visit. Uses the next variant (seed + 1), so it differs from the 2-day one, as before."
     },
     {
-      "id": "resume_lesson_a_week",
-      "workshop": "independent",
-      "message_type": "inactive",
-      "action_list": "click | set_field: current_start_article_id: uncomplete;\nclick | go_to : home_screen;\nclick | nav_stack: open | template: stack_module_@fields.last_module_in_progress@global.start_at_id, header: false;",
-      "priority": 1,
-      "activation_condition_list": "@fields.last_module_in_progress != \"NA\" && @fields.nf_resume_lesson_first == \"b\"",
-      "campaign_list": "nf_inactive_week;",
-      "title::eng": "Sigue adelante: comenzaste algo muy valioso",
-      "text::eng": "@fields.user_name, comenzaste algo muy valioso. Toca aquí para continuar."
-    },
-    {
-      "id": "resume_lesson_b_week",
-      "workshop": "independent",
-      "message_type": "inactive",
-      "action_list": "click | set_field: current_start_article_id: uncomplete;\nclick | go_to : home_screen;\nclick | nav_stack: open | template: stack_module_@fields.last_module_in_progress@global.start_at_id, header: false;",
-      "priority": 1,
-      "activation_condition_list": "@fields.last_module_in_progress != \"NA\" && @fields.nf_resume_lesson_first == \"a\"",
-      "campaign_list": "nf_inactive_week;",
-      "title::eng": "Continúa donde te quedaste",
-      "text::eng": "@fields.user_name, tu sesión está esperándote. Solo faltan unos minutos más para terminarla. Toca aquí para continuar."
-    },
-    {
-      "id": "win_back_a_evening",
+      "id": "win_back_evening",
       "workshop": "independent",
       "message_type": "inactive",
       "priority": 1,
-      "activation_condition_list": "@fields.last_module_in_progress == \"NA\" && !@fields.completed_all && @fields.nf_win_back_first == \"a\"",
-      "campaign_list": "nf_inactive_2_days_evening; ",
-      "title::eng": "¡Tu próxima estrategia te espera!",
-      "text::eng": "Descubre una nueva forma de apoyar a tu familia hoy."
+      "activation_condition_list": "@fields.last_module_in_progress == \"NA\" && !@fields.completed_all",
+      "campaign_list": "nf_inactive_2_days_evening",
+      "title::eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"win_back_evening\")))",
+      "text::eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"win_back_evening\")))",
+      "comment": "2 days after the last visit, no module in progress, programme not completed."
     },
     {
-      "id": "win_back_b_evening",
+      "id": "win_back_week",
       "workshop": "independent",
       "message_type": "inactive",
       "priority": 1,
-      "activation_condition_list": "@fields.last_module_in_progress == \"NA\" && !@fields.completed_all && @fields.nf_win_back_first == \"b\"",
-      "campaign_list": "nf_inactive_2_days_evening; ",
-      "title::eng": "¡Lo estás haciendo muy bien!",
-      "text::eng": "Cada pequeño paso fortalece a tu familia. Toca para continuar."
-    },
-    {
-      "id": "win_back_a_week",
-      "workshop": "independent",
-      "message_type": "inactive",
-      "priority": 1,
-      "activation_condition_list": "@fields.last_module_in_progress == \"NA\" && !@fields.completed_all && @fields.nf_win_back_first == \"b\"",
-      "campaign_list": "nf_inactive_week;",
-      "title::eng": "¡Tu próxima estrategia te espera!",
-      "text::eng": "Descubre una nueva forma de apoyar a tu familia hoy."
-    },
-    {
-      "id": "win_back_b_week",
-      "workshop": "independent",
-      "message_type": "inactive",
-      "priority": 1,
-      "activation_condition_list": "@fields.last_module_in_progress == \"NA\" && !@fields.completed_all && @fields.nf_win_back_first == \"a\"",
-      "campaign_list": "nf_inactive_week;",
-      "title::eng": "¡Lo estás haciendo muy bien!",
-      "text::eng": "Cada pequeño paso fortalece a tu familia. Toca para continuar."
+      "activation_condition_list": "@fields.last_module_in_progress == \"NA\" && !@fields.completed_all",
+      "campaign_list": "nf_inactive_week",
+      "title::eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0) + 1) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"win_back_week\")))",
+      "text::eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0) + 1) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"win_back_week\")))",
+      "comment": "7 days after the last visit. Next variant (seed + 1), so it differs from the 2-day one."
     }
   ]
 }

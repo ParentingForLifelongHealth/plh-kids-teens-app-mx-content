@@ -6,7 +6,7 @@
   "rows": [
     {
       "id": "nf_po_first",
-      "activation_condition_list": "@fields.completed_all && @fields.prox_7d_last_ts",
+      "activation_condition_list": "@global.has_proximal_outcomes && @fields.completed_all && @fields.prox_7d_last_ts",
       "schedule.start_date": "@fields.prox_7d_last_ts",
       "schedule.end_date": "@calc(date_fns.addDays(new Date(@fields.onboarding_completed_ts || this.app_first_launch), 150))",
       "schedule.repeat_every_days": 30,
@@ -18,7 +18,7 @@
     },
     {
       "id": "nf_po_r1",
-      "activation_condition_list": "@fields.completed_all && @fields.prox_7d_last_ts",
+      "activation_condition_list": "@global.has_proximal_outcomes && @fields.completed_all && @fields.prox_7d_last_ts",
       "schedule.start_date": "@fields.prox_7d_last_ts",
       "schedule.end_date": "@calc(date_fns.addDays(new Date(@fields.onboarding_completed_ts || this.app_first_launch), 150))",
       "schedule.repeat_every_days": 30,
@@ -30,7 +30,7 @@
     },
     {
       "id": "nf_po_r2",
-      "activation_condition_list": "@fields.completed_all && @fields.prox_7d_last_ts",
+      "activation_condition_list": "@global.has_proximal_outcomes && @fields.completed_all && @fields.prox_7d_last_ts",
       "schedule.start_date": "@fields.prox_7d_last_ts",
       "schedule.end_date": "@calc(date_fns.addDays(new Date(@fields.onboarding_completed_ts || this.app_first_launch), 150))",
       "schedule.repeat_every_days": 30,

@@ -11,9 +11,9 @@
       "action_list": "click | set_field: po_setup_pending: true;\nclick | set_field: prox_outcome_access: cta;\nclick | set_data | _list_id: proximal_outcome_14d_pages, completed: false;\nclick | go_to: home_screen;\nclick | nav_stack: open | template: proximal_outcome_14d_checkin, header: false;",
       "priority": 1,
       "campaign_list": "nf_po_first",
-      "title": "@global.po_post_nf_first_title",
-      "text": "@global.po_post_nf_first_text",
-      "comment": "Tap opens the 14-day check-in on top of home (same setup as the old po_tap_action_list; trigger is click for campaigns). Wording lives in proximal_outcome_global."
+      "title": "@calc((v => v[Number(@fields.po_nf_index || 0) % v.length]?.title)(Object.values(@data.po_post_nf_texts).filter(r => r.type == \"first\")))",
+      "text": "@calc((v => v[Number(@fields.po_nf_index || 0) % v.length]?.text)(Object.values(@data.po_post_nf_texts).filter(r => r.type == \"first\")))",
+      "comment": "Wording comes from po_post_nf_texts (rows with type = first); @fields.po_nf_index picks which one, the same for title and text. Do not edit wording here.\nTap opens the 14-day check-in on top of home (same setup as the old po_tap_action_list; trigger is click for campaigns)"
     },
     {
       "id": "po_reminder_1",
@@ -22,9 +22,9 @@
       "action_list": "click | set_field: po_setup_pending: true;\nclick | set_field: prox_outcome_access: cta;\nclick | set_data | _list_id: proximal_outcome_14d_pages, completed: false;\nclick | go_to: home_screen;\nclick | nav_stack: open | template: proximal_outcome_14d_checkin, header: false;",
       "priority": 1,
       "campaign_list": "nf_po_r1",
-      "title": "@global.po_post_nf_reminder_title",
-      "text": "@global.po_post_nf_reminder_text",
-      "comment": "Separate row per reminder schedule: a row listed in two schedules is only booked for one of them."
+      "title": "@calc((v => v[Number(@fields.po_nf_index || 0) % v.length]?.title)(Object.values(@data.po_post_nf_texts).filter(r => r.type == \"reminder\")))",
+      "text": "@calc((v => v[Number(@fields.po_nf_index || 0) % v.length]?.text)(Object.values(@data.po_post_nf_texts).filter(r => r.type == \"reminder\")))",
+      "comment": "Wording comes from po_post_nf_texts (rows with type = reminder); @fields.po_nf_index picks which one, the same for title and text. Do not edit wording here."
     },
     {
       "id": "po_reminder_2",
@@ -33,9 +33,9 @@
       "action_list": "click | set_field: po_setup_pending: true;\nclick | set_field: prox_outcome_access: cta;\nclick | set_data | _list_id: proximal_outcome_14d_pages, completed: false;\nclick | go_to: home_screen;\nclick | nav_stack: open | template: proximal_outcome_14d_checkin, header: false;",
       "priority": 1,
       "campaign_list": "nf_po_r2",
-      "title": "@global.po_post_nf_reminder_title",
-      "text": "@global.po_post_nf_reminder_text",
-      "comment": "currently Same text as po_reminder_1."
+      "title": "@calc((v => v[Number(@fields.po_nf_index || 0) % v.length]?.title)(Object.values(@data.po_post_nf_texts).filter(r => r.type == \"reminder\")))",
+      "text": "@calc((v => v[Number(@fields.po_nf_index || 0) % v.length]?.text)(Object.values(@data.po_post_nf_texts).filter(r => r.type == \"reminder\")))",
+      "comment": "Wording comes from po_post_nf_texts (rows with type = reminder); @fields.po_nf_index picks which one, the same for title and text. Do not edit wording here.\ncurrently Same text as po_reminder_1."
     }
   ]
 }

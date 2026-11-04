@@ -465,19 +465,22 @@
       "name": "youtube_lang",
       "value": "@local.@local.youtube_concat",
       "condition": "!!(@local.@local.youtube_concat)",
+      "parameter_list": "orientation: @global.youtube_orientation",
       "exclude_from_translation": true
     },
     {
       "type": "youtube",
       "name": "youtube_other_gender",
       "value": "@local.@local.youtube_concat_other_gender",
-      "condition": "!(@local.@local.youtube_concat) && !!(@local.@local.youtube_concat_other_gender)"
+      "condition": "!(@local.@local.youtube_concat) && !!(@local.@local.youtube_concat_other_gender)",
+      "parameter_list": "orientation: @global.youtube_orientation"
     },
     {
       "type": "youtube",
       "name": "youtube_lang_missing",
       "value": "@local.@local.youtube_concat_missing",
       "condition": "!(@local.@local.youtube_concat) && !(@local.@local.youtube_concat_other_gender) && !!(@local.@local.youtube_concat_missing)",
+      "parameter_list": "orientation: @global.youtube_orientation",
       "exclude_from_translation": true,
       "comments": "Show English video when other language youtube link is not defined"
     },
@@ -486,6 +489,7 @@
       "name": "youtube_lang_missing_other_gender",
       "value": "@local.@local.youtube_concat_missing_other_gender",
       "condition": "!(@local.@local.youtube_concat) && !(@local.@local.youtube_concat_other_gender) && !(@local.@local.youtube_concat_missing) && !!(@local.@local.youtube_concat_missing_other_gender)",
+      "parameter_list": "orientation: @global.youtube_orientation",
       "exclude_from_translation": true,
       "comments": "Show English video when other language youtube link is not defined"
     },

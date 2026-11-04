@@ -19,15 +19,19 @@
     {
       "id": "intro_2",
       "category_id": "intro",
-      "text_1_facilitator::eng": "¿Cómo te sentiste al leer eso? Se siente bien que noten tu esfuerzo, ¿verdad? 😊\n\n\nEsta sesión trata sobre **reconocer el buen comportamiento** de @fields.child_name. \n\n\nEsto puede ser difícil, especialmente si el día estuvo pesado o si de niños no nos reconocían las cosas buenas que hacíamos."
+      "text_1_facilitator::eng": "¿Cómo te sentiste al leer eso? Se siente bien que noten tu esfuerzo, ¿verdad? 😊"
     },
     {
       "id": "intro_3",
+      "text_1_facilitator::eng": "Esta sesión trata sobre **reconocer el buen comportamiento** de @fields.child_name. 🎉\n\n\nEsto puede ser difícil, especialmente si el día estuvo pesado o si de niños no nos reconocían las cosas buenas que hacíamos."
+    },
+    {
+      "id": "intro_4",
       "category_id": "intro",
       "text_1_facilitator::eng": "Aquí practicaremos cómo reconocer a @fields.child_name en el momento justo, para que quiera comportarse así más seguido. ⏰"
     },
     {
-      "id": "intro_4",
+      "id": "intro_5",
       "category_id": "intro",
       "text_1_facilitator::eng": "Antes de empezar, reflexionemos un momento📝",
       "quiz_1_question::eng": "Verdadero o falso: Cualquier forma de reconocer lo que hace @fields.child_name es válida y efectiva.",
@@ -37,7 +41,7 @@
       "quiz_1_feedback_2::eng": "🎉 ¡Tienes razón!\n\n\nLa forma de dar reconocimiento sí importa. El reconocimiento es más efectivo si dices exactamente qué hizo bien, en cuanto pase y de corazón. Esto le ayuda a entender qué hizo bien y le motiva a repetirlo.\n\nPuedes empezar con cosas pequeñas, como reconocer cuando cuelga su uniforme en su lugar o participa en los momentos familiares."
     },
     {
-      "id": "intro_5",
+      "id": "intro_6",
       "category_id": "intro",
       "text_1_facilitator::eng": "¡Una pregunta más!",
       "quiz_1_question::eng": "Verdadero o falso: Solo debes usar el nombre de @fields.child_name cuando se porta mal.",
@@ -56,7 +60,7 @@
       "id": "explore_2",
       "category_id": "explore",
       "text_1_facilitator::eng": "Vamos a ver estas estrategias en la práctica.",
-      "image_asset": "images/comic/relation/give_praise_t_fc_1.svg",
+      "image_asset": "images/comic/relation/give_praise/give_praise_t_fc_1.svg",
       "text_2::eng": "@data.characters.f3_madre.name se prepara para pasar tiempo para conectar con @data.characters.f3_hija_12.name.",
       "character_1_id": "f3_madre",
       "character_1_text::eng": "Tengo unos minutos para pasar un rato contigo, @data.characters.f3_hija_12.name. ¿Qué te gustaría hacer?",
@@ -68,7 +72,7 @@
     {
       "id": "explore_3",
       "category_id": "explore",
-      "image_asset": "images/comic/relation/give_praise_t_fc_2.svg",
+      "image_asset": "images/comic/relation/give_praise/give_praise_t_fc_2.svg",
       "text_2::eng": "Mira cómo @data.characters.f3_madre.name observa el logro de @data.characters.f3_hija_12.name y reconoce su esfuerzo.",
       "character_1_id": "f3_madre",
       "character_1_text::eng": "¡Bien hecho, f3_hija_12! ¡Ya te salió el problema! ¿Sabes? Cuando yo iba a la escuela, a las niñas no nos animaban mucho a aprender matemáticas.",
@@ -80,7 +84,7 @@
     {
       "id": "explore_4",
       "category_id": "explore",
-      "image_asset": "images/comic/relation/give_praise_t_fc_3.svg",
+      "image_asset": "images/comic/relation/give_praise/give_praise_t_fc_3.svg",
       "text_2::eng": "Fíjate cómo el reconocimiento de @data.characters.f3_madre.name es específico y se centra más en el esfuerzo que el logro.",
       "character_1_id": "f3_madre",
       "character_1_text::eng": "Admiro la paciencia que tuviste con los problemas más difíciles. Gracias por dejarme aprender de ti, @data.characters.f3_hija_12.name. Estás avanzando mucho.",

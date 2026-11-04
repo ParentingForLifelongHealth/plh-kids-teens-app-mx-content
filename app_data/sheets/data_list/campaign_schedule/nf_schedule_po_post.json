@@ -10,9 +10,9 @@
         {
           "condition_type": "calc",
           "condition_args": {
-            "calc": "@fields.completed_all && @fields.prox_7d_last_ts"
+            "calc": "@global.has_proximal_outcomes && @fields.completed_all && @fields.prox_7d_last_ts"
           },
-          "_raw": "@fields.completed_all && @fields.prox_7d_last_ts"
+          "_raw": "@global.has_proximal_outcomes && @fields.completed_all && @fields.prox_7d_last_ts"
         }
       ],
       "schedule": {
@@ -35,9 +35,9 @@
         {
           "condition_type": "calc",
           "condition_args": {
-            "calc": "@fields.completed_all && @fields.prox_7d_last_ts"
+            "calc": "@global.has_proximal_outcomes && @fields.completed_all && @fields.prox_7d_last_ts"
           },
-          "_raw": "@fields.completed_all && @fields.prox_7d_last_ts"
+          "_raw": "@global.has_proximal_outcomes && @fields.completed_all && @fields.prox_7d_last_ts"
         }
       ],
       "schedule": {
@@ -60,9 +60,9 @@
         {
           "condition_type": "calc",
           "condition_args": {
-            "calc": "@fields.completed_all && @fields.prox_7d_last_ts"
+            "calc": "@global.has_proximal_outcomes && @fields.completed_all && @fields.prox_7d_last_ts"
           },
-          "_raw": "@fields.completed_all && @fields.prox_7d_last_ts"
+          "_raw": "@global.has_proximal_outcomes && @fields.completed_all && @fields.prox_7d_last_ts"
         }
       ],
       "schedule": {
@@ -81,8 +81,8 @@
     }
   ],
   "_source": {
-    "name": "kids_teens_mx",
-    "path": "data/MX notifications.xlsx",
+    "name": "kids_teens_global V3",
+    "path": "templates/PLH notifications.xlsx",
     "url": "https://docs.google.com/spreadsheets/d/19djnbR4ynZYLAasRMjhw1C0rpnCghuY47whYaLgkbVE"
   },
   "_metadata": {

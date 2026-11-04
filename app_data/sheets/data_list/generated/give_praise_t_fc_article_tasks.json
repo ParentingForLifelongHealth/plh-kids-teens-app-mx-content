@@ -80,10 +80,10 @@
       "nested": false,
       "quiz_1_option_1_image_asset": "images/faces/happy.svg",
       "quiz_1_option_2_image_asset": "images/faces/smiling.svg",
-      "quiz_1_option_3_image_asset": "images/faces/ok.svg",
+      "quiz_1_option_3_image_asset": "images/faces/grateful.svg",
       "quiz_1_option_4_image_asset": "images/faces/angry.svg",
       "quiz_1_option_5_image_asset": "images/faces/sad.svg",
-      "quiz_1_option_6_image_asset": "images/faces/ok.svg",
+      "quiz_1_option_6_image_asset": "images/faces/stressed.svg",
       "text_1": "Recuerda que TÚ importas. Empecemos por conectar con nuestras emociones.",
       "_translations": {
         "text_1": {},
@@ -138,13 +138,13 @@
       "id": "intro_2",
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "¿Cómo te sentiste al leer eso? Se siente bien que noten tu esfuerzo, ¿verdad? 😊\n\n\nEsta sesión trata sobre **reconocer el buen comportamiento** de @fields.child_name. \n\n\nEsto puede ser difícil, especialmente si el día estuvo pesado o si de niños no nos reconocían las cosas buenas que hacíamos."
+          "eng": "¿Cómo te sentiste al leer eso? Se siente bien que noten tu esfuerzo, ¿verdad? 😊"
         }
       },
       "category_id": "intro",
       "nested": false,
       "attached_single_doc": "https://docs.google.com/document/d/1-tg-SOLlmRdOvDnL5KJQSkXQ2eD6NAzEKZq3fQfX86E",
-      "text_1_facilitator": "¿Cómo te sentiste al leer eso? Se siente bien que noten tu esfuerzo, ¿verdad? 😊\n\n\nEsta sesión trata sobre **reconocer el buen comportamiento** de @fields.child_name. \n\n\nEsto puede ser difícil, especialmente si el día estuvo pesado o si de niños no nos reconocían las cosas buenas que hacíamos.",
+      "text_1_facilitator": "¿Cómo te sentiste al leer eso? Se siente bien que noten tu esfuerzo, ¿verdad? 😊",
       "_translations": {
         "text_1_facilitator": {}
       },
@@ -153,6 +153,22 @@
     },
     {
       "id": "intro_3",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Esta sesión trata sobre **reconocer el buen comportamiento** de @fields.child_name. 🎉\n\n\nEsto puede ser difícil, especialmente si el día estuvo pesado o si de niños no nos reconocían las cosas buenas que hacíamos."
+        }
+      },
+      "nested": false,
+      "attached_single_doc": "https://docs.google.com/document/d/1-tg-SOLlmRdOvDnL5KJQSkXQ2eD6NAzEKZq3fQfX86E",
+      "text_1_facilitator": "Esta sesión trata sobre **reconocer el buen comportamiento** de @fields.child_name. 🎉\n\n\nEsto puede ser difícil, especialmente si el día estuvo pesado o si de niños no nos reconocían las cosas buenas que hacíamos.",
+      "_translations": {
+        "text_1_facilitator": {}
+      },
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "intro_4",
       "_translatedFields": {
         "text_1_facilitator": {
           "eng": "Aquí practicaremos cómo reconocer a @fields.child_name en el momento justo, para que quiera comportarse así más seguido. ⏰"
@@ -169,7 +185,7 @@
       "version": 1
     },
     {
-      "id": "intro_4",
+      "id": "intro_5",
       "_translatedFields": {
         "text_1_facilitator": {
           "eng": "Antes de empezar, reflexionemos un momento📝"
@@ -211,7 +227,7 @@
       "version": 1
     },
     {
-      "id": "intro_5",
+      "id": "intro_6",
       "_translatedFields": {
         "text_1_facilitator": {
           "eng": "¡Una pregunta más!"
@@ -300,7 +316,7 @@
         "character_2_text": {},
         "character_3_text": {}
       },
-      "image_asset": "images/comic/relation/give_praise_t_fc_1.svg",
+      "image_asset": "images/comic/relation/give_praise/give_praise_t_fc_1.svg",
       "character_1_id": "f3_madre",
       "character_2_id": "f3_hija_12",
       "character_3_id": "f3_madre",
@@ -330,7 +346,7 @@
       "category_id": "explore",
       "nested": false,
       "attached_single_doc": "https://docs.google.com/document/d/1-tg-SOLlmRdOvDnL5KJQSkXQ2eD6NAzEKZq3fQfX86E",
-      "image_asset": "images/comic/relation/give_praise_t_fc_2.svg",
+      "image_asset": "images/comic/relation/give_praise/give_praise_t_fc_2.svg",
       "character_1_id": "f3_madre",
       "character_2_id": "f3_hija_12",
       "character_3_id": "f3_madre",
@@ -363,7 +379,7 @@
       "category_id": "explore",
       "nested": false,
       "attached_single_doc": "https://docs.google.com/document/d/1-tg-SOLlmRdOvDnL5KJQSkXQ2eD6NAzEKZq3fQfX86E",
-      "image_asset": "images/comic/relation/give_praise_t_fc_3.svg",
+      "image_asset": "images/comic/relation/give_praise/give_praise_t_fc_3.svg",
       "character_1_id": "f3_madre",
       "character_2_id": "f3_hija_12",
       "text_2": "Fíjate cómo el reconocimiento de @data.characters.f3_madre.name es específico y se centra más en el esfuerzo que el logro.",

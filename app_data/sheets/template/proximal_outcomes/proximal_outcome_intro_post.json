@@ -270,6 +270,15 @@
         },
         {
           "trigger": "completed",
+          "action_id": "set_field",
+          "args": [
+            "po_nf_index",
+            "@calc(Number(@fields.po_nf_index ?? 0) + 1)"
+          ],
+          "_raw": "completed | set_field: po_nf_index: @calc(Number(@fields.po_nf_index ?? 0) + 1)"
+        },
+        {
+          "trigger": "completed",
           "action_id": "add_data",
           "args": [],
           "_raw": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: goal",
@@ -423,57 +432,47 @@
             ]
           },
           "5": {
-            "_raw": [
-              {
-                "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: goal",
-                "matchedExpression": "@fields.proximal_outcome_time_point",
-                "type": "fields",
-                "fieldName": "proximal_outcome_time_point"
-              },
-              {
-                "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: goal",
-                "matchedExpression": "@fields.proximal_outcome_time_point_count",
-                "type": "fields",
-                "fieldName": "proximal_outcome_time_point_count"
-              }
-            ],
-            "params": {
-              "entry_point": [
+            "args": {
+              "1": [
                 {
-                  "fullExpression": "@fields.proximal_outcome_time_point",
-                  "matchedExpression": "@fields.proximal_outcome_time_point",
+                  "fullExpression": "@calc(Number(@fields.po_nf_index ?? 0) + 1)",
+                  "matchedExpression": "@fields.po_nf_index",
                   "type": "fields",
-                  "fieldName": "proximal_outcome_time_point"
-                }
-              ],
-              "entry_point_count": [
+                  "fieldName": "po_nf_index"
+                },
                 {
-                  "fullExpression": "@fields.proximal_outcome_time_point_count",
-                  "matchedExpression": "@fields.proximal_outcome_time_point_count",
-                  "type": "fields",
-                  "fieldName": "proximal_outcome_time_point_count"
-                }
-              ],
-              "entered_ts": [
-                {
-                  "fullExpression": "@calc(now())",
-                  "matchedExpression": "@calc(now())",
+                  "fullExpression": "@calc(Number(@fields.po_nf_index ?? 0) + 1)",
+                  "matchedExpression": "@calc(Number(@fields.po_nf_index ?? 0) + 1)",
                   "type": "calc",
-                  "fieldName": "now()"
+                  "fieldName": "Number(@fields.po_nf_index ?? 0) + 1"
                 }
               ]
-            }
+            },
+            "_raw": [
+              {
+                "fullExpression": "completed | set_field: po_nf_index: @calc(Number(@fields.po_nf_index ?? 0) + 1)",
+                "matchedExpression": "@fields.po_nf_index",
+                "type": "fields",
+                "fieldName": "po_nf_index"
+              },
+              {
+                "fullExpression": "completed | set_field: po_nf_index: @calc(Number(@fields.po_nf_index ?? 0) + 1)",
+                "matchedExpression": "@calc(Number(@fields.po_nf_index ?? 0) + 1)",
+                "type": "calc",
+                "fieldName": "Number(@fields.po_nf_index ?? 0) + 1"
+              }
+            ]
           },
           "6": {
             "_raw": [
               {
-                "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: qs1",
+                "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: goal",
                 "matchedExpression": "@fields.proximal_outcome_time_point",
                 "type": "fields",
                 "fieldName": "proximal_outcome_time_point"
               },
               {
-                "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: qs1",
+                "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: goal",
                 "matchedExpression": "@fields.proximal_outcome_time_point_count",
                 "type": "fields",
                 "fieldName": "proximal_outcome_time_point_count"
@@ -507,6 +506,48 @@
             }
           },
           "7": {
+            "_raw": [
+              {
+                "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: qs1",
+                "matchedExpression": "@fields.proximal_outcome_time_point",
+                "type": "fields",
+                "fieldName": "proximal_outcome_time_point"
+              },
+              {
+                "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: qs1",
+                "matchedExpression": "@fields.proximal_outcome_time_point_count",
+                "type": "fields",
+                "fieldName": "proximal_outcome_time_point_count"
+              }
+            ],
+            "params": {
+              "entry_point": [
+                {
+                  "fullExpression": "@fields.proximal_outcome_time_point",
+                  "matchedExpression": "@fields.proximal_outcome_time_point",
+                  "type": "fields",
+                  "fieldName": "proximal_outcome_time_point"
+                }
+              ],
+              "entry_point_count": [
+                {
+                  "fullExpression": "@fields.proximal_outcome_time_point_count",
+                  "matchedExpression": "@fields.proximal_outcome_time_point_count",
+                  "type": "fields",
+                  "fieldName": "proximal_outcome_time_point_count"
+                }
+              ],
+              "entered_ts": [
+                {
+                  "fullExpression": "@calc(now())",
+                  "matchedExpression": "@calc(now())",
+                  "type": "calc",
+                  "fieldName": "now()"
+                }
+              ]
+            }
+          },
+          "8": {
             "_raw": [
               {
                 "fullExpression": "completed | add_data |\n_list_id: proximal_outcome_data,\nentry_point: @fields.proximal_outcome_time_point,\nentry_point_count: @fields.proximal_outcome_time_point_count,\nentered_ts: @calc(now()),\nquestion_type: qs2",
@@ -554,12 +595,12 @@
         "@fields.proximal_outcome_time_point_count": [
           "action_list.0.args.1",
           "action_list.0._raw",
-          "action_list.5._raw",
-          "action_list.5.params.entry_point_count",
           "action_list.6._raw",
           "action_list.6.params.entry_point_count",
           "action_list.7._raw",
-          "action_list.7.params.entry_point_count"
+          "action_list.7.params.entry_point_count",
+          "action_list.8._raw",
+          "action_list.8.params.entry_point_count"
         ],
         "@calc(Number(@fields.proximal_outcome_time_point_count) + 1)": [
           "action_list.0.args.1",
@@ -570,17 +611,25 @@
           "action_list.3._raw",
           "action_list.4.args.1",
           "action_list.4._raw",
-          "action_list.5.params.entered_ts",
           "action_list.6.params.entered_ts",
-          "action_list.7.params.entered_ts"
+          "action_list.7.params.entered_ts",
+          "action_list.8.params.entered_ts"
+        ],
+        "@fields.po_nf_index": [
+          "action_list.5.args.1",
+          "action_list.5._raw"
+        ],
+        "@calc(Number(@fields.po_nf_index ?? 0) + 1)": [
+          "action_list.5.args.1",
+          "action_list.5._raw"
         ],
         "@fields.proximal_outcome_time_point": [
-          "action_list.5._raw",
-          "action_list.5.params.entry_point",
           "action_list.6._raw",
           "action_list.6.params.entry_point",
           "action_list.7._raw",
-          "action_list.7.params.entry_point"
+          "action_list.7.params.entry_point",
+          "action_list.8._raw",
+          "action_list.8.params.entry_point"
         ]
       }
     }

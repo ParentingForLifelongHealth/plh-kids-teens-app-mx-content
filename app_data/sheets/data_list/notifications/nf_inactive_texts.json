@@ -1,0 +1,211 @@
+{
+  "flow_type": "data_list",
+  "flow_subtype": "notifications",
+  "flow_name": "nf_inactive_texts",
+  "status": "released",
+  "rows": [
+    {
+      "id": "install_nudge_a",
+      "type": "install_nudge",
+      "title": "Tu camino en la crianza comienza aquí",
+      "_translations": {
+        "title": {},
+        "text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Tu camino en la crianza comienza aquí"
+        },
+        "text": {
+          "eng": "¡Te damos la bienvenida a @global.app_name! Nos da mucho gusto tenerte aquí. Una estrategia sencilla puede hacer la vida familiar más tranquila y positiva. Toca aquí para comenzar tu primera sesión."
+        }
+      },
+      "text": "¡Te damos la bienvenida a @global.app_name! Nos da mucho gusto tenerte aquí. Una estrategia sencilla puede hacer la vida familiar más tranquila y positiva. Toca aquí para comenzar tu primera sesión."
+    },
+    {
+      "id": "install_nudge_b",
+      "type": "install_nudge",
+      "title": "Una mejor vida familiar comienza contigo",
+      "_translations": {
+        "title": {},
+        "text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Una mejor vida familiar comienza contigo"
+        },
+        "text": {
+          "eng": "Te damos la bienvenida a @global.app_name. Dedicar 10 minutos hoy para aprender puede hacer una gran diferencia. Toca aquí para descubrir más."
+        }
+      },
+      "text": "Te damos la bienvenida a @global.app_name. Dedicar 10 minutos hoy para aprender puede hacer una gran diferencia. Toca aquí para descubrir más."
+    },
+    {
+      "id": "positive_reinforcement",
+      "type": "positive_reinforcement",
+      "title": "¡Bien hecho!",
+      "_translations": {
+        "title": {},
+        "text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "¡Bien hecho!"
+        },
+        "text": {
+          "eng": "Terminaste tu primera habilidad. Toca aquí para continuar."
+        }
+      },
+      "text": "Terminaste tu primera habilidad. Toca aquí para continuar."
+    },
+    {
+      "id": "resume_lesson_a_afternoon",
+      "type": "resume_lesson_afternoon",
+      "title": "Sigue adelante: comenzaste algo muy valioso",
+      "_translations": {
+        "title": {},
+        "text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Sigue adelante: comenzaste algo muy valioso"
+        },
+        "text": {
+          "eng": "@fields.user_name, comenzaste algo muy valioso. Toca aquí para continuar."
+        }
+      },
+      "text": "@fields.user_name, comenzaste algo muy valioso. Toca aquí para continuar."
+    },
+    {
+      "id": "resume_lesson_b_afternoon",
+      "type": "resume_lesson_afternoon",
+      "title": "Continúa donde te quedaste",
+      "_translations": {
+        "title": {},
+        "text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Continúa donde te quedaste"
+        },
+        "text": {
+          "eng": "@fields.user_name, tu sesión está esperándote. Solo faltan unos minutos más para terminarla. Toca aquí para continuar."
+        }
+      },
+      "text": "@fields.user_name, tu sesión está esperándote. Solo faltan unos minutos más para terminarla. Toca aquí para continuar."
+    },
+    {
+      "id": "resume_lesson_a_week",
+      "type": "resume_lesson_week",
+      "title": "Sigue adelante: comenzaste algo muy valioso",
+      "_translations": {
+        "title": {},
+        "text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Sigue adelante: comenzaste algo muy valioso"
+        },
+        "text": {
+          "eng": "@fields.user_name, comenzaste algo muy valioso. Toca aquí para continuar."
+        }
+      },
+      "text": "@fields.user_name, comenzaste algo muy valioso. Toca aquí para continuar."
+    },
+    {
+      "id": "resume_lesson_b_week",
+      "type": "resume_lesson_week",
+      "title": "Continúa donde te quedaste",
+      "_translations": {
+        "title": {},
+        "text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Continúa donde te quedaste"
+        },
+        "text": {
+          "eng": "@fields.user_name, tu sesión está esperándote. Solo faltan unos minutos más para terminarla. Toca aquí para continuar."
+        }
+      },
+      "text": "@fields.user_name, tu sesión está esperándote. Solo faltan unos minutos más para terminarla. Toca aquí para continuar."
+    },
+    {
+      "id": "win_back_a_evening",
+      "type": "win_back_evening",
+      "title": "¡Tu próxima estrategia te espera!",
+      "_translations": {
+        "title": {},
+        "text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "¡Tu próxima estrategia te espera!"
+        },
+        "text": {
+          "eng": "Descubre una nueva forma de apoyar a tu familia hoy."
+        }
+      },
+      "text": "Descubre una nueva forma de apoyar a tu familia hoy."
+    },
+    {
+      "id": "win_back_b_evening",
+      "type": "win_back_evening",
+      "title": "¡Lo estás haciendo muy bien!",
+      "_translations": {
+        "title": {},
+        "text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "¡Lo estás haciendo muy bien!"
+        },
+        "text": {
+          "eng": "Cada pequeño paso fortalece a tu familia. Toca para continuar."
+        }
+      },
+      "text": "Cada pequeño paso fortalece a tu familia. Toca para continuar."
+    },
+    {
+      "id": "win_back_a_week",
+      "type": "win_back_week",
+      "title": "¡Tu próxima estrategia te espera!",
+      "_translations": {
+        "title": {},
+        "text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "¡Tu próxima estrategia te espera!"
+        },
+        "text": {
+          "eng": "Descubre una nueva forma de apoyar a tu familia hoy."
+        }
+      },
+      "text": "Descubre una nueva forma de apoyar a tu familia hoy."
+    },
+    {
+      "id": "win_back_b_week",
+      "type": "win_back_week",
+      "title": "¡Lo estás haciendo muy bien!",
+      "_translations": {
+        "title": {},
+        "text": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "¡Lo estás haciendo muy bien!"
+        },
+        "text": {
+          "eng": "Cada pequeño paso fortalece a tu familia. Toca para continuar."
+        }
+      },
+      "text": "Cada pequeño paso fortalece a tu familia. Toca para continuar."
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "data/MX notifications.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/16CYekDpbHN4HuxUnDg-HpbH7zAo_CzjATlqeCtX8jeM"
+  }
+}

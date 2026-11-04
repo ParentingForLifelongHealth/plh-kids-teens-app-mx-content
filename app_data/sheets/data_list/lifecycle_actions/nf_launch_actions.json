@@ -5,7 +5,7 @@
   "status": "released",
   "rows": [
     {
-      "id": "pick_resume_lesson_first",
+      "id": "pick_nf_variant_seed",
       "lifecycle_event": "app_start",
       "priority": 0,
       "action_list": [
@@ -13,33 +13,17 @@
           "trigger": "click",
           "action_id": "set_field",
           "args": [
-            "nf_resume_lesson_first",
-            "@calc(pick_random([\"a\",\"b\"]))"
+            "nf_variant_seed",
+            "@calc(Math.floor(Math.random() * 1000))"
           ],
-          "_raw": "set_field: nf_resume_lesson_first: @calc(pick_random([\"a\",\"b\"]))"
-        }
-      ]
-    },
-    {
-      "id": "pick_win_back_first",
-      "lifecycle_event": "app_start",
-      "priority": 0.1,
-      "action_list": [
-        {
-          "trigger": "click",
-          "action_id": "set_field",
-          "args": [
-            "nf_win_back_first",
-            "@calc(pick_random([\"a\",\"b\"]))"
-          ],
-          "_raw": "set_field: nf_win_back_first: @calc(pick_random([\"a\",\"b\"]))"
+          "_raw": "set_field: nf_variant_seed: @calc(Math.floor(Math.random() * 1000))"
         }
       ]
     }
   ],
   "_source": {
-    "name": "kids_teens_mx",
-    "path": "data/MX notifications.xlsx",
+    "name": "kids_teens_global V3",
+    "path": "templates/PLH notifications.xlsx",
     "url": "https://docs.google.com/spreadsheets/d/19djnbR4ynZYLAasRMjhw1C0rpnCghuY47whYaLgkbVE"
   },
   "_metadata": {
