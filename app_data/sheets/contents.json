@@ -6735,6 +6735,21 @@
           "flow_name": "activity_aacion_llegando_a_casa_t",
           "flow_subtype": "generated",
           "flow_type": "template"
+        },
+        {
+          "flow_name": "activity_LTP activities for C",
+          "flow_subtype": "generated",
+          "flow_type": "template"
+        },
+        {
+          "flow_name": "activity_LTP activities for T",
+          "flow_subtype": "generated",
+          "flow_type": "template"
+        },
+        {
+          "flow_name": "activity_@gen.id",
+          "flow_subtype": "generated",
+          "flow_type": "template"
         }
       ]
     },
@@ -9795,6 +9810,11 @@
         "url": "https://docs.google.com/spreadsheets/d/14ZE6gMvg4mNAj_3TaN4iu44uTrBzYuwQ25M4x5xIj18"
       }
     },
+    "activity_@gen.id": {
+      "flow_name": "activity_@gen.id",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    },
     "activity_A_escribir_c": {
       "flow_name": "activity_A_escribir_c",
       "flow_subtype": "generated",
@@ -10042,6 +10062,16 @@
     },
     "activity_Jugando_con_verduras_c": {
       "flow_name": "activity_Jugando_con_verduras_c",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    },
+    "activity_LTP activities for C": {
+      "flow_name": "activity_LTP activities for C",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    },
+    "activity_LTP activities for T": {
+      "flow_name": "activity_LTP activities for T",
       "flow_subtype": "generated",
       "flow_type": "template"
     },
@@ -12244,6 +12274,15 @@
         "name": "kids_teens_global V3",
         "path": "templates/notification_permission.xlsx",
         "url": "https://docs.google.com/spreadsheets/d/1RYEkujjiH6k3MAQkrNnZz0UikvzJ_M5IL9_5WDxY0cQ"
+      }
+    },
+    "onboarding_data_consent": {
+      "flow_type": "template",
+      "flow_name": "onboarding_data_consent",
+      "_source": {
+        "name": "library PLH onboarding",
+        "path": "PLH onboarding.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1LUIu_aqkzYjyUq0ecQEmWJa62CEvQ4E2L4Fkz_94ydw"
       }
     },
     "onboarding_footer": {

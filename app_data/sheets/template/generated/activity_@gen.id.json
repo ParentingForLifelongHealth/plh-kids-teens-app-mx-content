@@ -1,0 +1,57 @@
+{
+  "flow_name": "activity_@gen.id",
+  "flow_subtype": "generated",
+  "flow_type": "template",
+  "rows": [
+    {
+      "type": "template",
+      "name": "activity",
+      "value": "activity",
+      "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "emit",
+          "args": [
+            "completed"
+          ],
+          "_raw": "completed | emit: completed"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "emit",
+          "args": [
+            "uncompleted"
+          ],
+          "_raw": "uncompleted | emit: uncompleted"
+        }
+      ],
+      "rows": [
+        {
+          "name": "activity_id",
+          "value": "@gen.id",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "activity.activity_id",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@gen.id",
+                "matchedExpression": "@gen.id",
+                "type": "gen",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@gen.id": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "activity"
+    }
+  ]
+}

@@ -41,6 +41,13 @@
     },
     {
       "lifecycle_event": "app_start",
+      "id": "data_consent",
+      "priority": 5,
+      "condition_list": "@fields.user_mode && !@fields.onboarding_data_consent_completed && @global.has_onboarding_data_consent",
+      "action_list": "pop_up: onboarding_data_consent | fullscreen: true, showCloseButton: false; emit: server_sync"
+    },
+    {
+      "lifecycle_event": "app_start",
       "id": "settings",
       "priority": 6,
       "condition_list": "@fields.user_mode && !@fields.onboarding_settings_completed && @global.has_onboarding_settings",
