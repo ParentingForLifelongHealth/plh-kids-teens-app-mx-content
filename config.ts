@@ -4,7 +4,7 @@ const config = generateDeploymentConfig("plh_kids_teens_mx");
 
 config.git = {
   content_repo: "https://github.com/ParentingForLifelongHealth/plh-kids-teens-app-mx-content.git",
-  content_tag_latest: "1.1.47",
+  content_tag_latest: "1.1.48",
 
 };
 
@@ -65,7 +65,7 @@ config.remote_assets = {
 
 config.android = {
   app_id: 'international.idems.plh_kids_teens_mx',
-  app_name: 'Crianza con Conciencia +',
+  app_name: 'Crianza+',
   logo_asset_path: "./app_data/assets/android/icon-foreground.png",
   logo_background_color: "#FFFFFF",
   zoom_enabled: true
@@ -73,8 +73,8 @@ config.android = {
 
 config.ios = {
   app_id: "international.idems.plh-kids-teens-mx",
-  app_name: "Crianza con Conciencia",
-  app_display_name: "Crianza con Conciencia +",
+  app_name: "Crianza",
+  app_display_name: "Crianza+",
   logo_asset_path: "./app_data/assets/android/icon-foreground.png",
   logo_background_color: "#FFFFFF",
   zoom_enabled: true
@@ -91,18 +91,18 @@ config.auth = {
 // Hacky fix to point extended deployment to translations within its own repo
 config.translations.translated_strings_path = "./app_data/translations_source/translated_strings";
 
-config.web.favicon_asset = "images/logos/favicon.png";
+config.web.favicon_asset = "images/logos/crianza_logo.png";
 
 config.api.db_name = "plh_kids_teens_mx";
 config.app_data.output_path = "./app_data";
 
 config.app_config.APP_LANGUAGES.default ="gb_en";
-config.app_config.APP_SIDEMENU_DEFAULTS.title = "MexicoApp";
-config.app_config.APP_HEADER_DEFAULTS.title = "MexicoApp";
+config.app_config.APP_SIDEMENU_DEFAULTS.title = "Crianza+";
+config.app_config.APP_HEADER_DEFAULTS.title = "Crianza+";
 config.app_config.APP_HEADER_DEFAULTS.hidden = true;
 config.app_config.APP_FOOTER_DEFAULTS.template = "footer";
-config.app_config.NOTIFICATION_DEFAULTS.title = "New message from MexicoApp";
-config.app_config.NOTIFICATION_DEFAULTS.text = "You have a new message from MexicoApp";
+config.app_config.NOTIFICATION_DEFAULTS.title = "New message from Crianza+";
+config.app_config.NOTIFICATION_DEFAULTS.text = "You have a new message from Crianza+";
 config.app_config.APP_THEMES.available = ["plh_kids_teens_mx"];
 config.app_config.APP_THEMES.defaultThemeName = "plh_kids_teens_mx";
 config.error_logging = { dsn: "https://17df9395def549e7835dfac8225d53e1@app.glitchtip.com/14124" };

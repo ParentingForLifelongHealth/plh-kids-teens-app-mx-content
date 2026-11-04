@@ -41,20 +41,20 @@
       "campaign_list": [
         "nf_inactive_day"
       ],
-      "title": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"install_nudge\")))",
+      "title": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type_list?.includes(\"install_nudge\"))))",
       "_translations": {
         "title": {},
         "text": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"install_nudge\")))"
+          "eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type_list?.includes(\"install_nudge\"))))"
         },
         "text": {
-          "eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"install_nudge\")))"
+          "eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type_list?.includes(\"install_nudge\"))))"
         }
       },
-      "text": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"install_nudge\")))"
+      "text": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type_list?.includes(\"install_nudge\"))))"
     },
     {
       "id": "positive_reinforcement",
@@ -93,20 +93,20 @@
       "campaign_list": [
         "nf_inactive_day"
       ],
-      "title": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"positive_reinforcement\")))",
+      "title": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type_list?.includes(\"positive_reinforcement\"))))",
       "_translations": {
         "title": {},
         "text": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"positive_reinforcement\")))"
+          "eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type_list?.includes(\"positive_reinforcement\"))))"
         },
         "text": {
-          "eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"positive_reinforcement\")))"
+          "eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type_list?.includes(\"positive_reinforcement\"))))"
         }
       },
-      "text": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"positive_reinforcement\")))"
+      "text": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type_list?.includes(\"positive_reinforcement\"))))"
     },
     {
       "id": "resume_lesson_afternoon",
@@ -156,20 +156,20 @@
       "campaign_list": [
         "nf_inactive_2_days_afternoon"
       ],
-      "title": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"resume_lesson_afternoon\")))",
+      "title": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type_list?.includes(\"resume_lesson_afternoon\"))))",
       "_translations": {
         "title": {},
         "text": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"resume_lesson_afternoon\")))"
+          "eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type_list?.includes(\"resume_lesson_afternoon\"))))"
         },
         "text": {
-          "eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"resume_lesson_afternoon\")))"
+          "eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type_list?.includes(\"resume_lesson_afternoon\"))))"
         }
       },
-      "text": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"resume_lesson_afternoon\")))"
+      "text": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type_list?.includes(\"resume_lesson_afternoon\"))))"
     },
     {
       "id": "resume_lesson_week",
@@ -219,20 +219,20 @@
       "campaign_list": [
         "nf_inactive_week"
       ],
-      "title": "@calc((v => v[(Number(@fields.nf_variant_seed || 0) + 1) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"resume_lesson_week\")))",
+      "title": "@calc((v => v[(Number(@fields.nf_variant_seed || 0) + 1) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type_list?.includes(\"resume_lesson_week\"))))",
       "_translations": {
         "title": {},
         "text": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0) + 1) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"resume_lesson_week\")))"
+          "eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0) + 1) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type_list?.includes(\"resume_lesson_week\"))))"
         },
         "text": {
-          "eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0) + 1) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"resume_lesson_week\")))"
+          "eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0) + 1) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type_list?.includes(\"resume_lesson_week\"))))"
         }
       },
-      "text": "@calc((v => v[(Number(@fields.nf_variant_seed || 0) + 1) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"resume_lesson_week\")))"
+      "text": "@calc((v => v[(Number(@fields.nf_variant_seed || 0) + 1) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type_list?.includes(\"resume_lesson_week\"))))"
     },
     {
       "id": "win_back_evening",
@@ -251,20 +251,20 @@
       "campaign_list": [
         "nf_inactive_2_days_evening"
       ],
-      "title": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"win_back_evening\")))",
+      "title": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type_list?.includes(\"win_back_evening\"))))",
       "_translations": {
         "title": {},
         "text": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"win_back_evening\")))"
+          "eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type_list?.includes(\"win_back_evening\"))))"
         },
         "text": {
-          "eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"win_back_evening\")))"
+          "eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type_list?.includes(\"win_back_evening\"))))"
         }
       },
-      "text": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"win_back_evening\")))"
+      "text": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type_list?.includes(\"win_back_evening\"))))"
     },
     {
       "id": "win_back_week",
@@ -283,20 +283,20 @@
       "campaign_list": [
         "nf_inactive_week"
       ],
-      "title": "@calc((v => v[(Number(@fields.nf_variant_seed || 0) + 1) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"win_back_week\")))",
+      "title": "@calc((v => v[(Number(@fields.nf_variant_seed || 0) + 1) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type_list?.includes(\"win_back_week\"))))",
       "_translations": {
         "title": {},
         "text": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0) + 1) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"win_back_week\")))"
+          "eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0) + 1) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type_list?.includes(\"win_back_week\"))))"
         },
         "text": {
-          "eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0) + 1) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"win_back_week\")))"
+          "eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0) + 1) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type_list?.includes(\"win_back_week\"))))"
         }
       },
-      "text": "@calc((v => v[(Number(@fields.nf_variant_seed || 0) + 1) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"win_back_week\")))"
+      "text": "@calc((v => v[(Number(@fields.nf_variant_seed || 0) + 1) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type_list?.includes(\"win_back_week\"))))"
     }
   ],
   "_source": {

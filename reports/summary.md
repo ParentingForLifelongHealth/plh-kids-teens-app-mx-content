@@ -37,11 +37,11 @@
 | round_button | 34 |
 | select_text | 1 |
 | set_field | 4 |
-| set_variable | 5776 |
+| set_variable | 5779 |
 | simple_checkbox | 3 |
 | task_card | 4 |
 | task_progress_bar | 5 |
-| template | 928 |
+| template | 931 |
 | text | 337 |
 | text_area | 4 |
 | text_box | 23 |
@@ -63,13 +63,13 @@
 | asset_pack | 4 |
 | auth | 3 |
 | emit: changed | 7 |
-| emit: completed | 238 |
+| emit: completed | 241 |
 | emit: force_reload | 3 |
 | emit: force_reprocess | 13 |
 | emit: force_restart | 3 |
 | emit: server_sync | 8 |
 | emit: set_language | 2 |
-| emit: uncompleted | 229 |
+| emit: uncompleted | 232 |
 | feedback | 13 |
 | go_to | 28 |
 | nav | 1 |
@@ -95,7 +95,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 12373 KB | 12.4 MB |
+| total | 12369 KB | 12.4 MB |
 | unused | 14333 KB | 14.3 MB |
 </details>
 
@@ -743,7 +743,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/logos/IDEMS.png | 42.7 | 1 |
 | images/logos/PLH.png | 34.7 | 1 |
 | images/logos/UNICEF.png | 90.5 | 1 |
-| images/logos/crianza_logo.png | 14.4 | 1 |
+| images/logos/crianza_logo.png | 10 | 1 |
 | lottie/relax/blue_dots.json | 14.7 | 4 |
 | lottie/relax/heart.json | 46.7 | 4 |
 | lottie/relax/looping_rings.json | 10.4 | 26 |
@@ -751,7 +751,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | lottie/relax/square_flow.json | 5.9 | 53 |
 | lottie/ux/bulging_circles.json | 11.8 | 1 |
 | lottie/ux/checkmark.json | 24.6 | 2 |
-| lottie/ux/congrats.json | 50.4 | 3 |
+| lottie/ux/congrats.json | 50.4 | 2 |
 | lottie/ux/gift_box.json | 674.5 | 1 |
 </details>
 
@@ -870,7 +870,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global | proximal_outcomes | 2 |
 | template |  | 113 |
 | template | ab_testing | 1 |
-| template | generated | 425 |
+| template | generated | 428 |
 | template | legal_terms | 4 |
 | template | proximal_outcomes | 17 |
 </details>

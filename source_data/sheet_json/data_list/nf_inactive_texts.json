@@ -6,67 +6,43 @@
   "rows": [
     {
       "id": "install_nudge_a",
-      "type": "install_nudge",
+      "type_list": "install_nudge",
       "title::eng": "Tu camino en la crianza comienza aquí",
       "text::eng": "¡Te damos la bienvenida a @global.app_name! Nos da mucho gusto tenerte aquí. Una estrategia sencilla puede hacer la vida familiar más tranquila y positiva. Toca aquí para comenzar tu primera sesión."
     },
     {
       "id": "install_nudge_b",
-      "type": "install_nudge",
+      "type_list": "install_nudge",
       "title::eng": "Una mejor vida familiar comienza contigo",
       "text::eng": "Te damos la bienvenida a @global.app_name. Dedicar 10 minutos hoy para aprender puede hacer una gran diferencia. Toca aquí para descubrir más."
     },
     {
       "id": "positive_reinforcement",
-      "type": "positive_reinforcement",
+      "type_list": "positive_reinforcement",
       "title::eng": "¡Bien hecho!",
       "text::eng": "Terminaste tu primera habilidad. Toca aquí para continuar."
     },
     {
-      "id": "resume_lesson_a_afternoon",
-      "type": "resume_lesson_afternoon",
+      "id": "resume_lesson_a",
+      "type_list": "resume_lesson_afternoon;resume_lesson_week",
       "title::eng": "Sigue adelante: comenzaste algo muy valioso",
       "text::eng": "@fields.user_name, comenzaste algo muy valioso. Toca aquí para continuar."
     },
     {
-      "id": "resume_lesson_b_afternoon",
-      "type": "resume_lesson_afternoon",
+      "id": "resume_lesson_b",
+      "type_list": "resume_lesson_afternoon;resume_lesson_week",
       "title::eng": "Continúa donde te quedaste",
       "text::eng": "@fields.user_name, tu sesión está esperándote. Solo faltan unos minutos más para terminarla. Toca aquí para continuar."
     },
     {
-      "id": "resume_lesson_a_week",
-      "type": "resume_lesson_week",
-      "title::eng": "Sigue adelante: comenzaste algo muy valioso",
-      "text::eng": "@fields.user_name, comenzaste algo muy valioso. Toca aquí para continuar."
-    },
-    {
-      "id": "resume_lesson_b_week",
-      "type": "resume_lesson_week",
-      "title::eng": "Continúa donde te quedaste",
-      "text::eng": "@fields.user_name, tu sesión está esperándote. Solo faltan unos minutos más para terminarla. Toca aquí para continuar."
-    },
-    {
-      "id": "win_back_a_evening",
-      "type": "win_back_evening",
+      "id": "win_back_a",
+      "type_list": "win_back_evening;win_back_week",
       "title::eng": "¡Tu próxima estrategia te espera!",
       "text::eng": "Descubre una nueva forma de apoyar a tu familia hoy."
     },
     {
-      "id": "win_back_b_evening",
-      "type": "win_back_evening",
-      "title::eng": "¡Lo estás haciendo muy bien!",
-      "text::eng": "Cada pequeño paso fortalece a tu familia. Toca para continuar."
-    },
-    {
-      "id": "win_back_a_week",
-      "type": "win_back_week",
-      "title::eng": "¡Tu próxima estrategia te espera!",
-      "text::eng": "Descubre una nueva forma de apoyar a tu familia hoy."
-    },
-    {
-      "id": "win_back_b_week",
-      "type": "win_back_week",
+      "id": "win_back_b",
+      "type_list": "win_back_evening;win_back_week",
       "title::eng": "¡Lo estás haciendo muy bien!",
       "text::eng": "Cada pequeño paso fortalece a tu familia. Toca para continuar."
     }
