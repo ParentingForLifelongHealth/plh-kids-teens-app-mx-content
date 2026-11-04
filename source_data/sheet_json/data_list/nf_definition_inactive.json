@@ -13,8 +13,8 @@
       "activation_condition_list": "@fields.n_modules_completed == 0 && @fields.last_module_in_progress == \"NA\"",
       "deactivation_condition_list": "@fields.install_nudge_sent",
       "campaign_list": "nf_inactive_day",
-      "title::eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"install_nudge\")))",
-      "text::eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"install_nudge\")))",
+      "title::eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type_list?.includes(\"install_nudge\"))))",
+      "text::eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type_list?.includes(\"install_nudge\"))))",
       "comment": "Day after the last visit, before the first module. Variant: nf_texts type install_nudge, picked by nf_variant_seed."
     },
     {
@@ -26,8 +26,8 @@
       "activation_condition_list": "@fields.n_modules_completed > 0",
       "deactivation_condition_list": "@fields.positive_reinforcement_sent",
       "campaign_list": "nf_inactive_day",
-      "title::eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"positive_reinforcement\")))",
-      "text::eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"positive_reinforcement\")))",
+      "title::eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type_list?.includes(\"positive_reinforcement\"))))",
+      "text::eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type_list?.includes(\"positive_reinforcement\"))))",
       "comment": "Day after the first module is completed. Sent once (positive_reinforcement_sent)."
     },
     {
@@ -38,8 +38,8 @@
       "priority": 1,
       "activation_condition_list": "@fields.last_module_in_progress != \"NA\"",
       "campaign_list": "nf_inactive_2_days_afternoon",
-      "title::eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"resume_lesson_afternoon\")))",
-      "text::eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"resume_lesson_afternoon\")))",
+      "title::eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type_list?.includes(\"resume_lesson_afternoon\"))))",
+      "text::eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type_list?.includes(\"resume_lesson_afternoon\"))))",
       "comment": "2 days after the last visit, a module in progress. Tap reopens it."
     },
     {
@@ -50,8 +50,8 @@
       "priority": 1,
       "activation_condition_list": "@fields.last_module_in_progress != \"NA\"",
       "campaign_list": "nf_inactive_week",
-      "title::eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0) + 1) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"resume_lesson_week\")))",
-      "text::eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0) + 1) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"resume_lesson_week\")))",
+      "title::eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0) + 1) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type_list?.includes(\"resume_lesson_week\"))))",
+      "text::eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0) + 1) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type_list?.includes(\"resume_lesson_week\"))))",
       "comment": "7 days after the last visit. Uses the next variant (seed + 1), so it differs from the 2-day one, as before."
     },
     {
@@ -61,8 +61,8 @@
       "priority": 1,
       "activation_condition_list": "@fields.last_module_in_progress == \"NA\" && !@fields.completed_all",
       "campaign_list": "nf_inactive_2_days_evening",
-      "title::eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"win_back_evening\")))",
-      "text::eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"win_back_evening\")))",
+      "title::eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type_list?.includes(\"win_back_evening\"))))",
+      "text::eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0)) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type_list?.includes(\"win_back_evening\"))))",
       "comment": "2 days after the last visit, no module in progress, programme not completed."
     },
     {
@@ -72,8 +72,8 @@
       "priority": 1,
       "activation_condition_list": "@fields.last_module_in_progress == \"NA\" && !@fields.completed_all",
       "campaign_list": "nf_inactive_week",
-      "title::eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0) + 1) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"win_back_week\")))",
-      "text::eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0) + 1) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type == \"win_back_week\")))",
+      "title::eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0) + 1) % v.length]?.title)(Object.values(@data.nf_inactive_texts).filter(r => r.type_list?.includes(\"win_back_week\"))))",
+      "text::eng": "@calc((v => v[(Number(@fields.nf_variant_seed || 0) + 1) % v.length]?.text)(Object.values(@data.nf_inactive_texts).filter(r => r.type_list?.includes(\"win_back_week\"))))",
       "comment": "7 days after the last visit. Next variant (seed + 1), so it differs from the 2-day one."
     }
   ]

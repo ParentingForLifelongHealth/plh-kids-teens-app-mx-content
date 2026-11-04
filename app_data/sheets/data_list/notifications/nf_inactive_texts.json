@@ -6,7 +6,9 @@
   "rows": [
     {
       "id": "install_nudge_a",
-      "type": "install_nudge",
+      "type_list": [
+        "install_nudge"
+      ],
       "title": "Tu camino en la crianza comienza aquí",
       "_translations": {
         "title": {},
@@ -24,7 +26,9 @@
     },
     {
       "id": "install_nudge_b",
-      "type": "install_nudge",
+      "type_list": [
+        "install_nudge"
+      ],
       "title": "Una mejor vida familiar comienza contigo",
       "_translations": {
         "title": {},
@@ -42,7 +46,9 @@
     },
     {
       "id": "positive_reinforcement",
-      "type": "positive_reinforcement",
+      "type_list": [
+        "positive_reinforcement"
+      ],
       "title": "¡Bien hecho!",
       "_translations": {
         "title": {},
@@ -59,8 +65,11 @@
       "text": "Terminaste tu primera habilidad. Toca aquí para continuar."
     },
     {
-      "id": "resume_lesson_a_afternoon",
-      "type": "resume_lesson_afternoon",
+      "id": "resume_lesson_a",
+      "type_list": [
+        "resume_lesson_afternoon",
+        "resume_lesson_week"
+      ],
       "title": "Sigue adelante: comenzaste algo muy valioso",
       "_translations": {
         "title": {},
@@ -77,8 +86,11 @@
       "text": "@fields.user_name, comenzaste algo muy valioso. Toca aquí para continuar."
     },
     {
-      "id": "resume_lesson_b_afternoon",
-      "type": "resume_lesson_afternoon",
+      "id": "resume_lesson_b",
+      "type_list": [
+        "resume_lesson_afternoon",
+        "resume_lesson_week"
+      ],
       "title": "Continúa donde te quedaste",
       "_translations": {
         "title": {},
@@ -95,44 +107,11 @@
       "text": "@fields.user_name, tu sesión está esperándote. Solo faltan unos minutos más para terminarla. Toca aquí para continuar."
     },
     {
-      "id": "resume_lesson_a_week",
-      "type": "resume_lesson_week",
-      "title": "Sigue adelante: comenzaste algo muy valioso",
-      "_translations": {
-        "title": {},
-        "text": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Sigue adelante: comenzaste algo muy valioso"
-        },
-        "text": {
-          "eng": "@fields.user_name, comenzaste algo muy valioso. Toca aquí para continuar."
-        }
-      },
-      "text": "@fields.user_name, comenzaste algo muy valioso. Toca aquí para continuar."
-    },
-    {
-      "id": "resume_lesson_b_week",
-      "type": "resume_lesson_week",
-      "title": "Continúa donde te quedaste",
-      "_translations": {
-        "title": {},
-        "text": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Continúa donde te quedaste"
-        },
-        "text": {
-          "eng": "@fields.user_name, tu sesión está esperándote. Solo faltan unos minutos más para terminarla. Toca aquí para continuar."
-        }
-      },
-      "text": "@fields.user_name, tu sesión está esperándote. Solo faltan unos minutos más para terminarla. Toca aquí para continuar."
-    },
-    {
-      "id": "win_back_a_evening",
-      "type": "win_back_evening",
+      "id": "win_back_a",
+      "type_list": [
+        "win_back_evening",
+        "win_back_week"
+      ],
       "title": "¡Tu próxima estrategia te espera!",
       "_translations": {
         "title": {},
@@ -149,44 +128,11 @@
       "text": "Descubre una nueva forma de apoyar a tu familia hoy."
     },
     {
-      "id": "win_back_b_evening",
-      "type": "win_back_evening",
-      "title": "¡Lo estás haciendo muy bien!",
-      "_translations": {
-        "title": {},
-        "text": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "¡Lo estás haciendo muy bien!"
-        },
-        "text": {
-          "eng": "Cada pequeño paso fortalece a tu familia. Toca para continuar."
-        }
-      },
-      "text": "Cada pequeño paso fortalece a tu familia. Toca para continuar."
-    },
-    {
-      "id": "win_back_a_week",
-      "type": "win_back_week",
-      "title": "¡Tu próxima estrategia te espera!",
-      "_translations": {
-        "title": {},
-        "text": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "¡Tu próxima estrategia te espera!"
-        },
-        "text": {
-          "eng": "Descubre una nueva forma de apoyar a tu familia hoy."
-        }
-      },
-      "text": "Descubre una nueva forma de apoyar a tu familia hoy."
-    },
-    {
-      "id": "win_back_b_week",
-      "type": "win_back_week",
+      "id": "win_back_b",
+      "type_list": [
+        "win_back_evening",
+        "win_back_week"
+      ],
       "title": "¡Lo estás haciendo muy bien!",
       "_translations": {
         "title": {},
