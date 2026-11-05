@@ -1,0 +1,58 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "proximal_outcomes",
+  "flow_name": "debug_update_po_dates",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title_po_dates",
+      "value": "Check-in dates (debug)"
+    },
+    {
+      "type": "text",
+      "name": "text_due_from",
+      "value": "Counting from: @global.proximal_outcome_due_from"
+    },
+    {
+      "type": "title",
+      "name": "title_7d",
+      "value": "7-day check-in"
+    },
+    {
+      "type": "text",
+      "name": "text_7d_last",
+      "value": "Started (prox_7d_last_ts): @fields.prox_7d_last_ts"
+    },
+    {
+      "type": "text",
+      "name": "text_7d_viewed",
+      "value": "Viewed (prox_7d_viewed_ts): @fields.prox_7d_viewed_ts"
+    },
+    {
+      "type": "date_time_picker",
+      "name": "picker_7d",
+      "action_list": "changed | set_field: prox_7d_last_ts: this.value;<br>changed | set_field: prox_7d_viewed_ts: this.value;<br>changed | emit: force_reprocess"
+    },
+    {
+      "type": "title",
+      "name": "title_14d",
+      "value": "14-day check-in"
+    },
+    {
+      "type": "text",
+      "name": "text_14d_last",
+      "value": "Started (prox_14d_last_ts): @fields.prox_14d_last_ts"
+    },
+    {
+      "type": "text",
+      "name": "text_14d_viewed",
+      "value": "Viewed (prox_14d_viewed_ts): @fields.prox_14d_viewed_ts"
+    },
+    {
+      "type": "date_time_picker",
+      "name": "picker_14d",
+      "action_list": "changed | set_field: prox_14d_last_ts: this.value;<br>changed | set_field: prox_14d_viewed_ts: this.value;<br>changed | emit: force_reprocess"
+    }
+  ]
+}

@@ -6,7 +6,7 @@
   "rows": [
     {
       "id": "set_daily_time_together",
-      "title::eng": "Dedicar tiempo cada día para estar con @field.child_name",
+      "title::eng": "Apartar tiempo para estar con @field.child_name cada día",
       "challenge_list": "not_enough_time_10to17; child_avoids_time_10to17; child_avoids_time_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "A muchas madres, padres y personas cuidadoras les cuesta encontrar tiempo cada día para estar con sus hijas e hijos.",
@@ -34,7 +34,7 @@
     },
     {
       "id": "include_child_in_chores",
-      "title::eng": "Incluir a @field.child_name en los quehaceres y actividades diarias",
+      "title::eng": "Incluir a @field.child_name en las tareas y actividades diarias",
       "challenge_list": "not_enough_time_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "A muchas madres, padres y personas cuidadoras se les hace más rápido hacer los quehaceres sin ayuda que con sus hijas e hijos.",
@@ -132,7 +132,7 @@
     },
     {
       "id": "feelings_matter_when_no",
-      "title::eng": "Mostrarle a @field.child_name que sus emociones importan, incluso cuando le digo que no",
+      "title::eng": "Demostrarle a @fields.child_name que sus sentimientos importan, hasta cuando digo que no a algo",
       "challenge_list": "understand_feelings_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "A muchas madres, padres y personas cuidadoras les cuesta mostrarle a su hija o hijo que sus emociones importan y, al mismo tiempo, decirle que no.",
@@ -160,7 +160,7 @@
     },
     {
       "id": "supported_when_upset",
-      "title::eng": "@field.child_name se siente con apoyo y cuidado cuando está pasando por un mal momento",
+      "title::eng": "@field.child_name siente mi apoyo y cuidado cuando siente enojo o molestia",
       "challenge_list": "understand_feelings_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Las madres, padres y personas cuidadoras a menudo se preguntan si su hija o hijo siente su apoyo cuando está pasando por un mal momento.",
@@ -174,7 +174,7 @@
     },
     {
       "id": "tell_specific_likes",
-      "title::eng": "Decirle a @field.child_name cosas específicas que me gustan de su forma de ser",
+      "title::eng": "Decirle a @field.child_name lo que me gusta de su forma de ser",
       "challenge_list": "show_love_praise",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Muchas madres, padres y personas cuidadoras sienten orgullo por sus hijas e hijos, pero no suelen decirlo en voz alta.",
@@ -202,7 +202,7 @@
     },
     {
       "id": "encourage_when_difficult",
-      "title::eng": "Animar a @field.child_name cuando algo se le hace difícil",
+      "title::eng": "Animar a @field.child_name cuando algo es difícil",
       "challenge_list": "show_love_praise",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Cuando una niña o un niño tiene dificultades, las madres, padres y personas cuidadoras suelen enfocarse en resolver el problema antes de darle ánimo.",
@@ -244,7 +244,7 @@
     },
     {
       "id": "no_device_activities",
-      "title::eng": "Pasamos tiempo juntos sin dispositivos",
+      "title::eng": "Pasar tiempo juntos sin pantallas",
       "challenge_list": "only_wants_device; devices_disrupt_routine_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Es muy común que haya dispositivos cerca o en uso cuando madres, padres y personas cuidadoras pasan el rato con sus hijas e hijos.",
@@ -258,7 +258,7 @@
     },
     {
       "id": "interest_in_child_online",
-      "title::eng": "Mostrar interés en lo que le gusta a @field.child_name, incluso en lo que hace en línea",
+      "title::eng": "Mostrar interés en lo que le gusta a @field.child_name, también en lo que hace en línea",
       "challenge_list": "only_wants_device",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Muchas madres, padres y personas cuidadoras no saben bien qué hace su hija o hijo en línea ni de cómo mostrar interés en ello.",
@@ -272,7 +272,7 @@
     },
     {
       "id": "together_without_taking_device",
-      "title::eng": "Estar con @field.child_name sin quitarle su dispositivo",
+      "title::eng": "Estar con @field.child_name sin quitarle sus pantallas",
       "challenge_list": "only_wants_device",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Muchas madres, padres y personas cuidadoras sienten que necesitan quitarle el dispositivo a su hija o hijo para poder conectar.",
@@ -342,7 +342,7 @@
     },
     {
       "id": "privacy_while_available",
-      "title::eng": "Darle privacidad a @field.child_name sin dejar de estar disponible",
+      "title::eng": "Darle privacidad a @fields.child_name sin dejar de estar disponible",
       "challenge_list": "keeps_things_inside",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Encontrar el equilibrio entre dar privacidad y mantenerse cerca es algo en lo que trabajan muchas madres, padres y personas cuidadoras.",
@@ -356,7 +356,7 @@
     },
     {
       "id": "comes_to_me_for_support",
-      "title::eng": "@field.child_name me busca para pedir apoyo cuando está pasando por un mal momento",
+      "title::eng": "@field.child_name me busca para pedirme apoyo cuando se siente mal",
       "challenge_list": "keeps_things_inside; seems_unhappy",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "A muchas niñas, niños y adolescentes les cuesta explicar lo que sienten o pedir ayuda, incluso cuando la están pasando mal.",
@@ -370,7 +370,7 @@
     },
     {
       "id": "calm_when_disagree",
-      "title::eng": "Mantener la calma cuando @field.child_name y yo no estamos de acuerdo",
+      "title::eng": "Mantener la calma cuando @field.child_name y yo estamos en desacuerdo",
       "challenge_list": "argue_often",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Los desacuerdos con una hija o un hijo pueden despertar emociones intensas en cualquier madre, padre o persona cuidadora.",
@@ -384,7 +384,7 @@
     },
     {
       "id": "listen_child_side",
-      "title::eng": "Escuchar la versión de @field.child_name durante una discusión",
+      "title::eng": "Escuchar la opinión de @field.child_name durante una discusión",
       "challenge_list": "argue_often",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "En medio de una discusión, a las madres, padres y personas cuidadoras a menudo les cuesta escuchar la versión de su hija o hijo.",
@@ -412,7 +412,7 @@
     },
     {
       "id": "reconnect_after_argument",
-      "title::eng": "Volver a conectar con @field.child_name después de un momento difícil",
+      "title::eng": "Reconectar con @field.child_name después de una discusión",
       "challenge_list": "argue_often; parent_calm",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Después de un momento difícil, madres, padres, personas cuidadoras, hijas e hijos a menudo necesitan tiempo antes de volver a sentirse cerca.",
@@ -468,7 +468,7 @@
     },
     {
       "id": "avoids_dangerous_objects",
-      "title::eng": "@field.child_name se mantiene lejos de objetos peligrosos o pregunta antes de tocarlos",
+      "title::eng": "@field.child_name se aleja de objetos peligrosos o pregunta antes de tocarlos",
       "challenge_list": "safety_at_home_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "A las niñas y los niños pequeños les encanta explorar, y todavía están aprendiendo qué cosas son seguras para tocar.",
@@ -496,7 +496,7 @@
     },
     {
       "id": "stays_close_outside",
-      "title::eng": "@field.child_name se mantiene cerca cuando estamos fuera de casa",
+      "title::eng": "@field.child_name se mantiene cerca de mí cuando estamos fuera de casa",
       "challenge_list": "safety_outside_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Es fácil que las niñas y los niños se distraigan y se alejen cuando están fuera de casa.",
@@ -510,7 +510,7 @@
     },
     {
       "id": "handles_big_feelings",
-      "title::eng": "@field.child_name sabe cómo manejar sus emociones intensas por su cuenta",
+      "title::eng": "@field.child_name sabe cómo manejar emociones intensas por su cuenta",
       "challenge_list": "tantrums_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "A las niñas y los niños les toma tiempo aprender a manejar sus emociones intensas por su cuenta.",
@@ -524,7 +524,7 @@
     },
     {
       "id": "road_safety_rules",
-      "title::eng": "@field.child_name sigue las reglas de seguridad vial",
+      "title::eng": "@field.child_name sigue las reglas de seguridad en las calles",
       "challenge_list": "safety_outside_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Las niñas y los niños necesitan muchos recordatorios antes de seguir las reglas de seguridad vial todas las veces.",
@@ -552,7 +552,7 @@
     },
     {
       "id": "plays_safely_outside",
-      "title::eng": "@field.child_name juega de forma segura al aire libre",
+      "title::eng": "@field.child_name juega de forma segura fuera de casa",
       "challenge_list": "safety_outside_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Tomar riesgos al jugar es una parte normal de la infancia.",
@@ -580,7 +580,7 @@
     },
     {
       "id": "asks_before_new_places",
-      "title::eng": "@field.child_name pide permiso antes de ir a lugares nuevos",
+      "title::eng": "@field.child_name te pregunta antes de ir a lugares nuevos",
       "challenge_list": "whereabouts_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Acordarse de pedir permiso cada vez requiere mucha práctica, y las niñas y los niños a menudo lo olvidan en el momento.",
@@ -594,7 +594,7 @@
     },
     {
       "id": "asks_before_leaving_anyone",
-      "title::eng": "@field.child_name pide permiso antes de irse con cualquier persona",
+      "title::eng": "@field.child_name te pregunta antes de irse con cualquier persona",
       "challenge_list": "whereabouts_2to9; safety_around_others_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Pedir permiso antes de irse con alguien es un hábito de seguridad que las niñas y los niños desarrollan con el tiempo.",
@@ -622,7 +622,7 @@
     },
     {
       "id": "talk_body_changes",
-      "title::eng": "@field.child_name y yo hablamos abiertamente sobre los cambios del cuerpo",
+      "title::eng": "@field.child_name y yo hablamos abiertamente sobre los cambios de su cuerpo",
       "challenge_list": "body_safety_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Cada familia habla sobre los cambios del cuerpo a su manera y a su propio ritmo.",
@@ -776,7 +776,7 @@
     },
     {
       "id": "follows_going_out_rules",
-      "title::eng": "@field.child_name sigue las reglas para salir",
+      "title::eng": "@field.child_name respeta las reglas para salir de casa",
       "challenge_list": "whereabouts_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Como las y los adolescentes quieren más libertad, puede que no siempre respeten las reglas para salir.",
@@ -818,7 +818,7 @@
     },
     {
       "id": "faces_fears",
-      "title::eng": "@field.child_name enfrenta sus miedos con confianza",
+      "title::eng": "@field.child_name enfrenta sus miedos con seguridad",
       "challenge_list": "worry_afraid_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Todas las niñas y los niños tienen miedos, y enfrentarlos toma tiempo.",
@@ -832,7 +832,7 @@
     },
     {
       "id": "shares_feelings",
-      "title::eng": "@field.child_name me dice cómo se siente",
+      "title::eng": "@field.child_name me cuenta cómo se siente",
       "challenge_list": "strong_emotions_10to17; strong_emotions_2to9; worry_afraid_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Las niñas y los niños no siempre tienen las palabras para lo que sienten, así que puede que no compartan sus emociones aunque algo les esté rondando la cabeza.",
@@ -846,7 +846,7 @@
     },
     {
       "id": "calms_when_upset",
-      "title::eng": "@field.child_name se calma cuando está pasando por un mal momento",
+      "title::eng": "@field.child_name se calma cuando siente enojo o molestia",
       "challenge_list": "strong_emotions_10to17; strong_emotions_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Cuando las emociones son intensas, el cuerpo y la mente de las niñas y los niños pueden tardar un rato en calmarse.",
@@ -860,7 +860,7 @@
     },
     {
       "id": "expresses_emotions_safely",
-      "title::eng": "@field.child_name expresa emociones intensas sin lastimar a nadie",
+      "title::eng": "@field.child_name expresa emociones fuertes sin lastimar a nadie",
       "challenge_list": "strong_emotions_2to9; strong_emotions_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "¡Las emociones intensas pueden ser enormes! Aprender qué hacer con ellas es un proceso para la mayoría de las niñas y los niños (y para muchas personas adultas).",
@@ -888,7 +888,7 @@
     },
     {
       "id": "says_no_unwanted_touch",
-      "title::eng": "@field.child_name puede decir que no a un contacto físico que no quiere",
+      "title::eng": "@field.child_name puede decir que no a un contacto físico no deseado",
       "challenge_list": "body_safety_10to17; body_safety_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Decir que no a un contacto físico puede ser muy difícil para las niñas y los niños, sobre todo con familiares o personas que conocen bien.",
@@ -930,7 +930,7 @@
     },
     {
       "id": "names_feelings",
-      "title::eng": "@field.child_name nombra diferentes emociones",
+      "title::eng": "@field.child_name puede nombrar diferentes emociones",
       "challenge_list": "strong_emotions_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Encontrar las palabras adecuadas para las emociones requiere práctica, tanto para niñas y niños como para personas adultas.",
@@ -958,7 +958,7 @@
     },
     {
       "id": "someone_watching_child",
-      "title::eng": "Asegurarme de que alguien esté cuidando a @field.child_name",
+      "title::eng": "Sé que alguien está cuidando a @field.child_name",
       "challenge_list": "whereabouts_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Las madres, padres y personas cuidadoras tienen mucho que hacer, y las niñas y los niños a menudo juegan sin que una persona adulta les vigile cada segundo.",
@@ -1000,7 +1000,7 @@
     },
     {
       "id": "knows_safe_adults",
-      "title::eng": "@field.child_name sabe a qué personas adultas de confianza puede pedirles ayuda",
+      "title::eng": "@field.child_name sabe a qué personas adultas les puede pedir ayuda",
       "challenge_list": "safety_around_others_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Solemos dar por hecho que nuestras hijas e hijos saben a quién pueden acudir, pero no es algo de lo que las familias siempre hablen en voz alta.",
@@ -1014,7 +1014,7 @@
     },
     {
       "id": "positive_self_talk",
-      "title::eng": "@field.child_name habla de forma positiva sobre sí",
+      "title::eng": "@field.child_name se habla de forma positiva",
       "challenge_list": "low_self_confidence",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Después de un día difícil o de un error, las niñas y los niños pueden decir cosas poco amables sobre sí.",
@@ -1028,7 +1028,7 @@
     },
     {
       "id": "parent_builds_confidence",
-      "title::eng": "Puedo ayudar a @field.child_name a tener más confianza en sí",
+      "title::eng": "Puedo ayudar a @field.child_name sienta más confianza y seguridad",
       "challenge_list": "learning_confidence_6to9; learning_confidence_10to17; low_self_confidence",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Muchas madres, padres y personas cuidadoras se preguntan si están haciendo lo suficiente para ayudar a su hija o hijo a tener confianza en sí.",
@@ -1042,7 +1042,7 @@
     },
     {
       "id": "knows_normal_for_age",
-      "title::eng": "@field.child_name sabe qué es normal para su edad",
+      "title::eng": "@field.child_name sabe lo que es normal para su edad",
       "challenge_list": "body_safety_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Las y los adolescentes reciben muchos mensajes contradictorios de sus amistades y en internet, así que pueden tener dudas sobre qué es normal para su edad.",
@@ -1084,7 +1084,7 @@
     },
     {
       "id": "shares_takes_turns",
-      "title::eng": "@field.child_name comparte y respeta turnos con otras personas",
+      "title::eng": "@field.child_name comparte y sigue los turnos cuando está con otras personas",
       "challenge_list": "make_friends_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Compartir significa dejar algo que quieren, lo cual puede ser difícil para las niñas y los niños, sobre todo cuando tienen cansancio o emoción.",
@@ -1098,7 +1098,7 @@
     },
     {
       "id": "reports_bullying",
-      "title::eng": "@field.child_name le cuenta a una persona adulta de confianza sobre el acoso, en línea o en persona",
+      "title::eng": "@field.child_name le cuenta a una persona adulta de confianza sobre el bullying, sea en línea o en persona",
       "challenge_list": "bullied_or_bullying; cyberbullying_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Muchas niñas y niños temen que contarle a una persona adulta sobre el acoso empeore las cosas, así que se lo guardan.",
@@ -1112,7 +1112,7 @@
     },
     {
       "id": "asks_help_if_mistreated",
-      "title::eng": "@field.child_name pide ayuda cuando le tratan mal",
+      "title::eng": "@field.child_name pide ayuda cuando alguien le trata mal",
       "challenge_list": "bullied_or_bullying",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Saber que una persona adulta de confianza le escuchará puede facilitar que las niñas y los niños pidan ayuda cuando alguien les trata mal.",
@@ -1186,7 +1186,7 @@
     },
     {
       "id": "faces_hard_situations",
-      "title::eng": "@field.child_name enfrenta situaciones difíciles sin evitarlas",
+      "title::eng": "@field.child_name enfrenta las situaciones difíciles, en vez de evitarlas",
       "challenge_list": "worry_anxious_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Alejarse de lo que da miedo o se siente difícil es una primera reacción natural, tanto para niñas y niños como para personas adultas.",
@@ -1200,7 +1200,7 @@
     },
     {
       "id": "copes_with_disappointment",
-      "title::eng": "@field.child_name maneja bien las decepciones",
+      "title::eng": "@field.child_name puede manejar bien las decepciones",
       "challenge_list": "strong_emotions_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Las decepciones son difíciles para niñas y niños de todas las edades.",
@@ -1256,7 +1256,7 @@
     },
     {
       "id": "uses_agreed_apps",
-      "title::eng": "@field.child_name solo usa las aplicaciones y juegos que acordamos que están bien",
+      "title::eng": "@field.child_name solo usa las aplicaciones y juegos que acordamos",
       "challenge_list": "device_rules; online_content_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Con tantas aplicaciones y juegos a un toque de distancia, puede ser difícil para las madres, padres y personas cuidadoras saber todo lo que usa su hija o hijo.",
@@ -1270,7 +1270,7 @@
     },
     {
       "id": "listens_to_reminders",
-      "title::eng": "@field.child_name me hace caso cuando le recuerdo nuestras reglas sobre los dispositivos",
+      "title::eng": "@field.child_name me hace caso cuando le recuerdo nuestras reglas sobre las pantallas",
       "challenge_list": "device_rules",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Cuando las niñas y los niños están ocupados con un juego o un video, puede que no escuchen realmente los recordatorios sobre las reglas de los dispositivos.",
@@ -1326,7 +1326,7 @@
     },
     {
       "id": "tells_stranger_contact",
-      "title::eng": "@field.child_name me avisa si una persona desconocida le contacta en línea",
+      "title::eng": "@field.child_name me cuenta si una persona desconocida le contacta en línea",
       "challenge_list": "online_privacy_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Las niñas y los niños conocen a todo tipo de personas en juegos y aplicaciones en línea. Es normal que a las madres, padres y personas cuidadoras les preocupe lo que sus hijas e hijos puedan compartir.",
@@ -1340,7 +1340,7 @@
     },
     {
       "id": "checks_info_before_sharing",
-      "title::eng": "@field.child_name verifica que la información en línea sea verdadera antes de compartirla",
+      "title::eng": "@field.child_name verifica que la información en línea es verdadera antes de compartirla",
       "challenge_list": "online_content_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Las y los jóvenes, al igual que las personas adultas, pueden compartir cosas en línea sin verificar si son verdad.",
@@ -1354,7 +1354,7 @@
     },
     {
       "id": "parent_supports_emotions",
-      "title::eng": "Sé cómo apoyar a @field.child_name cuando siente emociones intensas",
+      "title::eng": "Sé cómo apoyar a @field.child_name cuando siente emociones fuertes",
       "challenge_list": "strong_emotions_10to17; strong_emotions_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Acompañar a una hija o un hijo en sus emociones intensas requiere práctica, sobre todo cuando también estamos sintiendo emociones intensas.",
@@ -1368,7 +1368,7 @@
     },
     {
       "id": "feels_happier",
-      "title::eng": "@field.child_name se siente feliz con más frecuencia",
+      "title::eng": "@field.child_name se siente feliz más seguido",
       "challenge_list": "seems_unhappy",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "El estado de ánimo de cada niña o niño sube y baja con los cambios en casa, en la escuela o con sus amistades.",
@@ -1410,7 +1410,7 @@
     },
     {
       "id": "confident_new_things",
-      "title::eng": "@field.child_name siente confianza al intentar cosas nuevas o difíciles",
+      "title::eng": "@field.child_name siente confianza para intentar cosas nuevas o difíciles",
       "challenge_list": "low_self_confidence; development_2to5; learning_new_things_2to5; learning_confidence_6to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Intentar cosas nuevas o difíciles puede dar miedo, tanto a niñas y niños como a personas adultas.",
@@ -1438,7 +1438,7 @@
     },
     {
       "id": "thinks_before_posting",
-      "title::eng": "@field.child_name piensa en las posibles consecuencias antes de publicar o compartir en línea",
+      "title::eng": "@field.child_name piensa en las consecuencias antes de publicar o compartir en línea",
       "challenge_list": "online_content_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Publicar en línea toma solo unos segundos, así que pensar antes es una habilidad que las y los adolescentes desarrollan con el tiempo.",
@@ -1452,7 +1452,7 @@
     },
     {
       "id": "blocks_harmful_content",
-      "title::eng": "@field.child_name bloquea o reporta contenido o personas dañinas",
+      "title::eng": "@field.child_name bloquea o reporta contenido o personas que le pueden hacer daño",
       "challenge_list": "online_privacy_10to17; online_content_10to17; cyberbullying_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Cuando aparece algo dañino en línea, es muy común que las y los adolescentes solo sigan deslizando o lo ignoren en lugar de seguir los pasos para bloquearlo o reportarlo.",
@@ -1480,7 +1480,7 @@
     },
     {
       "id": "comfortable_with_peers",
-      "title::eng": "@field.child_name se siente con comodidad al jugar con otras niñas y niños",
+      "title::eng": "@field.child_name se siente a gusto cuando juega con otras niñas y niños",
       "challenge_list": "make_friends_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Algunas niñas y niños necesitan tiempo para sentirse en confianza con otras niñas y niños, sobre todo en lugares nuevos.",
@@ -1508,7 +1508,7 @@
     },
     {
       "id": "tells_adult_threats",
-      "title::eng": "@field.child_name le dice a una persona adulta de confianza si alguien le amenaza en línea",
+      "title::eng": "@field.child_name le cuenta a una persona adulta de confianza si alguien le amenaza en línea",
       "challenge_list": "online_privacy_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Es más probable que las y los adolescentes hablen sobre las amenazas en línea cuando saben que no les van a culpar ni a quitar su celular.",
@@ -1536,7 +1536,7 @@
     },
     {
       "id": "tells_adult_online_secrets",
-      "title::eng": "@field.child_name le dice a una persona adulta de confianza si alguien en línea le pide guardar un secreto",
+      "title::eng": "@field.child_name le cuenta a una persona adulta de confianza si alguien en línea le pide guardar un secreto",
       "challenge_list": "online_privacy_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Es difícil saber lo que pasa en el mundo en línea de una o un adolescente. La mayoría de las madres, padres y personas cuidadoras sienten que andan un poco a ciegas.",
@@ -1550,7 +1550,7 @@
     },
     {
       "id": "knows_bullying_response",
-      "title::eng": "@field.child_name sabe qué hacer si sufre acoso, en línea o en persona",
+      "title::eng": "@field.child_name sabe qué hacer si sufre bullying, en línea o en persona",
       "challenge_list": "bullied_or_bullying; cyberbullying_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "La mayoría de las familias no hablan del acoso hasta que se presenta, así que es normal no saber bien cómo lo manejaría tu hija o hijo.",
@@ -1564,7 +1564,7 @@
     },
     {
       "id": "speaks_up_online_bullying",
-      "title::eng": "@field.child_name alza la voz si alguien sufre acoso u hostigamiento en línea",
+      "title::eng": "@field.child_name alza la voz si alguien sufre bullying, en línea o en persona",
       "challenge_list": "cyberbullying_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Alzar la voz ante el acoso en línea requiere valor, tanto para las y los jóvenes como para las personas adultas.",
@@ -1634,7 +1634,7 @@
     },
     {
       "id": "feels_good_strengths",
-      "title::eng": "@field.child_name se siente bien con sus fortalezas y habilidades",
+      "title::eng": "@field.child_name siente satisfacción por sus fortalezas y habilidades",
       "challenge_list": "extra_learning_help_6to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Cuando aprender se siente difícil, es fácil olvidar lo que haces bien, tanto para niñas y niños como para personas adultas.",
@@ -1676,7 +1676,7 @@
     },
     {
       "id": "feels_learning_support",
-      "title::eng": "@field.child_name se siente con apoyo en su aprendizaje",
+      "title::eng": "@field.child_name siente que le apoyo en su aprendizaje",
       "challenge_list": "extra_learning_help_6to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Cuando aprender se vuelve difícil, la frustración puede tomar el control y hacer que las niñas y los niños no vean la ayuda y el apoyo que tienen justo enfrente.",
@@ -1704,7 +1704,7 @@
     },
     {
       "id": "talks_about_school_stress",
-      "title::eng": "@field.child_name me platica sobre el estrés de la escuela",
+      "title::eng": "@field.child_name me cuenta sobre el estrés de la escuela",
       "challenge_list": "school_stress_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "“Me fue bien en la escuela”. ¿Te suena familiar? Muchas niñas, niños y adolescentes se guardan el estrés de la escuela, al menos al principio.",
@@ -1718,7 +1718,7 @@
     },
     {
       "id": "socially_confident",
-      "title::eng": "@field.child_name siente confianza en situaciones sociales",
+      "title::eng": "@field.child_name siente confianza cuando interactúa con otras personas",
       "challenge_list": "fit_in_peers_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "A las y los adolescentes les importa mucho lo que piensan otras personas, así que las situaciones sociales pueden generar estrés.",
@@ -1732,7 +1732,7 @@
     },
     {
       "id": "talks_about_school_problems",
-      "title::eng": "@field.child_name puede platicarme sobre problemas en la escuela",
+      "title::eng": "@field.child_name puede contarme si tiene problemas en la escuela",
       "challenge_list": "school_problems_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Las y los adolescentes pueden querer resolver por su cuenta los problemas de la escuela antes de hablar con su madre, padre o persona cuidadora.",
@@ -1746,7 +1746,7 @@
     },
     {
       "id": "stops_device_on_time",
-      "title::eng": "@field.child_name deja de usar los dispositivos cuando se acaba el tiempo",
+      "title::eng": "@field.child_name deja de usar sus pantallas cuando se acaba el tiempo acordado",
       "challenge_list": "too_much_device_2to9; too_much_screen_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Los juegos y videos están hechos para que sigamos viendo, así que parar cuando se acaba el tiempo es un reto tanto para niñas y niños como para personas adultas.",
@@ -1760,7 +1760,7 @@
     },
     {
       "id": "fun_without_devices",
-      "title::eng": "@field.child_name encuentra cosas divertidas que hacer sin un dispositivo",
+      "title::eng": "@field.child_name encuentra cosas divertidas que hacer sin las pantallas",
       "challenge_list": "too_much_device_2to9; too_much_screen_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Cuando se apaga la pantalla, es muy común que las niñas y los niños digan que se aburren antes de encontrar otra cosa que hacer.",
@@ -1774,7 +1774,7 @@
     },
     {
       "id": "takes_device_breaks",
-      "title::eng": "@field.child_name toma descansos regulares de los dispositivos",
+      "title::eng": "@field.child_name toma descansos frecuentes de las pantallas",
       "challenge_list": "too_much_device_2to9; too_much_screen_10to17; device_mental_health_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "El tiempo en los dispositivos puede pasar rápido sin que nadie lo note, tanto para niñas y niños como para personas adultas.",
@@ -1788,7 +1788,7 @@
     },
     {
       "id": "device_agreed_times",
-      "title::eng": "@field.child_name usa los dispositivos en los horarios y lugares acordados",
+      "title::eng": "@field.child_name usa las pantallas en los horarios y lugares acordados",
       "challenge_list": "device_rules",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Es muy común que las niñas y los niños usen los dispositivos fuera de los horarios acordados, sobre todo cuando tienen un celular o una tableta a la mano.",
@@ -1802,7 +1802,7 @@
     },
     {
       "id": "asks_before_device",
-      "title::eng": "@field.child_name pide permiso antes de usar un dispositivo",
+      "title::eng": "@field.child_name pide permiso antes de usar las pantallas",
       "challenge_list": "device_rules",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Cuando tienen un dispositivo al alcance, las niñas y los niños pueden tomarlo por costumbre antes de acordarse de pedir permiso.",
@@ -1816,7 +1816,7 @@
     },
     {
       "id": "sets_future_goals",
-      "title::eng": "@field.child_name se pone metas para su aprendizaje o su futuro",
+      "title::eng": "@field.child_name se pone metas de aprendizaje o para su futuro",
       "challenge_list": "school_future_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Si tu adolescente cambia sus planes a futuro cada semana, o no tiene ningún plan, no eres la única persona a la que le pasa.",
@@ -1830,7 +1830,7 @@
     },
     {
       "id": "values_based_choices",
-      "title::eng": "@field.child_name toma decisiones con base en lo que le importa",
+      "title::eng": "@field.child_name toma en cuenta lo que le importa cuando toma decisiones",
       "challenge_list": "school_future_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Las y los adolescentes todavía están descubriendo qué es lo que más les importa",
@@ -1858,7 +1858,7 @@
     },
     {
       "id": "family_supports_rules",
-      "title::eng": "Mi familia ayuda a respetar nuestras reglas sobre los dispositivos",
+      "title::eng": "Mi familia ayuda a respetar nuestras reglas sobre el uso de pantallas",
       "challenge_list": "device_rules",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Cada persona adulta en casa puede ver el tiempo frente a las pantallas de forma distinta, así que mantener las mismas reglas sobre los dispositivos puede requerir esfuerzo.",
@@ -1872,7 +1872,7 @@
     },
     {
       "id": "calm_when_device_ends",
-      "title::eng": "@field.child_name mantiene la calma cuando se acaba su tiempo con el dispositivo",
+      "title::eng": "@field.child_name mantiene la calma cuando se acaba su tiempo de pantallas",
       "challenge_list": "upset_device_ends_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Dejar algo divertido es difícil, pero un aviso rápido antes de que se acabe el tiempo puede ayudar a que las niñas y los niños se preparen.",
@@ -1886,7 +1886,7 @@
     },
     {
       "id": "puts_device_away",
-      "title::eng": "@field.child_name guarda el dispositivo cuando se lo pido",
+      "title::eng": "@field.child_name guarda o apaga las pantallas cuando se lo pido",
       "challenge_list": "upset_device_ends_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Es muy común que las niñas y los niños pidan \"solo un minuto más\" cuando se les pide guardar un dispositivo.",
@@ -1900,7 +1900,7 @@
     },
     {
       "id": "moves_on_after_device",
-      "title::eng": "@field.child_name pasa a otra actividad después de su tiempo con el dispositivo",
+      "title::eng": "@field.child_name pasa a otra actividad cuando se termina su tiempo de pantallas",
       "challenge_list": "upset_device_ends_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Después del tiempo frente a la pantalla, las niñas y los niños pueden sentir inquietud por un rato antes de pasar a otra cosa.",
@@ -1914,7 +1914,7 @@
     },
     {
       "id": "okay_without_device",
-      "title::eng": "@field.child_name está bien cuando no puede usar un dispositivo",
+      "title::eng": "@field.child_name está bien cuando no puede usar sus pantallas",
       "challenge_list": "upset_device_ends_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Los dispositivos son una parte importante de la vida de muchas niñas y niños, así que no poder usarlos puede hacerles sentir mal.",
@@ -1928,7 +1928,7 @@
     },
     {
       "id": "parent_ends_device_calmly",
-      "title::eng": "Puedo ayudar a @field.child_name a terminar su tiempo con el dispositivo sin llanto ni peleas",
+      "title::eng": "Puedo ayudar a @field.child_name a terminar su tiempo de pantallas sin que llore o pelee conmigo",
       "challenge_list": "upset_device_ends_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Terminar el tiempo con el dispositivo a menudo trae llanto o discusiones, incluso en familias con reglas claras.",
@@ -1942,7 +1942,7 @@
     },
     {
       "id": "bedtime_without_devices",
-      "title::eng": "@field.child_name sigue su rutina para dormir sin dispositivos",
+      "title::eng": "@field.child_name sigue su rutina para dormir sin pantallas",
       "challenge_list": "devices_disrupt_routine_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Muchas niñas y niños, al igual que las personas adultas, usan los dispositivos para relajarse, así que dejarlos fuera de la hora de dormir puede tomar tiempo.",
@@ -1956,7 +1956,7 @@
     },
     {
       "id": "meals_without_devices",
-      "title::eng": "@field.child_name come sin un dispositivo",
+      "title::eng": "@field.child_name se sienta a comer sin sus dispositivos",
       "challenge_list": "devices_disrupt_routine_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "En muchos hogares, los dispositivos terminan llegando a la mesa a la hora de comer, sobre todo en los días ocupados.",
@@ -1970,7 +1970,7 @@
     },
     {
       "id": "parent_balances_device_time",
-      "title::eng": "Puedo ayudar a @field.child_name a equilibrar el tiempo con el dispositivo con el sueño, el juego y el tiempo en familia",
+      "title::eng": "Puedo ayudar a @field.child_name a equilibrar el tiempo de pantallas con el tiempo para dormir, jugar y estar en familia",
       "challenge_list": "devices_disrupt_routine_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Las pantallas están en todas partes y el tiempo se pasa volando.",
@@ -1998,7 +1998,7 @@
     },
     {
       "id": "plan_family_needs",
-      "title::eng": "Hago un plan sencillo para las necesidades más importantes de mi familia",
+      "title::eng": "Puedo hacer un plan sencillo para las necesidades más importantes de mi familia",
       "challenge_list": "money_worries",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Cuando el dinero no alcanza, planear con anticipación puede sentirse abrumador, y muchas madres, padres y personas cuidadoras van resolviendo día con día.",
@@ -2026,7 +2026,7 @@
     },
     {
       "id": "parent_stay_involved_device",
-      "title::eng": "Puedo mantenerme al tanto de lo que hace @field.child_name en su dispositivo",
+      "title::eng": "Puedo mantenerme al tanto de lo que @field.child_name ve o hace en sus dispositivos",
       "challenge_list": "online_content_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "El mundo en línea de las niñas y los niños cambia rápido, y mantenerse al tanto es algo que todas las madres, padres y personas cuidadoras van aprendiendo sobre la marcha.",
@@ -2040,7 +2040,7 @@
     },
     {
       "id": "reassure_not_their_fault",
-      "title::eng": "Le aseguro a @field.child_name que los problemas de dinero no son su culpa",
+      "title::eng": "Me aseguro de que @field.child_name sepa que los problemas de dinero no son su culpa",
       "challenge_list": "money_worries",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Las niñas y los niños a menudo notan las preocupaciones por el dinero en casa, y escuchar que no es su culpa puede ayudarles a sentirse a salvo.",
@@ -2054,7 +2054,7 @@
     },
     {
       "id": "device_away_together",
-      "title::eng": "@field.child_name guarda su dispositivo cuando estamos juntos",
+      "title::eng": "@field.child_name guarda o apaga sus pantallas cuando estamos juntos",
       "challenge_list": "only_wants_device",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Los dispositivos son parte de la vida diaria de muchas niñas y niños.",
@@ -2082,7 +2082,7 @@
     },
     {
       "id": "parent_help_healthy_devices",
-      "title::eng": "Puedo ayudar a @field.child_name a usar los dispositivos y las redes sociales de forma saludable",
+      "title::eng": "Puedo ayudar a @field.child_name a usar los dispositivos y las redes sociales de forma sana",
       "challenge_list": "too_much_screen_10to17; device_mental_health_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Las redes sociales cambian tan rápido que la mayoría de las madres, padres y personas cuidadoras sienten que siempre van atrás. ¡No eres la única persona a la que le pasa!",
@@ -2110,7 +2110,7 @@
     },
     {
       "id": "settles_disagreements",
-      "title::eng": "@field.child_name resuelve los desacuerdos con otras niñas y niños",
+      "title::eng": "@field.child_name resuelve sus desacuerdos con otras niñas y niños",
       "challenge_list": "lots_of_fights; make_friends_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Hay semanas llenas de compartir y trabajar en equipo, y otras llenas de “¡eso es mío!”. Es totalmente normal.",
@@ -2124,7 +2124,7 @@
     },
     {
       "id": "stops_unsafe_content",
-      "title::eng": "@field.child_name deja de ver contenido que le hace sentir en peligro o con incomodidad",
+      "title::eng": "@field.child_name deja de ver contenido que le hace sentir peligro o incomodidad",
       "challenge_list": "online_content_10to17; device_mental_health_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Cuando aparece contenido inquietante, es muy común que las y los adolescentes sigan deslizando en lugar de alejarse.",
@@ -2138,7 +2138,7 @@
     },
     {
       "id": "accepts_no",
-      "title::eng": "@field.child_name acepta un \"no\" sin hacer berrinche",
+      "title::eng": "@field.child_name acepta un \"no\" sin hacer un berrinche",
       "challenge_list": "tantrums_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Pocas cosas provocan un berrinche más rápido que la palabra ‘no’. Si te tocaron algunos esta semana, no eres la única persona a la que le pasa.",
@@ -2166,7 +2166,7 @@
     },
     {
       "id": "uses_words_for_feelings",
-      "title::eng": "@field.child_name sabe usar palabras en lugar de gritar, pegar o llorar",
+      "title::eng": "@field.child_name sabe usar palabras para hablar en lugar de gritar, pegar o llorar",
       "challenge_list": "tantrums_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Usar palabras cuando algo nos molesta es difícil, ¡incluso para las personas adultas! Para las niñas y los niños pequeños, requiere mucha práctica.",
@@ -2180,7 +2180,7 @@
     },
     {
       "id": "fewer_tantrums",
-      "title::eng": "@field.child_name pasa el día sin hacer berrinches",
+      "title::eng": "@field.child_name logra pasar el día sin hacer berrinches",
       "challenge_list": "tantrums_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Los berrinches son una forma en que las niñas y los niños pequeños muestran sus emociones intensas, sobre todo cuando tienen cansancio o hambre.",
@@ -2194,7 +2194,7 @@
     },
     {
       "id": "bed_when_asked",
-      "title::eng": "@field.child_name se va a dormir cuando se le pide",
+      "title::eng": "@field.child_name se va a dormir cuando se lo pido",
       "challenge_list": "refuses_routines_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "A las niñas y los niños no les gusta dejar de jugar para irse a dormir, y eso hace difíciles las rutinas a la hora de dormir.",
@@ -2236,7 +2236,7 @@
     },
     {
       "id": "parent_calm_online_bullying",
-      "title::eng": "Puedo mantener la calma y ayudar si @field.child_name sufre acoso o acosa a otras personas en línea",
+      "title::eng": "Puedo mantener la calma y ayudar si @field.child_name sufre bullying o lo hace a otras personas en línea",
       "challenge_list": "cyberbullying_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Descubrir que tu hija o hijo participa en situaciones de acoso en línea puede despertar emociones intensas en cualquier madre, padre o persona cuidadora.",
@@ -2250,7 +2250,7 @@
     },
     {
       "id": "enjoys_learning_play",
-      "title::eng": "@field.child_name disfruta aprender a través del juego y las actividades diarias",
+      "title::eng": "@field.child_name disfruta aprender a través del juego y las actividades cotidianas",
       "challenge_list": "development_2to5",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "No necesitas juguetes caros ni actividades planeadas. La mayor parte del aprendizaje de las niñas y los niños ocurre en los momentos del día a día.",
@@ -2278,7 +2278,7 @@
     },
     {
       "id": "parent_support_development",
-      "title::eng": "Puedo apoyar el desarrollo de @field.child_name a través del juego y las actividades diarias",
+      "title::eng": "Puedo apoyar el desarrollo de @field.child_name a través del juego y las actividades cotidianas",
       "challenge_list": "development_2to5",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Los momentos del día a día, como cocinar o caminar juntos, ya son oportunidades para aprender jugando.",
@@ -2320,7 +2320,7 @@
     },
     {
       "id": "confident_talking",
-      "title::eng": "@field.child_name siente confianza al hablar con otras personas",
+      "title::eng": "@field.child_name siente confianza para hablar con otras personas",
       "challenge_list": "communicating_2to5",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Conocer gente nueva puede ser algo grande para las niñas y los niños pequeños.",
@@ -2404,7 +2404,7 @@
     },
     {
       "id": "parent_playful_learning",
-      "title::eng": "Hago que aprender sea divertido y como un juego para @field.child_name",
+      "title::eng": "Ayudo a que aprender sea divertido para @field.child_name",
       "challenge_list": "learning_new_things_2to5; interest_learning_2to5",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Algunos días las madres, padres y personas cuidadoras tienen mucha energía para jugar y otros días no, y es un ritmo completamente natural en todas las familias.",
@@ -2418,7 +2418,7 @@
     },
     {
       "id": "enjoys_books_stories",
-      "title::eng": "@field.child_name disfruta ver libros y escuchar cuentos",
+      "title::eng": "@field.child_name disfruta escuchar historias y ver los libros",
       "challenge_list": "interest_learning_2to5",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Es completamente normal si a tu hija o hijo todavía no le interesan los libros. Algunas niñas y niños solo necesitan más tiempo para agarrarle gusto a los cuentos.",
@@ -2488,7 +2488,7 @@
     },
     {
       "id": "helps_get_dressed",
-      "title::eng": "@field.child_name se viste o ayuda a vestirse",
+      "title::eng": "@field.child_name se viste por su cuenta o ayuda a vestirse",
       "challenge_list": "independence_2to5",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Botones, cierres, mangas, calcetines... ¡vestirse son muchas pequeñas habilidades en una sola!",
@@ -2544,7 +2544,7 @@
     },
     {
       "id": "goodbye_easily",
-      "title::eng": "A @field.child_name se le hace más fácil despedirse de mí",
+      "title::eng": "@field.child_name puede despedirse de mí más fácilmente",
       "challenge_list": "preschool_difficulty_2to5",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Despedirse puede ser algo grande para las niñas y los niños pequeños.",
@@ -2558,7 +2558,7 @@
     },
     {
       "id": "joins_group_activities",
-      "title::eng": "@field.child_name se une a actividades con otras niñas y niños",
+      "title::eng": "@field.child_name participa en actividades con otras niñas y niños",
       "challenge_list": "preschool_difficulty_2to5",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "A algunas niñas y niños pequeños les gusta observar primero y unirse cuando se sienten con confianza.",
@@ -2586,7 +2586,7 @@
     },
     {
       "id": "parent_help_school_problems",
-      "title::eng": "Puedo ayudar a @field.child_name con problemas en la escuela o la guardería",
+      "title::eng": "Puedo ayudar a @field.child_name si tiene problemas en la escuela o la guardería",
       "challenge_list": "school_problems_10to17; school_difficulty_6to9; preschool_difficulty_2to5",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Es difícil saber cómo ayudar con problemas en la escuela o la guardería cuando no estás ahí para verlos.",
@@ -2614,7 +2614,7 @@
     },
     {
       "id": "starts_schoolwork_on_time",
-      "title::eng": "@field.child_name empieza la tarea o el trabajo escolar a tiempo",
+      "title::eng": "@field.child_name empieza la tarea o los trabajos escolares a tiempo",
       "challenge_list": "schoolwork_hard_6to9; school_motivation_10to17; homework_refusal_6to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Dejar para después la tarea o el trabajo escolar pasa en casi todos los hogares.",
@@ -2642,7 +2642,7 @@
     },
     {
       "id": "finishes_schoolwork_on_time",
-      "title::eng": "@field.child_name termina el trabajo escolar a tiempo",
+      "title::eng": "@field.child_name termina sus tareas escolares a tiempo",
       "challenge_list": "schoolwork_hard_6to9; school_organisation_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Con tantas tareas y distracciones, las niñas y los niños no siempre logran terminar el trabajo escolar a tiempo.",
@@ -2656,7 +2656,7 @@
     },
     {
       "id": "manages_distractions",
-      "title::eng": "@field.child_name maneja las distracciones mientras aprende",
+      "title::eng": "@field.child_name puede controlar las distracciones mientras estudia",
       "challenge_list": "schoolwork_hard_6to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Las niñas y los niños se distraen con facilidad, sobre todo cuando hay ruido y pantallas alrededor.",
@@ -2670,7 +2670,7 @@
     },
     {
       "id": "parent_help_not_do_work",
-      "title::eng": "Puedo ayudar a @field.child_name a aprender sin hacerle el trabajo",
+      "title::eng": "Puedo ayudar a @field.child_name a aprender sin hacer el trabajo en su lugar",
       "challenge_list": "schoolwork_hard_6to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Cuando una niña o un niño tiene dificultades o hay poco tiempo, puede parecer más fácil simplemente darle la respuesta.",
@@ -2740,7 +2740,7 @@
     },
     {
       "id": "eats_food_provided",
-      "title::eng": "@field.child_name come lo que se le sirve a la hora de la comida",
+      "title::eng": "@field.child_name come lo que le sirven a la hora de la comida",
       "challenge_list": "not_follow_rules_2to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "La hora de la comida es un reto en casi todos los hogares.",
@@ -2796,7 +2796,7 @@
     },
     {
       "id": "comfortable_own_pace",
-      "title::eng": "@field.child_name se siente con comodidad aprendiendo a su propio ritmo",
+      "title::eng": "@field.child_name se siente bien aprendiendo a su propio ritmo",
       "challenge_list": "extra_learning_help_6to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Cada niña o niño aprende a su propio ritmo.",
@@ -2810,7 +2810,7 @@
     },
     {
       "id": "tasks_before_devices",
-      "title::eng": "@field.child_name termina el trabajo escolar o sus tareas diarias antes de usar un dispositivo",
+      "title::eng": "@field.child_name termina el trabajo escolar o sus tareas diarias antes de usar las pantallas",
       "challenge_list": "devices_disrupt_routine_2to9; too_much_screen_10to17; refuses_rules_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Agarrar un dispositivo antes de terminar los pendientes pasa en casi todos los hogares.",
@@ -2838,7 +2838,7 @@
     },
     {
       "id": "parent_understand_needs",
-      "title::eng": "Puedo entender las necesidades de aprendizaje de @field.child_name y ayudarle a recibir el apoyo adecuado",
+      "title::eng": "Entiendo las necesidades de aprendizaje de @field.child_name y puedo ayudarle a recibir el apoyo adecuado",
       "challenge_list": "extra_learning_help_6to9",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Cada niña o niño aprende de forma diferente, y encontrar el apoyo adecuado puede tomar tiempo.",
@@ -2880,7 +2880,7 @@
     },
     {
       "id": "sets_realistic_goals",
-      "title::eng": "@field.child_name se pone metas realistas para su trabajo escolar",
+      "title::eng": "@field.child_name se pone metas realistas para sus tareas y aprendizaje en la escuela",
       "challenge_list": "school_motivation_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Ponerse metas realistas requiere práctica.",
@@ -2894,7 +2894,7 @@
     },
     {
       "id": "owns_their_learning",
-      "title::eng": "@field.child_name se hace responsable de su aprendizaje",
+      "title::eng": "@field.child_name se hace responsable de su propio aprendizaje",
       "challenge_list": "school_motivation_10to17; school_organisation_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Hacerse cargo de su propio aprendizaje es un gran paso para las y los adolescentes.",
@@ -2908,7 +2908,7 @@
     },
     {
       "id": "encourage_without_nagging",
-      "title::eng": "Puedo animar a @field.child_name a hacer el trabajo escolar sin regañar ni presionar demasiado",
+      "title::eng": "Puedo animar a @field.child_name a hacer sus tareas sin regañar ni presionar demasiado",
       "challenge_list": "school_motivation_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Puede ser difícil saber cuándo animar con el trabajo escolar ayuda y cuándo empieza a sentirse como presión.",
@@ -2964,7 +2964,7 @@
     },
     {
       "id": "healthy_stress_relief",
-      "title::eng": "@field.child_name usa formas saludables de relajarse y manejar el estrés",
+      "title::eng": "@field.child_name se relaja y maneja el estrés de forma sana",
       "challenge_list": "school_stress_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Las y los adolescentes todavía están descubriendo qué les ayuda a relajarse.",
@@ -2978,7 +2978,7 @@
     },
     {
       "id": "takes_regular_breaks",
-      "title::eng": "@field.child_name toma descansos regulares y descansa",
+      "title::eng": "@field.child_name toma descansos regulares y descansa lo suficiente",
       "challenge_list": "school_stress_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Cuando las y los adolescentes sienten presión por terminar sus cosas, pueden seguir sin parar a descansar.",
@@ -2992,7 +2992,7 @@
     },
     {
       "id": "support_without_pressure",
-      "title::eng": "Puedo apoyar a @field.child_name con el estrés de la escuela sin agregar más presión",
+      "title::eng": "Puedo apoyar a @field.child_name con el estrés de la escuela sin agregarle más presión",
       "challenge_list": "school_stress_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Muchas madres, padres y personas cuidadoras se preguntan si están ayudando con el estrés de la escuela o si lo están aumentando.",
@@ -3020,7 +3020,7 @@
     },
     {
       "id": "follows_device_rules",
-      "title::eng": "@field.child_name sigue las reglas sobre los dispositivos que acordamos",
+      "title::eng": "@field.child_name sigue las reglas acordadas sobre el uso de pantallas",
       "challenge_list": "refuses_rules_10to17; too_much_device_2to9; too_much_screen_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Respetar las reglas sobre los dispositivos es un reto en casi todos los hogares.",
@@ -3062,7 +3062,7 @@
     },
     {
       "id": "chore_fewer_reminders",
-      "title::eng": "@field.child_name termina un quehacer con menos recordatorios",
+      "title::eng": "@field.child_name termina sus tareas de la casa sin que tenga que recordárselo cada vez",
       "challenge_list": "refuses_rules_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Las niñas y los niños prefieren jugar que hacer quehaceres.",
@@ -3090,7 +3090,7 @@
     },
     {
       "id": "hopeful_about_future",
-      "title::eng": "@field.child_name tiene esperanza en su futuro",
+      "title::eng": "@field.child_name siente esperanza sobre su futuro",
       "challenge_list": "school_future_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Las y los adolescentes pueden sentir dudas sobre el futuro a veces.",
@@ -3104,7 +3104,7 @@
     },
     {
       "id": "support_own_choices",
-      "title::eng": "Puedo ayudar a @field.child_name a tomar sus propias decisiones sobre la escuela y el futuro",
+      "title::eng": "Puedo ayudar a @field.child_name a tomar sus propias decisiones sobre la escuela y su futuro",
       "challenge_list": "school_future_10to17",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Puede ser difícil saber cuánto guiar a las y los adolescentes y cuánto dejar que decidan por su cuenta.",
@@ -3118,7 +3118,7 @@
     },
     {
       "id": "parent_notice_stress",
-      "title::eng": "Noto cuando mi estrés va en aumento",
+      "title::eng": "Noto cuando mi estrés va aumentando",
       "challenge_list": "parent_stress",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Cuando estamos ocupados cuidando a otras personas, nuestro propio estrés puede aumentar sin que lo notemos.",
@@ -3160,7 +3160,7 @@
     },
     {
       "id": "parent_ask_support",
-      "title::eng": "Pido apoyo en lugar de intentar manejarlo todo sin ayuda",
+      "title::eng": "Pido apoyo en lugar de intentar hacer todo por mi cuenta",
       "challenge_list": "parent_stress; coparent_difficulties",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Muchas madres, padres y personas cuidadoras sienten que deberían encargarse de todo sin ayuda.",
@@ -3188,7 +3188,7 @@
     },
     {
       "id": "stay_in_touch_supporters",
-      "title::eng": "Mantengo contacto con las personas que me apoyan",
+      "title::eng": "Me mantengo en contacto con las personas que me pueden apoyar",
       "challenge_list": "parent_low_mood; parent_time_support",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Los días ocupados pueden dejar poco tiempo o energía para mantener contacto con las personas que nos apoyan.",
@@ -3202,7 +3202,7 @@
     },
     {
       "id": "challenge_negative_thoughts",
-      "title::eng": "Noto y cuestiono los pensamientos que me hacen sentir peor conmigo",
+      "title::eng": "Noto y cuestiono los pensamientos que me hacen sentir peor",
       "challenge_list": "parent_low_mood",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Cuando sentimos cansancio o desánimo, los pensamientos negativos sobre nosotros pueden parecer muy ciertos.",
@@ -3216,7 +3216,7 @@
     },
     {
       "id": "ask_help_when_low",
-      "title::eng": "Pido ayuda cuando el desánimo se vuelve difícil de manejar",
+      "title::eng": "Pido ayuda cuando siento que no puedo sentirme mejor por mi cuenta",
       "challenge_list": "parent_low_mood",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Cuando sentimos desánimo, buscar a alguien puede ser difícil.",
@@ -3258,7 +3258,7 @@
     },
     {
       "id": "focus_on_what_you_control",
-      "title::eng": "Me enfoco en las cosas sobre las que puedo hacer algo",
+      "title::eng": "Me enfoco en las cosas que sí puedo controlar",
       "challenge_list": "parent_worry",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Cuando sentimos preocupación, nuestra mente suele irse a las cosas que no podemos cambiar.",
@@ -3272,7 +3272,7 @@
     },
     {
       "id": "share_worries_get_help",
-      "title::eng": "Hablo con alguien de confianza o busco ayuda cuando mis preocupaciones son demasiadas",
+      "title::eng": "Hablo con alguien de confianza o busco ayuda cuando mis preocupaciones me rebasan",
       "challenge_list": "parent_worry",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Muchas madres, padres y personas cuidadoras se guardan sus preocupaciones para no cargar a otras personas.",
@@ -3286,7 +3286,7 @@
     },
     {
       "id": "worries_away_from_child",
-      "title::eng": "Manejo mis preocupaciones sin involucrar a @field.child_name",
+      "title::eng": "Lidio con mis preocupaciones sin involucrar a @field.child_name",
       "challenge_list": "parent_worry",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Las niñas y los niños perciben muy bien cuando algo anda mal, incluso cuando las madres, padres y personas cuidadoras intentan mantenerles al margen de sus preocupaciones.",
@@ -3314,7 +3314,7 @@
     },
     {
       "id": "pause_before_responding",
-      "title::eng": "Hago una pausa antes de responder cuando me siento muy mal",
+      "title::eng": "Hago una pausa antes de responder cuando me siento mucho enojo o molestia",
       "challenge_list": "parent_calm",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "En los momentos tensos, reaccionar rápido puede parecer automático, incluso para las madres, padres y personas cuidadoras más tranquilas.",
@@ -3356,7 +3356,7 @@
     },
     {
       "id": "ask_caregiving_help",
-      "title::eng": "Pido ayuda con las tareas de cuidado cuando la necesito",
+      "title::eng": "Pido ayuda con las tareas de cuidado cuando lo necesito",
       "challenge_list": "parent_time_support",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Pedir ayuda con el cuidado no siempre es fácil.",
@@ -3384,7 +3384,7 @@
     },
     {
       "id": "model_self_care",
-      "title::eng": "Dejo que @field.child_name vea que cuidarse es importante",
+      "title::eng": "Trato de que @field.child_name aprenda que cuidarse es importante",
       "challenge_list": "parent_time_support",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Las madres, padres y personas cuidadoras a menudo dejan sus propias necesidades al final.",
@@ -3412,7 +3412,7 @@
     },
     {
       "id": "listen_when_disagree",
-      "title::eng": "Escucho a mi pareja u otras personas cuidadoras cuando no estamos de acuerdo",
+      "title::eng": "Escucho a mi pareja y a las personas con quienes comparto la crianza cuando tenemos desacuerdos",
       "challenge_list": "coparent_difficulties",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Puede que tu pareja u otras personas cuidadoras y tú no estén de acuerdo en todas las decisiones de crianza.",
@@ -3426,7 +3426,7 @@
     },
     {
       "id": "agree_parenting_decisions",
-      "title::eng": "Trabajo con mi pareja u otras personas cuidadoras para llegar a acuerdos sobre decisiones importantes de crianza",
+      "title::eng": "Trabajo en equipo con mi pareja o las personas con quienes comparto la crianza para acordar las decisiones importantes",
       "challenge_list": "coparent_difficulties",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Las personas cuidadoras a menudo tienen ideas diferentes sobre la crianza, así que llegar a acuerdos toma tiempo.",
@@ -3440,7 +3440,7 @@
     },
     {
       "id": "disagree_away_from_child",
-      "title::eng": "Manejo los desacuerdos lejos de @field.child_name cuando puedo",
+      "title::eng": "Cuando puedo, manejo los desacuerdos lejos de @field.child_name",
       "challenge_list": "coparent_difficulties",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Los desacuerdos entre personas adultas pasan en casi todos los hogares.",
@@ -3454,7 +3454,7 @@
     },
     {
       "id": "child_out_of_conflict",
-      "title::eng": "Mantengo a @field.child_name fuera de los conflictos entre personas adultas",
+      "title::eng": "Trato de mantener a @field.child_name fuera de los conflictos entre personas adultas",
       "challenge_list": "coparent_difficulties",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "En los hogares con mucho movimiento, las niñas y los niños pueden quedar fácilmente en medio de los conflictos de las personas adultas.",
@@ -3468,7 +3468,7 @@
     },
     {
       "id": "child_calm_disagree",
-      "title::eng": "@field.child_name responde con calma cuando no estamos de acuerdo",
+      "title::eng": "@field.child_name responde con calma cuando tenemos un desacuerdo",
       "challenge_list": "argues_a_lot",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Cuando las niñas y los niños no están de acuerdo con su madre, padre o persona cuidadora, las emociones intensas pueden hacer que les cueste mantener la calma.",
@@ -3496,7 +3496,7 @@
     },
     {
       "id": "cope_money_stress",
-      "title::eng": "Uso formas saludables de manejar el estrés por el dinero",
+      "title::eng": "Encuentro formas sanas de manejar el estrés por cuestiones de dinero",
       "challenge_list": "money_worries",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Las preocupaciones por el dinero pueden generar mucho estrés.",
@@ -3510,7 +3510,7 @@
     },
     {
       "id": "talk_money_with_child",
-      "title::eng": "Hablo con @field.child_name sobre las dificultades económicas de una forma adecuada para su edad y que le dé tranquilidad",
+      "title::eng": "Hablo con @field.child_name sobre los problemas de dinero de una forma adecuada para su edad para darle tranquilidad",
       "challenge_list": "money_worries",
       "tag_desired_change": "increase",
       "normalising_statement::eng": "Muchas madres, padres y personas cuidadoras no saben bien cuánto contarle a su hija o hijo sobre los problemas de dinero sin preocuparle.",

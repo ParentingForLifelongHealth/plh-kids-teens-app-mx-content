@@ -178,7 +178,7 @@
         },
         {
           "type": "button",
-          "value": "uncomplete course @item.title",
+          "value": "Uncomplete course @item.title",
           "_translations": {
             "value": {}
           },
@@ -203,7 +203,7 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "uncomplete course @item.title",
+                "fullExpression": "Uncomplete course @item.title",
                 "matchedExpression": "@item.title",
                 "type": "item",
                 "fieldName": "title"
@@ -402,6 +402,124 @@
         ],
         "@fields.child_age_tag": [
           "parameter_list.filter"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "name": "text_completed_all",
+      "value": "Programme completed (completed_all): @fields.completed_all",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_completed_all",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Programme completed (completed_all): @fields.completed_all",
+            "matchedExpression": "@fields.completed_all",
+            "type": "fields",
+            "fieldName": "completed_all"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.completed_all": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "name": "button_completed_all_on",
+      "value": "Set programme completed",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_field",
+          "args": [
+            "completed_all",
+            true
+          ],
+          "_raw": "click | set_field: completed_all: true"
+        },
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reprocess"
+          ],
+          "_raw": "click | emit: force_reprocess"
+        }
+      ],
+      "parameter_list": {
+        "style": "navigation"
+      },
+      "condition": "!@fields.completed_all",
+      "_nested_name": "button_completed_all_on",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "!@fields.completed_all",
+            "matchedExpression": "!@fields.completed_all",
+            "type": "fields",
+            "fieldName": "completed_all"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "!@fields.completed_all": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "name": "button_completed_all_off",
+      "value": "Unset programme completed",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_field",
+          "args": [
+            "completed_all",
+            false
+          ],
+          "_raw": "click | set_field: completed_all: false"
+        },
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reprocess"
+          ],
+          "_raw": "click | emit: force_reprocess"
+        }
+      ],
+      "parameter_list": {
+        "style": "navigation"
+      },
+      "condition": "@fields.completed_all",
+      "_nested_name": "button_completed_all_off",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@fields.completed_all",
+            "matchedExpression": "@fields.completed_all",
+            "type": "fields",
+            "fieldName": "completed_all"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.completed_all": [
+          "condition"
         ]
       }
     }

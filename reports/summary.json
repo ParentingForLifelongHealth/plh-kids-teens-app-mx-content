@@ -27,7 +27,7 @@
       },
       {
         "type": "button",
-        "count": 131
+        "count": 135
       },
       {
         "type": "combo_box",
@@ -36,6 +36,10 @@
       {
         "type": "data_items",
         "count": 273
+      },
+      {
+        "type": "date_time_picker",
+        "count": 2
       },
       {
         "type": "debug_toggle",
@@ -139,7 +143,7 @@
       },
       {
         "type": "set_variable",
-        "count": 5779
+        "count": 5741
       },
       {
         "type": "simple_checkbox",
@@ -155,11 +159,11 @@
       },
       {
         "type": "template",
-        "count": 931
+        "count": 893
       },
       {
         "type": "text",
-        "count": 337
+        "count": 342
       },
       {
         "type": "text_area",
@@ -175,7 +179,7 @@
       },
       {
         "type": "title",
-        "count": 70
+        "count": 74
       },
       {
         "type": "toggle_bar",
@@ -198,6 +202,10 @@
   "template_actions": {
     "data": [
       {
+        "type": "<br>changed",
+        "count": 4
+      },
+      {
         "type": "add_data",
         "count": 15
       },
@@ -219,7 +227,7 @@
       },
       {
         "type": "emit: completed",
-        "count": 241
+        "count": 203
       },
       {
         "type": "emit: force_reload",
@@ -227,7 +235,7 @@
       },
       {
         "type": "emit: force_reprocess",
-        "count": 13
+        "count": 15
       },
       {
         "type": "emit: force_restart",
@@ -243,7 +251,7 @@
       },
       {
         "type": "emit: uncompleted",
-        "count": 232
+        "count": 194
       },
       {
         "type": "feedback",
@@ -251,7 +259,7 @@
       },
       {
         "type": "go_to",
-        "count": 28
+        "count": 30
       },
       {
         "type": "nav",
@@ -291,7 +299,7 @@
       },
       {
         "type": "set_field",
-        "count": 575
+        "count": 579
       },
       {
         "type": "set_item",
@@ -716,16 +724,6 @@
         "missing": true
       },
       {
-        "path": "images/activities/adivinanzas_c.svg",
-        "count": 2,
-        "missing": true
-      },
-      {
-        "path": "images/activities/adivinanzas_t.svg",
-        "count": 2,
-        "missing": true
-      },
-      {
         "path": "images/activities/animales_c.svg",
         "count": 4,
         "missing": true
@@ -767,11 +765,6 @@
       },
       {
         "path": "images/activities/canciones.svg",
-        "count": 2,
-        "missing": true
-      },
-      {
-        "path": "images/activities/carrera.svg",
         "count": 2,
         "missing": true
       },
@@ -851,16 +844,6 @@
         "missing": true
       },
       {
-        "path": "images/activities/escritor_c.svg",
-        "count": 2,
-        "missing": true
-      },
-      {
-        "path": "images/activities/escritor_t.svg",
-        "count": 2,
-        "missing": true
-      },
-      {
         "path": "images/activities/feliz_c.svg",
         "count": 2,
         "missing": true
@@ -872,16 +855,6 @@
       },
       {
         "path": "images/activities/formas.svg",
-        "count": 2,
-        "missing": true
-      },
-      {
-        "path": "images/activities/historia_c.svg",
-        "count": 2,
-        "missing": true
-      },
-      {
-        "path": "images/activities/historia_t.svg",
         "count": 2,
         "missing": true
       },
@@ -902,11 +875,6 @@
       },
       {
         "path": "images/activities/imagenes_t.svg",
-        "count": 2,
-        "missing": true
-      },
-      {
-        "path": "images/activities/instrucciones.svg",
         "count": 2,
         "missing": true
       },
@@ -941,11 +909,6 @@
         "missing": true
       },
       {
-        "path": "images/activities/logica.svg",
-        "count": 2,
-        "missing": true
-      },
-      {
         "path": "images/activities/narrador_c.svg",
         "count": 2,
         "missing": true
@@ -977,7 +940,7 @@
       },
       {
         "path": "images/activities/patrones.svg",
-        "count": 4,
+        "count": 2,
         "missing": true
       },
       {
@@ -3946,7 +3909,7 @@
       {
         "type": "template",
         "subtype": null,
-        "total": 113
+        "total": 112
       },
       {
         "type": "template",
@@ -3956,7 +3919,7 @@
       {
         "type": "template",
         "subtype": "generated",
-        "total": 428
+        "total": 390
       },
       {
         "type": "template",
@@ -3966,7 +3929,7 @@
       {
         "type": "template",
         "subtype": "proximal_outcomes",
-        "total": 17
+        "total": 19
       }
     ]
   }
