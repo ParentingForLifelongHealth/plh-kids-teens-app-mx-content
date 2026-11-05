@@ -150,11 +150,25 @@
       }
     },
     {
-      "name": "checkins_completed",
+      "name": "summary_title",
+      "value": "@global.",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "summary_title"
+    },
+    {
+      "name": "summary_text",
+      "type": "set_variable",
+      "_nested_name": "summary_text"
+    },
+    {
+      "name": "n_checkins_completed",
       "value": 2,
       "exclude_from_translation": true,
       "type": "set_variable",
-      "_nested_name": "checkins_completed"
+      "_nested_name": "n_checkins_completed"
     },
     {
       "type": "data_items",
@@ -168,10 +182,10 @@
           "trigger": "data_changed",
           "action_id": "set_local",
           "args": [
-            "checkins_completed",
+            "n_checkins_completed",
             "@items.length"
           ],
-          "_raw": "data_changed | set_local: checkins_completed: @items.length"
+          "_raw": "data_changed | set_local: n_checkins_completed: @items.length"
         }
       ],
       "parameter_list": {
@@ -218,27 +232,67 @@
       }
     },
     {
-      "type": "text",
-      "name": "checkins_placeholder",
-      "value": "Check-ins completed: @local.checkins_completed",
+      "type": "plh_progress_summary",
+      "name": "check_in_summary",
+      "value": "@local.n_checkins_completed",
       "_translations": {
         "value": {}
       },
+      "parameter_list": {
+        "title": "@global.proximal_outcome_summary_title",
+        "text": "@global.proximal_outcome_summary_text",
+        "image_asset": "@global.proximal_outcome_summary_star_icon"
+      },
       "exclude_from_translation": true,
-      "_nested_name": "checkins_placeholder",
+      "_nested_name": "check_in_summary",
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "Check-ins completed: @local.checkins_completed",
-            "matchedExpression": "@local.checkins_completed",
+            "fullExpression": "@local.n_checkins_completed",
+            "matchedExpression": "@local.n_checkins_completed",
             "type": "local",
-            "fieldName": "checkins_completed"
+            "fieldName": "n_checkins_completed"
           }
-        ]
+        ],
+        "parameter_list": {
+          "title": [
+            {
+              "fullExpression": "@global.proximal_outcome_summary_title",
+              "matchedExpression": "@global.proximal_outcome_summary_title",
+              "type": "global",
+              "fieldName": "proximal_outcome_summary_title"
+            }
+          ],
+          "text": [
+            {
+              "fullExpression": "@global.proximal_outcome_summary_text",
+              "matchedExpression": "@global.proximal_outcome_summary_text",
+              "type": "global",
+              "fieldName": "proximal_outcome_summary_text"
+            }
+          ],
+          "image_asset": [
+            {
+              "fullExpression": "@global.proximal_outcome_summary_star_icon",
+              "matchedExpression": "@global.proximal_outcome_summary_star_icon",
+              "type": "global",
+              "fieldName": "proximal_outcome_summary_star_icon"
+            }
+          ]
+        }
       },
       "_dynamicDependencies": {
-        "@local.checkins_completed": [
+        "@local.n_checkins_completed": [
           "value"
+        ],
+        "@global.proximal_outcome_summary_title": [
+          "parameter_list.title"
+        ],
+        "@global.proximal_outcome_summary_text": [
+          "parameter_list.text"
+        ],
+        "@global.proximal_outcome_summary_star_icon": [
+          "parameter_list.image_asset"
         ]
       }
     },

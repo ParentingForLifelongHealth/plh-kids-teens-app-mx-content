@@ -40,7 +40,14 @@
       "exclude_from_translation": true
     },
     {
-      "name": "checkins_completed",
+      "name": "summary_title",
+      "value": "@global."
+    },
+    {
+      "name": "summary_text"
+    },
+    {
+      "name": "n_checkins_completed",
       "value": 2,
       "exclude_from_translation": true
     },
@@ -48,14 +55,15 @@
       "type": "data_items",
       "name": "count_goal_answers",
       "value": "@data.proximal_outcome_data",
-      "action_list": "data_changed | set_local: checkins_completed: @items.length",
+      "action_list": "data_changed | set_local: n_checkins_completed: @items.length",
       "parameter_list": "filter: @item.question_type == 'goal' && !!@item.value",
       "exclude_from_translation": true
     },
     {
-      "type": "text",
-      "name": "checkins_placeholder",
-      "value": "Check-ins completed: @local.checkins_completed",
+      "type": "plh_progress_summary",
+      "name": "check_in_summary",
+      "value": "@local.n_checkins_completed",
+      "parameter_list": "title: @global.proximal_outcome_summary_title;\ntext: @global.proximal_outcome_summary_text;\nimage_asset: @global.proximal_outcome_summary_star_icon;",
       "exclude_from_translation": true
     },
     {

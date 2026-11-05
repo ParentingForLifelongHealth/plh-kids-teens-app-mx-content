@@ -183,6 +183,30 @@
       "_translations": {
         "value": {}
       }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "proximal_outcome_summary_title",
+      "value": "That is @local.n_checkins_completed check-ins!",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "proximal_outcome_summary_text",
+      "value": "Your care and attention make a lasting impact on @fields.child_name.",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "proximal_outcome_summary_star_icon",
+      "value": "images/backgrounds/star_yellow.svg",
+      "_translations": {
+        "value": {}
+      }
     }
   ],
   "_source": {
