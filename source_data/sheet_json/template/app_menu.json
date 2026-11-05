@@ -45,6 +45,19 @@
     },
     {
       "type": "button",
+      "name": "button_complete_course",
+      "value": "Complete courses and modules",
+      "action_list": "click | go_to: debug_complete_course"
+    },
+    {
+      "type": "button",
+      "name": "button_po_date",
+      "value": "Promimal outcomes dates",
+      "action_list": "click | go_to: debug_update_po_dates",
+      "condition": "@gloabal.has_proximal_outcomes"
+    },
+    {
+      "type": "button",
       "name": "button_reset",
       "value": "Reset app",
       "action_list": "click | reset_app"

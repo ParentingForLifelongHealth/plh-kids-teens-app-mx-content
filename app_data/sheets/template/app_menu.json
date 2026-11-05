@@ -113,6 +113,45 @@
         },
         {
           "type": "button",
+          "name": "button_complete_course",
+          "value": "Complete courses and modules",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "debug_complete_course"
+              ],
+              "_raw": "click | go_to: debug_complete_course"
+            }
+          ],
+          "_nested_name": "dg_dev.button_complete_course"
+        },
+        {
+          "type": "button",
+          "name": "button_po_date",
+          "value": "Promimal outcomes dates",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "debug_update_po_dates"
+              ],
+              "_raw": "click | go_to: debug_update_po_dates"
+            }
+          ],
+          "condition": "@gloabal.has_proximal_outcomes",
+          "_nested_name": "dg_dev.button_po_date"
+        },
+        {
+          "type": "button",
           "name": "button_reset",
           "value": "Reset app",
           "_translations": {

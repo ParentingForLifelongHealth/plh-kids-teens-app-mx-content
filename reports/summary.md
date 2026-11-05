@@ -9,9 +9,10 @@
 | animated_slides | 1 |
 | apple_sign_in_button | 2 |
 | audio | 4 |
-| button | 131 |
+| button | 135 |
 | combo_box | 23 |
 | data_items | 273 |
+| date_time_picker | 2 |
 | debug_toggle | 1 |
 | display_grid | 4 |
 | display_group | 147 |
@@ -37,16 +38,16 @@
 | round_button | 34 |
 | select_text | 1 |
 | set_field | 4 |
-| set_variable | 5779 |
+| set_variable | 5741 |
 | simple_checkbox | 3 |
 | task_card | 4 |
 | task_progress_bar | 5 |
-| template | 931 |
-| text | 337 |
+| template | 893 |
+| text | 342 |
 | text_area | 4 |
 | text_box | 23 |
 | text_bubble | 31 |
-| title | 70 |
+| title | 74 |
 | toggle_bar | 5 |
 | update_action_list | 5 |
 | video | 4 |
@@ -58,20 +59,21 @@
 
 | type | count |
 | --- | --- |
+| <br>changed | 4 |
 | add_data | 15 |
 | app_update | 1 |
 | asset_pack | 4 |
 | auth | 3 |
 | emit: changed | 7 |
-| emit: completed | 241 |
+| emit: completed | 203 |
 | emit: force_reload | 3 |
-| emit: force_reprocess | 13 |
+| emit: force_reprocess | 15 |
 | emit: force_restart | 3 |
 | emit: server_sync | 8 |
 | emit: set_language | 2 |
-| emit: uncompleted | 232 |
+| emit: uncompleted | 194 |
 | feedback | 13 |
-| go_to | 28 |
+| go_to | 30 |
 | nav | 1 |
 | nav_stack | 1148 |
 | notification | 1 |
@@ -81,7 +83,7 @@
 | reset_data | 3 |
 | save_to_device | 3 |
 | set_data | 571 |
-| set_field | 575 |
+| set_field | 579 |
 | set_item | 30 |
 | set_local | 801 |
 | share | 3 |
@@ -208,8 +210,6 @@ Assets that have references within sheets but do not appear in app-data
 | images/activities/aciegas_t.svg | 2 |
 | images/activities/activate_c.svg | 2 |
 | images/activities/activate_t.svg | 2 |
-| images/activities/adivinanzas_c.svg | 2 |
-| images/activities/adivinanzas_t.svg | 2 |
 | images/activities/animales_c.svg | 4 |
 | images/activities/animales_t.svg | 2 |
 | images/activities/aprender_c.svg | 2 |
@@ -219,7 +219,6 @@ Assets that have references within sheets but do not appear in app-data
 | images/activities/baile.svg | 2 |
 | images/activities/boliche.svg | 4 |
 | images/activities/canciones.svg | 2 |
-| images/activities/carrera.svg | 2 |
 | images/activities/categorizar.svg | 2 |
 | images/activities/cobija.svg | 4 |
 | images/activities/cocinar.svg | 2 |
@@ -235,32 +234,26 @@ Assets that have references within sheets but do not appear in app-data
 | images/activities/emociones_t.svg | 4 |
 | images/activities/equilibrio_c.svg | 2 |
 | images/activities/equilibrio_t.svg | 2 |
-| images/activities/escritor_c.svg | 2 |
-| images/activities/escritor_t.svg | 2 |
 | images/activities/feliz_c.svg | 2 |
 | images/activities/feliz_t.svg | 2 |
 | images/activities/formas.svg | 2 |
-| images/activities/historia_c.svg | 2 |
-| images/activities/historia_t.svg | 2 |
 | images/activities/hornear_c.svg | 2 |
 | images/activities/hornear_t.svg | 2 |
 | images/activities/imagenes_c.svg | 2 |
 | images/activities/imagenes_t.svg | 2 |
-| images/activities/instrucciones.svg | 2 |
 | images/activities/juntos_c.svg | 2 |
 | images/activities/juntos_t.svg | 2 |
 | images/activities/lectura_c.svg | 2 |
 | images/activities/lectura_t.svg | 2 |
 | images/activities/letras.svg | 2 |
 | images/activities/lider.svg | 6 |
-| images/activities/logica.svg | 2 |
 | images/activities/narrador_c.svg | 2 |
 | images/activities/narrador_t.svg | 2 |
 | images/activities/naturaleza_c.svg | 2 |
 | images/activities/naturaleza_t.svg | 2 |
 | images/activities/opuestos_c.svg | 2 |
 | images/activities/opuestos_t.svg | 4 |
-| images/activities/patrones.svg | 4 |
+| images/activities/patrones.svg | 2 |
 | images/activities/pelota.svg | 4 |
 | images/activities/personajes_c.svg | 2 |
 | images/activities/rompecabezas_c.svg | 2 |
@@ -868,9 +861,9 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global | ab_testing | 1 |
 | global | onboarding | 17 |
 | global | proximal_outcomes | 2 |
-| template |  | 113 |
+| template |  | 112 |
 | template | ab_testing | 1 |
-| template | generated | 428 |
+| template | generated | 390 |
 | template | legal_terms | 4 |
-| template | proximal_outcomes | 17 |
+| template | proximal_outcomes | 19 |
 </details>

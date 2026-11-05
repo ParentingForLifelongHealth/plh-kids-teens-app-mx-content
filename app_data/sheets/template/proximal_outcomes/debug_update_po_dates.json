@@ -1,0 +1,228 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "proximal_outcomes",
+  "flow_name": "debug_update_po_dates",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title_po_dates",
+      "value": "Check-in dates (debug)",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title_po_dates"
+    },
+    {
+      "type": "text",
+      "name": "text_due_from",
+      "value": "Counting from: @global.proximal_outcome_due_from",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_due_from",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Counting from: @global.proximal_outcome_due_from",
+            "matchedExpression": "@global.proximal_outcome_due_from",
+            "type": "global",
+            "fieldName": "proximal_outcome_due_from"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@global.proximal_outcome_due_from": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "name": "title_7d",
+      "value": "7-day check-in",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title_7d"
+    },
+    {
+      "type": "text",
+      "name": "text_7d_last",
+      "value": "Started (prox_7d_last_ts): @fields.prox_7d_last_ts",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_7d_last",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Started (prox_7d_last_ts): @fields.prox_7d_last_ts",
+            "matchedExpression": "@fields.prox_7d_last_ts",
+            "type": "fields",
+            "fieldName": "prox_7d_last_ts"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.prox_7d_last_ts": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "text_7d_viewed",
+      "value": "Viewed (prox_7d_viewed_ts): @fields.prox_7d_viewed_ts",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_7d_viewed",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Viewed (prox_7d_viewed_ts): @fields.prox_7d_viewed_ts",
+            "matchedExpression": "@fields.prox_7d_viewed_ts",
+            "type": "fields",
+            "fieldName": "prox_7d_viewed_ts"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.prox_7d_viewed_ts": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "date_time_picker",
+      "name": "picker_7d",
+      "action_list": [
+        {
+          "trigger": "changed",
+          "action_id": "set_field",
+          "args": [
+            "prox_7d_last_ts",
+            "this.value"
+          ],
+          "_raw": "changed | set_field: prox_7d_last_ts: this.value"
+        },
+        {
+          "trigger": "click",
+          "action_id": "<br>changed",
+          "args": [],
+          "_raw": "<br>changed | set_field: prox_7d_viewed_ts: this.value",
+          "params": {
+            "set_field": "prox_7d_viewed_ts"
+          }
+        },
+        {
+          "trigger": "click",
+          "action_id": "<br>changed",
+          "args": [],
+          "_raw": "<br>changed | emit: force_reprocess",
+          "params": {
+            "emit": "force_reprocess"
+          }
+        }
+      ],
+      "_nested_name": "picker_7d"
+    },
+    {
+      "type": "title",
+      "name": "title_14d",
+      "value": "14-day check-in",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title_14d"
+    },
+    {
+      "type": "text",
+      "name": "text_14d_last",
+      "value": "Started (prox_14d_last_ts): @fields.prox_14d_last_ts",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_14d_last",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Started (prox_14d_last_ts): @fields.prox_14d_last_ts",
+            "matchedExpression": "@fields.prox_14d_last_ts",
+            "type": "fields",
+            "fieldName": "prox_14d_last_ts"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.prox_14d_last_ts": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "text_14d_viewed",
+      "value": "Viewed (prox_14d_viewed_ts): @fields.prox_14d_viewed_ts",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_14d_viewed",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Viewed (prox_14d_viewed_ts): @fields.prox_14d_viewed_ts",
+            "matchedExpression": "@fields.prox_14d_viewed_ts",
+            "type": "fields",
+            "fieldName": "prox_14d_viewed_ts"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.prox_14d_viewed_ts": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "date_time_picker",
+      "name": "picker_14d",
+      "action_list": [
+        {
+          "trigger": "changed",
+          "action_id": "set_field",
+          "args": [
+            "prox_14d_last_ts",
+            "this.value"
+          ],
+          "_raw": "changed | set_field: prox_14d_last_ts: this.value"
+        },
+        {
+          "trigger": "click",
+          "action_id": "<br>changed",
+          "args": [],
+          "_raw": "<br>changed | set_field: prox_14d_viewed_ts: this.value",
+          "params": {
+            "set_field": "prox_14d_viewed_ts"
+          }
+        },
+        {
+          "trigger": "click",
+          "action_id": "<br>changed",
+          "args": [],
+          "_raw": "<br>changed | emit: force_reprocess",
+          "params": {
+            "emit": "force_reprocess"
+          }
+        }
+      ],
+      "_nested_name": "picker_14d"
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_global V3",
+    "path": "templates/PLH proximal outcomes.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/17Ti5gmQDWeKBrprr75UlTLVG7VCdYXQtLG31Ch8O4JE"
+  }
+}

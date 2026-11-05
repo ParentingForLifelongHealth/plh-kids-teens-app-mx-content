@@ -30,13 +30,34 @@
     },
     {
       "type": "button",
-      "value": "uncomplete course @item.title",
+      "value": "Uncomplete course @item.title",
       "action_list": "click | set_item | completed: false, completed_ts: ;",
       "parameter_list": "variant: orange;",
       "condition": "@item.completed"
     },
     {
       "type": "end_data_items"
+    },
+    {
+      "type": "title",
+      "name": "text_completed_all",
+      "value": "Programme completed (completed_all): @fields.completed_all"
+    },
+    {
+      "type": "button",
+      "name": "button_completed_all_on",
+      "value": "Set programme completed",
+      "action_list": "click | set_field: completed_all: true; click | emit: force_reprocess",
+      "parameter_list": "style: navigation",
+      "condition": "!@fields.completed_all"
+    },
+    {
+      "type": "button",
+      "name": "button_completed_all_off",
+      "value": "Unset programme completed",
+      "action_list": "click | set_field: completed_all: false; click | emit: force_reprocess",
+      "parameter_list": "style: navigation",
+      "condition": "@fields.completed_all"
     }
   ]
 }
