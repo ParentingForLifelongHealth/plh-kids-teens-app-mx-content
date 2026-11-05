@@ -32,18 +32,19 @@
 | plh_module_details_header | 1 |
 | plh_module_list_item | 2 |
 | plh_progress_bar | 8 |
+| plh_progress_summary | 1 |
 | qr_code | 1 |
 | radio_button_grid | 10 |
 | radio_list | 10 |
 | round_button | 34 |
 | select_text | 1 |
 | set_field | 4 |
-| set_variable | 5741 |
+| set_variable | 5743 |
 | simple_checkbox | 3 |
 | task_card | 4 |
 | task_progress_bar | 5 |
 | template | 893 |
-| text | 342 |
+| text | 341 |
 | text_area | 4 |
 | text_box | 23 |
 | text_bubble | 31 |
@@ -97,8 +98,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 12369 KB | 12.4 MB |
-| unused | 14333 KB | 14.3 MB |
+| total | 17858 KB | 17.9 MB |
+| unused | 9033 KB | 9 MB |
 </details>
 
 <details open>
@@ -183,19 +184,29 @@ Assets that appear in app-data but do not have references within sheets
 | images/faces/flushed_face.svg | 4.9 |
 | images/faces/ok.svg | 2 |
 | images/faces/tired.svg | 3.3 |
-| images/icons/cancel.svg | 1.7 |
+| images/icons/book_outline_blue.svg | 0.7 |
+| images/icons/book_outline_white.svg | 0.7 |
+| images/icons/expand_circle_right.svg | 0.5 |
+| images/icons/heart-outline.svg | 0.4 |
 | images/icons/heart.svg | 0.6 |
+| images/icons/hourglass_blue.png | 4.3 |
 | images/icons/in_progress_white.svg | 1.1 |
+| images/icons/key.svg | 5.5 |
 | images/icons/lock-closed-outline.svg | 0.4 |
+| images/icons/lock.svg | 0.5 |
+| images/icons/magnify_glass.svg | 1.9 |
 | images/icons/pause_white.svg | 0.7 |
 | images/icons/play.svg | 0.5 |
 | images/icons/play_white.svg | 0.5 |
+| images/icons/repeat_blue.png | 5.4 |
 | images/icons/star_outline_white.svg | 1 |
+| images/icons/tablet_blue.png | 2.8 |
 | images/icons/tick_white.svg | 0.3 |
+| images/icons/trophy_footer.svg | 3.9 |
+| images/icons/trophy_footer_active.svg | 3.9 |
+| images/icons/verified.svg | 0.5 |
+| images/icons/world.svg | 6.2 |
 | images/logos/crianza_logo_horizontal.png | 21.9 |
-| images/onboarding/Welcome screen 1.svg | 1576.7 |
-| images/onboarding/Welcome screen 2.svg | 1915.6 |
-| images/onboarding/Welcome screen 3.svg | 1843.3 |
 | lottie/ux/bulging_circles.txt | 0.2 |
 </details>
 
@@ -524,63 +535,25 @@ Assets that have references within sheets but do not appear in app-data
 | images/homescreen/safety_t.svg | 17 |
 | images/homescreen/understand_c.svg | 15 |
 | images/homescreen/understand_t.svg | 15 |
-| images/icons/balance_blue.png | 16 |
-| images/icons/brain_blue.png | 18 |
-| images/icons/celebration.svg | 1 |
 | images/icons/change.png | 2 |
-| images/icons/chatbubble-ellipses-outline.svg | 1 |
-| images/icons/clock_blue.png | 44 |
-| images/icons/diamond-outline.svg | 2 |
 | images/icons/diamond.png | 1 |
 | images/icons/diamond_active.png | 1 |
-| images/icons/diamond_blue.png | 38 |
 | images/icons/docs.svg | 1 |
-| images/icons/document-lock-outline.svg | 1 |
 | images/icons/document-text-outline-thin.svg | 3 |
-| images/icons/document-text-outline.svg | 1 |
 | images/icons/download.svg | 2 |
 | images/icons/download_white.svg | 1 |
-| images/icons/expand_circle_right.png | 1 |
-| images/icons/expand_circle_right_blue.svg | 2 |
-| images/icons/eye_blue.png | 48 |
 | images/icons/faces/happy.svg | 11 |
 | images/icons/faces/neutral.svg | 11 |
 | images/icons/faces/sad.svg | 11 |
-| images/icons/football_blue.png | 18 |
-| images/icons/globe-outline.svg | 1 |
-| images/icons/heart-outline.png | 1 |
 | images/icons/heart.png | 2 |
 | images/icons/heart_filled.png | 1 |
 | images/icons/heart_filled_active.png | 1 |
 | images/icons/heart_filled_blue.png | 82 |
-| images/icons/heart_filled_red.png | 3 |
-| images/icons/heart_filled_red.svg | 1 |
-| images/icons/home.svg | 1 |
-| images/icons/home_active.svg | 3 |
-| images/icons/home_white.svg | 1 |
-| images/icons/information-circle-outline.svg | 1 |
-| images/icons/lightbulb_blue.png | 42 |
-| images/icons/local_library.svg | 1 |
-| images/icons/local_library_active.svg | 1 |
-| images/icons/local_library_white.svg | 1 |
-| images/icons/lock-closed-outline.png | 1 |
 | images/icons/locked.png | 2 |
-| images/icons/log-in-outline.svg | 1 |
-| images/icons/person-circle-outline.svg | 1 |
-| images/icons/picture_book.svg | 94 |
-| images/icons/question_blue.png | 14 |
-| images/icons/settings.svg | 1 |
-| images/icons/settings_active.svg | 1 |
-| images/icons/settings_white.svg | 1 |
 | images/icons/share.svg | 3 |
-| images/icons/single_speech_blue.png | 24 |
 | images/icons/spark.png | 4 |
-| images/icons/speech_bubble_blue.png | 62 |
-| images/icons/star_filled_blue.png | 58 |
 | images/icons/trophy.png | 1 |
 | images/icons/trophy_active.png | 1 |
-| images/icons/trophy_blue.png | 24 |
-| images/icons/trophy_large.svg | 1 |
 | images/icons/visibility.svg | 1 |
 | images/logos/ARIADNE.png | 1 |
 | images/logos/Crianza-03.png | 1 |
@@ -590,9 +563,6 @@ Assets that have references within sheets but do not appear in app-data
 | images/logos/PSIQUIATRIA.png | 1 |
 | images/logos/app_logo.png | 1 |
 | images/logos/partners/plh_logomark.png | 1 |
-| images/onboarding/welcome_screen_1.svg | 1 |
-| images/onboarding/welcome_screen_2.svg | 1 |
-| images/onboarding/welcome_screen_3.svg | 1 |
 | lottie/bulging_circles.json | 1 |
 </details>
 
@@ -609,6 +579,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/backgrounds/lesson-cta-bg.svg | 4 | 4 |
 | images/backgrounds/library_top_right.png | 1358.6 | 3 |
 | images/backgrounds/mountains_trees.svg | 23.2 | 1 |
+| images/backgrounds/star_yellow.svg | 0.6 | 1 |
 | images/character_icons/ABUELA_1.svg | 4.8 | 1 |
 | images/character_icons/ABUELO_1.svg | 6.8 | 1 |
 | images/character_icons/AMIGA_MUJER_1.svg | 13.9 | 1 |
@@ -718,25 +689,66 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/faces/stressed.svg | 3.5 | 165 |
 | images/facilitators/avatar_femenino.png | 1067.5 | 1 |
 | images/facilitators/avatar_masculino.png | 1408 | 1 |
+| images/icons/balance_blue.png | 4.7 | 16 |
+| images/icons/brain_blue.png | 5.2 | 18 |
 | images/icons/bug.svg | 1.2 | 2 |
+| images/icons/celebration.svg | 70.4 | 1 |
+| images/icons/chatbubble-ellipses-outline.svg | 0.8 | 1 |
+| images/icons/clock_blue.png | 4.5 | 44 |
+| images/icons/diamond-outline.svg | 0.6 | 2 |
+| images/icons/diamond_blue.png | 4.7 | 38 |
+| images/icons/document-lock-outline.svg | 0.7 | 1 |
+| images/icons/document-text-outline.svg | 0.5 | 1 |
+| images/icons/expand_circle_right.png | 0.9 | 1 |
+| images/icons/expand_circle_right_blue.svg | 2.1 | 2 |
+| images/icons/eye_blue.png | 4.2 | 48 |
+| images/icons/football_blue.png | 5.1 | 18 |
+| images/icons/globe-outline.svg | 0.8 | 1 |
+| images/icons/heart-outline.png | 1.5 | 1 |
 | images/icons/heart_filled.svg | 1.4 | 1 |
+| images/icons/heart_filled_red.png | 0.8 | 3 |
+| images/icons/heart_filled_red.svg | 0.4 | 1 |
+| images/icons/home.svg | 0.4 | 1 |
+| images/icons/home_active.svg | 0.4 | 3 |
+| images/icons/home_white.svg | 0.7 | 1 |
 | images/icons/in_progress.svg | 1.1 | 1 |
+| images/icons/information-circle-outline.svg | 0.6 | 1 |
+| images/icons/lightbulb_blue.png | 3.6 | 42 |
+| images/icons/local_library.svg | 1.6 | 1 |
+| images/icons/local_library_active.svg | 1.6 | 1 |
+| images/icons/local_library_white.svg | 1.9 | 1 |
+| images/icons/lock-closed-outline.png | 0.9 | 1 |
 | images/icons/lock-open-outline.svg | 0.4 | 2 |
+| images/icons/log-in-outline.svg | 0.5 | 1 |
 | images/icons/magnifying_glass.svg | 0.9 | 86 |
 | images/icons/parent_child.svg | 2 | 28 |
 | images/icons/parent_child_heart.svg | 3 | 98 |
 | images/icons/pause.svg | 0.7 | 92 |
 | images/icons/pencil.svg | 1.1 | 98 |
+| images/icons/person-circle-outline.svg | 0.8 | 1 |
+| images/icons/picture_book.svg | 1.8 | 94 |
+| images/icons/question_blue.png | 3.4 | 14 |
 | images/icons/question_mark_blue.svg | 0.8 | 1 |
+| images/icons/settings.svg | 2.4 | 1 |
+| images/icons/settings_active.svg | 2.4 | 1 |
+| images/icons/settings_white.svg | 2.4 | 1 |
+| images/icons/single_speech_blue.png | 3.3 | 24 |
 | images/icons/smile_eyes_down.svg | 0.9 | 92 |
 | images/icons/smile_eyes_up.svg | 1 | 95 |
+| images/icons/speech_bubble_blue.png | 4.2 | 62 |
+| images/icons/star_filled_blue.png | 5.1 | 58 |
 | images/icons/star_outline_blue.svg | 1 | 5 |
 | images/icons/thought_bubble.svg | 2.1 | 88 |
 | images/icons/tick.svg | 0.3 | 41 |
+| images/icons/trophy_blue.png | 5.1 | 24 |
+| images/icons/trophy_large.svg | 2.2 | 1 |
 | images/logos/IDEMS.png | 42.7 | 1 |
 | images/logos/PLH.png | 34.7 | 1 |
 | images/logos/UNICEF.png | 90.5 | 1 |
 | images/logos/crianza_logo.png | 10 | 1 |
+| images/onboarding/welcome_screen_1.svg | 1576.7 | 1 |
+| images/onboarding/welcome_screen_2.svg | 1915.6 | 1 |
+| images/onboarding/welcome_screen_3.svg | 1843.3 | 1 |
 | lottie/relax/blue_dots.json | 14.7 | 4 |
 | lottie/relax/heart.json | 46.7 | 4 |
 | lottie/relax/looping_rings.json | 10.4 | 26 |

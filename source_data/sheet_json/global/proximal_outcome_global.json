@@ -117,6 +117,21 @@
       "type": "declare_global_constant",
       "name": "proximal_outcome_checkin_intro_post",
       "value": "Congratulations for completing the programme\n\nLet's check in and see how things have been going!"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "proximal_outcome_summary_title",
+      "value": "That is @local.n_checkins_completed check-ins!"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "proximal_outcome_summary_text",
+      "value": "Your care and attention make a lasting impact on @fields.child_name."
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "proximal_outcome_summary_star_icon",
+      "value": "images/backgrounds/star_yellow.svg"
     }
   ]
 }
