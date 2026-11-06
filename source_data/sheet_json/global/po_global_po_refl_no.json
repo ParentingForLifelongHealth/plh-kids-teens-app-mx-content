@@ -1,0 +1,17 @@
+{
+  "flow_type": "global",
+  "flow_subtype": "proximal_outcomes",
+  "flow_name": "po_global_po_refl_no",
+  "override_target": "proximal_outcome_global_hidden_pages",
+  "override_condition": "@fields.ab_mode_po_refl == \"all_no\" || (@fields.ab_mode_po_refl == \"test\" && @fields.ab_arm_po_refl == \"no\")",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "proximal_outcome_hidden_pages",
+      "value": "goal_refl",
+      "exclude_from_translation": true,
+      "comment": "Check-in pages to hide, by page id, separated by spaces (e.g. goal_refl  or  goal_refl qs_base_2). none = show all. Applies to both the 7-day and 14-day check-ins. Never hide intro. exclude_from_translation must stay TRUE (the value is page ids)."
+    }
+  ]
+}

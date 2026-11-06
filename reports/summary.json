@@ -340,7 +340,7 @@
       },
       {
         "assets": "unused",
-        "KB": "178095 KB",
+        "KB": "178104 KB",
         "MB": "178.1 MB"
       }
     ]
@@ -1152,6 +1152,10 @@
         "size_kb": 5.4
       },
       {
+        "path": "images/icons/security.png",
+        "size_kb": 9.1
+      },
+      {
         "path": "images/icons/settings.svg",
         "size_kb": 2.4
       },
@@ -1203,6 +1207,11 @@
   },
   "assets_missing": {
     "data": [
+      {
+        "path": "icons/security.png",
+        "count": 1,
+        "missing": true
+      },
       {
         "path": "images/activities/aciegas_c.svg",
         "count": 2,
@@ -3849,7 +3858,7 @@
       },
       {
         "path": "lottie/ux/congrats.json",
-        "count": 2,
+        "count": 1,
         "size_kb": 50.4
       },
       {
@@ -3919,7 +3928,7 @@
       {
         "type": "data_list",
         "subtype": "lifecycle_actions",
-        "total": 3
+        "total": 4
       },
       {
         "type": "data_list",
@@ -4404,7 +4413,7 @@
       {
         "type": "global",
         "subtype": "proximal_outcomes",
-        "total": 2
+        "total": 3
       },
       {
         "type": "template",
