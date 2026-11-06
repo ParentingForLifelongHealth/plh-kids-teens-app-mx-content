@@ -1,0 +1,24 @@
+{
+  "flow_type": "global",
+  "flow_subtype": "proximal_outcomes",
+  "flow_name": "po_global_po_refl_no",
+  "override_target": "proximal_outcome_global_hidden_pages",
+  "override_condition": "@fields.ab_mode_po_refl == \"all_no\" || (@fields.ab_mode_po_refl == \"test\" && @fields.ab_arm_po_refl == \"no\")",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "proximal_outcome_hidden_pages",
+      "value": "goal_refl",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true
+    }
+  ],
+  "_source": {
+    "name": "test_po_refl",
+    "path": "ab_test_po_refl.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1r1LP3dDi0GmVTtd_ySB2cF2_uwyGDoVEWL0Wx789qtU"
+  }
+}

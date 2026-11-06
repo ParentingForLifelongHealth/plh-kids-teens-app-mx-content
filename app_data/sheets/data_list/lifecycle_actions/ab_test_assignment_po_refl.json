@@ -1,0 +1,64 @@
+{
+  "flow_type": "data_list",
+  "flow_subtype": "lifecycle_actions",
+  "flow_name": "ab_test_assignment_po_refl",
+  "status": "released",
+  "rows": [
+    {
+      "id": "ab_assign_po_refl",
+      "lifecycle_event": "app_start",
+      "priority": 0,
+      "condition_list": [
+        "!@fields.ab_arm_po_refl"
+      ],
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_field",
+          "args": [
+            "ab_arm_po_refl",
+            "@calc(pick_random([\"yes\",\"no\"]))"
+          ],
+          "_raw": "set_field: ab_arm_po_refl: @calc(pick_random([\"yes\",\"no\"]))"
+        },
+        {
+          "trigger": "click",
+          "action_id": "set_field",
+          "args": [
+            "ab_assigned_at_po_refl",
+            "@calc(now().toISOString())"
+          ],
+          "_raw": "set_field: ab_assigned_at_po_refl: @calc(now().toISOString())"
+        }
+      ],
+      "test": "Response scale in goal and proximal outcome questions",
+      "arms": "yes;no"
+    },
+    {
+      "id": "ab_sync_mode_po_refl",
+      "lifecycle_event": "app_start",
+      "priority": 0,
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_field",
+          "args": [
+            "ab_mode_po_refl",
+            "@global.ab_mode_po_refl"
+          ],
+          "_raw": "set_field: ab_mode_po_refl: @global.ab_mode_po_refl"
+        }
+      ]
+    }
+  ],
+  "_source": {
+    "name": "test_po_refl",
+    "path": "ab_test_po_refl.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1r1LP3dDi0GmVTtd_ySB2cF2_uwyGDoVEWL0Wx789qtU"
+  },
+  "_metadata": {
+    "priority": {
+      "type": "number"
+    }
+  }
+}

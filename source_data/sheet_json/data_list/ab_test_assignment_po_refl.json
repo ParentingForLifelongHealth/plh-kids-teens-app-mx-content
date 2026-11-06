@@ -1,0 +1,24 @@
+{
+  "flow_type": "data_list",
+  "flow_subtype": "lifecycle_actions",
+  "flow_name": "ab_test_assignment_po_refl",
+  "status": "released",
+  "rows": [
+    {
+      "id": "ab_assign_po_refl",
+      "lifecycle_event": "app_start",
+      "priority": 0,
+      "condition_list": "!@fields.ab_arm_po_refl",
+      "action_list": "set_field: ab_arm_po_refl: @calc(pick_random([\"yes\",\"no\"]));\nset_field: ab_assigned_at_po_refl: @calc(now().toISOString());",
+      "test": "Response scale in goal and proximal outcome questions",
+      "arms": "yes;no",
+      "comment": "Runs on every app start, before onboarding (priority 0), only while the user has no arm, so the arm is drawn once and never changes. Everyone gets an arm even while the mode is off, so the test can be switched on remotely later. No | or || in the action (it would be cut). For an unequal split repeat an arm: [\"A\",\"A\",\"B\"] = 2:1."
+    },
+    {
+      "id": "ab_sync_mode_po_refl",
+      "lifecycle_event": "app_start",
+      "priority": 0,
+      "action_list": "set_field: ab_mode_po_refl: @global.ab_mode_po_refl"
+    }
+  ]
+}

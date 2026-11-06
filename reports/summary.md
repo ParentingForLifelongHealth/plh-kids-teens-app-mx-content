@@ -99,7 +99,7 @@
 | assets | KB | MB |
 | --- | --- | --- |
 | total | 16620 KB | 16.6 MB |
-| unused | 178095 KB | 178.1 MB |
+| unused | 178104 KB | 178.1 MB |
 </details>
 
 <details open>
@@ -310,6 +310,7 @@ Assets that appear in app-data but do not have references within sheets
 | images/icons/play.svg | 0.5 |
 | images/icons/play_white.svg | 0.5 |
 | images/icons/repeat_blue.png | 5.4 |
+| images/icons/security.png | 9.1 |
 | images/icons/settings.svg | 2.4 |
 | images/icons/settings_active.svg | 2.4 |
 | images/icons/settings_white.svg | 2.4 |
@@ -331,6 +332,7 @@ Assets that have references within sheets but do not appear in app-data
 
 | path | count |
 | --- | --- |
+| icons/security.png | 1 |
 | images/activities/aciegas_c.svg | 2 |
 | images/activities/aciegas_t.svg | 2 |
 | images/activities/activate_c.svg | 2 |
@@ -868,7 +870,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | lottie/relax/square_flow.json | 5.9 | 53 |
 | lottie/ux/bulging_circles.json | 11.8 | 1 |
 | lottie/ux/checkmark.json | 24.6 | 2 |
-| lottie/ux/congrats.json | 50.4 | 2 |
+| lottie/ux/congrats.json | 50.4 | 1 |
 | lottie/ux/gift_box.json | 674.5 | 1 |
 </details>
 
@@ -888,7 +890,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_list | hp_review | 2 |
 | data_list | legal_terms | 2 |
 | data_list | library | 2 |
-| data_list | lifecycle_actions | 3 |
+| data_list | lifecycle_actions | 4 |
 | data_list | modules | 3 |
 | data_list | modules_Child_change_c | 1 |
 | data_list | modules_Consequences_t | 1 |
@@ -985,7 +987,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global |  | 14 |
 | global | ab_testing | 2 |
 | global | onboarding | 17 |
-| global | proximal_outcomes | 2 |
+| global | proximal_outcomes | 3 |
 | template |  | 112 |
 | template | ab_testing | 1 |
 | template | generated | 390 |
