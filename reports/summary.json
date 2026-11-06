@@ -27,7 +27,7 @@
       },
       {
         "type": "button",
-        "count": 135
+        "count": 136
       },
       {
         "type": "combo_box",
@@ -263,7 +263,7 @@
       },
       {
         "type": "go_to",
-        "count": 30
+        "count": 31
       },
       {
         "type": "nav",
@@ -335,12 +335,12 @@
     "data": [
       {
         "assets": "total",
-        "KB": "17858 KB",
-        "MB": "17.9 MB"
+        "KB": "16620 KB",
+        "MB": "16.6 MB"
       },
       {
         "assets": "unused",
-        "KB": "178064 KB",
+        "KB": "178095 KB",
         "MB": "178.1 MB"
       }
     ]
@@ -736,6 +736,10 @@
         "size_kb": 1346.3
       },
       {
+        "path": "images/backgrounds/library_top_right.svg",
+        "size_kb": 17.5
+      },
+      {
         "path": "images/badges/badge_1.svg",
         "size_kb": 25.7
       },
@@ -1088,6 +1092,14 @@
         "size_kb": 0.6
       },
       {
+        "path": "images/icons/home.svg",
+        "size_kb": 0.4
+      },
+      {
+        "path": "images/icons/home_white.svg",
+        "size_kb": 0.7
+      },
+      {
         "path": "images/icons/hourglass_blue.png",
         "size_kb": 4.3
       },
@@ -1098,6 +1110,18 @@
       {
         "path": "images/icons/key.svg",
         "size_kb": 5.5
+      },
+      {
+        "path": "images/icons/local_library.svg",
+        "size_kb": 1.6
+      },
+      {
+        "path": "images/icons/local_library_active.svg",
+        "size_kb": 1.6
+      },
+      {
+        "path": "images/icons/local_library_white.svg",
+        "size_kb": 1.9
       },
       {
         "path": "images/icons/lock-closed-outline.svg",
@@ -1126,6 +1150,18 @@
       {
         "path": "images/icons/repeat_blue.png",
         "size_kb": 5.4
+      },
+      {
+        "path": "images/icons/settings.svg",
+        "size_kb": 2.4
+      },
+      {
+        "path": "images/icons/settings_active.svg",
+        "size_kb": 2.4
+      },
+      {
+        "path": "images/icons/settings_white.svg",
+        "size_kb": 2.4
       },
       {
         "path": "images/icons/star_outline_white.svg",
@@ -1460,6 +1496,11 @@
       {
         "path": "images/activities/verduras.svg",
         "count": 2,
+        "missing": true
+      },
+      {
+        "path": "images/backgrounds/mountains_trees.svg",
+        "count": 1,
         "missing": true
       },
       {
@@ -2863,11 +2904,6 @@
         "missing": true
       },
       {
-        "path": "images/logos/Crianza-03.png",
-        "count": 1,
-        "missing": true
-      },
-      {
         "path": "images/logos/JUCONI.png",
         "count": 1,
         "missing": true
@@ -2909,32 +2945,27 @@
       {
         "path": "images/backgrounds/bottom_banner.svg",
         "count": 1,
-        "size_kb": 23.2
+        "size_kb": 24.3
       },
       {
         "path": "images/backgrounds/complete_module.svg",
         "count": 1,
-        "size_kb": 4.5
+        "size_kb": 30.6
       },
       {
         "path": "images/backgrounds/kites.svg",
         "count": 1,
-        "size_kb": 37.3
+        "size_kb": 92
       },
       {
         "path": "images/backgrounds/lesson-cta-bg.svg",
         "count": 4,
-        "size_kb": 4
+        "size_kb": 8.3
       },
       {
         "path": "images/backgrounds/library_top_right.png",
         "count": 3,
-        "size_kb": 1358.6
-      },
-      {
-        "path": "images/backgrounds/mountains_trees.svg",
-        "count": 1,
-        "size_kb": 23.2
+        "size_kb": 54.7
       },
       {
         "path": "images/character_icons/ABUELA_1.svg",
@@ -3577,19 +3608,19 @@
         "size_kb": 0.4
       },
       {
-        "path": "images/icons/home.svg",
-        "count": 1,
-        "size_kb": 0.4
-      },
-      {
         "path": "images/icons/home_active.svg",
-        "count": 3,
+        "count": 2,
         "size_kb": 0.4
       },
       {
-        "path": "images/icons/home_white.svg",
+        "path": "images/icons/home_filled.svg",
         "count": 1,
-        "size_kb": 0.7
+        "size_kb": 0.2
+      },
+      {
+        "path": "images/icons/home_outline.svg",
+        "count": 1,
+        "size_kb": 0.3
       },
       {
         "path": "images/icons/in_progress.svg",
@@ -3607,19 +3638,14 @@
         "size_kb": 3.6
       },
       {
-        "path": "images/icons/local_library.svg",
+        "path": "images/icons/local_library_filled.svg",
         "count": 1,
-        "size_kb": 1.6
+        "size_kb": 0.3
       },
       {
-        "path": "images/icons/local_library_active.svg",
+        "path": "images/icons/local_library_outline.svg",
         "count": 1,
-        "size_kb": 1.6
-      },
-      {
-        "path": "images/icons/local_library_white.svg",
-        "count": 1,
-        "size_kb": 1.9
+        "size_kb": 0.9
       },
       {
         "path": "images/icons/lock-closed-outline.png",
@@ -3682,19 +3708,14 @@
         "size_kb": 0.8
       },
       {
-        "path": "images/icons/settings.svg",
+        "path": "images/icons/settings_filled.svg",
         "count": 1,
-        "size_kb": 2.4
+        "size_kb": 0.5
       },
       {
-        "path": "images/icons/settings_active.svg",
+        "path": "images/icons/settings_outline.svg",
         "count": 1,
-        "size_kb": 2.4
-      },
-      {
-        "path": "images/icons/settings_white.svg",
-        "count": 1,
-        "size_kb": 2.4
+        "size_kb": 1.3
       },
       {
         "path": "images/icons/single_speech_blue.png",
@@ -3772,6 +3793,11 @@
         "size_kb": 10
       },
       {
+        "path": "images/logos/crianza_logo_circular_negative.png",
+        "count": 1,
+        "size_kb": 12.5
+      },
+      {
         "path": "images/onboarding/welcome_screen_1.svg",
         "count": 1,
         "size_kb": 1576.7
@@ -3839,6 +3865,11 @@
         "type": "data_list",
         "subtype": null,
         "total": 20
+      },
+      {
+        "type": "data_list",
+        "subtype": "ab_testing",
+        "total": 1
       },
       {
         "type": "data_list",
@@ -4363,7 +4394,7 @@
       {
         "type": "global",
         "subtype": "ab_testing",
-        "total": 1
+        "total": 2
       },
       {
         "type": "global",

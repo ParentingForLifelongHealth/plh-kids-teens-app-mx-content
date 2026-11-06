@@ -48,7 +48,7 @@
     },
     {
       "name": "n_checkins_completed",
-      "value": 15,
+      "value": 2,
       "exclude_from_translation": true
     },
     {
@@ -57,7 +57,6 @@
       "value": "@data.proximal_outcome_data",
       "action_list": "data_changed | set_local: n_checkins_completed: @items.length",
       "parameter_list": "filter: @item.question_type == 'goal' && !!@item.value",
-      "condition": false,
       "exclude_from_translation": true
     },
     {

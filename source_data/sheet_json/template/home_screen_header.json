@@ -291,21 +291,19 @@
       "type": "title",
       "value": "@global.all_complete_title",
       "condition": "!!@global.all_complete_title",
-      "exclude_from_translation": true,
-      "style_list": "margin-top: -8px;"
+      "exclude_from_translation": true
     },
     {
       "type": "text",
       "value": "@global.all_complete_text",
       "condition": "!!@global.all_complete_text",
-      "exclude_from_translation": true,
-      "style_list": "margin-top: -6px;\nmargin-bottom: -8px;"
+      "exclude_from_translation": true
     },
     {
       "type": "begin_display_group",
       "parameter_list": "style: column",
       "exclude_from_translation": true,
-      "style_list": "background-color: #669F4B40;"
+      "style_list": "background-color: var(--ion-color-green-100) "
     },
     {
       "type": "text",
