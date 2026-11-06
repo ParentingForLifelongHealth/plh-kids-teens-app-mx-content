@@ -1536,9 +1536,6 @@
               },
               "condition": "!!@global.all_complete_title",
               "exclude_from_translation": true,
-              "style_list": [
-                "margin-top: -8px"
-              ],
               "name": "title_1",
               "_nested_name": "display_group_31.all_completed.title_1",
               "_dynamicFields": {
@@ -1576,10 +1573,6 @@
               },
               "condition": "!!@global.all_complete_text",
               "exclude_from_translation": true,
-              "style_list": [
-                "margin-top: -6px",
-                "margin-bottom: -8px"
-              ],
               "name": "text_2",
               "_nested_name": "display_group_31.all_completed.text_2",
               "_dynamicFields": {
@@ -1616,7 +1609,7 @@
               },
               "exclude_from_translation": true,
               "style_list": [
-                "background-color: #669F4B40"
+                "background-color: var(--ion-color-green-100)"
               ],
               "rows": [
                 {

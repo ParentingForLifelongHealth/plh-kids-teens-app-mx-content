@@ -9,7 +9,7 @@
 | animated_slides | 1 |
 | apple_sign_in_button | 2 |
 | audio | 4 |
-| button | 135 |
+| button | 136 |
 | combo_box | 23 |
 | data_items | 273 |
 | date_time_picker | 2 |
@@ -74,7 +74,7 @@
 | emit: set_language | 2 |
 | emit: uncompleted | 194 |
 | feedback | 13 |
-| go_to | 30 |
+| go_to | 31 |
 | nav | 1 |
 | nav_stack | 1148 |
 | notification | 1 |
@@ -98,8 +98,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 17858 KB | 17.9 MB |
-| unused | 178064 KB | 178.1 MB |
+| total | 16620 KB | 16.6 MB |
+| unused | 178095 KB | 178.1 MB |
 </details>
 
 <details open>
@@ -206,6 +206,7 @@ Assets that appear in app-data but do not have references within sheets
 | images/activities/una_nota_t.png | 2356 |
 | images/activities/una_preocupacion_un_paso_c.png | 2014 |
 | images/activities/una_preocupacion_un_paso_t.png | 1346.3 |
+| images/backgrounds/library_top_right.svg | 17.5 |
 | images/badges/badge_1.svg | 25.7 |
 | images/badges/badge_2.svg | 17.4 |
 | images/badges/badge_3.svg | 49.1 |
@@ -294,9 +295,14 @@ Assets that appear in app-data but do not have references within sheets
 | images/icons/expand_circle_right.svg | 0.5 |
 | images/icons/heart-outline.svg | 0.4 |
 | images/icons/heart.svg | 0.6 |
+| images/icons/home.svg | 0.4 |
+| images/icons/home_white.svg | 0.7 |
 | images/icons/hourglass_blue.png | 4.3 |
 | images/icons/in_progress_white.svg | 1.1 |
 | images/icons/key.svg | 5.5 |
+| images/icons/local_library.svg | 1.6 |
+| images/icons/local_library_active.svg | 1.6 |
+| images/icons/local_library_white.svg | 1.9 |
 | images/icons/lock-closed-outline.svg | 0.4 |
 | images/icons/lock.svg | 0.5 |
 | images/icons/magnify_glass.svg | 1.9 |
@@ -304,6 +310,9 @@ Assets that appear in app-data but do not have references within sheets
 | images/icons/play.svg | 0.5 |
 | images/icons/play_white.svg | 0.5 |
 | images/icons/repeat_blue.png | 5.4 |
+| images/icons/settings.svg | 2.4 |
+| images/icons/settings_active.svg | 2.4 |
+| images/icons/settings_white.svg | 2.4 |
 | images/icons/star_outline_white.svg | 1 |
 | images/icons/tablet_blue.png | 2.8 |
 | images/icons/tick_white.svg | 0.3 |
@@ -381,6 +390,7 @@ Assets that have references within sheets but do not appear in app-data
 | images/activities/tenis.svg | 4 |
 | images/activities/veo.svg | 2 |
 | images/activities/verduras.svg | 2 |
+| images/backgrounds/mountains_trees.svg | 1 |
 | images/character_icons/PROFESORA_1.svg | 7 |
 | images/comic/behave/consequences_teen_1.svg | 2 |
 | images/comic/behave/consequences_teen_2.svg | 2 |
@@ -661,7 +671,6 @@ Assets that have references within sheets but do not appear in app-data
 | images/icons/trophy_active.png | 1 |
 | images/icons/visibility.svg | 1 |
 | images/logos/ARIADNE.png | 1 |
-| images/logos/Crianza-03.png | 1 |
 | images/logos/JUCONI.png | 1 |
 | images/logos/KERING.png | 1 |
 | images/logos/PEDIATRIA.png | 1 |
@@ -678,12 +687,11 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | path | size_kb | count |
 | --- | --- | --- |
-| images/backgrounds/bottom_banner.svg | 23.2 | 1 |
-| images/backgrounds/complete_module.svg | 4.5 | 1 |
-| images/backgrounds/kites.svg | 37.3 | 1 |
-| images/backgrounds/lesson-cta-bg.svg | 4 | 4 |
-| images/backgrounds/library_top_right.png | 1358.6 | 3 |
-| images/backgrounds/mountains_trees.svg | 23.2 | 1 |
+| images/backgrounds/bottom_banner.svg | 24.3 | 1 |
+| images/backgrounds/complete_module.svg | 30.6 | 1 |
+| images/backgrounds/kites.svg | 92 | 1 |
+| images/backgrounds/lesson-cta-bg.svg | 8.3 | 4 |
+| images/backgrounds/library_top_right.png | 54.7 | 3 |
 | images/character_icons/ABUELA_1.svg | 4.8 | 1 |
 | images/character_icons/ABUELO_1.svg | 6.8 | 1 |
 | images/character_icons/AMIGA_MUJER_1.svg | 13.9 | 1 |
@@ -812,15 +820,14 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/heart_filled.svg | 1.4 | 1 |
 | images/icons/heart_filled_red.png | 0.8 | 3 |
 | images/icons/heart_filled_red.svg | 0.4 | 1 |
-| images/icons/home.svg | 0.4 | 1 |
-| images/icons/home_active.svg | 0.4 | 3 |
-| images/icons/home_white.svg | 0.7 | 1 |
+| images/icons/home_active.svg | 0.4 | 2 |
+| images/icons/home_filled.svg | 0.2 | 1 |
+| images/icons/home_outline.svg | 0.3 | 1 |
 | images/icons/in_progress.svg | 1.1 | 1 |
 | images/icons/information-circle-outline.svg | 0.6 | 1 |
 | images/icons/lightbulb_blue.png | 3.6 | 42 |
-| images/icons/local_library.svg | 1.6 | 1 |
-| images/icons/local_library_active.svg | 1.6 | 1 |
-| images/icons/local_library_white.svg | 1.9 | 1 |
+| images/icons/local_library_filled.svg | 0.3 | 1 |
+| images/icons/local_library_outline.svg | 0.9 | 1 |
 | images/icons/lock-closed-outline.png | 0.9 | 1 |
 | images/icons/lock-open-outline.svg | 0.4 | 2 |
 | images/icons/log-in-outline.svg | 0.5 | 1 |
@@ -833,9 +840,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/picture_book.svg | 1.8 | 94 |
 | images/icons/question_blue.png | 3.4 | 14 |
 | images/icons/question_mark_blue.svg | 0.8 | 1 |
-| images/icons/settings.svg | 2.4 | 1 |
-| images/icons/settings_active.svg | 2.4 | 1 |
-| images/icons/settings_white.svg | 2.4 | 1 |
+| images/icons/settings_filled.svg | 0.5 | 1 |
+| images/icons/settings_outline.svg | 1.3 | 1 |
 | images/icons/single_speech_blue.png | 3.3 | 24 |
 | images/icons/smile_eyes_down.svg | 0.9 | 92 |
 | images/icons/smile_eyes_up.svg | 1 | 95 |
@@ -851,6 +857,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/logos/PLH.png | 34.7 | 1 |
 | images/logos/UNICEF.png | 90.5 | 1 |
 | images/logos/crianza_logo.png | 10 | 1 |
+| images/logos/crianza_logo_circular_negative.png | 12.5 | 1 |
 | images/onboarding/welcome_screen_1.svg | 1576.7 | 1 |
 | images/onboarding/welcome_screen_2.svg | 1915.6 | 1 |
 | images/onboarding/welcome_screen_3.svg | 1843.3 | 1 |
@@ -871,6 +878,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | type | subtype | total |
 | --- | --- | --- |
 | data_list |  | 20 |
+| data_list | ab_testing | 1 |
 | data_list | activities | 2 |
 | data_list | app_config_language_list | 1 |
 | data_list | campaign_rows | 2 |
@@ -975,7 +983,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_pipe | generated | 170 |
 | generator |  | 9 |
 | global |  | 14 |
-| global | ab_testing | 1 |
+| global | ab_testing | 2 |
 | global | onboarding | 17 |
 | global | proximal_outcomes | 2 |
 | template |  | 112 |

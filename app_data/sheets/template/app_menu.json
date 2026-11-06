@@ -152,6 +152,41 @@
         },
         {
           "type": "button",
+          "name": "button_ab_tests",
+          "value": "A/B Tests",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "debug_ab_tests"
+              ],
+              "_raw": "click | go_to: debug_ab_tests"
+            }
+          ],
+          "condition": "@global.has_ab_tests",
+          "_nested_name": "dg_dev.button_ab_tests",
+          "_dynamicFields": {
+            "condition": [
+              {
+                "fullExpression": "@global.has_ab_tests",
+                "matchedExpression": "@global.has_ab_tests",
+                "type": "global",
+                "fieldName": "has_ab_tests"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@global.has_ab_tests": [
+              "condition"
+            ]
+          }
+        },
+        {
+          "type": "button",
           "name": "button_reset",
           "value": "Reset app",
           "_translations": {

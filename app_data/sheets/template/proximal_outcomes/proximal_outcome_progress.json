@@ -165,7 +165,7 @@
     },
     {
       "name": "n_checkins_completed",
-      "value": 15,
+      "value": 2,
       "exclude_from_translation": true,
       "type": "set_variable",
       "_nested_name": "n_checkins_completed"
@@ -191,7 +191,6 @@
       "parameter_list": {
         "filter": "@item.question_type == 'goal' && !!@item.value"
       },
-      "condition": false,
       "exclude_from_translation": true,
       "_nested_name": "count_goal_answers",
       "_dynamicFields": {

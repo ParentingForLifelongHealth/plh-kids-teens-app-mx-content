@@ -1,0 +1,15 @@
+{
+  "flow_type": "global",
+  "flow_subtype": "ab_testing",
+  "flow_name": "ab_test_global_po_refl",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "ab_mode_po_refl",
+      "value": "all_no",
+      "exclude_from_translation": true,
+      "comment": "off = everyone sees yes;\ntest = each user sees their arm\nall_no = everyone sees no"
+    }
+  ]
+}

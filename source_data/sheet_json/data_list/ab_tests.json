@@ -1,0 +1,28 @@
+{
+  "flow_type": "data_list",
+  "flow_subtype": "ab_testing",
+  "flow_name": "ab_tests",
+  "status": "released",
+  "rows": [
+    {
+      "id": "po_scale",
+      "name": "PO scale",
+      "arm_field": "ab_arm_po_scale",
+      "mode_field": "ab_mode_po_scale",
+      "arm_1": 5,
+      "description_1": "5 options + prefer not to say (control)",
+      "arm_2": 3,
+      "description_2": "3 options + prefer not to say"
+    },
+    {
+      "id": "po_refl",
+      "name": "Sunset reflection",
+      "arm_field": "ab_arm_po_refl",
+      "mode_field": "ab_mode_po_refl",
+      "arm_1": "yes",
+      "description_1": "User receives reflection page ",
+      "arm_2": "no",
+      "description_2": "No reflection page"
+    }
+  ]
+}

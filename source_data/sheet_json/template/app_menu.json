@@ -58,6 +58,13 @@
     },
     {
       "type": "button",
+      "name": "button_ab_tests",
+      "value": "A/B Tests",
+      "action_list": "click | go_to: debug_ab_tests",
+      "condition": "@global.has_ab_tests"
+    },
+    {
+      "type": "button",
       "name": "button_reset",
       "value": "Reset app",
       "action_list": "click | reset_app"
