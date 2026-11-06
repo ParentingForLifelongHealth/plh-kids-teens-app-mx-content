@@ -99,7 +99,7 @@
 | assets | KB | MB |
 | --- | --- | --- |
 | total | 17858 KB | 17.9 MB |
-| unused | 9033 KB | 9 MB |
+| unused | 178064 KB | 178.1 MB |
 </details>
 
 <details open>
@@ -109,6 +109,111 @@ Assets that appear in app-data but do not have references within sheets
 
 | path | size_kb |
 | --- | --- |
+| images/activities/Activate_c.png | 1268.6 |
+| images/activities/Activate_t.png | 1268.6 |
+| images/activities/Adivinanzas_a_ciegas_c.png | 1473.5 |
+| images/activities/Adivinanzas_a_ciegas_t.png | 1473.5 |
+| images/activities/Aprender_con_la_ropa_c.png | 1661.1 |
+| images/activities/Aprender_es_divertido_c.png | 1918.1 |
+| images/activities/Aprender_es_divertido_t.png | 1918.1 |
+| images/activities/Baile_congelado_c.png | 1359.5 |
+| images/activities/Boliche_con_botellas_c.png | 2316.4 |
+| images/activities/Bolos_con_botellas_t.png | 2316.4 |
+| images/activities/Canciones_activas_c.png | 1240.1 |
+| images/activities/Categorizar_y_Organizar_c.png | 1143.5 |
+| images/activities/Cocinar_con_matemáticas_c.png | 1677.3 |
+| images/activities/Colores_con_algodón_c.png | 1529.8 |
+| images/activities/Compartiendo_la_lectura_c.png | 2257.2 |
+| images/activities/Compartiendo_la_lectura_t.png | 2257.2 |
+| images/activities/Cosas_que_me_hacen_feliz_c.png | 1928 |
+| images/activities/Cosas_que_me_hacen_feliz_t.png | 1928 |
+| images/activities/Crea_personajes_chistosos_c.png | 1489.4 |
+| images/activities/Crea_personajes_chistosos_t.png | 1489.4 |
+| images/activities/Crea_un_saludo_secreto_c.png | 1518.7 |
+| images/activities/Crea_un_saludo_secreto_t.png | 1518.7 |
+| images/activities/Da_vuelta_a_la_cobija_c.png | 1389.5 |
+| images/activities/Da_vuelta_a_la_cobija_t.png | 1389.5 |
+| images/activities/Desafio_olimpico_c.png | 2232.8 |
+| images/activities/Desafio_olimpico_t.png | 2232.8 |
+| images/activities/Diseña_y_crea_c.png | 2461.3 |
+| images/activities/Diseña_y_crea_t.png | 2461.3 |
+| images/activities/Equilibrio_extremo_c.png | 1855.8 |
+| images/activities/Equilibrio_extremo_t.png | 1855.8 |
+| images/activities/Experto_en_emociones_c.png | 959.6 |
+| images/activities/Experto_en_emociones_t.png | 959.6 |
+| images/activities/Formas_por_todas_partes_c.png | 1350.3 |
+| images/activities/Hora_de_hornear_c.png | 423.7 |
+| images/activities/Hora_de_hornear_t.png | 423.7 |
+| images/activities/Juego_de_la_naturaleza_c.png | 1407.4 |
+| images/activities/Juego_de_la_naturaleza_t.png | 1407.4 |
+| images/activities/Juego_de_opuestos_c.png | 2764.5 |
+| images/activities/Juego_de_opuestos_t.png | 2764.5 |
+| images/activities/Jugando_con_sombras_c.png | 2038 |
+| images/activities/Jugando_con_sombras_t.png | 2038 |
+| images/activities/Jugando_con_verduras_c.png | 1857.6 |
+| images/activities/La_historia_de_las_imágenes_c.png | 1945.1 |
+| images/activities/La_historia_de_las_imágenes_t.png | 1945.1 |
+| images/activities/Narracion_creativa_c.png | 3286.4 |
+| images/activities/Narracion_creativa_t.png | 3286.4 |
+| images/activities/Pasa_la_pelota_c.png | 2207.3 |
+| images/activities/Pasa_la_pelota_t.png | 2207.3 |
+| images/activities/Qué_letra_es_esta_c.png | 1983.3 |
+| images/activities/Reto_animal_c.png | 1709.8 |
+| images/activities/Reto_animal_t.png | 1709.8 |
+| images/activities/Rompecabezas_con_fotos_c.png | 1269.6 |
+| images/activities/Rompecabezas_con_fotos_t.png | 1269.6 |
+| images/activities/Se_un_artista_c.png | 3298.8 |
+| images/activities/Se_un_artista_t.png | 3298.8 |
+| images/activities/Seguir_al_líder_c.png | 959.8 |
+| images/activities/Seguir_al_líder_t.png | 959.8 |
+| images/activities/Tenis_con_globos_c.png | 1752.5 |
+| images/activities/Tenis_con_globos_t.png | 1752.5 |
+| images/activities/Tiempo_juntos_y_conectados_c.png | 1223.6 |
+| images/activities/Tiempo_juntos_y_conectados_t.png | 1223.6 |
+| images/activities/Una_conversacion_significativa_c.png | 1548.6 |
+| images/activities/Una_conversacion_significativa_t.png | 1548.6 |
+| images/activities/Veo_veo_c.png | 1031.7 |
+| images/activities/accion_llegando_a_casa_c.png | 2091.5 |
+| images/activities/accion_llegando_a_casa_t.png | 1031.7 |
+| images/activities/actua_primero_c.png | 1745.4 |
+| images/activities/actua_primero_t.png | 1352.4 |
+| images/activities/adivina_la_cancion_t.png | 1529.8 |
+| images/activities/asi_soy_t.png | 1661.1 |
+| images/activities/comida_sin_pantalla_c.png | 969.4 |
+| images/activities/comparte_emociones_agradables_c.png | 3544.3 |
+| images/activities/comparte_emociones_agradables_t.png | 488.3 |
+| images/activities/enseñame_algo_c.png | 1352.4 |
+| images/activities/enseñame_algo_t.png | 3229 |
+| images/activities/la_mejor_parte_c.png | 1346.3 |
+| images/activities/la_mejor_parte_t.png | 1745.4 |
+| images/activities/lista_para_recuperar_la_calma_c.png | 3009.5 |
+| images/activities/lista_para_recuperar_la_calma_t.png | 1387.2 |
+| images/activities/llama_a_alguien_c.png | 3229 |
+| images/activities/llama_a_alguien_t.png | 969.4 |
+| images/activities/mejor_dificil_c.png | 2356 |
+| images/activities/mejor_dificil_t.png | 1091.2 |
+| images/activities/pensa_en_grande_paso_a_paso_t.png | 1677.3 |
+| images/activities/semaforo_t.png | 1359.5 |
+| images/activities/si_no_o_tal_vez_t.png | 1143.5 |
+| images/activities/sorteo_de_disfraces_de_superhéroes_c.png | 1975 |
+| images/activities/tres_cosas_buenas_c.png | 1387.2 |
+| images/activities/tres_cosas_buenas_t.png | 3009.5 |
+| images/activities/tu_esfuerzo_cuenta_c.png | 488.3 |
+| images/activities/tu_esfuerzo_cuenta_t.png | 3544.3 |
+| images/activities/un_paso_mañana_c.png | 316.9 |
+| images/activities/un_paso_mañana_t.png | 316.9 |
+| images/activities/una_nota_c.png | 1091.2 |
+| images/activities/una_nota_t.png | 2356 |
+| images/activities/una_preocupacion_un_paso_c.png | 2014 |
+| images/activities/una_preocupacion_un_paso_t.png | 1346.3 |
+| images/badges/badge_1.svg | 25.7 |
+| images/badges/badge_2.svg | 17.4 |
+| images/badges/badge_3.svg | 49.1 |
+| images/badges/badge_4.svg | 21.9 |
+| images/badges/badge_5.svg | 24.7 |
+| images/badges/badge_6.svg | 42.3 |
+| images/badges/badge_7.svg | 25.4 |
+| images/badges/badge_8.svg | 27.4 |
 | images/comic/relation/calm/calm_yc_mc_1.svg | 28.7 |
 | images/comic/relation/calm/calm_yc_mc_2.svg | 72.1 |
 | images/comic/relation/calm/calm_yc_mc_3.svg | 8.5 |
@@ -579,7 +684,6 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/backgrounds/lesson-cta-bg.svg | 4 | 4 |
 | images/backgrounds/library_top_right.png | 1358.6 | 3 |
 | images/backgrounds/mountains_trees.svg | 23.2 | 1 |
-| images/backgrounds/star_yellow.svg | 0.6 | 1 |
 | images/character_icons/ABUELA_1.svg | 4.8 | 1 |
 | images/character_icons/ABUELO_1.svg | 6.8 | 1 |
 | images/character_icons/AMIGA_MUJER_1.svg | 13.9 | 1 |
@@ -737,6 +841,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/smile_eyes_up.svg | 1 | 95 |
 | images/icons/speech_bubble_blue.png | 4.2 | 62 |
 | images/icons/star_filled_blue.png | 5.1 | 58 |
+| images/icons/star_gold.svg | 0.3 | 1 |
 | images/icons/star_outline_blue.svg | 1 | 5 |
 | images/icons/thought_bubble.svg | 2.1 | 88 |
 | images/icons/tick.svg | 0.3 | 41 |
