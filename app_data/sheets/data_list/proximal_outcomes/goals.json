@@ -1087,7 +1087,7 @@
         "only_wants_device"
       ],
       "tag_desired_change": "increase",
-      "title": "Estar con @field.child_name sin discutir sobre sus dispositivos",
+      "title": "Estar con @field.child_name sin discutir por su dispositivo",
       "_translations": {
         "title": {},
         "normalising_statement": {},
@@ -1101,13 +1101,13 @@
       },
       "_translatedFields": {
         "title": {
-          "eng": "Estar con @field.child_name sin discutir sobre sus dispositivos"
+          "eng": "Estar con @field.child_name sin discutir por su dispositivo"
         },
         "normalising_statement": {
-          "eng": "Muchas personas cuidadoras están cansadas de pelear con sus niñas, niños y adolescentes por los dispositivos."
+          "eng": "Muchas personas cuidadoras están cansadas de discutir con sus niñas, niños o adolescentes por sus dispositivos."
         },
         "question": {
-          "eng": "¿Con qué frecuencia discutiste con @field.child_name por sus dispositivos?"
+          "eng": "¿Con qué frecuencia pudiste estar con @field.child_name sin discutir por su dispositivo?"
         },
         "option_1_text": {
           "eng": "Nunca"
@@ -1128,8 +1128,8 @@
           "eng": "Prefiero no responder"
         }
       },
-      "normalising_statement": "Muchas personas cuidadoras están cansadas de pelear con sus niñas, niños y adolescentes por los dispositivos.",
-      "question": "¿Con qué frecuencia discutiste con @field.child_name por sus dispositivos?",
+      "normalising_statement": "Muchas personas cuidadoras están cansadas de discutir con sus niñas, niños o adolescentes por sus dispositivos.",
+      "question": "¿Con qué frecuencia pudiste estar con @field.child_name sin discutir por su dispositivo?",
       "option_1_text": "Nunca",
       "option_2_text": "Rara vez",
       "option_3_text": "A veces",
@@ -14525,8 +14525,9 @@
         "other"
       ],
       "tag_desired_change": "increase",
-      "normalising_statement": "Cuidar a niñas, niños y adolescentes es difícil, y es normal no sentir confianza todos los días.",
+      "title": "Confiar en mi capacidad para manejar los retos de la crianza",
       "_translations": {
+        "title": {},
         "normalising_statement": {},
         "question": {},
         "option_1_text": {},
@@ -14537,6 +14538,9 @@
         "option_6_text": {}
       },
       "_translatedFields": {
+        "title": {
+          "eng": "Confiar en mi capacidad para manejar los retos de la crianza"
+        },
         "normalising_statement": {
           "eng": "Cuidar a niñas, niños y adolescentes es difícil, y es normal no sentir confianza todos los días."
         },
@@ -14562,6 +14566,7 @@
           "eng": "Prefiero no responder"
         }
       },
+      "normalising_statement": "Cuidar a niñas, niños y adolescentes es difícil, y es normal no sentir confianza todos los días.",
       "question": "¿Qué tanto confías en tu capacidad para manejar los retos de la crianza?",
       "option_1_text": "Nada",
       "option_2_text": "Poco",
