@@ -116,7 +116,17 @@
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_checkin_intro_post",
-      "value": "Congratulations for completing the programme\n\nLet's check in and see how things have been going!"
+      "value": "Congratulations on completing the program!\n\nWhen you started, you shared:\n\nYour challenge: \"@fields.selected_challenge_value\"\n\nYour goal: \"@fields.selected_goal_value\"\n\nLet's check in and see how things have been going!"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "proximal_outcome_checkin_intro_no_goal_post",
+      "value": "Congratulations on completing the program!\n\nWhen you started, you shared:\n\nYour challenge: \"@fields.selected_challenge_value\"\n\nLet's check in and see how things have been going!"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "proximal_outcome_checkin_intro_no_goal_no_chall_post",
+      "value": "Congratulations on completing the program!\n\nLet's check in and see how things have been going!"
     },
     {
       "type": "declare_global_constant",

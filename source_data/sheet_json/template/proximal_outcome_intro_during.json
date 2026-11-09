@@ -52,7 +52,7 @@
       "name": "text_bubble",
       "value": "@global.proximal_outcome_checkin_intro",
       "parameter_list": "speaker_image_asset: @local.speaker_image_asset; speaker_name: @local.speaker_name; speaker_position: @local.speaker_position; variant: @local.variant;",
-      "condition": "@fields.selected_challenge_id != \"other\" && @fields.selected_goal_id != \"other_goal\"",
+      "condition": "@fields.selected_challenge_id != \"other\" && @fields.selected_goal_id != \"other_goal\" ",
       "exclude_from_translation": true
     },
     {
