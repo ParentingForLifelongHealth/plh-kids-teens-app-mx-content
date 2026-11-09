@@ -1,0 +1,137 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "know_role_yc_articles",
+  "data_list_name": "know_role_yc_articles",
+  "status": "released",
+  "flow_subtype": "modules_know_role_yc",
+  "module": "know_role_yc",
+  "rows": [
+    {
+      "id": "@default",
+      "nested": false
+    },
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Esta sesión trata sobre **las responsabilidades de cada persona en el hogar**: las tuyas, las de @fields.child_name y las del resto de la familia.\n\n\nComo persona cuidadora, tu función es mantener a salvo a @fields.child_name en casa y en su comunidad, y acompañarle en su proceso de desarrollo. \n\n\nA medida que crece, @fields.child_name irá adquiriendo nuevas responsabilidades y transformando su propio papel en la familia. 🏠"
+    },
+    {
+      "id": "intro_2",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Aquí explorarás cómo ayudar a @fields.child_name a entender su rol en el hogar, mientras reflexionas también sobre el tuyo.🤗"
+    },
+    {
+      "id": "intro_3",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Antes de empezar, reflexionemos un momento📝",
+      "quiz_1_question::eng": "Verdadero o falso: Las responsabilidades de cada quién en la familia son fijas y nadie puede cambiarlas.",
+      "quiz_1_option_1_text::eng": "Verdadero",
+      "quiz_1_feedback_1::eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nLos roles no vienen dados por naturaleza: cada familia puede decidir el papel de cada quién y puede cambiarlo con el tiempo. \n\nSi @fields.child_name participa en definir sus responsabilidades, será más probable que las asuma con gusto.",
+      "quiz_1_option_2_text::eng": "Falso",
+      "quiz_1_feedback_2::eng": "🎉 ¡Tienes razón!\n\nLos roles no vienen dados por naturaleza: cada familia puede decidir el papel de cada quién y puede cambiarlo con el tiempo. \n\nSi @fields.child_name participa en definir sus responsabilidades, será más probable que las asuma con gusto."
+    },
+    {
+      "id": "intro_4",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "¡Una pregunta más!",
+      "quiz_1_question::eng": "Verdadero o falso: Ser hombre o mujer debería determinar el papel que una persona tiene en la familia.",
+      "quiz_1_option_1_text::eng": "Verdadero",
+      "quiz_1_feedback_1::eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nMuchas personas crecimos con ciertas ideas sobre el papel de mujeres y hombres en la familia. \n\nPero esto no tiene que determinarse por el sexo: tu familia puede decidir cómo compartir la crianza, las tareas de casa y otras responsabilidades de la manera que sea justa y les funcione. \n\nAsí, @fields.child_name aprenderá que todas y todos pueden cuidar y contribuir en casa.",
+      "quiz_1_option_2_text::eng": "Falso",
+      "quiz_1_feedback_2::eng": "🎉 ¡Tienes razón!\n\nMuchas personas crecimos con ciertas ideas sobre el papel de mujeres y hombres en la familia. \n\nPero esto no tiene que determinarse por el sexo: tu familia puede decidir cómo compartir la crianza, las tareas de casa y otras responsabilidades de la manera que sea justa y les funcione. \n\nAsí, @fields.child_name aprenderá que todas y todos pueden cuidar y contribuir en casa."
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo puedes empezar a explorar el papel de @fields.child_name en la familia.\n\nEn este video te compartimos cuatro estrategias recomendadas por especialistas:\n\n1️⃣ CONOCE TU ROL\n2️⃣ IDENTIFICA\n3️⃣ INVOLUCRA\n4️⃣ ENSEÑA CON TU EJEMPLO",
+      "media_type": "youtube"
+    },
+    {
+      "id": "explore_2",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "¡Vamos a ver estas estrategias en la práctica!",
+      "image_asset": "images/comic/behave/know_role_yc_1.svg",
+      "text_2::eng": "A veces damos responsabilidades diferentes a niñas y niños por costumbre. Observa cómo @data.characters.f3_madre.name y @data.characters.f3_padre.name le piden ayuda a sus hijos con distintas tareas de la casa.",
+      "character_1_id": "f3_padre",
+      "character_1_text::eng": "@data.characters.f3_hijo_14.name, ven a ayudarme con el coche. Quiero enseñarte cómo revisar el aceite.",
+      "character_2_id": "f3_madre",
+      "character_2_text::eng": "@data.characters.f3_hija_7.name, ¿me ayudas a recoger la mesa?",
+      "character_3_id": "f3_hija_7",
+      "character_3_text::eng": "¡No es justo! ¿Por qué él puede ayudar con el coche? ¡Yo también quiero ir!"
+    },
+    {
+      "id": "explore_4",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/know_role_yc_2.svg",
+      "text_2::eng": "Entre todos, empiezan a platicar sobre lo que hace cada quién en la casa y reflexionan sobre por qué es así.",
+      "character_1_id": "abuela_1",
+      "character_1_text::eng": "Bueno, alguien tiene que ayudar a tu mamá. Cuando yo era niña, las mujeres ayudábamos en la cocina y los hombres a sus papás.",
+      "character_2_id": "f3_hija_7",
+      "character_2_text::eng": "¡Pero yo también quiero aprender sobre coches!",
+      "character_3_id": "f3_padre",
+      "character_3_text::eng": "Mmm… Pues no veo por qué no podrías. Solo pensé que a tu hermano le interesaría más."
+    },
+    {
+      "id": "explore_5",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/know_role_yc_3.svg",
+      "text_2::eng": "Fíjate cómo @data.characters.f3_madre.name y @data.characters.f3_padre.name involucran a sus hijos en otras actividades que les interesan.",
+      "character_1_id": "f3_madre",
+      "character_1_text::eng": "Tal vez deberíamos considerar qué les gustaría aprender, en lugar de decidir por ellos.",
+      "character_2_id": "f3_padre",
+      "character_2_text::eng": "Está bien. ¿Qué les parece si hoy @data.characters.f3_hija_7.name me ayuda con el coche? La mesa la podemos recoger entre todos.",
+      "character_3_id": "f3_madre",
+      "character_3_text::eng": "Y tú podrías ayudarme más tarde a preparar la comida, @data.characters.f3_hijo_14.name. El otro día dijiste que querías aprender a hacer arroz."
+    },
+    {
+      "id": "explore_6",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/know_role_yc_4.svg",
+      "text_2::eng": "Más tarde, @data.characters.f3_hija_7.name y a @data.characters.f3_hijo_14.name se dan cuenta de que aprendieron muchas cosas nuevas.",
+      "character_1_id": "f3_hija_7",
+      "character_1_text::eng": "¡Abuelo, papá me enseñó a revisar el aceite del coche!",
+      "character_2_id": "abuelo_1",
+      "character_2_text::eng": "¿Ah, sí? Tal vez la próxima vez puedas ayudarme a mí.",
+      "character_3_id": "f3_hijo_14",
+      "character_3_text::eng": "¡Y yo ayudé a preparar el arroz! ¡No es tan fácil como parece!"
+    },
+    {
+      "id": "explore_7",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/know_role_yc_4.svg",
+      "text_2::eng": "Al estar abiertos a probar cosas nuevas, @data.characters.f3_madre.name y @data.characters.f3_padre.name también les enseñan a compartir las responsabilidades de la casa de forma más justa.",
+      "character_1_id": "f3_padre",
+      "character_1_text::eng": "Bueno, tal vez podríamos intercambiar las tareas más seguido. ¡Todos aprendimos algo!",
+      "character_2_id": "f3_madre",
+      "character_2_text::eng": "¡Me parece bien! Hay muchas responsabilidades que podemos compartir.",
+      "character_3_id": "abuela_1",
+      "character_3_text::eng": "(pensando) Mmm… Pensándolo bien, es bueno que aprendan a hacer cosas diferentes."
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Ya viste cómo @data.characters.f3_padre.name y @data.characters.f3_madre.name usaron las estrategias.\n\n\nVamos a recordarlas una vez más para que explores junto con @fields.child_name su papel en la familia:",
+      "section_1_title::eng": "CONOCE TU ROL",
+      "section_1_text::eng": "Piensa en las responsabilidades que tienes en tu familia y por qué te encargas de ellas. \n\nSi compartes la crianza con alguien más, reflexionen sobre cómo podrían repartirlas de forma más justa.",
+      "section_2_title::eng": "IDENTIFICA",
+      "section_2_text::eng": "Observa qué le gusta hacer a @fields.child_name, qué sabe hacer y qué puede aprender. \n\nDale oportunidades de probar diferentes responsabilidades según su edad, habilidades e intereses, y no solo por su género.",
+      "section_3_title::eng": "INVOLUCRA",
+      "section_3_text::eng": "Platica con @fields.child_name sobre cómo contribuye cada persona en la familia y cómo le gustaría participar. \n\nEscucha sus ideas y decidan juntos qué responsabilidades puede asumir. Dale más oportunidades conforme crece y reconoce sus esfuerzos.",
+      "section_4_title::eng": "ENSEÑA CON TU EJEMPLO",
+      "section_4_text::eng": "Muéstrale que todas las personas, sin importar su género, pueden cuidar a otras, colaborar en casa, expresar sus emociones y participar en las decisiones. \n\nTrata a tu familia con calma, amabilidad y respeto, y cumple los acuerdos que hagan juntos."
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "text_1_facilitator::eng": "¡Ahora es tu turno!\n\nEsta semana, piensa en cómo se reparten las responsabilidades en tu familia. ¿Hay tareas que normalmente solo hacen las mujeres o los hombres?\n\n\nPlatica con @fields.child_name sobre alguna actividad diferente que le gustaría probar. Puede ser ayudar a cocinar, reparar algo, limpiar o participar en otra actividad familiar. \n\nElijan algo adecuado para su edad y habilidades, ¡e intenten hacerlo en conjunto! 😊",
+      "text_2::eng": "Por ejemplo:\n\n📝 Si normalmente le pides a tu hija que ayude a cocinar o limpiar, podrías invitarla a reparar algo en casa. O si normalmente le pides a tu hijo que ayude a cargar cosas, podrías invitarlo a preparar la comida.\n\n\nRecuerda reconocer el esfuerzo de @fields.child_name por intentar algo nuevo, ¡aunque necesite ayuda!",
+      "quiz_1_question::eng": "¿Puedes intentarlo esta semana?",
+      "quiz_1_option_1_text::eng": "Sí",
+      "quiz_1_feedback_1::eng": "¡Muy bien! 🎉\n\nDarle oportunidades de probar otras responsabilidades le ayuda a desarrollar habilidades nuevas y descubrir qué le gusta hacer.",
+      "quiz_1_option_2_text::eng": "Lo intentaré",
+      "quiz_1_feedback_2::eng": "¡Bien! Empieza con algo pequeño que a @fields.child_name le interese aprender. 💡\n\nRecuerda que todas las personas pueden contribuir a la familia de diferentes maneras.",
+      "quiz_1_option_3_text::eng": "No",
+      "quiz_1_feedback_3::eng": "¡Lo entiendo! 💛\n\nPuedes empezar por observar cómo se reparten las responsabilidades en casa y pensar en algo que podrían hacer de manera diferente."
+    }
+  ]
+}

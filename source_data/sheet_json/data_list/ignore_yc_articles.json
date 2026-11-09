@@ -1,0 +1,137 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "ignore_yc_articles",
+  "data_list_name": "ignore_yc_articles",
+  "status": "released",
+  "flow_subtype": "modules_ignore_yc",
+  "module": "ignore_yc",
+  "rows": [
+    {
+      "id": "@default",
+      "nested": false
+    },
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Esta sesión trata sobre qué hacer cuando @fields.child_name busca tu atención con **gritos, exigencias o berrinches**.\n\n\nEs normal que a esta edad busque tu atención con comportamientos demandantes, especialmente cuando no puede hacer o tener algo que quiere. \n\nResponder con calma le dará seguridad y hará más probable que se tranquilice. 🌈"
+    },
+    {
+      "id": "intro_2",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Aquí exploraremos cómo prevenir que un comportamiento así escale o que @fields.child_name pierda el control. ⭐"
+    },
+    {
+      "id": "intro_3",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Antes de empezar, reflexionemos un momento📝",
+      "quiz_1_question::eng": "Verdadero o falso: Cuando @fields.child_name hace un berrinche, debes darle lo que quiera para que se tranquilice.",
+      "quiz_1_option_1_text::eng": "Verdadero",
+      "quiz_1_feedback_1::eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nDarle a @fields.child_name lo que pide solo porque hizo un berrinche o te gritó, le enseña que puede obtener lo que quiere comportándose así. \n\nEn vez de recompensar los berrinches o las quejas con tu atención, dale mucha atención y reconocimento cuando se comporte de manera positiva.",
+      "quiz_1_option_2_text::eng": "Falso",
+      "quiz_1_feedback_2::eng": "🎉 ¡Tienes razón!\n\nDarle a @fields.child_name lo que pide solo porque hizo un berrinche o te gritó, le enseña que puede obtener lo que quiere comportándose así. \n\nEn vez de recompensar los berrinches o las quejas con tu atención, dale mucha atención y reconocimento cuando se comporte de manera positiva"
+    },
+    {
+      "id": "intro_4",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "¡Una pregunta más!",
+      "quiz_1_question::eng": "Verdadero o falso: Cuando @fields.child_name empieza a portarse mal, con gritos, exigencias o berrinches, debes amenazar con castigarle para que deje de hacerlo.",
+      "quiz_1_option_1_text::eng": "Verdadero",
+      "quiz_1_feedback_1::eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nReaccionar así podría empeorar las cosas. En vez de eso, intenta redirigirle hacia algo positivo. \n\nSi no funciona, retira tu atención de su comportamiento hasta que se calme. Eso le ayudará a aprender a regular sus emociones y a entender que así no conseguirá lo que quiere.",
+      "quiz_1_option_2_text::eng": "Falso",
+      "quiz_1_feedback_2::eng": "🎉 ¡Tienes razón!\n\nReaccionar así podría empeorar las cosas. En vez de eso, intenta redirigirle hacia algo positivo. \n\nSi no funciona, retira tu atención de su comportamiento hasta que se calme. Eso le ayudará a aprender a regular sus emociones y a entender que así no conseguirá lo que quiere."
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo puedes responder cuando @fields.child_name tenga un comportamiento demandante o haga berrinches.\n\nEn este video te compartimos cinco estrategias recomendadas por especialistas:\n\n1️⃣ TRATA DE REDIRIGIR\n2️⃣ RETIRA LA ATENCIÓN\n3️⃣ MANTÉN LA CALMA\n4️⃣ RECONFORTA\n5️⃣ SÉ CONSTANTE",
+      "media_type": "youtube",
+      "youtube_gb_en_f": "https://www.youtube.com/watch?v=InkNPqnlxrs",
+      "youtube_gb_en_m": "https://www.youtube.com/watch?v=bZs5CgN2ns4"
+    },
+    {
+      "id": "explore_2",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "¡Vamos a ver estas estrategias en la práctica!",
+      "image_asset": "images/comic/behave/ignore_yc_1.svg",
+      "text_2::eng": "@data.characters.f3_padre.name está terminando de comer con su familia cuando @data.characters.f3_hijo_4.name empieza a pedirle más jugo.",
+      "character_1_id": "f3_hijo_4",
+      "character_1_text::eng": "Quiero otro jugo.",
+      "character_2_id": "f3_padre",
+      "character_2_text::eng": "Entiendo, @data.characters.f3_hijo_4.name. Pero la regla es que sólo puedes tomar un vaso de jugo durante la comida, ¿te acuerdas?"
+    },
+    {
+      "id": "explore_3",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/ignore_yc_2.svg",
+      "text_2::eng": "Mira cómo @data.characters.f3_padre.name intenta redirigir a @data.characters.f3_hijo_4.name hacia algo positivo.",
+      "character_1_id": "f3_hijo_4",
+      "character_1_text::eng": "¡Pero YO QUIERO! ¡Dame más!",
+      "character_2_id": "f3_padre",
+      "character_2_text::eng": "Oye, ¿y si mejor traemos el postre? La abuela nos mandó arroz con leche del que te gusta.",
+      "character_3_id": "f3_hijo_4",
+      "character_3_text::eng": "¡Quiero jugo! ¡BUAAAAAA!"
+    },
+    {
+      "id": "explore_4",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/ignore_yc_3.svg",
+      "text_2::eng": "Fíjate cómo @data.characters.f3_padre.name retira la atención del comportamiento demandante de @data.characters.f3_hijo_4.name.",
+      "character_1_id": "f3_hijo_4",
+      "character_1_text::eng": "¡Buaaaaaa! ¡Buaaaaaa!",
+      "character_2_id": "f3_padre",
+      "character_2_text::eng": "@data.characters.f3_hijo_14.name, ¿podrías traer el arroz con leche a la mesa, por favor? Creo que estamos listos para pasar al postre.",
+      "character_3_id": "f3_hijo_4",
+      "character_3_text::eng": "¡BUAAAAAA! ¡BUAAAAAA!"
+    },
+    {
+      "id": "explore_5",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/ignore_yc_4.svg",
+      "text_2::eng": "Aunque no es fácil, @data.characters.f3_padre.name se esfuerzan por mantener la calma.",
+      "character_1_id": "f3_hijo_4",
+      "character_1_text::eng": "¡BUAAAAAA! ¡QUIERO JUGOOO!",
+      "character_2_id": "f3_padre",
+      "character_2_text::eng": "(pensando) Respira hondo. Es importante que yo también me mantenga calmado, porque si no, las cosas se pondrán peor para todos."
+    },
+    {
+      "id": "explore_6",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/ignore_yc_5.svg",
+      "text_2::eng": "Un momento después, @data.characters.f3_hijo_4.name logra tranquilizarse. Mira cómo @data.characters.f3_padre.name y @data.characters.abuela_1.name vuelven a darle su atención con calidez y afecto.",
+      "character_1_id": "f3_padre",
+      "character_1_text::eng": "Me gusta verte tranquilo, @data.characters.f3_hijo_4.name. ¿Te sientes mejor?",
+      "character_2_id": "f3_hijo_4",
+      "character_2_text::eng": "Sí…",
+      "character_3_id": "abuela_1",
+      "character_3_text::eng": "Ten tu arroz con leche, @data.characters.f3_hijo_4.name. ¡Lo preparé con mucho cariño para ti!\n"
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Ya viste cómo @data.characters.f3_padre.name usó las estrategias.\n\n\nVamos a recordarlas una vez más para que respondas cuando @fields.child_name tenga un comportamiento demandante o haga berrinches:",
+      "section_1_title::eng": "TRATA DE REDIRIGIR",
+      "section_1_text::eng": "Trata de dirigir su atención a algo positivo antes de que su comportamiento empeore, como una canción, un juego u otra actividad. \n\nRecuerda reconocer si cambia su comportamiento.",
+      "section_2_title::eng": "RETIRA LA ATENCIÓN",
+      "section_2_text::eng": "Si redirigir no funciona, desvía tu atención del comportamiento difícil y evita discutir, explicarle de nuevo o repetir que no. \n\nMantente cerca, en calma y dale espacio para tranquilizarse. Así sabrá que sigues ahí para acompañarle mientras se calma, pero que no va a conseguir tu atención.",
+      "section_3_title::eng": "MANTÉN LA CALMA",
+      "section_3_text::eng": "Tal vez sientas el impulso de responder rápido o reaccionar de otra forma. Es importante respirar profundo, no ceder y mantenerse en calma.",
+      "section_4_title::eng": "RECONFORTA",
+      "section_4_text::eng": "Una vez que se calme, dale tu atención de nuevo con calidez y afecto. Reconócele por calmarse y evita regañarle o hablar sobre lo que pasó en ese momento.",
+      "section_5_title::eng": "SÉ CONSTANTE",
+      "section_5_text::eng": "Responde de la misma forma cada vez y evita ceder, aún si el comportamiento empeora al principio. \n\nSi es posible, pídele a otras personas de la familia que traten de responder igual."
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "text_1_facilitator::eng": "¡Ahora es tu turno!\n\nPiensa en una conducta difícil que @fields.child_name tenga con frecuencia, como llorar, gritar o hacer un berrinche para conseguir algo. También puedes pensar en una situación que te haya costado manejar. \n\nLuego, identifica qué podrías hacer si vuelve a suceder. Piensa cómo usarías las estrategias que aprendiste en esta sesión. Si puedes, escríbelo e intenta ponerlo en práctica cuando tengas oportunidad.\n",
+      "text_2::eng": "Por ejemplo:\n📝 @fields.child_name llora y grita porque no quiere bañarse. ¿Qué puedo hacer?\n\n- _Hago una pausa, respiro y observo_: ¿Qué necesita?\n- _Intento redirigir_: Le propongo llevar su juguete favorito al baño. Si sigue llorando, mantengo la calma y no cedo ante los gritos.\n- _Reconforto y reconozco_: Cuando se calma, le doy cariño y reconozco su esfuerzo.\n",
+      "quiz_1_question::eng": "¿Puedes hacerlo esta semana?",
+      "quiz_1_option_1_text::eng": "Sí",
+      "quiz_1_feedback_1::eng": "¡Muy bien! 🎉\n\nRecuerda reconocer a @fields.child_name cuando logre calmarse. Esto puede ayudarle a repetir ese comportamiento positivo.",
+      "quiz_1_option_2_text::eng": "Lo intentaré",
+      "quiz_1_feedback_2::eng": "¡Qué bien! 🙌\n\nCon paciencia y práctica puedes ir encontrando lo que funciona mejor. Recuerda reconocer a @fields.child_name cuando logre calmarse.",
+      "quiz_1_option_3_text::eng": "No",
+      "quiz_1_feedback_3::eng": "¡Lo entiendo! Manejar estas situaciones puede ser difícil. 😊\n\nPuedes empezar por recordar qué te ha funcionado antes para ayudar a @fields.child_name a calmarse."
+    }
+  ]
+}

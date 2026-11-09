@@ -1,0 +1,159 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "family_rules_yc_articles",
+  "data_list_name": "family_rules_yc_articles",
+  "status": "released",
+  "flow_subtype": "modules_family_rules_yc",
+  "module": "family_rules_yc",
+  "rows": [
+    {
+      "id": "@default",
+      "nested": false
+    },
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Esta sesión trata sobre cómo **establecer reglas o acuerdos** junto con @fields.child_name.\n\n\nTal vez ahora acostumbras poner las reglas de casa por tu cuenta. Pero dejar que @fields.child_name participe en su creación puede contribuir a que sienta más seguridad y protección. 🤝"
+    },
+    {
+      "id": "intro_2",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Aquí exploraremos cómo acordar reglas en familia junto con @fields.child_name para ayudar a que sean más fáciles de seguir y recordar. 💡"
+    },
+    {
+      "id": "intro_3",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Antes de empezar, reflexionemos un momento📝",
+      "quiz_1_question::eng": "Verdadero o falso: Solo tú y las personas adultas con quienes compartes la crianza deben decidir las reglas familiares, porque @fields.child_name es muy joven para opinar.",
+      "quiz_1_option_1_text::eng": "Verdadero",
+      "quiz_1_feedback_1::eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nIncluir a @fields.child_name en la plática sobre las reglas familiares le muestra que le aprecias y escuchas. \n\nAdemás, es más probable que siga una regla si participó en su creación.",
+      "quiz_1_option_2_text::eng": "Falso",
+      "quiz_1_feedback_2::eng": "🎉 ¡Tienes razón!\n\nIncluir a @fields.child_name en la plática sobre las reglas familiares le muestra que le aprecias y escuchas. \n\nAdemás, es más probable que siga una regla si participó en su creación."
+    },
+    {
+      "id": "intro_4",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "¡Una pregunta más!",
+      "quiz_1_question::eng": "Verdadero o falso: Poner reglas y rutinas a @fields.child_name impide que explore y piense por su cuenta.",
+      "quiz_1_option_1_text::eng": "Verdadero",
+      "quiz_1_feedback_1::eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nEstablecer límites razonables, como las rutinas, le permite a @fields.child_name explorar el mundo con seguridad. \n\nConforme crece, puedes ir ajustando las reglas para darle más libertad, poco a poco y sin ponerle en riesgo.",
+      "quiz_1_option_2_text::eng": "Falso",
+      "quiz_1_feedback_2::eng": "🎉 ¡Tienes razón!\n\nEstablecer límites razonables, como las rutinas, le permite a @fields.child_name explorar el mundo con seguridad. \n\nConforme crece, puedes ir ajustando las reglas para darle más libertad, poco a poco y sin ponerle en riesgo."
+    },
+    {
+      "id": "intro_5",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "¡Última pregunta!",
+      "quiz_1_question::eng": "Verdadero o falso: Para establecer los acuerdos familiares, debemos tomar en cuenta la edad y las necesidades de cada persona, no solo si es niña o niño.",
+      "quiz_1_option_1_text::eng": "Verdadero",
+      "quiz_1_feedback_1::eng": "🎉 ¡Tienes razón!\n\nLos acuerdos familiares pueden ser diferentes según la edad y las necesidades de cada persona. Lo importante es dar las mismas oportunidades a niñas y niños, sin decidir solo por su género.\n\n\nPor ejemplo, cada familia puede decidir cómo compartir las tareas de la casa, en vez de asignar algunas en automático a las niñas y otras a los niños.",
+      "quiz_1_option_2_text::eng": "Falso",
+      "quiz_1_feedback_2::eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nLos acuerdos familiares pueden ser diferentes según la edad y las necesidades de cada persona. Lo importante es dar las mismas oportunidades a niñas y niños, sin decidir solo por su género.\n\n\nPor ejemplo, cada familia puede decidir cómo compartir las tareas de la casa, en vez de asignar algunas en automático a las niñas y otras a los niños."
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo puedes crear reglas familiares con @fields.child_name.\n\nEn este video te compartimos cuatro estrategias recomendadas por especialistas:\n\n1️⃣ SEAN EQUIPO\n2️⃣ SÉ REALISTA\n3️⃣ SÉ CONSTANTE\n4️⃣ RECONOCE",
+      "media_type": "youtube"
+    },
+    {
+      "id": "explore_2",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "¡Vamos a ver estas estrategias en la práctica!",
+      "image_asset": "images/comic/behave/family_rules_yc_1.svg",
+      "text_2::eng": "@data.characters.f1_madre.name quiere acordar con @data.characters.f1_hijo_5.name una regla sobre su tiempo de pantallas.",
+      "character_1_id": "f1_madre",
+      "character_1_text::eng": "Oye, @data.characters.f1_hijo_5.name, últimamente pasas mucho tiempo viendo la tele y me gustaría que acordemos una regla sobre eso.",
+      "character_2_id": "f1_hijo_5",
+      "character_2_text::eng": "¡Pero yo quiero ver la tele!",
+      "character_3_id": "f1_madre",
+      "character_3_text::eng": "Sí podrás verla, pero vamos a poner un límite para asegurar que hagas tu tarea a tiempo y te vaya bien en la escuela."
+    },
+    {
+      "id": "explore_3",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/family_rules_yc_2.svg",
+      "text_2::eng": "Mira cómo @data.characters.f1_madre.name trabaja en equipo con @data.characters.f1_hijo_5.name para acordar la regla y se asegura de que sea realista.",
+      "character_1_id": "f1_madre",
+      "character_1_text::eng": "¿Cuál crees que podría ser un acuerdo adecuado para los dos?",
+      "character_2_id": "f1_hijo_5",
+      "character_2_text::eng": "Mmm… que puedo ver la tele, pero solo después de hacer la tarea.",
+      "character_3_id": "f1_madre",
+      "character_3_text::eng": "Me gusta esa idea. ¿Y qué te parece si lo limitamos a una hora al día?"
+    },
+    {
+      "id": "explore_4",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/family_rules_yc_3.svg",
+      "text_2::eng": "@data.characters.f1_madre.name le cuenta a @data.characters.f1_padre.name lo que acordaron, para que ambos apliquen la regla igual.",
+      "character_1_id": "f1_madre",
+      "character_1_text::eng": "Oye, hoy hablé con @data.characters.f1_hijo_5.name y acordamos una regla sobre ver la tele.",
+      "character_2_id": "f1_padre",
+      "character_2_text::eng": "¡Qué bien! Cuenta conmigo para cumplirla. ¿Qué acordaron?",
+      "character_3_id": "f1_madre",
+      "character_3_text::eng": "Quedamos en que puede ver la tele una hora al día, pero solo después de terminar la tarea."
+    },
+    {
+      "id": "explore_5",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/family_rules_yc_4.svg",
+      "text_2::eng": "Al día siguiente, @data.characters.f1_padre.name se asegura de cumplir la regla acordada.",
+      "character_1_id": "f1_hijo_5",
+      "character_1_text::eng": "Papá, ¿puedo ver la tele?",
+      "character_2_id": "f1_padre",
+      "character_2_text::eng": "¿Ya acabaste tu tarea?",
+      "character_3_id": "f1_hijo_5",
+      "character_3_text::eng": "Mmm… Todavía no."
+    },
+    {
+      "id": "explore_6",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/family_rules_yc_4.svg",
+      "text_2::eng": "Fíjate cómo le recuerda a @data.characters.f1_hijo_5.name la regla para poder mantenerse constantes.",
+      "character_1_text::eng": "Recuerda que la regla que acordaste con tu mamá es que la tarea tiene que estar terminada antes de poder ver la tele.",
+      "character_2_text::eng": "Sí, es cierto… Ya voy a hacerla."
+    },
+    {
+      "id": "explore_7",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/family_rules_yc_5.svg",
+      "text_2::eng": "@data.characters.f1_padre.name reconoce cuando @data.characters.f1_hijo_5.name cumple la regla, para animarlo a seguir así.",
+      "character_1_id": "f1_hijo_5",
+      "character_1_text::eng": "¡Terminé la tarea! ¿Ya puedo ver la tele?",
+      "character_2_id": "f1_padre",
+      "character_2_text::eng": "¡Sí! Gracias por ser tan dedicado. Estoy orgulloso de cómo cumpliste la regla que acordamos. ¿Te puedo acompañar? ¡Tú puedes escoger qué vemos!",
+      "character_3_id": "f1_hijo_5",
+      "character_3_text::eng": "¡Sííí!"
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Ya viste cómo @data.characters.f1_madre.name y @data.characters.f1_padre.name usaron las estrategias.\n\n\nVamos a recordarlas una vez más para que crees reglas familiares con @fields.child_name:",
+      "section_1_title::eng": "SEAN EQUIPO",
+      "section_1_icon_asset": "images/icons/heart_filled_blue.png",
+      "section_1_text::eng": "Crea las reglas junto con @fields.child_name. Hablen de por qué se necesita y escucha su punto de vista. Involucra a las personas con las que compartes la crianza.",
+      "section_2_title::eng": "SÉ REALISTA",
+      "section_2_icon_asset": "images/icons/star_outline_blue.svg",
+      "section_2_text::eng": "Asegúrate de que la regla sea algo que de verdad pueda cumplir, según su edad, sus experiencias y sus actividades.",
+      "section_3_title::eng": "SÉ CONSTANTE",
+      "section_3_icon_asset": "images/icons/trophy_blue.png",
+      "section_3_text::eng": "Una vez que acuerden una regla, apéguense a ella para convertirla en un hábito. Si la regla te incluye a ti, cúmplela también. \n\nSi compartes la crianza con alguien más, pónganse de acuerdo para aplicarla de la misma forma.",
+      "section_4_title::eng": "RECONOCE",
+      "section_4_icon_asset": "images/icons/spark.png",
+      "section_4_text::eng": "Reconoce a @fields.child_name por colaborar contigo para crear la regla. Reconócelo también cada vez que la cumpla."
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "text_1_facilitator::eng": "¡Ahora es tu turno!\n\nCrea una regla familiar con @fields.child_name, utilizando las estrategias que revisamos. 😊",
+      "text_2::eng": "Por ejemplo:\n\n- Un límite de tiempo para el celular o la tele\n- Una hora fija para ir a dormir\n- Una tarea en la casa que le toque hacer\n- Terminar la tarea antes de jugar",
+      "quiz_1_question::eng": "¿Puedes hacerlo esta semana?",
+      "quiz_1_option_1_text::eng": "Sí",
+      "quiz_1_feedback_1::eng": "¡Qué bueno escuchar eso! Involucrar a @fields.child_name hará más probable que siga esa regla. 🎉\n\nRecuerda involucrar también a las personas con quienes compartes la crianza.",
+      "quiz_1_option_2_text::eng": "Lo intentaré",
+      "quiz_1_feedback_2::eng": "¡Qué bueno escuchar eso! Involucrar a @fields.child_name hará más probable que siga esa regla.🙌\n\nRecuerda involucrar también a las personas con quienes compartes la crianza.",
+      "quiz_1_option_3_text::eng": "No",
+      "quiz_1_feedback_3::eng": "¡Lo entiendo! 😊\n\nPuedes empezar con platicar sobre una regla que ya cumplen en la práctica. Involucrar a @fields.child_name hará más probable que la siga."
+    }
+  ]
+}

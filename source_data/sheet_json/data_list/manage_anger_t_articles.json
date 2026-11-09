@@ -1,0 +1,140 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "manage_anger_t_articles",
+  "data_list_name": "manage_anger_t_articles",
+  "status": "released",
+  "flow_subtype": "modules_manage_anger_t",
+  "module": "manage_anger_t",
+  "rows": [
+    {
+      "id": "@default",
+      "nested": false
+    },
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Esta sesión trata sobre cómo responder a @fields.child_name cuando estás en **una situación que te hace sentir enojo**.\n\n\nEs natural y válido sentir enojo cuando algo no sale como esperabas. Sin embargo, cuando se sale de control puede llevarnos a actuar de formas que nos dañen o dañen a los demás. ❤️‍🩹"
+    },
+    {
+      "id": "intro_2",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Aquí explorarás cómo reconocer tu enojo y aprender a regularlo, para tomar mejores decisiones y cuidar de ti y de tu familia. 😊"
+    },
+    {
+      "id": "intro_3",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Antes de empezar, reflexionemos un momento📝",
+      "quiz_1_question::eng": "Verdadero o falso: Está bien alzarle la voz o gritarle a @fields.child_name cuando siento enojo.",
+      "quiz_1_option_1_text::eng": "Verdadero",
+      "quiz_1_feedback_1::eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nEs normal sentir enojo, pero gritar puede hacer que @fields.child_name sienta miedo o estrés. \n\nCuando aprendemos a regular nuestro enojo, podemos pensar con claridad y responder con calma.",
+      "quiz_1_option_2_text::eng": "Falso",
+      "quiz_1_feedback_2::eng": "🎉 ¡Tienes razón!\n\nEs normal sentir enojo, pero gritar puede hacer que @fields.child_name sienta miedo o estrés. \n\nCuando aprendemos a regular nuestro enojo, podemos pensar con claridad y responder con calma."
+    },
+    {
+      "id": "intro_4",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "¡Una pregunta más!",
+      "quiz_1_question::eng": "Verdadero o falso: @fields.child_name no debería enojarse conmigo.",
+      "quiz_1_option_1_text::eng": "Verdadero",
+      "quiz_1_feedback_1::eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nEs normal que @fields.child_name también sienta enojo. \n\nCuando lo exprese, en vez de regañarle, toma una pausa, mantén la calma y ayúdale a regular sus emociones. Ver cómo lo haces tú puede enseñarle cómo lidiar con su propio enojo.",
+      "quiz_1_option_2_text::eng": "Falso",
+      "quiz_1_feedback_2::eng": "🎉 ¡Tienes razón!\n\nEs normal que @fields.child_name también sienta enojo. \n\nCuando lo exprese, en vez de regañarle, toma una pausa, mantén la calma y ayúdale a regular sus emociones. Ver cómo lo haces tú puede enseñarle cómo lidiar con su propio enojo."
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo puedes empezar a reconocer tu enojo y aprender a manejarlo mejor.\n\nEn este video te compartimos cuatro estrategias recomendadas por especialistas:\n\n1️⃣ IDENTIFICA\n2️⃣ PAUSA\n3️⃣ COMPRENDE\n4️⃣ RESPONDE CON CALMA",
+      "media_type": "youtube",
+      "youtube_gb_en_f": "https://www.youtube.com/watch?v=S8dWc17pU7s"
+    },
+    {
+      "id": "explore_2",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "¡Vamos a ver estas estrategias en la práctica!",
+      "image_asset": "images/comic/behave/manage_anger_t_1.svg",
+      "text_2::eng": "@data.characters.f3_padre.name llega a casa cansado y se encuentra con @data.characters.f3_hijo_14.name en la cocina.",
+      "character_1_id": "f3_padre",
+      "character_1_text::eng": "¡Hola, @data.characters.f3_hijo_14.name! Al fin estoy en casa... ¡Ay, cómo me duelen los pies! Necesito sentarme un momentito.",
+      "character_2_id": "f3_hijo_14",
+      "character_2_text::eng": "¡Hola, papá! ¿Cómo te fue?"
+    },
+    {
+      "id": "explore_3",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/manage_anger_t_2.svg",
+      "text_2::eng": "En ese momento, @data.characters.f3_padre.name se da cuenta de algo que le molesta.",
+      "character_1_id": "f3_padre",
+      "character_1_text::eng": "(Viendo el plato vacío) ¿Te comiste los tamales? ¡Eran para la cena!",
+      "character_2_id": "f3_hijo_14",
+      "character_2_text::eng": "Perdón, pa, ¡no sabía!"
+    },
+    {
+      "id": "explore_4",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/manage_anger_t_3.svg",
+      "text_2::eng": "Fíjate cómo @data.characters.f3_padre.name identifica su enojo y hace una pausa para respirar.",
+      "character_1_id": "f3_padre",
+      "character_1_text::eng": "(Pensando) ¿Cómo que no sabía? ¡Si le dije que hoy íbamos a cenar tamales con sus abuelos! Uff, siento la cara caliente, estoy muy enojado. Necesito hacer una pausa y respirar profundo. Tal vez tiene una explicación..."
+    },
+    {
+      "id": "explore_5",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/manage_anger_t_4.svg",
+      "text_2::eng": "Mira cómo @data.characters.f3_padre.name reconoce sus emociones y qué necesita para poder tranquilizarse y enfrentar el problema.",
+      "character_1_id": "f3_padre",
+      "character_1_text::eng": "Ay, @data.characters.f3_hijo_14.name. Es que van a venir tus abuelos y quedamos en cenar tamales. Ahora me preocupa que no alcancen para todos.",
+      "character_2_id": "f3_hijo_14",
+      "character_2_text::eng": "De verdad perdón, papá. Lo olvidé... Es que tenía mucha hambre.",
+      "character_3_id": "f3_padre",
+      "character_3_text::eng": "A ver, ayúdame a preparar un té y lo platicamos. Tuve un día largo y no me siento muy bien."
+    },
+    {
+      "id": "explore_6",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/manage_anger_t_5.svg",
+      "text_2::eng": "Luego, @data.characters.f3_padre.name se interesa por entender qué pasó y escucha a @data.characters.f3_hijo_14.name.",
+      "character_1_id": "f3_padre",
+      "character_1_text::eng": "Muchas gracias. Ahora sí, cuéntame, ¿por qué tenías tanta hambre? ¿No te comiste lo que te mandamos para la escuela?",
+      "character_2_id": "f3_hijo_14",
+      "character_2_text::eng": "Ese es el problema. Hay un compañero que me molesta y hoy me quitó mi comida. Me dijo que me iba a ir peor si no se la daba."
+    },
+    {
+      "id": "explore_7",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/manage_anger_t_6.svg",
+      "text_2::eng": "Ya tranquilo, @data.characters.f3_padre.name puede buscar soluciones a la situación junto con @data.characters.f3_hijo_14.name.",
+      "character_1_id": "f3_padre",
+      "character_1_text::eng": "Gracias por contarme, @data.characters.f3_hijo_14.name. Siento mucho que te haya pasado eso. ¿Quieres contarme más a ver si encontramos una solución?",
+      "character_2_id": "f3_hijo_14",
+      "character_2_text::eng": "Sí, estaría bien. Gracias, pa.",
+      "character_3_id": "f3_padre",
+      "character_3_text::eng": "No hay de qué. Y después vamos a revisar si todavía nos alcanzan los tamales, o te va a tocar ir por más."
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Ya viste cómo @data.characters.f3_padre.name usó las estrategias. \n\n\nVamos a recordarlas una vez más para que puedas reconocer tu enojo y regularlo mejor:",
+      "section_1_title::eng": "IDENTIFICA",
+      "section_1_text::eng": "Nota cómo se siente el enojo en tu cuerpo: el corazón acelerado, músculos tensos o la cara caliente. Identificar estas señales es el primer paso para responder mejor.",
+      "section_2_title::eng": "PAUSA",
+      "section_2_text::eng": "Haz una pausa y respira profundo. Si sientes que no puedes controlar tu enojo, aléjate un momento.",
+      "section_3_title::eng": "COMPRENDE",
+      "section_3_text::eng": "Pregúntate \"¿Qué está pasando en este momento? ¿Qué necesita @fields.child_name? ¿Qué necesito yo?\". En vez de reaccionar de forma negativa, trata de encontrar una solución con calma.",
+      "section_4_title::eng": "RESPONDE CON CALMA",
+      "section_4_text::eng": "Cuando ya estés en calma, habla con @fields.child_name sobre lo que pasó, cómo te sientes y por qué. Deja que comparta también su versión de la historia. \n\nTraten de llegar a acuerdos para la siguiente vez. Expresar tus emociones de forma abierta le enseña a hacerlo también."
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "text_1_facilitator::eng": "¡Ahora es tu turno!\n\nLa próxima vez que sientas enojo, recuerda los pasos clave para manejarlo: identifica cómo te sientes, haz una pausa, trata de comprender qué está pasando y qué necesitan tú y @fields.child_name, y responde con calma. 😊",
+      "text_2::eng": "Puedes empezar por notar cómo sientes el enojo en tu cuerpo y tu mente, y practicar hacer una pausa antes de reaccionar. Luego intenta sumar los otros dos pasos.",
+      "quiz_1_question::eng": "¿Puedes hacerlo esta semana?",
+      "quiz_1_option_1_text::eng": "Sí",
+      "quiz_1_feedback_1::eng": "¡Muy bien! 🎉\n\nComparte lo que aprendiste sobre el enojo con @fields.child_name y con las personas con quienes compartes la crianza, ¡les puede servir también!",
+      "quiz_1_option_2_text::eng": "Lo intentaré",
+      "quiz_1_feedback_2::eng": "¡Está bien! Lo que importa es empezar. 🙌\n\nComparte lo que aprendiste sobre el enojo con @fields.child_name y con las personas con quienes compartes la crianza, ¡les puede servir también!",
+      "quiz_1_option_3_text::eng": "No",
+      "quiz_1_feedback_3::eng": "¡Lo entiendo! Hacer cosas nuevas puede ser difícil al principio. 😊\n\nPuedes empezar por intentar recordar las estrategias de esta sesión la próxima vez que sientas que el enojo empieza a crecer."
+    }
+  ]
+}
