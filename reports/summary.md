@@ -98,8 +98,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 17521 KB | 17.5 MB |
-| unused | 177897 KB | 177.9 MB |
+| total | 19032 KB | 19 MB |
+| unused | 177984 KB | 178 MB |
 </details>
 
 <details open>
@@ -315,6 +315,7 @@ Assets that appear in app-data but do not have references within sheets
 | images/icons/verified.svg | 0.5 |
 | images/icons/world.svg | 6.2 |
 | images/logos/crianza_logo_horizontal.png | 21.9 |
+| images/logos/icon-foreground.png | 86.2 |
 | lottie/ux/bulging_circles.txt | 0.2 |
 </details>
 
@@ -723,8 +724,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/character_icons/F3_MADRE.svg | 4.6 | 1 |
 | images/character_icons/F3_PADRE.svg | 5.1 | 1 |
 | images/character_icons/PROFESOR_1.svg | 5.9 | 1 |
-| images/character_icons/facilitator_female.svg | 1258.9 | 2 |
-| images/character_icons/facilitator_male.svg | 3596.6 | 2 |
+| images/character_icons/facilitator_female.png | 2354 | 2 |
+| images/character_icons/facilitator_male.png | 4012.9 | 2 |
 | images/comic/relation/calm/calm_t_fc_1.svg | 19.2 | 2 |
 | images/comic/relation/calm/calm_t_fc_2.svg | 19.4 | 2 |
 | images/comic/relation/calm/calm_t_fc_3.svg | 10.5 | 2 |
