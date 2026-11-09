@@ -1,0 +1,106 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "keep_positive_yc_articles",
+  "data_list_name": "keep_positive_yc_articles",
+  "status": "released",
+  "flow_subtype": "modules_keep_positive_yc",
+  "module": "keep_positive_yc",
+  "rows": [
+    {
+      "id": "@default",
+      "nested": false
+    },
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Esta sesión trata sobre cómo ayudar a @fields.child_name a **seguir instrucciones**.\n\n\nEs normal que a veces se te dificulte que @fields.child_name siga tus indicaciones. Aprender a hacerlo es parte de su desarrollo, pero la forma en que se las comunicas puede facilitar las cosas. 💬"
+    },
+    {
+      "id": "intro_2",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Aquí explorarás cómo dar instrucciones claras y positivas para contribuir a que las cosas sean más tranquilas en casa. 😊"
+    },
+    {
+      "id": "intro_3",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Antes de empezar, reflexionemos un momento📝",
+      "quiz_1_question::eng": "Verdadero o falso: @fields.child_name debe seguir tus instrucciones, sin importar cómo se las des.",
+      "quiz_1_option_1_text::eng": "Verdadero",
+      "quiz_1_feedback_1::eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nLa forma en que le pides las cosas a @fields.child_name sí importa. Una instrucción funciona mejor si dices exactamente qué quieres que haga. \n\nDecirlo en negativo, como \"¡No hagas eso!\" puede ser confuso y llevar a otro resultado.",
+      "quiz_1_option_2_text::eng": "Falso",
+      "quiz_1_feedback_2::eng": "🎉 ¡Tienes razón!\n\nLa forma en que le pides las cosas a @fields.child_name sí importa. Una instrucción funciona mejor si dices exactamente qué quieres que haga. \n\nDecirlo en negativo, como \"¡No hagas eso!\" puede ser confuso y llevar a otro resultado."
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo puedes ayudar a @fields.child_name a seguir instrucciones.\n\nEn este video te compartimos cuatro estrategias recomendadas por especialistas:\n\n1️⃣ ESPECIFICA\n2️⃣ HABLA EN POSITIVO\n3️⃣ SÉ REALISTA\n4️⃣ RECONOCE",
+      "media_type": "youtube"
+    },
+    {
+      "id": "explore_2",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "¡Vamos a ver estas estrategias en la práctica!",
+      "image_asset": "images/comic/behave/keep_positive_yc_1.svg",
+      "text_2::eng": "Mira cómo @data.characters.f3_madre.name le dice a @data.characters.f3_hija_7.name qué quiere que pase y cuándo.",
+      "character_1_id": "f3_madre",
+      "character_1_text::eng": "Gracias por jugar con el volumen bajito mientras recojo la mesa, @data.characters.f3_hija_7.name. En 3 minutos será la hora de acostarte y me vas a regresar el teléfono, por favor.",
+      "character_2_id": "f3_hija_7",
+      "character_2_text::eng": "Está bien, mamá."
+    },
+    {
+      "id": "explore_3",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/keep_positive_yc_2.svg",
+      "text_2::eng": "Fíjate cómo @data.characters.f3_madre.name le da instrucciones claras y usa un tono firme, pero amable.",
+      "character_1_id": "f3_madre",
+      "character_1_text::eng": "Se acabaron los 3 minutos, @data.characters.f3_hija_7.name. Por favor, dame el celular."
+    },
+    {
+      "id": "explore_4",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/keep_positive_yc_3.svg",
+      "text_2::eng": "Nota cómo @data.characters.f3_madre.name le da una instrucción a la vez y reconoce cuando @data.characters.f3_hija_7.name le hace caso.",
+      "character_1_id": "f3_hija_7",
+      "character_1_text::eng": "Ten...",
+      "character_2_id": "f3_madre",
+      "character_2_text::eng": "(sonriendo) Gracias por dármelo cuando te lo pedí, @data.characters.f3_hija_7.name. Ahora guarda tus juguetes en su lugar, por favor. Yo te ayudo.",
+      "character_3_id": "f3_hija_7",
+      "character_3_text::eng": "Está bien, mamá."
+    },
+    {
+      "id": "explore_5",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/keep_positive_yc_4.svg",
+      "text_2::eng": "@data.characters.f3_madre.name reconoce una vez más a @data.characters.f3_hija_7.name, para que quiera volver a comportarse así.",
+      "character_1_id": "f3_madre",
+      "character_1_text::eng": "(sonriendo) Gracias por recoger tus juguetes. Vamos a prepararnos para dormir y después, ¡a leer un cuento!",
+      "character_2_id": "f3_hija_7",
+      "character_2_text::eng": "¡Sí!"
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Ya viste cómo @data.characters.f3_madre.name usó las estrategias.\n\n\nVamos a recordarlas una vez más para que des instrucciones claras y efectivas a @fields.child_name:",
+      "section_1_title::eng": "ESPECIFICA",
+      "section_1_text::eng": "Di exactamente el comportamiento qué quieres y, si es posible, indicando el tiempo en el que esperas que se cumpla. Llámale por su nombre para atraer su atención.",
+      "section_2_title::eng": "HABLA EN POSITIVO",
+      "section_2_text::eng": "Di lo que sí quieres que pase, en vez de lo que no quieres. Por ejemplo, en vez de \"no grites\", di \"habla más bajito\". Asegúrate también de decirlo como afirmación, en vez de como una pregunta.",
+      "section_3_title::eng": "SÉ REALISTA",
+      "section_3_text::eng": "Da una instrucción a la vez y asegúrate de que sea algo que puede cumplir, según su edad y sus habilidades.",
+      "section_4_title::eng": "RECONOCE",
+      "section_4_text::eng": "Reconoce de inmediato cuando haga lo que le pides. Así aprende que aprecias cuando lo hace y es más probable que lo vuelva a hacer."
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "text_1_facilitator::eng": "¡Ahora es tu turno!\n\nIntenta poner en práctica las estrategias que aprendiste hoy la próxima vez que le des una instrucción a @fields.child_name: especifica qué comportamiento esperas, habla en positivo, sé realista y reconoce. 😊",
+      "quiz_1_question::eng": "¿Puedes hacerlo esta semana?",
+      "quiz_1_option_1_text::eng": "Sí",
+      "quiz_1_feedback_1::eng": "¡Qué bien! 🎉\n\nRecuerda reconocerle en cuanto siga tus instrucciones y observar la forma en que responde cuando le pides las cosas así.",
+      "quiz_1_option_2_text::eng": "Lo intentaré",
+      "quiz_1_feedback_2::eng": "¡Está bien! No tiene que salir perfecto la primera vez.🙌\n\nRecuerda reconocerle en cuanto siga tus instrucciones y observar la forma en que responde cuando le pides las cosas así.",
+      "quiz_1_option_3_text::eng": "No",
+      "quiz_1_feedback_3::eng": "¡Lo entiendo! Aprender algo nuevo requiere esfuerzo.😊\n\nPuedes empezar practicando con una instrucción que le des muy seguido y observando si responde de forma diferente."
+    }
+  ]
+}

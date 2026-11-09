@@ -1,0 +1,128 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "solve_problem_yc_articles",
+  "data_list_name": "solve_problem_yc_articles",
+  "status": "released",
+  "flow_subtype": "modules_solve_problem_yc",
+  "module": "solve_problem_yc",
+  "rows": [
+    {
+      "id": "@default",
+      "nested": false
+    },
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Esta sesión trata sobre cómo **enfrentar los retos y problemas junto con @fields.child_name.**\n\n\nLos retos y problemas son una parte normal de la vida familiar. Aprender a resolverlos como equipo les ayudará a entender qué pasa, buscar diferentes soluciones y elegir juntos la mejor. 🧩"
+    },
+    {
+      "id": "intro_2",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Aquí exploraremos cómo puedes contribuir a que @fields.child_name aumente su confianza y empiece a encontrar soluciones a los retos por su cuenta.💡"
+    },
+    {
+      "id": "intro_3",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Antes de empezar, reflexionemos un momento📝",
+      "quiz_1_question::eng": "Verdadero o falso: Cuando @fields.child_name tiene un problema, mi responsabilidad es resolverlo.",
+      "quiz_1_option_1_text::eng": "Verdadero",
+      "quiz_1_feedback_1::eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nResolver el problema por tu cuenta puede ser más rápido, pero @fields.child_name aprende más cuando le acompañas a buscar una solución. Esto le ayuda a aprender a resolver problemas por sí mismo y le demuestra que sus ideas son importantes.",
+      "quiz_1_option_2_text::eng": "Falso",
+      "quiz_1_feedback_2::eng": "🎉 ¡Tienes razón!\n\nResolver el problema por tu cuenta puede ser más rápido, pero @fields.child_name aprende más cuando le acompañas a buscar una solución. Esto le ayuda a aprender a resolver problemas por sí mismo y le demuestra que sus ideas son importantes."
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo puedes resolver problemas junto con @fields.child_name.\n\nEn este video te compartimos cuatro estrategias recomendadas por especialistas:\n\n1️⃣ CONÓCELO\n2️⃣ PIENSEN EN EQUIPO\n3️⃣ INTÉNTENLO\n4️⃣ COMPRUÉBALO",
+      "media_type": "youtube",
+      "youtube_gb_en_f": "https://www.youtube.com/watch?v=dfVQnWuyR20&list=PLSUp-fKSYJUbJGZ7OlCtJvOlLuEQ_2yTU&index=1",
+      "youtube_gb_en_m": "https://www.youtube.com/watch?v=xXhudBgoLvU"
+    },
+    {
+      "id": "explore_2",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "¡Vamos a ver estas estrategias en la práctica!",
+      "image_asset": "images/comic/behave/solve_problem_yc_1.svg",
+      "text_2::eng": "@data.characters.f1_padre.name está revisando sus pendientes mientras @data.characters.f1_hijo_5.name y @data.characters.f1_hija_6.name juegan. De pronto, empiezan a discutir.",
+      "character_1_id": "f1_hijo_5",
+      "character_1_text::eng": "¡Dámelo!",
+      "character_2_id": "f1_hija_6",
+      "character_2_text::eng": "¡Nooo! ¡Es mío!"
+    },
+    {
+      "id": "explore_3",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/solve_problem_yc_2.svg",
+      "text_2::eng": "Mira cómo @data.characters.f1_padre.name primero se acerca a entender qué está pasando y escuchar cómo ve cada quien el problema.",
+      "character_1_id": "f1_padre",
+      "character_1_text::eng": "¿Qué está pasando aquí? Cuéntenme.",
+      "character_2_id": "f1_hijo_5",
+      "character_2_text::eng": "¡Ella me lo quitó! Yo lo necesito para mi casa.",
+      "character_3_id": "f1_hija_6",
+      "character_3_text::eng": "¡No es cierto! Yo lo tenía primero. Él tiene otros ahí."
+    },
+    {
+      "id": "explore_4",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/solve_problem_yc_3.svg",
+      "text_2::eng": "Fíjate cómo @data.characters.f1_padre.name los guía para pensar soluciones entre todos, en vez de decirles qué hacer.",
+      "character_1_id": "f1_padre",
+      "character_1_text::eng": "¿Qué se les ocurre que podríamos hacer para resolverlo?",
+      "character_2_id": "f1_hija_6",
+      "character_2_text::eng": "Puedo usarlo primero yo."
+    },
+    {
+      "id": "explore_5",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/solve_problem_yc_3.svg",
+      "text_2::eng": "Así es como @data.characters.f1_hija_6.name y @data.characters.f1_hijo_5.name logran encontrar una solución por su cuenta. ",
+      "character_1_id": "f1_padre",
+      "character_1_text::eng": "¡Es una buena idea, @data.characters.f1_hija_6.name! Podrían tomar turnos. ¿Se les ocurre otra solución?",
+      "character_2_id": "f1_hijo_5",
+      "character_2_text::eng": "¿Y si hacemos una casa entre los dos?",
+      "character_3_id": "f1_hija_6",
+      "character_3_text::eng": "¡Sí!"
+    },
+    {
+      "id": "explore_6",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/solve_problem_yc_4.svg",
+      "text_2::eng": "Observa cómo @data.characters.f1_padre.name les reconoce por haber colaborado y se prepara para poner en práctica la solución junto con ellos.",
+      "character_1_id": "f1_padre",
+      "character_1_text::eng": "¡Bien pensado, @data.characters.f1_hijo_5.name! Vamos a intentarlo. ¿Puedo ayudar también?",
+      "character_2_id": "f1_hijo_5",
+      "character_2_text::eng": "¡Sí!",
+      "character_3_id": "f1_padre",
+      "character_3_text::eng": "¡Gracias por ponerse de acuerdo para jugar juntos!"
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Ya viste cómo @data.characters.f1_padre.name usó las estrategias.\n\n\nVamos a recordarlas una vez más para que resuelvas problemas junto con @fields.child_name:",
+      "section_1_title::eng": "CONÓCELO",
+      "section_1_icon_asset": "images/icons/lightbulb_blue.png",
+      "section_1_text::eng": "Identifica qué está causando el problema. Habla con @fields.child_name para entender cómo ve la situación.",
+      "section_2_title::eng": "PIENSEN EN EQUIPO",
+      "section_2_icon_asset": "images/icons/trophy_blue.png",
+      "section_2_text::eng": "Busquen juntos diferentes soluciones e imaginen qué podría pasar con cada una. Si compartes la crianza con alguien más, también puedes incluirle.",
+      "section_3_title::eng": "INTÉNTENLO",
+      "section_3_icon_asset": "images/icons/heart_filled_blue.png",
+      "section_3_text::eng": "Elijan juntos una de las soluciones que pensaron y pónganla en práctica.",
+      "section_4_title::eng": "COMPRUÉBALO",
+      "section_4_icon_asset": "images/icons/tick.svg",
+      "section_4_text::eng": "Pregúntense si funcionó. Si no, pueden volver a seguir estos cuatro pasos hasta encontrar una solución que les funcione."
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "text_1_facilitator::eng": "¡Ahora es tu turno!\n\nLa próxima vez que notes que @fields.child_name enfrenta un problema, acompáñale a buscar una solución usando las cuatro estrategias que exploramos en esta sesión. 😊",
+      "quiz_1_question::eng": "¿Puedes hacerlo esta semana?",
+      "quiz_1_option_1_text::eng": "Sí",
+      "quiz_1_feedback_1::eng": "¡Muy bien! 🎉\n\nResolver problemas juntos le enseña a @fields.child_name que sus ideas importan y que puede encontrar soluciones por su cuenta.",
+      "quiz_1_option_2_text::eng": "Lo intentaré",
+      "quiz_1_feedback_2::eng": "¡Está bien! 🙌\n\nIntentar resolver problemas juntos le enseña a @fields.child_name que sus ideas importan y que puede encontrar soluciones por su cuenta.",
+      "quiz_1_option_3_text::eng": "No",
+      "quiz_1_feedback_3::eng": "¡Lo entiendo! Inténtalo cuando tengas oportunidad.😊\n\nPuede ser difícil involucrarle en la solución, pero resolver problemas juntos le enseñará a @fields.child_name que sus ideas importan."
+    }
+  ]
+}

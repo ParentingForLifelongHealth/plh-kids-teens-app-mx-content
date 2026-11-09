@@ -1,0 +1,128 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "consequences_yc_articles",
+  "data_list_name": "consequences_yc_articles",
+  "status": "released",
+  "flow_subtype": "modules_consequences_yc",
+  "module": "consequences_yc",
+  "rows": [
+    {
+      "id": "@default",
+      "nested": false
+    },
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Esta sesión trata sobre qué hacer cuando @fields.child_name **se niega a seguir una instrucción, olvida una regla o se porta de forma agresiva o peligrosa**.\n\n\nEs normal que @fields.child_name todavía esté aprendiendo cuáles acciones son apropiadas o no en diferentes contextos. \n\nEnseñarle que sus acciones le afectan, y que también pueden afectar a otras personas, le ayuda a responsabilizarse de lo que hace. 🙌"
+    },
+    {
+      "id": "intro_2",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Aquí exploraremos cómo aplicar consecuencias claras y justas, para ayudar a @fields.child_name en su desarrollo. ⚖️"
+    },
+    {
+      "id": "intro_3",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Antes de empezar, reflexionemos un momento📝",
+      "quiz_1_question::eng": "Verdadero o falso: Si @fields.child_name no sigue una instrucción o regla, puedo elegir cualquier castigo para corregir su comportamiento.",
+      "quiz_1_option_1_text::eng": "Verdadero",
+      "quiz_1_feedback_1::eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nEn vez de poner cualquier castigo, aplica una consecuencia relacionada con lo que hizo. Esto le ayuda a entender por qué estuvo mal y a no repetirlo. \n\nPor ejemplo, si rompe el acuerdo de apagar la televisión a las 7pm, la consecuencia es que no podrá verla al día siguiente.",
+      "quiz_1_option_2_text::eng": "Falso",
+      "quiz_1_feedback_2::eng": "🎉 ¡Tienes razón!\n\nEn vez de poner cualquier castigo, aplica una consecuencia relacionada con lo que hizo. Esto le ayuda a entender por qué estuvo mal y a no repetirlo. \n\nPor ejemplo, si rompe el acuerdo de apagar la televisión a las 7pm, la consecuencia es que no podrá verla al día siguiente."
+    },
+    {
+      "id": "intro_4",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "¡Una pregunta más!",
+      "quiz_1_question::eng": "Verdadero o falso: Las niñas y los niños necesitan castigos físicos, para aprender a comportarse.",
+      "quiz_1_option_1_text::eng": "Verdadero",
+      "quiz_1_feedback_1::eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nLos golpes y castigos físicos no enseñan a comportarse mejor. Pueden generar miedo, dañar la confianza y empeorar la conducta.\n\n\nTanto niños como niñas pueden aprender de las consecuencias si se les explican con calma y claridad, se aplican de forma constante, y son acordes a lo que pasó y su gravedad.",
+      "quiz_1_option_2_text::eng": "Falso",
+      "quiz_1_feedback_2::eng": "🎉 ¡Tienes razón!\n\nLos golpes y castigos físicos no enseñan a comportarse mejor. Pueden generar miedo, dañar la confianza y empeorar la conducta.\n\n\nTanto niños como niñas pueden aprender de las consecuencias si se les explican con calma y claridad, se aplican de forma constante, y son acordes a lo que pasó y su gravedad."
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo puedes aplicar consecuencias justas cuando @fields.child_name se niega a seguir una instrucción, olvida una regla o se porta de forma agresiva o peligrosa.\n\nEn este video te compartimos cuatro estrategias recomendadas por especialistas:\n\n1️⃣ PAUSA\n2️⃣ ACTÚA CON JUSTICIA\n3️⃣ SÉ CONSTANTE\n4️⃣ MOTIVA",
+      "media_type": "youtube",
+      "youtube_gb_en_m": "https://www.youtube.com/watch?v=yTynEUzOtf8"
+    },
+    {
+      "id": "explore_2",
+      "category_id": "explore",
+      "text_1_facilitator::eng": "¡Vamos a ver estas estrategias en la práctica!",
+      "image_asset": "images/comic/behave/consequences_yc_1.svg",
+      "text_2::eng": "@data.characters.f2_hija_3.name está jugando con sus peluches cuando @data.characters.f2_madre.name se acerca para darle una instrucción.",
+      "character_1_id": "f2_madre",
+      "character_1_text::eng": "¡Eres muy creativa, @data.characters.f2_hija_3.name! Veo que hiciste un tren con estas cajas y que tus peluches son los pasajeros.",
+      "character_2_id": "f2_hija_3",
+      "character_2_text::eng": "¡Sííí!",
+      "character_3_id": "f2_madre",
+      "character_3_text::eng": "En 5 minutos será hora de recoger y guardar tus peluches, ¿va? Para luego cenar juntas."
+    },
+    {
+      "id": "explore_3",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/consequences_yc_2.svg",
+      "text_2::eng": "Pero cuando se cumplen los cinco minutos, @data.characters.f2_hija_3.name se resiste a guardar sus peluches.",
+      "character_1_id": "f2_madre",
+      "character_1_text::eng": "¡Los 5 minutos se terminaron! Ya es hora de recoger y guardar tus peluches en la caja,@data.characters.f2_hija_3.name.",
+      "character_2_id": "f2_hija_3",
+      "character_2_text::eng": "Noooo."
+    },
+    {
+      "id": "explore_4",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/consequences_yc_3.svg",
+      "text_2::eng": "Fíjate cómo @data.characters.f2_madre.name hace una pausa y le da una oportunidad más a @data.characters.f2_hija_3.name antes de aplicar la consecuencia.",
+      "character_1_id": "f2_madre",
+      "character_1_text::eng": "(Respira y hace una pausa) @data.characters.f2_hija_3.name, si no guardas tus juguetes en la canasta ahora, no podrás jugar con ellos después de cenar.",
+      "character_2_id": "f2_hija_3",
+      "character_2_text::eng": "¡No, mamá, no quiero! ¡Todavía no termino de jugar!",
+      "character_3_id": "f2_madre",
+      "character_3_text::eng": "Como no guardaste los juguetes cuando te lo pedí, como habíamos acordado, mañana no podrás jugar con ellos después de cenar, @data.characters.f2_hija_3.name. Ven a lavarte las manos."
+    },
+    {
+      "id": "explore_5",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/consequences_yc_4.svg",
+      "text_2::eng": "Después, @data.characters.f2_madre.name dirige la atención a una nueva actividad y recuerda reconocer que @data.characters.f2_hija_3.name le hizo caso.",
+      "character_1_id": "f2_hija_3",
+      "character_1_text::eng": "¡Ya me estoy lavando las manos, mamá!",
+      "character_2_id": "f2_madre",
+      "character_2_text::eng": "¡Muy bien! Gracias por lavarte las manos. Ahora podemos cenar juntas.",
+      "character_3_id": "f2_hija_3",
+      "character_3_text::eng": "¡Sí, mamá!"
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "text_1_facilitator::eng": "Ya viste cómo @data.characters.f2_madre.name usó las estrategias.\n\n\nVamos a recordarlas una vez más para que apliques consecuencias justas cuando @fields.child_name tenga un comportamiento difícil:",
+      "section_1_title::eng": "PAUSA",
+      "section_1_icon_asset": "images/icons/heart_filled_blue.png",
+      "section_1_text::eng": "Respira profundamente antes de responder. Gritar o amenazar con golpear empeora la situación y le enseña a @fields.child_name que la violencia es una forma válida de resolver los problemas.",
+      "section_2_title::eng": "ACTÚA CON JUSTICIA",
+      "section_2_icon_asset": "images/icons/balance_blue.png",
+      "section_2_text::eng": "La consecuencia que elijas y cómo la aplicas son importantes. \n\nEscucha su punto de vista y aplica consecuencias que puedas cumplir, que estén relacionadas con lo que hizo y que sean proporcionales a la situación.",
+      "section_3_title::eng": "SÉ CONSTANTE",
+      "section_3_icon_asset": "images/icons/clock_blue.png",
+      "section_3_text::eng": "Aplica las consecuencias cada vez que se repita el comportamiento o no se respete una regla. Así, @fields.child_name sabrá qué esperar y será más probable que coopere contigo.",
+      "section_4_title::eng": "MOTIVA",
+      "section_4_icon_asset": "images/icons/tick.svg",
+      "section_4_text::eng": "Enfócate en lo positivo. Después de aplicar la consecuencia, intenta pasar a una nueva actividad. \n\nReconoce cuando @fields.child_name sigue las reglas o instrucciones, o corrige algo por iniciativa propia."
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "text_1_facilitator::eng": "¡Ahora es tu turno!\n\nPiensa en un comportamiento de @fields.child_name que te esté costando manejar: una regla de la casa que no respeta con frecuencia o una instrucción que se niega a seguir. \n\nLuego, identifica una consecuencia que puedas aplicar y que cumpla con las 4 Rs: \n- Relacionada: Tiene que ver con lo que pasó.\n- Revelada: La conoce desde antes y sabe qué esperar.\n- Respetuosa: No incluye gritos, golpes ni humillaciones.\n- Razonable: Es justa, adecuada a su edad y no es demasiado severa.\n\nHabla sobre ella con @fields.child_name para que sepa qué esperar. 😊",
+      "text_2::eng": "Por ejemplo:\n\n📝 Regla: Usar sus juguetes con cuidado.\n🤔 Consecuencia: No podrá jugar con sus juguetes después de cenar.\n\n\n📝 Situación: No quiere devolverte tu teléfono cuando se lo pides.\n🤔 Consecuencia: No podrá usar el teléfono hasta el día siguiente.",
+      "quiz_1_question::eng": "¿Puedes intentarlo esta semana?",
+      "quiz_1_option_1_text::eng": "Sí",
+      "quiz_1_feedback_1::eng": "¡Muy bien! Pensar las consecuencias desde antes te ayudará a aplicarlas con más calma y constancia. 🎉\n\nRecuerda escuchar a @fields.child_name y reconocer cuando hace algo positivo o cambia su comportamiento. Así, puede que en el futuro ni siquiera necesites aplicar consecuencias.",
+      "quiz_1_option_2_text::eng": "Lo intentaré",
+      "quiz_1_feedback_2::eng": "¡Está bien! Pensar las consecuencias desde antes te ayudará a aplicarlas con más calma y constancia.💡\n\nRecuerda escuchar a @fields.child_name y reconocer cuando hace algo positivo o cambia su comportamiento. Así, puede que en el futuro ni siquiera necesites aplicar consecuencias.",
+      "quiz_1_option_3_text::eng": "No",
+      "quiz_1_feedback_3::eng": "¡Lo entiendo! Puedes empezar por identificar las consecuencias que ya aplicas de manera adecuada.💛\n\nDespués, puedes regresar aquí para realizar la actividad completa."
+    }
+  ]
+}
