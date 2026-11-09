@@ -232,7 +232,7 @@
             },
             {
               "name": "asset",
-              "value": "@item.image_asset",
+              "value": "@item.certificate_image_asset",
               "_translations": {
                 "value": {}
               },
@@ -241,10 +241,10 @@
               "_dynamicFields": {
                 "value": [
                   {
-                    "fullExpression": "@item.image_asset",
-                    "matchedExpression": "@item.image_asset",
+                    "fullExpression": "@item.certificate_image_asset",
+                    "matchedExpression": "@item.certificate_image_asset",
                     "type": "item",
-                    "fieldName": "image_asset"
+                    "fieldName": "certificate_image_asset"
                   }
                 ],
                 "_nested_name": [
@@ -257,7 +257,7 @@
                 ]
               },
               "_dynamicDependencies": {
-                "@item.image_asset": [
+                "@item.certificate_image_asset": [
                   "value"
                 ],
                 "@item.id.asset": [

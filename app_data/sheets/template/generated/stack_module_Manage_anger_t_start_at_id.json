@@ -1,5 +1,5 @@
 {
-  "flow_name": "stack_module_Manage_anger_t_start_at_id",
+  "flow_name": "stack_module_manage_anger_t_start_at_id",
   "flow_subtype": "generated",
   "flow_type": "template",
   "rows": [
@@ -11,7 +11,7 @@
     },
     {
       "name": "module_id",
-      "value": "Manage_anger_t",
+      "value": "manage_anger_t",
       "_translations": {
         "value": {}
       },
@@ -936,10 +936,10 @@
           "trigger": "completed",
           "action_id": "set_data",
           "args": [],
-          "_raw": "completed | set_data | _list_id: module_tasks, _id: Manage_anger_t, unlocked_activity: TRUE",
+          "_raw": "completed | set_data | _list_id: module_tasks, _id: manage_anger_t, unlocked_activity: TRUE",
           "params": {
             "_list_id": "module_tasks",
-            "_id": "Manage_anger_t",
+            "_id": "manage_anger_t",
             "unlocked_activity": true
           }
         },
@@ -1008,7 +1008,7 @@
         },
         {
           "name": "module_id",
-          "value": "Manage_anger_t",
+          "value": "manage_anger_t",
           "_translations": {
             "value": {}
           },
@@ -1128,10 +1128,10 @@
           "trigger": "completed",
           "action_id": "set_data",
           "args": [],
-          "_raw": "completed | set_data | _list_id: module_tasks, _id: Manage_anger_t, unlocked_activity: TRUE",
+          "_raw": "completed | set_data | _list_id: module_tasks, _id: manage_anger_t, unlocked_activity: TRUE",
           "params": {
             "_list_id": "module_tasks",
-            "_id": "Manage_anger_t",
+            "_id": "manage_anger_t",
             "unlocked_activity": true
           }
         },
@@ -1246,7 +1246,7 @@
         },
         {
           "name": "module_id",
-          "value": "Manage_anger_t",
+          "value": "manage_anger_t",
           "_translations": {
             "value": {}
           },

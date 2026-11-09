@@ -11,7 +11,7 @@
 | audio | 4 |
 | button | 136 |
 | combo_box | 23 |
-| data_items | 273 |
+| data_items | 307 |
 | date_time_picker | 2 |
 | debug_toggle | 1 |
 | display_grid | 4 |
@@ -21,7 +21,7 @@
 | image | 28 |
 | items | 16 |
 | lottie_animation | 10 |
-| nested_properties | 603 |
+| nested_properties | 722 |
 | number_selector | 1 |
 | plh_bottom_nav | 1 |
 | plh_course_accordion | 1 |
@@ -39,12 +39,12 @@
 | round_button | 34 |
 | select_text | 1 |
 | set_field | 4 |
-| set_variable | 5743 |
+| set_variable | 6508 |
 | simple_checkbox | 3 |
 | task_card | 4 |
 | task_progress_bar | 5 |
-| template | 893 |
-| text | 341 |
+| template | 995 |
+| text | 358 |
 | text_area | 4 |
 | text_box | 23 |
 | text_bubble | 31 |
@@ -76,17 +76,17 @@
 | feedback | 13 |
 | go_to | 31 |
 | nav | 1 |
-| nav_stack | 1148 |
+| nav_stack | 1335 |
 | notification | 1 |
 | plh_certificate | 23 |
-| pop_up | 517 |
+| pop_up | 602 |
 | reset_app | 4 |
 | reset_data | 3 |
 | save_to_device | 3 |
-| set_data | 571 |
-| set_field | 579 |
+| set_data | 639 |
+| set_field | 647 |
 | set_item | 30 |
-| set_local | 801 |
+| set_local | 920 |
 | share | 3 |
 | task | 2 |
 | toast | 78 |
@@ -98,8 +98,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 17314 KB | 17.3 MB |
-| unused | 178104 KB | 178.1 MB |
+| total | 17521 KB | 17.5 MB |
+| unused | 177897 KB | 177.9 MB |
 </details>
 
 <details open>
@@ -207,13 +207,6 @@ Assets that appear in app-data but do not have references within sheets
 | images/activities/una_preocupacion_un_paso_c.png | 2014 |
 | images/activities/una_preocupacion_un_paso_t.png | 1346.3 |
 | images/backgrounds/library_top_right.svg | 17.5 |
-| images/badges/badge_1.svg | 25.7 |
-| images/badges/badge_2.svg | 17.4 |
-| images/badges/badge_3.svg | 49.1 |
-| images/badges/badge_4.svg | 21.9 |
-| images/badges/badge_5.svg | 24.7 |
-| images/badges/badge_6.svg | 42.3 |
-| images/badges/badge_7.svg | 25.4 |
 | images/badges/badge_8.svg | 27.4 |
 | images/comic/relation/calm/calm_yc_mc_1.svg | 28.7 |
 | images/comic/relation/calm/calm_yc_mc_2.svg | 72.1 |
@@ -393,110 +386,110 @@ Assets that have references within sheets but do not appear in app-data
 | images/activities/veo.svg | 2 |
 | images/activities/verduras.svg | 2 |
 | images/backgrounds/mountains_trees.svg | 1 |
-| images/comic/behave/consequences_t_1.svg | 1 |
-| images/comic/behave/consequences_t_2.svg | 1 |
-| images/comic/behave/consequences_t_3.svg | 1 |
-| images/comic/behave/consequences_t_4.svg | 1 |
-| images/comic/behave/consequences_yc_1.svg | 1 |
-| images/comic/behave/consequences_yc_2.svg | 1 |
-| images/comic/behave/consequences_yc_3.svg | 1 |
-| images/comic/behave/consequences_yc_4.svg | 1 |
-| images/comic/behave/family_rules_t_1.svg | 1 |
-| images/comic/behave/family_rules_t_2.svg | 2 |
-| images/comic/behave/family_rules_t_3.svg | 1 |
-| images/comic/behave/family_rules_t_4.svg | 1 |
-| images/comic/behave/family_rules_t_5.svg | 1 |
-| images/comic/behave/family_rules_yc_1.svg | 1 |
-| images/comic/behave/family_rules_yc_2.svg | 1 |
-| images/comic/behave/family_rules_yc_3.svg | 1 |
-| images/comic/behave/family_rules_yc_4.svg | 2 |
-| images/comic/behave/family_rules_yc_5.svg | 1 |
-| images/comic/behave/ignore_yc_1.svg | 1 |
-| images/comic/behave/ignore_yc_2.svg | 1 |
-| images/comic/behave/ignore_yc_3.svg | 1 |
-| images/comic/behave/ignore_yc_4.svg | 1 |
-| images/comic/behave/ignore_yc_5.svg | 1 |
+| images/comic/behave/consequences_t_1.svg | 2 |
+| images/comic/behave/consequences_t_2.svg | 2 |
+| images/comic/behave/consequences_t_3.svg | 2 |
+| images/comic/behave/consequences_t_4.svg | 2 |
+| images/comic/behave/consequences_yc_1.svg | 2 |
+| images/comic/behave/consequences_yc_2.svg | 2 |
+| images/comic/behave/consequences_yc_3.svg | 2 |
+| images/comic/behave/consequences_yc_4.svg | 2 |
+| images/comic/behave/family_rules_t_1.svg | 2 |
+| images/comic/behave/family_rules_t_2.svg | 4 |
+| images/comic/behave/family_rules_t_3.svg | 2 |
+| images/comic/behave/family_rules_t_4.svg | 2 |
+| images/comic/behave/family_rules_t_5.svg | 2 |
+| images/comic/behave/family_rules_yc_1.svg | 2 |
+| images/comic/behave/family_rules_yc_2.svg | 2 |
+| images/comic/behave/family_rules_yc_3.svg | 2 |
+| images/comic/behave/family_rules_yc_4.svg | 4 |
+| images/comic/behave/family_rules_yc_5.svg | 2 |
+| images/comic/behave/ignore_yc_1.svg | 2 |
+| images/comic/behave/ignore_yc_2.svg | 2 |
+| images/comic/behave/ignore_yc_3.svg | 2 |
+| images/comic/behave/ignore_yc_4.svg | 2 |
+| images/comic/behave/ignore_yc_5.svg | 2 |
 | images/comic/behave/keep_positive_t_1.svg | 2 |
 | images/comic/behave/keep_positive_t_2.svg | 2 |
 | images/comic/behave/keep_positive_t_3.svg | 2 |
 | images/comic/behave/keep_positive_t_4.svg | 2 |
-| images/comic/behave/keep_positive_yc_1.svg | 1 |
-| images/comic/behave/keep_positive_yc_2.svg | 1 |
-| images/comic/behave/keep_positive_yc_3.svg | 1 |
-| images/comic/behave/keep_positive_yc_4.svg | 1 |
-| images/comic/behave/know_role_yc_1.svg | 2 |
-| images/comic/behave/know_role_yc_2.svg | 2 |
-| images/comic/behave/know_role_yc_3.svg | 2 |
-| images/comic/behave/know_role_yc_4.svg | 4 |
-| images/comic/behave/manage_anger_t_1.svg | 1 |
-| images/comic/behave/manage_anger_t_2.svg | 1 |
-| images/comic/behave/manage_anger_t_3.svg | 1 |
-| images/comic/behave/manage_anger_t_4.svg | 1 |
-| images/comic/behave/manage_anger_t_5.svg | 1 |
-| images/comic/behave/manage_anger_t_6.svg | 1 |
-| images/comic/behave/manage_anger_yc_1.svg | 1 |
-| images/comic/behave/manage_anger_yc_2.svg | 1 |
-| images/comic/behave/manage_anger_yc_3.svg | 1 |
-| images/comic/behave/manage_anger_yc_4.svg | 1 |
-| images/comic/behave/manage_anger_yc_5.svg | 1 |
-| images/comic/behave/redirect_yc_1.svg | 1 |
-| images/comic/behave/redirect_yc_2.svg | 1 |
-| images/comic/behave/redirect_yc_3.svg | 1 |
-| images/comic/behave/redirect_yc_4.svg | 1 |
-| images/comic/behave/redirect_yc_5.svg | 1 |
+| images/comic/behave/keep_positive_yc_1.svg | 2 |
+| images/comic/behave/keep_positive_yc_2.svg | 2 |
+| images/comic/behave/keep_positive_yc_3.svg | 2 |
+| images/comic/behave/keep_positive_yc_4.svg | 2 |
+| images/comic/behave/know_role_yc_1.svg | 4 |
+| images/comic/behave/know_role_yc_2.svg | 4 |
+| images/comic/behave/know_role_yc_3.svg | 4 |
+| images/comic/behave/know_role_yc_4.svg | 8 |
+| images/comic/behave/manage_anger_t_1.svg | 2 |
+| images/comic/behave/manage_anger_t_2.svg | 2 |
+| images/comic/behave/manage_anger_t_3.svg | 2 |
+| images/comic/behave/manage_anger_t_4.svg | 2 |
+| images/comic/behave/manage_anger_t_5.svg | 2 |
+| images/comic/behave/manage_anger_t_6.svg | 2 |
+| images/comic/behave/manage_anger_yc_1.svg | 2 |
+| images/comic/behave/manage_anger_yc_2.svg | 2 |
+| images/comic/behave/manage_anger_yc_3.svg | 2 |
+| images/comic/behave/manage_anger_yc_4.svg | 2 |
+| images/comic/behave/manage_anger_yc_5.svg | 2 |
+| images/comic/behave/redirect_yc_1.svg | 2 |
+| images/comic/behave/redirect_yc_2.svg | 2 |
+| images/comic/behave/redirect_yc_3.svg | 2 |
+| images/comic/behave/redirect_yc_4.svg | 2 |
+| images/comic/behave/redirect_yc_5.svg | 2 |
 | images/comic/behave/solve_problem_t_1.svg | 2 |
 | images/comic/behave/solve_problem_t_2.svg | 4 |
 | images/comic/behave/solve_problem_t_3.svg | 2 |
 | images/comic/behave/solve_problem_t_4.svg | 2 |
-| images/comic/behave/solve_problem_yc_1.svg | 1 |
-| images/comic/behave/solve_problem_yc_2.svg | 1 |
-| images/comic/behave/solve_problem_yc_3.svg | 2 |
-| images/comic/behave/solve_problem_yc_4.svg | 1 |
-| images/comic/ipv/ipv_conflicts_1.svg | 2 |
-| images/comic/ipv/ipv_conflicts_2.svg | 2 |
-| images/comic/ipv/ipv_conflicts_3.svg | 2 |
-| images/comic/ipv/ipv_conflicts_4.svg | 2 |
-| images/comic/ipv/ipv_equals_1.svg | 2 |
-| images/comic/ipv/ipv_equals_2.svg | 2 |
-| images/comic/ipv/ipv_equals_3.svg | 2 |
-| images/comic/ipv/ipv_equals_4.svg | 2 |
-| images/comic/ipv/ipv_listen_1.svg | 2 |
-| images/comic/ipv/ipv_listen_2.svg | 2 |
-| images/comic/ipv/ipv_listen_3.svg | 2 |
-| images/comic/ipv/ipv_listen_4.svg | 2 |
-| images/comic/ipv/ipv_sharing_1.svg | 2 |
-| images/comic/ipv/ipv_sharing_2.svg | 2 |
-| images/comic/ipv/ipv_sharing_3.svg | 2 |
-| images/comic/ipv/ipv_sharing_4.svg | 2 |
-| images/comic/ipv/ipv_sharing_5.svg | 2 |
-| images/comic/ipv/ipv_supportive_1.svg | 2 |
-| images/comic/ipv/ipv_supportive_2.svg | 2 |
-| images/comic/ipv/ipv_supportive_3.svg | 2 |
-| images/comic/ipv/ipv_supportive_4.svg | 2 |
-| images/comic/learn/fun_learning_7to9_yc_1.svg | 2 |
-| images/comic/learn/fun_learning_7to9_yc_2.svg | 2 |
-| images/comic/learn/fun_learning_7to9_yc_3.svg | 2 |
-| images/comic/learn/fun_learning_7to9_yc_4.svg | 2 |
-| images/comic/learn/fun_learning_teen_1.svg | 2 |
-| images/comic/learn/fun_learning_teen_2.svg | 2 |
-| images/comic/learn/fun_learning_teen_3.svg | 2 |
-| images/comic/learn/fun_learning_teen_4.svg | 2 |
-| images/comic/learn/help_child_learn_7to9_yc_1.svg | 2 |
-| images/comic/learn/help_child_learn_7to9_yc_2.svg | 2 |
-| images/comic/learn/help_child_learn_7to9_yc_3.svg | 2 |
-| images/comic/learn/help_child_learn_7to9_yc_4.svg | 2 |
+| images/comic/behave/solve_problem_yc_1.svg | 2 |
+| images/comic/behave/solve_problem_yc_2.svg | 2 |
+| images/comic/behave/solve_problem_yc_3.svg | 4 |
+| images/comic/behave/solve_problem_yc_4.svg | 2 |
+| images/comic/ipv/ipv_conflicts_1.svg | 1 |
+| images/comic/ipv/ipv_conflicts_2.svg | 1 |
+| images/comic/ipv/ipv_conflicts_3.svg | 1 |
+| images/comic/ipv/ipv_conflicts_4.svg | 1 |
+| images/comic/ipv/ipv_equals_1.svg | 1 |
+| images/comic/ipv/ipv_equals_2.svg | 1 |
+| images/comic/ipv/ipv_equals_3.svg | 1 |
+| images/comic/ipv/ipv_equals_4.svg | 1 |
+| images/comic/ipv/ipv_listen_1.svg | 1 |
+| images/comic/ipv/ipv_listen_2.svg | 1 |
+| images/comic/ipv/ipv_listen_3.svg | 1 |
+| images/comic/ipv/ipv_listen_4.svg | 1 |
+| images/comic/ipv/ipv_sharing_1.svg | 1 |
+| images/comic/ipv/ipv_sharing_2.svg | 1 |
+| images/comic/ipv/ipv_sharing_3.svg | 1 |
+| images/comic/ipv/ipv_sharing_4.svg | 1 |
+| images/comic/ipv/ipv_sharing_5.svg | 1 |
+| images/comic/ipv/ipv_supportive_1.svg | 1 |
+| images/comic/ipv/ipv_supportive_2.svg | 1 |
+| images/comic/ipv/ipv_supportive_3.svg | 1 |
+| images/comic/ipv/ipv_supportive_4.svg | 1 |
+| images/comic/learn/fun_learning_7to9_yc_1.svg | 1 |
+| images/comic/learn/fun_learning_7to9_yc_2.svg | 1 |
+| images/comic/learn/fun_learning_7to9_yc_3.svg | 1 |
+| images/comic/learn/fun_learning_7to9_yc_4.svg | 1 |
+| images/comic/learn/fun_learning_teen_1.svg | 1 |
+| images/comic/learn/fun_learning_teen_2.svg | 1 |
+| images/comic/learn/fun_learning_teen_3.svg | 1 |
+| images/comic/learn/fun_learning_teen_4.svg | 1 |
+| images/comic/learn/help_child_learn_7to9_yc_1.svg | 1 |
+| images/comic/learn/help_child_learn_7to9_yc_2.svg | 1 |
+| images/comic/learn/help_child_learn_7to9_yc_3.svg | 1 |
+| images/comic/learn/help_child_learn_7to9_yc_4.svg | 1 |
 | images/comic/learn/help_learn_teen_1.svg | 2 |
 | images/comic/learn/help_learn_teen_2.svg | 2 |
 | images/comic/learn/help_learn_teen_3.svg | 2 |
 | images/comic/learn/help_learn_teen_4.svg | 2 |
-| images/comic/learn/language_yc_1.svg | 2 |
-| images/comic/learn/language_yc_2.svg | 2 |
-| images/comic/learn/language_yc_3.svg | 2 |
-| images/comic/learn/language_yc_4.svg | 2 |
-| images/comic/learn/learning_mistakes_7to9_yc_1.svg | 2 |
-| images/comic/learn/learning_mistakes_7to9_yc_2.svg | 2 |
-| images/comic/learn/learning_mistakes_7to9_yc_3.svg | 2 |
-| images/comic/learn/learning_mistakes_7to9_yc_4.svg | 2 |
+| images/comic/learn/language_yc_1.svg | 1 |
+| images/comic/learn/language_yc_2.svg | 1 |
+| images/comic/learn/language_yc_3.svg | 1 |
+| images/comic/learn/language_yc_4.svg | 1 |
+| images/comic/learn/learning_mistakes_7to9_yc_1.svg | 1 |
+| images/comic/learn/learning_mistakes_7to9_yc_2.svg | 1 |
+| images/comic/learn/learning_mistakes_7to9_yc_3.svg | 1 |
+| images/comic/learn/learning_mistakes_7to9_yc_4.svg | 1 |
 | images/comic/learn/learning_mistakes_teen_1.svg | 2 |
 | images/comic/learn/learning_mistakes_teen_2.svg | 2 |
 | images/comic/learn/learning_mistakes_teen_3.svg | 2 |
@@ -505,165 +498,164 @@ Assets that have references within sheets but do not appear in app-data
 | images/comic/learn/learning_with_people_teen_2.svg | 2 |
 | images/comic/learn/learning_with_people_teen_3.svg | 2 |
 | images/comic/learn/learning_with_people_teen_4.svg | 2 |
-| images/comic/learn/maths2_4to6_yc_1.svg | 2 |
-| images/comic/learn/maths2_4to6_yc_2.svg | 2 |
-| images/comic/learn/maths2_4to6_yc_3.svg | 2 |
-| images/comic/learn/maths2_4to6_yc_4.svg | 2 |
-| images/comic/learn/positive_learning_7to9_yc_1.svg | 2 |
-| images/comic/learn/positive_learning_7to9_yc_2.svg | 2 |
-| images/comic/learn/positive_learning_7to9_yc_3.svg | 2 |
-| images/comic/learn/positive_learning_7to9_yc_4.svg | 2 |
-| images/comic/learn/positive_learning_7to9_yc_5.svg | 2 |
+| images/comic/learn/maths2_4to6_yc_1.svg | 1 |
+| images/comic/learn/maths2_4to6_yc_2.svg | 1 |
+| images/comic/learn/maths2_4to6_yc_3.svg | 1 |
+| images/comic/learn/maths2_4to6_yc_4.svg | 1 |
+| images/comic/learn/positive_learning_7to9_yc_1.svg | 1 |
+| images/comic/learn/positive_learning_7to9_yc_2.svg | 1 |
+| images/comic/learn/positive_learning_7to9_yc_3.svg | 1 |
+| images/comic/learn/positive_learning_7to9_yc_4.svg | 1 |
+| images/comic/learn/positive_learning_7to9_yc_5.svg | 1 |
 | images/comic/learn/positive_learning_teen_1.svg | 2 |
 | images/comic/learn/positive_learning_teen_2.svg | 2 |
 | images/comic/learn/positive_learning_teen_3.svg | 2 |
 | images/comic/learn/positive_learning_teen_4.svg | 2 |
 | images/comic/learn/positive_learning_teen_5.svg | 2 |
-| images/comic/learn/reading1_4to6_yc_1.svg | 2 |
-| images/comic/learn/reading1_4to6_yc_2.svg | 2 |
-| images/comic/learn/reading1_4to6_yc_3.svg | 2 |
-| images/comic/learn/reading1_4to6_yc_4.svg | 2 |
-| images/comic/learn/reading_2to3_yc_1.svg | 2 |
-| images/comic/learn/reading_2to3_yc_2.svg | 2 |
-| images/comic/learn/reading_2to3_yc_3.svg | 2 |
-| images/comic/learn/reading_2to3_yc_4.svg | 2 |
+| images/comic/learn/reading1_4to6_yc_1.svg | 1 |
+| images/comic/learn/reading1_4to6_yc_2.svg | 1 |
+| images/comic/learn/reading1_4to6_yc_3.svg | 1 |
+| images/comic/learn/reading1_4to6_yc_4.svg | 1 |
+| images/comic/learn/reading_2to3_yc_1.svg | 1 |
+| images/comic/learn/reading_2to3_yc_2.svg | 1 |
+| images/comic/learn/reading_2to3_yc_3.svg | 1 |
+| images/comic/learn/reading_2to3_yc_4.svg | 1 |
 | images/comic/relation/calm_yc_mc_1.svg | 2 |
 | images/comic/relation/calm_yc_mc_2.svg | 2 |
 | images/comic/relation/calm_yc_mc_3.svg | 2 |
 | images/comic/relation/calm_yc_mc_4.svg | 2 |
 | images/comic/relation/calm_yc_mc_5.svg | 2 |
-| images/comic/relation/thoughts_feelings_1.svg | 2 |
-| images/comic/relation/thoughts_feelings_2.svg | 2 |
-| images/comic/relation/thoughts_feelings_3.svg | 2 |
-| images/comic/relation/thoughts_feelings_4.svg | 4 |
+| images/comic/relation/thoughts_feelings_1.svg | 4 |
+| images/comic/relation/thoughts_feelings_2.svg | 4 |
+| images/comic/relation/thoughts_feelings_3.svg | 4 |
+| images/comic/relation/thoughts_feelings_4.svg | 8 |
 | images/comic/safe/com_safety_2to4_yc_1.svg | 2 |
 | images/comic/safe/com_safety_2to4_yc_2.svg | 2 |
 | images/comic/safe/com_safety_2to4_yc_3.svg | 2 |
 | images/comic/safe/com_safety_2to4_yc_4.svg | 2 |
-| images/comic/safe/com_safety_5to9_yc_1.svg | 2 |
-| images/comic/safe/com_safety_5to9_yc_2.svg | 2 |
-| images/comic/safe/com_safety_5to9_yc_3.svg | 2 |
-| images/comic/safe/com_safety_5to9_yc_4.svg | 2 |
-| images/comic/safe/com_safety_5to9_yc_5.svg | 2 |
-| images/comic/safe/community_safety_teen_1.svg | 2 |
-| images/comic/safe/community_safety_teen_2.svg | 2 |
-| images/comic/safe/community_safety_teen_3.svg | 2 |
-| images/comic/safe/community_safety_teen_4.svg | 2 |
-| images/comic/safe/community_safety_teen_5.svg | 2 |
-| images/comic/safe/community_safety_teen_6.svg | 2 |
+| images/comic/safe/com_safety_5to9_yc_1.svg | 1 |
+| images/comic/safe/com_safety_5to9_yc_2.svg | 1 |
+| images/comic/safe/com_safety_5to9_yc_3.svg | 1 |
+| images/comic/safe/com_safety_5to9_yc_4.svg | 1 |
+| images/comic/safe/com_safety_5to9_yc_5.svg | 1 |
+| images/comic/safe/community_safety_teen_1.svg | 1 |
+| images/comic/safe/community_safety_teen_2.svg | 1 |
+| images/comic/safe/community_safety_teen_3.svg | 1 |
+| images/comic/safe/community_safety_teen_4.svg | 1 |
+| images/comic/safe/community_safety_teen_5.svg | 1 |
+| images/comic/safe/community_safety_teen_6.svg | 1 |
 | images/comic/safe/crises_2to6_yc_1.svg | 2 |
 | images/comic/safe/crises_2to6_yc_2.svg | 2 |
 | images/comic/safe/crises_2to6_yc_3.svg | 2 |
 | images/comic/safe/crises_2to6_yc_4.svg | 2 |
-| images/comic/safe/crises_7to9_yc_1.svg | 2 |
-| images/comic/safe/crises_7to9_yc_2.svg | 2 |
-| images/comic/safe/crises_7to9_yc_3.svg | 2 |
-| images/comic/safe/crises_7to9_yc_4.svg | 2 |
-| images/comic/safe/crises_7to9_yc_5.svg | 2 |
-| images/comic/safe/crises_7to9_yc_6.svg | 2 |
-| images/comic/safe/crises_teen_f_1.svg | 2 |
-| images/comic/safe/crises_teen_f_2.svg | 2 |
-| images/comic/safe/crises_teen_f_3.svg | 2 |
-| images/comic/safe/crises_teen_f_4.svg | 2 |
-| images/comic/safe/crises_teen_f_5.svg | 2 |
-| images/comic/safe/crises_teen_f_6.svg | 2 |
-| images/comic/safe/crises_teen_m_1.svg | 2 |
-| images/comic/safe/crises_teen_m_2.svg | 2 |
-| images/comic/safe/crises_teen_m_3.svg | 2 |
-| images/comic/safe/crises_teen_m_4.svg | 2 |
-| images/comic/safe/crises_teen_m_5.svg | 2 |
-| images/comic/safe/crises_teen_m_6.svg | 2 |
-| images/comic/safe/online_safety_teen_1.svg | 2 |
-| images/comic/safe/online_safety_teen_2.svg | 2 |
-| images/comic/safe/online_safety_teen_3.svg | 2 |
-| images/comic/safe/online_safety_teen_4.svg | 2 |
-| images/comic/safe/online_safety_teen_5.svg | 2 |
-| images/comic/safe/online_safety_yc_1.svg | 2 |
-| images/comic/safe/online_safety_yc_2.svg | 2 |
-| images/comic/safe/online_safety_yc_3.svg | 2 |
-| images/comic/safe/online_safety_yc_4.svg | 2 |
-| images/comic/safe/safe_touch_2to5_yc_f_1.svg | 2 |
-| images/comic/safe/safe_touch_2to5_yc_f_2.svg | 2 |
-| images/comic/safe/safe_touch_2to5_yc_f_3.svg | 2 |
-| images/comic/safe/safe_touch_2to5_yc_f_4.svg | 2 |
-| images/comic/safe/safe_touch_2to5_yc_f_5.svg | 2 |
-| images/comic/safe/safe_touch_2to5_yc_m_1.svg | 2 |
-| images/comic/safe/safe_touch_2to5_yc_m_2.svg | 2 |
-| images/comic/safe/safe_touch_2to5_yc_m_3.svg | 2 |
-| images/comic/safe/safe_touch_2to5_yc_m_4.svg | 2 |
-| images/comic/safe/safe_touch_2to5_yc_m_5.svg | 2 |
-| images/comic/safe/safe_touch_6to9_yc_1.svg | 2 |
-| images/comic/safe/safe_touch_6to9_yc_2.svg | 2 |
-| images/comic/safe/safe_touch_6to9_yc_3.svg | 2 |
+| images/comic/safe/crises_7to9_yc_1.svg | 1 |
+| images/comic/safe/crises_7to9_yc_2.svg | 1 |
+| images/comic/safe/crises_7to9_yc_3.svg | 1 |
+| images/comic/safe/crises_7to9_yc_4.svg | 1 |
+| images/comic/safe/crises_7to9_yc_5.svg | 1 |
+| images/comic/safe/crises_7to9_yc_6.svg | 1 |
+| images/comic/safe/crises_teen_f_1.svg | 1 |
+| images/comic/safe/crises_teen_f_2.svg | 1 |
+| images/comic/safe/crises_teen_f_3.svg | 1 |
+| images/comic/safe/crises_teen_f_4.svg | 1 |
+| images/comic/safe/crises_teen_f_5.svg | 1 |
+| images/comic/safe/crises_teen_f_6.svg | 1 |
+| images/comic/safe/crises_teen_m_1.svg | 1 |
+| images/comic/safe/crises_teen_m_2.svg | 1 |
+| images/comic/safe/crises_teen_m_3.svg | 1 |
+| images/comic/safe/crises_teen_m_4.svg | 1 |
+| images/comic/safe/crises_teen_m_5.svg | 1 |
+| images/comic/safe/crises_teen_m_6.svg | 1 |
+| images/comic/safe/online_safety_teen_1.svg | 1 |
+| images/comic/safe/online_safety_teen_2.svg | 1 |
+| images/comic/safe/online_safety_teen_3.svg | 1 |
+| images/comic/safe/online_safety_teen_4.svg | 1 |
+| images/comic/safe/online_safety_teen_5.svg | 1 |
+| images/comic/safe/online_safety_yc_1.svg | 1 |
+| images/comic/safe/online_safety_yc_2.svg | 1 |
+| images/comic/safe/online_safety_yc_3.svg | 1 |
+| images/comic/safe/online_safety_yc_4.svg | 1 |
+| images/comic/safe/safe_touch_2to5_yc_f_1.svg | 1 |
+| images/comic/safe/safe_touch_2to5_yc_f_2.svg | 1 |
+| images/comic/safe/safe_touch_2to5_yc_f_3.svg | 1 |
+| images/comic/safe/safe_touch_2to5_yc_f_4.svg | 1 |
+| images/comic/safe/safe_touch_2to5_yc_f_5.svg | 1 |
+| images/comic/safe/safe_touch_2to5_yc_m_1.svg | 1 |
+| images/comic/safe/safe_touch_2to5_yc_m_2.svg | 1 |
+| images/comic/safe/safe_touch_2to5_yc_m_3.svg | 1 |
+| images/comic/safe/safe_touch_2to5_yc_m_4.svg | 1 |
+| images/comic/safe/safe_touch_2to5_yc_m_5.svg | 1 |
+| images/comic/safe/safe_touch_6to9_yc_1.svg | 1 |
+| images/comic/safe/safe_touch_6to9_yc_2.svg | 1 |
+| images/comic/safe/safe_touch_6to9_yc_3.svg | 1 |
 | images/comic/understand/anxiety_teen_1.svg | 2 |
 | images/comic/understand/anxiety_teen_2.svg | 2 |
 | images/comic/understand/anxiety_teen_3.svg | 2 |
 | images/comic/understand/anxiety_teen_4.svg | 2 |
 | images/comic/understand/anxiety_teen_5.svg | 2 |
-| images/comic/understand/child_change_yc_1.svg | 2 |
-| images/comic/understand/child_change_yc_2.svg | 2 |
-| images/comic/understand/child_change_yc_3.svg | 2 |
-| images/comic/understand/child_change_yc_4.svg | 2 |
-| images/comic/understand/learn_experience_yc_1.svg | 2 |
-| images/comic/understand/learn_experience_yc_2.svg | 2 |
-| images/comic/understand/learn_experience_yc_3.svg | 2 |
-| images/comic/understand/learn_experience_yc_4.svg | 2 |
-| images/comic/understand/learn_experience_yc_5.svg | 2 |
-| images/comic/understand/make_plan_teen_1.svg | 2 |
-| images/comic/understand/make_plan_teen_2.svg | 2 |
-| images/comic/understand/make_plan_teen_3.svg | 2 |
-| images/comic/understand/make_plan_teen_4.svg | 2 |
-| images/comic/understand/make_plan_teen_5.svg | 2 |
-| images/comic/understand/make_plan_teen_6.svg | 2 |
-| images/comic/understand/make_plan_yc_1.svg | 2 |
-| images/comic/understand/make_plan_yc_2.svg | 2 |
-| images/comic/understand/make_plan_yc_3.svg | 2 |
-| images/comic/understand/make_plan_yc_4.svg | 2 |
-| images/comic/understand/make_plan_yc_5.svg | 2 |
-| images/comic/understand/make_plan_yc_6.svg | 2 |
-| images/comic/understand/manage_stress_teen_1.svg | 2 |
-| images/comic/understand/manage_stress_teen_2.svg | 2 |
-| images/comic/understand/manage_stress_teen_3.svg | 2 |
-| images/comic/understand/manage_stress_teen_4.svg | 2 |
-| images/comic/understand/manage_stress_yc_1.svg | 2 |
-| images/comic/understand/manage_stress_yc_2.svg | 2 |
-| images/comic/understand/manage_stress_yc_3.svg | 2 |
-| images/comic/understand/manage_stress_yc_4.svg | 2 |
-| images/comic/understand/manage_stress_yc_5.svg | 2 |
-| images/comic/understand/manage_stress_yc_6.svg | 2 |
-| images/comic/understand/play_yc_1.svg | 2 |
-| images/comic/understand/play_yc_2.svg | 2 |
-| images/comic/understand/play_yc_3.svg | 2 |
-| images/comic/understand/play_yc_4.svg | 2 |
-| images/comic/understand/sadness_teen_1.svg | 2 |
-| images/comic/understand/sadness_teen_2.svg | 2 |
-| images/comic/understand/sadness_teen_3.svg | 2 |
-| images/comic/understand/sadness_teen_4.svg | 2 |
-| images/comic/understand/sadness_teen_5.svg | 2 |
-| images/comic/understand/sadness_teen_6.svg | 2 |
-| images/comic/understand/toddler_change_yc_1.svg | 2 |
-| images/comic/understand/toddler_change_yc_2.svg | 2 |
-| images/comic/understand/toddler_change_yc_3.svg | 2 |
-| images/comic/understand/toddler_change_yc_4.svg | 2 |
-| images/comic/understand/young_child_change_yc_1.svg | 2 |
-| images/comic/understand/young_child_change_yc_2.svg | 2 |
-| images/comic/understand/young_child_change_yc_3.svg | 2 |
-| images/comic/understand/young_child_change_yc_4.svg | 2 |
-| images/homescreen/behave_c.svg | 17 |
-| images/homescreen/behave_t.svg | 17 |
-| images/homescreen/ipv.svg | 15 |
-| images/homescreen/learn_c.svg | 17 |
+| images/comic/understand/child_change_yc_1.svg | 1 |
+| images/comic/understand/child_change_yc_2.svg | 1 |
+| images/comic/understand/child_change_yc_3.svg | 1 |
+| images/comic/understand/child_change_yc_4.svg | 1 |
+| images/comic/understand/learn_experience_yc_1.svg | 1 |
+| images/comic/understand/learn_experience_yc_2.svg | 1 |
+| images/comic/understand/learn_experience_yc_3.svg | 1 |
+| images/comic/understand/learn_experience_yc_4.svg | 1 |
+| images/comic/understand/learn_experience_yc_5.svg | 1 |
+| images/comic/understand/make_plan_teen_1.svg | 1 |
+| images/comic/understand/make_plan_teen_2.svg | 1 |
+| images/comic/understand/make_plan_teen_3.svg | 1 |
+| images/comic/understand/make_plan_teen_4.svg | 1 |
+| images/comic/understand/make_plan_teen_5.svg | 1 |
+| images/comic/understand/make_plan_teen_6.svg | 1 |
+| images/comic/understand/make_plan_yc_1.svg | 1 |
+| images/comic/understand/make_plan_yc_2.svg | 1 |
+| images/comic/understand/make_plan_yc_3.svg | 1 |
+| images/comic/understand/make_plan_yc_4.svg | 1 |
+| images/comic/understand/make_plan_yc_5.svg | 1 |
+| images/comic/understand/make_plan_yc_6.svg | 1 |
+| images/comic/understand/manage_stress_teen_1.svg | 1 |
+| images/comic/understand/manage_stress_teen_2.svg | 1 |
+| images/comic/understand/manage_stress_teen_3.svg | 1 |
+| images/comic/understand/manage_stress_teen_4.svg | 1 |
+| images/comic/understand/manage_stress_yc_1.svg | 1 |
+| images/comic/understand/manage_stress_yc_2.svg | 1 |
+| images/comic/understand/manage_stress_yc_3.svg | 1 |
+| images/comic/understand/manage_stress_yc_4.svg | 1 |
+| images/comic/understand/manage_stress_yc_5.svg | 1 |
+| images/comic/understand/manage_stress_yc_6.svg | 1 |
+| images/comic/understand/play_yc_1.svg | 1 |
+| images/comic/understand/play_yc_2.svg | 1 |
+| images/comic/understand/play_yc_3.svg | 1 |
+| images/comic/understand/play_yc_4.svg | 1 |
+| images/comic/understand/sadness_teen_1.svg | 1 |
+| images/comic/understand/sadness_teen_2.svg | 1 |
+| images/comic/understand/sadness_teen_3.svg | 1 |
+| images/comic/understand/sadness_teen_4.svg | 1 |
+| images/comic/understand/sadness_teen_5.svg | 1 |
+| images/comic/understand/sadness_teen_6.svg | 1 |
+| images/comic/understand/toddler_change_yc_1.svg | 1 |
+| images/comic/understand/toddler_change_yc_2.svg | 1 |
+| images/comic/understand/toddler_change_yc_3.svg | 1 |
+| images/comic/understand/toddler_change_yc_4.svg | 1 |
+| images/comic/understand/young_child_change_yc_1.svg | 1 |
+| images/comic/understand/young_child_change_yc_2.svg | 1 |
+| images/comic/understand/young_child_change_yc_3.svg | 1 |
+| images/comic/understand/young_child_change_yc_4.svg | 1 |
+| images/homescreen/behave_c.svg | 19 |
+| images/homescreen/behave_t.svg | 15 |
+| images/homescreen/ipv.svg | 19 |
+| images/homescreen/learn_c.svg | 19 |
 | images/homescreen/learn_t.svg | 15 |
 | images/homescreen/relation_c.svg | 19 |
-| images/homescreen/relation_t.svg | 17 |
-| images/homescreen/safety_c.svg | 17 |
-| images/homescreen/safety_t.svg | 17 |
-| images/homescreen/understand_c.svg | 15 |
-| images/homescreen/understand_t.svg | 15 |
+| images/homescreen/relation_t.svg | 19 |
+| images/homescreen/safety_c.svg | 21 |
+| images/homescreen/safety_t.svg | 19 |
+| images/homescreen/understand_c.svg | 21 |
+| images/homescreen/understand_t.svg | 21 |
 | images/icons/diamond.png | 1 |
 | images/icons/diamond_active.png | 1 |
 | images/icons/docs.svg | 1 |
-| images/icons/document-text-outline-thin.svg | 3 |
 | images/icons/download.svg | 2 |
 | images/icons/download_white.svg | 1 |
 | images/icons/faces/happy.svg | 11 |
@@ -672,9 +664,9 @@ Assets that have references within sheets but do not appear in app-data
 | images/icons/heart.png | 2 |
 | images/icons/heart_filled.png | 1 |
 | images/icons/heart_filled_active.png | 1 |
-| images/icons/heart_filled_blue.png | 76 |
+| images/icons/heart_filled_blue.png | 68 |
 | images/icons/share.svg | 3 |
-| images/icons/spark.png | 2 |
+| images/icons/spark.png | 4 |
 | images/icons/trophy.png | 1 |
 | images/icons/trophy_active.png | 1 |
 | images/icons/visibility.svg | 1 |
@@ -700,6 +692,13 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/backgrounds/kites.svg | 92.1 | 1 |
 | images/backgrounds/lesson-cta-bg.svg | 8.3 | 4 |
 | images/backgrounds/library_top_right.png | 54.7 | 3 |
+| images/badges/badge_1.svg | 25.7 | 2 |
+| images/badges/badge_2.svg | 17.4 | 1 |
+| images/badges/badge_3.svg | 49.1 | 2 |
+| images/badges/badge_4.svg | 21.9 | 2 |
+| images/badges/badge_5.svg | 24.7 | 2 |
+| images/badges/badge_6.svg | 42.3 | 1 |
+| images/badges/badge_7.svg | 25.4 | 1 |
 | images/character_icons/ABUELA_1.svg | 4.8 | 1 |
 | images/character_icons/ABUELO_1.svg | 6.8 | 1 |
 | images/character_icons/AMIGA_MUJER_1.svg | 13.9 | 1 |
@@ -801,66 +800,67 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/comic/relation/talk_feelings/talk_feelings_yc_mc_2.svg | 44 | 2 |
 | images/comic/relation/talk_feelings/talk_feelings_yc_mc_3.svg | 43.6 | 2 |
 | images/comic/relation/talk_feelings/talk_feelings_yc_mc_4.svg | 32.8 | 2 |
-| images/faces/angry.svg | 2.6 | 154 |
-| images/faces/grateful.svg | 15.7 | 154 |
-| images/faces/happy.svg | 3.1 | 154 |
-| images/faces/sad.svg | 1.8 | 154 |
-| images/faces/smiling.svg | 4.8 | 154 |
-| images/faces/stressed.svg | 3.5 | 154 |
+| images/faces/angry.svg | 2.6 | 125 |
+| images/faces/grateful.svg | 15.7 | 125 |
+| images/faces/happy.svg | 3.1 | 125 |
+| images/faces/sad.svg | 1.8 | 125 |
+| images/faces/smiling.svg | 4.8 | 125 |
+| images/faces/stressed.svg | 3.5 | 125 |
 | images/facilitators/avatar_femenino.png | 1067.5 | 1 |
 | images/facilitators/avatar_masculino.png | 1408 | 1 |
 | images/icons/balance_blue.png | 4.7 | 12 |
-| images/icons/brain_blue.png | 5.2 | 16 |
+| images/icons/brain_blue.png | 5.2 | 12 |
 | images/icons/bug.svg | 1.2 | 2 |
 | images/icons/celebration.svg | 70.4 | 1 |
 | images/icons/chatbubble-ellipses-outline.svg | 0.8 | 1 |
-| images/icons/clock_blue.png | 4.5 | 40 |
+| images/icons/clock_blue.png | 4.5 | 36 |
 | images/icons/diamond-outline.svg | 0.6 | 2 |
-| images/icons/diamond_blue.png | 4.7 | 35 |
+| images/icons/diamond_blue.png | 4.7 | 24 |
 | images/icons/document-lock-outline.svg | 0.7 | 1 |
+| images/icons/document-text-outline-thin.svg | 0.5 | 3 |
 | images/icons/document-text-outline.svg | 0.5 | 1 |
 | images/icons/expand_circle_right.png | 0.9 | 1 |
 | images/icons/expand_circle_right_blue.svg | 2.1 | 2 |
-| images/icons/eye_blue.png | 4.2 | 38 |
-| images/icons/football_blue.png | 5.1 | 18 |
+| images/icons/eye_blue.png | 4.2 | 30 |
+| images/icons/football_blue.png | 5.1 | 13 |
 | images/icons/globe-outline.svg | 0.8 | 1 |
 | images/icons/heart-outline.png | 1.5 | 1 |
 | images/icons/heart_filled.svg | 1.4 | 1 |
 | images/icons/heart_filled_red.png | 0.8 | 3 |
 | images/icons/heart_filled_red.svg | 0.4 | 1 |
-| images/icons/home_active.svg | 0.4 | 2 |
+| images/icons/home_active.svg | 0.4 | 1 |
 | images/icons/home_filled.svg | 0.2 | 1 |
 | images/icons/home_outline.svg | 0.3 | 1 |
 | images/icons/in_progress.svg | 1.1 | 1 |
 | images/icons/information-circle-outline.svg | 0.6 | 1 |
-| images/icons/lightbulb_blue.png | 3.6 | 33 |
+| images/icons/lightbulb_blue.png | 3.6 | 25 |
 | images/icons/local_library_filled.svg | 0.3 | 1 |
 | images/icons/local_library_outline.svg | 0.9 | 1 |
 | images/icons/lock-closed-outline.png | 0.9 | 1 |
 | images/icons/lock-open-outline.svg | 0.4 | 2 |
 | images/icons/locked.png | 0.7 | 2 |
 | images/icons/log-in-outline.svg | 0.5 | 1 |
-| images/icons/magnifying_glass.svg | 0.9 | 86 |
-| images/icons/parent_child.svg | 2 | 22 |
-| images/icons/parent_child_heart.svg | 3 | 98 |
-| images/icons/pause.svg | 0.7 | 92 |
-| images/icons/pencil.svg | 1.1 | 98 |
+| images/icons/magnifying_glass.svg | 0.9 | 103 |
+| images/icons/parent_child.svg | 2 | 15 |
+| images/icons/parent_child_heart.svg | 3 | 110 |
+| images/icons/pause.svg | 0.7 | 107 |
+| images/icons/pencil.svg | 1.1 | 110 |
 | images/icons/person-circle-outline.svg | 0.8 | 1 |
-| images/icons/picture_book.svg | 1.8 | 94 |
-| images/icons/question_blue.png | 3.4 | 14 |
+| images/icons/picture_book.svg | 1.8 | 107 |
+| images/icons/question_blue.png | 3.4 | 9 |
 | images/icons/question_mark_blue.svg | 0.8 | 1 |
 | images/icons/settings_filled.svg | 0.5 | 1 |
 | images/icons/settings_outline.svg | 1.3 | 1 |
-| images/icons/single_speech_blue.png | 3.3 | 24 |
-| images/icons/smile_eyes_down.svg | 0.9 | 90 |
-| images/icons/smile_eyes_up.svg | 1 | 95 |
-| images/icons/speech_bubble_blue.png | 4.2 | 58 |
-| images/icons/star_filled_blue.png | 5.1 | 50 |
+| images/icons/single_speech_blue.png | 3.3 | 21 |
+| images/icons/smile_eyes_down.svg | 0.9 | 106 |
+| images/icons/smile_eyes_up.svg | 1 | 109 |
+| images/icons/speech_bubble_blue.png | 4.2 | 42 |
+| images/icons/star_filled_blue.png | 5.1 | 35 |
 | images/icons/star_gold.svg | 0.3 | 1 |
-| images/icons/star_outline_blue.svg | 1 | 3 |
-| images/icons/thought_bubble.svg | 2.1 | 88 |
-| images/icons/tick.svg | 0.3 | 34 |
-| images/icons/trophy_blue.png | 5.1 | 21 |
+| images/icons/star_outline_blue.svg | 1 | 5 |
+| images/icons/thought_bubble.svg | 2.1 | 105 |
+| images/icons/tick.svg | 0.3 | 25 |
+| images/icons/trophy_blue.png | 5.1 | 16 |
 | images/icons/trophy_large.svg | 2.2 | 1 |
 | images/logos/IDEMS.png | 42.7 | 1 |
 | images/logos/PLH.png | 34.7 | 1 |
@@ -879,9 +879,9 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/onboarding/welcome_screen_3.svg | 1843.3 | 1 |
 | lottie/relax/blue_dots.json | 14.7 | 4 |
 | lottie/relax/heart.json | 46.7 | 4 |
-| lottie/relax/looping_rings.json | 10.4 | 23 |
-| lottie/relax/soothing_waves.json | 7.6 | 24 |
-| lottie/relax/square_flow.json | 5.9 | 47 |
+| lottie/relax/looping_rings.json | 10.4 | 16 |
+| lottie/relax/soothing_waves.json | 7.6 | 17 |
+| lottie/relax/square_flow.json | 5.9 | 32 |
 | lottie/ux/bulging_circles.json | 11.8 | 1 |
 | lottie/ux/checkmark.json | 24.6 | 2 |
 | lottie/ux/congrats.json | 50.4 | 1 |
@@ -893,14 +893,14 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 20 |
+| data_list |  | 21 |
 | data_list | ab_testing | 1 |
 | data_list | activities | 2 |
 | data_list | app_config_language_list | 1 |
 | data_list | campaign_rows | 2 |
 | data_list | campaign_schedule | 2 |
 | data_list | check_in | 1 |
-| data_list | generated | 163 |
+| data_list | generated | 153 |
 | data_list | hp_review | 2 |
 | data_list | legal_terms | 2 |
 | data_list | library | 2 |
@@ -999,7 +999,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_list | proximal_outcomes | 10 |
 | data_list | relax | 1 |
 | data_pipe |  | 4 |
-| data_pipe | generated | 159 |
+| data_pipe | generated | 149 |
 | generator |  | 9 |
 | global |  | 14 |
 | global | ab_testing | 2 |
@@ -1007,7 +1007,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global | proximal_outcomes | 3 |
 | template |  | 112 |
 | template | ab_testing | 1 |
-| template | generated | 390 |
+| template | generated | 441 |
 | template | legal_terms | 4 |
 | template | proximal_outcomes | 19 |
 </details>

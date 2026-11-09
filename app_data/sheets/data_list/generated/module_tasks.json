@@ -380,6 +380,47 @@
       "task_child": "talk_feelings_yc_mc_article_tasks"
     },
     {
+      "id": "thoughts_feelings_yc",
+      "tag_course": "relation_yc",
+      "age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "10"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number": 9,
+      "title": "Pensamientos, emociones y acciones",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Pensamientos, emociones y acciones"
+        }
+      },
+      "completed": false,
+      "task_child": "thoughts_feelings_yc_article_tasks"
+    },
+    {
       "id": "calm_yc_fc",
       "tag_course": "relation_yc",
       "age_list": [
@@ -406,7 +447,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 9,
+      "number": 10,
       "image_asset": "images/homescreen/behave_c.svg",
       "relax_id": "relax_1",
       "check_in_id": "check_in_5",
@@ -452,7 +493,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 10,
+      "number": 11,
       "image_asset": "images/homescreen/behave_c.svg",
       "relax_id": "relax_1",
       "check_in_id": "check_in_5",
@@ -500,7 +541,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 11,
+      "number": 12,
       "image_asset": "images/homescreen/behave_t.svg",
       "relax_id": "relax_2",
       "check_in_id": "check_in_6",
@@ -546,7 +587,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 12,
+      "number": 13,
       "image_asset": "images/homescreen/behave_t.svg",
       "relax_id": "relax_2",
       "check_in_id": "check_in_6",
@@ -594,7 +635,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 13,
+      "number": 14,
       "image_asset": "images/homescreen/safety_c.svg",
       "relax_id": "relax_3",
       "check_in_id": "check_in_7",
@@ -640,7 +681,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 14,
+      "number": 15,
       "image_asset": "images/homescreen/safety_c.svg",
       "relax_id": "relax_3",
       "check_in_id": "check_in_7",
@@ -688,7 +729,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 15,
+      "number": 16,
       "image_asset": "images/homescreen/safety_t.svg",
       "relax_id": "relax_9",
       "check_in_id": "check_in_8",
@@ -734,7 +775,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 16,
+      "number": 17,
       "image_asset": "images/homescreen/safety_t.svg",
       "relax_id": "relax_9",
       "check_in_id": "check_in_8",
@@ -782,7 +823,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 17,
+      "number": 18,
       "image_asset": "images/homescreen/learn_c.svg",
       "relax_id": "relax_1",
       "check_in_id": "check_in_9",
@@ -828,7 +869,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 18,
+      "number": 19,
       "image_asset": "images/homescreen/learn_c.svg",
       "relax_id": "relax_1",
       "check_in_id": "check_in_9",
@@ -848,6 +889,47 @@
       "home_activity": "¡Excelente trabajo!\n\nAhora es momento de practicar pasar al menos 15 minutos al día conectando y compartiendo tiempo especial juntos con @fields.child_name.",
       "completed": false,
       "task_child": "talk_feelings_t_mc_article_tasks"
+    },
+    {
+      "id": "thoughts_feelings_t",
+      "tag_course": "relation_t",
+      "age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number": 20,
+      "title": "Pensamientos, emociones y acciones",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Pensamientos, emociones y acciones"
+        }
+      },
+      "completed": false,
+      "task_child": "thoughts_feelings_t_article_tasks"
     },
     {
       "id": "calm_t_fc",
@@ -876,7 +958,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 19,
+      "number": 21,
       "image_asset": "images/homescreen/learn_t.svg",
       "relax_id": "relax_2",
       "check_in_id": "check_in_10",
@@ -922,7 +1004,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 20,
+      "number": 22,
       "image_asset": "images/homescreen/learn_t.svg",
       "relax_id": "relax_2",
       "check_in_id": "check_in_10",
@@ -944,119 +1026,7 @@
       "task_child": "calm_t_mc_article_tasks"
     },
     {
-      "id": "ipv_sharing_m",
-      "tag_course": "ipv",
-      "age_list": [
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out",
-        "non_binary"
-      ],
-      "user_gender_list": [
-        "woman",
-        "opt_out",
-        "non_binary"
-      ],
-      "tag_list": [
-        "child",
-        "teen"
-      ],
-      "number": 21,
-      "image_asset": "images/homescreen/ipv.svg",
-      "relax_id": "relax_3",
-      "check_in_id": "check_in_11",
-      "title": "Escuchar y comunicar con claridad",
-      "_translations": {
-        "title": {},
-        "home_activity": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Escuchar y comunicar con claridad"
-        },
-        "home_activity": {
-          "eng": "¡Excelente trabajo!\n\nAhora dedica un momento para conversar con tu pareja o familiar sobre cómo apoyarse mutuamente en la crianza, el cuidado y las responsabilidades del hogar."
-        }
-      },
-      "home_activity": "¡Excelente trabajo!\n\nAhora dedica un momento para conversar con tu pareja o familiar sobre cómo apoyarse mutuamente en la crianza, el cuidado y las responsabilidades del hogar.",
-      "completed": false,
-      "task_child": "ipv_sharing_m_article_tasks"
-    },
-    {
-      "id": "ipv_supportive_m",
-      "tag_course": "ipv",
-      "age_list": [
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out",
-        "non_binary"
-      ],
-      "user_gender_list": [
-        "man"
-      ],
-      "tag_list": [
-        "child",
-        "teen"
-      ],
-      "number": 22,
-      "image_asset": "images/homescreen/ipv.svg",
-      "relax_id": "relax_3",
-      "check_in_id": "check_in_11",
-      "title": "Escuchar y comunicar con claridad",
-      "_translations": {
-        "title": {},
-        "home_activity": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Escuchar y comunicar con claridad"
-        },
-        "home_activity": {
-          "eng": "¡Excelente trabajo!\n\nAhora dedica un momento para conversar con tu pareja o familiar sobre cómo apoyarse mutuamente en la crianza, el cuidado y las responsabilidades del hogar."
-        }
-      },
-      "home_activity": "¡Excelente trabajo!\n\nAhora dedica un momento para conversar con tu pareja o familiar sobre cómo apoyarse mutuamente en la crianza, el cuidado y las responsabilidades del hogar.",
-      "completed": false,
-      "task_child": "ipv_supportive_m_article_tasks"
-    },
-    {
-      "id": "ipv_listen_m",
+      "id": "ipv_listen_fc",
       "tag_course": "ipv",
       "age_list": [
         "2",
@@ -1092,17 +1062,17 @@
         "teen"
       ],
       "number": 23,
-      "image_asset": "images/homescreen/relation_c.svg",
-      "relax_id": "relax_9",
-      "check_in_id": "check_in_12",
-      "title": "Tomar decisiones en equipo",
+      "image_asset": "images/homescreen/ipv.svg",
+      "relax_id": "relax_3",
+      "check_in_id": "check_in_11",
+      "title": "Escuchar y comunicar con claridad",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Tomar decisiones en equipo"
+          "eng": "Escuchar y comunicar con claridad"
         },
         "home_activity": {
           "eng": "¡Excelente trabajo!\n\nAhora dedica un momento para conversar con tu pareja o familiar sobre cómo apoyarse mutuamente en la crianza, el cuidado y las responsabilidades del hogar."
@@ -1110,10 +1080,10 @@
       },
       "home_activity": "¡Excelente trabajo!\n\nAhora dedica un momento para conversar con tu pareja o familiar sobre cómo apoyarse mutuamente en la crianza, el cuidado y las responsabilidades del hogar.",
       "completed": false,
-      "task_child": "ipv_listen_m_article_tasks"
+      "task_child": "ipv_listen_fc_article_tasks"
     },
     {
-      "id": "ipv_equals_m",
+      "id": "ipv_listen_mc",
       "tag_course": "ipv",
       "age_list": [
         "2",
@@ -1147,17 +1117,17 @@
         "teen"
       ],
       "number": 24,
-      "image_asset": "images/homescreen/relation_c.svg",
-      "relax_id": "relax_9",
-      "check_in_id": "check_in_12",
-      "title": "Tomar decisiones en equipo",
+      "image_asset": "images/homescreen/ipv.svg",
+      "relax_id": "relax_3",
+      "check_in_id": "check_in_11",
+      "title": "Escuchar y comunicar con claridad",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Tomar decisiones en equipo"
+          "eng": "Escuchar y comunicar con claridad"
         },
         "home_activity": {
           "eng": "¡Excelente trabajo!\n\nAhora dedica un momento para conversar con tu pareja o familiar sobre cómo apoyarse mutuamente en la crianza, el cuidado y las responsabilidades del hogar."
@@ -1165,10 +1135,10 @@
       },
       "home_activity": "¡Excelente trabajo!\n\nAhora dedica un momento para conversar con tu pareja o familiar sobre cómo apoyarse mutuamente en la crianza, el cuidado y las responsabilidades del hogar.",
       "completed": false,
-      "task_child": "ipv_equals_m_article_tasks"
+      "task_child": "ipv_listen_mc_article_tasks"
     },
     {
-      "id": "ipv_conflicts_m",
+      "id": "ipv_equals_fc",
       "tag_course": "ipv",
       "age_list": [
         "2",
@@ -1204,6 +1174,118 @@
         "teen"
       ],
       "number": 25,
+      "image_asset": "images/homescreen/relation_c.svg",
+      "relax_id": "relax_9",
+      "check_in_id": "check_in_12",
+      "title": "Tomar decisiones en equipo",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Tomar decisiones en equipo"
+        },
+        "home_activity": {
+          "eng": "¡Excelente trabajo!\n\nAhora dedica un momento para conversar con tu pareja o familiar sobre cómo apoyarse mutuamente en la crianza, el cuidado y las responsabilidades del hogar."
+        }
+      },
+      "home_activity": "¡Excelente trabajo!\n\nAhora dedica un momento para conversar con tu pareja o familiar sobre cómo apoyarse mutuamente en la crianza, el cuidado y las responsabilidades del hogar.",
+      "completed": false,
+      "task_child": "ipv_equals_fc_article_tasks"
+    },
+    {
+      "id": "ipv_equals_mc",
+      "tag_course": "ipv",
+      "age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number": 26,
+      "image_asset": "images/homescreen/relation_c.svg",
+      "relax_id": "relax_9",
+      "check_in_id": "check_in_12",
+      "title": "Tomar decisiones en equipo",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Tomar decisiones en equipo"
+        },
+        "home_activity": {
+          "eng": "¡Excelente trabajo!\n\nAhora dedica un momento para conversar con tu pareja o familiar sobre cómo apoyarse mutuamente en la crianza, el cuidado y las responsabilidades del hogar."
+        }
+      },
+      "home_activity": "¡Excelente trabajo!\n\nAhora dedica un momento para conversar con tu pareja o familiar sobre cómo apoyarse mutuamente en la crianza, el cuidado y las responsabilidades del hogar.",
+      "completed": false,
+      "task_child": "ipv_equals_mc_article_tasks"
+    },
+    {
+      "id": "ipv_supportive_fc",
+      "tag_course": "ipv",
+      "age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number": 27,
       "image_asset": "images/homescreen/relation_t.svg",
       "relax_id": "relax_1",
       "check_in_id": "check_in_13",
@@ -1222,11 +1304,334 @@
       },
       "home_activity": "¡Excelente trabajo!\n\nAhora dedica un momento para conversar con tu pareja o familiar sobre cómo apoyarse mutuamente en la crianza, el cuidado y las responsabilidades del hogar.",
       "completed": false,
-      "task_child": "ipv_conflicts_m_article_tasks"
+      "task_child": "ipv_supportive_fc_article_tasks"
     },
     {
-      "id": "safe_2to5_yc_m",
-      "tag_course": "safety_c",
+      "id": "ipv_supportive_mc",
+      "tag_course": "ipv",
+      "age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number": 28,
+      "image_asset": "images/homescreen/relation_t.svg",
+      "relax_id": "relax_1",
+      "check_in_id": "check_in_13",
+      "title": "Apoyarse mutuamente",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Apoyarse mutuamente"
+        },
+        "home_activity": {
+          "eng": "¡Excelente trabajo!\n\nAhora dedica un momento para conversar con tu pareja o familiar sobre cómo apoyarse mutuamente en la crianza, el cuidado y las responsabilidades del hogar."
+        }
+      },
+      "home_activity": "¡Excelente trabajo!\n\nAhora dedica un momento para conversar con tu pareja o familiar sobre cómo apoyarse mutuamente en la crianza, el cuidado y las responsabilidades del hogar.",
+      "completed": false,
+      "task_child": "ipv_supportive_mc_article_tasks"
+    },
+    {
+      "id": "ipv_sharing_fc",
+      "tag_course": "ipv",
+      "age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number": 29,
+      "image_asset": "images/homescreen/understand_c.svg",
+      "relax_id": "relax_2",
+      "check_in_id": "check_in_14",
+      "title": "Involucrarse en la crianza",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Involucrarse en la crianza"
+        },
+        "home_activity": {
+          "eng": "¡Excelente trabajo!\n\nAhora dedica un momento para conversar con tu pareja o familiar sobre cómo apoyarse mutuamente en la crianza, el cuidado y las responsabilidades del hogar."
+        }
+      },
+      "home_activity": "¡Excelente trabajo!\n\nAhora dedica un momento para conversar con tu pareja o familiar sobre cómo apoyarse mutuamente en la crianza, el cuidado y las responsabilidades del hogar.",
+      "completed": false,
+      "task_child": "ipv_sharing_fc_article_tasks"
+    },
+    {
+      "id": "ipv_sharing_mc",
+      "tag_course": "ipv",
+      "age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number": 30,
+      "image_asset": "images/homescreen/understand_c.svg",
+      "relax_id": "relax_2",
+      "check_in_id": "check_in_14",
+      "title": "Involucrarse en la crianza",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Involucrarse en la crianza"
+        },
+        "home_activity": {
+          "eng": "¡Excelente trabajo!\n\nAhora dedica un momento para conversar con tu pareja o familiar sobre cómo apoyarse mutuamente en la crianza, el cuidado y las responsabilidades del hogar."
+        }
+      },
+      "home_activity": "¡Excelente trabajo!\n\nAhora dedica un momento para conversar con tu pareja o familiar sobre cómo apoyarse mutuamente en la crianza, el cuidado y las responsabilidades del hogar.",
+      "completed": false,
+      "task_child": "ipv_sharing_mc_article_tasks"
+    },
+    {
+      "id": "ipv_conflicts_fc",
+      "tag_course": "ipv",
+      "age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number": 31,
+      "image_asset": "images/homescreen/understand_t.svg",
+      "relax_id": "relax_3",
+      "check_in_id": "check_in_15",
+      "title": "Manejar los desacuerdos",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Manejar los desacuerdos"
+        },
+        "home_activity": {
+          "eng": "¡Excelente trabajo!\n\nAhora dedica un momento para conversar con tu pareja o familiar sobre cómo apoyarse mutuamente en la crianza, el cuidado y las responsabilidades del hogar."
+        }
+      },
+      "home_activity": "¡Excelente trabajo!\n\nAhora dedica un momento para conversar con tu pareja o familiar sobre cómo apoyarse mutuamente en la crianza, el cuidado y las responsabilidades del hogar.",
+      "completed": false,
+      "task_child": "ipv_conflicts_fc_article_tasks"
+    },
+    {
+      "id": "ipv_conflicts_mc",
+      "tag_course": "ipv",
+      "age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man"
+      ],
+      "tag_list": [
+        "child",
+        "teen"
+      ],
+      "number": 32,
+      "image_asset": "images/homescreen/understand_t.svg",
+      "relax_id": "relax_3",
+      "check_in_id": "check_in_15",
+      "title": "Manejar los desacuerdos",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Manejar los desacuerdos"
+        },
+        "home_activity": {
+          "eng": "¡Excelente trabajo!\n\nAhora dedica un momento para conversar con tu pareja o familiar sobre cómo apoyarse mutuamente en la crianza, el cuidado y las responsabilidades del hogar."
+        }
+      },
+      "home_activity": "¡Excelente trabajo!\n\nAhora dedica un momento para conversar con tu pareja o familiar sobre cómo apoyarse mutuamente en la crianza, el cuidado y las responsabilidades del hogar.",
+      "completed": false,
+      "task_child": "ipv_conflicts_mc_article_tasks"
+    },
+    {
+      "id": "safe_touch_2to5_yc_f",
+      "tag_course": "safety_yc",
+      "age_list": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "child_gender_list": [
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number": 31,
+      "image_asset": "images/homescreen/behave_c.svg",
+      "relax_id": "relax_9",
+      "check_in_id": "check_in_16",
+      "title": "Protección y cuidado del cuerpo",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Protección y cuidado del cuerpo"
+        },
+        "home_activity": {
+          "eng": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir."
+        }
+      },
+      "home_activity": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir.",
+      "completed": false,
+      "task_child": "safe_touch_2to5_yc_f_article_tasks"
+    },
+    {
+      "id": "safe_touch_2to5_yc_m",
+      "tag_course": "safety_yc",
       "age_list": [
         "2",
         "3",
@@ -1245,62 +1650,18 @@
       "tag_list": [
         "child"
       ],
-      "number": 26,
-      "image_asset": "images/homescreen/behave_c.svg",
-      "relax_id": "relax_9",
-      "check_in_id": "check_in_16",
-      "title": "Enseñar sobre autocuidado y prevención del abuso a mi niño",
-      "_translations": {
-        "title": {},
-        "home_activity": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Enseñar sobre autocuidado y prevención del abuso a mi niño"
-        },
-        "home_activity": {
-          "eng": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir."
-        }
-      },
-      "home_activity": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir.",
-      "completed": false,
-      "task_child": "safe_2to5_yc_m_article_tasks"
-    },
-    {
-      "id": "safe_2to5_yc_f",
-      "tag_course": "safety_c",
-      "age_list": [
-        "2",
-        "3",
-        "4",
-        "5"
-      ],
-      "child_gender_list": [
-        "female",
-        "opt_out",
-        "non_binary"
-      ],
-      "user_gender_list": [
-        "man",
-        "woman",
-        "opt_out",
-        "non_binary"
-      ],
-      "tag_list": [
-        "child"
-      ],
-      "number": 27,
+      "number": 32,
       "image_asset": "images/homescreen/behave_t.svg",
       "relax_id": "relax_1",
-      "check_in_id": "check_in_17",
-      "title": "Enseñar sobre autocuidado y prevención del abuso a mi niña",
+      "check_in_id": "check_in_16",
+      "title": "Protección y cuidado del cuerpo",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Enseñar sobre autocuidado y prevención del abuso a mi niña"
+          "eng": "Protección y cuidado del cuerpo"
         },
         "home_activity": {
           "eng": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir."
@@ -1308,11 +1669,11 @@
       },
       "home_activity": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir.",
       "completed": false,
-      "task_child": "safe_2to5_yc_f_article_tasks"
+      "task_child": "safe_touch_2to5_yc_m_article_tasks"
     },
     {
-      "id": "safe_6to9_yc",
-      "tag_course": "safety_c",
+      "id": "safe_touch_6to9_yc_f",
+      "tag_course": "safety_yc",
       "age_list": [
         "6",
         "7",
@@ -1320,7 +1681,6 @@
         "9"
       ],
       "child_gender_list": [
-        "male",
         "female",
         "opt_out",
         "non_binary"
@@ -1334,18 +1694,18 @@
       "tag_list": [
         "child"
       ],
-      "number": 28,
+      "number": 33,
       "image_asset": "images/homescreen/safety_c.svg",
       "relax_id": "relax_2",
-      "check_in_id": "check_in_18",
-      "title": "Enseñar sobre autocuidado y prevención del abuso a mi niña o niño",
+      "check_in_id": "check_in_17",
+      "title": "Protección y cuidado del cuerpo",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Enseñar sobre autocuidado y prevención del abuso a mi niña o niño"
+          "eng": "Protección y cuidado del cuerpo"
         },
         "home_activity": {
           "eng": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir."
@@ -1353,11 +1713,53 @@
       },
       "home_activity": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir.",
       "completed": false,
-      "task_child": "safe_6to9_yc_article_tasks"
+      "task_child": "safe_touch_6to9_yc_f_article_tasks"
+    },
+    {
+      "id": "safe_touch_6to9_yc_m",
+      "tag_course": "safety_yc",
+      "age_list": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "child_gender_list": [
+        "male"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number": 34,
+      "image_asset": "images/homescreen/safety_c.svg",
+      "relax_id": "relax_2",
+      "check_in_id": "check_in_18",
+      "title": "Protección y cuidado del cuerpo",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Protección y cuidado del cuerpo"
+        },
+        "home_activity": {
+          "eng": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir."
+        }
+      },
+      "home_activity": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir.",
+      "completed": false,
+      "task_child": "safe_touch_6to9_yc_m_article_tasks"
     },
     {
       "id": "com_safe_2to4_yc",
-      "tag_course": "safety_c",
+      "tag_course": "safety_yc",
       "age_list": [
         "2",
         "3",
@@ -1378,18 +1780,18 @@
       "tag_list": [
         "child"
       ],
-      "number": 29,
+      "number": 35,
       "image_asset": "images/homescreen/safety_t.svg",
       "relax_id": "relax_3",
       "check_in_id": "check_in_19",
-      "title": "Crear un plan de seguridad con mi niña o niño",
+      "title": "Crear un plan de seguridad",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Crear un plan de seguridad con mi niña o niño"
+          "eng": "Crear un plan de seguridad"
         },
         "home_activity": {
           "eng": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir."
@@ -1400,8 +1802,8 @@
       "task_child": "com_safe_2to4_yc_article_tasks"
     },
     {
-      "id": "com_safe_5to9_yc",
-      "tag_course": "safety_c",
+      "id": "com_safe_5to9_yc_f",
+      "tag_course": "safety_yc",
       "age_list": [
         "5",
         "6",
@@ -1410,7 +1812,6 @@
         "9"
       ],
       "child_gender_list": [
-        "male",
         "female",
         "opt_out",
         "non_binary"
@@ -1424,18 +1825,18 @@
       "tag_list": [
         "child"
       ],
-      "number": 30,
+      "number": 36,
       "image_asset": "images/homescreen/learn_c.svg",
       "relax_id": "relax_9",
       "check_in_id": "check_in_20",
-      "title": "Crear un plan de seguridad con mi niña o niño",
+      "title": "Crear un plan de seguridad",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Crear un plan de seguridad con mi niña o niño"
+          "eng": "Crear un plan de seguridad"
         },
         "home_activity": {
           "eng": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir."
@@ -1443,11 +1844,54 @@
       },
       "home_activity": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir.",
       "completed": false,
-      "task_child": "com_safe_5to9_yc_article_tasks"
+      "task_child": "com_safe_5to9_yc_f_article_tasks"
+    },
+    {
+      "id": "com_safe_5to9_yc_m",
+      "tag_course": "safety_yc",
+      "age_list": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "child_gender_list": [
+        "male"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number": 37,
+      "image_asset": "images/homescreen/learn_c.svg",
+      "relax_id": "relax_9",
+      "check_in_id": "check_in_20",
+      "title": "Crear un plan de seguridad",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Crear un plan de seguridad"
+        },
+        "home_activity": {
+          "eng": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir."
+        }
+      },
+      "home_activity": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir.",
+      "completed": false,
+      "task_child": "com_safe_5to9_yc_m_article_tasks"
     },
     {
       "id": "crises_2to6_yc",
-      "tag_course": "safety_c",
+      "tag_course": "safety_yc",
       "age_list": [
         "2",
         "3",
@@ -1470,18 +1914,18 @@
       "tag_list": [
         "child"
       ],
-      "number": 31,
+      "number": 38,
       "image_asset": "images/homescreen/learn_t.svg",
       "relax_id": "relax_1",
       "check_in_id": "check_in_21",
-      "title": "Saber responder ante alguna crisis",
+      "title": "Responder a una crisis",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Saber responder ante alguna crisis"
+          "eng": "Responder a una crisis"
         },
         "home_activity": {
           "eng": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir."
@@ -1492,15 +1936,14 @@
       "task_child": "crises_2to6_yc_article_tasks"
     },
     {
-      "id": "crises_7to9_yc",
-      "tag_course": "safety_c",
+      "id": "crises_7to9_yc_f",
+      "tag_course": "safety_yc",
       "age_list": [
         "7",
         "8",
         "9"
       ],
       "child_gender_list": [
-        "male",
         "female",
         "opt_out",
         "non_binary"
@@ -1514,18 +1957,18 @@
       "tag_list": [
         "child"
       ],
-      "number": 32,
+      "number": 39,
       "image_asset": "images/homescreen/ipv.svg",
       "relax_id": "relax_2",
       "check_in_id": "check_in_22",
-      "title": "Saber responder ante alguna crisis",
+      "title": "Responder a una crisis",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Saber responder ante alguna crisis"
+          "eng": "Responder a una crisis"
         },
         "home_activity": {
           "eng": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir."
@@ -1533,216 +1976,15 @@
       },
       "home_activity": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir.",
       "completed": false,
-      "task_child": "crises_7to9_yc_article_tasks"
+      "task_child": "crises_7to9_yc_f_article_tasks"
     },
     {
-      "id": "online_safety_yc",
-      "tag_course": "safety_c",
+      "id": "crises_7to9_yc_m",
+      "tag_course": "safety_yc",
       "age_list": [
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
         "7",
         "8",
         "9"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out",
-        "non_binary"
-      ],
-      "user_gender_list": [
-        "man",
-        "woman",
-        "opt_out",
-        "non_binary"
-      ],
-      "tag_list": [
-        "child"
-      ],
-      "number": 33,
-      "image_asset": "images/homescreen/relation_c.svg",
-      "relax_id": "relax_3",
-      "check_in_id": "check_in_23",
-      "title": "Usar con responsabilidad y seguridad los dispositivos y espacios virtuales",
-      "_translations": {
-        "title": {},
-        "home_activity": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Usar con responsabilidad y seguridad los dispositivos y espacios virtuales"
-        },
-        "home_activity": {
-          "eng": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir."
-        }
-      },
-      "home_activity": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir.",
-      "completed": false,
-      "task_child": "online_safety_yc_article_tasks"
-    },
-    {
-      "id": "habits_online_yc",
-      "tag_course": "safety_c",
-      "age_list": [
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out",
-        "non_binary"
-      ],
-      "user_gender_list": [
-        "man",
-        "woman",
-        "opt_out",
-        "non_binary"
-      ],
-      "tag_list": [
-        "child"
-      ],
-      "number": 34,
-      "image_asset": "images/homescreen/relation_t.svg",
-      "relax_id": "relax_9",
-      "check_in_id": "check_in_24",
-      "title": "Desarrollar confianza y hábitos seguros para el uso de internet y redes sociales",
-      "_translations": {
-        "title": {},
-        "home_activity": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Desarrollar confianza y hábitos seguros para el uso de internet y redes sociales"
-        },
-        "home_activity": {
-          "eng": "¡Excelente trabajo!\n\nEs momento de poner en práctica lo aprendido. Conversa con @fields.child_name sobre cómo usar internet y las redes sociales de forma segura y responsable."
-        }
-      },
-      "home_activity": "¡Excelente trabajo!\n\nEs momento de poner en práctica lo aprendido. Conversa con @fields.child_name sobre cómo usar internet y las redes sociales de forma segura y responsable.",
-      "completed": false,
-      "task_child": "habits_online_yc_article_tasks"
-    },
-    {
-      "id": "ks_c_safe_t",
-      "tag_course": "safety_t",
-      "age_list": [
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out",
-        "non_binary"
-      ],
-      "user_gender_list": [
-        "man",
-        "woman",
-        "opt_out",
-        "non_binary"
-      ],
-      "tag_list": [
-        "teen"
-      ],
-      "number": 35,
-      "image_asset": "images/homescreen/understand_c.svg",
-      "relax_id": "relax_1",
-      "check_in_id": "check_in_25",
-      "title": "Crear un plan de seguridad para mi adolescente",
-      "_translations": {
-        "title": {},
-        "home_activity": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Crear un plan de seguridad para mi adolescente"
-        },
-        "home_activity": {
-          "eng": "¡Muy bien!\n\nEs tiempo de aplicar esta nueva habilidad. Conversa con @fields.child_name sobre personas, lugares y acciones que pueden ayudarle a mantenerse seguro/a ante situaciones de riesgo."
-        }
-      },
-      "home_activity": "¡Muy bien!\n\nEs tiempo de aplicar esta nueva habilidad. Conversa con @fields.child_name sobre personas, lugares y acciones que pueden ayudarle a mantenerse seguro/a ante situaciones de riesgo.",
-      "completed": false,
-      "task_child": "ks_c_safe_t_article_tasks"
-    },
-    {
-      "id": "ks_s_violence_t",
-      "tag_course": "safety_t",
-      "age_list": [
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out",
-        "non_binary"
-      ],
-      "user_gender_list": [
-        "man",
-        "woman",
-        "opt_out",
-        "non_binary"
-      ],
-      "tag_list": [
-        "teen"
-      ],
-      "number": 36,
-      "image_asset": "images/homescreen/understand_t.svg",
-      "relax_id": "relax_2",
-      "check_in_id": "check_in_26",
-      "title": "Prevenir la violencia sexual",
-      "_translations": {
-        "title": {},
-        "home_activity": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Prevenir la violencia sexual"
-        },
-        "home_activity": {
-          "eng": "¡Muy bien!\n\nEs tiempo de aplicar esta nueva habilidad. Conversa con @fields.child_name sobre personas, lugares y acciones que pueden ayudarle a mantenerse seguro/a ante situaciones de riesgo."
-        }
-      },
-      "home_activity": "¡Muy bien!\n\nEs tiempo de aplicar esta nueva habilidad. Conversa con @fields.child_name sobre personas, lugares y acciones que pueden ayudarle a mantenerse seguro/a ante situaciones de riesgo.",
-      "completed": false,
-      "task_child": "ks_s_violence_t_article_tasks"
-    },
-    {
-      "id": "ks_crises_m_t",
-      "tag_course": "safety_t",
-      "age_list": [
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
       ],
       "child_gender_list": [
         "male"
@@ -1754,178 +1996,32 @@
         "non_binary"
       ],
       "tag_list": [
-        "teen"
-      ],
-      "number": 37,
-      "image_asset": "images/homescreen/behave_c.svg",
-      "relax_id": "relax_3",
-      "check_in_id": "check_in_27",
-      "title": "Saber responder ante alguna crisis",
-      "_translations": {
-        "title": {},
-        "home_activity": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Saber responder ante alguna crisis"
-        },
-        "home_activity": {
-          "eng": "¡Muy bien!\n\nEs tiempo de aplicar esta nueva habilidad. Conversa con @fields.child_name sobre personas, lugares y acciones que pueden ayudarle a mantenerse seguro/a ante situaciones de riesgo."
-        }
-      },
-      "home_activity": "¡Muy bien!\n\nEs tiempo de aplicar esta nueva habilidad. Conversa con @fields.child_name sobre personas, lugares y acciones que pueden ayudarle a mantenerse seguro/a ante situaciones de riesgo.",
-      "completed": false,
-      "task_child": "ks_crises_m_t_article_tasks"
-    },
-    {
-      "id": "ks_crises_f_t",
-      "tag_course": "safety_t",
-      "age_list": [
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "female",
-        "opt_out",
-        "non_binary"
-      ],
-      "user_gender_list": [
-        "man",
-        "woman",
-        "opt_out",
-        "non_binary"
-      ],
-      "tag_list": [
-        "teen"
-      ],
-      "number": 38,
-      "image_asset": "images/homescreen/behave_t.svg",
-      "relax_id": "relax_9",
-      "check_in_id": "check_in_28",
-      "title": "Saber responder ante alguna crisis",
-      "_translations": {
-        "title": {},
-        "home_activity": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Saber responder ante alguna crisis"
-        },
-        "home_activity": {
-          "eng": "¡Muy bien!\n\nEs tiempo de aplicar esta nueva habilidad. Conversa con @fields.child_name sobre personas, lugares y acciones que pueden ayudarle a mantenerse seguro/a ante situaciones de riesgo."
-        }
-      },
-      "home_activity": "¡Muy bien!\n\nEs tiempo de aplicar esta nueva habilidad. Conversa con @fields.child_name sobre personas, lugares y acciones que pueden ayudarle a mantenerse seguro/a ante situaciones de riesgo.",
-      "completed": false,
-      "task_child": "ks_crises_f_t_article_tasks"
-    },
-    {
-      "id": "ks_online_saf_t",
-      "tag_course": "safety_t",
-      "age_list": [
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out",
-        "non_binary"
-      ],
-      "user_gender_list": [
-        "man",
-        "woman",
-        "opt_out",
-        "non_binary"
-      ],
-      "tag_list": [
-        "teen"
-      ],
-      "number": 39,
-      "image_asset": "images/homescreen/safety_c.svg",
-      "relax_id": "relax_1",
-      "check_in_id": "check_in_29",
-      "title": "Usar con responsabilidad y seguridad los dispositivos y espacios virtuales",
-      "_translations": {
-        "title": {},
-        "home_activity": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Usar con responsabilidad y seguridad los dispositivos y espacios virtuales"
-        },
-        "home_activity": {
-          "eng": "¡Muy bien!\n\nEs tiempo de aplicar esta nueva habilidad. Conversa con @fields.child_name sobre personas, lugares y acciones que pueden ayudarle a mantenerse seguro/a ante situaciones de riesgo."
-        }
-      },
-      "home_activity": "¡Muy bien!\n\nEs tiempo de aplicar esta nueva habilidad. Conversa con @fields.child_name sobre personas, lugares y acciones que pueden ayudarle a mantenerse seguro/a ante situaciones de riesgo.",
-      "completed": false,
-      "task_child": "ks_online_saf_t_article_tasks"
-    },
-    {
-      "id": "ks_online_hab_t",
-      "tag_course": "safety_t",
-      "age_list": [
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out",
-        "non_binary"
-      ],
-      "user_gender_list": [
-        "man",
-        "woman",
-        "opt_out",
-        "non_binary"
-      ],
-      "tag_list": [
-        "teen"
+        "child"
       ],
       "number": 40,
-      "image_asset": "images/homescreen/safety_t.svg",
+      "image_asset": "images/homescreen/ipv.svg",
       "relax_id": "relax_2",
-      "check_in_id": "check_in_30",
-      "title": "Desarrollar confianza y hábitos seguros para el uso de internet y redes sociales",
+      "check_in_id": "check_in_22",
+      "title": "Responder a una crisis",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Desarrollar confianza y hábitos seguros para el uso de internet y redes sociales"
+          "eng": "Responder a una crisis"
         },
         "home_activity": {
-          "eng": "¡Excelente trabajo!\n\nHoy puedes intentar aplicar esta estrategia. Conversa con @fields.child_name sobre hábitos seguros y responsables para usar internet, las redes sociales y los dispositivos digitales."
+          "eng": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir."
         }
       },
-      "home_activity": "¡Excelente trabajo!\n\nHoy puedes intentar aplicar esta estrategia. Conversa con @fields.child_name sobre hábitos seguros y responsables para usar internet, las redes sociales y los dispositivos digitales.",
+      "home_activity": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir.",
       "completed": false,
-      "task_child": "ks_online_hab_t_article_tasks"
+      "task_child": "crises_7to9_yc_m_article_tasks"
     },
     {
-      "id": "manage_anger_c",
-      "tag_course": "behave_c",
+      "id": "online_safety_p1_yc",
+      "tag_course": "safety_yc",
       "age_list": [
         "2",
         "3",
@@ -1952,29 +2048,29 @@
         "child"
       ],
       "number": 41,
-      "image_asset": "images/homescreen/learn_c.svg",
+      "image_asset": "images/homescreen/relation_c.svg",
       "relax_id": "relax_3",
-      "check_in_id": "check_in_31",
-      "title": "Estrategias para regular la ira",
+      "check_in_id": "check_in_23",
+      "title": "Proteger su seguridad en línea",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Estrategias para regular la ira"
+          "eng": "Proteger su seguridad en línea"
         },
         "home_activity": {
-          "eng": "¡Muy bien!\n\nUn pequeño momento de práctica puede hacer una gran diferencia. Conversa con @fields.child_name sobre el enojo y practiquen juntos una estrategia que ayude a calmarse y sentirse mejor en momentos difíciles."
+          "eng": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir."
         }
       },
-      "home_activity": "¡Muy bien!\n\nUn pequeño momento de práctica puede hacer una gran diferencia. Conversa con @fields.child_name sobre el enojo y practiquen juntos una estrategia que ayude a calmarse y sentirse mejor en momentos difíciles.",
+      "home_activity": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir.",
       "completed": false,
-      "task_child": "manage_anger_c_article_tasks"
+      "task_child": "online_safety_p1_yc_article_tasks"
     },
     {
-      "id": "keep_positive_c",
-      "tag_course": "behave_c",
+      "id": "online_safety_p2_yc",
+      "tag_course": "safety_yc",
       "age_list": [
         "2",
         "3",
@@ -2001,29 +2097,499 @@
         "child"
       ],
       "number": 42,
-      "image_asset": "images/homescreen/learn_t.svg",
+      "image_asset": "images/homescreen/relation_t.svg",
       "relax_id": "relax_9",
-      "check_in_id": "check_in_32",
-      "title": "Enseñar colaboración: enfocarse en lo positivo",
+      "check_in_id": "check_in_24",
+      "title": "Crear hábitos seguros en línea",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Enseñar colaboración: enfocarse en lo positivo"
+          "eng": "Crear hábitos seguros en línea"
         },
         "home_activity": {
-          "eng": "¡Muy bien!\n\nUn pequeño momento de práctica puede hacer una gran diferencia. Conversa con @fields.child_name sobre el enojo y practiquen juntos una estrategia que ayude a calmarse y sentirse mejor en momentos difíciles."
+          "eng": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir."
         }
       },
-      "home_activity": "¡Muy bien!\n\nUn pequeño momento de práctica puede hacer una gran diferencia. Conversa con @fields.child_name sobre el enojo y practiquen juntos una estrategia que ayude a calmarse y sentirse mejor en momentos difíciles.",
+      "home_activity": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir.",
       "completed": false,
-      "task_child": "keep_positive_c_article_tasks"
+      "task_child": "online_safety_p2_yc_article_tasks"
     },
     {
-      "id": "family_rules_c",
-      "tag_course": "behave_c",
+      "id": "sexual_violence_t_f",
+      "tag_course": "safety_t",
+      "age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number": 43,
+      "image_asset": "images/homescreen/understand_t.svg",
+      "relax_id": "relax_2",
+      "check_in_id": "check_in_25",
+      "title": "Protección y cuidado del cuerpo",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Protección y cuidado del cuerpo"
+        },
+        "home_activity": {
+          "eng": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir."
+        }
+      },
+      "home_activity": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir.",
+      "completed": false,
+      "task_child": "sexual_violence_t_f_article_tasks"
+    },
+    {
+      "id": "sexual_violence_t_m",
+      "tag_course": "safety_t",
+      "age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number": 44,
+      "image_asset": "images/homescreen/understand_t.svg",
+      "relax_id": "relax_2",
+      "check_in_id": "check_in_25",
+      "title": "Protección y cuidado del cuerpo",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Protección y cuidado del cuerpo"
+        },
+        "home_activity": {
+          "eng": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir."
+        }
+      },
+      "home_activity": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir.",
+      "completed": false,
+      "task_child": "sexual_violence_t_m_article_tasks"
+    },
+    {
+      "id": "com_safe_t_f",
+      "tag_course": "safety_t",
+      "age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number": 45,
+      "image_asset": "images/homescreen/understand_c.svg",
+      "relax_id": "relax_1",
+      "check_in_id": "check_in_26",
+      "title": "Crear un plan de seguridad",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Crear un plan de seguridad"
+        },
+        "home_activity": {
+          "eng": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir."
+        }
+      },
+      "home_activity": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir.",
+      "completed": false,
+      "task_child": "com_safe_t_f_article_tasks"
+    },
+    {
+      "id": "com_safe_t_m",
+      "tag_course": "safety_t",
+      "age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number": 46,
+      "image_asset": "images/homescreen/understand_c.svg",
+      "relax_id": "relax_1",
+      "check_in_id": "check_in_26",
+      "title": "Crear un plan de seguridad",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Crear un plan de seguridad"
+        },
+        "home_activity": {
+          "eng": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir."
+        }
+      },
+      "home_activity": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir.",
+      "completed": false,
+      "task_child": "com_safe_t_m_article_tasks"
+    },
+    {
+      "id": "crises_t_f",
+      "tag_course": "safety_t",
+      "age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number": 47,
+      "image_asset": "images/homescreen/behave_c.svg",
+      "relax_id": "relax_3",
+      "check_in_id": "check_in_27",
+      "title": "Responder a una crisis",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Responder a una crisis"
+        },
+        "home_activity": {
+          "eng": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir."
+        }
+      },
+      "home_activity": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir.",
+      "completed": false,
+      "task_child": "crises_t_f_article_tasks"
+    },
+    {
+      "id": "crises_t_m",
+      "tag_course": "safety_t",
+      "age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number": 48,
+      "image_asset": "images/homescreen/behave_c.svg",
+      "relax_id": "relax_3",
+      "check_in_id": "check_in_27",
+      "title": "Responder a una crisis",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Responder a una crisis"
+        },
+        "home_activity": {
+          "eng": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir."
+        }
+      },
+      "home_activity": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir.",
+      "completed": false,
+      "task_child": "crises_t_m_article_tasks"
+    },
+    {
+      "id": "online_safety_p1_t_f",
+      "tag_course": "safety_t",
+      "age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number": 49,
+      "image_asset": "images/homescreen/safety_c.svg",
+      "relax_id": "relax_1",
+      "check_in_id": "check_in_29",
+      "title": "Proteger su seguridad en línea",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Proteger su seguridad en línea"
+        },
+        "home_activity": {
+          "eng": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir."
+        }
+      },
+      "home_activity": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir.",
+      "completed": false,
+      "task_child": "online_safety_p1_t_f_article_tasks"
+    },
+    {
+      "id": "online_safety_p1_t_m",
+      "tag_course": "safety_t",
+      "age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number": 50,
+      "image_asset": "images/homescreen/safety_c.svg",
+      "relax_id": "relax_1",
+      "check_in_id": "check_in_29",
+      "title": "Proteger su seguridad en línea",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Proteger su seguridad en línea"
+        },
+        "home_activity": {
+          "eng": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir."
+        }
+      },
+      "home_activity": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir.",
+      "completed": false,
+      "task_child": "online_safety_p1_t_m_article_tasks"
+    },
+    {
+      "id": "online_safety_p2_t_f",
+      "tag_course": "safety_t",
+      "age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number": 51,
+      "image_asset": "images/homescreen/safety_t.svg",
+      "relax_id": "relax_2",
+      "check_in_id": "check_in_30",
+      "title": "Hablar sobre lo que ve en línea",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Hablar sobre lo que ve en línea"
+        },
+        "home_activity": {
+          "eng": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir."
+        }
+      },
+      "home_activity": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir.",
+      "completed": false,
+      "task_child": "online_safety_p2_t_f_article_tasks"
+    },
+    {
+      "id": "online_safety_p2_t_m",
+      "tag_course": "safety_t",
+      "age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number": 52,
+      "image_asset": "images/homescreen/safety_t.svg",
+      "relax_id": "relax_2",
+      "check_in_id": "check_in_30",
+      "title": "Hablar sobre lo que ve en línea",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Hablar sobre lo que ve en línea"
+        },
+        "home_activity": {
+          "eng": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir."
+        }
+      },
+      "home_activity": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir.",
+      "completed": false,
+      "task_child": "online_safety_p2_t_m_article_tasks"
+    },
+    {
+      "id": "manage_anger_yc",
+      "tag_course": "behave_yc",
       "age_list": [
         "2",
         "3",
@@ -2049,7 +2615,105 @@
       "tag_list": [
         "child"
       ],
-      "number": 43,
+      "number": 53,
+      "image_asset": "images/homescreen/learn_c.svg",
+      "relax_id": "relax_3",
+      "check_in_id": "check_in_31",
+      "title": "Regular el enojo",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Regular el enojo"
+        },
+        "home_activity": {
+          "eng": "¡Excelente trabajo!\n\nAhora puedes practicar lo que aprendiste. Conversa con tu adolescente sobre lo que siente cuando se enoja y practiquen juntos una estrategia que le ayude a manejar sus emociones de forma positiva."
+        }
+      },
+      "home_activity": "¡Excelente trabajo!\n\nAhora puedes practicar lo que aprendiste. Conversa con tu adolescente sobre lo que siente cuando se enoja y practiquen juntos una estrategia que le ayude a manejar sus emociones de forma positiva.",
+      "completed": false,
+      "task_child": "manage_anger_yc_article_tasks"
+    },
+    {
+      "id": "keep_positive_yc",
+      "tag_course": "behave_yc",
+      "age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number": 55,
+      "image_asset": "images/homescreen/learn_t.svg",
+      "relax_id": "relax_9",
+      "check_in_id": "check_in_32",
+      "title": "Ayudarle a seguir instrucciones",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Ayudarle a seguir instrucciones"
+        },
+        "home_activity": {
+          "eng": "¡Excelente trabajo!\n\nAhora puedes practicar lo que aprendiste. Conversa con tu adolescente sobre lo que siente cuando se enoja y practiquen juntos una estrategia que le ayude a manejar sus emociones de forma positiva."
+        }
+      },
+      "home_activity": "¡Excelente trabajo!\n\nAhora puedes practicar lo que aprendiste. Conversa con tu adolescente sobre lo que siente cuando se enoja y practiquen juntos una estrategia que le ayude a manejar sus emociones de forma positiva.",
+      "completed": false,
+      "task_child": "keep_positive_yc_article_tasks"
+    },
+    {
+      "id": "family_rules_yc",
+      "tag_course": "behave_yc",
+      "age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number": 56,
       "image_asset": "images/homescreen/ipv.svg",
       "relax_id": "relax_1",
       "check_in_id": "check_in_33",
@@ -2063,16 +2727,16 @@
           "eng": "Acordar reglas en familia"
         },
         "home_activity": {
-          "eng": "¡Muy bien!\n\nUn pequeño momento de práctica puede hacer una gran diferencia. Conversa con @fields.child_name sobre el enojo y practiquen juntos una estrategia que ayude a calmarse y sentirse mejor en momentos difíciles."
+          "eng": "¡Excelente trabajo!\n\nAhora puedes practicar lo que aprendiste. Conversa con tu adolescente sobre lo que siente cuando se enoja y practiquen juntos una estrategia que le ayude a manejar sus emociones de forma positiva."
         }
       },
-      "home_activity": "¡Muy bien!\n\nUn pequeño momento de práctica puede hacer una gran diferencia. Conversa con @fields.child_name sobre el enojo y practiquen juntos una estrategia que ayude a calmarse y sentirse mejor en momentos difíciles.",
+      "home_activity": "¡Excelente trabajo!\n\nAhora puedes practicar lo que aprendiste. Conversa con tu adolescente sobre lo que siente cuando se enoja y practiquen juntos una estrategia que le ayude a manejar sus emociones de forma positiva.",
       "completed": false,
-      "task_child": "family_rules_c_article_tasks"
+      "task_child": "family_rules_yc_article_tasks"
     },
     {
-      "id": "ignore_c",
-      "tag_course": "behave_c",
+      "id": "redirect_yc",
+      "tag_course": "behave_yc",
       "age_list": [
         "2",
         "3",
@@ -2098,30 +2762,79 @@
       "tag_list": [
         "child"
       ],
-      "number": 44,
+      "number": 57,
+      "image_asset": "images/homescreen/ipv.svg",
+      "relax_id": "relax_1",
+      "check_in_id": "check_in_34",
+      "title": "Redirigir hacia algo positivo",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Redirigir hacia algo positivo"
+        },
+        "home_activity": {
+          "eng": "¡Excelente trabajo!\n\nAhora puedes practicar lo que aprendiste. Conversa con tu adolescente sobre lo que siente cuando se enoja y practiquen juntos una estrategia que le ayude a manejar sus emociones de forma positiva."
+        }
+      },
+      "home_activity": "¡Excelente trabajo!\n\nAhora puedes practicar lo que aprendiste. Conversa con tu adolescente sobre lo que siente cuando se enoja y practiquen juntos una estrategia que le ayude a manejar sus emociones de forma positiva.",
+      "completed": false,
+      "task_child": "redirect_yc_article_tasks"
+    },
+    {
+      "id": "ignore_yc",
+      "tag_course": "behave_yc",
+      "age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number": 58,
       "image_asset": "images/homescreen/relation_c.svg",
       "relax_id": "relax_2",
-      "check_in_id": "check_in_34",
-      "title": "Estrategias para reducir problemas de comportamiento.",
+      "check_in_id": "check_in_35",
+      "title": "Manejar comportamientos difíciles",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Estrategias para reducir problemas de comportamiento."
+          "eng": "Manejar comportamientos difíciles"
         },
         "home_activity": {
-          "eng": "¡Muy bien!\n\nUn pequeño momento de práctica puede hacer una gran diferencia. Conversa con @fields.child_name sobre el enojo y practiquen juntos una estrategia que ayude a calmarse y sentirse mejor en momentos difíciles."
+          "eng": "¡Excelente trabajo!\n\nAhora puedes practicar lo que aprendiste. Conversa con tu adolescente sobre lo que siente cuando se enoja y practiquen juntos una estrategia que le ayude a manejar sus emociones de forma positiva."
         }
       },
-      "home_activity": "¡Muy bien!\n\nUn pequeño momento de práctica puede hacer una gran diferencia. Conversa con @fields.child_name sobre el enojo y practiquen juntos una estrategia que ayude a calmarse y sentirse mejor en momentos difíciles.",
+      "home_activity": "¡Excelente trabajo!\n\nAhora puedes practicar lo que aprendiste. Conversa con tu adolescente sobre lo que siente cuando se enoja y practiquen juntos una estrategia que le ayude a manejar sus emociones de forma positiva.",
       "completed": false,
-      "task_child": "ignore_c_article_tasks"
+      "task_child": "ignore_yc_article_tasks"
     },
     {
-      "id": "consequences_c",
-      "tag_course": "behave_c",
+      "id": "consequences_yc",
+      "tag_course": "behave_yc",
       "age_list": [
         "2",
         "3",
@@ -2147,30 +2860,30 @@
       "tag_list": [
         "child"
       ],
-      "number": 45,
+      "number": 59,
       "image_asset": "images/homescreen/relation_t.svg",
       "relax_id": "relax_3",
-      "check_in_id": "check_in_35",
-      "title": "Estrategias para reducir problemas de comportamiento: consecuencias justas.",
+      "check_in_id": "check_in_36",
+      "title": "Consecuencias justas",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Estrategias para reducir problemas de comportamiento: consecuencias justas."
+          "eng": "Consecuencias justas"
         },
         "home_activity": {
-          "eng": "¡Muy bien!\n\nUn pequeño momento de práctica puede hacer una gran diferencia. Conversa con @fields.child_name sobre el enojo y practiquen juntos una estrategia que ayude a calmarse y sentirse mejor en momentos difíciles."
+          "eng": "¡Excelente trabajo!\n\nAhora puedes practicar lo que aprendiste. Conversa con tu adolescente sobre lo que siente cuando se enoja y practiquen juntos una estrategia que le ayude a manejar sus emociones de forma positiva."
         }
       },
-      "home_activity": "¡Muy bien!\n\nUn pequeño momento de práctica puede hacer una gran diferencia. Conversa con @fields.child_name sobre el enojo y practiquen juntos una estrategia que ayude a calmarse y sentirse mejor en momentos difíciles.",
+      "home_activity": "¡Excelente trabajo!\n\nAhora puedes practicar lo que aprendiste. Conversa con tu adolescente sobre lo que siente cuando se enoja y practiquen juntos una estrategia que le ayude a manejar sus emociones de forma positiva.",
       "completed": false,
-      "task_child": "consequences_c_article_tasks"
+      "task_child": "consequences_yc_article_tasks"
     },
     {
-      "id": "solve_problem_c",
-      "tag_course": "behave_c",
+      "id": "solve_problem_yc",
+      "tag_course": "behave_yc",
       "age_list": [
         "2",
         "3",
@@ -2196,30 +2909,30 @@
       "tag_list": [
         "child"
       ],
-      "number": 46,
+      "number": 60,
       "image_asset": "images/homescreen/understand_c.svg",
       "relax_id": "relax_9",
-      "check_in_id": "check_in_36",
-      "title": "Resolver problemas con mi niña o niño",
+      "check_in_id": "check_in_37",
+      "title": "Resolver problemas en equipo",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Resolver problemas con mi niña o niño"
+          "eng": "Resolver problemas en equipo"
         },
         "home_activity": {
-          "eng": "¡Muy bien!\n\nUn pequeño momento de práctica puede hacer una gran diferencia. Conversa con @fields.child_name sobre el enojo y practiquen juntos una estrategia que ayude a calmarse y sentirse mejor en momentos difíciles."
+          "eng": "¡Excelente trabajo!\n\nAhora puedes practicar lo que aprendiste. Conversa con tu adolescente sobre lo que siente cuando se enoja y practiquen juntos una estrategia que le ayude a manejar sus emociones de forma positiva."
         }
       },
-      "home_activity": "¡Muy bien!\n\nUn pequeño momento de práctica puede hacer una gran diferencia. Conversa con @fields.child_name sobre el enojo y practiquen juntos una estrategia que ayude a calmarse y sentirse mejor en momentos difíciles.",
+      "home_activity": "¡Excelente trabajo!\n\nAhora puedes practicar lo que aprendiste. Conversa con tu adolescente sobre lo que siente cuando se enoja y practiquen juntos una estrategia que le ayude a manejar sus emociones de forma positiva.",
       "completed": false,
-      "task_child": "solve_problem_c_article_tasks"
+      "task_child": "solve_problem_yc_article_tasks"
     },
     {
-      "id": "know_role_c",
-      "tag_course": "behave_c",
+      "id": "know_role_yc",
+      "tag_course": "behave_yc",
       "age_list": [
         "2",
         "3",
@@ -2245,29 +2958,29 @@
       "tag_list": [
         "child"
       ],
-      "number": 47,
+      "number": 61,
       "image_asset": "images/homescreen/understand_t.svg",
       "relax_id": "relax_1",
-      "check_in_id": "check_in_37",
-      "title": "Conocer el papel de las personas en la familia: todas y todos importamos",
+      "check_in_id": "check_in_38",
+      "title": "Entender su papel en la familia",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Conocer el papel de las personas en la familia: todas y todos importamos"
+          "eng": "Entender su papel en la familia"
         },
         "home_activity": {
-          "eng": "¡Muy bien!\n\nUn pequeño momento de práctica puede hacer una gran diferencia. Conversa con @fields.child_name sobre el enojo y practiquen juntos una estrategia que ayude a calmarse y sentirse mejor en momentos difíciles."
+          "eng": "¡Excelente trabajo!\n\nAhora puedes practicar lo que aprendiste. Conversa con tu adolescente sobre lo que siente cuando se enoja y practiquen juntos una estrategia que le ayude a manejar sus emociones de forma positiva."
         }
       },
-      "home_activity": "¡Muy bien!\n\nUn pequeño momento de práctica puede hacer una gran diferencia. Conversa con @fields.child_name sobre el enojo y practiquen juntos una estrategia que ayude a calmarse y sentirse mejor en momentos difíciles.",
+      "home_activity": "¡Excelente trabajo!\n\nAhora puedes practicar lo que aprendiste. Conversa con tu adolescente sobre lo que siente cuando se enoja y practiquen juntos una estrategia que le ayude a manejar sus emociones de forma positiva.",
       "completed": false,
-      "task_child": "know_role_c_article_tasks"
+      "task_child": "know_role_yc_article_tasks"
     },
     {
-      "id": "Manage_anger_t",
+      "id": "manage_anger_t",
       "tag_course": "behave_t",
       "age_list": [
         "10",
@@ -2294,18 +3007,18 @@
       "tag_list": [
         "teen"
       ],
-      "number": 48,
+      "number": 62,
       "image_asset": "images/homescreen/behave_c.svg",
       "relax_id": "relax_2",
-      "check_in_id": "check_in_38",
-      "title": "Estrategias para regular la ira",
+      "check_in_id": "check_in_39",
+      "title": "Regular el enojo",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Estrategias para regular la ira"
+          "eng": "Regular el enojo"
         },
         "home_activity": {
           "eng": "¡Excelente trabajo!\n\nAhora puedes practicar lo que aprendiste. Conversa con tu adolescente sobre lo que siente cuando se enoja y practiquen juntos una estrategia que le ayude a manejar sus emociones de forma positiva."
@@ -2313,7 +3026,7 @@
       },
       "home_activity": "¡Excelente trabajo!\n\nAhora puedes practicar lo que aprendiste. Conversa con tu adolescente sobre lo que siente cuando se enoja y practiquen juntos una estrategia que le ayude a manejar sus emociones de forma positiva.",
       "completed": false,
-      "task_child": "Manage_anger_t_article_tasks"
+      "task_child": "manage_anger_t_article_tasks"
     },
     {
       "id": "keep_positive_t",
@@ -2343,18 +3056,18 @@
       "tag_list": [
         "teen"
       ],
-      "number": 49,
+      "number": 64,
       "image_asset": "images/homescreen/behave_t.svg",
       "relax_id": "relax_3",
-      "check_in_id": "check_in_39",
-      "title": "Enseñar colaboración: enfocarse en lo positivo",
+      "check_in_id": "check_in_40",
+      "title": "Ayudarle a seguir instrucciones",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Enseñar colaboración: enfocarse en lo positivo"
+          "eng": "Ayudarle a seguir instrucciones"
         },
         "home_activity": {
           "eng": "¡Excelente trabajo!\n\nAhora puedes practicar lo que aprendiste. Conversa con tu adolescente sobre lo que siente cuando se enoja y practiquen juntos una estrategia que le ayude a manejar sus emociones de forma positiva."
@@ -2365,7 +3078,7 @@
       "task_child": "keep_positive_t_article_tasks"
     },
     {
-      "id": "Rules_t",
+      "id": "family_rules_t",
       "tag_course": "behave_t",
       "age_list": [
         "10",
@@ -2392,10 +3105,10 @@
       "tag_list": [
         "teen"
       ],
-      "number": 50,
+      "number": 65,
       "image_asset": "images/homescreen/safety_c.svg",
       "relax_id": "relax_9",
-      "check_in_id": "check_in_40",
+      "check_in_id": "check_in_41",
       "title": "Acordar reglas en familia",
       "_translations": {
         "title": {},
@@ -2411,10 +3124,10 @@
       },
       "home_activity": "¡Excelente trabajo!\n\nAhora puedes practicar lo que aprendiste. Conversa con tu adolescente sobre lo que siente cuando se enoja y practiquen juntos una estrategia que le ayude a manejar sus emociones de forma positiva.",
       "completed": false,
-      "task_child": "Rules_t_article_tasks"
+      "task_child": "family_rules_t_article_tasks"
     },
     {
-      "id": "Consequences_t",
+      "id": "consequences_t",
       "tag_course": "behave_t",
       "age_list": [
         "10",
@@ -2441,18 +3154,18 @@
       "tag_list": [
         "teen"
       ],
-      "number": 51,
+      "number": 66,
       "image_asset": "images/homescreen/safety_t.svg",
       "relax_id": "relax_1",
-      "check_in_id": "check_in_41",
-      "title": "Estrategias para reducir problemas de comportamiento: consecuencias justas.",
+      "check_in_id": "check_in_42",
+      "title": "Consecuencias justas",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Estrategias para reducir problemas de comportamiento: consecuencias justas."
+          "eng": "Consecuencias justas"
         },
         "home_activity": {
           "eng": "¡Excelente trabajo!\n\nAhora puedes practicar lo que aprendiste. Conversa con tu adolescente sobre lo que siente cuando se enoja y practiquen juntos una estrategia que le ayude a manejar sus emociones de forma positiva."
@@ -2460,7 +3173,7 @@
       },
       "home_activity": "¡Excelente trabajo!\n\nAhora puedes practicar lo que aprendiste. Conversa con tu adolescente sobre lo que siente cuando se enoja y practiquen juntos una estrategia que le ayude a manejar sus emociones de forma positiva.",
       "completed": false,
-      "task_child": "Consequences_t_article_tasks"
+      "task_child": "consequences_t_article_tasks"
     },
     {
       "id": "solve_problem_t",
@@ -2490,18 +3203,18 @@
       "tag_list": [
         "teen"
       ],
-      "number": 52,
+      "number": 67,
       "image_asset": "images/homescreen/learn_c.svg",
       "relax_id": "relax_2",
-      "check_in_id": "check_in_42",
-      "title": "Resolver problemas con mi adolescente",
+      "check_in_id": "check_in_43",
+      "title": "Resolver problemas en equipo",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Resolver problemas con mi adolescente"
+          "eng": "Resolver problemas en equipo"
         },
         "home_activity": {
           "eng": "¡Excelente trabajo!\n\nAhora puedes practicar lo que aprendiste. Conversa con tu adolescente sobre lo que siente cuando se enoja y practiquen juntos una estrategia que le ayude a manejar sus emociones de forma positiva."
@@ -2512,7 +3225,7 @@
       "task_child": "solve_problem_t_article_tasks"
     },
     {
-      "id": "Know_role_t",
+      "id": "know_role_t",
       "tag_course": "behave_t",
       "age_list": [
         "10",
@@ -2539,18 +3252,18 @@
       "tag_list": [
         "teen"
       ],
-      "number": 53,
+      "number": 68,
       "image_asset": "images/homescreen/learn_t.svg",
       "relax_id": "relax_3",
-      "check_in_id": "check_in_43",
-      "title": "Conocer el papel de las personas en la familia: todas y todos importamos",
+      "check_in_id": "check_in_44",
+      "title": "Entender su papel en la familia",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Conocer el papel de las personas en la familia: todas y todos importamos"
+          "eng": "Entender su papel en la familia"
         },
         "home_activity": {
           "eng": "¡Excelente trabajo!\n\nAhora puedes practicar lo que aprendiste. Conversa con tu adolescente sobre lo que siente cuando se enoja y practiquen juntos una estrategia que le ayude a manejar sus emociones de forma positiva."
@@ -2558,11 +3271,11 @@
       },
       "home_activity": "¡Excelente trabajo!\n\nAhora puedes practicar lo que aprendiste. Conversa con tu adolescente sobre lo que siente cuando se enoja y practiquen juntos una estrategia que le ayude a manejar sus emociones de forma positiva.",
       "completed": false,
-      "task_child": "Know_role_t_article_tasks"
+      "task_child": "know_role_t_article_tasks"
     },
     {
-      "id": "s_language_c",
-      "tag_course": "learn_c",
+      "id": "language_yc",
+      "tag_course": "learning_yc",
       "age_list": [
         "2",
         "3",
@@ -2588,10 +3301,10 @@
       "tag_list": [
         "child"
       ],
-      "number": 54,
+      "number": 67,
       "image_asset": "images/homescreen/ipv.svg",
       "relax_id": "relax_9",
-      "check_in_id": "check_in_44",
+      "check_in_id": "check_in_45",
       "title": "Estimular el lenguaje de mi niña o niño",
       "_translations": {
         "title": {},
@@ -2607,11 +3320,11 @@
       },
       "home_activity": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea.",
       "completed": false,
-      "task_child": "s_language_c_article_tasks"
+      "task_child": "language_yc_article_tasks"
     },
     {
-      "id": "s_read_2to3_c",
-      "tag_course": "learn_c",
+      "id": "reading_2to3_yc",
+      "tag_course": "learning_yc",
       "age_list": [
         "2",
         "3"
@@ -2630,728 +3343,122 @@
       ],
       "tag_list": [
         "child"
-      ],
-      "number": 55,
-      "image_asset": "images/homescreen/relation_c.svg",
-      "relax_id": "relax_1",
-      "check_in_id": "check_in_45",
-      "title": "Disfrutar y favorecer la lectura",
-      "_translations": {
-        "title": {},
-        "home_activity": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Disfrutar y favorecer la lectura"
-        },
-        "home_activity": {
-          "eng": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea."
-        }
-      },
-      "home_activity": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea.",
-      "completed": false,
-      "task_child": "s_read_2to3_c_article_tasks"
-    },
-    {
-      "id": "s_read1_4to6_c",
-      "tag_course": "learn_c",
-      "age_list": [
-        "4",
-        "5",
-        "6"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out",
-        "non_binary"
-      ],
-      "user_gender_list": [
-        "man",
-        "woman",
-        "opt_out",
-        "non_binary"
-      ],
-      "tag_list": [
-        "child"
-      ],
-      "number": 56,
-      "image_asset": "images/homescreen/relation_t.svg",
-      "relax_id": "relax_2",
-      "check_in_id": "check_in_46",
-      "title": "Disfrutar y favorecer la lectura: parte 1",
-      "_translations": {
-        "title": {},
-        "home_activity": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Disfrutar y favorecer la lectura: parte 1"
-        },
-        "home_activity": {
-          "eng": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea."
-        }
-      },
-      "home_activity": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea.",
-      "completed": false,
-      "task_child": "s_read1_4to6_c_article_tasks"
-    },
-    {
-      "id": "s_read2_4to6_c",
-      "tag_course": "learn_c",
-      "age_list": [
-        "4",
-        "5",
-        "6"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out",
-        "non_binary"
-      ],
-      "user_gender_list": [
-        "man",
-        "woman",
-        "opt_out",
-        "non_binary"
-      ],
-      "tag_list": [
-        "child"
-      ],
-      "number": 57,
-      "image_asset": "images/homescreen/understand_c.svg",
-      "relax_id": "relax_3",
-      "check_in_id": "check_in_47",
-      "title": "Disfrutar y favorecer la lectura: parte 2",
-      "_translations": {
-        "title": {},
-        "home_activity": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Disfrutar y favorecer la lectura: parte 2"
-        },
-        "home_activity": {
-          "eng": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea."
-        }
-      },
-      "home_activity": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea.",
-      "completed": false,
-      "task_child": "s_read2_4to6_c_article_tasks"
-    },
-    {
-      "id": "maths_2to3_c",
-      "tag_course": "learn_c",
-      "age_list": [
-        "2",
-        "3"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out",
-        "non_binary"
-      ],
-      "user_gender_list": [
-        "man",
-        "woman",
-        "opt_out",
-        "non_binary"
-      ],
-      "tag_list": [
-        "child"
-      ],
-      "number": 58,
-      "image_asset": "images/homescreen/understand_t.svg",
-      "relax_id": "relax_9",
-      "check_in_id": "check_in_48",
-      "title": "Enseñar matemáticas divertidas y sencillas",
-      "_translations": {
-        "title": {},
-        "home_activity": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Enseñar matemáticas divertidas y sencillas"
-        },
-        "home_activity": {
-          "eng": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea."
-        }
-      },
-      "home_activity": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea.",
-      "completed": false,
-      "task_child": "maths_2to3_c_article_tasks"
-    },
-    {
-      "id": "maths1_4to6_c",
-      "tag_course": "learn_c",
-      "age_list": [
-        "4",
-        "5",
-        "6"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out",
-        "non_binary"
-      ],
-      "user_gender_list": [
-        "man",
-        "woman",
-        "opt_out",
-        "non_binary"
-      ],
-      "tag_list": [
-        "child"
-      ],
-      "number": 59,
-      "image_asset": "images/homescreen/behave_c.svg",
-      "relax_id": "relax_1",
-      "check_in_id": "check_in_49",
-      "title": "Enseñar matemáticas divertidas y sencillas: parte 1",
-      "_translations": {
-        "title": {},
-        "home_activity": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Enseñar matemáticas divertidas y sencillas: parte 1"
-        },
-        "home_activity": {
-          "eng": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea."
-        }
-      },
-      "home_activity": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea.",
-      "completed": false,
-      "task_child": "maths1_4to6_c_article_tasks"
-    },
-    {
-      "id": "maths2_4to6_c",
-      "tag_course": "learn_c",
-      "age_list": [
-        "4",
-        "5",
-        "6"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out",
-        "non_binary"
-      ],
-      "user_gender_list": [
-        "man",
-        "woman",
-        "opt_out",
-        "non_binary"
-      ],
-      "tag_list": [
-        "child"
-      ],
-      "number": 60,
-      "image_asset": "images/homescreen/behave_t.svg",
-      "relax_id": "relax_2",
-      "check_in_id": "check_in_50",
-      "title": "Enseñar matemáticas divertidas y sencillas: parte 2",
-      "_translations": {
-        "title": {},
-        "home_activity": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Enseñar matemáticas divertidas y sencillas: parte 2"
-        },
-        "home_activity": {
-          "eng": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea."
-        }
-      },
-      "home_activity": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea.",
-      "completed": false,
-      "task_child": "maths2_4to6_c_article_tasks"
-    },
-    {
-      "id": "school_3to9_c",
-      "tag_course": "learn_c",
-      "age_list": [
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out",
-        "non_binary"
-      ],
-      "user_gender_list": [
-        "man",
-        "woman",
-        "opt_out",
-        "non_binary"
-      ],
-      "tag_list": [
-        "child"
-      ],
-      "number": 61,
-      "image_asset": "images/homescreen/safety_c.svg",
-      "relax_id": "relax_3",
-      "check_in_id": "check_in_51",
-      "title": "Involucrarse en las actividades escolares",
-      "_translations": {
-        "title": {},
-        "home_activity": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Involucrarse en las actividades escolares"
-        },
-        "home_activity": {
-          "eng": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea."
-        }
-      },
-      "home_activity": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea.",
-      "completed": false,
-      "task_child": "school_3to9_c_article_tasks"
-    },
-    {
-      "id": "fun_l_7to9_c",
-      "tag_course": "learn_c",
-      "age_list": [
-        "7",
-        "8",
-        "9"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out",
-        "non_binary"
-      ],
-      "user_gender_list": [
-        "man",
-        "woman",
-        "opt_out",
-        "non_binary"
-      ],
-      "tag_list": [
-        "child"
-      ],
-      "number": 62,
-      "image_asset": "images/homescreen/safety_t.svg",
-      "relax_id": "relax_9",
-      "check_in_id": "check_in_52",
-      "title": "Hacer divertido el aprendizaje",
-      "_translations": {
-        "title": {},
-        "home_activity": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Hacer divertido el aprendizaje"
-        },
-        "home_activity": {
-          "eng": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea."
-        }
-      },
-      "home_activity": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea.",
-      "completed": false,
-      "task_child": "fun_l_7to9_c_article_tasks"
-    },
-    {
-      "id": "help_l_7to9_c",
-      "tag_course": "learn_c",
-      "age_list": [
-        "7",
-        "8",
-        "9"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out",
-        "non_binary"
-      ],
-      "user_gender_list": [
-        "man",
-        "woman",
-        "opt_out",
-        "non_binary"
-      ],
-      "tag_list": [
-        "child"
-      ],
-      "number": 63,
-      "image_asset": "images/homescreen/learn_c.svg",
-      "relax_id": "relax_1",
-      "check_in_id": "check_in_53",
-      "title": "Apoyar el aprendizaje de mi niña o niño",
-      "_translations": {
-        "title": {},
-        "home_activity": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Apoyar el aprendizaje de mi niña o niño"
-        },
-        "home_activity": {
-          "eng": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea."
-        }
-      },
-      "home_activity": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea.",
-      "completed": false,
-      "task_child": "help_l_7to9_c_article_tasks"
-    },
-    {
-      "id": "pos_learn_7to9_c",
-      "tag_course": "learn_c",
-      "age_list": [
-        "7",
-        "8",
-        "9"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out",
-        "non_binary"
-      ],
-      "user_gender_list": [
-        "man",
-        "woman",
-        "opt_out",
-        "non_binary"
-      ],
-      "tag_list": [
-        "child"
-      ],
-      "number": 64,
-      "image_asset": "images/homescreen/learn_t.svg",
-      "relax_id": "relax_2",
-      "check_in_id": "check_in_54",
-      "title": "Crear un ambiente positivo para el aprendizaje de mi niña o niño",
-      "_translations": {
-        "title": {},
-        "home_activity": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Crear un ambiente positivo para el aprendizaje de mi niña o niño"
-        },
-        "home_activity": {
-          "eng": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea."
-        }
-      },
-      "home_activity": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea.",
-      "completed": false,
-      "task_child": "pos_learn_7to9_c_article_tasks"
-    },
-    {
-      "id": "learn_mis_7to9_c",
-      "tag_course": "learn_c",
-      "age_list": [
-        "7",
-        "8",
-        "9"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out",
-        "non_binary"
-      ],
-      "user_gender_list": [
-        "man",
-        "woman",
-        "opt_out",
-        "non_binary"
-      ],
-      "tag_list": [
-        "child"
-      ],
-      "number": 65,
-      "image_asset": "images/homescreen/ipv.svg",
-      "relax_id": "relax_3",
-      "check_in_id": "check_in_55",
-      "title": "Aprender de la experiencia",
-      "_translations": {
-        "title": {},
-        "home_activity": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Aprender de la experiencia"
-        },
-        "home_activity": {
-          "eng": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea."
-        }
-      },
-      "home_activity": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea.",
-      "completed": false,
-      "task_child": "learn_mis_7to9_c_article_tasks"
-    },
-    {
-      "id": "Fun_learning_t",
-      "tag_course": "learn_t",
-      "age_list": [
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out",
-        "non_binary"
-      ],
-      "user_gender_list": [
-        "man",
-        "woman",
-        "opt_out",
-        "non_binary"
-      ],
-      "tag_list": [
-        "teen"
-      ],
-      "number": 66,
-      "image_asset": "images/homescreen/relation_c.svg",
-      "relax_id": "relax_9",
-      "check_in_id": "check_in_56",
-      "title": "Hacer divertido el aprendizaje",
-      "_translations": {
-        "title": {},
-        "home_activity": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Hacer divertido el aprendizaje"
-        },
-        "home_activity": {
-          "eng": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana."
-        }
-      },
-      "home_activity": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana.",
-      "completed": false,
-      "task_child": "Fun_learning_t_article_tasks"
-    },
-    {
-      "id": "help_learn_t",
-      "tag_course": "learn_t",
-      "age_list": [
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out",
-        "non_binary"
-      ],
-      "user_gender_list": [
-        "man",
-        "woman",
-        "opt_out",
-        "non_binary"
-      ],
-      "tag_list": [
-        "teen"
-      ],
-      "number": 67,
-      "image_asset": "images/homescreen/relation_t.svg",
-      "relax_id": "relax_1",
-      "check_in_id": "check_in_57",
-      "title": "Apoyar el aprendizaje de mi adolescente",
-      "_translations": {
-        "title": {},
-        "home_activity": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Apoyar el aprendizaje de mi adolescente"
-        },
-        "home_activity": {
-          "eng": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana."
-        }
-      },
-      "home_activity": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana.",
-      "completed": false,
-      "task_child": "help_learn_t_article_tasks"
-    },
-    {
-      "id": "positive_learn_t",
-      "tag_course": "learn_t",
-      "age_list": [
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out",
-        "non_binary"
-      ],
-      "user_gender_list": [
-        "man",
-        "woman",
-        "opt_out",
-        "non_binary"
-      ],
-      "tag_list": [
-        "teen"
       ],
       "number": 68,
-      "image_asset": "images/homescreen/understand_c.svg",
-      "relax_id": "relax_2",
-      "check_in_id": "check_in_58",
-      "title": "Crear un ambiente positivo y de aprendizaje para mi adolescente",
+      "image_asset": "images/homescreen/relation_c.svg",
+      "relax_id": "relax_1",
+      "check_in_id": "check_in_46",
+      "title": "Prepararse para leer",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Crear un ambiente positivo y de aprendizaje para mi adolescente"
+          "eng": "Prepararse para leer"
         },
         "home_activity": {
-          "eng": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana."
+          "eng": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea."
         }
       },
-      "home_activity": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana.",
+      "home_activity": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea.",
       "completed": false,
-      "task_child": "positive_learn_t_article_tasks"
+      "task_child": "reading_2to3_yc_article_tasks"
     },
     {
-      "id": "learn_mistakes_t",
-      "tag_course": "learn_t",
+      "id": "reading_p1_4to6_yc",
+      "tag_course": "learning_yc",
       "age_list": [
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out",
-        "non_binary"
-      ],
-      "user_gender_list": [
-        "man",
-        "woman",
-        "opt_out",
-        "non_binary"
-      ],
-      "tag_list": [
-        "teen"
-      ],
-      "number": 69,
-      "image_asset": "images/homescreen/understand_t.svg",
-      "relax_id": "relax_3",
-      "check_in_id": "check_in_59",
-      "title": "Aprender de la experiencia",
-      "_translations": {
-        "title": {},
-        "home_activity": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Aprender de la experiencia"
-        },
-        "home_activity": {
-          "eng": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana."
-        }
-      },
-      "home_activity": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana.",
-      "completed": false,
-      "task_child": "learn_mistakes_t_article_tasks"
-    },
-    {
-      "id": "learn_people_t",
-      "tag_course": "learn_t",
-      "age_list": [
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out",
-        "non_binary"
-      ],
-      "user_gender_list": [
-        "man",
-        "woman",
-        "opt_out",
-        "non_binary"
-      ],
-      "tag_list": [
-        "teen"
-      ],
-      "number": 70,
-      "image_asset": "images/homescreen/behave_c.svg",
-      "relax_id": "relax_9",
-      "check_in_id": "check_in_60",
-      "title": "Aprender a trabajar en equipo",
-      "_translations": {
-        "title": {},
-        "home_activity": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Aprender a trabajar en equipo"
-        },
-        "home_activity": {
-          "eng": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana."
-        }
-      },
-      "home_activity": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana.",
-      "completed": false,
-      "task_child": "learn_people_t_article_tasks"
-    },
-    {
-      "id": "Play_c",
-      "tag_course": "understand_c",
-      "age_list": [
-        "2",
-        "3",
         "4",
         "5",
-        "6",
-        "7",
-        "8",
-        "9"
+        "6"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number": 69,
+      "image_asset": "images/homescreen/relation_t.svg",
+      "relax_id": "relax_2",
+      "check_in_id": "check_in_47",
+      "title": "Compartir la lectura, parte 1",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Compartir la lectura, parte 1"
+        },
+        "home_activity": {
+          "eng": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea."
+        }
+      },
+      "home_activity": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea.",
+      "completed": false,
+      "task_child": "reading_p1_4to6_yc_article_tasks"
+    },
+    {
+      "id": "reading_p2_4to6_yc",
+      "tag_course": "learning_yc",
+      "age_list": [
+        "4",
+        "5",
+        "6"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number": 70,
+      "image_asset": "images/homescreen/understand_c.svg",
+      "relax_id": "relax_3",
+      "check_in_id": "check_in_48",
+      "title": "Compartir la lectura, parte 2",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Compartir la lectura, parte 2"
+        },
+        "home_activity": {
+          "eng": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea."
+        }
+      },
+      "home_activity": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea.",
+      "completed": false,
+      "task_child": "reading_p2_4to6_yc_article_tasks"
+    },
+    {
+      "id": "maths_2to3_yc",
+      "tag_course": "learning_yc",
+      "age_list": [
+        "2",
+        "3"
       ],
       "child_gender_list": [
         "male",
@@ -3369,31 +3476,118 @@
         "child"
       ],
       "number": 71,
-      "image_asset": "images/homescreen/behave_t.svg",
-      "relax_id": "relax_1",
-      "check_in_id": "check_in_61",
-      "title": "El poder del juego",
+      "image_asset": "images/homescreen/understand_t.svg",
+      "relax_id": "relax_9",
+      "check_in_id": "check_in_49",
+      "title": "Empezar con las matemáticas",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "El poder del juego"
+          "eng": "Empezar con las matemáticas"
         },
         "home_activity": {
-          "eng": "¡Excelente trabajo!\n\nRecuerda que aprender toma tiempo y práctica. Puedes comenzar hoy dedicando un momento para apoyar a tu adolescente con una meta, una actividad escolar o una tarea, acompañándole con interés y motivación."
+          "eng": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea."
         }
       },
-      "home_activity": "¡Excelente trabajo!\n\nRecuerda que aprender toma tiempo y práctica. Puedes comenzar hoy dedicando un momento para apoyar a tu adolescente con una meta, una actividad escolar o una tarea, acompañándole con interés y motivación.",
+      "home_activity": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea.",
       "completed": false,
-      "task_child": "Play_c_article_tasks"
+      "task_child": "maths_2to3_yc_article_tasks"
     },
     {
-      "id": "learn_exp_c",
-      "tag_course": "understand_c",
+      "id": "maths_p1_4to6_yc",
+      "tag_course": "learning_yc",
       "age_list": [
-        "2",
+        "4",
+        "5",
+        "6"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number": 72,
+      "image_asset": "images/homescreen/behave_c.svg",
+      "relax_id": "relax_1",
+      "check_in_id": "check_in_50",
+      "title": "Practicar matemáticas, parte 1",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Practicar matemáticas, parte 1"
+        },
+        "home_activity": {
+          "eng": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea."
+        }
+      },
+      "home_activity": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea.",
+      "completed": false,
+      "task_child": "maths_p1_4to6_yc_article_tasks"
+    },
+    {
+      "id": "maths_p2_4to6_yc",
+      "tag_course": "learning_yc",
+      "age_list": [
+        "4",
+        "5",
+        "6"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number": 73,
+      "image_asset": "images/homescreen/behave_t.svg",
+      "relax_id": "relax_2",
+      "check_in_id": "check_in_51",
+      "title": "Practicar matemáticas, parte 2",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Practicar matemáticas, parte 2"
+        },
+        "home_activity": {
+          "eng": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea."
+        }
+      },
+      "home_activity": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea.",
+      "completed": false,
+      "task_child": "maths_p2_4to6_yc_article_tasks"
+    },
+    {
+      "id": "school_involvement_3to9_yc",
+      "tag_course": "learning_yc",
+      "age_list": [
         "3",
         "4",
         "5",
@@ -3417,117 +3611,30 @@
       "tag_list": [
         "child"
       ],
-      "number": 72,
-      "image_asset": "images/homescreen/safety_c.svg",
-      "relax_id": "relax_2",
-      "check_in_id": "check_in_62",
-      "title": "Estrategias para aprender de la experiencia",
-      "_translations": {
-        "title": {},
-        "home_activity": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Estrategias para aprender de la experiencia"
-        },
-        "home_activity": {
-          "eng": "¡Excelente trabajo!\n\nRecuerda que aprender toma tiempo y práctica. Puedes comenzar hoy dedicando un momento para apoyar a tu adolescente con una meta, una actividad escolar o una tarea, acompañándole con interés y motivación."
-        }
-      },
-      "home_activity": "¡Excelente trabajo!\n\nRecuerda que aprender toma tiempo y práctica. Puedes comenzar hoy dedicando un momento para apoyar a tu adolescente con una meta, una actividad escolar o una tarea, acompañándole con interés y motivación.",
-      "completed": false,
-      "task_child": "learn_exp_c_article_tasks"
-    },
-    {
-      "id": "toddler_change_c",
-      "tag_course": "understand_c",
-      "age_list": [
-        "2",
-        "3"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out",
-        "non_binary"
-      ],
-      "user_gender_list": [
-        "man",
-        "woman",
-        "opt_out",
-        "non_binary"
-      ],
-      "tag_list": [
-        "child"
-      ],
-      "number": 73,
-      "image_asset": "images/homescreen/safety_t.svg",
-      "relax_id": "relax_3",
-      "check_in_id": "check_in_63",
-      "title": "Conocer los cambios de mi niña o niño",
-      "_translations": {
-        "title": {},
-        "home_activity": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Conocer los cambios de mi niña o niño"
-        },
-        "home_activity": {
-          "eng": "¡Excelente trabajo!\n\nRecuerda que aprender toma tiempo y práctica. Puedes comenzar hoy dedicando un momento para apoyar a tu adolescente con una meta, una actividad escolar o una tarea, acompañándole con interés y motivación."
-        }
-      },
-      "home_activity": "¡Excelente trabajo!\n\nRecuerda que aprender toma tiempo y práctica. Puedes comenzar hoy dedicando un momento para apoyar a tu adolescente con una meta, una actividad escolar o una tarea, acompañándole con interés y motivación.",
-      "completed": false,
-      "task_child": "toddler_change_c_article_tasks"
-    },
-    {
-      "id": "young_change_c",
-      "tag_course": "understand_c",
-      "age_list": [
-        "4",
-        "5",
-        "6"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out",
-        "non_binary"
-      ],
-      "user_gender_list": [
-        "man",
-        "woman",
-        "opt_out",
-        "non_binary"
-      ],
-      "tag_list": [
-        "child"
-      ],
       "number": 74,
-      "image_asset": "images/homescreen/learn_c.svg",
-      "relax_id": "relax_9",
-      "check_in_id": "check_in_64",
-      "title": "Conocer los cambios de mi niña o niño",
+      "image_asset": "images/homescreen/safety_c.svg",
+      "relax_id": "relax_3",
+      "check_in_id": "check_in_52",
+      "title": "Participar en la escuela",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Conocer los cambios de mi niña o niño"
+          "eng": "Participar en la escuela"
         },
         "home_activity": {
-          "eng": "¡Excelente trabajo!\n\nRecuerda que aprender toma tiempo y práctica. Puedes comenzar hoy dedicando un momento para apoyar a tu adolescente con una meta, una actividad escolar o una tarea, acompañándole con interés y motivación."
+          "eng": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea."
         }
       },
-      "home_activity": "¡Excelente trabajo!\n\nRecuerda que aprender toma tiempo y práctica. Puedes comenzar hoy dedicando un momento para apoyar a tu adolescente con una meta, una actividad escolar o una tarea, acompañándole con interés y motivación.",
+      "home_activity": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea.",
       "completed": false,
-      "task_child": "young_change_c_article_tasks"
+      "task_child": "school_involvement_3to9_yc_article_tasks"
     },
     {
-      "id": "Child_change_c",
-      "tag_course": "understand_c",
+      "id": "fun_learning_7to9_yc",
+      "tag_course": "learning_yc",
       "age_list": [
         "7",
         "8",
@@ -3549,35 +3656,30 @@
         "child"
       ],
       "number": 75,
-      "image_asset": "images/homescreen/learn_t.svg",
-      "relax_id": "relax_1",
-      "check_in_id": "check_in_65",
-      "title": "Conocer los cambios de mi niña o niño",
+      "image_asset": "images/homescreen/safety_t.svg",
+      "relax_id": "relax_9",
+      "check_in_id": "check_in_53",
+      "title": "Hacer divertido el aprendizaje",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Conocer los cambios de mi niña o niño"
+          "eng": "Hacer divertido el aprendizaje"
         },
         "home_activity": {
-          "eng": "¡Excelente trabajo!\n\nRecuerda que aprender toma tiempo y práctica. Puedes comenzar hoy dedicando un momento para apoyar a tu adolescente con una meta, una actividad escolar o una tarea, acompañándole con interés y motivación."
+          "eng": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea."
         }
       },
-      "home_activity": "¡Excelente trabajo!\n\nRecuerda que aprender toma tiempo y práctica. Puedes comenzar hoy dedicando un momento para apoyar a tu adolescente con una meta, una actividad escolar o una tarea, acompañándole con interés y motivación.",
+      "home_activity": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea.",
       "completed": false,
-      "task_child": "Child_change_c_article_tasks"
+      "task_child": "fun_learning_7to9_yc_article_tasks"
     },
     {
-      "id": "manage_stress_c",
-      "tag_course": "understand_c",
+      "id": "help_learn_7to9_yc",
+      "tag_course": "learning_yc",
       "age_list": [
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
         "7",
         "8",
         "9"
@@ -3598,29 +3700,117 @@
         "child"
       ],
       "number": 76,
-      "image_asset": "images/homescreen/ipv.svg",
-      "relax_id": "relax_2",
-      "check_in_id": "check_in_66",
-      "title": "Regular tu estrés como madre, padre o persona cuidadora - parte 1",
+      "image_asset": "images/homescreen/learn_c.svg",
+      "relax_id": "relax_1",
+      "check_in_id": "check_in_54",
+      "title": "Acompañar su aprendizaje",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Regular tu estrés como madre, padre o persona cuidadora - parte 1"
+          "eng": "Acompañar su aprendizaje"
         },
         "home_activity": {
-          "eng": "¡Excelente trabajo!\n\nRecuerda que aprender toma tiempo y práctica. Puedes comenzar hoy dedicando un momento para apoyar a tu adolescente con una meta, una actividad escolar o una tarea, acompañándole con interés y motivación."
+          "eng": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea."
         }
       },
-      "home_activity": "¡Excelente trabajo!\n\nRecuerda que aprender toma tiempo y práctica. Puedes comenzar hoy dedicando un momento para apoyar a tu adolescente con una meta, una actividad escolar o una tarea, acompañándole con interés y motivación.",
+      "home_activity": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea.",
       "completed": false,
-      "task_child": "manage_stress_c_article_tasks"
+      "task_child": "help_learn_7to9_yc_article_tasks"
     },
     {
-      "id": "Make_plan_c",
-      "tag_course": "understand_c",
+      "id": "positive_learn_7to9_yc",
+      "tag_course": "learning_yc",
+      "age_list": [
+        "7",
+        "8",
+        "9"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number": 77,
+      "image_asset": "images/homescreen/learn_t.svg",
+      "relax_id": "relax_2",
+      "check_in_id": "check_in_55",
+      "title": "Crear el ambiente adecuado",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Crear el ambiente adecuado"
+        },
+        "home_activity": {
+          "eng": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea."
+        }
+      },
+      "home_activity": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea.",
+      "completed": false,
+      "task_child": "positive_learn_7to9_yc_article_tasks"
+    },
+    {
+      "id": "learn_mistakes_7to9_yc",
+      "tag_course": "learning_yc",
+      "age_list": [
+        "7",
+        "8",
+        "9"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number": 78,
+      "image_asset": "images/homescreen/ipv.svg",
+      "relax_id": "relax_3",
+      "check_in_id": "check_in_56",
+      "title": "Aprender de la experiencia",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Aprender de la experiencia"
+        },
+        "home_activity": {
+          "eng": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea."
+        }
+      },
+      "home_activity": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea.",
+      "completed": false,
+      "task_child": "learn_mistakes_7to9_yc_article_tasks"
+    },
+    {
+      "id": "strengths_yc",
+      "tag_course": "learning_yc",
       "age_list": [
         "2",
         "3",
@@ -3646,124 +3836,631 @@
       "tag_list": [
         "child"
       ],
-      "number": 77,
+      "number": 79,
+      "title": "Reconocer lo bueno en ti",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Reconocer lo bueno en ti"
+        }
+      },
+      "completed": false,
+      "task_child": "strengths_yc_article_tasks"
+    },
+    {
+      "id": "fun_learning_t",
+      "tag_course": "learning_t",
+      "age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number": 80,
+      "image_asset": "images/homescreen/relation_c.svg",
+      "relax_id": "relax_9",
+      "check_in_id": "check_in_57",
+      "title": "Hacer divertido el aprendizaje",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Hacer divertido el aprendizaje"
+        },
+        "home_activity": {
+          "eng": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea."
+        }
+      },
+      "home_activity": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea.",
+      "completed": false,
+      "task_child": "fun_learning_t_article_tasks"
+    },
+    {
+      "id": "help_learn_t",
+      "tag_course": "learning_t",
+      "age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number": 81,
+      "image_asset": "images/homescreen/relation_t.svg",
+      "relax_id": "relax_1",
+      "check_in_id": "check_in_58",
+      "title": "Acompañar su aprendizaje",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Acompañar su aprendizaje"
+        },
+        "home_activity": {
+          "eng": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea."
+        }
+      },
+      "home_activity": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea.",
+      "completed": false,
+      "task_child": "help_learn_t_article_tasks"
+    },
+    {
+      "id": "positive_learn_t",
+      "tag_course": "learning_t",
+      "age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number": 82,
+      "image_asset": "images/homescreen/understand_c.svg",
+      "relax_id": "relax_2",
+      "check_in_id": "check_in_59",
+      "title": "Crear el ambiente adecuado",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Crear el ambiente adecuado"
+        },
+        "home_activity": {
+          "eng": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea."
+        }
+      },
+      "home_activity": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea.",
+      "completed": false,
+      "task_child": "positive_learn_t_article_tasks"
+    },
+    {
+      "id": "learn_mistakes_t",
+      "tag_course": "learning_t",
+      "age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number": 83,
+      "image_asset": "images/homescreen/understand_t.svg",
+      "relax_id": "relax_3",
+      "check_in_id": "check_in_60",
+      "title": "Aprender de la experiencia",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Aprender de la experiencia"
+        },
+        "home_activity": {
+          "eng": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea."
+        }
+      },
+      "home_activity": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea.",
+      "completed": false,
+      "task_child": "learn_mistakes_t_article_tasks"
+    },
+    {
+      "id": "strengths_t",
+      "tag_course": "learning_t",
+      "age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "18"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number": 84,
+      "title": "Reconocer lo bueno en ti",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Reconocer lo bueno en ti"
+        }
+      },
+      "completed": false,
+      "task_child": "strengths_t_article_tasks"
+    },
+    {
+      "id": "school_involvement_t",
+      "tag_course": "learning_t",
+      "age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number": 85,
+      "image_asset": "images/homescreen/safety_c.svg",
+      "relax_id": "relax_3",
+      "check_in_id": "check_in_61",
+      "title": "Participar en la escuela",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Participar en la escuela"
+        },
+        "home_activity": {
+          "eng": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea."
+        }
+      },
+      "home_activity": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea.",
+      "completed": false,
+      "task_child": "school_involvement_t_article_tasks"
+    },
+    {
+      "id": "learn_people_t",
+      "tag_course": "learning_t",
+      "age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number": 86,
+      "image_asset": "images/homescreen/behave_c.svg",
+      "relax_id": "relax_9",
+      "check_in_id": "check_in_62",
+      "title": "Aprender a trabajar en equipo",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Aprender a trabajar en equipo"
+        },
+        "home_activity": {
+          "eng": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea."
+        }
+      },
+      "home_activity": "¡Muy bien!\n\nPongamos en práctica lo aprendido. Dedica 15 minutos para acompañar a @fields.child_name en una actividad de aprendizaje, como leer, jugar, conversar o apoyarle con una tarea.",
+      "completed": false,
+      "task_child": "learn_people_t_article_tasks"
+    },
+    {
+      "id": "play_yc",
+      "tag_course": "develop_yc",
+      "age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number": 85,
+      "image_asset": "images/homescreen/behave_t.svg",
+      "relax_id": "relax_1",
+      "check_in_id": "check_in_63",
+      "title": "El poder del juego",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "El poder del juego"
+        },
+        "home_activity": {
+          "eng": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana."
+        }
+      },
+      "home_activity": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana.",
+      "completed": false,
+      "task_child": "play_yc_article_tasks"
+    },
+    {
+      "id": "child_development_2to3_yc",
+      "tag_course": "develop_yc",
+      "age_list": [
+        "2",
+        "3"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number": 86,
+      "image_asset": "images/homescreen/safety_t.svg",
+      "relax_id": "relax_3",
+      "check_in_id": "check_in_64",
+      "title": "Conocer los cambios de mi niña o niño",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Conocer los cambios de mi niña o niño"
+        },
+        "home_activity": {
+          "eng": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana."
+        }
+      },
+      "home_activity": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana.",
+      "completed": false,
+      "task_child": "child_development_2to3_yc_article_tasks"
+    },
+    {
+      "id": "child_development_4to6_yc",
+      "tag_course": "develop_yc",
+      "age_list": [
+        "4",
+        "5",
+        "6"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number": 87,
+      "image_asset": "images/homescreen/learn_c.svg",
+      "relax_id": "relax_9",
+      "check_in_id": "check_in_65",
+      "title": "Conocer los cambios de mi niña o niño",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Conocer los cambios de mi niña o niño"
+        },
+        "home_activity": {
+          "eng": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana."
+        }
+      },
+      "home_activity": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana.",
+      "completed": false,
+      "task_child": "child_development_4to6_yc_article_tasks"
+    },
+    {
+      "id": "child_development_7to9_yc",
+      "tag_course": "develop_yc",
+      "age_list": [
+        "7",
+        "8",
+        "9"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number": 88,
+      "image_asset": "images/homescreen/learn_t.svg",
+      "relax_id": "relax_1",
+      "check_in_id": "check_in_66",
+      "title": "Conocer los cambios de mi niña o niño",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Conocer los cambios de mi niña o niño"
+        },
+        "home_activity": {
+          "eng": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana."
+        }
+      },
+      "home_activity": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana.",
+      "completed": false,
+      "task_child": "child_development_7to9_yc_article_tasks"
+    },
+    {
+      "id": "manage_stress_p1_yc",
+      "tag_course": "develop_yc",
+      "age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number": 89,
+      "image_asset": "images/homescreen/ipv.svg",
+      "relax_id": "relax_2",
+      "check_in_id": "check_in_67",
+      "title": "Regular tu estrés, parte 1",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Regular tu estrés, parte 1"
+        },
+        "home_activity": {
+          "eng": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana."
+        }
+      },
+      "home_activity": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana.",
+      "completed": false,
+      "task_child": "manage_stress_p1_yc_article_tasks"
+    },
+    {
+      "id": "manage_stress_p2_yc",
+      "tag_course": "develop_yc",
+      "age_list": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number": 90,
       "image_asset": "images/homescreen/relation_c.svg",
       "relax_id": "relax_3",
-      "check_in_id": "check_in_67",
-      "title": "Regular tu estrés como madre, padre o persona cuidadora - parte 2",
-      "_translations": {
-        "title": {},
-        "home_activity": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Regular tu estrés como madre, padre o persona cuidadora - parte 2"
-        },
-        "home_activity": {
-          "eng": "¡Excelente trabajo!\n\nRecuerda que aprender toma tiempo y práctica. Puedes comenzar hoy dedicando un momento para apoyar a tu adolescente con una meta, una actividad escolar o una tarea, acompañándole con interés y motivación."
-        }
-      },
-      "home_activity": "¡Excelente trabajo!\n\nRecuerda que aprender toma tiempo y práctica. Puedes comenzar hoy dedicando un momento para apoyar a tu adolescente con una meta, una actividad escolar o una tarea, acompañándole con interés y motivación.",
-      "completed": false,
-      "task_child": "Make_plan_c_article_tasks"
-    },
-    {
-      "id": "manage_stress_t",
-      "tag_course": "understand_t",
-      "age_list": [
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out",
-        "non_binary"
-      ],
-      "user_gender_list": [
-        "man",
-        "woman",
-        "opt_out",
-        "non_binary"
-      ],
-      "tag_list": [
-        "teen"
-      ],
-      "number": 78,
-      "image_asset": "images/homescreen/relation_t.svg",
-      "relax_id": "relax_9",
       "check_in_id": "check_in_68",
-      "title": "Regular tu estrés como madre, padre o persona cuidadora - parte 1",
+      "title": "Regular tu estrés, parte 2",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Regular tu estrés como madre, padre o persona cuidadora - parte 1"
+          "eng": "Regular tu estrés, parte 2"
         },
         "home_activity": {
-          "eng": "¡Muy bien!\n\nHoy puedes intentar aplicar esta estrategia. Dedica un momento para conversar con tu adolescente sobre las situaciones que le generan estrés y escúchale con atención y calma."
+          "eng": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana."
         }
       },
-      "home_activity": "¡Muy bien!\n\nHoy puedes intentar aplicar esta estrategia. Dedica un momento para conversar con tu adolescente sobre las situaciones que le generan estrés y escúchale con atención y calma.",
+      "home_activity": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana.",
       "completed": false,
-      "task_child": "manage_stress_t_article_tasks"
-    },
-    {
-      "id": "make_plan_t",
-      "tag_course": "understand_t",
-      "age_list": [
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out",
-        "non_binary"
-      ],
-      "user_gender_list": [
-        "man",
-        "woman",
-        "opt_out",
-        "non_binary"
-      ],
-      "tag_list": [
-        "teen"
-      ],
-      "number": 79,
-      "image_asset": "images/homescreen/understand_c.svg",
-      "relax_id": "relax_1",
-      "check_in_id": "check_in_69",
-      "title": "Regular tu estrés como madre, padre o persona cuidadora - parte 2",
-      "_translations": {
-        "title": {},
-        "home_activity": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Regular tu estrés como madre, padre o persona cuidadora - parte 2"
-        },
-        "home_activity": {
-          "eng": "¡Muy bien!\n\nHoy puedes intentar aplicar esta estrategia. Dedica un momento para conversar con tu adolescente sobre las situaciones que le generan estrés y escúchale con atención y calma."
-        }
-      },
-      "home_activity": "¡Muy bien!\n\nHoy puedes intentar aplicar esta estrategia. Dedica un momento para conversar con tu adolescente sobre las situaciones que le generan estrés y escúchale con atención y calma.",
-      "completed": false,
-      "task_child": "make_plan_t_article_tasks"
+      "task_child": "manage_stress_p2_yc_article_tasks"
     },
     {
       "id": "self_esteem_t",
@@ -3793,24 +4490,24 @@
       "tag_list": [
         "teen"
       ],
-      "number": 80,
+      "number": 91,
       "image_asset": "images/homescreen/understand_t.svg",
       "relax_id": "relax_2",
-      "check_in_id": "check_in_70",
-      "title": "Fomentar la confianza de mi adolescente",
+      "check_in_id": "check_in_69",
+      "title": "Fortalecer su confianza",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Fomentar la confianza de mi adolescente"
+          "eng": "Fortalecer su confianza"
         },
         "home_activity": {
-          "eng": "¡Muy bien!\n\nHoy puedes intentar aplicar esta estrategia. Dedica un momento para conversar con tu adolescente sobre las situaciones que le generan estrés y escúchale con atención y calma."
+          "eng": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana."
         }
       },
-      "home_activity": "¡Muy bien!\n\nHoy puedes intentar aplicar esta estrategia. Dedica un momento para conversar con tu adolescente sobre las situaciones que le generan estrés y escúchale con atención y calma.",
+      "home_activity": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana.",
       "completed": false,
       "task_child": "self_esteem_t_article_tasks"
     },
@@ -3842,75 +4539,26 @@
       "tag_list": [
         "teen"
       ],
-      "number": 81,
+      "number": 92,
       "image_asset": "images/homescreen/behave_c.svg",
       "relax_id": "relax_3",
-      "check_in_id": "check_in_71",
-      "title": "Cultivar la motivación de construir un futuro en mi adolescente",
+      "check_in_id": "check_in_70",
+      "title": "Motivar hacia el futuro",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Cultivar la motivación de construir un futuro en mi adolescente"
+          "eng": "Motivar hacia el futuro"
         },
         "home_activity": {
-          "eng": "¡Muy bien!\n\nHoy puedes intentar aplicar esta estrategia. Dedica un momento para conversar con tu adolescente sobre las situaciones que le generan estrés y escúchale con atención y calma."
+          "eng": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana."
         }
       },
-      "home_activity": "¡Muy bien!\n\nHoy puedes intentar aplicar esta estrategia. Dedica un momento para conversar con tu adolescente sobre las situaciones que le generan estrés y escúchale con atención y calma.",
+      "home_activity": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana.",
       "completed": false,
       "task_child": "hope_future_t_article_tasks"
-    },
-    {
-      "id": "stress_t",
-      "tag_course": "understand_t",
-      "age_list": [
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17"
-      ],
-      "child_gender_list": [
-        "male",
-        "female",
-        "opt_out",
-        "non_binary"
-      ],
-      "user_gender_list": [
-        "man",
-        "woman",
-        "opt_out",
-        "non_binary"
-      ],
-      "tag_list": [
-        "teen"
-      ],
-      "number": 82,
-      "image_asset": "images/homescreen/behave_t.svg",
-      "relax_id": "relax_9",
-      "check_in_id": "check_in_72",
-      "title": "Ayudar a mi adolescente a enfrentar el estrés",
-      "_translations": {
-        "title": {},
-        "home_activity": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Ayudar a mi adolescente a enfrentar el estrés"
-        },
-        "home_activity": {
-          "eng": "¡Muy bien!\n\nHoy puedes intentar aplicar esta estrategia. Dedica un momento para conversar con tu adolescente sobre las situaciones que le generan estrés y escúchale con atención y calma."
-        }
-      },
-      "home_activity": "¡Muy bien!\n\nHoy puedes intentar aplicar esta estrategia. Dedica un momento para conversar con tu adolescente sobre las situaciones que le generan estrés y escúchale con atención y calma.",
-      "completed": false,
-      "task_child": "stress_t_article_tasks"
     },
     {
       "id": "stress_signs_t",
@@ -3940,26 +4588,75 @@
       "tag_list": [
         "teen"
       ],
-      "number": 83,
+      "number": 93,
       "image_asset": "images/homescreen/safety_c.svg",
       "relax_id": "relax_1",
-      "check_in_id": "check_in_73",
-      "title": "Tristeza y depresión: diferencias y cómo actuar",
+      "check_in_id": "check_in_71",
+      "title": "Reconocer señales de alerta",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Tristeza y depresión: diferencias y cómo actuar"
+          "eng": "Reconocer señales de alerta"
         },
         "home_activity": {
-          "eng": "¡Muy bien!\n\nHoy puedes intentar aplicar esta estrategia. Dedica un momento para conversar con tu adolescente sobre las situaciones que le generan estrés y escúchale con atención y calma."
+          "eng": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana."
         }
       },
-      "home_activity": "¡Muy bien!\n\nHoy puedes intentar aplicar esta estrategia. Dedica un momento para conversar con tu adolescente sobre las situaciones que le generan estrés y escúchale con atención y calma.",
+      "home_activity": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana.",
       "completed": false,
       "task_child": "stress_signs_t_article_tasks"
+    },
+    {
+      "id": "stress_t",
+      "tag_course": "understand_t",
+      "age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number": 94,
+      "image_asset": "images/homescreen/behave_t.svg",
+      "relax_id": "relax_9",
+      "check_in_id": "check_in_72",
+      "title": "Ayudar a enfrentar el estrés",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Ayudar a enfrentar el estrés"
+        },
+        "home_activity": {
+          "eng": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana."
+        }
+      },
+      "home_activity": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana.",
+      "completed": false,
+      "task_child": "stress_t_article_tasks"
     },
     {
       "id": "anxiety_t",
@@ -3989,29 +4686,29 @@
       "tag_list": [
         "teen"
       ],
-      "number": 84,
+      "number": 95,
       "image_asset": "images/homescreen/safety_t.svg",
       "relax_id": "relax_2",
-      "check_in_id": "check_in_74",
-      "title": "Ansiedad: qué es y cómo actuar",
+      "check_in_id": "check_in_73",
+      "title": "Entender la ansiedad",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Ansiedad: qué es y cómo actuar"
+          "eng": "Entender la ansiedad"
         },
         "home_activity": {
-          "eng": "¡Muy bien!\n\nHoy puedes intentar aplicar esta estrategia. Dedica un momento para conversar con tu adolescente sobre las situaciones que le generan estrés y escúchale con atención y calma."
+          "eng": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana."
         }
       },
-      "home_activity": "¡Muy bien!\n\nHoy puedes intentar aplicar esta estrategia. Dedica un momento para conversar con tu adolescente sobre las situaciones que le generan estrés y escúchale con atención y calma.",
+      "home_activity": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana.",
       "completed": false,
       "task_child": "anxiety_t_article_tasks"
     },
     {
-      "id": "sadness_t",
+      "id": "sadness_depression_t",
       "tag_course": "understand_t",
       "age_list": [
         "10",
@@ -4038,26 +4735,124 @@
       "tag_list": [
         "teen"
       ],
-      "number": 85,
+      "number": 96,
       "image_asset": "images/homescreen/learn_c.svg",
       "relax_id": "relax_3",
-      "check_in_id": "check_in_75",
-      "title": "Conocer las señales de alarma para detectar situaciones de riesgo",
+      "check_in_id": "check_in_74",
+      "title": "Distinguir entre tristeza y depresión",
       "_translations": {
         "title": {},
         "home_activity": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Conocer las señales de alarma para detectar situaciones de riesgo"
+          "eng": "Distinguir entre tristeza y depresión"
         },
         "home_activity": {
-          "eng": "¡Muy bien!\n\nHoy puedes intentar aplicar esta estrategia. Dedica un momento para conversar con tu adolescente sobre las situaciones que le generan estrés y escúchale con atención y calma."
+          "eng": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana."
         }
       },
-      "home_activity": "¡Muy bien!\n\nHoy puedes intentar aplicar esta estrategia. Dedica un momento para conversar con tu adolescente sobre las situaciones que le generan estrés y escúchale con atención y calma.",
+      "home_activity": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana.",
       "completed": false,
-      "task_child": "sadness_t_article_tasks"
+      "task_child": "sadness_depression_t_article_tasks"
+    },
+    {
+      "id": "manage_stress_p1_t",
+      "tag_course": "understand_t",
+      "age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number": 97,
+      "image_asset": "images/homescreen/relation_t.svg",
+      "relax_id": "relax_9",
+      "check_in_id": "check_in_75",
+      "title": "Regular tu estrés, parte 1",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Regular tu estrés, parte 1"
+        },
+        "home_activity": {
+          "eng": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana."
+        }
+      },
+      "home_activity": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana.",
+      "completed": false,
+      "task_child": "manage_stress_p1_t_article_tasks"
+    },
+    {
+      "id": "manage_stress_p2_t",
+      "tag_course": "understand_t",
+      "age_list": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "teen"
+      ],
+      "number": 98,
+      "image_asset": "images/homescreen/understand_c.svg",
+      "relax_id": "relax_1",
+      "check_in_id": "check_in_76",
+      "title": "Regular tu estrés, parte 2",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Regular tu estrés, parte 2"
+        },
+        "home_activity": {
+          "eng": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana."
+        }
+      },
+      "home_activity": "¡Lleva este aprendizaje a tu día a día! \n\nApoya a @fields.child_name a fijar un objetivo de estudio o para completar su tarea de la semana.",
+      "completed": false,
+      "task_child": "manage_stress_p2_t_article_tasks"
     }
   ],
   "_metadata": {

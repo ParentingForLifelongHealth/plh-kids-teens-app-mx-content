@@ -1,0 +1,74 @@
+{
+  "flow_name": "prep_solve_problem_yc_articles",
+  "flow_subtype": "generated",
+  "flow_type": "data_pipe",
+  "rows": [
+    {
+      "operation": "filter",
+      "args_list": [
+        "id == \"relax_9\""
+      ],
+      "input_source": "relax"
+    },
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "category_id: relax",
+        "nested: FALSE"
+      ],
+      "output_target": "solve_problem_yc_relax | local_only;"
+    },
+    {
+      "operation": "filter",
+      "args_list": [
+        "id == \"check_in_37\""
+      ],
+      "input_source": "check_in"
+    },
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "category_id: check_in",
+        "nested: FALSE"
+      ],
+      "output_target": "solve_problem_yc_check_in | local_only;"
+    },
+    {
+      "operation": "filter",
+      "args_list": [
+        "!nested"
+      ],
+      "input_source": "solve_problem_yc_articles",
+      "output_target": "solve_problem_yc_testing | local_only;"
+    },
+    {
+      "operation": "concat",
+      "args_list": [
+        "solve_problem_yc_relax",
+        "solve_problem_yc_check_in",
+        "solve_problem_yc_testing"
+      ],
+      "input_source": false
+    },
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "completed: FALSE"
+      ]
+    },
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "version: 1"
+      ],
+      "output_target": "solve_problem_yc_article_tasks"
+    }
+  ],
+  "_output_flows": [
+    {
+      "flow_name": "solve_problem_yc_article_tasks",
+      "flow_subtype": "generated",
+      "flow_type": "data_list"
+    }
+  ]
+}
