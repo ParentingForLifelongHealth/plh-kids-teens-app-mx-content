@@ -238,22 +238,6 @@
       "flow_subtype": "generated",
       "flow_type": "data_list"
     },
-    "Consequences_t_article_tasks": {
-      "flow_name": "Consequences_t_article_tasks",
-      "flow_subtype": "generated",
-      "flow_type": "data_list",
-      "_metadata": {
-        "nested": {
-          "type": "boolean"
-        },
-        "completed": {
-          "type": "boolean"
-        },
-        "version": {
-          "type": "number"
-        }
-      }
-    },
     "Consequences_t_category_tasks": {
       "flow_name": "Consequences_t_category_tasks",
       "flow_subtype": "generated",
@@ -279,22 +263,6 @@
       "flow_name": "Fun_learning_t_category_tasks",
       "flow_subtype": "generated",
       "flow_type": "data_list"
-    },
-    "Know_role_t_article_tasks": {
-      "flow_name": "Know_role_t_article_tasks",
-      "flow_subtype": "generated",
-      "flow_type": "data_list",
-      "_metadata": {
-        "nested": {
-          "type": "boolean"
-        },
-        "completed": {
-          "type": "boolean"
-        },
-        "version": {
-          "type": "number"
-        }
-      }
     },
     "Know_role_t_category_tasks": {
       "flow_name": "Know_role_t_category_tasks",
@@ -322,22 +290,6 @@
       "flow_subtype": "generated",
       "flow_type": "data_list"
     },
-    "Manage_anger_t_article_tasks": {
-      "flow_name": "Manage_anger_t_article_tasks",
-      "flow_subtype": "generated",
-      "flow_type": "data_list",
-      "_metadata": {
-        "nested": {
-          "type": "boolean"
-        },
-        "completed": {
-          "type": "boolean"
-        },
-        "version": {
-          "type": "number"
-        }
-      }
-    },
     "Manage_anger_t_category_tasks": {
       "flow_name": "Manage_anger_t_category_tasks",
       "flow_subtype": "generated",
@@ -363,22 +315,6 @@
       "flow_name": "Play_c_category_tasks",
       "flow_subtype": "generated",
       "flow_type": "data_list"
-    },
-    "Rules_t_article_tasks": {
-      "flow_name": "Rules_t_article_tasks",
-      "flow_subtype": "generated",
-      "flow_type": "data_list",
-      "_metadata": {
-        "nested": {
-          "type": "boolean"
-        },
-        "completed": {
-          "type": "boolean"
-        },
-        "version": {
-          "type": "number"
-        }
-      }
     },
     "Rules_t_category_tasks": {
       "flow_name": "Rules_t_category_tasks",
@@ -548,22 +484,6 @@
       "flow_subtype": "generated",
       "flow_type": "data_list"
     },
-    "consequences_c_article_tasks": {
-      "flow_name": "consequences_c_article_tasks",
-      "flow_subtype": "generated",
-      "flow_type": "data_list",
-      "_metadata": {
-        "nested": {
-          "type": "boolean"
-        },
-        "completed": {
-          "type": "boolean"
-        },
-        "version": {
-          "type": "number"
-        }
-      }
-    },
     "consequences_c_category_tasks": {
       "flow_name": "consequences_c_category_tasks",
       "flow_subtype": "generated",
@@ -615,22 +535,6 @@
       "flow_name": "facilitators",
       "flow_subtype": "generated",
       "flow_type": "data_list"
-    },
-    "family_rules_c_article_tasks": {
-      "flow_name": "family_rules_c_article_tasks",
-      "flow_subtype": "generated",
-      "flow_type": "data_list",
-      "_metadata": {
-        "nested": {
-          "type": "boolean"
-        },
-        "completed": {
-          "type": "boolean"
-        },
-        "version": {
-          "type": "number"
-        }
-      }
     },
     "family_rules_c_category_tasks": {
       "flow_name": "family_rules_c_category_tasks",
@@ -826,22 +730,6 @@
       "flow_subtype": "generated",
       "flow_type": "data_list"
     },
-    "ignore_c_article_tasks": {
-      "flow_name": "ignore_c_article_tasks",
-      "flow_subtype": "generated",
-      "flow_type": "data_list",
-      "_metadata": {
-        "nested": {
-          "type": "boolean"
-        },
-        "completed": {
-          "type": "boolean"
-        },
-        "version": {
-          "type": "number"
-        }
-      }
-    },
     "ignore_c_category_tasks": {
       "flow_name": "ignore_c_category_tasks",
       "flow_subtype": "generated",
@@ -952,22 +840,6 @@
       "flow_subtype": "generated",
       "flow_type": "data_list"
     },
-    "keep_positive_c_article_tasks": {
-      "flow_name": "keep_positive_c_article_tasks",
-      "flow_subtype": "generated",
-      "flow_type": "data_list",
-      "_metadata": {
-        "nested": {
-          "type": "boolean"
-        },
-        "completed": {
-          "type": "boolean"
-        },
-        "version": {
-          "type": "number"
-        }
-      }
-    },
     "keep_positive_c_category_tasks": {
       "flow_name": "keep_positive_c_category_tasks",
       "flow_subtype": "generated",
@@ -993,22 +865,6 @@
       "flow_name": "keep_positive_t_category_tasks",
       "flow_subtype": "generated",
       "flow_type": "data_list"
-    },
-    "know_role_c_article_tasks": {
-      "flow_name": "know_role_c_article_tasks",
-      "flow_subtype": "generated",
-      "flow_type": "data_list",
-      "_metadata": {
-        "nested": {
-          "type": "boolean"
-        },
-        "completed": {
-          "type": "boolean"
-        },
-        "version": {
-          "type": "number"
-        }
-      }
     },
     "know_role_c_category_tasks": {
       "flow_name": "know_role_c_category_tasks",
@@ -1250,22 +1106,6 @@
       "flow_name": "make_plan_t_category_tasks",
       "flow_subtype": "generated",
       "flow_type": "data_list"
-    },
-    "manage_anger_c_article_tasks": {
-      "flow_name": "manage_anger_c_article_tasks",
-      "flow_subtype": "generated",
-      "flow_type": "data_list",
-      "_metadata": {
-        "nested": {
-          "type": "boolean"
-        },
-        "completed": {
-          "type": "boolean"
-        },
-        "version": {
-          "type": "number"
-        }
-      }
     },
     "manage_anger_c_category_tasks": {
       "flow_name": "manage_anger_c_category_tasks",
@@ -1831,22 +1671,6 @@
       "flow_subtype": "generated",
       "flow_type": "data_list"
     },
-    "solve_problem_c_article_tasks": {
-      "flow_name": "solve_problem_c_article_tasks",
-      "flow_subtype": "generated",
-      "flow_type": "data_list",
-      "_metadata": {
-        "nested": {
-          "type": "boolean"
-        },
-        "completed": {
-          "type": "boolean"
-        },
-        "version": {
-          "type": "number"
-        }
-      }
-    },
     "solve_problem_c_category_tasks": {
       "flow_name": "solve_problem_c_category_tasks",
       "flow_subtype": "generated",
@@ -2235,23 +2059,6 @@
         }
       }
     },
-    "Consequences_t_articles": {
-      "flow_type": "data_list",
-      "flow_name": "Consequences_t_articles",
-      "data_list_name": "Consequences_t_articles",
-      "flow_subtype": "modules_Consequences_t",
-      "module": "Consequences_t",
-      "_source": {
-        "name": "modules_mx",
-        "path": "MX modules - behave (31 - 43).xlsx",
-        "url": "https://docs.google.com/spreadsheets/d/1g_eTl9hdmpGSyPtqEwGPW0m9pbQer5jPnSMuZgTfiEY"
-      },
-      "_metadata": {
-        "nested": {
-          "type": "boolean"
-        }
-      }
-    },
     "Fun_learning_t_articles": {
       "flow_type": "data_list",
       "flow_name": "Fun_learning_t_articles",
@@ -2262,23 +2069,6 @@
         "name": "modules_mx",
         "path": "MX modules - learn (44 - 64).xlsx",
         "url": "https://docs.google.com/spreadsheets/d/1IqfQ4wjAXs-D2eT6VlDhz_yoVAyOVKvmRgiDZLpapoI"
-      },
-      "_metadata": {
-        "nested": {
-          "type": "boolean"
-        }
-      }
-    },
-    "Know_role_t_articles": {
-      "flow_type": "data_list",
-      "flow_name": "Know_role_t_articles",
-      "data_list_name": "Know_role_t_articles",
-      "flow_subtype": "modules_Know_role_t",
-      "module": "Know_role_t",
-      "_source": {
-        "name": "modules_mx",
-        "path": "MX modules - behave (31 - 43).xlsx",
-        "url": "https://docs.google.com/spreadsheets/d/1g_eTl9hdmpGSyPtqEwGPW0m9pbQer5jPnSMuZgTfiEY"
       },
       "_metadata": {
         "nested": {
@@ -2303,23 +2093,6 @@
         }
       }
     },
-    "Manage_anger_t_articles": {
-      "flow_type": "data_list",
-      "flow_name": "Manage_anger_t_articles",
-      "data_list_name": "Manage_anger_t_articles",
-      "flow_subtype": "modules_Manage_anger_t",
-      "module": "Manage_anger_t",
-      "_source": {
-        "name": "modules_mx",
-        "path": "MX modules - behave (31 - 43).xlsx",
-        "url": "https://docs.google.com/spreadsheets/d/1g_eTl9hdmpGSyPtqEwGPW0m9pbQer5jPnSMuZgTfiEY"
-      },
-      "_metadata": {
-        "nested": {
-          "type": "boolean"
-        }
-      }
-    },
     "Play_c_articles": {
       "flow_type": "data_list",
       "flow_name": "Play_c_articles",
@@ -2330,23 +2103,6 @@
         "name": "modules_mx",
         "path": "MX modules - understand (65 - 75).xlsx",
         "url": "https://docs.google.com/spreadsheets/d/1H1ZvymOlbQhNushjqQZwk1WiPb9sHuUQ2Ql1Gja34U4"
-      },
-      "_metadata": {
-        "nested": {
-          "type": "boolean"
-        }
-      }
-    },
-    "Rules_t_articles": {
-      "flow_type": "data_list",
-      "flow_name": "Rules_t_articles",
-      "data_list_name": "Rules_t_articles",
-      "flow_subtype": "modules_Rules_t",
-      "module": "Rules_t",
-      "_source": {
-        "name": "modules_mx",
-        "path": "MX modules - behave (31 - 43).xlsx",
-        "url": "https://docs.google.com/spreadsheets/d/1g_eTl9hdmpGSyPtqEwGPW0m9pbQer5jPnSMuZgTfiEY"
       },
       "_metadata": {
         "nested": {
@@ -2473,12 +2229,29 @@
         }
       }
     },
-    "consequences_c_articles": {
+    "consequences_t_articles": {
       "flow_type": "data_list",
-      "flow_name": "consequences_c_articles",
-      "data_list_name": "consequences_c_articles",
-      "flow_subtype": "modules_consequences_c",
-      "module": "consequences_c",
+      "flow_name": "consequences_t_articles",
+      "data_list_name": "consequences_t_articles",
+      "flow_subtype": "modules_consequences_t",
+      "module": "consequences_t",
+      "_source": {
+        "name": "modules_mx",
+        "path": "MX modules - behave (31 - 43).xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1g_eTl9hdmpGSyPtqEwGPW0m9pbQer5jPnSMuZgTfiEY"
+      },
+      "_metadata": {
+        "nested": {
+          "type": "boolean"
+        }
+      }
+    },
+    "consequences_yc_articles": {
+      "flow_type": "data_list",
+      "flow_name": "consequences_yc_articles",
+      "data_list_name": "consequences_yc_articles",
+      "flow_subtype": "modules_consequences_yc",
+      "module": "consequences_yc",
       "_source": {
         "name": "modules_mx",
         "path": "MX modules - behave (31 - 43).xlsx",
@@ -2524,12 +2297,29 @@
         }
       }
     },
-    "family_rules_c_articles": {
+    "family_rules_t_articles": {
       "flow_type": "data_list",
-      "flow_name": "family_rules_c_articles",
-      "data_list_name": "family_rules_c_articles",
-      "flow_subtype": "modules_family_rules_c",
-      "module": "family_rules_c",
+      "flow_name": "family_rules_t_articles",
+      "data_list_name": "family_rules_t_articles",
+      "flow_subtype": "modules_family_rules_t",
+      "module": "family_rules_t",
+      "_source": {
+        "name": "modules_mx",
+        "path": "MX modules - behave (31 - 43).xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1g_eTl9hdmpGSyPtqEwGPW0m9pbQer5jPnSMuZgTfiEY"
+      },
+      "_metadata": {
+        "nested": {
+          "type": "boolean"
+        }
+      }
+    },
+    "family_rules_yc_articles": {
+      "flow_type": "data_list",
+      "flow_name": "family_rules_yc_articles",
+      "data_list_name": "family_rules_yc_articles",
+      "flow_subtype": "modules_family_rules_yc",
+      "module": "family_rules_yc",
       "_source": {
         "name": "modules_mx",
         "path": "MX modules - behave (31 - 43).xlsx",
@@ -2694,12 +2484,12 @@
         }
       }
     },
-    "ignore_c_articles": {
+    "ignore_yc_articles": {
       "flow_type": "data_list",
-      "flow_name": "ignore_c_articles",
-      "data_list_name": "ignore_c_articles",
-      "flow_subtype": "modules_ignore_c",
-      "module": "ignore_c",
+      "flow_name": "ignore_yc_articles",
+      "data_list_name": "ignore_yc_articles",
+      "flow_subtype": "modules_ignore_yc",
+      "module": "ignore_yc",
       "_source": {
         "name": "modules_mx",
         "path": "MX modules - behave (31 - 43).xlsx",
@@ -2796,23 +2586,6 @@
         }
       }
     },
-    "keep_positive_c_articles": {
-      "flow_type": "data_list",
-      "flow_name": "keep_positive_c_articles",
-      "data_list_name": "keep_positive_c_articles",
-      "flow_subtype": "modules_keep_positive_c",
-      "module": "keep_positive_c",
-      "_source": {
-        "name": "modules_mx",
-        "path": "MX modules - behave (31 - 43).xlsx",
-        "url": "https://docs.google.com/spreadsheets/d/1g_eTl9hdmpGSyPtqEwGPW0m9pbQer5jPnSMuZgTfiEY"
-      },
-      "_metadata": {
-        "nested": {
-          "type": "boolean"
-        }
-      }
-    },
     "keep_positive_t_articles": {
       "flow_type": "data_list",
       "flow_name": "keep_positive_t_articles",
@@ -2830,12 +2603,46 @@
         }
       }
     },
-    "know_role_c_articles": {
+    "keep_positive_yc_articles": {
       "flow_type": "data_list",
-      "flow_name": "know_role_c_articles",
-      "data_list_name": "know_role_c_articles",
-      "flow_subtype": "modules_know_role_c",
-      "module": "know_role_c",
+      "flow_name": "keep_positive_yc_articles",
+      "data_list_name": "keep_positive_yc_articles",
+      "flow_subtype": "modules_keep_positive_yc",
+      "module": "keep_positive_yc",
+      "_source": {
+        "name": "modules_mx",
+        "path": "MX modules - behave (31 - 43).xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1g_eTl9hdmpGSyPtqEwGPW0m9pbQer5jPnSMuZgTfiEY"
+      },
+      "_metadata": {
+        "nested": {
+          "type": "boolean"
+        }
+      }
+    },
+    "know_role_t_articles": {
+      "flow_type": "data_list",
+      "flow_name": "know_role_t_articles",
+      "data_list_name": "know_role_t_articles",
+      "flow_subtype": "modules_know_role_t",
+      "module": "know_role_t",
+      "_source": {
+        "name": "modules_mx",
+        "path": "MX modules - behave (31 - 43).xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1g_eTl9hdmpGSyPtqEwGPW0m9pbQer5jPnSMuZgTfiEY"
+      },
+      "_metadata": {
+        "nested": {
+          "type": "boolean"
+        }
+      }
+    },
+    "know_role_yc_articles": {
+      "flow_type": "data_list",
+      "flow_name": "know_role_yc_articles",
+      "data_list_name": "know_role_yc_articles",
+      "flow_subtype": "modules_know_role_yc",
+      "module": "know_role_yc",
       "_source": {
         "name": "modules_mx",
         "path": "MX modules - behave (31 - 43).xlsx",
@@ -3034,12 +2841,29 @@
         }
       }
     },
-    "manage_anger_c_articles": {
+    "manage_anger_t_articles": {
       "flow_type": "data_list",
-      "flow_name": "manage_anger_c_articles",
-      "data_list_name": "manage_anger_c_articles",
-      "flow_subtype": "modules_manage_anger_c",
-      "module": "manage_anger_c",
+      "flow_name": "manage_anger_t_articles",
+      "data_list_name": "manage_anger_t_articles",
+      "flow_subtype": "modules_manage_anger_t",
+      "module": "manage_anger_t",
+      "_source": {
+        "name": "modules_mx",
+        "path": "MX modules - behave (31 - 43).xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1g_eTl9hdmpGSyPtqEwGPW0m9pbQer5jPnSMuZgTfiEY"
+      },
+      "_metadata": {
+        "nested": {
+          "type": "boolean"
+        }
+      }
+    },
+    "manage_anger_yc_articles": {
+      "flow_type": "data_list",
+      "flow_name": "manage_anger_yc_articles",
+      "data_list_name": "manage_anger_yc_articles",
+      "flow_subtype": "modules_manage_anger_yc",
+      "module": "manage_anger_yc",
       "_source": {
         "name": "modules_mx",
         "path": "MX modules - behave (31 - 43).xlsx",
@@ -3248,6 +3072,23 @@
         "name": "modules_mx",
         "path": "MX modules - learn (44 - 64).xlsx",
         "url": "https://docs.google.com/spreadsheets/d/1IqfQ4wjAXs-D2eT6VlDhz_yoVAyOVKvmRgiDZLpapoI"
+      },
+      "_metadata": {
+        "nested": {
+          "type": "boolean"
+        }
+      }
+    },
+    "redirect_yc_articles": {
+      "flow_type": "data_list",
+      "flow_name": "redirect_yc_articles",
+      "data_list_name": "redirect_yc_articles",
+      "flow_subtype": "modules_redirect_yc",
+      "module": "redirect_yc",
+      "_source": {
+        "name": "modules_mx",
+        "path": "MX modules - behave (31 - 43).xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1g_eTl9hdmpGSyPtqEwGPW0m9pbQer5jPnSMuZgTfiEY"
       },
       "_metadata": {
         "nested": {
@@ -3493,12 +3334,12 @@
         }
       }
     },
-    "solve_problem_c_articles": {
+    "solve_problem_t_articles": {
       "flow_type": "data_list",
-      "flow_name": "solve_problem_c_articles",
-      "data_list_name": "solve_problem_c_articles",
-      "flow_subtype": "modules_solve_problem_c",
-      "module": "solve_problem_c",
+      "flow_name": "solve_problem_t_articles",
+      "data_list_name": "solve_problem_t_articles",
+      "flow_subtype": "modules_solve_problem_t",
+      "module": "solve_problem_t",
       "_source": {
         "name": "modules_mx",
         "path": "MX modules - behave (31 - 43).xlsx",
@@ -3510,12 +3351,12 @@
         }
       }
     },
-    "solve_problem_t_articles": {
+    "solve_problem_yc_articles": {
       "flow_type": "data_list",
-      "flow_name": "solve_problem_t_articles",
-      "data_list_name": "solve_problem_t_articles",
-      "flow_subtype": "modules_solve_problem_t",
-      "module": "solve_problem_t",
+      "flow_name": "solve_problem_yc_articles",
+      "data_list_name": "solve_problem_yc_articles",
+      "flow_subtype": "modules_solve_problem_yc",
+      "module": "solve_problem_yc",
       "_source": {
         "name": "modules_mx",
         "path": "MX modules - behave (31 - 43).xlsx",
@@ -3618,6 +3459,40 @@
       "data_list_name": "talk_feelings_yc_mc_articles",
       "flow_subtype": "modules_talk_feelings_yc_mc",
       "module": "talk_feelings_yc_mc",
+      "_source": {
+        "name": "modules_mx",
+        "path": "MX modules_i (1-15).xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1dumE6EODyxm0cb9mf3BuiwbEIJ5gQj9h8VRt_Mfxd3k"
+      },
+      "_metadata": {
+        "nested": {
+          "type": "boolean"
+        }
+      }
+    },
+    "thoughts_feelings_t_articles": {
+      "flow_type": "data_list",
+      "flow_name": "thoughts_feelings_t_articles",
+      "data_list_name": "thoughts_feelings_t_articles",
+      "flow_subtype": "modules_thoughts_feelings_t",
+      "module": "thoughts_feelings_t",
+      "_source": {
+        "name": "modules_mx",
+        "path": "MX modules_i (1-15).xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1dumE6EODyxm0cb9mf3BuiwbEIJ5gQj9h8VRt_Mfxd3k"
+      },
+      "_metadata": {
+        "nested": {
+          "type": "boolean"
+        }
+      }
+    },
+    "thoughts_feelings_yc_articles": {
+      "flow_type": "data_list",
+      "flow_name": "thoughts_feelings_yc_articles",
+      "data_list_name": "thoughts_feelings_yc_articles",
+      "flow_subtype": "modules_thoughts_feelings_yc",
+      "module": "thoughts_feelings_yc",
       "_source": {
         "name": "modules_mx",
         "path": "MX modules_i (1-15).xlsx",
@@ -4016,18 +3891,6 @@
         }
       ]
     },
-    "prep_Consequences_t_articles": {
-      "flow_name": "prep_Consequences_t_articles",
-      "flow_subtype": "generated",
-      "flow_type": "data_pipe",
-      "_output_flows": [
-        {
-          "flow_name": "Consequences_t_article_tasks",
-          "flow_subtype": "generated",
-          "flow_type": "data_list"
-        }
-      ]
-    },
     "prep_Consequences_t_categories": {
       "flow_name": "prep_Consequences_t_categories",
       "flow_subtype": "generated",
@@ -4059,18 +3922,6 @@
       "_output_flows": [
         {
           "flow_name": "Fun_learning_t_category_tasks",
-          "flow_subtype": "generated",
-          "flow_type": "data_list"
-        }
-      ]
-    },
-    "prep_Know_role_t_articles": {
-      "flow_name": "prep_Know_role_t_articles",
-      "flow_subtype": "generated",
-      "flow_type": "data_pipe",
-      "_output_flows": [
-        {
-          "flow_name": "Know_role_t_article_tasks",
           "flow_subtype": "generated",
           "flow_type": "data_list"
         }
@@ -4112,18 +3963,6 @@
         }
       ]
     },
-    "prep_Manage_anger_t_articles": {
-      "flow_name": "prep_Manage_anger_t_articles",
-      "flow_subtype": "generated",
-      "flow_type": "data_pipe",
-      "_output_flows": [
-        {
-          "flow_name": "Manage_anger_t_article_tasks",
-          "flow_subtype": "generated",
-          "flow_type": "data_list"
-        }
-      ]
-    },
     "prep_Manage_anger_t_categories": {
       "flow_name": "prep_Manage_anger_t_categories",
       "flow_subtype": "generated",
@@ -4155,18 +3994,6 @@
       "_output_flows": [
         {
           "flow_name": "Play_c_category_tasks",
-          "flow_subtype": "generated",
-          "flow_type": "data_list"
-        }
-      ]
-    },
-    "prep_Rules_t_articles": {
-      "flow_name": "prep_Rules_t_articles",
-      "flow_subtype": "generated",
-      "flow_type": "data_pipe",
-      "_output_flows": [
-        {
-          "flow_name": "Rules_t_article_tasks",
           "flow_subtype": "generated",
           "flow_type": "data_list"
         }
@@ -4352,18 +4179,6 @@
         }
       ]
     },
-    "prep_consequences_c_articles": {
-      "flow_name": "prep_consequences_c_articles",
-      "flow_subtype": "generated",
-      "flow_type": "data_pipe",
-      "_output_flows": [
-        {
-          "flow_name": "consequences_c_article_tasks",
-          "flow_subtype": "generated",
-          "flow_type": "data_list"
-        }
-      ]
-    },
     "prep_consequences_c_categories": {
       "flow_name": "prep_consequences_c_categories",
       "flow_subtype": "generated",
@@ -4419,18 +4234,6 @@
       "_output_flows": [
         {
           "flow_name": "crises_7to9_yc_category_tasks",
-          "flow_subtype": "generated",
-          "flow_type": "data_list"
-        }
-      ]
-    },
-    "prep_family_rules_c_articles": {
-      "flow_name": "prep_family_rules_c_articles",
-      "flow_subtype": "generated",
-      "flow_type": "data_pipe",
-      "_output_flows": [
-        {
-          "flow_name": "family_rules_c_article_tasks",
           "flow_subtype": "generated",
           "flow_type": "data_list"
         }
@@ -4664,18 +4467,6 @@
         }
       ]
     },
-    "prep_ignore_c_articles": {
-      "flow_name": "prep_ignore_c_articles",
-      "flow_subtype": "generated",
-      "flow_type": "data_pipe",
-      "_output_flows": [
-        {
-          "flow_name": "ignore_c_article_tasks",
-          "flow_subtype": "generated",
-          "flow_type": "data_list"
-        }
-      ]
-    },
     "prep_ignore_c_categories": {
       "flow_name": "prep_ignore_c_categories",
       "flow_subtype": "generated",
@@ -4808,18 +4599,6 @@
         }
       ]
     },
-    "prep_keep_positive_c_articles": {
-      "flow_name": "prep_keep_positive_c_articles",
-      "flow_subtype": "generated",
-      "flow_type": "data_pipe",
-      "_output_flows": [
-        {
-          "flow_name": "keep_positive_c_article_tasks",
-          "flow_subtype": "generated",
-          "flow_type": "data_list"
-        }
-      ]
-    },
     "prep_keep_positive_c_categories": {
       "flow_name": "prep_keep_positive_c_categories",
       "flow_subtype": "generated",
@@ -4851,18 +4630,6 @@
       "_output_flows": [
         {
           "flow_name": "keep_positive_t_category_tasks",
-          "flow_subtype": "generated",
-          "flow_type": "data_list"
-        }
-      ]
-    },
-    "prep_know_role_c_articles": {
-      "flow_name": "prep_know_role_c_articles",
-      "flow_subtype": "generated",
-      "flow_type": "data_pipe",
-      "_output_flows": [
-        {
-          "flow_name": "know_role_c_article_tasks",
           "flow_subtype": "generated",
           "flow_type": "data_list"
         }
@@ -5139,18 +4906,6 @@
       "_output_flows": [
         {
           "flow_name": "make_plan_t_category_tasks",
-          "flow_subtype": "generated",
-          "flow_type": "data_list"
-        }
-      ]
-    },
-    "prep_manage_anger_c_articles": {
-      "flow_name": "prep_manage_anger_c_articles",
-      "flow_subtype": "generated",
-      "flow_type": "data_pipe",
-      "_output_flows": [
-        {
-          "flow_name": "manage_anger_c_article_tasks",
           "flow_subtype": "generated",
           "flow_type": "data_list"
         }
@@ -5787,18 +5542,6 @@
       "_output_flows": [
         {
           "flow_name": "self_esteem_t_category_tasks",
-          "flow_subtype": "generated",
-          "flow_type": "data_list"
-        }
-      ]
-    },
-    "prep_solve_problem_c_articles": {
-      "flow_name": "prep_solve_problem_c_articles",
-      "flow_subtype": "generated",
-      "flow_type": "data_pipe",
-      "_output_flows": [
-        {
-          "flow_name": "solve_problem_c_article_tasks",
           "flow_subtype": "generated",
           "flow_type": "data_list"
         }

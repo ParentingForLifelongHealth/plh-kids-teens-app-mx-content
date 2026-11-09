@@ -120,116 +120,158 @@
       "id": "intro_1",
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "Esta sesión trata sobre aprender a resolver problemas con @fields.child_name. 👂"
-        },
-        "text_2": {
-          "eng": "A medida que las y los adolescentes crecen, realizan más actividades por su cuenta y a veces no cumplen las reglas que se establecen para mantenerles a salvo. \n\n🚗 Esto puede ocasionar conflictos en casa. Aprender a resolver estos problemas puede ayudar a mejorar el comportamiento de tu adolescente."
+          "eng": "Esta sesión trata sobre cómo **enfrentar los retos y problemas junto con @fields.child_name.** \n\n\nLos retos y problemas son una parte normal de la vida familiar. Aprender a resolverlos como equipo les ayudará a entender qué pasa, buscar diferentes soluciones y elegir juntos la mejor. 🧩"
         }
       },
       "category_id": "intro",
       "nested": false,
-      "text_1_facilitator": "Esta sesión trata sobre aprender a resolver problemas con @fields.child_name. 👂",
+      "text_1_facilitator": "Esta sesión trata sobre cómo **enfrentar los retos y problemas junto con @fields.child_name.** \n\n\nLos retos y problemas son una parte normal de la vida familiar. Aprender a resolverlos como equipo les ayudará a entender qué pasa, buscar diferentes soluciones y elegir juntos la mejor. 🧩",
       "_translations": {
-        "text_1_facilitator": {},
-        "text_2": {}
+        "text_1_facilitator": {}
       },
-      "text_2": "A medida que las y los adolescentes crecen, realizan más actividades por su cuenta y a veces no cumplen las reglas que se establecen para mantenerles a salvo. \n\n🚗 Esto puede ocasionar conflictos en casa. Aprender a resolver estos problemas puede ayudar a mejorar el comportamiento de tu adolescente.",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "intro_2",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Aquí exploraremos cómo puedes contribuir a que @fields.child_name aumente su confianza para encontrar soluciones a los retos por su cuenta.💡"
+        }
+      },
+      "category_id": "intro",
+      "nested": false,
+      "text_1_facilitator": "Aquí exploraremos cómo puedes contribuir a que @fields.child_name aumente su confianza para encontrar soluciones a los retos por su cuenta.💡",
+      "_translations": {
+        "text_1_facilitator": {}
+      },
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "intro_3",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Antes de empezar, reflexionemos un momento📝"
+        },
+        "quiz_1_question": {
+          "eng": "Verdadero o falso: Cuando @fields.child_name tiene un problema, mi responsabilidad es resolverlo."
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Verdadero"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nResolver el problema por tu cuenta puede ser más rápido, pero @fields.child_name aprende más cuando le acompañas a buscar una solución. Esto le ayuda a aprender a resolver problemas por sí mismo y le demuestra que sus ideas son importantes."
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Falso"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "🎉 ¡Tienes razón!\n\nResolver el problema por tu cuenta puede ser más rápido, pero @fields.child_name aprende más cuando le acompañas a buscar una solución. Esto le ayuda a aprender a resolver problemas por sí mismo y le demuestra que sus ideas son importantes."
+        }
+      },
+      "category_id": "intro",
+      "nested": false,
+      "quiz_1_feedback_1": "👀 ¡Ups! ¡Revisemos esta idea!\n\nResolver el problema por tu cuenta puede ser más rápido, pero @fields.child_name aprende más cuando le acompañas a buscar una solución. Esto le ayuda a aprender a resolver problemas por sí mismo y le demuestra que sus ideas son importantes.",
+      "_translations": {
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "text_1_facilitator": {}
+      },
+      "quiz_1_feedback_2": "🎉 ¡Tienes razón!\n\nResolver el problema por tu cuenta puede ser más rápido, pero @fields.child_name aprende más cuando le acompañas a buscar una solución. Esto le ayuda a aprender a resolver problemas por sí mismo y le demuestra que sus ideas son importantes.",
+      "quiz_1_question": "Verdadero o falso: Cuando @fields.child_name tiene un problema, mi responsabilidad es resolverlo.",
+      "quiz_1_option_1_text": "Verdadero",
+      "quiz_1_option_2_text": "Falso",
+      "text_1_facilitator": "Antes de empezar, reflexionemos un momento📝",
       "completed": false,
       "version": 1
     },
     {
       "id": "explore_1",
+      "media_type": "youtube",
       "_translatedFields": {
-        "character_1_text": {
-          "eng": "Vamos, @data.characters.f3_hija_12.name, es hora de prepararnos para ir a dormir."
-        },
-        "character_2_text": {
-          "eng": "¡Pero todavía me falta mucha tarea que hacer!"
-        },
-        "character_3_text": {
-          "eng": "Mm, es la tercera noche consecutiva que no te acuestas a tiempo por culpa de la tarea."
+        "text_1_facilitator": {
+          "eng": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo puedes resolver problemas junto con @fields.child_name.\n\nEn este video te compartimos cuatro estrategias recomendadas por especialistas:\n\n1️⃣ CONÓCELO\n2️⃣ PIENSEN EN EQUIPO\n3️⃣ INTÉNTENLO\n4️⃣ COMPRUÉBALO"
         }
       },
       "category_id": "explore",
       "nested": false,
-      "image_asset": "images/comic/behave/solve_problems_teen_1.svg",
-      "character_1_id": "f3_madre",
-      "character_2_id": "f3_hija_12",
-      "character_3_id": "f3_madre",
-      "character_1_text": "Vamos, @data.characters.f3_hija_12.name, es hora de prepararnos para ir a dormir.",
+      "text_1_facilitator": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo puedes resolver problemas junto con @fields.child_name.\n\nEn este video te compartimos cuatro estrategias recomendadas por especialistas:\n\n1️⃣ CONÓCELO\n2️⃣ PIENSEN EN EQUIPO\n3️⃣ INTÉNTENLO\n4️⃣ COMPRUÉBALO",
       "_translations": {
-        "character_1_text": {},
-        "character_2_text": {},
-        "character_3_text": {}
+        "text_1_facilitator": {}
       },
-      "character_2_text": "¡Pero todavía me falta mucha tarea que hacer!",
-      "character_3_text": "Mm, es la tercera noche consecutiva que no te acuestas a tiempo por culpa de la tarea.",
       "completed": false,
       "version": 1
     },
     {
       "id": "explore_2",
       "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "¡Vamos a ver estas estrategias en la práctica!"
+        },
+        "text_2": {
+          "eng": "@data.characters.f2_padre.name nota que @data.characters.f2_hija_13.name lleva varias noches desvelándose. Fíjate cómo primero trata de entender el problema."
+        },
         "character_1_text": {
-          "eng": "¿Cómo podemos asegurarnos de que hagas todo lo que tengas que hacer y aún así te acuestes a tiempo?"
+          "eng": "@data.characters.f2_hija_13.name, ya van tres noches seguidas que te quedas trabajando hasta tarde. Parece que te está costando organizar tu tiempo y dormir lo suficiente. ¿Qué crees que está pasando?"
         },
         "character_2_text": {
-          "eng": "¿Tal vez pueda empezar la tarea un poco antes?"
-        },
-        "character_3_text": {
-          "eng": "¡Es una gran idea! ¿Qué tal si establecemos la regla de que empieces la tarea media hora después de que llegues a casa? ¡Así podrás terminarla y también tendrás tiempo para relajarte antes de ir a dormir! Estaré encantada de ayudarte cuando lo necesites."
-        },
-        "character_4_text": {
-          "eng": "¡Está bien!"
+          "eng": "¡Ya sé! ¡Y todavía me falta muchísimo! Siento que no me alcanza el tiempo… Y a veces me distraigo viendo la tele porque estoy demasiado cansada para hacer otra cosa."
         }
       },
       "category_id": "explore",
       "nested": false,
-      "image_asset": "images/comic/behave/solve_problems_teen_2.svg",
-      "character_1_id": "f3_madre",
-      "character_2_id": "f3_hija_12",
-      "character_3_id": "f3_madre",
-      "character_1_text": "¿Cómo podemos asegurarnos de que hagas todo lo que tengas que hacer y aún así te acuestes a tiempo?",
+      "text_1_facilitator": "¡Vamos a ver estas estrategias en la práctica!",
       "_translations": {
+        "text_1_facilitator": {},
+        "text_2": {},
         "character_1_text": {},
-        "character_2_text": {},
-        "character_3_text": {},
-        "character_4_text": {}
+        "character_2_text": {}
       },
-      "character_2_text": "¿Tal vez pueda empezar la tarea un poco antes?",
-      "character_3_text": "¡Es una gran idea! ¿Qué tal si establecemos la regla de que empieces la tarea media hora después de que llegues a casa? ¡Así podrás terminarla y también tendrás tiempo para relajarte antes de ir a dormir! Estaré encantada de ayudarte cuando lo necesites.",
-      "character_4_id": "f3_hija_12",
-      "character_4_text": "¡Está bien!",
+      "image_asset": "images/comic/behave/solve_problem_t_1.svg",
+      "character_1_id": "f2_padre",
+      "character_2_id": "f2_hija_13",
+      "text_2": "@data.characters.f2_padre.name nota que @data.characters.f2_hija_13.name lleva varias noches desvelándose. Fíjate cómo primero trata de entender el problema.",
+      "character_1_text": "@data.characters.f2_hija_13.name, ya van tres noches seguidas que te quedas trabajando hasta tarde. Parece que te está costando organizar tu tiempo y dormir lo suficiente. ¿Qué crees que está pasando?",
+      "character_2_text": "¡Ya sé! ¡Y todavía me falta muchísimo! Siento que no me alcanza el tiempo… Y a veces me distraigo viendo la tele porque estoy demasiado cansada para hacer otra cosa.",
       "completed": false,
       "version": 1
     },
     {
       "id": "explore_3",
       "_translatedFields": {
+        "text_2": {
+          "eng": "Mira cómo @data.characters.f2_padre.name la guía para pensar soluciones entre los dos, en vez de decirles qué hacer."
+        },
         "character_1_text": {
-          "eng": "@data.characters.f3_hija_12.name, está sonando la alarma para empezar la tarea.\n¿Ya la empezaste?"
+          "eng": "¿Qué podríamos hacer para que te alcance el tiempo y puedas dormir bien?"
         },
         "character_2_text": {
-          "eng": "Empezaré de una vez, ma. ¿Te puedo pedir ayuda con esta pregunta?"
+          "eng": "Podría empezar la tarea en cuanto llegue de la escuela… pero casi siempre estoy muy cansada."
         },
         "character_3_text": {
-          "eng": "Claro que sí."
+          "eng": "Te entiendo. Y cuando estás cansada, es más difícil concentrarte. ¿Qué otra cosa podríamos intentar?"
         }
       },
       "category_id": "explore",
       "nested": false,
-      "image_asset": "images/comic/behave/solve_problems_teen_3.svg",
-      "character_1_id": "f3_madre",
-      "character_2_id": "f3_hija_12",
-      "character_3_id": "f3_madre",
-      "character_1_text": "@data.characters.f3_hija_12.name, está sonando la alarma para empezar la tarea.\n¿Ya la empezaste?",
+      "image_asset": "images/comic/behave/solve_problem_t_2.svg",
+      "character_1_id": "f2_padre",
+      "character_2_id": "f2_hija_13",
+      "text_2": "Mira cómo @data.characters.f2_padre.name la guía para pensar soluciones entre los dos, en vez de decirles qué hacer.",
       "_translations": {
+        "text_2": {},
         "character_1_text": {},
         "character_2_text": {},
         "character_3_text": {}
       },
-      "character_2_text": "Empezaré de una vez, ma. ¿Te puedo pedir ayuda con esta pregunta?",
-      "character_3_text": "Claro que sí.",
+      "character_1_text": "¿Qué podríamos hacer para que te alcance el tiempo y puedas dormir bien?",
+      "character_2_text": "Podría empezar la tarea en cuanto llegue de la escuela… pero casi siempre estoy muy cansada.",
+      "character_3_id": "f2_padre",
+      "character_3_text": "Te entiendo. Y cuando estás cansada, es más difícil concentrarte. ¿Qué otra cosa podríamos intentar?",
       "completed": false,
       "version": 1
     },
@@ -237,79 +279,130 @@
       "id": "explore_4",
       "_translatedFields": {
         "character_1_text": {
-          "eng": "Mira... ¡Esta noche me dormiré temprano!"
+          "eng": "Tal vez si hago la tarea en la mesa del comedor podría concentrarme mejor…"
         },
         "character_2_text": {
-          "eng": "Qué bien, @data.characters.f3_hija_12.name. Gracias por colaborar conmigo en encontrar una solución que nos funcione. ¡Ahora sí estarás descansada para mañana!"
+          "eng": "¡Podría funcionar! Podemos hacerte un espacio ahí todas las tardes."
         }
       },
       "category_id": "explore",
       "nested": false,
-      "image_asset": "images/comic/behave/solve_problems_teen_4.svg",
-      "character_1_id": "f3_hija_12",
-      "character_2_id": "f3_madre",
-      "character_1_text": "Mira... ¡Esta noche me dormiré temprano!",
+      "image_asset": "images/comic/behave/solve_problem_t_2.svg",
+      "character_1_id": "f2_hija_13",
+      "character_2_id": "f2_padre",
+      "character_1_text": "Tal vez si hago la tarea en la mesa del comedor podría concentrarme mejor…",
       "_translations": {
         "character_1_text": {},
         "character_2_text": {}
       },
-      "character_2_text": "Qué bien, @data.characters.f3_hija_12.name. Gracias por colaborar conmigo en encontrar una solución que nos funcione. ¡Ahora sí estarás descansada para mañana!",
+      "character_2_text": "¡Podría funcionar! Podemos hacerte un espacio ahí todas las tardes.",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_5",
+      "_translatedFields": {
+        "text_2": {
+          "eng": "@data.characters.f2_padre.name también comparte sus propias ideas y se pone de acuerdo con @data.characters.f2_hija_13.name para probar una solución."
+        },
+        "character_1_text": {
+          "eng": "¿Sabes qué más podría funcionar? Empezar por las tareas más difíciles."
+        },
+        "character_2_text": {
+          "eng": "Sí, también podría intentarlo y ver qué pasa. Gracías, papá."
+        },
+        "character_3_text": {
+          "eng": "¡Me parece bien! Entonces mañana voy a despejar la mesa del comedor y vemos si te funciona mejor."
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/behave/solve_problem_t_3.svg",
+      "character_1_id": "f2_padre",
+      "character_2_id": "f2_hija_13",
+      "text_2": "@data.characters.f2_padre.name también comparte sus propias ideas y se pone de acuerdo con @data.characters.f2_hija_13.name para probar una solución.",
+      "_translations": {
+        "text_2": {},
+        "character_1_text": {},
+        "character_2_text": {},
+        "character_3_text": {}
+      },
+      "character_1_text": "¿Sabes qué más podría funcionar? Empezar por las tareas más difíciles.",
+      "character_2_text": "Sí, también podría intentarlo y ver qué pasa. Gracías, papá.",
+      "character_3_id": "f2_padre",
+      "character_3_text": "¡Me parece bien! Entonces mañana voy a despejar la mesa del comedor y vemos si te funciona mejor.",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_6",
+      "_translatedFields": {
+        "text_2": {
+          "eng": "Al día siguiente, @data.characters.f2_padre.name y @data.characters.f2_hija_13.name comprueban que la solución sí funcionó."
+        },
+        "character_1_text": {
+          "eng": "¡Papá, ya casi termino mi tarea!"
+        },
+        "character_2_text": {
+          "eng": "¡Estoy muy orgulloso de ti, @data.characters.f2_hija_13.name! Parece que la solución que pensamos funcionó. Hoy ya vas a poder descansar bien."
+        },
+        "character_3_text": {
+          "eng": "¡Sí! Aquí pude concentrarme mucho mejor. Y también empecé por las tareas difíciles, como me sugeriste."
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/behave/solve_problem_t_4.svg",
+      "character_1_id": "f2_hija_13",
+      "character_2_id": "f2_padre",
+      "text_2": "Al día siguiente, @data.characters.f2_padre.name y @data.characters.f2_hija_13.name comprueban que la solución sí funcionó.",
+      "_translations": {
+        "text_2": {},
+        "character_1_text": {},
+        "character_2_text": {},
+        "character_3_text": {}
+      },
+      "character_1_text": "¡Papá, ya casi termino mi tarea!",
+      "character_2_text": "¡Estoy muy orgulloso de ti, @data.characters.f2_hija_13.name! Parece que la solución que pensamos funcionó. Hoy ya vas a poder descansar bien.",
+      "character_3_id": "f2_hija_13",
+      "character_3_text": "¡Sí! Aquí pude concentrarme mucho mejor. Y también empecé por las tareas difíciles, como me sugeriste.",
       "completed": false,
       "version": 1
     },
     {
       "id": "practical_tips_1",
-      "media_type": "youtube",
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "Selecciona reproducir ▶️ para conocer los cuatro pasos para ayudar a tu adolescente a resolver un problema:\n\n1️⃣ CONOCER\n2️⃣ RESOLVER\n3️⃣ INTENTAR\n4️⃣ COMPROBAR"
-        }
-      },
-      "category_id": "practical_tips",
-      "nested": false,
-      "text_1_facilitator": "Selecciona reproducir ▶️ para conocer los cuatro pasos para ayudar a tu adolescente a resolver un problema:\n\n1️⃣ CONOCER\n2️⃣ RESOLVER\n3️⃣ INTENTAR\n4️⃣ COMPROBAR",
-      "_translations": {
-        "text_1_facilitator": {}
-      },
-      "youtube_gb_en_f": "https://www.youtube.com/watch?v=NRkcevEWAWo&list=PLSUp-fKSYJUbJGZ7OlCtJvOlLuEQ_2yTU&index=2",
-      "youtube_gb_en_m": "https://www.youtube.com/watch?v=dO6MEKZqe98&list=PLSUp-fKSYJUaKsN2uvn1RF4YTuCrfkPbT",
-      "completed": false,
-      "version": 1
-    },
-    {
-      "id": "practical_tips_2",
-      "_translatedFields": {
-        "text_1_facilitator": {
-          "eng": "Recuerda:"
+          "eng": "Ya viste cómo @data.characters.f2_padre.name usó las estrategias.\n\n\nVamos a recordarlas una vez más para que resuelvas problemas junto con @fields.child_name:"
         },
         "section_1_title": {
-          "eng": "CONOCER"
+          "eng": "CONÓCELO"
         },
         "section_1_text": {
-          "eng": "✅ Expresa el problema con palabras. Describe el problema como si se lo estuvieras explicando a una persona desconocida.\n\n✅ Explícale a tu adolescente cuál es el problema. Recuerda que tu adolescente o tú NO son el problema. Enfócate en la situación."
+          "eng": "Identifica qué está causando el problema. Habla con @fields.child_name para entender cómo ve la situación."
         },
         "section_2_title": {
-          "eng": "RESOLVER"
+          "eng": "PIENSEN EN EQUIPO"
         },
         "section_2_text": {
-          "eng": "✅ En conjunto, piensen en posibles soluciones para este problema.\n\n✅ ¿Qué podrían hacer diferente en el futuro @fields.child_name o tú en esta misma situación?"
+          "eng": "Busquen juntos diferentes soluciones e imaginen qué podría pasar con cada una. \n\nSi compartes la crianza con alguien más, también puedes incluirle."
         },
         "section_3_title": {
-          "eng": "INTENTAR"
+          "eng": "INTÉNTENLO"
         },
         "section_3_text": {
-          "eng": "✅ Escojan una solución en conjunto.\n\n✅ Inténtenlo la próxima vez que se encuentren en una situación similar."
+          "eng": "Elijan juntos una de las soluciones que pensaron y pónganla en práctica."
         },
         "section_4_title": {
-          "eng": "COMPROBAR"
+          "eng": "COMPRUÉBALO"
         },
         "section_4_text": {
-          "eng": "✅ Pregúntate: \"¿Funcionó?\"\n\n✅ Si la respuesta es sí, ¡súper!\n\n✅ Si no es así, habla con @fields.child_name sobre intentar otra solución para la próxima vez. Utiliza los 4 pasos para encontrar una solución nueva."
+          "eng": "Pregúntense si funcionó. Si no, pueden volver a seguir estos cuatro pasos hasta encontrar una solución que les funcione."
         }
       },
       "category_id": "practical_tips",
       "nested": false,
-      "text_1_facilitator": "Recuerda:",
+      "text_1_facilitator": "Ya viste cómo @data.characters.f2_padre.name usó las estrategias.\n\n\nVamos a recordarlas una vez más para que resuelvas problemas junto con @fields.child_name:",
       "_translations": {
         "text_1_facilitator": {},
         "section_1_title": {},
@@ -325,14 +418,14 @@
       "section_2_icon_asset": "images/icons/tick.svg",
       "section_3_icon_asset": "images/icons/heart_filled_blue.png",
       "section_4_icon_asset": "images/icons/trophy_blue.png",
-      "section_1_title": "CONOCER",
-      "section_1_text": "✅ Expresa el problema con palabras. Describe el problema como si se lo estuvieras explicando a una persona desconocida.\n\n✅ Explícale a tu adolescente cuál es el problema. Recuerda que tu adolescente o tú NO son el problema. Enfócate en la situación.",
-      "section_2_title": "RESOLVER",
-      "section_2_text": "✅ En conjunto, piensen en posibles soluciones para este problema.\n\n✅ ¿Qué podrían hacer diferente en el futuro @fields.child_name o tú en esta misma situación?",
-      "section_3_title": "INTENTAR",
-      "section_3_text": "✅ Escojan una solución en conjunto.\n\n✅ Inténtenlo la próxima vez que se encuentren en una situación similar.",
-      "section_4_title": "COMPROBAR",
-      "section_4_text": "✅ Pregúntate: \"¿Funcionó?\"\n\n✅ Si la respuesta es sí, ¡súper!\n\n✅ Si no es así, habla con @fields.child_name sobre intentar otra solución para la próxima vez. Utiliza los 4 pasos para encontrar una solución nueva.",
+      "section_1_title": "CONÓCELO",
+      "section_1_text": "Identifica qué está causando el problema. Habla con @fields.child_name para entender cómo ve la situación.",
+      "section_2_title": "PIENSEN EN EQUIPO",
+      "section_2_text": "Busquen juntos diferentes soluciones e imaginen qué podría pasar con cada una. \n\nSi compartes la crianza con alguien más, también puedes incluirle.",
+      "section_3_title": "INTÉNTENLO",
+      "section_3_text": "Elijan juntos una de las soluciones que pensaron y pónganla en práctica.",
+      "section_4_title": "COMPRUÉBALO",
+      "section_4_text": "Pregúntense si funcionó. Si no, pueden volver a seguir estos cuatro pasos hasta encontrar una solución que les funcione.",
       "completed": false,
       "version": 1
     },
@@ -340,33 +433,33 @@
       "id": "home_activity_1",
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "**Actividad para casa** ⭐ \n\nHabla con tu adolescente sobre los cuatro pasos para resolver problemas y revisen la sesión juntos. \n\n¡Saber resolver problemas es una habilidad que podrán usar el resto de sus vidas!"
+          "eng": "¡Ahora es tu turno!\n\nLa próxima vez que notes que @fields.child_name enfrenta un problema, acompáñale a buscar una solución usando las cuatro estrategias que exploramos en esta sesión. 😊"
         },
         "quiz_1_question": {
-          "eng": "¿Tienes tiempo para hacerlo hoy?"
+          "eng": "¿Puedes hacerlo esta semana?"
         },
         "quiz_1_option_1_text": {
           "eng": "Sí"
         },
         "quiz_1_feedback_1": {
-          "eng": "¡Maravilloso!"
+          "eng": "¡Muy bien! 🎉\n\nResolver problemas juntos le enseña a @fields.child_name que sus ideas importan y que puede encontrar soluciones por su cuenta."
         },
         "quiz_1_option_2_text": {
           "eng": "Lo intentaré"
         },
         "quiz_1_feedback_2": {
-          "eng": "¡Maravilloso!"
+          "eng": "¡Está bien! 🙌\n\nIntentar resolver problemas juntos le enseña a @fields.child_name que sus ideas importan y que puede encontrar soluciones por su cuenta."
         },
         "quiz_1_option_3_text": {
           "eng": "No"
         },
         "quiz_1_feedback_3": {
-          "eng": "Está bien. Intenten repasar estos pasos en conjunto en algún momento de esta semana."
+          "eng": "¡Lo entiendo! Inténtalo cuando tengas oportunidad.😊\n\nPuede ser difícil involucrarle en la solución, pero resolver problemas juntos le enseñará a @fields.child_name que sus ideas importan."
         }
       },
       "category_id": "home_activity",
       "nested": false,
-      "quiz_1_feedback_1": "¡Maravilloso!",
+      "quiz_1_feedback_1": "¡Muy bien! 🎉\n\nResolver problemas juntos le enseña a @fields.child_name que sus ideas importan y que puede encontrar soluciones por su cuenta.",
       "_translations": {
         "quiz_1_feedback_1": {},
         "quiz_1_feedback_2": {},
@@ -377,13 +470,13 @@
         "quiz_1_option_3_text": {},
         "text_1_facilitator": {}
       },
-      "quiz_1_feedback_2": "¡Maravilloso!",
-      "quiz_1_feedback_3": "Está bien. Intenten repasar estos pasos en conjunto en algún momento de esta semana.",
-      "quiz_1_question": "¿Tienes tiempo para hacerlo hoy?",
+      "quiz_1_feedback_2": "¡Está bien! 🙌\n\nIntentar resolver problemas juntos le enseña a @fields.child_name que sus ideas importan y que puede encontrar soluciones por su cuenta.",
+      "quiz_1_feedback_3": "¡Lo entiendo! Inténtalo cuando tengas oportunidad.😊\n\nPuede ser difícil involucrarle en la solución, pero resolver problemas juntos le enseñará a @fields.child_name que sus ideas importan.",
+      "quiz_1_question": "¿Puedes hacerlo esta semana?",
       "quiz_1_option_1_text": "Sí",
       "quiz_1_option_2_text": "Lo intentaré",
       "quiz_1_option_3_text": "No",
-      "text_1_facilitator": "**Actividad para casa** ⭐ \n\nHabla con tu adolescente sobre los cuatro pasos para resolver problemas y revisen la sesión juntos. \n\n¡Saber resolver problemas es una habilidad que podrán usar el resto de sus vidas!",
+      "text_1_facilitator": "¡Ahora es tu turno!\n\nLa próxima vez que notes que @fields.child_name enfrenta un problema, acompáñale a buscar una solución usando las cuatro estrategias que exploramos en esta sesión. 😊",
       "completed": false,
       "version": 1
     }
