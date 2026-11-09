@@ -1,0 +1,19 @@
+{
+  "flow_name": "prep_keep_positive_yc_categories",
+  "flow_subtype": "generated",
+  "flow_type": "data_pipe",
+  "rows": [
+    {
+      "operation": "append_columns",
+      "input_source": "common_categories",
+      "output_target": "keep_positive_yc_category_tasks"
+    }
+  ],
+  "_output_flows": [
+    {
+      "flow_name": "keep_positive_yc_category_tasks",
+      "flow_subtype": "generated",
+      "flow_type": "data_list"
+    }
+  ]
+}

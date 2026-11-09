@@ -1,0 +1,524 @@
+{
+  "flow_name": "redirect_yc_article_tasks",
+  "flow_subtype": "generated",
+  "flow_type": "data_list",
+  "rows": [
+    {
+      "id": "relax_1",
+      "in_library": "yes",
+      "title_oringinal_eng": "Quick pause",
+      "lottie_asset": "lottie/relax/square_flow.json",
+      "media_asset_m": "audio/relax/male/relax_1.m4a",
+      "media_asset_f": "audio/relax/female/relax_16.m4a",
+      "media_type": "audio",
+      "transcript_m_original_eng": "Sit down, close your eyes, and listen to your breath as it goes in and out.\nNotice how you feel. When you are ready, open your eyes. \nTry this whenever you are feeling stressed and you need a break to reconnect.",
+      "transcript_f_original_eng": "Close your eyes.\n\nTake a moment to feel the ground under your feet.\nThink of something you feel grateful for.\nFocus on your breath.\nBreathe in and out.\n\nIn and out.",
+      "transcript_m": "Siéntate, cierra los ojos y escucha tu respiración mientras entra y sale.\nNota cómo te sientes. Cuando estés listo(a), abre los ojos.\nPrueba esto cada vez que te sientas estresado(a) y necesites un descanso para reconectarte.",
+      "transcript_f": "Practiquemos un truco para calmarte que llamamos “Poder de la Pausa”.\n\nPon tus pies en el suelo y respira lentamente tres veces. Imagina que hueles una flor o que soplas una vela.\n\n¡Ta-da! ¡Poder de la Pausa!\n\nEste es un excelente truco cuando te sientes frustrado(a), porque te ayudará a tranquilizarte.",
+      "title": "Pausa rápida",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Pausa rápida"
+        }
+      },
+      "category_id": "relax",
+      "nested": false,
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "check_in_34",
+      "_translatedFields": {
+        "text_1": {
+          "eng": "Toma un momento para ti. Cuidarte empieza por notar cómo te sientes."
+        },
+        "quiz_1_feedback_1": {
+          "eng": "¡Gracias por notarlo! Lo que sentimos importa.\n\nEs un gran día para invertir tiempo en ti y en tu familia."
+        },
+        "quiz_1_feedback_2": {
+          "eng": "¡Gracias por notarlo! Lo que sentimos importa.\n\nEs un gran día para invertir tiempo en ti y en tu familia."
+        },
+        "quiz_1_feedback_3": {
+          "eng": "¡Gracias por notarlo! Lo que sentimos importa.\n\nEs un gran día para invertir tiempo en ti y en tu familia."
+        },
+        "quiz_1_feedback_4": {
+          "eng": "¡Gracias por notarlo! Lo que sentimos importa.\n\nLa crianza puede ser desafiante, pero estar aquí muestra que quieres seguir mejorando."
+        },
+        "quiz_1_feedback_5": {
+          "eng": "¡Gracias por notarlo! Lo que sentimos importa.\n\nLa crianza puede ser desafiante, pero estar aquí muestra que quieres seguir mejorando."
+        },
+        "quiz_1_feedback_6": {
+          "eng": "¡Gracias por notarlo! Lo que sentimos importa.\n\nLa crianza puede ser desafiante, pero estar aquí muestra que quieres seguir mejorando."
+        },
+        "quiz_1_question": {
+          "eng": "¿Qué emoción sientes en este momento? Elige la que más se acerque."
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Alegría"
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Tranquilidad"
+        },
+        "quiz_1_option_3_text": {
+          "eng": "Gratitud"
+        },
+        "quiz_1_option_4_text": {
+          "eng": "Enojo"
+        },
+        "quiz_1_option_5_text": {
+          "eng": "Tristeza"
+        },
+        "quiz_1_option_6_text": {
+          "eng": "Estrés"
+        }
+      },
+      "category_id": "check_in",
+      "nested": false,
+      "quiz_1_option_1_image_asset": "images/faces/happy.svg",
+      "quiz_1_option_2_image_asset": "images/faces/smiling.svg",
+      "quiz_1_option_3_image_asset": "images/faces/grateful.svg",
+      "quiz_1_option_4_image_asset": "images/faces/angry.svg",
+      "quiz_1_option_5_image_asset": "images/faces/sad.svg",
+      "quiz_1_option_6_image_asset": "images/faces/stressed.svg",
+      "text_1": "Toma un momento para ti. Cuidarte empieza por notar cómo te sientes.",
+      "_translations": {
+        "text_1": {},
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_feedback_3": {},
+        "quiz_1_feedback_4": {},
+        "quiz_1_feedback_5": {},
+        "quiz_1_feedback_6": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_option_3_text": {},
+        "quiz_1_option_4_text": {},
+        "quiz_1_option_5_text": {},
+        "quiz_1_option_6_text": {}
+      },
+      "quiz_1_feedback_1": "¡Gracias por notarlo! Lo que sentimos importa.\n\nEs un gran día para invertir tiempo en ti y en tu familia.",
+      "quiz_1_feedback_2": "¡Gracias por notarlo! Lo que sentimos importa.\n\nEs un gran día para invertir tiempo en ti y en tu familia.",
+      "quiz_1_feedback_3": "¡Gracias por notarlo! Lo que sentimos importa.\n\nEs un gran día para invertir tiempo en ti y en tu familia.",
+      "quiz_1_feedback_4": "¡Gracias por notarlo! Lo que sentimos importa.\n\nLa crianza puede ser desafiante, pero estar aquí muestra que quieres seguir mejorando.",
+      "quiz_1_feedback_5": "¡Gracias por notarlo! Lo que sentimos importa.\n\nLa crianza puede ser desafiante, pero estar aquí muestra que quieres seguir mejorando.",
+      "quiz_1_feedback_6": "¡Gracias por notarlo! Lo que sentimos importa.\n\nLa crianza puede ser desafiante, pero estar aquí muestra que quieres seguir mejorando.",
+      "quiz_1_question": "¿Qué emoción sientes en este momento? Elige la que más se acerque.",
+      "quiz_1_option_1_text": "Alegría",
+      "quiz_1_option_2_text": "Tranquilidad",
+      "quiz_1_option_3_text": "Gratitud",
+      "quiz_1_option_4_text": "Enojo",
+      "quiz_1_option_5_text": "Tristeza",
+      "quiz_1_option_6_text": "Estrés",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "intro_1",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Esta sesión trata sobre cómo **redirigir** el comportamiento de @fields.child_name.\n\nPuede ser que a veces @fields.child_name haga cosas que te gustaría que dejara de hacer, como quitarle un juguete a alguien, quejarse constantemente o lanzar objetos. \n\nSi notas esta conducta a tiempo, puedes evitar que empeore al guiar a @fields.child_name hacia algo positivo. A esto le llamamos **redirigir**. 🧭"
+        }
+      },
+      "category_id": "intro",
+      "nested": false,
+      "text_1_facilitator": "Esta sesión trata sobre cómo **redirigir** el comportamiento de @fields.child_name.\n\nPuede ser que a veces @fields.child_name haga cosas que te gustaría que dejara de hacer, como quitarle un juguete a alguien, quejarse constantemente o lanzar objetos. \n\nSi notas esta conducta a tiempo, puedes evitar que empeore al guiar a @fields.child_name hacia algo positivo. A esto le llamamos **redirigir**. 🧭",
+      "_translations": {
+        "text_1_facilitator": {}
+      },
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "intro_2",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Aquí exploraremos cómo identificar a tiempo las conductas difíciles, guiar a @fields.child_name hacia una conducta positiva y reconocer su esfuerzo cuando lo haga. 💗"
+        }
+      },
+      "category_id": "intro",
+      "nested": false,
+      "text_1_facilitator": "Aquí exploraremos cómo identificar a tiempo las conductas difíciles, guiar a @fields.child_name hacia una conducta positiva y reconocer su esfuerzo cuando lo haga. 💗",
+      "_translations": {
+        "text_1_facilitator": {}
+      },
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "intro_3",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Antes de empezar, reflexionemos un momento📝"
+        },
+        "quiz_1_question": {
+          "eng": "Verdadero o falso: Es mejor esperar a que la conducta difícil de @fields.child_name empeore antes de intentar redirigirla hacia otra actividad."
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Verdadero"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nRedirigir funciona mejor cuando notas una conducta difícil antes de que empiece o cuando apenas está comenzando. \n\nSi ves que @fields.child_name está por hacer algo que puede causar un problema, intenta guiarle hacia algo positivo en su lugar."
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Falso"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "🎉 ¡Tienes razón!\n\nRedirigir funciona mejor cuando notas una conducta difícil antes de que empiece o cuando apenas está comenzando. \n\nSi ves que @fields.child_name está por hacer algo que puede causar un problema, intenta guiarle hacia algo positivo en su lugar."
+        }
+      },
+      "category_id": "intro",
+      "nested": false,
+      "quiz_1_feedback_1": "👀 ¡Ups! ¡Revisemos esta idea!\n\nRedirigir funciona mejor cuando notas una conducta difícil antes de que empiece o cuando apenas está comenzando. \n\nSi ves que @fields.child_name está por hacer algo que puede causar un problema, intenta guiarle hacia algo positivo en su lugar.",
+      "_translations": {
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "text_1_facilitator": {}
+      },
+      "quiz_1_feedback_2": "🎉 ¡Tienes razón!\n\nRedirigir funciona mejor cuando notas una conducta difícil antes de que empiece o cuando apenas está comenzando. \n\nSi ves que @fields.child_name está por hacer algo que puede causar un problema, intenta guiarle hacia algo positivo en su lugar.",
+      "quiz_1_question": "Verdadero o falso: Es mejor esperar a que la conducta difícil de @fields.child_name empeore antes de intentar redirigirla hacia otra actividad.",
+      "quiz_1_option_1_text": "Verdadero",
+      "quiz_1_option_2_text": "Falso",
+      "text_1_facilitator": "Antes de empezar, reflexionemos un momento📝",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "intro_4",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "¡Una pregunta más!"
+        },
+        "quiz_1_question": {
+          "eng": "Verdadero o falso: Cuando quieres redirigir la conducta de @fields.child_name, es mejor decirle lo que quieres que haga, en lugar de enfocarte en lo que está haciendo mal."
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Verdadero"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "🎉 ¡Tienes razón!\n\nEn lugar de decir: “¡Deja de aventar la pelota!”, puedes decirle: “Por favor, rueda la pelota hacia mí”.\n\n\nDar una indicación clara y positiva ayuda a @fields.child_name a saber qué puede hacer en su lugar. Después, reconoce su esfuerzo en cuanto siga tu indicación."
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Falso"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nEs mejor decirle a @fields.child_name lo que quieres que haga, en lugar de enfocarte en la conducta difícil.\n\nEn vez de decir: “¡Deja de lanzar la pelota!”, puedes decirle: “Por favor, rueda la pelota hacia mí”. Después, reconoce su esfuerzo en cuanto siga tu indicación."
+        }
+      },
+      "category_id": "intro",
+      "nested": false,
+      "quiz_1_feedback_1": "🎉 ¡Tienes razón!\n\nEn lugar de decir: “¡Deja de aventar la pelota!”, puedes decirle: “Por favor, rueda la pelota hacia mí”.\n\n\nDar una indicación clara y positiva ayuda a @fields.child_name a saber qué puede hacer en su lugar. Después, reconoce su esfuerzo en cuanto siga tu indicación.",
+      "_translations": {
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "text_1_facilitator": {}
+      },
+      "quiz_1_feedback_2": "👀 ¡Ups! ¡Revisemos esta idea!\n\nEs mejor decirle a @fields.child_name lo que quieres que haga, en lugar de enfocarte en la conducta difícil.\n\nEn vez de decir: “¡Deja de lanzar la pelota!”, puedes decirle: “Por favor, rueda la pelota hacia mí”. Después, reconoce su esfuerzo en cuanto siga tu indicación.",
+      "quiz_1_question": "Verdadero o falso: Cuando quieres redirigir la conducta de @fields.child_name, es mejor decirle lo que quieres que haga, en lugar de enfocarte en lo que está haciendo mal.",
+      "quiz_1_option_1_text": "Verdadero",
+      "quiz_1_option_2_text": "Falso",
+      "text_1_facilitator": "¡Una pregunta más!",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_1",
+      "media_type": "youtube",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo puedes empezar a redirigir la conducta de @fields.child_name.\n\nEn este video te compartimos cuatro estrategias recomendadas por especialistas:\n\n1️⃣ DETECTA A TIEMPO\n2️⃣ REDIRIGE HACIA ALGO POSITIVO\n3️⃣ DILO EN POSITIVO\n4️⃣ REFUERZA"
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "text_1_facilitator": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo puedes empezar a redirigir la conducta de @fields.child_name.\n\nEn este video te compartimos cuatro estrategias recomendadas por especialistas:\n\n1️⃣ DETECTA A TIEMPO\n2️⃣ REDIRIGE HACIA ALGO POSITIVO\n3️⃣ DILO EN POSITIVO\n4️⃣ REFUERZA",
+      "_translations": {
+        "text_1_facilitator": {}
+      },
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_2",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "¡Vamos a ver estas estrategias en la práctica!"
+        },
+        "text_2": {
+          "eng": "@data.characters.f2_padre.name está preparando la cena cuando detecta que @data.characters.f2_hijo_8.name está empezando a tener un comportamiento difícil."
+        },
+        "character_1_text": {
+          "eng": "(Pensando) Está empezando a lanzar los vasos. Voy a redirigirlo antes de que la situación empeore."
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "text_1_facilitator": "¡Vamos a ver estas estrategias en la práctica!",
+      "_translations": {
+        "text_1_facilitator": {},
+        "text_2": {},
+        "character_1_text": {}
+      },
+      "image_asset": "images/comic/behave/redirect_yc_1.svg",
+      "character_1_id": "f2_padre",
+      "text_2": "@data.characters.f2_padre.name está preparando la cena cuando detecta que @data.characters.f2_hijo_8.name está empezando a tener un comportamiento difícil.",
+      "character_1_text": "(Pensando) Está empezando a lanzar los vasos. Voy a redirigirlo antes de que la situación empeore.",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_3",
+      "_translatedFields": {
+        "text_2": {
+          "eng": "Fíjate cómo @data.characters.f2_padre.name redirige a @data.characters.f2_hijo_8.name hacia otra cosa, dándole una instrucción en positivo."
+        },
+        "character_1_text": {
+          "eng": "@data.characters.f2_hijo_8.name, ¡necesito un fabuloso ayudante! ¿Puedes poner estas servilletas en la mesa, una para cada persona?"
+        },
+        "character_2_text": {
+          "eng": "¡Yo puedo hacerlo!"
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/behave/redirect_yc_2.svg",
+      "character_1_id": "f2_padre",
+      "text_2": "Fíjate cómo @data.characters.f2_padre.name redirige a @data.characters.f2_hijo_8.name hacia otra cosa, dándole una instrucción en positivo.",
+      "_translations": {
+        "text_2": {},
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "character_1_text": "@data.characters.f2_hijo_8.name, ¡necesito un fabuloso ayudante! ¿Puedes poner estas servilletas en la mesa, una para cada persona?",
+      "character_2_id": "f2_hijo_8",
+      "character_2_text": "¡Yo puedo hacerlo!",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_4",
+      "_translatedFields": {
+        "text_2": {
+          "eng": "Mira cómo @data.characters.f2_padre.name reconoce de inmediato lo que @data.characters.f2_hijo_8.name hizo bien."
+        },
+        "character_1_text": {
+          "eng": "¡Muy bien, @data.characters.f2_hijo_8.name! Pusiste una servilleta en cada lugar."
+        },
+        "character_2_text": {
+          "eng": "¡Mira! ¡También puse esta!"
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/behave/redirect_yc_3.svg",
+      "character_1_id": "f2_padre",
+      "text_2": "Mira cómo @data.characters.f2_padre.name reconoce de inmediato lo que @data.characters.f2_hijo_8.name hizo bien.",
+      "_translations": {
+        "text_2": {},
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "character_1_text": "¡Muy bien, @data.characters.f2_hijo_8.name! Pusiste una servilleta en cada lugar.",
+      "character_2_id": "f2_hijo_8",
+      "character_2_text": "¡Mira! ¡También puse esta!",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_5",
+      "_translatedFields": {
+        "text_2": {
+          "eng": "@data.characters.f2_padre.name también refuerza lo positivo al agradecerle y proponerle otra tarea sencilla y clara."
+        },
+        "character_1_text": {
+          "eng": "¡Ya terminé!"
+        },
+        "character_2_text": {
+          "eng": "¡Gracias! Ahora, ¿puedes poner una cuchara junto a cada servilleta?"
+        },
+        "character_3_text": {
+          "eng": "¡Sí!"
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/behave/redirect_yc_4.svg",
+      "character_1_id": "f2_hijo_8",
+      "text_2": "@data.characters.f2_padre.name también refuerza lo positivo al agradecerle y proponerle otra tarea sencilla y clara.",
+      "_translations": {
+        "text_2": {},
+        "character_1_text": {},
+        "character_2_text": {},
+        "character_3_text": {}
+      },
+      "character_1_text": "¡Ya terminé!",
+      "character_2_id": "f2_padre",
+      "character_2_text": "¡Gracias! Ahora, ¿puedes poner una cuchara junto a cada servilleta?",
+      "character_3_id": "f2_hijo_8",
+      "character_3_text": "¡Sí!",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_6",
+      "_translatedFields": {
+        "text_2": {
+          "eng": "De esta forma, @data.characters.f2_padre.name logró detectar a tiempo la conducta difícil y redirigir a @data.characters.f2_hijo_8.name hacia una actividad positiva."
+        },
+        "character_1_text": {
+          "eng": "¡Qué bien estás ayudando! Gracias por poner la mesa conmigo."
+        },
+        "character_2_text": {
+          "eng": "¿Ahora puedo poner los vasos?"
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/behave/redirect_yc_5.svg",
+      "character_1_id": "f2_padre",
+      "text_2": "De esta forma, @data.characters.f2_padre.name logró detectar a tiempo la conducta difícil y redirigir a @data.characters.f2_hijo_8.name hacia una actividad positiva.",
+      "_translations": {
+        "text_2": {},
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "character_1_text": "¡Qué bien estás ayudando! Gracias por poner la mesa conmigo.",
+      "character_2_id": "f2_hijo_8",
+      "character_2_text": "¿Ahora puedo poner los vasos?",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "practical_tips_1",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Ya viste cómo @data.characters.f2_padre.name usó las estrategias.\n\n\nVamos a recordarlas una vez más para que redirijas la conducta de @fields.child_name:"
+        },
+        "section_1_title": {
+          "eng": "DETECTA A TIEMPO"
+        },
+        "section_1_text": {
+          "eng": "Presta atención e intenta identificar una conducta difícil antes de que comience o empeore."
+        },
+        "section_2_title": {
+          "eng": "REDIRIGE HACIA ALGO POSITIVO"
+        },
+        "section_2_text": {
+          "eng": "Guía a @fields.child_name hacia otra conducta o actividad positiva que pueda hacer en su lugar."
+        },
+        "section_3_title": {
+          "eng": "DILO EN POSITIVO"
+        },
+        "section_3_text": {
+          "eng": "Dile a @fields.child_name lo que quieres que haga, en lugar de enfocarte en lo que debe dejar de hacer. Da indicaciones claras, sencillas y posibles de seguir, con calma y entusiasmo."
+        },
+        "section_4_title": {
+          "eng": "REFUERZA"
+        },
+        "section_4_text": {
+          "eng": "En cuanto @fields.child_name siga tu indicación, reconoce lo que hizo bien. Mantén tu atención en su conducta positiva, sin volver a mencionar la conducta difícil."
+        }
+      },
+      "category_id": "practical_tips",
+      "nested": false,
+      "text_1_facilitator": "Ya viste cómo @data.characters.f2_padre.name usó las estrategias.\n\n\nVamos a recordarlas una vez más para que redirijas la conducta de @fields.child_name:",
+      "_translations": {
+        "text_1_facilitator": {},
+        "section_1_title": {},
+        "section_1_text": {},
+        "section_2_title": {},
+        "section_2_text": {},
+        "section_3_title": {},
+        "section_3_text": {},
+        "section_4_title": {},
+        "section_4_text": {}
+      },
+      "section_1_title": "DETECTA A TIEMPO",
+      "section_1_text": "Presta atención e intenta identificar una conducta difícil antes de que comience o empeore.",
+      "section_2_title": "REDIRIGE HACIA ALGO POSITIVO",
+      "section_2_text": "Guía a @fields.child_name hacia otra conducta o actividad positiva que pueda hacer en su lugar.",
+      "section_3_title": "DILO EN POSITIVO",
+      "section_3_text": "Dile a @fields.child_name lo que quieres que haga, en lugar de enfocarte en lo que debe dejar de hacer. Da indicaciones claras, sencillas y posibles de seguir, con calma y entusiasmo.",
+      "section_4_title": "REFUERZA",
+      "section_4_text": "En cuanto @fields.child_name siga tu indicación, reconoce lo que hizo bien. Mantén tu atención en su conducta positiva, sin volver a mencionar la conducta difícil.",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "home_activity_1",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "¡Ahora es tu turno!\n\nPiensa en una conducta difícil de @fields.child_name que podrías intentar redirigir y reflexiona:\n\n👀 ¿Cuáles son las primeras señales? ¿Qué hace @fields.child_name antes de que la conducta empeore?\n\n\n👉 ¿Hacia qué conducta positiva podrías redirigirle?\nPiensa en algo concreto y sencillo que @fields.child_name pueda hacer en su lugar.\n\n\n⭐ ¿Cómo vas a reforzar su conducta positiva?\nPiensa en cómo reconocer lo que hace bien en cuanto siga tu indicación."
+        },
+        "text_2": {
+          "eng": "Por ejemplo:\n\n📝 @fields.child_name empieza a lanzar sus juguetes por la habitación. ¿Qué puedo hacer?\n\n\nPrimero, identifico la conducta a tiempo.\n\n\nEn lugar de decir: “¡Deja de lanzar tus juguetes!”, digo: “@fields.child_name, ¡vamos a ver qué tan rápido podemos guardar estos juguetes en la canasta!”.\n\n\nCuando empieza a guardarlos, le digo: “¡Muy bien! ¡Gracias por ayudarme a guardar los juguetes!”."
+        },
+        "quiz_1_question": {
+          "eng": "¿Puedes intentarlo esta semana?"
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Sí"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "¡Muy bien! 🎉\n\nIntenta detectar la conducta a tiempo, guiar a @fields.child_name hacia algo positivo y reconocer lo que hace bien en cuanto siga tu indicación."
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Lo intentaré"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "¡Bien! Redirigir requiere práctica.💡\n\nEmpieza con una conducta que puedas identificar a tiempo y recuerda reconocer a @fields.child_name cuando siga tu indicación."
+        },
+        "quiz_1_option_3_text": {
+          "eng": "No"
+        },
+        "quiz_1_feedback_3": {
+          "eng": "¡Lo entiendo! Puedes empezar por observar cuándo @fields.child_name muestra las primeras señales de una conducta difícil. 💛\n\nPoco a poco, podrás pensar en algo positivo que pueda hacer en su lugar."
+        }
+      },
+      "category_id": "home_activity",
+      "nested": false,
+      "quiz_1_feedback_1": "¡Muy bien! 🎉\n\nIntenta detectar la conducta a tiempo, guiar a @fields.child_name hacia algo positivo y reconocer lo que hace bien en cuanto siga tu indicación.",
+      "_translations": {
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_feedback_3": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_option_3_text": {},
+        "text_1_facilitator": {},
+        "text_2": {}
+      },
+      "quiz_1_feedback_2": "¡Bien! Redirigir requiere práctica.💡\n\nEmpieza con una conducta que puedas identificar a tiempo y recuerda reconocer a @fields.child_name cuando siga tu indicación.",
+      "quiz_1_feedback_3": "¡Lo entiendo! Puedes empezar por observar cuándo @fields.child_name muestra las primeras señales de una conducta difícil. 💛\n\nPoco a poco, podrás pensar en algo positivo que pueda hacer en su lugar.",
+      "quiz_1_question": "¿Puedes intentarlo esta semana?",
+      "quiz_1_option_1_text": "Sí",
+      "quiz_1_option_2_text": "Lo intentaré",
+      "quiz_1_option_3_text": "No",
+      "text_1_facilitator": "¡Ahora es tu turno!\n\nPiensa en una conducta difícil de @fields.child_name que podrías intentar redirigir y reflexiona:\n\n👀 ¿Cuáles son las primeras señales? ¿Qué hace @fields.child_name antes de que la conducta empeore?\n\n\n👉 ¿Hacia qué conducta positiva podrías redirigirle?\nPiensa en algo concreto y sencillo que @fields.child_name pueda hacer en su lugar.\n\n\n⭐ ¿Cómo vas a reforzar su conducta positiva?\nPiensa en cómo reconocer lo que hace bien en cuanto siga tu indicación.",
+      "text_2": "Por ejemplo:\n\n📝 @fields.child_name empieza a lanzar sus juguetes por la habitación. ¿Qué puedo hacer?\n\n\nPrimero, identifico la conducta a tiempo.\n\n\nEn lugar de decir: “¡Deja de lanzar tus juguetes!”, digo: “@fields.child_name, ¡vamos a ver qué tan rápido podemos guardar estos juguetes en la canasta!”.\n\n\nCuando empieza a guardarlos, le digo: “¡Muy bien! ¡Gracias por ayudarme a guardar los juguetes!”.",
+      "completed": false,
+      "version": 1
+    }
+  ],
+  "_metadata": {
+    "nested": {
+      "type": "boolean"
+    },
+    "completed": {
+      "type": "boolean"
+    },
+    "version": {
+      "type": "number"
+    }
+  }
+}

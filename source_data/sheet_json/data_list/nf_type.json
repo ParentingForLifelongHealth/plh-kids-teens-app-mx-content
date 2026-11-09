@@ -1,0 +1,31 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "nf_type",
+  "status": "released",
+  "rows": [
+    {
+      "id": "install_nudge",
+      "description": "Day after the last visit, while no module has been started. Sent once."
+    },
+    {
+      "id": "positive_reinforcement",
+      "description": "Day after the last visit, once at least one module is completed. Sent once."
+    },
+    {
+      "id": "resume_lesson_afternoon",
+      "description": "Module in progress, 2 days after the last visit (14:00)."
+    },
+    {
+      "id": "(missing) resume_lesson_week",
+      "description": "Module in progress, 1 week after the last visit (19:00)."
+    },
+    {
+      "id": "win_back_evening",
+      "description": "No module in progress and programme not finished, 2 days after the last visit (19:00)."
+    },
+    {
+      "id": "win_back_week",
+      "description": "No module in progress and programme not finished, 1 week after the last visit (19:00)."
+    }
+  ]
+}

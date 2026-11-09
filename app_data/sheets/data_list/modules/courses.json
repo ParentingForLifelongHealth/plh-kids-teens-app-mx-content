@@ -4,7 +4,6 @@
   "data_list_name": "courses",
   "status": "released",
   "flow_subtype": "modules",
-  "comment": "released",
   "rows": [
     {
       "id": "relation_yc",
@@ -19,6 +18,7 @@
         "non_binary"
       ],
       "image_asset": "images/homescreen/relation_c.svg",
+      "certificate_image_asset": "images/badges/badge_1.svg",
       "completed": false,
       "title": "Fortalecer la relación",
       "_translations": {
@@ -43,6 +43,7 @@
         "non_binary"
       ],
       "image_asset": "images/homescreen/relation_t.svg",
+      "certificate_image_asset": "images/badges/badge_1.svg",
       "completed": false,
       "title": "Fortalecer la relación",
       "_translations": {
@@ -68,6 +69,7 @@
         "non_binary"
       ],
       "image_asset": "images/homescreen/ipv.svg",
+      "certificate_image_asset": "images/badges/badge_2.svg",
       "completed": false,
       "title": "Crianza compartida",
       "_translations": {
@@ -80,7 +82,7 @@
       }
     },
     {
-      "id": "safety_c",
+      "id": "safety_yc",
       "core": false,
       "tag_list": [
         "child"
@@ -92,14 +94,15 @@
         "non_binary"
       ],
       "image_asset": "images/homescreen/safety_c.svg",
+      "certificate_image_asset": "images/badges/badge_3.svg",
       "completed": false,
-      "title": "Cuidar su seguridad",
+      "title": "Cuidados, límites y seguridad",
       "_translations": {
         "title": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Cuidar su seguridad"
+          "eng": "Cuidados, límites y seguridad"
         }
       }
     },
@@ -116,19 +119,20 @@
         "non_binary"
       ],
       "image_asset": "images/homescreen/safety_t.svg",
+      "certificate_image_asset": "images/badges/badge_3.svg",
       "completed": false,
-      "title": "Cuidar su seguridad",
+      "title": "Cuidados, límites y seguridad",
       "_translations": {
         "title": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Cuidar su seguridad"
+          "eng": "Cuidados, límites y seguridad"
         }
       }
     },
     {
-      "id": "behave_c",
+      "id": "behave_yc",
       "core": false,
       "tag_list": [
         "child"
@@ -140,6 +144,7 @@
         "non_binary"
       ],
       "image_asset": "images/homescreen/behave_c.svg",
+      "certificate_image_asset": "images/badges/badge_4.svg",
       "completed": false,
       "title": "Guiar su comportamiento",
       "_translations": {
@@ -164,6 +169,7 @@
         "non_binary"
       ],
       "image_asset": "images/homescreen/behave_t.svg",
+      "certificate_image_asset": "images/badges/badge_4.svg",
       "completed": false,
       "title": "Guiar su comportamiento",
       "_translations": {
@@ -176,7 +182,7 @@
       }
     },
     {
-      "id": "learn_c",
+      "id": "learning_yc",
       "core": false,
       "tag_list": [
         "child"
@@ -188,6 +194,7 @@
         "non_binary"
       ],
       "image_asset": "images/homescreen/learn_c.svg",
+      "certificate_image_asset": "images/badges/badge_5.svg",
       "completed": false,
       "title": "Apoyar su aprendizaje",
       "_translations": {
@@ -200,7 +207,7 @@
       }
     },
     {
-      "id": "learn_t",
+      "id": "learning_t",
       "core": false,
       "tag_list": [
         "teen"
@@ -212,6 +219,7 @@
         "non_binary"
       ],
       "image_asset": "images/homescreen/learn_t.svg",
+      "certificate_image_asset": "images/badges/badge_5.svg",
       "completed": false,
       "title": "Apoyar su aprendizaje",
       "_translations": {
@@ -224,7 +232,7 @@
       }
     },
     {
-      "id": "understand_c",
+      "id": "develop_yc",
       "core": false,
       "tag_list": [
         "child"
@@ -236,6 +244,7 @@
         "non_binary"
       ],
       "image_asset": "images/homescreen/understand_c.svg",
+      "certificate_image_asset": "images/badges/badge_6.svg",
       "completed": false,
       "title": "Entender su desarrollo",
       "_translations": {
@@ -248,7 +257,7 @@
       }
     },
     {
-      "id": "understand_t",
+      "id": "wellbeing_t",
       "core": false,
       "tag_list": [
         "teen"
@@ -260,22 +269,23 @@
         "non_binary"
       ],
       "image_asset": "images/homescreen/understand_t.svg",
+      "certificate_image_asset": "images/badges/badge_7.svg",
       "completed": false,
-      "title": "Cuidar su bienestar",
+      "title": "Entender a mi adolescente",
       "_translations": {
         "title": {}
       },
       "_translatedFields": {
         "title": {
-          "eng": "Cuidar su bienestar"
+          "eng": "Entender a mi adolescente"
         }
       }
     }
   ],
   "_source": {
     "name": "modules_mx",
-    "path": "working copy modules.xlsx",
-    "url": "https://docs.google.com/spreadsheets/d/1OvbZssgjOnbG1WkrBsPt4_GSGK8cM5uR3yfE8LEU71o"
+    "path": "MX modules_i (1-15).xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1dumE6EODyxm0cb9mf3BuiwbEIJ5gQj9h8VRt_Mfxd3k"
   },
   "_metadata": {
     "core": {
