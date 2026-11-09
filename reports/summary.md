@@ -98,7 +98,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 17313 KB | 17.3 MB |
+| total | 17314 KB | 17.3 MB |
 | unused | 178104 KB | 178.1 MB |
 </details>
 
@@ -673,7 +673,6 @@ Assets that have references within sheets but do not appear in app-data
 | images/icons/heart_filled.png | 1 |
 | images/icons/heart_filled_active.png | 1 |
 | images/icons/heart_filled_blue.png | 76 |
-| images/icons/locked.png | 2 |
 | images/icons/share.svg | 3 |
 | images/icons/spark.png | 2 |
 | images/icons/trophy.png | 1 |
@@ -839,6 +838,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/local_library_outline.svg | 0.9 | 1 |
 | images/icons/lock-closed-outline.png | 0.9 | 1 |
 | images/icons/lock-open-outline.svg | 0.4 | 2 |
+| images/icons/locked.png | 0.7 | 2 |
 | images/icons/log-in-outline.svg | 0.5 | 1 |
 | images/icons/magnifying_glass.svg | 0.9 | 86 |
 | images/icons/parent_child.svg | 2 | 22 |
