@@ -16,7 +16,6 @@ config.google_drive.sheets_folders = [
   { id: "1d6iNDocEsALEZ9Z30Xg2FQ-98-1NJCVC", name: "test_po_refl"},
   { id: "1brg6jkdX06BsjaC9rz59gec5Pq8SONW5", name: "modules_mx" },
   { id: "1hgONPg9pMhIBgJjZVbX-n3USz-7dRKOf", name: "kids_teens_mx" }  
-  
 ];
 
 config.google_drive.assets_folders = [
@@ -66,8 +65,8 @@ config.remote_assets = {
 config.android = {
   app_id: 'international.idems.plh_kids_teens_mx',
   app_name: 'Crianza+',
-  logo_asset_path: "./app_data/assets/android/icon-foreground.png",
-  logo_background_color: "#FFFFFF",
+  logo_asset_path: "./app_data/assets/images/logos/icon-foreground.png",
+  logo_background_color: "#25415B",
   zoom_enabled: true
 };
 
@@ -75,8 +74,8 @@ config.ios = {
   app_id: "international.idems.plh-kids-teens-mx",
   app_name: "Crianza",
   app_display_name: "Crianza+",
-  logo_asset_path: "./app_data/assets/android/icon-foreground.png",
-  logo_background_color: "#FFFFFF",
+  logo_asset_path: "./app_data/assets/images/logos/icon-foreground.png",
+  logo_background_color: "#25415B",
   zoom_enabled: true
 };
 
