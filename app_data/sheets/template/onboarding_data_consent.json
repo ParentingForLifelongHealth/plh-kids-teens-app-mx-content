@@ -104,49 +104,6 @@
     },
     {
       "type": "display_group",
-      "name": "dg_onboarding_data_consent_personalisation",
-      "rows": [
-        {
-          "type": "simple_checkbox",
-          "name": "onboarding_data_consent_personalisation",
-          "value": false,
-          "parameter_list": {
-            "align": "left"
-          },
-          "style_list": [
-            "margin-top: -0.75em"
-          ],
-          "_nested_name": "dg_onboarding_data_consent_personalisation.onboarding_data_consent_personalisation"
-        },
-        {
-          "type": "text",
-          "name": "text_onboarding_data_consent_personalisation",
-          "value": "@global.onboarding_data_consent_personalisation_text",
-          "_translations": {
-            "value": {}
-          },
-          "_nested_name": "dg_onboarding_data_consent_personalisation.text_onboarding_data_consent_personalisation",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "@global.onboarding_data_consent_personalisation_text",
-                "matchedExpression": "@global.onboarding_data_consent_personalisation_text",
-                "type": "global",
-                "fieldName": "onboarding_data_consent_personalisation_text"
-              }
-            ]
-          },
-          "_dynamicDependencies": {
-            "@global.onboarding_data_consent_personalisation_text": [
-              "value"
-            ]
-          }
-        }
-      ],
-      "_nested_name": "dg_onboarding_data_consent_personalisation"
-    },
-    {
-      "type": "display_group",
       "name": "dg_onboarding_data_consent_impact",
       "rows": [
         {
@@ -187,6 +144,49 @@
         }
       ],
       "_nested_name": "dg_onboarding_data_consent_impact"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_onboarding_data_consent_personalisation",
+      "rows": [
+        {
+          "type": "simple_checkbox",
+          "name": "onboarding_data_consent_personalisation",
+          "value": false,
+          "parameter_list": {
+            "align": "left"
+          },
+          "style_list": [
+            "margin-top: -0.75em"
+          ],
+          "_nested_name": "dg_onboarding_data_consent_personalisation.onboarding_data_consent_personalisation"
+        },
+        {
+          "type": "text",
+          "name": "text_onboarding_data_consent_personalisation",
+          "value": "@global.onboarding_data_consent_personalisation_text",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_onboarding_data_consent_personalisation.text_onboarding_data_consent_personalisation",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@global.onboarding_data_consent_personalisation_text",
+                "matchedExpression": "@global.onboarding_data_consent_personalisation_text",
+                "type": "global",
+                "fieldName": "onboarding_data_consent_personalisation_text"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@global.onboarding_data_consent_personalisation_text": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "dg_onboarding_data_consent_personalisation"
     },
     {
       "type": "text",

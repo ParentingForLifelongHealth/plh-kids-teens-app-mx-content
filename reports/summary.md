@@ -99,7 +99,7 @@
 | assets | KB | MB |
 | --- | --- | --- |
 | total | 19029 KB | 19 MB |
-| unused | 177987 KB | 178 MB |
+| unused | 379927 KB | 379.9 MB |
 </details>
 
 <details open>
@@ -109,6 +109,16 @@ Assets that appear in app-data but do not have references within sheets
 
 | path | size_kb |
 | --- | --- |
+| audio/relax/Audio 1.wav | 16365.9 |
+| audio/relax/Audio 10.wav | 19581.9 |
+| audio/relax/Audio 2.wav | 25032.8 |
+| audio/relax/Audio 3.wav | 21607.1 |
+| audio/relax/Audio 4.wav | 12914.3 |
+| audio/relax/Audio 5.wav | 17325.9 |
+| audio/relax/Audio 6.wav | 18667 |
+| audio/relax/Audio 7.wav | 24479 |
+| audio/relax/Audio 8.wav | 22399.1 |
+| audio/relax/Audio 9.wav | 23566.9 |
 | images/activities/Activate_c.png | 1268.6 |
 | images/activities/Activate_t.png | 1268.6 |
 | images/activities/Adivinanzas_a_ciegas_c.png | 1473.5 |

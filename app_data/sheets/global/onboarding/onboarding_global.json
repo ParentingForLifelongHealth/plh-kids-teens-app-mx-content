@@ -348,15 +348,7 @@
     {
       "type": "declare_constant",
       "name": "data_consent_intro_text",
-      "value": "[PLACEHOLDER] How we use your data…",
-      "_translations": {
-        "value": {}
-      }
-    },
-    {
-      "type": "declare_constant",
-      "name": "data_consent_personalisation_text",
-      "value": "[PLACEHOLDER] I agree to my data being used to personalise the app.",
+      "value": "Making the app work for you",
       "_translations": {
         "value": {}
       }
@@ -364,7 +356,15 @@
     {
       "type": "declare_constant",
       "name": "data_consent_impact_text",
-      "value": "[PLACEHOLDER] I agree to my data being used to measure the programme's impact.",
+      "value": "I agree that PLH can use what I choose to share about my wellbeing, my child’s health and development, and any difficult or unsafe experiences my child has had, to see if the programme helps families.",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_constant",
+      "name": "data_consent_personalisation_text",
+      "value": "I agree that PLH can use my details (like my name, location and family information) to personalise the app. I need this to use the app.",
       "_translations": {
         "value": {}
       }
@@ -372,7 +372,7 @@
     {
       "type": "declare_constant",
       "name": "data_consent_required_text",
-      "value": "[PLACEHOLDER] Please tick the first box to continue.",
+      "value": "Please tick the second box to continue.",
       "_translations": {
         "value": {}
       }
