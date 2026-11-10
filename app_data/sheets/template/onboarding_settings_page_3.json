@@ -135,13 +135,28 @@
     },
     {
       "name": "variant",
-      "value": "gray",
+      "value": "@local.facilitator_row.bubble_variant",
       "_translations": {
         "value": {}
       },
       "exclude_from_translation": true,
       "type": "set_variable",
-      "_nested_name": "variant"
+      "_nested_name": "variant",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.facilitator_row.bubble_variant",
+            "matchedExpression": "@local.facilitator_row.bubble_variant",
+            "type": "local",
+            "fieldName": "facilitator_row"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.facilitator_row.bubble_variant": [
+          "value"
+        ]
+      }
     },
     {
       "type": "text_bubble",

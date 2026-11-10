@@ -15,16 +15,6 @@
       "_nested_name": "speaker_position"
     },
     {
-      "name": "variant",
-      "value": "gray",
-      "_translations": {
-        "value": {}
-      },
-      "exclude_from_translation": true,
-      "type": "set_variable",
-      "_nested_name": "variant"
-    },
-    {
       "name": "facilitator_id",
       "value": "@fields.facilitator_id",
       "_translations": {
@@ -150,6 +140,53 @@
       }
     },
     {
+      "name": "variant",
+      "value": "gray",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "variant"
+    },
+    {
+      "name": "variant",
+      "value": "@local.facilitator_row.bubble_variant",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "!!@local.facilitator_row.bubble_variant",
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "variant",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.facilitator_row.bubble_variant",
+            "matchedExpression": "@local.facilitator_row.bubble_variant",
+            "type": "local",
+            "fieldName": "facilitator_row"
+          }
+        ],
+        "condition": [
+          {
+            "fullExpression": "!!@local.facilitator_row.bubble_variant",
+            "matchedExpression": "!@local.facilitator_row.bubble_variant",
+            "type": "local",
+            "fieldName": "facilitator_row"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.facilitator_row.bubble_variant": [
+          "value"
+        ],
+        "!@local.facilitator_row.bubble_variant": [
+          "condition"
+        ]
+      }
+    },
+    {
       "name": "po_type",
       "exclude_from_translation": true,
       "type": "set_variable",
@@ -158,8 +195,8 @@
     {
       "exclude_from_translation": true,
       "type": "set_variable",
-      "name": "set_variable_10",
-      "_nested_name": "set_variable_10"
+      "name": "set_variable_11",
+      "_nested_name": "set_variable_11"
     },
     {
       "type": "text_bubble",

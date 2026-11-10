@@ -14,15 +14,6 @@
       "_nested_name": "speaker_position"
     },
     {
-      "name": "variant",
-      "value": "gray",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "variant"
-    },
-    {
       "name": "facilitator_id",
       "value": "@fields.facilitator_id",
       "_translations": {
@@ -139,6 +130,52 @@
       "_dynamicDependencies": {
         "@local.facilitator_row.image_asset": [
           "value"
+        ]
+      }
+    },
+    {
+      "name": "variant",
+      "value": "gray",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "variant"
+    },
+    {
+      "name": "variant",
+      "value": "@local.facilitator_row.bubble_variant",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "!!@local.facilitator_row.bubble_variant",
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "variant",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.facilitator_row.bubble_variant",
+            "matchedExpression": "@local.facilitator_row.bubble_variant",
+            "type": "local",
+            "fieldName": "facilitator_row"
+          }
+        ],
+        "condition": [
+          {
+            "fullExpression": "!!@local.facilitator_row.bubble_variant",
+            "matchedExpression": "!@local.facilitator_row.bubble_variant",
+            "type": "local",
+            "fieldName": "facilitator_row"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.facilitator_row.bubble_variant": [
+          "value"
+        ],
+        "!@local.facilitator_row.bubble_variant": [
+          "condition"
         ]
       }
     },

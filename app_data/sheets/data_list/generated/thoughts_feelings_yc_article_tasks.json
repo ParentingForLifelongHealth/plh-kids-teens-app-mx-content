@@ -4,50 +4,152 @@
   "flow_type": "data_list",
   "rows": [
     {
+      "id": "relax_1",
+      "in_library": "yes",
+      "title_oringinal_eng": "Quick pause",
+      "lottie_asset": "lottie/relax/square_flow.json",
+      "media_asset_m": "audio/relax/male/relax_1.m4a",
+      "media_asset_f": "audio/relax/female/relax_16.m4a",
+      "media_type": "audio",
+      "transcript_m_original_eng": "Sit down, close your eyes, and listen to your breath as it goes in and out.\nNotice how you feel. When you are ready, open your eyes. \nTry this whenever you are feeling stressed and you need a break to reconnect.",
+      "transcript_f_original_eng": "Close your eyes.\n\nTake a moment to feel the ground under your feet.\nThink of something you feel grateful for.\nFocus on your breath.\nBreathe in and out.\n\nIn and out.",
+      "transcript_m": "Siéntate, cierra los ojos y escucha tu respiración mientras entra y sale.\nNota cómo te sientes. Cuando estés listo(a), abre los ojos.\nPrueba esto cada vez que te sientas estresado(a) y necesites un descanso para reconectarte.",
+      "transcript_f": "Practiquemos un truco para calmarte que llamamos “Poder de la Pausa”.\n\nPon tus pies en el suelo y respira lentamente tres veces. Imagina que hueles una flor o que soplas una vela.\n\n¡Ta-da! ¡Poder de la Pausa!\n\nEste es un excelente truco cuando te sientes frustrado(a), porque te ayudará a tranquilizarte.",
+      "title": "Pausa rápida",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Pausa rápida"
+        }
+      },
+      "category_id": "relax",
+      "nested": false,
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "check_in_9",
+      "_translatedFields": {
+        "text_1": {
+          "eng": "Reconocer cómo te sientes es clave para vivir con mayor bienestar."
+        },
+        "quiz_1_feedback_1": {
+          "eng": "¡Me alegro de que la estés pasando bien! ✨ \n\nLo que sentimos importa y cuidarnos también. Este espacio de aprendizaje es para ti."
+        },
+        "quiz_1_feedback_2": {
+          "eng": "¡Qué bueno que sientas tranquilidad! ✨ \n\nLo que sentimos importa y cuidarnos también. Ahora puedes dedicarte un ratito para aprender algo nuevo."
+        },
+        "quiz_1_feedback_3": {
+          "eng": "¡Qué gusto que sientas gratitud! ✨ \n\nLo que sentimos importa y cuidarnos también. Ojalá que disfrutes este espacio de aprendizaje."
+        },
+        "quiz_1_feedback_4": {
+          "eng": "¡Gracias por notarlo! Lo que sentimos importa.✨\n\nA veces hay días así, pero las cosas pueden mejorar. Ahora puedes dedicarte un ratito para aprender algo nuevo."
+        },
+        "quiz_1_feedback_5": {
+          "eng": "¡Gracias por notarlo! Lo que sentimos importa.✨\n\nEstás haciendo un gran trabajo al estar aquí. Ojalá que este espacio de aprendizaje ayude a que te sientas mejor."
+        },
+        "quiz_1_feedback_6": {
+          "eng": "¡Gracias por notarlo! Lo que sentimos importa.✨\n\nA veces hay días así, pero las cosas pueden mejorar. Ojalá que disfrutes este espacio de aprendizaje."
+        },
+        "quiz_1_question": {
+          "eng": "¿Qué emoción sientes en este momento? Elige la que más se acerque."
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Alegría"
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Tranquilidad"
+        },
+        "quiz_1_option_3_text": {
+          "eng": "Gratitud"
+        },
+        "quiz_1_option_4_text": {
+          "eng": "Enojo"
+        },
+        "quiz_1_option_5_text": {
+          "eng": "Tristeza"
+        },
+        "quiz_1_option_6_text": {
+          "eng": "Estrés"
+        }
+      },
+      "category_id": "check_in",
+      "nested": false,
+      "quiz_1_option_1_image_asset": "images/faces/happy.svg",
+      "quiz_1_option_2_image_asset": "images/faces/smiling.svg",
+      "quiz_1_option_3_image_asset": "images/faces/grateful.svg",
+      "quiz_1_option_4_image_asset": "images/faces/angry.svg",
+      "quiz_1_option_5_image_asset": "images/faces/sad.svg",
+      "quiz_1_option_6_image_asset": "images/faces/stressed.svg",
+      "text_1": "Reconocer cómo te sientes es clave para vivir con mayor bienestar.",
+      "_translations": {
+        "text_1": {},
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_feedback_3": {},
+        "quiz_1_feedback_4": {},
+        "quiz_1_feedback_5": {},
+        "quiz_1_feedback_6": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_option_3_text": {},
+        "quiz_1_option_4_text": {},
+        "quiz_1_option_5_text": {},
+        "quiz_1_option_6_text": {}
+      },
+      "quiz_1_feedback_1": "¡Me alegro de que la estés pasando bien! ✨ \n\nLo que sentimos importa y cuidarnos también. Este espacio de aprendizaje es para ti.",
+      "quiz_1_feedback_2": "¡Qué bueno que sientas tranquilidad! ✨ \n\nLo que sentimos importa y cuidarnos también. Ahora puedes dedicarte un ratito para aprender algo nuevo.",
+      "quiz_1_feedback_3": "¡Qué gusto que sientas gratitud! ✨ \n\nLo que sentimos importa y cuidarnos también. Ojalá que disfrutes este espacio de aprendizaje.",
+      "quiz_1_feedback_4": "¡Gracias por notarlo! Lo que sentimos importa.✨\n\nA veces hay días así, pero las cosas pueden mejorar. Ahora puedes dedicarte un ratito para aprender algo nuevo.",
+      "quiz_1_feedback_5": "¡Gracias por notarlo! Lo que sentimos importa.✨\n\nEstás haciendo un gran trabajo al estar aquí. Ojalá que este espacio de aprendizaje ayude a que te sientas mejor.",
+      "quiz_1_feedback_6": "¡Gracias por notarlo! Lo que sentimos importa.✨\n\nA veces hay días así, pero las cosas pueden mejorar. Ojalá que disfrutes este espacio de aprendizaje.",
+      "quiz_1_question": "¿Qué emoción sientes en este momento? Elige la que más se acerque.",
+      "quiz_1_option_1_text": "Alegría",
+      "quiz_1_option_2_text": "Tranquilidad",
+      "quiz_1_option_3_text": "Gratitud",
+      "quiz_1_option_4_text": "Enojo",
+      "quiz_1_option_5_text": "Tristeza",
+      "quiz_1_option_6_text": "Estrés",
+      "completed": false,
+      "version": 1
+    },
+    {
       "id": "intro_1",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Este módulo trata sobre **cómo tus pensamientos, emociones y acciones se relacionan**, y cómo influyen en lo que haces cada día.\n\n\nCuando tienes prisa, sientes estrés o algo no sale como esperabas, puedes reaccionar de distintas maneras con @fields.child_name y otras personas. 💭"
+        }
+      },
       "category_id": "intro",
       "nested": false,
       "text_1_facilitator": "Este módulo trata sobre **cómo tus pensamientos, emociones y acciones se relacionan**, y cómo influyen en lo que haces cada día.\n\n\nCuando tienes prisa, sientes estrés o algo no sale como esperabas, puedes reaccionar de distintas maneras con @fields.child_name y otras personas. 💭",
       "_translations": {
         "text_1_facilitator": {}
       },
-      "_translatedFields": {
-        "text_1_facilitator": {
-          "eng": "Este módulo trata sobre **cómo tus pensamientos, emociones y acciones se relacionan**, y cómo influyen en lo que haces cada día.\n\n\nCuando tienes prisa, sientes estrés o algo no sale como esperabas, puedes reaccionar de distintas maneras con @fields.child_name y otras personas. 💭"
-        }
-      },
       "completed": false,
       "version": 1
     },
     {
       "id": "intro_2",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Aquí exploraremos cómo reconocer lo que piensas y sientes, para elegir cómo actuar en casa, en el trabajo o en otros momentos de tu día. \n\nRecuerda que @fields.child_name también aprende al observarte. 👀"
+        }
+      },
       "category_id": "intro",
       "nested": false,
       "text_1_facilitator": "Aquí exploraremos cómo reconocer lo que piensas y sientes, para elegir cómo actuar en casa, en el trabajo o en otros momentos de tu día. \n\nRecuerda que @fields.child_name también aprende al observarte. 👀",
       "_translations": {
         "text_1_facilitator": {}
       },
-      "_translatedFields": {
-        "text_1_facilitator": {
-          "eng": "Aquí exploraremos cómo reconocer lo que piensas y sientes, para elegir cómo actuar en casa, en el trabajo o en otros momentos de tu día. \n\nRecuerda que @fields.child_name también aprende al observarte. 👀"
-        }
-      },
       "completed": false,
       "version": 1
     },
     {
       "id": "intro_3",
-      "category_id": "intro",
-      "nested": false,
-      "text_1_facilitator": "Antes de empezar, reflexionemos📝",
-      "_translations": {
-        "text_1_facilitator": {},
-        "quiz_1_question": {},
-        "quiz_1_option_1_text": {},
-        "quiz_1_feedback_1": {},
-        "quiz_1_option_2_text": {},
-        "quiz_1_feedback_2": {}
-      },
       "_translatedFields": {
         "text_1_facilitator": {
           "eng": "Antes de empezar, reflexionemos📝"
@@ -68,29 +170,27 @@
           "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nLo que piensas y sientes está relacionado. Por ejemplo, si @fields.child_name logra hacer algo nuevo, puedes sentir alegría y pensar: \"¡Lo está logrando!\". \n\nEse pensamiento puede hacer que te sientas aún más feliz."
         }
       },
+      "category_id": "intro",
+      "nested": false,
+      "quiz_1_feedback_1": "🎉 ¡Tienes razón!\n\nLo que piensas y sientes está relacionado. Por ejemplo, si @fields.child_name logra hacer algo nuevo, puedes sentir alegría y pensar: \"¡Lo está logrando!\". \n\nEse pensamiento puede hacer que te sientas aún más feliz.",
+      "_translations": {
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "text_1_facilitator": {}
+      },
+      "quiz_1_feedback_2": "👀 ¡Ups! ¡Revisemos esta idea!\n\nLo que piensas y sientes está relacionado. Por ejemplo, si @fields.child_name logra hacer algo nuevo, puedes sentir alegría y pensar: \"¡Lo está logrando!\". \n\nEse pensamiento puede hacer que te sientas aún más feliz.",
       "quiz_1_question": "Verdadero o falso: Lo que pienso puede cambiar cómo me siento.",
       "quiz_1_option_1_text": "Verdadero",
-      "quiz_1_feedback_1": "🎉 ¡Tienes razón!\n\nLo que piensas y sientes está relacionado. Por ejemplo, si @fields.child_name logra hacer algo nuevo, puedes sentir alegría y pensar: \"¡Lo está logrando!\". \n\nEse pensamiento puede hacer que te sientas aún más feliz.",
       "quiz_1_option_2_text": "Falso",
-      "quiz_1_feedback_2": "👀 ¡Ups! ¡Revisemos esta idea!\n\nLo que piensas y sientes está relacionado. Por ejemplo, si @fields.child_name logra hacer algo nuevo, puedes sentir alegría y pensar: \"¡Lo está logrando!\". \n\nEse pensamiento puede hacer que te sientas aún más feliz.",
+      "text_1_facilitator": "Antes de empezar, reflexionemos📝",
       "completed": false,
       "version": 1
     },
     {
       "id": "intro_4",
-      "category_id": "intro",
-      "nested": false,
-      "text_1_facilitator": "¡Una pregunta más! Visualiza esta situación:",
-      "_translations": {
-        "text_1_facilitator": {},
-        "quiz_1_question": {},
-        "quiz_1_option_1_text": {},
-        "quiz_1_feedback_1": {},
-        "quiz_1_option_2_text": {},
-        "quiz_1_feedback_2": {},
-        "quiz_1_option_3_text": {},
-        "quiz_1_feedback_3": {}
-      },
       "_translatedFields": {
         "text_1_facilitator": {
           "eng": "¡Una pregunta más! Visualiza esta situación:"
@@ -117,30 +217,43 @@
           "eng": "🎉 ¡Muy bien!\n\nEl cansancio es una sensación. Y decirte en tu mente \"ya no tengo energía\" es un pensamiento. Ambos pueden influir en cómo actúas.\n\n\nResponder con un tono de voz serio es una acción: es algo que haces y que otras personas pueden escuchar."
         }
       },
+      "category_id": "intro",
+      "nested": false,
+      "quiz_1_feedback_1": "👀 ¡Ups! ¡Revisemos esta idea!\n\nEl cansancio es una sensación. Y decirte en tu mente \"ya no tengo energía\" es un pensamiento. Ambos pueden influir en cómo actúas.\n\n\nResponder con un tono de voz serio es una acción: es algo que haces y que otras personas pueden escuchar.",
+      "_translations": {
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_feedback_3": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_option_3_text": {},
+        "text_1_facilitator": {}
+      },
+      "quiz_1_feedback_2": "👀 ¡Ups! ¡Revisemos esta idea!\n\nEl cansancio es una sensación. Y decirte en tu mente \"ya no tengo energía\" es un pensamiento. Ambos pueden influir en cómo actúas.\n\n\nResponder con un tono de voz serio es una acción: es algo que haces y que otras personas pueden escuchar.",
+      "quiz_1_feedback_3": "🎉 ¡Muy bien!\n\nEl cansancio es una sensación. Y decirte en tu mente \"ya no tengo energía\" es un pensamiento. Ambos pueden influir en cómo actúas.\n\n\nResponder con un tono de voz serio es una acción: es algo que haces y que otras personas pueden escuchar.",
       "quiz_1_question": "Llegas a casa con mucho cansancio y @fields.child_name te pide jugar. En tu mente te dices: \"Ya no tengo energía\" y le respondes con un tono de voz serio.\n\n\n¿Cuál de estas opciones es una _acción_?",
       "quiz_1_option_1_text": "Sentir cansancio.",
-      "quiz_1_feedback_1": "👀 ¡Ups! ¡Revisemos esta idea!\n\nEl cansancio es una sensación. Y decirte en tu mente \"ya no tengo energía\" es un pensamiento. Ambos pueden influir en cómo actúas.\n\n\nResponder con un tono de voz serio es una acción: es algo que haces y que otras personas pueden escuchar.",
       "quiz_1_option_2_text": "Pensar \"Ya no tengo energía\".",
-      "quiz_1_feedback_2": "👀 ¡Ups! ¡Revisemos esta idea!\n\nEl cansancio es una sensación. Y decirte en tu mente \"ya no tengo energía\" es un pensamiento. Ambos pueden influir en cómo actúas.\n\n\nResponder con un tono de voz serio es una acción: es algo que haces y que otras personas pueden escuchar.",
       "quiz_1_option_3_text": "Responder con un tono de voz serio.",
-      "quiz_1_feedback_3": "🎉 ¡Muy bien!\n\nEl cansancio es una sensación. Y decirte en tu mente \"ya no tengo energía\" es un pensamiento. Ambos pueden influir en cómo actúas.\n\n\nResponder con un tono de voz serio es una acción: es algo que haces y que otras personas pueden escuchar.",
+      "text_1_facilitator": "¡Una pregunta más! Visualiza esta situación:",
       "completed": false,
       "version": 1
     },
     {
       "id": "explore_1",
+      "media_type": "youtube",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo reconocer la relación entre tus pensamientos, emociones y acciones. Esto te ayudará a elegir cómo responder en distintas situaciones.\n\nEn este video te compartimos tres estrategias recomendadas por especialistas:\n1️⃣ NOMBRA\n2️⃣ DETECTA\n3️⃣ ELIGE"
+        }
+      },
       "category_id": "explore",
       "nested": false,
       "text_1_facilitator": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo reconocer la relación entre tus pensamientos, emociones y acciones. Esto te ayudará a elegir cómo responder en distintas situaciones.\n\nEn este video te compartimos tres estrategias recomendadas por especialistas:\n1️⃣ NOMBRA\n2️⃣ DETECTA\n3️⃣ ELIGE",
       "_translations": {
         "text_1_facilitator": {}
       },
-      "_translatedFields": {
-        "text_1_facilitator": {
-          "eng": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo reconocer la relación entre tus pensamientos, emociones y acciones. Esto te ayudará a elegir cómo responder en distintas situaciones.\n\nEn este video te compartimos tres estrategias recomendadas por especialistas:\n1️⃣ NOMBRA\n2️⃣ DETECTA\n3️⃣ ELIGE"
-        }
-      },
-      "media_type": "youtube",
       "youtube_gb_en_f": "youtube.com/watch?v=busibiTOEL0&feature=youtu.be",
       "youtube_gb_en_m": "youtube.com/watch?v=busibiTOEL0&feature=youtu.be",
       "completed": false,
@@ -148,16 +261,6 @@
     },
     {
       "id": "explore_2",
-      "category_id": "explore",
-      "nested": false,
-      "text_1_facilitator": "¡Vamos a ver estas estrategias en la práctica!",
-      "_translations": {
-        "text_1_facilitator": {},
-        "text_2": {},
-        "character_1_text": {},
-        "character_2_text": {},
-        "character_3_text": {}
-      },
       "_translatedFields": {
         "text_1_facilitator": {
           "eng": "¡Vamos a ver estas estrategias en la práctica!"
@@ -175,6 +278,16 @@
           "eng": "¡Ahorita no! ¡Acabo de llegar y necesito descansar!"
         }
       },
+      "category_id": "explore",
+      "nested": false,
+      "text_1_facilitator": "¡Vamos a ver estas estrategias en la práctica!",
+      "_translations": {
+        "text_1_facilitator": {},
+        "text_2": {},
+        "character_1_text": {},
+        "character_2_text": {},
+        "character_3_text": {}
+      },
       "image_asset": "images/comic/relation/thoughts_feelings_1.svg",
       "character_1_id": "f3_hija_7",
       "character_2_id": "f3_hijo_14",
@@ -188,8 +301,6 @@
     },
     {
       "id": "explore_3",
-      "category_id": "explore",
-      "nested": false,
       "_translatedFields": {
         "text_2": {
           "eng": "Fíjate cómo @data.characters.f3_padre.name nombra cómo se siente y detecta lo que está pensando."
@@ -198,6 +309,8 @@
           "eng": "(Pensando) Estoy muy cansado y me siento irritado. No dejo de pensar: \"¡No tengo ni un minuto para descansar!\"."
         }
       },
+      "category_id": "explore",
+      "nested": false,
       "image_asset": "images/comic/relation/thoughts_feelings_2.svg",
       "character_1_id": "f3_padre",
       "text_2": "Fíjate cómo @data.characters.f3_padre.name nombra cómo se siente y detecta lo que está pensando.",
@@ -211,8 +324,6 @@
     },
     {
       "id": "explore_4",
-      "category_id": "explore",
-      "nested": false,
       "_translatedFields": {
         "text_2": {
           "eng": "Aunque @data.characters.f3_padre.name sigue cansado, elige hablar con calma, explicar lo que necesita y proponer otro momento para atender a sus hijos."
@@ -227,6 +338,8 @@
           "eng": "Está bien, pa. No te preocupes."
         }
       },
+      "category_id": "explore",
+      "nested": false,
       "image_asset": "images/comic/relation/thoughts_feelings_3.svg",
       "character_1_id": "f3_padre",
       "character_2_id": "f3_hija_7",
@@ -246,8 +359,6 @@
     },
     {
       "id": "explore_5",
-      "category_id": "explore",
-      "nested": false,
       "_translatedFields": {
         "text_2": {
           "eng": "Un rato después, @data.characters.f3_padre.name ya se siente listo para apoyar a sus hijos, aunque sigue un poco cansado."
@@ -262,6 +373,8 @@
           "eng": "¡Guau! ¡Te quedó increíble, @data.characters.f3_hija_7.name! ¿Cómo lo hiciste?"
         }
       },
+      "category_id": "explore",
+      "nested": false,
       "image_asset": "images/comic/relation/thoughts_feelings_4.svg",
       "character_1_id": "f3_padre",
       "character_2_id": "f3_hija_7",
@@ -281,8 +394,6 @@
     },
     {
       "id": "explore_6",
-      "category_id": "explore",
-      "nested": false,
       "_translatedFields": {
         "text_2": {
           "eng": "No siempre podemos cambiar lo que sentimos o pensamos, pero sí podemos practicar nuevas formas de actuar."
@@ -294,6 +405,8 @@
           "eng": "¡Claro, @data.characters.f3_hijo_14.name! Vamos a revisarlo juntos."
         }
       },
+      "category_id": "explore",
+      "nested": false,
       "image_asset": "images/comic/relation/thoughts_feelings_4.svg",
       "character_1_id": "f3_hijo_14",
       "character_2_id": "f3_padre",
@@ -310,18 +423,6 @@
     },
     {
       "id": "practical_tips_1",
-      "category_id": "practical_tips",
-      "nested": false,
-      "text_1_facilitator": "Ya viste cómo @data.characters.f3_padre.name usó las estrategias.\n\n\nVamos a recordarlas una vez más para que puedas reconocer tus pensamientos y emociones, y elijas cómo actuar en distintas situaciones:",
-      "_translations": {
-        "text_1_facilitator": {},
-        "section_1_title": {},
-        "section_1_text": {},
-        "section_2_title": {},
-        "section_2_text": {},
-        "section_3_title": {},
-        "section_3_text": {}
-      },
       "_translatedFields": {
         "text_1_facilitator": {
           "eng": "Ya viste cómo @data.characters.f3_padre.name usó las estrategias.\n\n\nVamos a recordarlas una vez más para que puedas reconocer tus pensamientos y emociones, y elijas cómo actuar en distintas situaciones:"
@@ -345,6 +446,18 @@
           "eng": "Pregúntate: ¿qué quiero que pase y qué puedo hacer? Aunque no siempre puedas cambiar lo que piensas o sientes, puedes intentar elegir cómo actuar. \n\nPor ejemplo, si estás molesto, puedes respirar y hablar con calma en lugar de gritar."
         }
       },
+      "category_id": "practical_tips",
+      "nested": false,
+      "text_1_facilitator": "Ya viste cómo @data.characters.f3_padre.name usó las estrategias.\n\n\nVamos a recordarlas una vez más para que puedas reconocer tus pensamientos y emociones, y elijas cómo actuar en distintas situaciones:",
+      "_translations": {
+        "text_1_facilitator": {},
+        "section_1_title": {},
+        "section_1_text": {},
+        "section_2_title": {},
+        "section_2_text": {},
+        "section_3_title": {},
+        "section_3_text": {}
+      },
       "section_1_title": "NOMBRA",
       "section_1_text": "Pregúntate: ¿cómo me siento? Busca una palabra para describir o nombrar lo que sientes, como alegría, enojo, preocupación o cansancio. \n\nPuedes hacerlo en silencio, sin necesidad de compartirlo con otras personas.",
       "section_2_title": "DETECTA",
@@ -356,20 +469,6 @@
     },
     {
       "id": "home_activity_1",
-      "category_id": "home_activity",
-      "nested": false,
-      "text_1_facilitator": "¡Ahora es tu turno!\n\nEsta semana, piensa en una situación difícil que podrías tener con @fields.child_name, como prepararse para salir de la casa, pedirle que deje de usar sus pantallas, hacer la tarea o irse a dormir.\n\nLuego, piensa en algo concreto que podrías hacer o decir en esa situación. Recuerda las tres estrategias: NOMBRA cómo te sientes, DETECTA lo que piensas y ELIGE cómo actuar. 😊",
-      "_translations": {
-        "text_1_facilitator": {},
-        "quiz_1_question": {},
-        "quiz_1_option_1_text": {},
-        "quiz_1_feedback_1": {},
-        "quiz_1_option_2_text": {},
-        "quiz_1_feedback_2": {},
-        "quiz_1_option_3_text": {},
-        "quiz_1_feedback_3": {},
-        "text_2": {}
-      },
       "_translatedFields": {
         "text_1_facilitator": {
           "eng": "¡Ahora es tu turno!\n\nEsta semana, piensa en una situación difícil que podrías tener con @fields.child_name, como prepararse para salir de la casa, pedirle que deje de usar sus pantallas, hacer la tarea o irse a dormir.\n\nLuego, piensa en algo concreto que podrías hacer o decir en esa situación. Recuerda las tres estrategias: NOMBRA cómo te sientes, DETECTA lo que piensas y ELIGE cómo actuar. 😊"
@@ -399,13 +498,27 @@
           "eng": "¡Lo entiendo! Puedes comenzar en un momento tranquilo, pensando en cómo te sientes, qué estás pensando y qué te gustaría hacer.💛\n\nNo tienes que hacerlo todo de una vez. Puedes practicar cuando te sientas listo."
         }
       },
+      "category_id": "home_activity",
+      "nested": false,
+      "quiz_1_feedback_1": "¡Muy bien! Pensar con anticipación cómo quieres actuar puede ayudarte a responder de otra manera cuando llegue el momento. 🎉\n\nRecuerda que no necesitas cambiar lo que sientes para intentar actuar diferente.",
+      "_translations": {
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_feedback_3": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_option_3_text": {},
+        "text_1_facilitator": {},
+        "text_2": {}
+      },
+      "quiz_1_feedback_2": "¡Bien! Puedes empezar con el ejemplo anterior o elegir una situación sencilla de tu día. 💡\n\nLo importante es darte la oportunidad de practicar, poco a poco.",
+      "quiz_1_feedback_3": "¡Lo entiendo! Puedes comenzar en un momento tranquilo, pensando en cómo te sientes, qué estás pensando y qué te gustaría hacer.💛\n\nNo tienes que hacerlo todo de una vez. Puedes practicar cuando te sientas listo.",
       "quiz_1_question": "¿Puedes intentarlo esta semana?",
       "quiz_1_option_1_text": "Sí",
-      "quiz_1_feedback_1": "¡Muy bien! Pensar con anticipación cómo quieres actuar puede ayudarte a responder de otra manera cuando llegue el momento. 🎉\n\nRecuerda que no necesitas cambiar lo que sientes para intentar actuar diferente.",
       "quiz_1_option_2_text": "Lo intentaré",
-      "quiz_1_feedback_2": "¡Bien! Puedes empezar con el ejemplo anterior o elegir una situación sencilla de tu día. 💡\n\nLo importante es darte la oportunidad de practicar, poco a poco.",
       "quiz_1_option_3_text": "No",
-      "quiz_1_feedback_3": "¡Lo entiendo! Puedes comenzar en un momento tranquilo, pensando en cómo te sientes, qué estás pensando y qué te gustaría hacer.💛\n\nNo tienes que hacerlo todo de una vez. Puedes practicar cuando te sientas listo.",
+      "text_1_facilitator": "¡Ahora es tu turno!\n\nEsta semana, piensa en una situación difícil que podrías tener con @fields.child_name, como prepararse para salir de la casa, pedirle que deje de usar sus pantallas, hacer la tarea o irse a dormir.\n\nLuego, piensa en algo concreto que podrías hacer o decir en esa situación. Recuerda las tres estrategias: NOMBRA cómo te sientes, DETECTA lo que piensas y ELIGE cómo actuar. 😊",
       "text_2": "Para prepararte, completa esta frase: \"Cuando me sienta _____, voy a respirar y _____\".\n\nPor ejemplo: \n\"Cuando me sienta con mucho estrés, voy a respirar y hablar con un tono de voz tranquilo\".",
       "completed": false,
       "version": 1

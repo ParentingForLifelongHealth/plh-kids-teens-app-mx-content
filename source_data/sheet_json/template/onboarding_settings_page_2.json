@@ -9,11 +9,6 @@
       "exclude_from_translation": true
     },
     {
-      "name": "variant",
-      "value": "gray",
-      "exclude_from_translation": true
-    },
-    {
       "name": "facilitator_id",
       "value": "@fields.facilitator_id"
     },
@@ -24,6 +19,11 @@
     {
       "name": "facilitator_row",
       "value": "@data.@local.facilitator_data"
+    },
+    {
+      "name": "variant",
+      "value": "@local.facilitator_row.bubble_variant",
+      "exclude_from_translation": true
     },
     {
       "type": "text_bubble",

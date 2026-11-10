@@ -15,16 +15,6 @@
       "_nested_name": "speaker_position"
     },
     {
-      "name": "variant",
-      "value": "gray",
-      "_translations": {
-        "value": {}
-      },
-      "exclude_from_translation": true,
-      "type": "set_variable",
-      "_nested_name": "variant"
-    },
-    {
       "name": "facilitator_id",
       "value": "@fields.facilitator_id",
       "_translations": {
@@ -146,6 +136,53 @@
       "_dynamicDependencies": {
         "@local.facilitator_row.image_asset": [
           "value"
+        ]
+      }
+    },
+    {
+      "name": "variant",
+      "value": "gray",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "variant"
+    },
+    {
+      "name": "variant",
+      "value": "@local.facilitator_row.bubble_variant",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "!!@local.facilitator_row.bubble_variant",
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "variant",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.facilitator_row.bubble_variant",
+            "matchedExpression": "@local.facilitator_row.bubble_variant",
+            "type": "local",
+            "fieldName": "facilitator_row"
+          }
+        ],
+        "condition": [
+          {
+            "fullExpression": "!!@local.facilitator_row.bubble_variant",
+            "matchedExpression": "!@local.facilitator_row.bubble_variant",
+            "type": "local",
+            "fieldName": "facilitator_row"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.facilitator_row.bubble_variant": [
+          "value"
+        ],
+        "!@local.facilitator_row.bubble_variant": [
+          "condition"
         ]
       }
     },
@@ -278,8 +315,8 @@
         "value": {}
       },
       "condition": false,
-      "name": "text_16",
-      "_nested_name": "text_16",
+      "name": "text_17",
+      "_nested_name": "text_17",
       "_dynamicFields": {
         "value": [
           {
@@ -417,8 +454,8 @@
         "value": {}
       },
       "condition": false,
-      "name": "text_18",
-      "_nested_name": "text_18",
+      "name": "text_19",
+      "_nested_name": "text_19",
       "_dynamicFields": {
         "value": [
           {
@@ -1437,8 +1474,8 @@
         "value": {}
       },
       "condition": false,
-      "name": "text_51",
-      "_nested_name": "text_51",
+      "name": "text_52",
+      "_nested_name": "text_52",
       "_dynamicFields": {
         "value": [
           {

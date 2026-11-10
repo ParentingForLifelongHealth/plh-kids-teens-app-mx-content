@@ -173,8 +173,14 @@
       "exclude_from_translation": true
     },
     {
+      "name": "section_variants",
+      "value": "@global.section_variant.split(\";\").map((v) => v.trim())",
+      "condition": "!!(@global.section_variant)",
+      "exclude_from_translation": true
+    },
+    {
       "name": "section_variant",
-      "value": "@global.section_variant",
+      "value": "@local.section_variants[(@local.section_no - 1) % @local.section_variants.length]",
       "condition": "!!(@global.section_variant)",
       "exclude_from_translation": true
     },

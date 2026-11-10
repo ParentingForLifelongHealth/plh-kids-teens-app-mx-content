@@ -271,6 +271,43 @@
       }
     },
     {
+      "name": "variant",
+      "value": "@local.character_data.bubble_variant",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "!!@local.character_data.bubble_variant",
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "variant",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.character_data.bubble_variant",
+            "matchedExpression": "@local.character_data.bubble_variant",
+            "type": "local",
+            "fieldName": "character_data"
+          }
+        ],
+        "condition": [
+          {
+            "fullExpression": "!!@local.character_data.bubble_variant",
+            "matchedExpression": "!@local.character_data.bubble_variant",
+            "type": "local",
+            "fieldName": "character_data"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.character_data.bubble_variant": [
+          "value"
+        ],
+        "!@local.character_data.bubble_variant": [
+          "condition"
+        ]
+      }
+    },
+    {
       "type": "text_bubble",
       "name": "text_bubble",
       "value": "@local.bubble_text",

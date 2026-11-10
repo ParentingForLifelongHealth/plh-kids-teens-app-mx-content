@@ -9,11 +9,6 @@
       "exclude_from_translation": true
     },
     {
-      "name": "variant",
-      "value": "gray",
-      "exclude_from_translation": true
-    },
-    {
       "type": "text",
       "name": "text_intro",
       "value": "@global.facilitator_selection_intro",
@@ -23,14 +18,14 @@
       "type": "text_bubble",
       "name": "text_bubble",
       "value": "@global.facilitator_female_intro",
-      "parameter_list": "speaker_image_asset: @data.characters.facilitator_female.image_asset;\nspeaker_name: @data.characters.facilitator_female.name;\nspeaker_position: @local.speaker_position;\nvariant: @local.variant;",
+      "parameter_list": "speaker_image_asset: @data.characters.facilitator_female.image_asset;\nspeaker_name: @data.characters.facilitator_female.name;\nspeaker_position: @local.speaker_position;\nvariant: @data.characters.facilitator_female.bubble_variant;",
       "exclude_from_translation": true
     },
     {
       "type": "text_bubble",
       "name": "text_bubble",
       "value": "@global.facilitator_male_intro",
-      "parameter_list": "speaker_image_asset: @data.characters.facilitator_male.image_asset;\nspeaker_name: @data.characters.facilitator_male.name;\nspeaker_position: @local.speaker_position;\nvariant: @local.variant;",
+      "parameter_list": "speaker_image_asset: @data.characters.facilitator_male.image_asset;\nspeaker_name: @data.characters.facilitator_male.name;\nspeaker_position: @local.speaker_position;\nvariant: @data.characters.facilitator_male.bubble_variant;",
       "exclude_from_translation": true
     },
     {
