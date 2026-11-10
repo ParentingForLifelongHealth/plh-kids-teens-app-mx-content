@@ -14,16 +14,6 @@
       "_nested_name": "speaker_position"
     },
     {
-      "name": "variant",
-      "value": "gray",
-      "_translations": {
-        "value": {}
-      },
-      "exclude_from_translation": true,
-      "type": "set_variable",
-      "_nested_name": "variant"
-    },
-    {
       "type": "text",
       "name": "text_intro",
       "value": "@global.facilitator_selection_intro",
@@ -59,7 +49,7 @@
         "speaker_image_asset": "@data.characters.facilitator_female.image_asset",
         "speaker_name": "@data.characters.facilitator_female.name",
         "speaker_position": "@local.speaker_position",
-        "variant": "@local.variant"
+        "variant": "@data.characters.facilitator_female.bubble_variant"
       },
       "exclude_from_translation": true,
       "_nested_name": "text_bubble",
@@ -99,10 +89,10 @@
           ],
           "variant": [
             {
-              "fullExpression": "@local.variant",
-              "matchedExpression": "@local.variant",
-              "type": "local",
-              "fieldName": "variant"
+              "fullExpression": "@data.characters.facilitator_female.bubble_variant",
+              "matchedExpression": "@data.characters.facilitator_female.bubble_variant",
+              "type": "data",
+              "fieldName": "characters"
             }
           ]
         }
@@ -120,7 +110,7 @@
         "@local.speaker_position": [
           "parameter_list.speaker_position"
         ],
-        "@local.variant": [
+        "@data.characters.facilitator_female.bubble_variant": [
           "parameter_list.variant"
         ]
       }
@@ -136,7 +126,7 @@
         "speaker_image_asset": "@data.characters.facilitator_male.image_asset",
         "speaker_name": "@data.characters.facilitator_male.name",
         "speaker_position": "@local.speaker_position",
-        "variant": "@local.variant"
+        "variant": "@data.characters.facilitator_male.bubble_variant"
       },
       "exclude_from_translation": true,
       "_nested_name": "text_bubble",
@@ -176,10 +166,10 @@
           ],
           "variant": [
             {
-              "fullExpression": "@local.variant",
-              "matchedExpression": "@local.variant",
-              "type": "local",
-              "fieldName": "variant"
+              "fullExpression": "@data.characters.facilitator_male.bubble_variant",
+              "matchedExpression": "@data.characters.facilitator_male.bubble_variant",
+              "type": "data",
+              "fieldName": "characters"
             }
           ]
         }
@@ -197,7 +187,7 @@
         "@local.speaker_position": [
           "parameter_list.speaker_position"
         ],
-        "@local.variant": [
+        "@data.characters.facilitator_male.bubble_variant": [
           "parameter_list.variant"
         ]
       }

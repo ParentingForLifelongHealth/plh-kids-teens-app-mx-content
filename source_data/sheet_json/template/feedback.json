@@ -184,6 +184,12 @@
       "exclude_from_translation": true
     },
     {
+      "name": "variant",
+      "value": "@local.character_data.bubble_variant",
+      "condition": "!!@local.character_data.bubble_variant",
+      "exclude_from_translation": true
+    },
+    {
       "type": "text_bubble",
       "name": "text_bubble",
       "value": "@local.bubble_text",

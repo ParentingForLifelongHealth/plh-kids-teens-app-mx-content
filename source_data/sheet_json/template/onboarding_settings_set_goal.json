@@ -10,11 +10,6 @@
       "exclude_from_translation": true
     },
     {
-      "name": "variant",
-      "value": "gray",
-      "exclude_from_translation": true
-    },
-    {
       "name": "facilitator_id",
       "value": "@fields.facilitator_id",
       "exclude_from_translation": true
@@ -36,6 +31,17 @@
     {
       "name": "speaker_image_asset",
       "value": "@local.facilitator_row.image_asset"
+    },
+    {
+      "name": "variant",
+      "value": "gray",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "variant",
+      "value": "@local.facilitator_row.bubble_variant",
+      "condition": "!!@local.facilitator_row.bubble_variant",
+      "exclude_from_translation": true
     },
     {
       "name": "displayed_goal_ids"

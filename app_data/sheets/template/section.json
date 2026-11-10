@@ -880,20 +880,20 @@
       "_nested_name": "section_variant"
     },
     {
-      "name": "section_variant",
-      "value": "@global.section_variant",
+      "name": "section_variants",
+      "value": "@global.section_variant.split(\";\").map((v) => v.trim())",
       "_translations": {
         "value": {}
       },
       "condition": "!!(@global.section_variant)",
       "exclude_from_translation": true,
       "type": "set_variable",
-      "_nested_name": "section_variant",
+      "_nested_name": "section_variants",
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@global.section_variant",
-            "matchedExpression": "@global.section_variant",
+            "fullExpression": "@global.section_variant.split(\";\").map((v) => v.trim())",
+            "matchedExpression": "@global.section_variant.split",
             "type": "global",
             "fieldName": "section_variant"
           }
@@ -908,8 +908,65 @@
         ]
       },
       "_dynamicDependencies": {
+        "@global.section_variant.split": [
+          "value"
+        ],
         "@global.section_variant": [
-          "value",
+          "condition"
+        ]
+      }
+    },
+    {
+      "name": "section_variant",
+      "value": "@local.section_variants[(@local.section_no - 1) % @local.section_variants.length]",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "!!(@global.section_variant)",
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "section_variant",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.section_variants[(@local.section_no - 1) % @local.section_variants.length]",
+            "matchedExpression": "@local.section_variants",
+            "type": "local",
+            "fieldName": "section_variants"
+          },
+          {
+            "fullExpression": "@local.section_variants[(@local.section_no - 1) % @local.section_variants.length]",
+            "matchedExpression": "@local.section_no",
+            "type": "local",
+            "fieldName": "section_no"
+          },
+          {
+            "fullExpression": "@local.section_variants[(@local.section_no - 1) % @local.section_variants.length]",
+            "matchedExpression": "@local.section_variants.length",
+            "type": "local",
+            "fieldName": "section_variants"
+          }
+        ],
+        "condition": [
+          {
+            "fullExpression": "!!(@global.section_variant)",
+            "matchedExpression": "@global.section_variant",
+            "type": "global",
+            "fieldName": "section_variant"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.section_variants": [
+          "value"
+        ],
+        "@local.section_no": [
+          "value"
+        ],
+        "@local.section_variants.length": [
+          "value"
+        ],
+        "@global.section_variant": [
           "condition"
         ]
       }
