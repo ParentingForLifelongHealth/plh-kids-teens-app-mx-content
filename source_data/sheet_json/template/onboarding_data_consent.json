@@ -23,25 +23,6 @@
     },
     {
       "type": "begin_display_group",
-      "name": "dg_onboarding_data_consent_personalisation"
-    },
-    {
-      "type": "simple_checkbox",
-      "name": "onboarding_data_consent_personalisation",
-      "value": false,
-      "parameter_list": "align: left",
-      "style_list": "margin-top: -0.75em"
-    },
-    {
-      "type": "text",
-      "name": "text_onboarding_data_consent_personalisation",
-      "value": "@global.onboarding_data_consent_personalisation_text"
-    },
-    {
-      "type": "end_display_group"
-    },
-    {
-      "type": "begin_display_group",
       "name": "dg_onboarding_data_consent_impact"
     },
     {
@@ -55,6 +36,25 @@
       "type": "text",
       "name": "text_onboarding_data_consent_impact",
       "value": "@global.onboarding_data_consent_impact_text"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_onboarding_data_consent_personalisation"
+    },
+    {
+      "type": "simple_checkbox",
+      "name": "onboarding_data_consent_personalisation",
+      "value": false,
+      "parameter_list": "align: left",
+      "style_list": "margin-top: -0.75em"
+    },
+    {
+      "type": "text",
+      "name": "text_onboarding_data_consent_personalisation",
+      "value": "@global.onboarding_data_consent_personalisation_text"
     },
     {
       "type": "end_display_group"

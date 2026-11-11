@@ -1525,7 +1525,7 @@
           "parameter_list": {
             "style": "column"
           },
-          "condition": "!!@local.up_next.check_complete && !@local.up_next.module_id",
+          "condition": "!!@local.up_next.check_complete && !@local.up_next.module_id && !((@local.has_in_progress == 0) && @local.po_due && !@local.po_opened)",
           "exclude_from_translation": true,
           "rows": [
             {
@@ -1661,16 +1661,34 @@
           "_dynamicFields": {
             "condition": [
               {
-                "fullExpression": "!!@local.up_next.check_complete && !@local.up_next.module_id",
+                "fullExpression": "!!@local.up_next.check_complete && !@local.up_next.module_id && !((@local.has_in_progress == 0) && @local.po_due && !@local.po_opened)",
                 "matchedExpression": "!@local.up_next.check_complete",
                 "type": "local",
                 "fieldName": "up_next"
               },
               {
-                "fullExpression": "!!@local.up_next.check_complete && !@local.up_next.module_id",
+                "fullExpression": "!!@local.up_next.check_complete && !@local.up_next.module_id && !((@local.has_in_progress == 0) && @local.po_due && !@local.po_opened)",
                 "matchedExpression": "!@local.up_next.module_id",
                 "type": "local",
                 "fieldName": "up_next"
+              },
+              {
+                "fullExpression": "!!@local.up_next.check_complete && !@local.up_next.module_id && !((@local.has_in_progress == 0) && @local.po_due && !@local.po_opened)",
+                "matchedExpression": "@local.has_in_progress",
+                "type": "local",
+                "fieldName": "has_in_progress"
+              },
+              {
+                "fullExpression": "!!@local.up_next.check_complete && !@local.up_next.module_id && !((@local.has_in_progress == 0) && @local.po_due && !@local.po_opened)",
+                "matchedExpression": "@local.po_due",
+                "type": "local",
+                "fieldName": "po_due"
+              },
+              {
+                "fullExpression": "!!@local.up_next.check_complete && !@local.up_next.module_id && !((@local.has_in_progress == 0) && @local.po_due && !@local.po_opened)",
+                "matchedExpression": "!@local.po_opened",
+                "type": "local",
+                "fieldName": "po_opened"
               }
             ]
           },
@@ -1679,6 +1697,15 @@
               "condition"
             ],
             "!@local.up_next.module_id": [
+              "condition"
+            ],
+            "@local.has_in_progress": [
+              "condition"
+            ],
+            "@local.po_due": [
+              "condition"
+            ],
+            "!@local.po_opened": [
               "condition"
             ]
           }

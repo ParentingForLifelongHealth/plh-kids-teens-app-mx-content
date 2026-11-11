@@ -177,32 +177,32 @@
     },
     {
       "type": "declare_global_constant",
-      "name": "onboarding_data_consent_lottie_asset",
+      "name": "onboarding_data_consent_lottie_asset"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "onboarding_data_consent_image_asset",
       "value": "icons/security.png"
     },
     {
       "type": "declare_global_constant",
-      "name": "onboarding_data_consent_image_asset"
+      "name": "data_consent_intro_text",
+      "value": "How we use your information"
     },
     {
       "type": "declare_global_constant",
-      "name": "onboarding_data_consent_intro_text",
-      "value": "[PLACEHOLDER] Cómo usamos tus datos…"
+      "name": "data_consent_impact_text",
+      "value": "I agree that Parenting for Lifelong Health can use information I choose to share about my wellbeing, my child’s health and development, and any difficult or unsafe experiences my child has had, to see if the programme helps families and to provide me with access to resources that might help."
     },
     {
       "type": "declare_global_constant",
-      "name": "onboarding_data_consent_personalisation_text",
-      "value": "[PLACEHOLDER] Acepto que se usen mis datos para personalizar la app."
+      "name": "data_consent_personalisation_text",
+      "value": "(Required) I agree that Parenting for Lifelong Health can use my details (like my name, location and family information) to personalise the app. I understand that sharing this information is required in order to use the app. "
     },
     {
       "type": "declare_global_constant",
-      "name": "onboarding_data_consent_impact_text",
-      "value": "[PLACEHOLDER] Acepto que se usen mis datos para medir el impacto del programa."
-    },
-    {
-      "type": "declare_global_constant",
-      "name": "onboarding_data_consent_required_text",
-      "value": "[PLACEHOLDER] Debes aceptar la primera casilla para continuar."
+      "name": "data_consent_required_text",
+      "value": "Please tick the required box to continue."
     }
   ]
 }

@@ -7,62 +7,62 @@
     {
       "type": "declare_global_constant",
       "name": "set_domain_question",
-      "value": "There's a lot we can work on together. \n\n\nWhich area would you like to explore first?"
+      "value": "Hay muchos temas que podemos trabajar aquí.\n\n\n¿Por cuál te gustaría empezar?"
     },
     {
       "type": "declare_global_constant",
       "name": "set_challenge_question",
-      "value": "Thanks for sharing. You selected: “@fields.selected_domain_value”. \nMany parents need support in this area. \n\nWhat is your main challenge with @field.child_name?"
+      "value": "¡Gracias por compartir! Elegiste: “@fields.selected_domain_value”.\nMuchas familias necesitan apoyo con eso.\n\n¿Cuál es tu principal reto?"
     },
     {
       "type": "declare_global_constant",
       "name": "set_goal_question",
-      "value": "Now let's turn that around.\nYour main challenge is: \"@fields.selected_challenge_value\". \n\nWhat would you like to happen instead?"
+      "value": "Ahora veámoslo de otra forma.\nTu principal reto es: \"@fields.selected_challenge_value\".\n\n¿Qué te gustaría hacer diferente?"
     },
     {
       "type": "declare_global_constant",
       "name": "skip_proximal",
-      "value": "Skip this question"
+      "value": "Saltar esta pregunta"
     },
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_checkin_title",
-      "value": "Family Check-in"
+      "value": "¿Cómo vamos?"
     },
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_progress_title",
-      "value": "All done!"
+      "value": "¡Listo!"
     },
     {
       "type": "declare_global_constant",
       "name": "goal_reflection_question",
-      "value": "Tell me more about how it is going."
+      "value": "Cuéntame más sobre cómo va."
     },
     {
       "type": "declare_global_constant",
       "name": "goal_reflection_placeholder",
-      "value": "Type here..."
+      "value": "Escribe aquí..."
     },
     {
       "type": "declare_global_constant",
       "name": "goal_reflection_skip",
-      "value": "You can skip this. Tap the arrow to go next."
+      "value": "Puedes omitir esto. Toca la flecha para continuar."
     },
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_progress_intro",
-      "value": "Thanks! Here's a look at how this has been going over the last few weeks:"
+      "value": "¡Gracias! Así es como ha ido en las últimas semanas:"
     },
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_progress_final_msg",
-      "value": "If you ever need extra help, please check out our Support Contacts. You can find them by tapping the Library button at the very bottom of your screen. ❤️"
+      "value": "Si alguna vez necesitas ayuda adicional, consulta nuestros Contactos de Apoyo. Los encuentras tocando el botón @global.library en la parte inferior de tu pantalla. ❤️"
     },
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_cta_title",
-      "value": "Let's check in on your progress"
+      "value": "Veamos cómo vas"
     },
     {
       "type": "declare_global_constant",
@@ -71,12 +71,12 @@
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_cta_action_text",
-      "value": "Start"
+      "value": "Comenzar"
     },
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_cta_badge_text",
-      "value": "Check-in"
+      "value": "Seguimiento"
     },
     {
       "type": "declare_global_constant",
@@ -86,57 +86,57 @@
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_completed_title",
-      "value": "Thank you!"
+      "value": "¡Gracias!"
     },
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_completed_text",
-      "value": "Need help with @fields.child_name today?\nYour lessons are still there"
+      "value": "¿Necesitas ayuda con @fields.child_name hoy?\nTus sesiones siguen aquí"
     },
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_completed_button",
-      "value": "Go to Lessons"
+      "value": "Ir a las sesiones"
     },
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_checkin_intro",
-      "value": "Congratulations on making it this far in the program!\n\nWhen you started, you shared:\n\nYour challenge: \"@fields.selected_challenge_value\"\n\nYour goal: \"@fields.selected_goal_value\"\n\nLet's check in and see how things have been going!"
+      "value": "¡Felicidades por llegar hasta aquí en el programa!\n\nCuando empezaste, compartiste:\n\nTu reto: \"@fields.selected_challenge_value\"\n\nTu meta: \"@fields.selected_goal_value\"\n\n¡Veamos cómo han ido las cosas!"
     },
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_checkin_intro_no_goal",
-      "value": "Congratulations on making it this far in the program!\n\nWhen you started, you shared:\n\nYour challenge: \"@fields.selected_challenge_value\"\n\nLet's check in and see how things have been going!"
+      "value": "¡Felicidades por llegar hasta aquí en el programa!\n\nCuando empezaste, compartiste:\n\nTu reto: \"@fields.selected_challenge_value\"\n\n¡Veamos cómo han ido las cosas!"
     },
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_checkin_intro_no_goal_no_chall",
-      "value": "Congratulations on making it this far in the program!\n\nLet's check in and see how things have been going!"
+      "value": "¡Felicidades por llegar hasta aquí en el programa!\n\n¡Veamos cómo han ido las cosas!"
     },
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_checkin_intro_post",
-      "value": "Congratulations on completing the program!\n\nWhen you started, you shared:\n\nYour challenge: \"@fields.selected_challenge_value\"\n\nYour goal: \"@fields.selected_goal_value\"\n\nLet's check in and see how things have been going!"
+      "value": "¡Felicidades por completar el programa!\n\nCuando empezaste, compartiste:\n\nTu reto: \"@fields.selected_challenge_value\"\n\nTu meta: \"@fields.selected_goal_value\"\n\n¡Veamos cómo han ido las cosas!"
     },
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_checkin_intro_no_goal_post",
-      "value": "Congratulations on completing the program!\n\nWhen you started, you shared:\n\nYour challenge: \"@fields.selected_challenge_value\"\n\nLet's check in and see how things have been going!"
+      "value": "¡Felicidades por completar el programa!\n\nCuando empezaste, compartiste:\n\nTu reto: \"@fields.selected_challenge_value\"\n\n¡Veamos cómo han ido las cosas!"
     },
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_checkin_intro_no_goal_no_chall_post",
-      "value": "Congratulations on completing the program!\n\nLet's check in and see how things have been going!"
+      "value": "¡Felicidades por completar el programa!\n\n¡Veamos cómo han ido las cosas!"
     },
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_summary_title",
-      "value": "That is @local.n_checkins_completed check-ins!"
+      "value": "¡Son @local.n_checkins_completed seguimientos!"
     },
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_summary_text",
-      "value": "Your care and attention make a lasting impact on @fields.child_name."
+      "value": "Tu cuidado y atención tienen un impacto duradero en @fields.child_name."
     },
     {
       "type": "declare_global_constant",
