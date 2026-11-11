@@ -16,7 +16,7 @@
     },
     {
       "id": "hard_to_enjoy_time_2to9",
-      "title::eng": "Me cuesta disfrutar cuando el tiempo con @fields.child_name",
+      "title::eng": "Me cuesta disfrutar el tiempo con @fields.child_name",
       "domain_list": "connection",
       "child_age_list": "2;3;4;5;6;7;8;9",
       "child_gender_list": "male; female; opt_out;non_binary;",
@@ -36,7 +36,7 @@
     },
     {
       "id": "understand_feelings_2to9",
-      "title::eng": "Me cuesta entender las emociones o necesidades de @fields.child_name",
+      "title::eng": "Me cuesta entender lo que @fields.child_name siente o necesita",
       "domain_list": "connection",
       "child_age_list": "2;3;4;5;6;7;8;9",
       "child_gender_list": "male; female; opt_out;non_binary;",
@@ -46,7 +46,7 @@
     },
     {
       "id": "show_love_praise",
-      "title::eng": "Me cuesta demostrarle mi cariño o reconocimiento a @fields.child_name",
+      "title::eng": "Me cuesta demostrarle a @fields.child_name que le quiero y valoro",
       "domain_list": "connection",
       "child_age_list": "2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17",
       "child_gender_list": "male; female; opt_out;non_binary;",
@@ -76,7 +76,7 @@
     },
     {
       "id": "talks_only_rules",
-      "title::eng": "Casi todas nuestras conversaciones son sobre reglas, problemas o tareas",
+      "title::eng": "Casi solo hablo de reglas, problemas o tareas con @fields.child_name",
       "domain_list": "connection",
       "child_age_list": "10;11;12;13;14;15;16;17",
       "child_gender_list": "male; female; opt_out;non_binary;",
@@ -96,7 +96,7 @@
     },
     {
       "id": "argue_often",
-      "title::eng": "@fields.child_name y yo discutimos seguido",
+      "title::eng": "@fields.child_name y yo discutimos muy seguido",
       "domain_list": "connection",
       "child_age_list": "10;11;12;13;14;15;16;17",
       "child_gender_list": "male; female; opt_out;non_binary;",
@@ -126,7 +126,7 @@
     },
     {
       "id": "refuses_routines_2to9",
-      "title::eng": "@fields.child_name no quiere seguir las rutinas diarias",
+      "title::eng": "@fields.child_name no quiere seguir sus rutinas",
       "domain_list": "behaviour",
       "child_age_list": "2;3;4;5;6;7;8;9",
       "child_gender_list": "male; female; opt_out;non_binary;",
@@ -136,7 +136,7 @@
     },
     {
       "id": "not_follow_rules_2to9",
-      "title::eng": "@fields.child_name no sigue mis reglas",
+      "title::eng": "@fields.child_name no sigue nuestras reglas",
       "domain_list": "behaviour",
       "child_age_list": "2;3;4;5;6;7;8;9",
       "child_gender_list": "male; female; opt_out;non_binary;",
@@ -146,7 +146,7 @@
     },
     {
       "id": "refuses_rules_10to17",
-      "title::eng": "@fields.child_name no quiere seguir mis reglas",
+      "title::eng": "@fields.child_name no quiere seguir nuestras reglas o acuerdos",
       "domain_list": "behaviour",
       "child_age_list": "10;11;12;13;14;15;16;17",
       "child_gender_list": "male; female; opt_out;non_binary;",
@@ -196,7 +196,7 @@
     },
     {
       "id": "body_safety_2to9",
-      "title::eng": "Enseñarle cómo proteger su cuerpo",
+      "title::eng": "Enseñarle a @fields.child_name cómo proteger su cuerpo",
       "domain_list": "health_safety",
       "child_age_list": "2;3;4;5;6;7;8;9",
       "child_gender_list": "male; female; opt_out;non_binary;",
@@ -216,7 +216,7 @@
     },
     {
       "id": "safety_around_others_2to9",
-      "title::eng": "Me preocupa la seguridad de @fields.child_name con otras personas",
+      "title::eng": "Me preocupa que @fields.child_name esté a salvo con otras personas",
       "domain_list": "health_safety",
       "child_age_list": "2;3;4;5;6;7;8;9",
       "child_gender_list": "male; female; opt_out;non_binary;",
@@ -236,7 +236,7 @@
     },
     {
       "id": "safe_choices_people_10to17",
-      "title::eng": "Ayudar a @fields.child_name a tomar buenas decisiones cuando está con otras personas",
+      "title::eng": "Ayudar a @fields.child_name a saber cómo cuidarse con otras personas",
       "domain_list": "health_safety",
       "child_age_list": "10;11;12;13;14;15;16;17",
       "child_gender_list": "male; female; opt_out;non_binary;",
@@ -246,7 +246,7 @@
     },
     {
       "id": "substance_use_10to17",
-      "title::eng": "Me preocupa que @fields.child_name fume o que consuma alcohol o drogas",
+      "title::eng": "Me preocupa que @fields.child_name fume o consuma alcohol o drogas",
       "domain_list": "health_safety",
       "child_age_list": "10;11;12;13;14;15;16;17",
       "child_gender_list": "male; female; opt_out;non_binary;",
@@ -286,7 +286,7 @@
     },
     {
       "id": "strong_emotions_2to9",
-      "title::eng": "@fields.child_name se molesta mucho o tiene emociones muy fuertes",
+      "title::eng": "@fields.child_name se altera mucho o tiene emociones muy fuertes",
       "domain_list": "mental_health",
       "child_age_list": "2;3;4;5;6;7;8;9",
       "child_gender_list": "male; female; opt_out;non_binary;",
@@ -296,7 +296,7 @@
     },
     {
       "id": "seems_unhappy",
-      "title::eng": "@fields.child_name parece estar triste muy seguido",
+      "title::eng": "Seguido parece que @fields.child_name no es feliz",
       "domain_list": "mental_health",
       "child_age_list": "2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17",
       "child_gender_list": "male; female; opt_out;non_binary;",
@@ -326,7 +326,7 @@
     },
     {
       "id": "bullied_or_bullying",
-      "title::eng": "@fields.child_name sufre bullying (acoso escolar) o lo hace a otras personas",
+      "title::eng": "@fields.child_name sufre acoso escolar (bullying) o lo hace a otras personas",
       "domain_list": "mental_health",
       "child_age_list": "2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17",
       "child_gender_list": "male; female; opt_out;non_binary;",
@@ -346,7 +346,7 @@
     },
     {
       "id": "strong_emotions_10to17",
-      "title::eng": "@fields.child_name se molesta mucho o tiene emociones muy fuertes",
+      "title::eng": "@fields.child_name se altera mucho o tiene emociones muy fuertes",
       "domain_list": "mental_health",
       "child_age_list": "10;11;12;13;14;15;16;17",
       "child_gender_list": "male; female; opt_out;non_binary;",
@@ -416,7 +416,7 @@
     },
     {
       "id": "online_privacy_2to9",
-      "title::eng": "Me preocupan la seguridad en línea y la privacidad de @fields.child_name",
+      "title::eng": "Me preocupa la seguridad en línea y la privacidad de @fields.child_name",
       "domain_list": "online_safety",
       "child_age_list": "2;3;4;5;6;7;8;9",
       "child_gender_list": "male; female; opt_out;non_binary;",
@@ -456,7 +456,7 @@
     },
     {
       "id": "cyberbullying_10to17",
-      "title::eng": "Me preocupa que @fields.child_name sufra o haga bullying en línea",
+      "title::eng": "Me preocupa que @fields.child_name sufra bullying en línea o se lo haga a otras personas",
       "domain_list": "online_safety",
       "child_age_list": "10;11;12;13;14;15;16;17",
       "child_gender_list": "male; female; opt_out;non_binary;",
@@ -466,7 +466,7 @@
     },
     {
       "id": "device_mental_health_10to17",
-      "title::eng": "Me preocupa que el uso de los dispositivos esté afectando la salud mental de @fields.child_name",
+      "title::eng": "Me preocupa que el uso de los dispositivos afecte la salud mental de @fields.child_name",
       "domain_list": "online_safety",
       "child_age_list": "10;11;12;13;14;15;16;17",
       "child_gender_list": "male; female; opt_out;non_binary;",
@@ -506,7 +506,7 @@
     },
     {
       "id": "interest_learning_2to5",
-      "title::eng": "@fields.child_name no parece interesarse en aprender",
+      "title::eng": "Parece que a @fields.child_name no le interesa aprender",
       "domain_list": "school_learning",
       "child_age_list": "2;3;4;5",
       "child_gender_list": "male; female; opt_out;non_binary;",
@@ -566,7 +566,7 @@
     },
     {
       "id": "learning_confidence_6to9",
-      "title::eng": "@fields.child_name se desanima o pierde la confianza cuando algo le cuesta",
+      "title::eng": "@fields.child_name pierde la confianza o se desanima cuando aprende algo nuevo",
       "domain_list": "school_learning",
       "child_age_list": "6;7;8;9",
       "child_gender_list": "male; female; opt_out;non_binary;",
@@ -576,7 +576,7 @@
     },
     {
       "id": "extra_learning_help_6to9",
-      "title::eng": "@fields.child_name podría necesitar apoyo adicional con su aprendizaje o desarrollo",
+      "title::eng": "@fields.child_name podría necesitar más apoyo con su aprendizaje o desarrollo",
       "domain_list": "school_learning",
       "child_age_list": "6;7;8;9",
       "child_gender_list": "male; female; opt_out;non_binary;",
@@ -656,7 +656,7 @@
     },
     {
       "id": "parent_stress",
-      "title::eng": "Muy seguido siento estrés o agobio",
+      "title::eng": "Frecuentemente siento estrés o agobio",
       "domain_list": "parent_wellbeing",
       "child_age_list": "2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17",
       "child_gender_list": "male; female; opt_out;non_binary;",
@@ -716,7 +716,7 @@
     },
     {
       "id": "money_worries",
-      "title::eng": "La preocupación por el dinero causa estrés en mi familia",
+      "title::eng": "La preocupación por el dinero estresa a mi familia",
       "domain_list": "parent_wellbeing",
       "child_age_list": "2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17",
       "child_gender_list": "male; female; opt_out;non_binary;",

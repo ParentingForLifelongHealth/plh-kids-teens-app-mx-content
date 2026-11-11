@@ -284,7 +284,7 @@
       "type": "begin_display_group",
       "name": "all_completed",
       "parameter_list": "style: column;",
-      "condition": "!!@local.up_next.check_complete && !@local.up_next.module_id",
+      "condition": "!!@local.up_next.check_complete && !@local.up_next.module_id && !((@local.has_in_progress == 0) && @local.po_due && !@local.po_opened)",
       "exclude_from_translation": true
     },
     {
