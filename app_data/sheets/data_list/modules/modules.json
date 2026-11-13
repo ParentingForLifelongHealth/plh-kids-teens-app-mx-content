@@ -2007,17 +2007,12 @@
       "home_activity": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir."
     },
     {
-      "id": "online_safety_p1_yc",
+      "id": "online_p1_2to4_yc",
       "tag_course": "safety_yc",
       "age_list": [
         "2",
         "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9"
+        "4"
       ],
       "child_gender_list": [
         "male",
@@ -2054,12 +2049,9 @@
       "home_activity": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir."
     },
     {
-      "id": "online_safety_p2_yc",
+      "id": "online_p1_5to9_yc",
       "tag_course": "safety_yc",
       "age_list": [
-        "2",
-        "3",
-        "4",
         "5",
         "6",
         "7",
@@ -2082,6 +2074,92 @@
         "child"
       ],
       "number": 45,
+      "image_asset": "images/homescreen/relation_c.svg",
+      "relax_id": "relax_2",
+      "check_in_id": "check_in_44",
+      "title": "Proteger su seguridad en línea",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Proteger su seguridad en línea"
+        },
+        "home_activity": {
+          "eng": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir."
+        }
+      },
+      "home_activity": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir."
+    },
+    {
+      "id": "online_p2_2to4_yc",
+      "tag_course": "safety_yc",
+      "age_list": [
+        "2",
+        "3",
+        "4"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number": 46,
+      "image_asset": "images/homescreen/relation_t.svg",
+      "relax_id": "relax_3",
+      "check_in_id": "check_in_45",
+      "title": "Crear hábitos seguros en línea",
+      "_translations": {
+        "title": {},
+        "home_activity": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Crear hábitos seguros en línea"
+        },
+        "home_activity": {
+          "eng": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir."
+        }
+      },
+      "home_activity": "¡Muy bien!\n\nContinúa acompañando a @fields.child_name a crear o revisar su mapa de seguridad y conversar sobre las personas y lugares seguros a los que puede acudir."
+    },
+    {
+      "id": "online_p2_5yo9_yc",
+      "tag_course": "safety_yc",
+      "age_list": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "child_gender_list": [
+        "male",
+        "female",
+        "opt_out",
+        "non_binary"
+      ],
+      "user_gender_list": [
+        "man",
+        "woman",
+        "opt_out",
+        "non_binary"
+      ],
+      "tag_list": [
+        "child"
+      ],
+      "number": 47,
       "image_asset": "images/homescreen/relation_t.svg",
       "relax_id": "relax_3",
       "check_in_id": "check_in_45",
@@ -2127,7 +2205,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 46,
+      "number": 48,
       "image_asset": "images/homescreen/understand_t.svg",
       "relax_id": "relax_3",
       "check_in_id": "check_in_46",
@@ -2171,7 +2249,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 47,
+      "number": 49,
       "image_asset": "images/homescreen/understand_t.svg",
       "relax_id": "relax_9",
       "check_in_id": "check_in_47",
@@ -2217,7 +2295,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 48,
+      "number": 50,
       "image_asset": "images/homescreen/understand_c.svg",
       "relax_id": "relax_9",
       "check_in_id": "check_in_48",
@@ -2261,7 +2339,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 49,
+      "number": 51,
       "image_asset": "images/homescreen/understand_c.svg",
       "relax_id": "relax_1",
       "check_in_id": "check_in_49",
@@ -2307,7 +2385,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 50,
+      "number": 52,
       "image_asset": "images/homescreen/behave_c.svg",
       "relax_id": "relax_1",
       "check_in_id": "check_in_50",
@@ -2351,7 +2429,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 51,
+      "number": 53,
       "image_asset": "images/homescreen/behave_c.svg",
       "relax_id": "relax_2",
       "check_in_id": "check_in_51",
@@ -2397,7 +2475,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 52,
+      "number": 54,
       "image_asset": "images/homescreen/safety_c.svg",
       "relax_id": "relax_2",
       "check_in_id": "check_in_52",
@@ -2441,7 +2519,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 53,
+      "number": 55,
       "image_asset": "images/homescreen/safety_c.svg",
       "relax_id": "relax_3",
       "check_in_id": "check_in_53",
@@ -2487,7 +2565,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 54,
+      "number": 56,
       "image_asset": "images/homescreen/safety_t.svg",
       "relax_id": "relax_3",
       "check_in_id": "check_in_54",
@@ -2531,7 +2609,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 55,
+      "number": 57,
       "image_asset": "images/homescreen/safety_t.svg",
       "relax_id": "relax_9",
       "check_in_id": "check_in_55",
@@ -2578,7 +2656,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 56,
+      "number": 58,
       "image_asset": "images/homescreen/learn_c.svg",
       "relax_id": "relax_9",
       "check_in_id": "check_in_56",
@@ -2625,7 +2703,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 57,
+      "number": 59,
       "check_in_id": "check_in_57",
       "title": "Lo que te dices importa",
       "_translations": {
@@ -2670,7 +2748,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 58,
+      "number": 60,
       "image_asset": "images/homescreen/learn_t.svg",
       "relax_id": "relax_1",
       "check_in_id": "check_in_58",
@@ -2717,7 +2795,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 59,
+      "number": 61,
       "image_asset": "images/homescreen/ipv.svg",
       "relax_id": "relax_1",
       "check_in_id": "check_in_59",
@@ -2764,7 +2842,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 60,
+      "number": 62,
       "image_asset": "images/homescreen/ipv.svg",
       "relax_id": "relax_2",
       "check_in_id": "check_in_60",
@@ -2811,7 +2889,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 61,
+      "number": 63,
       "image_asset": "images/homescreen/relation_c.svg",
       "relax_id": "relax_2",
       "check_in_id": "check_in_61",
@@ -2858,7 +2936,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 62,
+      "number": 64,
       "image_asset": "images/homescreen/relation_t.svg",
       "relax_id": "relax_3",
       "check_in_id": "check_in_62",
@@ -2905,7 +2983,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 63,
+      "number": 65,
       "image_asset": "images/homescreen/understand_c.svg",
       "relax_id": "relax_3",
       "check_in_id": "check_in_63",
@@ -2952,7 +3030,7 @@
       "tag_list": [
         "child"
       ],
-      "number": 64,
+      "number": 66,
       "image_asset": "images/homescreen/understand_t.svg",
       "relax_id": "relax_9",
       "check_in_id": "check_in_64",
@@ -2999,7 +3077,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 65,
+      "number": 67,
       "image_asset": "images/homescreen/behave_c.svg",
       "relax_id": "relax_9",
       "check_in_id": "check_in_65",
@@ -3046,7 +3124,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 66,
+      "number": 68,
       "check_in_id": "check_in_66",
       "title": "Lo que te dices importa",
       "_translations": {
@@ -3091,7 +3169,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 67,
+      "number": 69,
       "image_asset": "images/homescreen/behave_t.svg",
       "relax_id": "relax_3",
       "check_in_id": "check_in_67",
@@ -3138,7 +3216,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 68,
+      "number": 70,
       "image_asset": "images/homescreen/safety_c.svg",
       "relax_id": "relax_9",
       "check_in_id": "check_in_68",
@@ -3185,7 +3263,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 69,
+      "number": 71,
       "image_asset": "images/homescreen/safety_t.svg",
       "relax_id": "relax_1",
       "check_in_id": "check_in_69",
@@ -3232,7 +3310,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 70,
+      "number": 72,
       "image_asset": "images/homescreen/learn_c.svg",
       "relax_id": "relax_2",
       "check_in_id": "check_in_70",
@@ -3279,7 +3357,7 @@
       "tag_list": [
         "teen"
       ],
-      "number": 71,
+      "number": 73,
       "image_asset": "images/homescreen/learn_t.svg",
       "relax_id": "relax_3",
       "check_in_id": "check_in_71",

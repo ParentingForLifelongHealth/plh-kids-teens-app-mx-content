@@ -274,7 +274,7 @@
         "character_1_text": {},
         "character_2_text": {}
       },
-      "image_asset": "images/comic/relation/calm_yc_mc_1.svg",
+      "image_asset": "images/comic/relation/calm/calm_yc_mc_1.svg",
       "character_1_id": "f2_padre",
       "character_2_id": "f2_hijo_8",
       "text_2": "@data.characters.f2_padre.name va a pasar su tiempo para conectar con @data.characters.f2_hijo_8.name",
@@ -290,31 +290,25 @@
           "eng": "Mira cómo @data.characters.f2_padre.name reconoce las primeras señales de tensión y decide hacer una pausa."
         },
         "character_1_text": {
-          "eng": "(Pensando) ¡Ay, no! El cuarto está todo desordenado y vamos a tener que recogerlo antes de cenar. Estoy empezando a sentir calor y tensión. Necesito hacer una pausa para calmarme y disfrutar de nuestro tiempo para conectar."
-        },
-        "character_2_text": {
           "eng": "¡Brrrruuuum...!"
         },
-        "character_3_text": {
-          "eng": "@data.characters.f2_hijo_8.name, voy por un vaso de agua. Ahorita regreso a seguir jugando contigo."
+        "character_2_text": {
+          "eng": "(Pensando) ¡Ay, no! El cuarto está todo desordenado y vamos a tener que recogerlo antes de cenar. Estoy empezando a sentir calor y tensión. Necesito hacer una pausa para calmarme y disfrutar de nuestro tiempo para conectar."
         }
       },
       "category_id": "explore",
       "nested": false,
-      "image_asset": "images/comic/relation/calm_yc_mc_2.svg",
-      "character_1_id": "f2_padre",
-      "character_2_id": "f2_hijo_8",
+      "image_asset": "images/comic/relation/calm/calm_yc_mc_2.svg",
+      "character_1_id": "f2_hijo_8",
+      "character_2_id": "f2_padre",
       "text_2": "Mira cómo @data.characters.f2_padre.name reconoce las primeras señales de tensión y decide hacer una pausa.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
-        "character_2_text": {},
-        "character_3_text": {}
+        "character_2_text": {}
       },
-      "character_1_text": "(Pensando) ¡Ay, no! El cuarto está todo desordenado y vamos a tener que recogerlo antes de cenar. Estoy empezando a sentir calor y tensión. Necesito hacer una pausa para calmarme y disfrutar de nuestro tiempo para conectar.",
-      "character_2_text": "¡Brrrruuuum...!",
-      "character_3_id": "f2_padre",
-      "character_3_text": "@data.characters.f2_hijo_8.name, voy por un vaso de agua. Ahorita regreso a seguir jugando contigo.",
+      "character_1_text": "¡Brrrruuuum...!",
+      "character_2_text": "(Pensando) ¡Ay, no! El cuarto está todo desordenado y vamos a tener que recogerlo antes de cenar. Estoy empezando a sentir calor y tensión. Necesito hacer una pausa para calmarme y disfrutar de nuestro tiempo para conectar.",
       "completed": false,
       "version": 1
     },
@@ -322,13 +316,36 @@
       "id": "explore_4",
       "_translatedFields": {
         "text_2": {
-          "eng": "@data.characters.f2_padre.name actuó rápidamente y decidió ir por un vaso con agua para recuperar la calma."
+          "eng": "Fíjate cómo @data.characters.f2_padre.name actuó rápidamente en cuanto detectó sus señales de tensión."
+        },
+        "character_1_text": {
+          "eng": "@data.characters.f2_hijo_8.name, voy por un vaso de agua. Ahorita regreso a seguir jugando contigo."
         }
       },
       "category_id": "explore",
       "nested": false,
-      "image_asset": "images/comic/relation/calm_yc_mc_3.svg",
-      "text_2": "@data.characters.f2_padre.name actuó rápidamente y decidió ir por un vaso con agua para recuperar la calma.",
+      "image_asset": "images/comic/relation/calm/calm_yc_mc_4.svg",
+      "character_1_id": "f2_padre",
+      "text_2": "Fíjate cómo @data.characters.f2_padre.name actuó rápidamente en cuanto detectó sus señales de tensión.",
+      "_translations": {
+        "text_2": {},
+        "character_1_text": {}
+      },
+      "character_1_text": "@data.characters.f2_hijo_8.name, voy por un vaso de agua. Ahorita regreso a seguir jugando contigo.",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_5",
+      "_translatedFields": {
+        "text_2": {
+          "eng": "Darse unos minutos para respirar, tomar agua y tranquilizarse le ayuda a disfrutar el rato con @data.characters.f2_hijo_8.name."
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/relation/calm/calm_yc_mc_3.svg",
+      "text_2": "Darse unos minutos para respirar, tomar agua y tranquilizarse le ayuda a disfrutar el rato con @data.characters.f2_hijo_8.name.",
       "_translations": {
         "text_2": {}
       },
@@ -336,7 +353,7 @@
       "version": 1
     },
     {
-      "id": "explore_5",
+      "id": "explore_6",
       "_translatedFields": {
         "text_2": {
           "eng": "Después de tranquilizarse, @data.characters.f2_padre.name regresa a disfrutar su tiempo para conectar."
@@ -350,7 +367,7 @@
       },
       "category_id": "explore",
       "nested": false,
-      "image_asset": "images/comic/relation/calm_yc_mc_4.svg",
+      "image_asset": "images/comic/relation/calm/calm_yc_mc_4.svg",
       "character_1_id": "f2_padre",
       "character_2_id": "f2_hijo_8",
       "text_2": "Después de tranquilizarse, @data.characters.f2_padre.name regresa a disfrutar su tiempo para conectar.",
@@ -365,10 +382,10 @@
       "version": 1
     },
     {
-      "id": "explore_6",
+      "id": "explore_7",
       "_translatedFields": {
         "text_2": {
-          "eng": "@data.characters.f2_padre.name le dice claramente a @data.characters.f2_hijo_8.name qué espera y redirige la actividad hacia una tarea compartida."
+          "eng": "Al final, @data.characters.f2_padre.name le dice claramente a @data.characters.f2_hijo_8.name que necesita que guarde sus juguetes. Mira cómo expresarle algo positivo ayuda a que él colabore."
         },
         "character_1_text": {
           "eng": "Nos divertimos mucho en nuestro tiempo especial, pero ya es tiempo de recoger los juguetes, ¿lo hacemos juntos?"
@@ -382,10 +399,10 @@
       },
       "category_id": "explore",
       "nested": false,
-      "image_asset": "images/comic/relation/calm_yc_mc_5.svg",
+      "image_asset": "images/comic/relation/calm/calm_yc_mc_5.svg",
       "character_1_id": "f2_padre",
       "character_2_id": "f2_hijo_8",
-      "text_2": "@data.characters.f2_padre.name le dice claramente a @data.characters.f2_hijo_8.name qué espera y redirige la actividad hacia una tarea compartida.",
+      "text_2": "Al final, @data.characters.f2_padre.name le dice claramente a @data.characters.f2_hijo_8.name que necesita que guarde sus juguetes. Mira cómo expresarle algo positivo ayuda a que él colabore.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
@@ -403,7 +420,7 @@
       "id": "practical_tips_1",
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "Recordemos las estrategias para mantener la calma ante situaciones difíciles:"
+          "eng": "Recordemos las estrategias para mantener la calma ante situaciones difíciles ⭐"
         },
         "section_1_title": {
           "eng": "PAUSA"
@@ -432,7 +449,7 @@
       },
       "category_id": "practical_tips",
       "nested": false,
-      "text_1_facilitator": "Recordemos las estrategias para mantener la calma ante situaciones difíciles:",
+      "text_1_facilitator": "Recordemos las estrategias para mantener la calma ante situaciones difíciles ⭐",
       "_translations": {
         "text_1_facilitator": {},
         "section_1_title": {},

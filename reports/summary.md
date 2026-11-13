@@ -18,9 +18,10 @@
 | display_group | 147 |
 | drawer | 1 |
 | google_sign_in_button | 2 |
-| image | 28 |
+| image | 29 |
 | items | 16 |
-| lottie_animation | 10 |
+| lottie (lottie_animation) | 1 |
+| lottie_animation | 9 |
 | nested_properties | 505 |
 | number_selector | 1 |
 | plh_bottom_nav | 1 |
@@ -39,7 +40,7 @@
 | round_button | 34 |
 | select_text | 1 |
 | set_field | 4 |
-| set_variable | 5127 |
+| set_variable | 5129 |
 | simple_checkbox | 3 |
 | task_card | 4 |
 | task_progress_bar | 5 |
@@ -98,8 +99,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 18948 KB | 18.9 MB |
-| unused | 380014 KB | 380 MB |
+| total | 18353 KB | 18.4 MB |
+| unused | 380478 KB | 380.5 MB |
 </details>
 
 <details open>
@@ -216,16 +217,12 @@ Assets that appear in app-data but do not have references within sheets
 | images/activities/una_nota_t.png | 2356 |
 | images/activities/una_preocupacion_un_paso_c.png | 2014 |
 | images/activities/una_preocupacion_un_paso_t.png | 1346.3 |
+| images/backgrounds/kites.svg | 92.1 |
 | images/backgrounds/library_top_right.svg | 17.5 |
 | images/badges/badge_5.svg | 24.7 |
 | images/badges/badge_6.svg | 42.3 |
 | images/badges/badge_7.svg | 25.4 |
 | images/badges/badge_8.svg | 27.4 |
-| images/comic/relation/calm/calm_yc_mc_1.svg | 28.7 |
-| images/comic/relation/calm/calm_yc_mc_2.svg | 72.1 |
-| images/comic/relation/calm/calm_yc_mc_3.svg | 8.5 |
-| images/comic/relation/calm/calm_yc_mc_4.svg | 33.9 |
-| images/comic/relation/calm/calm_yc_mc_5.svg | 28.1 |
 | images/comic/safety/crisis/crises_2to6_yc_1.svg | 36.2 |
 | images/comic/safety/crisis/crises_2to6_yc_2.svg | 36.7 |
 | images/comic/safety/crisis/crises_2to6_yc_3.svg | 37.9 |
@@ -328,6 +325,10 @@ Assets that appear in app-data but do not have references within sheets
 | images/icons/world.svg | 6.2 |
 | images/logos/crianza_logo_horizontal.png | 21.9 |
 | images/logos/icon-foreground.png | 86.2 |
+| images/rewards/reward_1_abuelos.webp | 117.7 |
+| images/rewards/reward_2_familia_amarilla.webp | 144.6 |
+| images/rewards/reward_3_familia_naranja.webp | 149.2 |
+| images/rewards/reward_4_familia_turquesa.webp | 131.8 |
 | lottie/ux/bulging_circles.txt | 0.2 |
 </details>
 
@@ -483,11 +484,6 @@ Assets that have references within sheets but do not appear in app-data
 | images/comic/learn/language_yc_2.svg | 1 |
 | images/comic/learn/language_yc_3.svg | 1 |
 | images/comic/learn/language_yc_4.svg | 1 |
-| images/comic/relation/calm_yc_mc_1.svg | 2 |
-| images/comic/relation/calm_yc_mc_2.svg | 2 |
-| images/comic/relation/calm_yc_mc_3.svg | 2 |
-| images/comic/relation/calm_yc_mc_4.svg | 2 |
-| images/comic/relation/calm_yc_mc_5.svg | 2 |
 | images/comic/relation/thoughts_feelings_1.svg | 4 |
 | images/comic/relation/thoughts_feelings_2.svg | 4 |
 | images/comic/relation/thoughts_feelings_3.svg | 4 |
@@ -582,6 +578,7 @@ Assets that have references within sheets but do not appear in app-data
 | images/logos/PSIQUIATRIA.png | 1 |
 | images/logos/app_logo.png | 1 |
 | images/logos/partners/plh_logomark.png | 1 |
+| images/rewards/reward_1_abuelos.webp; images/rewards/reward_2_familia_amarilla.webp; images/rewards/reward_3_familia_naranja.webp; images/rewards/reward_4_familia_turquesa.webp | 1 |
 | lottie/bulging_circles.json | 1 |
 </details>
 
@@ -594,7 +591,6 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | --- | --- | --- |
 | images/backgrounds/bottom_banner.svg | 24.3 | 1 |
 | images/backgrounds/complete_module.svg | 30.6 | 1 |
-| images/backgrounds/kites.svg | 92.1 | 1 |
 | images/backgrounds/lesson-cta-bg.svg | 8.3 | 4 |
 | images/backgrounds/library_top_right.png | 54.7 | 3 |
 | images/badges/badge_1.svg | 25.7 | 2 |
@@ -640,8 +636,13 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/comic/relation/calm/calm_yc_fc_1.svg | 29.4 | 2 |
 | images/comic/relation/calm/calm_yc_fc_2.svg | 72.3 | 2 |
 | images/comic/relation/calm/calm_yc_fc_3.svg | 10.5 | 2 |
-| images/comic/relation/calm/calm_yc_fc_4.svg | 32.6 | 2 |
+| images/comic/relation/calm/calm_yc_fc_4.svg | 32.6 | 4 |
 | images/comic/relation/calm/calm_yc_fc_5.svg | 27.8 | 2 |
+| images/comic/relation/calm/calm_yc_mc_1.svg | 28.7 | 2 |
+| images/comic/relation/calm/calm_yc_mc_2.svg | 72.1 | 2 |
+| images/comic/relation/calm/calm_yc_mc_3.svg | 8.5 | 2 |
+| images/comic/relation/calm/calm_yc_mc_4.svg | 33.9 | 4 |
+| images/comic/relation/calm/calm_yc_mc_5.svg | 28.1 | 2 |
 | images/comic/relation/give_praise/give_praise_t_fc_1.svg | 47.6 | 2 |
 | images/comic/relation/give_praise/give_praise_t_fc_2.svg | 27.9 | 2 |
 | images/comic/relation/give_praise/give_praise_t_fc_3.svg | 27.7 | 2 |
@@ -789,7 +790,6 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | lottie/ux/bulging_circles.json | 11.8 | 1 |
 | lottie/ux/checkmark.json | 24.6 | 2 |
 | lottie/ux/congrats.json | 55.2 | 1 |
-| lottie/ux/gift_box.json | 674.5 | 1 |
 </details>
 
 <details >

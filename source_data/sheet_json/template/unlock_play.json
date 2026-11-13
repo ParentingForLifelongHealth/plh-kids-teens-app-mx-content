@@ -12,10 +12,18 @@
       "value": "@global.a_new_moment_of_play_has_been_unlocked"
     },
     {
+      "name": "reward_assets",
+      "value": "@global.unlock_play_animation_assets.split(\";\").map((v) => v.trim()).filter((v) => v)",
+      "condition": "!!(@global.unlock_play_animation_assets)"
+    },
+    {
+      "name": "reward_asset",
+      "value": "@local.reward_assets[String(@local.activity_id).split(\"\").reduce((sum, c) => sum + c.charCodeAt(0), 0) % @local.reward_assets.length]",
+      "condition": "!!(@global.unlock_play_animation_assets)"
+    },
+    {
       "type": "begin_display_group",
       "name": "dg_bg",
-      "parameter_list": "background_image_asset: images/backgrounds/kites.svg",
-      "style_list": "width: 100%;",
       "exclude_from_translation": true
     },
     {
@@ -25,10 +33,16 @@
       "exclude_from_translation": true
     },
     {
-      "type": "lottie_animation",
-      "name": "lottie",
-      "value": "lottie/ux/gift_box.json",
-      "exclude_from_translation": true
+      "type": "lottie (lottie_animation)",
+      "name": "reward_lottie",
+      "value": "@local.reward_asset",
+      "condition": "!!(@global.unlock_play_animation_assets) && @local.reward_asset.endsWith(\".json\")"
+    },
+    {
+      "type": "image",
+      "name": "reward_image",
+      "value": "@local.reward_asset",
+      "condition": "!!(@global.unlock_play_animation_assets) && !@local.reward_asset.endsWith(\".json\")"
     },
     {
       "type": "title",
@@ -56,6 +70,7 @@
       "name": "button",
       "value": "@global.open_your_moment_of_play",
       "action_list": "click | emit: completed; \nclick | nav_stack: open | template: activity_@local.activity_id, header: false;\nclick | set_data | \n_list_id: activity_tasks,\n_id: @local.activity_id,\naccessed: true",
+      "parameter_list": "style: navigation",
       "exclude_from_translation": true
     },
     {
