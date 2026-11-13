@@ -98,7 +98,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 18943 KB | 18.9 MB |
+| total | 18948 KB | 18.9 MB |
 | unused | 380014 KB | 380 MB |
 </details>
 
@@ -788,7 +788,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | lottie/relax/square_flow.json | 5.9 | 44 |
 | lottie/ux/bulging_circles.json | 11.8 | 1 |
 | lottie/ux/checkmark.json | 24.6 | 2 |
-| lottie/ux/congrats.json | 50.4 | 1 |
+| lottie/ux/congrats.json | 55.2 | 1 |
 | lottie/ux/gift_box.json | 674.5 | 1 |
 </details>
 
