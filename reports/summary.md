@@ -9,7 +9,7 @@
 | animated_slides | 1 |
 | apple_sign_in_button | 2 |
 | audio | 4 |
-| button | 136 |
+| button | 137 |
 | combo_box | 23 |
 | data_items | 245 |
 | date_time_picker | 2 |
@@ -39,12 +39,12 @@
 | round_button | 34 |
 | select_text | 1 |
 | set_field | 4 |
-| set_variable | 5125 |
+| set_variable | 5126 |
 | simple_checkbox | 3 |
 | task_card | 4 |
 | task_progress_bar | 5 |
-| template | 809 |
-| text | 327 |
+| template | 811 |
+| text | 326 |
 | text_area | 4 |
 | text_box | 23 |
 | text_bubble | 33 |
@@ -72,9 +72,9 @@
 | emit: force_restart | 3 |
 | emit: server_sync | 8 |
 | emit: set_language | 2 |
-| emit: uncompleted | 194 |
+| emit: uncompleted | 195 |
 | feedback | 13 |
-| go_to | 31 |
+| go_to | 32 |
 | nav | 1 |
 | nav_stack | 994 |
 | notification | 1 |
@@ -893,7 +893,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global | ab_testing | 2 |
 | global | onboarding | 17 |
 | global | proximal_outcomes | 3 |
-| template |  | 112 |
+| template |  | 113 |
 | template | ab_testing | 1 |
 | template | generated | 348 |
 | template | legal_terms | 4 |

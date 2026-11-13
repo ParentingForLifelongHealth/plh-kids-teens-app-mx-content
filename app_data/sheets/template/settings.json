@@ -770,14 +770,28 @@
       }
     },
     {
-      "type": "text",
+      "type": "button",
       "name": "text",
       "value": "@fields._content_version (@fields._app_version)",
       "_translations": {
         "value": {}
       },
+      "parameter_list": {
+        "variant": "card",
+        "style": "card"
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "settings_app_menu"
+          ],
+          "_raw": "click | go_to: settings_app_menu"
+        }
+      ],
       "style_list": [
-        "padding-inline: 12px"
+        "text_align: left"
       ],
       "exclude_from_translation": true,
       "_nested_name": "text",

@@ -1,0 +1,25 @@
+{
+  "flow_type": "template",
+  "flow_name": "settings_app_menu",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "settings_header",
+      "value": "settings_header",
+      "action_list": "uncompleted | emit: uncompleted; "
+    },
+    {
+      "name": "title",
+      "value": "@global.dev_mode_title"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "template",
+      "name": "app_menu",
+      "value": "app_menu"
+    }
+  ]
+}
