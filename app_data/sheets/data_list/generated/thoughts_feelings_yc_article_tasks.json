@@ -245,12 +245,12 @@
       "media_type": "youtube",
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo reconocer la relación entre tus pensamientos, emociones y acciones. Esto te ayudará a elegir cómo responder en distintas situaciones.\n\nEn este video te compartimos tres estrategias recomendadas por especialistas:\n1️⃣ NOMBRA\n2️⃣ DETECTA\n3️⃣ ELIGE"
+          "eng": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo reconocer la relación entre tus pensamientos, emociones y acciones. Esto te ayudará a elegir cómo responder en distintas situaciones.\n\nEn este video te compartimos tres estrategias recomendadas por especialistas:\n\n1️⃣ NOMBRA\n2️⃣ DETECTA\n3️⃣ ELIGE"
         }
       },
       "category_id": "explore",
       "nested": false,
-      "text_1_facilitator": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo reconocer la relación entre tus pensamientos, emociones y acciones. Esto te ayudará a elegir cómo responder en distintas situaciones.\n\nEn este video te compartimos tres estrategias recomendadas por especialistas:\n1️⃣ NOMBRA\n2️⃣ DETECTA\n3️⃣ ELIGE",
+      "text_1_facilitator": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo reconocer la relación entre tus pensamientos, emociones y acciones. Esto te ayudará a elegir cómo responder en distintas situaciones.\n\nEn este video te compartimos tres estrategias recomendadas por especialistas:\n\n1️⃣ NOMBRA\n2️⃣ DETECTA\n3️⃣ ELIGE",
       "_translations": {
         "text_1_facilitator": {}
       },
@@ -263,10 +263,10 @@
       "id": "explore_2",
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "¡Vamos a ver estas estrategias en la práctica!"
+          "eng": "Aquí veremos un ejemplo de cómo @data.characters.f2_padre.name usa estas estrategias en la práctica:"
         },
         "text_2": {
-          "eng": "@data.characters.f3_padre.name llega cansado del trabajo y responde con un tono molesto. Veamos cómo lo que siente y piensa influye en su manera de actuar."
+          "eng": "@data.characters.f2_padre.name llega cansado del trabajo y responde con un tono molesto. Mira cómo lo que siente y piensa influye en su manera de actuar."
         },
         "character_1_text": {
           "eng": "¡Papá, ven a jugar conmigo!"
@@ -280,7 +280,7 @@
       },
       "category_id": "explore",
       "nested": false,
-      "text_1_facilitator": "¡Vamos a ver estas estrategias en la práctica!",
+      "text_1_facilitator": "Aquí veremos un ejemplo de cómo @data.characters.f2_padre.name usa estas estrategias en la práctica:",
       "_translations": {
         "text_1_facilitator": {},
         "text_2": {},
@@ -289,10 +289,10 @@
         "character_3_text": {}
       },
       "image_asset": "images/comic/relation/thoughts_feelings_1.svg",
-      "character_1_id": "f3_hija_7",
-      "character_2_id": "f3_hijo_14",
-      "character_3_id": "f3_padre",
-      "text_2": "@data.characters.f3_padre.name llega cansado del trabajo y responde con un tono molesto. Veamos cómo lo que siente y piensa influye en su manera de actuar.",
+      "character_1_id": "f2_hija_3",
+      "character_2_id": "f2_hijo_15",
+      "character_3_id": "f2_padre",
+      "text_2": "@data.characters.f2_padre.name llega cansado del trabajo y responde con un tono molesto. Mira cómo lo que siente y piensa influye en su manera de actuar.",
       "character_1_text": "¡Papá, ven a jugar conmigo!",
       "character_2_text": "Pa, ¿me puedes ayudar con algo de la escuela?",
       "character_3_text": "¡Ahorita no! ¡Acabo de llegar y necesito descansar!",
@@ -306,19 +306,19 @@
           "eng": "Fíjate cómo @data.characters.f3_padre.name nombra cómo se siente y detecta lo que está pensando."
         },
         "character_1_text": {
-          "eng": "(Pensando) Estoy muy cansado y me siento irritado. No dejo de pensar: \"¡No tengo ni un minuto para descansar!\"."
+          "eng": "(Pensando) Estoy muy cansado y me siento molesto. No dejo de pensar: \"¡No tengo ni un minuto para descansar!\"."
         }
       },
       "category_id": "explore",
       "nested": false,
       "image_asset": "images/comic/relation/thoughts_feelings_2.svg",
-      "character_1_id": "f3_padre",
+      "character_1_id": "f2_padre",
       "text_2": "Fíjate cómo @data.characters.f3_padre.name nombra cómo se siente y detecta lo que está pensando.",
       "_translations": {
         "text_2": {},
         "character_1_text": {}
       },
-      "character_1_text": "(Pensando) Estoy muy cansado y me siento irritado. No dejo de pensar: \"¡No tengo ni un minuto para descansar!\".",
+      "character_1_text": "(Pensando) Estoy muy cansado y me siento molesto. No dejo de pensar: \"¡No tengo ni un minuto para descansar!\".",
       "completed": false,
       "version": 1
     },
@@ -326,7 +326,7 @@
       "id": "explore_4",
       "_translatedFields": {
         "text_2": {
-          "eng": "Aunque @data.characters.f3_padre.name sigue cansado, elige hablar con calma, explicar lo que necesita y proponer otro momento para atender a sus hijos."
+          "eng": "Observa cómo @data.characters.f3_padre.name elige cómo responder. Aunque sigue cansado, habla con calma, explica lo que necesita y les propone otro momento para atenderles."
         },
         "character_1_text": {
           "eng": "Perdón por hablarles así. Tuve un día pesado y necesito descansar un poco. Denme unos minutos y después jugamos y revisamos lo de la escuela, ¿les parece?"
@@ -341,10 +341,10 @@
       "category_id": "explore",
       "nested": false,
       "image_asset": "images/comic/relation/thoughts_feelings_3.svg",
-      "character_1_id": "f3_padre",
-      "character_2_id": "f3_hija_7",
-      "character_3_id": "f3_hijo_14",
-      "text_2": "Aunque @data.characters.f3_padre.name sigue cansado, elige hablar con calma, explicar lo que necesita y proponer otro momento para atender a sus hijos.",
+      "character_1_id": "f2_padre",
+      "character_2_id": "f2_hija_3",
+      "character_3_id": "f2_hijo_15",
+      "text_2": "Observa cómo @data.characters.f3_padre.name elige cómo responder. Aunque sigue cansado, habla con calma, explica lo que necesita y les propone otro momento para atenderles.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
@@ -361,7 +361,7 @@
       "id": "explore_5",
       "_translatedFields": {
         "text_2": {
-          "eng": "Un rato después, @data.characters.f3_padre.name ya se siente listo para apoyar a sus hijos, aunque sigue un poco cansado."
+          "eng": "@data.characters.f3_padre.name sigue sintiendo algo de cansancio, pero eligió responder de otra manera."
         },
         "character_1_text": {
           "eng": "¡Ahora sí! Cuéntenme, ¿qué me querían mostrar?"
@@ -370,16 +370,16 @@
           "eng": "¡Mira lo que construí!"
         },
         "character_3_text": {
-          "eng": "¡Guau! ¡Te quedó increíble, @data.characters.f3_hija_7.name! ¿Cómo lo hiciste?"
+          "eng": "¡Guau! ¡Te quedó increíble, @data.characters.f2_hija_3.name! ¿Cómo lo hiciste?"
         }
       },
       "category_id": "explore",
       "nested": false,
       "image_asset": "images/comic/relation/thoughts_feelings_4.svg",
-      "character_1_id": "f3_padre",
-      "character_2_id": "f3_hija_7",
-      "character_3_id": "f3_padre",
-      "text_2": "Un rato después, @data.characters.f3_padre.name ya se siente listo para apoyar a sus hijos, aunque sigue un poco cansado.",
+      "character_1_id": "f2_padre",
+      "character_2_id": "f2_hija_3",
+      "character_3_id": "f2_padre",
+      "text_2": "@data.characters.f3_padre.name sigue sintiendo algo de cansancio, pero eligió responder de otra manera.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
@@ -388,7 +388,7 @@
       },
       "character_1_text": "¡Ahora sí! Cuéntenme, ¿qué me querían mostrar?",
       "character_2_text": "¡Mira lo que construí!",
-      "character_3_text": "¡Guau! ¡Te quedó increíble, @data.characters.f3_hija_7.name! ¿Cómo lo hiciste?",
+      "character_3_text": "¡Guau! ¡Te quedó increíble, @data.characters.f2_hija_3.name! ¿Cómo lo hiciste?",
       "completed": false,
       "version": 1
     },
@@ -402,14 +402,14 @@
           "eng": "Y yo quería preguntarte algo de mi tarea, pa. ¿Tienes un ratito?"
         },
         "character_2_text": {
-          "eng": "¡Claro, @data.characters.f3_hijo_14.name! Vamos a revisarlo juntos."
+          "eng": "¡Claro, @data.characters.f2_hijo_15.name! Vamos a revisarlo juntos."
         }
       },
       "category_id": "explore",
       "nested": false,
       "image_asset": "images/comic/relation/thoughts_feelings_4.svg",
-      "character_1_id": "f3_hijo_14",
-      "character_2_id": "f3_padre",
+      "character_1_id": "f2_hijo_15",
+      "character_2_id": "f2_padre",
       "text_2": "No siempre podemos cambiar lo que sentimos o pensamos, pero sí podemos practicar nuevas formas de actuar.",
       "_translations": {
         "text_2": {},
@@ -417,7 +417,7 @@
         "character_2_text": {}
       },
       "character_1_text": "Y yo quería preguntarte algo de mi tarea, pa. ¿Tienes un ratito?",
-      "character_2_text": "¡Claro, @data.characters.f3_hijo_14.name! Vamos a revisarlo juntos.",
+      "character_2_text": "¡Claro, @data.characters.f2_hijo_15.name! Vamos a revisarlo juntos.",
       "completed": false,
       "version": 1
     },
@@ -425,7 +425,7 @@
       "id": "practical_tips_1",
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "Ya viste cómo @data.characters.f3_padre.name usó las estrategias.\n\n\nVamos a recordarlas una vez más para que puedas reconocer tus pensamientos y emociones, y elijas cómo actuar en distintas situaciones:"
+          "eng": "Recordemos las estrategias para reconocer tus pensamientos y emociones, y elegir cómo actuar en distintas situaciones:"
         },
         "section_1_title": {
           "eng": "NOMBRA"
@@ -448,7 +448,7 @@
       },
       "category_id": "practical_tips",
       "nested": false,
-      "text_1_facilitator": "Ya viste cómo @data.characters.f3_padre.name usó las estrategias.\n\n\nVamos a recordarlas una vez más para que puedas reconocer tus pensamientos y emociones, y elijas cómo actuar en distintas situaciones:",
+      "text_1_facilitator": "Recordemos las estrategias para reconocer tus pensamientos y emociones, y elegir cómo actuar en distintas situaciones:",
       "_translations": {
         "text_1_facilitator": {},
         "section_1_title": {},

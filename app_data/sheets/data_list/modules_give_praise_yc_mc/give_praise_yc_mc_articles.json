@@ -201,26 +201,32 @@
       "category_id": "explore",
       "image_asset": "images/comic/relation/give_praise/give_praise_yc_mc_1.svg",
       "character_1_id": "f3_padre",
+      "character_2_id": "f3_hija_7",
       "nested": false,
-      "text_1_facilitator": "Vamos a ver estas estrategias en la práctica.",
+      "text_1_facilitator": "Aquí veremos un ejemplo de cómo @data.characters.f3_padre.name usa estas estrategias en la práctica:",
       "_translations": {
         "text_1_facilitator": {},
         "text_2": {},
-        "character_1_text": {}
+        "character_1_text": {},
+        "character_2_text": {}
       },
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "Vamos a ver estas estrategias en la práctica."
+          "eng": "Aquí veremos un ejemplo de cómo @data.characters.f3_padre.name usa estas estrategias en la práctica:"
         },
         "text_2": {
-          "eng": "Vamos a ver cómo @data.characters.f3_padre.name reconoce a @data.characters.f3_hija_7.name mientras le ayuda a doblar la ropa."
+          "eng": "@data.characters.f3_padre.name está doblando la ropa con @data.characters.f3_hija_7.name y nota que esta es una buena oportunidad para reconocer lo que hace."
         },
         "character_1_text": {
           "eng": "Encontraste un calcetín rojo y otro de puntos. Vamos a buscar los calcetines que sean iguales."
+        },
+        "character_2_text": {
+          "eng": "¡Sí!"
         }
       },
-      "text_2": "Vamos a ver cómo @data.characters.f3_padre.name reconoce a @data.characters.f3_hija_7.name mientras le ayuda a doblar la ropa.",
-      "character_1_text": "Encontraste un calcetín rojo y otro de puntos. Vamos a buscar los calcetines que sean iguales."
+      "text_2": "@data.characters.f3_padre.name está doblando la ropa con @data.characters.f3_hija_7.name y nota que esta es una buena oportunidad para reconocer lo que hace.",
+      "character_1_text": "Encontraste un calcetín rojo y otro de puntos. Vamos a buscar los calcetines que sean iguales.",
+      "character_2_text": "¡Sí!"
     },
     {
       "id": "explore_3",
@@ -229,7 +235,7 @@
       "character_1_id": "f3_hija_7",
       "character_2_id": "f3_padre",
       "nested": false,
-      "text_2": "Fíjate cómo @data.characters.f3_padre.name le dice a @data.characters.f3_hija_7.name qué fue lo que hizo bien, en el momento en que lo hizo.",
+      "text_2": "Fíjate cómo @data.characters.f3_padre.name le dice a @data.characters.f3_hija_7.name qué fue lo que hizo bien y justo en el momento en que lo hizo.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
@@ -237,7 +243,7 @@
       },
       "_translatedFields": {
         "text_2": {
-          "eng": "Fíjate cómo @data.characters.f3_padre.name le dice a @data.characters.f3_hija_7.name qué fue lo que hizo bien, en el momento en que lo hizo."
+          "eng": "Fíjate cómo @data.characters.f3_padre.name le dice a @data.characters.f3_hija_7.name qué fue lo que hizo bien y justo en el momento en que lo hizo."
         },
         "character_1_text": {
           "eng": "¡Encontré un calcetín blanco!"
@@ -256,7 +262,7 @@
       "character_1_id": "f3_hija_7",
       "character_2_id": "f3_padre",
       "nested": false,
-      "text_2": "Mira cómo @data.characters.f3_padre.name le anima a seguir intentando, al reconocer su esfuerzo.",
+      "text_2": "Mira cómo @data.characters.f3_padre.name reconoce su esfuerzo y la anima a seguir intentando.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
@@ -264,7 +270,7 @@
       },
       "_translatedFields": {
         "text_2": {
-          "eng": "Mira cómo @data.characters.f3_padre.name le anima a seguir intentando, al reconocer su esfuerzo."
+          "eng": "Mira cómo @data.characters.f3_padre.name reconoce su esfuerzo y la anima a seguir intentando."
         },
         "character_1_text": {
           "eng": "Pero no encuentro el otro de puntitos."
@@ -284,7 +290,7 @@
       "character_2_id": "f3_hija_7",
       "character_3_id": "abuela_1",
       "nested": false,
-      "text_2": "@data.characters.abuela_1.name también reconoce con entusiasmo el esfuerzo de @data.characters.f3_hija_7.name. Esto lo motiva a seguir ayudando.",
+      "text_2": "@data.characters.abuela_1.name también reconoce con entusiasmo el esfuerzo de @data.characters.f3_hija_7.name. Esto la motiva a seguir ayudando.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
@@ -293,7 +299,7 @@
       },
       "_translatedFields": {
         "text_2": {
-          "eng": "@data.characters.abuela_1.name también reconoce con entusiasmo el esfuerzo de @data.characters.f3_hija_7.name. Esto lo motiva a seguir ayudando."
+          "eng": "@data.characters.abuela_1.name también reconoce con entusiasmo el esfuerzo de @data.characters.f3_hija_7.name. Esto la motiva a seguir ayudando."
         },
         "character_1_text": {
           "eng": "¡Qué buen equipo son! Acabaron de doblar la ropa super rápido. Ahora tenemos tiempo para hacer algo todos juntos."
@@ -317,7 +323,7 @@
       "section_3_icon_asset": "images/icons/star_filled_blue.png",
       "section_4_icon_asset": "images/icons/heart_filled_blue.png",
       "nested": false,
-      "text_1_facilitator": "¡Ya viste cómo @data.characters.f3_padre.name usó las estrategias!\n\nVamos a recordarlas una vez más para que sigas reconociendo lo que hace @fields.child_name:",
+      "text_1_facilitator": "Recordemos las estrategias para reconocer a @fields.child_name:",
       "_translations": {
         "text_1_facilitator": {},
         "section_1_title": {},
@@ -331,7 +337,7 @@
       },
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "¡Ya viste cómo @data.characters.f3_padre.name usó las estrategias!\n\nVamos a recordarlas una vez más para que sigas reconociendo lo que hace @fields.child_name:"
+          "eng": "Recordemos las estrategias para reconocer a @fields.child_name:"
         },
         "section_1_title": {
           "eng": "OBSERVA"
