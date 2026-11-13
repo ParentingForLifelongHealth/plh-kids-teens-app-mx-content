@@ -9,7 +9,7 @@
 | animated_slides | 1 |
 | apple_sign_in_button | 2 |
 | audio | 4 |
-| button | 137 |
+| button | 138 |
 | combo_box | 23 |
 | data_items | 245 |
 | date_time_picker | 2 |
@@ -39,7 +39,7 @@
 | round_button | 34 |
 | select_text | 1 |
 | set_field | 4 |
-| set_variable | 5126 |
+| set_variable | 5127 |
 | simple_checkbox | 3 |
 | task_card | 4 |
 | task_progress_bar | 5 |
@@ -86,7 +86,7 @@
 | set_data | 515 |
 | set_field | 523 |
 | set_item | 30 |
-| set_local | 703 |
+| set_local | 705 |
 | share | 3 |
 | task | 2 |
 | toast | 78 |

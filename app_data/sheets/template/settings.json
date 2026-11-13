@@ -11,6 +11,12 @@
   },
   "rows": [
     {
+      "name": "version_taps",
+      "value": 0,
+      "type": "set_variable",
+      "_nested_name": "version_taps"
+    },
+    {
       "name": "next_icon_asset",
       "value": "chevron-forward",
       "_translations": {
@@ -771,7 +777,7 @@
     },
     {
       "type": "button",
-      "name": "text",
+      "name": "button_version_tap",
       "value": "@fields._content_version (@fields._app_version)",
       "_translations": {
         "value": {}
@@ -784,15 +790,16 @@
       "action_list": [
         {
           "trigger": "click",
-          "action_id": "go_to",
+          "action_id": "set_local",
           "args": [
-            "settings_app_menu"
+            "version_taps",
+            "@calc(Number(@local.version_taps) + 1)"
           ],
-          "_raw": "click | go_to: settings_app_menu"
+          "_raw": "click | set_local: version_taps:@calc(Number(@local.version_taps) + 1)"
         }
       ],
-      "exclude_from_translation": true,
-      "_nested_name": "text",
+      "condition": "@fields.user_mode && @local.version_taps < 4",
+      "_nested_name": "button_version_tap",
       "_dynamicFields": {
         "value": [
           {
@@ -807,6 +814,54 @@
             "type": "fields",
             "fieldName": "_app_version"
           }
+        ],
+        "action_list": {
+          "0": {
+            "args": {
+              "1": [
+                {
+                  "fullExpression": "@calc(Number(@local.version_taps) + 1)",
+                  "matchedExpression": "@local.version_taps",
+                  "type": "local",
+                  "fieldName": "version_taps"
+                },
+                {
+                  "fullExpression": "@calc(Number(@local.version_taps) + 1)",
+                  "matchedExpression": "@calc(Number(@local.version_taps) + 1)",
+                  "type": "calc",
+                  "fieldName": "Number(@local.version_taps) + 1"
+                }
+              ]
+            },
+            "_raw": [
+              {
+                "fullExpression": "click | set_local: version_taps:@calc(Number(@local.version_taps) + 1)",
+                "matchedExpression": "@local.version_taps",
+                "type": "local",
+                "fieldName": "version_taps"
+              },
+              {
+                "fullExpression": "click | set_local: version_taps:@calc(Number(@local.version_taps) + 1)",
+                "matchedExpression": "@calc(Number(@local.version_taps) + 1)",
+                "type": "calc",
+                "fieldName": "Number(@local.version_taps) + 1"
+              }
+            ]
+          }
+        },
+        "condition": [
+          {
+            "fullExpression": "@fields.user_mode && @local.version_taps < 4",
+            "matchedExpression": "@fields.user_mode",
+            "type": "fields",
+            "fieldName": "user_mode"
+          },
+          {
+            "fullExpression": "@fields.user_mode && @local.version_taps < 4",
+            "matchedExpression": "@local.version_taps",
+            "type": "local",
+            "fieldName": "version_taps"
+          }
         ]
       },
       "_dynamicDependencies": {
@@ -815,6 +870,96 @@
         ],
         "@fields._app_version": [
           "value"
+        ],
+        "@local.version_taps": [
+          "action_list.0.args.1",
+          "action_list.0._raw",
+          "condition"
+        ],
+        "@calc(Number(@local.version_taps) + 1)": [
+          "action_list.0.args.1",
+          "action_list.0._raw"
+        ],
+        "@fields.user_mode": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "name": "button_version_menu",
+      "value": "@fields._content_version (@fields._app_version)",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "variant": "card",
+        "style": "card",
+        "text_align": "left"
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_local",
+          "args": [
+            "version_taps",
+            "0"
+          ],
+          "_raw": "click | set_local: version_taps: 0"
+        },
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "settings_app_menu"
+          ],
+          "_raw": "click | go_to: settings_app_menu"
+        }
+      ],
+      "condition": "!@fields.user_mode || @local.version_taps >= 4",
+      "_nested_name": "button_version_menu",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields._content_version (@fields._app_version)",
+            "matchedExpression": "@fields._content_version",
+            "type": "fields",
+            "fieldName": "_content_version"
+          },
+          {
+            "fullExpression": "@fields._content_version (@fields._app_version)",
+            "matchedExpression": "@fields._app_version",
+            "type": "fields",
+            "fieldName": "_app_version"
+          }
+        ],
+        "condition": [
+          {
+            "fullExpression": "!@fields.user_mode || @local.version_taps >= 4",
+            "matchedExpression": "!@fields.user_mode",
+            "type": "fields",
+            "fieldName": "user_mode"
+          },
+          {
+            "fullExpression": "!@fields.user_mode || @local.version_taps >= 4",
+            "matchedExpression": "@local.version_taps",
+            "type": "local",
+            "fieldName": "version_taps"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._content_version": [
+          "value"
+        ],
+        "@fields._app_version": [
+          "value"
+        ],
+        "!@fields.user_mode": [
+          "condition"
+        ],
+        "@local.version_taps": [
+          "condition"
         ]
       }
     }
