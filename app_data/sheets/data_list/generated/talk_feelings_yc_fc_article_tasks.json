@@ -295,7 +295,7 @@
       "id": "explore_2",
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "Vamos a ver estas estrategias en la práctica."
+          "eng": "Aquí veremos un ejemplo de cómo @data.characters.f3_madre.name usa estas estrategias en la práctica:"
         },
         "text_2": {
           "eng": "@data.characters.f3_madre.name y @data.characters.f3_hija_7.name se preparan para su tiempo para conectar."
@@ -312,7 +312,7 @@
       },
       "category_id": "explore",
       "nested": false,
-      "text_1_facilitator": "Vamos a ver estas estrategias en la práctica.",
+      "text_1_facilitator": "Aquí veremos un ejemplo de cómo @data.characters.f3_madre.name usa estas estrategias en la práctica:",
       "_translations": {
         "text_1_facilitator": {},
         "text_2": {},
@@ -335,7 +335,7 @@
       "id": "explore_3",
       "_translatedFields": {
         "text_2": {
-          "eng": "Observa cómo @data.characters.f3_madre.name identifica las señales de enojo y trata de entender qué pasa."
+          "eng": "Observa cómo @data.characters.f3_madre.name identifica las señales de enojo de @data.characters.f3_hija_7.name y platica con ella para entender qué pasa."
         },
         "character_1_text": {
           "eng": "¡Esta pelota ya no sirve!"
@@ -353,7 +353,7 @@
       "character_1_id": "f3_hija_7",
       "character_2_id": "f3_madre",
       "character_3_id": "f3_hija_7",
-      "text_2": "Observa cómo @data.characters.f3_madre.name identifica las señales de enojo y trata de entender qué pasa.",
+      "text_2": "Observa cómo @data.characters.f3_madre.name identifica las señales de enojo de @data.characters.f3_hija_7.name y platica con ella para entender qué pasa.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
@@ -370,34 +370,34 @@
       "id": "explore_4",
       "_translatedFields": {
         "text_2": {
-          "eng": "Mira cómo @data.characters.f3_madre.name habla del enojo con @data.characters.f3_hija_7.name y le muestra su interés."
+          "eng": "Mira cómo @data.characters.f3_madre.name comparte que ella también se siente así a veces y muestra interés por ayudarla a regular sus emociones."
         },
         "character_1_text": {
-          "eng": "Es común sentir enojo cuando algo no sale como queremos, aunque le echamos ganas. Puedes sentirte enojada, pero aventar la pelota podría lastimar a alguien."
+          "eng": "Yo también siento enojo cuando me esfuerzo mucho y algo no sale como yo quería. Puedes sentirte enojada, pero aventar la pelota podría lastimar a alguien."
         },
         "character_2_text": {
-          "eng": "¿Y si hacemos una pausa? Si quieres, podemos brincar para sacudir el enojo."
+          "eng": "..."
         },
         "character_3_text": {
-          "eng": "Está bien…"
+          "eng": "¿Y si hacemos una pausa? Si quieres, podemos brincar para sacudir el enojo."
         }
       },
       "category_id": "explore",
       "nested": false,
       "image_asset": "images/comic/relation/talk_feelings/talk_feelings_yc_fc_3.svg",
       "character_1_id": "f3_madre",
-      "character_2_id": "f3_madre",
-      "character_3_id": "f3_hija_7",
-      "text_2": "Mira cómo @data.characters.f3_madre.name habla del enojo con @data.characters.f3_hija_7.name y le muestra su interés.",
+      "character_2_id": "f3_hija_7",
+      "character_3_id": "f3_madre",
+      "text_2": "Mira cómo @data.characters.f3_madre.name comparte que ella también se siente así a veces y muestra interés por ayudarla a regular sus emociones.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
         "character_2_text": {},
         "character_3_text": {}
       },
-      "character_1_text": "Es común sentir enojo cuando algo no sale como queremos, aunque le echamos ganas. Puedes sentirte enojada, pero aventar la pelota podría lastimar a alguien.",
-      "character_2_text": "¿Y si hacemos una pausa? Si quieres, podemos brincar para sacudir el enojo.",
-      "character_3_text": "Está bien…",
+      "character_1_text": "Yo también siento enojo cuando me esfuerzo mucho y algo no sale como yo quería. Puedes sentirte enojada, pero aventar la pelota podría lastimar a alguien.",
+      "character_2_text": "...",
+      "character_3_text": "¿Y si hacemos una pausa? Si quieres, podemos brincar para sacudir el enojo.",
       "completed": false,
       "version": 1
     },
@@ -411,7 +411,7 @@
           "eng": "¡Ya me siento mejor, ma! ¿Seguimos?"
         },
         "character_2_text": {
-          "eng": "¡Sí! Oye, tu papá me contó que ayer también hiciste una pausa y seguiste intentando, incluso cuando atrapar se puso difícil. \n\n¡Lo estás haciendo muy bien, @data.characters.f3_hija_7.name!"
+          "eng": "¡Sí! ¡Lo estás haciendo muy bien, @data.characters.f3_hija_7.name! Tu papá me contó que ayer también hiciste una pausa y seguiste intentando, incluso cuando atrapar se puso difícil."
         }
       },
       "category_id": "explore",
@@ -426,7 +426,7 @@
         "character_2_text": {}
       },
       "character_1_text": "¡Ya me siento mejor, ma! ¿Seguimos?",
-      "character_2_text": "¡Sí! Oye, tu papá me contó que ayer también hiciste una pausa y seguiste intentando, incluso cuando atrapar se puso difícil. \n\n¡Lo estás haciendo muy bien, @data.characters.f3_hija_7.name!",
+      "character_2_text": "¡Sí! ¡Lo estás haciendo muy bien, @data.characters.f3_hija_7.name! Tu papá me contó que ayer también hiciste una pausa y seguiste intentando, incluso cuando atrapar se puso difícil.",
       "completed": false,
       "version": 1
     },
@@ -434,7 +434,7 @@
       "id": "practical_tips_1",
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "¡Ya viste cómo @data.characters.f3_madre.name usó las estrategias! 👀\n\nVamos a recordarlas una vez más para que identifiques emociones con @fields.child_name y le ayudes a expresarlas:"
+          "eng": "Recordemos las estrategias para identificar las emociones de @fields.child_name y ayudarle a expresarlas:"
         },
         "section_1_title": {
           "eng": "APRENDE"
@@ -475,7 +475,7 @@
       },
       "category_id": "practical_tips",
       "nested": false,
-      "text_1_facilitator": "¡Ya viste cómo @data.characters.f3_madre.name usó las estrategias! 👀\n\nVamos a recordarlas una vez más para que identifiques emociones con @fields.child_name y le ayudes a expresarlas:",
+      "text_1_facilitator": "Recordemos las estrategias para identificar las emociones de @fields.child_name y ayudarle a expresarlas:",
       "_translations": {
         "text_1_facilitator": {},
         "section_1_title": {},

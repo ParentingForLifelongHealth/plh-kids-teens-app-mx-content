@@ -136,7 +136,7 @@
       "character_1_id": "f2_padre",
       "character_2_id": "f2_hija_3",
       "nested": false,
-      "text_1_facilitator": "Vamos a ver estas estrategias en la práctica.",
+      "text_1_facilitator": "Aquí veremos un ejemplo de cómo @data.characters.f2_padre.name usa estas estrategias en la práctica:",
       "_translations": {
         "text_1_facilitator": {},
         "text_2": {},
@@ -145,10 +145,10 @@
       },
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "Vamos a ver estas estrategias en la práctica."
+          "eng": "Aquí veremos un ejemplo de cómo @data.characters.f2_padre.name usa estas estrategias en la práctica:"
         },
         "text_2": {
-          "eng": "Veamos cómo @data.characters.f2_padre.name se prepara para acordar la rutina del tiempo para conectar con @data.characters.f2_hija_3.name."
+          "eng": "@data.characters.f2_padre.name está disfrutando el tiempo para conectar con @data.characters.f2_hija_3.name y quiere convertirlo en parte de su rutina. Mira cómo se lo dice a su hija."
         },
         "character_1_text": {
           "eng": "Me encanta este tiempo para conectar contigo, @data.characters.f2_hija_3.name."
@@ -157,7 +157,7 @@
           "eng": "¡A mí también!"
         }
       },
-      "text_2": "Veamos cómo @data.characters.f2_padre.name se prepara para acordar la rutina del tiempo para conectar con @data.characters.f2_hija_3.name.",
+      "text_2": "@data.characters.f2_padre.name está disfrutando el tiempo para conectar con @data.characters.f2_hija_3.name y quiere convertirlo en parte de su rutina. Mira cómo se lo dice a su hija.",
       "character_1_text": "Me encanta este tiempo para conectar contigo, @data.characters.f2_hija_3.name.",
       "character_2_text": "¡A mí también!"
     },
@@ -169,7 +169,7 @@
       "character_2_id": "f2_hija_3",
       "character_3_id": "f2_padre",
       "nested": false,
-      "text_2": "Fíjate cómo acuerdan un horario juntos, para asegurarse de que podrán cumplirlo y ser constantes.",
+      "text_2": "Fíjate cómo @data.characters.f2_padre.name involucra a @data.characters.f2_hija_3.name para acordar un horario juntos. Así será más fácil ser constantes.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
@@ -178,7 +178,7 @@
       },
       "_translatedFields": {
         "text_2": {
-          "eng": "Fíjate cómo acuerdan un horario juntos, para asegurarse de que podrán cumplirlo y ser constantes."
+          "eng": "Fíjate cómo @data.characters.f2_padre.name involucra a @data.characters.f2_hija_3.name para acordar un horario juntos. Así será más fácil ser constantes."
         },
         "character_1_text": {
           "eng": "Me gustaría que pasemos un tiempo así todos los días. ¿A qué hora te gustaría?"
@@ -202,7 +202,7 @@
       "character_2_id": "f2_hija_3",
       "character_3_id": "f2_padre",
       "nested": false,
-      "text_2": "@data.characters.f2_padre.name le recuerda a @data.characters.f2_hija_3.name que ella puede elegir qué hacer en su tiempo para conectar.",
+      "text_2": "@data.characters.f2_padre.name le recuerda a @data.characters.f2_hija_3.name que el tiempo para conectar es un espacio donde ella puede elegir qué hacer.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
@@ -211,7 +211,7 @@
       },
       "_translatedFields": {
         "text_2": {
-          "eng": "@data.characters.f2_padre.name le recuerda a @data.characters.f2_hija_3.name que ella puede elegir qué hacer en su tiempo para conectar."
+          "eng": "@data.characters.f2_padre.name le recuerda a @data.characters.f2_hija_3.name que el tiempo para conectar es un espacio donde ella puede elegir qué hacer."
         },
         "character_1_text": {
           "eng": "@data.characters.f2_hija_3.name, vamos a recoger la mesa y guardar el rompecabezas."
@@ -234,7 +234,7 @@
       "section_2_icon_asset": "images/icons/clock_blue.png",
       "section_3_icon_asset": "images/icons/heart_filled_blue.png",
       "nested": false,
-      "text_1_facilitator": "¡Ya viste cómo @data.characters.f2_padre.name usó las estrategias!\n\nVamos a recordarlas una vez más para que puedas seguir creando rutinas con @fields.child_name:",
+      "text_1_facilitator": "Recordemos las estrategias para crear y seguir las rutinas con @fields.child_name:",
       "_translations": {
         "text_1_facilitator": {},
         "section_1_title": {},
@@ -247,7 +247,7 @@
       },
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "¡Ya viste cómo @data.characters.f2_padre.name usó las estrategias!\n\nVamos a recordarlas una vez más para que puedas seguir creando rutinas con @fields.child_name:"
+          "eng": "Recordemos las estrategias para crear y seguir las rutinas con @fields.child_name:"
         },
         "section_1_title": {
           "eng": "SÉ EQUIPO"

@@ -47,7 +47,7 @@
       "character_1_id": "f1_madre",
       "character_1_text::eng": "@data.characters.f1_hija_11.name, tu hermana está estudiando para un examen. Por favor, baja el volumen de la música y hablen más bajito esta próxima hora.",
       "character_2_id": "f1_hija_11",
-      "character_2_text::eng": "¡Pero tenemos que ensayar!"
+      "character_2_text::eng": "¡Pero estamos ensayando!"
     },
     {
       "id": "explore_3",
@@ -57,15 +57,17 @@
       "character_1_id": "f1_madre",
       "character_1_text::eng": "Lo entiendo, pero tu hermana necesita concentrarse. En cuanto termine de estudiar te aviso, para que puedas subir de nuevo el volumen.",
       "character_2_id": "f1_hija_11",
-      "character_2_text::eng": "Ya, ya le bajo."
+      "character_2_text::eng": "Ya, ya le bajo.",
+      "character_3_id": "f1_madre",
+      "character_3_text::eng": "¡Gracias, @data.characters.f1_hija_11.name! Será solo un rato."
     },
     {
       "id": "explore_4",
       "category_id": "explore",
       "image_asset": "images/comic/behave/keep_positive_t_3.svg",
-      "text_2::eng": "@data.characters.f1_madre.name se acuerda de reconocer a @data.characters.f1_hija_11.name por seguir sus instrucciones.",
+      "text_2::eng": "Unos minutos después, @data.characters.f1_madre.name reconoce a @data.characters.f1_hija_11.name por seguir sus instrucciones.",
       "character_1_id": "f1_madre",
-      "character_1_text::eng": "¡Gracias por bajar el volumen! Tu hermana también lo va a apreciar. Te aviso cuando ya puedas volver a subirlo.",
+      "character_1_text::eng": "¡Gracias por bajar el volumen! Le va a ayudar mucho a estudiar a tu hermana. Te aviso cuando ya puedas volver a subirlo.",
       "character_2_id": "f1_hija_11",
       "character_2_text::eng": "Está bien, ma, gracias."
     },
@@ -75,11 +77,11 @@
       "image_asset": "images/comic/behave/keep_positive_t_4.svg",
       "text_2::eng": "Más tarde, @data.characters.f1_madre.name también cumple con lo que le dijo a @data.characters.f1_hija_11.name y le indica que ya puede subir el volumen.",
       "character_1_id": "f1_madre",
-      "character_1_text::eng": "¡Listo, @data.characters.f1_hija_11.name! @data.characters.f1_hija_16.name ya acabó y ya puedes volver al volumen que tenías.",
+      "character_1_text::eng": "¡Listo, @data.characters.f1_hija_11.name! Ya pueden volver al volumen que tenían.",
       "character_2_id": "f1_hija_11",
-      "character_2_text::eng": "¡Síii!",
+      "character_2_text::eng": "¡Sííí!",
       "character_3_id": "f1_hija_16",
-      "character_3_text::eng": "¡Les está quedando increíble! ¿Me invitan?"
+      "character_3_text::eng": "Gracias por haber bajado el volumen este rato. ¿Me invitan a su ensayo?"
     },
     {
       "id": "practical_tips_1",

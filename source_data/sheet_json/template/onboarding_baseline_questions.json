@@ -84,7 +84,7 @@
     {
       "type": "begin_display_group",
       "name": "page_success",
-      "parameter_list": "style: column;\nsticky: top;",
+      "parameter_list": "style: column;",
       "condition": "@local.show_success_page",
       "style_list": "background-color: @global.onboarding_completed_background_colour;\nheight: 100vh;\noverflow: scroll;\npadding: 24px;"
     },
