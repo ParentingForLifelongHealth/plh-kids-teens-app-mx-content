@@ -47,6 +47,11 @@
         "value": {}
       },
       "condition": "!!@global.onboarding_data_consent_image_asset",
+      "style_list": [
+        "width: 96px",
+        "margin-left: auto",
+        "margin-right: auto"
+      ],
       "_nested_name": "image",
       "_dynamicFields": {
         "value": [
@@ -114,7 +119,11 @@
             "align": "left"
           },
           "style_list": [
-            "margin-top: -0.75em"
+            "flex: none",
+            "align-self: flex-start",
+            "width: 40px",
+            "margin-top: -0.5em",
+            "--checkbox-size: 28px"
           ],
           "_nested_name": "dg_onboarding_data_consent_impact.onboarding_data_consent_impact"
         },
@@ -125,6 +134,9 @@
           "_translations": {
             "value": {}
           },
+          "style_list": [
+            "font-size: var(--font-size-text-small)"
+          ],
           "_nested_name": "dg_onboarding_data_consent_impact.text_onboarding_data_consent_impact",
           "_dynamicFields": {
             "value": [
@@ -157,7 +169,11 @@
             "align": "left"
           },
           "style_list": [
-            "margin-top: -0.75em"
+            "flex: none",
+            "align-self: flex-start",
+            "width: 40px",
+            "margin-top: -0.5em",
+            "--checkbox-size: 28px"
           ],
           "_nested_name": "dg_onboarding_data_consent_personalisation.onboarding_data_consent_personalisation"
         },
@@ -168,6 +184,9 @@
           "_translations": {
             "value": {}
           },
+          "style_list": [
+            "font-size: var(--font-size-text-small)"
+          ],
           "_nested_name": "dg_onboarding_data_consent_personalisation.text_onboarding_data_consent_personalisation",
           "_dynamicFields": {
             "value": [

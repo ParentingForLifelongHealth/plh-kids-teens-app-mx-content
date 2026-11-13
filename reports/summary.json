@@ -63,15 +63,19 @@
       },
       {
         "type": "image",
-        "count": 28
+        "count": 29
       },
       {
         "type": "items",
         "count": 16
       },
       {
+        "type": "lottie (lottie_animation)",
+        "count": 1
+      },
+      {
         "type": "lottie_animation",
-        "count": 10
+        "count": 9
       },
       {
         "type": "nested_properties",
@@ -147,7 +151,7 @@
       },
       {
         "type": "set_variable",
-        "count": 5127
+        "count": 5129
       },
       {
         "type": "simple_checkbox",
@@ -335,13 +339,13 @@
     "data": [
       {
         "assets": "total",
-        "KB": "18948 KB",
-        "MB": "18.9 MB"
+        "KB": "18353 KB",
+        "MB": "18.4 MB"
       },
       {
         "assets": "unused",
-        "KB": "380014 KB",
-        "MB": "380 MB"
+        "KB": "380478 KB",
+        "MB": "380.5 MB"
       }
     ]
   },
@@ -776,6 +780,10 @@
         "size_kb": 1346.3
       },
       {
+        "path": "images/backgrounds/kites.svg",
+        "size_kb": 92.1
+      },
+      {
         "path": "images/backgrounds/library_top_right.svg",
         "size_kb": 17.5
       },
@@ -794,26 +802,6 @@
       {
         "path": "images/badges/badge_8.svg",
         "size_kb": 27.4
-      },
-      {
-        "path": "images/comic/relation/calm/calm_yc_mc_1.svg",
-        "size_kb": 28.7
-      },
-      {
-        "path": "images/comic/relation/calm/calm_yc_mc_2.svg",
-        "size_kb": 72.1
-      },
-      {
-        "path": "images/comic/relation/calm/calm_yc_mc_3.svg",
-        "size_kb": 8.5
-      },
-      {
-        "path": "images/comic/relation/calm/calm_yc_mc_4.svg",
-        "size_kb": 33.9
-      },
-      {
-        "path": "images/comic/relation/calm/calm_yc_mc_5.svg",
-        "size_kb": 28.1
       },
       {
         "path": "images/comic/safety/crisis/crises_2to6_yc_1.svg",
@@ -1222,6 +1210,22 @@
       {
         "path": "images/logos/icon-foreground.png",
         "size_kb": 86.2
+      },
+      {
+        "path": "images/rewards/reward_1_abuelos.webp",
+        "size_kb": 117.7
+      },
+      {
+        "path": "images/rewards/reward_2_familia_amarilla.webp",
+        "size_kb": 144.6
+      },
+      {
+        "path": "images/rewards/reward_3_familia_naranja.webp",
+        "size_kb": 149.2
+      },
+      {
+        "path": "images/rewards/reward_4_familia_turquesa.webp",
+        "size_kb": 131.8
       },
       {
         "path": "lottie/ux/bulging_circles.txt",
@@ -1957,31 +1961,6 @@
         "missing": true
       },
       {
-        "path": "images/comic/relation/calm_yc_mc_1.svg",
-        "count": 2,
-        "missing": true
-      },
-      {
-        "path": "images/comic/relation/calm_yc_mc_2.svg",
-        "count": 2,
-        "missing": true
-      },
-      {
-        "path": "images/comic/relation/calm_yc_mc_3.svg",
-        "count": 2,
-        "missing": true
-      },
-      {
-        "path": "images/comic/relation/calm_yc_mc_4.svg",
-        "count": 2,
-        "missing": true
-      },
-      {
-        "path": "images/comic/relation/calm_yc_mc_5.svg",
-        "count": 2,
-        "missing": true
-      },
-      {
         "path": "images/comic/relation/thoughts_feelings_1.svg",
         "count": 4,
         "missing": true
@@ -2452,6 +2431,11 @@
         "missing": true
       },
       {
+        "path": "images/rewards/reward_1_abuelos.webp; images/rewards/reward_2_familia_amarilla.webp; images/rewards/reward_3_familia_naranja.webp; images/rewards/reward_4_familia_turquesa.webp",
+        "count": 1,
+        "missing": true
+      },
+      {
         "path": "lottie/bulging_circles.json",
         "count": 1,
         "missing": true
@@ -2469,11 +2453,6 @@
         "path": "images/backgrounds/complete_module.svg",
         "count": 1,
         "size_kb": 30.6
-      },
-      {
-        "path": "images/backgrounds/kites.svg",
-        "count": 1,
-        "size_kb": 92.1
       },
       {
         "path": "images/backgrounds/lesson-cta-bg.svg",
@@ -2702,13 +2681,38 @@
       },
       {
         "path": "images/comic/relation/calm/calm_yc_fc_4.svg",
-        "count": 2,
+        "count": 4,
         "size_kb": 32.6
       },
       {
         "path": "images/comic/relation/calm/calm_yc_fc_5.svg",
         "count": 2,
         "size_kb": 27.8
+      },
+      {
+        "path": "images/comic/relation/calm/calm_yc_mc_1.svg",
+        "count": 2,
+        "size_kb": 28.7
+      },
+      {
+        "path": "images/comic/relation/calm/calm_yc_mc_2.svg",
+        "count": 2,
+        "size_kb": 72.1
+      },
+      {
+        "path": "images/comic/relation/calm/calm_yc_mc_3.svg",
+        "count": 2,
+        "size_kb": 8.5
+      },
+      {
+        "path": "images/comic/relation/calm/calm_yc_mc_4.svg",
+        "count": 4,
+        "size_kb": 33.9
+      },
+      {
+        "path": "images/comic/relation/calm/calm_yc_mc_5.svg",
+        "count": 2,
+        "size_kb": 28.1
       },
       {
         "path": "images/comic/relation/give_praise/give_praise_t_fc_1.svg",
@@ -3444,11 +3448,6 @@
         "path": "lottie/ux/congrats.json",
         "count": 1,
         "size_kb": 55.2
-      },
-      {
-        "path": "lottie/ux/gift_box.json",
-        "count": 1,
-        "size_kb": 674.5
       }
     ]
   },

@@ -52,14 +52,98 @@
       }
     },
     {
+      "name": "reward_assets",
+      "value": "@global.unlock_play_animation_assets.split(\";\").map((v) => v.trim()).filter((v) => v)",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "!!(@global.unlock_play_animation_assets)",
+      "type": "set_variable",
+      "_nested_name": "reward_assets",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@global.unlock_play_animation_assets.split(\";\").map((v) => v.trim()).filter((v) => v)",
+            "matchedExpression": "@global.unlock_play_animation_assets.split",
+            "type": "global",
+            "fieldName": "unlock_play_animation_assets"
+          }
+        ],
+        "condition": [
+          {
+            "fullExpression": "!!(@global.unlock_play_animation_assets)",
+            "matchedExpression": "@global.unlock_play_animation_assets",
+            "type": "global",
+            "fieldName": "unlock_play_animation_assets"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@global.unlock_play_animation_assets.split": [
+          "value"
+        ],
+        "@global.unlock_play_animation_assets": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "name": "reward_asset",
+      "value": "@local.reward_assets[String(@local.activity_id).split(\"\").reduce((sum, c) => sum + c.charCodeAt(0), 0) % @local.reward_assets.length]",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "!!(@global.unlock_play_animation_assets)",
+      "type": "set_variable",
+      "_nested_name": "reward_asset",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.reward_assets[String(@local.activity_id).split(\"\").reduce((sum, c) => sum + c.charCodeAt(0), 0) % @local.reward_assets.length]",
+            "matchedExpression": "@local.reward_assets",
+            "type": "local",
+            "fieldName": "reward_assets"
+          },
+          {
+            "fullExpression": "@local.reward_assets[String(@local.activity_id).split(\"\").reduce((sum, c) => sum + c.charCodeAt(0), 0) % @local.reward_assets.length]",
+            "matchedExpression": "@local.activity_id",
+            "type": "local",
+            "fieldName": "activity_id"
+          },
+          {
+            "fullExpression": "@local.reward_assets[String(@local.activity_id).split(\"\").reduce((sum, c) => sum + c.charCodeAt(0), 0) % @local.reward_assets.length]",
+            "matchedExpression": "@local.reward_assets.length",
+            "type": "local",
+            "fieldName": "reward_assets"
+          }
+        ],
+        "condition": [
+          {
+            "fullExpression": "!!(@global.unlock_play_animation_assets)",
+            "matchedExpression": "@global.unlock_play_animation_assets",
+            "type": "global",
+            "fieldName": "unlock_play_animation_assets"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.reward_assets": [
+          "value"
+        ],
+        "@local.activity_id": [
+          "value"
+        ],
+        "@local.reward_assets.length": [
+          "value"
+        ],
+        "@global.unlock_play_animation_assets": [
+          "condition"
+        ]
+      }
+    },
+    {
       "type": "display_group",
       "name": "dg_bg",
-      "parameter_list": {
-        "background_image_asset": "images/backgrounds/kites.svg"
-      },
-      "style_list": [
-        "width: 100%"
-      ],
       "exclude_from_translation": true,
       "rows": [
         {
@@ -71,14 +155,94 @@
           "exclude_from_translation": true,
           "rows": [
             {
-              "type": "lottie_animation",
-              "name": "lottie",
-              "value": "lottie/ux/gift_box.json",
+              "type": "lottie (lottie_animation)",
+              "name": "reward_lottie",
+              "value": "@local.reward_asset",
               "_translations": {
                 "value": {}
               },
-              "exclude_from_translation": true,
-              "_nested_name": "dg_bg.dg_column.lottie"
+              "condition": "!!(@global.unlock_play_animation_assets) && @local.reward_asset.endsWith(\".json\")",
+              "_nested_name": "dg_bg.dg_column.reward_lottie",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@local.reward_asset",
+                    "matchedExpression": "@local.reward_asset",
+                    "type": "local",
+                    "fieldName": "reward_asset"
+                  }
+                ],
+                "condition": [
+                  {
+                    "fullExpression": "!!(@global.unlock_play_animation_assets) && @local.reward_asset.endsWith(\".json\")",
+                    "matchedExpression": "@global.unlock_play_animation_assets",
+                    "type": "global",
+                    "fieldName": "unlock_play_animation_assets"
+                  },
+                  {
+                    "fullExpression": "!!(@global.unlock_play_animation_assets) && @local.reward_asset.endsWith(\".json\")",
+                    "matchedExpression": "@local.reward_asset.endsWith",
+                    "type": "local",
+                    "fieldName": "reward_asset"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.reward_asset": [
+                  "value"
+                ],
+                "@global.unlock_play_animation_assets": [
+                  "condition"
+                ],
+                "@local.reward_asset.endsWith": [
+                  "condition"
+                ]
+              }
+            },
+            {
+              "type": "image",
+              "name": "reward_image",
+              "value": "@local.reward_asset",
+              "_translations": {
+                "value": {}
+              },
+              "condition": "!!(@global.unlock_play_animation_assets) && !@local.reward_asset.endsWith(\".json\")",
+              "_nested_name": "dg_bg.dg_column.reward_image",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@local.reward_asset",
+                    "matchedExpression": "@local.reward_asset",
+                    "type": "local",
+                    "fieldName": "reward_asset"
+                  }
+                ],
+                "condition": [
+                  {
+                    "fullExpression": "!!(@global.unlock_play_animation_assets) && !@local.reward_asset.endsWith(\".json\")",
+                    "matchedExpression": "@global.unlock_play_animation_assets",
+                    "type": "global",
+                    "fieldName": "unlock_play_animation_assets"
+                  },
+                  {
+                    "fullExpression": "!!(@global.unlock_play_animation_assets) && !@local.reward_asset.endsWith(\".json\")",
+                    "matchedExpression": "!@local.reward_asset.endsWith",
+                    "type": "local",
+                    "fieldName": "reward_asset"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.reward_asset": [
+                  "value"
+                ],
+                "@global.unlock_play_animation_assets": [
+                  "condition"
+                ],
+                "!@local.reward_asset.endsWith": [
+                  "condition"
+                ]
+              }
             },
             {
               "type": "title",
@@ -204,6 +368,9 @@
                   }
                 }
               ],
+              "parameter_list": {
+                "style": "navigation"
+              },
               "exclude_from_translation": true,
               "_nested_name": "dg_bg.dg_column.button",
               "_dynamicFields": {

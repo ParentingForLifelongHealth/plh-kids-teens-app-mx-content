@@ -13,7 +13,8 @@
       "type": "image",
       "name": "image",
       "value": "@global.onboarding_data_consent_image_asset",
-      "condition": "!!@global.onboarding_data_consent_image_asset"
+      "condition": "!!@global.onboarding_data_consent_image_asset",
+      "style_list": "width: 96px; margin-left: auto; margin-right: auto"
     },
     {
       "type": "text",
@@ -30,12 +31,13 @@
       "name": "onboarding_data_consent_impact",
       "value": false,
       "parameter_list": "align: left",
-      "style_list": "margin-top: -0.75em"
+      "style_list": "flex: none; align-self: flex-start; width: 40px; margin-top: -0.5em; --checkbox-size: 28px"
     },
     {
       "type": "text",
       "name": "text_onboarding_data_consent_impact",
-      "value": "@global.onboarding_data_consent_impact_text"
+      "value": "@global.onboarding_data_consent_impact_text",
+      "style_list": "font-size: var(--font-size-text-small)"
     },
     {
       "type": "end_display_group"
@@ -49,12 +51,13 @@
       "name": "onboarding_data_consent_personalisation",
       "value": false,
       "parameter_list": "align: left",
-      "style_list": "margin-top: -0.75em"
+      "style_list": "flex: none; align-self: flex-start; width: 40px; margin-top: -0.5em; --checkbox-size: 28px"
     },
     {
       "type": "text",
       "name": "text_onboarding_data_consent_personalisation",
-      "value": "@global.onboarding_data_consent_personalisation_text"
+      "value": "@global.onboarding_data_consent_personalisation_text",
+      "style_list": "font-size: var(--font-size-text-small)"
     },
     {
       "type": "end_display_group"
