@@ -168,9 +168,8 @@
       "type": "button",
       "name": "text",
       "value": "@fields._content_version (@fields._app_version)",
-      "parameter_list": "variant: card; style: card;",
+      "parameter_list": "variant: card; style: card;\ntext_align: left;",
       "action_list": "click | go_to: settings_app_menu;",
-      "style_list": "text_align: left;",
       "exclude_from_translation": true
     }
   ]
