@@ -37,7 +37,7 @@
     {
       "type": "declare_global_constant",
       "name": "goal_reflection_question",
-      "value": "Cuéntame más sobre cómo va."
+      "value": "Cuéntame más sobre cómo te ha ido"
     },
     {
       "type": "declare_global_constant",
@@ -47,12 +47,12 @@
     {
       "type": "declare_global_constant",
       "name": "goal_reflection_skip",
-      "value": "Puedes omitir esto. Toca la flecha para continuar."
+      "value": "Puedes saltarte esto. Toca la flecha para continuar."
     },
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_progress_intro",
-      "value": "¡Gracias! Así es como ha ido en las últimas semanas:"
+      "value": "¡Gracias! Así es como te ha ido en las últimas semanas:"
     },
     {
       "type": "declare_global_constant",
@@ -62,7 +62,7 @@
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_cta_title",
-      "value": "Veamos cómo vas"
+      "value": "Veamos cómo has avanzado"
     },
     {
       "type": "declare_global_constant",
@@ -101,32 +101,32 @@
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_checkin_intro",
-      "value": "¡Felicidades por llegar hasta aquí en el programa!\n\nCuando empezaste, compartiste:\n\nTu reto: \"@fields.selected_challenge_value\"\n\nTu meta: \"@fields.selected_goal_value\"\n\n¡Veamos cómo han ido las cosas!"
+      "value": "¡Felicidades por llegar hasta aquí!\n\nCuando empezaste, compartiste que tu reto es: \"@fields.selected_challenge_value\"\n\nY elegiste como meta: \"@fields.selected_goal_value\"\n\n¡Veamos cómo han ido las cosas!"
     },
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_checkin_intro_no_goal",
-      "value": "¡Felicidades por llegar hasta aquí en el programa!\n\nCuando empezaste, compartiste:\n\nTu reto: \"@fields.selected_challenge_value\"\n\n¡Veamos cómo han ido las cosas!"
+      "value": "¡Felicidades por llegar hasta aquí!\n\nCuando empezaste, compartiste que tu reto es: \"@fields.selected_challenge_value\"\n\n¡Veamos cómo han ido las cosas!"
     },
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_checkin_intro_no_goal_no_chall",
-      "value": "¡Felicidades por llegar hasta aquí en el programa!\n\n¡Veamos cómo han ido las cosas!"
+      "value": "¡Felicidades por llegar hasta aquí!\n\nVeamos cómo han ido las cosas."
     },
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_checkin_intro_post",
-      "value": "¡Felicidades por completar el programa!\n\nCuando empezaste, compartiste:\n\nTu reto: \"@fields.selected_challenge_value\"\n\nTu meta: \"@fields.selected_goal_value\"\n\n¡Veamos cómo han ido las cosas!"
+      "value": "¡Felicidades por completar el programa!\n\nCuando empezaste, compartiste que tu reto era: \"@fields.selected_challenge_value\"\n\nY elegiste como meta: \"@fields.selected_goal_value\"\n\n¡Veamos cómo te fue!"
     },
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_checkin_intro_no_goal_post",
-      "value": "¡Felicidades por completar el programa!\n\nCuando empezaste, compartiste:\n\nTu reto: \"@fields.selected_challenge_value\"\n\n¡Veamos cómo han ido las cosas!"
+      "value": "¡Felicidades por completar el programa!\n\nCuando empezaste, compartiste que tu reto era: \"@fields.selected_challenge_value\"\n\n¡Veamos cómo te fue!"
     },
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_checkin_intro_no_goal_no_chall_post",
-      "value": "¡Felicidades por completar el programa!\n\n¡Veamos cómo han ido las cosas!"
+      "value": "¡Felicidades por completar el programa!\n\nVeamos cómo te fue."
     },
     {
       "type": "declare_global_constant",
@@ -136,7 +136,7 @@
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_summary_text",
-      "value": "Tu cuidado y atención tienen un impacto duradero en @fields.child_name."
+      "value": "Lo que haces cada día para cuidar y acompañar a @fields.child_name deja huella en su vida."
     },
     {
       "type": "declare_global_constant",
