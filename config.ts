@@ -4,7 +4,7 @@ const config = generateDeploymentConfig("plh_kids_teens_mx");
 
 config.git = {
   content_repo: "https://github.com/ParentingForLifelongHealth/plh-kids-teens-app-mx-content.git",
-  content_tag_latest: "1.3.1",
+  content_tag_latest: "1.3.2",
 };
 
 config.google_drive.sheets_folders = [
@@ -104,7 +104,7 @@ config.app_config.NOTIFICATION_DEFAULTS.title = "Nuevo mensaje de Crianza+";
 config.app_config.NOTIFICATION_DEFAULTS.text = "Tienes un nuevo mensaje de Crianza+";
 config.app_config.APP_THEMES.available = ["plh_kids_teens_mx"];
 config.app_config.APP_THEMES.defaultThemeName = "plh_kids_teens_mx";
-config.error_logging = { dsn: "https://17df9395def549e7835dfac8225d53e1@app.glitchtip.com/14124" };
+config.error_logging = { dsn: "https://37847bcb5ee0436ca87238ad300f9b6c@app.glitchtip.com/29863" };
 
 
 export default config;
