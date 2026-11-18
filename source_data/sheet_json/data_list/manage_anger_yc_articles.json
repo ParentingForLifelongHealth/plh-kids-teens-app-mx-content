@@ -13,12 +13,12 @@
     {
       "id": "intro_1",
       "category_id": "intro",
-      "text_1_facilitator::eng": "Esta sesión trata sobre cómo responder a @fields.child_name cuando estás en **una situación que te hace sentir enojo**.\n\n\nEs natural y válido sentir enojo cuando algo no sale como esperabas. Sin embargo, cuando se sale de control puede llevarnos a actuar de formas que nos dañen o dañen a los demás. ❤️‍🩹"
+      "text_1_facilitator::eng": "Este módulo trata sobre **cómo responder** a @fields.child_name cuando estás en **una situación que te hace sentir enojo**.\n\n\nEs válido sentir enojo cuando algo no sale como esperamos. Sin embargo, si se sale de control puede llevarnos a actuar de formas que nos dañen o dañen a los demás. ❤️‍🩹"
     },
     {
       "id": "intro_2",
       "category_id": "intro",
-      "text_1_facilitator::eng": "Aquí explorarás cómo reconocer tu enojo y aprender a regularlo, para tomar mejores decisiones y cuidar de ti y de tu familia. 😊"
+      "text_1_facilitator::eng": "Aquí exploraremos cómo reconocer tu enojo y aprender a regularlo, para tomar mejores decisiones y cuidar de ti y de tu familia. 😊"
     },
     {
       "id": "intro_3",
@@ -36,9 +36,9 @@
       "text_1_facilitator::eng": "¡Una pregunta más!",
       "quiz_1_question::eng": "Verdadero o falso: @fields.child_name no debería enojarse conmigo.",
       "quiz_1_option_1_text::eng": "Verdadero",
-      "quiz_1_feedback_1::eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\n@fields.child_name también puede sentir enojo. \n\nCuando lo exprese, en vez de regañarle, toma una pausa, mantén la calma y ayúdale a regular sus emociones. Ver cómo lo haces tú puede enseñarle cómo lidiar con su propio enojo.",
+      "quiz_1_feedback_1::eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\n@fields.child_name también puede sentir enojo. Cuando lo exprese, en vez de regañarle, toma una pausa, mantén la calma y ayúdale a regular sus emociones. \n\nVer cómo lo haces tú puede enseñarle cómo lidiar con su propio enojo.",
       "quiz_1_option_2_text::eng": "Falso",
-      "quiz_1_feedback_2::eng": "🎉 ¡Tienes razón!\n\n@fields.child_name también puede sentir enojo. \n\nCuando lo exprese, en vez de regañarle, toma una pausa, mantén la calma y ayúdale a regular sus emociones. Ver cómo lo haces tú puede enseñarle cómo lidiar con su propio enojo."
+      "quiz_1_feedback_2::eng": "🎉 ¡Tienes razón!\n\n@fields.child_name también puede sentir enojo. Cuando lo exprese, en vez de regañarle, toma una pausa, mantén la calma y ayúdale a regular sus emociones. \n\nVer cómo lo haces tú puede enseñarle cómo lidiar con su propio enojo."
     },
     {
       "id": "explore_1",
@@ -51,8 +51,8 @@
     {
       "id": "explore_2",
       "category_id": "explore",
-      "text_1_facilitator::eng": "¡Vamos a ver estas estrategias en la práctica!",
-      "image_asset": "images/comic/behave/manage_anger_yc_1.svg",
+      "text_1_facilitator::eng": "Veamos cómo @data.characters.f2_padre.name usa estas estrategias en la práctica:",
+      "image_asset": "images/comic/behave/manage_anger/manage_anger_yc_1.svg",
       "text_2::eng": "@data.characters.f2_padre.name está enfrentando una situación difícil con su hijo @data.characters.f2_hijo_8.name.",
       "character_1_id": "f2_padre",
       "character_1_text::eng": "(pensando) ¡No puede ser! ¿Cuántas veces tengo que decirle que juegue con su pelota afuera? ¡Y ahora rompió una ventana! ¡Ahorita se va a enterar!"
@@ -60,18 +60,18 @@
     {
       "id": "explore_3",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/manage_anger_yc_2.svg",
+      "image_asset": "images/comic/behave/manage_anger/manage_anger_yc_2.svg",
       "text_2::eng": "Mira cómo @data.characters.f2_padre.name identifica su enojo y hace una pausa antes de reaccionar.",
       "character_1_id": "f2_padre",
-      "character_1_text::eng": "(Pensando) Siento el corazón acelerado y calor en mi cara. Estoy muy enojado. Ahora tengo que recoger el vidrio y ver cómo arreglar la ventana. A ver cómo le hago…",
+      "character_1_text::eng": "(Pensando) Siento el corazón acelerado y calor en mi cara. Estoy muy enojado. Ahora tengo que recoger el vidrio y ver cómo le hago para arreglar la ventana...",
       "character_2_id": "f2_padre",
-      "character_2_text::eng": "Pero necesito hacer una pausa y respirar profundo primero. Lo más importante ahorita es revisar que @data.characters.f2_hijo_8.name no se haya lastimado."
+      "character_2_text::eng": "Necesito hacer una pausa y respirar profundo primero. Lo más importante ahorita es revisar que @data.characters.f2_hijo_8.name no se haya lastimado."
     },
     {
       "id": "explore_4",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/manage_anger_yc_3.svg",
-      "text_2::eng": "Antes de pensar en la ventana, @data.characters.f2_padre.name trata de comprender qué necesita @data.characters.f2_hijo_8.name y qué necesita él en ese momento.",
+      "image_asset": "images/comic/behave/manage_anger/manage_anger_yc_3.svg",
+      "text_2::eng": "Fíjate cómo @data.characters.f2_padre.name trata de comprender qué necesita @data.characters.f2_hijo_8.name y qué necesita él en ese momento.",
       "character_1_id": "f2_hijo_8",
       "character_1_text::eng": "¡Papá... perdón!",
       "character_2_id": "f2_padre",
@@ -80,7 +80,7 @@
     {
       "id": "explore_5",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/manage_anger_yc_4.svg",
+      "image_asset": "images/comic/behave/manage_anger/manage_anger_yc_4.svg",
       "text_2::eng": "Después de tomar una breve pausa, @data.characters.f2_padre.name se siente más tranquilo para enfrentar la situación.",
       "character_1_id": "f2_padre",
       "character_1_text::eng": "(Pensando) Ahora me siento más tranquilo. Sigo preocupado porque hay que resolver lo de la ventana, pero ya puedo pensar con claridad y manejar las cosas con calma."
@@ -88,19 +88,28 @@
     {
       "id": "explore_6",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/manage_anger_yc_5.svg",
-      "text_2::eng": "Fíjate cómo @data.characters.f2_padre.name le explica a @data.characters.f2_hijo_8.name cómo se sintió y le escucha con calma.",
+      "image_asset": "images/comic/behave/manage_anger/manage_anger_yc_5.svg",
+      "text_2::eng": "Así, @data.characters.f2_padre.name puede responder con calma, explicarle a @data.characters.f2_hijo_8.name cómo se sintió y escucharlo también.",
       "character_1_id": "f2_padre",
       "character_1_text::eng": "@data.characters.f2_hijo_8.name, esto me molestó mucho. Ya habíamos hablado sobre jugar con la pelota solamente fuera de la casa, pudiste haberte lastimado.",
       "character_2_id": "f2_hijo_8",
-      "character_2_text::eng": "De verdad, perdón, papá. Ya voy a jugar con la pelota afuera. ¿Te ayudo a limpiar?",
+      "character_2_text::eng": "De verdad, perdón, papá. Ya voy a jugar con la pelota afuera.",
       "character_3_id": "f2_padre",
-      "character_3_text::eng": "¡Gracias, @data.characters.f2_hijo_8.name! Qué bueno que no te lastimaste y que ahora vas a jugar afuera. Todos podemos aprender de los errores. \n\nYo voy a limpiar los vidrios porque pueden lastimarte. Después, podemos pensar cómo reparar la ventana y cómo puedes ayudarme de forma segura."
+      "character_3_text::eng": "¡Gracias por disculparte @data.characters.f2_hijo_8.name! Qué bueno que no te lastimaste y que ahora vas a jugar afuera. Todos podemos cometer errores y también podemos aprender de ellos."
+    },
+    {
+      "id": "explore_7",
+      "category_id": "explore",
+      "image_asset": "images/comic/behave/manage_anger/manage_anger_yc_5.svg",
+      "character_1_id": "f2_hijo_8",
+      "character_1_text::eng": "¡Sí, papá! ¿Te ayudo a limpiar?",
+      "character_2_id": "f2_padre",
+      "character_2_text::eng": "Yo voy a limpiar los vidrios porque pueden lastimarte. Después, vamos a pensar cómo reparar la ventana y cómo puedes ayudarme de forma segura."
     },
     {
       "id": "practical_tips_1",
       "category_id": "practical_tips",
-      "text_1_facilitator::eng": "Ya viste cómo @data.characters.f2_padre.name usó las estrategias.\n\n\nVamos a recordarlas una vez más para que puedas reconocer tu enojo y regularlo mejor:",
+      "text_1_facilitator::eng": "Recordemos las estrategias para reconocer tu enojo y regularlo mejor.⭐",
       "section_1_title::eng": "IDENTIFICA",
       "section_1_text::eng": "Nota cómo se siente el enojo en tu cuerpo: el corazón acelerado, músculos tensos o la cara caliente. Identificar estas señales es el primer paso para responder mejor.",
       "section_2_title::eng": "PAUSA",
@@ -121,7 +130,7 @@
       "quiz_1_option_2_text::eng": "Lo intentaré",
       "quiz_1_feedback_2::eng": "¡Está bien! Lo que importa es empezar. 🙌\n\nComparte lo que aprendiste sobre el enojo con @fields.child_name y con las personas con quienes compartes la crianza, ¡les puede servir también!",
       "quiz_1_option_3_text::eng": "No",
-      "quiz_1_feedback_3::eng": "¡Lo entiendo! Hacer cosas nuevas puede ser difícil al principio. 😊\n\nPuedes empezar por intentar recordar las estrategias de esta sesión la próxima vez que sientas que el enojo empieza a crecer."
+      "quiz_1_feedback_3::eng": "¡Lo entiendo! Hacer cosas nuevas puede ser difícil al principio. 💚\n\nPuedes empezar por intentar recordar las estrategias de este módulo la próxima vez que sientas que el enojo empieza a crecer."
     }
   ]
 }

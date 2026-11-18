@@ -10,13 +10,13 @@
       "id": "intro_1",
       "category_id": "intro",
       "nested": false,
-      "text_1_facilitator": "Esta sesión trata sobre cómo **establecer reglas o acuerdos** junto con @fields.child_name.\n\n\nTal vez ahora acostumbras poner las reglas de casa por tu cuenta. Pero dejar que @fields.child_name participe en su creación puede contribuir a que sienta más seguridad y protección. 🤝",
+      "text_1_facilitator": "Este módulo trata sobre cómo **establecer reglas o acuerdos** junto con @fields.child_name.\n\n\nTal vez ahora acostumbras poner las reglas de casa por tu cuenta. Pero dejar que @fields.child_name participe en su creación puede contribuir a que sienta más seguridad y protección. 🤝",
       "_translations": {
         "text_1_facilitator": {}
       },
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "Esta sesión trata sobre cómo **establecer reglas o acuerdos** junto con @fields.child_name.\n\n\nTal vez ahora acostumbras poner las reglas de casa por tu cuenta. Pero dejar que @fields.child_name participe en su creación puede contribuir a que sienta más seguridad y protección. 🤝"
+          "eng": "Este módulo trata sobre cómo **establecer reglas o acuerdos** junto con @fields.child_name.\n\n\nTal vez ahora acostumbras poner las reglas de casa por tu cuenta. Pero dejar que @fields.child_name participe en su creación puede contribuir a que sienta más seguridad y protección. 🤝"
         }
       }
     },
@@ -169,12 +169,12 @@
     {
       "id": "explore_2",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/family_rules_yc_1.svg",
+      "image_asset": "images/comic/behave/family_rules/family_rules_yc_1.svg",
       "character_1_id": "f1_madre",
       "character_2_id": "f1_hijo_5",
       "character_3_id": "f1_madre",
       "nested": false,
-      "text_1_facilitator": "¡Vamos a ver estas estrategias en la práctica!",
+      "text_1_facilitator": "Veamos cómo @data.characters.f1_madre.name usa estas estrategias en la práctica:",
       "_translations": {
         "text_1_facilitator": {},
         "text_2": {},
@@ -184,10 +184,10 @@
       },
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "¡Vamos a ver estas estrategias en la práctica!"
+          "eng": "Veamos cómo @data.characters.f1_madre.name usa estas estrategias en la práctica:"
         },
         "text_2": {
-          "eng": "@data.characters.f1_madre.name quiere acordar con @data.characters.f1_hijo_5.name una regla sobre su tiempo de pantallas."
+          "eng": "@data.characters.f1_madre.name quiere acordar una regla sobre el tiempo de pantallas con su hijo @data.characters.f1_hijo_5.name."
         },
         "character_1_text": {
           "eng": "Oye, @data.characters.f1_hijo_5.name, últimamente pasas mucho tiempo viendo la tele y me gustaría que acordemos una regla sobre eso."
@@ -199,7 +199,7 @@
           "eng": "Sí podrás verla, pero vamos a poner un límite para asegurar que hagas tu tarea a tiempo y te vaya bien en la escuela."
         }
       },
-      "text_2": "@data.characters.f1_madre.name quiere acordar con @data.characters.f1_hijo_5.name una regla sobre su tiempo de pantallas.",
+      "text_2": "@data.characters.f1_madre.name quiere acordar una regla sobre el tiempo de pantallas con su hijo @data.characters.f1_hijo_5.name.",
       "character_1_text": "Oye, @data.characters.f1_hijo_5.name, últimamente pasas mucho tiempo viendo la tele y me gustaría que acordemos una regla sobre eso.",
       "character_2_text": "¡Pero yo quiero ver la tele!",
       "character_3_text": "Sí podrás verla, pero vamos a poner un límite para asegurar que hagas tu tarea a tiempo y te vaya bien en la escuela."
@@ -207,7 +207,7 @@
     {
       "id": "explore_3",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/family_rules_yc_2.svg",
+      "image_asset": "images/comic/behave/family_rules/family_rules_yc_2.svg",
       "character_1_id": "f1_madre",
       "character_2_id": "f1_hijo_5",
       "character_3_id": "f1_madre",
@@ -240,7 +240,7 @@
     {
       "id": "explore_4",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/family_rules_yc_3.svg",
+      "image_asset": "images/comic/behave/family_rules/family_rules_yc_3.svg",
       "character_1_id": "f1_madre",
       "character_2_id": "f1_padre",
       "character_3_id": "f1_madre",
@@ -273,7 +273,7 @@
     {
       "id": "explore_5",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/family_rules_yc_4.svg",
+      "image_asset": "images/comic/behave/family_rules/family_rules_yc_4.svg",
       "character_1_id": "f1_hijo_5",
       "character_2_id": "f1_padre",
       "character_3_id": "f1_hijo_5",
@@ -306,7 +306,7 @@
     {
       "id": "explore_6",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/family_rules_yc_4.svg",
+      "image_asset": "images/comic/behave/family_rules/family_rules_yc_4.svg",
       "nested": false,
       "text_2": "Fíjate cómo le recuerda a @data.characters.f1_hijo_5.name la regla para poder mantenerse constantes.",
       "_translations": {
@@ -331,12 +331,12 @@
     {
       "id": "explore_7",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/family_rules_yc_5.svg",
+      "image_asset": "images/comic/behave/family_rules/family_rules_yc_5.svg",
       "character_1_id": "f1_hijo_5",
       "character_2_id": "f1_padre",
       "character_3_id": "f1_hijo_5",
       "nested": false,
-      "text_2": "@data.characters.f1_padre.name reconoce cuando @data.characters.f1_hijo_5.name cumple la regla, para animarlo a seguir así.",
+      "text_2": "@data.characters.f1_padre.name también reconoce cuando @data.characters.f1_hijo_5.name cumple la regla. Esto lo anima a comportarse así más seguido.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
@@ -345,7 +345,7 @@
       },
       "_translatedFields": {
         "text_2": {
-          "eng": "@data.characters.f1_padre.name reconoce cuando @data.characters.f1_hijo_5.name cumple la regla, para animarlo a seguir así."
+          "eng": "@data.characters.f1_padre.name también reconoce cuando @data.characters.f1_hijo_5.name cumple la regla. Esto lo anima a comportarse así más seguido."
         },
         "character_1_text": {
           "eng": "¡Terminé la tarea! ¿Ya puedo ver la tele?"
@@ -369,7 +369,7 @@
       "section_3_icon_asset": "images/icons/trophy_blue.png",
       "section_4_icon_asset": "images/icons/spark.png",
       "nested": false,
-      "text_1_facilitator": "Ya viste cómo @data.characters.f1_madre.name y @data.characters.f1_padre.name usaron las estrategias.\n\n\nVamos a recordarlas una vez más para que crees reglas familiares con @fields.child_name:",
+      "text_1_facilitator": "Recordemos las estrategias para crear reglas y acuerdos familiares junto con @fields.child_name.⭐",
       "_translations": {
         "text_1_facilitator": {},
         "section_1_title": {},
@@ -383,7 +383,7 @@
       },
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "Ya viste cómo @data.characters.f1_madre.name y @data.characters.f1_padre.name usaron las estrategias.\n\n\nVamos a recordarlas una vez más para que crees reglas familiares con @fields.child_name:"
+          "eng": "Recordemos las estrategias para crear reglas y acuerdos familiares junto con @fields.child_name.⭐"
         },
         "section_1_title": {
           "eng": "SEAN EQUIPO"

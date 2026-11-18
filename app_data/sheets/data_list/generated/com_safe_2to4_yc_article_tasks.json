@@ -8,13 +8,13 @@
       "in_library": "yes",
       "title_oringinal_eng": "Mindful moment",
       "lottie_asset": "lottie/relax/looping_rings.json",
-      "media_asset_m": "audio/relax/male/relax_3.m4a",
-      "media_asset_f": "audio/relax/female/relax_15.m4a",
+      "media_asset_m": "audio/relax/male/audio_3_m.m4a",
+      "media_asset_f": "audio/relax/male/audio_3_f.m4a",
       "media_type": "audio",
-      "transcript_m_original_eng": "Close your eyes and think about the day. \n\nName one thing that you are grateful for. \nName one thing that you did well. \nName one thing that you love.\n\nWell done, you are a hero!",
-      "transcript_f_original_eng": "Let’s practice a calming trick that we call ‘Pause Power’.\n\nPlant your feet on the ground and breathe in and out three times as slowly as you can. Imagine you are smelling a flower or blowing out a candle.\n\nTa-da! Pause Power!\n\nThis is a great trick to use when you are feeling frustrated because it will help to calm you down.",
-      "transcript_m": "Cierra los ojos y piensa en tu día.\n\nNombra una cosa por la que te sientes agradecido.\nNombra una cosa que hiciste bien.\nNombra una cosa que amas.\n\nMuy bien. Gracias por acompañarnos hoy en Crianza Responsable y Amorosa.",
-      "transcript_f": "¡Hola! ¿Cómo te sientes ahora? ¿Feliz, triste, enojado(a), emocionado(a), preocupado(a)?\n\nNota dónde sientes eso en tu cuerpo. Nota qué pensamientos están conectados con esa emoción. Toma una respiración profunda.\n\nAgradece por tomarte este momento para revisar tus sentimientos y pensamientos.",
+      "transcript_m_original_eng": "Close your eyes. \n\nUse the magic power of three to stay connected and relax.\n\nBreathe in to the count of three. 1, 2, 3. \nBreathe out to the count of three. 1, 2, 3. \nBreathe in to the count of three. 1, 2, 3. \nBreathe out to the count of three. 1, 2, 3.\n\nDo you feel any different? Deep breathing helps our whole body and mind to calm down. \n\nYou are a star!",
+      "transcript_f_original_eng": "Close your eyes. \n\nUse the magic power of three to stay connected and relax.\n\nBreathe in to the count of three. 1, 2, 3. \nBreathe out to the count of three. 1, 2, 3. \nBreathe in to the count of three. 1, 2, 3. \nBreathe out to the count of three. 1, 2, 3.\n\nDo you feel any different? Deep breathing helps our whole body and mind to calm down. \n\nYou are a star!",
+      "transcript_m": "Vamos a tomar un momento para conectar contigo y relajarte, usando el poder del número tres.\nBusca una posición cómoda, y si te sientes bien haciéndolo, cierra suavemente los ojos. \nInhala suavemente por la nariz en tres tiempos. Uno, dos, tres.  \nAhora exhala lentamente. Uno, dos, tres.  \nUna vez más. Inhala. Uno, dos, tres.  \nY exhala. Uno, dos, tres. \nToma un momento para observar cómo te sientes. ¿Notas alguna diferencia en tu cuerpo o en tu mente? \nRespirar de forma lenta y tranquila puede ayudarnos a calmarnos y a regresar al momento presente.\nCuando te sientas lista o listo, abre suavemente los ojos.\nGracias por regalarte un momento para cuidarte.",
+      "transcript_f": "Vamos a tomar un momento para conectar contigo y relajarte, usando el poder del número tres.\nBusca una posición cómoda, y si te sientes bien haciéndolo, cierra suavemente los ojos. \nInhala suavemente por la nariz en tres tiempos. Uno, dos, tres.  \nAhora exhala lentamente. Uno, dos, tres.  \nUna vez más. Inhala. Uno, dos, tres.  \nY exhala. Uno, dos, tres. \nToma un momento para observar cómo te sientes. ¿Notas alguna diferencia en tu cuerpo o en tu mente? \nRespirar de forma lenta y tranquila puede ayudarnos a calmarnos y a regresar al momento presente.\nCuando te sientas lista o listo, abre suavemente los ojos.\nGracias por regalarte un momento para cuidarte.",
       "title": "Momento de atención plena",
       "_translations": {
         "title": {}
@@ -24,7 +24,6 @@
           "eng": "Momento de atención plena"
         }
       },
-      "New_version": "Busca una posición cómoda y, si te sientes bien haciéndolo, cierra tus ojos.\n\nPor un momento, piensa en cómo fue tu día.\n\nAhora, identifica una cosa por la que sientas gratitud. Puede ser algo grande o algo pequeño.\n\nPiensa en algo que hayas hecho bien hoy. Date un momento para reconocer tu esfuerzo.\n\nY ahora, piensa en algo que amas: puede ser una persona, un lugar, una actividad o algo que sea especial para ti.\n\nCuando te sientas lista o listo, abre suavemente los ojos.\n\n¡Muy bien! Reconoce todo lo que haces cada día. Eres una persona valiosa y haces una gran diferencia.",
       "category_id": "relax",
       "nested": false,
       "completed": false,
@@ -121,66 +120,136 @@
       "id": "intro_1",
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "Esta sesión trata sobre aprender a mantener a @fields.child_name a salvo en tu comunidad y crear un plan de seguridad para ello."
-        },
-        "text_2": {
-          "eng": "¡No eres la única persona pasando por esto! Madres, padres y personas cuidadoras de todo el mundo se preocupan por la seguridad de sus niñas y niños. 🔔"
+          "eng": "Este módulo trata sobre cómo **crear un plan de seguridad** con @fields.child_name para ayudarle a mantenerse a salvo en su comunidad.\n\n\nA medida que @fields.child_name crece, es común que quiera explorar nuevos espacios y vivir nuevas experiencias. Conversar sobre cómo actuar ante distintas situaciones le ayudará a saber qué hacer si alguna vez lo necesita. 🧭"
+        }
+      },
+      "category_id": "intro",
+      "nested": false,
+      "text_1_facilitator": "Este módulo trata sobre cómo **crear un plan de seguridad** con @fields.child_name para ayudarle a mantenerse a salvo en su comunidad.\n\n\nA medida que @fields.child_name crece, es común que quiera explorar nuevos espacios y vivir nuevas experiencias. Conversar sobre cómo actuar ante distintas situaciones le ayudará a saber qué hacer si alguna vez lo necesita. 🧭",
+      "_translations": {
+        "text_1_facilitator": {}
+      },
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "intro_2",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Aquí exploraremos cómo construir ese plan de seguridad junto con @fields.child_name para que pueda identificar personas de confianza, pedir ayuda y actuar ante situaciones que no se sientan seguras."
+        }
+      },
+      "category_id": "intro",
+      "nested": false,
+      "text_1_facilitator": "Aquí exploraremos cómo construir ese plan de seguridad junto con @fields.child_name para que pueda identificar personas de confianza, pedir ayuda y actuar ante situaciones que no se sientan seguras.",
+      "_translations": {
+        "text_1_facilitator": {}
+      },
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "intro_3",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Antes de empezar, reflexionemos un momento📝"
         },
         "quiz_1_question": {
-          "eng": "📝 **¡Hagamos un ejercicio!**\n\n_Ejercicio no.1_\n\n¿Cuál de estos espacios sería un lugar en donde las niñas y los niños podrían estar cien por ciento seguros?"
+          "eng": "Verdadero o falso: Como @fields.child_name siempre está contigo, no es necesario enseñarle sobre su seguridad desde ahora."
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Verdadero"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nEs importante enseñarle a @fields.child_name sobre los riesgos de su entorno desde temprana edad, aunque esté bajo tu cuidado. Así, poco a poco, aprende a reconocer el peligro por su cuenta."
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Falso"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "🎉 ¡Tienes razón!\n\nEs importante enseñarle a @fields.child_name sobre los riesgos de su entorno desde temprana edad, aunque esté bajo tu cuidado. Así, poco a poco, aprende a reconocer el peligro por su cuenta."
+        }
+      },
+      "category_id": "intro",
+      "nested": false,
+      "quiz_1_feedback_1": "👀 ¡Ups! ¡Revisemos esta idea!\n\nEs importante enseñarle a @fields.child_name sobre los riesgos de su entorno desde temprana edad, aunque esté bajo tu cuidado. Así, poco a poco, aprende a reconocer el peligro por su cuenta.",
+      "_translations": {
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "text_1_facilitator": {}
+      },
+      "quiz_1_feedback_2": "🎉 ¡Tienes razón!\n\nEs importante enseñarle a @fields.child_name sobre los riesgos de su entorno desde temprana edad, aunque esté bajo tu cuidado. Así, poco a poco, aprende a reconocer el peligro por su cuenta.",
+      "quiz_1_question": "Verdadero o falso: Como @fields.child_name siempre está contigo, no es necesario enseñarle sobre su seguridad desde ahora.",
+      "quiz_1_option_1_text": "Verdadero",
+      "quiz_1_option_2_text": "Falso",
+      "text_1_facilitator": "Antes de empezar, reflexionemos un momento📝",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "intro_4",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "¡Una pregunta más!"
+        },
+        "quiz_1_question": {
+          "eng": "¿En cuál de estos lugares es importante que @fields.child_name sepa qué hacer si algo le hace sentir incomodidad o miedo?"
         },
         "quiz_1_option_1_text": {
           "eng": "La casa"
         },
         "quiz_1_feedback_1": {
-          "eng": "👀 ¡Ups! ¡Buen intento!\n\n😔 @fields.child_name podría sufrir daños en cualquiera de estos lugares, incluso en casa o en algún espacio público.\n\n🌱 Como personas cuidadoras, nuestro trabajo es enseñarles a estar a salvo, estén en donde estén."
+          "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nUn plan de seguridad puede ayudar a @fields.child_name en casa, en la escuela, en el parque y en cualquier otro lugar. Hablar sobre qué hacer si alguna situación no se siente bien le ayudará a saber cómo actuar y a quién acudir por ayuda."
         },
         "quiz_1_option_2_text": {
-          "eng": "La casa de una amiga o amigo"
+          "eng": "La casa de alguien conocido"
         },
         "quiz_1_feedback_2": {
-          "eng": "👀 ¡Ups! ¡Buen intento!\n\n😔 @fields.child_name podría sufrir daños en cualquiera de estos lugares, incluso en casa o en algún espacio público.\n\n🌱 Como personas cuidadoras, nuestro trabajo es enseñarles a estar a salvo, estén en donde estén."
+          "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nUn plan de seguridad puede ayudar a @fields.child_name en casa, en la escuela, en el parque y en cualquier otro lugar. Hablar sobre qué hacer si alguna situación no se siente bien le ayudará a saber cómo actuar y a quién acudir por ayuda."
         },
         "quiz_1_option_3_text": {
           "eng": "La escuela"
         },
         "quiz_1_feedback_3": {
-          "eng": "👀 ¡Ups! ¡Buen intento!\n\n😔 @fields.child_name podría sufrir daños en cualquiera de estos lugares, incluso en casa o en algún espacio público.\n\n🌱 Como personas cuidadoras, nuestro trabajo es enseñarles a estar a salvo, estén en donde estén."
+          "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nUn plan de seguridad puede ayudar a @fields.child_name en casa, en la escuela, en el parque y en cualquier otro lugar. Hablar sobre qué hacer si alguna situación no se siente bien le ayudará a saber cómo actuar y a quién acudir por ayuda."
         },
         "quiz_1_option_4_text": {
-          "eng": "Un Centro Religioso"
+          "eng": "La iglesia"
         },
         "quiz_1_feedback_4": {
-          "eng": "👀 ¡Ups! ¡Buen intento!\n\n😔 @fields.child_name podría sufrir daños en cualquiera de estos lugares, incluso en casa o en algún espacio público.\n\n🌱 Como personas cuidadoras, nuestro trabajo es enseñarles a estar a salvo, estén en donde estén."
+          "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nUn plan de seguridad puede ayudar a @fields.child_name en casa, en la escuela, en el parque y en cualquier otro lugar. Hablar sobre qué hacer si alguna situación no se siente bien le ayudará a saber cómo actuar y a quién acudir por ayuda."
         },
         "quiz_1_option_5_text": {
           "eng": "Una clínica"
         },
         "quiz_1_feedback_5": {
-          "eng": "👀 ¡Ups! ¡Buen intento!\n\n😔 @fields.child_name podría sufrir daños en cualquiera de estos lugares, incluso en casa o en algún espacio público.\n\n🌱 Como personas cuidadoras, nuestro trabajo es enseñarles a estar a salvo, estén en donde estén."
+          "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nUn plan de seguridad puede ayudar a @fields.child_name en casa, en la escuela, en el parque y en cualquier otro lugar. Hablar sobre qué hacer si alguna situación no se siente bien le ayudará a saber cómo actuar y a quién acudir por ayuda."
         },
         "quiz_1_option_6_text": {
           "eng": "El parque"
         },
         "quiz_1_feedback_6": {
-          "eng": "👀 ¡Ups! ¡Buen intento!\n\n😔 @fields.child_name podría sufrir daños en cualquiera de estos lugares, incluso en casa o en algún espacio público.\n\n🌱 Como personas cuidadoras, nuestro trabajo es enseñarles a estar a salvo, estén en donde estén."
+          "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nUn plan de seguridad puede ayudar a @fields.child_name en casa, en la escuela, en el parque y en cualquier otro lugar. Hablar sobre qué hacer si alguna situación no se siente bien le ayudará a saber cómo actuar y a quién acudir por ayuda."
         },
         "quiz_1_option_7_text": {
           "eng": "El coche"
         },
         "quiz_1_feedback_7": {
-          "eng": "👀 ¡Ups! ¡Buen intento!\n\n😔 @fields.child_name podría sufrir daños en cualquiera de estos lugares, incluso en casa o en algún espacio público.\n\n🌱 Como personas cuidadoras, nuestro trabajo es enseñarles a estar a salvo, estén en donde estén."
+          "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nUn plan de seguridad puede ayudar a @fields.child_name en casa, en la escuela, en el parque y en cualquier otro lugar. Hablar sobre qué hacer si alguna situación no se siente bien le ayudará a saber cómo actuar y a quién acudir por ayuda."
         },
         "quiz_1_option_8_text": {
-          "eng": "Ninguna de las anteriores"
+          "eng": "En todos los anteriores"
         },
         "quiz_1_feedback_8": {
-          "eng": "🎉 ¡Tienes razón!\n\n😔 @fields.child_name podría sufrir daños en cualquiera de estos lugares, incluso en casa o en algún espacio público.\n\n🌱 Como personas cuidadoras, nuestro trabajo es enseñarles a estar a salvo, estén en donde estén."
+          "eng": "🎉 ¡Tienes razón!\n\nUn plan de seguridad puede ayudar a @fields.child_name en casa, en la escuela, en el parque y en cualquier otro lugar. Hablar sobre qué hacer si alguna situación le genera incomodidad o miedo le ayudará a saber cómo actuar y a quién acudir por ayuda."
         }
       },
       "category_id": "intro",
       "nested": false,
-      "quiz_1_feedback_1": "👀 ¡Ups! ¡Buen intento!\n\n😔 @fields.child_name podría sufrir daños en cualquiera de estos lugares, incluso en casa o en algún espacio público.\n\n🌱 Como personas cuidadoras, nuestro trabajo es enseñarles a estar a salvo, estén en donde estén.",
+      "quiz_1_feedback_1": "👀 ¡Ups! ¡Revisemos esta idea!\n\nUn plan de seguridad puede ayudar a @fields.child_name en casa, en la escuela, en el parque y en cualquier otro lugar. Hablar sobre qué hacer si alguna situación no se siente bien le ayudará a saber cómo actuar y a quién acudir por ayuda.",
       "_translations": {
         "quiz_1_feedback_1": {},
         "quiz_1_feedback_2": {},
@@ -196,127 +265,42 @@
         "quiz_1_option_5_text": {},
         "quiz_1_option_6_text": {},
         "text_1_facilitator": {},
-        "text_2": {},
         "quiz_1_option_7_text": {},
         "quiz_1_feedback_7": {},
         "quiz_1_option_8_text": {},
         "quiz_1_feedback_8": {}
       },
-      "quiz_1_feedback_2": "👀 ¡Ups! ¡Buen intento!\n\n😔 @fields.child_name podría sufrir daños en cualquiera de estos lugares, incluso en casa o en algún espacio público.\n\n🌱 Como personas cuidadoras, nuestro trabajo es enseñarles a estar a salvo, estén en donde estén.",
-      "quiz_1_feedback_3": "👀 ¡Ups! ¡Buen intento!\n\n😔 @fields.child_name podría sufrir daños en cualquiera de estos lugares, incluso en casa o en algún espacio público.\n\n🌱 Como personas cuidadoras, nuestro trabajo es enseñarles a estar a salvo, estén en donde estén.",
-      "quiz_1_feedback_4": "👀 ¡Ups! ¡Buen intento!\n\n😔 @fields.child_name podría sufrir daños en cualquiera de estos lugares, incluso en casa o en algún espacio público.\n\n🌱 Como personas cuidadoras, nuestro trabajo es enseñarles a estar a salvo, estén en donde estén.",
-      "quiz_1_feedback_5": "👀 ¡Ups! ¡Buen intento!\n\n😔 @fields.child_name podría sufrir daños en cualquiera de estos lugares, incluso en casa o en algún espacio público.\n\n🌱 Como personas cuidadoras, nuestro trabajo es enseñarles a estar a salvo, estén en donde estén.",
-      "quiz_1_feedback_6": "👀 ¡Ups! ¡Buen intento!\n\n😔 @fields.child_name podría sufrir daños en cualquiera de estos lugares, incluso en casa o en algún espacio público.\n\n🌱 Como personas cuidadoras, nuestro trabajo es enseñarles a estar a salvo, estén en donde estén.",
-      "quiz_1_question": "📝 **¡Hagamos un ejercicio!**\n\n_Ejercicio no.1_\n\n¿Cuál de estos espacios sería un lugar en donde las niñas y los niños podrían estar cien por ciento seguros?",
+      "quiz_1_feedback_2": "👀 ¡Ups! ¡Revisemos esta idea!\n\nUn plan de seguridad puede ayudar a @fields.child_name en casa, en la escuela, en el parque y en cualquier otro lugar. Hablar sobre qué hacer si alguna situación no se siente bien le ayudará a saber cómo actuar y a quién acudir por ayuda.",
+      "quiz_1_feedback_3": "👀 ¡Ups! ¡Revisemos esta idea!\n\nUn plan de seguridad puede ayudar a @fields.child_name en casa, en la escuela, en el parque y en cualquier otro lugar. Hablar sobre qué hacer si alguna situación no se siente bien le ayudará a saber cómo actuar y a quién acudir por ayuda.",
+      "quiz_1_feedback_4": "👀 ¡Ups! ¡Revisemos esta idea!\n\nUn plan de seguridad puede ayudar a @fields.child_name en casa, en la escuela, en el parque y en cualquier otro lugar. Hablar sobre qué hacer si alguna situación no se siente bien le ayudará a saber cómo actuar y a quién acudir por ayuda.",
+      "quiz_1_feedback_5": "👀 ¡Ups! ¡Revisemos esta idea!\n\nUn plan de seguridad puede ayudar a @fields.child_name en casa, en la escuela, en el parque y en cualquier otro lugar. Hablar sobre qué hacer si alguna situación no se siente bien le ayudará a saber cómo actuar y a quién acudir por ayuda.",
+      "quiz_1_feedback_6": "👀 ¡Ups! ¡Revisemos esta idea!\n\nUn plan de seguridad puede ayudar a @fields.child_name en casa, en la escuela, en el parque y en cualquier otro lugar. Hablar sobre qué hacer si alguna situación no se siente bien le ayudará a saber cómo actuar y a quién acudir por ayuda.",
+      "quiz_1_question": "¿En cuál de estos lugares es importante que @fields.child_name sepa qué hacer si algo le hace sentir incomodidad o miedo?",
       "quiz_1_option_1_text": "La casa",
-      "quiz_1_option_2_text": "La casa de una amiga o amigo",
+      "quiz_1_option_2_text": "La casa de alguien conocido",
       "quiz_1_option_3_text": "La escuela",
-      "quiz_1_option_4_text": "Un Centro Religioso",
+      "quiz_1_option_4_text": "La iglesia",
       "quiz_1_option_5_text": "Una clínica",
       "quiz_1_option_6_text": "El parque",
-      "text_1_facilitator": "Esta sesión trata sobre aprender a mantener a @fields.child_name a salvo en tu comunidad y crear un plan de seguridad para ello.",
-      "text_2": "¡No eres la única persona pasando por esto! Madres, padres y personas cuidadoras de todo el mundo se preocupan por la seguridad de sus niñas y niños. 🔔",
+      "text_1_facilitator": "¡Una pregunta más!",
       "quiz_1_option_7_text": "El coche",
-      "quiz_1_feedback_7": "👀 ¡Ups! ¡Buen intento!\n\n😔 @fields.child_name podría sufrir daños en cualquiera de estos lugares, incluso en casa o en algún espacio público.\n\n🌱 Como personas cuidadoras, nuestro trabajo es enseñarles a estar a salvo, estén en donde estén.",
-      "quiz_1_option_8_text": "Ninguna de las anteriores",
-      "quiz_1_feedback_8": "🎉 ¡Tienes razón!\n\n😔 @fields.child_name podría sufrir daños en cualquiera de estos lugares, incluso en casa o en algún espacio público.\n\n🌱 Como personas cuidadoras, nuestro trabajo es enseñarles a estar a salvo, estén en donde estén.",
+      "quiz_1_feedback_7": "👀 ¡Ups! ¡Revisemos esta idea!\n\nUn plan de seguridad puede ayudar a @fields.child_name en casa, en la escuela, en el parque y en cualquier otro lugar. Hablar sobre qué hacer si alguna situación no se siente bien le ayudará a saber cómo actuar y a quién acudir por ayuda.",
+      "quiz_1_option_8_text": "En todos los anteriores",
+      "quiz_1_feedback_8": "🎉 ¡Tienes razón!\n\nUn plan de seguridad puede ayudar a @fields.child_name en casa, en la escuela, en el parque y en cualquier otro lugar. Hablar sobre qué hacer si alguna situación le genera incomodidad o miedo le ayudará a saber cómo actuar y a quién acudir por ayuda.",
       "completed": false,
       "version": 1
     },
     {
       "id": "explore_1",
-      "_translatedFields": {
-        "text_1_facilitator": {
-          "eng": "Veamos a @data.characters.f2_hija_3.name y a @data.characters.f2_abuelo.name, que están jugando juntos afuera:"
-        },
-        "character_1_text": {
-          "eng": "Mira abuelo, ¡qué lejos puedo patear mi pelota!"
-        }
-      },
-      "category_id": "explore",
-      "nested": false,
-      "text_1_facilitator": "Veamos a @data.characters.f2_hija_3.name y a @data.characters.f2_abuelo.name, que están jugando juntos afuera:",
-      "_translations": {
-        "text_1_facilitator": {},
-        "character_1_text": {}
-      },
-      "image_asset": "images/comic/safe/com_safety_2to4_yc_1.svg",
-      "character_1_id": "f2_hija_3",
-      "character_1_text": "Mira abuelo, ¡qué lejos puedo patear mi pelota!",
-      "completed": false,
-      "version": 1
-    },
-    {
-      "id": "explore_2",
-      "_translatedFields": {
-        "character_1_text": {
-          "eng": "¡Oh, no! ¡Mi pelota!"
-        }
-      },
-      "category_id": "explore",
-      "nested": false,
-      "image_asset": "images/comic/safe/com_safety_2to4_yc_2.svg",
-      "character_1_id": "f2_hija_3",
-      "character_1_text": "¡Oh, no! ¡Mi pelota!",
-      "_translations": {
-        "character_1_text": {}
-      },
-      "completed": false,
-      "version": 1
-    },
-    {
-      "id": "explore_3",
-      "_translatedFields": {
-        "character_1_text": {
-          "eng": "Recuerda lo que platicamos, @data.characters.f2_hija_3.name. ¿Qué debemos hacer si la pelota se va a la calle?"
-        },
-        "character_2_text": {
-          "eng": "Debemos quedarnos donde estamos y pedirle ayuda a una persona adulta."
-        }
-      },
-      "category_id": "explore",
-      "nested": false,
-      "image_asset": "images/comic/safe/com_safety_2to4_yc_3.svg",
-      "character_1_id": "f2_abuelo",
-      "character_1_text": "Recuerda lo que platicamos, @data.characters.f2_hija_3.name. ¿Qué debemos hacer si la pelota se va a la calle?",
-      "_translations": {
-        "character_1_text": {},
-        "character_2_text": {}
-      },
-      "character_2_id": "f2_hija_3",
-      "character_2_text": "Debemos quedarnos donde estamos y pedirle ayuda a una persona adulta.",
-      "completed": false,
-      "version": 1
-    },
-    {
-      "id": "explore_4",
-      "_translatedFields": {
-        "character_1_text": {
-          "eng": "¡Eso! Estoy muy orgulloso de tu esfuerzo para poner atención. ¡Chócalas! Las calles son para los carros y las bicicletas, y es más seguro que una persona adulta te traiga la pelota."
-        }
-      },
-      "category_id": "explore",
-      "nested": false,
-      "image_asset": "images/comic/safe/com_safety_2to4_yc_4.svg",
-      "character_1_id": "f2_abuelo",
-      "character_1_text": "¡Eso! Estoy muy orgulloso de tu esfuerzo para poner atención. ¡Chócalas! Las calles son para los carros y las bicicletas, y es más seguro que una persona adulta te traiga la pelota.",
-      "_translations": {
-        "character_1_text": {}
-      },
-      "completed": false,
-      "version": 1
-    },
-    {
-      "id": "practical_tips_1",
       "media_type": "youtube",
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "Para mantener a @fields.child_name a salvo, háblale sobre qué lugares son seguros y cuáles no lo son, y enséñale a tener cuidado cuando se encuentre con gente que no conoce.\n\nSelecciona reproducir ▶️ para aprender las 4️⃣ estrategias para garantizar la seguridad de @fields.child_name en su comunidad:\n\n1️⃣ DIBUJAR\n2️⃣ HABLAR\n3️⃣ COMENTAR\n4️⃣ PRACTICAR"
+          "eng": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo puedes crear un plan de seguridad con @fields.child_name.\n\nEn este video te compartimos cuatro estrategias recomendadas por especialistas:\n\n1️⃣ DIBUJA\n2️⃣ IDENTIFICA\n3️⃣ HABLA\n4️⃣ PRACTICA"
         }
       },
-      "category_id": "practical_tips",
+      "category_id": "explore",
       "nested": false,
-      "text_1_facilitator": "Para mantener a @fields.child_name a salvo, háblale sobre qué lugares son seguros y cuáles no lo son, y enséñale a tener cuidado cuando se encuentre con gente que no conoce.\n\nSelecciona reproducir ▶️ para aprender las 4️⃣ estrategias para garantizar la seguridad de @fields.child_name en su comunidad:\n\n1️⃣ DIBUJAR\n2️⃣ HABLAR\n3️⃣ COMENTAR\n4️⃣ PRACTICAR",
+      "text_1_facilitator": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo puedes crear un plan de seguridad con @fields.child_name.\n\nEn este video te compartimos cuatro estrategias recomendadas por especialistas:\n\n1️⃣ DIBUJA\n2️⃣ IDENTIFICA\n3️⃣ HABLA\n4️⃣ PRACTICA",
       "_translations": {
         "text_1_facilitator": {}
       },
@@ -326,39 +310,184 @@
       "version": 1
     },
     {
-      "id": "practical_tips_2",
+      "id": "explore_2",
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "Recuerda:"
+          "eng": "Veamos cómo @data.characters.f2_padre.name usa estas estrategias en la práctica:"
+        },
+        "text_2": {
+          "eng": "Observa cómo hablar sobre seguridad ayuda a niñas y niños a conocer qué hacer ante situaciones de riesgo."
+        },
+        "character_1_text": {
+          "eng": "@data.characters.f2_hija_3.name, me la pasé muy bien contigo durante nuestro tiempo de calidad. Oye, quiero platicar de una cosa contigo."
+        },
+        "character_2_text": {
+          "eng": "¿De qué?"
+        },
+        "character_3_text": {
+          "eng": "Quiero que sepas cómo cuidarte cuando salimos a la calle. Vamos a hacer un plan de seguridad para que sepas qué hacer si alguna vez pasa algo que te dé miedo, genere incomodidad o te parezca extraño."
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "text_1_facilitator": "Veamos cómo @data.characters.f2_padre.name usa estas estrategias en la práctica:",
+      "_translations": {
+        "text_1_facilitator": {},
+        "text_2": {},
+        "character_1_text": {},
+        "character_2_text": {},
+        "character_3_text": {}
+      },
+      "image_asset": "images/comic/safety/com_safe/com_safe_2to4_yc_1.svg",
+      "character_1_id": "f2_padre",
+      "character_2_id": "f2_hija_3",
+      "character_3_id": "f2_padre",
+      "text_2": "Observa cómo hablar sobre seguridad ayuda a niñas y niños a conocer qué hacer ante situaciones de riesgo.",
+      "character_1_text": "@data.characters.f2_hija_3.name, me la pasé muy bien contigo durante nuestro tiempo de calidad. Oye, quiero platicar de una cosa contigo.",
+      "character_2_text": "¿De qué?",
+      "character_3_text": "Quiero que sepas cómo cuidarte cuando salimos a la calle. Vamos a hacer un plan de seguridad para que sepas qué hacer si alguna vez pasa algo que te dé miedo, genere incomodidad o te parezca extraño.",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_3",
+      "_translatedFields": {
+        "text_2": {
+          "eng": "Fíjate cómo dibujar juntos un mapa de su comunidad ayuda a reconocer los lugares que visitan y las personas de confianza."
+        },
+        "character_1_text": {
+          "eng": "Primero vamos a dibujar los lugares a donde vamos normalmente. ¿Cuáles se te ocurren?"
+        },
+        "character_2_text": {
+          "eng": "¡El parque! ¡Y la tienda de doña Mary!"
+        },
+        "character_3_text": {
+          "eng": "¡Muy bien! Vamos a dibujarlos. También vamos a marcar a las personas de confianza a las que les puedes pedir ayuda si alguna vez la necesitas."
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/safety/com_safe/com_safe_2to4_yc_2.svg",
+      "character_1_id": "f2_padre",
+      "character_2_id": "f2_hija_3",
+      "character_3_id": "f2_padre",
+      "text_2": "Fíjate cómo dibujar juntos un mapa de su comunidad ayuda a reconocer los lugares que visitan y las personas de confianza.",
+      "_translations": {
+        "text_2": {},
+        "character_1_text": {},
+        "character_2_text": {},
+        "character_3_text": {}
+      },
+      "character_1_text": "Primero vamos a dibujar los lugares a donde vamos normalmente. ¿Cuáles se te ocurren?",
+      "character_2_text": "¡El parque! ¡Y la tienda de doña Mary!",
+      "character_3_text": "¡Muy bien! Vamos a dibujarlos. También vamos a marcar a las personas de confianza a las que les puedes pedir ayuda si alguna vez la necesitas.",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_4",
+      "_translatedFields": {
+        "text_2": {
+          "eng": "Observa cómo identificar los lugares seguros y aquellos donde necesitan tener más cuidado ayuda a prevenir riesgos."
+        },
+        "character_1_text": {
+          "eng": "¿Te acuerdas qué hablamos sobre ir al parque sola?"
+        },
+        "character_2_text": {
+          "eng": "Que tengo que ir siempre contigo."
+        },
+        "character_3_text": {
+          "eng": "¡Exacto! El parque es un lugar para divertirnos cuando estamos juntos y la calle es un lugar donde necesitamos tener mucho cuidado. Vamos a marcarlo en nuestro mapa."
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/safety/com_safe/com_safe_2to4_yc_3.svg",
+      "character_1_id": "f2_padre",
+      "character_2_id": "f2_hija_3",
+      "character_3_id": "f2_padre",
+      "text_2": "Observa cómo identificar los lugares seguros y aquellos donde necesitan tener más cuidado ayuda a prevenir riesgos.",
+      "_translations": {
+        "text_2": {},
+        "character_1_text": {},
+        "character_2_text": {},
+        "character_3_text": {}
+      },
+      "character_1_text": "¿Te acuerdas qué hablamos sobre ir al parque sola?",
+      "character_2_text": "Que tengo que ir siempre contigo.",
+      "character_3_text": "¡Exacto! El parque es un lugar para divertirnos cuando estamos juntos y la calle es un lugar donde necesitamos tener mucho cuidado. Vamos a marcarlo en nuestro mapa.",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_5",
+      "_translatedFields": {
+        "text_2": {
+          "eng": "Mira cómo practicar con juguetes situaciones de riesgo ayuda a recordar qué hacer y a quién pedir apoyo."
+        },
+        "character_1_text": {
+          "eng": "(representando con los peluches) ¡Vamos a practicar! El osito y su papá están en el parque y se le fue la pelota hacia la calle. ¿Qué debería hacer?"
+        },
+        "character_2_text": {
+          "eng": "¡Le pide ayuda a papá oso!"
+        },
+        "character_3_text": {
+          "eng": "¡Muy bien! Practicar nos ayuda a recordar qué hacer."
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/safety/com_safe/com_safe_2to4_yc_4.svg",
+      "character_1_id": "f2_padre",
+      "character_2_id": "f2_hija_3",
+      "character_3_id": "f2_padre",
+      "text_2": "Mira cómo practicar con juguetes situaciones de riesgo ayuda a recordar qué hacer y a quién pedir apoyo.",
+      "_translations": {
+        "text_2": {},
+        "character_1_text": {},
+        "character_2_text": {},
+        "character_3_text": {}
+      },
+      "character_1_text": "(representando con los peluches) ¡Vamos a practicar! El osito y su papá están en el parque y se le fue la pelota hacia la calle. ¿Qué debería hacer?",
+      "character_2_text": "¡Le pide ayuda a papá oso!",
+      "character_3_text": "¡Muy bien! Practicar nos ayuda a recordar qué hacer.",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "practical_tips_1",
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Recordemos las estrategias para crear un plan de seguridad junto con @fields.child_name.⭐"
         },
         "section_1_title": {
           "eng": "DIBUJA"
         },
         "section_1_text": {
-          "eng": "📝 Dibujen un mapa de su comunidad. \n\n🚩 Incluyan los lugares principales de su comunidad: calles, la casa, la escuela, tiendas y lugares frecuentados por @fields.child_name. \n\n👋 Dibujen e identifiquen imágenes de personas de confianza a las que @fields.child_name pueda acudir cuando se sienta en peligro. Pueden ser tú y tu pareja, otros miembros de la familia o sus maestras y maestros."
+          "eng": "Dibujen juntos un mapa de su comunidad o colonia con los lugares que visitan, como su casa, la escuela, el parque o la tienda. Incluyan también las aplicaciones y páginas de internet que utilizan. Encierren en un círculo los lugares seguros y marquen con una X aquellos donde necesitan tener más cuidado. Identifiquen también a las personas de confianza a quienes pueden pedir apoyo."
         },
         "section_2_title": {
-          "eng": "HABLA"
+          "eng": "IDENTIFICA"
         },
         "section_2_text": {
-          "eng": "❗ Coméntale a @fields.child_name por qué es importante que SIEMPRE que salga sea en compañía de una persona adulta.\n\n🧸 Asegúrate de que @fields.child_name sepa que está bien que camine rápido o corra para meterse a algún lugar seguro si una persona desconocida intenta Conversarle o le pide que vayan a algún lugar.\n\n👀 Coméntale a @fields.child_name cuáles son los lugares seguros a los que puede ir si se le acerca una persona desconocida, como tu casa o la de un vecino.\n\n🚩 Marca con claridad, estas zonas en tu mapa."
+          "eng": "Revisen el mapa en conjunto y hablen sobre cada lugar. Ayúdale a entender en cuáles necesita tener mayor cuidado y qué puede hacer para mantenerse a salvo. Usen colores o dibujos para distinguirlos."
         },
         "section_3_title": {
-          "eng": "COMENTA"
+          "eng": "HABLA"
         },
         "section_3_text": {
-          "eng": "🔑 Platiquen sobre los lugares seguros e inseguros que se encuentran en el mapa. Por ejemplo, hazle saber a @fields.child_name que al jugar en la calle debe tener cuidado cuando su juguete o su pelota se vaya debajo de la banqueta.\n\n🔵 ENCIERRA los lugares que son seguros para las niñas y los niños.\n\n❌ TACHA los lugares que no son seguros para @fields.child_name. Por ejemplo, zonas en construcción, estacionamientos o edificios desconocidos."
+          "eng": "Recuérdale que es importante salir siempre contigo o con otra persona adulta de confianza. Platiquen sobre qué puede hacer si ocurre una situación de riesgo, como alejarse, gritar para pedir ayuda o buscar a una persona adulta de confianza."
         },
         "section_4_title": {
           "eng": "PRACTICA"
         },
         "section_4_text": {
-          "eng": "🔔 ¡Practiquen! ¡Practiquen! ¡Practiquen!\n\n👑 Usa juguetes o títeres para representar situaciones en las que se acerca una persona desconocida. Pregúntale a @fields.child_name qué debería hacer el juguete. A las niñas y a los niños les da menos miedo cuando imaginan que otra persona es la que está en peligro.\n\n⭐ Elogia a @fields.child_name cuando elija la respuesta correcta, como huir, gritar para pedir ayuda o buscar a una persona adulta de confianza."
+          "eng": "Usen juguetes o títeres para representar situaciones cotidianas, como perderse, que una pelota ruede hacia la calle o que una persona desconocida se acerque. Pregúntale qué haría en esa situación y reconoce cuando elija una forma segura de actuar."
         }
       },
       "category_id": "practical_tips",
       "nested": false,
-      "text_1_facilitator": "Recuerda:",
+      "text_1_facilitator": "Recordemos las estrategias para crear un plan de seguridad junto con @fields.child_name.⭐",
       "_translations": {
         "text_1_facilitator": {},
         "section_1_title": {},
@@ -375,13 +504,13 @@
       "section_3_icon_asset": "images/icons/smile_eyes_up.svg",
       "section_4_icon_asset": "images/icons/heart_filled_blue.png",
       "section_1_title": "DIBUJA",
-      "section_1_text": "📝 Dibujen un mapa de su comunidad. \n\n🚩 Incluyan los lugares principales de su comunidad: calles, la casa, la escuela, tiendas y lugares frecuentados por @fields.child_name. \n\n👋 Dibujen e identifiquen imágenes de personas de confianza a las que @fields.child_name pueda acudir cuando se sienta en peligro. Pueden ser tú y tu pareja, otros miembros de la familia o sus maestras y maestros.",
-      "section_2_title": "HABLA",
-      "section_2_text": "❗ Coméntale a @fields.child_name por qué es importante que SIEMPRE que salga sea en compañía de una persona adulta.\n\n🧸 Asegúrate de que @fields.child_name sepa que está bien que camine rápido o corra para meterse a algún lugar seguro si una persona desconocida intenta Conversarle o le pide que vayan a algún lugar.\n\n👀 Coméntale a @fields.child_name cuáles son los lugares seguros a los que puede ir si se le acerca una persona desconocida, como tu casa o la de un vecino.\n\n🚩 Marca con claridad, estas zonas en tu mapa.",
-      "section_3_title": "COMENTA",
-      "section_3_text": "🔑 Platiquen sobre los lugares seguros e inseguros que se encuentran en el mapa. Por ejemplo, hazle saber a @fields.child_name que al jugar en la calle debe tener cuidado cuando su juguete o su pelota se vaya debajo de la banqueta.\n\n🔵 ENCIERRA los lugares que son seguros para las niñas y los niños.\n\n❌ TACHA los lugares que no son seguros para @fields.child_name. Por ejemplo, zonas en construcción, estacionamientos o edificios desconocidos.",
+      "section_1_text": "Dibujen juntos un mapa de su comunidad o colonia con los lugares que visitan, como su casa, la escuela, el parque o la tienda. Incluyan también las aplicaciones y páginas de internet que utilizan. Encierren en un círculo los lugares seguros y marquen con una X aquellos donde necesitan tener más cuidado. Identifiquen también a las personas de confianza a quienes pueden pedir apoyo.",
+      "section_2_title": "IDENTIFICA",
+      "section_2_text": "Revisen el mapa en conjunto y hablen sobre cada lugar. Ayúdale a entender en cuáles necesita tener mayor cuidado y qué puede hacer para mantenerse a salvo. Usen colores o dibujos para distinguirlos.",
+      "section_3_title": "HABLA",
+      "section_3_text": "Recuérdale que es importante salir siempre contigo o con otra persona adulta de confianza. Platiquen sobre qué puede hacer si ocurre una situación de riesgo, como alejarse, gritar para pedir ayuda o buscar a una persona adulta de confianza.",
       "section_4_title": "PRACTICA",
-      "section_4_text": "🔔 ¡Practiquen! ¡Practiquen! ¡Practiquen!\n\n👑 Usa juguetes o títeres para representar situaciones en las que se acerca una persona desconocida. Pregúntale a @fields.child_name qué debería hacer el juguete. A las niñas y a los niños les da menos miedo cuando imaginan que otra persona es la que está en peligro.\n\n⭐ Elogia a @fields.child_name cuando elija la respuesta correcta, como huir, gritar para pedir ayuda o buscar a una persona adulta de confianza.",
+      "section_4_text": "Usen juguetes o títeres para representar situaciones cotidianas, como perderse, que una pelota ruede hacia la calle o que una persona desconocida se acerque. Pregúntale qué haría en esa situación y reconoce cuando elija una forma segura de actuar.",
       "completed": false,
       "version": 1
     },
@@ -389,33 +518,33 @@
       "id": "home_activity_1",
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "**Actividad para casa** ⭐ \n \n📝 El día de hoy, conversa con @fields.child_name sobre qué lugares son seguros y cuáles no son seguros para las niñas y los niños de tu comunidad. \n\n✨ Busca un tiempo para que tu niña o niño también comparta sus pensamientos. Puede pensar que es inseguro un lugar que tú creías seguro. Permítele explicar sus razones.  \n\nPracticar el uso de palabras claves cuando se encuentra en peligro para pedir ayuda ejemplo. “Auxilio”, “Mamá”, “Fuego”."
+          "eng": "¡Ahora es tu turno!\n\nConstruye junto con @fields.child_name un plan de seguridad para su comunidad. Pueden empezar por dibujar un mapa y platicar sobre los lugares donde necesita tener mayor cuidado y qué puede hacer en cada uno si se siente en riesgo. 😊"
         },
         "quiz_1_question": {
-          "eng": "¿Tienes tiempo para hacerlo hoy? ⏰"
+          "eng": "¿Puedes hacerlo esta semana?"
         },
         "quiz_1_option_1_text": {
           "eng": "Sí"
         },
         "quiz_1_feedback_1": {
-          "eng": "💙 ¡Estupendo! Estás ayudando a @fields.child_name a ser consciente de su entorno para poder mantenerse a salvo."
+          "eng": "¡Estupendo! 🎉\n\nEstás ayudando a @fields.child_name a reconocer situaciones de riesgo y a saber qué hacer para mantenerse a salvo. No olvides platicar sobre qué podría hacer ante distintas situaciones y practicarlo con juguetes o títeres."
         },
         "quiz_1_option_2_text": {
           "eng": "Lo intentaré"
         },
         "quiz_1_feedback_2": {
-          "eng": "¡Perfecto! 💙 Cuando estés listo o lista, intenta poner en práctica esta actividad. Recuerda que cada paso cuenta, por pequeño que parezca. ✨"
+          "eng": "¡Muy bien! 🙌\n\nEstás ayudando a @fields.child_name a reconocer situaciones de riesgo y a saber qué hacer para mantenerse a salvo. No olvides platicar sobre qué podría hacer ante distintas situaciones y practicarlo con juguetes o títeres."
         },
         "quiz_1_option_3_text": {
           "eng": "No"
         },
         "quiz_1_feedback_3": {
-          "eng": "¡Está bien! Si hoy no tienes tiempo, aparta un rato mañana para conversar con @fields.child_name sobre lugares seguros e inseguros o peligrosos. ¡Tú puedes! 🌷"
+          "eng": "¡Lo entiendo! 💚\n\nPuede ser difícil encontrar el momento, pero crear este plan ayudará a @fields.child_name a reconocer situaciones de riesgo y a saber qué hacer para mantenerse a salvo. Pueden construirlo poco a poco."
         }
       },
       "category_id": "home_activity",
       "nested": false,
-      "quiz_1_feedback_1": "💙 ¡Estupendo! Estás ayudando a @fields.child_name a ser consciente de su entorno para poder mantenerse a salvo.",
+      "quiz_1_feedback_1": "¡Estupendo! 🎉\n\nEstás ayudando a @fields.child_name a reconocer situaciones de riesgo y a saber qué hacer para mantenerse a salvo. No olvides platicar sobre qué podría hacer ante distintas situaciones y practicarlo con juguetes o títeres.",
       "_translations": {
         "quiz_1_feedback_1": {},
         "quiz_1_feedback_2": {},
@@ -426,13 +555,13 @@
         "quiz_1_option_3_text": {},
         "text_1_facilitator": {}
       },
-      "quiz_1_feedback_2": "¡Perfecto! 💙 Cuando estés listo o lista, intenta poner en práctica esta actividad. Recuerda que cada paso cuenta, por pequeño que parezca. ✨",
-      "quiz_1_feedback_3": "¡Está bien! Si hoy no tienes tiempo, aparta un rato mañana para conversar con @fields.child_name sobre lugares seguros e inseguros o peligrosos. ¡Tú puedes! 🌷",
-      "quiz_1_question": "¿Tienes tiempo para hacerlo hoy? ⏰",
+      "quiz_1_feedback_2": "¡Muy bien! 🙌\n\nEstás ayudando a @fields.child_name a reconocer situaciones de riesgo y a saber qué hacer para mantenerse a salvo. No olvides platicar sobre qué podría hacer ante distintas situaciones y practicarlo con juguetes o títeres.",
+      "quiz_1_feedback_3": "¡Lo entiendo! 💚\n\nPuede ser difícil encontrar el momento, pero crear este plan ayudará a @fields.child_name a reconocer situaciones de riesgo y a saber qué hacer para mantenerse a salvo. Pueden construirlo poco a poco.",
+      "quiz_1_question": "¿Puedes hacerlo esta semana?",
       "quiz_1_option_1_text": "Sí",
       "quiz_1_option_2_text": "Lo intentaré",
       "quiz_1_option_3_text": "No",
-      "text_1_facilitator": "**Actividad para casa** ⭐ \n \n📝 El día de hoy, conversa con @fields.child_name sobre qué lugares son seguros y cuáles no son seguros para las niñas y los niños de tu comunidad. \n\n✨ Busca un tiempo para que tu niña o niño también comparta sus pensamientos. Puede pensar que es inseguro un lugar que tú creías seguro. Permítele explicar sus razones.  \n\nPracticar el uso de palabras claves cuando se encuentra en peligro para pedir ayuda ejemplo. “Auxilio”, “Mamá”, “Fuego”.",
+      "text_1_facilitator": "¡Ahora es tu turno!\n\nConstruye junto con @fields.child_name un plan de seguridad para su comunidad. Pueden empezar por dibujar un mapa y platicar sobre los lugares donde necesita tener mayor cuidado y qué puede hacer en cada uno si se siente en riesgo. 😊",
       "completed": false,
       "version": 1
     }

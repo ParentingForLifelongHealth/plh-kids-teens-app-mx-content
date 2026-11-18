@@ -10,13 +10,13 @@
       "id": "intro_1",
       "category_id": "intro",
       "nested": false,
-      "text_1_facilitator": "Esta sesión trata sobre qué hacer cuando @fields.child_name **se niega a seguir una instrucción, olvida una regla o se porta de forma agresiva o peligrosa**.\n\n\nA esta edad, @fields.child_name todavía está aprendiendo cuáles acciones son apropiadas o no en diferentes contextos. \n\nEnseñarle que sus acciones le afectan, y que también pueden afectar a otras personas, le ayuda a responsabilizarse de lo que hace. 🙌",
+      "text_1_facilitator": "Este módulo trata sobre qué hacer cuando @fields.child_name **se niega a seguir una instrucción, olvida una regla o se porta de forma agresiva o peligrosa**.\n\nA esta edad, @fields.child_name todavía está aprendiendo cuáles acciones son apropiadas o no en diferentes contextos. \n\nEnseñarle que sus acciones le afectan, y que también pueden afectar a otras personas, le ayuda a responsabilizarse de lo que hace. 🙌",
       "_translations": {
         "text_1_facilitator": {}
       },
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "Esta sesión trata sobre qué hacer cuando @fields.child_name **se niega a seguir una instrucción, olvida una regla o se porta de forma agresiva o peligrosa**.\n\n\nA esta edad, @fields.child_name todavía está aprendiendo cuáles acciones son apropiadas o no en diferentes contextos. \n\nEnseñarle que sus acciones le afectan, y que también pueden afectar a otras personas, le ayuda a responsabilizarse de lo que hace. 🙌"
+          "eng": "Este módulo trata sobre qué hacer cuando @fields.child_name **se niega a seguir una instrucción, olvida una regla o se porta de forma agresiva o peligrosa**.\n\nA esta edad, @fields.child_name todavía está aprendiendo cuáles acciones son apropiadas o no en diferentes contextos. \n\nEnseñarle que sus acciones le afectan, y que también pueden afectar a otras personas, le ayuda a responsabilizarse de lo que hace. 🙌"
         }
       }
     },
@@ -91,7 +91,7 @@
           "eng": "¡Una pregunta más!"
         },
         "quiz_1_question": {
-          "eng": "Verdadero o falso: Las niñas y los niños necesitan castigos físicos, para aprender a comportarse."
+          "eng": "Verdadero o falso: Las niñas y los niños necesitan castigos físicos para aprender a comportarse."
         },
         "quiz_1_option_1_text": {
           "eng": "Verdadero"
@@ -106,7 +106,7 @@
           "eng": "🎉 ¡Tienes razón!\n\nLos golpes y castigos físicos no enseñan a comportarse mejor. Pueden generar miedo, dañar la confianza y empeorar la conducta.\n\n\nTanto niños como niñas pueden aprender de las consecuencias si se les explican con calma y claridad, se aplican de forma constante, y son acordes a lo que pasó y su gravedad."
         }
       },
-      "quiz_1_question": "Verdadero o falso: Las niñas y los niños necesitan castigos físicos, para aprender a comportarse.",
+      "quiz_1_question": "Verdadero o falso: Las niñas y los niños necesitan castigos físicos para aprender a comportarse.",
       "quiz_1_option_1_text": "Verdadero",
       "quiz_1_feedback_1": "👀 ¡Ups! ¡Revisemos esta idea!\n\nLos golpes y castigos físicos no enseñan a comportarse mejor. Pueden generar miedo, dañar la confianza y empeorar la conducta.\n\n\nTanto niños como niñas pueden aprender de las consecuencias si se les explican con calma y claridad, se aplican de forma constante, y son acordes a lo que pasó y su gravedad.",
       "quiz_1_option_2_text": "Falso",
@@ -131,12 +131,12 @@
     {
       "id": "explore_2",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/consequences_yc_1.svg",
+      "image_asset": "images/comic/behave/consequences/consequences_yc_1.svg",
       "character_1_id": "f2_madre",
       "character_2_id": "f2_hija_3",
       "character_3_id": "f2_madre",
       "nested": false,
-      "text_1_facilitator": "¡Vamos a ver estas estrategias en la práctica!",
+      "text_1_facilitator": "Veamos cómo @data.characters.f2_madre.name usa estas estrategias en la práctica:",
       "_translations": {
         "text_1_facilitator": {},
         "text_2": {},
@@ -146,7 +146,7 @@
       },
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "¡Vamos a ver estas estrategias en la práctica!"
+          "eng": "Veamos cómo @data.characters.f2_madre.name usa estas estrategias en la práctica:"
         },
         "text_2": {
           "eng": "@data.characters.f2_hija_3.name está jugando con sus peluches cuando @data.characters.f2_madre.name se acerca para darle una instrucción."
@@ -169,7 +169,7 @@
     {
       "id": "explore_3",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/consequences_yc_2.svg",
+      "image_asset": "images/comic/behave/consequences/consequences_yc_2.svg",
       "character_1_id": "f2_madre",
       "character_2_id": "f2_hija_3",
       "nested": false,
@@ -196,12 +196,12 @@
     {
       "id": "explore_4",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/consequences_yc_3.svg",
+      "image_asset": "images/comic/behave/consequences/consequences_yc_3.svg",
       "character_1_id": "f2_madre",
       "character_2_id": "f2_hija_3",
       "character_3_id": "f2_madre",
       "nested": false,
-      "text_2": "Fíjate cómo @data.characters.f2_madre.name hace una pausa y le da una oportunidad más a @data.characters.f2_hija_3.name antes de aplicar la consecuencia.",
+      "text_2": "Fíjate cómo @data.characters.f2_madre.name hace una pausa y le da una oportunidad más a @data.characters.f2_hija_3.name para que cambie su comportamiento. Luego, establece una consecuencia apropiada para lo que pasó.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
@@ -210,7 +210,7 @@
       },
       "_translatedFields": {
         "text_2": {
-          "eng": "Fíjate cómo @data.characters.f2_madre.name hace una pausa y le da una oportunidad más a @data.characters.f2_hija_3.name antes de aplicar la consecuencia."
+          "eng": "Fíjate cómo @data.characters.f2_madre.name hace una pausa y le da una oportunidad más a @data.characters.f2_hija_3.name para que cambie su comportamiento. Luego, establece una consecuencia apropiada para lo que pasó."
         },
         "character_1_text": {
           "eng": "(Respira y hace una pausa) @data.characters.f2_hija_3.name, si no guardas tus juguetes en la canasta ahora, no podrás jugar con ellos después de cenar."
@@ -229,12 +229,12 @@
     {
       "id": "explore_5",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/consequences_yc_4.svg",
+      "image_asset": "images/comic/behave/consequences/consequences_yc_4.svg",
       "character_1_id": "f2_hija_3",
       "character_2_id": "f2_madre",
       "character_3_id": "f2_hija_3",
       "nested": false,
-      "text_2": "Después, @data.characters.f2_madre.name dirige la atención a una nueva actividad y recuerda reconocer que @data.characters.f2_hija_3.name le hizo caso.",
+      "text_2": "Después, @data.characters.f2_madre.name dirige la atención a una nueva actividad y recuerda reconocer cuando @data.characters.f2_hija_3.name le hace caso. Esto la motiva a comportarse así más seguido.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
@@ -243,7 +243,7 @@
       },
       "_translatedFields": {
         "text_2": {
-          "eng": "Después, @data.characters.f2_madre.name dirige la atención a una nueva actividad y recuerda reconocer que @data.characters.f2_hija_3.name le hizo caso."
+          "eng": "Después, @data.characters.f2_madre.name dirige la atención a una nueva actividad y recuerda reconocer cuando @data.characters.f2_hija_3.name le hace caso. Esto la motiva a comportarse así más seguido."
         },
         "character_1_text": {
           "eng": "¡Ya me estoy lavando las manos, mamá!"
@@ -267,7 +267,7 @@
       "section_3_icon_asset": "images/icons/clock_blue.png",
       "section_4_icon_asset": "images/icons/tick.svg",
       "nested": false,
-      "text_1_facilitator": "Ya viste cómo @data.characters.f2_madre.name usó las estrategias.\n\n\nVamos a recordarlas una vez más para que apliques consecuencias justas cuando @fields.child_name tenga un comportamiento difícil:",
+      "text_1_facilitator": "Recordemos las estrategias para aplicar consecuencias justas cuando @fields.child_name se niega a seguir una instrucción, olvida una regla o se porta de forma agresiva o peligrosa.⭐",
       "_translations": {
         "text_1_facilitator": {},
         "section_1_title": {},
@@ -281,7 +281,7 @@
       },
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "Ya viste cómo @data.characters.f2_madre.name usó las estrategias.\n\n\nVamos a recordarlas una vez más para que apliques consecuencias justas cuando @fields.child_name tenga un comportamiento difícil:"
+          "eng": "Recordemos las estrategias para aplicar consecuencias justas cuando @fields.child_name se niega a seguir una instrucción, olvida una regla o se porta de forma agresiva o peligrosa.⭐"
         },
         "section_1_title": {
           "eng": "PAUSA"
@@ -338,7 +338,7 @@
           "eng": "¡Ahora es tu turno!\n\nPiensa en un comportamiento de @fields.child_name que te esté costando manejar: una regla de la casa que no respeta con frecuencia o una instrucción que se niega a seguir. \n\nLuego, identifica una consecuencia que puedas aplicar y que cumpla con las 4 Rs: \n- Relacionada: Tiene que ver con lo que pasó.\n- Revelada: La conoce desde antes y sabe qué esperar.\n- Respetuosa: No incluye gritos, golpes ni humillaciones.\n- Razonable: Es justa, adecuada a su edad y no es demasiado severa.\n\nHabla sobre ella con @fields.child_name para que sepa qué esperar. 😊"
         },
         "text_2": {
-          "eng": "Por ejemplo:\n\n📝 Regla: Usar sus juguetes con cuidado.\n🤔 Consecuencia: No podrá jugar con sus juguetes después de cenar.\n\n\n📝 Situación: No quiere devolverte tu teléfono cuando se lo pides.\n🤔 Consecuencia: No podrá usar el teléfono hasta el día siguiente."
+          "eng": "Por ejemplo:\n\n_Regla_: Usar sus juguetes con cuidado.\n👉 _Consecuencia si no la cumple_: No podrá jugar con sus juguetes después de cenar.\n\n\n_Situación_: No quiere devolverte tu teléfono cuando se lo pides.\n👉 _Consecuencia_: No podrá usar el teléfono hasta el día siguiente."
         },
         "quiz_1_question": {
           "eng": "¿Puedes intentarlo esta semana?"
@@ -362,7 +362,7 @@
           "eng": "¡Lo entiendo! Puedes empezar por identificar las consecuencias que ya aplicas de manera adecuada.💛\n\nDespués, puedes regresar aquí para realizar la actividad completa."
         }
       },
-      "text_2": "Por ejemplo:\n\n📝 Regla: Usar sus juguetes con cuidado.\n🤔 Consecuencia: No podrá jugar con sus juguetes después de cenar.\n\n\n📝 Situación: No quiere devolverte tu teléfono cuando se lo pides.\n🤔 Consecuencia: No podrá usar el teléfono hasta el día siguiente.",
+      "text_2": "Por ejemplo:\n\n_Regla_: Usar sus juguetes con cuidado.\n👉 _Consecuencia si no la cumple_: No podrá jugar con sus juguetes después de cenar.\n\n\n_Situación_: No quiere devolverte tu teléfono cuando se lo pides.\n👉 _Consecuencia_: No podrá usar el teléfono hasta el día siguiente.",
       "quiz_1_question": "¿Puedes intentarlo esta semana?",
       "quiz_1_option_1_text": "Sí",
       "quiz_1_feedback_1": "¡Muy bien! Pensar las consecuencias desde antes te ayudará a aplicarlas con más calma y constancia. 🎉\n\nRecuerda escuchar a @fields.child_name y reconocer cuando hace algo positivo o cambia su comportamiento. Así, puede que en el futuro ni siquiera necesites aplicar consecuencias.",
