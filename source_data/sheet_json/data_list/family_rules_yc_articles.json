@@ -13,7 +13,7 @@
     {
       "id": "intro_1",
       "category_id": "intro",
-      "text_1_facilitator::eng": "Esta sesión trata sobre cómo **establecer reglas o acuerdos** junto con @fields.child_name.\n\n\nTal vez ahora acostumbras poner las reglas de casa por tu cuenta. Pero dejar que @fields.child_name participe en su creación puede contribuir a que sienta más seguridad y protección. 🤝"
+      "text_1_facilitator::eng": "Este módulo trata sobre cómo **establecer reglas o acuerdos** junto con @fields.child_name.\n\n\nTal vez ahora acostumbras poner las reglas de casa por tu cuenta. Pero dejar que @fields.child_name participe en su creación puede contribuir a que sienta más seguridad y protección. 🤝"
     },
     {
       "id": "intro_2",
@@ -59,9 +59,9 @@
     {
       "id": "explore_2",
       "category_id": "explore",
-      "text_1_facilitator::eng": "¡Vamos a ver estas estrategias en la práctica!",
-      "image_asset": "images/comic/behave/family_rules_yc_1.svg",
-      "text_2::eng": "@data.characters.f1_madre.name quiere acordar con @data.characters.f1_hijo_5.name una regla sobre su tiempo de pantallas.",
+      "text_1_facilitator::eng": "Veamos cómo @data.characters.f1_madre.name usa estas estrategias en la práctica:",
+      "image_asset": "images/comic/behave/family_rules/family_rules_yc_1.svg",
+      "text_2::eng": "@data.characters.f1_madre.name quiere acordar una regla sobre el tiempo de pantallas con su hijo @data.characters.f1_hijo_5.name.",
       "character_1_id": "f1_madre",
       "character_1_text::eng": "Oye, @data.characters.f1_hijo_5.name, últimamente pasas mucho tiempo viendo la tele y me gustaría que acordemos una regla sobre eso.",
       "character_2_id": "f1_hijo_5",
@@ -72,7 +72,7 @@
     {
       "id": "explore_3",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/family_rules_yc_2.svg",
+      "image_asset": "images/comic/behave/family_rules/family_rules_yc_2.svg",
       "text_2::eng": "Mira cómo @data.characters.f1_madre.name trabaja en equipo con @data.characters.f1_hijo_5.name para acordar la regla y se asegura de que sea realista.",
       "character_1_id": "f1_madre",
       "character_1_text::eng": "¿Cuál crees que podría ser un acuerdo adecuado para los dos?",
@@ -84,7 +84,7 @@
     {
       "id": "explore_4",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/family_rules_yc_3.svg",
+      "image_asset": "images/comic/behave/family_rules/family_rules_yc_3.svg",
       "text_2::eng": "@data.characters.f1_madre.name le cuenta a @data.characters.f1_padre.name lo que acordaron, para que ambos apliquen la regla igual.",
       "character_1_id": "f1_madre",
       "character_1_text::eng": "Oye, hoy hablé con @data.characters.f1_hijo_5.name y acordamos una regla sobre ver la tele.",
@@ -96,7 +96,7 @@
     {
       "id": "explore_5",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/family_rules_yc_4.svg",
+      "image_asset": "images/comic/behave/family_rules/family_rules_yc_4.svg",
       "text_2::eng": "Al día siguiente, @data.characters.f1_padre.name se asegura de cumplir la regla acordada.",
       "character_1_id": "f1_hijo_5",
       "character_1_text::eng": "Papá, ¿puedo ver la tele?",
@@ -108,7 +108,7 @@
     {
       "id": "explore_6",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/family_rules_yc_4.svg",
+      "image_asset": "images/comic/behave/family_rules/family_rules_yc_4.svg",
       "text_2::eng": "Fíjate cómo le recuerda a @data.characters.f1_hijo_5.name la regla para poder mantenerse constantes.",
       "character_1_text::eng": "Recuerda que la regla que acordaste con tu mamá es que la tarea tiene que estar terminada antes de poder ver la tele.",
       "character_2_text::eng": "Sí, es cierto… Ya voy a hacerla."
@@ -116,8 +116,8 @@
     {
       "id": "explore_7",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/family_rules_yc_5.svg",
-      "text_2::eng": "@data.characters.f1_padre.name reconoce cuando @data.characters.f1_hijo_5.name cumple la regla, para animarlo a seguir así.",
+      "image_asset": "images/comic/behave/family_rules/family_rules_yc_5.svg",
+      "text_2::eng": "@data.characters.f1_padre.name también reconoce cuando @data.characters.f1_hijo_5.name cumple la regla. Esto lo anima a comportarse así más seguido.",
       "character_1_id": "f1_hijo_5",
       "character_1_text::eng": "¡Terminé la tarea! ¿Ya puedo ver la tele?",
       "character_2_id": "f1_padre",
@@ -128,7 +128,7 @@
     {
       "id": "practical_tips_1",
       "category_id": "practical_tips",
-      "text_1_facilitator::eng": "Ya viste cómo @data.characters.f1_madre.name y @data.characters.f1_padre.name usaron las estrategias.\n\n\nVamos a recordarlas una vez más para que crees reglas familiares con @fields.child_name:",
+      "text_1_facilitator::eng": "Recordemos las estrategias para crear reglas y acuerdos familiares junto con @fields.child_name.⭐",
       "section_1_title::eng": "SEAN EQUIPO",
       "section_1_icon_asset": "images/icons/heart_filled_blue.png",
       "section_1_text::eng": "Crea las reglas junto con @fields.child_name. Hablen de por qué se necesita y escucha su punto de vista. Involucra a las personas con las que compartes la crianza.",

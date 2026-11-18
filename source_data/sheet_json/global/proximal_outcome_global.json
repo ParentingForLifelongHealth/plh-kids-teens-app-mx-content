@@ -7,7 +7,7 @@
     {
       "type": "declare_global_constant",
       "name": "set_domain_question",
-      "value": "Hay muchos temas que podemos trabajar aquí.\n\n\n¿Por cuál te gustaría empezar?"
+      "value": "Hay muchos temas que podemos trabajar aquí.\n\n\n¿Con cuál te gustaría empezar?"
     },
     {
       "type": "declare_global_constant",
@@ -57,12 +57,12 @@
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_progress_final_msg",
-      "value": "Si alguna vez necesitas ayuda adicional, consulta nuestros Contactos de Apoyo. Los encuentras tocando el botón @global.library en la parte inferior de tu pantalla. ❤️"
+      "value": "Si alguna vez necesitas apoyo adicional, consulta nuestros Contactos de Apoyo. Los encuentras tocando el botón @global.library en la parte inferior de tu pantalla. ❤️"
     },
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_cta_title",
-      "value": "Veamos cómo has avanzado"
+      "value": "Es momento de ver tu avance"
     },
     {
       "type": "declare_global_constant",
@@ -76,7 +76,7 @@
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_cta_badge_text",
-      "value": "Seguimiento"
+      "value": "¿Cómo vamos?"
     },
     {
       "type": "declare_global_constant",
@@ -91,52 +91,52 @@
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_completed_text",
-      "value": "¿Necesitas ayuda con @fields.child_name hoy?\nTus sesiones siguen aquí"
+      "value": "¿Necesitas apoyo con @fields.child_name hoy?\nPuedes regresar a los módulos cuando quieras."
     },
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_completed_button",
-      "value": "Ir a las sesiones"
+      "value": "Ir a los módulos"
     },
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_checkin_intro",
-      "value": "¡Felicidades por llegar hasta aquí!\n\nCuando empezaste, compartiste que tu reto es: \"@fields.selected_challenge_value\"\n\nY elegiste como meta: \"@fields.selected_goal_value\"\n\n¡Veamos cómo han ido las cosas!"
+      "value": "¡Felicidades por llegar hasta aquí! 🎉\n\nCuando empezaste, compartiste que tu reto es: \"@fields.selected_challenge_value\"\n\nY elegiste como meta: \"@fields.selected_goal_value\"\n\n¡Veamos cómo han ido las cosas!"
     },
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_checkin_intro_no_goal",
-      "value": "¡Felicidades por llegar hasta aquí!\n\nCuando empezaste, compartiste que tu reto es: \"@fields.selected_challenge_value\"\n\n¡Veamos cómo han ido las cosas!"
+      "value": "¡Felicidades por llegar hasta aquí! 🎉\n\nCuando empezaste, compartiste que tu reto es: \"@fields.selected_challenge_value\"\n\n¡Veamos cómo han ido las cosas!"
     },
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_checkin_intro_no_goal_no_chall",
-      "value": "¡Felicidades por llegar hasta aquí!\n\nVeamos cómo han ido las cosas."
+      "value": "¡Felicidades por llegar hasta aquí! 🎉\n\nVeamos cómo han ido las cosas."
     },
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_checkin_intro_post",
-      "value": "¡Felicidades por completar el programa!\n\nCuando empezaste, compartiste que tu reto era: \"@fields.selected_challenge_value\"\n\nY elegiste como meta: \"@fields.selected_goal_value\"\n\n¡Veamos cómo te fue!"
+      "value": "¡Felicidades por completar el programa! 🎉\n\nCuando empezaste, compartiste que tu reto era: \"@fields.selected_challenge_value\"\n\nY elegiste como meta: \"@fields.selected_goal_value\"\n\n¡Veamos cómo te fue!"
     },
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_checkin_intro_no_goal_post",
-      "value": "¡Felicidades por completar el programa!\n\nCuando empezaste, compartiste que tu reto era: \"@fields.selected_challenge_value\"\n\n¡Veamos cómo te fue!"
+      "value": "¡Felicidades por completar el programa! 🎉\n\nCuando empezaste, compartiste que tu reto era: \"@fields.selected_challenge_value\"\n\n¡Veamos cómo te fue!"
     },
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_checkin_intro_no_goal_no_chall_post",
-      "value": "¡Felicidades por completar el programa!\n\nVeamos cómo te fue."
+      "value": "¡Felicidades por completar el programa! 🎉\n\nVeamos cómo te fue."
     },
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_summary_title",
-      "value": "¡Son @local.n_checkins_completed seguimientos!"
+      "value": "¡Llevas @local.n_checkins_completed registros de tu avance!"
     },
     {
       "type": "declare_global_constant",
       "name": "proximal_outcome_summary_text",
-      "value": "Lo que haces cada día para cuidar y acompañar a @fields.child_name deja huella en su vida."
+      "value": "Todo lo que haces para cuidar y acompañar a @fields.child_name dejará huella en su vida"
     },
     {
       "type": "declare_global_constant",

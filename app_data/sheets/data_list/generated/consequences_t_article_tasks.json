@@ -8,13 +8,13 @@
       "in_library": "yes",
       "title_oringinal_eng": "Quick pause",
       "lottie_asset": "lottie/relax/square_flow.json",
-      "media_asset_m": "audio/relax/male/relax_1.m4a",
-      "media_asset_f": "audio/relax/female/relax_16.m4a",
+      "media_asset_m": "audio/relax/male/audio_1_m.m4a",
+      "media_asset_f": "audio/relax/male/audio_1_f.m4a",
       "media_type": "audio",
-      "transcript_m_original_eng": "Sit down, close your eyes, and listen to your breath as it goes in and out.\nNotice how you feel. When you are ready, open your eyes. \nTry this whenever you are feeling stressed and you need a break to reconnect.",
-      "transcript_f_original_eng": "Close your eyes.\n\nTake a moment to feel the ground under your feet.\nThink of something you feel grateful for.\nFocus on your breath.\nBreathe in and out.\n\nIn and out.",
-      "transcript_m": "Siéntate, cierra los ojos y escucha tu respiración mientras entra y sale.\nNota cómo te sientes. Cuando estés listo(a), abre los ojos.\nPrueba esto cada vez que te sientas estresado(a) y necesites un descanso para reconectarte.",
-      "transcript_f": "Practiquemos un truco para calmarte que llamamos “Poder de la Pausa”.\n\nPon tus pies en el suelo y respira lentamente tres veces. Imagina que hueles una flor o que soplas una vela.\n\n¡Ta-da! ¡Poder de la Pausa!\n\nEste es un excelente truco cuando te sientes frustrado(a), porque te ayudará a tranquilizarte.",
+      "transcript_m_original_eng": "Close your eyes and think about the day. \n\nName one thing that you are grateful for. \nName one thing that you did well. \nName one thing that you love.\n\nWell done, you are a hero!",
+      "transcript_f_original_eng": "Close your eyes and think about the day. \n\nName one thing that you are grateful for. \nName one thing that you did well. \nName one thing that you love.\n\nWell done, you are a hero!",
+      "transcript_m": "Busca una posición cómoda, y si te sientes bien haciéndolo, cierra tus ojos.\nPor un momento, piensa en cómo fue tu día. \nAhora, identifica una cosa por la que sientas gratitud. Puede ser algo grande o algo pequeño.\nTambién, piensa en algo que hayas hecho bien el día de hoy. Date un momento para reconocer tu esfuerzo.\nY ahora, piensa en algo que amas. Puede ser una persona, un lugar, una actividad o algo que sea especial para ti.\nCuando te sientas lista o listo, abre suavemente los ojos.\n¡Muy bien! Reconoce todo lo que haces cada día. Eres una persona valiosa y haces una gran diferencia.",
+      "transcript_f": "Busca una posición cómoda, y si te sientes bien haciéndolo, cierra tus ojos.\nPor un momento, piensa en cómo fue tu día. \nAhora, identifica una cosa por la que sientas gratitud. Puede ser algo grande o algo pequeño.\nTambién, piensa en algo que hayas hecho bien el día de hoy. Date un momento para reconocer tu esfuerzo.\nY ahora, piensa en algo que amas. Puede ser una persona, un lugar, una actividad o algo que sea especial para ti.\nCuando te sientas lista o listo, abre suavemente los ojos.\n¡Muy bien! Reconoce todo lo que haces cada día. Eres una persona valiosa y haces una gran diferencia.",
       "title": "Pausa rápida",
       "_translations": {
         "title": {}
@@ -120,12 +120,12 @@
       "id": "intro_1",
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "Esta sesión trata sobre qué hacer cuando @fields.child_name se niega a seguir una instrucción, olvida un acuerdo familiar o se porta de forma agresiva o peligrosa.\n\n\nA esta edad, @fields.child_name todavía está descubriendo quién es y qué tipo de persona quiere ser. \n\nEnseñarle que sus acciones le afectan, y que también pueden afectar a otras personas, le ayuda a responsabilizarse de lo que hace. 🙌"
+          "eng": "Este módulo trata sobre qué hacer cuando @fields.child_name se niega a seguir una instrucción, olvida un acuerdo familiar o se porta de forma agresiva o peligrosa.\n\nA esta edad, @fields.child_name todavía está descubriendo quién es y qué tipo de persona quiere ser. \n\nEnseñarle que sus acciones le afectan, y que también pueden afectar a otras personas, le ayuda a responsabilizarse de lo que hace. 🙌"
         }
       },
       "category_id": "intro",
       "nested": false,
-      "text_1_facilitator": "Esta sesión trata sobre qué hacer cuando @fields.child_name se niega a seguir una instrucción, olvida un acuerdo familiar o se porta de forma agresiva o peligrosa.\n\n\nA esta edad, @fields.child_name todavía está descubriendo quién es y qué tipo de persona quiere ser. \n\nEnseñarle que sus acciones le afectan, y que también pueden afectar a otras personas, le ayuda a responsabilizarse de lo que hace. 🙌",
+      "text_1_facilitator": "Este módulo trata sobre qué hacer cuando @fields.child_name se niega a seguir una instrucción, olvida un acuerdo familiar o se porta de forma agresiva o peligrosa.\n\nA esta edad, @fields.child_name todavía está descubriendo quién es y qué tipo de persona quiere ser. \n\nEnseñarle que sus acciones le afectan, y que también pueden afectar a otras personas, le ayuda a responsabilizarse de lo que hace. 🙌",
       "_translations": {
         "text_1_facilitator": {}
       },
@@ -196,7 +196,7 @@
           "eng": "¡Una pregunta más!"
         },
         "quiz_1_question": {
-          "eng": "Verdadero o falso: Las niñas, niños y adolescentes necesitan castigos físicos, para aprender a comportarse."
+          "eng": "Verdadero o falso: Las niñas, niños y adolescentes necesitan castigos físicos para aprender a comportarse."
         },
         "quiz_1_option_1_text": {
           "eng": "Verdadero"
@@ -223,7 +223,7 @@
         "text_1_facilitator": {}
       },
       "quiz_1_feedback_2": "🎉 ¡Tienes razón!\n\nLos golpes y castigos físicos no enseñan a comportarse mejor. Pueden generar miedo, dañar la confianza y empeorar la conducta.\n\n\nNiñas, niños y adolescentes pueden aprender de las consecuencias si se les explican con calma y claridad, se aplican de forma constante, y son acordes a lo que pasó y su gravedad.",
-      "quiz_1_question": "Verdadero o falso: Las niñas, niños y adolescentes necesitan castigos físicos, para aprender a comportarse.",
+      "quiz_1_question": "Verdadero o falso: Las niñas, niños y adolescentes necesitan castigos físicos para aprender a comportarse.",
       "quiz_1_option_1_text": "Verdadero",
       "quiz_1_option_2_text": "Falso",
       "text_1_facilitator": "¡Una pregunta más!",
@@ -253,86 +253,57 @@
       "id": "explore_2",
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "¡Vamos a ver estas estrategias en la práctica!"
+          "eng": "Veamos cómo @data.characters.f1_padre.name usa estas estrategias en la práctica:"
         },
         "text_2": {
-          "eng": "@data.characters.f1_padre.name conversa con @data.characters.f1_hijo_17.name sobre sus llegadas tarde y escucha su versión."
+          "eng": "@data.characters.f1_padre.name nota que @data.characters.f1_hijo_17.name no ha estado respetando su acuerdo sobre la hora de llegada. Mira cómo se interesa por escucharlo antes de regañarlo o imponer una consecuencia."
         },
         "character_1_text": {
           "eng": "He notado que últimamente estás llegando tarde a casa. ¿Qué ha pasado?"
         },
         "character_2_text": {
           "eng": "Me he quedado un rato más con mis amigos después de la escuela."
-        },
-        "character_3_text": {
-          "eng": "Entiendo que quieras pasar tiempo con ellos, pero me preocupa que regreses cuando ya está oscuro. También necesitas tiempo para hacer tus tareas. ¿A qué hora crees que sería razonable llegar?"
-        },
-        "character_4_text": {
-          "eng": "Perdón, pa. ¿Te parece antes de las 6 de la tarde?"
         }
       },
       "category_id": "explore",
       "nested": false,
-      "text_1_facilitator": "¡Vamos a ver estas estrategias en la práctica!",
+      "text_1_facilitator": "Veamos cómo @data.characters.f1_padre.name usa estas estrategias en la práctica:",
       "_translations": {
         "text_1_facilitator": {},
         "text_2": {},
         "character_1_text": {},
-        "character_2_text": {},
-        "character_3_text": {},
-        "character_4_text": {}
+        "character_2_text": {}
       },
-      "image_asset": "images/comic/behave/consequences_t_1.svg",
+      "image_asset": "images/comic/behave/consequences/consequences_t_1.svg",
       "character_1_id": "f1_padre",
       "character_2_id": "f1_hijo_17",
-      "character_3_id": "f1_padre",
-      "character_4_id": "f1_hijo_17",
-      "text_2": "@data.characters.f1_padre.name conversa con @data.characters.f1_hijo_17.name sobre sus llegadas tarde y escucha su versión.",
+      "text_2": "@data.characters.f1_padre.name nota que @data.characters.f1_hijo_17.name no ha estado respetando su acuerdo sobre la hora de llegada. Mira cómo se interesa por escucharlo antes de regañarlo o imponer una consecuencia.",
       "character_1_text": "He notado que últimamente estás llegando tarde a casa. ¿Qué ha pasado?",
       "character_2_text": "Me he quedado un rato más con mis amigos después de la escuela.",
-      "character_3_text": "Entiendo que quieras pasar tiempo con ellos, pero me preocupa que regreses cuando ya está oscuro. También necesitas tiempo para hacer tus tareas. ¿A qué hora crees que sería razonable llegar?",
-      "character_4_text": "Perdón, pa. ¿Te parece antes de las 6 de la tarde?",
       "completed": false,
       "version": 1
     },
     {
       "id": "explore_3",
       "_translatedFields": {
-        "text_2": {
-          "eng": "@data.characters.f1_padre.name le pregunta a @data.characters.f1_hijo_17.name qué consecuencia le parece justa si no llega a tiempo."
-        },
         "character_1_text": {
-          "eng": "Me parece bien. ¿Y qué crees que debería pasar si no llegas a tiempo?"
+          "eng": "Entiendo que quieras pasar tiempo con ellos, pero me preocupa que regreses cuando ya está oscuro. También necesitas tiempo para hacer tus tareas. ¿A qué hora crees que sería razonable llegar?"
         },
         "character_2_text": {
-          "eng": "Mmm…"
-        },
-        "character_3_text": {
-          "eng": "Vamos, seguro se te ocurre algo."
-        },
-        "character_4_text": {
-          "eng": "Tendría que ponerme a hacer la tarea en cuanto llegue y no cenar hasta terminarla."
+          "eng": "Perdón, pa. ¿Te parece antes de las seis de la tarde?"
         }
       },
       "category_id": "explore",
       "nested": false,
-      "image_asset": "images/comic/behave/consequences_t_2.svg",
+      "image_asset": "images/comic/behave/consequences/consequences_t_1.svg",
       "character_1_id": "f1_padre",
       "character_2_id": "f1_hijo_17",
-      "character_3_id": "f1_padre",
-      "character_4_id": "f1_hijo_17",
-      "text_2": "@data.characters.f1_padre.name le pregunta a @data.characters.f1_hijo_17.name qué consecuencia le parece justa si no llega a tiempo.",
+      "character_1_text": "Entiendo que quieras pasar tiempo con ellos, pero me preocupa que regreses cuando ya está oscuro. También necesitas tiempo para hacer tus tareas. ¿A qué hora crees que sería razonable llegar?",
       "_translations": {
-        "text_2": {},
         "character_1_text": {},
-        "character_2_text": {},
-        "character_3_text": {},
-        "character_4_text": {}
+        "character_2_text": {}
       },
-      "character_1_text": "Me parece bien. ¿Y qué crees que debería pasar si no llegas a tiempo?",
-      "character_2_text": "Mmm…",
-      "character_3_text": "Vamos, seguro se te ocurre algo.",
-      "character_4_text": "Tendría que ponerme a hacer la tarea en cuanto llegue y no cenar hasta terminarla.",
+      "character_2_text": "Perdón, pa. ¿Te parece antes de las seis de la tarde?",
       "completed": false,
       "version": 1
     },
@@ -340,40 +311,34 @@
       "id": "explore_4",
       "_translatedFields": {
         "text_2": {
-          "eng": "@data.characters.f1_padre.name le propone una consecuencia relacionada con lo que pasó y @data.characters.f1_hijo_17.name la acepta."
+          "eng": "Fíjate cómo @data.characters.f1_padre.name platica con @data.characters.f1_hijo_17.name para ponerse de acuerdo sobre una consecuencia justa. Esto hace más probable que @data.characters.f1_hijo_17.name la acepte en el futuro, si se llegara a necesitar."
         },
         "character_1_text": {
-          "eng": "La tarea tienes que hacerla de todas formas y prefiero que cenes con nosotros. ¿Qué te parece si acordamos otra consecuencia?"
+          "eng": "Me parece bien. ¿Y qué crees que debería pasar si no llegas a tiempo? Ándale, seguro se te ocurre algo."
         },
         "character_2_text": {
-          "eng": "Mmm… No sé."
+          "eng": "Tendría que ponerme a hacer la tarea en cuanto llegue y no cenar hasta terminarla."
         },
         "character_3_text": {
-          "eng": "Si llegas después de las 6, al día siguiente tendrás que regresar directamente de la escuela, sin quedarte con tus amigos. ¿Te parece bien?"
-        },
-        "character_4_text": {
-          "eng": "Sí, está bien…"
+          "eng": "La tarea tienes que hacerla de todas formas y prefiero que cenes con nosotros. ¿Qué te parece si acordamos otra consecuencia?"
         }
       },
       "category_id": "explore",
       "nested": false,
-      "image_asset": "images/comic/behave/consequences_t_3.svg",
+      "image_asset": "images/comic/behave/consequences/consequences_t_2.svg",
       "character_1_id": "f1_padre",
       "character_2_id": "f1_hijo_17",
-      "character_3_id": "f1_padre",
-      "character_4_id": "f1_hijo_17",
-      "text_2": "@data.characters.f1_padre.name le propone una consecuencia relacionada con lo que pasó y @data.characters.f1_hijo_17.name la acepta.",
+      "text_2": "Fíjate cómo @data.characters.f1_padre.name platica con @data.characters.f1_hijo_17.name para ponerse de acuerdo sobre una consecuencia justa. Esto hace más probable que @data.characters.f1_hijo_17.name la acepte en el futuro, si se llegara a necesitar.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
         "character_2_text": {},
-        "character_3_text": {},
-        "character_4_text": {}
+        "character_3_text": {}
       },
-      "character_1_text": "La tarea tienes que hacerla de todas formas y prefiero que cenes con nosotros. ¿Qué te parece si acordamos otra consecuencia?",
-      "character_2_text": "Mmm… No sé.",
-      "character_3_text": "Si llegas después de las 6, al día siguiente tendrás que regresar directamente de la escuela, sin quedarte con tus amigos. ¿Te parece bien?",
-      "character_4_text": "Sí, está bien…",
+      "character_1_text": "Me parece bien. ¿Y qué crees que debería pasar si no llegas a tiempo? Ándale, seguro se te ocurre algo.",
+      "character_2_text": "Tendría que ponerme a hacer la tarea en cuanto llegue y no cenar hasta terminarla.",
+      "character_3_id": "f1_padre",
+      "character_3_text": "La tarea tienes que hacerla de todas formas y prefiero que cenes con nosotros. ¿Qué te parece si acordamos otra consecuencia?",
       "completed": false,
       "version": 1
     },
@@ -381,52 +346,98 @@
       "id": "explore_5",
       "_translatedFields": {
         "text_2": {
-          "eng": "Un par de días después, @data.characters.f1_padre.name aplica con calma la consecuencia acordada y luego le ofrece ayuda con la tarea."
+          "eng": "Además, mira cómo la consecuencia que @data.characters.f1_padre.name le propone está relacionada con la situación y es adecuada para la gravedad del acuerdo que se rompe."
         },
         "character_1_text": {
-          "eng": "Hola, llegaste después de las 6 otra vez…"
+          "eng": "Si llegas después de las seis, al día siguiente tendrás que regresar directamente de la escuela, sin quedarte con tus amigos. ¿Te parece bien?"
+        },
+        "character_2_text": {
+          "eng": "Sí, está bien…"
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/behave/consequences/consequences_t_3.svg",
+      "character_1_id": "f1_padre",
+      "character_2_id": "f1_hijo_17",
+      "text_2": "Además, mira cómo la consecuencia que @data.characters.f1_padre.name le propone está relacionada con la situación y es adecuada para la gravedad del acuerdo que se rompe.",
+      "_translations": {
+        "text_2": {},
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "character_1_text": "Si llegas después de las seis, al día siguiente tendrás que regresar directamente de la escuela, sin quedarte con tus amigos. ¿Te parece bien?",
+      "character_2_text": "Sí, está bien…",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_6",
+      "_translatedFields": {
+        "text_2": {
+          "eng": "Un par de días después, @data.characters.f1_padre.name aplica con calma la consecuencia que habían acordado."
+        },
+        "character_1_text": {
+          "eng": "@data.characters.f1_hijo_17.name, llegaste después de las seis otra vez…"
         },
         "character_2_text": {
           "eng": "Solo fueron unos minutos…"
         },
         "character_3_text": {
-          "eng": "Entiendo, pero habíamos acordado que llegarías antes de las 6. Mañana tendrás que regresar directamente de la escuela."
-        },
-        "character_4_text": {
-          "eng": "(resignado) Está bien…"
-        },
-        "character_5_text": {
-          "eng": "Gracias por entenderlo. ¿Necesitas que te ayude con la tarea?"
-        },
-        "character_6_text": {
-          "eng": "(más animado) ¡Sí! Hay un problema de matemáticas que nos dejó el maestro y no sé cómo resolverlo…"
+          "eng": "Entiendo, pero habíamos acordado que llegarías antes de las seis. Mañana tendrás que regresar directamente de la escuela."
         }
       },
       "category_id": "explore",
       "nested": false,
-      "image_asset": "images/comic/behave/consequences_t_4.svg",
+      "image_asset": "images/comic/behave/consequences/consequences_t_4.svg",
       "character_1_id": "f1_padre",
       "character_2_id": "f1_hijo_17",
-      "character_3_id": "f1_padre",
-      "character_4_id": "f1_hijo_17",
-      "text_2": "Un par de días después, @data.characters.f1_padre.name aplica con calma la consecuencia acordada y luego le ofrece ayuda con la tarea.",
+      "text_2": "Un par de días después, @data.characters.f1_padre.name aplica con calma la consecuencia que habían acordado.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
         "character_2_text": {},
-        "character_3_text": {},
-        "character_4_text": {},
-        "character_5_text": {},
-        "character_6_text": {}
+        "character_3_text": {}
       },
-      "character_1_text": "Hola, llegaste después de las 6 otra vez…",
+      "character_1_text": "@data.characters.f1_hijo_17.name, llegaste después de las seis otra vez…",
       "character_2_text": "Solo fueron unos minutos…",
-      "character_3_text": "Entiendo, pero habíamos acordado que llegarías antes de las 6. Mañana tendrás que regresar directamente de la escuela.",
-      "character_4_text": "(resignado) Está bien…",
-      "character_5_id": "f1_padre",
-      "character_6_id": "f1_hijo_17",
-      "character_5_text": "Gracias por entenderlo. ¿Necesitas que te ayude con la tarea?",
-      "character_6_text": "(más animado) ¡Sí! Hay un problema de matemáticas que nos dejó el maestro y no sé cómo resolverlo…",
+      "character_3_id": "f1_padre",
+      "character_3_text": "Entiendo, pero habíamos acordado que llegarías antes de las seis. Mañana tendrás que regresar directamente de la escuela.",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_7",
+      "_translatedFields": {
+        "text_2": {
+          "eng": "Observa cómo haber acordado la consecuencia desde antes y redirigir la atención a algo positivo, ayuda a que @data.characters.f1_hijo_17.name acepte la consecuencia con calma."
+        },
+        "character_1_text": {
+          "eng": "(resignado) Está bien…"
+        },
+        "character_2_text": {
+          "eng": "Gracias por entenderlo, @data.characters.f1_hijo_17.name. ¿Necesitas que te ayude con la tarea?"
+        },
+        "character_3_text": {
+          "eng": "¡Sí, gracias! De hecho hay un problema de matemáticas que no sé bien cómo resolver…"
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/behave/consequences/consequences_t_4.svg",
+      "character_1_id": "f1_hijo_17",
+      "character_2_id": "f1_padre",
+      "text_2": "Observa cómo haber acordado la consecuencia desde antes y redirigir la atención a algo positivo, ayuda a que @data.characters.f1_hijo_17.name acepte la consecuencia con calma.",
+      "_translations": {
+        "text_2": {},
+        "character_1_text": {},
+        "character_2_text": {},
+        "character_3_text": {}
+      },
+      "character_1_text": "(resignado) Está bien…",
+      "character_2_text": "Gracias por entenderlo, @data.characters.f1_hijo_17.name. ¿Necesitas que te ayude con la tarea?",
+      "character_3_id": "f1_hijo_17",
+      "character_3_text": "¡Sí, gracias! De hecho hay un problema de matemáticas que no sé bien cómo resolver…",
       "completed": false,
       "version": 1
     },
@@ -434,7 +445,7 @@
       "id": "practical_tips_1",
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "Ya viste cómo @data.characters.f1_padre.name usó las estrategias.\n\n\nVamos a recordarlas una vez más para que apliques consecuencias justas cuando @fields.child_name tenga un comportamiento difícil:"
+          "eng": "Recordemos las estrategias para aplicar consecuencias justas cuando @fields.child_name se niega a seguir una instrucción, olvida una regla o se porta de forma agresiva o peligrosa.⭐"
         },
         "section_1_title": {
           "eng": "PAUSA"
@@ -446,7 +457,7 @@
           "eng": "ACTÚA CON JUSTICIA"
         },
         "section_2_text": {
-          "eng": "La consecuencia que elijas y cómo la aplicas son importantes. Escucha su punto de vista y aplica consecuencias que puedas cumplir, que estén relacionadas con lo que hizo y que sean proporcionales a la situación."
+          "eng": "La consecuencia que elijas y cómo la aplicas son importantes. \n\nEscucha su punto de vista y aplica consecuencias que puedas cumplir, que estén relacionadas con lo que hizo y que sean proporcionales a la situación."
         },
         "section_3_title": {
           "eng": "SÉ CONSTANTE"
@@ -458,12 +469,12 @@
           "eng": "MOTIVA"
         },
         "section_4_text": {
-          "eng": "Enfócate en lo positivo. Después de aplicar la consecuencia, intenta pasar a una nueva actividad. Reconoce cuando @fields.child_name sigue las reglas o instrucciones, o corrige algo por iniciativa propia."
+          "eng": "Enfócate en lo positivo. Después de aplicar la consecuencia, intenta pasar a una nueva actividad. \n\nReconoce cuando @fields.child_name sigue las reglas o instrucciones, o corrige algo por iniciativa propia."
         }
       },
       "category_id": "practical_tips",
       "nested": false,
-      "text_1_facilitator": "Ya viste cómo @data.characters.f1_padre.name usó las estrategias.\n\n\nVamos a recordarlas una vez más para que apliques consecuencias justas cuando @fields.child_name tenga un comportamiento difícil:",
+      "text_1_facilitator": "Recordemos las estrategias para aplicar consecuencias justas cuando @fields.child_name se niega a seguir una instrucción, olvida una regla o se porta de forma agresiva o peligrosa.⭐",
       "_translations": {
         "text_1_facilitator": {},
         "section_1_title": {},
@@ -482,11 +493,11 @@
       "section_1_title": "PAUSA",
       "section_1_text": "Respira profundamente antes de responder. Gritar o amenazar con golpear empeora la situación y le enseña a @fields.child_name que la violencia es una forma válida de resolver los problemas.",
       "section_2_title": "ACTÚA CON JUSTICIA",
-      "section_2_text": "La consecuencia que elijas y cómo la aplicas son importantes. Escucha su punto de vista y aplica consecuencias que puedas cumplir, que estén relacionadas con lo que hizo y que sean proporcionales a la situación.",
+      "section_2_text": "La consecuencia que elijas y cómo la aplicas son importantes. \n\nEscucha su punto de vista y aplica consecuencias que puedas cumplir, que estén relacionadas con lo que hizo y que sean proporcionales a la situación.",
       "section_3_title": "SÉ CONSTANTE",
       "section_3_text": "Aplica las consecuencias cada vez que se repita el comportamiento o no se respete una regla. Así, @fields.child_name sabrá qué esperar y será más probable que coopere contigo.",
       "section_4_title": "MOTIVA",
-      "section_4_text": "Enfócate en lo positivo. Después de aplicar la consecuencia, intenta pasar a una nueva actividad. Reconoce cuando @fields.child_name sigue las reglas o instrucciones, o corrige algo por iniciativa propia.",
+      "section_4_text": "Enfócate en lo positivo. Después de aplicar la consecuencia, intenta pasar a una nueva actividad. \n\nReconoce cuando @fields.child_name sigue las reglas o instrucciones, o corrige algo por iniciativa propia.",
       "completed": false,
       "version": 1
     },
@@ -497,7 +508,7 @@
           "eng": "¡Ahora es tu turno!\n\nPiensa en un acuerdo que @fields.child_name no respeta con frecuencia o un comportamiento que te gustaría que cambiara.\n\nLuego, habla con @fields.child_name sobre por qué es importante ese acuerdo y qué consecuencias podrían aplicar si no lo respeta. Escucha su punto de vista e identiquen una consecuencia que cumpla con las 4 Rs: \n- Relacionada: Tiene que ver con lo que pasó.\n- Revelada: La conoce desde antes y sabe qué esperar.\n- Respetuosa: No incluye gritos, golpes ni humillaciones.\n- Razonable: Es justa, adecuada a su edad y no es demasiado severa.\n\n¡Así sabrá qué esperar! Recuerda también reconocer sus esfuerzos por asumir más responsabilidades cada vez.😊"
         },
         "text_2": {
-          "eng": "Por ejemplo:\n\n📝 Situación: No respeta la hora acordada para regresar a casa.\n🤔 Consecuencia: No podrá salir con sus amistades el siguiente fin de semana.\n\n\n📝 Situación: Pone la música muy fuerte y se enoja cuando le pides que baje el volumen.\n🤔 Consecuencia: No podrá usar la bocina durante el resto del día."
+          "eng": "Por ejemplo:\n\n_Situación_: No respeta la hora acordada para regresar a casa.\n👉 _Consecuencia_: No podrá salir con sus amistades el siguiente fin de semana.\n\n\n_Situación_: Pone la música muy fuerte y se enoja cuando le pides que baje el volumen.\n👉 _Consecuencia_: No podrá usar la bocina durante el resto del día."
         },
         "quiz_1_question": {
           "eng": "¿Puedes intentarlo esta semana?"
@@ -542,7 +553,7 @@
       "quiz_1_option_2_text": "Lo intentaré",
       "quiz_1_option_3_text": "No",
       "text_1_facilitator": "¡Ahora es tu turno!\n\nPiensa en un acuerdo que @fields.child_name no respeta con frecuencia o un comportamiento que te gustaría que cambiara.\n\nLuego, habla con @fields.child_name sobre por qué es importante ese acuerdo y qué consecuencias podrían aplicar si no lo respeta. Escucha su punto de vista e identiquen una consecuencia que cumpla con las 4 Rs: \n- Relacionada: Tiene que ver con lo que pasó.\n- Revelada: La conoce desde antes y sabe qué esperar.\n- Respetuosa: No incluye gritos, golpes ni humillaciones.\n- Razonable: Es justa, adecuada a su edad y no es demasiado severa.\n\n¡Así sabrá qué esperar! Recuerda también reconocer sus esfuerzos por asumir más responsabilidades cada vez.😊",
-      "text_2": "Por ejemplo:\n\n📝 Situación: No respeta la hora acordada para regresar a casa.\n🤔 Consecuencia: No podrá salir con sus amistades el siguiente fin de semana.\n\n\n📝 Situación: Pone la música muy fuerte y se enoja cuando le pides que baje el volumen.\n🤔 Consecuencia: No podrá usar la bocina durante el resto del día.",
+      "text_2": "Por ejemplo:\n\n_Situación_: No respeta la hora acordada para regresar a casa.\n👉 _Consecuencia_: No podrá salir con sus amistades el siguiente fin de semana.\n\n\n_Situación_: Pone la música muy fuerte y se enoja cuando le pides que baje el volumen.\n👉 _Consecuencia_: No podrá usar la bocina durante el resto del día.",
       "completed": false,
       "version": 1
     }

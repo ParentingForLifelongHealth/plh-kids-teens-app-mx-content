@@ -10,13 +10,13 @@
       "id": "intro_1",
       "category_id": "intro",
       "nested": false,
-      "text_1_facilitator": "Esta sesión trata sobre cómo **establecer acuerdos familiares** con @fields.child_name.\n\n\nTal vez ahora acostumbras poner las reglas de casa por tu cuenta. Pero dejar que @fields.child_name participe en la creación de acuerdos puede contribuir a que sienta más seguridad y protección. 🤝",
+      "text_1_facilitator": "Este módulo trata sobre cómo **establecer acuerdos familiares** con @fields.child_name.\n\n\nTal vez ahora acostumbras poner las reglas de casa por tu cuenta. Pero dejar que @fields.child_name participe en la creación de acuerdos puede contribuir a que sienta más seguridad y protección. 🤝",
       "_translations": {
         "text_1_facilitator": {}
       },
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "Esta sesión trata sobre cómo **establecer acuerdos familiares** con @fields.child_name.\n\n\nTal vez ahora acostumbras poner las reglas de casa por tu cuenta. Pero dejar que @fields.child_name participe en la creación de acuerdos puede contribuir a que sienta más seguridad y protección. 🤝"
+          "eng": "Este módulo trata sobre cómo **establecer acuerdos familiares** con @fields.child_name.\n\n\nTal vez ahora acostumbras poner las reglas de casa por tu cuenta. Pero dejar que @fields.child_name participe en la creación de acuerdos puede contribuir a que sienta más seguridad y protección. 🤝"
         }
       }
     },
@@ -132,12 +132,12 @@
     {
       "id": "explore_2",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/family_rules_t_1.svg",
+      "image_asset": "images/comic/behave/family_rules/family_rules_t_1.svg",
       "character_1_id": "f2_madre",
       "character_2_id": "f2_hijo_15",
       "character_3_id": "f2_madre",
       "nested": false,
-      "text_1_facilitator": "¡Vamos a ver estas estrategias en la práctica!",
+      "text_1_facilitator": "Veamos cómo @data.characters.f2_madre.name usa estas estrategias en la práctica:",
       "_translations": {
         "text_1_facilitator": {},
         "text_2": {},
@@ -147,7 +147,7 @@
       },
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "¡Vamos a ver estas estrategias en la práctica!"
+          "eng": "Veamos cómo @data.characters.f2_madre.name usa estas estrategias en la práctica:"
         },
         "text_2": {
           "eng": "@data.characters.f2_madre.name quiere acordar una regla con @data.characters.f2_hijo_15.name sobre su hora de llegada."
@@ -170,12 +170,12 @@
     {
       "id": "explore_3",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/family_rules_t_2.svg",
+      "image_asset": "images/comic/behave/family_rules/family_rules_t_2.svg",
       "character_1_id": "f2_madre",
       "character_2_id": "f2_hijo_15",
       "character_3_id": "f2_madre",
       "nested": false,
-      "text_2": "Fíjate cómo @data.characters.f2_madre.name toma en cuenta su opinión para llegar a un acuerdo realista juntos.",
+      "text_2": "Fíjate cómo @data.characters.f2_madre.name toma en cuenta la opinión de @data.characters.f2_hijo_15.name para llegar a un acuerdo realista juntos.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
@@ -184,7 +184,7 @@
       },
       "_translatedFields": {
         "text_2": {
-          "eng": "Fíjate cómo @data.characters.f2_madre.name toma en cuenta su opinión para llegar a un acuerdo realista juntos."
+          "eng": "Fíjate cómo @data.characters.f2_madre.name toma en cuenta la opinión de @data.characters.f2_hijo_15.name para llegar a un acuerdo realista juntos."
         },
         "character_1_text": {
           "eng": "¿Cuál te parece una buena hora para volver a casa?"
@@ -203,7 +203,7 @@
     {
       "id": "explore_4",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/family_rules_t_2.svg",
+      "image_asset": "images/comic/behave/family_rules/family_rules_t_2.svg",
       "character_1_id": "f2_hijo_15",
       "character_2_id": "f2_madre",
       "character_3_id": "f2_hijo_15",
@@ -231,7 +231,7 @@
     {
       "id": "explore_5",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/family_rules_t_3.svg",
+      "image_asset": "images/comic/behave/family_rules/family_rules_t_3.svg",
       "character_1_id": "f2_madre",
       "character_2_id": "f2_padre",
       "character_3_id": "f2_madre",
@@ -264,11 +264,11 @@
     {
       "id": "explore_6",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/family_rules_t_4.svg",
+      "image_asset": "images/comic/behave/family_rules/family_rules_t_4.svg",
       "character_1_id": "f2_hijo_15",
       "character_2_id": "f2_padre",
       "nested": false,
-      "text_2": "Al día siguiente, @data.characters.f2_padre.name se asegura de ser constante para cumplir los acuerdos.",
+      "text_2": "Al día siguiente, @data.characters.f2_padre.name se asegura de cumplir con el acuerdo sobre la hora de llegada. Ser constantes es clave.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
@@ -276,7 +276,7 @@
       },
       "_translatedFields": {
         "text_2": {
-          "eng": "Al día siguiente, @data.characters.f2_padre.name se asegura de ser constante para cumplir los acuerdos."
+          "eng": "Al día siguiente, @data.characters.f2_padre.name se asegura de cumplir con el acuerdo sobre la hora de llegada. Ser constantes es clave."
         },
         "character_1_text": {
           "eng": "Papá, ¿puedo llegar un poco más tarde hoy? Es que me invitó un amigo a jugar fut en el parque, pero quedamos a las 7:30 y seguro se va alargar…"
@@ -291,11 +291,11 @@
     {
       "id": "explore_7",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/family_rules_t_5.svg",
+      "image_asset": "images/comic/behave/family_rules/family_rules_t_5.svg",
       "character_1_id": "f2_madre",
       "character_2_id": "f2_hijo_15",
       "nested": false,
-      "text_2": "@data.characters.f2_madre.name reconoce cuando @data.characters.f2_hijo_15.name cumple el acuerdo, para animarlo a seguir así.",
+      "text_2": "Mira cómo @data.characters.f2_madre.name reconoce cuando @data.characters.f2_hijo_15.name cumple el acuerdo. Esto lo anima a seguir comportándose así.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
@@ -303,7 +303,7 @@
       },
       "_translatedFields": {
         "text_2": {
-          "eng": "@data.characters.f2_madre.name reconoce cuando @data.characters.f2_hijo_15.name cumple el acuerdo, para animarlo a seguir así."
+          "eng": "Mira cómo @data.characters.f2_madre.name reconoce cuando @data.characters.f2_hijo_15.name cumple el acuerdo. Esto lo anima a seguir comportándose así."
         },
         "character_1_text": {
           "eng": "¡Hola, @data.characters.f2_hijo_15.name! Gracias por cumplir la regla que acordamos. Te estás volviendo muy responsable y eso me hace sentir muy tranquila."
@@ -323,7 +323,7 @@
       "section_3_icon_asset": "images/icons/trophy_blue.png",
       "section_4_icon_asset": "images/icons/spark.png",
       "nested": false,
-      "text_1_facilitator": "Ya viste cómo @data.characters.f2_madre.name y @data.characters.f2_padre.name usaron las estrategias.\n\n\nVamos a recordarlas una vez más para que crees reglas familiares con @fields.child_name:",
+      "text_1_facilitator": "Recordemos las estrategias para crear reglas y acuerdos familiares junto con @fields.child_name.⭐",
       "_translations": {
         "text_1_facilitator": {},
         "section_1_title": {},
@@ -337,7 +337,7 @@
       },
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "Ya viste cómo @data.characters.f2_madre.name y @data.characters.f2_padre.name usaron las estrategias.\n\n\nVamos a recordarlas una vez más para que crees reglas familiares con @fields.child_name:"
+          "eng": "Recordemos las estrategias para crear reglas y acuerdos familiares junto con @fields.child_name.⭐"
         },
         "section_1_title": {
           "eng": "SEAN EQUIPO"

@@ -10,13 +10,13 @@
       "id": "intro_1",
       "category_id": "intro",
       "nested": false,
-      "text_1_facilitator": "Esta sesión trata sobre cómo **enfrentar los retos y problemas junto con @fields.child_name.** \n\n\nLos retos y problemas son parte de la vida familiar. Aprender a resolverlos como equipo les ayudará a entender qué pasa, buscar diferentes soluciones y elegir juntos la mejor. 🧩",
+      "text_1_facilitator": "Este módulo trata sobre cómo **enfrentar los retos y problemas junto con @fields.child_name.** \n\n\nLos retos y problemas son parte de la vida familiar. Aprender a resolverlos como equipo les ayudará a entender qué pasa, buscar diferentes soluciones y elegir juntos la mejor. 🧩",
       "_translations": {
         "text_1_facilitator": {}
       },
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "Esta sesión trata sobre cómo **enfrentar los retos y problemas junto con @fields.child_name.** \n\n\nLos retos y problemas son parte de la vida familiar. Aprender a resolverlos como equipo les ayudará a entender qué pasa, buscar diferentes soluciones y elegir juntos la mejor. 🧩"
+          "eng": "Este módulo trata sobre cómo **enfrentar los retos y problemas junto con @fields.child_name.** \n\n\nLos retos y problemas son parte de la vida familiar. Aprender a resolverlos como equipo les ayudará a entender qué pasa, buscar diferentes soluciones y elegir juntos la mejor. 🧩"
         }
       }
     },
@@ -58,20 +58,20 @@
           "eng": "Verdadero"
         },
         "quiz_1_feedback_1": {
-          "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nResolver el problema por tu cuenta puede ser más rápido, pero @fields.child_name aprende más cuando le acompañas a buscar una solución. Esto le ayuda a aprender a resolver problemas por sí mismo y le demuestra que sus ideas son importantes."
+          "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nResolver el problema por tu cuenta puede ser más rápido, pero @fields.child_name aprende más cuando le acompañas a buscar una solución. \n\nEsto le ayuda a aprender a resolver problemas por sí mismo y le demuestra que sus ideas son importantes."
         },
         "quiz_1_option_2_text": {
           "eng": "Falso"
         },
         "quiz_1_feedback_2": {
-          "eng": "🎉 ¡Tienes razón!\n\nResolver el problema por tu cuenta puede ser más rápido, pero @fields.child_name aprende más cuando le acompañas a buscar una solución. Esto le ayuda a aprender a resolver problemas por sí mismo y le demuestra que sus ideas son importantes."
+          "eng": "🎉 ¡Tienes razón!\n\nResolver el problema por tu cuenta puede ser más rápido, pero @fields.child_name aprende más cuando le acompañas a buscar una solución. \n\nEsto le ayuda a aprender a resolver problemas por sí mismo y le demuestra que sus ideas son importantes."
         }
       },
       "quiz_1_question": "Verdadero o falso: Cuando @fields.child_name tiene un problema, mi responsabilidad es resolverlo.",
       "quiz_1_option_1_text": "Verdadero",
-      "quiz_1_feedback_1": "👀 ¡Ups! ¡Revisemos esta idea!\n\nResolver el problema por tu cuenta puede ser más rápido, pero @fields.child_name aprende más cuando le acompañas a buscar una solución. Esto le ayuda a aprender a resolver problemas por sí mismo y le demuestra que sus ideas son importantes.",
+      "quiz_1_feedback_1": "👀 ¡Ups! ¡Revisemos esta idea!\n\nResolver el problema por tu cuenta puede ser más rápido, pero @fields.child_name aprende más cuando le acompañas a buscar una solución. \n\nEsto le ayuda a aprender a resolver problemas por sí mismo y le demuestra que sus ideas son importantes.",
       "quiz_1_option_2_text": "Falso",
-      "quiz_1_feedback_2": "🎉 ¡Tienes razón!\n\nResolver el problema por tu cuenta puede ser más rápido, pero @fields.child_name aprende más cuando le acompañas a buscar una solución. Esto le ayuda a aprender a resolver problemas por sí mismo y le demuestra que sus ideas son importantes."
+      "quiz_1_feedback_2": "🎉 ¡Tienes razón!\n\nResolver el problema por tu cuenta puede ser más rápido, pero @fields.child_name aprende más cuando le acompañas a buscar una solución. \n\nEsto le ayuda a aprender a resolver problemas por sí mismo y le demuestra que sus ideas son importantes."
     },
     {
       "id": "explore_1",
@@ -91,11 +91,11 @@
     {
       "id": "explore_2",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/solve_problem_t_1.svg",
+      "image_asset": "images/comic/behave/solve_problem/solve_problem_t_1.svg",
       "character_1_id": "f2_padre",
       "character_2_id": "f2_hija_13",
       "nested": false,
-      "text_1_facilitator": "¡Vamos a ver estas estrategias en la práctica!",
+      "text_1_facilitator": "Veamos cómo @data.characters.f2_padre.name usa estas estrategias en la práctica:",
       "_translations": {
         "text_1_facilitator": {},
         "text_2": {},
@@ -104,10 +104,10 @@
       },
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "¡Vamos a ver estas estrategias en la práctica!"
+          "eng": "Veamos cómo @data.characters.f2_padre.name usa estas estrategias en la práctica:"
         },
         "text_2": {
-          "eng": "@data.characters.f2_padre.name nota que @data.characters.f2_hija_13.name lleva varias noches desvelándose. Fíjate cómo primero trata de entender el problema."
+          "eng": "@data.characters.f2_padre.name nota que @data.characters.f2_hija_13.name lleva varias noches desvelándose. Fíjate cómo empieza por trata de entender el problema."
         },
         "character_1_text": {
           "eng": "@data.characters.f2_hija_13.name, ya van tres noches seguidas que te quedas trabajando hasta tarde. Parece que te está costando organizar tu tiempo y dormir lo suficiente. ¿Qué crees que está pasando?"
@@ -116,19 +116,19 @@
           "eng": "¡Ya sé! ¡Y todavía me falta muchísimo! Siento que no me alcanza el tiempo… Y a veces me distraigo viendo la tele porque estoy demasiado cansada para hacer otra cosa."
         }
       },
-      "text_2": "@data.characters.f2_padre.name nota que @data.characters.f2_hija_13.name lleva varias noches desvelándose. Fíjate cómo primero trata de entender el problema.",
+      "text_2": "@data.characters.f2_padre.name nota que @data.characters.f2_hija_13.name lleva varias noches desvelándose. Fíjate cómo empieza por trata de entender el problema.",
       "character_1_text": "@data.characters.f2_hija_13.name, ya van tres noches seguidas que te quedas trabajando hasta tarde. Parece que te está costando organizar tu tiempo y dormir lo suficiente. ¿Qué crees que está pasando?",
       "character_2_text": "¡Ya sé! ¡Y todavía me falta muchísimo! Siento que no me alcanza el tiempo… Y a veces me distraigo viendo la tele porque estoy demasiado cansada para hacer otra cosa."
     },
     {
       "id": "explore_3",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/solve_problem_t_2.svg",
+      "image_asset": "images/comic/behave/solve_problem/solve_problem_t_2.svg",
       "character_1_id": "f2_padre",
       "character_2_id": "f2_hija_13",
       "character_3_id": "f2_padre",
       "nested": false,
-      "text_2": "Mira cómo @data.characters.f2_padre.name la guía para pensar soluciones entre los dos, en vez de decirles qué hacer.",
+      "text_2": "Mira cómo @data.characters.f2_padre.name guía a su hija para pensar soluciones entre los dos, en vez de decirles qué hacer.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
@@ -137,7 +137,7 @@
       },
       "_translatedFields": {
         "text_2": {
-          "eng": "Mira cómo @data.characters.f2_padre.name la guía para pensar soluciones entre los dos, en vez de decirles qué hacer."
+          "eng": "Mira cómo @data.characters.f2_padre.name guía a su hija para pensar soluciones entre los dos, en vez de decirles qué hacer."
         },
         "character_1_text": {
           "eng": "¿Qué podríamos hacer para que te alcance el tiempo y puedas dormir bien?"
@@ -156,7 +156,7 @@
     {
       "id": "explore_4",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/solve_problem_t_2.svg",
+      "image_asset": "images/comic/behave/solve_problem/solve_problem_t_2.svg",
       "character_1_id": "f2_hija_13",
       "character_2_id": "f2_padre",
       "nested": false,
@@ -178,7 +178,7 @@
     {
       "id": "explore_5",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/solve_problem_t_3.svg",
+      "image_asset": "images/comic/behave/solve_problem/solve_problem_t_3.svg",
       "character_1_id": "f2_padre",
       "character_2_id": "f2_hija_13",
       "character_3_id": "f2_padre",
@@ -211,7 +211,7 @@
     {
       "id": "explore_6",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/solve_problem_t_4.svg",
+      "image_asset": "images/comic/behave/solve_problem/solve_problem_t_4.svg",
       "character_1_id": "f2_hija_13",
       "character_2_id": "f2_padre",
       "character_3_id": "f2_hija_13",
@@ -249,7 +249,7 @@
       "section_3_icon_asset": "images/icons/heart_filled_blue.png",
       "section_4_icon_asset": "images/icons/trophy_blue.png",
       "nested": false,
-      "text_1_facilitator": "Ya viste cómo @data.characters.f2_padre.name usó las estrategias.\n\n\nVamos a recordarlas una vez más para que resuelvas problemas junto con @fields.child_name:",
+      "text_1_facilitator": "Recordemos las estrategias para resolver problemas junto con @fields.child_name.⭐",
       "_translations": {
         "text_1_facilitator": {},
         "section_1_title": {},
@@ -263,7 +263,7 @@
       },
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "Ya viste cómo @data.characters.f2_padre.name usó las estrategias.\n\n\nVamos a recordarlas una vez más para que resuelvas problemas junto con @fields.child_name:"
+          "eng": "Recordemos las estrategias para resolver problemas junto con @fields.child_name.⭐"
         },
         "section_1_title": {
           "eng": "CONÓCELO"
@@ -303,7 +303,7 @@
       "id": "home_activity_1",
       "category_id": "home_activity",
       "nested": false,
-      "text_1_facilitator": "¡Ahora es tu turno!\n\nLa próxima vez que notes que @fields.child_name enfrenta un problema, acompáñale a buscar una solución usando las cuatro estrategias que exploramos en esta sesión. 😊",
+      "text_1_facilitator": "¡Ahora es tu turno!\n\nLa próxima vez que notes que @fields.child_name enfrenta un problema, acompáñale a buscar una solución usando las cuatro estrategias que exploramos en este módulo. 😊",
       "_translations": {
         "text_1_facilitator": {},
         "quiz_1_question": {},
@@ -316,7 +316,7 @@
       },
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "¡Ahora es tu turno!\n\nLa próxima vez que notes que @fields.child_name enfrenta un problema, acompáñale a buscar una solución usando las cuatro estrategias que exploramos en esta sesión. 😊"
+          "eng": "¡Ahora es tu turno!\n\nLa próxima vez que notes que @fields.child_name enfrenta un problema, acompáñale a buscar una solución usando las cuatro estrategias que exploramos en este módulo. 😊"
         },
         "quiz_1_question": {
           "eng": "¿Puedes hacerlo esta semana?"

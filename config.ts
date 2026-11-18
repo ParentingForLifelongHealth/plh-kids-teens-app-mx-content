@@ -4,7 +4,7 @@ const config = generateDeploymentConfig("plh_kids_teens_mx");
 
 config.git = {
   content_repo: "https://github.com/ParentingForLifelongHealth/plh-kids-teens-app-mx-content.git",
-  content_tag_latest: "1.3.2",
+  content_tag_latest: "1.3.3",
 };
 
 config.google_drive.sheets_folders = [
@@ -95,6 +95,7 @@ config.web.favicon_asset = "images/logos/crianza_logo.png";
 config.api.db_name = "plh_kids_teens_mx";
 config.app_data.output_path = "./app_data";
 
+config.app_config.APP_SIDEMENU_DEFAULTS.enabled = false;
 config.app_config.APP_LANGUAGES.default ="gb_en";
 config.app_config.APP_SIDEMENU_DEFAULTS.title = "Crianza+";
 config.app_config.APP_HEADER_DEFAULTS.title = "Crianza+";

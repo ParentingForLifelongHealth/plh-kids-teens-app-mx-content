@@ -13,7 +13,7 @@
     {
       "id": "intro_1",
       "category_id": "intro",
-      "text_1_facilitator::eng": "Esta sesión trata sobre cómo **establecer acuerdos familiares** con @fields.child_name.\n\n\nTal vez ahora acostumbras poner las reglas de casa por tu cuenta. Pero dejar que @fields.child_name participe en la creación de acuerdos puede contribuir a que sienta más seguridad y protección. 🤝"
+      "text_1_facilitator::eng": "Este módulo trata sobre cómo **establecer acuerdos familiares** con @fields.child_name.\n\n\nTal vez ahora acostumbras poner las reglas de casa por tu cuenta. Pero dejar que @fields.child_name participe en la creación de acuerdos puede contribuir a que sienta más seguridad y protección. 🤝"
     },
     {
       "id": "intro_2",
@@ -51,8 +51,8 @@
     {
       "id": "explore_2",
       "category_id": "explore",
-      "text_1_facilitator::eng": "¡Vamos a ver estas estrategias en la práctica!",
-      "image_asset": "images/comic/behave/family_rules_t_1.svg",
+      "text_1_facilitator::eng": "Veamos cómo @data.characters.f2_madre.name usa estas estrategias en la práctica:",
+      "image_asset": "images/comic/behave/family_rules/family_rules_t_1.svg",
       "text_2::eng": "@data.characters.f2_madre.name quiere acordar una regla con @data.characters.f2_hijo_15.name sobre su hora de llegada.",
       "character_1_id": "f2_madre",
       "character_1_text::eng": "@data.characters.f2_hijo_15.name, ya es bien tarde, estaba preocupada por ti. Me gustaría que acordemos una regla sobre tu hora de llegada.",
@@ -64,8 +64,8 @@
     {
       "id": "explore_3",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/family_rules_t_2.svg",
-      "text_2::eng": "Fíjate cómo @data.characters.f2_madre.name toma en cuenta su opinión para llegar a un acuerdo realista juntos.",
+      "image_asset": "images/comic/behave/family_rules/family_rules_t_2.svg",
+      "text_2::eng": "Fíjate cómo @data.characters.f2_madre.name toma en cuenta la opinión de @data.characters.f2_hijo_15.name para llegar a un acuerdo realista juntos.",
       "character_1_id": "f2_madre",
       "character_1_text::eng": "¿Cuál te parece una buena hora para volver a casa?",
       "character_2_id": "f2_hijo_15",
@@ -76,7 +76,7 @@
     {
       "id": "explore_4",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/family_rules_t_2.svg",
+      "image_asset": "images/comic/behave/family_rules/family_rules_t_2.svg",
       "character_1_id": "f2_hijo_15",
       "character_1_text::eng": "Mmm… ¿A las 6 entre semana y a las 8 los viernes y sábados?",
       "character_2_id": "f2_madre",
@@ -87,7 +87,7 @@
     {
       "id": "explore_5",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/family_rules_t_3.svg",
+      "image_asset": "images/comic/behave/family_rules/family_rules_t_3.svg",
       "text_2::eng": "@data.characters.f2_madre.name le cuenta a @data.characters.f2_padre.name lo que acordaron para que ambos puedan aplicar la regla igual.",
       "character_1_id": "f2_madre",
       "character_1_text::eng": "Oye, hoy hablé con @data.characters.f2_hijo_15.name y acordamos una regla sobre la hora de regreso a casa.",
@@ -99,8 +99,8 @@
     {
       "id": "explore_6",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/family_rules_t_4.svg",
-      "text_2::eng": "Al día siguiente, @data.characters.f2_padre.name se asegura de ser constante para cumplir los acuerdos.",
+      "image_asset": "images/comic/behave/family_rules/family_rules_t_4.svg",
+      "text_2::eng": "Al día siguiente, @data.characters.f2_padre.name se asegura de cumplir con el acuerdo sobre la hora de llegada. Ser constantes es clave. ",
       "character_1_id": "f2_hijo_15",
       "character_1_text::eng": "Papá, ¿puedo llegar un poco más tarde hoy? Es que me invitó un amigo a jugar fut en el parque, pero quedamos a las 7:30 y seguro se va alargar…",
       "character_2_id": "f2_padre",
@@ -109,8 +109,8 @@
     {
       "id": "explore_7",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/family_rules_t_5.svg",
-      "text_2::eng": "@data.characters.f2_madre.name reconoce cuando @data.characters.f2_hijo_15.name cumple el acuerdo, para animarlo a seguir así.",
+      "image_asset": "images/comic/behave/family_rules/family_rules_t_5.svg",
+      "text_2::eng": "Mira cómo @data.characters.f2_madre.name reconoce cuando @data.characters.f2_hijo_15.name cumple el acuerdo. Esto lo anima a seguir comportándose así.",
       "character_1_id": "f2_madre",
       "character_1_text::eng": "¡Hola, @data.characters.f2_hijo_15.name! Gracias por cumplir la regla que acordamos. Te estás volviendo muy responsable y eso me hace sentir muy tranquila.",
       "character_2_id": "f2_hijo_15",
@@ -119,7 +119,7 @@
     {
       "id": "practical_tips_1",
       "category_id": "practical_tips",
-      "text_1_facilitator::eng": "Ya viste cómo @data.characters.f2_madre.name y @data.characters.f2_padre.name usaron las estrategias.\n\n\nVamos a recordarlas una vez más para que crees reglas familiares con @fields.child_name:",
+      "text_1_facilitator::eng": "Recordemos las estrategias para crear reglas y acuerdos familiares junto con @fields.child_name.⭐",
       "section_1_title::eng": "SEAN EQUIPO",
       "section_1_icon_asset": "images/icons/diamond_blue.png",
       "section_1_text::eng": "Crea las reglas junto con @fields.child_name. Hablen de por qué se necesita y escucha su punto de vista. Involucra a las personas con las que compartes la crianza.",
