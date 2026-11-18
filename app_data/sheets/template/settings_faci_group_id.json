@@ -1,0 +1,476 @@
+{
+  "flow_type": "template",
+  "flow_name": "settings_faci_group_id",
+  "status": "released",
+  "rows": [
+    {
+      "type": "template",
+      "name": "settings_header",
+      "value": "settings_header",
+      "action_list": [
+        {
+          "trigger": "uncompleted",
+          "action_id": "emit",
+          "args": [
+            "uncompleted"
+          ],
+          "_raw": "uncompleted | emit: uncompleted"
+        }
+      ],
+      "rows": [
+        {
+          "name": "title",
+          "value": "@global.facilitator_group_setting_opt",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "settings_header.title",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@global.facilitator_group_setting_opt",
+                "matchedExpression": "@global.facilitator_group_setting_opt",
+                "type": "global",
+                "fieldName": "facilitator_group_setting_opt"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@global.facilitator_group_setting_opt": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "settings_header"
+    },
+    {
+      "type": "text",
+      "name": "question_facilitator_group_id",
+      "value": "@global.facilitator_group_id_setting",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "question_facilitator_group_id",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@global.facilitator_group_id_setting",
+            "matchedExpression": "@global.facilitator_group_id_setting",
+            "type": "global",
+            "fieldName": "facilitator_group_id_setting"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@global.facilitator_group_id_setting": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text_box",
+      "name": "facilitator_group_id_input",
+      "value": "@fields.faci_group_id",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "placeholder": "@global.placeholder_facilitator_group_id"
+      },
+      "condition": "!!@fields.faci_group_id",
+      "exclude_from_translation": true,
+      "_nested_name": "facilitator_group_id_input",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields.faci_group_id",
+            "matchedExpression": "@fields.faci_group_id",
+            "type": "fields",
+            "fieldName": "faci_group_id"
+          }
+        ],
+        "parameter_list": {
+          "placeholder": [
+            {
+              "fullExpression": "@global.placeholder_facilitator_group_id",
+              "matchedExpression": "@global.placeholder_facilitator_group_id",
+              "type": "global",
+              "fieldName": "placeholder_facilitator_group_id"
+            }
+          ]
+        },
+        "condition": [
+          {
+            "fullExpression": "!!@fields.faci_group_id",
+            "matchedExpression": "!@fields.faci_group_id",
+            "type": "fields",
+            "fieldName": "faci_group_id"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.faci_group_id": [
+          "value"
+        ],
+        "@global.placeholder_facilitator_group_id": [
+          "parameter_list.placeholder"
+        ],
+        "!@fields.faci_group_id": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "text_box",
+      "name": "facilitator_group_id_input",
+      "parameter_list": {
+        "placeholder": "@global.placeholder_facilitator_group_id"
+      },
+      "condition": "!@fields.faci_group_id",
+      "exclude_from_translation": true,
+      "_nested_name": "facilitator_group_id_input",
+      "_dynamicFields": {
+        "parameter_list": {
+          "placeholder": [
+            {
+              "fullExpression": "@global.placeholder_facilitator_group_id",
+              "matchedExpression": "@global.placeholder_facilitator_group_id",
+              "type": "global",
+              "fieldName": "placeholder_facilitator_group_id"
+            }
+          ]
+        },
+        "condition": [
+          {
+            "fullExpression": "!@fields.faci_group_id",
+            "matchedExpression": "!@fields.faci_group_id",
+            "type": "fields",
+            "fieldName": "faci_group_id"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@global.placeholder_facilitator_group_id": [
+          "parameter_list.placeholder"
+        ],
+        "!@fields.faci_group_id": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "set_variable",
+      "name": "valid_facilitator_group_id",
+      "value": "@calc(/^(SEP|IMSS|DIF)(?!000)\\d{3}$/i.test(String(@local.facilitator_group_id_input || '').trim()) || !@local.facilitator_group_id_input)",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "valid_facilitator_group_id",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(/^(SEP|IMSS|DIF)(?!000)\\d{3}$/i.test(String(@local.facilitator_group_id_input || '').trim()) || !@local.facilitator_group_id_input)",
+            "matchedExpression": "@local.facilitator_group_id_input",
+            "type": "local",
+            "fieldName": "facilitator_group_id_input"
+          },
+          {
+            "fullExpression": "@calc(/^(SEP|IMSS|DIF)(?!000)\\d{3}$/i.test(String(@local.facilitator_group_id_input || '').trim()) || !@local.facilitator_group_id_input)",
+            "matchedExpression": "!@local.facilitator_group_id_input",
+            "type": "local",
+            "fieldName": "facilitator_group_id_input"
+          },
+          {
+            "fullExpression": "@calc(/^(SEP|IMSS|DIF)(?!000)\\d{3}$/i.test(String(@local.facilitator_group_id_input || '').trim()) || !@local.facilitator_group_id_input)",
+            "matchedExpression": "@calc(/^(SEP|IMSS|DIF)(?!000)\\d{3}$/i.test(String(@local.facilitator_group_id_input || '').trim()) || !@local.facilitator_group_id_input)",
+            "type": "calc",
+            "fieldName": "/^(SEP|IMSS|DIF)(?!000)\\d{3}$/i.test(String(@local.facilitator_group_id_input || '').trim()) || !@local.facilitator_group_id_input"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.facilitator_group_id_input": [
+          "value"
+        ],
+        "!@local.facilitator_group_id_input": [
+          "value"
+        ],
+        "@calc(/^(SEP|IMSS|DIF)(?!000)\\d{3}$/i.test(String(@local.facilitator_group_id_input || '').trim()) || !@local.facilitator_group_id_input)": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "warning_facilitator_group_id_input",
+      "value": "@global.error_invalid_facilitator_group_id",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "!@local.valid_facilitator_group_id",
+      "style_list": [
+        "color: #FF0000",
+        "font-size: 14px"
+      ],
+      "exclude_from_translation": true,
+      "_nested_name": "warning_facilitator_group_id_input",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@global.error_invalid_facilitator_group_id",
+            "matchedExpression": "@global.error_invalid_facilitator_group_id",
+            "type": "global",
+            "fieldName": "error_invalid_facilitator_group_id"
+          }
+        ],
+        "condition": [
+          {
+            "fullExpression": "!@local.valid_facilitator_group_id",
+            "matchedExpression": "!@local.valid_facilitator_group_id",
+            "type": "local",
+            "fieldName": "valid_facilitator_group_id"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@global.error_invalid_facilitator_group_id": [
+          "value"
+        ],
+        "!@local.valid_facilitator_group_id": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "set_variable",
+      "name": "completed_enabled",
+      "value": "!!@local.facilitator_group_id_input && @local.valid_facilitator_group_id",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "completed_enabled",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "!!@local.facilitator_group_id_input && @local.valid_facilitator_group_id",
+            "matchedExpression": "!@local.facilitator_group_id_input",
+            "type": "local",
+            "fieldName": "facilitator_group_id_input"
+          },
+          {
+            "fullExpression": "!!@local.facilitator_group_id_input && @local.valid_facilitator_group_id",
+            "matchedExpression": "@local.valid_facilitator_group_id",
+            "type": "local",
+            "fieldName": "valid_facilitator_group_id"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "!@local.facilitator_group_id_input": [
+          "value"
+        ],
+        "@local.valid_facilitator_group_id": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "display_group",
+      "name": "dg_footer",
+      "parameter_list": {
+        "sticky": "bottom"
+      },
+      "style_list": [
+        "padding: 12px 24px"
+      ],
+      "rows": [
+        {
+          "type": "button",
+          "name": "button_save",
+          "value": "@global.save",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "set_field",
+              "args": [
+                "faci_group_id",
+                "@calc(String(@local.facilitator_group_id_input).trim().toUpperCase())"
+              ],
+              "_raw": "click | set_field: faci_group_id: @calc(String(@local.facilitator_group_id_input).trim().toUpperCase())"
+            },
+            {
+              "trigger": "click",
+              "action_id": "add_data",
+              "args": [],
+              "_raw": "click | add_data | _list_id: faci_group_id_log, faci_group_id: @calc(String(@local.facilitator_group_id_input).trim().toUpperCase()), source: settings, timestamp: @calc(new Date().toISOString())",
+              "params": {
+                "_list_id": "faci_group_id_log",
+                "faci_group_id": "@calc(String(@local.facilitator_group_id_input).trim().toUpperCase())",
+                "source": "settings",
+                "timestamp": "@calc(new Date().toISOString())"
+              }
+            },
+            {
+              "trigger": "click",
+              "action_id": "emit",
+              "args": [
+                "server_sync"
+              ],
+              "_raw": "click | emit: server_sync"
+            },
+            {
+              "trigger": "click",
+              "action_id": "emit",
+              "args": [
+                "completed"
+              ],
+              "_raw": "click | emit: completed"
+            }
+          ],
+          "parameter_list": {
+            "style": "navigation",
+            "disabled": "!@local.completed_enabled"
+          },
+          "style_list": [
+            "flex: 1"
+          ],
+          "exclude_from_translation": true,
+          "_nested_name": "dg_footer.button_save",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@global.save",
+                "matchedExpression": "@global.save",
+                "type": "global",
+                "fieldName": "save"
+              }
+            ],
+            "action_list": {
+              "0": {
+                "args": {
+                  "1": [
+                    {
+                      "fullExpression": "@calc(String(@local.facilitator_group_id_input).trim().toUpperCase())",
+                      "matchedExpression": "@local.facilitator_group_id_input",
+                      "type": "local",
+                      "fieldName": "facilitator_group_id_input"
+                    },
+                    {
+                      "fullExpression": "@calc(String(@local.facilitator_group_id_input).trim().toUpperCase())",
+                      "matchedExpression": "@calc(String(@local.facilitator_group_id_input).trim().toUpperCase())",
+                      "type": "calc",
+                      "fieldName": "String(@local.facilitator_group_id_input).trim().toUpperCase()"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "click | set_field: faci_group_id: @calc(String(@local.facilitator_group_id_input).trim().toUpperCase())",
+                    "matchedExpression": "@local.facilitator_group_id_input",
+                    "type": "local",
+                    "fieldName": "facilitator_group_id_input"
+                  },
+                  {
+                    "fullExpression": "click | set_field: faci_group_id: @calc(String(@local.facilitator_group_id_input).trim().toUpperCase())",
+                    "matchedExpression": "@calc(String(@local.facilitator_group_id_input).trim().toUpperCase())",
+                    "type": "calc",
+                    "fieldName": "String(@local.facilitator_group_id_input).trim().toUpperCase()"
+                  }
+                ]
+              },
+              "1": {
+                "_raw": [
+                  {
+                    "fullExpression": "click | add_data | _list_id: faci_group_id_log, faci_group_id: @calc(String(@local.facilitator_group_id_input).trim().toUpperCase()), source: settings, timestamp: @calc(new Date().toISOString())",
+                    "matchedExpression": "@local.facilitator_group_id_input",
+                    "type": "local",
+                    "fieldName": "facilitator_group_id_input"
+                  },
+                  {
+                    "fullExpression": "click | add_data | _list_id: faci_group_id_log, faci_group_id: @calc(String(@local.facilitator_group_id_input).trim().toUpperCase()), source: settings, timestamp: @calc(new Date().toISOString())",
+                    "matchedExpression": "@calc(String(@local.facilitator_group_id_input).trim().toUpperCase()), source: settings, timestamp: @calc(new Date().toISOString())",
+                    "type": "calc",
+                    "fieldName": "String(@local.facilitator_group_id_input).trim().toUpperCase()), source: settings, timestamp: @calc(new Date().toISOString()"
+                  }
+                ],
+                "params": {
+                  "faci_group_id": [
+                    {
+                      "fullExpression": "@calc(String(@local.facilitator_group_id_input).trim().toUpperCase())",
+                      "matchedExpression": "@local.facilitator_group_id_input",
+                      "type": "local",
+                      "fieldName": "facilitator_group_id_input"
+                    },
+                    {
+                      "fullExpression": "@calc(String(@local.facilitator_group_id_input).trim().toUpperCase())",
+                      "matchedExpression": "@calc(String(@local.facilitator_group_id_input).trim().toUpperCase())",
+                      "type": "calc",
+                      "fieldName": "String(@local.facilitator_group_id_input).trim().toUpperCase()"
+                    }
+                  ],
+                  "timestamp": [
+                    {
+                      "fullExpression": "@calc(new Date().toISOString())",
+                      "matchedExpression": "@calc(new Date().toISOString())",
+                      "type": "calc",
+                      "fieldName": "new Date().toISOString()"
+                    }
+                  ]
+                }
+              }
+            },
+            "parameter_list": {
+              "disabled": [
+                {
+                  "fullExpression": "!@local.completed_enabled",
+                  "matchedExpression": "!@local.completed_enabled",
+                  "type": "local",
+                  "fieldName": "completed_enabled"
+                }
+              ]
+            }
+          },
+          "_dynamicDependencies": {
+            "@global.save": [
+              "value"
+            ],
+            "@local.facilitator_group_id_input": [
+              "action_list.0.args.1",
+              "action_list.0._raw",
+              "action_list.1._raw",
+              "action_list.1.params.faci_group_id"
+            ],
+            "@calc(String(@local.facilitator_group_id_input).trim().toUpperCase())": [
+              "action_list.0.args.1",
+              "action_list.0._raw",
+              "action_list.1.params.faci_group_id"
+            ],
+            "@calc(String(@local.facilitator_group_id_input).trim().toUpperCase()), source: settings, timestamp: @calc(new Date().toISOString())": [
+              "action_list.1._raw"
+            ],
+            "@calc(new Date().toISOString())": [
+              "action_list.1.params.timestamp"
+            ],
+            "!@local.completed_enabled": [
+              "parameter_list.disabled"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "dg_footer"
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_mx",
+    "path": "templates/MX onboarding templates.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1UZOzsoJsHd5-bzV7TF9qBroPO7tPh4JOsn-f4U8atBk"
+  }
+}

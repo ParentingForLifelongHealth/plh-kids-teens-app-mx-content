@@ -25,6 +25,10 @@
       "exclude_from_translation": true
     },
     {
+      "name": "faci_group_icon",
+      "value": "images/icons/people-outline.svg"
+    },
+    {
       "name": "language_icon",
       "value": "images/icons/globe-outline.svg",
       "exclude_from_translation": true
@@ -107,6 +111,16 @@
       "action_list": "click | go_to: settings_user_id;",
       "condition": false,
       "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_faci_group_id",
+      "value": "@global.facilitator_group_setting_opt",
+      "parameter_list": "variant: card;\nicon: @local.faci_group_icon;\nicon_secondary_asset: @local.next_icon_asset;\nstyle: no-background;\ntext_align: left;",
+      "action_list": "click | go_to: settings_faci_group_id;",
+      "condition": "@global.has_facilitator_group_id",
+      "exclude_from_translation": true,
+      "comments": "NEW ROW – add after button_profile, inside dg_account"
     },
     {
       "type": "end_display_group",

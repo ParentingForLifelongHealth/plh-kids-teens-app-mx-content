@@ -18,7 +18,8 @@
     {
       "type": "text",
       "name": "user_name_input_question",
-      "value": "@global.user_name_setting"
+      "value": "@global.user_name_setting",
+      "exclude_from_translation": true
     },
     {
       "type": "text_box",
@@ -40,26 +41,15 @@
     },
     {
       "name": "valid_user_age_input",
-      "value": "@calc((/^\\d+$/.test(@local.user_age_input) && @local.user_age_input>= 18 && @local.user_age_input<= 99) || @local.user_age_input == '' || !@local.user_age_input)"
+      "value": "@calc((/^\\d+$/.test(@local.user_age_input) && @local.user_age_input>= 18 && @local.user_age_input<= 99) || @local.user_age_input == '' || !@local.user_age_input)",
+      "exclude_from_translation": true
     },
     {
       "type": "text",
       "name": "warning_user_age_input",
       "value": "@global.warning_user_age_input",
       "style_list": "color: #FF0000;\nfont-size: 14px",
-      "condition": "!@local.valid_user_age_input"
-    },
-    {
-      "type": "text",
-      "name": "user_type_select_question",
-      "value": "@global.user_type_setting",
-      "exclude_from_translation": true
-    },
-    {
-      "type": "combo_box",
-      "name": "user_type_select",
-      "value": "@fields.user_type",
-      "parameter_list": "answer_list: @data.user_type;",
+      "condition": "!@local.valid_user_age_input",
       "exclude_from_translation": true
     },
     {
@@ -72,19 +62,20 @@
       "type": "combo_box",
       "name": "user_gender_select",
       "value": "@fields.user_gender",
-      "parameter_list": "answer_list: @data.user_gender;\ndisabled: true",
+      "parameter_list": "answer_list: @data.user_gender;\nvariant: dropdown;\nwrap: true;\ndisabled: true;",
       "exclude_from_translation": true
     },
     {
       "type": "text",
       "name": "user_location_select_question",
-      "value": "@global.user_location_setting"
+      "value": "@global.user_location_setting",
+      "exclude_from_translation": true
     },
     {
       "type": "combo_box",
       "name": "user_location_select",
       "value": "@fields.user_location",
-      "parameter_list": "answer_list: @data.user_location;\nvariant: dropdown;\nwrap: true;",
+      "parameter_list": "answer_list: @data.user_location; placeholder: @global.placeholder_user_location; variant: dropdown; wrap: true; input_allowed: true; input_position: top;",
       "exclude_from_translation": true
     },
     {
@@ -93,22 +84,61 @@
       "value": "@global.user_district_setting"
     },
     {
-      "type": "combo_box",
+      "type": "begin_combo_box",
       "name": "user_district_select",
       "value": "@fields.user_location_district",
-      "parameter_list": "answer_list: @data.user_location_district;\nvariant: dropdown;\nwrap: true;",
+      "parameter_list": "placeholder: @global.placeholder_user_district; variant: dropdown; wrap: true; input_allowed: true; input_position: top; disabled: !@local.user_location_select;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_data_items",
+      "value": "user_location_district",
+      "parameter_list": "filter: @item.province == @local.user_location_select",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "end_combo_box"
+    },
+    {
+      "type": "text",
+      "name": "occupation_select_question",
+      "value": "@global.occupation_setting",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "combo_box",
+      "name": "occupation_select",
+      "value": "@fields.occupation",
+      "parameter_list": "answer_list: @data.occupation; placeholder: @global.placeholder_occupation; variant: dropdown; wrap: true;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "user_referral_select_question",
+      "value": "@global.user_referral_setting",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "combo_box",
+      "name": "user_referral_select",
+      "value": "@fields.user_referral",
+      "parameter_list": "answer_list: @data.user_referral; placeholder: @global.placeholder_user_referral; variant: dropdown; wrap: true;",
       "exclude_from_translation": true
     },
     {
       "type": "text",
       "name": "user_relationship_select_question",
-      "value": "@global.user_relationship_setting"
+      "value": "@global.user_relationship_setting",
+      "exclude_from_translation": true
     },
     {
       "type": "combo_box",
       "name": "user_relationship_select",
       "value": "@fields.user_relationship",
-      "parameter_list": "answer_list: @data.user_relationship;\ndisabled: true",
+      "parameter_list": "answer_list: @data.user_relationship; variant: dropdown; wrap: true; disabled: true;",
       "exclude_from_translation": true
     },
     {
@@ -158,20 +188,20 @@
       "type": "combo_box",
       "name": "child_gender_select",
       "value": "@fields.child_gender",
-      "parameter_list": "answer_list: @data.child_gender;\ndisabled: true",
+      "parameter_list": "answer_list: @data.child_gender; variant: dropdown; wrap: true; disabled: true;",
       "exclude_from_translation": true
     },
     {
       "type": "text",
-      "name": "child_age_input_question",
+      "name": "child_age_select_question",
       "value": "@global.child_age_setting",
       "exclude_from_translation": true
     },
     {
-      "type": "text_box",
-      "name": "child_age_input",
+      "type": "combo_box",
+      "name": "child_age_select",
       "value": "@fields.child_age",
-      "parameter_list": "disabled: true;",
+      "parameter_list": "answer_list: @data.child_age; variant: dropdown; wrap: true; disabled: true;",
       "exclude_from_translation": true
     },
     {
@@ -180,11 +210,23 @@
       "value": "@global.family_relation_setting"
     },
     {
-      "type": "combo_box",
+      "type": "begin_combo_box",
       "name": "family_relation_select",
       "value": "@fields.family_relation",
-      "parameter_list": "answer_list: @data.family_relation;\nvariant: dropdown;\nwrap: true;",
+      "parameter_list": "variant: dropdown; wrap: true;",
       "exclude_from_translation": true
+    },
+    {
+      "type": "begin_data_items",
+      "value": "family_relation",
+      "parameter_list": "filter: !@fields.user_gender || @item.user_gender_list.includes(@fields.user_gender)",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "end_combo_box"
     },
     {
       "type": "begin_display_group",
@@ -200,7 +242,7 @@
       "type": "button",
       "name": "button_completed_2",
       "value": "@global.save",
-      "action_list": "click | set_field: user_name: @local.user_name_input;\nclick | set_field: user_age: @local.user_age_input;\nclick | set_field: user_type: @local.user_type_select;\nclick | set_field: user_location: @local.user_location_select;\nclick | set_field: user_location_district: @local.user_district_select;\nclick | set_field: household_children: @local.household_children_input;\nclick | set_field: child_name: @local.child_name_input;\nclick | set_field: family_relation: @local.family_relation_select;\nclick | set_field: user_data_completed: true;\nclick | emit: server_sync;\nclick | emit: completed",
+      "action_list": "click | set_field: user_name: @local.user_name_input;\nclick | set_field: user_age: @local.user_age_input;\nclick | set_field: user_location: @local.user_location_select;\nclick | set_field: user_location_district: @local.user_district_select;\nclick | set_field: occupation: @local.occupation_select;\nclick | set_field: user_referral: @local.user_referral_select;\nclick | set_field: user_referral_type: @local.user_referral_select;\nclick | set_field: household_children: @local.household_children_input;\nclick | set_field: child_name: @local.child_name_input;\nclick | set_field: family_relation: @local.family_relation_select;\nclick | set_field: user_data_completed: true;\nclick | emit: server_sync;\nclick | emit: completed",
       "parameter_list": "style: navigation;\ndisabled: !@local.completed_enabled",
       "exclude_from_translation": true
     },

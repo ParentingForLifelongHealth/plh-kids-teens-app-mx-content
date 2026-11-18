@@ -506,6 +506,18 @@
             },
             {
               "trigger": "click",
+              "action_id": "add_data",
+              "args": [],
+              "_raw": "click | add_data | _list_id: faci_group_id_log, faci_group_id: @calc(String(@local.facilitator_group_id_input).trim().toUpperCase()), source: onboarding, timestamp: @calc(new Date().toISOString())",
+              "params": {
+                "_list_id": "faci_group_id_log",
+                "faci_group_id": "@calc(String(@local.facilitator_group_id_input).trim().toUpperCase())",
+                "source": "onboarding",
+                "timestamp": "@calc(new Date().toISOString())"
+              }
+            },
+            {
+              "trigger": "click",
               "action_id": "emit",
               "args": [
                 "completed"
@@ -563,6 +575,46 @@
                     "fieldName": "String(@local.facilitator_group_id_input).trim().toUpperCase()"
                   }
                 ]
+              },
+              "1": {
+                "_raw": [
+                  {
+                    "fullExpression": "click | add_data | _list_id: faci_group_id_log, faci_group_id: @calc(String(@local.facilitator_group_id_input).trim().toUpperCase()), source: onboarding, timestamp: @calc(new Date().toISOString())",
+                    "matchedExpression": "@local.facilitator_group_id_input",
+                    "type": "local",
+                    "fieldName": "facilitator_group_id_input"
+                  },
+                  {
+                    "fullExpression": "click | add_data | _list_id: faci_group_id_log, faci_group_id: @calc(String(@local.facilitator_group_id_input).trim().toUpperCase()), source: onboarding, timestamp: @calc(new Date().toISOString())",
+                    "matchedExpression": "@calc(String(@local.facilitator_group_id_input).trim().toUpperCase()), source: onboarding, timestamp: @calc(new Date().toISOString())",
+                    "type": "calc",
+                    "fieldName": "String(@local.facilitator_group_id_input).trim().toUpperCase()), source: onboarding, timestamp: @calc(new Date().toISOString()"
+                  }
+                ],
+                "params": {
+                  "faci_group_id": [
+                    {
+                      "fullExpression": "@calc(String(@local.facilitator_group_id_input).trim().toUpperCase())",
+                      "matchedExpression": "@local.facilitator_group_id_input",
+                      "type": "local",
+                      "fieldName": "facilitator_group_id_input"
+                    },
+                    {
+                      "fullExpression": "@calc(String(@local.facilitator_group_id_input).trim().toUpperCase())",
+                      "matchedExpression": "@calc(String(@local.facilitator_group_id_input).trim().toUpperCase())",
+                      "type": "calc",
+                      "fieldName": "String(@local.facilitator_group_id_input).trim().toUpperCase()"
+                    }
+                  ],
+                  "timestamp": [
+                    {
+                      "fullExpression": "@calc(new Date().toISOString())",
+                      "matchedExpression": "@calc(new Date().toISOString())",
+                      "type": "calc",
+                      "fieldName": "new Date().toISOString()"
+                    }
+                  ]
+                }
               }
             },
             "parameter_list": {
@@ -582,11 +634,20 @@
             ],
             "@local.facilitator_group_id_input": [
               "action_list.0.args.1",
-              "action_list.0._raw"
+              "action_list.0._raw",
+              "action_list.1._raw",
+              "action_list.1.params.faci_group_id"
             ],
             "@calc(String(@local.facilitator_group_id_input).trim().toUpperCase())": [
               "action_list.0.args.1",
-              "action_list.0._raw"
+              "action_list.0._raw",
+              "action_list.1.params.faci_group_id"
+            ],
+            "@calc(String(@local.facilitator_group_id_input).trim().toUpperCase()), source: onboarding, timestamp: @calc(new Date().toISOString())": [
+              "action_list.1._raw"
+            ],
+            "@calc(new Date().toISOString())": [
+              "action_list.1.params.timestamp"
             ],
             "!@local.completed_enabled": [
               "parameter_list.disabled"
