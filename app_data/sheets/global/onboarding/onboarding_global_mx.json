@@ -30,6 +30,12 @@
     },
     {
       "type": "declare_global_constant",
+      "name": "has_facilitator_group_id",
+      "value": true,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "declare_global_constant",
       "name": "login_is_mandatory",
       "value": false,
       "exclude_from_translation": true

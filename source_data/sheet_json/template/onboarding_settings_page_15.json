@@ -97,7 +97,7 @@
       "type": "button",
       "name": "button_completed",
       "value": "@global.continue",
-      "action_list": "click | set_field: faci_group_id: @calc(String(@local.facilitator_group_id_input).trim().toUpperCase()); \nclick | emit: completed;",
+      "action_list": "click | set_field: faci_group_id: @calc(String(@local.facilitator_group_id_input).trim().toUpperCase());\nclick | add_data | _list_id: faci_group_id_log, faci_group_id: @calc(String(@local.facilitator_group_id_input).trim().toUpperCase()), source: onboarding, timestamp: @calc(new Date().toISOString());\nclick | emit: completed;",
       "parameter_list": "style: navigation;\ndisabled: !@local.completed_enabled",
       "style_list": "flex: 1",
       "exclude_from_translation": true

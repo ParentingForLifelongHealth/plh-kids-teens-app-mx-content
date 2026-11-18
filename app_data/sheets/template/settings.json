@@ -37,6 +37,15 @@
       "_nested_name": "profile_icon"
     },
     {
+      "name": "faci_group_icon",
+      "value": "images/icons/people-outline.svg",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "faci_group_icon"
+    },
+    {
       "name": "language_icon",
       "value": "images/icons/globe-outline.svg",
       "_translations": {
@@ -437,6 +446,84 @@
             ],
             "@local.next_icon_asset": [
               "parameter_list.icon_secondary_asset"
+            ]
+          }
+        },
+        {
+          "type": "button",
+          "name": "button_faci_group_id",
+          "value": "@global.facilitator_group_setting_opt",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "variant": "card",
+            "icon": "@local.faci_group_icon",
+            "icon_secondary_asset": "@local.next_icon_asset",
+            "style": "no-background",
+            "text_align": "left"
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "settings_faci_group_id"
+              ],
+              "_raw": "click | go_to: settings_faci_group_id"
+            }
+          ],
+          "condition": "@global.has_facilitator_group_id",
+          "exclude_from_translation": true,
+          "_nested_name": "dg_account.button_faci_group_id",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@global.facilitator_group_setting_opt",
+                "matchedExpression": "@global.facilitator_group_setting_opt",
+                "type": "global",
+                "fieldName": "facilitator_group_setting_opt"
+              }
+            ],
+            "parameter_list": {
+              "icon": [
+                {
+                  "fullExpression": "@local.faci_group_icon",
+                  "matchedExpression": "@local.faci_group_icon",
+                  "type": "local",
+                  "fieldName": "faci_group_icon"
+                }
+              ],
+              "icon_secondary_asset": [
+                {
+                  "fullExpression": "@local.next_icon_asset",
+                  "matchedExpression": "@local.next_icon_asset",
+                  "type": "local",
+                  "fieldName": "next_icon_asset"
+                }
+              ]
+            },
+            "condition": [
+              {
+                "fullExpression": "@global.has_facilitator_group_id",
+                "matchedExpression": "@global.has_facilitator_group_id",
+                "type": "global",
+                "fieldName": "has_facilitator_group_id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@global.facilitator_group_setting_opt": [
+              "value"
+            ],
+            "@local.faci_group_icon": [
+              "parameter_list.icon"
+            ],
+            "@local.next_icon_asset": [
+              "parameter_list.icon_secondary_asset"
+            ],
+            "@global.has_facilitator_group_id": [
+              "condition"
             ]
           }
         }

@@ -20,11 +20,6 @@
     },
     {
       "type": "declare_global_constant",
-      "name": "user_type_setting",
-      "value": "Mi tipo de usuario es"
-    },
-    {
-      "type": "declare_global_constant",
       "name": "user_gender_setting",
       "value": "El género con el que me identifico es"
     },
@@ -37,6 +32,16 @@
       "type": "declare_global_constant",
       "name": "user_district_setting",
       "value": "El municipio en el que vivo es"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "occupation_setting",
+      "value": "Me dedico a"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "user_referral_setting",
+      "value": "Me enteré de @global.app_name por"
     },
     {
       "type": "declare_global_constant",
@@ -67,6 +72,11 @@
       "type": "declare_global_constant",
       "name": "family_relation_setting",
       "value": "Mi parentesco o vínculo con @fields.child_name es"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "facilitator_group_id_setting",
+      "value": "La clave de mi guía es"
     }
   ]
 }

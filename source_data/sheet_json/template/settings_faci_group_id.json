@@ -1,0 +1,79 @@
+{
+  "flow_type": "template",
+  "flow_name": "settings_faci_group_id",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "settings_header",
+      "value": "settings_header",
+      "action_list": "uncompleted | emit: uncompleted"
+    },
+    {
+      "name": "title",
+      "value": "@global.facilitator_group_setting_opt"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "text",
+      "name": "question_facilitator_group_id",
+      "value": "@global.facilitator_group_id_setting",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text_box",
+      "name": "facilitator_group_id_input",
+      "value": "@fields.faci_group_id",
+      "parameter_list": "placeholder: @global.placeholder_facilitator_group_id;",
+      "condition": "!!@fields.faci_group_id",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text_box",
+      "name": "facilitator_group_id_input",
+      "parameter_list": "placeholder: @global.placeholder_facilitator_group_id;",
+      "condition": "!@fields.faci_group_id",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "set_variable",
+      "name": "valid_facilitator_group_id",
+      "value": "@calc(/^(SEP|IMSS|DIF)(?!000)\\d{3}$/i.test(String(@local.facilitator_group_id_input || '').trim()) || !@local.facilitator_group_id_input)",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "warning_facilitator_group_id_input",
+      "value": "@global.error_invalid_facilitator_group_id",
+      "condition": "!@local.valid_facilitator_group_id",
+      "style_list": "color: #FF0000;\nfont-size: 14px",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "set_variable",
+      "name": "completed_enabled",
+      "value": "!!@local.facilitator_group_id_input && @local.valid_facilitator_group_id",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_footer",
+      "parameter_list": "sticky: bottom;",
+      "style_list": "padding: 12px 24px;"
+    },
+    {
+      "type": "button",
+      "name": "button_save",
+      "value": "@global.save",
+      "action_list": "click | set_field: faci_group_id: @calc(String(@local.facilitator_group_id_input).trim().toUpperCase());\nclick | add_data | _list_id: faci_group_id_log, faci_group_id: @calc(String(@local.facilitator_group_id_input).trim().toUpperCase()), source: settings, timestamp: @calc(new Date().toISOString());\nclick | emit: server_sync;\nclick | emit: completed",
+      "parameter_list": "style: navigation;\ndisabled: !@local.completed_enabled",
+      "style_list": "flex: 1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}
