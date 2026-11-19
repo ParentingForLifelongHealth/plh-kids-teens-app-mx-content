@@ -37,16 +37,29 @@
       "parameter_list": "text_align: center;"
     },
     {
+      "type": "text",
+      "name": "ff_video_title",
+      "value": "**@item.video_title**",
+      "parameter_list": "text_align: center;",
+      "condition": "!!@item.video_title"
+    },
+    {
+      "type": "youtube",
+      "name": "ff_video",
+      "value": "@item.youtube_link",
+      "condition": "!!@item.youtube_link"
+    },
+    {
       "type": "button",
       "name": "button_main",
-      "value": "@global.community_invite_share_button",
-      "action_list": "click | set_data | _list_id: courses, _id: @local.course_id, community_invite_clicked: true, community_invite_click_ts: @calc(now()); click | share | text: @item.share_text, dialog_title: @global.community_invite_share_dialog_title; click | emit: completed;",
+      "value": "@item.share_button",
+      "action_list": "click | set_data | _list_id: courses, _id: @local.course_id, community_invite_clicked: true, community_invite_click_ts: @calc(now()); click | share | text: @item.share_text, dialog_title: @item.share_dialog_title; click | emit: completed;",
       "parameter_list": "style: navigation;"
     },
     {
       "type": "button",
       "name": "button_later",
-      "value": "<u>@global.community_invite_later_button</u>",
+      "value": "<u>@item.later_button</u>",
       "action_list": "click | set_data | _list_id: courses, _id: @local.course_id, community_invite_later_ts: @calc(now()); click | emit: uncompleted;",
       "parameter_list": "variant: card; style: no-background;"
     },

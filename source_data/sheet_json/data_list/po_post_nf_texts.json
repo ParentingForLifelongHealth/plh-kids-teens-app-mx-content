@@ -8,27 +8,27 @@
       "id": "first_1",
       "type": "first",
       "title::eng": "How have you been lately?",
-      "text::eng": "Parenting takes a lot. Check in on how you and @field.child_name are doing.",
+      "text::eng": "Parenting takes a lot. Check in on how you and @fields.child_name are doing.",
       "comment": "variation 1 of first proximal outcome notification"
     },
     {
       "id": "first_2",
       "type": "first",
       "title::eng": "You have learned so much",
-      "text::eng": "Tell us how your new skills are working at home with @field.child_name.",
+      "text::eng": "Tell us how your new skills are working at home with @fields.child_name.",
       "comment": "variation 2"
     },
     {
       "id": "first_3",
       "type": "first",
       "title::eng": "Your care makes a difference",
-      "text::eng": "Check in and look back at what has changed for @field.child_name.",
+      "text::eng": "Check in and look back at what has changed for @fields.child_name.",
       "comment": "variation 3 of first proximal outcome notification"
     },
     {
       "id": "first_4",
       "type": "first",
-      "title::eng": "How are things with @field.child_name?",
+      "title::eng": "How are things with @fields.child_name?",
       "text::eng": "Every family has good days and hard days. Tell us about yours.",
       "comment": "variation 4"
     },
@@ -36,7 +36,7 @@
       "id": "reminder_1",
       "type": "reminder",
       "title::eng": "A moment just for you",
-      "text::eng": "You give so much to @field.child_name. Check in on how you are doing too.",
+      "text::eng": "You give so much to @fields.child_name. Check in on how you are doing too.",
       "comment": "variation 1 of remonder - here 1 doesn't refer to the fact that it's the first or second reminder, just to the variant"
     },
     {

@@ -130,9 +130,84 @@
           }
         },
         {
+          "type": "text",
+          "name": "ff_video_title",
+          "value": "**@item.video_title**",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "text_align": "center"
+          },
+          "condition": "!!@item.video_title",
+          "_nested_name": "invite.ff_video_title",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "**@item.video_title**",
+                "matchedExpression": "@item.video_title",
+                "type": "item",
+                "fieldName": "video_title"
+              }
+            ],
+            "condition": [
+              {
+                "fullExpression": "!!@item.video_title",
+                "matchedExpression": "!@item.video_title",
+                "type": "item",
+                "fieldName": "video_title"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.video_title": [
+              "value"
+            ],
+            "!@item.video_title": [
+              "condition"
+            ]
+          }
+        },
+        {
+          "type": "youtube",
+          "name": "ff_video",
+          "value": "@item.youtube_link",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "!!@item.youtube_link",
+          "_nested_name": "invite.ff_video",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@item.youtube_link",
+                "matchedExpression": "@item.youtube_link",
+                "type": "item",
+                "fieldName": "youtube_link"
+              }
+            ],
+            "condition": [
+              {
+                "fullExpression": "!!@item.youtube_link",
+                "matchedExpression": "!@item.youtube_link",
+                "type": "item",
+                "fieldName": "youtube_link"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.youtube_link": [
+              "value"
+            ],
+            "!@item.youtube_link": [
+              "condition"
+            ]
+          }
+        },
+        {
           "type": "button",
           "name": "button_main",
-          "value": "@global.community_invite_share_button",
+          "value": "@item.share_button",
           "_translations": {
             "value": {}
           },
@@ -153,10 +228,10 @@
               "trigger": "click",
               "action_id": "share",
               "args": [],
-              "_raw": "click | share | text: @item.share_text, dialog_title: @global.community_invite_share_dialog_title",
+              "_raw": "click | share | text: @item.share_text, dialog_title: @item.share_dialog_title",
               "params": {
                 "text": "@item.share_text",
-                "dialog_title": "@global.community_invite_share_dialog_title"
+                "dialog_title": "@item.share_dialog_title"
               }
             },
             {
@@ -175,10 +250,10 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "@global.community_invite_share_button",
-                "matchedExpression": "@global.community_invite_share_button",
-                "type": "global",
-                "fieldName": "community_invite_share_button"
+                "fullExpression": "@item.share_button",
+                "matchedExpression": "@item.share_button",
+                "type": "item",
+                "fieldName": "share_button"
               }
             ],
             "action_list": {
@@ -219,16 +294,16 @@
               "1": {
                 "_raw": [
                   {
-                    "fullExpression": "click | share | text: @item.share_text, dialog_title: @global.community_invite_share_dialog_title",
+                    "fullExpression": "click | share | text: @item.share_text, dialog_title: @item.share_dialog_title",
                     "matchedExpression": "@item.share_text",
                     "type": "item",
                     "fieldName": "share_text"
                   },
                   {
-                    "fullExpression": "click | share | text: @item.share_text, dialog_title: @global.community_invite_share_dialog_title",
-                    "matchedExpression": "@global.community_invite_share_dialog_title",
-                    "type": "global",
-                    "fieldName": "community_invite_share_dialog_title"
+                    "fullExpression": "click | share | text: @item.share_text, dialog_title: @item.share_dialog_title",
+                    "matchedExpression": "@item.share_dialog_title",
+                    "type": "item",
+                    "fieldName": "share_dialog_title"
                   }
                 ],
                 "params": {
@@ -242,10 +317,10 @@
                   ],
                   "dialog_title": [
                     {
-                      "fullExpression": "@global.community_invite_share_dialog_title",
-                      "matchedExpression": "@global.community_invite_share_dialog_title",
-                      "type": "global",
-                      "fieldName": "community_invite_share_dialog_title"
+                      "fullExpression": "@item.share_dialog_title",
+                      "matchedExpression": "@item.share_dialog_title",
+                      "type": "item",
+                      "fieldName": "share_dialog_title"
                     }
                   ]
                 }
@@ -253,7 +328,7 @@
             }
           },
           "_dynamicDependencies": {
-            "@global.community_invite_share_button": [
+            "@item.share_button": [
               "value"
             ],
             "@local.course_id": [
@@ -268,7 +343,7 @@
               "action_list.1._raw",
               "action_list.1.params.text"
             ],
-            "@global.community_invite_share_dialog_title": [
+            "@item.share_dialog_title": [
               "action_list.1._raw",
               "action_list.1.params.dialog_title"
             ]
@@ -277,7 +352,7 @@
         {
           "type": "button",
           "name": "button_later",
-          "value": "<u>@global.community_invite_later_button</u>",
+          "value": "<u>@item.later_button</u>",
           "_translations": {
             "value": {}
           },
@@ -310,10 +385,10 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "<u>@global.community_invite_later_button</u>",
-                "matchedExpression": "@global.community_invite_later_button",
-                "type": "global",
-                "fieldName": "community_invite_later_button"
+                "fullExpression": "<u>@item.later_button</u>",
+                "matchedExpression": "@item.later_button",
+                "type": "item",
+                "fieldName": "later_button"
               }
             ],
             "action_list": {
@@ -354,7 +429,7 @@
             }
           },
           "_dynamicDependencies": {
-            "@global.community_invite_later_button": [
+            "@item.later_button": [
               "value"
             ],
             "@local.course_id": [

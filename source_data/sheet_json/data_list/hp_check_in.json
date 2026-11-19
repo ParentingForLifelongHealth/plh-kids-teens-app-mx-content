@@ -28,21 +28,21 @@
       "id": "relation_yc",
       "notification_text::eng": "¿Cómo les ha ido en su tiempo para conectar?",
       "text_goal::eng": "La práctica de esta semana consistía en dedicar al menos 5 minutos al día de tiempo para conectar con @fields.child_name.",
-      "question_done::eng": "Esta semana, ¿dedicaste al menos 5 minutos al día a estar con @fields.child_name sin distracciones?",
-      "reply_no::eng": "¡Lo entiendo! Puedes empezar hoy. Recuerda preguntarle a @fields.child_name qué le gustaría hacer.",
+      "question_done::eng": "Esta semana, ¿dedicaste al menos 5 minutos al día a conectar con @fields.child_name sin distracciones?",
+      "reply_no::eng": "¡Lo entiendo! Puedes empezar hoy. Recuerda preguntarle a @fields.child_name qué le gustaría hacer y dejarle guiar la actividad.",
       "reply_happy::eng": "¡Qué bien! Sigue dejando que elija el juego y prestándole toda tu atención.",
-      "reply_ok::eng": "A veces cuesta encontrar el momento. Prueba con un juego sencillo que le guste.",
-      "reply_sad::eng": "Lamento que haya sido difícil. Pueden intentarlo de nuevo en un momento de mayor tranquilidad."
+      "reply_ok::eng": "A veces las cosas no salen exactamente como esperábamos, y eso también es parte del proceso. \n\nLo importante es que cada día puedes volver a intentarlo.",
+      "reply_sad::eng": "Lamento que haya sido difícil. Hacer algo por primera vez puede ser muy retador.\n\nLo importante es que cada día es una oportunidad para volverlo a intentar."
     },
     {
       "id": "relation_t",
       "notification_text::eng": "¿Cómo les ha ido en su tiempo para conectar?",
       "text_goal::eng": "La práctica de esta semana consistía en dedicar al menos 5 minutos al día de tiempo para conectar con @fields.child_name.",
-      "question_done::eng": "Esta semana, ¿dedicaste al menos 5 minutos al día a estar con @fields.child_name sin distracciones?",
-      "reply_no::eng": "¡Lo entiendo! Puedes empezar hoy. Recuerda preguntarle a @fields.child_name qué le gustaría hacer.",
+      "question_done::eng": "Esta semana, ¿dedicaste al menos 5 minutos al día a conectar con @fields.child_name sin distracciones?",
+      "reply_no::eng": "¡Lo entiendo! Puedes empezar hoy. Recuerda preguntarle a @fields.child_name qué le gustaría hacer y dejarle guiar la actividad.",
       "reply_happy::eng": "¡Qué bien! Sigue mostrando interés y dejando que elija qué hacer o de qué hablar.",
-      "reply_ok::eng": "No siempre es fácil conectar. Prueba acercarte a algo que le interese, sin presionarle.",
-      "reply_sad::eng": "Lamento que haya sido difícil. Dale espacio y hazle saber que estás disponible cuando quiera compartir."
+      "reply_ok::eng": "A veces las cosas no salen exactamente como esperábamos, y eso también es parte del proceso. \n\nLo importante es que cada día puedes volver a intentarlo.",
+      "reply_sad::eng": "Lamento que haya sido difícil. Hacer algo por primera vez puede ser muy retador.\n\nLo importante es que cada día es una oportunidad para volverlo a intentar."
     },
     {
       "id": "develop_yc",
@@ -66,43 +66,43 @@
     },
     {
       "id": "behave_yc",
-      "notification_text::eng": "¿Cómo te fue dando instrucciones claras y positivas a @fields.child_name?",
-      "text_goal::eng": "La práctica de esta semana se enfocaba en dar instrucciones claras y positivas a @fields.child_name.",
-      "question_done::eng": "Esta semana, ¿lograste dar instrucciones claras y positivas a @fields.child_name?",
-      "reply_no::eng": "¡Lo entiendo! Puedes empezar con algo sencillo: cambia “no grites” por “habla más bajito, por favor”.",
-      "reply_happy::eng": "¡Qué bien! Sigue diciendo qué esperas que haga y reconociendo sus esfuerzos.",
-      "reply_ok::eng": "A veces cuesta. Prueba dar una sola instrucción a la vez, con calma.",
-      "reply_sad::eng": "Lamento que haya sido difícil. Haz una pausa para recuperar la calma antes de volver a intentarlo."
+      "notification_text::eng": "¿Cómo te fue guiando el comportamiento de @fields.child_name?",
+      "text_goal::eng": "La práctica de esta semana se enfocaba en dar instrucciones positivas a @fields.child_name y practicar estrategias para regular sus emociones.",
+      "question_done::eng": "Esta semana, ¿lograste dar instrucciones positivas a @fields.child_name y practicar una estrategia para regular sus emociones?",
+      "reply_no::eng": "¡Lo entiendo! Puedes empezar con algo sencillo, como respirar y contar hasta diez cuando sienten enojo o decir “habla más bajito, por favor” en lugar de “no grites”. ",
+      "reply_happy::eng": "¡Qué bien! Sigue diciendo qué esperas que haga y reconociendo sus esfuerzos. Recuerda que escucharle y dejar que participe puede ayudar a que se comporte así más seguido.",
+      "reply_ok::eng": "Guiar el comportamiento de @fields.child_name puede tener momentos difíciles. Cada intento es una oportunidad para seguir aprendiendo.",
+      "reply_sad::eng": "Lamento que haya sido difícil. Haz una pausa para recuperar la calma y trata de intentarlo nuevamente. \n\nCada intento es una oportunidad para seguir aprendiendo."
     },
     {
       "id": "behave_t",
-      "notification_text::eng": "¿Cómo les ha ido al acordar reglas de convivencia?",
-      "text_goal::eng": "La práctica de esta semana se enfocaba en escuchar a @fields.child_name y acordar una regla de convivencia.",
-      "question_done::eng": "Esta semana, ¿lograste acordar con tu adolescente una regla de convivencia?",
-      "reply_no::eng": "¡Lo entiendo! Empiecen con una sola regla. Expliquen por qué importa y escuchen sus ideas.",
-      "reply_happy::eng": "¡Qué bien! Escuchar sus ideas ayuda a construir acuerdos que puedan cumplir.",
-      "reply_ok::eng": "Llegar a acuerdos lleva práctica. Escucha su propuesta y revisen qué pueden ajustar.",
-      "reply_sad::eng": "Lamento que la conversación haya sido difícil. Pueden retomarla cuando ambos tengan más calma."
+      "notification_text::eng": "¿Cómo te fue guiando el comportamiento de @fields.child_name?",
+      "text_goal::eng": "La práctica de esta semana se enfocaba en dar instrucciones positivas a @fields.child_name y practicar estrategias para regular sus emociones.",
+      "question_done::eng": "Esta semana, ¿lograste dar instrucciones positivas a @fields.child_name y practicar una estrategia para regular sus emociones?",
+      "reply_no::eng": "¡Lo entiendo! Puedes empezar con algo sencillo, como respirar y contar hasta diez cuando sienten enojo o decir “habla más bajito, por favor” en lugar de “no grites”. ",
+      "reply_happy::eng": "¡Qué bien! Sigue diciendo qué esperas que haga y reconociendo sus esfuerzos. Recuerda que escucharle y dejar que participe puede ayudar a que se comporte así más seguido.",
+      "reply_ok::eng": "Guiar el comportamiento de @fields.child_name puede tener momentos difíciles. Cada intento es una oportunidad para seguir aprendiendo.",
+      "reply_sad::eng": "Lamento que haya sido difícil. Haz una pausa para recuperar la calma y trata de intentarlo nuevamente. \n\nCada intento es una oportunidad para seguir aprendiendo."
     },
     {
       "id": "safety_yc",
-      "notification_text::eng": "¿Cómo te ha ido al hablar con @fields.child_name sobre cómo cuidar su cuerpo?",
-      "text_goal::eng": "La práctica consistía en hablar con @fields.child_name sobre su cuerpo y practicar cómo decir “¡No!” ante un contacto que le incomode.",
-      "question_done::eng": "Esta semana, ¿practicaron cómo decir “¡No!” si alguien le hace sentir incomodidad?",
+      "notification_text::eng": "¿Cómo te fue hablando con @fields.child_name sobre su seguridad?",
+      "text_goal::eng": "La práctica consistía en platicar con @fields.child_name sobre su plan de seguridad, su seguridad en línea y las personas a las que puede acudir si se siente en riesgo.",
+      "question_done::eng": "Esta semana, ¿platicaste con @fields.child_name sobre su seguridad?",
       "reply_no::eng": "¡Lo entiendo! Puedes empezar diciéndole que puede rechazar un abrazo o un beso si no quiere recibirlo.",
       "reply_happy::eng": "¡Qué bien! Recuérdale que siempre puede contarte lo que le preocupa y que estás para ayudarle.",
-      "reply_ok::eng": "Hablar de estos temas puede ser retador. Practiquen con calma, sin exigir que lo haga perfecto.",
-      "reply_sad::eng": "Lamento que haya sido difícil. Haz una pausa y retomen sin presión; escucharle también ayuda a construir confianza."
+      "reply_ok::eng": "A veces hablar y planear sobre seguridad puede sentirse complicado. \n\nLo importante es que estás buscando maneras de proteger a @fields.child_name y cada intento cuenta.",
+      "reply_sad::eng": "Lamento que haya sido difícil. A veces hablar y planear sobre seguridad puede sentirse complicado, pero siempre puedes volver a intentarlo."
     },
     {
       "id": "safety_t",
-      "notification_text::eng": "¿Cómo te ha ido al recordarle a tu adolescente que puede contar contigo?",
-      "text_goal::eng": "La práctica consistía en recordarle a @fields.child_name que puede acudir a ti y que le escucharás sin juzgarle.",
-      "question_done::eng": "Esta semana, ¿le dijiste a tu adolescente que puede contarte algo difícil sin temor a que le juzgues?",
+      "notification_text::eng": "¿Cómo te fue hablando con @fields.child_name sobre su seguridad?",
+      "text_goal::eng": "La práctica consistía en platicar con @fields.child_name sobre su plan de seguridad, su seguridad en línea y las personas a las que puede acudir si se siente en riesgo.",
+      "question_done::eng": "Esta semana, ¿platicaste con @fields.child_name sobre su seguridad?",
       "reply_no::eng": "Busca un momento tranquilo para decirle a @fields.child_name que puede contar contigo, sin pedirle que te cuente algo.",
       "reply_happy::eng": "¡Qué bien! Refuerza esa confianza escuchándole con calma cuando se acerque a ti.",
-      "reply_ok::eng": "A veces cuesta encontrar las palabras. Prueba: “Si algo te preocupa, estoy aquí para escucharte”.",
-      "reply_sad::eng": "Lamento que haya sido difícil. Dale espacio y mantén abierta la invitación a hablar, sin presionarle."
+      "reply_ok::eng": "A veces hablar y planear sobre seguridad puede sentirse complicado. \n\nLo importante es que estás buscando maneras de proteger a @fields.child_name y cada intento cuenta.",
+      "reply_sad::eng": "Lamento que haya sido difícil. A veces hablar y planear sobre seguridad puede sentirse complicado, pero siempre puedes volver a intentarlo."
     },
     {
       "id": "learning_yc",
@@ -126,9 +126,9 @@
     },
     {
       "id": "ipv",
-      "notification_text::eng": "¿Cómo va el reparto de tareas con quien compartes la crianza?",
-      "text_goal::eng": "La práctica de los últimos días, consistía en conversar con la persona con quien compartes la crianza sobre cómo repartir una responsabilidad de cuidado.",
-      "question_done::eng": "Esta semana, ¿acordaste con quien compartes la crianza cómo repartir una tarea de cuidado?",
+      "notification_text::eng": "¿Cómo te fue conversando con las personas con quienes compartes la crianza?",
+      "text_goal::eng": "La práctica de los últimos días, consistía en conversar con las personas con las que compartes la crianza sobre cómo apoyarse mutuamente en el cuidado y las responsabilidades del hogar.",
+      "question_done::eng": "Esta semana, ¿conversaste con las personas con las que compartes la crianza sobre cómo apoyarse mutuamente?",
       "reply_no::eng": "¡Lo entiendo! Puedes empezar identificando una tarea que te gustaría compartir y qué apoyo necesitas.",
       "reply_happy::eng": "¡Qué bien! Pongan en práctica el acuerdo y revisen cómo les funciona.",
       "reply_ok::eng": "Los acuerdos toman tiempo. Elijan una tarea pequeña y aclaren qué hará cada persona.",
