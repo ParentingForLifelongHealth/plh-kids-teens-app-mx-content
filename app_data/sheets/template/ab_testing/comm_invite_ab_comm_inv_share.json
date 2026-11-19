@@ -1,0 +1,416 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "ab_testing",
+  "flow_name": "comm_invite_ab_comm_inv_share",
+  "override_target": "community_invite",
+  "override_condition": "@fields.ab_mode_comm_inv == \"all_share\" || (@fields.ab_mode_comm_inv == \"test\" && @fields.ab_arm_comm_inv == \"share\")",
+  "status": "released",
+  "comment": "B replaces A when the mode is all_B, or the mode is \"test\" and the user's arm is B. \n\nthe condition should be\n@global.ab_mode_ID == \"all_B\" || (@global.ab_mode_ID == \"test\" && @fields.ab_arm_ID == \"B\")\nbut override conditions can only use @fields, so new need to copy the mode global into a field on each app start as defined in the sheet ab_test_assignement_ID",
+  "rows": [
+    {
+      "type": "set_variable",
+      "name": "course_id",
+      "value": "@fields.community_invite_current",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "course_id",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields.community_invite_current",
+            "matchedExpression": "@fields.community_invite_current",
+            "type": "fields",
+            "fieldName": "community_invite_current"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.community_invite_current": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "data_items",
+      "name": "invite",
+      "value": "@data.community_invite_share_data",
+      "parameter_list": {
+        "filter": "@item.id == @local.course_id"
+      },
+      "rows": [
+        {
+          "type": "image",
+          "name": "ff_image",
+          "value": "@item.image",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "!!@item.image",
+          "_nested_name": "invite.ff_image",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@item.image",
+                "matchedExpression": "@item.image",
+                "type": "item",
+                "fieldName": "image"
+              }
+            ],
+            "condition": [
+              {
+                "fullExpression": "!!@item.image",
+                "matchedExpression": "!@item.image",
+                "type": "item",
+                "fieldName": "image"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.image": [
+              "value"
+            ],
+            "!@item.image": [
+              "condition"
+            ]
+          }
+        },
+        {
+          "type": "title",
+          "name": "ff_title",
+          "value": "@item.title",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "variant": "header"
+          },
+          "_nested_name": "invite.ff_title",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@item.title",
+                "matchedExpression": "@item.title",
+                "type": "item",
+                "fieldName": "title"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.title": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "name": "ff_text",
+          "value": "@item.text",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "text_align": "center"
+          },
+          "_nested_name": "invite.ff_text",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@item.text",
+                "matchedExpression": "@item.text",
+                "type": "item",
+                "fieldName": "text"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.text": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "button",
+          "name": "button_main",
+          "value": "@global.community_invite_share_button",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "set_data",
+              "args": [],
+              "_raw": "click | set_data | _list_id: courses, _id: @local.course_id, community_invite_clicked: true, community_invite_click_ts: @calc(now())",
+              "params": {
+                "_list_id": "courses",
+                "_id": "@local.course_id",
+                "community_invite_clicked": true,
+                "community_invite_click_ts": "@calc(now())"
+              }
+            },
+            {
+              "trigger": "click",
+              "action_id": "share",
+              "args": [],
+              "_raw": "click | share | text: @item.share_text, dialog_title: @global.community_invite_share_dialog_title",
+              "params": {
+                "text": "@item.share_text",
+                "dialog_title": "@global.community_invite_share_dialog_title"
+              }
+            },
+            {
+              "trigger": "click",
+              "action_id": "emit",
+              "args": [
+                "completed"
+              ],
+              "_raw": "click | emit: completed"
+            }
+          ],
+          "parameter_list": {
+            "style": "navigation"
+          },
+          "_nested_name": "invite.button_main",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@global.community_invite_share_button",
+                "matchedExpression": "@global.community_invite_share_button",
+                "type": "global",
+                "fieldName": "community_invite_share_button"
+              }
+            ],
+            "action_list": {
+              "0": {
+                "_raw": [
+                  {
+                    "fullExpression": "click | set_data | _list_id: courses, _id: @local.course_id, community_invite_clicked: true, community_invite_click_ts: @calc(now())",
+                    "matchedExpression": "@local.course_id",
+                    "type": "local",
+                    "fieldName": "course_id"
+                  },
+                  {
+                    "fullExpression": "click | set_data | _list_id: courses, _id: @local.course_id, community_invite_clicked: true, community_invite_click_ts: @calc(now())",
+                    "matchedExpression": "@calc(now())",
+                    "type": "calc",
+                    "fieldName": "now()"
+                  }
+                ],
+                "params": {
+                  "_id": [
+                    {
+                      "fullExpression": "@local.course_id",
+                      "matchedExpression": "@local.course_id",
+                      "type": "local",
+                      "fieldName": "course_id"
+                    }
+                  ],
+                  "community_invite_click_ts": [
+                    {
+                      "fullExpression": "@calc(now())",
+                      "matchedExpression": "@calc(now())",
+                      "type": "calc",
+                      "fieldName": "now()"
+                    }
+                  ]
+                }
+              },
+              "1": {
+                "_raw": [
+                  {
+                    "fullExpression": "click | share | text: @item.share_text, dialog_title: @global.community_invite_share_dialog_title",
+                    "matchedExpression": "@item.share_text",
+                    "type": "item",
+                    "fieldName": "share_text"
+                  },
+                  {
+                    "fullExpression": "click | share | text: @item.share_text, dialog_title: @global.community_invite_share_dialog_title",
+                    "matchedExpression": "@global.community_invite_share_dialog_title",
+                    "type": "global",
+                    "fieldName": "community_invite_share_dialog_title"
+                  }
+                ],
+                "params": {
+                  "text": [
+                    {
+                      "fullExpression": "@item.share_text",
+                      "matchedExpression": "@item.share_text",
+                      "type": "item",
+                      "fieldName": "share_text"
+                    }
+                  ],
+                  "dialog_title": [
+                    {
+                      "fullExpression": "@global.community_invite_share_dialog_title",
+                      "matchedExpression": "@global.community_invite_share_dialog_title",
+                      "type": "global",
+                      "fieldName": "community_invite_share_dialog_title"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "_dynamicDependencies": {
+            "@global.community_invite_share_button": [
+              "value"
+            ],
+            "@local.course_id": [
+              "action_list.0._raw",
+              "action_list.0.params._id"
+            ],
+            "@calc(now())": [
+              "action_list.0._raw",
+              "action_list.0.params.community_invite_click_ts"
+            ],
+            "@item.share_text": [
+              "action_list.1._raw",
+              "action_list.1.params.text"
+            ],
+            "@global.community_invite_share_dialog_title": [
+              "action_list.1._raw",
+              "action_list.1.params.dialog_title"
+            ]
+          }
+        },
+        {
+          "type": "button",
+          "name": "button_later",
+          "value": "<u>@global.community_invite_later_button</u>",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "set_data",
+              "args": [],
+              "_raw": "click | set_data | _list_id: courses, _id: @local.course_id, community_invite_later_ts: @calc(now())",
+              "params": {
+                "_list_id": "courses",
+                "_id": "@local.course_id",
+                "community_invite_later_ts": "@calc(now())"
+              }
+            },
+            {
+              "trigger": "click",
+              "action_id": "emit",
+              "args": [
+                "uncompleted"
+              ],
+              "_raw": "click | emit: uncompleted"
+            }
+          ],
+          "parameter_list": {
+            "variant": "card",
+            "style": "no-background"
+          },
+          "_nested_name": "invite.button_later",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "<u>@global.community_invite_later_button</u>",
+                "matchedExpression": "@global.community_invite_later_button",
+                "type": "global",
+                "fieldName": "community_invite_later_button"
+              }
+            ],
+            "action_list": {
+              "0": {
+                "_raw": [
+                  {
+                    "fullExpression": "click | set_data | _list_id: courses, _id: @local.course_id, community_invite_later_ts: @calc(now())",
+                    "matchedExpression": "@local.course_id",
+                    "type": "local",
+                    "fieldName": "course_id"
+                  },
+                  {
+                    "fullExpression": "click | set_data | _list_id: courses, _id: @local.course_id, community_invite_later_ts: @calc(now())",
+                    "matchedExpression": "@calc(now())",
+                    "type": "calc",
+                    "fieldName": "now()"
+                  }
+                ],
+                "params": {
+                  "_id": [
+                    {
+                      "fullExpression": "@local.course_id",
+                      "matchedExpression": "@local.course_id",
+                      "type": "local",
+                      "fieldName": "course_id"
+                    }
+                  ],
+                  "community_invite_later_ts": [
+                    {
+                      "fullExpression": "@calc(now())",
+                      "matchedExpression": "@calc(now())",
+                      "type": "calc",
+                      "fieldName": "now()"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "_dynamicDependencies": {
+            "@global.community_invite_later_button": [
+              "value"
+            ],
+            "@local.course_id": [
+              "action_list.0._raw",
+              "action_list.0.params._id"
+            ],
+            "@calc(now())": [
+              "action_list.0._raw",
+              "action_list.0.params.community_invite_later_ts"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "invite",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.community_invite_share_data",
+            "matchedExpression": "@data.community_invite_share_data",
+            "type": "data",
+            "fieldName": "community_invite_share_data"
+          }
+        ],
+        "parameter_list": {
+          "filter": [
+            {
+              "fullExpression": "@item.id == @local.course_id",
+              "matchedExpression": "@item.id",
+              "type": "item",
+              "fieldName": "id"
+            },
+            {
+              "fullExpression": "@item.id == @local.course_id",
+              "matchedExpression": "@local.course_id",
+              "type": "local",
+              "fieldName": "course_id"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@data.community_invite_share_data": [
+          "value"
+        ],
+        "@item.id": [
+          "parameter_list.filter"
+        ],
+        "@local.course_id": [
+          "parameter_list.filter"
+        ]
+      }
+    }
+  ],
+  "_source": {
+    "name": "ab_test_community_invite",
+    "path": "ab_test_comm_inv.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/18EfS1fu3nbL0zXZ2NVfuUzkmkzvgQwFD4k_REJGLq7Q"
+  }
+}

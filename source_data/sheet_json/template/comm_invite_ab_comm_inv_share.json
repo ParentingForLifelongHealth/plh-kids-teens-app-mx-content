@@ -1,0 +1,57 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "ab_testing",
+  "flow_name": "comm_invite_ab_comm_inv_share",
+  "override_target": "community_invite",
+  "override_condition": "@fields.ab_mode_comm_inv == \"all_share\" || (@fields.ab_mode_comm_inv == \"test\" && @fields.ab_arm_comm_inv == \"share\")",
+  "status": "released",
+  "comment": "B replaces A when the mode is all_B, or the mode is \"test\" and the user's arm is B. \n\nthe condition should be\n@global.ab_mode_ID == \"all_B\" || (@global.ab_mode_ID == \"test\" && @fields.ab_arm_ID == \"B\")\nbut override conditions can only use @fields, so new need to copy the mode global into a field on each app start as defined in the sheet ab_test_assignement_ID",
+  "rows": [
+    {
+      "type": "set_variable",
+      "name": "course_id",
+      "value": "@fields.community_invite_current"
+    },
+    {
+      "type": "begin_data_items",
+      "name": "invite",
+      "value": "@data.community_invite_share_data",
+      "parameter_list": "filter: @item.id == @local.course_id;"
+    },
+    {
+      "type": "image",
+      "name": "ff_image",
+      "value": "@item.image",
+      "condition": "!!@item.image"
+    },
+    {
+      "type": "title",
+      "name": "ff_title",
+      "value": "@item.title",
+      "parameter_list": "variant: header;"
+    },
+    {
+      "type": "text",
+      "name": "ff_text",
+      "value": "@item.text",
+      "parameter_list": "text_align: center;"
+    },
+    {
+      "type": "button",
+      "name": "button_main",
+      "value": "@global.community_invite_share_button",
+      "action_list": "click | set_data | _list_id: courses, _id: @local.course_id, community_invite_clicked: true, community_invite_click_ts: @calc(now()); click | share | text: @item.share_text, dialog_title: @global.community_invite_share_dialog_title; click | emit: completed;",
+      "parameter_list": "style: navigation;"
+    },
+    {
+      "type": "button",
+      "name": "button_later",
+      "value": "<u>@global.community_invite_later_button</u>",
+      "action_list": "click | set_data | _list_id: courses, _id: @local.course_id, community_invite_later_ts: @calc(now()); click | emit: uncompleted;",
+      "parameter_list": "variant: card; style: no-background;"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

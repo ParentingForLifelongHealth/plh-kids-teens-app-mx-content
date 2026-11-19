@@ -13,12 +13,12 @@
     {
       "id": "intro_1",
       "category_id": "intro",
-      "text_1_facilitator::eng": "Este módulo trata sobre **cómo responder** cuando @fields.child_name comparte contigo **algo difícil**.\n\n\nA esta edad, @fields.child_name todavía está aprendiendo a poner en palabras lo que siente y le pasa. 🤝"
+      "text_1_facilitator::eng": "Este módulo trata sobre **cómo responder cuando @fields.child_name comparte contigo algo difícil**.\n\n\nA esta edad, @fields.child_name todavía está aprendiendo a poner en palabras lo que siente y y puede ser difícil contar cuando algo le preocupa o le hace sentir mal. ❤️‍🩹"
     },
     {
       "id": "intro_2",
       "category_id": "intro",
-      "text_1_facilitator::eng": "Aquí exploraremos cómo escuchar con calma, responder para que @fields.child_name se sienta en un espacio seguro y fortalecer la confianza para que siga contándote lo que le sucede."
+      "text_1_facilitator::eng": "Aquí exploraremos cómo escuchar y responder con calma, para que @fields.child_name se sienta en un espacio seguro y tenga la confianza para seguirte contando lo que le sucede. 👐"
     },
     {
       "id": "intro_3",
@@ -28,12 +28,12 @@
     {
       "id": "intro_4",
       "category_id": "intro",
-      "text_1_facilitator::eng": "Antes de empezar, reflexionemos un momento📝",
-      "quiz_1_question::eng": "Verdadero o falso: Si noto que @fields.child_name está diferente o algo le preocupa, es mejor esperar a que quiera contarme lo que pasa en lugar de preguntarle.",
+      "text_1_facilitator::eng": "Ahora sí, reflexionemos un momento📝",
+      "quiz_1_question::eng": "Verdadero o falso: Si noto que @fields.child_name está diferente o algo le preocupa, es mejor esperar a que quiera contarme qué le pasa en lugar de preguntarle.",
       "quiz_1_option_1_text::eng": "Verdadero",
-      "quiz_1_feedback_1::eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nCuando algo le preocupa a @fields.child_name, puede sentir miedo, vergüenza o no saber cómo empezar a hablar. Preguntarle con calma cómo se siente y hacerle saber que estás ahí para escucharle puede ayudar a que se sienta con la confianza para contarte lo que pasa.",
+      "quiz_1_feedback_1::eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nCuando algo le preocupa a @fields.child_name, puede sentir miedo, vergüenza o no saber cómo empezar a hablar. \n\nPreguntarle con calma cómo se siente y hacerle saber que estás ahí para escuchar puede ayudar a que se sienta con la confianza para contarte lo que pasa.",
       "quiz_1_option_2_text::eng": "Falso",
-      "quiz_1_feedback_2::eng": "🎉 ¡Tienes razón!\n\nCuando algo le preocupa a @fields.child_name, puede sentir miedo, vergüenza o no saber cómo empezar a hablar. Preguntarle con calma cómo se siente y hacerle saber que estás ahí para escucharle puede ayudar a que se sienta con la confianza para contarte lo que pasa."
+      "quiz_1_feedback_2::eng": "🎉 ¡Tienes razón!\n\nCuando algo le preocupa a @fields.child_name, puede sentir miedo, vergüenza o no saber cómo empezar a hablar. \n\nPreguntarle con calma cómo se siente y hacerle saber que estás ahí para escuchar puede ayudar a que se sienta con la confianza para contarte lo que pasa."
     },
     {
       "id": "explore_1",
@@ -48,51 +48,48 @@
       "category_id": "explore",
       "text_1_facilitator::eng": "Veamos cómo @data.characters.f1_padre.name usa estas estrategias en la práctica:",
       "image_asset": "images/comic/safety/crises/crises_2to6_yc_1.svg",
+      "text_2::eng": "@data.characters.f1_padre.name se prepara para salir con @data.characters.f1_hijo_5.name, cuando nota que algo no anda bien. Mira cómo se interesa por saber qué pasa.",
       "character_1_id": "f1_padre",
       "character_1_text::eng": "Bueno, @data.characters.f1_hijo_5.name, hay que guardar esto para irnos a la fiesta de cumpleaños de Gerardo.",
       "character_2_id": "f1_hijo_5",
-      "character_2_text::eng": "No quiero ir…",
-      "character_3_id": "f1_padre",
-      "character_3_text::eng": "¿Pasó algo? Pensé que estabas emocionado por ir."
+      "character_2_text::eng": "No quiero ir…"
     },
     {
       "id": "explore_3",
       "category_id": "explore",
       "image_asset": "images/comic/safety/crises/crises_2to6_yc_1.svg",
-      "character_1_id": "f1_hijo_5",
-      "character_1_text::eng": "(llorando) Ya no…"
+      "character_1_id": "f1_padre",
+      "character_1_text::eng": "¿Pasó algo? Pensé que estabas emocionado por ir.",
+      "character_2_id": "f1_hijo_5",
+      "character_2_text::eng": "(Llorando) Ya no…"
     },
     {
       "id": "explore_4",
       "category_id": "explore",
       "image_asset": "images/comic/safety/crises/crises_2to6_yc_2.svg",
+      "text_2::eng": "Fíjate cómo @data.characters.f1_padre.name toma una pausa y respira antes de responderle a @data.characters.f1_hijo_5.name, para asegurarse de escucharlo con calma y entender qué necesita.",
       "character_1_id": "f1_padre",
-      "character_1_text::eng": "(pensando y tomando una respiración) Tenemos que salir pronto y quiero saber qué pasa… Tal vez algo ocurrió y todavía no encuentra cómo contármelo.",
+      "character_1_text::eng": "(Pensando) Tenemos que salir pronto, pero quiero saber qué pasa… Tal vez algo ocurrió y todavía no encuentra cómo contármelo.",
       "character_2_id": "f1_padre",
-      "character_2_text::eng": "(pensando) Voy a respirar un momento. Lo primero es escucharlo con calma."
+      "character_2_text::eng": "(Pensando) Voy a respirar un momento. Lo primero es escucharlo con calma."
     },
     {
       "id": "explore_5",
       "category_id": "explore",
       "image_asset": "images/comic/safety/crises/crises_2to6_yc_3.svg",
+      "text_2::eng": "Observa cómo @data.characters.f1_padre.name le da tiempo para responder y valida sus emociones, agradeciendo que le haya contado y evitando minimizar lo que siente.",
       "character_1_id": "f1_padre",
       "character_1_text::eng": "Se vale cambiar de opinión, pero aquí estoy si quieres contarme por qué ya no quieres ir.",
       "character_2_id": "f1_hijo_5",
-      "character_2_text::eng": "(llorando) Es que… ayer unos niños me empujaron cuando estábamos jugando. No supe qué hacer y me puse a llorar. Después se burlaron de mí.",
+      "character_2_text::eng": "(Llorando) Es que… ayer unos niños me empujaron cuando estábamos jugando. No supe qué hacer y me puse a llorar... Después se burlaron de mí y tengo miedo de que se rían de mí otra vez.",
       "character_3_id": "f1_padre",
       "character_3_text::eng": "Gracias por contarme, @data.characters.f1_hijo_5.name. Siento mucho que te pasara eso. Nadie debe empujarte ni burlarse de ti por cómo te sientes."
     },
     {
       "id": "explore_6",
       "category_id": "explore",
-      "image_asset": "images/comic/safety/crises/crises_2to6_yc_3.svg",
-      "character_1_id": "f1_hijo_5",
-      "character_1_text::eng": "Tengo miedo de que se rían de mí otra vez."
-    },
-    {
-      "id": "explore_7",
-      "category_id": "explore",
       "image_asset": "images/comic/safety/crises/crises_2to6_yc_4.svg",
+      "text_2::eng": "Luego, le pregunta qué necesita y le ofrece apoyo para encontrar una solución. Esto ayuda a que @data.characters.f1_hijo_5.name se sienta protegido.",
       "character_1_id": "f1_padre",
       "character_1_text::eng": "Vamos a pensar juntos cómo resolverlo. ¿Qué te haría sentir mejor?",
       "character_2_id": "f1_hijo_5",
@@ -101,7 +98,7 @@
       "character_3_text::eng": "¡Claro! Yo estaré contigo. Y podría hablar con el papá y la mamá de Gerardo para que le expliquen que lo que pasó no estuvo bien y no vuelva a pasar. ¿Cómo ves?"
     },
     {
-      "id": "explore_8",
+      "id": "explore_7",
       "category_id": "explore",
       "image_asset": "images/comic/safety/crises/crises_2to6_yc_4.svg",
       "character_1_id": "f1_hijo_5",
@@ -115,7 +112,7 @@
       "text_1_facilitator::eng": "Recordemos las estrategias para apoyar a @fields.child_name cuando comparta algo difícil contigo.⭐",
       "section_1_title::eng": "RESPIRA",
       "section_1_icon_asset": "images/icons/pause.svg",
-      "section_1_text::eng": "Antes de reaccionar, date un momento y pregúntate qué necesita @fields.child_name en ese momento. Es común sentir enojo, miedo o preocupación, pero una pausa puede ayudarte a responder con calma y evitar que piense que hizo algo malo por contarte.",
+      "section_1_text::eng": "Antes de reaccionar, date un momento y pregúntate qué necesita @fields.child_name en ese momento. \n\nEs común sentir enojo, miedo o preocupación, pero una pausa puede ayudarte a responder con calma y evitar que piense que hizo algo malo por contarte.",
       "section_2_title::eng": "ESCUCHA",
       "section_2_icon_asset": "images/icons/heart_filled_blue.png",
       "section_2_text::eng": "Dale tiempo para contar lo que pasó a su ritmo. Cada niña y niño tiene su propia forma de expresarse: hablando, jugando, dibujando o poco a poco.",
@@ -124,20 +121,20 @@
       "section_3_text::eng": "Agradécele por confiar en ti y hazle saber que hizo bien en contarte. Evita minimizar lo que siente o poner en duda su experiencia.",
       "section_4_title::eng": "PROTEGE",
       "section_4_icon_asset": "images/icons/parent_child_heart.svg",
-      "section_4_text::eng": "Pregúntate qué podría necesitar para sentirse seguro y en calma, y pregúntale también qué le ayudaría. Puede ser un abrazo, estar contigo, seguir una rutina conocida o tomar medidas para protegerle."
+      "section_4_text::eng": "Pregúntate qué podría necesitar para sentirse seguro y en calma, y pregúntale también qué le ayudaría. \n\nPuede ser un abrazo, estar contigo, seguir una rutina conocida o tomar medidas para protegerle."
     },
     {
       "id": "home_activity_1",
       "category_id": "home_activity",
       "text_1_facilitator::eng": "¡Ahora es tu turno!\n\nPiensa en una vez que @fields.child_name te contó algo difícil. Reflexiona: ¿cómo reaccionaste? ¿Qué podrías hacer diferente la próxima vez para escucharle y acompañarle mejor? 😊",
       "text_2::eng": "Recuerda que puedes encontrar información y apoyo adicional en la sección de Recursos.",
-      "quiz_1_question::eng": "¿Puedes hacerlo esta semana?",
+      "quiz_1_question::eng": "¿Puedes intentarlo esta semana?",
       "quiz_1_option_1_text::eng": "Sí",
       "quiz_1_feedback_1::eng": "¡Muy bien! 🎉\n\nPensar en cómo respondes te ayudará a acompañar mejor a @fields.child_name cuando necesite contarte algo importante.",
       "quiz_1_option_2_text::eng": "Lo intentaré",
       "quiz_1_feedback_2::eng": "¡Muy bien! 🙌\n\nCada oportunidad de practicar te ayudará a responder con más calma y confianza cuando @fields.child_name necesite contarte algo importante.",
       "quiz_1_option_3_text::eng": "No",
-      "quiz_1_feedback_3::eng": "¡Lo entiendo! 💚\n\nIntenta hacerlo cuando tengas un momento. Reflexionar sobre esto puede ayudarte a acompañar mejor a @fields.child_name."
+      "quiz_1_feedback_3::eng": "¡Lo entiendo! Intenta hacerlo cuando tengas un momento.💚\n\nReflexionar sobre esto puede ayudarte a acompañar mejor a @fields.child_name."
     }
   ]
 }
