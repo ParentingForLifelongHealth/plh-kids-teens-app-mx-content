@@ -40,12 +40,12 @@
 | round_button | 34 |
 | select_text | 1 |
 | set_field | 4 |
-| set_variable | 5256 |
+| set_variable | 5253 |
 | simple_checkbox | 3 |
 | task_card | 4 |
 | task_progress_bar | 5 |
-| template | 840 |
-| text | 332 |
+| template | 837 |
+| text | 333 |
 | text_area | 4 |
 | text_box | 24 |
 | text_bubble | 33 |
@@ -53,7 +53,7 @@
 | toggle_bar | 5 |
 | update_action_list | 5 |
 | video | 4 |
-| youtube | 8 |
+| youtube | 9 |
 </details>
 
 <details >
@@ -67,13 +67,13 @@
 | asset_pack | 4 |
 | auth | 3 |
 | emit: changed | 7 |
-| emit: completed | 205 |
+| emit: completed | 202 |
 | emit: force_reload | 3 |
 | emit: force_reprocess | 15 |
 | emit: force_restart | 3 |
 | emit: server_sync | 9 |
 | emit: set_language | 2 |
-| emit: uncompleted | 197 |
+| emit: uncompleted | 194 |
 | feedback | 13 |
 | go_to | 33 |
 | nav | 1 |
@@ -99,8 +99,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 61413 KB | 61.4 MB |
-| unused | 11833 KB | 11.8 MB |
+| total | 83651 KB | 83.7 MB |
+| unused | 18134 KB | 18.1 MB |
 </details>
 
 <details open>
@@ -121,59 +121,11 @@ Assets that appear in app-data but do not have references within sheets
 | images/badges/badge_6.svg | 42.3 |
 | images/badges/badge_7.svg | 25.4 |
 | images/badges/badge_8.svg | 27.4 |
-| images/comic/Behave/Consequences/consequences_t_1.svg | 21.8 |
-| images/comic/Behave/Consequences/consequences_t_2.svg | 21.2 |
-| images/comic/Behave/Consequences/consequences_t_3.svg | 21.7 |
-| images/comic/Behave/Consequences/consequences_t_4.svg | 21.1 |
-| images/comic/Behave/Consequences/consequences_yc_1.svg | 97.1 |
-| images/comic/Behave/Consequences/consequences_yc_2.svg | 98.7 |
-| images/comic/Behave/Consequences/consequences_yc_3.svg | 97.8 |
-| images/comic/Behave/Consequences/consequences_yc_4.svg | 20.8 |
-| images/comic/Behave/Ignore/ignore_yc_1.svg | 59 |
-| images/comic/Behave/Ignore/ignore_yc_2.svg | 57.6 |
-| images/comic/Behave/Ignore/ignore_yc_3.svg | 59.5 |
-| images/comic/Behave/Ignore/ignore_yc_4.svg | 56.4 |
-| images/comic/Behave/Ignore/ignore_yc_5.svg | 51.8 |
-| images/comic/Behave/Keeping it positive/keep_positive_t_1.svg | 56.7 |
-| images/comic/Behave/Keeping it positive/keep_positive_t_2.svg | 18.7 |
-| images/comic/Behave/Keeping it positive/keep_positive_t_3.svg | 50.7 |
-| images/comic/Behave/Keeping it positive/keep_positive_t_4.svg | 65.3 |
-| images/comic/Behave/Keeping it positive/keep_positive_yc_1.svg | 50.7 |
-| images/comic/Behave/Keeping it positive/keep_positive_yc_2.svg | 45.8 |
-| images/comic/Behave/Keeping it positive/keep_positive_yc_3.svg | 44.1 |
-| images/comic/Behave/Keeping it positive/keep_positive_yc_4.svg | 46.6 |
-| images/comic/Behave/Managing anger/manage_anger_yc_1.svg | 108.2 |
-| images/comic/Behave/Managing anger/manage_anger_yc_2.svg | 29.2 |
-| images/comic/Behave/Managing anger/manage_anger_yc_3.svg | 32.7 |
-| images/comic/Behave/Managing anger/manage_anger_yc_4.svg | 33.4 |
-| images/comic/Behave/Managing anger/manage_anger_yc_5.svg | 34.5 |
-| images/comic/Behave/Redirect/redirect_yc_1.svg | 96.1 |
-| images/comic/Behave/Redirect/redirect_yc_2.svg | 84.5 |
-| images/comic/Behave/Redirect/redirect_yc_3.svg | 96.7 |
-| images/comic/Behave/Redirect/redirect_yc_4.svg | 83.9 |
-| images/comic/Behave/Redirect/redirect_yc_5.svg | 96 |
-| images/comic/Behave/Role/know_role_t_1.svg | 89.7 |
-| images/comic/Behave/Role/know_role_t_2.svg | 89.6 |
-| images/comic/Behave/Role/know_role_t_3.svg | 86 |
-| images/comic/Behave/Role/know_role_t_4.svg | 82.6 |
-| images/comic/Behave/Rules/family_rules_t_1.svg | 25.8 |
-| images/comic/Behave/Rules/family_rules_t_2.svg | 28.4 |
-| images/comic/Behave/Rules/family_rules_t_3.svg | 28.7 |
-| images/comic/Behave/Rules/family_rules_t_4.svg | 24.4 |
-| images/comic/Behave/Rules/family_rules_t_5.svg | 25.3 |
-| images/comic/Behave/Rules/family_rules_yc_1.svg | 25.3 |
-| images/comic/Behave/Rules/family_rules_yc_2.svg | 24 |
-| images/comic/Behave/Rules/family_rules_yc_3.svg | 26.2 |
-| images/comic/Behave/Rules/family_rules_yc_4.svg | 17.1 |
-| images/comic/Behave/Rules/family_rules_yc_5.svg | 17.3 |
-| images/comic/Behave/Solve problem/solve_problem_t_1.svg | 30.5 |
-| images/comic/Behave/Solve problem/solve_problem_t_2.svg | 31.2 |
-| images/comic/Behave/Solve problem/solve_problem_t_3.svg | 31.5 |
-| images/comic/Behave/Solve problem/solve_problem_t_4.svg | 19.8 |
-| images/comic/Behave/Solve problem/solve_problem_yc_1.svg | 42.7 |
-| images/comic/Behave/Solve problem/solve_problem_yc_2.svg | 40.2 |
-| images/comic/Behave/Solve problem/solve_problem_yc_3.svg | 42.1 |
-| images/comic/Behave/Solve problem/solve_problem_yc_4.svg | 44.6 |
+| images/comic/behave/ignore/ignore_yc_2.svg | 57.6 |
+| images/comic/behave/know_role/know_role_t_1.svg | 89.7 |
+| images/comic/behave/know_role/know_role_t_2.svg | 89.6 |
+| images/comic/behave/know_role/know_role_t_3.svg | 86 |
+| images/comic/behave/know_role/know_role_t_4.svg | 82.6 |
 | images/comic/safety/com_safe/safety_2to4_yc_mc_1.svg | 715.2 |
 | images/comic/safety/com_safe/safety_2to4_yc_mc_2.svg | 525.7 |
 | images/comic/safety/com_safe/safety_2to4_yc_mc_3.svg | 573.3 |
@@ -215,9 +167,16 @@ Assets that appear in app-data but do not have references within sheets
 | images/faces/confused.svg | 2 |
 | images/faces/flushed_face.svg | 4.9 |
 | images/faces/tired.svg | 3.3 |
+| images/homescreen/apoyar_aprendizaje_c.svg | 5721.5 |
+| images/homescreen/apoyar_aprendizaje_t.svg | 2593.3 |
+| images/icons/abc.svg | 10.6 |
 | images/icons/book_outline_blue.svg | 0.7 |
 | images/icons/book_outline_white.svg | 0.7 |
+| images/icons/breathe.svg | 8.7 |
+| images/icons/change.png | 35.8 |
+| images/icons/climb.png | 70.8 |
 | images/icons/expand_circle_right.svg | 0.5 |
+| images/icons/hands_heart.svg | 9.4 |
 | images/icons/heart-outline.svg | 0.4 |
 | images/icons/heart.svg | 0.6 |
 | images/icons/home.svg | 0.4 |
@@ -225,13 +184,16 @@ Assets that appear in app-data but do not have references within sheets
 | images/icons/hourglass_blue.png | 4.3 |
 | images/icons/in_progress_white.svg | 1.1 |
 | images/icons/key.svg | 5.5 |
+| images/icons/listen.svg | 6.1 |
 | images/icons/local_library.svg | 1.6 |
 | images/icons/local_library_active.svg | 1.6 |
 | images/icons/local_library_white.svg | 1.9 |
 | images/icons/lock-closed-outline.svg | 0.4 |
 | images/icons/lock.svg | 0.5 |
 | images/icons/magnify_glass.svg | 1.9 |
+| images/icons/maths.png | 29.8 |
 | images/icons/pause_white.svg | 0.7 |
+| images/icons/people.svg | 11.7 |
 | images/icons/play.svg | 0.5 |
 | images/icons/play_white.svg | 0.5 |
 | images/icons/repeat_blue.png | 5.4 |
@@ -240,9 +202,11 @@ Assets that appear in app-data but do not have references within sheets
 | images/icons/settings_white.svg | 2.4 |
 | images/icons/star_outline_white.svg | 1 |
 | images/icons/tablet_blue.png | 2.8 |
+| images/icons/target.svg | 4.3 |
 | images/icons/tick_white.svg | 0.3 |
 | images/icons/trophy_footer.svg | 3.9 |
 | images/icons/trophy_footer_active.svg | 3.9 |
+| images/icons/trust.svg | 18.9 |
 | images/icons/verified.svg | 0.5 |
 | images/icons/world.svg | 6.2 |
 | images/logos/crianza_logo_horizontal.png | 21.9 |
@@ -251,6 +215,7 @@ Assets that appear in app-data but do not have references within sheets
 | images/rewards/reward_2_familia_amarilla.webp | 144.6 |
 | images/rewards/reward_3_familia_naranja.webp | 149.2 |
 | images/rewards/reward_4_familia_turquesa.webp | 131.8 |
+| lottie/relax/square_flow.json | 5.9 |
 | lottie/ux/bulging_circles.txt | 0.2 |
 </details>
 
@@ -262,36 +227,6 @@ Assets that have references within sheets but do not appear in app-data
 | path | count |
 | --- | --- |
 | images/backgrounds/mountains_trees.svg | 1 |
-| images/comic/behave/consequences/consequences_t_1.svg | 4 |
-| images/comic/behave/consequences/consequences_t_2.svg | 2 |
-| images/comic/behave/consequences/consequences_t_3.svg | 2 |
-| images/comic/behave/consequences/consequences_t_4.svg | 4 |
-| images/comic/behave/consequences/consequences_yc_1.svg | 2 |
-| images/comic/behave/consequences/consequences_yc_2.svg | 2 |
-| images/comic/behave/consequences/consequences_yc_3.svg | 2 |
-| images/comic/behave/consequences/consequences_yc_4.svg | 2 |
-| images/comic/behave/family_rules/family_rules_t_1.svg | 2 |
-| images/comic/behave/family_rules/family_rules_t_2.svg | 4 |
-| images/comic/behave/family_rules/family_rules_t_3.svg | 2 |
-| images/comic/behave/family_rules/family_rules_t_4.svg | 2 |
-| images/comic/behave/family_rules/family_rules_t_5.svg | 2 |
-| images/comic/behave/family_rules/family_rules_yc_1.svg | 2 |
-| images/comic/behave/family_rules/family_rules_yc_2.svg | 2 |
-| images/comic/behave/family_rules/family_rules_yc_3.svg | 2 |
-| images/comic/behave/family_rules/family_rules_yc_4.svg | 4 |
-| images/comic/behave/family_rules/family_rules_yc_5.svg | 2 |
-| images/comic/behave/ignore/ignore_yc_1.svg | 2 |
-| images/comic/behave/ignore/ignore_yc_3.svg | 2 |
-| images/comic/behave/ignore/ignore_yc_4.svg | 2 |
-| images/comic/behave/ignore/ignore_yc_5.svg | 2 |
-| images/comic/behave/keep_positive/keep_positive_t_1.svg | 2 |
-| images/comic/behave/keep_positive/keep_positive_t_2.svg | 2 |
-| images/comic/behave/keep_positive/keep_positive_t_3.svg | 2 |
-| images/comic/behave/keep_positive/keep_positive_t_4.svg | 2 |
-| images/comic/behave/keep_positive/keep_positive_yc_1.svg | 2 |
-| images/comic/behave/keep_positive/keep_positive_yc_2.svg | 2 |
-| images/comic/behave/keep_positive/keep_positive_yc_3.svg | 2 |
-| images/comic/behave/keep_positive/keep_positive_yc_4.svg | 2 |
 | images/comic/behave/know_role/know_role_yc_1.svg | 4 |
 | images/comic/behave/know_role/know_role_yc_2.svg | 4 |
 | images/comic/behave/know_role/know_role_yc_3.svg | 4 |
@@ -302,28 +237,10 @@ Assets that have references within sheets but do not appear in app-data
 | images/comic/behave/manage_anger/manage_anger_t_4.svg | 2 |
 | images/comic/behave/manage_anger/manage_anger_t_5.svg | 2 |
 | images/comic/behave/manage_anger/manage_anger_t_6.svg | 2 |
-| images/comic/behave/manage_anger/manage_anger_yc_1.svg | 2 |
-| images/comic/behave/manage_anger/manage_anger_yc_2.svg | 2 |
-| images/comic/behave/manage_anger/manage_anger_yc_3.svg | 2 |
-| images/comic/behave/manage_anger/manage_anger_yc_4.svg | 2 |
-| images/comic/behave/manage_anger/manage_anger_yc_5.svg | 4 |
-| images/comic/behave/redirect/redirect_yc_1.svg | 2 |
-| images/comic/behave/redirect/redirect_yc_2.svg | 2 |
-| images/comic/behave/redirect/redirect_yc_3.svg | 2 |
-| images/comic/behave/redirect/redirect_yc_4.svg | 2 |
-| images/comic/behave/redirect/redirect_yc_5.svg | 2 |
 | images/comic/behave/self_talk/self_talk_1.svg | 4 |
 | images/comic/behave/self_talk/self_talk_2.svg | 4 |
 | images/comic/behave/self_talk/self_talk_3.svg | 8 |
 | images/comic/behave/self_talk/self_talk_4.svg | 4 |
-| images/comic/behave/solve_problem/solve_problem_t_1.svg | 2 |
-| images/comic/behave/solve_problem/solve_problem_t_2.svg | 4 |
-| images/comic/behave/solve_problem/solve_problem_t_3.svg | 2 |
-| images/comic/behave/solve_problem/solve_problem_t_4.svg | 2 |
-| images/comic/behave/solve_problem/solve_problem_yc_1.svg | 2 |
-| images/comic/behave/solve_problem/solve_problem_yc_2.svg | 2 |
-| images/comic/behave/solve_problem/solve_problem_yc_3.svg | 4 |
-| images/comic/behave/solve_problem/solve_problem_yc_4.svg | 2 |
 | images/comic/behaveignore//ignore_yc_2.svg | 2 |
 | images/comic/ipv/ipv_conflicts_1.svg | 4 |
 | images/comic/ipv/ipv_conflicts_2.svg | 4 |
@@ -402,13 +319,6 @@ Assets that have references within sheets but do not appear in app-data
 | images/comic/safety/sexual_violence/sexual_violence_t_f_5.svg | 4 |
 | images/homescreen/behave_c.svg | 12 |
 | images/homescreen/behave_t.svg | 8 |
-| images/homescreen/crianza_compartida.svg | 1 |
-| images/homescreen/cuidados_limites_seguridad_c.svg | 1 |
-| images/homescreen/cuidados_limites_seguridad_t.svg | 1 |
-| images/homescreen/fortalecer_relacion_c.svg | 1 |
-| images/homescreen/fortalecer_relacion_t.svg | 1 |
-| images/homescreen/guiar_comportamiento_c.svg | 1 |
-| images/homescreen/guiar_comportamiento_t.svg | 1 |
 | images/homescreen/ipv.svg | 12 |
 | images/homescreen/learn_c.svg | 12 |
 | images/homescreen/learn_t.svg | 10 |
@@ -447,18 +357,18 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | path | size_kb | count |
 | --- | --- | --- |
-| audio/relax/female/audio_10_f.mp3 | 1632.6 | 2 |
-| audio/relax/female/audio_12_f.mp3 | 2460.7 | 2 |
-| audio/relax/female/audio_2_f.mp3 | 1768.7 | 20 |
-| audio/relax/female/audio_4_f.mp3 | 1202.1 | 2 |
-| audio/relax/female/audio_6_f.mp3 | 1556.5 | 2 |
-| audio/relax/female/audio_8_f.mp3 | 1784.9 | 2 |
-| audio/relax/male/audio_11_m.mp3 | 3173.2 | 2 |
-| audio/relax/male/audio_1_m.mp3 | 1387 | 19 |
-| audio/relax/male/audio_3_m.mp3 | 1746.6 | 21 |
-| audio/relax/male/audio_5_m.mp3 | 1492.4 | 2 |
-| audio/relax/male/audio_7_m.mp3 | 1819.4 | 2 |
-| audio/relax/male/audio_9_m.mp3 | 1572.6 | 19 |
+| audio/relax/female/relax_10_f.mp3 | 1632.6 | 6 |
+| audio/relax/female/relax_12_f.mp3 | 2460.7 | 6 |
+| audio/relax/female/relax_2_f.mp3 | 1768.7 | 12 |
+| audio/relax/female/relax_4_f.mp3 | 1202.1 | 10 |
+| audio/relax/female/relax_6_f.mp3 | 1556.5 | 8 |
+| audio/relax/female/relax_8_f.mp3 | 1784.9 | 6 |
+| audio/relax/male/relax_11_m.mp3 | 3173.2 | 5 |
+| audio/relax/male/relax_1_m.mp3 | 1387 | 13 |
+| audio/relax/male/relax_3_m.mp3 | 1746.6 | 11 |
+| audio/relax/male/relax_5_m.mp3 | 1492.4 | 8 |
+| audio/relax/male/relax_7_m.mp3 | 1819.4 | 6 |
+| audio/relax/male/relax_9_m.mp3 | 1572.6 | 6 |
 | images/activities/activity1.svg | 1634 | 20 |
 | images/activities/activity10.svg | 1568.7 | 16 |
 | images/activities/activity2.svg | 2508.6 | 20 |
@@ -503,6 +413,54 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/character_icons/PROFESOR_1.svg | 5.9 | 1 |
 | images/character_icons/facilitator_female.png | 2354 | 2 |
 | images/character_icons/facilitator_male.png | 4012.9 | 2 |
+| images/comic/behave/consequences/consequences_t_1.svg | 21.8 | 4 |
+| images/comic/behave/consequences/consequences_t_2.svg | 21.2 | 2 |
+| images/comic/behave/consequences/consequences_t_3.svg | 21.7 | 2 |
+| images/comic/behave/consequences/consequences_t_4.svg | 21.1 | 4 |
+| images/comic/behave/consequences/consequences_yc_1.svg | 97.1 | 2 |
+| images/comic/behave/consequences/consequences_yc_2.svg | 98.7 | 2 |
+| images/comic/behave/consequences/consequences_yc_3.svg | 97.8 | 2 |
+| images/comic/behave/consequences/consequences_yc_4.svg | 20.8 | 2 |
+| images/comic/behave/family_rules/family_rules_t_1.svg | 25.8 | 2 |
+| images/comic/behave/family_rules/family_rules_t_2.svg | 28.4 | 4 |
+| images/comic/behave/family_rules/family_rules_t_3.svg | 28.7 | 2 |
+| images/comic/behave/family_rules/family_rules_t_4.svg | 24.4 | 2 |
+| images/comic/behave/family_rules/family_rules_t_5.svg | 25.3 | 2 |
+| images/comic/behave/family_rules/family_rules_yc_1.svg | 25.3 | 2 |
+| images/comic/behave/family_rules/family_rules_yc_2.svg | 24 | 2 |
+| images/comic/behave/family_rules/family_rules_yc_3.svg | 26.2 | 2 |
+| images/comic/behave/family_rules/family_rules_yc_4.svg | 17.1 | 4 |
+| images/comic/behave/family_rules/family_rules_yc_5.svg | 17.3 | 2 |
+| images/comic/behave/ignore/ignore_yc_1.svg | 59 | 2 |
+| images/comic/behave/ignore/ignore_yc_3.svg | 59.5 | 2 |
+| images/comic/behave/ignore/ignore_yc_4.svg | 56.4 | 2 |
+| images/comic/behave/ignore/ignore_yc_5.svg | 51.8 | 2 |
+| images/comic/behave/keep_positive/keep_positive_t_1.svg | 56.7 | 2 |
+| images/comic/behave/keep_positive/keep_positive_t_2.svg | 18.7 | 2 |
+| images/comic/behave/keep_positive/keep_positive_t_3.svg | 50.7 | 2 |
+| images/comic/behave/keep_positive/keep_positive_t_4.svg | 65.3 | 2 |
+| images/comic/behave/keep_positive/keep_positive_yc_1.svg | 50.7 | 2 |
+| images/comic/behave/keep_positive/keep_positive_yc_2.svg | 45.8 | 2 |
+| images/comic/behave/keep_positive/keep_positive_yc_3.svg | 44.1 | 2 |
+| images/comic/behave/keep_positive/keep_positive_yc_4.svg | 46.6 | 2 |
+| images/comic/behave/manage_anger/manage_anger_yc_1.svg | 108.2 | 2 |
+| images/comic/behave/manage_anger/manage_anger_yc_2.svg | 29.2 | 2 |
+| images/comic/behave/manage_anger/manage_anger_yc_3.svg | 32.7 | 2 |
+| images/comic/behave/manage_anger/manage_anger_yc_4.svg | 33.4 | 2 |
+| images/comic/behave/manage_anger/manage_anger_yc_5.svg | 34.5 | 4 |
+| images/comic/behave/redirect/redirect_yc_1.svg | 96.1 | 2 |
+| images/comic/behave/redirect/redirect_yc_2.svg | 84.5 | 2 |
+| images/comic/behave/redirect/redirect_yc_3.svg | 96.7 | 2 |
+| images/comic/behave/redirect/redirect_yc_4.svg | 83.9 | 2 |
+| images/comic/behave/redirect/redirect_yc_5.svg | 96 | 2 |
+| images/comic/behave/solve_problem/solve_problem_t_1.svg | 30.5 | 2 |
+| images/comic/behave/solve_problem/solve_problem_t_2.svg | 31.2 | 4 |
+| images/comic/behave/solve_problem/solve_problem_t_3.svg | 31.5 | 2 |
+| images/comic/behave/solve_problem/solve_problem_t_4.svg | 19.8 | 2 |
+| images/comic/behave/solve_problem/solve_problem_yc_1.svg | 42.7 | 2 |
+| images/comic/behave/solve_problem/solve_problem_yc_2.svg | 40.2 | 2 |
+| images/comic/behave/solve_problem/solve_problem_yc_3.svg | 42.1 | 4 |
+| images/comic/behave/solve_problem/solve_problem_yc_4.svg | 44.6 | 2 |
 | images/comic/relation/calm/calm_t_fc_1.svg | 19.2 | 2 |
 | images/comic/relation/calm/calm_t_fc_2.svg | 19.4 | 2 |
 | images/comic/relation/calm/calm_t_fc_3.svg | 10.5 | 2 |
@@ -620,6 +578,13 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/faces/stressed.svg | 3.5 | 153 |
 | images/facilitators/avatar_femenino.png | 1067.5 | 1 |
 | images/facilitators/avatar_masculino.png | 1408 | 1 |
+| images/homescreen/crianza_compartida.svg | 1890.9 | 1 |
+| images/homescreen/cuidados_limites_seguridad_c.svg | 2452.2 | 1 |
+| images/homescreen/cuidados_limites_seguridad_t.svg | 2822.2 | 1 |
+| images/homescreen/fortalecer_relacion_c.svg | 3603.9 | 1 |
+| images/homescreen/fortalecer_relacion_t.svg | 3171.2 | 1 |
+| images/homescreen/guiar_comportamiento_c.svg | 2657.3 | 1 |
+| images/homescreen/guiar_comportamiento_t.svg | 3420.5 | 1 |
 | images/icons/balance_blue.png | 4.7 | 8 |
 | images/icons/brain_blue.png | 5.2 | 10 |
 | images/icons/bug.svg | 1.2 | 2 |
@@ -694,11 +659,10 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/onboarding/welcome_screen_1.svg | 1576.7 | 1 |
 | images/onboarding/welcome_screen_2.svg | 1915.6 | 1 |
 | images/onboarding/welcome_screen_3.svg | 1843.3 | 1 |
-| lottie/relax/blue_dots.json | 14.7 | 2 |
-| lottie/relax/heart.json | 46.7 | 2 |
-| lottie/relax/looping_rings.json | 10.4 | 23 |
+| lottie/relax/blue_dots.json | 14.7 | 26 |
+| lottie/relax/heart.json | 46.7 | 22 |
+| lottie/relax/looping_rings.json | 10.4 | 27 |
 | lottie/relax/soothing_waves.json | 7.6 | 22 |
-| lottie/relax/square_flow.json | 5.9 | 46 |
 | lottie/ux/bulging_circles.json | 11.8 | 1 |
 | lottie/ux/checkmark.json | 24.6 | 2 |
 | lottie/ux/congrats.json | 55.2 | 1 |
@@ -809,7 +773,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global | proximal_outcomes | 3 |
 | template |  | 114 |
 | template | ab_testing | 2 |
-| template | generated | 362 |
+| template | generated | 359 |
 | template | legal_terms | 4 |
 | template | proximal_outcomes | 19 |
 </details>

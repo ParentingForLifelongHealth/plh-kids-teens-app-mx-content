@@ -4,30 +4,34 @@
   "flow_type": "data_list",
   "rows": [
     {
-      "id": "check_in_66",
-      "quiz_1_option_1_image_asset": "images/faces/happy.svg",
-      "quiz_1_option_2_image_asset": "images/faces/smiling.svg",
-      "quiz_1_option_3_image_asset": "images/faces/grateful.svg",
-      "quiz_1_option_4_image_asset": "images/faces/angry.svg",
-      "quiz_1_option_5_image_asset": "images/faces/sad.svg",
-      "quiz_1_option_6_image_asset": "images/faces/stressed.svg",
-      "text_1": "Toma un momento para ti. Cuidarte empieza por notar cómo te sientes.",
+      "id": "relax_7",
+      "in_library": "yes",
+      "title_original_eng": "Think about today",
+      "lottie_asset": "lottie/relax/heart.json",
+      "media_asset": "audio/relax/male/relax_7_m.mp3",
+      "media_type": "audio",
+      "transcript_original_eng": "Close your eyes.\n\nDo you ever feel something so strongly that you want to run away from it?\n\nInstead of moving away from the feeling, let’s move towards it for a moment.\nIt is ok. Close your eyes if you feel comfortable. Take a deep breath.\n\nBecome curious. Where are you feeling it in your body? Is it hot or cold? Hard or soft? Tight or loose?\nAsk yourself some questions. What is it telling me? What does it need? How can I be kind to myself right now?",
+      "title": "Piensa en tu día",
       "_translations": {
-        "text_1": {},
-        "quiz_1_feedback_1": {},
-        "quiz_1_feedback_2": {},
-        "quiz_1_feedback_3": {},
-        "quiz_1_feedback_4": {},
-        "quiz_1_feedback_5": {},
-        "quiz_1_feedback_6": {},
-        "quiz_1_question": {},
-        "quiz_1_option_1_text": {},
-        "quiz_1_option_2_text": {},
-        "quiz_1_option_3_text": {},
-        "quiz_1_option_4_text": {},
-        "quiz_1_option_5_text": {},
-        "quiz_1_option_6_text": {}
+        "title": {},
+        "transcript": {}
       },
+      "_translatedFields": {
+        "title": {
+          "eng": "Piensa en tu día"
+        },
+        "transcript": {
+          "eng": "Busca una posición cómoda, y si te sientes bien haciéndolo, cierra suavemente los ojos.\n¿Alguna vez has sentido una emoción tan intensa, que has querido alejarte de ella?\nPor un momento, vamos a acercarnos a esa emoción con curiosidad y amabilidad. Puedes hacerlo poco a poco, hasta donde te resulte cómodo.\nToma una respiración lenta y profunda, sin forzarla.\nObserva dónde sientes esa emoción en tu cuerpo.\n¿La notas en el pecho?, ¿en el estómago?, ¿en la garganta?, ¿o en alguna otra parte de tu cuerpo?\n¿Hay calor, o frío?, ¿Notas tensión o relajación?\nObserva lo que sientes, sin necesidad de cambiarlo.\nAhora, pregúntate: \n¿Qué me está diciendo esta emoción? \n¿Cómo puedo tratarme con amabilidad en este momento? \nPuedes dejar las preguntas abiertas, sin apresurarte a encontrar una respuesta.\nCuando quieras, lleva de nuevo tu atención al lugar donde estás, y abre suavemente los ojos."
+        }
+      },
+      "transcript": "Busca una posición cómoda, y si te sientes bien haciéndolo, cierra suavemente los ojos.\n¿Alguna vez has sentido una emoción tan intensa, que has querido alejarte de ella?\nPor un momento, vamos a acercarnos a esa emoción con curiosidad y amabilidad. Puedes hacerlo poco a poco, hasta donde te resulte cómodo.\nToma una respiración lenta y profunda, sin forzarla.\nObserva dónde sientes esa emoción en tu cuerpo.\n¿La notas en el pecho?, ¿en el estómago?, ¿en la garganta?, ¿o en alguna otra parte de tu cuerpo?\n¿Hay calor, o frío?, ¿Notas tensión o relajación?\nObserva lo que sientes, sin necesidad de cambiarlo.\nAhora, pregúntate: \n¿Qué me está diciendo esta emoción? \n¿Cómo puedo tratarme con amabilidad en este momento? \nPuedes dejar las preguntas abiertas, sin apresurarte a encontrar una respuesta.\nCuando quieras, lleva de nuevo tu atención al lugar donde estás, y abre suavemente los ojos.",
+      "category_id": "relax",
+      "nested": false,
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "check_in_66",
       "_translatedFields": {
         "text_1": {
           "eng": "Toma un momento para ti. Cuidarte empieza por notar cómo te sientes."
@@ -72,6 +76,31 @@
           "eng": "Estrés"
         }
       },
+      "category_id": "check_in",
+      "nested": false,
+      "quiz_1_option_1_image_asset": "images/faces/happy.svg",
+      "quiz_1_option_2_image_asset": "images/faces/smiling.svg",
+      "quiz_1_option_3_image_asset": "images/faces/grateful.svg",
+      "quiz_1_option_4_image_asset": "images/faces/angry.svg",
+      "quiz_1_option_5_image_asset": "images/faces/sad.svg",
+      "quiz_1_option_6_image_asset": "images/faces/stressed.svg",
+      "text_1": "Toma un momento para ti. Cuidarte empieza por notar cómo te sientes.",
+      "_translations": {
+        "text_1": {},
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_feedback_3": {},
+        "quiz_1_feedback_4": {},
+        "quiz_1_feedback_5": {},
+        "quiz_1_feedback_6": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_option_3_text": {},
+        "quiz_1_option_4_text": {},
+        "quiz_1_option_5_text": {},
+        "quiz_1_option_6_text": {}
+      },
       "quiz_1_feedback_1": "¡Gracias por notar tu alegría!✨ \n\nQué bien saber que estás en un buen momento. Ahora puedes dedicarte un ratito para aprender algo nuevo.",
       "quiz_1_feedback_2": "¡Gracias por notar tu tranquilidad!✨ \n\nQué bien saber que estás en un buen momento. Ahora puedes dedicarte un ratito para aprender algo nuevo.",
       "quiz_1_feedback_3": "¡Gracias por notar tu gratitud!✨ \n\nQué bien saber que estás en un buen momento. Aprovecha este espacio para aprender a tu ritmo.",
@@ -85,8 +114,6 @@
       "quiz_1_option_4_text": "Enojo",
       "quiz_1_option_5_text": "Tristeza",
       "quiz_1_option_6_text": "Estrés",
-      "category_id": "check_in",
-      "nested": false,
       "completed": false,
       "version": 1
     },
@@ -124,93 +151,141 @@
     },
     {
       "id": "intro_3",
-      "quiz_1_option_1_image_asset": "👀 ¡Ups! ¡Revisemos esta idea!\n\nLo que te dices puede influir en cómo te sientes y actúas. Por ejemplo, pensar “Siempre hago todo mal” puede hacer que te sientas triste o con menos ánimo. \n\nEn cambio, pensar “La próxima vez voy a respirar antes de responder” te ayuda a encontrar algo que puedes hacer diferente.",
       "_translatedFields": {
         "text_1_facilitator": {
           "eng": "Antes de empezar, reflexionemos📝"
-        },
-        "quiz_1_question": {
-          "eng": "Falso"
         }
-      },
-      "quiz_1_question": "Falso",
-      "_translations": {
-        "quiz_1_question": {},
-        "text_1_facilitator": {}
       },
       "category_id": "intro",
       "nested": false,
       "text_1_facilitator": "Antes de empezar, reflexionemos📝",
-      "youtube_gb_en_f": "Verdadero o falso: Lo que te dices después de un momento difícil puede influir en cómo te sientes y cómo actúas con @fields.child_name.",
-      "youtube_gb_en_m": "Verdadero",
-      "youtube_locale_m": "🎉 ¡Tienes razón!\n\nLo que te dices puede influir en cómo te sientes y actúas. Por ejemplo, pensar “Siempre hago todo mal” puede hacer que te sientas triste o con menos ánimo. \n\nEn cambio, pensar “La próxima vez voy a respirar antes de responder” te ayuda a encontrar algo que puedes hacer diferente.",
+      "_translations": {
+        "text_1_facilitator": {}
+      },
       "completed": false,
       "version": 1
     },
     {
       "id": "intro_4",
-      "quiz_1_option_1_image_asset": "🎉 ¡Tienes razón!\n\nTodas las personas, sin importar su género, pueden tener días difíciles. Hablarte con amabilidad no te hace menos fuerte y puede ayudar a que te sientas mejor y respondas con más calma. \n\nAdemás, @fields.child_name aprende al observar cómo enfrentas los momentos difíciles.",
       "_translatedFields": {
         "text_1_facilitator": {
           "eng": "¡Una pregunta más!"
         },
         "quiz_1_question": {
+          "eng": "Verdadero o falso: Lo que te dices después de un momento difícil puede influir en cómo te sientes y cómo actúas con @fields.child_name."
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Verdadero"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "🎉 ¡Tienes razón!\n\nLo que te dices puede influir en cómo te sientes y actúas. Por ejemplo, pensar “Siempre hago todo mal” puede hacer que te sientas triste o con menos ánimo. \n\nEn cambio, pensar “La próxima vez voy a respirar antes de responder” te ayuda a encontrar algo que puedes hacer diferente."
+        },
+        "quiz_1_option_2_text": {
           "eng": "Falso"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nLo que te dices puede influir en cómo te sientes y actúas. Por ejemplo, pensar “Siempre hago todo mal” puede hacer que te sientas triste o con menos ánimo. \n\nEn cambio, pensar “La próxima vez voy a respirar antes de responder” te ayuda a encontrar algo que puedes hacer diferente."
         }
-      },
-      "quiz_1_question": "Falso",
-      "_translations": {
-        "quiz_1_question": {},
-        "text_1_facilitator": {}
       },
       "category_id": "intro",
       "nested": false,
+      "quiz_1_feedback_1": "🎉 ¡Tienes razón!\n\nLo que te dices puede influir en cómo te sientes y actúas. Por ejemplo, pensar “Siempre hago todo mal” puede hacer que te sientas triste o con menos ánimo. \n\nEn cambio, pensar “La próxima vez voy a respirar antes de responder” te ayuda a encontrar algo que puedes hacer diferente.",
+      "_translations": {
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "text_1_facilitator": {}
+      },
+      "quiz_1_feedback_2": "👀 ¡Ups! ¡Revisemos esta idea!\n\nLo que te dices puede influir en cómo te sientes y actúas. Por ejemplo, pensar “Siempre hago todo mal” puede hacer que te sientas triste o con menos ánimo. \n\nEn cambio, pensar “La próxima vez voy a respirar antes de responder” te ayuda a encontrar algo que puedes hacer diferente.",
+      "quiz_1_question": "Verdadero o falso: Lo que te dices después de un momento difícil puede influir en cómo te sientes y cómo actúas con @fields.child_name.",
+      "quiz_1_option_1_text": "Verdadero",
+      "quiz_1_option_2_text": "Falso",
       "text_1_facilitator": "¡Una pregunta más!",
-      "youtube_gb_en_f": "Verdadero o falso: Las mujeres necesitan hablarse con amabilidad cuando tienen un momento difícil, pero los hombres deben ser firmes y seguir adelante.",
-      "youtube_gb_en_m": "Verdadero",
-      "youtube_locale_m": "👀 ¡Ups! ¡Revisemos esta idea!\n\nTodas las personas, sin importar su género, pueden tener días difíciles. Hablarte con amabilidad no te hace menos fuerte y puede ayudar a que te sientas mejor y respondas con más calma. \n\nAdemás, @fields.child_name aprende al observar cómo enfrentas los momentos difíciles.",
       "completed": false,
       "version": 1
     },
     {
       "id": "intro_5",
-      "quiz_1_option_1_image_asset": "🎉 ¡Tienes razón!\n\nNo necesitas hablar con otras personas ni decir en voz alta lo que piensas o sientes si no quieres hacerlo. \n\nPuedes tomarte unos segundos para reconocer tus pensamientos y emociones en silencio, solo para ti, y después elegir cómo actuar",
       "_translatedFields": {
         "text_1_facilitator": {
           "eng": "¡Última pregunta!"
         },
         "quiz_1_question": {
+          "eng": "Verdadero o falso: Las mujeres necesitan hablarse con amabilidad cuando tienen un momento difícil, pero los hombres deben ser firmes y seguir adelante."
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Verdadero"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nTodas las personas, sin importar su género, pueden tener días difíciles. Hablarte con amabilidad no te hace menos fuerte y puede ayudar a que te sientas mejor y respondas con más calma. \n\nAdemás, @fields.child_name aprende al observar cómo enfrentas los momentos difíciles."
+        },
+        "quiz_1_option_2_text": {
           "eng": "Falso"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "🎉 ¡Tienes razón!\n\nTodas las personas, sin importar su género, pueden tener días difíciles. Hablarte con amabilidad no te hace menos fuerte y puede ayudar a que te sientas mejor y respondas con más calma. \n\nAdemás, @fields.child_name aprende al observar cómo enfrentas los momentos difíciles."
         }
-      },
-      "quiz_1_question": "Falso",
-      "_translations": {
-        "quiz_1_question": {},
-        "text_1_facilitator": {}
       },
       "category_id": "intro",
       "nested": false,
+      "quiz_1_feedback_1": "👀 ¡Ups! ¡Revisemos esta idea!\n\nTodas las personas, sin importar su género, pueden tener días difíciles. Hablarte con amabilidad no te hace menos fuerte y puede ayudar a que te sientas mejor y respondas con más calma. \n\nAdemás, @fields.child_name aprende al observar cómo enfrentas los momentos difíciles.",
+      "_translations": {
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
+        "text_1_facilitator": {}
+      },
+      "quiz_1_feedback_2": "🎉 ¡Tienes razón!\n\nTodas las personas, sin importar su género, pueden tener días difíciles. Hablarte con amabilidad no te hace menos fuerte y puede ayudar a que te sientas mejor y respondas con más calma. \n\nAdemás, @fields.child_name aprende al observar cómo enfrentas los momentos difíciles.",
+      "quiz_1_question": "Verdadero o falso: Las mujeres necesitan hablarse con amabilidad cuando tienen un momento difícil, pero los hombres deben ser firmes y seguir adelante.",
+      "quiz_1_option_1_text": "Verdadero",
+      "quiz_1_option_2_text": "Falso",
       "text_1_facilitator": "¡Última pregunta!",
-      "youtube_gb_en_f": "Verdadero o falso: Para reconocer lo que pienso y siento, necesito hablar de mis emociones con otras personas o decirlas en voz alta.",
-      "youtube_gb_en_m": "Verdadero",
-      "youtube_locale_m": "👀 ¡Ups! ¡Revisemos esta idea!\n\nNo necesitas hablar con otras personas ni decir en voz alta lo que piensas o sientes si no quieres hacerlo. \n\nPuedes tomarte unos segundos para reconocer tus pensamientos y emociones en silencio, solo para ti, y después elegir cómo actuar.",
       "completed": false,
       "version": 1
     },
     {
       "id": "explore_1",
+      "media_type": "youtube",
       "_translatedFields": {
         "text_1_facilitator": {
           "eng": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo puedes hablarte con más amabilidad después de un momento difícil y pensar qué puedes hacer diferente.\n\nEn este video te compartimos tres estrategias recomendadas por especialistas:\n\n1️⃣ ESCÚCHATE\n2️⃣ IMAGINA\n3️⃣ REFORMULA"
+        },
+        "quiz_1_question": {
+          "eng": "Verdadero o falso: Para reconocer lo que pienso y siento, necesito hablar de mis emociones con otras personas o decirlas en voz alta."
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Verdadero"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nNo necesitas hablar con otras personas ni decir en voz alta lo que piensas o sientes si no quieres hacerlo. \n\nPuedes tomarte unos segundos para reconocer tus pensamientos y emociones en silencio, solo para ti, y después elegir cómo actuar."
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Falso"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "🎉 ¡Tienes razón!\n\nNo necesitas hablar con otras personas ni decir en voz alta lo que piensas o sientes si no quieres hacerlo. \n\nPuedes tomarte unos segundos para reconocer tus pensamientos y emociones en silencio, solo para ti, y después elegir cómo actuar"
         }
       },
       "category_id": "explore",
       "nested": false,
-      "text_1_facilitator": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo puedes hablarte con más amabilidad después de un momento difícil y pensar qué puedes hacer diferente.\n\nEn este video te compartimos tres estrategias recomendadas por especialistas:\n\n1️⃣ ESCÚCHATE\n2️⃣ IMAGINA\n3️⃣ REFORMULA",
+      "quiz_1_feedback_1": "👀 ¡Ups! ¡Revisemos esta idea!\n\nNo necesitas hablar con otras personas ni decir en voz alta lo que piensas o sientes si no quieres hacerlo. \n\nPuedes tomarte unos segundos para reconocer tus pensamientos y emociones en silencio, solo para ti, y después elegir cómo actuar.",
       "_translations": {
+        "quiz_1_feedback_1": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
         "text_1_facilitator": {}
       },
-      "media_type": "youtube",
+      "quiz_1_feedback_2": "🎉 ¡Tienes razón!\n\nNo necesitas hablar con otras personas ni decir en voz alta lo que piensas o sientes si no quieres hacerlo. \n\nPuedes tomarte unos segundos para reconocer tus pensamientos y emociones en silencio, solo para ti, y después elegir cómo actuar",
+      "quiz_1_question": "Verdadero o falso: Para reconocer lo que pienso y siento, necesito hablar de mis emociones con otras personas o decirlas en voz alta.",
+      "quiz_1_option_1_text": "Verdadero",
+      "quiz_1_option_2_text": "Falso",
+      "text_1_facilitator": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo puedes hablarte con más amabilidad después de un momento difícil y pensar qué puedes hacer diferente.\n\nEn este video te compartimos tres estrategias recomendadas por especialistas:\n\n1️⃣ ESCÚCHATE\n2️⃣ IMAGINA\n3️⃣ REFORMULA",
       "completed": false,
       "version": 1
     },
@@ -406,8 +481,6 @@
     },
     {
       "id": "home_activity_1",
-      "quiz_1_option_1_image_asset": "¡Bien! Puedes empezar con una situación sencilla y pensar qué te diría alguien que te quiere.💡\n\nDespués, crea una frase más amable y escríbela para recordarla. No tiene que ser perfecta.",
-      "quiz_1_option_2_image_asset": "¡Lo entiendo! Puedes practicar cuando tengas un momento tranquilo, recordando algo que pasó antes.💛\n\nSi quieres, puedes escribir tu nueva frase o pensarla en silencio. No tiene que ser perfecta.",
       "_translatedFields": {
         "text_1_facilitator": {
           "eng": "¡Ahora es tu turno!\n\nEsta semana, piensa en un momento difícil con @fields.child_name en el que te hubiera gustado actuar de otra manera.\n\n\nPiensa qué pasó, por qué fue difícil y qué puedes hacer diferente la próxima vez. Si te sirve para recordarlo, escríbelo. ✍️"
@@ -419,6 +492,10 @@
           "eng": "No"
         }
       },
+      "category_id": "home_activity",
+      "nested": false,
+      "quiz_1_option_1_image_asset": "¡Bien! Puedes empezar con una situación sencilla y pensar qué te diría alguien que te quiere.💡\n\nDespués, crea una frase más amable y escríbela para recordarla. No tiene que ser perfecta.",
+      "quiz_1_option_2_image_asset": "¡Lo entiendo! Puedes practicar cuando tengas un momento tranquilo, recordando algo que pasó antes.💛\n\nSi quieres, puedes escribir tu nueva frase o pensarla en silencio. No tiene que ser perfecta.",
       "quiz_1_feedback_1": "No",
       "_translations": {
         "quiz_1_feedback_1": {},
@@ -426,8 +503,6 @@
         "text_1_facilitator": {}
       },
       "quiz_1_question": "Lo intentaré",
-      "category_id": "home_activity",
-      "nested": false,
       "text_1_facilitator": "¡Ahora es tu turno!\n\nEsta semana, piensa en un momento difícil con @fields.child_name en el que te hubiera gustado actuar de otra manera.\n\n\nPiensa qué pasó, por qué fue difícil y qué puedes hacer diferente la próxima vez. Si te sirve para recordarlo, escríbelo. ✍️",
       "youtube_gb_en_f": "¿Puedes intentarlo esta semana?",
       "youtube_gb_en_m": "Sí",
