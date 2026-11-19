@@ -1,0 +1,15 @@
+{
+  "flow_type": "global",
+  "flow_subtype": "ab_testing",
+  "flow_name": "ab_test_global_comm_inv",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "ab_mode_comm_inv",
+      "value": "test",
+      "exclude_from_translation": true,
+      "comment": "off = everyone sees A;\ntest = each user sees their arm\nall_B = everyone sees B"
+    }
+  ]
+}

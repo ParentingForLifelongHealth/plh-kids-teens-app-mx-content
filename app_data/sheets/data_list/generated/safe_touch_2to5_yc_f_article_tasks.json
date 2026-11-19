@@ -6,11 +6,11 @@
     {
       "id": "relax_1",
       "in_library": "yes",
-      "title_oringinal_eng": "Quick pause",
+      "title_original_eng": "Quick pause",
       "lottie_asset": "lottie/relax/square_flow.json",
-      "media_asset": "audio/relax/male/audio_1_m.m4a",
+      "media_asset": "audio/relax/male/audio_1_m.mp3",
       "media_type": "audio",
-      "transcript_es": "Busca una posición cómoda, y si te sientes bien haciéndolo, cierra tus ojos.\nPor un momento, piensa en cómo fue tu día. \nAhora, identifica una cosa por la que sientas gratitud. Puede ser algo grande o algo pequeño.\nTambién, piensa en algo que hayas hecho bien el día de hoy. Date un momento para reconocer tu esfuerzo.\nY ahora, piensa en algo que amas. Puede ser una persona, un lugar, una actividad o algo que sea especial para ti.\nCuando te sientas lista o listo, abre suavemente los ojos.\n¡Muy bien! Reconoce todo lo que haces cada día. Eres una persona valiosa y haces una gran diferencia.",
+      "transcript_original_eng": "Close your eyes and think about the day. \n\nName one thing that you are grateful for. \nName one thing that you did well. \nName one thing that you love.\n\nWell done, you are a hero!",
       "title": "Pausa rápida",
       "_translations": {
         "title": {},
@@ -21,10 +21,10 @@
           "eng": "Pausa rápida"
         },
         "transcript": {
-          "eng": "Close your eyes and think about the day. \n\nName one thing that you are grateful for. \nName one thing that you did well. \nName one thing that you love.\n\nWell done, you are a hero!"
+          "eng": "Busca una posición cómoda, y si te sientes bien haciéndolo, cierra tus ojos.\nPor un momento, piensa en cómo fue tu día. \nAhora, identifica una cosa por la que sientas gratitud. Puede ser algo grande o algo pequeño.\nTambién, piensa en algo que hayas hecho bien el día de hoy. Date un momento para reconocer tu esfuerzo.\nY ahora, piensa en algo que amas. Puede ser una persona, un lugar, una actividad o algo que sea especial para ti.\nCuando te sientas lista o listo, abre suavemente los ojos.\n¡Muy bien! Reconoce todo lo que haces cada día. Eres una persona valiosa y haces una gran diferencia."
         }
       },
-      "transcript": "Close your eyes and think about the day. \n\nName one thing that you are grateful for. \nName one thing that you did well. \nName one thing that you love.\n\nWell done, you are a hero!",
+      "transcript": "Busca una posición cómoda, y si te sientes bien haciéndolo, cierra tus ojos.\nPor un momento, piensa en cómo fue tu día. \nAhora, identifica una cosa por la que sientas gratitud. Puede ser algo grande o algo pequeño.\nTambién, piensa en algo que hayas hecho bien el día de hoy. Date un momento para reconocer tu esfuerzo.\nY ahora, piensa en algo que amas. Puede ser una persona, un lugar, una actividad o algo que sea especial para ti.\nCuando te sientas lista o listo, abre suavemente los ojos.\n¡Muy bien! Reconoce todo lo que haces cada día. Eres una persona valiosa y haces una gran diferencia.",
       "category_id": "relax",
       "nested": false,
       "completed": false,
@@ -334,16 +334,16 @@
           "eng": "Veamos cómo @data.characters.f2_padre.name usa estas estrategias en la práctica:"
         },
         "text_2": {
-          "eng": "Observa cómo hablar claro sobre las partes privadas del cuerpo ayuda a conocerlas y aprender a cuidarlas."
+          "eng": "Observa cómo @data.characters.f2_padre.name habla claro sobre las partes privadas del cuerpo con @data.characters.f2_hija_3.name, para ayudarle a conocerlas y eneñarle a cuidarlas."
         },
         "character_1_text": {
-          "eng": "Gracias @data.characters.f2_hija_3.name, por pasar tiempo de calidad conmigo. Oye quiero platicar contigo de algo importante. ¿Sabes cuáles son las partes privadas de tu cuerpo?"
+          "eng": "Gracias por pasar tiempo para conectar conmigo, @data.characters.f2_hija_3.name. Oye quiero platicar contigo de algo importante. ¿Sabes cuáles son las partes privadas de tu cuerpo?"
         },
         "character_2_text": {
           "eng": "¿Partes privadas?"
         },
         "character_3_text": {
-          "eng": "Sí. Son las partes del cuerpo que cubre la ropa interior: el pecho y los glúteos, así como el pene y los testículos en los niños, y la vulva en las niñas. Nadie debe tocar esas partes, verlas o tomarles fotos, excepto cuando sea necesario para cuidar tu salud o tu higiene. Por ejemplo, una doctora o un doctor pueden revisarte, pero siempre deben explicarte lo que van a hacer y tu mamá o yo debemos estar contigo."
+          "eng": "Sí. Son las partes del cuerpo que cubre la ropa interior: el pecho y los glúteos, el pene y los testículos en los niños y la vulva en las niñas."
         }
       },
       "category_id": "explore",
@@ -360,18 +360,42 @@
       "character_1_id": "f2_padre",
       "character_2_id": "f2_hija_3",
       "character_3_id": "f2_padre",
-      "text_2": "Observa cómo hablar claro sobre las partes privadas del cuerpo ayuda a conocerlas y aprender a cuidarlas.",
-      "character_1_text": "Gracias @data.characters.f2_hija_3.name, por pasar tiempo de calidad conmigo. Oye quiero platicar contigo de algo importante. ¿Sabes cuáles son las partes privadas de tu cuerpo?",
+      "text_2": "Observa cómo @data.characters.f2_padre.name habla claro sobre las partes privadas del cuerpo con @data.characters.f2_hija_3.name, para ayudarle a conocerlas y eneñarle a cuidarlas.",
+      "character_1_text": "Gracias por pasar tiempo para conectar conmigo, @data.characters.f2_hija_3.name. Oye quiero platicar contigo de algo importante. ¿Sabes cuáles son las partes privadas de tu cuerpo?",
       "character_2_text": "¿Partes privadas?",
-      "character_3_text": "Sí. Son las partes del cuerpo que cubre la ropa interior: el pecho y los glúteos, así como el pene y los testículos en los niños, y la vulva en las niñas. Nadie debe tocar esas partes, verlas o tomarles fotos, excepto cuando sea necesario para cuidar tu salud o tu higiene. Por ejemplo, una doctora o un doctor pueden revisarte, pero siempre deben explicarte lo que van a hacer y tu mamá o yo debemos estar contigo.",
+      "character_3_text": "Sí. Son las partes del cuerpo que cubre la ropa interior: el pecho y los glúteos, el pene y los testículos en los niños y la vulva en las niñas.",
       "completed": false,
       "version": 1
     },
     {
       "id": "explore_3",
       "_translatedFields": {
+        "character_1_text": {
+          "eng": "Nadie debe tocar esas partes, verlas o tomarles fotos, excepto cuando sea necesario para cuidar tu salud o tu higiene. Por ejemplo, una doctora o un doctor pueden revisarte, pero siempre deben explicarte lo que van a hacer y tu mamá o yo debemos estar contigo."
+        },
+        "character_2_text": {
+          "eng": "Está bien, papá."
+        }
+      },
+      "category_id": "explore",
+      "nested": false,
+      "image_asset": "images/comic/safety/safe_touch/safe_touch_2to5_yc_f_1.svg",
+      "character_1_id": "f2_padre",
+      "character_2_id": "f2_hija_3",
+      "character_1_text": "Nadie debe tocar esas partes, verlas o tomarles fotos, excepto cuando sea necesario para cuidar tu salud o tu higiene. Por ejemplo, una doctora o un doctor pueden revisarte, pero siempre deben explicarte lo que van a hacer y tu mamá o yo debemos estar contigo.",
+      "_translations": {
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "character_2_text": "Está bien, papá.",
+      "completed": false,
+      "version": 1
+    },
+    {
+      "id": "explore_4",
+      "_translatedFields": {
         "text_2": {
-          "eng": "Fíjate cómo enseñar que pueden decir “no” y alejarse les ayuda a reconocer que nadie debe tocar su cuerpo de una forma que les incomode."
+          "eng": "Fíjate cómo le enseña que puede decir “no” y alejarse, para ayudarle a reconocer que nadie debe tocar su cuerpo de una forma que le incomode."
         },
         "character_1_text": {
           "eng": "Si alguien toca tus partes privadas o hace algo con tu cuerpo que no te gusta o te hace sentir incómoda, confundida o asustada, puedes decir: \"¡No!\" y alejarte. No importa si es alguien que conoces."
@@ -380,7 +404,7 @@
           "eng": "¿Y si me dice que no sea grosera?"
         },
         "character_3_text": {
-          "eng": "Lo que diga esa persona no cambia lo importante: tu cuerpo te pertenece y lo que importa es cómo te sientes tú. ¿Lo practicamos?"
+          "eng": "Lo que diga esa persona no cambia lo importante: tu cuerpo es tuyo y lo que importa es cómo te sientes tú. ¿Lo practicamos?"
         }
       },
       "category_id": "explore",
@@ -389,7 +413,7 @@
       "character_1_id": "f2_padre",
       "character_2_id": "f2_hija_3",
       "character_3_id": "f2_padre",
-      "text_2": "Fíjate cómo enseñar que pueden decir “no” y alejarse les ayuda a reconocer que nadie debe tocar su cuerpo de una forma que les incomode.",
+      "text_2": "Fíjate cómo le enseña que puede decir “no” y alejarse, para ayudarle a reconocer que nadie debe tocar su cuerpo de una forma que le incomode.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
@@ -398,21 +422,21 @@
       },
       "character_1_text": "Si alguien toca tus partes privadas o hace algo con tu cuerpo que no te gusta o te hace sentir incómoda, confundida o asustada, puedes decir: \"¡No!\" y alejarte. No importa si es alguien que conoces.",
       "character_2_text": "¿Y si me dice que no sea grosera?",
-      "character_3_text": "Lo que diga esa persona no cambia lo importante: tu cuerpo te pertenece y lo que importa es cómo te sientes tú. ¿Lo practicamos?",
+      "character_3_text": "Lo que diga esa persona no cambia lo importante: tu cuerpo es tuyo y lo que importa es cómo te sientes tú. ¿Lo practicamos?",
       "completed": false,
       "version": 1
     },
     {
-      "id": "explore_4",
+      "id": "explore_5",
       "_translatedFields": {
         "text_2": {
-          "eng": "Observa cómo practicar juntos a decir “no” y alejarse les ayuda a expresar sus límites con confianza."
+          "eng": "Mira cómo @data.characters.f2_padre.name practica con @data.characters.f2_hija_3.name a decir “no” y alejarse, para ayudarle a expresar sus límites con confianza."
         },
         "character_1_text": {
-          "eng": "Supongamos que alguien quiere darte un abrazo y tú no quieres. Puedes decir: \"No, no me gustan los abrazos. Prefiero darte la mano\". Y si esa persona insiste, puedes decir: \"¡No!\", alejarte y contarme lo que pasó después. Ahora es tu turno."
+          "eng": "Imagina que alguien quiere darte un abrazo y tú no quieres. Puedes decirle: \"No, no me gustan los abrazos. Prefiero darte la mano\". Y si esa persona insiste, puedes decir: \"¡No!\", alejarte y contarme lo que pasó. A ver, ahora hazlo tú."
         },
         "character_2_text": {
-          "eng": "(practicando) No, no me gustan los abrazos. Prefiero darte la mano."
+          "eng": "(Practicando) No, no me gustan los abrazos. Prefiero darte la mano."
         },
         "character_3_text": {
           "eng": "¡Muy bien!"
@@ -424,27 +448,27 @@
       "character_1_id": "f2_padre",
       "character_2_id": "f2_hija_3",
       "character_3_id": "f2_padre",
-      "text_2": "Observa cómo practicar juntos a decir “no” y alejarse les ayuda a expresar sus límites con confianza.",
+      "text_2": "Mira cómo @data.characters.f2_padre.name practica con @data.characters.f2_hija_3.name a decir “no” y alejarse, para ayudarle a expresar sus límites con confianza.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
         "character_2_text": {},
         "character_3_text": {}
       },
-      "character_1_text": "Supongamos que alguien quiere darte un abrazo y tú no quieres. Puedes decir: \"No, no me gustan los abrazos. Prefiero darte la mano\". Y si esa persona insiste, puedes decir: \"¡No!\", alejarte y contarme lo que pasó después. Ahora es tu turno.",
-      "character_2_text": "(practicando) No, no me gustan los abrazos. Prefiero darte la mano.",
+      "character_1_text": "Imagina que alguien quiere darte un abrazo y tú no quieres. Puedes decirle: \"No, no me gustan los abrazos. Prefiero darte la mano\". Y si esa persona insiste, puedes decir: \"¡No!\", alejarte y contarme lo que pasó. A ver, ahora hazlo tú.",
+      "character_2_text": "(Practicando) No, no me gustan los abrazos. Prefiero darte la mano.",
       "character_3_text": "¡Muy bien!",
       "completed": false,
       "version": 1
     },
     {
-      "id": "explore_5",
+      "id": "explore_6",
       "_translatedFields": {
         "text_2": {
-          "eng": "Observa cómo recordarles que siempre pueden contarlo y que estás ahí para escucharles y protegerles les da confianza para buscar apoyo."
+          "eng": "@data.characters.f2_padre.name también le recuerda a @data.characters.f2_hija_3.name que siempre puede contarle y que está ahí para escucharla y protegerla. Esto le dará confianza para buscar apoyo si algún día lo necesita."
         },
         "character_1_text": {
-          "eng": "Cuando algo te haga sentir asustada o incómoda, siempre puedes contármelo. Nadie debe pedirte guardar un secreto. Si alguien lo hace, quiero que me lo cuentes por favor."
+          "eng": "Cuando algo te haga sentir asustada o incómoda, siempre puedes contármelo. Nadie debe pedirte guardar un secreto. Y si alguien lo hace, quiero que me lo cuentes."
         },
         "character_2_text": {
           "eng": "Sí, papá, te lo diré."
@@ -459,34 +483,16 @@
       "character_1_id": "f2_padre",
       "character_2_id": "f2_hija_3",
       "character_3_id": "f2_padre",
-      "text_2": "Observa cómo recordarles que siempre pueden contarlo y que estás ahí para escucharles y protegerles les da confianza para buscar apoyo.",
+      "text_2": "@data.characters.f2_padre.name también le recuerda a @data.characters.f2_hija_3.name que siempre puede contarle y que está ahí para escucharla y protegerla. Esto le dará confianza para buscar apoyo si algún día lo necesita.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
         "character_2_text": {},
         "character_3_text": {}
       },
-      "character_1_text": "Cuando algo te haga sentir asustada o incómoda, siempre puedes contármelo. Nadie debe pedirte guardar un secreto. Si alguien lo hace, quiero que me lo cuentes por favor.",
+      "character_1_text": "Cuando algo te haga sentir asustada o incómoda, siempre puedes contármelo. Nadie debe pedirte guardar un secreto. Y si alguien lo hace, quiero que me lo cuentes.",
       "character_2_text": "Sí, papá, te lo diré.",
       "character_3_text": "Te amo, @data.characters.f2_hija_3.name. Recuerda que siempre voy a escucharte y a creerte. ¿Te puedo dar un abrazo?",
-      "completed": false,
-      "version": 1
-    },
-    {
-      "id": "explore_6",
-      "_translatedFields": {
-        "character_1_text": {
-          "eng": "¡Sí!"
-        }
-      },
-      "category_id": "explore",
-      "nested": false,
-      "image_asset": "images/comic/safety/safe_touch/safe_touch_2to5_yc_f_4.svg",
-      "character_1_id": "f2_hija_3",
-      "character_1_text": "¡Sí!",
-      "_translations": {
-        "character_1_text": {}
-      },
       "completed": false,
       "version": 1
     },
@@ -500,25 +506,25 @@
           "eng": "HABLA CLARO"
         },
         "section_1_text": {
-          "eng": "Enséñale cuáles son las partes privadas de su cuerpo y usa sus nombres reales, como pene, testículos, vulva y senos. Explícale que nadie debe tocar, ver o fotografiar sus partes privadas, ni pedirle que toque, vea o fotografíe las de otras personas. Recuérdale que nadie debe tocar ninguna otra parte de su cuerpo sin su permiso."
+          "eng": "Enséñale cuáles son las partes privadas de su cuerpo y usa sus nombres reales, como pene, testículos, vulva y senos. Explícale que nadie debe tocar, ver o fotografiar sus partes privadas, ni pedirle que toque, vea o fotografíe las de otras personas. \n\nRecuérdale que nadie debe tocar ninguna otra parte de su cuerpo sin su permiso."
         },
         "section_2_title": {
           "eng": "DI QUE NO"
         },
         "section_2_text": {
-          "eng": "Recuérdale que siempre puede decir “no” si alguien quiere tocar su cuerpo de una forma que le incomode, sin importar quién sea. Practiquen juntos cómo decir “no” con palabras o gestos y respetar cuando otras personas también lo hacen."
+          "eng": "Recuérdale que siempre puede decir “no” si alguien quiere tocar su cuerpo de una forma que le incomode, sin importar quién sea. \n\nPractiquen juntos cómo decir “no” con palabras o gestos y respetar cuando otras personas también lo hacen."
         },
         "section_3_title": {
           "eng": "ALÉJATE"
         },
         "section_3_text": {
-          "eng": "Enséñale que puede alejarse de cualquier situación que le haga sentir incomodidad, confusión o miedo, incluso si se trata de alguien conocido. Practiquen con juegos como las cosquillas: si dice “no” o “basta”, detén el juego de inmediato."
+          "eng": "Enséñale que puede alejarse de cualquier situación que le haga sentir incomodidad, confusión o miedo, incluso si se trata de alguna persona conocida. \n\nPractiquen con juegos como las cosquillas: si dice “no” o “basta”, detén el juego de inmediato."
         },
         "section_4_title": {
           "eng": "CUÉNTALO"
         },
         "section_4_text": {
-          "eng": "Recuérdale que siempre puede contarte cualquier secreto o situación que le incomode o preocupe, incluso si alguien le pidió que no lo hiciera. Si te cuenta algo, escúchale con calma, créele, recuérdale que no tiene la culpa y busca el apoyo necesario para protegerle."
+          "eng": "Recuérdale que siempre puede contarte cualquier secreto o situación que le incomode o preocupe, incluso si alguien le pidió que no lo hiciera. \n\nSi te cuenta algo, escúchale con calma, créele, recuérdale que no tiene la culpa y busca el apoyo necesario para protegerle."
         }
       },
       "category_id": "practical_tips",
@@ -540,13 +546,13 @@
       "section_3_icon_asset": "images/icons/tick.svg",
       "section_4_icon_asset": "images/icons/parent_child.svg",
       "section_1_title": "HABLA CLARO",
-      "section_1_text": "Enséñale cuáles son las partes privadas de su cuerpo y usa sus nombres reales, como pene, testículos, vulva y senos. Explícale que nadie debe tocar, ver o fotografiar sus partes privadas, ni pedirle que toque, vea o fotografíe las de otras personas. Recuérdale que nadie debe tocar ninguna otra parte de su cuerpo sin su permiso.",
+      "section_1_text": "Enséñale cuáles son las partes privadas de su cuerpo y usa sus nombres reales, como pene, testículos, vulva y senos. Explícale que nadie debe tocar, ver o fotografiar sus partes privadas, ni pedirle que toque, vea o fotografíe las de otras personas. \n\nRecuérdale que nadie debe tocar ninguna otra parte de su cuerpo sin su permiso.",
       "section_2_title": "DI QUE NO",
-      "section_2_text": "Recuérdale que siempre puede decir “no” si alguien quiere tocar su cuerpo de una forma que le incomode, sin importar quién sea. Practiquen juntos cómo decir “no” con palabras o gestos y respetar cuando otras personas también lo hacen.",
+      "section_2_text": "Recuérdale que siempre puede decir “no” si alguien quiere tocar su cuerpo de una forma que le incomode, sin importar quién sea. \n\nPractiquen juntos cómo decir “no” con palabras o gestos y respetar cuando otras personas también lo hacen.",
       "section_3_title": "ALÉJATE",
-      "section_3_text": "Enséñale que puede alejarse de cualquier situación que le haga sentir incomodidad, confusión o miedo, incluso si se trata de alguien conocido. Practiquen con juegos como las cosquillas: si dice “no” o “basta”, detén el juego de inmediato.",
+      "section_3_text": "Enséñale que puede alejarse de cualquier situación que le haga sentir incomodidad, confusión o miedo, incluso si se trata de alguna persona conocida. \n\nPractiquen con juegos como las cosquillas: si dice “no” o “basta”, detén el juego de inmediato.",
       "section_4_title": "CUÉNTALO",
-      "section_4_text": "Recuérdale que siempre puede contarte cualquier secreto o situación que le incomode o preocupe, incluso si alguien le pidió que no lo hiciera. Si te cuenta algo, escúchale con calma, créele, recuérdale que no tiene la culpa y busca el apoyo necesario para protegerle.",
+      "section_4_text": "Recuérdale que siempre puede contarte cualquier secreto o situación que le incomode o preocupe, incluso si alguien le pidió que no lo hiciera. \n\nSi te cuenta algo, escúchale con calma, créele, recuérdale que no tiene la culpa y busca el apoyo necesario para protegerle.",
       "completed": false,
       "version": 1
     },
@@ -563,24 +569,24 @@
           "eng": "Sí"
         },
         "quiz_1_feedback_1": {
-          "eng": "¡Qué bien! 🎉\n\nHablar de estos temas con naturalidad fortalece la confianza para que @fields.child_name pueda acudir a ti cuando lo necesite. Si compartes la crianza con alguien más, comparte también estas estrategias."
+          "eng": "¡Qué bien! Hablar de estos temas con naturalidad fortalece la confianza para que @fields.child_name pueda acudir a ti cuando lo necesite.🎉\n\nSi compartes la crianza con alguien más, comparte también estas estrategias."
         },
         "quiz_1_option_2_text": {
           "eng": "Lo intentaré"
         },
         "quiz_1_feedback_2": {
-          "eng": "¡Qué bien! 🙌\n\nHablar de estos temas con naturalidad fortalece la confianza para que @fields.child_name pueda acudir a ti cuando lo necesite. Si compartes la crianza con alguien más, comparte también estas estrategias."
+          "eng": "¡Qué bien! Hablar de estos temas con naturalidad fortalece la confianza para que @fields.child_name pueda acudir a ti cuando lo necesite.🙌\n\nSi compartes la crianza con alguien más, comparte también estas estrategias."
         },
         "quiz_1_option_3_text": {
           "eng": "No"
         },
         "quiz_1_feedback_3": {
-          "eng": "Está bien. 💚\n\nHaz un espacio para hacerlo cuando te sea posible. Hablar de estos temas con naturalidad fortalece la confianza para que @fields.child_name pueda acudir a ti cuando lo necesite. Si compartes la crianza con alguien más, comparte también estas estrategias."
+          "eng": "Está bien. Haz un espacio para hacerlo cuando te sea posible. 💚\n\nHablar de estos temas con naturalidad fortalece la confianza para que @fields.child_name pueda acudir a ti cuando lo necesite. Si compartes la crianza con alguien más, comparte también estas estrategias."
         }
       },
       "category_id": "home_activity",
       "nested": false,
-      "quiz_1_feedback_1": "¡Qué bien! 🎉\n\nHablar de estos temas con naturalidad fortalece la confianza para que @fields.child_name pueda acudir a ti cuando lo necesite. Si compartes la crianza con alguien más, comparte también estas estrategias.",
+      "quiz_1_feedback_1": "¡Qué bien! Hablar de estos temas con naturalidad fortalece la confianza para que @fields.child_name pueda acudir a ti cuando lo necesite.🎉\n\nSi compartes la crianza con alguien más, comparte también estas estrategias.",
       "_translations": {
         "quiz_1_feedback_1": {},
         "quiz_1_feedback_2": {},
@@ -591,8 +597,8 @@
         "quiz_1_option_3_text": {},
         "text_1_facilitator": {}
       },
-      "quiz_1_feedback_2": "¡Qué bien! 🙌\n\nHablar de estos temas con naturalidad fortalece la confianza para que @fields.child_name pueda acudir a ti cuando lo necesite. Si compartes la crianza con alguien más, comparte también estas estrategias.",
-      "quiz_1_feedback_3": "Está bien. 💚\n\nHaz un espacio para hacerlo cuando te sea posible. Hablar de estos temas con naturalidad fortalece la confianza para que @fields.child_name pueda acudir a ti cuando lo necesite. Si compartes la crianza con alguien más, comparte también estas estrategias.",
+      "quiz_1_feedback_2": "¡Qué bien! Hablar de estos temas con naturalidad fortalece la confianza para que @fields.child_name pueda acudir a ti cuando lo necesite.🙌\n\nSi compartes la crianza con alguien más, comparte también estas estrategias.",
+      "quiz_1_feedback_3": "Está bien. Haz un espacio para hacerlo cuando te sea posible. 💚\n\nHablar de estos temas con naturalidad fortalece la confianza para que @fields.child_name pueda acudir a ti cuando lo necesite. Si compartes la crianza con alguien más, comparte también estas estrategias.",
       "quiz_1_question": "¿Puedes hacerlo esta semana?",
       "quiz_1_option_1_text": "Sí",
       "quiz_1_option_2_text": "Lo intentaré",
