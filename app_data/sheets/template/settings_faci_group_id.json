@@ -164,7 +164,7 @@
     {
       "type": "set_variable",
       "name": "valid_facilitator_group_id",
-      "value": "@calc(/^(SEP|IMSS|DIF)(?!000)\\d{3}$/i.test(String(@local.facilitator_group_id_input || '').trim()) || !@local.facilitator_group_id_input)",
+      "value": "@calc(/^(SUP|SEP|SDS|DIF|TEST)(?!000)\\d{3}$/i.test(String(@local.facilitator_group_id_input || '').trim()) || !@local.facilitator_group_id_input)",
       "_translations": {
         "value": {}
       },
@@ -173,22 +173,22 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@calc(/^(SEP|IMSS|DIF)(?!000)\\d{3}$/i.test(String(@local.facilitator_group_id_input || '').trim()) || !@local.facilitator_group_id_input)",
+            "fullExpression": "@calc(/^(SUP|SEP|SDS|DIF|TEST)(?!000)\\d{3}$/i.test(String(@local.facilitator_group_id_input || '').trim()) || !@local.facilitator_group_id_input)",
             "matchedExpression": "@local.facilitator_group_id_input",
             "type": "local",
             "fieldName": "facilitator_group_id_input"
           },
           {
-            "fullExpression": "@calc(/^(SEP|IMSS|DIF)(?!000)\\d{3}$/i.test(String(@local.facilitator_group_id_input || '').trim()) || !@local.facilitator_group_id_input)",
+            "fullExpression": "@calc(/^(SUP|SEP|SDS|DIF|TEST)(?!000)\\d{3}$/i.test(String(@local.facilitator_group_id_input || '').trim()) || !@local.facilitator_group_id_input)",
             "matchedExpression": "!@local.facilitator_group_id_input",
             "type": "local",
             "fieldName": "facilitator_group_id_input"
           },
           {
-            "fullExpression": "@calc(/^(SEP|IMSS|DIF)(?!000)\\d{3}$/i.test(String(@local.facilitator_group_id_input || '').trim()) || !@local.facilitator_group_id_input)",
-            "matchedExpression": "@calc(/^(SEP|IMSS|DIF)(?!000)\\d{3}$/i.test(String(@local.facilitator_group_id_input || '').trim()) || !@local.facilitator_group_id_input)",
+            "fullExpression": "@calc(/^(SUP|SEP|SDS|DIF|TEST)(?!000)\\d{3}$/i.test(String(@local.facilitator_group_id_input || '').trim()) || !@local.facilitator_group_id_input)",
+            "matchedExpression": "@calc(/^(SUP|SEP|SDS|DIF|TEST)(?!000)\\d{3}$/i.test(String(@local.facilitator_group_id_input || '').trim()) || !@local.facilitator_group_id_input)",
             "type": "calc",
-            "fieldName": "/^(SEP|IMSS|DIF)(?!000)\\d{3}$/i.test(String(@local.facilitator_group_id_input || '').trim()) || !@local.facilitator_group_id_input"
+            "fieldName": "/^(SUP|SEP|SDS|DIF|TEST)(?!000)\\d{3}$/i.test(String(@local.facilitator_group_id_input || '').trim()) || !@local.facilitator_group_id_input"
           }
         ]
       },
@@ -199,7 +199,7 @@
         "!@local.facilitator_group_id_input": [
           "value"
         ],
-        "@calc(/^(SEP|IMSS|DIF)(?!000)\\d{3}$/i.test(String(@local.facilitator_group_id_input || '').trim()) || !@local.facilitator_group_id_input)": [
+        "@calc(/^(SUP|SEP|SDS|DIF|TEST)(?!000)\\d{3}$/i.test(String(@local.facilitator_group_id_input || '').trim()) || !@local.facilitator_group_id_input)": [
           "value"
         ]
       }

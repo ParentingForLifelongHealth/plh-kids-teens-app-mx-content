@@ -99,8 +99,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 87797 KB | 87.8 MB |
-| unused | 12923 KB | 12.9 MB |
+| total | 91707 KB | 91.7 MB |
+| unused | 11812 KB | 11.8 MB |
 </details>
 
 <details open>
@@ -110,23 +110,17 @@ Assets that appear in app-data but do not have references within sheets
 
 | path | size_kb |
 | --- | --- |
-| certificates/Certificate1_fortalecer_relacion.png | 287.7 |
-| certificates/Certificate2_crianza_compartida.png | 258.7 |
-| certificates/Certificate3_cuidados_limites_seguridad.png | 263.7 |
-| certificates/Certificate4_guiar_comportamiento.png | 259.3 |
-| certificates/Certificate5_apoyar_aprendizaje.png | 256.4 |
+| certificates/Certificate1_Fortalecer_relacion.png | 287.5 |
+| images/backgrounds/CTA_button.png | 7 |
 | images/backgrounds/FOOTER3E.png | 5.6 |
 | images/backgrounds/FOOTER5A.png | 4.9 |
 | images/backgrounds/FOOTER5E.png | 8.1 |
 | images/backgrounds/Footer.png | 4.5 |
 | images/backgrounds/HeaderB.png | 4.5 |
 | images/backgrounds/HeaderC.png | 4.5 |
-| images/backgrounds/bottom_banner.png | 8 |
 | images/backgrounds/bottom_banner_OLD.svg | 24.3 |
 | images/backgrounds/kites.svg | 92.1 |
-| images/backgrounds/library_top_right_old.png | 54.7 |
-| images/backgrounds/library_top_right_old.svg | 17.5 |
-| images/backgrounds/main_header.png | 7 |
+| images/backgrounds/library_top_right_OLD.png | 4.6 |
 | images/badges/badge_5.svg | 24.7 |
 | images/badges/badge_6.svg | 42.3 |
 | images/badges/badge_7.svg | 25.4 |
@@ -147,11 +141,11 @@ Assets that appear in app-data but do not have references within sheets
 | images/faces/confused.svg | 2 |
 | images/faces/flushed_face.svg | 4.9 |
 | images/faces/tired.svg | 3.3 |
-| images/homescreen/aprendizaje_c.svg | 5721.8 |
-| images/homescreen/aprendizaje_t.svg | 2593.3 |
+| images/homescreen/aprendizaje_c.svg | 5721.1 |
+| images/homescreen/aprendizaje_t.svg | 2592.9 |
 | images/icons/ABRAZO2.png | 5.8 |
 | images/icons/AFECTO.png | 3.7 |
-| images/icons/CELULAR.png | 3.4 |
+| images/icons/ALEGRIA.png | 5.1 |
 | images/icons/COMPARTE_TIEMPO.png | 5.3 |
 | images/icons/CRECIMIENTO.png | 4.9 |
 | images/icons/CUIDADO.png | 5.1 |
@@ -165,6 +159,7 @@ Assets that appear in app-data but do not have references within sheets
 | images/icons/LIMITES.png | 4.3 |
 | images/icons/MIEDO.png | 5.2 |
 | images/icons/PREGUNTA.png | 4.6 |
+| images/icons/SEGURIDAD_DIGITAL.png | 4.4 |
 | images/icons/SE_EJEMPLO.png | 4.5 |
 | images/icons/SE_PACIENTE.png | 3.6 |
 | images/icons/TIEMPO_EN_PANTALLA.png | 3.5 |
@@ -174,7 +169,6 @@ Assets that appear in app-data but do not have references within sheets
 | images/icons/book_outline_blue.svg | 0.7 |
 | images/icons/book_outline_white.svg | 0.7 |
 | images/icons/breathe.svg | 8.7 |
-| images/icons/caution.svg | 2.1 |
 | images/icons/change.png | 35.8 |
 | images/icons/climb.png | 70.8 |
 | images/icons/clock_blue.png | 4.5 |
@@ -242,7 +236,6 @@ Assets that have references within sheets but do not appear in app-data
 
 | path | count |
 | --- | --- |
-| images/backgrounds/bottom_banner.svg | 1 |
 | images/backgrounds/mountains_trees.svg | 1 |
 | images/comic/behave/know_role/know_role_yc_1.svg | 4 |
 | images/comic/behave/know_role/know_role_yc_2.svg | 4 |
@@ -288,11 +281,6 @@ Assets that have references within sheets but do not appear in app-data
 | images/comic/relation/thoughts_feelings_2.svg | 4 |
 | images/comic/relation/thoughts_feelings_3.svg | 4 |
 | images/comic/relation/thoughts_feelings_4.svg | 8 |
-| images/comic/safe/online_safety_teen_1.svg | 2 |
-| images/comic/safe/online_safety_teen_2.svg | 2 |
-| images/comic/safe/online_safety_teen_3.svg | 2 |
-| images/comic/safe/online_safety_teen_4.svg | 2 |
-| images/comic/safe/online_safety_teen_5.svg | 2 |
 | images/comic/safety/com_safe/com_safe_2to4_yc_2.svg | 2 |
 | images/comic/safety/com_safe/com_safe_5to9_yc_m_1.svg | 4 |
 | images/comic/safety/com_safe/com_safe_5to9_yc_m_2.svg | 2 |
@@ -316,6 +304,10 @@ Assets that have references within sheets but do not appear in app-data
 | images/comic/safety/online_safety_p1/online_safety_p1_t_f_2.svg | 4 |
 | images/comic/safety/online_safety_p1/online_safety_p1_t_f_3.svg | 4 |
 | images/comic/safety/online_safety_p1/online_safety_p1_t_f_4.svg | 4 |
+| images/comic/safety/online_safety_p1/online_safety_p1_t_m_1.svg | 2 |
+| images/comic/safety/online_safety_p1/online_safety_p1_t_m_2.svg | 4 |
+| images/comic/safety/online_safety_p1/online_safety_p1_t_m_3.svg | 4 |
+| images/comic/safety/online_safety_p1/online_safety_p1_t_m_4.svg | 4 |
 | images/comic/safety/online_safety_p2/online_safety_p2_t_f_1.svg | 2 |
 | images/comic/safety/online_safety_p2/online_safety_p2_t_f_2.svg | 4 |
 | images/comic/safety/online_safety_p2/online_safety_p2_t_f_3.svg | 4 |
@@ -369,9 +361,10 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/activities/activity7.svg | 1744 | 18 |
 | images/activities/activity8.svg | 1644.3 | 18 |
 | images/activities/activity9.svg | 1607.2 | 16 |
+| images/backgrounds/bottom_banner.png | 8 | 1 |
 | images/backgrounds/complete_module.svg | 30.6 | 1 |
 | images/backgrounds/lesson-cta-bg.svg | 8.3 | 4 |
-| images/backgrounds/library_top_right.png | 4.6 | 3 |
+| images/backgrounds/library_top_right.png | 54.7 | 3 |
 | images/badges/badge_1.svg | 25.7 | 2 |
 | images/badges/badge_2.svg | 17.4 | 1 |
 | images/badges/badge_3.svg | 49.1 | 2 |
@@ -597,24 +590,24 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/faces/stressed.svg | 3.5 | 153 |
 | images/facilitators/avatar_femenino.png | 1067.5 | 1 |
 | images/facilitators/avatar_masculino.png | 1408 | 1 |
-| images/homescreen/crianza_compartida.svg | 1890.9 | 23 |
-| images/homescreen/cuidados_limites_seguridad_c.svg | 1899.5 | 21 |
-| images/homescreen/cuidados_limites_seguridad_t.svg | 2822.2 | 21 |
-| images/homescreen/fortalecer_relacion_c.svg | 3604.2 | 23 |
-| images/homescreen/fortalecer_relacion_t.svg | 3162.6 | 23 |
-| images/homescreen/guiar_comportamiento_c.svg | 1659.1 | 21 |
-| images/homescreen/guiar_comportamiento_t.svg | 3428.9 | 21 |
+| images/homescreen/crianza_compartida.svg | 1890.5 | 23 |
+| images/homescreen/cuidados_limites_seguridad_c.svg | 4606.2 | 21 |
+| images/homescreen/cuidados_limites_seguridad_t.svg | 2821.8 | 21 |
+| images/homescreen/fortalecer_relacion_c.svg | 3774.6 | 23 |
+| images/homescreen/fortalecer_relacion_t.svg | 3161.8 | 23 |
+| images/homescreen/guiar_comportamiento_c.svg | 2648.5 | 21 |
+| images/homescreen/guiar_comportamiento_t.svg | 3419.8 | 21 |
 | images/icons/ABRAZO1.png | 5.2 | 6 |
 | images/icons/ACOMPAÑA.png | 4.8 | 12 |
 | images/icons/ACTUA.png | 5.3 | 8 |
 | images/icons/ACUERDA.png | 5.4 | 4 |
-| images/icons/ALEGRIA.png | 5.1 | 74 |
 | images/icons/ALTERNATIVAS.png | 2.3 | 2 |
 | images/icons/AMOR.png | 4.1 | 4 |
 | images/icons/CALENDARIO.png | 3.8 | 10 |
 | images/icons/CALMA.png | 5.1 | 4 |
 | images/icons/CAMBIA_PERSPECTIVA.png | 5.5 | 12 |
 | images/icons/CELEBRA.png | 5.1 | 8 |
+| images/icons/CELULAR.png | 3.4 | 4 |
 | images/icons/COLABORA.png | 4 | 12 |
 | images/icons/COMPARTE.png | 5.4 | 10 |
 | images/icons/CONECTA.png | 4.1 | 8 |
@@ -622,10 +615,10 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/CONVIVE.png | 5.9 | 4 |
 | images/icons/CREA.png | 4.8 | 6 |
 | images/icons/DESCUBRE.png | 3.8 | 84 |
-| images/icons/DIALOGA.png | 4.7 | 26 |
+| images/icons/DIALOGA.png | 4.7 | 30 |
 | images/icons/EMPATIA.png | 5.1 | 82 |
 | images/icons/ENSENA.png | 4.9 | 4 |
-| images/icons/ESCUCHA.png | 5 | 22 |
+| images/icons/ESCUCHA.png | 5 | 26 |
 | images/icons/EXPRESA.png | 5.5 | 4 |
 | images/icons/HABLA.png | 4.3 | 30 |
 | images/icons/HOGAR.png | 4.4 | 74 |
@@ -633,7 +626,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/IMAGINA.png | 5.6 | 16 |
 | images/icons/INSTRUCCIONES.png | 2.7 | 10 |
 | images/icons/INTENTAR.png | 4.7 | 12 |
-| images/icons/INTERES.png | 4.2 | 4 |
+| images/icons/INTERES.png | 4.2 | 8 |
 | images/icons/JUEGA.png | 4.6 | 8 |
 | images/icons/LIBRO.png | 3.7 | 74 |
 | images/icons/LOGROS.png | 4.4 | 8 |
@@ -643,20 +636,20 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/PAUSA.png | 3.8 | 20 |
 | images/icons/PIDE_AYUDA.png | 4.6 | 10 |
 | images/icons/PRACTICA.png | 5.4 | 92 |
-| images/icons/PROTECCION.png | 5.1 | 14 |
+| images/icons/PROTECCION.png | 5.1 | 12 |
 | images/icons/RECONOCER_EMOCIONES.png | 4.4 | 16 |
 | images/icons/REFLEXIONA.png | 4.3 | 74 |
 | images/icons/REFUERZA.png | 3.8 | 14 |
 | images/icons/REGULA_EMOCIONES.png | 3 | 4 |
 | images/icons/RELAJATE.png | 4.6 | 2 |
 | images/icons/RESPIRA.png | 4.5 | 10 |
-| images/icons/SEGURIDAD_DIGITAL.png | 4.4 | 2 |
 | images/icons/SE_CONSTANTE.png | 4.4 | 24 |
 | images/icons/SE_EQUIPO.png | 5 | 24 |
 | images/icons/SOLUCIONES.png | 4.4 | 4 |
 | images/icons/VALIDA_EMOCIONES.png | 5.2 | 94 |
 | images/icons/brain_blue.png | 5.2 | 2 |
 | images/icons/bug.svg | 1.2 | 2 |
+| images/icons/caution.svg | 2.1 | 74 |
 | images/icons/celebration.svg | 70.4 | 1 |
 | images/icons/chatbubble-ellipses-outline.svg | 0.8 | 1 |
 | images/icons/diamond-outline.svg | 0.6 | 2 |

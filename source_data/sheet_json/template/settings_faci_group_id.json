@@ -40,7 +40,7 @@
     {
       "type": "set_variable",
       "name": "valid_facilitator_group_id",
-      "value": "@calc(/^(SEP|IMSS|DIF)(?!000)\\d{3}$/i.test(String(@local.facilitator_group_id_input || '').trim()) || !@local.facilitator_group_id_input)",
+      "value": "@calc(/^(SUP|SEP|SDS|DIF|TEST)(?!000)\\d{3}$/i.test(String(@local.facilitator_group_id_input || '').trim()) || !@local.facilitator_group_id_input)",
       "exclude_from_translation": true
     },
     {
