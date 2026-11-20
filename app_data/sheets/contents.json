@@ -1864,21 +1864,6 @@
         "url": "https://docs.google.com/spreadsheets/d/1j_lM3vThYrDN1WbzWtzV3ZXtIQvFszHKnaJXiGE3R_o"
       }
     },
-    "ab_test_assignment_comm_inv": {
-      "flow_type": "data_list",
-      "flow_subtype": "lifecycle_actions",
-      "flow_name": "ab_test_assignment_comm_inv",
-      "_source": {
-        "name": "ab_test_community_invite",
-        "path": "ab_test_comm_inv.xlsx",
-        "url": "https://docs.google.com/spreadsheets/d/18EfS1fu3nbL0zXZ2NVfuUzkmkzvgQwFD4k_REJGLq7Q"
-      },
-      "_metadata": {
-        "priority": {
-          "type": "number"
-        }
-      }
-    },
     "ab_test_assignment_po_refl": {
       "flow_type": "data_list",
       "flow_subtype": "lifecycle_actions",
@@ -5903,11 +5888,6 @@
           "flow_type": "template"
         },
         {
-          "flow_name": "library_article_support_2_a",
-          "flow_subtype": "generated",
-          "flow_type": "template"
-        },
-        {
           "flow_name": "library_article_support_3",
           "flow_subtype": "generated",
           "flow_type": "template"
@@ -5934,56 +5914,6 @@
         },
         {
           "flow_name": "library_article_support_8",
-          "flow_subtype": "generated",
-          "flow_type": "template"
-        },
-        {
-          "flow_name": "library_article_support_9",
-          "flow_subtype": "generated",
-          "flow_type": "template"
-        },
-        {
-          "flow_name": "library_article_support_10",
-          "flow_subtype": "generated",
-          "flow_type": "template"
-        },
-        {
-          "flow_name": "library_article_support_11",
-          "flow_subtype": "generated",
-          "flow_type": "template"
-        },
-        {
-          "flow_name": "library_article_support_12",
-          "flow_subtype": "generated",
-          "flow_type": "template"
-        },
-        {
-          "flow_name": "library_article_support_13",
-          "flow_subtype": "generated",
-          "flow_type": "template"
-        },
-        {
-          "flow_name": "library_article_support_14",
-          "flow_subtype": "generated",
-          "flow_type": "template"
-        },
-        {
-          "flow_name": "library_article_support_15",
-          "flow_subtype": "generated",
-          "flow_type": "template"
-        },
-        {
-          "flow_name": "library_article_support_16",
-          "flow_subtype": "generated",
-          "flow_type": "template"
-        },
-        {
-          "flow_name": "library_article_support_17",
-          "flow_subtype": "generated",
-          "flow_type": "template"
-        },
-        {
-          "flow_name": "library_article_support_18",
           "flow_subtype": "generated",
           "flow_type": "template"
         }
@@ -8413,19 +8343,6 @@
     }
   },
   "template": {
-    "comm_invite_ab_comm_inv_share": {
-      "flow_type": "template",
-      "flow_subtype": "ab_testing",
-      "flow_name": "comm_invite_ab_comm_inv_share",
-      "override_target": "community_invite",
-      "override_condition": "@fields.ab_mode_comm_inv == \"all_share\" || (@fields.ab_mode_comm_inv == \"test\" && @fields.ab_arm_comm_inv == \"share\")",
-      "comment": "B replaces A when the mode is all_B, or the mode is \"test\" and the user's arm is B. \n\nthe condition should be\n@global.ab_mode_ID == \"all_B\" || (@global.ab_mode_ID == \"test\" && @fields.ab_arm_ID == \"B\")\nbut override conditions can only use @fields, so new need to copy the mode global into a field on each app start as defined in the sheet ab_test_assignement_ID",
-      "_source": {
-        "name": "ab_test_community_invite",
-        "path": "ab_test_comm_inv.xlsx",
-        "url": "https://docs.google.com/spreadsheets/d/18EfS1fu3nbL0zXZ2NVfuUzkmkzvgQwFD4k_REJGLq7Q"
-      }
-    },
     "po_base_question_ab_po_scale_3": {
       "flow_type": "template",
       "flow_subtype": "ab_testing",
@@ -9609,58 +9526,8 @@
       "flow_subtype": "generated",
       "flow_type": "template"
     },
-    "library_article_support_10": {
-      "flow_name": "library_article_support_10",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "library_article_support_11": {
-      "flow_name": "library_article_support_11",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "library_article_support_12": {
-      "flow_name": "library_article_support_12",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "library_article_support_13": {
-      "flow_name": "library_article_support_13",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "library_article_support_14": {
-      "flow_name": "library_article_support_14",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "library_article_support_15": {
-      "flow_name": "library_article_support_15",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "library_article_support_16": {
-      "flow_name": "library_article_support_16",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "library_article_support_17": {
-      "flow_name": "library_article_support_17",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "library_article_support_18": {
-      "flow_name": "library_article_support_18",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
     "library_article_support_2": {
       "flow_name": "library_article_support_2",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "library_article_support_2_a": {
-      "flow_name": "library_article_support_2_a",
       "flow_subtype": "generated",
       "flow_type": "template"
     },
@@ -9691,11 +9558,6 @@
     },
     "library_article_support_8": {
       "flow_name": "library_article_support_8",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "library_article_support_9": {
-      "flow_name": "library_article_support_9",
       "flow_subtype": "generated",
       "flow_type": "template"
     },

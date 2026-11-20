@@ -251,16 +251,20 @@
           "eng": "¡Sí, me encantaría! Justo he estado pensando que me gustaría aprender a cocinar."
         },
         "character_3_text": {
-          "eng": "¡Qué buena idea! No sabía que te interesaba cocinar, {HIJO_TEEN}. A ver si la abuela nos comparte su secreto."
+          "eng": "¡Qué buena idea! No sabía que te interesaba cocinar, @data.characters.f3_hijo_14.name. A ver si la abuela nos comparte su secreto."
         }
       },
       "character_1_text": "¿Y qué tal si también aprenden a cocinar el arroz conmigo? Ya va a ser hora de prepararlo…",
       "character_2_text": "¡Sí, me encantaría! Justo he estado pensando que me gustaría aprender a cocinar.",
-      "character_3_text": "¡Qué buena idea! No sabía que te interesaba cocinar, {HIJO_TEEN}. A ver si la abuela nos comparte su secreto."
+      "character_3_text": "¡Qué buena idea! No sabía que te interesaba cocinar, @data.characters.f3_hijo_14.name. A ver si la abuela nos comparte su secreto."
     },
     {
       "id": "practical_tips_1",
       "category_id": "practical_tips",
+      "section_1_icon_asset": "images/icons/ABRAZO1.png",
+      "section_2_icon_asset": "images/icons/DESCUBRE.png",
+      "section_3_icon_asset": "images/icons/DIALOGA.png",
+      "section_4_icon_asset": "images/icons/ENSENA.png",
       "nested": false,
       "text_1_facilitator": "Recordemos las estrategias para explorar junto con @fields.child_name su papel en la familia.⭐",
       "_translations": {
