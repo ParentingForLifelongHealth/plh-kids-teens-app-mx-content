@@ -365,7 +365,7 @@
           "eng": "¡Sí, me encantaría! Justo he estado pensando que me gustaría aprender a cocinar."
         },
         "character_3_text": {
-          "eng": "¡Qué buena idea! No sabía que te interesaba cocinar, {HIJO_TEEN}. A ver si la abuela nos comparte su secreto."
+          "eng": "¡Qué buena idea! No sabía que te interesaba cocinar, @data.characters.f3_hijo_14.name. A ver si la abuela nos comparte su secreto."
         }
       },
       "category_id": "explore",
@@ -383,7 +383,7 @@
       },
       "character_1_text": "¿Y qué tal si también aprenden a cocinar el arroz conmigo? Ya va a ser hora de prepararlo…",
       "character_2_text": "¡Sí, me encantaría! Justo he estado pensando que me gustaría aprender a cocinar.",
-      "character_3_text": "¡Qué buena idea! No sabía que te interesaba cocinar, {HIJO_TEEN}. A ver si la abuela nos comparte su secreto.",
+      "character_3_text": "¡Qué buena idea! No sabía que te interesaba cocinar, @data.characters.f3_hijo_14.name. A ver si la abuela nos comparte su secreto.",
       "completed": false,
       "version": 1
     },
@@ -432,6 +432,10 @@
         "section_4_title": {},
         "section_4_text": {}
       },
+      "section_1_icon_asset": "images/icons/ABRAZO1.png",
+      "section_2_icon_asset": "images/icons/DESCUBRE.png",
+      "section_3_icon_asset": "images/icons/DIALOGA.png",
+      "section_4_icon_asset": "images/icons/ENSENA.png",
       "section_1_title": "CONOCE TU ROL",
       "section_1_text": "Piensa en las responsabilidades que tienes en tu familia y por qué te encargas de ellas. \n\nSi compartes la crianza con alguien más, reflexionen sobre cómo podrían repartirlas de forma más justa.",
       "section_2_title": "IDENTIFICA",

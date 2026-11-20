@@ -10,7 +10,35 @@
       "id": "intro_1",
       "category_id": "intro",
       "nested": false,
-      "text_1_facilitator": "La sesión anterior te enseñó formas de proteger a tu adolescente al navegar en internet con dos estrategias: 1️⃣ APRENDER y 2️⃣ PROTEGER. 🔑\n\nEn esta sesión continuaremos el aprendizaje sobre cómo mantener la seguridad de nuestros adolescentes al navegar por internet con 3️⃣ CONSTRUIR HÁBITOS SEGUROS y 4️⃣ CONSTRUIR CONFIANZA✨\n\n💡 A menudo, las y los adolescentes entienden más de la vida en Internet que nosotras y nosotros, pero eso no significa que sepan cómo mantener su seguridad, ya que son muy jóvenes y necesitan orientación.",
+      "text_1_facilitator": "Este módulo trata sobre cómo acompañar a @fields.child_name en sus experiencias con **los contenidos que encuentra en línea**.\n\n\nDurante la adolescencia, puede encontrarse con videos, imágenes o mensajes que despierten su curiosidad, le generen dudas o le incomoden. Algunos pueden tener contenido sexual y otros pueden incluir violencia o vulnerar los derechos de las personas. 📱",
+      "_translations": {
+        "text_1_facilitator": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Este módulo trata sobre cómo acompañar a @fields.child_name en sus experiencias con **los contenidos que encuentra en línea**.\n\n\nDurante la adolescencia, puede encontrarse con videos, imágenes o mensajes que despierten su curiosidad, le generen dudas o le incomoden. Algunos pueden tener contenido sexual y otros pueden incluir violencia o vulnerar los derechos de las personas. 📱"
+        }
+      }
+    },
+    {
+      "id": "intro_2",
+      "category_id": "intro",
+      "nested": false,
+      "text_1_facilitator": "Aquí exploraremos cómo conversar con @fields.child_name sobre lo que ve en línea, ayudarle a pensar y cuestionar lo que encuentra, y reconocer cuándo necesita apoyo o protección.",
+      "_translations": {
+        "text_1_facilitator": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Aquí exploraremos cómo conversar con @fields.child_name sobre lo que ve en línea, ayudarle a pensar y cuestionar lo que encuentra, y reconocer cuándo necesita apoyo o protección."
+        }
+      }
+    },
+    {
+      "id": "intro_3",
+      "category_id": "intro",
+      "nested": false,
+      "text_1_facilitator": "Antes de empezar, reflexionemos un momento📝",
       "_translations": {
         "text_1_facilitator": {},
         "quiz_1_question": {},
@@ -18,117 +46,507 @@
         "quiz_1_feedback_1": {},
         "quiz_1_option_2_text": {},
         "quiz_1_feedback_2": {},
-        "quiz_2_question": {},
-        "quiz_2_option_1_text": {},
-        "quiz_2_feedback_1": {},
-        "quiz_2_option_2_text": {},
-        "quiz_2_feedback_2": {}
+        "quiz_1_option_3_text": {},
+        "quiz_1_feedback_3": {},
+        "quiz_1_option_4_text": {},
+        "quiz_1_feedback_4": {}
       },
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "La sesión anterior te enseñó formas de proteger a tu adolescente al navegar en internet con dos estrategias: 1️⃣ APRENDER y 2️⃣ PROTEGER. 🔑\n\nEn esta sesión continuaremos el aprendizaje sobre cómo mantener la seguridad de nuestros adolescentes al navegar por internet con 3️⃣ CONSTRUIR HÁBITOS SEGUROS y 4️⃣ CONSTRUIR CONFIANZA✨\n\n💡 A menudo, las y los adolescentes entienden más de la vida en Internet que nosotras y nosotros, pero eso no significa que sepan cómo mantener su seguridad, ya que son muy jóvenes y necesitan orientación."
+          "eng": "Antes de empezar, reflexionemos un momento📝"
         },
         "quiz_1_question": {
-          "eng": "📝 **¡Hagamos un ejercicio!**\n\n_Ejercicio no.1_\n\nSi le mando una foto a alguien, solo será visible para ella o él."
+          "eng": "Si un día te enteras de que @fields.child_name vio un video o foto que le generó confusión o que tenía contenido sexual, ¿qué podrías hacer?"
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Preguntarle sobre lo que vio"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "🎉 ¡Tienes razón!\n\nMantener la calma y escuchar sin juzgar ayuda a que @fields.child_name sienta confianza para hablar. Puedes preguntarle qué piensa sobre lo que vio, si tiene dudas o si algo le incomodó. Así podrás acompañarle a comprender el contenido y reconocer posibles riesgos."
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Quitarle el celular o computadora"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nAunque parezca una forma de protegerle, quitarle sus dispositivos como castigo puede afectar la confianza y hacer que prefiera ocultar lo que ve. Es mejor conversar sobre el contenido, escuchar sus inquietudes y valorar juntos si existe alguna situación de riesgo."
+        },
+        "quiz_1_option_3_text": {
+          "eng": "Recordarle que puede hablar contigo"
+        },
+        "quiz_1_feedback_3": {
+          "eng": "🎉 ¡Tienes razón!\n\nMantener la calma y escuchar sin juzgar ayuda a que @fields.child_name sienta confianza para hablar. Puedes preguntarle qué piensa sobre lo que vio, si tiene dudas o si algo le incomodó. Así podrás acompañarle a comprender el contenido y reconocer posibles riesgos."
+        },
+        "quiz_1_option_4_text": {
+          "eng": "Fingir que no pasó nada"
+        },
+        "quiz_1_feedback_4": {
+          "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nEvitar el tema puede dejar a @fields.child_name con dudas o preocupaciones. Hablar con naturalidad sobre los contenidos sexuales, escuchar su perspectiva y ofrecer información confiable puede ayudarle a comprender lo que ve y reconocer situaciones cuándo no se respetan sus derechos o los de otras personas."
+        }
+      },
+      "quiz_1_question": "Si un día te enteras de que @fields.child_name vio un video o foto que le generó confusión o que tenía contenido sexual, ¿qué podrías hacer?",
+      "quiz_1_option_1_text": "Preguntarle sobre lo que vio",
+      "quiz_1_feedback_1": "🎉 ¡Tienes razón!\n\nMantener la calma y escuchar sin juzgar ayuda a que @fields.child_name sienta confianza para hablar. Puedes preguntarle qué piensa sobre lo que vio, si tiene dudas o si algo le incomodó. Así podrás acompañarle a comprender el contenido y reconocer posibles riesgos.",
+      "quiz_1_option_2_text": "Quitarle el celular o computadora",
+      "quiz_1_feedback_2": "👀 ¡Ups! ¡Revisemos esta idea!\n\nAunque parezca una forma de protegerle, quitarle sus dispositivos como castigo puede afectar la confianza y hacer que prefiera ocultar lo que ve. Es mejor conversar sobre el contenido, escuchar sus inquietudes y valorar juntos si existe alguna situación de riesgo.",
+      "quiz_1_option_3_text": "Recordarle que puede hablar contigo",
+      "quiz_1_feedback_3": "🎉 ¡Tienes razón!\n\nMantener la calma y escuchar sin juzgar ayuda a que @fields.child_name sienta confianza para hablar. Puedes preguntarle qué piensa sobre lo que vio, si tiene dudas o si algo le incomodó. Así podrás acompañarle a comprender el contenido y reconocer posibles riesgos.",
+      "quiz_1_option_4_text": "Fingir que no pasó nada",
+      "quiz_1_feedback_4": "👀 ¡Ups! ¡Revisemos esta idea!\n\nEvitar el tema puede dejar a @fields.child_name con dudas o preocupaciones. Hablar con naturalidad sobre los contenidos sexuales, escuchar su perspectiva y ofrecer información confiable puede ayudarle a comprender lo que ve y reconocer situaciones cuándo no se respetan sus derechos o los de otras personas."
+    },
+    {
+      "id": "intro_4",
+      "category_id": "intro",
+      "nested": false,
+      "text_1_facilitator": "¡Una pregunta más!",
+      "_translations": {
+        "text_1_facilitator": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_feedback_1": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_feedback_2": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "¡Una pregunta más!"
+        },
+        "quiz_1_question": {
+          "eng": "Verdadero o falso: Es imposible saber si lo que tú o @fields.child_name ven en línea es real o no."
         },
         "quiz_1_option_1_text": {
           "eng": "Verdadero"
         },
         "quiz_1_feedback_1": {
-          "eng": "👀 ¡Ups! ¡Buen intento!\n\n📱 Incluso en una aplicación donde las imágenes son temporales,  la otra persona puede tomar captura de tu pantalla,  guardar tu imagen y compartirla. También puede tomar otro celular y tomarle foto o vídeo.\n\n🚩 Las fotos siempre se almacenan en internet y los hackers pueden acceder a ellas.  \n\n❗Recuerda, ¡lo que se sube al internet se queda en el internet y puede ser utilizado para fines inapropiados!"
+          "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nAunque a veces es difícil, hay formas de saberlo. Fíjate si algo se siente raro y pregúntate: ¿quién lo creó? ¿Por qué lo compartieron? ¿Compartirlo podría dañar a alguien? Comparte con @fields.child_name estas preguntas y recuérdale que siempre puede acudir a ti si tiene dudas."
         },
         "quiz_1_option_2_text": {
           "eng": "Falso"
         },
         "quiz_1_feedback_2": {
-          "eng": "🎉 Estás en lo correcto.\n\n📱 Incluso en una aplicación donde las imágenes son temporales,  la otra persona puede tomar captura de tu pantalla,  guardar tu imagen y compartirla. También puede tomar otro celular y tomarle foto o vídeo.\n\n🚩 Las fotos siempre se almacenan en internet y los hackers pueden acceder a ellas.  \n\n❗Recuerda, ¡lo que se sube al internet se queda en el internet y puede ser utilizado para fines inapropiados!"
-        },
-        "quiz_2_question": {
-          "eng": "📝 **¡Hagamos un ejercicio más!**\n\n_Ejercicio no.2_\n\nMi contraseña es segura porque tendrías que saber la dirección de mi casa para adivinarla."
-        },
-        "quiz_2_option_1_text": {
-          "eng": "Verdadero"
-        },
-        "quiz_2_feedback_1": {
-          "eng": "👀 ¡Ups! ¡Buen intento!\n\n❗ La mayoría de las contraseñas se piratean o hackean porque alguien accede a una lista de direcciones, fechas de nacimiento, nombres o números de teléfono.\n\n🚩 Nunca debes usar estos datos en tu contraseña, ya que son fáciles de adivinar."
-        },
-        "quiz_2_option_2_text": {
-          "eng": "Falso"
-        },
-        "quiz_2_feedback_2": {
-          "eng": "✨ Estás en lo correcto.\n\n❗ La mayoría de las contraseñas se piratean o hackean porque alguien accede a una lista de direcciones, fechas de nacimiento, nombres o números de teléfono.\n\n🚩 Nunca debes usar estos datos en tu contraseña, ya que son fáciles de adivinar."
+          "eng": "🎉 ¡Tienes razón!\n\nAunque a veces es difícil, hay formas de saberlo. Fíjate si algo se siente raro y pregúntate: ¿quién lo creó? ¿Por qué lo compartieron? ¿Compartirlo podría dañar a alguien? Comparte con @fields.child_name estas preguntas y recuérdale que siempre puede acudir a ti si tiene dudas."
         }
       },
-      "quiz_1_question": "📝 **¡Hagamos un ejercicio!**\n\n_Ejercicio no.1_\n\nSi le mando una foto a alguien, solo será visible para ella o él.",
+      "quiz_1_question": "Verdadero o falso: Es imposible saber si lo que tú o @fields.child_name ven en línea es real o no.",
       "quiz_1_option_1_text": "Verdadero",
-      "quiz_1_feedback_1": "👀 ¡Ups! ¡Buen intento!\n\n📱 Incluso en una aplicación donde las imágenes son temporales,  la otra persona puede tomar captura de tu pantalla,  guardar tu imagen y compartirla. También puede tomar otro celular y tomarle foto o vídeo.\n\n🚩 Las fotos siempre se almacenan en internet y los hackers pueden acceder a ellas.  \n\n❗Recuerda, ¡lo que se sube al internet se queda en el internet y puede ser utilizado para fines inapropiados!",
+      "quiz_1_feedback_1": "👀 ¡Ups! ¡Revisemos esta idea!\n\nAunque a veces es difícil, hay formas de saberlo. Fíjate si algo se siente raro y pregúntate: ¿quién lo creó? ¿Por qué lo compartieron? ¿Compartirlo podría dañar a alguien? Comparte con @fields.child_name estas preguntas y recuérdale que siempre puede acudir a ti si tiene dudas.",
       "quiz_1_option_2_text": "Falso",
-      "quiz_1_feedback_2": "🎉 Estás en lo correcto.\n\n📱 Incluso en una aplicación donde las imágenes son temporales,  la otra persona puede tomar captura de tu pantalla,  guardar tu imagen y compartirla. También puede tomar otro celular y tomarle foto o vídeo.\n\n🚩 Las fotos siempre se almacenan en internet y los hackers pueden acceder a ellas.  \n\n❗Recuerda, ¡lo que se sube al internet se queda en el internet y puede ser utilizado para fines inapropiados!",
-      "quiz_2_question": "📝 **¡Hagamos un ejercicio más!**\n\n_Ejercicio no.2_\n\nMi contraseña es segura porque tendrías que saber la dirección de mi casa para adivinarla.",
-      "quiz_2_option_1_text": "Verdadero",
-      "quiz_2_feedback_1": "👀 ¡Ups! ¡Buen intento!\n\n❗ La mayoría de las contraseñas se piratean o hackean porque alguien accede a una lista de direcciones, fechas de nacimiento, nombres o números de teléfono.\n\n🚩 Nunca debes usar estos datos en tu contraseña, ya que son fáciles de adivinar.",
-      "quiz_2_option_2_text": "Falso",
-      "quiz_2_feedback_2": "✨ Estás en lo correcto.\n\n❗ La mayoría de las contraseñas se piratean o hackean porque alguien accede a una lista de direcciones, fechas de nacimiento, nombres o números de teléfono.\n\n🚩 Nunca debes usar estos datos en tu contraseña, ya que son fáciles de adivinar."
+      "quiz_1_feedback_2": "🎉 ¡Tienes razón!\n\nAunque a veces es difícil, hay formas de saberlo. Fíjate si algo se siente raro y pregúntate: ¿quién lo creó? ¿Por qué lo compartieron? ¿Compartirlo podría dañar a alguien? Comparte con @fields.child_name estas preguntas y recuérdale que siempre puede acudir a ti si tiene dudas."
     },
     {
-      "id": "practical_tips_1",
-      "category_id": "practical_tips",
+      "id": "intro_5",
+      "category_id": "intro",
+      "nested": false,
+      "text_1_facilitator": "¡Última pregunta!",
+      "_translations": {
+        "text_1_facilitator": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_feedback_1": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_feedback_2": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "¡Última pregunta!"
+        },
+        "quiz_1_question": {
+          "eng": "Verdadero o falso: Todo lo que vemos en internet refleja la realidad."
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Verdadero"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nNo todo lo que vemos en internet es real o muestra las cosas como sucedieron. Las imágenes y los videos pueden estar editados, manipulados o creados mediante inteligencia artificial.\n\n\nAyuda a @fields.child_name a preguntarse quién creó el contenido, con qué propósito y si existen fuentes confiables para verificarlo. Recuérdale que, si se trata de imágenes íntimas de otra persona, no debe mostrarlas ni compartirlas, independientemente de que sean reales o falsas."
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Falso"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "🎉 ¡Tienes razón!\n\nNo todo lo que vemos en internet es real o muestra las cosas como sucedieron. Las imágenes y los videos pueden estar editados, manipulados o creados mediante inteligencia artificial.\n\n\nAyuda a @fields.child_name a preguntarse quién creó el contenido, con qué propósito y si existen fuentes confiables para verificarlo. Recuérdale que, si se trata de imágenes íntimas de otra persona, no debe mostrarlas ni compartirlas, independientemente de que sean reales o falsas."
+        }
+      },
+      "quiz_1_question": "Verdadero o falso: Todo lo que vemos en internet refleja la realidad.",
+      "quiz_1_option_1_text": "Verdadero",
+      "quiz_1_feedback_1": "👀 ¡Ups! ¡Revisemos esta idea!\n\nNo todo lo que vemos en internet es real o muestra las cosas como sucedieron. Las imágenes y los videos pueden estar editados, manipulados o creados mediante inteligencia artificial.\n\n\nAyuda a @fields.child_name a preguntarse quién creó el contenido, con qué propósito y si existen fuentes confiables para verificarlo. Recuérdale que, si se trata de imágenes íntimas de otra persona, no debe mostrarlas ni compartirlas, independientemente de que sean reales o falsas.",
+      "quiz_1_option_2_text": "Falso",
+      "quiz_1_feedback_2": "🎉 ¡Tienes razón!\n\nNo todo lo que vemos en internet es real o muestra las cosas como sucedieron. Las imágenes y los videos pueden estar editados, manipulados o creados mediante inteligencia artificial.\n\n\nAyuda a @fields.child_name a preguntarse quién creó el contenido, con qué propósito y si existen fuentes confiables para verificarlo. Recuérdale que, si se trata de imágenes íntimas de otra persona, no debe mostrarlas ni compartirlas, independientemente de que sean reales o falsas."
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
       "media_type": "youtube",
       "youtube_gb_en_f": "https://www.youtube.com/watch?v=W1mrfcEtvww",
       "nested": false,
-      "text_1_facilitator": "Mantener la seguridad de @fields.child_name al navegar por internet es un paso importante para ayudarle a formar parte del mundo digital. 📱\n\nYa has aprendido dos estrategias para procurar la seguridad de tu adolescente en internet durante la sesión anterior: 1️⃣ APRENDER y 2️⃣ PROTEGER.\n\nSelecciona reproducir ▶️ para aprender a:\n\n3️⃣ CONSTRUIR HÁBITOS SEGUROS\n4️⃣ CONSTRUIR CONFIANZA",
+      "text_1_facilitator": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo puedes acompañar a @fields.child_name para comprender lo que ve en línea y actuar cuando encuentra contenidos que le generan dudas o pueden vulnerar sus derechos.\n\nEn este video te compartimos cinco estrategias recomendadas por especialistas:\n\n1️⃣ PREVÉN\n2️⃣ VERIFICA\n3️⃣ PAUSA ANTES DE COMPARTIR\n4️⃣ MANTÉN LA CALMA\n5️⃣ HABLA",
       "_translations": {
         "text_1_facilitator": {}
       },
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "Mantener la seguridad de @fields.child_name al navegar por internet es un paso importante para ayudarle a formar parte del mundo digital. 📱\n\nYa has aprendido dos estrategias para procurar la seguridad de tu adolescente en internet durante la sesión anterior: 1️⃣ APRENDER y 2️⃣ PROTEGER.\n\nSelecciona reproducir ▶️ para aprender a:\n\n3️⃣ CONSTRUIR HÁBITOS SEGUROS\n4️⃣ CONSTRUIR CONFIANZA"
+          "eng": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo puedes acompañar a @fields.child_name para comprender lo que ve en línea y actuar cuando encuentra contenidos que le generan dudas o pueden vulnerar sus derechos.\n\nEn este video te compartimos cinco estrategias recomendadas por especialistas:\n\n1️⃣ PREVÉN\n2️⃣ VERIFICA\n3️⃣ PAUSA ANTES DE COMPARTIR\n4️⃣ MANTÉN LA CALMA\n5️⃣ HABLA"
         }
       }
     },
     {
-      "id": "practical_tips_2",
-      "category_id": "practical_tips",
-      "section_1_icon_asset": "images/icons/lightbulb_blue.png",
-      "section_2_icon_asset": "images/icons/heart_filled_blue.png",
+      "id": "explore_2",
+      "category_id": "explore",
+      "image_asset": "images/comic/safety/online_safety_p2/online_safety_p2_t_f_1.svg",
+      "character_1_id": "f3_madre",
+      "character_2_id": "f3_hija_12",
+      "character_3_id": "f3_madre",
       "nested": false,
-      "text_1_facilitator": "Recuerda las 4️⃣ estrategias para mantener la seguridad de @fields.child_name al navegar por internet.\n\nLas dos revisadas en la sesión anterior: \n\n1️⃣ APRENDER\n2️⃣ PROTEGER\n\nY las dos que revisamos en esta sesión:\n\n3️⃣ CONSTRUIR HÁBITOS SEGUROS\n4️⃣ CONSTRUIR CONFIANZA",
+      "text_1_facilitator": "Veamos cómo @data.characters.f3_madre.name usa estas estrategias en la práctica:",
+      "_translations": {
+        "text_1_facilitator": {},
+        "text_2": {},
+        "character_1_text": {},
+        "character_2_text": {},
+        "character_3_text": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "Veamos cómo @data.characters.f3_madre.name usa estas estrategias en la práctica:"
+        },
+        "text_2": {
+          "eng": "Aprovechar momentos cotidianos para hablar sobre lo que se puede encontrar en internet ayuda a prevenir riesgos y crear confianza."
+        },
+        "character_1_text": {
+          "eng": "@data.characters.f3_hija_12.name, ¿te ha pasado que aparecen cosas inesperadas en tu celular?"
+        },
+        "character_2_text": {
+          "eng": "¿Cómo cuáles?"
+        },
+        "character_3_text": {
+          "eng": "Por ejemplo, un video sexual que no estabas buscando. ¿Alguna vez te ha pasado?"
+        }
+      },
+      "text_2": "Aprovechar momentos cotidianos para hablar sobre lo que se puede encontrar en internet ayuda a prevenir riesgos y crear confianza.",
+      "character_1_text": "@data.characters.f3_hija_12.name, ¿te ha pasado que aparecen cosas inesperadas en tu celular?",
+      "character_2_text": "¿Cómo cuáles?",
+      "character_3_text": "Por ejemplo, un video sexual que no estabas buscando. ¿Alguna vez te ha pasado?"
+    },
+    {
+      "id": "explore_3",
+      "category_id": "explore",
+      "image_asset": "images/comic/safety/online_safety_p2/online_safety_p2_t_f_2.svg",
+      "character_1_id": "f3_hija_12",
+      "character_2_id": "f3_madre",
+      "character_3_id": "f3_hija_12",
+      "nested": false,
+      "text_2": "Mantener la calma, escuchar sin juzgar y hacer preguntas sencillas ayuda a que las y los adolescentes se sientan en confianza para hablar.",
+      "_translations": {
+        "text_2": {},
+        "character_1_text": {},
+        "character_2_text": {},
+        "character_3_text": {}
+      },
+      "_translatedFields": {
+        "text_2": {
+          "eng": "Mantener la calma, escuchar sin juzgar y hacer preguntas sencillas ayuda a que las y los adolescentes se sientan en confianza para hablar."
+        },
+        "character_1_text": {
+          "eng": "Mmm, sí… alguna vez."
+        },
+        "character_2_text": {
+          "eng": "Creo que a muchas personas nos ha pasado. ¿Y cómo te sentiste?"
+        },
+        "character_3_text": {
+          "eng": "A veces me da curiosidad. Otras me incomoda, sobre todo cuando mis amigas me mandan esas cosas."
+        }
+      },
+      "character_1_text": "Mmm, sí… alguna vez.",
+      "character_2_text": "Creo que a muchas personas nos ha pasado. ¿Y cómo te sentiste?",
+      "character_3_text": "A veces me da curiosidad. Otras me incomoda, sobre todo cuando mis amigas me mandan esas cosas."
+    },
+    {
+      "id": "explore_4",
+      "category_id": "explore",
+      "image_asset": "images/comic/safety/online_safety_p2/online_safety_p2_t_f_2.svg",
+      "character_1_id": "f3_madre",
+      "nested": false,
+      "character_1_text": "Es normal sentir curiosidad. Pero también es importante cuestionar lo que vemos. La pornografía puede mostrar situaciones exageradas o violentas que no reflejan cómo deben ser las relaciones reales.",
+      "_translations": {
+        "character_1_text": {}
+      },
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "Es normal sentir curiosidad. Pero también es importante cuestionar lo que vemos. La pornografía puede mostrar situaciones exageradas o violentas que no reflejan cómo deben ser las relaciones reales."
+        }
+      }
+    },
+    {
+      "id": "explore_5",
+      "category_id": "explore",
+      "image_asset": "images/comic/safety/online_safety_p2/online_safety_p2_t_f_3.svg",
+      "character_1_id": "f3_hija_12",
+      "character_2_id": "f3_madre",
+      "character_3_id": "f3_hija_12",
+      "nested": false,
+      "text_2": "Es importante ayudarles a cuestionar lo que ven en internet y pensar cómo compartir ciertos contenidos puede afectar a otras personas.",
+      "_translations": {
+        "text_2": {},
+        "character_1_text": {},
+        "character_2_text": {},
+        "character_3_text": {}
+      },
+      "_translatedFields": {
+        "text_2": {
+          "eng": "Es importante ayudarles a cuestionar lo que ven en internet y pensar cómo compartir ciertos contenidos puede afectar a otras personas."
+        },
+        "character_1_text": {
+          "eng": "¿Entonces no todo lo que aparece ahí pasa así en la vida real?"
+        },
+        "character_2_text": {
+          "eng": "Exacto. La pornografía suele mostrar cuerpos y relaciones poco realistas. Muchas veces no muestra que las personas deben decidir juntas lo que quieren hacer."
+        },
+        "character_3_text": {
+          "eng": "Sí… a veces me quedo con una sensación rara y no sé qué pensar."
+        }
+      },
+      "character_1_text": "¿Entonces no todo lo que aparece ahí pasa así en la vida real?",
+      "character_2_text": "Exacto. La pornografía suele mostrar cuerpos y relaciones poco realistas. Muchas veces no muestra que las personas deben decidir juntas lo que quieren hacer.",
+      "character_3_text": "Sí… a veces me quedo con una sensación rara y no sé qué pensar."
+    },
+    {
+      "id": "explore_6",
+      "category_id": "explore",
+      "image_asset": "images/comic/safety/online_safety_p2/online_safety_p2_t_f_3.svg",
+      "character_1_id": "f3_madre",
+      "character_2_id": "f3_madre",
+      "nested": false,
+      "character_1_text": "Lo entiendo. Recuerda que en las relaciones importan el deseo, el respeto y el consentimiento. Nadie debe sentirse presionada a hacer algo que no quiere.",
+      "_translations": {
+        "character_1_text": {},
+        "character_2_text": {}
+      },
+      "_translatedFields": {
+        "character_1_text": {
+          "eng": "Lo entiendo. Recuerda que en las relaciones importan el deseo, el respeto y el consentimiento. Nadie debe sentirse presionada a hacer algo que no quiere."
+        },
+        "character_2_text": {
+          "eng": "Y si tus amigas te mandan imágenes íntimas de alguien, recuerda que no debes compartirlas ni mostrarlas a otras personas. Así respetas su privacidad."
+        }
+      },
+      "character_2_text": "Y si tus amigas te mandan imágenes íntimas de alguien, recuerda que no debes compartirlas ni mostrarlas a otras personas. Así respetas su privacidad."
+    },
+    {
+      "id": "explore_7",
+      "category_id": "explore",
+      "image_asset": "images/comic/safety/online_safety_p2/online_safety_p2_t_f_4.svg",
+      "character_1_id": "f3_hija_12",
+      "character_2_id": "f3_madre",
+      "character_3_id": "f3_hija_12",
+      "nested": false,
+      "text_2": "Agradecerles por hablar y recordarles que pueden acudir a ti cuando tengan dudas o preocupaciones fortalece la confianza.",
+      "_translations": {
+        "text_2": {},
+        "character_1_text": {},
+        "character_2_text": {},
+        "character_3_text": {}
+      },
+      "_translatedFields": {
+        "text_2": {
+          "eng": "Agradecerles por hablar y recordarles que pueden acudir a ti cuando tengan dudas o preocupaciones fortalece la confianza."
+        },
+        "character_1_text": {
+          "eng": "Sí… creo que entiendo."
+        },
+        "character_2_text": {
+          "eng": "Gracias por hablar conmigo, @data.characters.f3_hija_12.name. Si alguna vez ves algo que te genera dudas o te incomoda, puedes contármelo con confianza. No importa lo que haya pasado, podemos hablarlo y buscar respuestas juntas."
+        },
+        "character_3_text": {
+          "eng": "Está bien. Gracias, mamá."
+        }
+      },
+      "character_1_text": "Sí… creo que entiendo.",
+      "character_2_text": "Gracias por hablar conmigo, @data.characters.f3_hija_12.name. Si alguna vez ves algo que te genera dudas o te incomoda, puedes contármelo con confianza. No importa lo que haya pasado, podemos hablarlo y buscar respuestas juntas.",
+      "character_3_text": "Está bien. Gracias, mamá."
+    },
+    {
+      "id": "practise_1",
+      "category_id": "practise",
+      "nested": false,
+      "text_1_facilitator": "@fields.child_name también podría encontrarse con contenido en internet que le dé curiosidad, le confunda o incomode. Vamos a practicar qué podrías hacer ante situaciones así.",
+      "_translations": {
+        "text_1_facilitator": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_feedback_1": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_option_3_text": {},
+        "quiz_1_feedback_3": {},
+        "quiz_1_option_4_text": {},
+        "quiz_1_feedback_4": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "@fields.child_name también podría encontrarse con contenido en internet que le dé curiosidad, le confunda o incomode. Vamos a practicar qué podrías hacer ante situaciones así."
+        },
+        "quiz_1_question": {
+          "eng": "Situación 1: @fields.child_name se acerca a ti y te dice: “Me pasaron este video. Todo el mundo lo está compartiendo. ¿Crees que sea real?”\n\n\n¿Cómo podrías responder?"
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Decirle que no debería ver eso"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nRegañarle o evitar el tema puede impedir que @fields.child_name comparta sus dudas contigo. Es mejor escucharle y conversar sobre lo que muestra el video, cómo identificar información confiable y qué consecuencias podría tener su difusión. Si el contenido vulnera la intimidad de alguien, es importante no contribuir a que siga circulando."
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Preguntarle sobre el video"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "🎉 ¡Muy bien!\n\nMantener la calma y conversar con apertura ayuda a @fields.child_name a desarrollar una mirada crítica y cuestionarse sobre lo que ve. Puedes preguntarle qué muestra el video, quién lo compartió y por qué cree que está circulando. También pueden reflexionar sobre cómo comprobar su autenticidad y si compartirlo podría afectar a otras personas."
+        },
+        "quiz_1_option_3_text": {
+          "eng": "Dejarlo pasar"
+        },
+        "quiz_1_feedback_3": {
+          "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nRegañarle o evitar el tema puede impedir que @fields.child_name comparta sus dudas contigo. Es mejor escucharle y conversar sobre lo que muestra el video, cómo identificar información confiable y qué consecuencias podría tener su difusión. Si el contenido vulnera la intimidad de alguien, es importante no contribuir a que siga circulando."
+        },
+        "quiz_1_option_4_text": {
+          "eng": "Preguntarle qué piensa"
+        },
+        "quiz_1_feedback_4": {
+          "eng": "🎉 ¡Muy bien!\n\nMantener la calma y conversar con apertura ayuda a @fields.child_name a desarrollar una mirada crítica y cuestionarse sobre lo que ve. Puedes preguntarle qué muestra el video, quién lo compartió y por qué cree que está circulando. También pueden reflexionar sobre cómo comprobar su autenticidad y si compartirlo podría afectar a otras personas."
+        }
+      },
+      "quiz_1_question": "Situación 1: @fields.child_name se acerca a ti y te dice: “Me pasaron este video. Todo el mundo lo está compartiendo. ¿Crees que sea real?”\n\n\n¿Cómo podrías responder?",
+      "quiz_1_option_1_text": "Decirle que no debería ver eso",
+      "quiz_1_feedback_1": "👀 ¡Ups! ¡Revisemos esta idea!\n\nRegañarle o evitar el tema puede impedir que @fields.child_name comparta sus dudas contigo. Es mejor escucharle y conversar sobre lo que muestra el video, cómo identificar información confiable y qué consecuencias podría tener su difusión. Si el contenido vulnera la intimidad de alguien, es importante no contribuir a que siga circulando.",
+      "quiz_1_option_2_text": "Preguntarle sobre el video",
+      "quiz_1_feedback_2": "🎉 ¡Muy bien!\n\nMantener la calma y conversar con apertura ayuda a @fields.child_name a desarrollar una mirada crítica y cuestionarse sobre lo que ve. Puedes preguntarle qué muestra el video, quién lo compartió y por qué cree que está circulando. También pueden reflexionar sobre cómo comprobar su autenticidad y si compartirlo podría afectar a otras personas.",
+      "quiz_1_option_3_text": "Dejarlo pasar",
+      "quiz_1_feedback_3": "👀 ¡Ups! ¡Revisemos esta idea!\n\nRegañarle o evitar el tema puede impedir que @fields.child_name comparta sus dudas contigo. Es mejor escucharle y conversar sobre lo que muestra el video, cómo identificar información confiable y qué consecuencias podría tener su difusión. Si el contenido vulnera la intimidad de alguien, es importante no contribuir a que siga circulando.",
+      "quiz_1_option_4_text": "Preguntarle qué piensa",
+      "quiz_1_feedback_4": "🎉 ¡Muy bien!\n\nMantener la calma y conversar con apertura ayuda a @fields.child_name a desarrollar una mirada crítica y cuestionarse sobre lo que ve. Puedes preguntarle qué muestra el video, quién lo compartió y por qué cree que está circulando. También pueden reflexionar sobre cómo comprobar su autenticidad y si compartirlo podría afectar a otras personas."
+    },
+    {
+      "id": "practise_2",
+      "category_id": "practise",
+      "nested": false,
+      "quiz_1_question": "Situación 2: @fields.child_name te busca con preocupación y te dice: “Me apareció algo raro en el celular… no quería verlo”.\n\n\n¿Qué podrías decir en esta situación?",
+      "_translations": {
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_feedback_1": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_option_3_text": {},
+        "quiz_1_feedback_3": {},
+        "quiz_1_option_4_text": {},
+        "quiz_1_feedback_4": {}
+      },
+      "_translatedFields": {
+        "quiz_1_question": {
+          "eng": "Situación 2: @fields.child_name te busca con preocupación y te dice: “Me apareció algo raro en el celular… no quería verlo”.\n\n\n¿Qué podrías decir en esta situación?"
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Platicar sobre lo que pasó"
+        },
+        "quiz_1_feedback_1": {
+          "eng": "🎉 ¡Tienes razón!\n\nEscúchale con calma y recuérdale que no tiene la culpa de recibir contenido que no pidió. Pregúntale qué vio y cómo se sintió. Si se trata de contenido sexual que le genera dudas, pueden conversarlo. Si recibió amenazas, presiones o imágenes que afectan la privacidad o los derechos de otras personas, ayúdale a protegerse y buscar apoyo."
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Decirle que no fue su culpa"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "🎉 ¡Tienes razón!\n\nEscúchale con calma y recuérdale que no tiene la culpa de recibir contenido que no pidió. Pregúntale qué vio y cómo se sintió. Si se trata de contenido sexual que le genera dudas, pueden conversarlo. Si recibió amenazas, presiones o imágenes que afectan la privacidad o los derechos de otras personas, ayúdale a protegerse y buscar apoyo."
+        },
+        "quiz_1_option_3_text": {
+          "eng": "Dejarlo pasar"
+        },
+        "quiz_1_feedback_3": {
+          "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nRegañarle o ignorar su preocupación puede hacer que @fields.child_name sienta vergüenza y deje de contarte lo que le ocurre. Es importante escucharle sin juzgar, preguntarle qué apareció en su celular y cómo se sintió, para comprender si necesita orientación o protección."
+        },
+        "quiz_1_option_4_text": {
+          "eng": "Regañarle por haberlo visto"
+        },
+        "quiz_1_feedback_4": {
+          "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nRegañarle o ignorar su preocupación puede hacer que @fields.child_name sienta vergüenza y deje de contarte lo que le ocurre. Es importante escucharle sin juzgar, preguntarle qué apareció en su celular y cómo se sintió, para comprender si necesita orientación o protección."
+        }
+      },
+      "quiz_1_option_1_text": "Platicar sobre lo que pasó",
+      "quiz_1_feedback_1": "🎉 ¡Tienes razón!\n\nEscúchale con calma y recuérdale que no tiene la culpa de recibir contenido que no pidió. Pregúntale qué vio y cómo se sintió. Si se trata de contenido sexual que le genera dudas, pueden conversarlo. Si recibió amenazas, presiones o imágenes que afectan la privacidad o los derechos de otras personas, ayúdale a protegerse y buscar apoyo.",
+      "quiz_1_option_2_text": "Decirle que no fue su culpa",
+      "quiz_1_feedback_2": "🎉 ¡Tienes razón!\n\nEscúchale con calma y recuérdale que no tiene la culpa de recibir contenido que no pidió. Pregúntale qué vio y cómo se sintió. Si se trata de contenido sexual que le genera dudas, pueden conversarlo. Si recibió amenazas, presiones o imágenes que afectan la privacidad o los derechos de otras personas, ayúdale a protegerse y buscar apoyo.",
+      "quiz_1_option_3_text": "Dejarlo pasar",
+      "quiz_1_feedback_3": "👀 ¡Ups! ¡Revisemos esta idea!\n\nRegañarle o ignorar su preocupación puede hacer que @fields.child_name sienta vergüenza y deje de contarte lo que le ocurre. Es importante escucharle sin juzgar, preguntarle qué apareció en su celular y cómo se sintió, para comprender si necesita orientación o protección.",
+      "quiz_1_option_4_text": "Regañarle por haberlo visto",
+      "quiz_1_feedback_4": "👀 ¡Ups! ¡Revisemos esta idea!\n\nRegañarle o ignorar su preocupación puede hacer que @fields.child_name sienta vergüenza y deje de contarte lo que le ocurre. Es importante escucharle sin juzgar, preguntarle qué apareció en su celular y cómo se sintió, para comprender si necesita orientación o protección."
+    },
+    {
+      "id": "practical_tips_1",
+      "category_id": "practical_tips",
+      "nested": false,
+      "text_1_facilitator": "Recordemos las estrategias para acompañar a @fields.child_name a comprender lo que ve en línea.⭐",
       "_translations": {
         "text_1_facilitator": {},
         "section_1_title": {},
         "section_1_text": {},
         "section_2_title": {},
-        "section_2_text": {}
+        "section_2_text": {},
+        "section_3_title": {},
+        "section_3_text": {},
+        "section_4_title": {},
+        "section_4_text": {},
+        "section_5_title": {},
+        "section_5_text": {}
       },
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "Recuerda las 4️⃣ estrategias para mantener la seguridad de @fields.child_name al navegar por internet.\n\nLas dos revisadas en la sesión anterior: \n\n1️⃣ APRENDER\n2️⃣ PROTEGER\n\nY las dos que revisamos en esta sesión:\n\n3️⃣ CONSTRUIR HÁBITOS SEGUROS\n4️⃣ CONSTRUIR CONFIANZA"
+          "eng": "Recordemos las estrategias para acompañar a @fields.child_name a comprender lo que ve en línea.⭐"
         },
         "section_1_title": {
-          "eng": "CONSTRUYE HÁBITOS SEGUROS"
+          "eng": "PREVÉN"
         },
         "section_1_text": {
-          "eng": "Establece hábitos para mantener la seguridad de navegación en internet en casa:\n\n❌📱 Establece momentos libres de celulares, como durante las comidas, la tarea o a la hora de dormir.\n\n❗ Controla el tiempo que @fields.child_name pasa en su celular.\n\n⭐ Solo deja que @fields.child_name chatee con personas que ya conozca. Nunca deben compartir información personal en una  grupo de chat ni con personas desconocidas.\n\n👀 Antes de llenar formularios que soliciten información personal, comprueba que la dirección web comienza por https://. Los sitios web que empiezan por http:// pueden ser riesgosos.\n\n📝 Ayúdale a crear contraseñas seguras para sus cuentas. Deben ser largas e incluir letras mayúsculas y minúsculas, números y símbolos. Pero no deben incluir información personal obvia como su nombre o fecha de cumpleaños.\n\n❗ Dile a tu adolescente que no haga clic en  links/enlaces que le pidan que descargue o pague por algo."
+          "eng": "Habla con tu adolescente sobre lo que puede encontrar en internet y qué hacer si algo le incomoda. Establezcan acuerdos que respeten su privacidad y autonomía."
         },
         "section_2_title": {
-          "eng": "CONSTRUYE CONFIANZA"
+          "eng": "VERIFICA"
         },
         "section_2_text": {
-          "eng": "🌷 Juntos, revisen los sitios web, las redes sociales, los juegos y las aplicaciones que usa @fields.child_name.\n\n👂 Hazle preguntas: ¡te ayudará a conocer mejor sus intereses!\n\n💙 Si encuentras algo preocupante, háblalo con él o ella. Recuerda que, si necesitas algún tipo de orientación sobre un tema de crianza o situación con tu adolescente, puedes ir a la biblioteca de la aplicación para acceder a una lista de recursos telefónicos en donde puedes encontrar apoyo.\n\n✅ Coméntale a @fields.child_name que si llega a sentir miedo, inseguridad, peligro o molestia por algo en internet, siempre debe contártelo a ti o a otra persona adulta."
+          "eng": "Ayúdale a cuestionar lo que ve en línea, preguntándose quién creó el contenido, para qué y si es real. Si se trata de imágenes íntimas de otras personas, lo primero es evitar que se compartan."
+        },
+        "section_3_title": {
+          "eng": "PAUSA ANTES DE COMPARTIR"
+        },
+        "section_3_text": {
+          "eng": "Enséñale a pensar si lo que comparte puede afectar a alguien más. Recuérdale que puede negarse a mostrar o compartir imágenes íntimas de otras personas, aunque sus amistades lo hagan."
+        },
+        "section_4_title": {
+          "eng": "MANTÉN LA CALMA"
+        },
+        "section_4_text": {
+          "eng": "Si encuentra contenido sexual o algo que le incomoda, escucha sin juzgar ni regañar. Si alguien le presiona, amenaza o hace algo que afecta su seguridad o sus derechos, recuérdale que no tiene la culpa, ayúdale a protegerse y busquen apoyo."
+        },
+        "section_5_title": {
+          "eng": "HABLA"
+        },
+        "section_5_text": {
+          "eng": "Conversen sobre sexualidad y lo que ve en internet. Ayúdale a reconocer que las relaciones deben basarse en el respeto, el consentimiento y el bienestar de todas las personas, sin presiones ni violencia."
         }
       },
-      "section_1_title": "CONSTRUYE HÁBITOS SEGUROS",
-      "section_1_text": "Establece hábitos para mantener la seguridad de navegación en internet en casa:\n\n❌📱 Establece momentos libres de celulares, como durante las comidas, la tarea o a la hora de dormir.\n\n❗ Controla el tiempo que @fields.child_name pasa en su celular.\n\n⭐ Solo deja que @fields.child_name chatee con personas que ya conozca. Nunca deben compartir información personal en una  grupo de chat ni con personas desconocidas.\n\n👀 Antes de llenar formularios que soliciten información personal, comprueba que la dirección web comienza por https://. Los sitios web que empiezan por http:// pueden ser riesgosos.\n\n📝 Ayúdale a crear contraseñas seguras para sus cuentas. Deben ser largas e incluir letras mayúsculas y minúsculas, números y símbolos. Pero no deben incluir información personal obvia como su nombre o fecha de cumpleaños.\n\n❗ Dile a tu adolescente que no haga clic en  links/enlaces que le pidan que descargue o pague por algo.",
-      "section_2_title": "CONSTRUYE CONFIANZA",
-      "section_2_text": "🌷 Juntos, revisen los sitios web, las redes sociales, los juegos y las aplicaciones que usa @fields.child_name.\n\n👂 Hazle preguntas: ¡te ayudará a conocer mejor sus intereses!\n\n💙 Si encuentras algo preocupante, háblalo con él o ella. Recuerda que, si necesitas algún tipo de orientación sobre un tema de crianza o situación con tu adolescente, puedes ir a la biblioteca de la aplicación para acceder a una lista de recursos telefónicos en donde puedes encontrar apoyo.\n\n✅ Coméntale a @fields.child_name que si llega a sentir miedo, inseguridad, peligro o molestia por algo en internet, siempre debe contártelo a ti o a otra persona adulta."
+      "section_1_title": "PREVÉN",
+      "section_1_text": "Habla con tu adolescente sobre lo que puede encontrar en internet y qué hacer si algo le incomoda. Establezcan acuerdos que respeten su privacidad y autonomía.",
+      "section_2_title": "VERIFICA",
+      "section_2_text": "Ayúdale a cuestionar lo que ve en línea, preguntándose quién creó el contenido, para qué y si es real. Si se trata de imágenes íntimas de otras personas, lo primero es evitar que se compartan.",
+      "section_3_title": "PAUSA ANTES DE COMPARTIR",
+      "section_3_text": "Enséñale a pensar si lo que comparte puede afectar a alguien más. Recuérdale que puede negarse a mostrar o compartir imágenes íntimas de otras personas, aunque sus amistades lo hagan.",
+      "section_4_title": "MANTÉN LA CALMA",
+      "section_4_text": "Si encuentra contenido sexual o algo que le incomoda, escucha sin juzgar ni regañar. Si alguien le presiona, amenaza o hace algo que afecta su seguridad o sus derechos, recuérdale que no tiene la culpa, ayúdale a protegerse y busquen apoyo.",
+      "section_5_title": "HABLA",
+      "section_5_text": "Conversen sobre sexualidad y lo que ve en internet. Ayúdale a reconocer que las relaciones deben basarse en el respeto, el consentimiento y el bienestar de todas las personas, sin presiones ni violencia."
     },
     {
       "id": "home_activity_1",
       "category_id": "home_activity",
       "nested": false,
-      "text_1_facilitator": "**Actividad para casa** ⭐ \n\nSigue estos pasos para mantener a tu adolescente a salvo al navegar el internet:\n\n📝 Anota o dibuja los íconos de las aplicaciones y sitios web que tu adolescente usa.\n\n🏅 ¡Elogia a tu adolescente por lo bien que navega por la web!\n\n🔴 Hablen sobre qué sitios o aplicaciones pueden ser inseguros o peligrosos y por qué.\n\n📱 Platiquen sobre cómo @fields.child_name y sus amigas y amigos pueden navegar la web de forma más segura.",
+      "text_1_facilitator": "¡Ahora es tu turno!\n\nPlatica con @fields.child_name sobre algún contenido que haya visto en internet y que le pareciera interesante, curioso, confuso o incómodo. Puede ser un video, una publicación o alguna situación que haya llamado su atención. 😊",
       "_translations": {
         "text_1_facilitator": {},
+        "text_2": {},
         "quiz_1_question": {},
         "quiz_1_option_1_text": {},
         "quiz_1_feedback_1": {},
@@ -139,37 +557,41 @@
       },
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "**Actividad para casa** ⭐ \n\nSigue estos pasos para mantener a tu adolescente a salvo al navegar el internet:\n\n📝 Anota o dibuja los íconos de las aplicaciones y sitios web que tu adolescente usa.\n\n🏅 ¡Elogia a tu adolescente por lo bien que navega por la web!\n\n🔴 Hablen sobre qué sitios o aplicaciones pueden ser inseguros o peligrosos y por qué.\n\n📱 Platiquen sobre cómo @fields.child_name y sus amigas y amigos pueden navegar la web de forma más segura."
+          "eng": "¡Ahora es tu turno!\n\nPlatica con @fields.child_name sobre algún contenido que haya visto en internet y que le pareciera interesante, curioso, confuso o incómodo. Puede ser un video, una publicación o alguna situación que haya llamado su atención. 😊"
+        },
+        "text_2": {
+          "eng": "Escucha su perspectiva sin juzgar ni exigirle que te muestre el contenido. Aprovecha la conversación para reflexionar en conjunto sobre lo que se ve en internet. Puedes preguntarle:\n\n- ¿Qué piensas sobre lo que viste?\n- ¿Crees que refleja la realidad? ¿Por qué?\n- ¿Qué ideas transmite sobre las personas o sus relaciones?\n- ¿Compartirlo podría afectar a alguien?\n\n\nRecuérdale que puede acudir a ti si encuentra algo que le preocupa o si alguna persona utiliza contenidos digitales para presionarle o amenazarle."
         },
         "quiz_1_question": {
-          "eng": "¿Puedes hacerlo hoy?"
+          "eng": "¿Puedes intentarlo esta semana?"
         },
         "quiz_1_option_1_text": {
           "eng": "Sí"
         },
         "quiz_1_feedback_1": {
-          "eng": "¡Estupendo! Ayudarle a tu adolescente a mantener su seguridad al navegar por internet es importante para que pueda aprender y pueda conectar con los demás. ¡Qué bueno que te estás involucrando, así tu adolescente estará a salvo! 🔑"
+          "eng": "¡Muy bien! 🎉\n\nConversar con calma, apertura y escuchar sin juzgar ayuda a que @fields.child_name desarrolle una mirada crítica sobre lo que ve en línea y sienta confianza para acudir a ti cuando tenga dudas o necesite apoyo.\n\n\nHacerlo regularmente facilitará que acuda a ti si alguna vez tiene dudas o algún problema."
         },
         "quiz_1_option_2_text": {
           "eng": "Lo intentaré"
         },
         "quiz_1_feedback_2": {
-          "eng": "¡Perfecto! 💙 Cuando estés listo o lista, intenta poner en práctica esta actividad. Recuerda que cada paso cuenta, por pequeño que parezca. ✨"
+          "eng": "¡Qué bien! 🙌\n\nA veces lleva tiempo encontrar el momento adecuado. Puedes comenzar hablando sobre algún contenido que les interese a ambos. Lo importante es escuchar su perspectiva y favorecer una conversación basada en la confianza."
         },
         "quiz_1_option_3_text": {
           "eng": "No"
         },
         "quiz_1_feedback_3": {
-          "eng": "Entendemos. Aparta un poco de tiempo esta semana para hacer esta actividad con tu adolescente. ⏰ \n\nEs importante hablar con nuestros adolescentes sobre cómo procurar su seguridad al navegar por internet para que puedan moverse en el mundo digital con el fin de aprender más y conectar con los demás. ¡Tú puedes hacerlo! ⭐"
+          "eng": "¡Lo entiendo! 💚\n\nPuedes empezar poco a poco. Una conversación breve sobre algo interesante que hayan visto en internet puede ser un primer paso para hablar de otros contenidos y fortalecer la confianza."
         }
       },
-      "quiz_1_question": "¿Puedes hacerlo hoy?",
+      "text_2": "Escucha su perspectiva sin juzgar ni exigirle que te muestre el contenido. Aprovecha la conversación para reflexionar en conjunto sobre lo que se ve en internet. Puedes preguntarle:\n\n- ¿Qué piensas sobre lo que viste?\n- ¿Crees que refleja la realidad? ¿Por qué?\n- ¿Qué ideas transmite sobre las personas o sus relaciones?\n- ¿Compartirlo podría afectar a alguien?\n\n\nRecuérdale que puede acudir a ti si encuentra algo que le preocupa o si alguna persona utiliza contenidos digitales para presionarle o amenazarle.",
+      "quiz_1_question": "¿Puedes intentarlo esta semana?",
       "quiz_1_option_1_text": "Sí",
-      "quiz_1_feedback_1": "¡Estupendo! Ayudarle a tu adolescente a mantener su seguridad al navegar por internet es importante para que pueda aprender y pueda conectar con los demás. ¡Qué bueno que te estás involucrando, así tu adolescente estará a salvo! 🔑",
+      "quiz_1_feedback_1": "¡Muy bien! 🎉\n\nConversar con calma, apertura y escuchar sin juzgar ayuda a que @fields.child_name desarrolle una mirada crítica sobre lo que ve en línea y sienta confianza para acudir a ti cuando tenga dudas o necesite apoyo.\n\n\nHacerlo regularmente facilitará que acuda a ti si alguna vez tiene dudas o algún problema.",
       "quiz_1_option_2_text": "Lo intentaré",
-      "quiz_1_feedback_2": "¡Perfecto! 💙 Cuando estés listo o lista, intenta poner en práctica esta actividad. Recuerda que cada paso cuenta, por pequeño que parezca. ✨",
+      "quiz_1_feedback_2": "¡Qué bien! 🙌\n\nA veces lleva tiempo encontrar el momento adecuado. Puedes comenzar hablando sobre algún contenido que les interese a ambos. Lo importante es escuchar su perspectiva y favorecer una conversación basada en la confianza.",
       "quiz_1_option_3_text": "No",
-      "quiz_1_feedback_3": "Entendemos. Aparta un poco de tiempo esta semana para hacer esta actividad con tu adolescente. ⏰ \n\nEs importante hablar con nuestros adolescentes sobre cómo procurar su seguridad al navegar por internet para que puedan moverse en el mundo digital con el fin de aprender más y conectar con los demás. ¡Tú puedes hacerlo! ⭐"
+      "quiz_1_feedback_3": "¡Lo entiendo! 💚\n\nPuedes empezar poco a poco. Una conversación breve sobre algo interesante que hayan visto en internet puede ser un primer paso para hablar de otros contenidos y fortalecer la confianza."
     }
   ],
   "_source": {
