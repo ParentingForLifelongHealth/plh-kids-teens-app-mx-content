@@ -99,8 +99,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 87771 KB | 87.8 MB |
-| unused | 12929 KB | 12.9 MB |
+| total | 87797 KB | 87.8 MB |
+| unused | 12923 KB | 12.9 MB |
 </details>
 
 <details open>
@@ -153,7 +153,6 @@ Assets that appear in app-data but do not have references within sheets
 | images/icons/AFECTO.png | 3.7 |
 | images/icons/CELULAR.png | 3.4 |
 | images/icons/COMPARTE_TIEMPO.png | 5.3 |
-| images/icons/CONVIVE.png | 5.9 |
 | images/icons/CRECIMIENTO.png | 4.9 |
 | images/icons/CUIDADO.png | 5.1 |
 | images/icons/DESARROLLO.png | 3.4 |
@@ -328,17 +327,7 @@ Assets that have references within sheets but do not appear in app-data
 | images/comic/safety/sexual_violence/sexual_violence_t_m_3.svg | 2 |
 | images/comic/safety/sexual_violence/sexual_violence_t_m_4.svg | 2 |
 | images/comic/safety/sexual_violence/sexual_violence_t_m_5.svg | 2 |
-| images/icons/CONVIVE.svg | 4 |
-| images/icons/IDENTIFICA.svg | 4 |
-| images/icons/diamond.png | 1 |
-| images/icons/diamond_active.png | 1 |
 | images/icons/docs.svg | 1 |
-| images/icons/download_white.svg | 1 |
-| images/icons/heart_filled.png | 1 |
-| images/icons/heart_filled_active.png | 1 |
-| images/icons/heart_filled_blue.png | 3 |
-| images/icons/trophy.png | 1 |
-| images/icons/trophy_active.png | 1 |
 | images/icons/visibility.svg | 1 |
 | images/logos/ARIADNE.png | 1 |
 | images/logos/JUCONI.png | 1 |
@@ -630,6 +619,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/COMPARTE.png | 5.4 | 10 |
 | images/icons/CONECTA.png | 4.1 | 8 |
 | images/icons/CONVERSA.png | 6.3 | 10 |
+| images/icons/CONVIVE.png | 5.9 | 4 |
 | images/icons/CREA.png | 4.8 | 6 |
 | images/icons/DESCUBRE.png | 3.8 | 84 |
 | images/icons/DIALOGA.png | 4.7 | 26 |
@@ -639,7 +629,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/EXPRESA.png | 5.5 | 4 |
 | images/icons/HABLA.png | 4.3 | 30 |
 | images/icons/HOGAR.png | 4.4 | 74 |
-| images/icons/IDENTIFICA.png | 4.5 | 4 |
+| images/icons/IDENTIFICA.png | 4.5 | 8 |
 | images/icons/IMAGINA.png | 5.6 | 16 |
 | images/icons/INSTRUCCIONES.png | 2.7 | 10 |
 | images/icons/INTENTAR.png | 4.7 | 12 |
@@ -670,16 +660,22 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/celebration.svg | 70.4 | 1 |
 | images/icons/chatbubble-ellipses-outline.svg | 0.8 | 1 |
 | images/icons/diamond-outline.svg | 0.6 | 2 |
+| images/icons/diamond.png | 2.4 | 1 |
+| images/icons/diamond_active.png | 2.4 | 1 |
 | images/icons/document-lock-outline.svg | 0.7 | 1 |
 | images/icons/document-text-outline-thin.svg | 0.5 | 3 |
 | images/icons/document-text-outline.svg | 0.5 | 1 |
 | images/icons/download.svg | 0.7 | 2 |
+| images/icons/download_white.svg | 0.7 | 1 |
 | images/icons/expand_circle_right.png | 0.9 | 1 |
 | images/icons/expand_circle_right_blue.svg | 2.1 | 2 |
 | images/icons/globe-outline.svg | 0.8 | 1 |
 | images/icons/heart-outline.png | 1.5 | 1 |
 | images/icons/heart.png | 1.3 | 2 |
+| images/icons/heart_filled.png | 2.1 | 1 |
 | images/icons/heart_filled.svg | 1.4 | 1 |
+| images/icons/heart_filled_active.png | 2 | 1 |
+| images/icons/heart_filled_blue.png | 5.4 | 3 |
 | images/icons/heart_filled_red.png | 0.8 | 3 |
 | images/icons/heart_filled_red.svg | 0.4 | 1 |
 | images/icons/home_filled.svg | 0.2 | 1 |
@@ -709,6 +705,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/star_gold.svg | 0.3 | 1 |
 | images/icons/star_outline_blue.svg | 1 | 1 |
 | images/icons/tick.svg | 0.3 | 4 |
+| images/icons/trophy.png | 2.2 | 1 |
+| images/icons/trophy_active.png | 2.2 | 1 |
 | images/icons/trophy_large.svg | 2.2 | 1 |
 | images/logos/IDEMS.png | 42.7 | 1 |
 | images/logos/PLH.png | 34.7 | 1 |
