@@ -38,13 +38,13 @@
       "id": "notice_1",
       "category_id": "notice",
       "nested": false,
-      "text_1_facilitator": "Este módulo toca temas sensibles, como el acoso o el abuso sexual. ⚠️\n\n\nSi te preocupa que @fields.child_name pueda estar en riesgo de sufrir daño, o que incluso ya lo haya sufrido, por favor visita la sección de Recursos para encontrar apoyo.\n\n\nTe recomendamos revisar este módulo tú primero, para después compartir las estrategias con @fields.child_name.",
+      "text_1_facilitator": "Antes de empezar ⚠️\n\nEste módulo toca temas sensibles, como el acoso o el abuso sexual.\n\n\nSi te preocupa que @fields.child_name pueda estar en riesgo de sufrir daño, o que incluso ya lo haya sufrido, por favor visita la sección de Recursos para encontrar apoyo.\n\n\nTe recomendamos revisar este módulo tú primero, para después compartir las estrategias con @fields.child_name.",
       "_translations": {
         "text_1_facilitator": {}
       },
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "Este módulo toca temas sensibles, como el acoso o el abuso sexual. ⚠️\n\n\nSi te preocupa que @fields.child_name pueda estar en riesgo de sufrir daño, o que incluso ya lo haya sufrido, por favor visita la sección de Recursos para encontrar apoyo.\n\n\nTe recomendamos revisar este módulo tú primero, para después compartir las estrategias con @fields.child_name."
+          "eng": "Antes de empezar ⚠️\n\nEste módulo toca temas sensibles, como el acoso o el abuso sexual.\n\n\nSi te preocupa que @fields.child_name pueda estar en riesgo de sufrir daño, o que incluso ya lo haya sufrido, por favor visita la sección de Recursos para encontrar apoyo.\n\n\nTe recomendamos revisar este módulo tú primero, para después compartir las estrategias con @fields.child_name."
         }
       }
     },
@@ -149,7 +149,7 @@
           "eng": "¡Última! Cualquier adolescente puede encontrarse en una situación de riesgo. Veamos si puedes identificar las señales de alerta en este escenario."
         },
         "text_2": {
-          "eng": "Imagina esta situación 💭:\n\n@data.characters.f1_hija_16.name va caminando por la calle. De repente, un muchacho le grita en la calle:  \n\"_Guapa, ¿a dónde vas tan rápido? ¿No quieres enseñarnos lo que hay debajo de esa falda?_\""
+          "eng": "Imagina esta situación 💭:\n\n@data.characters.f1_hija_16.name va caminando por la calle. De repente, un muchacho le grita:  \n\"_Guapa, ¿a dónde vas tan rápido? ¿No quieres enseñarnos lo que hay debajo de esa falda?_\""
         },
         "quiz_1_question": {
           "eng": "¿Qué le está haciendo el muchacho a @data.characters.f1_hija_16.name en esta situación?"
@@ -179,7 +179,7 @@
           "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nEsto es acoso callejero. Los comentarios sexuales o sobre el cuerpo de una persona no son un cumplido ni una broma. La persona que los recibe puede sentirse incómoda, insegura o con miedo.\n\nEs importante que las y los adolescentes aprendan a reconocer este tipo de conductas y sepan que no son una forma de mostrar interés o respeto."
         }
       },
-      "text_2": "Imagina esta situación 💭:\n\n@data.characters.f1_hija_16.name va caminando por la calle. De repente, un muchacho le grita en la calle:  \n\"_Guapa, ¿a dónde vas tan rápido? ¿No quieres enseñarnos lo que hay debajo de esa falda?_\"",
+      "text_2": "Imagina esta situación 💭:\n\n@data.characters.f1_hija_16.name va caminando por la calle. De repente, un muchacho le grita:  \n\"_Guapa, ¿a dónde vas tan rápido? ¿No quieres enseñarnos lo que hay debajo de esa falda?_\"",
       "quiz_1_question": "¿Qué le está haciendo el muchacho a @data.characters.f1_hija_16.name en esta situación?",
       "quiz_1_option_1_text": "Le hace un cumplido.",
       "quiz_1_feedback_1": "👀 ¡Ups! ¡Revisemos esta idea!\n\nEsto es acoso callejero. Los comentarios sexuales o sobre el cuerpo de una persona no son un cumplido ni una broma. La persona que los recibe puede sentirse incómoda, insegura o con miedo.\n\nEs importante que las y los adolescentes aprendan a reconocer este tipo de conductas y sepan que no son una forma de mostrar interés o respeto.",
@@ -194,8 +194,6 @@
       "id": "explore_1",
       "category_id": "explore",
       "media_type": "youtube",
-      "youtube_gb_en_f": "https://www.youtube.com/watch?v=BR7Zwybsl3s",
-      "youtube_gb_en_m": "https://www.youtube.com/watch?v=CZt6p_Ufzps",
       "nested": false,
       "text_1_facilitator": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo puedes enseñar a @fields.child_name a reconocer situaciones de riesgo y saber qué hacer si algo no se siente bien.\n\nEn este video te compartimos cuatro estrategias recomendadas por especialistas:\n\n1️⃣ IDENTIFICA\n2️⃣ DI QUE NO\n3️⃣ ALÉJATE\n4️⃣ CUÉNTALO",
       "_translations": {
@@ -210,7 +208,7 @@
     {
       "id": "explore_2",
       "category_id": "explore",
-      "image_asset": "images/comic/safety/sexual_violence/sexual_violence_t_m_1.svg",
+      "image_asset": "images/comic/safe_touch/sexual_violence_t_m_1.svg",
       "character_1_id": "profesor_1",
       "character_2_id": "f3_hijo_14",
       "nested": false,
@@ -242,7 +240,7 @@
     {
       "id": "explore_3",
       "category_id": "explore",
-      "image_asset": "images/comic/safety/sexual_violence/sexual_violence_t_m_2.svg",
+      "image_asset": "images/comic/safe_touch/sexual_violence_t_m_2.svg",
       "character_1_id": "f3_hijo_14",
       "character_2_id": "profesor_1",
       "character_3_id": "f3_hijo_14",
@@ -275,7 +273,7 @@
     {
       "id": "explore_4",
       "category_id": "explore",
-      "image_asset": "images/comic/safety/sexual_violence/sexual_violence_t_m_3.svg",
+      "image_asset": "images/comic/safety/safe_touch/sexual_violence_t_m_3.svg",
       "character_1_id": "f3_hijo_14",
       "nested": false,
       "text_2": "Luego, se acerca a donde hay más personas para mantenerse a salvo.",
@@ -296,7 +294,7 @@
     {
       "id": "explore_5",
       "category_id": "explore",
-      "image_asset": "images/comic/safety/sexual_violence/sexual_violence_t_m_4.svg",
+      "image_asset": "images/comic/safety/safe_touch/sexual_violence_t_m_4.svg",
       "character_1_id": "f3_hijo_14",
       "character_2_id": "f3_padre",
       "character_3_id": "f3_hijo_14",
@@ -329,7 +327,7 @@
     {
       "id": "explore_6",
       "category_id": "explore",
-      "image_asset": "images/comic/safety/sexual_violence/sexual_violence_t_m_5.svg",
+      "image_asset": "images/comic/safety/safe_touch/sexual_violence_t_m_5.svg",
       "character_1_id": "f3_padre",
       "character_2_id": "f3_hijo_14",
       "character_3_id": "f3_padre",

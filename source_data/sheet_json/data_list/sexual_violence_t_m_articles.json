@@ -23,7 +23,7 @@
     {
       "id": "notice_1",
       "category_id": "notice",
-      "text_1_facilitator::eng": "Este módulo toca temas sensibles, como el acoso o el abuso sexual. ⚠️\n\n\nSi te preocupa que @fields.child_name pueda estar en riesgo de sufrir daño, o que incluso ya lo haya sufrido, por favor visita la sección de Recursos para encontrar apoyo.\n\n\nTe recomendamos revisar este módulo tú primero, para después compartir las estrategias con @fields.child_name."
+      "text_1_facilitator::eng": "Antes de empezar ⚠️\n\nEste módulo toca temas sensibles, como el acoso o el abuso sexual.\n\n\nSi te preocupa que @fields.child_name pueda estar en riesgo de sufrir daño, o que incluso ya lo haya sufrido, por favor visita la sección de Recursos para encontrar apoyo.\n\n\nTe recomendamos revisar este módulo tú primero, para después compartir las estrategias con @fields.child_name."
     },
     {
       "id": "intro_4",
@@ -49,7 +49,7 @@
       "id": "intro_6",
       "category_id": "intro",
       "text_1_facilitator::eng": "¡Última! Cualquier adolescente puede encontrarse en una situación de riesgo. Veamos si puedes identificar las señales de alerta en este escenario.",
-      "text_2::eng": "Imagina esta situación 💭:\n\n@data.characters.f1_hija_16.name va caminando por la calle. De repente, un muchacho le grita en la calle:  \n\"_Guapa, ¿a dónde vas tan rápido? ¿No quieres enseñarnos lo que hay debajo de esa falda?_\"\n\n",
+      "text_2::eng": "Imagina esta situación 💭:\n\n@data.characters.f1_hija_16.name va caminando por la calle. De repente, un muchacho le grita:  \n\"_Guapa, ¿a dónde vas tan rápido? ¿No quieres enseñarnos lo que hay debajo de esa falda?_\"\n\n",
       "quiz_1_question::eng": "¿Qué le está haciendo el muchacho a @data.characters.f1_hija_16.name en esta situación?",
       "quiz_1_option_1_text::eng": "Le hace un cumplido.",
       "quiz_1_feedback_1::eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nEsto es acoso callejero. Los comentarios sexuales o sobre el cuerpo de una persona no son un cumplido ni una broma. La persona que los recibe puede sentirse incómoda, insegura o con miedo.\n\nEs importante que las y los adolescentes aprendan a reconocer este tipo de conductas y sepan que no son una forma de mostrar interés o respeto.",
@@ -64,15 +64,13 @@
       "id": "explore_1",
       "category_id": "explore",
       "text_1_facilitator::eng": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo puedes enseñar a @fields.child_name a reconocer situaciones de riesgo y saber qué hacer si algo no se siente bien.\n\nEn este video te compartimos cuatro estrategias recomendadas por especialistas:\n\n1️⃣ IDENTIFICA\n2️⃣ DI QUE NO\n3️⃣ ALÉJATE\n4️⃣ CUÉNTALO",
-      "media_type": "youtube",
-      "youtube_gb_en_f": "https://www.youtube.com/watch?v=BR7Zwybsl3s",
-      "youtube_gb_en_m": "https://www.youtube.com/watch?v=CZt6p_Ufzps"
+      "media_type": "youtube"
     },
     {
       "id": "explore_2",
       "category_id": "explore",
       "text_1_facilitator::eng": "Veamos cómo @data.characters.f3_hijo_14.name usa estas estrategias en la práctica:",
-      "image_asset": "images/comic/safety/sexual_violence/sexual_violence_t_m_1.svg",
+      "image_asset": "images/comic/safe_touch/sexual_violence_t_m_1.svg",
       "text_2::eng": "Un día, al terminar las clases, @data.characters.profesor_1.name se queda platicando a solas con @data.characters.f3_hijo_14.name. Mira cómo él identifica las señales de riesgo.",
       "character_1_id": "profesor_1",
       "character_1_text::eng": "@data.characters.f3_hijo_14.name, quédate un momento. Quiero hablar contigo a solas sobre tus calificaciones. No le comentes a nadie que te vas a quedar.",
@@ -82,7 +80,7 @@
     {
       "id": "explore_3",
       "category_id": "explore",
-      "image_asset": "images/comic/safety/sexual_violence/sexual_violence_t_m_2.svg",
+      "image_asset": "images/comic/safe_touch/sexual_violence_t_m_2.svg",
       "text_2::eng": "Fíjate cómo, a pesar de ser una figura de autoridad, él dice que no y se aleja inmediatamente.",
       "character_1_id": "f3_hijo_14",
       "character_1_text::eng": "No puedo quedarme. Prefiero que esté otra persona presente.",
@@ -94,7 +92,7 @@
     {
       "id": "explore_4",
       "category_id": "explore",
-      "image_asset": "images/comic/safety/sexual_violence/sexual_violence_t_m_3.svg",
+      "image_asset": "images/comic/safety/safe_touch/sexual_violence_t_m_3.svg",
       "text_2::eng": "Luego, se acerca a donde hay más personas para mantenerse a salvo.",
       "character_1_id": "f3_hijo_14",
       "character_1_text::eng": "(pensando) Voy a ir donde haya más personas y después se lo voy a contar a mi papá."
@@ -102,7 +100,7 @@
     {
       "id": "explore_5",
       "category_id": "explore",
-      "image_asset": "images/comic/safety/sexual_violence/sexual_violence_t_m_4.svg",
+      "image_asset": "images/comic/safety/safe_touch/sexual_violence_t_m_4.svg",
       "text_2::eng": "Más tarde, @data.characters.f3_hijo_14.name acude a su papá para contarle lo sucedido. Hablar sobre estos posibles riesgos con apertura ayuda a que las y los adolescentes sepan cómo protegerse. ",
       "character_1_id": "f3_hijo_14",
       "character_1_text::eng": "Mi maestro quería que me quedara solo con él. Me sentí incómodo, así que salí del salón.",
@@ -114,7 +112,7 @@
     {
       "id": "explore_6",
       "category_id": "explore",
-      "image_asset": "images/comic/safety/sexual_violence/sexual_violence_t_m_5.svg",
+      "image_asset": "images/comic/safety/safe_touch/sexual_violence_t_m_5.svg",
       "text_2::eng": "Observa cómo @data.characters.f3_padre.name escucha con atención y valida las emociones de su hijo. Además, le propone tomar medidas para hacerlo sentir seguro. ",
       "character_1_id": "f3_padre",
       "character_1_text::eng": "No hiciste nada malo. Lo más importante es tu seguridad. ¿Te parece bien que vayamos a la dirección de la escuela para que puedan protegerte y evitar que esto vuelva a pasar?",

@@ -153,12 +153,12 @@
       "id": "notice_1",
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "Este módulo toca temas sensibles, como el acoso o el abuso sexual. ⚠️\n\n\nSi te preocupa que @fields.child_name pueda estar en riesgo de sufrir daño, o que incluso ya lo haya sufrido, por favor visita la sección de Recursos para encontrar apoyo.\n\n\nTe recomendamos revisar este módulo tú primero, para después compartir las estrategias con @fields.child_name."
+          "eng": "Antes de empezar ⚠️\n\nEste módulo toca temas sensibles, como el acoso o el abuso sexual.\n\n\nSi te preocupa que @fields.child_name pueda estar en riesgo de sufrir daño, o que incluso ya lo haya sufrido, por favor visita la sección de Recursos para encontrar apoyo.\n\n\nTe recomendamos revisar este módulo tú primero, para después compartir las estrategias con @fields.child_name."
         }
       },
       "category_id": "notice",
       "nested": false,
-      "text_1_facilitator": "Este módulo toca temas sensibles, como el acoso o el abuso sexual. ⚠️\n\n\nSi te preocupa que @fields.child_name pueda estar en riesgo de sufrir daño, o que incluso ya lo haya sufrido, por favor visita la sección de Recursos para encontrar apoyo.\n\n\nTe recomendamos revisar este módulo tú primero, para después compartir las estrategias con @fields.child_name.",
+      "text_1_facilitator": "Antes de empezar ⚠️\n\nEste módulo toca temas sensibles, como el acoso o el abuso sexual.\n\n\nSi te preocupa que @fields.child_name pueda estar en riesgo de sufrir daño, o que incluso ya lo haya sufrido, por favor visita la sección de Recursos para encontrar apoyo.\n\n\nTe recomendamos revisar este módulo tú primero, para después compartir las estrategias con @fields.child_name.",
       "_translations": {
         "text_1_facilitator": {}
       },
@@ -254,7 +254,7 @@
           "eng": "¡Última! Cualquier adolescente puede encontrarse en una situación de riesgo. Veamos si puedes identificar las señales de alerta en este escenario."
         },
         "text_2": {
-          "eng": "Imagina esta situación 💭:\n\n@data.characters.f1_hija_16.name va caminando por la calle. De repente, un muchacho le grita en la calle:  \n\"_Guapa, ¿a dónde vas tan rápido? ¿No quieres enseñarnos lo que hay debajo de esa falda?_\""
+          "eng": "Imagina esta situación 💭:\n\n@data.characters.f1_hija_16.name va caminando por la calle. De repente, un muchacho le grita:  \n\"_Guapa, ¿a dónde vas tan rápido? ¿No quieres enseñarnos lo que hay debajo de esa falda?_\""
         },
         "quiz_1_question": {
           "eng": "¿Qué le está haciendo el muchacho a @data.characters.f1_hija_16.name en esta situación?"
@@ -309,7 +309,7 @@
       "quiz_1_option_3_text": "Le demuestra que le gusta.",
       "quiz_1_option_4_text": "Le hace una broma.",
       "text_1_facilitator": "¡Última! Cualquier adolescente puede encontrarse en una situación de riesgo. Veamos si puedes identificar las señales de alerta en este escenario.",
-      "text_2": "Imagina esta situación 💭:\n\n@data.characters.f1_hija_16.name va caminando por la calle. De repente, un muchacho le grita en la calle:  \n\"_Guapa, ¿a dónde vas tan rápido? ¿No quieres enseñarnos lo que hay debajo de esa falda?_\"",
+      "text_2": "Imagina esta situación 💭:\n\n@data.characters.f1_hija_16.name va caminando por la calle. De repente, un muchacho le grita:  \n\"_Guapa, ¿a dónde vas tan rápido? ¿No quieres enseñarnos lo que hay debajo de esa falda?_\"",
       "completed": false,
       "version": 1
     },
@@ -327,8 +327,6 @@
       "_translations": {
         "text_1_facilitator": {}
       },
-      "youtube_gb_en_f": "https://www.youtube.com/watch?v=BR7Zwybsl3s",
-      "youtube_gb_en_m": "https://www.youtube.com/watch?v=CZt6p_Ufzps",
       "completed": false,
       "version": 1
     },
@@ -358,7 +356,7 @@
         "character_2_text": {}
       },
       "text_2": "Un día, al terminar las clases, @data.characters.profesor_1.name se queda platicando a solas con @data.characters.f3_hijo_14.name. Mira cómo él identifica las señales de riesgo.",
-      "image_asset": "images/comic/safety/sexual_violence/sexual_violence_t_m_1.svg",
+      "image_asset": "images/comic/safe_touch/sexual_violence_t_m_1.svg",
       "character_1_id": "profesor_1",
       "character_2_id": "f3_hijo_14",
       "character_1_text": "@data.characters.f3_hijo_14.name, quédate un momento. Quiero hablar contigo a solas sobre tus calificaciones. No le comentes a nadie que te vas a quedar.",
@@ -391,7 +389,7 @@
         "character_2_text": {},
         "character_3_text": {}
       },
-      "image_asset": "images/comic/safety/sexual_violence/sexual_violence_t_m_2.svg",
+      "image_asset": "images/comic/safe_touch/sexual_violence_t_m_2.svg",
       "character_1_id": "f3_hijo_14",
       "character_2_id": "profesor_1",
       "character_1_text": "No puedo quedarme. Prefiero que esté otra persona presente.",
@@ -418,7 +416,7 @@
         "text_2": {},
         "character_1_text": {}
       },
-      "image_asset": "images/comic/safety/sexual_violence/sexual_violence_t_m_3.svg",
+      "image_asset": "images/comic/safety/safe_touch/sexual_violence_t_m_3.svg",
       "character_1_id": "f3_hijo_14",
       "character_1_text": "(pensando) Voy a ir donde haya más personas y después se lo voy a contar a mi papá.",
       "completed": false,
@@ -449,7 +447,7 @@
         "character_2_text": {},
         "character_3_text": {}
       },
-      "image_asset": "images/comic/safety/sexual_violence/sexual_violence_t_m_4.svg",
+      "image_asset": "images/comic/safety/safe_touch/sexual_violence_t_m_4.svg",
       "character_1_id": "f3_hijo_14",
       "character_2_id": "f3_padre",
       "character_1_text": "Mi maestro quería que me quedara solo con él. Me sentí incómodo, así que salí del salón.",
@@ -484,7 +482,7 @@
         "character_2_text": {},
         "character_3_text": {}
       },
-      "image_asset": "images/comic/safety/sexual_violence/sexual_violence_t_m_5.svg",
+      "image_asset": "images/comic/safety/safe_touch/sexual_violence_t_m_5.svg",
       "character_1_id": "f3_padre",
       "character_2_id": "f3_hijo_14",
       "character_1_text": "No hiciste nada malo. Lo más importante es tu seguridad. ¿Te parece bien que vayamos a la dirección de la escuela para que puedan protegerte y evitar que esto vuelva a pasar?",

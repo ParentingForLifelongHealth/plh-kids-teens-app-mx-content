@@ -23,12 +23,12 @@
     {
       "id": "notice_1",
       "category_id": "notice",
-      "text_1_facilitator::eng": "Este módulo puede incluir temas sensibles para ti y @fields.child_name, como el abuso sexual.⚠️\n\n\nSi necesitas apoyo adicional o información sobre el tema, visita la sección de Recursos."
+      "text_1_facilitator::eng": "Antes de empezar ⚠️\n\nEste módulo puede incluir temas sensibles para ti y @fields.child_name, como el abuso sexual.\n\n\nSi necesitas apoyo adicional o información sobre el tema, visita la sección de Recursos."
     },
     {
       "id": "intro_4",
       "category_id": "intro",
-      "text_1_facilitator::eng": "Antes de empezar, reflexionemos un momento📝",
+      "text_1_facilitator::eng": "Ahora sí, reflexionemos un momento📝",
       "quiz_1_question::eng": "Verdadero o falso: Si noto que @fields.child_name está diferente o parece tener un problema, es mejor no preguntar para no incomodarle.",
       "quiz_1_option_1_text::eng": "Verdadero",
       "quiz_1_feedback_1::eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nMostrar interés y preguntarle con calma cómo está le recuerda que puede acercarse a ti cuando lo necesite. \n\n@fields.child_name puede necesitar tiempo para hablar. Lo importante es escuchar sin presionar ni juzgar.",
@@ -39,9 +39,7 @@
       "id": "explore_1",
       "category_id": "explore",
       "text_1_facilitator::eng": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo puedes apoyar a @fields.child_name cuando comparta algo difícil contigo.\n\nEn este video te compartimos cuatro estrategias recomendadas por especialistas:\n\n1️⃣ RESPIRA\n2️⃣ ESCUCHA\n3️⃣ VALIDA\n4️⃣ PROTEGE",
-      "media_type": "youtube",
-      "youtube_gb_en_f": "https://www.youtube.com/watch?v=jdFUjcXHWBQ",
-      "youtube_gb_en_m": "https://www.youtube.com/watch?v=GQycA0U7usY"
+      "media_type": "youtube"
     },
     {
       "id": "explore_2",
@@ -99,6 +97,8 @@
       "character_2_text::eng": "Sí, claro. Podríamos contarle a tu papá y conseguir apoyo de una clínica o alguna persona especialista. "
     },
     {
+      "id": "explore_7",
+      "category_id": "explore",
       "image_asset": "images/comic/safety/crises/crises_t_f_4.svg",
       "character_1_id": "f2_hija_13",
       "character_1_text::eng": "Gracias, mamá.",
