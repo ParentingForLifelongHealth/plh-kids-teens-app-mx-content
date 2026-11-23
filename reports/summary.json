@@ -27,7 +27,7 @@
       },
       {
         "type": "button",
-        "count": 140
+        "count": 141
       },
       {
         "type": "combo_box",
@@ -35,7 +35,7 @@
       },
       {
         "type": "data_items",
-        "count": 251
+        "count": 250
       },
       {
         "type": "date_time_picker",
@@ -51,7 +51,7 @@
       },
       {
         "type": "display_group",
-        "count": 148
+        "count": 146
       },
       {
         "type": "drawer",
@@ -63,7 +63,7 @@
       },
       {
         "type": "image",
-        "count": 29
+        "count": 28
       },
       {
         "type": "items",
@@ -103,7 +103,7 @@
       },
       {
         "type": "plh_get_up_next",
-        "count": 2
+        "count": 1
       },
       {
         "type": "plh_lesson_cta",
@@ -135,11 +135,11 @@
       },
       {
         "type": "radio_list",
-        "count": 10
+        "count": 12
       },
       {
         "type": "round_button",
-        "count": 34
+        "count": 35
       },
       {
         "type": "select_text",
@@ -151,7 +151,7 @@
       },
       {
         "type": "set_variable",
-        "count": 5241
+        "count": 5226
       },
       {
         "type": "simple_checkbox",
@@ -167,11 +167,11 @@
       },
       {
         "type": "template",
-        "count": 826
+        "count": 822
       },
       {
         "type": "text",
-        "count": 331
+        "count": 324
       },
       {
         "type": "text_area",
@@ -183,11 +183,11 @@
       },
       {
         "type": "text_bubble",
-        "count": 33
+        "count": 34
       },
       {
         "type": "title",
-        "count": 74
+        "count": 73
       },
       {
         "type": "toggle_bar",
@@ -259,7 +259,7 @@
       },
       {
         "type": "emit: uncompleted",
-        "count": 182
+        "count": 183
       },
       {
         "type": "feedback",
@@ -307,7 +307,7 @@
       },
       {
         "type": "set_field",
-        "count": 534
+        "count": 535
       },
       {
         "type": "set_item",
@@ -315,7 +315,7 @@
       },
       {
         "type": "set_local",
-        "count": 719
+        "count": 717
       },
       {
         "type": "share",
@@ -335,17 +335,41 @@
       }
     ]
   },
+  "app_size_on_device": {
+    "data": [
+      {
+        "item": "App code (estimate)",
+        "download": "-",
+        "on_device": "16.2 MB"
+      },
+      {
+        "item": "App content (sheets and translations)",
+        "download": "-",
+        "on_device": "16.8 MB"
+      },
+      {
+        "item": "Bundled assets",
+        "download": "-",
+        "on_device": "108.7 MB"
+      },
+      {
+        "item": "Total",
+        "download": "-",
+        "on_device": "141.7 MB"
+      }
+    ]
+  },
   "assets_size": {
     "data": [
       {
         "assets": "total",
-        "KB": "92211 KB",
-        "MB": "92.2 MB"
+        "KB": "96907 KB",
+        "MB": "96.9 MB"
       },
       {
         "assets": "unused",
-        "KB": "15537 KB",
-        "MB": "15.5 MB"
+        "KB": "11820 KB",
+        "MB": "11.8 MB"
       }
     ]
   },
@@ -354,10 +378,6 @@
       {
         "path": "certificates/Certificate1_Fortalecer_relacion.png",
         "size_kb": 287.5
-      },
-      {
-        "path": "images/backgrounds/CTA_button.png",
-        "size_kb": 7
       },
       {
         "path": "images/backgrounds/FOOTER3E.png",
@@ -432,40 +452,24 @@
         "size_kb": 82.6
       },
       {
-        "path": "images/comic/mental_health/pleasant_emotions/pleasant_emotions_1.svg",
-        "size_kb": 694.3
-      },
-      {
-        "path": "images/comic/mental_health/pleasant_emotions/pleasant_emotions_2.svg",
-        "size_kb": 984.4
-      },
-      {
-        "path": "images/comic/mental_health/pleasant_emotions/pleasant_emotions_3.svg",
-        "size_kb": 1013.3
-      },
-      {
-        "path": "images/comic/mental_health/pleasant_emotions/pleasant_emotions_4.svg",
-        "size_kb": 1002.3
-      },
-      {
-        "path": "images/comic/mental_health/thoughts_feelings/thoughts_feelings_1.svg",
-        "size_kb": 38.8
-      },
-      {
-        "path": "images/comic/mental_health/thoughts_feelings/thoughts_feelings_2.svg",
-        "size_kb": 18.7
-      },
-      {
-        "path": "images/comic/mental_health/thoughts_feelings/thoughts_feelings_3.svg",
-        "size_kb": 37
-      },
-      {
-        "path": "images/comic/mental_health/thoughts_feelings/thoughts_feelings_4.svg",
-        "size_kb": 39
-      },
-      {
         "path": "images/comic/safety/com_safe/com_safe_2to4_yc_2.svg.svg",
         "size_kb": 525.7
+      },
+      {
+        "path": "images/comic/safety/online_p2/online_p2_5yo9_yc_1.svg",
+        "size_kb": 29.2
+      },
+      {
+        "path": "images/comic/safety/online_p2/online_p2_5yo9_yc_2.svg",
+        "size_kb": 28.8
+      },
+      {
+        "path": "images/comic/safety/online_p2/online_p2_5yo9_yc_3.svg",
+        "size_kb": 29.7
+      },
+      {
+        "path": "images/comic/safety/online_p2/online_p2_5yo9_yc_4.svg",
+        "size_kb": 29.9
       },
       {
         "path": "images/comic/safety/safe_touch/safe_touch_6to9_yc_f_2-01.svg",
@@ -1024,46 +1028,6 @@
         "missing": true
       },
       {
-        "path": "images/comic/mental_health/pleasant_emotions_1.svg",
-        "count": 2,
-        "missing": true
-      },
-      {
-        "path": "images/comic/mental_health/pleasant_emotions_2.svg",
-        "count": 4,
-        "missing": true
-      },
-      {
-        "path": "images/comic/mental_health/pleasant_emotions_3.svg",
-        "count": 2,
-        "missing": true
-      },
-      {
-        "path": "images/comic/mental_health/pleasant_emotions_4.svg",
-        "count": 4,
-        "missing": true
-      },
-      {
-        "path": "images/comic/mental_health/thoughts_feelings_1.svg",
-        "count": 4,
-        "missing": true
-      },
-      {
-        "path": "images/comic/mental_health/thoughts_feelings_2.svg",
-        "count": 4,
-        "missing": true
-      },
-      {
-        "path": "images/comic/mental_health/thoughts_feelings_3.svg",
-        "count": 4,
-        "missing": true
-      },
-      {
-        "path": "images/comic/mental_health/thoughts_feelings_4.svg",
-        "count": 8,
-        "missing": true
-      },
-      {
         "path": "images/comic/safe_touch/sexual_violence_t_m_1.svg",
         "count": 2,
         "missing": true
@@ -1099,56 +1063,6 @@
         "missing": true
       },
       {
-        "path": "images/comic/safety/online_p1/online_p1_2to4_yc_1.svg",
-        "count": 4,
-        "missing": true
-      },
-      {
-        "path": "images/comic/safety/online_p1/online_p1_2to4_yc_2.svg",
-        "count": 4,
-        "missing": true
-      },
-      {
-        "path": "images/comic/safety/online_p1/online_p1_2to4_yc_3.svg",
-        "count": 4,
-        "missing": true
-      },
-      {
-        "path": "images/comic/safety/online_p1/online_p1_5to9_yc_1.svg",
-        "count": 2,
-        "missing": true
-      },
-      {
-        "path": "images/comic/safety/online_p1/online_p1_5to9_yc_2.svg",
-        "count": 2,
-        "missing": true
-      },
-      {
-        "path": "images/comic/safety/online_p1/online_p1_5to9_yc_3.svg",
-        "count": 4,
-        "missing": true
-      },
-      {
-        "path": "images/comic/safety/online_p1/online_p1_5to9_yc_4.svg",
-        "count": 2,
-        "missing": true
-      },
-      {
-        "path": "images/comic/safety/online_p2/online_p2_2to4_yc_1.svg",
-        "count": 2,
-        "missing": true
-      },
-      {
-        "path": "images/comic/safety/online_p2/online_p2_2to4_yc_2.svg",
-        "count": 2,
-        "missing": true
-      },
-      {
-        "path": "images/comic/safety/online_p2/online_p2_2to4_yc_3.svg",
-        "count": 4,
-        "missing": true
-      },
-      {
         "path": "images/comic/safety/online_p2/online_p2_5to9_yc_1.svg",
         "count": 2,
         "missing": true
@@ -1166,86 +1080,6 @@
       {
         "path": "images/comic/safety/online_p2/online_p2_5to9_yc_4.svg",
         "count": 4,
-        "missing": true
-      },
-      {
-        "path": "images/comic/safety/online_safety_p1/online_safety_p1_t_f_1.svg",
-        "count": 2,
-        "missing": true
-      },
-      {
-        "path": "images/comic/safety/online_safety_p1/online_safety_p1_t_f_2.svg",
-        "count": 4,
-        "missing": true
-      },
-      {
-        "path": "images/comic/safety/online_safety_p1/online_safety_p1_t_f_3.svg",
-        "count": 4,
-        "missing": true
-      },
-      {
-        "path": "images/comic/safety/online_safety_p1/online_safety_p1_t_f_4.svg",
-        "count": 4,
-        "missing": true
-      },
-      {
-        "path": "images/comic/safety/online_safety_p1/online_safety_p1_t_m_1.svg",
-        "count": 2,
-        "missing": true
-      },
-      {
-        "path": "images/comic/safety/online_safety_p1/online_safety_p1_t_m_2.svg",
-        "count": 4,
-        "missing": true
-      },
-      {
-        "path": "images/comic/safety/online_safety_p1/online_safety_p1_t_m_3.svg",
-        "count": 4,
-        "missing": true
-      },
-      {
-        "path": "images/comic/safety/online_safety_p1/online_safety_p1_t_m_4.svg",
-        "count": 4,
-        "missing": true
-      },
-      {
-        "path": "images/comic/safety/online_safety_p2/online_safety_p2_t_f_1.svg",
-        "count": 2,
-        "missing": true
-      },
-      {
-        "path": "images/comic/safety/online_safety_p2/online_safety_p2_t_f_2.svg",
-        "count": 4,
-        "missing": true
-      },
-      {
-        "path": "images/comic/safety/online_safety_p2/online_safety_p2_t_f_3.svg",
-        "count": 4,
-        "missing": true
-      },
-      {
-        "path": "images/comic/safety/online_safety_p2/online_safety_p2_t_f_4.svg",
-        "count": 2,
-        "missing": true
-      },
-      {
-        "path": "images/comic/safety/online_safety_p2/online_safety_p2_t_m_1.svg",
-        "count": 2,
-        "missing": true
-      },
-      {
-        "path": "images/comic/safety/online_safety_p2/online_safety_p2_t_m_2.svg",
-        "count": 4,
-        "missing": true
-      },
-      {
-        "path": "images/comic/safety/online_safety_p2/online_safety_p2_t_m_3.svg",
-        "count": 4,
-        "missing": true
-      },
-      {
-        "path": "images/comic/safety/online_safety_p2/online_safety_p2_t_m_4.svg",
-        "count": 2,
         "missing": true
       },
       {
@@ -1440,7 +1274,7 @@
       {
         "path": "images/backgrounds/lesson-cta-bg.svg",
         "count": 4,
-        "size_kb": 8.3
+        "size_kb": 13.1
       },
       {
         "path": "images/backgrounds/library_top_right.png",
@@ -1838,6 +1672,26 @@
         "size_kb": 44.6
       },
       {
+        "path": "images/comic/mental_health/pleasant_emotions/pleasant_emotions_1.svg",
+        "count": 2,
+        "size_kb": 694.3
+      },
+      {
+        "path": "images/comic/mental_health/pleasant_emotions/pleasant_emotions_2.svg",
+        "count": 4,
+        "size_kb": 984.4
+      },
+      {
+        "path": "images/comic/mental_health/pleasant_emotions/pleasant_emotions_3.svg",
+        "count": 2,
+        "size_kb": 1013.3
+      },
+      {
+        "path": "images/comic/mental_health/pleasant_emotions/pleasant_emotions_4.svg",
+        "count": 4,
+        "size_kb": 1002.3
+      },
+      {
         "path": "images/comic/mental_health/self_talk/self_talk_1.svg",
         "count": 4,
         "size_kb": 102.7
@@ -1856,6 +1710,26 @@
         "path": "images/comic/mental_health/self_talk/self_talk_4.svg",
         "count": 4,
         "size_kb": 98.6
+      },
+      {
+        "path": "images/comic/mental_health/thoughts_feelings/thoughts_feelings_1.svg",
+        "count": 4,
+        "size_kb": 38.8
+      },
+      {
+        "path": "images/comic/mental_health/thoughts_feelings/thoughts_feelings_2.svg",
+        "count": 4,
+        "size_kb": 18.7
+      },
+      {
+        "path": "images/comic/mental_health/thoughts_feelings/thoughts_feelings_3.svg",
+        "count": 4,
+        "size_kb": 37
+      },
+      {
+        "path": "images/comic/mental_health/thoughts_feelings/thoughts_feelings_4.svg",
+        "count": 8,
+        "size_kb": 39
       },
       {
         "path": "images/comic/relation/calm/calm_t_fc_1.svg",
@@ -2451,6 +2325,136 @@
         "path": "images/comic/safety/crises/crises_t_m_4.svg",
         "count": 4,
         "size_kb": 22
+      },
+      {
+        "path": "images/comic/safety/online_p1/online_p1_2to4_yc_1.svg",
+        "count": 4,
+        "size_kb": 32.7
+      },
+      {
+        "path": "images/comic/safety/online_p1/online_p1_2to4_yc_2.svg",
+        "count": 4,
+        "size_kb": 46
+      },
+      {
+        "path": "images/comic/safety/online_p1/online_p1_2to4_yc_3.svg",
+        "count": 4,
+        "size_kb": 46.1
+      },
+      {
+        "path": "images/comic/safety/online_p1/online_p1_5to9_yc_1.svg",
+        "count": 2,
+        "size_kb": 26.8
+      },
+      {
+        "path": "images/comic/safety/online_p1/online_p1_5to9_yc_2.svg",
+        "count": 2,
+        "size_kb": 23.8
+      },
+      {
+        "path": "images/comic/safety/online_p1/online_p1_5to9_yc_3.svg",
+        "count": 4,
+        "size_kb": 26.1
+      },
+      {
+        "path": "images/comic/safety/online_p1/online_p1_5to9_yc_4.svg",
+        "count": 2,
+        "size_kb": 16.9
+      },
+      {
+        "path": "images/comic/safety/online_p1/online_safety_p1_t_f_1.svg",
+        "count": 2,
+        "size_kb": 27.7
+      },
+      {
+        "path": "images/comic/safety/online_p1/online_safety_p1_t_f_2.svg",
+        "count": 4,
+        "size_kb": 28.7
+      },
+      {
+        "path": "images/comic/safety/online_p1/online_safety_p1_t_f_3.svg",
+        "count": 4,
+        "size_kb": 27.9
+      },
+      {
+        "path": "images/comic/safety/online_p1/online_safety_p1_t_f_4.svg",
+        "count": 4,
+        "size_kb": 27.7
+      },
+      {
+        "path": "images/comic/safety/online_p1/online_safety_p1_t_m_1.svg",
+        "count": 2,
+        "size_kb": 28.5
+      },
+      {
+        "path": "images/comic/safety/online_p1/online_safety_p1_t_m_2.svg",
+        "count": 4,
+        "size_kb": 28.5
+      },
+      {
+        "path": "images/comic/safety/online_p1/online_safety_p1_t_m_3.svg",
+        "count": 4,
+        "size_kb": 27.7
+      },
+      {
+        "path": "images/comic/safety/online_p1/online_safety_p1_t_m_4.svg",
+        "count": 4,
+        "size_kb": 28
+      },
+      {
+        "path": "images/comic/safety/online_p2/online_p2_2to4_yc_1.svg",
+        "count": 2,
+        "size_kb": 30.6
+      },
+      {
+        "path": "images/comic/safety/online_p2/online_p2_2to4_yc_2.svg",
+        "count": 2,
+        "size_kb": 35.6
+      },
+      {
+        "path": "images/comic/safety/online_p2/online_p2_2to4_yc_3.svg",
+        "count": 4,
+        "size_kb": 26.7
+      },
+      {
+        "path": "images/comic/safety/online_p2/online_safety_p2_t_f_1.svg",
+        "count": 2,
+        "size_kb": 52.7
+      },
+      {
+        "path": "images/comic/safety/online_p2/online_safety_p2_t_f_2.svg",
+        "count": 4,
+        "size_kb": 52
+      },
+      {
+        "path": "images/comic/safety/online_p2/online_safety_p2_t_f_3.svg",
+        "count": 4,
+        "size_kb": 36.6
+      },
+      {
+        "path": "images/comic/safety/online_p2/online_safety_p2_t_f_4.svg",
+        "count": 2,
+        "size_kb": 36.1
+      },
+      {
+        "path": "images/comic/safety/online_p2/online_safety_p2_t_m_1.svg",
+        "count": 2,
+        "size_kb": 45.3
+      },
+      {
+        "path": "images/comic/safety/online_p2/online_safety_p2_t_m_2.svg",
+        "count": 4,
+        "size_kb": 44.6
+      },
+      {
+        "path": "images/comic/safety/online_p2/online_safety_p2_t_m_3.svg",
+        "count": 4,
+        "size_kb": 30.3
+      },
+      {
+        "path": "images/comic/safety/online_p2/online_safety_p2_t_m_4.svg",
+        "count": 2,
+        "size_kb": 29.8
       },
       {
         "path": "images/comic/safety/safe_touch/safe_touch_2to5_yc_f_1.svg",
@@ -3463,22 +3467,27 @@
       },
       {
         "type": "data_list",
-        "subtype": "modules_ipv_conflicts_m",
-        "total": 1
-      },
-      {
-        "type": "data_list",
         "subtype": "modules_ipv_conflicts_mc",
         "total": 1
       },
       {
         "type": "data_list",
-        "subtype": "modules_ipv_equals_m",
+        "subtype": "modules_ipv_equals_fc",
         "total": 1
       },
       {
         "type": "data_list",
-        "subtype": "modules_ipv_listen_m",
+        "subtype": "modules_ipv_equals_mc",
+        "total": 1
+      },
+      {
+        "type": "data_list",
+        "subtype": "modules_ipv_listen_fc",
+        "total": 1
+      },
+      {
+        "type": "data_list",
+        "subtype": "modules_ipv_listen_mc",
         "total": 1
       },
       {
@@ -3488,17 +3497,12 @@
       },
       {
         "type": "data_list",
-        "subtype": "modules_ipv_sharing_m",
-        "total": 1
-      },
-      {
-        "type": "data_list",
         "subtype": "modules_ipv_sharing_mc",
         "total": 1
       },
       {
         "type": "data_list",
-        "subtype": "modules_ipv_supportive_m",
+        "subtype": "modules_ipv_supportive_fc",
         "total": 1
       },
       {
@@ -3759,7 +3763,7 @@
       {
         "type": "global",
         "subtype": "onboarding",
-        "total": 17
+        "total": 18
       },
       {
         "type": "global",

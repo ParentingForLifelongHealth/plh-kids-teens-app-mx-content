@@ -221,9 +221,6 @@
         },
         "character_2_text": {
           "eng": "Ah, me pidió permiso para ir a casa de su amiga y le dije que sí."
-        },
-        "character_3_text": {
-          "eng": "Pensé que habíamos quedado en que entre semana no salía."
         }
       },
       "category_id": "explore",
@@ -233,17 +230,14 @@
         "text_1_facilitator": {},
         "text_2": {},
         "character_1_text": {},
-        "character_2_text": {},
-        "character_3_text": {}
+        "character_2_text": {}
       },
       "image_asset": "images/comic/ipv/equals/equals_1.svg",
       "character_1_id": "f3_madre",
       "character_2_id": "f3_padre",
-      "character_3_id": "f3_madre",
       "text_2": "Frecuentemente surgen problemas de comunicación cuando alguien toma una decisión sin consultarlo primero con las otras personas involucradas en la crianza.",
       "character_1_text": "¿A dónde va @data.characters.f3_hijo_14.name?",
       "character_2_text": "Ah, me pidió permiso para ir a casa de su amiga y le dije que sí.",
-      "character_3_text": "Pensé que habíamos quedado en que entre semana no salía.",
       "completed": false,
       "version": 1
     },
@@ -251,17 +245,23 @@
       "id": "explore_3",
       "_translatedFields": {
         "character_1_text": {
+          "eng": "Pensé que habíamos quedado en que entre semana no salía."
+        },
+        "character_2_text": {
           "eng": "No sabía que habían hablado de eso."
         }
       },
       "category_id": "explore",
       "nested": false,
       "image_asset": "images/comic/ipv/equals/equals_1.svg",
-      "character_1_id": "f3_padre",
-      "character_1_text": "No sabía que habían hablado de eso.",
+      "character_1_id": "f3_madre",
+      "character_2_id": "f3_padre",
+      "character_1_text": "Pensé que habíamos quedado en que entre semana no salía.",
       "_translations": {
-        "character_1_text": {}
+        "character_1_text": {},
+        "character_2_text": {}
       },
+      "character_2_text": "No sabía que habían hablado de eso.",
       "completed": false,
       "version": 1
     },
@@ -315,7 +315,6 @@
       "image_asset": "images/comic/ipv/equals/equals_3.svg",
       "character_1_id": "f3_madre",
       "character_2_id": "f3_padre",
-      "character_3_id": "f3_madre",
       "text_2": "Más tarde, @data.characters.f3_madre.name y @data.characters.f3_padre.name están más tranquilos para hablar. Observa cómo hablan sin culparse, usando frases como “me preocupa” o “me gustaría” para expresar lo que piensan.",
       "_translations": {
         "text_2": {},
@@ -325,6 +324,7 @@
       },
       "character_1_text": "Creo que necesitamos hablar sobre cómo vamos a manejar las salidas entre semana.",
       "character_2_text": "Sí. Yo pude haber preguntado antes de darle permiso. Me preocupa que tomemos decisiones diferentes.",
+      "character_3_id": "f3_madre",
       "character_3_text": "Sí. ¿Qué les parece si hablamos los tres y vemos qué podemos hacer con las salidas entre semana?",
       "completed": false,
       "version": 1
@@ -376,7 +376,6 @@
       "image_asset": "images/comic/ipv/equals/equals_4.svg",
       "character_1_id": "f3_padre",
       "character_2_id": "f3_madre",
-      "character_3_id": "f3_hijo_14",
       "character_1_text": "Creo que en esos casos podemos hacer una excepción, siempre que nos avises primero.",
       "_translations": {
         "character_1_text": {},
@@ -384,6 +383,7 @@
         "character_3_text": {}
       },
       "character_2_text": "A mí me parece bien. ¿Quedamos así?",
+      "character_3_id": "f3_hijo_14",
       "character_3_text": "¡Va!",
       "completed": false,
       "version": 1

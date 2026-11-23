@@ -113,7 +113,7 @@
       "type": "begin_display_group",
       "name": "upcoming_title",
       "parameter_list": "style: column",
-      "condition": "filter: !@item.core && !@item.completed && (!@item.tag_list || @item.tag_list.includes(@fields.child_age_tag)) && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.user_gender_list || @item.user_gender_list.includes(@fields.user_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship));"
+      "condition": "@local.has_core_course > 0 && @local.has_other_course > 0 && (!!@global.lock_course_title || !!@global.lock_course_text)"
     },
     {
       "type": "title",
@@ -170,7 +170,24 @@
       "exclude_from_translation": true
     },
     {
-      "comments": "must have completed something"
+      "type": "begin_display_group",
+      "name": "completed_title",
+      "parameter_list": "style: column",
+      "condition": "@item._first"
+    },
+    {
+      "type": "title",
+      "value": "@global.complete_course_title",
+      "condition": "!!@global.complete_course_title"
+    },
+    {
+      "type": "text",
+      "value": "@global.complete_course_text",
+      "condition": "!!@global.complete_course_text"
+    },
+    {
+      "type": "end_display_group",
+      "comments": "filter: !([@local.courses_not_done].includes(@item.id))"
     },
     {
       "type": "begin_data_items",
@@ -179,24 +196,6 @@
       "parameter_list": "filter: !!@item.completed",
       "exclude_from_translation": true,
       "comments": "filter: !([@local.courses_list].includes(@item.id))"
-    },
-    {
-      "type": "begin_display_group",
-      "name": "completed_title",
-      "parameter_list": "style: column",
-      "condition": "@item._first"
-    },
-    {
-      "type": "title",
-      "value": "@global.complete_course_title"
-    },
-    {
-      "type": "text",
-      "value": "@global.complete_course_text"
-    },
-    {
-      "type": "end_display_group",
-      "comments": "filter: !([@local.courses_not_done].includes(@item.id))"
     },
     {
       "type": "begin_template",
