@@ -1,10 +1,10 @@
 {
   "flow_type": "data_list",
-  "flow_name": "ipv_equals_mc_articles",
-  "data_list_name": "ipv_equals_mc_articles",
+  "flow_name": "ipv_equals_fc_articles",
+  "data_list_name": "ipv_equals_fc_articles",
   "status": "released",
-  "flow_subtype": "modules_ipv_equals_m",
-  "module": "ipv_equals_mc",
+  "flow_subtype": "modules_ipv_equals_fc",
+  "module": "ipv_equals_fc",
   "rows": [
     {
       "id": "intro_1",
@@ -94,19 +94,17 @@
       "image_asset": "images/comic/ipv/equals/equals_1.svg",
       "character_1_id": "f3_madre",
       "character_2_id": "f3_padre",
-      "character_3_id": "f3_madre",
       "nested": false,
-      "text_1_facilitator": "Veamos cómo @data.characters.f3_padre.name y @data.characters.f3_madre.name usan estas estrategias en la práctica:",
+      "text_1_facilitator": "Veamos cómo @data.characters.f3_madre.name y @data.characters.f3_padre.name usan estas estrategias en la práctica:",
       "_translations": {
         "text_1_facilitator": {},
         "text_2": {},
         "character_1_text": {},
-        "character_2_text": {},
-        "character_3_text": {}
+        "character_2_text": {}
       },
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "Veamos cómo @data.characters.f3_padre.name y @data.characters.f3_madre.name usan estas estrategias en la práctica:"
+          "eng": "Veamos cómo @data.characters.f3_madre.name y @data.characters.f3_padre.name usan estas estrategias en la práctica:"
         },
         "text_2": {
           "eng": "Frecuentemente surgen problemas de comunicación cuando alguien toma una decisión sin consultarlo primero con las otras personas involucradas en la crianza."
@@ -116,31 +114,33 @@
         },
         "character_2_text": {
           "eng": "Ah, me pidió permiso para ir a casa de su amiga y le dije que sí."
-        },
-        "character_3_text": {
-          "eng": "Pensé que habíamos quedado en que entre semana no salía."
         }
       },
       "text_2": "Frecuentemente surgen problemas de comunicación cuando alguien toma una decisión sin consultarlo primero con las otras personas involucradas en la crianza.",
       "character_1_text": "¿A dónde va @data.characters.f3_hijo_14.name?",
-      "character_2_text": "Ah, me pidió permiso para ir a casa de su amiga y le dije que sí.",
-      "character_3_text": "Pensé que habíamos quedado en que entre semana no salía."
+      "character_2_text": "Ah, me pidió permiso para ir a casa de su amiga y le dije que sí."
     },
     {
       "id": "explore_3",
       "category_id": "explore",
       "image_asset": "images/comic/ipv/equals/equals_1.svg",
-      "character_1_id": "f3_padre",
+      "character_1_id": "f3_madre",
+      "character_2_id": "f3_padre",
       "nested": false,
-      "character_1_text": "No sabía que habían hablado de eso.",
+      "character_1_text": "Pensé que habíamos quedado en que entre semana no salía.",
       "_translations": {
-        "character_1_text": {}
+        "character_1_text": {},
+        "character_2_text": {}
       },
       "_translatedFields": {
         "character_1_text": {
+          "eng": "Pensé que habíamos quedado en que entre semana no salía."
+        },
+        "character_2_text": {
           "eng": "No sabía que habían hablado de eso."
         }
-      }
+      },
+      "character_2_text": "No sabía que habían hablado de eso."
     },
     {
       "id": "explore_4",
@@ -319,13 +319,13 @@
       "id": "notice_1",
       "category_id": "notice",
       "nested": false,
-      "text_1_facilitator": "⚠️ Antes de ponerlo en práctica\n\nLas estrategias compartidas en este curso son para situaciones en donde las personas pueden hablar de forma segura entre sí.\n\n\nSi alguna vez sientes miedo, recibes amenazas, te humillan, te controlan o alguien te lastima físicamente, no intentes aplicar estas estrategias con esa persona.\n\n\nSi reconoces que estás actuando de forma violenta o haciendo que la otra persona se sienta insegura, también es importante buscar apoyo. \n\n\nEn ambos casos, puedes encontrar orientación en la sección de Recursos.",
+      "text_1_facilitator": "⚠️ Antes de ponerlo en práctica\n\nLas estrategias compartidas en este curso son para situaciones en donde las personas pueden hablar de forma segura entre sí.\n\n\nSi alguna vez sientes miedo, recibes amenazas, te humillan, te controlan o alguien te lastima físicamente, no intentes aplicar estas estrategias con esa persona. \n\n\nTu seguridad es lo primero: visita la sección de Recursos para encontrar apoyo.",
       "_translations": {
         "text_1_facilitator": {}
       },
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "⚠️ Antes de ponerlo en práctica\n\nLas estrategias compartidas en este curso son para situaciones en donde las personas pueden hablar de forma segura entre sí.\n\n\nSi alguna vez sientes miedo, recibes amenazas, te humillan, te controlan o alguien te lastima físicamente, no intentes aplicar estas estrategias con esa persona.\n\n\nSi reconoces que estás actuando de forma violenta o haciendo que la otra persona se sienta insegura, también es importante buscar apoyo. \n\n\nEn ambos casos, puedes encontrar orientación en la sección de Recursos."
+          "eng": "⚠️ Antes de ponerlo en práctica\n\nLas estrategias compartidas en este curso son para situaciones en donde las personas pueden hablar de forma segura entre sí.\n\n\nSi alguna vez sientes miedo, recibes amenazas, te humillan, te controlan o alguien te lastima físicamente, no intentes aplicar estas estrategias con esa persona. \n\n\nTu seguridad es lo primero: visita la sección de Recursos para encontrar apoyo."
         }
       }
     },
@@ -355,28 +355,28 @@
           "eng": "Sí"
         },
         "quiz_1_feedback_1": {
-          "eng": "¡Muy bien! 🎉\n\nEmpezar con decisiones sencillas te ayuda a practicar cómo consultar antes de decidir. \n\nEscuchar diferentes puntos de vista puede ayudarte a sentirte cada vez más cómodo expresando tu opinión, necesidades y preferencias."
+          "eng": "¡Muy bien! 🎉\n\nEmpezar con decisiones sencillas te ayuda a practicar cómo consultar antes de decidir. \n\nEscuchar diferentes puntos de vista puede ayudarte a sentirte cada vez más cómoda expresando tu opinión, necesidades y preferencias."
         },
         "quiz_1_option_2_text": {
           "eng": "Lo intentaré"
         },
         "quiz_1_feedback_2": {
-          "eng": "¡Bien hecho! 🎉\n\nEmpieza con una decisión sencilla. \n\nPracticar cómo consultar antes de decidir y escuchar diferentes puntos de vista puede ayudarte a sentirte cada vez más cómodo expresando tu opinión, necesidades y preferencias."
+          "eng": "¡Bien hecho! 🎉\n\nEmpieza con una decisión sencilla. \n\nPracticar cómo consultar antes de decidir y escuchar diferentes puntos de vista puede ayudarte a sentirte cada vez más cómoda expresando tu opinión, necesidades y preferencias."
         },
         "quiz_1_option_3_text": {
           "eng": "No"
         },
         "quiz_1_feedback_3": {
-          "eng": "¡Lo entiendo! 💛\n\nCuando tengas la oportunidad, puedes empezar con una decisión pequeña. \n\nPracticar poco a poco puede ayudarte a consultar antes de decidir y a sentirte más cómodo compartiendo tu opinión, necesidades y preferencias."
+          "eng": "¡Lo entiendo! 💛\n\nCuando tengas la oportunidad, puedes empezar con una decisión pequeña. \n\nPracticar poco a poco puede ayudarte a consultar antes de decidir y a sentirte más cómoda compartiendo tu opinión, necesidades y preferencias."
         }
       },
       "quiz_1_question": "¿Puedes hacerlo esta semana?",
       "quiz_1_option_1_text": "Sí",
-      "quiz_1_feedback_1": "¡Muy bien! 🎉\n\nEmpezar con decisiones sencillas te ayuda a practicar cómo consultar antes de decidir. \n\nEscuchar diferentes puntos de vista puede ayudarte a sentirte cada vez más cómodo expresando tu opinión, necesidades y preferencias.",
+      "quiz_1_feedback_1": "¡Muy bien! 🎉\n\nEmpezar con decisiones sencillas te ayuda a practicar cómo consultar antes de decidir. \n\nEscuchar diferentes puntos de vista puede ayudarte a sentirte cada vez más cómoda expresando tu opinión, necesidades y preferencias.",
       "quiz_1_option_2_text": "Lo intentaré",
-      "quiz_1_feedback_2": "¡Bien hecho! 🎉\n\nEmpieza con una decisión sencilla. \n\nPracticar cómo consultar antes de decidir y escuchar diferentes puntos de vista puede ayudarte a sentirte cada vez más cómodo expresando tu opinión, necesidades y preferencias.",
+      "quiz_1_feedback_2": "¡Bien hecho! 🎉\n\nEmpieza con una decisión sencilla. \n\nPracticar cómo consultar antes de decidir y escuchar diferentes puntos de vista puede ayudarte a sentirte cada vez más cómoda expresando tu opinión, necesidades y preferencias.",
       "quiz_1_option_3_text": "No",
-      "quiz_1_feedback_3": "¡Lo entiendo! 💛\n\nCuando tengas la oportunidad, puedes empezar con una decisión pequeña. \n\nPracticar poco a poco puede ayudarte a consultar antes de decidir y a sentirte más cómodo compartiendo tu opinión, necesidades y preferencias."
+      "quiz_1_feedback_3": "¡Lo entiendo! 💛\n\nCuando tengas la oportunidad, puedes empezar con una decisión pequeña. \n\nPracticar poco a poco puede ayudarte a consultar antes de decidir y a sentirte más cómoda compartiendo tu opinión, necesidades y preferencias."
     }
   ],
   "_source": {

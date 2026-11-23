@@ -9,16 +9,16 @@
 | animated_slides | 1 |
 | apple_sign_in_button | 2 |
 | audio | 4 |
-| button | 140 |
+| button | 141 |
 | combo_box | 25 |
-| data_items | 251 |
+| data_items | 250 |
 | date_time_picker | 2 |
 | debug_toggle | 1 |
 | display_grid | 4 |
-| display_group | 148 |
+| display_group | 146 |
 | drawer | 1 |
 | google_sign_in_button | 2 |
-| image | 29 |
+| image | 28 |
 | items | 16 |
 | lottie (lottie_animation) | 1 |
 | lottie_animation | 9 |
@@ -28,7 +28,7 @@
 | plh_course_accordion | 1 |
 | plh_course_lesson_accordion | 4 |
 | plh_course_sub_item | 2 |
-| plh_get_up_next | 2 |
+| plh_get_up_next | 1 |
 | plh_lesson_cta | 4 |
 | plh_module_details_header | 1 |
 | plh_module_list_item | 2 |
@@ -36,20 +36,20 @@
 | plh_progress_summary | 1 |
 | qr_code | 1 |
 | radio_button_grid | 10 |
-| radio_list | 10 |
-| round_button | 34 |
+| radio_list | 12 |
+| round_button | 35 |
 | select_text | 1 |
 | set_field | 4 |
-| set_variable | 5241 |
+| set_variable | 5226 |
 | simple_checkbox | 3 |
 | task_card | 4 |
 | task_progress_bar | 5 |
-| template | 826 |
-| text | 331 |
+| template | 822 |
+| text | 324 |
 | text_area | 4 |
 | text_box | 24 |
-| text_bubble | 33 |
-| title | 74 |
+| text_bubble | 34 |
+| title | 73 |
 | toggle_bar | 5 |
 | update_action_list | 5 |
 | video | 4 |
@@ -73,7 +73,7 @@
 | emit: force_restart | 3 |
 | emit: server_sync | 9 |
 | emit: set_language | 2 |
-| emit: uncompleted | 182 |
+| emit: uncompleted | 183 |
 | feedback | 13 |
 | go_to | 33 |
 | nav | 1 |
@@ -85,9 +85,9 @@
 | reset_data | 3 |
 | save_to_device | 3 |
 | set_data | 523 |
-| set_field | 534 |
+| set_field | 535 |
 | set_item | 30 |
-| set_local | 719 |
+| set_local | 717 |
 | share | 3 |
 | task | 2 |
 | toast | 78 |
@@ -95,12 +95,27 @@
 </details>
 
 <details open>
+<summary><h2>Estimated App Size on Device</h2></summary>
+
+Estimated space the app takes up on an Android or iOS device.
+
+| item | download | on_device |
+| --- | --- | --- |
+| App code (estimate) | - | 16.2 MB |
+| App content (sheets and translations) | - | 16.8 MB |
+| Bundled assets | - | 108.7 MB |
+| Total | - | 141.7 MB |
+
+App code is a fixed estimate and excludes native Android and iOS code.
+</details>
+
+<details open>
 <summary><h2>Asset Size</h2></summary>
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 92211 KB | 92.2 MB |
-| unused | 15537 KB | 15.5 MB |
+| total | 96907 KB | 96.9 MB |
+| unused | 11820 KB | 11.8 MB |
 </details>
 
 <details open>
@@ -111,7 +126,6 @@ Assets that appear in app-data but do not have references within sheets
 | path | size_kb |
 | --- | --- |
 | certificates/Certificate1_Fortalecer_relacion.png | 287.5 |
-| images/backgrounds/CTA_button.png | 7 |
 | images/backgrounds/FOOTER3E.png | 5.6 |
 | images/backgrounds/FOOTER5A.png | 4.9 |
 | images/backgrounds/FOOTER5E.png | 8.1 |
@@ -130,15 +144,11 @@ Assets that appear in app-data but do not have references within sheets
 | images/comic/behave/know_role/know_role_t_2.svg | 89.6 |
 | images/comic/behave/know_role/know_role_t_3.svg | 86 |
 | images/comic/behave/know_role/know_role_t_4.svg | 82.6 |
-| images/comic/mental_health/pleasant_emotions/pleasant_emotions_1.svg | 694.3 |
-| images/comic/mental_health/pleasant_emotions/pleasant_emotions_2.svg | 984.4 |
-| images/comic/mental_health/pleasant_emotions/pleasant_emotions_3.svg | 1013.3 |
-| images/comic/mental_health/pleasant_emotions/pleasant_emotions_4.svg | 1002.3 |
-| images/comic/mental_health/thoughts_feelings/thoughts_feelings_1.svg | 38.8 |
-| images/comic/mental_health/thoughts_feelings/thoughts_feelings_2.svg | 18.7 |
-| images/comic/mental_health/thoughts_feelings/thoughts_feelings_3.svg | 37 |
-| images/comic/mental_health/thoughts_feelings/thoughts_feelings_4.svg | 39 |
 | images/comic/safety/com_safe/com_safe_2to4_yc_2.svg.svg | 525.7 |
+| images/comic/safety/online_p2/online_p2_5yo9_yc_1.svg | 29.2 |
+| images/comic/safety/online_p2/online_p2_5yo9_yc_2.svg | 28.8 |
+| images/comic/safety/online_p2/online_p2_5yo9_yc_3.svg | 29.7 |
+| images/comic/safety/online_p2/online_p2_5yo9_yc_4.svg | 29.9 |
 | images/comic/safety/safe_touch/safe_touch_6to9_yc_f_2-01.svg | 30.8 |
 | images/comic/safety/safe_touch/safe_touch_6to9_yc_f_3-01.svg | 28.7 |
 | images/comic/safety/safe_touch/sexual_violence_t_m_1.svg | 340.5 |
@@ -277,14 +287,6 @@ Assets that have references within sheets but do not appear in app-data
 | images/comic/learn/language_yc_2.svg | 1 |
 | images/comic/learn/language_yc_3.svg | 1 |
 | images/comic/learn/language_yc_4.svg | 1 |
-| images/comic/mental_health/pleasant_emotions_1.svg | 2 |
-| images/comic/mental_health/pleasant_emotions_2.svg | 4 |
-| images/comic/mental_health/pleasant_emotions_3.svg | 2 |
-| images/comic/mental_health/pleasant_emotions_4.svg | 4 |
-| images/comic/mental_health/thoughts_feelings_1.svg | 4 |
-| images/comic/mental_health/thoughts_feelings_2.svg | 4 |
-| images/comic/mental_health/thoughts_feelings_3.svg | 4 |
-| images/comic/mental_health/thoughts_feelings_4.svg | 8 |
 | images/comic/safe_touch/sexual_violence_t_m_1.svg | 2 |
 | images/comic/safe_touch/sexual_violence_t_m_2.svg | 2 |
 | images/comic/safety/com_safe/com_safe_2to4_yc_2.svg | 2 |
@@ -292,36 +294,10 @@ Assets that have references within sheets but do not appear in app-data
 | images/comic/safety/com_safe/com_safe_5to9_yc_m_2.svg | 2 |
 | images/comic/safety/com_safe/com_safe_5to9_yc_m_3.svg | 4 |
 | images/comic/safety/com_safe/com_safe_5to9_yc_m_4.svg | 2 |
-| images/comic/safety/online_p1/online_p1_2to4_yc_1.svg | 4 |
-| images/comic/safety/online_p1/online_p1_2to4_yc_2.svg | 4 |
-| images/comic/safety/online_p1/online_p1_2to4_yc_3.svg | 4 |
-| images/comic/safety/online_p1/online_p1_5to9_yc_1.svg | 2 |
-| images/comic/safety/online_p1/online_p1_5to9_yc_2.svg | 2 |
-| images/comic/safety/online_p1/online_p1_5to9_yc_3.svg | 4 |
-| images/comic/safety/online_p1/online_p1_5to9_yc_4.svg | 2 |
-| images/comic/safety/online_p2/online_p2_2to4_yc_1.svg | 2 |
-| images/comic/safety/online_p2/online_p2_2to4_yc_2.svg | 2 |
-| images/comic/safety/online_p2/online_p2_2to4_yc_3.svg | 4 |
 | images/comic/safety/online_p2/online_p2_5to9_yc_1.svg | 2 |
 | images/comic/safety/online_p2/online_p2_5to9_yc_2.svg | 4 |
 | images/comic/safety/online_p2/online_p2_5to9_yc_3.svg | 4 |
 | images/comic/safety/online_p2/online_p2_5to9_yc_4.svg | 4 |
-| images/comic/safety/online_safety_p1/online_safety_p1_t_f_1.svg | 2 |
-| images/comic/safety/online_safety_p1/online_safety_p1_t_f_2.svg | 4 |
-| images/comic/safety/online_safety_p1/online_safety_p1_t_f_3.svg | 4 |
-| images/comic/safety/online_safety_p1/online_safety_p1_t_f_4.svg | 4 |
-| images/comic/safety/online_safety_p1/online_safety_p1_t_m_1.svg | 2 |
-| images/comic/safety/online_safety_p1/online_safety_p1_t_m_2.svg | 4 |
-| images/comic/safety/online_safety_p1/online_safety_p1_t_m_3.svg | 4 |
-| images/comic/safety/online_safety_p1/online_safety_p1_t_m_4.svg | 4 |
-| images/comic/safety/online_safety_p2/online_safety_p2_t_f_1.svg | 2 |
-| images/comic/safety/online_safety_p2/online_safety_p2_t_f_2.svg | 4 |
-| images/comic/safety/online_safety_p2/online_safety_p2_t_f_3.svg | 4 |
-| images/comic/safety/online_safety_p2/online_safety_p2_t_f_4.svg | 2 |
-| images/comic/safety/online_safety_p2/online_safety_p2_t_m_1.svg | 2 |
-| images/comic/safety/online_safety_p2/online_safety_p2_t_m_2.svg | 4 |
-| images/comic/safety/online_safety_p2/online_safety_p2_t_m_3.svg | 4 |
-| images/comic/safety/online_safety_p2/online_safety_p2_t_m_4.svg | 2 |
 | images/comic/safety/safe_touch/safe_touch_6to9_yc_f_2.svg | 4 |
 | images/comic/safety/safe_touch/safe_touch_6to9_yc_f_3.svg | 2 |
 | images/icons/docs.svg | 1 |
@@ -368,7 +344,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/activities/activity9.svg | 1607.2 | 16 |
 | images/backgrounds/bottom_banner.png | 8 | 1 |
 | images/backgrounds/complete_module.svg | 30.6 | 1 |
-| images/backgrounds/lesson-cta-bg.svg | 8.3 | 4 |
+| images/backgrounds/lesson-cta-bg.svg | 13.1 | 4 |
 | images/backgrounds/library_top_right.png | 54.7 | 3 |
 | images/badges/badge_1.svg | 25.7 | 2 |
 | images/badges/badge_2.svg | 17.4 | 1 |
@@ -448,10 +424,18 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/comic/behave/solve_problem/solve_problem_yc_2.svg | 40.2 | 2 |
 | images/comic/behave/solve_problem/solve_problem_yc_3.svg | 42.1 | 4 |
 | images/comic/behave/solve_problem/solve_problem_yc_4.svg | 44.6 | 2 |
+| images/comic/mental_health/pleasant_emotions/pleasant_emotions_1.svg | 694.3 | 2 |
+| images/comic/mental_health/pleasant_emotions/pleasant_emotions_2.svg | 984.4 | 4 |
+| images/comic/mental_health/pleasant_emotions/pleasant_emotions_3.svg | 1013.3 | 2 |
+| images/comic/mental_health/pleasant_emotions/pleasant_emotions_4.svg | 1002.3 | 4 |
 | images/comic/mental_health/self_talk/self_talk_1.svg | 102.7 | 4 |
 | images/comic/mental_health/self_talk/self_talk_2.svg | 100.4 | 4 |
 | images/comic/mental_health/self_talk/self_talk_3.svg | 100 | 8 |
 | images/comic/mental_health/self_talk/self_talk_4.svg | 98.6 | 4 |
+| images/comic/mental_health/thoughts_feelings/thoughts_feelings_1.svg | 38.8 | 4 |
+| images/comic/mental_health/thoughts_feelings/thoughts_feelings_2.svg | 18.7 | 4 |
+| images/comic/mental_health/thoughts_feelings/thoughts_feelings_3.svg | 37 | 4 |
+| images/comic/mental_health/thoughts_feelings/thoughts_feelings_4.svg | 39 | 8 |
 | images/comic/relation/calm/calm_t_fc_1.svg | 19.2 | 2 |
 | images/comic/relation/calm/calm_t_fc_2.svg | 19.4 | 2 |
 | images/comic/relation/calm/calm_t_fc_3.svg | 10.5 | 2 |
@@ -571,6 +555,32 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/comic/safety/crises/crises_t_m_2.svg | 58.8 | 2 |
 | images/comic/safety/crises/crises_t_m_3.svg | 26.3 | 4 |
 | images/comic/safety/crises/crises_t_m_4.svg | 22 | 4 |
+| images/comic/safety/online_p1/online_p1_2to4_yc_1.svg | 32.7 | 4 |
+| images/comic/safety/online_p1/online_p1_2to4_yc_2.svg | 46 | 4 |
+| images/comic/safety/online_p1/online_p1_2to4_yc_3.svg | 46.1 | 4 |
+| images/comic/safety/online_p1/online_p1_5to9_yc_1.svg | 26.8 | 2 |
+| images/comic/safety/online_p1/online_p1_5to9_yc_2.svg | 23.8 | 2 |
+| images/comic/safety/online_p1/online_p1_5to9_yc_3.svg | 26.1 | 4 |
+| images/comic/safety/online_p1/online_p1_5to9_yc_4.svg | 16.9 | 2 |
+| images/comic/safety/online_p1/online_safety_p1_t_f_1.svg | 27.7 | 2 |
+| images/comic/safety/online_p1/online_safety_p1_t_f_2.svg | 28.7 | 4 |
+| images/comic/safety/online_p1/online_safety_p1_t_f_3.svg | 27.9 | 4 |
+| images/comic/safety/online_p1/online_safety_p1_t_f_4.svg | 27.7 | 4 |
+| images/comic/safety/online_p1/online_safety_p1_t_m_1.svg | 28.5 | 2 |
+| images/comic/safety/online_p1/online_safety_p1_t_m_2.svg | 28.5 | 4 |
+| images/comic/safety/online_p1/online_safety_p1_t_m_3.svg | 27.7 | 4 |
+| images/comic/safety/online_p1/online_safety_p1_t_m_4.svg | 28 | 4 |
+| images/comic/safety/online_p2/online_p2_2to4_yc_1.svg | 30.6 | 2 |
+| images/comic/safety/online_p2/online_p2_2to4_yc_2.svg | 35.6 | 2 |
+| images/comic/safety/online_p2/online_p2_2to4_yc_3.svg | 26.7 | 4 |
+| images/comic/safety/online_p2/online_safety_p2_t_f_1.svg | 52.7 | 2 |
+| images/comic/safety/online_p2/online_safety_p2_t_f_2.svg | 52 | 4 |
+| images/comic/safety/online_p2/online_safety_p2_t_f_3.svg | 36.6 | 4 |
+| images/comic/safety/online_p2/online_safety_p2_t_f_4.svg | 36.1 | 2 |
+| images/comic/safety/online_p2/online_safety_p2_t_m_1.svg | 45.3 | 2 |
+| images/comic/safety/online_p2/online_safety_p2_t_m_2.svg | 44.6 | 4 |
+| images/comic/safety/online_p2/online_safety_p2_t_m_3.svg | 30.3 | 4 |
+| images/comic/safety/online_p2/online_safety_p2_t_m_4.svg | 29.8 | 2 |
 | images/comic/safety/safe_touch/safe_touch_2to5_yc_f_1.svg | 23.1 | 4 |
 | images/comic/safety/safe_touch/safe_touch_2to5_yc_f_2.svg | 23 | 2 |
 | images/comic/safety/safe_touch/safe_touch_2to5_yc_f_3.svg | 24 | 2 |
@@ -779,14 +789,14 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_list | modules_give_praise_yc_mc | 1 |
 | data_list | modules_ignore_yc | 1 |
 | data_list | modules_ipv_conflicts_fc | 1 |
-| data_list | modules_ipv_conflicts_m | 1 |
 | data_list | modules_ipv_conflicts_mc | 1 |
-| data_list | modules_ipv_equals_m | 1 |
-| data_list | modules_ipv_listen_m | 1 |
+| data_list | modules_ipv_equals_fc | 1 |
+| data_list | modules_ipv_equals_mc | 1 |
+| data_list | modules_ipv_listen_fc | 1 |
+| data_list | modules_ipv_listen_mc | 1 |
 | data_list | modules_ipv_sharing_fc | 1 |
-| data_list | modules_ipv_sharing_m | 1 |
 | data_list | modules_ipv_sharing_mc | 1 |
-| data_list | modules_ipv_supportive_m | 1 |
+| data_list | modules_ipv_supportive_fc | 1 |
 | data_list | modules_ipv_supportive_mc | 1 |
 | data_list | modules_keep_positive_t | 1 |
 | data_list | modules_keep_positive_yc | 1 |
@@ -838,7 +848,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | generator |  | 9 |
 | global |  | 14 |
 | global | ab_testing | 3 |
-| global | onboarding | 17 |
+| global | onboarding | 18 |
 | global | proximal_outcomes | 3 |
 | template |  | 114 |
 | template | ab_testing | 1 |

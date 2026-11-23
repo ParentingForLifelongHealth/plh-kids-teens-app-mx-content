@@ -1,10 +1,10 @@
 {
   "flow_type": "data_list",
-  "flow_name": "ipv_listen_fc_articles",
-  "data_list_name": "ipv_listen_fc_articles",
+  "flow_name": "ipv_listen_mc_articles",
+  "data_list_name": "ipv_listen_mc_articles",
   "status": "released",
-  "flow_subtype": "modules_ipv_sharing_m",
-  "module": "ipv_listen_fc",
+  "flow_subtype": "modules_ipv_listen_mc",
+  "module": "ipv_listen_mc",
   "rows": [
     {
       "id": "intro_1",
@@ -66,28 +66,28 @@
           "eng": "A veces"
         },
         "quiz_1_feedback_2": {
-          "eng": "👐 Es normal que algunas conversaciones sean más sencillas que otras.\n\nExpresar con claridad lo que piensas, sientes o necesitas y escuchar a la otra persona puede ayudar a tener una mejor conversación, incluso cuando piensan diferente."
+          "eng": "👐 Es normal que algunas conversaciones sean más sencillas que otras.\n\nA veces puede costar poner en palabras lo que pensamos, sentimos o necesitamos, especialmente cuando hablamos de algo tan importante como la crianza.\n\nEscuchar a la otra persona también es parte importante de una buena conversación. Ambas son habilidades que podemos aprender y practicar."
         },
         "quiz_1_option_3_text": {
           "eng": "Nunca"
         },
         "quiz_1_feedback_3": {
-          "eng": "❤️‍🩹 Hablar sobre algunos temas de la crianza puede ser difícil.\n\nExpresar con calma lo que piensas, sientes o necesitas, y escuchar lo que la otra persona quiere decir, puede ayudar a abrir la conversación y facilitar la crianza compartida. \n\nNo es tu responsabilidad resolver todo en ese momento."
+          "eng": "❤️‍🩹 Hablar sobre algunos temas de la crianza puede ser difícil.\n\nSi no estás acostumbrado a hablar de lo que piensas, sientes o necesitas como padre, puedes empezar poco a poco. Escuchar y expresarte con calma son habilidades que se pueden aprender y practicar."
         }
       },
       "quiz_1_question": "¿Te resulta sencillo hablar con ellas sobre temas relacionados con la crianza?",
       "quiz_1_option_1_text": "Siempre",
       "quiz_1_feedback_1": "🎉 ¡Qué bien!\n\nHablar sobre la crianza puede ser más sencillo cuando expresas con claridad lo que piensas, sientes o necesitas. \n\nTambién cuando das espacio para escuchar a la otra persona.",
       "quiz_1_option_2_text": "A veces",
-      "quiz_1_feedback_2": "👐 Es normal que algunas conversaciones sean más sencillas que otras.\n\nExpresar con claridad lo que piensas, sientes o necesitas y escuchar a la otra persona puede ayudar a tener una mejor conversación, incluso cuando piensan diferente.",
+      "quiz_1_feedback_2": "👐 Es normal que algunas conversaciones sean más sencillas que otras.\n\nA veces puede costar poner en palabras lo que pensamos, sentimos o necesitamos, especialmente cuando hablamos de algo tan importante como la crianza.\n\nEscuchar a la otra persona también es parte importante de una buena conversación. Ambas son habilidades que podemos aprender y practicar.",
       "quiz_1_option_3_text": "Nunca",
-      "quiz_1_feedback_3": "❤️‍🩹 Hablar sobre algunos temas de la crianza puede ser difícil.\n\nExpresar con calma lo que piensas, sientes o necesitas, y escuchar lo que la otra persona quiere decir, puede ayudar a abrir la conversación y facilitar la crianza compartida. \n\nNo es tu responsabilidad resolver todo en ese momento."
+      "quiz_1_feedback_3": "❤️‍🩹 Hablar sobre algunos temas de la crianza puede ser difícil.\n\nSi no estás acostumbrado a hablar de lo que piensas, sientes o necesitas como padre, puedes empezar poco a poco. Escuchar y expresarte con calma son habilidades que se pueden aprender y practicar."
     },
     {
       "id": "intro_4",
       "category_id": "intro",
       "nested": false,
-      "text_1_facilitator": "¡Una pregunta más! \n\nAhora, imagina esto: sientes que estás cargando con demasiadas cosas de la crianza y necesitas más apoyo.",
+      "text_1_facilitator": "¡Una pregunta más! \n\nAhora, imagina esto: te das cuenta de que la persona con quien compartes la crianza está haciéndose cargo de muchas tareas y parece cansada.",
       "_translations": {
         "text_1_facilitator": {},
         "quiz_1_question": {},
@@ -100,37 +100,37 @@
       },
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "¡Una pregunta más! \n\nAhora, imagina esto: sientes que estás cargando con demasiadas cosas de la crianza y necesitas más apoyo."
+          "eng": "¡Una pregunta más! \n\nAhora, imagina esto: te das cuenta de que la persona con quien compartes la crianza está haciéndose cargo de muchas tareas y parece cansada."
         },
         "quiz_1_question": {
-          "eng": "¿Cuál puede ser una buena manera de expresarlo?"
+          "eng": "¿Cuál puede ser una buena manera de iniciar una conversación?"
         },
         "quiz_1_option_1_text": {
-          "eng": "“Nunca me ayudas con nada\""
+          "eng": "“Si necesitas que haga algo, solo dime”"
         },
         "quiz_1_feedback_1": {
-          "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nCuando sentimos frustración es fácil usar frases como “nunca” o “siempre”. En su lugar, intenta explicar qué está pasando, cómo te sientes y qué necesitas, sin culpar a la otra persona. \n\nNo tienes que poder con todo en la crianza: hablar de lo que necesitas también puede ser un primer paso para compartir la responsabilidad."
+          "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nMostrar disposición es importante, pero esta frase puede dejar en la otra persona la tarea de identificar y comunicar todo lo que hace falta. \n\nIntenta expresar también lo que has observado y abrir un espacio para escuchar cómo se siente."
         },
         "quiz_1_option_2_text": {
-          "eng": "“Me he sentido muy cansada y me gustaría que nos organicemos para repartir algunas tareas”"
+          "eng": "“He notado que estás a cargo de muchas cosas. Me gustaría saber cómo te has sentido y cómo puedo involucrarme más”"
         },
         "quiz_1_feedback_2": {
-          "eng": "🎉 ¡Muy bien!\n\nExpresar con claridad qué está pasando, cómo te sientes y qué necesitas, sin culpar a la otra persona, puede ayudar a comunicar lo que estás viviendo. \n\nNo tienes que poder con todo en la crianza: hablar de lo que necesitas también puede ser un primer paso para compartir la responsabilidad."
+          "eng": "🎉 ¡Muy bien!\n\nReconocer lo que observas, expresar con claridad tu disposición a participar y escuchar cómo se siente la otra persona puede ayudar a iniciar una conversación respetuosa. \n\nToma la iniciativa para involucrarte, muestra interés y asume responsabilidades sin esperar a que te lo pidan."
         },
         "quiz_1_option_3_text": {
-          "eng": "No decir nada y seguir haciéndolo por tu cuenta."
+          "eng": "Le pido que me indique cómo hace cada una de las tareas y me las recuerde"
         },
         "quiz_1_feedback_3": {
-          "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nA veces podemos sentir que es más fácil seguir haciendo las cosas por nuestra cuenta. Pero no tienes que poder con todo en la crianza. \n\nExpresar con calma qué está pasando, cómo te sientes y qué necesitas puede ayudar a comunicar que necesitas compartir la responsabilidad."
+          "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nTomar la iniciativa, en lugar de esperar a que la otra persona te recuerde las tareas, puede ayudar a expresar las necesidades y preocupaciones a tiempo. \n\nPuedes iniciar la conversación con respeto y compartir lo que has notado. Escuchar con atención y sin interrumpir te ayudará a comprender lo que la otra persona necesita."
         }
       },
-      "quiz_1_question": "¿Cuál puede ser una buena manera de expresarlo?",
-      "quiz_1_option_1_text": "“Nunca me ayudas con nada\"",
-      "quiz_1_feedback_1": "👀 ¡Ups! ¡Revisemos esta idea!\n\nCuando sentimos frustración es fácil usar frases como “nunca” o “siempre”. En su lugar, intenta explicar qué está pasando, cómo te sientes y qué necesitas, sin culpar a la otra persona. \n\nNo tienes que poder con todo en la crianza: hablar de lo que necesitas también puede ser un primer paso para compartir la responsabilidad.",
-      "quiz_1_option_2_text": "“Me he sentido muy cansada y me gustaría que nos organicemos para repartir algunas tareas”",
-      "quiz_1_feedback_2": "🎉 ¡Muy bien!\n\nExpresar con claridad qué está pasando, cómo te sientes y qué necesitas, sin culpar a la otra persona, puede ayudar a comunicar lo que estás viviendo. \n\nNo tienes que poder con todo en la crianza: hablar de lo que necesitas también puede ser un primer paso para compartir la responsabilidad.",
-      "quiz_1_option_3_text": "No decir nada y seguir haciéndolo por tu cuenta.",
-      "quiz_1_feedback_3": "👀 ¡Ups! ¡Revisemos esta idea!\n\nA veces podemos sentir que es más fácil seguir haciendo las cosas por nuestra cuenta. Pero no tienes que poder con todo en la crianza. \n\nExpresar con calma qué está pasando, cómo te sientes y qué necesitas puede ayudar a comunicar que necesitas compartir la responsabilidad."
+      "quiz_1_question": "¿Cuál puede ser una buena manera de iniciar una conversación?",
+      "quiz_1_option_1_text": "“Si necesitas que haga algo, solo dime”",
+      "quiz_1_feedback_1": "👀 ¡Ups! ¡Revisemos esta idea!\n\nMostrar disposición es importante, pero esta frase puede dejar en la otra persona la tarea de identificar y comunicar todo lo que hace falta. \n\nIntenta expresar también lo que has observado y abrir un espacio para escuchar cómo se siente.",
+      "quiz_1_option_2_text": "“He notado que estás a cargo de muchas cosas. Me gustaría saber cómo te has sentido y cómo puedo involucrarme más”",
+      "quiz_1_feedback_2": "🎉 ¡Muy bien!\n\nReconocer lo que observas, expresar con claridad tu disposición a participar y escuchar cómo se siente la otra persona puede ayudar a iniciar una conversación respetuosa. \n\nToma la iniciativa para involucrarte, muestra interés y asume responsabilidades sin esperar a que te lo pidan.",
+      "quiz_1_option_3_text": "Le pido que me indique cómo hace cada una de las tareas y me las recuerde",
+      "quiz_1_feedback_3": "👀 ¡Ups! ¡Revisemos esta idea!\n\nTomar la iniciativa, en lugar de esperar a que la otra persona te recuerde las tareas, puede ayudar a expresar las necesidades y preocupaciones a tiempo. \n\nPuedes iniciar la conversación con respeto y compartir lo que has notado. Escuchar con atención y sin interrumpir te ayudará a comprender lo que la otra persona necesita."
     },
     {
       "id": "explore_1",
@@ -151,9 +151,9 @@
       "id": "explore_2",
       "category_id": "explore",
       "image_asset": "images/comic/ipv/listen/listen_1.svg",
-      "character_1_id": "f2_madre",
+      "character_1_id": "f2_padre",
       "nested": false,
-      "text_1_facilitator": "Veamos cómo @data.characters.f2_madre.name y @data.characters.f2_padre.name usan estas estrategias en la práctica:",
+      "text_1_facilitator": "Veamos cómo @data.characters.f2_padre.name y @data.characters.f2_madre.name usan estas estrategias en la práctica:",
       "_translations": {
         "text_1_facilitator": {},
         "text_2": {},
@@ -161,27 +161,27 @@
       },
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "Veamos cómo @data.characters.f2_madre.name y @data.characters.f2_padre.name usan estas estrategias en la práctica:"
+          "eng": "Veamos cómo @data.characters.f2_padre.name y @data.characters.f2_madre.name usan estas estrategias en la práctica:"
         },
         "text_2": {
-          "eng": "@data.characters.f2_madre.name está hablando por teléfono con @data.characters.f2_padre.name. Mira cómo le explica de qué quiere hablar y pregunta si es un buen momento."
+          "eng": "@data.characters.f2_padre.name está hablando por teléfono con @data.characters.f2_madre.name. Mira cómo toma la iniciativa sobre las actividades de su hija, explica de qué quiere hablar y le pregunta si es un buen momento."
         },
         "character_1_text": {
-          "eng": "El viernes es el evento de @data.characters.f2_hija_13.name en la escuela. Para ella es importante que podamos estar los dos. ¿Podemos buscar un momento para organizarnos hoy, después de que termines tu turno?"
+          "eng": "El viernes es el evento de @data.characters.f2_hija_13.name en la escuela. Quiero estar, pero ese día tengo trabajo hasta tarde. ¿Podemos hablar hoy más tarde, cuando termines lo que estás haciendo, para ver cómo podemos organizarnos?"
         }
       },
-      "text_2": "@data.characters.f2_madre.name está hablando por teléfono con @data.characters.f2_padre.name. Mira cómo le explica de qué quiere hablar y pregunta si es un buen momento.",
-      "character_1_text": "El viernes es el evento de @data.characters.f2_hija_13.name en la escuela. Para ella es importante que podamos estar los dos. ¿Podemos buscar un momento para organizarnos hoy, después de que termines tu turno?"
+      "text_2": "@data.characters.f2_padre.name está hablando por teléfono con @data.characters.f2_madre.name. Mira cómo toma la iniciativa sobre las actividades de su hija, explica de qué quiere hablar y le pregunta si es un buen momento.",
+      "character_1_text": "El viernes es el evento de @data.characters.f2_hija_13.name en la escuela. Quiero estar, pero ese día tengo trabajo hasta tarde. ¿Podemos hablar hoy más tarde, cuando termines lo que estás haciendo, para ver cómo podemos organizarnos?"
     },
     {
       "id": "explore_3",
       "category_id": "explore",
       "image_asset": "images/comic/ipv/listen/listen_2.svg",
-      "character_1_id": "f2_padre",
-      "character_2_id": "f2_madre",
-      "character_3_id": "f2_padre",
+      "character_1_id": "f2_madre",
+      "character_2_id": "f2_padre",
+      "character_3_id": "f2_madre",
       "nested": false,
-      "text_2": "Más tarde, @data.characters.f2_madre.name expresa lo que siente. Mira cómo @data.characters.f2_padre.name la escucha.",
+      "text_2": "Más tarde, se vuelven a llamar. Nota cómo @data.characters.f2_padre.name expresa su preocupación y @data.characters.f2_madre.name escucha para entender.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
@@ -190,28 +190,28 @@
       },
       "_translatedFields": {
         "text_2": {
-          "eng": "Más tarde, @data.characters.f2_madre.name expresa lo que siente. Mira cómo @data.characters.f2_padre.name la escucha."
+          "eng": "Más tarde, se vuelven a llamar. Nota cómo @data.characters.f2_padre.name expresa su preocupación y @data.characters.f2_madre.name escucha para entender."
         },
         "character_1_text": {
-          "eng": "Ahorita tengo quince minutos para hablar. Te escucho."
+          "eng": "Gracias por esperar. Ahora es un buen momento, te escucho."
         },
         "character_2_text": {
-          "eng": "Me preocupa tener que cerrar el local antes para llegar al evento. He tenido muchos pendientes y me estoy sintiendo rebasada con los eventos escolares. Quisiera saber si tú podrás ir."
+          "eng": "Me preocupa no poder salir a tiempo del trabajo. Este mes nos están pidiendo apoyo extra y me siento bajo mucha presión. Quiero estar en el evento de @data.characters.f2_hija_13.name, pero todavía no sé si podré."
         },
         "character_3_text": {
-          "eng": "No había pensado en lo complicado que puede ser para ti salir antes del local. Entiendo que tienes muchas cosas pendientes."
+          "eng": "Entiendo. Con el trabajo que tienen este mes, debe ser complicado pedir salir antes."
         }
       },
-      "character_1_text": "Ahorita tengo quince minutos para hablar. Te escucho.",
-      "character_2_text": "Me preocupa tener que cerrar el local antes para llegar al evento. He tenido muchos pendientes y me estoy sintiendo rebasada con los eventos escolares. Quisiera saber si tú podrás ir.",
-      "character_3_text": "No había pensado en lo complicado que puede ser para ti salir antes del local. Entiendo que tienes muchas cosas pendientes."
+      "character_1_text": "Gracias por esperar. Ahora es un buen momento, te escucho.",
+      "character_2_text": "Me preocupa no poder salir a tiempo del trabajo. Este mes nos están pidiendo apoyo extra y me siento bajo mucha presión. Quiero estar en el evento de @data.characters.f2_hija_13.name, pero todavía no sé si podré.",
+      "character_3_text": "Entiendo. Con el trabajo que tienen este mes, debe ser complicado pedir salir antes."
     },
     {
       "id": "explore_4",
       "category_id": "explore",
       "image_asset": "images/comic/ipv/listen/listen_3.svg",
-      "character_1_id": "f2_padre",
-      "character_2_id": "f2_madre",
+      "character_1_id": "f2_madre",
+      "character_2_id": "f2_padre",
       "nested": false,
       "text_2": "Aquí puedes observar cómo ambos expresan lo que les preocupa y escuchan la situación de la otra persona sin culparse.",
       "_translations": {
@@ -224,14 +224,14 @@
           "eng": "Aquí puedes observar cómo ambos expresan lo que les preocupa y escuchan la situación de la otra persona sin culparse."
         },
         "character_1_text": {
-          "eng": "Ese día tengo que trabajar hasta tarde, así que tampoco sé si podré salir antes. Me preocupa prometerte a ti y a @data.characters.f2_hija_13.name que iré y después no poder llegar."
+          "eng": "Yo también tendría que cerrar el local antes para llegar a tiempo. Me preocupa que al final ninguno de los dos pueda estar."
         },
         "character_2_text": {
-          "eng": "Gracias por decírmelo. Sé que tampoco es fácil para ti salir antes. Me gustaría que los dos pudiéramos acompañarla."
+          "eng": "No había pensado en que tú también tendrías que salir antes. Gracias por decírmelo."
         }
       },
-      "character_1_text": "Ese día tengo que trabajar hasta tarde, así que tampoco sé si podré salir antes. Me preocupa prometerte a ti y a @data.characters.f2_hija_13.name que iré y después no poder llegar.",
-      "character_2_text": "Gracias por decírmelo. Sé que tampoco es fácil para ti salir antes. Me gustaría que los dos pudiéramos acompañarla."
+      "character_1_text": "Yo también tendría que cerrar el local antes para llegar a tiempo. Me preocupa que al final ninguno de los dos pueda estar.",
+      "character_2_text": "No había pensado en que tú también tendrías que salir antes. Gracias por decírmelo."
     },
     {
       "id": "explore_5",
@@ -253,7 +253,7 @@
           "eng": "Fíjate cómo, aunque no resolvieron todo de una vez, hicieron el esfuerzo por escucharse, compartieron lo que necesitaban y acordaron seguir hablando."
         },
         "character_1_text": {
-          "eng": "Voy a preguntar si puedo salir antes el viernes y reponer esas horas el sábado por la mañana."
+          "eng": "Voy a preguntar si puedo salir antes el viernes y reponer esas horas el sábado por la mañana. No sé si me darán permiso, pero quiero intentarlo."
         },
         "character_2_text": {
           "eng": "Está bien. Yo también voy a revisar si puedo cerrar un poco antes. Te aviso en cuanto tenga una respuesta de mi jefa."
@@ -262,7 +262,7 @@
           "eng": "Sí, estoy de acuerdo, yo también te aviso. A @data.characters.f2_hija_13.name le dará mucho gusto vernos a los dos ahí."
         }
       },
-      "character_1_text": "Voy a preguntar si puedo salir antes el viernes y reponer esas horas el sábado por la mañana.",
+      "character_1_text": "Voy a preguntar si puedo salir antes el viernes y reponer esas horas el sábado por la mañana. No sé si me darán permiso, pero quiero intentarlo.",
       "character_2_text": "Está bien. Yo también voy a revisar si puedo cerrar un poco antes. Te aviso en cuanto tenga una respuesta de mi jefa.",
       "character_3_text": "Sí, estoy de acuerdo, yo también te aviso. A @data.characters.f2_hija_13.name le dará mucho gusto vernos a los dos ahí."
     },
@@ -342,13 +342,13 @@
       "id": "notice_1",
       "category_id": "notice",
       "nested": false,
-      "text_1_facilitator": "⚠️ Antes de ponerlo en práctica\n\nLas estrategias compartidas en este curso son para situaciones en donde las personas pueden hablar de forma segura entre sí.\n\n\nSi alguna vez sientes miedo, recibes amenazas, te humillan, te controlan o alguien te lastima físicamente, no intentes aplicar estas estrategias con esa persona. \n\n\nTu seguridad es lo primero: visita la sección de Recursos para encontrar apoyo.",
+      "text_1_facilitator": "⚠️ Antes de ponerlo en práctica\n\nLas estrategias compartidas en este curso son para situaciones en donde las personas pueden hablar de forma segura entre sí.\n\n\nSi alguna vez sientes miedo, recibes amenazas, te humillan, te controlan o alguien te lastima físicamente, no intentes aplicar estas estrategias con esa persona.\n\n\nPor otro lado, si reconoces que estás actuando de forma violenta, perdiendo el control o haciendo que la otra persona se sienta insegura, también es importante buscar apoyo. En la sección de Recursos puedes encontrar orientación.",
       "_translations": {
         "text_1_facilitator": {}
       },
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "⚠️ Antes de ponerlo en práctica\n\nLas estrategias compartidas en este curso son para situaciones en donde las personas pueden hablar de forma segura entre sí.\n\n\nSi alguna vez sientes miedo, recibes amenazas, te humillan, te controlan o alguien te lastima físicamente, no intentes aplicar estas estrategias con esa persona. \n\n\nTu seguridad es lo primero: visita la sección de Recursos para encontrar apoyo."
+          "eng": "⚠️ Antes de ponerlo en práctica\n\nLas estrategias compartidas en este curso son para situaciones en donde las personas pueden hablar de forma segura entre sí.\n\n\nSi alguna vez sientes miedo, recibes amenazas, te humillan, te controlan o alguien te lastima físicamente, no intentes aplicar estas estrategias con esa persona.\n\n\nPor otro lado, si reconoces que estás actuando de forma violenta, perdiendo el control o haciendo que la otra persona se sienta insegura, también es importante buscar apoyo. En la sección de Recursos puedes encontrar orientación."
         }
       }
     },

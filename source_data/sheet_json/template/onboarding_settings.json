@@ -107,34 +107,12 @@
       "type": "begin_data_items",
       "name": "page_finished_remote",
       "value": "@data.onboarding_settings_pages",
-      "parameter_list": "filter: @item.row_index == @local.last_page_index && @item.completed",
-      "condition": "@global.has_remote_assets && !@global.has_proximal_outcomes",
-      "comments": "remote assets\nno proximal outcomes"
+      "parameter_list": "filter: @item.row_index == @local.last_page_index && @item.completed"
     },
     {
       "type": "begin_template",
       "name": "onboarding_remote_assets",
-      "value": "onboarding_remote_assets",
-      "action_list": "completed | emit: completed;"
-    },
-    {
-      "type": "end_template"
-    },
-    {
-      "type": "end_data_items"
-    },
-    {
-      "type": "begin_data_items",
-      "name": "page_finished_baseline",
-      "value": "@data.onboarding_settings_pages",
-      "parameter_list": "filter: @item.row_index == @local.last_page_index && @item.completed",
-      "condition": "@global.has_proximal_outcomes",
-      "comments": "proximal outcomes (needs to handle remote assets or not in it)"
-    },
-    {
-      "type": "begin_template",
-      "name": "onboarding_baseline_questions",
-      "value": "onboarding_baseline_questions",
+      "value": "onboarding_loading",
       "action_list": "completed | emit: completed;"
     },
     {

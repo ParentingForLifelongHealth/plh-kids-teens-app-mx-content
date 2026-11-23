@@ -1,0 +1,23 @@
+{
+  "flow_type": "global",
+  "flow_subtype": "onboarding",
+  "flow_name": "onboarding_page_16_user_type",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "facilitator_message_user_type",
+      "value": "¡Ya falta poco!"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "question_user_type",
+      "value": "¿Cómo usarás @global.app_name?"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "placeholder_user_type",
+      "value": "Selecciona una opción"
+    }
+  ]
+}

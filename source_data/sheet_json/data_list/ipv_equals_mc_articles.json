@@ -3,7 +3,7 @@
   "flow_name": "ipv_equals_mc_articles",
   "data_list_name": "ipv_equals_mc_articles",
   "status": "released",
-  "flow_subtype": "modules_ipv_equals_m",
+  "flow_subtype": "modules_ipv_equals_mc",
   "module": "ipv_equals_mc",
   "rows": [
     {
@@ -45,16 +45,16 @@
       "character_1_id": "f3_madre",
       "character_1_text::eng": "¿A dónde va @data.characters.f3_hijo_14.name?",
       "character_2_id": "f3_padre",
-      "character_2_text::eng": "Ah, me pidió permiso para ir a casa de su amiga y le dije que sí.",
-      "character_3_id": "f3_madre",
-      "character_3_text::eng": "Pensé que habíamos quedado en que entre semana no salía."
+      "character_2_text::eng": "Ah, me pidió permiso para ir a casa de su amiga y le dije que sí."
     },
     {
       "id": "explore_3",
       "category_id": "explore",
       "image_asset": "images/comic/ipv/equals/equals_1.svg",
-      "character_1_id": "f3_padre",
-      "character_1_text::eng": "No sabía que habían hablado de eso."
+      "character_1_id": "f3_madre",
+      "character_1_text::eng": "Pensé que habíamos quedado en que entre semana no salía.",
+      "character_2_id": "f3_padre",
+      "character_2_text::eng": "No sabía que habían hablado de eso."
     },
     {
       "id": "explore_4",
