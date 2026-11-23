@@ -397,10 +397,10 @@
           "eng": "Al día siguiente, @data.characters.f2_padre.name se asegura de cumplir con el acuerdo sobre la hora de llegada. Ser constantes es clave."
         },
         "character_1_text": {
-          "eng": "Papá, ¿puedo llegar un poco más tarde hoy? Es que me invitó un amigo a jugar fut en el parque, pero quedamos a las 7:30 y seguro se va alargar…"
+          "eng": "Papá, ¿puedo llegar un poco más tarde hoy? Es que me invitó un amigo a jugar fut en el parque, pero quedamos a las 7:30 y seguro se va a alargar…"
         },
         "character_2_text": {
-          "eng": "La regla es a las 8 los viernes, ¿te acuerdas? Eso quedaste con tu mamá y es importante cumplir las reglas que acordamos juntos, {HIJO_TEEN}. Por favor vuelve a tiempo."
+          "eng": "La regla es a las 8 los viernes, ¿te acuerdas? Eso quedaste con tu mamá y es importante cumplir las reglas que acordamos juntos, @data.characters.f2_hijo_15.name. Por favor vuelve a tiempo."
         }
       },
       "category_id": "explore",
@@ -414,8 +414,8 @@
         "character_1_text": {},
         "character_2_text": {}
       },
-      "character_1_text": "Papá, ¿puedo llegar un poco más tarde hoy? Es que me invitó un amigo a jugar fut en el parque, pero quedamos a las 7:30 y seguro se va alargar…",
-      "character_2_text": "La regla es a las 8 los viernes, ¿te acuerdas? Eso quedaste con tu mamá y es importante cumplir las reglas que acordamos juntos, {HIJO_TEEN}. Por favor vuelve a tiempo.",
+      "character_1_text": "Papá, ¿puedo llegar un poco más tarde hoy? Es que me invitó un amigo a jugar fut en el parque, pero quedamos a las 7:30 y seguro se va a alargar…",
+      "character_2_text": "La regla es a las 8 los viernes, ¿te acuerdas? Eso quedaste con tu mamá y es importante cumplir las reglas que acordamos juntos, @data.characters.f2_hijo_15.name. Por favor vuelve a tiempo.",
       "completed": false,
       "version": 1
     },
@@ -476,7 +476,7 @@
           "eng": "RECONOCE"
         },
         "section_4_text": {
-          "eng": "Reconoce a @fields.child_name por colaborar contigo para crear la regla. Reconócelo también cada vez que la cumpla."
+          "eng": "Reconoce a @fields.child_name por colaborar contigo para crear la regla. Reconócele también cada vez que la cumpla."
         }
       },
       "category_id": "practical_tips",
@@ -504,7 +504,7 @@
       "section_3_title": "SÉ CONSTANTE",
       "section_3_text": "Una vez que acuerden una regla, apéguense a ella para convertirla en un hábito. Si la regla te incluye a ti, cúmplela también. \n\nSi compartes la crianza con alguien más, pónganse de acuerdo para aplicarla de la misma forma.",
       "section_4_title": "RECONOCE",
-      "section_4_text": "Reconoce a @fields.child_name por colaborar contigo para crear la regla. Reconócelo también cada vez que la cumpla.",
+      "section_4_text": "Reconoce a @fields.child_name por colaborar contigo para crear la regla. Reconócele también cada vez que la cumpla.",
       "completed": false,
       "version": 1
     },
@@ -515,7 +515,7 @@
           "eng": "¡Ahora es tu turno!\n\nCrea una regla familiar con @fields.child_name, utilizando las estrategias que revisamos. 😊"
         },
         "text_2": {
-          "eng": "Por ejemplo:\n\n- Una hora de regreso a casa\n- Tener al menos una comida juntos al día\n- Una tarea del hogar que le toque a él o ella\n- Terminar la tarea antes de salir con amistades"
+          "eng": "Por ejemplo:\n\n- Una hora de regreso a casa\n- Tener al menos una comida juntos al día\n- Una tarea del hogar que le toque\n- Terminar la tarea antes de salir con amistades"
         },
         "quiz_1_question": {
           "eng": "¿Puedes hacerlo esta semana?"
@@ -536,7 +536,7 @@
           "eng": "No"
         },
         "quiz_1_feedback_3": {
-          "eng": "¡Lo entiendo! Puedes empezar con platicar sobre una regla que ya cumplen en la práctica.😊\n\nInvolucrar a @fields.child_name hará más probable que la siga."
+          "eng": "¡Lo entiendo! Puedes empezar por platicar sobre una regla que ya cumplen en la práctica.😊\n\nInvolucrar a @fields.child_name hará más probable que la siga."
         }
       },
       "category_id": "home_activity",
@@ -554,13 +554,13 @@
         "text_2": {}
       },
       "quiz_1_feedback_2": "¡Qué bueno escuchar eso! Involucrar a @fields.child_name hará más probable que siga esa regla.🙌\n\nRecuerda involucrar también a las personas con quienes compartes la crianza.",
-      "quiz_1_feedback_3": "¡Lo entiendo! Puedes empezar con platicar sobre una regla que ya cumplen en la práctica.😊\n\nInvolucrar a @fields.child_name hará más probable que la siga.",
+      "quiz_1_feedback_3": "¡Lo entiendo! Puedes empezar por platicar sobre una regla que ya cumplen en la práctica.😊\n\nInvolucrar a @fields.child_name hará más probable que la siga.",
       "quiz_1_question": "¿Puedes hacerlo esta semana?",
       "quiz_1_option_1_text": "Sí",
       "quiz_1_option_2_text": "Lo intentaré",
       "quiz_1_option_3_text": "No",
       "text_1_facilitator": "¡Ahora es tu turno!\n\nCrea una regla familiar con @fields.child_name, utilizando las estrategias que revisamos. 😊",
-      "text_2": "Por ejemplo:\n\n- Una hora de regreso a casa\n- Tener al menos una comida juntos al día\n- Una tarea del hogar que le toque a él o ella\n- Terminar la tarea antes de salir con amistades",
+      "text_2": "Por ejemplo:\n\n- Una hora de regreso a casa\n- Tener al menos una comida juntos al día\n- Una tarea del hogar que le toque\n- Terminar la tarea antes de salir con amistades",
       "completed": false,
       "version": 1
     }

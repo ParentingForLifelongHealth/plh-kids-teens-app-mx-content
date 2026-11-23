@@ -13,82 +13,125 @@
     {
       "id": "intro_1",
       "category_id": "intro",
-      "text_1_facilitator::eng": "Esta sesión trata sobre cómo tú como cuidador y los familiares con quienes compartes la crianza pueden escucharse y conversar de manera positiva. 💙 ",
-      "text_2::eng": "Escuchar y conversar con las personas que nos rodean es clave para tener un hogar pacífico y tranquilo, evitar que los problemas se hagan más grandes y prevenir que surjan discusiones por no decir las cosas a tiempo. 👂",
-      "quiz_1_question::eng": "**¡Hagamos un ejercicio!**\n\n_Ejercicio no.1_\n\nEscuchar y conversar efectivamente con tu pareja o familiares puede ayudar a prevenir conflictos.",
-      "quiz_1_option_1_text::eng": "Verdadero",
-      "quiz_1_feedback_1::eng": "🎉 ¡Estás en lo correcto!\n\n¡Compartir cómo nos sentimos y hablar sobre las dificultades a las que nos enfrentamos fortalece la relación familiar!\n\nCuando hablas con tu pareja o familiares y les escuchas con atención, ¡se promueve el apoyo mutuo y ayudas a reducir los conflictos!",
-      "quiz_1_option_2_text::eng": "Falso",
-      "quiz_1_feedback_2::eng": "👀 ¡Ups! ¡Buen intento!\n\n¡Compartir cómo nos sentimos y hablar sobre las dificultades a las que nos enfrentamos fortalece la relación familiar!\n\nCuando hablas con tu pareja o familiares y les escuchas con atención, ¡se promueve el apoyo mutuo y ayudas a reducir los conflictos!"
+      "text_1_facilitator::eng": "Este módulo trata sobre **mejorar la escucha y la comunicación** con las personas que comparten la crianza de @fields.child_name contigo. \n\nPuede ser su papá o mamá, tu pareja u otros familiares. 💬"
+    },
+    {
+      "id": "intro_2",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Aquí exploraremos cómo escuchar con atención, expresar con claridad lo que piensas, sientes o necesitas, y elegir un buen momento para hablar. \n\nEsto ayudará a que seas amable contigo y con las personas con quienes compartes la crianza. 🤝"
+    },
+    {
+      "id": "intro_3",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "Antes de empezar, reflexionemos un momento📝\n\nPiensa en la persona o personas con quienes compartes la crianza. ",
+      "quiz_1_question::eng": "¿Te resulta sencillo hablar con ellas sobre temas relacionados con la crianza?",
+      "quiz_1_option_1_text::eng": "Siempre",
+      "quiz_1_feedback_1::eng": "🎉 ¡Qué bien!\n\nHablar sobre la crianza puede ser más sencillo cuando expresas con claridad lo que piensas, sientes o necesitas. \n\nTambién cuando das espacio para escuchar a la otra persona.",
+      "quiz_1_option_2_text::eng": "A veces",
+      "quiz_1_feedback_2::eng": " 👐 Es normal que algunas conversaciones sean más sencillas que otras.\n\nExpresar con claridad lo que piensas, sientes o necesitas y escuchar a la otra persona puede ayudar a tener una mejor conversación, incluso cuando piensan diferente.",
+      "quiz_1_option_3_text::eng": "Nunca",
+      "quiz_1_feedback_3::eng": "❤️‍🩹 Hablar sobre algunos temas de la crianza puede ser difícil.\n\nExpresar con calma lo que piensas, sientes o necesitas, y escuchar lo que la otra persona quiere decir, puede ayudar a abrir la conversación y facilitar la crianza compartida. \n\nNo es tu responsabilidad resolver todo en ese momento."
+    },
+    {
+      "id": "intro_4",
+      "category_id": "intro",
+      "text_1_facilitator::eng": "¡Una pregunta más! \n\nAhora, imagina esto: sientes que estás cargando con demasiadas cosas de la crianza y necesitas más apoyo. ",
+      "quiz_1_question::eng": "¿Cuál puede ser una buena manera de expresarlo?",
+      "quiz_1_option_1_text::eng": "“Nunca me ayudas con nada\"",
+      "quiz_1_feedback_1::eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nCuando sentimos frustración es fácil usar frases como “nunca” o “siempre”. En su lugar, intenta explicar qué está pasando, cómo te sientes y qué necesitas, sin culpar a la otra persona. \n\nNo tienes que poder con todo en la crianza: hablar de lo que necesitas también puede ser un primer paso para compartir la responsabilidad.",
+      "quiz_1_option_2_text::eng": "“Me he sentido muy cansada y me gustaría que nos organicemos para repartir algunas tareas”",
+      "quiz_1_feedback_2::eng": "🎉 ¡Muy bien!\n\nExpresar con claridad qué está pasando, cómo te sientes y qué necesitas, sin culpar a la otra persona, puede ayudar a comunicar lo que estás viviendo. \n\nNo tienes que poder con todo en la crianza: hablar de lo que necesitas también puede ser un primer paso para compartir la responsabilidad.",
+      "quiz_1_option_3_text::eng": "No decir nada y seguir haciéndolo por tu cuenta.",
+      "quiz_1_feedback_3::eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nA veces podemos sentir que es más fácil seguir haciendo las cosas por nuestra cuenta. Pero no tienes que poder con todo en la crianza. \n\nExpresar con calma qué está pasando, cómo te sientes y qué necesitas puede ayudar a comunicar que necesitas compartir la responsabilidad."
     },
     {
       "id": "explore_1",
       "category_id": "explore",
-      "text_1_facilitator::eng": "Aquí tienes una historieta que muestra cómo las parejas o familiares pueden escucharse, apoyarse y hablarse con cariño:",
-      "image_asset": "images/comic/ipv/ipv_listen_1.svg",
-      "character_1_id": "f1_padre",
-      "character_1_text::eng": "¿Estás bien, @data.characters.f1_madre.name? Te ves cansada.",
-      "character_2_id": "f1_madre",
-      "character_2_text::eng": "Anoche no dormí bien y hoy me siento muy cansada."
+      "text_1_facilitator::eng": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo puedes comunicarte mejor con las personas con las que compartes la crianza.\n\nEn este video te compartimos cuatro estrategias recomendadas por especialistas:\n\n1️⃣ ESCUCHA\n2️⃣ COMPARTE\n3️⃣ SÉ AMABLE\n4️⃣ ESCOGE EL MOMENTO",
+      "media_type": "youtube"
     },
     {
       "id": "explore_2",
       "category_id": "explore",
-      "image_asset": "images/comic/ipv/ipv_listen_2.svg",
-      "character_1_id": "f1_padre",
-      "character_1_text::eng": "Lamento oír eso, @data.characters.f1_madre.name. ¿Hay algo que pueda hacer para ayudarte?",
-      "character_2_id": "f1_madre",
-      "character_2_text::eng": "Voy a intentar dormirme más temprano esta noche."
+      "text_1_facilitator::eng": "Veamos cómo @data.characters.f2_madre.name y @data.characters.f2_padre.name usan estas estrategias en la práctica:",
+      "image_asset": "images/comic/ipv/listen/listen_1.svg",
+      "text_2::eng": "@data.characters.f2_madre.name está hablando por teléfono con @data.characters.f2_padre.name. Mira cómo le explica de qué quiere hablar y pregunta si es un buen momento.",
+      "character_1_id": "f2_madre",
+      "character_1_text::eng": "El viernes es el evento de @data.characters.f2_hija_13.name en la escuela. Para ella es importante que podamos estar los dos. ¿Podemos buscar un momento para organizarnos hoy, después de que termines tu turno?"
     },
     {
       "id": "explore_3",
       "category_id": "explore",
-      "image_asset": "images/comic/ipv/ipv_listen_3.svg",
-      "character_1_id": "f1_padre",
-      "character_1_text::eng": "En la noche, después de cenar, yo me puedo encargar de acostar a los niños para que puedas descansar un poco más."
+      "image_asset": "images/comic/ipv/listen/listen_2.svg",
+      "text_2::eng": "Más tarde, @data.characters.f2_madre.name expresa lo que siente. Mira cómo @data.characters.f2_padre.name la escucha.",
+      "character_1_id": "f2_padre",
+      "character_1_text::eng": "Ahorita tengo quince minutos para hablar. Te escucho.",
+      "character_2_id": "f2_madre",
+      "character_2_text::eng": "Me preocupa tener que cerrar el local antes para llegar al evento. He tenido muchos pendientes y me estoy sintiendo rebasada con los eventos escolares. Quisiera saber si tú podrás ir.",
+      "character_3_id": "f2_padre",
+      "character_3_text::eng": "No había pensado en lo complicado que puede ser para ti salir antes del local. Entiendo que tienes muchas cosas pendientes."
     },
     {
       "id": "explore_4",
       "category_id": "explore",
-      "image_asset": "images/comic/ipv/ipv_listen_4.svg",
-      "character_1_id": "f1_madre",
-      "character_1_text::eng": "Sería maravilloso. Muchas gracias, @data.characters.f1_padre.name."
+      "image_asset": "images/comic/ipv/listen/listen_3.svg",
+      "text_2::eng": "Aquí puedes observar cómo ambos expresan lo que les preocupa y escuchan la situación de la otra persona sin culparse.",
+      "character_1_id": "f2_padre",
+      "character_1_text::eng": "Ese día tengo que trabajar hasta tarde, así que tampoco sé si podré salir antes. Me preocupa prometerte a ti y a @data.characters.f2_hija_13.name que iré y después no poder llegar.",
+      "character_2_id": "f2_madre",
+      "character_2_text::eng": "Gracias por decírmelo. Sé que tampoco es fácil para ti salir antes. Me gustaría que los dos pudiéramos acompañarla."
+    },
+    {
+      "id": "explore_5",
+      "category_id": "explore",
+      "image_asset": "images/comic/ipv/listen/listen_4.svg",
+      "text_2::eng": "Fíjate cómo, aunque no resolvieron todo de una vez, hicieron el esfuerzo por escucharse, compartieron lo que necesitaban y acordaron seguir hablando.",
+      "character_1_id": "f2_padre",
+      "character_1_text::eng": "Voy a preguntar si puedo salir antes el viernes y reponer esas horas el sábado por la mañana.",
+      "character_2_id": "f2_madre",
+      "character_2_text::eng": "Está bien. Yo también voy a revisar si puedo cerrar un poco antes. Te aviso en cuanto tenga una respuesta de mi jefa.",
+      "character_3_id": "f2_padre",
+      "character_3_text::eng": "Sí, estoy de acuerdo, yo también te aviso. A @data.characters.f2_hija_13.name le dará mucho gusto vernos a los dos ahí."
+    },
+    {
+      "id": "practise_1",
+      "category_id": "practise",
+      "text_1_facilitator::eng": "Un consejo práctico💡 \n\nEn el cómic vimos cómo pueden ponerse en práctica estas estrategias, pero sabemos que las conversaciones no siempre salen como esperamos.\n\n\nSi una conversación se complica, intenten entender qué necesita la otra persona, hacer preguntas o simplemente decir: “¿Podemos empezar de nuevo?” y tratar de expresarse de otra forma. Comunicarse mejor requiere práctica."
     },
     {
       "id": "practical_tips_1",
       "category_id": "practical_tips",
-      "text_1_facilitator::eng": "Selecciona reproducir ▶️ para aprender algunas estrategias para que tu pareja o familiar y tú puedan escucharse y hablarse de manera comprensiva y cariñosa:\n\n1️⃣ ESCUCHAR A TU PAREJA O FAMILIAR\n2️⃣ COMPARTIR CÓMO TE SIENTES\n3️⃣ SER AMABLE CONTIGO Y CON TU PAREJA O FAMILIARES\n4️⃣ ESCOGER UN MOMENTO EN EL QUE SIENTAS COMODIDAD",
-      "media_type": "youtube",
-      "youtube_gb_en_f": "https://www.youtube.com/watch?v=MHhyl5IxIf8"
+      "text_1_facilitator::eng": "Recordemos las estrategias para escuchar y comunicarte mejor con quienes comparten contigo la crianza.⭐",
+      "section_1_title::eng": "ESCUCHA",
+      "section_1_icon_asset": "images/icons/ESCUCHA.png",
+      "section_1_text::eng": "Deja a un lado las distracciones y permite que la otra persona termine de hablar. \n\nEscucha para entender y, si tienes dudas, pregunta para comprobar que entendiste bien.",
+      "section_2_title::eng": "COMPARTE",
+      "section_2_icon_asset": "images/icons/DIALOGA.png",
+      "section_2_text::eng": "Habla de una cosa a la vez. Expresa con claridad qué está pasando, cómo te sientes y qué necesitas. \n\nEvita frases como “tú nunca” o “tú siempre”.",
+      "section_3_title::eng": "SÉ AMABLE",
+      "section_3_icon_asset": "images/icons/CONVIVE.png",
+      "section_3_text::eng": "Usa palabras respetuosas y un tono tranquilo al hablar y escuchar. \n\nPuedes reconocer lo que la otra persona dice con frases como “Entiendo lo que me dices” o “Gracias por contármelo”.",
+      "section_4_title::eng": "ESCOGE EL MOMENTO",
+      "section_4_icon_asset": "images/icons/COMPARTE_TIEMPO.png",
+      "section_4_text::eng": "Empieza practicando con conversaciones sencillas. Si una conversación se vuelve difícil o hay mucho estrés, hagan una pausa y vuelvan a intentarlo cuando estén más tranquilos."
     },
     {
-      "id": "practical_tips_2",
-      "category_id": "practical_tips",
-      "text_1_facilitator::eng": "Recuerda:",
-      "section_1_title::eng": "ESCUCHA A TU PAREJA O FAMILIAR",
-      "section_1_icon_asset": "images/icons/ESCUCHA.png",
-      "section_1_text::eng": "Intenta darte cuenta de cómo se siente tu pareja o familiar cuando habla contigo.  \n\nEscucha con la mente abierta e intenta no juzgarle. Pregúntate: \"¿Qué es lo que necesita?\". \n\n💚 Si escuchas a tu pareja o familiar con una mente abierta, será más fácil saber cómo le puedes apoyar",
-      "section_2_title::eng": "COMPARTE CÓMO TE SIENTES",
-      "section_2_icon_asset": "images/icons/DIALOGA.png",
-      "section_2_text::eng": "🏆 Está bien que tú también compartas cómo te sientes.  \n\n¡Compartir cómo te sientes y conversar sobre las dificultades a las que te enfrentas es una señal de fortaleza y ayuda a que todas y todos los miembros de la familia enfrenten las adversidades unidos!  \n\n💚 Al compartir nuestras emociones, comprendemos mejor a las demás personas y somos capaces de apoyarnos mutuamente.",
-      "section_3_title::eng": "SÉ AMABLE CONTIGO Y CON TU PAREJA O FAMILIARES",
-      "section_3_icon_asset": "images/icons/CONVIVE.png",
-      "section_3_text::eng": "😣 Trata a tu pareja o familia con cuidado y amabilidad, recuerda que son un equipo.  \n\n⏰ El contacto físico, ya sea un abrazo o decirte a ti mismo o a tu pareja o familiar \"me importas\", puede hacer la diferencia.",
-      "section_4_title::eng": "ESCOGE UN MOMENTO EN EL QUE SIENTAS COMODIDAD",
-      "section_4_icon_asset": "images/icons/IDENTIFICA.png",
-      "section_4_text::eng": "💚 No pasa nada si no siempre quieres compartir cómo te sientes.  \n\n🌷 Puedes elegir compartir cómo te sientes en otro momento, cuando tengas más paz y tranquilidad. "
+      "id": "notice_1",
+      "category_id": "notice",
+      "text_1_facilitator::eng": "⚠️ Antes de ponerlo en práctica\n\nLas estrategias compartidas en este curso son para situaciones en donde las personas pueden hablar de forma segura entre sí.\n\n\nSi alguna vez sientes miedo, recibes amenazas, te humillan, te controlan o alguien te lastima físicamente, no intentes aplicar estas estrategias con esa persona. \n\n\nTu seguridad es lo primero: visita la sección de Recursos para encontrar apoyo."
     },
     {
       "id": "home_activity_1",
       "category_id": "home_activity",
-      "text_1_facilitator::eng": "**Actividad para casa** ⭐ \n\nIntenta apartar un poco de tiempo para conversar con tu pareja o familiar sobre tus sentimientos y de las dificultades a las que te enfrentas. ¡También puedes compartirle cosas positivas! \n\nPor ejemplo, tómate un tiempo durante la cena para contarles cómo te fue en el día.",
-      "quiz_1_question::eng": "¿Tienes tiempo para hacerlo hoy?",
+      "text_1_facilitator::eng": "¡Ahora es tu turno!\n\nEsta semana, busca un momento tranquilo para practicar las cuatro estrategias para comunicarte mejor con alguna persona con quien compartes la crianza: ESCUCHA, COMPARTE, SÉ AMABLE y ESCOGE EL MOMENTO. 😊",
+      "text_2::eng": "Puedes hablar, por ejemplo, sobre:\n\n- Algo que te gustó de tu día\n- Algo que hizo @fields.child_name y quieres compartir\n- Algo que te preocupa o tienes en la cabeza\n- Algo que necesitas esta semana\n- Un plan que te gustaría hacer juntos\n\n\nEmpieza con algo que te resulte sencillo y practica poco a poco.",
+      "quiz_1_question::eng": "¿Puedes intentarlo esta semana?",
       "quiz_1_option_1_text::eng": "Sí",
-      "quiz_1_feedback_1::eng": "¡Bien por ti! Hablar de las dificultades y de nuestras emociones puede ser difícil. ¡Lo estás haciendo muy bien! 🎉",
+      "quiz_1_feedback_1::eng": "¡Muy bien! 🎉\n\nEmpieza con algo sencillo. Lo importante es darte la oportunidad de practicar.",
       "quiz_1_option_2_text::eng": "Lo intentaré",
-      "quiz_1_feedback_2::eng": "¡Excelente! 🌟 Cuando encuentres un momento adecuado, prueba esta actividad y observa qué funciona mejor para ti y tu familia. Recuerda que cada intento cuenta. ✨",
+      "quiz_1_feedback_2::eng": "¡Bien! 💡\n\nPuedes elegir uno de los ejemplos y empezar por ahí. No tienes que hablar de todo de un jalón.",
       "quiz_1_option_3_text::eng": "No",
-      "quiz_1_feedback_3::eng": "Hablar de nuestros sentimientos y de las dificultades a las que nos enfrentamos puede ayudar a las personas a comprendernos y apoyarnos de una mejor manera.\n\nLas emociones y las dificultades forman parte de la vida, y aprender a manejarlas puede ayudar a que la vida sea menos estresante.\n\n☕ Recuerda que puedes volver a consultar este contenido en el Menú Principal."
+      "quiz_1_feedback_3::eng": "¡Lo entiendo! 💛\n\nPuedes empezar con algo pequeño, como contar algo de tu día o escuchar con atención algo que la otra persona quiera compartir."
     }
   ]
 }

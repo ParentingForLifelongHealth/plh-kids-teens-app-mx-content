@@ -121,12 +121,12 @@
       "id": "intro_1",
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "Este módulo trata sobre cómo **crear un plan de seguridad** con @fields.child_name para ayudarle a mantenerse a salvo en su comunidad.\n\n\nA medida que @fields.child_name crece, es común que quiera explorar nuevos espacios y vivir nuevas experiencias. Conversar sobre cómo actuar ante distintas situaciones le ayudará a saber qué hacer si alguna vez lo necesita. 🧭"
+          "eng": "Este módulo trata sobre cómo **crear un plan de seguridad** con @fields.child_name para ayudarle a mantenerse a salvo en su comunidad.\n\n\nA medida que @fields.child_name crece, tal vez quiera explorar nuevos espacios y vivir nuevas experiencias. Conversar sobre cómo actuar ante distintas situaciones le ayudará a prepararse para enfrentarlas. 🧭"
         }
       },
       "category_id": "intro",
       "nested": false,
-      "text_1_facilitator": "Este módulo trata sobre cómo **crear un plan de seguridad** con @fields.child_name para ayudarle a mantenerse a salvo en su comunidad.\n\n\nA medida que @fields.child_name crece, es común que quiera explorar nuevos espacios y vivir nuevas experiencias. Conversar sobre cómo actuar ante distintas situaciones le ayudará a saber qué hacer si alguna vez lo necesita. 🧭",
+      "text_1_facilitator": "Este módulo trata sobre cómo **crear un plan de seguridad** con @fields.child_name para ayudarle a mantenerse a salvo en su comunidad.\n\n\nA medida que @fields.child_name crece, tal vez quiera explorar nuevos espacios y vivir nuevas experiencias. Conversar sobre cómo actuar ante distintas situaciones le ayudará a prepararse para enfrentarlas. 🧭",
       "_translations": {
         "text_1_facilitator": {}
       },
@@ -137,12 +137,12 @@
       "id": "intro_2",
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "Aquí exploraremos cómo construir ese plan de seguridad junto con @fields.child_name para que pueda identificar personas de confianza, pedir ayuda y actuar ante situaciones que no se sientan seguras."
+          "eng": "Aquí exploraremos cómo construir un plan de seguridad junto con @fields.child_name para que pueda identificar personas de confianza, pedir ayuda y actuar ante situaciones que no se sientan seguras. 👐"
         }
       },
       "category_id": "intro",
       "nested": false,
-      "text_1_facilitator": "Aquí exploraremos cómo construir ese plan de seguridad junto con @fields.child_name para que pueda identificar personas de confianza, pedir ayuda y actuar ante situaciones que no se sientan seguras.",
+      "text_1_facilitator": "Aquí exploraremos cómo construir un plan de seguridad junto con @fields.child_name para que pueda identificar personas de confianza, pedir ayuda y actuar ante situaciones que no se sientan seguras. 👐",
       "_translations": {
         "text_1_facilitator": {}
       },
@@ -264,8 +264,6 @@
       "_translations": {
         "text_1_facilitator": {}
       },
-      "youtube_gb_en_f": "https://www.youtube.com/watch?v=yjY5nv1Tnzk&list=PLSUp-fKSYJUYANuyDLfC-s7hf3buQSSMv",
-      "youtube_gb_en_m": "https://www.youtube.com/watch?v=zmbKwI0uSpQ&list=PLSUp-fKSYJUYZ5eb8tNgjkT9-PtiaP95b&index=4",
       "completed": false,
       "version": 1
     },
@@ -305,12 +303,16 @@
     },
     {
       "id": "explore_3",
+      "media_type": "Este módulo trata sobre cómo **crear un plan de seguridad** con @fields.child_name para ayudarle a mantenerse a salvo en su comunidad.\n\n\nA medida que @fields.child_name crece, tal vez quiera explorar nuevos espacios y vivir nuevas experiencias. Conversar sobre cómo actuar ante distintas situaciones le ayudará a prepararse para enfrentarlas. 🧭",
       "_translatedFields": {
         "character_1_text": {
           "eng": "Cada vez haces más cosas por tu cuenta y eso me da mucho gusto. Quiero que sepas cómo cuidarte cuando yo no esté contigo. ¿Qué te parece si hacemos un plan de seguridad juntos?"
         },
         "character_2_text": {
           "eng": "¡Sí, papi!"
+        },
+        "character_3_text": {
+          "eng": "intro_1"
         }
       },
       "category_id": "explore",
@@ -321,14 +323,18 @@
       "character_1_text": "Cada vez haces más cosas por tu cuenta y eso me da mucho gusto. Quiero que sepas cómo cuidarte cuando yo no esté contigo. ¿Qué te parece si hacemos un plan de seguridad juntos?",
       "_translations": {
         "character_1_text": {},
-        "character_2_text": {}
+        "character_2_text": {},
+        "character_3_text": {}
       },
       "character_2_text": "¡Sí, papi!",
+      "character_4_id": "intro",
+      "character_3_text": "intro_1",
       "completed": false,
       "version": 1
     },
     {
       "id": "explore_4",
+      "media_type": "Aquí exploraremos cómo construir un plan de seguridad junto con @fields.child_name para que pueda identificar personas de confianza, pedir ayuda y actuar ante situaciones que no se sientan seguras. 👐",
       "_translatedFields": {
         "text_2": {
           "eng": "Fíjate cómo dibujar juntos un mapa de su comunidad les ayuda a reconocer los lugares que visitan con frecuencia y las personas que podrían ayudar ante una situación de riesgo."
@@ -340,7 +346,7 @@
           "eng": "La escuela, el parque, la tienda y la casa de mi amiga Sofi."
         },
         "character_3_text": {
-          "eng": "¡Muy bien! Vamos a dibujarlos. También vamos a marcar a las personas de confianza con quienes puedes pedir ayuda si alguna vez la necesitas."
+          "eng": "intro_2"
         }
       },
       "category_id": "explore",
@@ -357,8 +363,9 @@
       },
       "character_1_text": "Primero pensemos en los lugares a donde vas normalmente. ¿Cuáles se te ocurren?",
       "character_2_text": "La escuela, el parque, la tienda y la casa de mi amiga Sofi.",
+      "character_4_id": "intro",
+      "character_3_text": "intro_2",
       "character_3_id": "f2_padre",
-      "character_3_text": "¡Muy bien! Vamos a dibujarlos. También vamos a marcar a las personas de confianza con quienes puedes pedir ayuda si alguna vez la necesitas.",
       "completed": false,
       "version": 1
     },
@@ -375,7 +382,7 @@
           "eng": "Mmm…"
         },
         "character_3_text": {
-          "eng": "Te voy a enseñar una estrategia para cuidarte. Antes de ir con alguien, hazte dos preguntas: ¿Mis personas adultas de confianza sabrán dónde estoy? Y si necesito ayuda, ¿podré pedirla? ¿Y si la respuesta es «no» o no estás seguro qué harías?"
+          "eng": "Te voy a enseñar una estrategia para cuidarte. Antes de ir con alguien, hazte dos preguntas: \"¿Las personas que me cuidan sabrán dónde estoy?\" y \"Si necesito ayuda, ¿podré pedirla?\". Si la respuesta es \"no\" o no estás seguro, ¿qué harías?"
         }
       },
       "category_id": "explore",
@@ -392,8 +399,8 @@
       },
       "character_1_text": "Ahora pensemos en una situación. ¿Qué harías si alguien se te acerca y te pide que lo acompañes a otro lugar?",
       "character_2_text": "Mmm…",
+      "character_3_text": "Te voy a enseñar una estrategia para cuidarte. Antes de ir con alguien, hazte dos preguntas: \"¿Las personas que me cuidan sabrán dónde estoy?\" y \"Si necesito ayuda, ¿podré pedirla?\". Si la respuesta es \"no\" o no estás seguro, ¿qué harías?",
       "character_3_id": "f2_padre",
-      "character_3_text": "Te voy a enseñar una estrategia para cuidarte. Antes de ir con alguien, hazte dos preguntas: ¿Mis personas adultas de confianza sabrán dónde estoy? Y si necesito ayuda, ¿podré pedirla? ¿Y si la respuesta es «no» o no estás seguro qué harías?",
       "completed": false,
       "version": 1
     },
@@ -451,8 +458,8 @@
       },
       "character_1_text": "¡Hola, niño! Ven un momentito, quiero enseñarte algo.",
       "character_2_text": "No, gracias. Voy con mi papá.",
-      "character_3_id": "f2_padre",
       "character_3_text": "¡Bien hecho, @data.characters.f2_hijo_8.name! Te alejaste de una persona que no conocías. Practicar nos va a ayudar a recordar qué hacer si algo así te llegara a pasar.",
+      "character_3_id": "f2_padre",
       "completed": false,
       "version": 1
     },

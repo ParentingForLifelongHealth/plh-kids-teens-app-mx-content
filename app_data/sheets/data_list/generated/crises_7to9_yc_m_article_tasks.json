@@ -121,12 +121,12 @@
       "id": "intro_1",
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "Este módulo trata sobre **cómo responder cuando @fields.child_name comparte contigo algo difícil**.\n\n\nA esta edad, @fields.child_name todavía está aprendiendo a poner en palabras lo que siente y y puede ser difícil contar cuando algo le preocupa o le hace sentir mal. ❤️‍🩹"
+          "eng": "Este módulo trata sobre **cómo responder cuando @fields.child_name comparte contigo algo difícil**.\n\n\nA esta edad, @fields.child_name todavía está aprendiendo a poner en palabras lo que siente y puede ser difícil contar cuando algo le preocupa o le hace sentir mal. ❤️‍🩹"
         }
       },
       "category_id": "intro",
       "nested": false,
-      "text_1_facilitator": "Este módulo trata sobre **cómo responder cuando @fields.child_name comparte contigo algo difícil**.\n\n\nA esta edad, @fields.child_name todavía está aprendiendo a poner en palabras lo que siente y y puede ser difícil contar cuando algo le preocupa o le hace sentir mal. ❤️‍🩹",
+      "text_1_facilitator": "Este módulo trata sobre **cómo responder cuando @fields.child_name comparte contigo algo difícil**.\n\n\nA esta edad, @fields.child_name todavía está aprendiendo a poner en palabras lo que siente y puede ser difícil contar cuando algo le preocupa o le hace sentir mal. ❤️‍🩹",
       "_translations": {
         "text_1_facilitator": {}
       },
@@ -153,12 +153,12 @@
       "id": "notice_1",
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "Este módulo puede incluir temas sensibles para ti y @fields.child_name, como el abuso sexual.⚠️\n\n\nSi lo necesitas, tómate un momento antes de continuar o busca apoyo con alguien de confianza.\n\n\nTambién puedes consultar la sección de Recursos si necesitas más información o apoyo."
+          "eng": "Antes de empezar ⚠️\n\nEste módulo puede incluir temas sensibles para ti y @fields.child_name, como el abuso sexual.\n\n\nSi lo necesitas, tómate un momento antes de continuar o busca apoyo con alguien de confianza.\n\n\nTambién puedes consultar la sección de Recursos si necesitas más información o apoyo."
         }
       },
       "category_id": "notice",
       "nested": false,
-      "text_1_facilitator": "Este módulo puede incluir temas sensibles para ti y @fields.child_name, como el abuso sexual.⚠️\n\n\nSi lo necesitas, tómate un momento antes de continuar o busca apoyo con alguien de confianza.\n\n\nTambién puedes consultar la sección de Recursos si necesitas más información o apoyo.",
+      "text_1_facilitator": "Antes de empezar ⚠️\n\nEste módulo puede incluir temas sensibles para ti y @fields.child_name, como el abuso sexual.\n\n\nSi lo necesitas, tómate un momento antes de continuar o busca apoyo con alguien de confianza.\n\n\nTambién puedes consultar la sección de Recursos si necesitas más información o apoyo.",
       "_translations": {
         "text_1_facilitator": {}
       },
@@ -171,25 +171,37 @@
         "text_1_facilitator": {
           "eng": "Ahora sí, reflexionemos un momento📝"
         },
-        "quiz_1_feedback_1": {
+        "quiz_1_question": {
+          "eng": "Verdadero o falso: Si noto que @fields.child_name está diferente o algo le preocupa, es mejor esperar a que quiera contarme qué le pasa en lugar de preguntarle."
+        },
+        "quiz_1_option_1_text": {
           "eng": "Verdadero"
         },
-        "quiz_1_feedback_2": {
+        "quiz_1_feedback_1": {
+          "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nCuando algo le preocupa a @fields.child_name, puede sentir miedo, vergüenza o no saber cómo empezar a hablar. \n\nPreguntarle con calma cómo se siente y hacerle saber que estás ahí para escuchar puede ayudar a que se sienta con la confianza para contarte lo que pasa."
+        },
+        "quiz_1_option_2_text": {
           "eng": "Falso"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "🎉 ¡Tienes razón!\n\nCuando algo le preocupa a @fields.child_name, puede sentir miedo, vergüenza o no saber cómo empezar a hablar. \n\nPreguntarle con calma cómo se siente y hacerle saber que estás ahí para escuchar puede ayudar a que se sienta con la confianza para contarte lo que pasa."
         }
       },
       "category_id": "intro",
       "nested": false,
-      "quiz_1_option_1_image_asset": "Verdadero o falso: Si noto que @fields.child_name está diferente o algo le preocupa, es mejor esperar a que quiera contarme qué le pasa en lugar de preguntarle.",
-      "quiz_1_option_2_image_asset": "👀 ¡Ups! ¡Revisemos esta idea!\n\nCuando algo le preocupa a @fields.child_name, puede sentir miedo, vergüenza o no saber cómo empezar a hablar. \n\nPreguntarle con calma cómo se siente y hacerle saber que estás ahí para escuchar puede ayudar a que se sienta con la confianza para contarte lo que pasa.",
-      "quiz_1_option_3_image_asset": "🎉 ¡Tienes razón!\n\nCuando algo le preocupa a @fields.child_name, puede sentir miedo, vergüenza o no saber cómo empezar a hablar. \n\nPreguntarle con calma cómo se siente y hacerle saber que estás ahí para escuchar puede ayudar a que se sienta con la confianza para contarte lo que pasa.",
-      "quiz_1_feedback_1": "Verdadero",
+      "quiz_1_feedback_1": "👀 ¡Ups! ¡Revisemos esta idea!\n\nCuando algo le preocupa a @fields.child_name, puede sentir miedo, vergüenza o no saber cómo empezar a hablar. \n\nPreguntarle con calma cómo se siente y hacerle saber que estás ahí para escuchar puede ayudar a que se sienta con la confianza para contarte lo que pasa.",
       "_translations": {
         "quiz_1_feedback_1": {},
         "quiz_1_feedback_2": {},
+        "quiz_1_question": {},
+        "quiz_1_option_1_text": {},
+        "quiz_1_option_2_text": {},
         "text_1_facilitator": {}
       },
-      "quiz_1_feedback_2": "Falso",
+      "quiz_1_feedback_2": "🎉 ¡Tienes razón!\n\nCuando algo le preocupa a @fields.child_name, puede sentir miedo, vergüenza o no saber cómo empezar a hablar. \n\nPreguntarle con calma cómo se siente y hacerle saber que estás ahí para escuchar puede ayudar a que se sienta con la confianza para contarte lo que pasa.",
+      "quiz_1_question": "Verdadero o falso: Si noto que @fields.child_name está diferente o algo le preocupa, es mejor esperar a que quiera contarme qué le pasa en lugar de preguntarle.",
+      "quiz_1_option_1_text": "Verdadero",
+      "quiz_1_option_2_text": "Falso",
       "text_1_facilitator": "Ahora sí, reflexionemos un momento📝",
       "completed": false,
       "version": 1
@@ -208,8 +220,6 @@
       "_translations": {
         "text_1_facilitator": {}
       },
-      "youtube_gb_en_f": "https://www.youtube.com/watch?v=pQ5d6Yx9b_o",
-      "youtube_gb_en_m": "https://www.youtube.com/watch?v=-uVcue_7iyg",
       "completed": false,
       "version": 1
     },
@@ -254,7 +264,7 @@
           "eng": "Puedes contarme. Estoy aquí para escucharte."
         },
         "character_2_text": {
-          "eng": "(con lágrimas) Es que… mi tío me tocó de una forma que no me gustó."
+          "eng": "(Llorando) Es que… mi tío me tocó de una forma que no me gustó."
         }
       },
       "category_id": "explore",
@@ -267,7 +277,7 @@
         "character_1_text": {},
         "character_2_text": {}
       },
-      "character_2_text": "(con lágrimas) Es que… mi tío me tocó de una forma que no me gustó.",
+      "character_2_text": "(Llorando) Es que… mi tío me tocó de una forma que no me gustó.",
       "completed": false,
       "version": 1
     },
@@ -275,7 +285,7 @@
       "id": "explore_4",
       "_translatedFields": {
         "text_2": {
-          "eng": "Fíjate cómo @data.characters.f2_madre.name toma una pausa y respira, para poder identificar sus emociones y regularlas. Así se asegura de responder con calma y asegurar que su hijo se sienta segura."
+          "eng": "Fíjate cómo @data.characters.f2_madre.name toma una pausa y respira, para poder identificar sus emociones y regularlas. Así se asegura de responder con calma y asegurar que su hijo se sienta seguro."
         },
         "character_1_text": {
           "eng": "(Pensando) ¡¿Qué acabo de escuchar?! ¿Tocaron a mi hijo? ¡Pero es el esposo de mi hermana, se supone que debería cuidarlo! ¿Qué le pasa? Siento la cara caliente y la tensión en mi cuerpo. Estoy muy enojada."
@@ -289,7 +299,7 @@
       "image_asset": "images/comic/safety/crises/crises_7to9_yc_m_2.svg",
       "character_1_id": "f2_madre",
       "character_2_id": "f2_madre",
-      "text_2": "Fíjate cómo @data.characters.f2_madre.name toma una pausa y respira, para poder identificar sus emociones y regularlas. Así se asegura de responder con calma y asegurar que su hijo se sienta segura.",
+      "text_2": "Fíjate cómo @data.characters.f2_madre.name toma una pausa y respira, para poder identificar sus emociones y regularlas. Así se asegura de responder con calma y asegurar que su hijo se sienta seguro.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
@@ -374,7 +384,7 @@
       "id": "explore_7",
       "_translatedFields": {
         "text_2": {
-          "eng": "Luego, @data.characters.f2_padre.name toma medidas para proteger a su hijo. Mira cómo le explica a @data.characters.f2_hijo_8.name lo que va a pasar, para ayudar a que se sienta tranquilo."
+          "eng": "Luego, @data.characters.f2_madre.name toma medidas para proteger a su hijo. Mira cómo le explica a @data.characters.f2_hijo_8.name lo que va a pasar, para ayudar a que se sienta tranquilo."
         },
         "character_1_text": {
           "eng": "¿Qué va a pasar ahora?"
@@ -391,7 +401,7 @@
       "image_asset": "images/comic/safety/crises/crises_7to9_yc_m_5.svg",
       "character_1_id": "f2_hijo_8",
       "character_2_id": "f2_madre",
-      "text_2": "Luego, @data.characters.f2_padre.name toma medidas para proteger a su hijo. Mira cómo le explica a @data.characters.f2_hijo_8.name lo que va a pasar, para ayudar a que se sienta tranquilo.",
+      "text_2": "Luego, @data.characters.f2_madre.name toma medidas para proteger a su hijo. Mira cómo le explica a @data.characters.f2_hijo_8.name lo que va a pasar, para ayudar a que se sienta tranquilo.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
@@ -463,7 +473,7 @@
           "eng": "PROTEGE"
         },
         "section_4_text": {
-          "eng": "Pregúntate qué podría necesitar para sentirse seguro y en calma, y pregúntale también qué le ayudaría. \n\nPuede ser un abrazo, estar contigo, seguir una rutina conocida o tomar medidas para protegerle."
+          "eng": "Pregúntate qué podría necesitar para sentir seguridad y calma, y pregúntale también qué le ayudaría. \n\nPuede ser un abrazo, estar contigo, seguir una rutina conocida o tomar medidas para protegerle."
         }
       },
       "category_id": "practical_tips",
@@ -491,7 +501,7 @@
       "section_3_title": "VALIDA",
       "section_3_text": "Agradécele por confiar en ti y hazle saber que hizo bien en contarte. Evita minimizar lo que siente o poner en duda su experiencia.",
       "section_4_title": "PROTEGE",
-      "section_4_text": "Pregúntate qué podría necesitar para sentirse seguro y en calma, y pregúntale también qué le ayudaría. \n\nPuede ser un abrazo, estar contigo, seguir una rutina conocida o tomar medidas para protegerle.",
+      "section_4_text": "Pregúntate qué podría necesitar para sentir seguridad y calma, y pregúntale también qué le ayudaría. \n\nPuede ser un abrazo, estar contigo, seguir una rutina conocida o tomar medidas para protegerle.",
       "completed": false,
       "version": 1
     },

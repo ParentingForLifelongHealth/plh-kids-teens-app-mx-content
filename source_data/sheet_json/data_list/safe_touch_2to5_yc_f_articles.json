@@ -23,7 +23,7 @@
     {
       "id": "notice_1",
       "category_id": "notice",
-      "text_1_facilitator::eng": "Este módulo toca temas sensibles, como el acoso o el abuso sexual.⚠️\n\nSi te preocupa que @fields.child_name pueda estar en riesgo de sufrir daño, o que incluso ya lo haya sufrido, por favor consulta nuestros _Recursos de Apoyo_. Los encuentras tocando el botón @global.library en la parte inferior de tu pantalla. "
+      "text_1_facilitator::eng": "Antes de empezar ⚠️\n\nEste módulo toca temas sensibles, como el acoso o el abuso sexual.\n\nSi te preocupa que @fields.child_name pueda estar en riesgo de sufrir daño, o que incluso ya lo haya sufrido, por favor consulta nuestros _Recursos de Apoyo_. \n\nLos encuentras tocando el botón @global.library en la parte inferior de tu pantalla. "
     },
     {
       "id": "intro_4",
@@ -53,7 +53,7 @@
       "quiz_1_option_1_text::eng": "Pedirle que no hable de eso.",
       "quiz_1_feedback_1::eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nEscuchar con calma y decirle que hizo bien en contarte le enseña que puede confiar en ti. Si sientes sorpresa, tristeza o enojo, respira profundo y trata de mantener la calma. \n\nContarlo puede dar miedo o vergüenza. Trata de no culparle por lo ocurrido, no presionar para que dé más detalles ni preguntarle por qué no lo dijo antes. Lo más importante es escucharle, creerle y protegerle. \n\nTampoco confrontes a la persona señalada. Si hay un riesgo inmediato, aléjale de la situación y busca apoyo de profesionales o instituciones especializadas. \n\nRecuerda que en la sección de Recursos encontrarás información sobre dónde pedir apoyo.",
       "quiz_1_option_2_text::eng": "Escucharle con calma, agradecerle por contártelo y buscar ayuda.",
-      "quiz_1_feedback_2::eng": "🎉 ¡Buen trabajo!\n\nEscuchar con calma y decirle que hizo bien en contarte le enseña que puede confiar en ti y que no es su culpa. Si sientes sorpresa, tristeza o enojo, respira profundo y trata de mantener la calma. \n\nContarlo puede dar miedo o vergüenza, así que trata de no culparle por lo ocurrido, no presionar para que dé más detalles ni preguntarle por qué no lo dijo antes. Lo más importante ahora es escucharle, creerle y protegerle. \n\nTampoco confrontes a la persona señalada. Si hay un riesgo inmediato, aléjale de la situación y busca apoyo de profesionales o instituciones especializadas. Recuerda que en la sección de Recursos encontrarás información sobre dónde pedir apoyo.",
+      "quiz_1_feedback_2::eng": "🎉 ¡Buen trabajo!\n\nEscuchar con calma y decirle que hizo bien en contarte le enseña que puede confiar en ti. Si sientes sorpresa, tristeza o enojo, respira profundo y trata de mantener la calma. \n\nContarlo puede dar miedo o vergüenza. Trata de no culparle por lo ocurrido, no presionar para que dé más detalles ni preguntarle por qué no lo dijo antes. Lo más importante es escucharle, creerle y protegerle. \n\nTampoco confrontes a la persona señalada. Si hay un riesgo inmediato, aléjale de la situación y busca apoyo de profesionales o instituciones especializadas. \n\nRecuerda que en la sección de Recursos encontrarás información sobre dónde pedir apoyo.",
       "quiz_1_option_3_text::eng": "Decirle que está mintiendo.",
       "quiz_1_feedback_3::eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nEscuchar con calma y decirle que hizo bien en contarte le enseña que puede confiar en ti. Si sientes sorpresa, tristeza o enojo, respira profundo y trata de mantener la calma. \n\nContarlo puede dar miedo o vergüenza. Trata de no culparle por lo ocurrido, no presionar para que dé más detalles ni preguntarle por qué no lo dijo antes. Lo más importante es escucharle, creerle y protegerle. \n\nTampoco confrontes a la persona señalada. Si hay un riesgo inmediato, aléjale de la situación y busca apoyo de profesionales o instituciones especializadas. \n\nRecuerda que en la sección de Recursos encontrarás información sobre dónde pedir apoyo.",
       "quiz_1_option_4_text::eng": "Ir a enfrentar a la persona señalada.",
@@ -63,22 +63,20 @@
       "id": "explore_1",
       "category_id": "explore",
       "text_1_facilitator::eng": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo puedes enseñarle a @fields.child_name a cuidar su cuerpo.\n\nEn este video te compartimos cuatro estrategias recomendadas por especialistas:\n\n1️⃣ HABLA CLARO\n2️⃣ DI QUE NO\n3️⃣ ALÉJATE\n4️⃣ CUÉNTALO",
-      "media_type": "youtube",
-      "youtube_gb_en_f": "https://www.youtube.com/watch?v=1RwMKutl9CY",
-      "youtube_gb_en_m": "https://www.youtube.com/watch?v=xvw5SxMxV6Y"
+      "media_type": "youtube"
     },
     {
       "id": "explore_2",
       "category_id": "explore",
       "text_1_facilitator::eng": "Veamos cómo @data.characters.f2_padre.name usa estas estrategias en la práctica:",
       "image_asset": "images/comic/safety/safe_touch/safe_touch_2to5_yc_f_1.svg",
-      "text_2::eng": "Observa cómo @data.characters.f2_padre.name habla claro sobre las partes privadas del cuerpo con @data.characters.f2_hija_3.name, para ayudarle a conocerlas y eneñarle a cuidarlas.",
+      "text_2::eng": "Observa cómo @data.characters.f2_padre.name habla claro sobre las partes privadas del cuerpo con @data.characters.f2_hija_3.name, para ayudarle a conocerlas y enseñarle a cuidarlas.",
       "character_1_id": "f2_padre",
-      "character_1_text::eng": "Gracias por pasar tiempo para conectar conmigo, @data.characters.f2_hija_3.name. Oye quiero platicar contigo de algo importante. ¿Sabes cuáles son las partes privadas de tu cuerpo?",
+      "character_1_text::eng": "Gracias por pasar tiempo para conectar conmigo, @data.characters.f2_hija_3.name. Ahora quiero platicar contigo de algo importante. ¿Sabes cuáles son las partes privadas de tu cuerpo?",
       "character_2_id": "f2_hija_3",
       "character_2_text::eng": "¿Partes privadas?",
       "character_3_id": "f2_padre",
-      "character_3_text::eng": "Sí. Son las partes del cuerpo que cubre la ropa interior: el pecho y los glúteos, el pene y los testículos en los niños y la vulva en las niñas. "
+      "character_3_text::eng": "Sí. Son las partes del cuerpo que cubre la ropa interior: el pecho y los glúteos, el pene y los testículos en los niños, y la vulva en las niñas. "
     },
     {
       "id": "explore_3",

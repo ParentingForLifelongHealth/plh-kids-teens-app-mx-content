@@ -38,21 +38,7 @@
       "id": "intro_3",
       "category_id": "intro",
       "nested": false,
-      "text_1_facilitator": "Antes de empezar, reflexionemos📝",
-      "_translations": {
-        "text_1_facilitator": {}
-      },
-      "_translatedFields": {
-        "text_1_facilitator": {
-          "eng": "Antes de empezar, reflexionemos📝"
-        }
-      }
-    },
-    {
-      "id": "intro_4",
-      "category_id": "intro",
-      "nested": false,
-      "text_1_facilitator": "¡Una pregunta más!",
+      "text_1_facilitator": "Antes de empezar, reflexionemos un momento📝",
       "_translations": {
         "text_1_facilitator": {},
         "quiz_1_question": {},
@@ -63,7 +49,7 @@
       },
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "¡Una pregunta más!"
+          "eng": "Antes de empezar, reflexionemos un momento📝"
         },
         "quiz_1_question": {
           "eng": "Verdadero o falso: Lo que te dices después de un momento difícil puede influir en cómo te sientes y cómo actúas con @fields.child_name."
@@ -88,10 +74,10 @@
       "quiz_1_feedback_2": "👀 ¡Ups! ¡Revisemos esta idea!\n\nLo que te dices puede influir en cómo te sientes y actúas. Por ejemplo, pensar “Siempre hago todo mal” puede hacer que te sientas triste o con menos ánimo. \n\nEn cambio, pensar “La próxima vez voy a respirar antes de responder” te ayuda a encontrar algo que puedes hacer diferente."
     },
     {
-      "id": "intro_5",
+      "id": "intro_4",
       "category_id": "intro",
       "nested": false,
-      "text_1_facilitator": "¡Última pregunta!",
+      "text_1_facilitator": "¡Una pregunta más!",
       "_translations": {
         "text_1_facilitator": {},
         "quiz_1_question": {},
@@ -102,7 +88,7 @@
       },
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "¡Última pregunta!"
+          "eng": "¡Una pregunta más!"
         },
         "quiz_1_question": {
           "eng": "Verdadero o falso: Las mujeres necesitan hablarse con amabilidad cuando tienen un momento difícil, pero los hombres deben ser firmes y seguir adelante."
@@ -127,11 +113,10 @@
       "quiz_1_feedback_2": "🎉 ¡Tienes razón!\n\nTodas las personas, sin importar su género, pueden tener días difíciles. Hablarte con amabilidad no te hace menos fuerte y puede ayudar a que te sientas mejor y respondas con más calma. \n\nAdemás, @fields.child_name aprende al observar cómo enfrentas los momentos difíciles."
     },
     {
-      "id": "explore_1",
-      "category_id": "explore",
-      "media_type": "youtube",
+      "id": "intro_5",
+      "category_id": "intro",
       "nested": false,
-      "text_1_facilitator": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo puedes hablarte con más amabilidad después de un momento difícil y pensar qué puedes hacer diferente.\n\nEn este video te compartimos tres estrategias recomendadas por especialistas:\n\n1️⃣ ESCÚCHATE\n2️⃣ IMAGINA\n3️⃣ REFORMULA",
+      "text_1_facilitator": "¡Última pregunta!",
       "_translations": {
         "text_1_facilitator": {},
         "quiz_1_question": {},
@@ -142,7 +127,7 @@
       },
       "_translatedFields": {
         "text_1_facilitator": {
-          "eng": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo puedes hablarte con más amabilidad después de un momento difícil y pensar qué puedes hacer diferente.\n\nEn este video te compartimos tres estrategias recomendadas por especialistas:\n\n1️⃣ ESCÚCHATE\n2️⃣ IMAGINA\n3️⃣ REFORMULA"
+          "eng": "¡Última pregunta!"
         },
         "quiz_1_question": {
           "eng": "Verdadero o falso: Para reconocer lo que pienso y siento, necesito hablar de mis emociones con otras personas o decirlas en voz alta."
@@ -157,19 +142,34 @@
           "eng": "Falso"
         },
         "quiz_1_feedback_2": {
-          "eng": "🎉 ¡Tienes razón!\n\nNo necesitas hablar con otras personas ni decir en voz alta lo que piensas o sientes si no quieres hacerlo. \n\nPuedes tomarte unos segundos para reconocer tus pensamientos y emociones en silencio, solo para ti, y después elegir cómo actuar"
+          "eng": "🎉 ¡Tienes razón!\n\nNo necesitas hablar con otras personas ni decir en voz alta lo que piensas o sientes si no quieres hacerlo. \n\nPuedes tomarte unos segundos para reconocer tus pensamientos y emociones en silencio, solo para ti, y después elegir cómo actuar."
         }
       },
       "quiz_1_question": "Verdadero o falso: Para reconocer lo que pienso y siento, necesito hablar de mis emociones con otras personas o decirlas en voz alta.",
       "quiz_1_option_1_text": "Verdadero",
       "quiz_1_feedback_1": "👀 ¡Ups! ¡Revisemos esta idea!\n\nNo necesitas hablar con otras personas ni decir en voz alta lo que piensas o sientes si no quieres hacerlo. \n\nPuedes tomarte unos segundos para reconocer tus pensamientos y emociones en silencio, solo para ti, y después elegir cómo actuar.",
       "quiz_1_option_2_text": "Falso",
-      "quiz_1_feedback_2": "🎉 ¡Tienes razón!\n\nNo necesitas hablar con otras personas ni decir en voz alta lo que piensas o sientes si no quieres hacerlo. \n\nPuedes tomarte unos segundos para reconocer tus pensamientos y emociones en silencio, solo para ti, y después elegir cómo actuar"
+      "quiz_1_feedback_2": "🎉 ¡Tienes razón!\n\nNo necesitas hablar con otras personas ni decir en voz alta lo que piensas o sientes si no quieres hacerlo. \n\nPuedes tomarte unos segundos para reconocer tus pensamientos y emociones en silencio, solo para ti, y después elegir cómo actuar."
+    },
+    {
+      "id": "explore_1",
+      "category_id": "explore",
+      "media_type": "youtube",
+      "nested": false,
+      "text_1_facilitator": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo puedes hablarte con más amabilidad después de un momento difícil y pensar qué puedes hacer diferente.\n\nEn este video te compartimos tres estrategias recomendadas por especialistas:\n\n1️⃣ ESCÚCHATE\n2️⃣ IMAGINA\n3️⃣ REFORMULA",
+      "_translations": {
+        "text_1_facilitator": {}
+      },
+      "_translatedFields": {
+        "text_1_facilitator": {
+          "eng": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo puedes hablarte con más amabilidad después de un momento difícil y pensar qué puedes hacer diferente.\n\nEn este video te compartimos tres estrategias recomendadas por especialistas:\n\n1️⃣ ESCÚCHATE\n2️⃣ IMAGINA\n3️⃣ REFORMULA"
+        }
+      }
     },
     {
       "id": "explore_2",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/self_talk/self_talk_1.svg",
+      "image_asset": "images/comic/mental_health/self_talk/self_talk_1.svg",
       "character_1_id": "f2_hijo_8",
       "character_2_id": "f2_hija_13",
       "character_3_id": "f2_madre",
@@ -187,7 +187,7 @@
           "eng": "Veamos cómo @data.characters.f2_madre.name usa estas estrategias en la práctica:"
         },
         "text_2": {
-          "eng": "Esta mañana, @data.characters.f2_madre.name tiene mucha prisa y termina levantando la voz a  @data.characters.f2_hijo_8.name y @data.characters.f2_hija_13.name."
+          "eng": "Esta mañana, @data.characters.f2_madre.name tiene mucha prisa y termina levantando la voz a @data.characters.f2_hijo_8.name y @data.characters.f2_hija_13.name."
         },
         "character_1_text": {
           "eng": "¡Ay, se cayó la leche!"
@@ -199,7 +199,7 @@
           "eng": "¡Esto es un desastre! ¡Siempre pasa algo cuando tenemos prisa! ¡No puedo estar pendiente de todo!"
         }
       },
-      "text_2": "Esta mañana, @data.characters.f2_madre.name tiene mucha prisa y termina levantando la voz a  @data.characters.f2_hijo_8.name y @data.characters.f2_hija_13.name.",
+      "text_2": "Esta mañana, @data.characters.f2_madre.name tiene mucha prisa y termina levantando la voz a @data.characters.f2_hijo_8.name y @data.characters.f2_hija_13.name.",
       "character_1_text": "¡Ay, se cayó la leche!",
       "character_2_text": "Mamá, no encuentro mi cuaderno. ¿Lo has visto?",
       "character_3_text": "¡Esto es un desastre! ¡Siempre pasa algo cuando tenemos prisa! ¡No puedo estar pendiente de todo!"
@@ -207,7 +207,7 @@
     {
       "id": "explore_3",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/self_talk/self_talk_2.svg",
+      "image_asset": "images/comic/mental_health/self_talk/self_talk_2.svg",
       "character_1_id": "f2_madre",
       "nested": false,
       "text_2": "@data.characters.f2_madre.name se da cuenta de su reacción ante ese momento difícil. Fíjate cómo pone atención a lo que se está diciendo a sí misma y se escucha, sin juzgarse.",
@@ -228,7 +228,7 @@
     {
       "id": "explore_4",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/self_talk/self_talk_3.svg",
+      "image_asset": "images/comic/mental_health/self_talk/self_talk_3.svg",
       "character_1_id": "f2_madre",
       "nested": false,
       "text_2": "@data.characters.f2_madre.name imagina qué le diría alguien que la quiere.",
@@ -249,17 +249,17 @@
     {
       "id": "explore_5",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/self_talk/self_talk_3.svg",
+      "image_asset": "images/comic/mental_health/self_talk/self_talk_3.svg",
       "character_1_id": "f2_madre",
       "nested": false,
-      "text_2": "Mira cómo reformula el pensamiento para hablarse con más amabilidad, reconocer lo que pasó y pensar qué puede hacer diferente",
+      "text_2": "Mira cómo reformula el pensamiento para hablarse con más amabilidad, reconocer lo que pasó y pensar qué puede hacer diferente.",
       "_translations": {
         "text_2": {},
         "character_1_text": {}
       },
       "_translatedFields": {
         "text_2": {
-          "eng": "Mira cómo reformula el pensamiento para hablarse con más amabilidad, reconocer lo que pasó y pensar qué puede hacer diferente"
+          "eng": "Mira cómo reformula el pensamiento para hablarse con más amabilidad, reconocer lo que pasó y pensar qué puede hacer diferente."
         },
         "character_1_text": {
           "eng": "(Pensando) Hoy tenía mucha prisa y les grité. Eso no estuvo bien. La próxima vez voy a respirar antes de responder y pedirles que nos organicemos."
@@ -270,7 +270,7 @@
     {
       "id": "explore_6",
       "category_id": "explore",
-      "image_asset": "images/comic/behave/self_talk/self_talk_4.svg",
+      "image_asset": "images/comic/mental_health/self_talk/self_talk_4.svg",
       "character_1_id": "f2_madre",
       "character_2_id": "f2_hijo_8",
       "character_3_id": "f2_madre",
@@ -303,90 +303,98 @@
     {
       "id": "practical_tips_1",
       "category_id": "practical_tips",
+      "section_1_icon_asset": "images/icons/ESCUCHA.png",
+      "section_2_icon_asset": "images/icons/IMAGINA.png",
+      "section_3_icon_asset": "images/icons/CAMBIA_PERSPECTIVA.png",
       "nested": false,
       "text_1_facilitator": "Recordemos las estrategias para hablarte con más amabilidad después de un momento difícil y pensar qué puedes hacer diferente.⭐",
       "_translations": {
         "text_1_facilitator": {},
+        "section_1_title": {},
         "section_1_text": {},
-        "section_1_button_text": {},
-        "section_1_extra_text": {},
+        "section_2_title": {},
         "section_2_text": {},
-        "section_2_button_text": {},
-        "section_2_extra_text": {},
-        "section_3_text": {},
-        "section_3_button_text": {},
-        "section_3_extra_text": {}
+        "section_3_title": {},
+        "section_3_text": {}
       },
       "_translatedFields": {
         "text_1_facilitator": {
           "eng": "Recordemos las estrategias para hablarte con más amabilidad después de un momento difícil y pensar qué puedes hacer diferente.⭐"
         },
-        "section_1_text": {
+        "section_1_title": {
           "eng": "ESCÚCHATE"
         },
-        "section_1_button_text": {
-          "eng": "images/icons/ESCUCHA.png"
-        },
-        "section_1_extra_text": {
+        "section_1_text": {
           "eng": "Pregúntate: \"¿qué me estoy diciendo?\". Presta atención a lo que piensas después de un momento difícil. \n\nPor ejemplo, si pierdes la paciencia, tal vez piensas: “¡Nunca hago las cosas bien!”. Reconocer estos pensamientos es el primer paso para cambiar la forma en que te hablas."
         },
-        "section_2_text": {
+        "section_2_title": {
           "eng": "IMAGINA"
         },
-        "section_2_button_text": {
-          "eng": "images/icons/IMAGINA.png"
-        },
-        "section_2_extra_text": {
+        "section_2_text": {
           "eng": "Pregúntate: ¿qué me diría alguien que me quiere si le contara lo que pasó? Imagina cómo te hablaría una persona que te aprecia. \n\nEsto puede ayudarte a ver lo que pasó de otra manera y tratarte con más amabilidad."
         },
-        "section_3_text": {
+        "section_3_title": {
           "eng": "REFORMULA"
         },
-        "section_3_button_text": {
-          "eng": "images/icons/CAMBIA_PERSPECTIVA.png"
-        },
-        "section_3_extra_text": {
+        "section_3_text": {
           "eng": "Cambia ese pensamiento por uno más amable y útil. Reconoce qué hizo difícil ese momento, qué pasó y qué puedes hacer diferente la próxima vez. \n\nPor ejemplo: “Hoy tuve un día difícil y perdí la paciencia. La próxima vez voy a respirar antes de responder”."
         }
       },
-      "section_1_text": "ESCÚCHATE",
-      "section_1_button_text": "images/icons/ESCUCHA.png",
-      "section_1_extra_text": "Pregúntate: \"¿qué me estoy diciendo?\". Presta atención a lo que piensas después de un momento difícil. \n\nPor ejemplo, si pierdes la paciencia, tal vez piensas: “¡Nunca hago las cosas bien!”. Reconocer estos pensamientos es el primer paso para cambiar la forma en que te hablas.",
-      "section_2_text": "IMAGINA",
-      "section_2_button_text": "images/icons/IMAGINA.png",
-      "section_2_extra_text": "Pregúntate: ¿qué me diría alguien que me quiere si le contara lo que pasó? Imagina cómo te hablaría una persona que te aprecia. \n\nEsto puede ayudarte a ver lo que pasó de otra manera y tratarte con más amabilidad.",
-      "section_3_text": "REFORMULA",
-      "section_3_button_text": "images/icons/CAMBIA_PERSPECTIVA.png",
-      "section_3_extra_text": "Cambia ese pensamiento por uno más amable y útil. Reconoce qué hizo difícil ese momento, qué pasó y qué puedes hacer diferente la próxima vez. \n\nPor ejemplo: “Hoy tuve un día difícil y perdí la paciencia. La próxima vez voy a respirar antes de responder”."
+      "section_1_title": "ESCÚCHATE",
+      "section_1_text": "Pregúntate: \"¿qué me estoy diciendo?\". Presta atención a lo que piensas después de un momento difícil. \n\nPor ejemplo, si pierdes la paciencia, tal vez piensas: “¡Nunca hago las cosas bien!”. Reconocer estos pensamientos es el primer paso para cambiar la forma en que te hablas.",
+      "section_2_title": "IMAGINA",
+      "section_2_text": "Pregúntate: ¿qué me diría alguien que me quiere si le contara lo que pasó? Imagina cómo te hablaría una persona que te aprecia. \n\nEsto puede ayudarte a ver lo que pasó de otra manera y tratarte con más amabilidad.",
+      "section_3_title": "REFORMULA",
+      "section_3_text": "Cambia ese pensamiento por uno más amable y útil. Reconoce qué hizo difícil ese momento, qué pasó y qué puedes hacer diferente la próxima vez. \n\nPor ejemplo: “Hoy tuve un día difícil y perdí la paciencia. La próxima vez voy a respirar antes de responder”."
     },
     {
       "id": "home_activity_1",
       "category_id": "home_activity",
-      "youtube_gb_en_f": "¿Puedes intentarlo esta semana?",
-      "youtube_gb_en_m": "Sí",
-      "youtube_locale_m": "¡Muy bien! Recuerda que puedes aprender de tus errores sin tratarte mal. 🎉\n\nPiensa en qué te diría alguien que te quiere. Después, crea una frase más amable y escríbela para recordarla. No tiene que ser perfecta.",
-      "quiz_1_option_1_image_asset": "¡Bien! Puedes empezar con una situación sencilla y pensar qué te diría alguien que te quiere.💡\n\nDespués, crea una frase más amable y escríbela para recordarla. No tiene que ser perfecta.",
-      "quiz_1_option_2_image_asset": "¡Lo entiendo! Puedes practicar cuando tengas un momento tranquilo, recordando algo que pasó antes.💛\n\nSi quieres, puedes escribir tu nueva frase o pensarla en silencio. No tiene que ser perfecta.",
       "nested": false,
       "text_1_facilitator": "¡Ahora es tu turno!\n\nEsta semana, piensa en un momento difícil con @fields.child_name en el que te hubiera gustado actuar de otra manera.\n\n\nPiensa qué pasó, por qué fue difícil y qué puedes hacer diferente la próxima vez. Si te sirve para recordarlo, escríbelo. ✍️",
       "_translations": {
         "text_1_facilitator": {},
         "quiz_1_question": {},
-        "quiz_1_feedback_1": {}
+        "quiz_1_option_1_text": {},
+        "quiz_1_feedback_1": {},
+        "quiz_1_option_2_text": {},
+        "quiz_1_feedback_2": {},
+        "quiz_1_option_3_text": {},
+        "quiz_1_feedback_3": {}
       },
       "_translatedFields": {
         "text_1_facilitator": {
           "eng": "¡Ahora es tu turno!\n\nEsta semana, piensa en un momento difícil con @fields.child_name en el que te hubiera gustado actuar de otra manera.\n\n\nPiensa qué pasó, por qué fue difícil y qué puedes hacer diferente la próxima vez. Si te sirve para recordarlo, escríbelo. ✍️"
         },
         "quiz_1_question": {
-          "eng": "Lo intentaré"
+          "eng": "¿Puedes intentarlo esta semana?"
+        },
+        "quiz_1_option_1_text": {
+          "eng": "Sí"
         },
         "quiz_1_feedback_1": {
+          "eng": "¡Muy bien! Recuerda que puedes aprender de tus errores sin tratarte mal. 🎉\n\nPiensa en qué te diría alguien que te quiere. Después, crea una frase más amable y escríbela para recordarla. No tiene que ser perfecta."
+        },
+        "quiz_1_option_2_text": {
+          "eng": "Lo intentaré"
+        },
+        "quiz_1_feedback_2": {
+          "eng": "¡Bien! Puedes empezar con una situación sencilla y pensar qué te diría alguien que te quiere.💡\n\nDespués, crea una frase más amable y escríbela para recordarla. No tiene que ser perfecta."
+        },
+        "quiz_1_option_3_text": {
           "eng": "No"
+        },
+        "quiz_1_feedback_3": {
+          "eng": "¡Lo entiendo! Puedes practicar cuando tengas un momento tranquilo, recordando algo que pasó antes.💛\n\nSi quieres, puedes escribir tu nueva frase o pensarla en silencio. No tiene que ser perfecta."
         }
       },
-      "quiz_1_question": "Lo intentaré",
-      "quiz_1_feedback_1": "No"
+      "quiz_1_question": "¿Puedes intentarlo esta semana?",
+      "quiz_1_option_1_text": "Sí",
+      "quiz_1_feedback_1": "¡Muy bien! Recuerda que puedes aprender de tus errores sin tratarte mal. 🎉\n\nPiensa en qué te diría alguien que te quiere. Después, crea una frase más amable y escríbela para recordarla. No tiene que ser perfecta.",
+      "quiz_1_option_2_text": "Lo intentaré",
+      "quiz_1_feedback_2": "¡Bien! Puedes empezar con una situación sencilla y pensar qué te diría alguien que te quiere.💡\n\nDespués, crea una frase más amable y escríbela para recordarla. No tiene que ser perfecta.",
+      "quiz_1_option_3_text": "No",
+      "quiz_1_feedback_3": "¡Lo entiendo! Puedes practicar cuando tengas un momento tranquilo, recordando algo que pasó antes.💛\n\nSi quieres, puedes escribir tu nueva frase o pensarla en silencio. No tiene que ser perfecta."
     }
   ],
   "_source": {
