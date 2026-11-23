@@ -170,6 +170,14 @@
       "exclude_from_translation": true
     },
     {
+      "type": "begin_data_items",
+      "name": "completed_courses",
+      "value": "@data.courses",
+      "parameter_list": "filter: !!@item.completed",
+      "exclude_from_translation": true,
+      "comments": "filter: !([@local.courses_list].includes(@item.id))"
+    },
+    {
       "type": "begin_display_group",
       "name": "completed_title",
       "parameter_list": "style: column",
@@ -188,14 +196,6 @@
     {
       "type": "end_display_group",
       "comments": "filter: !([@local.courses_not_done].includes(@item.id))"
-    },
-    {
-      "type": "begin_data_items",
-      "name": "completed_courses",
-      "value": "@data.courses",
-      "parameter_list": "filter: !!@item.completed",
-      "exclude_from_translation": true,
-      "comments": "filter: !([@local.courses_list].includes(@item.id))"
     },
     {
       "type": "begin_template",
