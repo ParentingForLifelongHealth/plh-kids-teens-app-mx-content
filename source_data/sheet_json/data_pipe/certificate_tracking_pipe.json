@@ -1,0 +1,13 @@
+{
+  "flow_type": "data_pipe",
+  "flow_name": "certificate_tracking_pipe",
+  "status": "released",
+  "rows": [
+    {
+      "operation": "map",
+      "args_list": "id: @row.id; n_downloads: 0; n_shares: 0; n_name_change_clicks: 0",
+      "input_source": "courses",
+      "output_target": "certificate_tracking"
+    }
+  ]
+}

@@ -84,7 +84,7 @@
 | reset_app | 4 |
 | reset_data | 3 |
 | save_to_device | 3 |
-| set_data | 523 |
+| set_data | 527 |
 | set_field | 536 |
 | set_item | 30 |
 | set_local | 717 |
@@ -114,8 +114,8 @@ App code is a fixed estimate and excludes native Android and iOS code.
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 99746 KB | 99.7 MB |
-| unused | 13613 KB | 13.6 MB |
+| total | 102244 KB | 102.2 MB |
+| unused | 11115 KB | 11.1 MB |
 </details>
 
 <details open>
@@ -146,14 +146,6 @@ Assets that appear in app-data but do not have references within sheets
 | images/comic/mental_health/strengths/strenghts_2.svg | 59.2 |
 | images/comic/mental_health/strengths/strenghts_3.svg | 59.4 |
 | images/comic/mental_health/strengths/strenghts_4.svg | 36.1 |
-| images/comic/safety/com_safe/safety_5to9_yc_m_1-01.svg | 713.7 |
-| images/comic/safety/com_safe/safety_5to9_yc_m_2.svg | 524.8 |
-| images/comic/safety/com_safe/safety_5to9_yc_m_3.svg | 572.3 |
-| images/comic/safety/com_safe/safety_5to9_yc_m_4.svg | 569.9 |
-| images/comic/safety/online_p2/online_p2_5yo9_yc_1.svg | 29.2 |
-| images/comic/safety/online_p2/online_p2_5yo9_yc_2.svg | 28.8 |
-| images/comic/safety/online_p2/online_p2_5yo9_yc_3.svg | 29.7 |
-| images/comic/safety/online_p2/online_p2_5yo9_yc_4.svg | 29.9 |
 | images/faces/confused.svg | 2 |
 | images/faces/flushed_face.svg | 4.9 |
 | images/faces/tired.svg | 3.3 |
@@ -257,14 +249,6 @@ Assets that have references within sheets but do not appear in app-data
 | images/comic/learn/language_yc_2.svg | 1 |
 | images/comic/learn/language_yc_3.svg | 1 |
 | images/comic/learn/language_yc_4.svg | 1 |
-| images/comic/safety/com_safe/com_safe_5to9_yc_m_1.svg | 4 |
-| images/comic/safety/com_safe/com_safe_5to9_yc_m_2.svg | 2 |
-| images/comic/safety/com_safe/com_safe_5to9_yc_m_3.svg | 4 |
-| images/comic/safety/com_safe/com_safe_5to9_yc_m_4.svg | 2 |
-| images/comic/safety/online_p2/online_p2_5to9_yc_1.svg | 2 |
-| images/comic/safety/online_p2/online_p2_5to9_yc_2.svg | 4 |
-| images/comic/safety/online_p2/online_p2_5to9_yc_3.svg | 4 |
-| images/comic/safety/online_p2/online_p2_5to9_yc_4.svg | 4 |
 | images/icons/docs.svg | 1 |
 | images/icons/visibility.svg | 1 |
 | images/logos/ARIADNE.png | 1 |
@@ -524,6 +508,10 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/comic/safety/com_safe/com_safe_5to9_yc_f_2.svg | 531 | 2 |
 | images/comic/safety/com_safe/com_safe_5to9_yc_f_3.svg | 578.3 | 4 |
 | images/comic/safety/com_safe/com_safe_5to9_yc_f_4.svg | 576.1 | 2 |
+| images/comic/safety/com_safe/com_safe_5to9_yc_m_1.svg | 713.7 | 4 |
+| images/comic/safety/com_safe/com_safe_5to9_yc_m_2.svg | 524.8 | 2 |
+| images/comic/safety/com_safe/com_safe_5to9_yc_m_3.svg | 572.3 | 4 |
+| images/comic/safety/com_safe/com_safe_5to9_yc_m_4.svg | 569.9 | 2 |
 | images/comic/safety/com_safe/com_safe_t_f_1.svg | 22.4 | 2 |
 | images/comic/safety/com_safe/com_safe_t_f_2.svg | 22.7 | 2 |
 | images/comic/safety/com_safe/com_safe_t_f_3.svg | 22.1 | 4 |
@@ -574,6 +562,10 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/comic/safety/online_p2/online_p2_2to4_yc_1.svg | 30.6 | 2 |
 | images/comic/safety/online_p2/online_p2_2to4_yc_2.svg | 35.6 | 2 |
 | images/comic/safety/online_p2/online_p2_2to4_yc_3.svg | 26.7 | 4 |
+| images/comic/safety/online_p2/online_p2_5to9_yc_1.svg | 29.2 | 2 |
+| images/comic/safety/online_p2/online_p2_5to9_yc_2.svg | 28.8 | 4 |
+| images/comic/safety/online_p2/online_p2_5to9_yc_3.svg | 29.7 | 4 |
+| images/comic/safety/online_p2/online_p2_5to9_yc_4.svg | 29.9 | 4 |
 | images/comic/safety/online_p2/online_safety_p2_t_f_1.svg | 52.7 | 2 |
 | images/comic/safety/online_p2/online_safety_p2_t_f_2.svg | 52 | 4 |
 | images/comic/safety/online_p2/online_safety_p2_t_f_3.svg | 36.6 | 4 |
@@ -764,7 +756,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_list | campaign_rows | 2 |
 | data_list | campaign_schedule | 2 |
 | data_list | check_in | 1 |
-| data_list | generated | 150 |
+| data_list | generated | 151 |
 | data_list | hp_review | 2 |
 | data_list | legal_terms | 2 |
 | data_list | library | 2 |
@@ -848,7 +840,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_list | onboarding | 2 |
 | data_list | proximal_outcomes | 10 |
 | data_list | relax | 1 |
-| data_pipe |  | 4 |
+| data_pipe |  | 5 |
 | data_pipe | generated | 146 |
 | generator |  | 9 |
 | global |  | 14 |
