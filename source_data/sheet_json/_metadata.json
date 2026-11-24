@@ -3333,6 +3333,15 @@
   },
   {
     "flow_type": "data_pipe",
+    "flow_name": "certificate_tracking_pipe",
+    "_source": {
+      "name": "kids_teens_global V3",
+      "path": "templates/PLH certificates.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1CUyO3tW2rpZC5wDaDypdY-rRn51YenWh2s_adSL8GJc"
+    }
+  },
+  {
+    "flow_type": "data_pipe",
     "flow_name": "prep_modules",
     "_source": {
       "name": "kids_teens_global V3",

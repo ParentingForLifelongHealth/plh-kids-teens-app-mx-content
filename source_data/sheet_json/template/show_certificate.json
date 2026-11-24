@@ -43,7 +43,7 @@
       "type": "button",
       "name": "download_button",
       "value": "@global.download",
-      "action_list": "click | save_to_device: @local.image_url | open: true, subfolder: certificates;",
+      "action_list": "click | save_to_device: @local.image_url | open: true, subfolder: certificates;\nclick | set_data | _list_id: certificate_tracking, _id: @fields.cert_to_print, n_downloads: @item.n_downloads + 1;",
       "parameter_list": "icon: images/icons/download.svg;\nstyle: navigation;",
       "exclude_from_translation": true
     },
@@ -51,7 +51,7 @@
       "type": "button",
       "name": "share_button",
       "value": "@global.share",
-      "action_list": "click | share: file: @local.image_url",
+      "action_list": "click | share: file: @local.image_url;\nclick | set_data | _list_id: certificate_tracking, _id: @fields.cert_to_print, n_shares: @item.n_shares + 1;",
       "parameter_list": "icon: images/icons/share.svg;\nstyle: navigation;",
       "exclude_from_translation": true
     },
@@ -62,7 +62,7 @@
       "type": "button",
       "name": "button_update_name",
       "value": "<u>@global.change_certificate_name</u>",
-      "action_list": "click | pop_up: update_certificate_name;",
+      "action_list": "click | pop_up: update_certificate_name;\nclick | set_data | _list_id: certificate_tracking, _id: @fields.cert_to_print, n_name_change_clicks: @item.n_name_change_clicks + 1;",
       "parameter_list": "variant: card;\nstyle: no-background;",
       "condition": "(@local.n_reprints <@global.max_n_cert_reprints || !@local.n_reprints)",
       "exclude_from_translation": true
@@ -71,11 +71,10 @@
       "type": "button",
       "name": "button_update_name",
       "value": "<u>@global.change_certificate_name</u>",
-      "action_list": "click | pop_up: no_more_reprints;",
+      "action_list": "click | pop_up: no_more_reprints;\nclick | set_data | _list_id: certificate_tracking, _id: @fields.cert_to_print, n_name_change_clicks: @item.n_name_change_clicks + 1;",
       "parameter_list": "variant: card;\nstyle: no-background;",
       "condition": "(@local.n_reprints >=@global.max_n_cert_reprints)",
-      "exclude_from_translation": true,
-      "comments": "@global.certificate_congrats\ncert debugcert"
+      "exclude_from_translation": true
     }
   ]
 }
