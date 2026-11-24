@@ -1193,6 +1193,74 @@
       }
     },
     {
+      "type": "text",
+      "name": "user_type_select_question",
+      "value": "@global.user_type_setting",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "user_type_select_question",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@global.user_type_setting",
+            "matchedExpression": "@global.user_type_setting",
+            "type": "global",
+            "fieldName": "user_type_setting"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@global.user_type_setting": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "combo_box",
+      "name": "user_type_select",
+      "value": "@fields.user_type",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "answer_list": "@data.user_type",
+        "variant": "dropdown",
+        "wrap": "true"
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "user_type_select",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields.user_type",
+            "matchedExpression": "@fields.user_type",
+            "type": "fields",
+            "fieldName": "user_type"
+          }
+        ],
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@data.user_type",
+              "matchedExpression": "@data.user_type",
+              "type": "data",
+              "fieldName": "user_type"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@fields.user_type": [
+          "value"
+        ],
+        "@data.user_type": [
+          "parameter_list.answer_list"
+        ]
+      }
+    },
+    {
       "name": "completed_enabled",
       "value": "@local.valid_household_children_input && @local.valid_user_age_input",
       "_translations": {
@@ -1339,6 +1407,15 @@
               "trigger": "click",
               "action_id": "set_field",
               "args": [
+                "user_type",
+                "@local.user_type_select"
+              ],
+              "_raw": "click | set_field: user_type: @local.user_type_select"
+            },
+            {
+              "trigger": "click",
+              "action_id": "set_field",
+              "args": [
                 "user_data_completed",
                 true
               ],
@@ -1366,7 +1443,7 @@
             "disabled": "!@local.completed_enabled"
           },
           "exclude_from_translation": true,
-          "_nested_name": "display_group_36.button_completed_2",
+          "_nested_name": "display_group_38.button_completed_2",
           "_dynamicFields": {
             "value": [
               {
@@ -1576,6 +1653,26 @@
                     "fieldName": "family_relation_select"
                   }
                 ]
+              },
+              "10": {
+                "args": {
+                  "1": [
+                    {
+                      "fullExpression": "@local.user_type_select",
+                      "matchedExpression": "@local.user_type_select",
+                      "type": "local",
+                      "fieldName": "user_type_select"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "click | set_field: user_type: @local.user_type_select",
+                    "matchedExpression": "@local.user_type_select",
+                    "type": "local",
+                    "fieldName": "user_type_select"
+                  }
+                ]
               }
             },
             "parameter_list": {
@@ -1631,14 +1728,18 @@
               "action_list.9.args.1",
               "action_list.9._raw"
             ],
+            "@local.user_type_select": [
+              "action_list.10.args.1",
+              "action_list.10._raw"
+            ],
             "!@local.completed_enabled": [
               "parameter_list.disabled"
             ]
           }
         }
       ],
-      "name": "display_group_36",
-      "_nested_name": "display_group_36"
+      "name": "display_group_38",
+      "_nested_name": "display_group_38"
     }
   ],
   "_source": {
