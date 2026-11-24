@@ -10,7 +10,7 @@
 | apple_sign_in_button | 2 |
 | audio | 4 |
 | button | 141 |
-| combo_box | 25 |
+| combo_box | 26 |
 | data_items | 251 |
 | date_time_picker | 2 |
 | debug_toggle | 1 |
@@ -45,7 +45,7 @@
 | task_card | 4 |
 | task_progress_bar | 5 |
 | template | 823 |
-| text | 324 |
+| text | 325 |
 | text_area | 4 |
 | text_box | 24 |
 | text_bubble | 34 |
@@ -85,7 +85,7 @@
 | reset_data | 3 |
 | save_to_device | 3 |
 | set_data | 523 |
-| set_field | 535 |
+| set_field | 536 |
 | set_item | 30 |
 | set_local | 717 |
 | share | 3 |

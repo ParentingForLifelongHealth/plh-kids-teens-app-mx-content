@@ -229,6 +229,19 @@
       "type": "end_combo_box"
     },
     {
+      "type": "text",
+      "name": "user_type_select_question",
+      "value": "@global.user_type_setting",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "combo_box",
+      "name": "user_type_select",
+      "value": "@fields.user_type",
+      "parameter_list": "answer_list: @data.user_type; variant: dropdown; wrap: true; ",
+      "exclude_from_translation": true
+    },
+    {
       "type": "begin_display_group",
       "style_list": "width: 100%;\npadding: 12px 24px;\nbackground-color: white;",
       "parameter_list": "sticky: bottom;"
@@ -242,7 +255,7 @@
       "type": "button",
       "name": "button_completed_2",
       "value": "@global.save",
-      "action_list": "click | set_field: user_name: @local.user_name_input;\nclick | set_field: user_age: @local.user_age_input;\nclick | set_field: user_location: @local.user_location_select;\nclick | set_field: user_location_district: @local.user_district_select;\nclick | set_field: occupation: @local.occupation_select;\nclick | set_field: user_referral: @local.user_referral_select;\nclick | set_field: user_referral_type: @local.user_referral_select;\nclick | set_field: household_children: @local.household_children_input;\nclick | set_field: child_name: @local.child_name_input;\nclick | set_field: family_relation: @local.family_relation_select;\nclick | set_field: user_data_completed: true;\nclick | emit: server_sync;\nclick | emit: completed",
+      "action_list": "click | set_field: user_name: @local.user_name_input;\nclick | set_field: user_age: @local.user_age_input;\nclick | set_field: user_location: @local.user_location_select;\nclick | set_field: user_location_district: @local.user_district_select;\nclick | set_field: occupation: @local.occupation_select;\nclick | set_field: user_referral: @local.user_referral_select;\nclick | set_field: user_referral_type: @local.user_referral_select;\nclick | set_field: household_children: @local.household_children_input;\nclick | set_field: child_name: @local.child_name_input;\nclick | set_field: family_relation: @local.family_relation_select;\nclick | set_field: user_type: @local.user_type_select;\nclick | set_field: user_data_completed: true;\nclick | emit: server_sync;\nclick | emit: completed",
       "parameter_list": "style: navigation;\ndisabled: !@local.completed_enabled",
       "exclude_from_translation": true
     },
