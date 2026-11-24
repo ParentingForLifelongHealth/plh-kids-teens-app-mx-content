@@ -196,23 +196,26 @@
         "text_1_facilitator": {
           "eng": "¡Una pregunta más! Visualiza esta situación:"
         },
+        "text_2": {
+          "eng": "Llegas a casa con mucho cansancio y @fields.child_name te pide jugar. En tu mente te dices: \"Ya no tengo energía\" y le respondes con un tono de voz serio."
+        },
         "quiz_1_question": {
-          "eng": "Llegas a casa con mucho cansancio y @fields.child_name te pide jugar. En tu mente te dices: \"Ya no tengo energía\" y le respondes con un tono de voz serio.\n\n\n¿Cuál de estas opciones es una _acción_?"
+          "eng": "¿Cuál de estas opciones es una _acción_?"
         },
         "quiz_1_option_1_text": {
-          "eng": "Sentir cansancio."
+          "eng": "Sentir cansancio"
         },
         "quiz_1_feedback_1": {
           "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nEl cansancio es una sensación. Y decirte en tu mente \"ya no tengo energía\" es un pensamiento. Ambos pueden influir en cómo actúas.\n\n\nResponder con un tono de voz serio es una acción: es algo que haces y que otras personas pueden escuchar."
         },
         "quiz_1_option_2_text": {
-          "eng": "Pensar \"Ya no tengo energía\"."
+          "eng": "Pensar \"Ya no tengo energía\""
         },
         "quiz_1_feedback_2": {
           "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nEl cansancio es una sensación. Y decirte en tu mente \"ya no tengo energía\" es un pensamiento. Ambos pueden influir en cómo actúas.\n\n\nResponder con un tono de voz serio es una acción: es algo que haces y que otras personas pueden escuchar."
         },
         "quiz_1_option_3_text": {
-          "eng": "Responder con un tono de voz serio."
+          "eng": "Responder con un tono de voz serio"
         },
         "quiz_1_feedback_3": {
           "eng": "🎉 ¡Muy bien!\n\nEl cansancio es una sensación. Y decirte en tu mente \"ya no tengo energía\" es un pensamiento. Ambos pueden influir en cómo actúas.\n\n\nResponder con un tono de voz serio es una acción: es algo que haces y que otras personas pueden escuchar."
@@ -229,15 +232,17 @@
         "quiz_1_option_1_text": {},
         "quiz_1_option_2_text": {},
         "quiz_1_option_3_text": {},
-        "text_1_facilitator": {}
+        "text_1_facilitator": {},
+        "text_2": {}
       },
       "quiz_1_feedback_2": "👀 ¡Ups! ¡Revisemos esta idea!\n\nEl cansancio es una sensación. Y decirte en tu mente \"ya no tengo energía\" es un pensamiento. Ambos pueden influir en cómo actúas.\n\n\nResponder con un tono de voz serio es una acción: es algo que haces y que otras personas pueden escuchar.",
       "quiz_1_feedback_3": "🎉 ¡Muy bien!\n\nEl cansancio es una sensación. Y decirte en tu mente \"ya no tengo energía\" es un pensamiento. Ambos pueden influir en cómo actúas.\n\n\nResponder con un tono de voz serio es una acción: es algo que haces y que otras personas pueden escuchar.",
-      "quiz_1_question": "Llegas a casa con mucho cansancio y @fields.child_name te pide jugar. En tu mente te dices: \"Ya no tengo energía\" y le respondes con un tono de voz serio.\n\n\n¿Cuál de estas opciones es una _acción_?",
-      "quiz_1_option_1_text": "Sentir cansancio.",
-      "quiz_1_option_2_text": "Pensar \"Ya no tengo energía\".",
-      "quiz_1_option_3_text": "Responder con un tono de voz serio.",
+      "quiz_1_question": "¿Cuál de estas opciones es una _acción_?",
+      "quiz_1_option_1_text": "Sentir cansancio",
+      "quiz_1_option_2_text": "Pensar \"Ya no tengo energía\"",
+      "quiz_1_option_3_text": "Responder con un tono de voz serio",
       "text_1_facilitator": "¡Una pregunta más! Visualiza esta situación:",
+      "text_2": "Llegas a casa con mucho cansancio y @fields.child_name te pide jugar. En tu mente te dices: \"Ya no tengo energía\" y le respondes con un tono de voz serio.",
       "completed": false,
       "version": 1
     },
@@ -289,11 +294,11 @@
         "character_2_text": {},
         "character_3_text": {}
       },
+      "text_2": "@data.characters.f2_padre.name llega cansado del trabajo y responde con un tono molesto. Lo que siente y piensa en ese momento influye en su manera de actuar.",
       "image_asset": "images/comic/mental_health/thoughts_feelings/thoughts_feelings_1.svg",
       "character_1_id": "f2_hija_3",
       "character_2_id": "f2_hijo_15",
       "character_3_id": "f2_padre",
-      "text_2": "@data.characters.f2_padre.name llega cansado del trabajo y responde con un tono molesto. Lo que siente y piensa en ese momento influye en su manera de actuar.",
       "character_1_text": "¡Papá, ven a jugar conmigo!",
       "character_2_text": "Pa, ¿me puedes ayudar con algo de la escuela?",
       "character_3_text": "¡Ahorita no! ¡Acabo de llegar y necesito descansar!",
@@ -312,13 +317,13 @@
       },
       "category_id": "explore",
       "nested": false,
-      "image_asset": "images/comic/mental_health/thoughts_feelings/thoughts_feelings_2.svg",
-      "character_1_id": "f2_padre",
       "text_2": "Fíjate cómo @data.characters.f3_padre.name nombra cómo se siente y detecta lo que está pensando.",
       "_translations": {
         "text_2": {},
         "character_1_text": {}
       },
+      "image_asset": "images/comic/mental_health/thoughts_feelings/thoughts_feelings_2.svg",
+      "character_1_id": "f2_padre",
       "character_1_text": "(Pensando) Estoy muy cansado y me siento molesto. No dejo de pensar: \"¡No tengo ni un minuto para descansar!\".",
       "completed": false,
       "version": 1
@@ -341,10 +346,6 @@
       },
       "category_id": "explore",
       "nested": false,
-      "image_asset": "images/comic/mental_health/thoughts_feelings/thoughts_feelings_3.svg",
-      "character_1_id": "f2_padre",
-      "character_2_id": "f2_hija_3",
-      "character_3_id": "f2_hijo_15",
       "text_2": "Observa cómo @data.characters.f3_padre.name elige cómo responder. Aunque sigue cansado, habla con calma, explica lo que necesita y les propone otro momento para atenderles.",
       "_translations": {
         "text_2": {},
@@ -352,6 +353,10 @@
         "character_2_text": {},
         "character_3_text": {}
       },
+      "image_asset": "images/comic/mental_health/thoughts_feelings/thoughts_feelings_3.svg",
+      "character_1_id": "f2_padre",
+      "character_2_id": "f2_hija_3",
+      "character_3_id": "f2_hijo_15",
       "character_1_text": "Perdón por hablarles así. Tuve un día pesado y necesito descansar un poco. Denme unos minutos y después jugamos y revisamos lo de la escuela, ¿les parece?",
       "character_2_text": "¡Sí, papá!",
       "character_3_text": "Está bien, pa. No te preocupes.",
@@ -376,10 +381,6 @@
       },
       "category_id": "explore",
       "nested": false,
-      "image_asset": "images/comic/mental_health/thoughts_feelings/thoughts_feelings_4.svg",
-      "character_1_id": "f2_padre",
-      "character_2_id": "f2_hija_3",
-      "character_3_id": "f2_padre",
       "text_2": "@data.characters.f3_padre.name sigue sintiendo algo de cansancio, pero eligió responder de otra manera.",
       "_translations": {
         "text_2": {},
@@ -387,6 +388,10 @@
         "character_2_text": {},
         "character_3_text": {}
       },
+      "image_asset": "images/comic/mental_health/thoughts_feelings/thoughts_feelings_4.svg",
+      "character_1_id": "f2_padre",
+      "character_2_id": "f2_hija_3",
+      "character_3_id": "f2_padre",
       "character_1_text": "¡Ahora sí! Cuéntenme, ¿qué me querían mostrar?",
       "character_2_text": "¡Mira lo que construí!",
       "character_3_text": "¡Guau! ¡Te quedó increíble, @data.characters.f2_hija_3.name! ¿Cómo lo hiciste?",
@@ -408,15 +413,15 @@
       },
       "category_id": "explore",
       "nested": false,
-      "image_asset": "images/comic/mental_health/thoughts_feelings/thoughts_feelings_4.svg",
-      "character_1_id": "f2_hijo_15",
-      "character_2_id": "f2_padre",
       "text_2": "No siempre podemos cambiar lo que sentimos o pensamos, pero sí podemos practicar nuevas formas de actuar.",
       "_translations": {
         "text_2": {},
         "character_1_text": {},
         "character_2_text": {}
       },
+      "image_asset": "images/comic/mental_health/thoughts_feelings/thoughts_feelings_4.svg",
+      "character_1_id": "f2_hijo_15",
+      "character_2_id": "f2_padre",
       "character_1_text": "Y yo quería preguntarte algo de mi tarea, pa. ¿Tienes un ratito?",
       "character_2_text": "¡Claro, @data.characters.f2_hijo_15.name! Vamos a revisarlo juntos.",
       "completed": false,
