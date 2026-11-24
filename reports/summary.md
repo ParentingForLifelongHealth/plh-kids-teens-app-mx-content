@@ -11,7 +11,7 @@
 | audio | 4 |
 | button | 141 |
 | combo_box | 25 |
-| data_items | 250 |
+| data_items | 251 |
 | date_time_picker | 2 |
 | debug_toggle | 1 |
 | display_grid | 4 |
@@ -44,7 +44,7 @@
 | simple_checkbox | 3 |
 | task_card | 4 |
 | task_progress_bar | 5 |
-| template | 822 |
+| template | 823 |
 | text | 324 |
 | text_area | 4 |
 | text_box | 24 |
@@ -67,7 +67,7 @@
 | asset_pack | 4 |
 | auth | 3 |
 | emit: changed | 7 |
-| emit: completed | 201 |
+| emit: completed | 202 |
 | emit: force_reload | 3 |
 | emit: force_reprocess | 15 |
 | emit: force_restart | 3 |
@@ -103,8 +103,8 @@ Estimated space the app takes up on an Android or iOS device.
 | --- | --- | --- |
 | App code (estimate) | - | 16.2 MB |
 | App content (sheets and translations) | - | 16.8 MB |
-| Bundled assets | - | 108.7 MB |
-| Total | - | 141.7 MB |
+| Bundled assets | - | 113.4 MB |
+| Total | - | 146.4 MB |
 
 App code is a fixed estimate and excludes native Android and iOS code.
 </details>
@@ -114,8 +114,8 @@ App code is a fixed estimate and excludes native Android and iOS code.
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 96907 KB | 96.9 MB |
-| unused | 11820 KB | 11.8 MB |
+| total | 99746 KB | 99.7 MB |
+| unused | 13613 KB | 13.6 MB |
 </details>
 
 <details open>
@@ -125,7 +125,10 @@ Assets that appear in app-data but do not have references within sheets
 
 | path | size_kb |
 | --- | --- |
-| certificates/Certificate1_Fortalecer_relacion.png | 287.5 |
+| certificates/CERTIFICATE1_FORTALECER_RELACIÓN.png | 305 |
+| certificates/CERTIFICATE2_CRIANZA_COMPARTIDA.png | 284.9 |
+| certificates/CERTIFICATE3_CUIDADOS_LÍMITES_SEGURIDAD.png | 287.1 |
+| certificates/CERTIFICATE4_GUIAR_COMPORTAMIENTO.png | 277.7 |
 | images/backgrounds/FOOTER3E.png | 5.6 |
 | images/backgrounds/FOOTER5A.png | 4.9 |
 | images/backgrounds/FOOTER5E.png | 8.1 |
@@ -139,20 +142,18 @@ Assets that appear in app-data but do not have references within sheets
 | images/badges/badge_6.svg | 42.3 |
 | images/badges/badge_7.svg | 25.4 |
 | images/badges/badge_8.svg | 27.4 |
-| images/comic/behave/ignore/ignore_yc_2.svg | 57.6 |
-| images/comic/behave/know_role/know_role_t_1.svg | 89.7 |
-| images/comic/behave/know_role/know_role_t_2.svg | 89.6 |
-| images/comic/behave/know_role/know_role_t_3.svg | 86 |
-| images/comic/behave/know_role/know_role_t_4.svg | 82.6 |
-| images/comic/safety/com_safe/com_safe_2to4_yc_2.svg.svg | 525.7 |
+| images/comic/mental_health/strengths/strenghts_1.svg | 62.2 |
+| images/comic/mental_health/strengths/strenghts_2.svg | 59.2 |
+| images/comic/mental_health/strengths/strenghts_3.svg | 59.4 |
+| images/comic/mental_health/strengths/strenghts_4.svg | 36.1 |
+| images/comic/safety/com_safe/safety_5to9_yc_m_1-01.svg | 713.7 |
+| images/comic/safety/com_safe/safety_5to9_yc_m_2.svg | 524.8 |
+| images/comic/safety/com_safe/safety_5to9_yc_m_3.svg | 572.3 |
+| images/comic/safety/com_safe/safety_5to9_yc_m_4.svg | 569.9 |
 | images/comic/safety/online_p2/online_p2_5yo9_yc_1.svg | 29.2 |
 | images/comic/safety/online_p2/online_p2_5yo9_yc_2.svg | 28.8 |
 | images/comic/safety/online_p2/online_p2_5yo9_yc_3.svg | 29.7 |
 | images/comic/safety/online_p2/online_p2_5yo9_yc_4.svg | 29.9 |
-| images/comic/safety/safe_touch/safe_touch_6to9_yc_f_2-01.svg | 30.8 |
-| images/comic/safety/safe_touch/safe_touch_6to9_yc_f_3-01.svg | 28.7 |
-| images/comic/safety/safe_touch/sexual_violence_t_m_1.svg | 340.5 |
-| images/comic/safety/safe_touch/sexual_violence_t_m_2.svg | 340.7 |
 | images/faces/confused.svg | 2 |
 | images/faces/flushed_face.svg | 4.9 |
 | images/faces/tired.svg | 3.3 |
@@ -252,44 +253,10 @@ Assets that have references within sheets but do not appear in app-data
 | path | count |
 | --- | --- |
 | images/backgrounds/mountains_trees.svg | 1 |
-| images/comic/behave/ignore//ignore_yc_2.svg | 2 |
-| images/comic/behave/know_role/know_role_yc_1.svg | 4 |
-| images/comic/behave/know_role/know_role_yc_2.svg | 4 |
-| images/comic/behave/know_role/know_role_yc_3.svg | 4 |
-| images/comic/behave/know_role/know_role_yc_4.svg | 4 |
-| images/comic/behave/manage_anger/manage_anger_t_1.svg | 2 |
-| images/comic/behave/manage_anger/manage_anger_t_2.svg | 2 |
-| images/comic/behave/manage_anger/manage_anger_t_3.svg | 2 |
-| images/comic/behave/manage_anger/manage_anger_t_4.svg | 2 |
-| images/comic/behave/manage_anger/manage_anger_t_5.svg | 2 |
-| images/comic/behave/manage_anger/manage_anger_t_6.svg | 2 |
-| images/comic/ipv/conflicts/conflicts_1.svg | 8 |
-| images/comic/ipv/conflicts/conflicts_2.svg | 4 |
-| images/comic/ipv/conflicts/conflicts_3.svg | 4 |
-| images/comic/ipv/conflicts/conflicts_4.svg | 8 |
-| images/comic/ipv/equals/equals_1.svg | 8 |
-| images/comic/ipv/equals/equals_2.svg | 4 |
-| images/comic/ipv/equals/equals_3.svg | 4 |
-| images/comic/ipv/equals/equals_4.svg | 8 |
-| images/comic/ipv/listen/listen_1.svg | 4 |
-| images/comic/ipv/listen/listen_2.svg | 4 |
-| images/comic/ipv/listen/listen_3.svg | 4 |
-| images/comic/ipv/listen/listen_4.svg | 4 |
-| images/comic/ipv/sharing/sharing_1.svg | 6 |
-| images/comic/ipv/sharing/sharing_2.svg | 4 |
-| images/comic/ipv/sharing/sharing_3.svg | 4 |
-| images/comic/ipv/sharing/sharing_4.svg | 6 |
-| images/comic/ipv/sharing/sharing_5.svg | 4 |
-| images/comic/ipv/supportive/supportive_1.svg | 6 |
-| images/comic/ipv/supportive/supportive_2.svg | 8 |
-| images/comic/ipv/supportive/supportive_3.svg | 8 |
 | images/comic/learn/language_yc_1.svg | 1 |
 | images/comic/learn/language_yc_2.svg | 1 |
 | images/comic/learn/language_yc_3.svg | 1 |
 | images/comic/learn/language_yc_4.svg | 1 |
-| images/comic/safe_touch/sexual_violence_t_m_1.svg | 2 |
-| images/comic/safe_touch/sexual_violence_t_m_2.svg | 2 |
-| images/comic/safety/com_safe/com_safe_2to4_yc_2.svg | 2 |
 | images/comic/safety/com_safe/com_safe_5to9_yc_m_1.svg | 4 |
 | images/comic/safety/com_safe/com_safe_5to9_yc_m_2.svg | 2 |
 | images/comic/safety/com_safe/com_safe_5to9_yc_m_3.svg | 4 |
@@ -298,8 +265,6 @@ Assets that have references within sheets but do not appear in app-data
 | images/comic/safety/online_p2/online_p2_5to9_yc_2.svg | 4 |
 | images/comic/safety/online_p2/online_p2_5to9_yc_3.svg | 4 |
 | images/comic/safety/online_p2/online_p2_5to9_yc_4.svg | 4 |
-| images/comic/safety/safe_touch/safe_touch_6to9_yc_f_2.svg | 4 |
-| images/comic/safety/safe_touch/safe_touch_6to9_yc_f_3.svg | 2 |
 | images/icons/docs.svg | 1 |
 | images/icons/visibility.svg | 1 |
 | images/logos/ARIADNE.png | 1 |
@@ -395,6 +360,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/comic/behave/family_rules/family_rules_yc_4.svg | 17.1 | 4 |
 | images/comic/behave/family_rules/family_rules_yc_5.svg | 17.3 | 2 |
 | images/comic/behave/ignore/ignore_yc_1.svg | 59 | 2 |
+| images/comic/behave/ignore/ignore_yc_2.svg | 57.6 | 2 |
 | images/comic/behave/ignore/ignore_yc_3.svg | 59.5 | 2 |
 | images/comic/behave/ignore/ignore_yc_4.svg | 56.4 | 2 |
 | images/comic/behave/ignore/ignore_yc_5.svg | 51.8 | 2 |
@@ -406,6 +372,16 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/comic/behave/keep_positive/keep_positive_yc_2.svg | 45.8 | 2 |
 | images/comic/behave/keep_positive/keep_positive_yc_3.svg | 44.1 | 2 |
 | images/comic/behave/keep_positive/keep_positive_yc_4.svg | 46.6 | 2 |
+| images/comic/behave/know_role/know_role_1.svg | 89.7 | 4 |
+| images/comic/behave/know_role/know_role_2.svg | 89.6 | 4 |
+| images/comic/behave/know_role/know_role_3.svg | 86 | 4 |
+| images/comic/behave/know_role/know_role_4.svg | 82.6 | 4 |
+| images/comic/behave/manage_anger/manage_anger_t_1.svg | 43.3 | 2 |
+| images/comic/behave/manage_anger/manage_anger_t_2.svg | 44 | 2 |
+| images/comic/behave/manage_anger/manage_anger_t_3.svg | 7 | 2 |
+| images/comic/behave/manage_anger/manage_anger_t_4.svg | 45.4 | 2 |
+| images/comic/behave/manage_anger/manage_anger_t_5.svg | 33.6 | 2 |
+| images/comic/behave/manage_anger/manage_anger_t_6.svg | 33.7 | 2 |
 | images/comic/behave/manage_anger/manage_anger_yc_1.svg | 108.2 | 2 |
 | images/comic/behave/manage_anger/manage_anger_yc_2.svg | 29.2 | 2 |
 | images/comic/behave/manage_anger/manage_anger_yc_3.svg | 32.7 | 2 |
@@ -424,6 +400,30 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/comic/behave/solve_problem/solve_problem_yc_2.svg | 40.2 | 2 |
 | images/comic/behave/solve_problem/solve_problem_yc_3.svg | 42.1 | 4 |
 | images/comic/behave/solve_problem/solve_problem_yc_4.svg | 44.6 | 2 |
+| images/comic/ipv/conflicts/conflicts_1.svg | 56.9 | 8 |
+| images/comic/ipv/conflicts/conflicts_2.svg | 54 | 4 |
+| images/comic/ipv/conflicts/conflicts_4.svg | 18.2 | 8 |
+| images/comic/ipv/conflicts/conflicts_f_3.svg | 54 | 4 |
+| images/comic/ipv/conflicts/conflicts_m_3.svg | 54 | 4 |
+| images/comic/ipv/equals/equals_1.svg | 38 | 8 |
+| images/comic/ipv/equals/equals_2.svg | 25.7 | 4 |
+| images/comic/ipv/equals/equals_3.svg | 40.2 | 4 |
+| images/comic/ipv/equals/equals_4.svg | 39.4 | 8 |
+| images/comic/ipv/listen/listen_2.svg | 27.2 | 4 |
+| images/comic/ipv/listen/listen_3.svg | 26.9 | 4 |
+| images/comic/ipv/listen/listen_4.svg | 27.2 | 4 |
+| images/comic/ipv/listen/listen_f_1.svg | 29.3 | 2 |
+| images/comic/ipv/listen/listen_m_1.svg | 22.5 | 2 |
+| images/comic/ipv/sharing/sharing_1.svg | 35.5 | 6 |
+| images/comic/ipv/sharing/sharing_2.svg | 35.5 | 4 |
+| images/comic/ipv/sharing/sharing_3.svg | 56.4 | 4 |
+| images/comic/ipv/sharing/sharing_4.svg | 32 | 6 |
+| images/comic/ipv/sharing/sharing_f_5.svg | 34.8 | 2 |
+| images/comic/ipv/sharing/sharing_m_5.svg | 29.8 | 2 |
+| images/comic/ipv/supportive/supportive_1.svg | 73.7 | 4 |
+| images/comic/ipv/supportive/supportive_2.svg | 39.9 | 6 |
+| images/comic/ipv/supportive/supportive_3.svg | 39.9 | 4 |
+| images/comic/ipv/supportive/supportive_4.svg | 69.3 | 8 |
 | images/comic/mental_health/pleasant_emotions/pleasant_emotions_1.svg | 694.3 | 2 |
 | images/comic/mental_health/pleasant_emotions/pleasant_emotions_2.svg | 984.4 | 4 |
 | images/comic/mental_health/pleasant_emotions/pleasant_emotions_3.svg | 1013.3 | 2 |
@@ -517,6 +517,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/comic/relation/talk_feelings/talk_feelings_yc_mc_3.svg | 43.6 | 2 |
 | images/comic/relation/talk_feelings/talk_feelings_yc_mc_4.svg | 32.8 | 2 |
 | images/comic/safety/com_safe/com_safe_2to4_yc_1.svg | 715.2 | 2 |
+| images/comic/safety/com_safe/com_safe_2to4_yc_2.svg | 525.7 | 2 |
 | images/comic/safety/com_safe/com_safe_2to4_yc_3.svg | 573.3 | 2 |
 | images/comic/safety/com_safe/com_safe_2to4_yc_4.svg | 571 | 2 |
 | images/comic/safety/com_safe/com_safe_5to9_yc_f_1.svg | 720.4 | 4 |
@@ -590,6 +591,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/comic/safety/safe_touch/safe_touch_2to5_yc_m_3.svg | 271.3 | 2 |
 | images/comic/safety/safe_touch/safe_touch_2to5_yc_m_4.svg | 272.2 | 2 |
 | images/comic/safety/safe_touch/safe_touch_6to9_yc_f_1.svg | 33.6 | 2 |
+| images/comic/safety/safe_touch/safe_touch_6to9_yc_f_2.svg | 30.8 | 4 |
+| images/comic/safety/safe_touch/safe_touch_6to9_yc_f_3.svg | 28.7 | 2 |
 | images/comic/safety/safe_touch/safe_touch_6to9_yc_f_4.svg | 12.5 | 2 |
 | images/comic/safety/safe_touch/safe_touch_6to9_yc_m_1.svg | 32.6 | 2 |
 | images/comic/safety/safe_touch/safe_touch_6to9_yc_m_2.svg | 29.6 | 4 |
@@ -600,6 +603,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/comic/safety/safe_touch/sexual_violence_t_f_3.svg | 42.4 | 2 |
 | images/comic/safety/safe_touch/sexual_violence_t_f_4.svg | 35.7 | 2 |
 | images/comic/safety/safe_touch/sexual_violence_t_f_5.svg | 36.1 | 2 |
+| images/comic/safety/safe_touch/sexual_violence_t_m_1.svg | 340.5 | 2 |
+| images/comic/safety/safe_touch/sexual_violence_t_m_2.svg | 340.7 | 2 |
 | images/comic/safety/safe_touch/sexual_violence_t_m_3.svg | 41.9 | 2 |
 | images/comic/safety/safe_touch/sexual_violence_t_m_4.svg | 29 | 2 |
 | images/comic/safety/safe_touch/sexual_violence_t_m_5.svg | 30.2 | 2 |

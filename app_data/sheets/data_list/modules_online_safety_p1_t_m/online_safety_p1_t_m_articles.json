@@ -160,6 +160,8 @@
       "id": "explore_1",
       "category_id": "explore",
       "media_type": "youtube",
+      "youtube_gb_en_f": "https://youtu.be/OoBxoUTeHU8",
+      "youtube_gb_en_m": "https://youtu.be/OoBxoUTeHU8",
       "nested": false,
       "text_1_facilitator": "¡Gracias por reflexionar conmigo!\n\nAhora vamos a ver cómo puedes cuidar la seguridad en línea de @fields.child_name.\n\nEn este video te compartimos cuatro estrategias recomendadas por especialistas:\n\n1️⃣ PLATICA\n2️⃣ PROTEGE SU PRIVACIDAD\n3️⃣ ORIENTA\n4️⃣ RESPONDE A LAS SEÑALES",
       "_translations": {
@@ -376,7 +378,12 @@
         "quiz_1_option_2_text": {},
         "quiz_1_feedback_2": {},
         "quiz_1_option_3_text": {},
-        "quiz_1_feedback_3": {}
+        "quiz_1_feedback_3": {},
+        "quiz_2_question": {},
+        "quiz_2_option_1_text": {},
+        "quiz_2_feedback_1": {},
+        "quiz_2_option_2_text": {},
+        "quiz_2_feedback_2": {}
       },
       "_translatedFields": {
         "text_1_facilitator": {
@@ -405,6 +412,21 @@
         },
         "quiz_1_feedback_3": {
           "eng": "🎉 ¡Tienes razón!\n\n@data.characters.f2_hijo_15.name está viviendo una forma de violencia sexual mediante chantaje y necesita protección y apoyo. \n\nEs importante que su familia le escuche sin culparle ni regañarle, y le recuerde que no es responsable de las amenazas. También puede ayudarle a conservar los mensajes como evidencia, evitar enviar más fotografías y buscar apoyo especializado."
+        },
+        "quiz_2_question": {
+          "eng": "Verdadero o falso: Esta forma de chantaje también le podría pasar a una adolescente mujer."
+        },
+        "quiz_2_option_1_text": {
+          "eng": "Verdadero"
+        },
+        "quiz_2_feedback_1": {
+          "eng": "🎉 ¡Tienes razón!\n\nEsta forma de violencia sexual puede afectar a cualquier adolescente, independientemente de su género. También puede ser ejercida por una pareja, expareja, amistad, familiar o persona desconocida.\n\nSi alguna vez @fields.child_name enfrenta una situación así, recuérdale que no tiene la culpa de las amenazas y que cuenta con tu apoyo. \n\nEs importante no enviar nuevas fotografías, conservar los mensajes como evidencia y buscar orientación para detener la violencia y protegerle."
+        },
+        "quiz_2_option_2_text": {
+          "eng": "Falso"
+        },
+        "quiz_2_feedback_2": {
+          "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nEsta forma de violencia sexual puede afectar a cualquier adolescente, independientemente de su género. También puede ser ejercida por una pareja, expareja, amistad, familiar o persona desconocida.\n\nSi alguna vez @fields.child_name enfrenta una situación así, recuérdale que no tiene la culpa de las amenazas y que cuenta con tu apoyo. \n\nEs importante no enviar nuevas fotografías, conservar los mensajes como evidencia y buscar orientación para detener la violencia y protegerle."
         }
       },
       "text_2": "Situación 1: @data.characters.f2_hijo_15.name recibe un mensaje en su celular que dice: “Mándame otra foto o compartiré la última con tu familia y tus amistades…”. \n\n@data.characters.f2_hijo_15.name no sabe qué hacer y decide hablar con su papá.",
@@ -414,44 +436,15 @@
       "quiz_1_option_2_text": "Regañarlo por lo que pasó",
       "quiz_1_feedback_2": "👀 ¡Ups! ¡Revisemos esta idea!\n\n@data.characters.f2_hijo_15.name está sufriendo una forma de violencia sexual mediante chantaje y necesita protección y apoyo. \n\nRegañarlo puede hacer que sienta culpa o vergüenza y dificultar que vuelva a pedir ayuda. La responsabilidad de las amenazas corresponde a quien las realiza.",
       "quiz_1_option_3_text": "Apoyarlo y resolver el problema juntos",
-      "quiz_1_feedback_3": "🎉 ¡Tienes razón!\n\n@data.characters.f2_hijo_15.name está viviendo una forma de violencia sexual mediante chantaje y necesita protección y apoyo. \n\nEs importante que su familia le escuche sin culparle ni regañarle, y le recuerde que no es responsable de las amenazas. También puede ayudarle a conservar los mensajes como evidencia, evitar enviar más fotografías y buscar apoyo especializado."
+      "quiz_1_feedback_3": "🎉 ¡Tienes razón!\n\n@data.characters.f2_hijo_15.name está viviendo una forma de violencia sexual mediante chantaje y necesita protección y apoyo. \n\nEs importante que su familia le escuche sin culparle ni regañarle, y le recuerde que no es responsable de las amenazas. También puede ayudarle a conservar los mensajes como evidencia, evitar enviar más fotografías y buscar apoyo especializado.",
+      "quiz_2_question": "Verdadero o falso: Esta forma de chantaje también le podría pasar a una adolescente mujer.",
+      "quiz_2_option_1_text": "Verdadero",
+      "quiz_2_feedback_1": "🎉 ¡Tienes razón!\n\nEsta forma de violencia sexual puede afectar a cualquier adolescente, independientemente de su género. También puede ser ejercida por una pareja, expareja, amistad, familiar o persona desconocida.\n\nSi alguna vez @fields.child_name enfrenta una situación así, recuérdale que no tiene la culpa de las amenazas y que cuenta con tu apoyo. \n\nEs importante no enviar nuevas fotografías, conservar los mensajes como evidencia y buscar orientación para detener la violencia y protegerle.",
+      "quiz_2_option_2_text": "Falso",
+      "quiz_2_feedback_2": "👀 ¡Ups! ¡Revisemos esta idea!\n\nEsta forma de violencia sexual puede afectar a cualquier adolescente, independientemente de su género. También puede ser ejercida por una pareja, expareja, amistad, familiar o persona desconocida.\n\nSi alguna vez @fields.child_name enfrenta una situación así, recuérdale que no tiene la culpa de las amenazas y que cuenta con tu apoyo. \n\nEs importante no enviar nuevas fotografías, conservar los mensajes como evidencia y buscar orientación para detener la violencia y protegerle."
     },
     {
       "id": "practise_2",
-      "category_id": "practise",
-      "nested": false,
-      "quiz_1_question": "Verdadero o falso: Esta forma de chantaje también le podría pasar a una adolescente mujer.",
-      "_translations": {
-        "quiz_1_question": {},
-        "quiz_1_option_1_text": {},
-        "quiz_1_feedback_1": {},
-        "quiz_1_option_2_text": {},
-        "quiz_1_feedback_2": {}
-      },
-      "_translatedFields": {
-        "quiz_1_question": {
-          "eng": "Verdadero o falso: Esta forma de chantaje también le podría pasar a una adolescente mujer."
-        },
-        "quiz_1_option_1_text": {
-          "eng": "Verdadero"
-        },
-        "quiz_1_feedback_1": {
-          "eng": "🎉 ¡Tienes razón!\n\nEsta forma de violencia sexual puede afectar a cualquier adolescente, independientemente de su género. También puede ser ejercida por una pareja, expareja, amistad, familiar o persona desconocida.\n\nSi alguna vez @fields.child_name enfrenta una situación así, recuérdale que no tiene la culpa de las amenazas y que cuenta con tu apoyo. \n\nEs importante no enviar nuevas fotografías, conservar los mensajes como evidencia y buscar orientación para detener la violencia y protegerle."
-        },
-        "quiz_1_option_2_text": {
-          "eng": "Falso"
-        },
-        "quiz_1_feedback_2": {
-          "eng": "👀 ¡Ups! ¡Revisemos esta idea!\n\nEsta forma de violencia sexual puede afectar a cualquier adolescente, independientemente de su género. También puede ser ejercida por una pareja, expareja, amistad, familiar o persona desconocida.\n\nSi alguna vez @fields.child_name enfrenta una situación así, recuérdale que no tiene la culpa de las amenazas y que cuenta con tu apoyo. \n\nEs importante no enviar nuevas fotografías, conservar los mensajes como evidencia y buscar orientación para detener la violencia y protegerle."
-        }
-      },
-      "quiz_1_option_1_text": "Verdadero",
-      "quiz_1_feedback_1": "🎉 ¡Tienes razón!\n\nEsta forma de violencia sexual puede afectar a cualquier adolescente, independientemente de su género. También puede ser ejercida por una pareja, expareja, amistad, familiar o persona desconocida.\n\nSi alguna vez @fields.child_name enfrenta una situación así, recuérdale que no tiene la culpa de las amenazas y que cuenta con tu apoyo. \n\nEs importante no enviar nuevas fotografías, conservar los mensajes como evidencia y buscar orientación para detener la violencia y protegerle.",
-      "quiz_1_option_2_text": "Falso",
-      "quiz_1_feedback_2": "👀 ¡Ups! ¡Revisemos esta idea!\n\nEsta forma de violencia sexual puede afectar a cualquier adolescente, independientemente de su género. También puede ser ejercida por una pareja, expareja, amistad, familiar o persona desconocida.\n\nSi alguna vez @fields.child_name enfrenta una situación así, recuérdale que no tiene la culpa de las amenazas y que cuenta con tu apoyo. \n\nEs importante no enviar nuevas fotografías, conservar los mensajes como evidencia y buscar orientación para detener la violencia y protegerle."
-    },
-    {
-      "id": "practise_3",
       "category_id": "practise",
       "nested": false,
       "text_1_facilitator": "¡Veamos otra situación para seguir practicando!",
@@ -515,7 +508,7 @@
       "quiz_1_feedback_4": "🎉 ¡Tienes razón!\n\nMantener la calma permite comprender lo sucedido y actuar de manera responsable. \n\nLa abuela debe escuchar a @data.characters.f3_hijo_14.name sin justificar sus acciones, explicarle el daño que puede causar la difusión de imágenes íntimas y tomar medidas para detenerla y proteger a la persona afectada. También es importante buscar orientación especializada cuando sea necesario."
     },
     {
-      "id": "practise_4",
+      "id": "practise_3",
       "category_id": "practise",
       "nested": false,
       "text_1_facilitator": "¡Vamos con la última situación!",
