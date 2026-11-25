@@ -1,0 +1,204 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "support_contact",
+  "status": "released",
+  "flow_subtype": "support",
+  "comments": "One row per organisation; type = emergency / contact / resource (box style); up to 3 channels",
+  "rows": [
+    {
+      "id": "emergencias_911",
+      "type": "emergency",
+      "name": "Teléfono para emergencias",
+      "channel_1_type": "phone",
+      "channel_1_value": 911
+    },
+    {
+      "id": "procuraduria_nna",
+      "type": "contact",
+      "name": "Procuraduría de Protección a Niñas, Niños y Adolescentes",
+      "description": "Atención al reporte de maltrato infantil, asesoría jurídica y medidas de protección.\nBusca la información de contacto de las oficinas en tu estado.",
+      "channel_1_type": "website",
+      "channel_1_value": "https://portusderechos.dif.gob.mx/mapas/"
+    },
+    {
+      "id": "te_protejo",
+      "type": "contact",
+      "name": "Te protejo México - Línea de Reporte",
+      "description": "Plataforma para reportar situaciones de violencia sexual en contra de personas menores de 18 años de edad.\nServicio anónimo y gratuito.",
+      "channel_1_type": "website",
+      "channel_1_value": "https://teprotejomexico.org/"
+    },
+    {
+      "id": "alumbra",
+      "type": "contact",
+      "name": "Alumbra",
+      "description": "Consulta para saber dónde puedes denunciar y qué organizaciones te pueden acompañar en el proceso.",
+      "channel_1_type": "website",
+      "channel_1_value": "https://alumbramx.org/acompanamiento-y-denuncia-de-casos/"
+    },
+    {
+      "id": "linea_mujeres",
+      "type": "contact",
+      "name": "Línea de las Mujeres",
+      "description": "Llama para recibir atención inmediata, orientación jurídica y psicológica.\nGratuita y confidencial.",
+      "channel_1_type": "phone",
+      "channel_1_value": "079",
+      "channel_1_hours": 46227
+    },
+    {
+      "id": "red_nacional_refugios",
+      "type": "contact",
+      "name": "Red Nacional de Refugios",
+      "description": "Servicios especializados de prevención, atención, protección y acompañamiento.\nRecursos para identificar las señales de violencia.",
+      "channel_1_type": "phone",
+      "channel_1_value": "55 56 74 96 95",
+      "channel_1_hours": 46227,
+      "channel_2_type": "phone",
+      "channel_2_value": "55 52 43 64 32",
+      "channel_3_type": "phone",
+      "channel_3_value": "800 822 4460",
+      "channel_3_label": "Lada nacional gratuita",
+      "notes": "WhatsApp: 💬 55 64 73 30 04\n\nSitio web: [rednacionalderefugios.org.mx](https://rednacionalderefugios.org.mx/linea-de-ayuda/)"
+    },
+    {
+      "id": "acoso_sexual",
+      "type": "resource",
+      "name": "Qué hacer en casos de acoso sexual",
+      "description": "Información sobre cómo identificar casos de hostigamiento o acoso sexual y qué hacer.",
+      "channel_1_type": "website",
+      "channel_1_value": "http://cerotolerancia.inmujeres.gob.mx/#quehago"
+    },
+    {
+      "id": "gendes",
+      "type": "contact",
+      "name": "GENDES",
+      "description": "Escribe o llama por WhatsApp o teléfono, sin costo.",
+      "channel_1_type": "phone",
+      "channel_1_value": "55 4757 9288",
+      "channel_1_hours": 46227,
+      "notes": "Si quieres identificar, reconocer y detener tus ejercicios de violencia, y desarrollar formas alternativas de resolver conflictos.\n\nSitio web: [gendes.org.mx](https://gendes.org.mx/nuestra_labor.html#atencion)"
+    },
+    {
+      "id": "guardia_nacional_088",
+      "type": "contact",
+      "name": "Guardia Nacional",
+      "description": "Atención ciudadana y denuncia de delitos.",
+      "channel_1_type": "phone",
+      "channel_1_value": "088"
+    },
+    {
+      "id": "denuncia_anonima_089",
+      "type": "contact",
+      "name": "Denuncia Anónima",
+      "description": "Extorsión y otros delitos.",
+      "channel_1_type": "phone",
+      "channel_1_value": "089"
+    },
+    {
+      "id": "fgr_cedac",
+      "type": "contact",
+      "name": "Fiscalía General de la República",
+      "description": "Centro de Denuncia y Atención Ciudadana (CEDAC).",
+      "channel_1_type": "phone",
+      "channel_1_value": "800 00 85 400"
+    },
+    {
+      "id": "linea_de_la_vida",
+      "type": "contact",
+      "name": "Línea de la Vida",
+      "description": "Para recibir orientación, apoyo emocional y atención en crisis.",
+      "channel_1_type": "phone",
+      "channel_1_value": "800 911 2000",
+      "channel_1_hours": 46227
+    },
+    {
+      "id": "unam_atencion_psicologica",
+      "type": "contact",
+      "name": "Línea de Atención Psicológica UNAM",
+      "channel_1_type": "phone",
+      "channel_1_value": "55 5025 0855"
+    },
+    {
+      "id": "saptel",
+      "type": "contact",
+      "name": "Sistema Nacional de Apoyo, Consejo Psicológico e Intervención en Crisis por Teléfono (SAPTEL)",
+      "description": "Atención gratuita.",
+      "channel_1_type": "phone",
+      "channel_1_value": "55 5259 8121",
+      "channel_1_hours": 46227
+    },
+    {
+      "id": "inprf",
+      "type": "contact",
+      "name": "Instituto Nacional de Psiquiatría",
+      "description": "Estrés, ansiedad, cualquier crisis emocional o situaciones de emergencia.",
+      "channel_1_type": "phone",
+      "channel_1_value": "55 4160 5372",
+      "channel_1_label": "CDMX",
+      "channel_2_type": "phone",
+      "channel_2_value": "55 4160 3282",
+      "channel_2_label": "Interior de la República"
+    },
+    {
+      "id": "planned_parenthood",
+      "type": "resource",
+      "channel_1_type": "website",
+      "channel_1_value": "https://www.plannedparenthood.org/es/temas-de-salud/para-padres/sexo-y-sexualidad"
+    },
+    {
+      "id": "pantallas_amigas",
+      "type": "resource",
+      "name": "Pantallas amigas",
+      "description": "Recursos para seguridad en línea.",
+      "channel_1_type": "website",
+      "channel_1_value": "https://www.pantallasamigas.net/"
+    },
+    {
+      "id": "alas_y_raices",
+      "type": "resource",
+      "name": "Programa Alas y Raíces",
+      "description": "Encuentra libros gratuitos en línea.",
+      "channel_1_type": "website",
+      "channel_1_value": "https://alasyraices.gob.mx/librerogeneral.html"
+    },
+    {
+      "id": "leoteca",
+      "type": "resource",
+      "name": "Leoteca",
+      "description": "Libros y cuentos gratuitos en línea.",
+      "channel_1_type": "website",
+      "channel_1_value": "https://www.leoteca.es/"
+    },
+    {
+      "id": "recursos_aprendizaje",
+      "type": "resource",
+      "name": "Recursos de aprendizaje en línea",
+      "channel_1_type": "website",
+      "channel_1_value": "https://aprende.gob.mx/"
+    },
+    {
+      "id": "alcoholicos_anonimos",
+      "type": "contact",
+      "name": "Alcohólicos Anónimos",
+      "channel_1_type": "phone",
+      "channel_1_value": "800 216 92 31",
+      "channel_2_type": "website",
+      "channel_2_value": "https://aamexico.org.mx/"
+    },
+    {
+      "id": "familia_y_adicciones",
+      "type": "contact",
+      "name": "Familia y Adicciones",
+      "description": "Ayuda para familiares de consumidores de alcohol y drogas.",
+      "channel_1_type": "website",
+      "channel_1_value": "https://familiayadicciones.org.mx/"
+    },
+    {
+      "id": "paadd",
+      "type": "contact",
+      "name": "Programa de Ayuda para el Abuso de Drogas y Depresión",
+      "channel_1_type": "website",
+      "channel_1_value": "https://paadd.mx/"
+    }
+  ]
+}

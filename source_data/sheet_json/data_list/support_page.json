@@ -1,0 +1,72 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "support_page",
+  "status": "released",
+  "flow_subtype": "support",
+  "comments": "One row per support page; section_N_list = support_contact ids in order",
+  "rows": [
+    {
+      "id": "support_1",
+      "title": "Tengo una emergencia",
+      "icon": "images/icons/caution.svg",
+      "intro": "Si en este momento enfrentas alguna de estas situaciones:\n- Tienes una emergencia médica\n- Sufriste un accidente\n- Viviste o viste alguna situación peligrosa\n- Hay un incendio\n- Sucedió un desastre natural",
+      "section_1_list": "emergencias_911"
+    },
+    {
+      "id": "support_2",
+      "title": "Me preocupa la seguridad de mi niña, niño o adolescente",
+      "intro": "Si tu niña, niño o adolescente está en peligro o necesitas reportar una situación de violencia o abuso:",
+      "section_1_list": "emergencias_911; procuraduria_nna; te_protejo; alumbra"
+    },
+    {
+      "id": "support_3",
+      "title": "Me siento en peligro en mi casa o con mi pareja",
+      "intro": "Si sientes que estás sufriendo violencia, te sientes en peligro o necesitas reportar una situación de violencia o abuso:",
+      "section_1_list": "emergencias_911; linea_mujeres; red_nacional_refugios; acoso_sexual"
+    },
+    {
+      "id": "support_4",
+      "title": "Creo que estoy ejerciendo violencia",
+      "intro": "Si reconoces que estás actuando de forma violenta o haciendo que la otra persona se sienta insegura:",
+      "section_1_list": "gendes"
+    },
+    {
+      "id": "support_5",
+      "title": "Quiero denunciar algo que me pasó o le pasó a mi familia",
+      "intro": "Si fuiste víctima de algún delito, necesitas apoyo o atención de las autoridades y/o quieres denunciar:",
+      "section_1_list": "emergencias_911",
+      "section_2_intro": "**Otros teléfonos de atención**",
+      "section_2_list": "guardia_nacional_088; denuncia_anonima_089; fgr_cedac"
+    },
+    {
+      "id": "support_6",
+      "title": "Necesito apoyo con mi salud mental",
+      "intro": "Si necesitas apoyo emocional, quieres hablar con alguien sobre cómo te sientes o temes lastimarte a ti o a otras personas:",
+      "section_1_list": "emergencias_911; linea_de_la_vida; unam_atencion_psicologica; saptel; inprf"
+    },
+    {
+      "id": "support_7",
+      "title": "Quiero más información para hablar sobre sexualidad con mi niña, niño o adolescente",
+      "intro": "Si quieres más información sobre cómo hablar sobre sexualidad con tu niña, niño o adolescente:",
+      "section_1_list": "planned_parenthood"
+    },
+    {
+      "id": "support_8",
+      "title": "Quiero saber más sobre seguridad en línea",
+      "intro": "Si quieres saber más sobre seguridad en línea:",
+      "section_1_list": "pantallas_amigas"
+    },
+    {
+      "id": "support_9",
+      "title": "Necesito libros o recursos en línea para leer con mi niña o niño",
+      "intro": "Si quieres descargar libros o recursos de aprendizaje gratuitos:",
+      "section_1_list": "alas_y_raices; leoteca; recursos_aprendizaje"
+    },
+    {
+      "id": "support_10",
+      "title": "Necesito apoyo con el abuso de alcohol o sustancias",
+      "intro": "Si sientes preocupación por el consumo de alcohol o drogas de algún integrante de su familia o tu propio consumo:",
+      "section_1_list": "alcoholicos_anonimos; familia_y_adicciones; paadd"
+    }
+  ]
+}

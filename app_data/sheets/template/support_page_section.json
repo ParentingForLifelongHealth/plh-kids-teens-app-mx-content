@@ -1,0 +1,1764 @@
+{
+  "flow_type": "template",
+  "flow_name": "support_page_section",
+  "status": "released",
+  "comments": "One section: intro + contact boxes",
+  "rows": [
+    {
+      "name": "intro",
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "intro"
+    },
+    {
+      "name": "list",
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "list"
+    },
+    {
+      "name": "contacts",
+      "value": "@data.support_contact",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "contacts",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.support_contact",
+            "matchedExpression": "@data.support_contact",
+            "type": "data",
+            "fieldName": "support_contact"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.support_contact": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "all_contacts",
+      "value": "@calc(Object.values(@local.contacts || []))",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "all_contacts",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(Object.values(@local.contacts || []))",
+            "matchedExpression": "@local.contacts",
+            "type": "local",
+            "fieldName": "contacts"
+          },
+          {
+            "fullExpression": "@calc(Object.values(@local.contacts || []))",
+            "matchedExpression": "@calc(Object.values(@local.contacts || []))",
+            "type": "calc",
+            "fieldName": "Object.values(@local.contacts || [])"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.contacts": [
+          "value"
+        ],
+        "@calc(Object.values(@local.contacts || []))": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "ids",
+      "value": "@calc(Array.isArray(@local.list) ? @local.list : String(@local.list || \"\").split(/[;,]/).map(s => s.trim()).filter(s => s))",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "ids",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(Array.isArray(@local.list) ? @local.list : String(@local.list || \"\").split(/[;,]/).map(s => s.trim()).filter(s => s))",
+            "matchedExpression": "@local.list",
+            "type": "local",
+            "fieldName": "list"
+          },
+          {
+            "fullExpression": "@calc(Array.isArray(@local.list) ? @local.list : String(@local.list || \"\").split(/[;,]/).map(s => s.trim()).filter(s => s))",
+            "matchedExpression": "@local.list",
+            "type": "local",
+            "fieldName": "list"
+          },
+          {
+            "fullExpression": "@calc(Array.isArray(@local.list) ? @local.list : String(@local.list || \"\").split(/[;,]/).map(s => s.trim()).filter(s => s))",
+            "matchedExpression": "@local.list",
+            "type": "local",
+            "fieldName": "list"
+          },
+          {
+            "fullExpression": "@calc(Array.isArray(@local.list) ? @local.list : String(@local.list || \"\").split(/[;,]/).map(s => s.trim()).filter(s => s))",
+            "matchedExpression": "@calc(Array.isArray(@local.list) ? @local.list : String(@local.list || \"\").split(/[;,]/).map(s => s.trim()).filter(s => s))",
+            "type": "calc",
+            "fieldName": "Array.isArray(@local.list) ? @local.list : String(@local.list || \"\").split(/[;,]/).map(s => s.trim()).filter(s => s)"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.list": [
+          "value",
+          "value",
+          "value"
+        ],
+        "@calc(Array.isArray(@local.list) ? @local.list : String(@local.list || \"\").split(/[;,]/).map(s => s.trim()).filter(s => s))": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "visible",
+      "value": "@calc(@local.ids.map(id => @local.all_contacts.find(c => c.id == id)).filter(c => c && (![].concat(c.location_list || []).length || [].concat(c.location_list).includes(@fields.user_location))))",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "visible",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(@local.ids.map(id => @local.all_contacts.find(c => c.id == id)).filter(c => c && (![].concat(c.location_list || []).length || [].concat(c.location_list).includes(@fields.user_location))))",
+            "matchedExpression": "@local.ids.map",
+            "type": "local",
+            "fieldName": "ids"
+          },
+          {
+            "fullExpression": "@calc(@local.ids.map(id => @local.all_contacts.find(c => c.id == id)).filter(c => c && (![].concat(c.location_list || []).length || [].concat(c.location_list).includes(@fields.user_location))))",
+            "matchedExpression": "@local.all_contacts.find",
+            "type": "local",
+            "fieldName": "all_contacts"
+          },
+          {
+            "fullExpression": "@calc(@local.ids.map(id => @local.all_contacts.find(c => c.id == id)).filter(c => c && (![].concat(c.location_list || []).length || [].concat(c.location_list).includes(@fields.user_location))))",
+            "matchedExpression": "@fields.user_location",
+            "type": "fields",
+            "fieldName": "user_location"
+          },
+          {
+            "fullExpression": "@calc(@local.ids.map(id => @local.all_contacts.find(c => c.id == id)).filter(c => c && (![].concat(c.location_list || []).length || [].concat(c.location_list).includes(@fields.user_location))))",
+            "matchedExpression": "@calc(@local.ids.map(id => @local.all_contacts.find(c => c.id == id)).filter(c => c && (![].concat(c.location_list || []).length || [].concat(c.location_list).includes(@fields.user_location))))",
+            "type": "calc",
+            "fieldName": "@local.ids.map(id => @local.all_contacts.find(c => c.id == id)).filter(c => c && (![].concat(c.location_list || []).length || [].concat(c.location_list).includes(@fields.user_location)))"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.ids.map": [
+          "value"
+        ],
+        "@local.all_contacts.find": [
+          "value"
+        ],
+        "@fields.user_location": [
+          "value"
+        ],
+        "@calc(@local.ids.map(id => @local.all_contacts.find(c => c.id == id)).filter(c => c && (![].concat(c.location_list || []).length || [].concat(c.location_list).includes(@fields.user_location))))": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "display_group",
+      "name": "dg_section",
+      "parameter_list": {
+        "style": "column"
+      },
+      "condition": "@local.visible.length > 0",
+      "exclude_from_translation": true,
+      "rows": [
+        {
+          "type": "text",
+          "name": "intro_text",
+          "value": "@local.intro",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "!!@local.intro",
+          "exclude_from_translation": true,
+          "_nested_name": "dg_section.intro_text",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.intro",
+                "matchedExpression": "@local.intro",
+                "type": "local",
+                "fieldName": "intro"
+              }
+            ],
+            "condition": [
+              {
+                "fullExpression": "!!@local.intro",
+                "matchedExpression": "!@local.intro",
+                "type": "local",
+                "fieldName": "intro"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.intro": [
+              "value"
+            ],
+            "!@local.intro": [
+              "condition"
+            ]
+          }
+        },
+        {
+          "type": "items",
+          "name": "contact_items",
+          "value": "@local.visible",
+          "exclude_from_translation": true,
+          "rows": [
+            {
+              "name": "variant",
+              "value": "box_green",
+              "_translations": {
+                "value": {}
+              },
+              "exclude_from_translation": true,
+              "type": "set_variable",
+              "_nested_name": "dg_section.contact_items.variant"
+            },
+            {
+              "name": "variant",
+              "value": "box_secondary_alt",
+              "_translations": {
+                "value": {}
+              },
+              "condition": "@item.type == \"emergency\"",
+              "exclude_from_translation": true,
+              "type": "set_variable",
+              "_nested_name": "dg_section.contact_items.variant",
+              "_dynamicFields": {
+                "condition": [
+                  {
+                    "fullExpression": "@item.type == \"emergency\"",
+                    "matchedExpression": "@item.type",
+                    "type": "item",
+                    "fieldName": "type"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.type": [
+                  "condition"
+                ]
+              }
+            },
+            {
+              "name": "variant",
+              "value": "box_secondary",
+              "_translations": {
+                "value": {}
+              },
+              "condition": "@item.type == \"resource\"",
+              "exclude_from_translation": true,
+              "type": "set_variable",
+              "_nested_name": "dg_section.contact_items.variant",
+              "_dynamicFields": {
+                "condition": [
+                  {
+                    "fullExpression": "@item.type == \"resource\"",
+                    "matchedExpression": "@item.type",
+                    "type": "item",
+                    "fieldName": "type"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.type": [
+                  "condition"
+                ]
+              }
+            },
+            {
+              "name": "location_key",
+              "value": "user_location.@fields.user_location",
+              "_translations": {
+                "value": {}
+              },
+              "exclude_from_translation": true,
+              "type": "set_variable",
+              "_nested_name": "dg_section.contact_items.location_key",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "user_location.@fields.user_location",
+                    "matchedExpression": "@fields.user_location",
+                    "type": "fields",
+                    "fieldName": "user_location"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@fields.user_location": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "location_data",
+              "value": "@data.@local.location_key",
+              "_translations": {
+                "value": {}
+              },
+              "exclude_from_translation": true,
+              "type": "set_variable",
+              "_nested_name": "dg_section.contact_items.location_data",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@data.@local.location_key",
+                    "matchedExpression": "@local.location_key",
+                    "type": "local",
+                    "fieldName": "location_key"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.location_key": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "c1_value",
+              "value": "@calc(String(@item.channel_1_value || \"\"))",
+              "_translations": {
+                "value": {}
+              },
+              "exclude_from_translation": true,
+              "type": "set_variable",
+              "_nested_name": "dg_section.contact_items.c1_value",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@calc(String(@item.channel_1_value || \"\"))",
+                    "matchedExpression": "@item.channel_1_value",
+                    "type": "item",
+                    "fieldName": "channel_1_value"
+                  },
+                  {
+                    "fullExpression": "@calc(String(@item.channel_1_value || \"\"))",
+                    "matchedExpression": "@calc(String(@item.channel_1_value || \"\"))",
+                    "type": "calc",
+                    "fieldName": "String(@item.channel_1_value || \"\")"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.channel_1_value": [
+                  "value"
+                ],
+                "@calc(String(@item.channel_1_value || \"\"))": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "c1_digits",
+              "value": "@calc(String(@item.channel_1_value || \"\").replace(/[^0-9+*#]/g, \"\").replace(\"#\", \"%23\"))",
+              "_translations": {
+                "value": {}
+              },
+              "exclude_from_translation": true,
+              "type": "set_variable",
+              "_nested_name": "dg_section.contact_items.c1_digits",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@calc(String(@item.channel_1_value || \"\").replace(/[^0-9+*#]/g, \"\").replace(\"#\", \"%23\"))",
+                    "matchedExpression": "@item.channel_1_value",
+                    "type": "item",
+                    "fieldName": "channel_1_value"
+                  },
+                  {
+                    "fullExpression": "@calc(String(@item.channel_1_value || \"\").replace(/[^0-9+*#]/g, \"\").replace(\"#\", \"%23\"))",
+                    "matchedExpression": "@calc(String(@item.channel_1_value || \"\").replace(/[^0-9+*#]/g, \"\").replace(\"#\", \"%23\"))",
+                    "type": "calc",
+                    "fieldName": "String(@item.channel_1_value || \"\").replace(/[^0-9+*#]/g, \"\").replace(\"#\", \"%23\")"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.channel_1_value": [
+                  "value"
+                ],
+                "@calc(String(@item.channel_1_value || \"\").replace(/[^0-9+*#]/g, \"\").replace(\"#\", \"%23\"))": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "c1_href",
+              "value": "@calc(@item.channel_1_type == \"website\" ? @local.c1_value : @item.channel_1_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c1_digits.replace(\"+\", \"\") : @item.channel_1_type == \"sms\" ? \"sms:\" + @local.c1_digits : \"tel:\" + @local.c1_digits)",
+              "_translations": {
+                "value": {}
+              },
+              "exclude_from_translation": true,
+              "type": "set_variable",
+              "_nested_name": "dg_section.contact_items.c1_href",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@calc(@item.channel_1_type == \"website\" ? @local.c1_value : @item.channel_1_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c1_digits.replace(\"+\", \"\") : @item.channel_1_type == \"sms\" ? \"sms:\" + @local.c1_digits : \"tel:\" + @local.c1_digits)",
+                    "matchedExpression": "@item.channel_1_type",
+                    "type": "item",
+                    "fieldName": "channel_1_type"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_1_type == \"website\" ? @local.c1_value : @item.channel_1_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c1_digits.replace(\"+\", \"\") : @item.channel_1_type == \"sms\" ? \"sms:\" + @local.c1_digits : \"tel:\" + @local.c1_digits)",
+                    "matchedExpression": "@local.c1_value",
+                    "type": "local",
+                    "fieldName": "c1_value"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_1_type == \"website\" ? @local.c1_value : @item.channel_1_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c1_digits.replace(\"+\", \"\") : @item.channel_1_type == \"sms\" ? \"sms:\" + @local.c1_digits : \"tel:\" + @local.c1_digits)",
+                    "matchedExpression": "@item.channel_1_type",
+                    "type": "item",
+                    "fieldName": "channel_1_type"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_1_type == \"website\" ? @local.c1_value : @item.channel_1_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c1_digits.replace(\"+\", \"\") : @item.channel_1_type == \"sms\" ? \"sms:\" + @local.c1_digits : \"tel:\" + @local.c1_digits)",
+                    "matchedExpression": "@local.c1_digits.replace",
+                    "type": "local",
+                    "fieldName": "c1_digits"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_1_type == \"website\" ? @local.c1_value : @item.channel_1_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c1_digits.replace(\"+\", \"\") : @item.channel_1_type == \"sms\" ? \"sms:\" + @local.c1_digits : \"tel:\" + @local.c1_digits)",
+                    "matchedExpression": "@item.channel_1_type",
+                    "type": "item",
+                    "fieldName": "channel_1_type"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_1_type == \"website\" ? @local.c1_value : @item.channel_1_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c1_digits.replace(\"+\", \"\") : @item.channel_1_type == \"sms\" ? \"sms:\" + @local.c1_digits : \"tel:\" + @local.c1_digits)",
+                    "matchedExpression": "@local.c1_digits",
+                    "type": "local",
+                    "fieldName": "c1_digits"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_1_type == \"website\" ? @local.c1_value : @item.channel_1_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c1_digits.replace(\"+\", \"\") : @item.channel_1_type == \"sms\" ? \"sms:\" + @local.c1_digits : \"tel:\" + @local.c1_digits)",
+                    "matchedExpression": "@local.c1_digits",
+                    "type": "local",
+                    "fieldName": "c1_digits"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_1_type == \"website\" ? @local.c1_value : @item.channel_1_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c1_digits.replace(\"+\", \"\") : @item.channel_1_type == \"sms\" ? \"sms:\" + @local.c1_digits : \"tel:\" + @local.c1_digits)",
+                    "matchedExpression": "@calc(@item.channel_1_type == \"website\" ? @local.c1_value : @item.channel_1_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c1_digits.replace(\"+\", \"\") : @item.channel_1_type == \"sms\" ? \"sms:\" + @local.c1_digits : \"tel:\" + @local.c1_digits)",
+                    "type": "calc",
+                    "fieldName": "@item.channel_1_type == \"website\" ? @local.c1_value : @item.channel_1_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c1_digits.replace(\"+\", \"\") : @item.channel_1_type == \"sms\" ? \"sms:\" + @local.c1_digits : \"tel:\" + @local.c1_digits"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.channel_1_type": [
+                  "value",
+                  "value",
+                  "value"
+                ],
+                "@local.c1_value": [
+                  "value"
+                ],
+                "@local.c1_digits.replace": [
+                  "value"
+                ],
+                "@local.c1_digits": [
+                  "value",
+                  "value"
+                ],
+                "@calc(@item.channel_1_type == \"website\" ? @local.c1_value : @item.channel_1_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c1_digits.replace(\"+\", \"\") : @item.channel_1_type == \"sms\" ? \"sms:\" + @local.c1_digits : \"tel:\" + @local.c1_digits)": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "c1_icon",
+              "value": "@calc((@item.channel_1_type == \"website\" ? \"🌐\" : @item.channel_1_type == \"whatsapp\" ? \"💬\" : @item.channel_1_type == \"sms\" ? \"✉️\" : \"📞\") + \"\\u00a0\")",
+              "_translations": {
+                "value": {}
+              },
+              "exclude_from_translation": true,
+              "type": "set_variable",
+              "_nested_name": "dg_section.contact_items.c1_icon",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@calc((@item.channel_1_type == \"website\" ? \"🌐\" : @item.channel_1_type == \"whatsapp\" ? \"💬\" : @item.channel_1_type == \"sms\" ? \"✉️\" : \"📞\") + \"\\u00a0\")",
+                    "matchedExpression": "@item.channel_1_type",
+                    "type": "item",
+                    "fieldName": "channel_1_type"
+                  },
+                  {
+                    "fullExpression": "@calc((@item.channel_1_type == \"website\" ? \"🌐\" : @item.channel_1_type == \"whatsapp\" ? \"💬\" : @item.channel_1_type == \"sms\" ? \"✉️\" : \"📞\") + \"\\u00a0\")",
+                    "matchedExpression": "@item.channel_1_type",
+                    "type": "item",
+                    "fieldName": "channel_1_type"
+                  },
+                  {
+                    "fullExpression": "@calc((@item.channel_1_type == \"website\" ? \"🌐\" : @item.channel_1_type == \"whatsapp\" ? \"💬\" : @item.channel_1_type == \"sms\" ? \"✉️\" : \"📞\") + \"\\u00a0\")",
+                    "matchedExpression": "@item.channel_1_type",
+                    "type": "item",
+                    "fieldName": "channel_1_type"
+                  },
+                  {
+                    "fullExpression": "@calc((@item.channel_1_type == \"website\" ? \"🌐\" : @item.channel_1_type == \"whatsapp\" ? \"💬\" : @item.channel_1_type == \"sms\" ? \"✉️\" : \"📞\") + \"\\u00a0\")",
+                    "matchedExpression": "@calc((@item.channel_1_type == \"website\" ? \"🌐\" : @item.channel_1_type == \"whatsapp\" ? \"💬\" : @item.channel_1_type == \"sms\" ? \"✉️\" : \"📞\") + \"\\u00a0\")",
+                    "type": "calc",
+                    "fieldName": "(@item.channel_1_type == \"website\" ? \"🌐\" : @item.channel_1_type == \"whatsapp\" ? \"💬\" : @item.channel_1_type == \"sms\" ? \"✉️\" : \"📞\") + \"\\u00a0\""
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.channel_1_type": [
+                  "value",
+                  "value",
+                  "value"
+                ],
+                "@calc((@item.channel_1_type == \"website\" ? \"🌐\" : @item.channel_1_type == \"whatsapp\" ? \"💬\" : @item.channel_1_type == \"sms\" ? \"✉️\" : \"📞\") + \"\\u00a0\")": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "c1_text",
+              "value": "@calc(@item.channel_1_type == \"website\" ? (@item.channel_1_label || @local.c1_value.split(\"//\").pop().split(\"/\")[0].replace(\"www.\", \"\")) : (@item.channel_1_type == \"whatsapp\" ? \"WhatsApp \" : @item.channel_1_type == \"sms\" ? \"SMS \" : \"\") + @local.c1_value.split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\"))",
+              "_translations": {
+                "value": {}
+              },
+              "exclude_from_translation": true,
+              "type": "set_variable",
+              "_nested_name": "dg_section.contact_items.c1_text",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@calc(@item.channel_1_type == \"website\" ? (@item.channel_1_label || @local.c1_value.split(\"//\").pop().split(\"/\")[0].replace(\"www.\", \"\")) : (@item.channel_1_type == \"whatsapp\" ? \"WhatsApp \" : @item.channel_1_type == \"sms\" ? \"SMS \" : \"\") + @local.c1_value.split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\"))",
+                    "matchedExpression": "@item.channel_1_type",
+                    "type": "item",
+                    "fieldName": "channel_1_type"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_1_type == \"website\" ? (@item.channel_1_label || @local.c1_value.split(\"//\").pop().split(\"/\")[0].replace(\"www.\", \"\")) : (@item.channel_1_type == \"whatsapp\" ? \"WhatsApp \" : @item.channel_1_type == \"sms\" ? \"SMS \" : \"\") + @local.c1_value.split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\"))",
+                    "matchedExpression": "@item.channel_1_label",
+                    "type": "item",
+                    "fieldName": "channel_1_label"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_1_type == \"website\" ? (@item.channel_1_label || @local.c1_value.split(\"//\").pop().split(\"/\")[0].replace(\"www.\", \"\")) : (@item.channel_1_type == \"whatsapp\" ? \"WhatsApp \" : @item.channel_1_type == \"sms\" ? \"SMS \" : \"\") + @local.c1_value.split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\"))",
+                    "matchedExpression": "@local.c1_value.split",
+                    "type": "local",
+                    "fieldName": "c1_value"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_1_type == \"website\" ? (@item.channel_1_label || @local.c1_value.split(\"//\").pop().split(\"/\")[0].replace(\"www.\", \"\")) : (@item.channel_1_type == \"whatsapp\" ? \"WhatsApp \" : @item.channel_1_type == \"sms\" ? \"SMS \" : \"\") + @local.c1_value.split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\"))",
+                    "matchedExpression": "@item.channel_1_type",
+                    "type": "item",
+                    "fieldName": "channel_1_type"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_1_type == \"website\" ? (@item.channel_1_label || @local.c1_value.split(\"//\").pop().split(\"/\")[0].replace(\"www.\", \"\")) : (@item.channel_1_type == \"whatsapp\" ? \"WhatsApp \" : @item.channel_1_type == \"sms\" ? \"SMS \" : \"\") + @local.c1_value.split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\"))",
+                    "matchedExpression": "@item.channel_1_type",
+                    "type": "item",
+                    "fieldName": "channel_1_type"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_1_type == \"website\" ? (@item.channel_1_label || @local.c1_value.split(\"//\").pop().split(\"/\")[0].replace(\"www.\", \"\")) : (@item.channel_1_type == \"whatsapp\" ? \"WhatsApp \" : @item.channel_1_type == \"sms\" ? \"SMS \" : \"\") + @local.c1_value.split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\"))",
+                    "matchedExpression": "@local.c1_value.split",
+                    "type": "local",
+                    "fieldName": "c1_value"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_1_type == \"website\" ? (@item.channel_1_label || @local.c1_value.split(\"//\").pop().split(\"/\")[0].replace(\"www.\", \"\")) : (@item.channel_1_type == \"whatsapp\" ? \"WhatsApp \" : @item.channel_1_type == \"sms\" ? \"SMS \" : \"\") + @local.c1_value.split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\"))",
+                    "matchedExpression": "@calc(@item.channel_1_type == \"website\" ? (@item.channel_1_label || @local.c1_value.split(\"//\").pop().split(\"/\")[0].replace(\"www.\", \"\")) : (@item.channel_1_type == \"whatsapp\" ? \"WhatsApp \" : @item.channel_1_type == \"sms\" ? \"SMS \" : \"\") + @local.c1_value.split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\"))",
+                    "type": "calc",
+                    "fieldName": "@item.channel_1_type == \"website\" ? (@item.channel_1_label || @local.c1_value.split(\"//\").pop().split(\"/\")[0].replace(\"www.\", \"\")) : (@item.channel_1_type == \"whatsapp\" ? \"WhatsApp \" : @item.channel_1_type == \"sms\" ? \"SMS \" : \"\") + @local.c1_value.split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\")"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.channel_1_type": [
+                  "value",
+                  "value",
+                  "value"
+                ],
+                "@item.channel_1_label": [
+                  "value"
+                ],
+                "@local.c1_value.split": [
+                  "value",
+                  "value"
+                ],
+                "@calc(@item.channel_1_type == \"website\" ? (@item.channel_1_label || @local.c1_value.split(\"//\").pop().split(\"/\")[0].replace(\"www.\", \"\")) : (@item.channel_1_type == \"whatsapp\" ? \"WhatsApp \" : @item.channel_1_type == \"sms\" ? \"SMS \" : \"\") + @local.c1_value.split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\"))": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "c1_suffix",
+              "value": "@calc((@item.channel_1_type != \"website\" && @item.channel_1_label ? \" · \" + @item.channel_1_label : \"\") + (@item.channel_1_hours ? \" · 🕒\\u00a0\" + String(@item.channel_1_hours).split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\") : \"\"))",
+              "_translations": {
+                "value": {}
+              },
+              "exclude_from_translation": true,
+              "type": "set_variable",
+              "_nested_name": "dg_section.contact_items.c1_suffix",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@calc((@item.channel_1_type != \"website\" && @item.channel_1_label ? \" · \" + @item.channel_1_label : \"\") + (@item.channel_1_hours ? \" · 🕒\\u00a0\" + String(@item.channel_1_hours).split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\") : \"\"))",
+                    "matchedExpression": "@item.channel_1_type",
+                    "type": "item",
+                    "fieldName": "channel_1_type"
+                  },
+                  {
+                    "fullExpression": "@calc((@item.channel_1_type != \"website\" && @item.channel_1_label ? \" · \" + @item.channel_1_label : \"\") + (@item.channel_1_hours ? \" · 🕒\\u00a0\" + String(@item.channel_1_hours).split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\") : \"\"))",
+                    "matchedExpression": "@item.channel_1_label",
+                    "type": "item",
+                    "fieldName": "channel_1_label"
+                  },
+                  {
+                    "fullExpression": "@calc((@item.channel_1_type != \"website\" && @item.channel_1_label ? \" · \" + @item.channel_1_label : \"\") + (@item.channel_1_hours ? \" · 🕒\\u00a0\" + String(@item.channel_1_hours).split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\") : \"\"))",
+                    "matchedExpression": "@item.channel_1_label",
+                    "type": "item",
+                    "fieldName": "channel_1_label"
+                  },
+                  {
+                    "fullExpression": "@calc((@item.channel_1_type != \"website\" && @item.channel_1_label ? \" · \" + @item.channel_1_label : \"\") + (@item.channel_1_hours ? \" · 🕒\\u00a0\" + String(@item.channel_1_hours).split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\") : \"\"))",
+                    "matchedExpression": "@item.channel_1_hours",
+                    "type": "item",
+                    "fieldName": "channel_1_hours"
+                  },
+                  {
+                    "fullExpression": "@calc((@item.channel_1_type != \"website\" && @item.channel_1_label ? \" · \" + @item.channel_1_label : \"\") + (@item.channel_1_hours ? \" · 🕒\\u00a0\" + String(@item.channel_1_hours).split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\") : \"\"))",
+                    "matchedExpression": "@item.channel_1_hours",
+                    "type": "item",
+                    "fieldName": "channel_1_hours"
+                  },
+                  {
+                    "fullExpression": "@calc((@item.channel_1_type != \"website\" && @item.channel_1_label ? \" · \" + @item.channel_1_label : \"\") + (@item.channel_1_hours ? \" · 🕒\\u00a0\" + String(@item.channel_1_hours).split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\") : \"\"))",
+                    "matchedExpression": "@calc((@item.channel_1_type != \"website\" && @item.channel_1_label ? \" · \" + @item.channel_1_label : \"\") + (@item.channel_1_hours ? \" · 🕒\\u00a0\" + String(@item.channel_1_hours).split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\") : \"\"))",
+                    "type": "calc",
+                    "fieldName": "(@item.channel_1_type != \"website\" && @item.channel_1_label ? \" · \" + @item.channel_1_label : \"\") + (@item.channel_1_hours ? \" · 🕒\\u00a0\" + String(@item.channel_1_hours).split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\") : \"\")"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.channel_1_type": [
+                  "value"
+                ],
+                "@item.channel_1_label": [
+                  "value",
+                  "value"
+                ],
+                "@item.channel_1_hours": [
+                  "value",
+                  "value"
+                ],
+                "@calc((@item.channel_1_type != \"website\" && @item.channel_1_label ? \" · \" + @item.channel_1_label : \"\") + (@item.channel_1_hours ? \" · 🕒\\u00a0\" + String(@item.channel_1_hours).split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\") : \"\"))": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "c2_value",
+              "value": "@calc(String(@item.channel_2_value || \"\"))",
+              "_translations": {
+                "value": {}
+              },
+              "exclude_from_translation": true,
+              "type": "set_variable",
+              "_nested_name": "dg_section.contact_items.c2_value",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@calc(String(@item.channel_2_value || \"\"))",
+                    "matchedExpression": "@item.channel_2_value",
+                    "type": "item",
+                    "fieldName": "channel_2_value"
+                  },
+                  {
+                    "fullExpression": "@calc(String(@item.channel_2_value || \"\"))",
+                    "matchedExpression": "@calc(String(@item.channel_2_value || \"\"))",
+                    "type": "calc",
+                    "fieldName": "String(@item.channel_2_value || \"\")"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.channel_2_value": [
+                  "value"
+                ],
+                "@calc(String(@item.channel_2_value || \"\"))": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "c2_digits",
+              "value": "@calc(String(@item.channel_2_value || \"\").replace(/[^0-9+*#]/g, \"\").replace(\"#\", \"%23\"))",
+              "_translations": {
+                "value": {}
+              },
+              "exclude_from_translation": true,
+              "type": "set_variable",
+              "_nested_name": "dg_section.contact_items.c2_digits",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@calc(String(@item.channel_2_value || \"\").replace(/[^0-9+*#]/g, \"\").replace(\"#\", \"%23\"))",
+                    "matchedExpression": "@item.channel_2_value",
+                    "type": "item",
+                    "fieldName": "channel_2_value"
+                  },
+                  {
+                    "fullExpression": "@calc(String(@item.channel_2_value || \"\").replace(/[^0-9+*#]/g, \"\").replace(\"#\", \"%23\"))",
+                    "matchedExpression": "@calc(String(@item.channel_2_value || \"\").replace(/[^0-9+*#]/g, \"\").replace(\"#\", \"%23\"))",
+                    "type": "calc",
+                    "fieldName": "String(@item.channel_2_value || \"\").replace(/[^0-9+*#]/g, \"\").replace(\"#\", \"%23\")"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.channel_2_value": [
+                  "value"
+                ],
+                "@calc(String(@item.channel_2_value || \"\").replace(/[^0-9+*#]/g, \"\").replace(\"#\", \"%23\"))": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "c2_href",
+              "value": "@calc(@item.channel_2_type == \"website\" ? @local.c2_value : @item.channel_2_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c2_digits.replace(\"+\", \"\") : @item.channel_2_type == \"sms\" ? \"sms:\" + @local.c2_digits : \"tel:\" + @local.c2_digits)",
+              "_translations": {
+                "value": {}
+              },
+              "exclude_from_translation": true,
+              "type": "set_variable",
+              "_nested_name": "dg_section.contact_items.c2_href",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@calc(@item.channel_2_type == \"website\" ? @local.c2_value : @item.channel_2_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c2_digits.replace(\"+\", \"\") : @item.channel_2_type == \"sms\" ? \"sms:\" + @local.c2_digits : \"tel:\" + @local.c2_digits)",
+                    "matchedExpression": "@item.channel_2_type",
+                    "type": "item",
+                    "fieldName": "channel_2_type"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_2_type == \"website\" ? @local.c2_value : @item.channel_2_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c2_digits.replace(\"+\", \"\") : @item.channel_2_type == \"sms\" ? \"sms:\" + @local.c2_digits : \"tel:\" + @local.c2_digits)",
+                    "matchedExpression": "@local.c2_value",
+                    "type": "local",
+                    "fieldName": "c2_value"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_2_type == \"website\" ? @local.c2_value : @item.channel_2_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c2_digits.replace(\"+\", \"\") : @item.channel_2_type == \"sms\" ? \"sms:\" + @local.c2_digits : \"tel:\" + @local.c2_digits)",
+                    "matchedExpression": "@item.channel_2_type",
+                    "type": "item",
+                    "fieldName": "channel_2_type"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_2_type == \"website\" ? @local.c2_value : @item.channel_2_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c2_digits.replace(\"+\", \"\") : @item.channel_2_type == \"sms\" ? \"sms:\" + @local.c2_digits : \"tel:\" + @local.c2_digits)",
+                    "matchedExpression": "@local.c2_digits.replace",
+                    "type": "local",
+                    "fieldName": "c2_digits"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_2_type == \"website\" ? @local.c2_value : @item.channel_2_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c2_digits.replace(\"+\", \"\") : @item.channel_2_type == \"sms\" ? \"sms:\" + @local.c2_digits : \"tel:\" + @local.c2_digits)",
+                    "matchedExpression": "@item.channel_2_type",
+                    "type": "item",
+                    "fieldName": "channel_2_type"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_2_type == \"website\" ? @local.c2_value : @item.channel_2_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c2_digits.replace(\"+\", \"\") : @item.channel_2_type == \"sms\" ? \"sms:\" + @local.c2_digits : \"tel:\" + @local.c2_digits)",
+                    "matchedExpression": "@local.c2_digits",
+                    "type": "local",
+                    "fieldName": "c2_digits"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_2_type == \"website\" ? @local.c2_value : @item.channel_2_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c2_digits.replace(\"+\", \"\") : @item.channel_2_type == \"sms\" ? \"sms:\" + @local.c2_digits : \"tel:\" + @local.c2_digits)",
+                    "matchedExpression": "@local.c2_digits",
+                    "type": "local",
+                    "fieldName": "c2_digits"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_2_type == \"website\" ? @local.c2_value : @item.channel_2_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c2_digits.replace(\"+\", \"\") : @item.channel_2_type == \"sms\" ? \"sms:\" + @local.c2_digits : \"tel:\" + @local.c2_digits)",
+                    "matchedExpression": "@calc(@item.channel_2_type == \"website\" ? @local.c2_value : @item.channel_2_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c2_digits.replace(\"+\", \"\") : @item.channel_2_type == \"sms\" ? \"sms:\" + @local.c2_digits : \"tel:\" + @local.c2_digits)",
+                    "type": "calc",
+                    "fieldName": "@item.channel_2_type == \"website\" ? @local.c2_value : @item.channel_2_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c2_digits.replace(\"+\", \"\") : @item.channel_2_type == \"sms\" ? \"sms:\" + @local.c2_digits : \"tel:\" + @local.c2_digits"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.channel_2_type": [
+                  "value",
+                  "value",
+                  "value"
+                ],
+                "@local.c2_value": [
+                  "value"
+                ],
+                "@local.c2_digits.replace": [
+                  "value"
+                ],
+                "@local.c2_digits": [
+                  "value",
+                  "value"
+                ],
+                "@calc(@item.channel_2_type == \"website\" ? @local.c2_value : @item.channel_2_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c2_digits.replace(\"+\", \"\") : @item.channel_2_type == \"sms\" ? \"sms:\" + @local.c2_digits : \"tel:\" + @local.c2_digits)": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "c2_icon",
+              "value": "@calc((@item.channel_2_type == \"website\" ? \"🌐\" : @item.channel_2_type == \"whatsapp\" ? \"💬\" : @item.channel_2_type == \"sms\" ? \"✉️\" : \"📞\") + \"\\u00a0\")",
+              "_translations": {
+                "value": {}
+              },
+              "exclude_from_translation": true,
+              "type": "set_variable",
+              "_nested_name": "dg_section.contact_items.c2_icon",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@calc((@item.channel_2_type == \"website\" ? \"🌐\" : @item.channel_2_type == \"whatsapp\" ? \"💬\" : @item.channel_2_type == \"sms\" ? \"✉️\" : \"📞\") + \"\\u00a0\")",
+                    "matchedExpression": "@item.channel_2_type",
+                    "type": "item",
+                    "fieldName": "channel_2_type"
+                  },
+                  {
+                    "fullExpression": "@calc((@item.channel_2_type == \"website\" ? \"🌐\" : @item.channel_2_type == \"whatsapp\" ? \"💬\" : @item.channel_2_type == \"sms\" ? \"✉️\" : \"📞\") + \"\\u00a0\")",
+                    "matchedExpression": "@item.channel_2_type",
+                    "type": "item",
+                    "fieldName": "channel_2_type"
+                  },
+                  {
+                    "fullExpression": "@calc((@item.channel_2_type == \"website\" ? \"🌐\" : @item.channel_2_type == \"whatsapp\" ? \"💬\" : @item.channel_2_type == \"sms\" ? \"✉️\" : \"📞\") + \"\\u00a0\")",
+                    "matchedExpression": "@item.channel_2_type",
+                    "type": "item",
+                    "fieldName": "channel_2_type"
+                  },
+                  {
+                    "fullExpression": "@calc((@item.channel_2_type == \"website\" ? \"🌐\" : @item.channel_2_type == \"whatsapp\" ? \"💬\" : @item.channel_2_type == \"sms\" ? \"✉️\" : \"📞\") + \"\\u00a0\")",
+                    "matchedExpression": "@calc((@item.channel_2_type == \"website\" ? \"🌐\" : @item.channel_2_type == \"whatsapp\" ? \"💬\" : @item.channel_2_type == \"sms\" ? \"✉️\" : \"📞\") + \"\\u00a0\")",
+                    "type": "calc",
+                    "fieldName": "(@item.channel_2_type == \"website\" ? \"🌐\" : @item.channel_2_type == \"whatsapp\" ? \"💬\" : @item.channel_2_type == \"sms\" ? \"✉️\" : \"📞\") + \"\\u00a0\""
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.channel_2_type": [
+                  "value",
+                  "value",
+                  "value"
+                ],
+                "@calc((@item.channel_2_type == \"website\" ? \"🌐\" : @item.channel_2_type == \"whatsapp\" ? \"💬\" : @item.channel_2_type == \"sms\" ? \"✉️\" : \"📞\") + \"\\u00a0\")": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "c2_text",
+              "value": "@calc(@item.channel_2_type == \"website\" ? (@item.channel_2_label || @local.c2_value.split(\"//\").pop().split(\"/\")[0].replace(\"www.\", \"\")) : (@item.channel_2_type == \"whatsapp\" ? \"WhatsApp \" : @item.channel_2_type == \"sms\" ? \"SMS \" : \"\") + @local.c2_value.split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\"))",
+              "_translations": {
+                "value": {}
+              },
+              "exclude_from_translation": true,
+              "type": "set_variable",
+              "_nested_name": "dg_section.contact_items.c2_text",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@calc(@item.channel_2_type == \"website\" ? (@item.channel_2_label || @local.c2_value.split(\"//\").pop().split(\"/\")[0].replace(\"www.\", \"\")) : (@item.channel_2_type == \"whatsapp\" ? \"WhatsApp \" : @item.channel_2_type == \"sms\" ? \"SMS \" : \"\") + @local.c2_value.split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\"))",
+                    "matchedExpression": "@item.channel_2_type",
+                    "type": "item",
+                    "fieldName": "channel_2_type"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_2_type == \"website\" ? (@item.channel_2_label || @local.c2_value.split(\"//\").pop().split(\"/\")[0].replace(\"www.\", \"\")) : (@item.channel_2_type == \"whatsapp\" ? \"WhatsApp \" : @item.channel_2_type == \"sms\" ? \"SMS \" : \"\") + @local.c2_value.split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\"))",
+                    "matchedExpression": "@item.channel_2_label",
+                    "type": "item",
+                    "fieldName": "channel_2_label"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_2_type == \"website\" ? (@item.channel_2_label || @local.c2_value.split(\"//\").pop().split(\"/\")[0].replace(\"www.\", \"\")) : (@item.channel_2_type == \"whatsapp\" ? \"WhatsApp \" : @item.channel_2_type == \"sms\" ? \"SMS \" : \"\") + @local.c2_value.split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\"))",
+                    "matchedExpression": "@local.c2_value.split",
+                    "type": "local",
+                    "fieldName": "c2_value"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_2_type == \"website\" ? (@item.channel_2_label || @local.c2_value.split(\"//\").pop().split(\"/\")[0].replace(\"www.\", \"\")) : (@item.channel_2_type == \"whatsapp\" ? \"WhatsApp \" : @item.channel_2_type == \"sms\" ? \"SMS \" : \"\") + @local.c2_value.split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\"))",
+                    "matchedExpression": "@item.channel_2_type",
+                    "type": "item",
+                    "fieldName": "channel_2_type"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_2_type == \"website\" ? (@item.channel_2_label || @local.c2_value.split(\"//\").pop().split(\"/\")[0].replace(\"www.\", \"\")) : (@item.channel_2_type == \"whatsapp\" ? \"WhatsApp \" : @item.channel_2_type == \"sms\" ? \"SMS \" : \"\") + @local.c2_value.split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\"))",
+                    "matchedExpression": "@item.channel_2_type",
+                    "type": "item",
+                    "fieldName": "channel_2_type"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_2_type == \"website\" ? (@item.channel_2_label || @local.c2_value.split(\"//\").pop().split(\"/\")[0].replace(\"www.\", \"\")) : (@item.channel_2_type == \"whatsapp\" ? \"WhatsApp \" : @item.channel_2_type == \"sms\" ? \"SMS \" : \"\") + @local.c2_value.split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\"))",
+                    "matchedExpression": "@local.c2_value.split",
+                    "type": "local",
+                    "fieldName": "c2_value"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_2_type == \"website\" ? (@item.channel_2_label || @local.c2_value.split(\"//\").pop().split(\"/\")[0].replace(\"www.\", \"\")) : (@item.channel_2_type == \"whatsapp\" ? \"WhatsApp \" : @item.channel_2_type == \"sms\" ? \"SMS \" : \"\") + @local.c2_value.split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\"))",
+                    "matchedExpression": "@calc(@item.channel_2_type == \"website\" ? (@item.channel_2_label || @local.c2_value.split(\"//\").pop().split(\"/\")[0].replace(\"www.\", \"\")) : (@item.channel_2_type == \"whatsapp\" ? \"WhatsApp \" : @item.channel_2_type == \"sms\" ? \"SMS \" : \"\") + @local.c2_value.split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\"))",
+                    "type": "calc",
+                    "fieldName": "@item.channel_2_type == \"website\" ? (@item.channel_2_label || @local.c2_value.split(\"//\").pop().split(\"/\")[0].replace(\"www.\", \"\")) : (@item.channel_2_type == \"whatsapp\" ? \"WhatsApp \" : @item.channel_2_type == \"sms\" ? \"SMS \" : \"\") + @local.c2_value.split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\")"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.channel_2_type": [
+                  "value",
+                  "value",
+                  "value"
+                ],
+                "@item.channel_2_label": [
+                  "value"
+                ],
+                "@local.c2_value.split": [
+                  "value",
+                  "value"
+                ],
+                "@calc(@item.channel_2_type == \"website\" ? (@item.channel_2_label || @local.c2_value.split(\"//\").pop().split(\"/\")[0].replace(\"www.\", \"\")) : (@item.channel_2_type == \"whatsapp\" ? \"WhatsApp \" : @item.channel_2_type == \"sms\" ? \"SMS \" : \"\") + @local.c2_value.split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\"))": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "c2_suffix",
+              "value": "@calc((@item.channel_2_type != \"website\" && @item.channel_2_label ? \" · \" + @item.channel_2_label : \"\") + (@item.channel_2_hours ? \" · 🕒\\u00a0\" + String(@item.channel_2_hours).split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\") : \"\"))",
+              "_translations": {
+                "value": {}
+              },
+              "exclude_from_translation": true,
+              "type": "set_variable",
+              "_nested_name": "dg_section.contact_items.c2_suffix",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@calc((@item.channel_2_type != \"website\" && @item.channel_2_label ? \" · \" + @item.channel_2_label : \"\") + (@item.channel_2_hours ? \" · 🕒\\u00a0\" + String(@item.channel_2_hours).split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\") : \"\"))",
+                    "matchedExpression": "@item.channel_2_type",
+                    "type": "item",
+                    "fieldName": "channel_2_type"
+                  },
+                  {
+                    "fullExpression": "@calc((@item.channel_2_type != \"website\" && @item.channel_2_label ? \" · \" + @item.channel_2_label : \"\") + (@item.channel_2_hours ? \" · 🕒\\u00a0\" + String(@item.channel_2_hours).split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\") : \"\"))",
+                    "matchedExpression": "@item.channel_2_label",
+                    "type": "item",
+                    "fieldName": "channel_2_label"
+                  },
+                  {
+                    "fullExpression": "@calc((@item.channel_2_type != \"website\" && @item.channel_2_label ? \" · \" + @item.channel_2_label : \"\") + (@item.channel_2_hours ? \" · 🕒\\u00a0\" + String(@item.channel_2_hours).split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\") : \"\"))",
+                    "matchedExpression": "@item.channel_2_label",
+                    "type": "item",
+                    "fieldName": "channel_2_label"
+                  },
+                  {
+                    "fullExpression": "@calc((@item.channel_2_type != \"website\" && @item.channel_2_label ? \" · \" + @item.channel_2_label : \"\") + (@item.channel_2_hours ? \" · 🕒\\u00a0\" + String(@item.channel_2_hours).split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\") : \"\"))",
+                    "matchedExpression": "@item.channel_2_hours",
+                    "type": "item",
+                    "fieldName": "channel_2_hours"
+                  },
+                  {
+                    "fullExpression": "@calc((@item.channel_2_type != \"website\" && @item.channel_2_label ? \" · \" + @item.channel_2_label : \"\") + (@item.channel_2_hours ? \" · 🕒\\u00a0\" + String(@item.channel_2_hours).split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\") : \"\"))",
+                    "matchedExpression": "@item.channel_2_hours",
+                    "type": "item",
+                    "fieldName": "channel_2_hours"
+                  },
+                  {
+                    "fullExpression": "@calc((@item.channel_2_type != \"website\" && @item.channel_2_label ? \" · \" + @item.channel_2_label : \"\") + (@item.channel_2_hours ? \" · 🕒\\u00a0\" + String(@item.channel_2_hours).split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\") : \"\"))",
+                    "matchedExpression": "@calc((@item.channel_2_type != \"website\" && @item.channel_2_label ? \" · \" + @item.channel_2_label : \"\") + (@item.channel_2_hours ? \" · 🕒\\u00a0\" + String(@item.channel_2_hours).split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\") : \"\"))",
+                    "type": "calc",
+                    "fieldName": "(@item.channel_2_type != \"website\" && @item.channel_2_label ? \" · \" + @item.channel_2_label : \"\") + (@item.channel_2_hours ? \" · 🕒\\u00a0\" + String(@item.channel_2_hours).split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\") : \"\")"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.channel_2_type": [
+                  "value"
+                ],
+                "@item.channel_2_label": [
+                  "value",
+                  "value"
+                ],
+                "@item.channel_2_hours": [
+                  "value",
+                  "value"
+                ],
+                "@calc((@item.channel_2_type != \"website\" && @item.channel_2_label ? \" · \" + @item.channel_2_label : \"\") + (@item.channel_2_hours ? \" · 🕒\\u00a0\" + String(@item.channel_2_hours).split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\") : \"\"))": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "c3_value",
+              "value": "@calc(String(@item.channel_3_value || \"\"))",
+              "_translations": {
+                "value": {}
+              },
+              "exclude_from_translation": true,
+              "type": "set_variable",
+              "_nested_name": "dg_section.contact_items.c3_value",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@calc(String(@item.channel_3_value || \"\"))",
+                    "matchedExpression": "@item.channel_3_value",
+                    "type": "item",
+                    "fieldName": "channel_3_value"
+                  },
+                  {
+                    "fullExpression": "@calc(String(@item.channel_3_value || \"\"))",
+                    "matchedExpression": "@calc(String(@item.channel_3_value || \"\"))",
+                    "type": "calc",
+                    "fieldName": "String(@item.channel_3_value || \"\")"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.channel_3_value": [
+                  "value"
+                ],
+                "@calc(String(@item.channel_3_value || \"\"))": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "c3_digits",
+              "value": "@calc(String(@item.channel_3_value || \"\").replace(/[^0-9+*#]/g, \"\").replace(\"#\", \"%23\"))",
+              "_translations": {
+                "value": {}
+              },
+              "exclude_from_translation": true,
+              "type": "set_variable",
+              "_nested_name": "dg_section.contact_items.c3_digits",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@calc(String(@item.channel_3_value || \"\").replace(/[^0-9+*#]/g, \"\").replace(\"#\", \"%23\"))",
+                    "matchedExpression": "@item.channel_3_value",
+                    "type": "item",
+                    "fieldName": "channel_3_value"
+                  },
+                  {
+                    "fullExpression": "@calc(String(@item.channel_3_value || \"\").replace(/[^0-9+*#]/g, \"\").replace(\"#\", \"%23\"))",
+                    "matchedExpression": "@calc(String(@item.channel_3_value || \"\").replace(/[^0-9+*#]/g, \"\").replace(\"#\", \"%23\"))",
+                    "type": "calc",
+                    "fieldName": "String(@item.channel_3_value || \"\").replace(/[^0-9+*#]/g, \"\").replace(\"#\", \"%23\")"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.channel_3_value": [
+                  "value"
+                ],
+                "@calc(String(@item.channel_3_value || \"\").replace(/[^0-9+*#]/g, \"\").replace(\"#\", \"%23\"))": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "c3_href",
+              "value": "@calc(@item.channel_3_type == \"website\" ? @local.c3_value : @item.channel_3_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c3_digits.replace(\"+\", \"\") : @item.channel_3_type == \"sms\" ? \"sms:\" + @local.c3_digits : \"tel:\" + @local.c3_digits)",
+              "_translations": {
+                "value": {}
+              },
+              "exclude_from_translation": true,
+              "type": "set_variable",
+              "_nested_name": "dg_section.contact_items.c3_href",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@calc(@item.channel_3_type == \"website\" ? @local.c3_value : @item.channel_3_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c3_digits.replace(\"+\", \"\") : @item.channel_3_type == \"sms\" ? \"sms:\" + @local.c3_digits : \"tel:\" + @local.c3_digits)",
+                    "matchedExpression": "@item.channel_3_type",
+                    "type": "item",
+                    "fieldName": "channel_3_type"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_3_type == \"website\" ? @local.c3_value : @item.channel_3_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c3_digits.replace(\"+\", \"\") : @item.channel_3_type == \"sms\" ? \"sms:\" + @local.c3_digits : \"tel:\" + @local.c3_digits)",
+                    "matchedExpression": "@local.c3_value",
+                    "type": "local",
+                    "fieldName": "c3_value"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_3_type == \"website\" ? @local.c3_value : @item.channel_3_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c3_digits.replace(\"+\", \"\") : @item.channel_3_type == \"sms\" ? \"sms:\" + @local.c3_digits : \"tel:\" + @local.c3_digits)",
+                    "matchedExpression": "@item.channel_3_type",
+                    "type": "item",
+                    "fieldName": "channel_3_type"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_3_type == \"website\" ? @local.c3_value : @item.channel_3_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c3_digits.replace(\"+\", \"\") : @item.channel_3_type == \"sms\" ? \"sms:\" + @local.c3_digits : \"tel:\" + @local.c3_digits)",
+                    "matchedExpression": "@local.c3_digits.replace",
+                    "type": "local",
+                    "fieldName": "c3_digits"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_3_type == \"website\" ? @local.c3_value : @item.channel_3_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c3_digits.replace(\"+\", \"\") : @item.channel_3_type == \"sms\" ? \"sms:\" + @local.c3_digits : \"tel:\" + @local.c3_digits)",
+                    "matchedExpression": "@item.channel_3_type",
+                    "type": "item",
+                    "fieldName": "channel_3_type"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_3_type == \"website\" ? @local.c3_value : @item.channel_3_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c3_digits.replace(\"+\", \"\") : @item.channel_3_type == \"sms\" ? \"sms:\" + @local.c3_digits : \"tel:\" + @local.c3_digits)",
+                    "matchedExpression": "@local.c3_digits",
+                    "type": "local",
+                    "fieldName": "c3_digits"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_3_type == \"website\" ? @local.c3_value : @item.channel_3_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c3_digits.replace(\"+\", \"\") : @item.channel_3_type == \"sms\" ? \"sms:\" + @local.c3_digits : \"tel:\" + @local.c3_digits)",
+                    "matchedExpression": "@local.c3_digits",
+                    "type": "local",
+                    "fieldName": "c3_digits"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_3_type == \"website\" ? @local.c3_value : @item.channel_3_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c3_digits.replace(\"+\", \"\") : @item.channel_3_type == \"sms\" ? \"sms:\" + @local.c3_digits : \"tel:\" + @local.c3_digits)",
+                    "matchedExpression": "@calc(@item.channel_3_type == \"website\" ? @local.c3_value : @item.channel_3_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c3_digits.replace(\"+\", \"\") : @item.channel_3_type == \"sms\" ? \"sms:\" + @local.c3_digits : \"tel:\" + @local.c3_digits)",
+                    "type": "calc",
+                    "fieldName": "@item.channel_3_type == \"website\" ? @local.c3_value : @item.channel_3_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c3_digits.replace(\"+\", \"\") : @item.channel_3_type == \"sms\" ? \"sms:\" + @local.c3_digits : \"tel:\" + @local.c3_digits"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.channel_3_type": [
+                  "value",
+                  "value",
+                  "value"
+                ],
+                "@local.c3_value": [
+                  "value"
+                ],
+                "@local.c3_digits.replace": [
+                  "value"
+                ],
+                "@local.c3_digits": [
+                  "value",
+                  "value"
+                ],
+                "@calc(@item.channel_3_type == \"website\" ? @local.c3_value : @item.channel_3_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c3_digits.replace(\"+\", \"\") : @item.channel_3_type == \"sms\" ? \"sms:\" + @local.c3_digits : \"tel:\" + @local.c3_digits)": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "c3_icon",
+              "value": "@calc((@item.channel_3_type == \"website\" ? \"🌐\" : @item.channel_3_type == \"whatsapp\" ? \"💬\" : @item.channel_3_type == \"sms\" ? \"✉️\" : \"📞\") + \"\\u00a0\")",
+              "_translations": {
+                "value": {}
+              },
+              "exclude_from_translation": true,
+              "type": "set_variable",
+              "_nested_name": "dg_section.contact_items.c3_icon",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@calc((@item.channel_3_type == \"website\" ? \"🌐\" : @item.channel_3_type == \"whatsapp\" ? \"💬\" : @item.channel_3_type == \"sms\" ? \"✉️\" : \"📞\") + \"\\u00a0\")",
+                    "matchedExpression": "@item.channel_3_type",
+                    "type": "item",
+                    "fieldName": "channel_3_type"
+                  },
+                  {
+                    "fullExpression": "@calc((@item.channel_3_type == \"website\" ? \"🌐\" : @item.channel_3_type == \"whatsapp\" ? \"💬\" : @item.channel_3_type == \"sms\" ? \"✉️\" : \"📞\") + \"\\u00a0\")",
+                    "matchedExpression": "@item.channel_3_type",
+                    "type": "item",
+                    "fieldName": "channel_3_type"
+                  },
+                  {
+                    "fullExpression": "@calc((@item.channel_3_type == \"website\" ? \"🌐\" : @item.channel_3_type == \"whatsapp\" ? \"💬\" : @item.channel_3_type == \"sms\" ? \"✉️\" : \"📞\") + \"\\u00a0\")",
+                    "matchedExpression": "@item.channel_3_type",
+                    "type": "item",
+                    "fieldName": "channel_3_type"
+                  },
+                  {
+                    "fullExpression": "@calc((@item.channel_3_type == \"website\" ? \"🌐\" : @item.channel_3_type == \"whatsapp\" ? \"💬\" : @item.channel_3_type == \"sms\" ? \"✉️\" : \"📞\") + \"\\u00a0\")",
+                    "matchedExpression": "@calc((@item.channel_3_type == \"website\" ? \"🌐\" : @item.channel_3_type == \"whatsapp\" ? \"💬\" : @item.channel_3_type == \"sms\" ? \"✉️\" : \"📞\") + \"\\u00a0\")",
+                    "type": "calc",
+                    "fieldName": "(@item.channel_3_type == \"website\" ? \"🌐\" : @item.channel_3_type == \"whatsapp\" ? \"💬\" : @item.channel_3_type == \"sms\" ? \"✉️\" : \"📞\") + \"\\u00a0\""
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.channel_3_type": [
+                  "value",
+                  "value",
+                  "value"
+                ],
+                "@calc((@item.channel_3_type == \"website\" ? \"🌐\" : @item.channel_3_type == \"whatsapp\" ? \"💬\" : @item.channel_3_type == \"sms\" ? \"✉️\" : \"📞\") + \"\\u00a0\")": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "c3_text",
+              "value": "@calc(@item.channel_3_type == \"website\" ? (@item.channel_3_label || @local.c3_value.split(\"//\").pop().split(\"/\")[0].replace(\"www.\", \"\")) : (@item.channel_3_type == \"whatsapp\" ? \"WhatsApp \" : @item.channel_3_type == \"sms\" ? \"SMS \" : \"\") + @local.c3_value.split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\"))",
+              "_translations": {
+                "value": {}
+              },
+              "exclude_from_translation": true,
+              "type": "set_variable",
+              "_nested_name": "dg_section.contact_items.c3_text",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@calc(@item.channel_3_type == \"website\" ? (@item.channel_3_label || @local.c3_value.split(\"//\").pop().split(\"/\")[0].replace(\"www.\", \"\")) : (@item.channel_3_type == \"whatsapp\" ? \"WhatsApp \" : @item.channel_3_type == \"sms\" ? \"SMS \" : \"\") + @local.c3_value.split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\"))",
+                    "matchedExpression": "@item.channel_3_type",
+                    "type": "item",
+                    "fieldName": "channel_3_type"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_3_type == \"website\" ? (@item.channel_3_label || @local.c3_value.split(\"//\").pop().split(\"/\")[0].replace(\"www.\", \"\")) : (@item.channel_3_type == \"whatsapp\" ? \"WhatsApp \" : @item.channel_3_type == \"sms\" ? \"SMS \" : \"\") + @local.c3_value.split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\"))",
+                    "matchedExpression": "@item.channel_3_label",
+                    "type": "item",
+                    "fieldName": "channel_3_label"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_3_type == \"website\" ? (@item.channel_3_label || @local.c3_value.split(\"//\").pop().split(\"/\")[0].replace(\"www.\", \"\")) : (@item.channel_3_type == \"whatsapp\" ? \"WhatsApp \" : @item.channel_3_type == \"sms\" ? \"SMS \" : \"\") + @local.c3_value.split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\"))",
+                    "matchedExpression": "@local.c3_value.split",
+                    "type": "local",
+                    "fieldName": "c3_value"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_3_type == \"website\" ? (@item.channel_3_label || @local.c3_value.split(\"//\").pop().split(\"/\")[0].replace(\"www.\", \"\")) : (@item.channel_3_type == \"whatsapp\" ? \"WhatsApp \" : @item.channel_3_type == \"sms\" ? \"SMS \" : \"\") + @local.c3_value.split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\"))",
+                    "matchedExpression": "@item.channel_3_type",
+                    "type": "item",
+                    "fieldName": "channel_3_type"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_3_type == \"website\" ? (@item.channel_3_label || @local.c3_value.split(\"//\").pop().split(\"/\")[0].replace(\"www.\", \"\")) : (@item.channel_3_type == \"whatsapp\" ? \"WhatsApp \" : @item.channel_3_type == \"sms\" ? \"SMS \" : \"\") + @local.c3_value.split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\"))",
+                    "matchedExpression": "@item.channel_3_type",
+                    "type": "item",
+                    "fieldName": "channel_3_type"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_3_type == \"website\" ? (@item.channel_3_label || @local.c3_value.split(\"//\").pop().split(\"/\")[0].replace(\"www.\", \"\")) : (@item.channel_3_type == \"whatsapp\" ? \"WhatsApp \" : @item.channel_3_type == \"sms\" ? \"SMS \" : \"\") + @local.c3_value.split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\"))",
+                    "matchedExpression": "@local.c3_value.split",
+                    "type": "local",
+                    "fieldName": "c3_value"
+                  },
+                  {
+                    "fullExpression": "@calc(@item.channel_3_type == \"website\" ? (@item.channel_3_label || @local.c3_value.split(\"//\").pop().split(\"/\")[0].replace(\"www.\", \"\")) : (@item.channel_3_type == \"whatsapp\" ? \"WhatsApp \" : @item.channel_3_type == \"sms\" ? \"SMS \" : \"\") + @local.c3_value.split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\"))",
+                    "matchedExpression": "@calc(@item.channel_3_type == \"website\" ? (@item.channel_3_label || @local.c3_value.split(\"//\").pop().split(\"/\")[0].replace(\"www.\", \"\")) : (@item.channel_3_type == \"whatsapp\" ? \"WhatsApp \" : @item.channel_3_type == \"sms\" ? \"SMS \" : \"\") + @local.c3_value.split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\"))",
+                    "type": "calc",
+                    "fieldName": "@item.channel_3_type == \"website\" ? (@item.channel_3_label || @local.c3_value.split(\"//\").pop().split(\"/\")[0].replace(\"www.\", \"\")) : (@item.channel_3_type == \"whatsapp\" ? \"WhatsApp \" : @item.channel_3_type == \"sms\" ? \"SMS \" : \"\") + @local.c3_value.split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\")"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.channel_3_type": [
+                  "value",
+                  "value",
+                  "value"
+                ],
+                "@item.channel_3_label": [
+                  "value"
+                ],
+                "@local.c3_value.split": [
+                  "value",
+                  "value"
+                ],
+                "@calc(@item.channel_3_type == \"website\" ? (@item.channel_3_label || @local.c3_value.split(\"//\").pop().split(\"/\")[0].replace(\"www.\", \"\")) : (@item.channel_3_type == \"whatsapp\" ? \"WhatsApp \" : @item.channel_3_type == \"sms\" ? \"SMS \" : \"\") + @local.c3_value.split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\"))": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "c3_suffix",
+              "value": "@calc((@item.channel_3_type != \"website\" && @item.channel_3_label ? \" · \" + @item.channel_3_label : \"\") + (@item.channel_3_hours ? \" · 🕒\\u00a0\" + String(@item.channel_3_hours).split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\") : \"\"))",
+              "_translations": {
+                "value": {}
+              },
+              "exclude_from_translation": true,
+              "type": "set_variable",
+              "_nested_name": "dg_section.contact_items.c3_suffix",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@calc((@item.channel_3_type != \"website\" && @item.channel_3_label ? \" · \" + @item.channel_3_label : \"\") + (@item.channel_3_hours ? \" · 🕒\\u00a0\" + String(@item.channel_3_hours).split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\") : \"\"))",
+                    "matchedExpression": "@item.channel_3_type",
+                    "type": "item",
+                    "fieldName": "channel_3_type"
+                  },
+                  {
+                    "fullExpression": "@calc((@item.channel_3_type != \"website\" && @item.channel_3_label ? \" · \" + @item.channel_3_label : \"\") + (@item.channel_3_hours ? \" · 🕒\\u00a0\" + String(@item.channel_3_hours).split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\") : \"\"))",
+                    "matchedExpression": "@item.channel_3_label",
+                    "type": "item",
+                    "fieldName": "channel_3_label"
+                  },
+                  {
+                    "fullExpression": "@calc((@item.channel_3_type != \"website\" && @item.channel_3_label ? \" · \" + @item.channel_3_label : \"\") + (@item.channel_3_hours ? \" · 🕒\\u00a0\" + String(@item.channel_3_hours).split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\") : \"\"))",
+                    "matchedExpression": "@item.channel_3_label",
+                    "type": "item",
+                    "fieldName": "channel_3_label"
+                  },
+                  {
+                    "fullExpression": "@calc((@item.channel_3_type != \"website\" && @item.channel_3_label ? \" · \" + @item.channel_3_label : \"\") + (@item.channel_3_hours ? \" · 🕒\\u00a0\" + String(@item.channel_3_hours).split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\") : \"\"))",
+                    "matchedExpression": "@item.channel_3_hours",
+                    "type": "item",
+                    "fieldName": "channel_3_hours"
+                  },
+                  {
+                    "fullExpression": "@calc((@item.channel_3_type != \"website\" && @item.channel_3_label ? \" · \" + @item.channel_3_label : \"\") + (@item.channel_3_hours ? \" · 🕒\\u00a0\" + String(@item.channel_3_hours).split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\") : \"\"))",
+                    "matchedExpression": "@item.channel_3_hours",
+                    "type": "item",
+                    "fieldName": "channel_3_hours"
+                  },
+                  {
+                    "fullExpression": "@calc((@item.channel_3_type != \"website\" && @item.channel_3_label ? \" · \" + @item.channel_3_label : \"\") + (@item.channel_3_hours ? \" · 🕒\\u00a0\" + String(@item.channel_3_hours).split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\") : \"\"))",
+                    "matchedExpression": "@calc((@item.channel_3_type != \"website\" && @item.channel_3_label ? \" · \" + @item.channel_3_label : \"\") + (@item.channel_3_hours ? \" · 🕒\\u00a0\" + String(@item.channel_3_hours).split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\") : \"\"))",
+                    "type": "calc",
+                    "fieldName": "(@item.channel_3_type != \"website\" && @item.channel_3_label ? \" · \" + @item.channel_3_label : \"\") + (@item.channel_3_hours ? \" · 🕒\\u00a0\" + String(@item.channel_3_hours).split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\") : \"\")"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.channel_3_type": [
+                  "value"
+                ],
+                "@item.channel_3_label": [
+                  "value",
+                  "value"
+                ],
+                "@item.channel_3_hours": [
+                  "value",
+                  "value"
+                ],
+                "@calc((@item.channel_3_type != \"website\" && @item.channel_3_label ? \" · \" + @item.channel_3_label : \"\") + (@item.channel_3_hours ? \" · 🕒\\u00a0\" + String(@item.channel_3_hours).split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\") : \"\"))": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "type": "display_group",
+              "name": "card",
+              "parameter_list": {
+                "style": "column",
+                "variant": "@local.variant"
+              },
+              "exclude_from_translation": true,
+              "rows": [
+                {
+                  "type": "text",
+                  "name": "name",
+                  "value": "**@item.name**",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "condition": "!!@item.name",
+                  "exclude_from_translation": true,
+                  "_nested_name": "dg_section.contact_items.card.name",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "**@item.name**",
+                        "matchedExpression": "@item.name",
+                        "type": "item",
+                        "fieldName": "name"
+                      }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "!!@item.name",
+                        "matchedExpression": "!@item.name",
+                        "type": "item",
+                        "fieldName": "name"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.name": [
+                      "value"
+                    ],
+                    "!@item.name": [
+                      "condition"
+                    ]
+                  }
+                },
+                {
+                  "type": "text",
+                  "name": "location",
+                  "value": "📍 @local.location_data.text",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "condition": "!!@item.location_list",
+                  "exclude_from_translation": true,
+                  "_nested_name": "dg_section.contact_items.card.location",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "📍 @local.location_data.text",
+                        "matchedExpression": "@local.location_data.text",
+                        "type": "local",
+                        "fieldName": "location_data"
+                      }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "!!@item.location_list",
+                        "matchedExpression": "!@item.location_list",
+                        "type": "item",
+                        "fieldName": "location_list"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.location_data.text": [
+                      "value"
+                    ],
+                    "!@item.location_list": [
+                      "condition"
+                    ]
+                  }
+                },
+                {
+                  "type": "text",
+                  "name": "description",
+                  "value": "@item.description",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "condition": "!!@item.description",
+                  "exclude_from_translation": true,
+                  "_nested_name": "dg_section.contact_items.card.description",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@item.description",
+                        "matchedExpression": "@item.description",
+                        "type": "item",
+                        "fieldName": "description"
+                      }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "!!@item.description",
+                        "matchedExpression": "!@item.description",
+                        "type": "item",
+                        "fieldName": "description"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.description": [
+                      "value"
+                    ],
+                    "!@item.description": [
+                      "condition"
+                    ]
+                  }
+                },
+                {
+                  "type": "text",
+                  "name": "channel_1",
+                  "value": "@local.c1_icon[@local.c1_text](@local.c1_href)@local.c1_suffix",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "condition": "!!@item.channel_1_value",
+                  "exclude_from_translation": true,
+                  "_nested_name": "dg_section.contact_items.card.channel_1",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@local.c1_icon[@local.c1_text](@local.c1_href)@local.c1_suffix",
+                        "matchedExpression": "@local.c1_icon",
+                        "type": "local",
+                        "fieldName": "c1_icon"
+                      },
+                      {
+                        "fullExpression": "@local.c1_icon[@local.c1_text](@local.c1_href)@local.c1_suffix",
+                        "matchedExpression": "@local.c1_text",
+                        "type": "local",
+                        "fieldName": "c1_text"
+                      },
+                      {
+                        "fullExpression": "@local.c1_icon[@local.c1_text](@local.c1_href)@local.c1_suffix",
+                        "matchedExpression": "@local.c1_href",
+                        "type": "local",
+                        "fieldName": "c1_href"
+                      },
+                      {
+                        "fullExpression": "@local.c1_icon[@local.c1_text](@local.c1_href)@local.c1_suffix",
+                        "matchedExpression": "@local.c1_suffix",
+                        "type": "local",
+                        "fieldName": "c1_suffix"
+                      }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "!!@item.channel_1_value",
+                        "matchedExpression": "!@item.channel_1_value",
+                        "type": "item",
+                        "fieldName": "channel_1_value"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.c1_icon": [
+                      "value"
+                    ],
+                    "@local.c1_text": [
+                      "value"
+                    ],
+                    "@local.c1_href": [
+                      "value"
+                    ],
+                    "@local.c1_suffix": [
+                      "value"
+                    ],
+                    "!@item.channel_1_value": [
+                      "condition"
+                    ]
+                  }
+                },
+                {
+                  "type": "text",
+                  "name": "channel_2",
+                  "value": "@local.c2_icon[@local.c2_text](@local.c2_href)@local.c2_suffix",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "condition": "!!@item.channel_2_value",
+                  "exclude_from_translation": true,
+                  "_nested_name": "dg_section.contact_items.card.channel_2",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@local.c2_icon[@local.c2_text](@local.c2_href)@local.c2_suffix",
+                        "matchedExpression": "@local.c2_icon",
+                        "type": "local",
+                        "fieldName": "c2_icon"
+                      },
+                      {
+                        "fullExpression": "@local.c2_icon[@local.c2_text](@local.c2_href)@local.c2_suffix",
+                        "matchedExpression": "@local.c2_text",
+                        "type": "local",
+                        "fieldName": "c2_text"
+                      },
+                      {
+                        "fullExpression": "@local.c2_icon[@local.c2_text](@local.c2_href)@local.c2_suffix",
+                        "matchedExpression": "@local.c2_href",
+                        "type": "local",
+                        "fieldName": "c2_href"
+                      },
+                      {
+                        "fullExpression": "@local.c2_icon[@local.c2_text](@local.c2_href)@local.c2_suffix",
+                        "matchedExpression": "@local.c2_suffix",
+                        "type": "local",
+                        "fieldName": "c2_suffix"
+                      }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "!!@item.channel_2_value",
+                        "matchedExpression": "!@item.channel_2_value",
+                        "type": "item",
+                        "fieldName": "channel_2_value"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.c2_icon": [
+                      "value"
+                    ],
+                    "@local.c2_text": [
+                      "value"
+                    ],
+                    "@local.c2_href": [
+                      "value"
+                    ],
+                    "@local.c2_suffix": [
+                      "value"
+                    ],
+                    "!@item.channel_2_value": [
+                      "condition"
+                    ]
+                  }
+                },
+                {
+                  "type": "text",
+                  "name": "channel_3",
+                  "value": "@local.c3_icon[@local.c3_text](@local.c3_href)@local.c3_suffix",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "condition": "!!@item.channel_3_value",
+                  "exclude_from_translation": true,
+                  "_nested_name": "dg_section.contact_items.card.channel_3",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@local.c3_icon[@local.c3_text](@local.c3_href)@local.c3_suffix",
+                        "matchedExpression": "@local.c3_icon",
+                        "type": "local",
+                        "fieldName": "c3_icon"
+                      },
+                      {
+                        "fullExpression": "@local.c3_icon[@local.c3_text](@local.c3_href)@local.c3_suffix",
+                        "matchedExpression": "@local.c3_text",
+                        "type": "local",
+                        "fieldName": "c3_text"
+                      },
+                      {
+                        "fullExpression": "@local.c3_icon[@local.c3_text](@local.c3_href)@local.c3_suffix",
+                        "matchedExpression": "@local.c3_href",
+                        "type": "local",
+                        "fieldName": "c3_href"
+                      },
+                      {
+                        "fullExpression": "@local.c3_icon[@local.c3_text](@local.c3_href)@local.c3_suffix",
+                        "matchedExpression": "@local.c3_suffix",
+                        "type": "local",
+                        "fieldName": "c3_suffix"
+                      }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "!!@item.channel_3_value",
+                        "matchedExpression": "!@item.channel_3_value",
+                        "type": "item",
+                        "fieldName": "channel_3_value"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.c3_icon": [
+                      "value"
+                    ],
+                    "@local.c3_text": [
+                      "value"
+                    ],
+                    "@local.c3_href": [
+                      "value"
+                    ],
+                    "@local.c3_suffix": [
+                      "value"
+                    ],
+                    "!@item.channel_3_value": [
+                      "condition"
+                    ]
+                  }
+                },
+                {
+                  "type": "text",
+                  "name": "notes",
+                  "value": "@item.notes",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "condition": "!!@item.notes",
+                  "exclude_from_translation": true,
+                  "_nested_name": "dg_section.contact_items.card.notes",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@item.notes",
+                        "matchedExpression": "@item.notes",
+                        "type": "item",
+                        "fieldName": "notes"
+                      }
+                    ],
+                    "condition": [
+                      {
+                        "fullExpression": "!!@item.notes",
+                        "matchedExpression": "!@item.notes",
+                        "type": "item",
+                        "fieldName": "notes"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.notes": [
+                      "value"
+                    ],
+                    "!@item.notes": [
+                      "condition"
+                    ]
+                  }
+                }
+              ],
+              "_nested_name": "dg_section.contact_items.card",
+              "_dynamicFields": {
+                "parameter_list": {
+                  "variant": [
+                    {
+                      "fullExpression": "@local.variant",
+                      "matchedExpression": "@local.variant",
+                      "type": "local",
+                      "fieldName": "variant"
+                    }
+                  ]
+                }
+              },
+              "_dynamicDependencies": {
+                "@local.variant": [
+                  "parameter_list.variant"
+                ]
+              }
+            }
+          ],
+          "_nested_name": "dg_section.contact_items",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.visible",
+                "matchedExpression": "@local.visible",
+                "type": "local",
+                "fieldName": "visible"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.visible": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "dg_section",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.visible.length > 0",
+            "matchedExpression": "@local.visible.length",
+            "type": "local",
+            "fieldName": "visible"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.visible.length": [
+          "condition"
+        ]
+      }
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_global V3",
+    "path": "templates/PLH support contacts.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1p7dA_K4GAsxj7U2X79CQb0aQPaA5YGdX-XxK2G2Di5w"
+  }
+}

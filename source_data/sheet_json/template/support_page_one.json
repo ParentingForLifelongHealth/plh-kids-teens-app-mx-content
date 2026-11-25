@@ -1,0 +1,109 @@
+{
+  "flow_type": "template",
+  "flow_name": "support_page_one",
+  "status": "released",
+  "comments": "One support page: header, intro, up to 3 sections",
+  "rows": [
+    {
+      "name": "page_id",
+      "value": "@fields.support_page_id",
+      "exclude_from_translation": true,
+      "comments": "Id of the support_page row, set by the button in support_list"
+    },
+    {
+      "name": "page_key",
+      "value": "support_page.@local.page_id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "page_data",
+      "value": "@data.@local.page_key",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "header",
+      "value": "section_header",
+      "action_list": "uncompleted | emit: uncompleted",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "title",
+      "value": "@local.page_data.title",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "intro",
+      "value": "@local.page_data.intro",
+      "condition": "!!@local.page_data.intro",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "section_1",
+      "value": "support_page_section",
+      "condition": "!!@local.page_data.section_1_list",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "intro",
+      "value": "@local.page_data.section_1_intro",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "list",
+      "value": "@local.page_data.section_1_list",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "section_2",
+      "value": "support_page_section",
+      "condition": "!!@local.page_data.section_2_list",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "intro",
+      "value": "@local.page_data.section_2_intro",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "list",
+      "value": "@local.page_data.section_2_list",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "section_3",
+      "value": "support_page_section",
+      "condition": "!!@local.page_data.section_3_list",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "intro",
+      "value": "@local.page_data.section_3_intro",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "list",
+      "value": "@local.page_data.section_3_list",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}
