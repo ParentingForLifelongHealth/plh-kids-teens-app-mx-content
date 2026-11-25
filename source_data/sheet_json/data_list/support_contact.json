@@ -10,7 +10,8 @@
       "type": "emergency",
       "name": "Teléfono para emergencias",
       "channel_1_type": "phone",
-      "channel_1_value": 911
+      "channel_1_value": 911,
+      "channel_1_hours": "24/7"
     },
     {
       "id": "procuraduria_nna",
@@ -43,7 +44,7 @@
       "description": "Llama para recibir atención inmediata, orientación jurídica y psicológica.\nGratuita y confidencial.",
       "channel_1_type": "phone",
       "channel_1_value": "079",
-      "channel_1_hours": 46227
+      "channel_1_hours": "24/7"
     },
     {
       "id": "red_nacional_refugios",
@@ -52,7 +53,7 @@
       "description": "Servicios especializados de prevención, atención, protección y acompañamiento.\nRecursos para identificar las señales de violencia.",
       "channel_1_type": "phone",
       "channel_1_value": "55 56 74 96 95",
-      "channel_1_hours": 46227,
+      "channel_1_hours": "24/7",
       "channel_2_type": "phone",
       "channel_2_value": "55 52 43 64 32",
       "channel_3_type": "phone",
@@ -75,7 +76,7 @@
       "description": "Escribe o llama por WhatsApp o teléfono, sin costo.",
       "channel_1_type": "phone",
       "channel_1_value": "55 4757 9288",
-      "channel_1_hours": 46227,
+      "channel_1_hours": "24/7",
       "notes": "Si quieres identificar, reconocer y detener tus ejercicios de violencia, y desarrollar formas alternativas de resolver conflictos.\n\nSitio web: [gendes.org.mx](https://gendes.org.mx/nuestra_labor.html#atencion)"
     },
     {
@@ -109,7 +110,7 @@
       "description": "Para recibir orientación, apoyo emocional y atención en crisis.",
       "channel_1_type": "phone",
       "channel_1_value": "800 911 2000",
-      "channel_1_hours": 46227
+      "channel_1_hours": "24/7"
     },
     {
       "id": "unam_atencion_psicologica",
@@ -125,19 +126,25 @@
       "description": "Atención gratuita.",
       "channel_1_type": "phone",
       "channel_1_value": "55 5259 8121",
-      "channel_1_hours": 46227
+      "channel_1_hours": "24/7"
+    },
+    {
+      "id": "inprf_cdmx",
+      "type": "contact",
+      "name": "Instituto Nacional de Psiquiatría",
+      "description": "Estrés, ansiedad, cualquier crisis emocional o situaciones de emergencia.",
+      "location_list": "ciudad_de_méxico",
+      "channel_1_type": "phone",
+      "channel_1_value": "55 4160 5372"
     },
     {
       "id": "inprf",
       "type": "contact",
       "name": "Instituto Nacional de Psiquiatría",
       "description": "Estrés, ansiedad, cualquier crisis emocional o situaciones de emergencia.",
+      "location_exclude_list": "ciudad_de_méxico",
       "channel_1_type": "phone",
-      "channel_1_value": "55 4160 5372",
-      "channel_1_label": "CDMX",
-      "channel_2_type": "phone",
-      "channel_2_value": "55 4160 3282",
-      "channel_2_label": "Interior de la República"
+      "channel_1_value": "55 4160 3282"
     },
     {
       "id": "planned_parenthood",

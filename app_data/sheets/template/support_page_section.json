@@ -125,7 +125,7 @@
     },
     {
       "name": "visible",
-      "value": "@calc(@local.ids.map(id => @local.all_contacts.find(c => c.id == id)).filter(c => c && (![].concat(c.location_list || []).length || [].concat(c.location_list).includes(@fields.user_location))))",
+      "value": "@calc(@local.ids.map(id => @local.all_contacts.find(c => c.id == id)).filter(c => c && (![].concat(c.location_list || []).length || [].concat(c.location_list).includes(@fields.user_location)) && ![].concat(c.location_exclude_list || []).includes(@fields.user_location)))",
       "_translations": {
         "value": {}
       },
@@ -135,28 +135,34 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@calc(@local.ids.map(id => @local.all_contacts.find(c => c.id == id)).filter(c => c && (![].concat(c.location_list || []).length || [].concat(c.location_list).includes(@fields.user_location))))",
+            "fullExpression": "@calc(@local.ids.map(id => @local.all_contacts.find(c => c.id == id)).filter(c => c && (![].concat(c.location_list || []).length || [].concat(c.location_list).includes(@fields.user_location)) && ![].concat(c.location_exclude_list || []).includes(@fields.user_location)))",
             "matchedExpression": "@local.ids.map",
             "type": "local",
             "fieldName": "ids"
           },
           {
-            "fullExpression": "@calc(@local.ids.map(id => @local.all_contacts.find(c => c.id == id)).filter(c => c && (![].concat(c.location_list || []).length || [].concat(c.location_list).includes(@fields.user_location))))",
+            "fullExpression": "@calc(@local.ids.map(id => @local.all_contacts.find(c => c.id == id)).filter(c => c && (![].concat(c.location_list || []).length || [].concat(c.location_list).includes(@fields.user_location)) && ![].concat(c.location_exclude_list || []).includes(@fields.user_location)))",
             "matchedExpression": "@local.all_contacts.find",
             "type": "local",
             "fieldName": "all_contacts"
           },
           {
-            "fullExpression": "@calc(@local.ids.map(id => @local.all_contacts.find(c => c.id == id)).filter(c => c && (![].concat(c.location_list || []).length || [].concat(c.location_list).includes(@fields.user_location))))",
+            "fullExpression": "@calc(@local.ids.map(id => @local.all_contacts.find(c => c.id == id)).filter(c => c && (![].concat(c.location_list || []).length || [].concat(c.location_list).includes(@fields.user_location)) && ![].concat(c.location_exclude_list || []).includes(@fields.user_location)))",
             "matchedExpression": "@fields.user_location",
             "type": "fields",
             "fieldName": "user_location"
           },
           {
-            "fullExpression": "@calc(@local.ids.map(id => @local.all_contacts.find(c => c.id == id)).filter(c => c && (![].concat(c.location_list || []).length || [].concat(c.location_list).includes(@fields.user_location))))",
-            "matchedExpression": "@calc(@local.ids.map(id => @local.all_contacts.find(c => c.id == id)).filter(c => c && (![].concat(c.location_list || []).length || [].concat(c.location_list).includes(@fields.user_location))))",
+            "fullExpression": "@calc(@local.ids.map(id => @local.all_contacts.find(c => c.id == id)).filter(c => c && (![].concat(c.location_list || []).length || [].concat(c.location_list).includes(@fields.user_location)) && ![].concat(c.location_exclude_list || []).includes(@fields.user_location)))",
+            "matchedExpression": "@fields.user_location",
+            "type": "fields",
+            "fieldName": "user_location"
+          },
+          {
+            "fullExpression": "@calc(@local.ids.map(id => @local.all_contacts.find(c => c.id == id)).filter(c => c && (![].concat(c.location_list || []).length || [].concat(c.location_list).includes(@fields.user_location)) && ![].concat(c.location_exclude_list || []).includes(@fields.user_location)))",
+            "matchedExpression": "@calc(@local.ids.map(id => @local.all_contacts.find(c => c.id == id)).filter(c => c && (![].concat(c.location_list || []).length || [].concat(c.location_list).includes(@fields.user_location)) && ![].concat(c.location_exclude_list || []).includes(@fields.user_location)))",
             "type": "calc",
-            "fieldName": "@local.ids.map(id => @local.all_contacts.find(c => c.id == id)).filter(c => c && (![].concat(c.location_list || []).length || [].concat(c.location_list).includes(@fields.user_location)))"
+            "fieldName": "@local.ids.map(id => @local.all_contacts.find(c => c.id == id)).filter(c => c && (![].concat(c.location_list || []).length || [].concat(c.location_list).includes(@fields.user_location)) && ![].concat(c.location_exclude_list || []).includes(@fields.user_location))"
           }
         ]
       },
@@ -168,9 +174,10 @@
           "value"
         ],
         "@fields.user_location": [
+          "value",
           "value"
         ],
-        "@calc(@local.ids.map(id => @local.all_contacts.find(c => c.id == id)).filter(c => c && (![].concat(c.location_list || []).length || [].concat(c.location_list).includes(@fields.user_location))))": [
+        "@calc(@local.ids.map(id => @local.all_contacts.find(c => c.id == id)).filter(c => c && (![].concat(c.location_list || []).length || [].concat(c.location_list).includes(@fields.user_location)) && ![].concat(c.location_exclude_list || []).includes(@fields.user_location)))": [
           "value"
         ]
       }

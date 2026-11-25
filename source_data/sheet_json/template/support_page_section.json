@@ -32,7 +32,7 @@
     },
     {
       "name": "visible",
-      "value": "@calc(@local.ids.map(id => @local.all_contacts.find(c => c.id == id)).filter(c => c && (![].concat(c.location_list || []).length || [].concat(c.location_list).includes(@fields.user_location))))",
+      "value": "@calc(@local.ids.map(id => @local.all_contacts.find(c => c.id == id)).filter(c => c && (![].concat(c.location_list || []).length || [].concat(c.location_list).includes(@fields.user_location)) && ![].concat(c.location_exclude_list || []).includes(@fields.user_location)))",
       "exclude_from_translation": true,
       "comments": "Rows in list order; rows with a location only for users in that state"
     },
