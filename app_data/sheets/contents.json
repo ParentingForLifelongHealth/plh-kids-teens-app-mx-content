@@ -5948,6 +5948,16 @@
           "flow_name": "library_article_support_8",
           "flow_subtype": "generated",
           "flow_type": "template"
+        },
+        {
+          "flow_name": "library_article_support_9",
+          "flow_subtype": "generated",
+          "flow_type": "template"
+        },
+        {
+          "flow_name": "library_article_support_10",
+          "flow_subtype": "generated",
+          "flow_type": "template"
         }
       ]
     },
@@ -8342,11 +8352,21 @@
         "url": "https://docs.google.com/spreadsheets/d/1VOolSeQCn71-GP1JbiDp2zqWg4ZZYqrtHIAjY7h4A-A"
       }
     },
+    "po_global_hidden_pages": {
+      "flow_type": "global",
+      "flow_subtype": "proximal_outcomes",
+      "flow_name": "po_global_hidden_pages",
+      "_source": {
+        "name": "kids_teens_global V3",
+        "path": "templates/PLH proximal outcomes.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/17Ti5gmQDWeKBrprr75UlTLVG7VCdYXQtLG31Ch8O4JE"
+      }
+    },
     "po_global_po_refl_no": {
       "flow_type": "global",
       "flow_subtype": "proximal_outcomes",
       "flow_name": "po_global_po_refl_no",
-      "override_target": "proximal_outcome_global_hidden_pages",
+      "override_target": "po_global_hidden_pages",
       "override_condition": "@fields.ab_mode_po_refl == \"all_no\" || (@fields.ab_mode_po_refl == \"test\" && @fields.ab_arm_po_refl == \"no\")",
       "_source": {
         "name": "test_po_refl",
@@ -9559,6 +9579,11 @@
       "flow_subtype": "generated",
       "flow_type": "template"
     },
+    "library_article_support_10": {
+      "flow_name": "library_article_support_10",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    },
     "library_article_support_2": {
       "flow_name": "library_article_support_2",
       "flow_subtype": "generated",
@@ -9591,6 +9616,11 @@
     },
     "library_article_support_8": {
       "flow_name": "library_article_support_8",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    },
+    "library_article_support_9": {
+      "flow_name": "library_article_support_9",
       "flow_subtype": "generated",
       "flow_type": "template"
     },
