@@ -209,6 +209,68 @@
       "type": "declare_global_constant",
       "name": "onboarding_data_consent_required_text",
       "value": "Para continuar, marca la casilla obligatoria."
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "onboarding_error_image",
+      "value": "images/icons/bug.svg",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "onboarding_error_title",
+      "value": "Ups"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "onboarding_error_text",
+      "value": "Algo salió mal. "
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "onboarding_error_troubleshoot_title",
+      "value": "QUÉ HACER:"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "onboarding_error_troubleshoot",
+      "value": "Asegúrate de tener conexión a internet y espacio en tu teléfono, luego intenta de nuevo."
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "onboarding_error_button_text",
+      "value": "Intenta de nuevo"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "onboarding_no_connection_image",
+      "value": "images/icons/bug.svg",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "onboarding_no_connection_title",
+      "value": "Ups"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "onboarding_no_connection_text",
+      "value": "Algo salió mal. "
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "onboarding_no_connection_button_text",
+      "value": "Intenta de nuevo"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "onboarding_no_connection_troubleshoot_title",
+      "value": "QUÉ HACER:"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "onboarding_no_connection_troubleshoot",
+      "value": "📱 Abre Ajustes en tu teléfono\n\n📶 Activa el Wi-Fi o los datos móviles\n\n↩️ Vuelve y toca el botón de abajo"
     }
   ]
 }

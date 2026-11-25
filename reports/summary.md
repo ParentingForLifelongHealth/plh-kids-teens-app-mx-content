@@ -40,11 +40,11 @@
 | round_button | 35 |
 | select_text | 1 |
 | set_field | 4 |
-| set_variable | 5226 |
+| set_variable | 5228 |
 | simple_checkbox | 3 |
 | task_card | 4 |
 | task_progress_bar | 5 |
-| template | 823 |
+| template | 825 |
 | text | 325 |
 | text_area | 4 |
 | text_box | 24 |
@@ -73,7 +73,7 @@
 | emit: force_restart | 3 |
 | emit: server_sync | 9 |
 | emit: set_language | 2 |
-| emit: uncompleted | 183 |
+| emit: uncompleted | 185 |
 | feedback | 13 |
 | go_to | 33 |
 | nav | 1 |
@@ -102,9 +102,9 @@ Estimated space the app takes up on an Android or iOS device.
 | item | download | on_device |
 | --- | --- | --- |
 | App code (estimate) | - | 16.2 MB |
-| App content (sheets and translations) | - | 16.8 MB |
-| Bundled assets | - | 113.4 MB |
-| Total | - | 146.4 MB |
+| App content (sheets and translations) | - | 16.9 MB |
+| Bundled assets | - | 113.7 MB |
+| Total | - | 146.7 MB |
 
 App code is a fixed estimate and excludes native Android and iOS code.
 </details>
@@ -115,7 +115,7 @@ App code is a fixed estimate and excludes native Android and iOS code.
 | assets | KB | MB |
 | --- | --- | --- |
 | total | 102244 KB | 102.2 MB |
-| unused | 11115 KB | 11.1 MB |
+| unused | 11464 KB | 11.5 MB |
 </details>
 
 <details open>
@@ -135,6 +135,7 @@ Assets that appear in app-data but do not have references within sheets
 | images/backgrounds/Footer.png | 4.5 |
 | images/backgrounds/HeaderB.png | 4.5 |
 | images/backgrounds/HeaderC.png | 4.5 |
+| images/backgrounds/LTP banner.png | 349.3 |
 | images/backgrounds/bottom_banner_OLD.svg | 24.3 |
 | images/backgrounds/kites.svg | 92.1 |
 | images/backgrounds/library_top_right_OLD.png | 4.6 |
@@ -669,7 +670,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/SOLUCIONES.png | 4.4 | 4 |
 | images/icons/TIEMPO_EN_PANTALLA.png | 3.5 | 6 |
 | images/icons/VALIDA_EMOCIONES.png | 5.2 | 94 |
-| images/icons/bug.svg | 1.2 | 2 |
+| images/icons/bug.svg | 1.2 | 4 |
 | images/icons/caution.svg | 2.1 | 74 |
 | images/icons/celebration.svg | 70.4 | 1 |
 | images/icons/chatbubble-ellipses-outline.svg | 0.8 | 1 |
@@ -846,10 +847,10 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global |  | 14 |
 | global | ab_testing | 3 |
 | global | onboarding | 18 |
-| global | proximal_outcomes | 3 |
+| global | proximal_outcomes | 4 |
 | template |  | 114 |
 | template | ab_testing | 1 |
-| template | generated | 348 |
+| template | generated | 350 |
 | template | legal_terms | 4 |
 | template | proximal_outcomes | 19 |
 </details>
