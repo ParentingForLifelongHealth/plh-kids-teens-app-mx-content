@@ -671,7 +671,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/TIEMPO_EN_PANTALLA.png | 3.5 | 6 |
 | images/icons/VALIDA_EMOCIONES.png | 5.2 | 94 |
 | images/icons/bug.svg | 1.2 | 4 |
-| images/icons/caution.svg | 2.1 | 74 |
+| images/icons/caution.svg | 1.9 | 74 |
 | images/icons/celebration.svg | 70.4 | 1 |
 | images/icons/chatbubble-ellipses-outline.svg | 0.8 | 1 |
 | images/icons/diamond-outline.svg | 0.6 | 2 |
