@@ -3482,6 +3482,33 @@
         "url": "https://docs.google.com/spreadsheets/d/1fIkAzNlTNXIo6ddfrY_fxDNkDIoxg5S5Du8-J0yTIB8"
       }
     },
+    "support_contact": {
+      "flow_type": "data_list",
+      "flow_name": "support_contact",
+      "flow_subtype": "support",
+      "comments": "One row per organisation; type = emergency / contact / resource (box style); up to 3 channels",
+      "_source": {
+        "name": "kids_teens_mx",
+        "path": "data/MX support contacts.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1luM5sNqA7ZRtPszUphmEmYmSh9OzSZ3EgDYfTRBn1mw"
+      },
+      "_metadata": {
+        "channel_1_value": {
+          "type": "number"
+        }
+      }
+    },
+    "support_page": {
+      "flow_type": "data_list",
+      "flow_name": "support_page",
+      "flow_subtype": "support",
+      "comments": "One row per support page; section_N_list = support_contact ids in order",
+      "_source": {
+        "name": "kids_teens_mx",
+        "path": "data/MX support contacts.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1luM5sNqA7ZRtPszUphmEmYmSh9OzSZ3EgDYfTRBn1mw"
+      }
+    },
     "user_gender": {
       "flow_type": "data_list",
       "flow_name": "user_gender",
@@ -11453,6 +11480,36 @@
         "name": "kids_teens_global V3",
         "path": "templates/PLH certificates.xlsx",
         "url": "https://docs.google.com/spreadsheets/d/1CUyO3tW2rpZC5wDaDypdY-rRn51YenWh2s_adSL8GJc"
+      }
+    },
+    "support_list": {
+      "flow_type": "template",
+      "flow_name": "support_list",
+      "comments": "Support category list (replaces library_section_support)",
+      "_source": {
+        "name": "kids_teens_global V3",
+        "path": "templates/PLH support contacts.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1p7dA_K4GAsxj7U2X79CQb0aQPaA5YGdX-XxK2G2Di5w"
+      }
+    },
+    "support_page_one": {
+      "flow_type": "template",
+      "flow_name": "support_page_one",
+      "comments": "One support page: header, intro, up to 3 sections",
+      "_source": {
+        "name": "kids_teens_global V3",
+        "path": "templates/PLH support contacts.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1p7dA_K4GAsxj7U2X79CQb0aQPaA5YGdX-XxK2G2Di5w"
+      }
+    },
+    "support_page_section": {
+      "flow_type": "template",
+      "flow_name": "support_page_section",
+      "comments": "One section: intro + contact boxes",
+      "_source": {
+        "name": "kids_teens_global V3",
+        "path": "templates/PLH support contacts.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1p7dA_K4GAsxj7U2X79CQb0aQPaA5YGdX-XxK2G2Di5w"
       }
     },
     "unlock_play": {

@@ -1,0 +1,345 @@
+{
+  "flow_type": "template",
+  "flow_name": "support_list",
+  "status": "released",
+  "comments": "Support category list (replaces library_section_support)",
+  "rows": [
+    {
+      "name": "library_id",
+      "value": "support",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "library_id"
+    },
+    {
+      "name": "library_id_concat",
+      "value": "library_section.@local.library_id",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "library_id_concat",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "library_section.@local.library_id",
+            "matchedExpression": "@local.library_id",
+            "type": "local",
+            "fieldName": "library_id"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.library_id": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "library_row",
+      "value": "@data.@local.library_id_concat",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "library_row",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.@local.library_id_concat",
+            "matchedExpression": "@local.library_id_concat",
+            "type": "local",
+            "fieldName": "library_id_concat"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.library_id_concat": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "template",
+      "name": "header",
+      "value": "section_header",
+      "action_list": [
+        {
+          "trigger": "uncompleted",
+          "action_id": "emit",
+          "args": [
+            "uncompleted"
+          ],
+          "_raw": "uncompleted | emit: uncompleted"
+        }
+      ],
+      "exclude_from_translation": true,
+      "rows": [
+        {
+          "name": "title",
+          "value": "@local.library_row.title",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "type": "set_variable",
+          "_nested_name": "header.title",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.library_row.title",
+                "matchedExpression": "@local.library_row.title",
+                "type": "local",
+                "fieldName": "library_row"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.library_row.title": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "header"
+    },
+    {
+      "type": "text",
+      "name": "intro",
+      "value": "@local.library_row.introduction",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "!!@local.library_row.introduction",
+      "exclude_from_translation": true,
+      "_nested_name": "intro",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.library_row.introduction",
+            "matchedExpression": "@local.library_row.introduction",
+            "type": "local",
+            "fieldName": "library_row"
+          }
+        ],
+        "condition": [
+          {
+            "fullExpression": "!!@local.library_row.introduction",
+            "matchedExpression": "!@local.library_row.introduction",
+            "type": "local",
+            "fieldName": "library_row"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.library_row.introduction": [
+          "value"
+        ],
+        "!@local.library_row.introduction": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "display_group",
+      "name": "dg_pages",
+      "parameter_list": {
+        "style": "column"
+      },
+      "exclude_from_translation": true,
+      "rows": [
+        {
+          "type": "items",
+          "name": "pages",
+          "value": "@data.support_page",
+          "exclude_from_translation": true,
+          "rows": [
+            {
+              "type": "display_group",
+              "name": "card_@item.id",
+              "parameter_list": {
+                "style": "column"
+              },
+              "style_list": [
+                "background-color: var(--display-group-box-background)",
+                "border-radius: var(--ion-border-radius-rounded)"
+              ],
+              "exclude_from_translation": true,
+              "rows": [
+                {
+                  "type": "button",
+                  "name": "button_@item.id",
+                  "value": "@item.title",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "action_list": [
+                    {
+                      "trigger": "click",
+                      "action_id": "set_field",
+                      "args": [
+                        "support_page_id",
+                        "@item.id"
+                      ],
+                      "_raw": "click | set_field: support_page_id: @item.id"
+                    },
+                    {
+                      "trigger": "click",
+                      "action_id": "go_to",
+                      "args": [
+                        "support_page_one"
+                      ],
+                      "_raw": "click | go_to: support_page_one"
+                    }
+                  ],
+                  "parameter_list": {
+                    "variant": "card",
+                    "style": "no-background",
+                    "text_align": "left",
+                    "icon_secondary_asset": "chevron-forward",
+                    "icon": "@item.icon"
+                  },
+                  "exclude_from_translation": true,
+                  "_nested_name": "dg_pages.pages.card_@item.id.button_@item.id",
+                  "_dynamicFields": {
+                    "name": [
+                      {
+                        "fullExpression": "button_@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ],
+                    "value": [
+                      {
+                        "fullExpression": "@item.title",
+                        "matchedExpression": "@item.title",
+                        "type": "item",
+                        "fieldName": "title"
+                      }
+                    ],
+                    "action_list": {
+                      "0": {
+                        "args": {
+                          "1": [
+                            {
+                              "fullExpression": "@item.id",
+                              "matchedExpression": "@item.id",
+                              "type": "item",
+                              "fieldName": "id"
+                            }
+                          ]
+                        },
+                        "_raw": [
+                          {
+                            "fullExpression": "click | set_field: support_page_id: @item.id",
+                            "matchedExpression": "@item.id",
+                            "type": "item",
+                            "fieldName": "id"
+                          }
+                        ]
+                      }
+                    },
+                    "parameter_list": {
+                      "icon": [
+                        {
+                          "fullExpression": "@item.icon",
+                          "matchedExpression": "@item.icon",
+                          "type": "item",
+                          "fieldName": "icon"
+                        }
+                      ]
+                    },
+                    "_nested_name": [
+                      {
+                        "fullExpression": "dg_pages.pages.card_@item.id.button_@item.id",
+                        "matchedExpression": "@item.id.button_",
+                        "type": "item",
+                        "fieldName": "id"
+                      },
+                      {
+                        "fullExpression": "dg_pages.pages.card_@item.id.button_@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.id": [
+                      "name",
+                      "action_list.0.args.1",
+                      "action_list.0._raw",
+                      "_nested_name"
+                    ],
+                    "@item.title": [
+                      "value"
+                    ],
+                    "@item.icon": [
+                      "parameter_list.icon"
+                    ],
+                    "@item.id.button_": [
+                      "_nested_name"
+                    ]
+                  }
+                }
+              ],
+              "_nested_name": "dg_pages.pages.card_@item.id",
+              "_dynamicFields": {
+                "name": [
+                  {
+                    "fullExpression": "card_@item.id",
+                    "matchedExpression": "@item.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ],
+                "_nested_name": [
+                  {
+                    "fullExpression": "dg_pages.pages.card_@item.id",
+                    "matchedExpression": "@item.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.id": [
+                  "name",
+                  "_nested_name"
+                ]
+              }
+            }
+          ],
+          "_nested_name": "dg_pages.pages",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@data.support_page",
+                "matchedExpression": "@data.support_page",
+                "type": "data",
+                "fieldName": "support_page"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@data.support_page": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "dg_pages"
+    }
+  ],
+  "_source": {
+    "name": "kids_teens_global V3",
+    "path": "templates/PLH support contacts.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1p7dA_K4GAsxj7U2X79CQb0aQPaA5YGdX-XxK2G2Di5w"
+  }
+}

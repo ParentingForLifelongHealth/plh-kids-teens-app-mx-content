@@ -9,17 +9,17 @@
 | animated_slides | 1 |
 | apple_sign_in_button | 2 |
 | audio | 4 |
-| button | 141 |
+| button | 142 |
 | combo_box | 26 |
 | data_items | 251 |
 | date_time_picker | 2 |
 | debug_toggle | 1 |
 | display_grid | 4 |
-| display_group | 146 |
+| display_group | 150 |
 | drawer | 1 |
 | google_sign_in_button | 2 |
 | image | 28 |
-| items | 16 |
+| items | 18 |
 | lottie (lottie_animation) | 1 |
 | lottie_animation | 9 |
 | nested_properties | 519 |
@@ -40,12 +40,12 @@
 | round_button | 35 |
 | select_text | 1 |
 | set_field | 4 |
-| set_variable | 5228 |
+| set_variable | 5271 |
 | simple_checkbox | 3 |
 | task_card | 4 |
 | task_progress_bar | 5 |
-| template | 825 |
-| text | 325 |
+| template | 830 |
+| text | 335 |
 | text_area | 4 |
 | text_box | 24 |
 | text_bubble | 34 |
@@ -73,9 +73,9 @@
 | emit: force_restart | 3 |
 | emit: server_sync | 9 |
 | emit: set_language | 2 |
-| emit: uncompleted | 185 |
+| emit: uncompleted | 187 |
 | feedback | 13 |
-| go_to | 33 |
+| go_to | 34 |
 | nav | 1 |
 | nav_stack | 1032 |
 | notification | 1 |
@@ -85,7 +85,7 @@
 | reset_data | 3 |
 | save_to_device | 3 |
 | set_data | 527 |
-| set_field | 536 |
+| set_field | 537 |
 | set_item | 30 |
 | set_local | 717 |
 | share | 3 |
@@ -102,9 +102,9 @@ Estimated space the app takes up on an Android or iOS device.
 | item | download | on_device |
 | --- | --- | --- |
 | App code (estimate) | - | 16.2 MB |
-| App content (sheets and translations) | - | 16.9 MB |
+| App content (sheets and translations) | - | 17 MB |
 | Bundled assets | - | 113.7 MB |
-| Total | - | 146.7 MB |
+| Total | - | 146.9 MB |
 
 App code is a fixed estimate and excludes native Android and iOS code.
 </details>
@@ -671,7 +671,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/TIEMPO_EN_PANTALLA.png | 3.5 | 6 |
 | images/icons/VALIDA_EMOCIONES.png | 5.2 | 94 |
 | images/icons/bug.svg | 1.2 | 4 |
-| images/icons/caution.svg | 1.9 | 74 |
+| images/icons/caution.svg | 1.9 | 75 |
 | images/icons/celebration.svg | 70.4 | 1 |
 | images/icons/chatbubble-ellipses-outline.svg | 0.8 | 1 |
 | images/icons/diamond-outline.svg | 0.6 | 2 |
@@ -841,6 +841,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_list | onboarding | 2 |
 | data_list | proximal_outcomes | 10 |
 | data_list | relax | 1 |
+| data_list | support | 2 |
 | data_pipe |  | 5 |
 | data_pipe | generated | 146 |
 | generator |  | 9 |
@@ -848,7 +849,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global | ab_testing | 3 |
 | global | onboarding | 18 |
 | global | proximal_outcomes | 4 |
-| template |  | 114 |
+| template |  | 117 |
 | template | ab_testing | 1 |
 | template | generated | 350 |
 | template | legal_terms | 4 |

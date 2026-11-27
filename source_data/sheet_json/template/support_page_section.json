@@ -1,0 +1,248 @@
+{
+  "flow_type": "template",
+  "flow_name": "support_page_section",
+  "status": "released",
+  "comments": "One section: intro + contact boxes",
+  "rows": [
+    {
+      "name": "intro",
+      "exclude_from_translation": true,
+      "comments": "Input: sentence shown above the section (markdown)"
+    },
+    {
+      "name": "list",
+      "exclude_from_translation": true,
+      "comments": "Input: support_contact ids in display order"
+    },
+    {
+      "name": "contacts",
+      "value": "@data.support_contact",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "all_contacts",
+      "value": "@calc(Object.values(@local.contacts || []))",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "ids",
+      "value": "@calc(Array.isArray(@local.list) ? @local.list : String(@local.list || \"\").split(/[;,]/).map(s => s.trim()).filter(s => s))",
+      "exclude_from_translation": true,
+      "comments": "Accepts the parsed array or a ; separated string"
+    },
+    {
+      "name": "visible",
+      "value": "@calc(@local.ids.map(id => @local.all_contacts.find(c => c.id == id)).filter(c => c && (![].concat(c.location_list || []).length || [].concat(c.location_list).includes(@fields.user_location)) && ![].concat(c.location_exclude_list || []).includes(@fields.user_location)))",
+      "exclude_from_translation": true,
+      "comments": "Rows in list order; rows with a location only for users in that state"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_section",
+      "parameter_list": "style: column;",
+      "condition": "@local.visible.length > 0",
+      "exclude_from_translation": true,
+      "comments": "Hidden when no row is visible"
+    },
+    {
+      "type": "text",
+      "name": "intro_text",
+      "value": "@local.intro",
+      "condition": "!!@local.intro",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_items",
+      "name": "contact_items",
+      "value": "@local.visible",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "variant",
+      "value": "box_green",
+      "exclude_from_translation": true,
+      "comments": "contact (and default when type is empty); green = Conectar in Crianza+"
+    },
+    {
+      "name": "variant",
+      "value": "box_secondary_alt",
+      "condition": "@item.type == \"emergency\"",
+      "exclude_from_translation": true,
+      "comments": "Brand orange fill in the MX theme"
+    },
+    {
+      "name": "variant",
+      "value": "box_secondary",
+      "condition": "@item.type == \"resource\"",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "location_key",
+      "value": "user_location.@fields.user_location",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "location_data",
+      "value": "@data.@local.location_key",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "c1_value",
+      "value": "@calc(String(@item.channel_1_value || \"\"))",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "c1_digits",
+      "value": "@calc(String(@item.channel_1_value || \"\").replace(/[^0-9+*#]/g, \"\").replace(\"#\", \"%23\"))",
+      "exclude_from_translation": true,
+      "comments": "Number without spaces for the link; # encoded"
+    },
+    {
+      "name": "c1_href",
+      "value": "@calc(@item.channel_1_type == \"website\" ? @local.c1_value : @item.channel_1_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c1_digits.replace(\"+\", \"\") : @item.channel_1_type == \"sms\" ? \"sms:\" + @local.c1_digits : \"tel:\" + @local.c1_digits)",
+      "exclude_from_translation": true,
+      "comments": "Link by type; empty type = phone"
+    },
+    {
+      "name": "c1_icon",
+      "value": "@calc((@item.channel_1_type == \"website\" ? \"🌐\" : @item.channel_1_type == \"whatsapp\" ? \"💬\" : @item.channel_1_type == \"sms\" ? \"✉️\" : \"📞\") + \"\\u00a0\")",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "c1_text",
+      "value": "@calc(@item.channel_1_type == \"website\" ? (@item.channel_1_label || @local.c1_value.split(\"//\").pop().split(\"/\")[0].replace(\"www.\", \"\")) : (@item.channel_1_type == \"whatsapp\" ? \"WhatsApp \" : @item.channel_1_type == \"sms\" ? \"SMS \" : \"\") + @local.c1_value.split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\"))",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "c1_suffix",
+      "value": "@calc((@item.channel_1_type != \"website\" && @item.channel_1_label ? \" · \" + @item.channel_1_label : \"\") + (@item.channel_1_hours ? \" · 🕒\\u00a0\" + String(@item.channel_1_hours).split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\") : \"\"))",
+      "exclude_from_translation": true,
+      "comments": "Label and hours on the same line"
+    },
+    {
+      "name": "c2_value",
+      "value": "@calc(String(@item.channel_2_value || \"\"))",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "c2_digits",
+      "value": "@calc(String(@item.channel_2_value || \"\").replace(/[^0-9+*#]/g, \"\").replace(\"#\", \"%23\"))",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "c2_href",
+      "value": "@calc(@item.channel_2_type == \"website\" ? @local.c2_value : @item.channel_2_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c2_digits.replace(\"+\", \"\") : @item.channel_2_type == \"sms\" ? \"sms:\" + @local.c2_digits : \"tel:\" + @local.c2_digits)",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "c2_icon",
+      "value": "@calc((@item.channel_2_type == \"website\" ? \"🌐\" : @item.channel_2_type == \"whatsapp\" ? \"💬\" : @item.channel_2_type == \"sms\" ? \"✉️\" : \"📞\") + \"\\u00a0\")",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "c2_text",
+      "value": "@calc(@item.channel_2_type == \"website\" ? (@item.channel_2_label || @local.c2_value.split(\"//\").pop().split(\"/\")[0].replace(\"www.\", \"\")) : (@item.channel_2_type == \"whatsapp\" ? \"WhatsApp \" : @item.channel_2_type == \"sms\" ? \"SMS \" : \"\") + @local.c2_value.split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\"))",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "c2_suffix",
+      "value": "@calc((@item.channel_2_type != \"website\" && @item.channel_2_label ? \" · \" + @item.channel_2_label : \"\") + (@item.channel_2_hours ? \" · 🕒\\u00a0\" + String(@item.channel_2_hours).split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\") : \"\"))",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "c3_value",
+      "value": "@calc(String(@item.channel_3_value || \"\"))",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "c3_digits",
+      "value": "@calc(String(@item.channel_3_value || \"\").replace(/[^0-9+*#]/g, \"\").replace(\"#\", \"%23\"))",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "c3_href",
+      "value": "@calc(@item.channel_3_type == \"website\" ? @local.c3_value : @item.channel_3_type == \"whatsapp\" ? \"https://wa.me/\" + @local.c3_digits.replace(\"+\", \"\") : @item.channel_3_type == \"sms\" ? \"sms:\" + @local.c3_digits : \"tel:\" + @local.c3_digits)",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "c3_icon",
+      "value": "@calc((@item.channel_3_type == \"website\" ? \"🌐\" : @item.channel_3_type == \"whatsapp\" ? \"💬\" : @item.channel_3_type == \"sms\" ? \"✉️\" : \"📞\") + \"\\u00a0\")",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "c3_text",
+      "value": "@calc(@item.channel_3_type == \"website\" ? (@item.channel_3_label || @local.c3_value.split(\"//\").pop().split(\"/\")[0].replace(\"www.\", \"\")) : (@item.channel_3_type == \"whatsapp\" ? \"WhatsApp \" : @item.channel_3_type == \"sms\" ? \"SMS \" : \"\") + @local.c3_value.split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\"))",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "c3_suffix",
+      "value": "@calc((@item.channel_3_type != \"website\" && @item.channel_3_label ? \" · \" + @item.channel_3_label : \"\") + (@item.channel_3_hours ? \" · 🕒\\u00a0\" + String(@item.channel_3_hours).split(\" \").join(\"\\u00a0\").split(\"-\").join(\"\\u2060-\\u2060\").split(\"–\").join(\"\\u2060–\\u2060\") : \"\"))",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "card",
+      "parameter_list": "style: column; \nvariant: @local.variant;",
+      "exclude_from_translation": true,
+      "comments": "Known: Angular dev warning NG0955 (duplicate key), names inside a loop over a computed list get no item values"
+    },
+    {
+      "type": "text",
+      "name": "name",
+      "value": "**@item.name**",
+      "condition": "!!@item.name",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "location",
+      "value": "📍 @local.location_data.text",
+      "condition": "!!@item.location_list",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "description",
+      "value": "@item.description",
+      "condition": "!!@item.description",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "channel_1",
+      "value": "@local.c1_icon[@local.c1_text](@local.c1_href)@local.c1_suffix",
+      "condition": "!!@item.channel_1_value",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "channel_2",
+      "value": "@local.c2_icon[@local.c2_text](@local.c2_href)@local.c2_suffix",
+      "condition": "!!@item.channel_2_value",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "channel_3",
+      "value": "@local.c3_icon[@local.c3_text](@local.c3_href)@local.c3_suffix",
+      "condition": "!!@item.channel_3_value",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "notes",
+      "value": "@item.notes",
+      "condition": "!!@item.notes",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

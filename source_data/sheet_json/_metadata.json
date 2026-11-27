@@ -1293,6 +1293,26 @@
   },
   {
     "flow_type": "data_list",
+    "flow_subtype": "support",
+    "flow_name": "support_contact",
+    "_source": {
+      "name": "kids_teens_mx",
+      "path": "data/MX support contacts.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1luM5sNqA7ZRtPszUphmEmYmSh9OzSZ3EgDYfTRBn1mw"
+    }
+  },
+  {
+    "flow_type": "data_list",
+    "flow_subtype": "support",
+    "flow_name": "support_page",
+    "_source": {
+      "name": "kids_teens_mx",
+      "path": "data/MX support contacts.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1luM5sNqA7ZRtPszUphmEmYmSh9OzSZ3EgDYfTRBn1mw"
+    }
+  },
+  {
+    "flow_type": "data_list",
     "flow_subtype": "modules_talk_feelings_t_fc",
     "flow_name": "talk_feelings_t_fc_articles",
     "_source": {
@@ -3285,6 +3305,33 @@
       "name": "kids_teens_global V3",
       "path": "templates/PLH certificates.xlsx",
       "url": "https://docs.google.com/spreadsheets/d/1CUyO3tW2rpZC5wDaDypdY-rRn51YenWh2s_adSL8GJc"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_name": "support_list",
+    "_source": {
+      "name": "kids_teens_global V3",
+      "path": "templates/PLH support contacts.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1p7dA_K4GAsxj7U2X79CQb0aQPaA5YGdX-XxK2G2Di5w"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_name": "support_page_one",
+    "_source": {
+      "name": "kids_teens_global V3",
+      "path": "templates/PLH support contacts.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1p7dA_K4GAsxj7U2X79CQb0aQPaA5YGdX-XxK2G2Di5w"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_name": "support_page_section",
+    "_source": {
+      "name": "kids_teens_global V3",
+      "path": "templates/PLH support contacts.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1p7dA_K4GAsxj7U2X79CQb0aQPaA5YGdX-XxK2G2Di5w"
     }
   },
   {
