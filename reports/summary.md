@@ -40,7 +40,7 @@
 | round_button | 35 |
 | select_text | 1 |
 | set_field | 4 |
-| set_variable | 5271 |
+| set_variable | 5269 |
 | simple_checkbox | 3 |
 | task_card | 4 |
 | task_progress_bar | 5 |
@@ -84,7 +84,7 @@
 | reset_app | 4 |
 | reset_data | 3 |
 | save_to_device | 3 |
-| set_data | 527 |
+| set_data | 483 |
 | set_field | 537 |
 | set_item | 30 |
 | set_local | 717 |
@@ -104,7 +104,7 @@ Estimated space the app takes up on an Android or iOS device.
 | App code (estimate) | - | 16.2 MB |
 | App content (sheets and translations) | - | 17 MB |
 | Bundled assets | - | 113.7 MB |
-| Total | - | 146.9 MB |
+| Total | - | 146.8 MB |
 
 App code is a fixed estimate and excludes native Android and iOS code.
 </details>
@@ -114,8 +114,8 @@ App code is a fixed estimate and excludes native Android and iOS code.
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 102244 KB | 102.2 MB |
-| unused | 11464 KB | 11.5 MB |
+| total | 102214 KB | 102.2 MB |
+| unused | 11440 KB | 11.4 MB |
 </details>
 
 <details open>
@@ -136,7 +136,6 @@ Assets that appear in app-data but do not have references within sheets
 | images/backgrounds/HeaderB.png | 4.5 |
 | images/backgrounds/HeaderC.png | 4.5 |
 | images/backgrounds/LTP banner.png | 349.3 |
-| images/backgrounds/bottom_banner_OLD.svg | 24.3 |
 | images/backgrounds/kites.svg | 92.1 |
 | images/backgrounds/library_top_right_OLD.png | 4.6 |
 | images/badges/badge_5.svg | 24.7 |
@@ -295,7 +294,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/backgrounds/bottom_banner.png | 8 | 1 |
 | images/backgrounds/complete_module.svg | 30.6 | 1 |
 | images/backgrounds/lesson-cta-bg.svg | 13.1 | 4 |
-| images/backgrounds/library_top_right.png | 54.7 | 3 |
+| images/backgrounds/library_top_right.png | 24.5 | 3 |
 | images/badges/badge_1.svg | 25.7 | 2 |
 | images/badges/badge_2.svg | 17.4 | 1 |
 | images/badges/badge_3.svg | 49.1 | 2 |

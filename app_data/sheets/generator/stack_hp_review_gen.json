@@ -196,17 +196,6 @@
         },
         {
           "trigger": "completed",
-          "action_id": "set_data",
-          "args": [],
-          "_raw": "completed | set_data | _list_id: courses, _id: @gen.id, n_reprints: 0",
-          "params": {
-            "_list_id": "courses",
-            "_id": "@gen.id",
-            "n_reprints": 0
-          }
-        },
-        {
-          "trigger": "completed",
           "action_id": "nav_stack",
           "args": [
             "close_top"
@@ -301,17 +290,6 @@
             "_list_id": "hp_check_in",
             "_id": "@gen.id",
             "unlocked_activity": true
-          }
-        },
-        {
-          "trigger": "completed",
-          "action_id": "set_data",
-          "args": [],
-          "_raw": "completed | set_data | _list_id: courses, _id: @gen.id, n_reprints: 0",
-          "params": {
-            "_list_id": "courses",
-            "_id": "@gen.id",
-            "n_reprints": 0
           }
         },
         {
@@ -501,17 +479,6 @@
         },
         {
           "trigger": "completed",
-          "action_id": "set_data",
-          "args": [],
-          "_raw": "completed | set_data | _list_id: courses, _id: @gen.id, n_reprints: 0",
-          "params": {
-            "_list_id": "courses",
-            "_id": "@gen.id",
-            "n_reprints": 0
-          }
-        },
-        {
-          "trigger": "completed",
           "action_id": "nav_stack",
           "args": [
             "close_top"
@@ -555,17 +522,6 @@
             "_list_id": "hp_check_in",
             "_id": "@gen.id",
             "unlocked_activity": true
-          }
-        },
-        {
-          "trigger": "completed",
-          "action_id": "set_data",
-          "args": [],
-          "_raw": "completed | set_data | _list_id: courses, _id: @gen.id, n_reprints: 0",
-          "params": {
-            "_list_id": "courses",
-            "_id": "@gen.id",
-            "n_reprints": 0
           }
         },
         {

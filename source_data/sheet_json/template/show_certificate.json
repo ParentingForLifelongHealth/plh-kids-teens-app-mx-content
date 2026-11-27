@@ -20,7 +20,7 @@
     {
       "type": "data_items",
       "name": "get_n_reprints",
-      "value": "@data.courses",
+      "value": "@data.certificate_tracking",
       "action_list": "data_changed | set_local : n_reprints: @items[0]?.n_reprints;",
       "parameter_list": "filter:  @item.id == @fields.cert_to_print;\nlimit: 1;",
       "exclude_from_translation": true
