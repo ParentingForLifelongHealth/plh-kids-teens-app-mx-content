@@ -122,7 +122,7 @@
       "type": "begin_template",
       "name": "if_yes",
       "value": "hp_review",
-      "action_list": "completed | plh_certificate: generate |\nurl: @global.certificator_url,\nname: @fields.certificate_name,\nid: @gen.id,\ncertificate_template: @local.certificate_template,\ncertificate_data_list: @local.certificate_data_list,\nresult_local_variable_name: @local.result;\ncompleted | set_field: cert_to_print: @gen.id;\ncompleted | set_field: debugcert: @local.certificate_template;\ncompleted | set_data | _list_id: hp_check_in, _id: @gen.id, unlocked_activity: TRUE;\ncompleted | set_data | _list_id: courses, _id: @gen.id, n_reprints: 0;\ncompleted | nav_stack: close_top;\ncompleted | pop_up: show_certificate;\ncompleted | toast | message: @global.certificates_location;\nuncompleted | nav_stack: close_top;",
+      "action_list": "completed | plh_certificate: generate |\nurl: @global.certificator_url,\nname: @fields.certificate_name,\nid: @gen.id,\ncertificate_template: @local.certificate_template,\ncertificate_data_list: @local.certificate_data_list,\nresult_local_variable_name: @local.result;\ncompleted | set_field: cert_to_print: @gen.id;\ncompleted | set_field: debugcert: @local.certificate_template;\ncompleted | set_data | _list_id: hp_check_in, _id: @gen.id, unlocked_activity: TRUE;\ncompleted | nav_stack: close_top;\ncompleted | pop_up: show_certificate;\ncompleted | toast | message: @global.certificates_location;\nuncompleted | nav_stack: close_top;",
       "exclude_from_translation": true,
       "condition": "!!@global.certificator_url && !@local.po_due && !@local.po_active && !@local.show_po",
       "comment": "condition extended. No check-in due: unchanged."
@@ -143,7 +143,7 @@
       "type": "begin_template",
       "name": "if_yes_then_checkin",
       "value": "hp_review",
-      "action_list": "completed | plh_certificate: generate |\nurl: @global.certificator_url,\nname: @fields.certificate_name,\nid: @gen.id,\ncertificate_template: @local.certificate_template,\ncertificate_data_list: @local.certificate_data_list,\nresult_local_variable_name: @local.result;\ncompleted | set_field: cert_to_print: @gen.id;\ncompleted | set_field: debugcert: @local.certificate_template;\n\ncompleted | set_data | _list_id: hp_check_in, _id: @gen.id, unlocked_activity: TRUE;\ncompleted | set_data | _list_id: courses, _id: @gen.id, n_reprints: 0;\n\ncompleted | set_field: prox_outcome_access: hp_review;\ncompleted | set_field: po_setup_pending: true;\ncompleted | set_data | _list_id: proximal_outcome_7d_pages, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_14d_pages, completed: false;\ncompleted | set_local: po_type: @local.po_due_type;\ncompleted | set_local: show_po: true;\ncompleted | set_local: po_active: true;\n\nuncompleted | nav_stack: close_top;",
+      "action_list": "completed | plh_certificate: generate |\nurl: @global.certificator_url,\nname: @fields.certificate_name,\nid: @gen.id,\ncertificate_template: @local.certificate_template,\ncertificate_data_list: @local.certificate_data_list,\nresult_local_variable_name: @local.result;\ncompleted | set_field: cert_to_print: @gen.id;\ncompleted | set_field: debugcert: @local.certificate_template;\n\ncompleted | set_data | _list_id: hp_check_in, _id: @gen.id, unlocked_activity: TRUE;\n\ncompleted | set_field: prox_outcome_access: hp_review;\ncompleted | set_field: po_setup_pending: true;\ncompleted | set_data | _list_id: proximal_outcome_7d_pages, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_14d_pages, completed: false;\ncompleted | set_local: po_type: @local.po_due_type;\ncompleted | set_local: show_po: true;\ncompleted | set_local: po_active: true;\n\nuncompleted | nav_stack: close_top;",
       "exclude_from_translation": true,
       "condition": "!!@global.certificator_url && @local.po_due && !@local.po_active && !@local.show_po",
       "comment": "Copy of if_yes for when a check-in is due: certificate is generated, then the check-in shows; pop-up + toast come after it."
@@ -184,7 +184,7 @@
       "type": "begin_template",
       "name": "if_yes_no_certificates",
       "value": "hp_review",
-      "action_list": "completed | set_data | _list_id: hp_check_in, _id: @gen.id, unlocked_activity: TRUE;\ncompleted | set_data | _list_id: courses, _id: @gen.id, n_reprints: 0;\ncompleted | nav_stack: close_top;\nuncompleted | nav_stack: close_top;",
+      "action_list": "completed | set_data | _list_id: hp_check_in, _id: @gen.id, unlocked_activity: TRUE;\ncompleted | nav_stack: close_top;\nuncompleted | nav_stack: close_top;",
       "exclude_from_translation": true,
       "condition": "!@global.certificator_url && !@local.po_due && !@local.po_active && !@local.show_po",
       "comment": "No check-in due"
@@ -205,7 +205,7 @@
       "type": "begin_template",
       "name": "if_yes_no_certificates_then_checkin",
       "value": "hp_review",
-      "action_list": "completed | set_data | _list_id: hp_check_in, _id: @gen.id, unlocked_activity: TRUE;\ncompleted | set_data | _list_id: courses, _id: @gen.id, n_reprints: 0;\ncompleted | set_field: prox_outcome_access: hp_review;\ncompleted | set_field: po_setup_pending: true;\ncompleted | set_data | _list_id: proximal_outcome_7d_pages, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_14d_pages, completed: false;\ncompleted | set_local: po_type: @local.po_due_type;\ncompleted | set_local: show_po: true;\ncompleted | set_local: po_active: true;\nuncompleted | nav_stack: close_top;",
+      "action_list": "completed | set_data | _list_id: hp_check_in, _id: @gen.id, unlocked_activity: TRUE;\ncompleted | set_field: prox_outcome_access: hp_review;\ncompleted | set_field: po_setup_pending: true;\ncompleted | set_data | _list_id: proximal_outcome_7d_pages, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_14d_pages, completed: false;\ncompleted | set_local: po_type: @local.po_due_type;\ncompleted | set_local: show_po: true;\ncompleted | set_local: po_active: true;\nuncompleted | nav_stack: close_top;",
       "exclude_from_translation": true,
       "condition": "!@global.certificator_url && @local.po_due && !@local.po_active && !@local.show_po",
       "comment": "Copy of if_yes_no_certificates for when a check-in is due"

@@ -78,7 +78,7 @@
     {
       "type": "data_items",
       "name": "get_n_reprints",
-      "value": "@data.courses",
+      "value": "@data.certificate_tracking",
       "_translations": {
         "value": {}
       },
@@ -102,10 +102,10 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@data.courses",
-            "matchedExpression": "@data.courses",
+            "fullExpression": "@data.certificate_tracking",
+            "matchedExpression": "@data.certificate_tracking",
             "type": "data",
-            "fieldName": "courses"
+            "fieldName": "certificate_tracking"
           }
         ],
         "parameter_list": {
@@ -126,7 +126,7 @@
         }
       },
       "_dynamicDependencies": {
-        "@data.courses": [
+        "@data.certificate_tracking": [
           "value"
         ],
         "@item.id": [

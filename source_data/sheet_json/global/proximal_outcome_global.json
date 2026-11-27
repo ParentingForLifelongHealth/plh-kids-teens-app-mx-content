@@ -12,12 +12,12 @@
     {
       "type": "declare_global_constant",
       "name": "set_challenge_question",
-      "value": "¡Gracias por compartir! Elegiste: “@fields.selected_domain_value”.\nMuchas familias necesitan apoyo con eso.\n\n¿Cuál es tu principal reto?"
+      "value": "¡Gracias por compartir! \n\nElegiste: “@fields.selected_domain_value”.\nMuchas familias necesitan apoyo con eso.\n\n¿Cuál es tu principal reto?"
     },
     {
       "type": "declare_global_constant",
       "name": "set_goal_question",
-      "value": "Ahora veámoslo de otra forma.\nTu principal reto es: \"@fields.selected_challenge_value\".\n\n¿Qué te gustaría hacer diferente?"
+      "value": "Ahora veámoslo de otra forma.\n\nTu principal reto es: \"@fields.selected_challenge_value\".\n\n¿Qué te gustaría hacer diferente?"
     },
     {
       "type": "declare_global_constant",
