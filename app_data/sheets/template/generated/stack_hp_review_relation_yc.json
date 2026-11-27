@@ -453,6 +453,15 @@
         },
         {
           "trigger": "uncompleted",
+          "action_id": "set_field",
+          "args": [
+            "home_hold",
+            true
+          ],
+          "_raw": "uncompleted | set_field: home_hold: true"
+        },
+        {
+          "trigger": "uncompleted",
           "action_id": "nav_stack",
           "args": [
             "close_top"
@@ -545,7 +554,7 @@
       "_nested_name": "header",
       "_dynamicFields": {
         "action_list": {
-          "3": {
+          "4": {
             "_raw": [
               {
                 "fullExpression": "uncompleted | toast | message: @global.certificates_location",
@@ -577,8 +586,8 @@
       },
       "_dynamicDependencies": {
         "@global.certificates_location": [
-          "action_list.3._raw",
-          "action_list.3.params.message"
+          "action_list.4._raw",
+          "action_list.4.params.message"
         ],
         "!@local.show_po": [
           "condition"
@@ -634,6 +643,15 @@
             "_id": "relation_yc",
             "unlocked_activity": true
           }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_field",
+          "args": [
+            "home_hold",
+            true
+          ],
+          "_raw": "completed | set_field: home_hold: true"
         },
         {
           "trigger": "completed",
@@ -806,7 +824,7 @@
               }
             ]
           },
-          "6": {
+          "7": {
             "_raw": [
               {
                 "fullExpression": "completed | toast | message: @global.certificates_location",
@@ -878,8 +896,8 @@
           "action_list.0.params.result_local_variable_name"
         ],
         "@global.certificates_location": [
-          "action_list.6._raw",
-          "action_list.6.params.message"
+          "action_list.7._raw",
+          "action_list.7.params.message"
         ],
         "!@global.certificator_url": [
           "condition"
@@ -1275,6 +1293,15 @@
         },
         {
           "trigger": "uncompleted",
+          "action_id": "set_field",
+          "args": [
+            "home_hold",
+            true
+          ],
+          "_raw": "uncompleted | set_field: home_hold: true"
+        },
+        {
+          "trigger": "uncompleted",
           "action_id": "nav_stack",
           "args": [
             "close_top"
@@ -1323,7 +1350,7 @@
       "_nested_name": "if_yes_return",
       "_dynamicFields": {
         "action_list": {
-          "6": {
+          "7": {
             "_raw": [
               {
                 "fullExpression": "uncompleted | toast | message: @global.certificates_location",
@@ -1367,8 +1394,8 @@
       },
       "_dynamicDependencies": {
         "@global.certificates_location": [
-          "action_list.6._raw",
-          "action_list.6.params.message"
+          "action_list.7._raw",
+          "action_list.7.params.message"
         ],
         "!@global.certificator_url": [
           "condition"
@@ -1794,6 +1821,15 @@
       "action_list": [
         {
           "trigger": "completed",
+          "action_id": "set_field",
+          "args": [
+            "home_hold",
+            true
+          ],
+          "_raw": "completed | set_field: home_hold: true"
+        },
+        {
+          "trigger": "completed",
           "action_id": "nav_stack",
           "args": [
             "close_top"
@@ -1816,6 +1852,15 @@
           "params": {
             "message": "@global.certificates_location"
           }
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "set_field",
+          "args": [
+            "home_hold",
+            true
+          ],
+          "_raw": "uncompleted | set_field: home_hold: true"
         },
         {
           "trigger": "uncompleted",
@@ -1864,7 +1909,7 @@
       "_nested_name": "proximal_outcome_page_7",
       "_dynamicFields": {
         "action_list": {
-          "2": {
+          "3": {
             "_raw": [
               {
                 "fullExpression": "completed | toast | message: @global.certificates_location",
@@ -1884,7 +1929,7 @@
               ]
             }
           },
-          "5": {
+          "7": {
             "_raw": [
               {
                 "fullExpression": "uncompleted | toast | message: @global.certificates_location",
@@ -1928,10 +1973,10 @@
       },
       "_dynamicDependencies": {
         "@global.certificates_location": [
-          "action_list.2._raw",
-          "action_list.2.params.message",
-          "action_list.5._raw",
-          "action_list.5.params.message"
+          "action_list.3._raw",
+          "action_list.3.params.message",
+          "action_list.7._raw",
+          "action_list.7.params.message"
         ],
         "@local.show_po": [
           "condition"
@@ -1949,6 +1994,15 @@
       "name": "proximal_outcome_page_14",
       "value": "proximal_outcome_14d_checkin",
       "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "set_field",
+          "args": [
+            "home_hold",
+            true
+          ],
+          "_raw": "completed | set_field: home_hold: true"
+        },
         {
           "trigger": "completed",
           "action_id": "nav_stack",
@@ -1973,6 +2027,15 @@
           "params": {
             "message": "@global.certificates_location"
           }
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "set_field",
+          "args": [
+            "home_hold",
+            true
+          ],
+          "_raw": "uncompleted | set_field: home_hold: true"
         },
         {
           "trigger": "uncompleted",
@@ -2021,7 +2084,7 @@
       "_nested_name": "proximal_outcome_page_14",
       "_dynamicFields": {
         "action_list": {
-          "2": {
+          "3": {
             "_raw": [
               {
                 "fullExpression": "completed | toast | message: @global.certificates_location",
@@ -2041,7 +2104,7 @@
               ]
             }
           },
-          "5": {
+          "7": {
             "_raw": [
               {
                 "fullExpression": "uncompleted | toast | message: @global.certificates_location",
@@ -2085,10 +2148,10 @@
       },
       "_dynamicDependencies": {
         "@global.certificates_location": [
-          "action_list.2._raw",
-          "action_list.2.params.message",
-          "action_list.5._raw",
-          "action_list.5.params.message"
+          "action_list.3._raw",
+          "action_list.3.params.message",
+          "action_list.7._raw",
+          "action_list.7.params.message"
         ],
         "@local.show_po": [
           "condition"

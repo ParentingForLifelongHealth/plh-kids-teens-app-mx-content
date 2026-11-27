@@ -26,6 +26,29 @@
       "comments": "filter: (@item.id !== @gen.id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship)) "
     },
     {
+      "name": "course_not_comp_count",
+      "value": -1
+    },
+    {
+      "type": "data_items",
+      "name": "count_course_modules",
+      "value": "@data.module_tasks",
+      "action_list": "data_changed | set_local: course_not_comp_count: @items.length",
+      "parameter_list": "filter: (@item.tag_course == \"@gen.tag_course\") && (@item.id !== @local.module_id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.user_gender_list || @item.user_gender_list.includes(@fields.user_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))"
+    },
+    {
+      "name": "invite_new",
+      "value": "@calc(@local.course_not_comp_count == 0 && !@fields.community_invite_triggered_@gen.tag_course)"
+    },
+    {
+      "name": "invite_pending",
+      "value": "@calc(@local.invite_new ? \"@gen.tag_course\" : (@fields.community_invite_pending ? @fields.community_invite_pending : false))"
+    },
+    {
+      "name": "invite_triggered",
+      "value": "@calc(@local.invite_new || !!@fields.community_invite_triggered_@gen.tag_course)"
+    },
+    {
       "name": "po_last_7d_ts",
       "value": "@global.proximal_outcome_due_from == \"viewed\" && @fields.prox_7d_viewed_ts ? @fields.prox_7d_viewed_ts : @fields.prox_7d_last_ts"
     },
@@ -131,7 +154,7 @@
       "type": "begin_template",
       "name": "module_start_at_id",
       "value": "module_start_at_id_get_unlock",
-      "action_list": "completed | set_data | _list_id: module_tasks, _id: @gen.id, unlocked_activity: TRUE;\ncompleted | set_field: latest_unlocked_activity: @local.picked_activity_id;\ncompleted | nav_stack: close_top; \ncompleted | pop_up: unlock_play | variant: plh_completion;\nuncompleted | nav_stack: close_top;",
+      "action_list": "completed | set_data | _list_id: module_tasks, _id: @gen.id, unlocked_activity: TRUE;\ncompleted | set_field: latest_unlocked_activity: @local.picked_activity_id;\ncompleted | set_field: community_invite_pending: @local.invite_pending;\ncompleted | set_field: community_invite_triggered_@gen.tag_course: @local.invite_triggered;\ncompleted | set_field: home_hold: true;\ncompleted | nav_stack: close_top; \ncompleted | pop_up: unlock_play | variant: plh_completion;\nuncompleted | nav_stack: close_top;",
       "condition": "!@local.po_due && !@local.po_active && !@local.show_po"
     },
     {
@@ -157,7 +180,7 @@
       "type": "begin_template",
       "name": "module_start_at_id_checkin",
       "value": "module_start_at_id_get_unlock",
-      "action_list": "completed | set_data | _list_id: module_tasks, _id: @gen.id, unlocked_activity: TRUE;\ncompleted | set_field: latest_unlocked_activity: @local.picked_activity_id;\ncompleted | set_field: prox_outcome_access: module;\ncompleted | set_data | _list_id: proximal_outcome_7d_pages, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_14d_pages, completed: false;\ncompleted | set_field: po_setup_pending: @calc(!@local.po_active);\ncompleted | set_local: po_type: @local.po_due_type;\ncompleted | set_local: show_po: true;\ncompleted | set_local: po_active: true;\nuncompleted | nav_stack: close_top;",
+      "action_list": "completed | set_data | _list_id: module_tasks, _id: @gen.id, unlocked_activity: TRUE;\ncompleted | set_field: latest_unlocked_activity: @local.picked_activity_id;\ncompleted | set_field: community_invite_pending: @local.invite_pending;\ncompleted | set_field: community_invite_triggered_@gen.tag_course: @local.invite_triggered;\ncompleted | set_field: prox_outcome_access: module;\ncompleted | set_data | _list_id: proximal_outcome_7d_pages, completed: false;\ncompleted | set_data | _list_id: proximal_outcome_14d_pages, completed: false;\ncompleted | set_field: po_setup_pending: @calc(!@local.po_active);\ncompleted | set_local: po_type: @local.po_due_type;\ncompleted | set_local: show_po: true;\ncompleted | set_local: po_active: true;\nuncompleted | nav_stack: close_top;",
       "condition": "(@local.po_due || @local.po_active) && !@local.show_po",
       "comments": "when a check-in is due: same unlock data, then hands over to the check-in instead of closing."
     },
@@ -248,7 +271,7 @@
       "type": "begin_template",
       "name": "proximal_outcome_page_7",
       "value": "proximal_outcome_7d_checkin",
-      "action_list": "completed | nav_stack: close_top;\ncompleted | pop_up: unlock_play | variant: plh_completion;\nuncompleted | nav_stack: close_top;\nuncompleted | pop_up: unlock_play | variant: plh_completion;\nchanged | set_local: show_po: false;",
+      "action_list": "completed | set_field: home_hold: true;\nuncompleted | set_field: home_hold: true;\ncompleted | nav_stack: close_top;\ncompleted | pop_up: unlock_play | variant: plh_completion;\nuncompleted | nav_stack: close_top;\nuncompleted | pop_up: unlock_play | variant: plh_completion;\nchanged | set_local: show_po: false;",
       "condition": "@local.show_po && @local.po_type == \"7days\"",
       "comments": "Finishing or leaving the check-in closes the stack and shows the unlock pop-up the module would have shown."
     },
@@ -264,7 +287,7 @@
       "type": "begin_template",
       "name": "proximal_outcome_page_14",
       "value": "proximal_outcome_14d_checkin",
-      "action_list": "completed | nav_stack: close_top;\ncompleted | pop_up: unlock_play | variant: plh_completion;\nuncompleted | nav_stack: close_top;\nuncompleted | pop_up: unlock_play | variant: plh_completion;\nchanged | set_local: show_po: false;",
+      "action_list": "completed | set_field: home_hold: true;\nuncompleted | set_field: home_hold: true;\ncompleted | nav_stack: close_top;\ncompleted | pop_up: unlock_play | variant: plh_completion;\nuncompleted | nav_stack: close_top;\nuncompleted | pop_up: unlock_play | variant: plh_completion;\nchanged | set_local: show_po: false;",
       "condition": "@local.show_po && @local.po_type == \"14days\""
     },
     {

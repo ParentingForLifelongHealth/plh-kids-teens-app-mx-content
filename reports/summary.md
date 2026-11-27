@@ -11,7 +11,7 @@
 | audio | 4 |
 | button | 142 |
 | combo_box | 26 |
-| data_items | 251 |
+| data_items | 324 |
 | date_time_picker | 2 |
 | debug_toggle | 1 |
 | display_grid | 4 |
@@ -40,7 +40,7 @@
 | round_button | 35 |
 | select_text | 1 |
 | set_field | 4 |
-| set_variable | 5269 |
+| set_variable | 5562 |
 | simple_checkbox | 3 |
 | task_card | 4 |
 | task_progress_bar | 5 |
@@ -51,7 +51,7 @@
 | text_bubble | 34 |
 | title | 73 |
 | toggle_bar | 5 |
-| update_action_list | 5 |
+| update_action_list | 7 |
 | video | 4 |
 | youtube | 8 |
 </details>
@@ -80,14 +80,14 @@
 | nav_stack | 1032 |
 | notification | 1 |
 | plh_certificate | 23 |
-| pop_up | 457 |
+| pop_up | 458 |
 | reset_app | 4 |
 | reset_data | 3 |
 | save_to_device | 3 |
-| set_data | 483 |
-| set_field | 537 |
+| set_data | 484 |
+| set_field | 1274 |
 | set_item | 30 |
-| set_local | 717 |
+| set_local | 790 |
 | share | 3 |
 | task | 2 |
 | toast | 78 |
@@ -102,9 +102,9 @@ Estimated space the app takes up on an Android or iOS device.
 | item | download | on_device |
 | --- | --- | --- |
 | App code (estimate) | - | 16.2 MB |
-| App content (sheets and translations) | - | 17 MB |
+| App content (sheets and translations) | - | 18.8 MB |
 | Bundled assets | - | 113.7 MB |
-| Total | - | 146.8 MB |
+| Total | - | 148.6 MB |
 
 App code is a fixed estimate and excludes native Android and iOS code.
 </details>

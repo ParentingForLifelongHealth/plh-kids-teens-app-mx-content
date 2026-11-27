@@ -91,6 +91,15 @@
         },
         {
           "trigger": "uncompleted",
+          "action_id": "set_field",
+          "args": [
+            "home_hold",
+            true
+          ],
+          "_raw": "uncompleted | set_field: home_hold: true"
+        },
+        {
+          "trigger": "uncompleted",
           "action_id": "nav_stack",
           "args": [
             "close_top"
@@ -193,6 +202,15 @@
             "_id": "@gen.id",
             "unlocked_activity": true
           }
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_field",
+          "args": [
+            "home_hold",
+            true
+          ],
+          "_raw": "completed | set_field: home_hold: true"
         },
         {
           "trigger": "completed",
@@ -422,6 +440,15 @@
             true
           ],
           "_raw": "completed | set_local: show_po: true"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "set_field",
+          "args": [
+            "home_hold",
+            true
+          ],
+          "_raw": "uncompleted | set_field: home_hold: true"
         },
         {
           "trigger": "uncompleted",
@@ -683,6 +710,15 @@
       "action_list": [
         {
           "trigger": "completed",
+          "action_id": "set_field",
+          "args": [
+            "home_hold",
+            true
+          ],
+          "_raw": "completed | set_field: home_hold: true"
+        },
+        {
+          "trigger": "completed",
           "action_id": "nav_stack",
           "args": [
             "close_top"
@@ -705,6 +741,15 @@
           "params": {
             "message": "@global.certificates_location"
           }
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "set_field",
+          "args": [
+            "home_hold",
+            true
+          ],
+          "_raw": "uncompleted | set_field: home_hold: true"
         },
         {
           "trigger": "uncompleted",
@@ -756,6 +801,15 @@
       "action_list": [
         {
           "trigger": "completed",
+          "action_id": "set_field",
+          "args": [
+            "home_hold",
+            true
+          ],
+          "_raw": "completed | set_field: home_hold: true"
+        },
+        {
+          "trigger": "completed",
           "action_id": "nav_stack",
           "args": [
             "close_top"
@@ -778,6 +832,15 @@
           "params": {
             "message": "@global.certificates_location"
           }
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "set_field",
+          "args": [
+            "home_hold",
+            true
+          ],
+          "_raw": "uncompleted | set_field: home_hold: true"
         },
         {
           "trigger": "uncompleted",

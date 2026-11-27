@@ -38,6 +38,41 @@
       "exclude_from_translation": true
     },
     {
+      "name": "course_not_comp_count",
+      "value": -1
+    },
+    {
+      "type": "data_items",
+      "name": "count_course_modules",
+      "value": "@data.module_tasks",
+      "action_list": [
+        {
+          "trigger": "data_changed",
+          "action_id": "set_local",
+          "args": [
+            "course_not_comp_count",
+            "@items.length"
+          ],
+          "_raw": "data_changed | set_local: course_not_comp_count: @items.length"
+        }
+      ],
+      "parameter_list": [
+        "filter: (@item.tag_course == \"@gen.tag_course\") && (@item.id !== @local.module_id) && !@item.completed && (!@item.age_list || @item.age_list.includes(@fields.child_age)) && (!@item.child_gender_list || @item.child_gender_list.includes(@fields.child_gender)) && (!@item.user_gender_list || @item.user_gender_list.includes(@fields.user_gender)) && (!@item.caregiver_relationship_list || @item.caregiver_relationship_list.includes(@fields.user_relationship))"
+      ]
+    },
+    {
+      "name": "invite_new",
+      "value": "@calc(@local.course_not_comp_count == 0 && !@fields.community_invite_triggered_@gen.tag_course)"
+    },
+    {
+      "name": "invite_pending",
+      "value": "@calc(@local.invite_new ? \"@gen.tag_course\" : (@fields.community_invite_pending ? @fields.community_invite_pending : false))"
+    },
+    {
+      "name": "invite_triggered",
+      "value": "@calc(@local.invite_new || !!@fields.community_invite_triggered_@gen.tag_course)"
+    },
+    {
       "name": "po_last_7d_ts",
       "value": "@global.proximal_outcome_due_from == \"viewed\" && @fields.prox_7d_viewed_ts ? @fields.prox_7d_viewed_ts : @fields.prox_7d_last_ts"
     },
@@ -171,6 +206,33 @@
         },
         {
           "trigger": "completed",
+          "action_id": "set_field",
+          "args": [
+            "community_invite_pending",
+            "@local.invite_pending"
+          ],
+          "_raw": "completed | set_field: community_invite_pending: @local.invite_pending"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_field",
+          "args": [
+            "community_invite_triggered_@gen.tag_course",
+            "@local.invite_triggered"
+          ],
+          "_raw": "completed | set_field: community_invite_triggered_@gen.tag_course: @local.invite_triggered"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_field",
+          "args": [
+            "home_hold",
+            true
+          ],
+          "_raw": "completed | set_field: home_hold: true"
+        },
+        {
+          "trigger": "completed",
           "action_id": "nav_stack",
           "args": [
             "close_top"
@@ -241,6 +303,24 @@
             "@local.picked_activity_id"
           ],
           "_raw": "completed | set_field: latest_unlocked_activity: @local.picked_activity_id"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_field",
+          "args": [
+            "community_invite_pending",
+            "@local.invite_pending"
+          ],
+          "_raw": "completed | set_field: community_invite_pending: @local.invite_pending"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_field",
+          "args": [
+            "community_invite_triggered_@gen.tag_course",
+            "@local.invite_triggered"
+          ],
+          "_raw": "completed | set_field: community_invite_triggered_@gen.tag_course: @local.invite_triggered"
         },
         {
           "trigger": "completed",
@@ -399,6 +479,24 @@
       "action_list": [
         {
           "trigger": "completed",
+          "action_id": "set_field",
+          "args": [
+            "home_hold",
+            true
+          ],
+          "_raw": "completed | set_field: home_hold: true"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "set_field",
+          "args": [
+            "home_hold",
+            true
+          ],
+          "_raw": "uncompleted | set_field: home_hold: true"
+        },
+        {
+          "trigger": "completed",
           "action_id": "nav_stack",
           "args": [
             "close_top"
@@ -458,6 +556,24 @@
       "name": "proximal_outcome_page_14",
       "value": "proximal_outcome_14d_checkin",
       "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "set_field",
+          "args": [
+            "home_hold",
+            true
+          ],
+          "_raw": "completed | set_field: home_hold: true"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "set_field",
+          "args": [
+            "home_hold",
+            true
+          ],
+          "_raw": "uncompleted | set_field: home_hold: true"
+        },
         {
           "trigger": "completed",
           "action_id": "nav_stack",
