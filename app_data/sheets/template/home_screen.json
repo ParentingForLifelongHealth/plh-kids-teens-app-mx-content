@@ -4,31 +4,15 @@
   "status": "released",
   "rows": [
     {
-      "type": "update_action_list",
-      "name": "update_action_list_1",
-      "action_list": [
-        {
-          "trigger": "nav_resume",
-          "action_id": "pop_up",
-          "args": [
-            "notification_permission"
-          ],
-          "_raw": "nav_resume | pop_up: notification_permission"
-        },
-        {
-          "trigger": "nav_resume",
-          "action_id": "set_field",
-          "args": [
-            "notification_permission_shown",
-            true
-          ],
-          "_raw": "nav_resume | set_field: notification_permission_shown: true"
-        }
-      ],
-      "condition": "(@fields._notification_permission_status =='prompt-with-rationale' || @fields._notification_permission_status =='prompt') && !@fields.notification_permission_shown && @fields.n_modules_completed > 0",
-      "_nested_name": "update_action_list_1",
+      "name": "notification_due",
+      "value": "(@fields._notification_permission_status =='prompt-with-rationale' || @fields._notification_permission_status =='prompt') && !@fields.notification_permission_shown && @fields.n_modules_completed > 0",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "notification_due",
       "_dynamicFields": {
-        "condition": [
+        "value": [
           {
             "fullExpression": "(@fields._notification_permission_status =='prompt-with-rationale' || @fields._notification_permission_status =='prompt') && !@fields.notification_permission_shown && @fields.n_modules_completed > 0",
             "matchedExpression": "@fields._notification_permission_status",
@@ -57,13 +41,248 @@
       },
       "_dynamicDependencies": {
         "@fields._notification_permission_status": [
-          "condition",
-          "condition"
+          "value",
+          "value"
         ],
         "!@fields.notification_permission_shown": [
-          "condition"
+          "value"
         ],
         "@fields.n_modules_completed": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "update_action_list",
+      "name": "notification_permission_open",
+      "action_list": [
+        {
+          "trigger": "nav_enter",
+          "action_id": "pop_up",
+          "args": [
+            "notification_permission"
+          ],
+          "_raw": "nav_enter | pop_up: notification_permission"
+        },
+        {
+          "trigger": "nav_enter",
+          "action_id": "set_field",
+          "args": [
+            "notification_permission_shown",
+            true
+          ],
+          "_raw": "nav_enter | set_field: notification_permission_shown: true"
+        }
+      ],
+      "condition": "@local.notification_due && !@fields.home_hold",
+      "_nested_name": "notification_permission_open",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.notification_due && !@fields.home_hold",
+            "matchedExpression": "@local.notification_due",
+            "type": "local",
+            "fieldName": "notification_due"
+          },
+          {
+            "fullExpression": "@local.notification_due && !@fields.home_hold",
+            "matchedExpression": "!@fields.home_hold",
+            "type": "fields",
+            "fieldName": "home_hold"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.notification_due": [
+          "condition"
+        ],
+        "!@fields.home_hold": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "update_action_list",
+      "name": "home_hold_clear",
+      "action_list": [
+        {
+          "trigger": "nav_enter",
+          "action_id": "set_field",
+          "args": [
+            "home_hold",
+            false
+          ],
+          "_raw": "nav_enter | set_field: home_hold: false"
+        }
+      ],
+      "condition": "@fields.home_hold",
+      "_nested_name": "home_hold_clear",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@fields.home_hold",
+            "matchedExpression": "@fields.home_hold",
+            "type": "fields",
+            "fieldName": "home_hold"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.home_hold": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "update_action_list",
+      "name": "community_invite_open",
+      "action_list": [
+        {
+          "trigger": "nav_enter",
+          "action_id": "set_field",
+          "args": [
+            "community_invite_current",
+            "@fields.community_invite_pending"
+          ],
+          "_raw": "nav_enter | set_field: community_invite_current: @fields.community_invite_pending"
+        },
+        {
+          "trigger": "nav_enter",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "nav_enter | set_data | _list_id: courses, _id: @fields.community_invite_pending, community_invite_seen: true, community_invite_seen_ts: @calc(now())",
+          "params": {
+            "_list_id": "courses",
+            "_id": "@fields.community_invite_pending",
+            "community_invite_seen": true,
+            "community_invite_seen_ts": "@calc(now())"
+          }
+        },
+        {
+          "trigger": "nav_enter",
+          "action_id": "pop_up",
+          "args": [
+            "community_invite"
+          ],
+          "_raw": "nav_enter | pop_up: community_invite"
+        },
+        {
+          "trigger": "nav_enter",
+          "action_id": "set_field",
+          "args": [
+            "community_invite_pending",
+            false
+          ],
+          "_raw": "nav_enter | set_field: community_invite_pending: false"
+        }
+      ],
+      "condition": "!!@fields.community_invite_pending && !@local.notification_due && !@fields.home_hold && @global.ab_mode_comm_inv != \"off\"",
+      "_nested_name": "community_invite_open",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "args": {
+              "1": [
+                {
+                  "fullExpression": "@fields.community_invite_pending",
+                  "matchedExpression": "@fields.community_invite_pending",
+                  "type": "fields",
+                  "fieldName": "community_invite_pending"
+                }
+              ]
+            },
+            "_raw": [
+              {
+                "fullExpression": "nav_enter | set_field: community_invite_current: @fields.community_invite_pending",
+                "matchedExpression": "@fields.community_invite_pending",
+                "type": "fields",
+                "fieldName": "community_invite_pending"
+              }
+            ]
+          },
+          "1": {
+            "_raw": [
+              {
+                "fullExpression": "nav_enter | set_data | _list_id: courses, _id: @fields.community_invite_pending, community_invite_seen: true, community_invite_seen_ts: @calc(now())",
+                "matchedExpression": "@fields.community_invite_pending",
+                "type": "fields",
+                "fieldName": "community_invite_pending"
+              },
+              {
+                "fullExpression": "nav_enter | set_data | _list_id: courses, _id: @fields.community_invite_pending, community_invite_seen: true, community_invite_seen_ts: @calc(now())",
+                "matchedExpression": "@calc(now())",
+                "type": "calc",
+                "fieldName": "now()"
+              }
+            ],
+            "params": {
+              "_id": [
+                {
+                  "fullExpression": "@fields.community_invite_pending",
+                  "matchedExpression": "@fields.community_invite_pending",
+                  "type": "fields",
+                  "fieldName": "community_invite_pending"
+                }
+              ],
+              "community_invite_seen_ts": [
+                {
+                  "fullExpression": "@calc(now())",
+                  "matchedExpression": "@calc(now())",
+                  "type": "calc",
+                  "fieldName": "now()"
+                }
+              ]
+            }
+          }
+        },
+        "condition": [
+          {
+            "fullExpression": "!!@fields.community_invite_pending && !@local.notification_due && !@fields.home_hold && @global.ab_mode_comm_inv != \"off\"",
+            "matchedExpression": "!@fields.community_invite_pending",
+            "type": "fields",
+            "fieldName": "community_invite_pending"
+          },
+          {
+            "fullExpression": "!!@fields.community_invite_pending && !@local.notification_due && !@fields.home_hold && @global.ab_mode_comm_inv != \"off\"",
+            "matchedExpression": "!@local.notification_due",
+            "type": "local",
+            "fieldName": "notification_due"
+          },
+          {
+            "fullExpression": "!!@fields.community_invite_pending && !@local.notification_due && !@fields.home_hold && @global.ab_mode_comm_inv != \"off\"",
+            "matchedExpression": "!@fields.home_hold",
+            "type": "fields",
+            "fieldName": "home_hold"
+          },
+          {
+            "fullExpression": "!!@fields.community_invite_pending && !@local.notification_due && !@fields.home_hold && @global.ab_mode_comm_inv != \"off\"",
+            "matchedExpression": "@global.ab_mode_comm_inv",
+            "type": "global",
+            "fieldName": "ab_mode_comm_inv"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.community_invite_pending": [
+          "action_list.0.args.1",
+          "action_list.0._raw",
+          "action_list.1._raw",
+          "action_list.1.params._id"
+        ],
+        "@calc(now())": [
+          "action_list.1._raw",
+          "action_list.1.params.community_invite_seen_ts"
+        ],
+        "!@fields.community_invite_pending": [
+          "condition"
+        ],
+        "!@local.notification_due": [
+          "condition"
+        ],
+        "!@fields.home_hold": [
+          "condition"
+        ],
+        "@global.ab_mode_comm_inv": [
           "condition"
         ]
       }

@@ -4,10 +4,26 @@
   "status": "released",
   "rows": [
     {
+      "name": "notification_due",
+      "value": "(@fields._notification_permission_status =='prompt-with-rationale' || @fields._notification_permission_status =='prompt') && !@fields.notification_permission_shown && @fields.n_modules_completed > 0"
+    },
+    {
       "type": "update_action_list",
-      "name": "update_action_list_1",
-      "action_list": "nav_resume | pop_up: notification_permission;\nnav_resume | set_field: notification_permission_shown: true;",
-      "condition": "(@fields._notification_permission_status =='prompt-with-rationale' || @fields._notification_permission_status =='prompt') && !@fields.notification_permission_shown && @fields.n_modules_completed > 0"
+      "name": "notification_permission_open",
+      "action_list": "nav_enter | pop_up: notification_permission; \nnav_enter | set_field: notification_permission_shown: true",
+      "condition": "@local.notification_due && !@fields.home_hold"
+    },
+    {
+      "type": "update_action_list",
+      "name": "home_hold_clear",
+      "action_list": "nav_enter | set_field: home_hold: false;",
+      "condition": "@fields.home_hold"
+    },
+    {
+      "type": "update_action_list",
+      "name": "community_invite_open",
+      "action_list": "nav_enter | set_field: community_invite_current: @fields.community_invite_pending;\nnav_enter | set_data | _list_id: courses, _id: @fields.community_invite_pending, community_invite_seen: true, community_invite_seen_ts: @calc(now());\nnav_enter | pop_up: community_invite;\nnav_enter | set_field: community_invite_pending: false;",
+      "condition": "!!@fields.community_invite_pending && !@local.notification_due && !@fields.home_hold && @global.ab_mode_comm_inv != \"off\""
     },
     {
       "name": "home_screen_logo",
